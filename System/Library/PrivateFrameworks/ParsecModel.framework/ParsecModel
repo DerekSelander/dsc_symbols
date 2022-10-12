@@ -1,0 +1,188 @@
+|| __DATA.__data _OBJC_METACLASS_$_PARUsageEventMigration
+|| __DATA.__objc_data _OBJC_CLASS_$_PARUsageEventMigration
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PAREvent
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARImagesPropensity
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARSafariPropensity
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARSessionEngagementsByTrigger
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARSpotlightPropensity
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$_PARUsageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PAREvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARImagesPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSafariPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSessionEngagementsByTrigger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSpotlightPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARUsageEvent
+|| __TEXT.__const _ParsecModelVersionNumber
+|| __TEXT.__const _ParsecModelVersionString
+__ CoreData: _OBJC_CLASS_$_NSEntityDescription
+__ CoreData: _OBJC_CLASS_$_NSEntityMigrationPolicy
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_METACLASS_$_NSEntityMigrationPolicy
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libswiftCore.dylib: _swift_allocObject
+__ libswiftCore.dylib: _swift_beginAccess
+__ libswiftCore.dylib: _swift_bridgeObjectRelease
+__ libswiftCore.dylib: _swift_dynamicCast
+__ libswiftCore.dylib: _swift_endAccess
+__ libswiftCore.dylib: _swift_errorRelease
+__ libswiftCore.dylib: _swift_getObjCClassFromMetadata
+__ libswiftCore.dylib: _swift_getObjCClassMetadata
+__ libswiftCore.dylib: _swift_getTypeByMangledNameInContext
+__ libswiftCore.dylib: _swift_getTypeByMangledNameInContextInMetadataState
+__ libswiftCore.dylib: _swift_getWitnessTable
+__ libswiftCore.dylib: _swift_initStaticObject
+__ libswiftCore.dylib: _swift_once
+__ libswiftCore.dylib: _swift_release
+__ libswiftCore.dylib: _swift_retain
+__ libswiftCore.dylib: _swift_unknownObjectRelease
+__ libswiftCore.dylib: _swift_willThrow
+__ libswiftCoreData.dylib: __swift_FORCE_LOAD_$_swiftCoreData
+__ libswiftCoreFoundation.dylib: __swift_FORCE_LOAD_$_swiftCoreFoundation
+__ libswiftCoreGraphics.dylib: __swift_FORCE_LOAD_$_swiftCoreGraphics
+__ libswiftDarwin.dylib: __swift_FORCE_LOAD_$_swiftDarwin
+__ libswiftDispatch.dylib: __swift_FORCE_LOAD_$_swiftDispatch
+__ libswiftFoundation.dylib: __swift_FORCE_LOAD_$_swiftFoundation
+__ libswiftObjectiveC.dylib: __swift_FORCE_LOAD_$_swiftObjectiveC
+PAREvent : NSManagedObject
+ @property  NSDate *timestamp
+
+  // instance methods
+  -[PAREvent .cxx_construct]
+  -[PAREvent .cxx_destruct]
+  -[PAREvent initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARFlushEvent : PAREvent <NSFetchRequestResult>
+ @property  int type
+
+  // instance methods
+  -[PARFlushEvent .cxx_construct]
+  -[PARFlushEvent .cxx_destruct]
+  -[PARFlushEvent initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARUsageEvent : PAREvent <NSFetchRequestResult>
+ @property  int clientIntVal
+ @property  BOOL invokedDays
+ @property  BOOL zkwEngagedDays
+ @property  BOOL searchedDays
+ @property  BOOL suggestionOrAppleResultEngagedDays
+ @property  BOOL webEngagedDays
+ @property  BOOL voiceSearchDays
+ @property  int numSearchEngagements
+ @property  BOOL activeDays
+
+  // instance methods
+  -[PARUsageEvent .cxx_construct]
+  -[PARUsageEvent .cxx_destruct]
+  -[PARUsageEvent initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARSessionEngagementsByTrigger : NSManagedObject <NSFetchRequestResult>
+ @property  short client
+ @property  short go
+ @property  BOOL isSuggestion
+ @property  BOOL isTopHit
+ @property  short tap
+ @property  NSDate *timestamp
+
+  // instance methods
+  -[PARSessionEngagementsByTrigger .cxx_construct]
+  -[PARSessionEngagementsByTrigger .cxx_destruct]
+  -[PARSessionEngagementsByTrigger initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARImagesPropensity : NSManagedObject <NSFetchRequestResult>
+ @property  short image
+ @property  short other
+ @property  short querySuggestion
+ @property  short recentResult
+ @property  NSDate *timestamp
+ @property  short zkw
+
+  // instance methods
+  -[PARImagesPropensity .cxx_construct]
+  -[PARImagesPropensity .cxx_destruct]
+  -[PARImagesPropensity initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARSafariPropensity : NSManagedObject <NSFetchRequestResult>
+ @property  short goToSite
+ @property  short localGoto
+ @property  short localTap
+ @property  short other
+ @property  short parsecAppStore
+ @property  short parsecGoto
+ @property  short parsecMaps
+ @property  short parsecNews
+ @property  short parsecOther
+ @property  short parsecStocks
+ @property  short parsecTap
+ @property  short parsecWeather
+ @property  short parsecWeb
+ @property  short parsecWiki
+ @property  short thirdPartyCompletionOrRecentSearch
+ @property  short thirdPartyGoto
+ @property  short thirdPartyTap
+ @property  NSDate *timestamp
+
+  // instance methods
+  -[PARSafariPropensity .cxx_construct]
+  -[PARSafariPropensity .cxx_destruct]
+  -[PARSafariPropensity initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARSpotlightPropensity : NSManagedObject <NSFetchRequestResult>
+ @property  short appLaunch
+ @property  short onDeviceAddressBookData
+ @property  short onDeviceOtherPersonalData
+ @property  short other
+ @property  short parsec
+ @property  short parsecAppStore
+ @property  short parsecMaps
+ @property  short parsecNews
+ @property  short parsecOther
+ @property  short parsecStocks
+ @property  short parsecWeather
+ @property  short parsecWeb
+ @property  short parsecWiki
+ @property  short punchout
+ @property  short querySuggestion
+ @property  short siriSuggestions
+ @property  short thirdPartyInAppContent
+ @property  NSDate *timestamp
+ @property  short webSuggestions
+
+  // instance methods
+  -[PARSpotlightPropensity .cxx_construct]
+  -[PARSpotlightPropensity .cxx_destruct]
+  -[PARSpotlightPropensity initWithEntity:insertIntoManagedObjectContext:]
+
+
+PARUsageEventMigration : NSEntityMigrationPolicy
+  // instance methods
+  -[PARUsageEventMigration .cxx_destruct]
+  -[PARUsageEventMigration init]
+  -[PARUsageEventMigration createDestinationInstancesForSourceInstance:entityMapping:manager:error:]
+
+
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSEntityDescription 
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSEntityMigrationPolicy 
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 

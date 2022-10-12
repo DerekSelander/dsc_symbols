@@ -1,0 +1,973 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FIActivitySettingsController
+|| __DATA.__objc_data _OBJC_CLASS_$_FIFitnessAppsStateObserver
+|| __DATA.__objc_data _OBJC_CLASS_$_FIIntervalDefinition
+|| __DATA.__objc_data _OBJC_CLASS_$_FIIntervalQuantityTrigger
+|| __DATA.__objc_data _OBJC_CLASS_$_FIIntervalSetDefinition
+|| __DATA.__objc_data _OBJC_CLASS_$_FIIntervalWorkoutDefinition
+|| __DATA.__objc_data _OBJC_CLASS_$_FIIntervalWorkoutDefinitionsManager
+|| __DATA.__objc_data _OBJC_CLASS_$_FIMindfulnessAppMigrator
+|| __DATA.__objc_data _OBJC_CLASS_$_FIMindfulnessCustomReminderProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_FIMindfulnessReminder
+|| __DATA.__objc_data _OBJC_CLASS_$_FIMindfulnessSessionDataProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_FIMutableTimeSliceGroup
+|| __DATA.__objc_data _OBJC_CLASS_$_FIQuantityInterval
+|| __DATA.__objc_data _OBJC_CLASS_$_FIQuantityIntervalController
+|| __DATA.__objc_data _OBJC_CLASS_$_FIQuantityTimeSlice
+|| __DATA.__objc_data _OBJC_CLASS_$_FIReduction
+|| __DATA.__objc_data _OBJC_CLASS_$_FISimpleHistogram
+|| __DATA.__objc_data _OBJC_CLASS_$_FISleepDataProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_FISleepUserDay
+|| __DATA.__objc_data _OBJC_CLASS_$_FITrailingIntervalController
+|| __DATA.__objc_data _OBJC_CLASS_$_FITrailingQuantityTimeSlice
+|| __DATA.__objc_data _OBJC_CLASS_$_FITypicalDayActivityModel
+|| __DATA.__objc_data _OBJC_CLASS_$_FIValidation
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIActivitySettingsController
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIFitnessAppsStateObserver
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIIntervalDefinition
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIIntervalQuantityTrigger
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIIntervalSetDefinition
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIIntervalWorkoutDefinition
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIIntervalWorkoutDefinitionsManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIMindfulnessAppMigrator
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIMindfulnessCustomReminderProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIMindfulnessReminder
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIMindfulnessSessionDataProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIMutableTimeSliceGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIQuantityInterval
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIQuantityIntervalController
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIQuantityTimeSlice
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIReduction
+|| __DATA.__objc_data _OBJC_METACLASS_$_FISimpleHistogram
+|| __DATA.__objc_data _OBJC_METACLASS_$_FISleepDataProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_FISleepUserDay
+|| __DATA.__objc_data _OBJC_METACLASS_$_FITrailingIntervalController
+|| __DATA.__objc_data _OBJC_METACLASS_$_FITrailingQuantityTimeSlice
+|| __DATA.__objc_data _OBJC_METACLASS_$_FITypicalDayActivityModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIValidation
+|| __DATA_CONST.__const _FIDefaultLocalizationTableName
+|| __DATA_CONST.__const _FIDefaultTinkerLocalizationTableName
+|| __DATA_CONST.__const _FIIntervalErrorDomain
+|| __DATA_CONST.__const _FIMindfulnessReminderCustomDateComponentsKey
+|| __DATA_CONST.__const _FIMindfulnessReminderCustomWeekdaySelectionKey
+|| __DATA_CONST.__const _FIMindfulnessReminderEnabledKey
+|| __DATA_CONST.__const _FIMindfulnessReminderTypeKey
+|| __DATA_CONST.__const _FINanoLifestylePreferencesChangedNotificationKey
+|| __DATA_CONST.__const _FITypicalDayActivityModelTodayActivityDidChangeNotification
+|| __DATA_CONST.__const _HPRFSessionTrackerAppSettingsIntervalWorkoutDefinitions
+|| __DATA_CONST.__const _HPRFSessionTrackerAppSettingsIntervalWorkoutDefinitionsVersion
+|| __DATA_CONST.__const _HPRFSessionTrackerAppSettingsIntervalWorkoutsDomain
+|| __DATA_CONST.__const _kActivityMonitorBundleIdentifier
+|| __DATA_CONST.__const _kFIMindfulnessSessionDataProviderDidUpdateNotification
+|| __DATA_CONST.__const _kFIModifiedExperienceLocalizationTable
+|| __DATA_CONST.__const _kFISimplifiedExperienceLocalizationTable
+|| __DATA_CONST.__const _kFIStandardExperienceLocalizationTable
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoDailyTotalsKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoFlightsClimbedKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoGoalAchievedCountKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoMostRecentGoalKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalBriskMinutesKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalDeepBreathingSessionCountKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalDistanceKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalMoveKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalPushCountKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoTotalStepsKey
+|| __DATA_CONST.__const _kFIWeeklySummaryInfoWheelchairUseKey
+|| __DATA_CONST.__const _kFitnessBundleIdentifier
+|| __DATA_CONST.__const _kNLGuidedWorkoutPreferencesDomain
+|| __DATA_CONST.__const _kNLMindfulnessAppDefaultsDomain
+|| __DATA_CONST.__const _kNLMindfulnessBreathRateKey
+|| __DATA_CONST.__const _kNLMindfulnessCustomRemindersKey
+|| __DATA_CONST.__const _kNLMindfulnessEndOfDayEnabledKey
+|| __DATA_CONST.__const _kNLMindfulnessHapticLevelKey
+|| __DATA_CONST.__const _kNLMindfulnessMigratedBreathRateKey
+|| __DATA_CONST.__const _kNLMindfulnessMigratedHapticLevelKey
+|| __DATA_CONST.__const _kNLMindfulnessSettingsMigrated
+|| __DATA_CONST.__const _kNLMindfulnessStartOfDayEnabledKey
+|| __DATA_CONST.__const _kNLMindfulnessWeeklySummaryEnabledKey
+|| __DATA_CONST.__const _kNLPredictedActivityClassifiedNotification
+|| __DATA_CONST.__const _kNLPredictedActivityStartedMonitoringNotification
+|| __DATA_CONST.__const _kNLPredictedActivityStoppedMonitoringNotification
+|| __DATA_CONST.__const _kNLSessionTrackerAppKeyEnableEndReminders
+|| __DATA_CONST.__const _kNLSessionTrackerAppKeyEnableStartReminders
+|| __DATA_CONST.__const _kNLSessionTrackerAppPreferencesChangedNotification
+|| __DATA_CONST.__const _kNLSessionTrackerAppPreferencesDomain
+|| __DATA_CONST.__const _kSessionTrackerBundleIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FIAppStoreAvailability
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FIAppStoreAvailability
+|| __TEXT.__const _CURRENT_INTERVAL_WORKOUT_DEFINITION_VERSION
+|| __TEXT.__const _FI10MinuteWindow
+|| __TEXT.__const _FI24HourWindow
+|| __TEXT.__const _FIDefaultDayLength
+|| __TEXT.__const _FIRequiredDaysOfActivityHistoryForStreaks
+|| __TEXT.__const _FITypicalDayActivityModelDaysOfActivityHistory
+|| __TEXT.__const _MINIMUM_INTERVAL_WORKOUT_DEFINITION_VERSION
+|| __TEXT.__const _kActivityMoveModeMoveTimeMaximumAge
+|| __TEXT.__const _kFIModifiedExperienceMaximumAge
+|| __TEXT.__const _kFISimplifiedExperienceMaximumAge
+|| __TEXT.__text _FIActivityAnalyticsSubmission
+|| __TEXT.__text _FIActivityAnalyticsSubmissionWithPayload
+|| __TEXT.__text _FIActivityMoveModeAnalyticsSendActivityMoveModeSwitchedInSettings
+|| __TEXT.__text _FIActivityMoveModeAnalyticsSendExperienceType
+|| __TEXT.__text _FIActivityMoveModeChangeSampleForDateComponents
+|| __TEXT.__text _FIActivityMoveModeUserDefault
+|| __TEXT.__text _FIActivityMoveModeWithHealthStore
+|| __TEXT.__text _FIActivitySummaryHasNonZeroMoveGoal
+|| __TEXT.__text _FIAgeInYearsForDateOfBirth
+|| __TEXT.__text _FIAgeInYearsForDateOfBirthComponents
+|| __TEXT.__text _FIAgeInYearsForDateOfBirthComponentsWithCurrentDateAndCalendar
+|| __TEXT.__text _FIAgeInYearsForDateOfBirthWithCurrentDateAndCalendar
+|| __TEXT.__text _FIAreFitnessAppsRestricted
+|| __TEXT.__text _FICMotionConditionForWheelchairUse
+|| __TEXT.__text _FICanonicalQuantityUnitForIntervalType
+|| __TEXT.__text _FIDailyGoalTypeFromString
+|| __TEXT.__text _FIDefaultActivityMoveModeWithAge
+|| __TEXT.__text _FIDefaultExerciseGoalQuantityForActivityMoveMode
+|| __TEXT.__text _FIDefaultStandGoalQuantityForActivityMoveMode
+|| __TEXT.__text _FIDeviceMeetsMinimumOSVersionDaytona
+|| __TEXT.__text _FIDeviceMeetsMinimumOSVersionGlory
+|| __TEXT.__text _FIDistanceQuantityTypeIdentifierForActivityType
+|| __TEXT.__text _FIExperienceTypeForBirthDateComponents
+|| __TEXT.__text _FIExperienceTypeForBirthDateComponentsWithCurrentDateAndCalendar
+|| __TEXT.__text _FIExperienceTypeWithHealthStore
+|| __TEXT.__text _FIExperienceTypeWithHealthStoreAndDefaultExperienceType
+|| __TEXT.__text _FIFilterPauseResumeEvents
+|| __TEXT.__text _FIFilterSamplesByType
+|| __TEXT.__text _FIGetActivePairedDevice
+|| __TEXT.__text _FIIntervalErrorWithDescription
+|| __TEXT.__text _FIIsActivePairedDeviceSatellitePaired
+|| __TEXT.__text _FIIsDeviceSatellitePaired
+|| __TEXT.__text _FIIsEndRemindersEnabled
+|| __TEXT.__text _FIIsFitnessTrackingEnabled
+|| __TEXT.__text _FIIsStartRemindersEnabled
+|| __TEXT.__text _FILocalizationTableForExperienceType
+|| __TEXT.__text _FILocalizeCount
+|| __TEXT.__text _FILocalizePercentComplete
+|| __TEXT.__text _FILocalizedDayName
+|| __TEXT.__text _FILocalizedMonthName
+|| __TEXT.__text _FIMindfulnessDayOffsetFromSunday
+|| __TEXT.__text _FIMindfulnessWeekdayDaySelectionForCalendar
+|| __TEXT.__text _FIMindfulnessWeekdayForCalendarWeekday
+|| __TEXT.__text _FIMindfulnessWeekdaySelectionFromWeekday
+|| __TEXT.__text _FIMindfulnessWeekendDaySelectionForCalendar
+|| __TEXT.__text _FIMoveGoalQuantityForActivitySummary
+|| __TEXT.__text _FIMoveQuantityForActivitySummary
+|| __TEXT.__text _FIQuantityTypeForActivityType
+|| __TEXT.__text _FIRandomKeyForPrefixWithTableName
+|| __TEXT.__text _FIRandomStringForPrefixWithTableName
+|| __TEXT.__text _FIRandomStringWithKeyAndPossibleSuffixesWithTableName
+|| __TEXT.__text _FISampleQuantityInsideDateInterval
+|| __TEXT.__text _FISaveGoalsForNewActivityMoveMode
+|| __TEXT.__text _FISetFitnessTrackingEnabled
+|| __TEXT.__text _FISetOutErrorIfNotNull
+|| __TEXT.__text _FISortEventsByDate
+|| __TEXT.__text _FISortSamplesByDate
+|| __TEXT.__text _FIStandardDistanceQuantity
+|| __TEXT.__text _FIStringByReplacingDynamicPlaceholder
+|| __TEXT.__text _FIStringFromDailyGoalType
+|| __TEXT.__text _FIThresholdDateInsideSample
+|| __TEXT.__text _MoveGoalValueForActivitySummary
+|| __TEXT.__text _MovePercentageForActivitySummary
+|| __TEXT.__text _MoveStatisticsForActivitySummary
+|| __TEXT.__text _MoveValueForActivitySummary
+|| __TEXT.__text _NLHKActivityMoveModeString
+|| __TEXT.__text _UnitForExerciseGoal
+|| __TEXT.__text _UnitForMoveGoal
+|| __TEXT.__text _UnitForStandGoal
+|| __TEXT.__text __FIBoolForPerGizmoDomainAndKey
+|| __TEXT.__text __FIBoolForPerGizmoDomainAndKeyWithDefaultValue
+|| __TEXT.__text __FIBoolForStandardDomainAndKey
+|| __TEXT.__text __FIBoolForStandardDomainAndKeyWithDefaultValue
+|| __TEXT.__text __FINumberForPerGizmoDomainAndKey
+|| __TEXT.__text __FINumberForStandardDomainAndKey
+|| __TEXT.__text __FIStringForKeyInDefaultLocalizableTable
+|| __TEXT.__text __FIStringWithExactKeyWithTableName
+|| __TEXT.__text __FIWriteBoolToPerGizmoDomain
+|| __TEXT.__text __FIWriteBoolToStandardDomain
+|| __TEXT.__text __FIWriteIntegerToPerGizmoDomain
+|| __TEXT.__text __FIWriteIntegerToStandardDomain
+__ AppleMediaServices: _OBJC_CLASS_$_AMSBag
+__ AuthKit: _OBJC_CLASS_$_AKAccountManager
+__ AuthKit: _OBJC_CLASS_$_AKAppleIDAuthenticationController
+__ AuthKit: _OBJC_CLASS_$_AKDeviceListRequestContext
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __CFPreferencesAppSynchronizeWithContainer
+__ CoreFoundation: __CFPreferencesGetAppIntegerValueWithContainer
+__ CoreFoundation: __CFPreferencesSetAppValueWithContainer
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreMotion: _OBJC_CLASS_$_CMFitnessShared
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ HealthKit: _HKActivityMoveModeDefaultsKey
+__ HealthKit: _HKCategoryTypeIdentifierMindfulSession
+__ HealthKit: _HKCreateSerialDispatchQueue
+__ HealthKit: _HKLogActivity
+__ HealthKit: _HKLogCoaching
+__ HealthKit: _HKLogDeepBreathing
+__ HealthKit: _HKLogWorkouts
+__ HealthKit: _HKQuantityTypeIdentifierDistanceCycling
+__ HealthKit: _HKQuantityTypeIdentifierDistanceSwimming
+__ HealthKit: _HKQuantityTypeIdentifierDistanceWalkingRunning
+__ HealthKit: _HKQuantityTypeIdentifierLeanBodyMass
+__ HealthKit: _HKSampleSortIdentifierStartDate
+__ HealthKit: _OBJC_CLASS_$_HKAnchoredObjectQuery
+__ HealthKit: _OBJC_CLASS_$_HKCategorySample
+__ HealthKit: _OBJC_CLASS_$_HKHealthStore
+__ HealthKit: _OBJC_CLASS_$_HKObjectType
+__ HealthKit: _OBJC_CLASS_$_HKQuantity
+__ HealthKit: _OBJC_CLASS_$_HKQuantitySample
+__ HealthKit: _OBJC_CLASS_$_HKQuantityType
+__ HealthKit: _OBJC_CLASS_$_HKSample
+__ HealthKit: _OBJC_CLASS_$_HKSampleQuery
+__ HealthKit: _OBJC_CLASS_$_HKSampleType
+__ HealthKit: _OBJC_CLASS_$_HKSortedSampleArray
+__ HealthKit: _OBJC_CLASS_$_HKUnit
+__ HealthKit: __HKCacheIndexFromDateComponents
+__ HealthKit: __HKCategoryTypeIdentifierActivityMoveModeChange
+__ HealthKit: __HKDefaultDailyActiveHoursGoal
+__ HealthKit: __HKDefaultDailyBriskMinutesGoal
+__ HealthKit: __HKDefaultTinkerDailyActiveHoursGoal
+__ HealthKit: __HKDefaultTinkerDailyBriskMinutesGoal
+__ HealthKit: __HKInitializeLogging
+__ HealthKit: __HKRequiredCalendarUnitsForCacheIndexDateComponents
+__ HealthKit: __HKWorkoutCanonicalEnergyBurnedUnit
+__ HealthKit: _kHKDailyStatisticsIntervalInMinutes
+__ HealthKit: _kHKNanolifestylePreferencesDomain
+__ HealthKit: _kHKPrivacyPreferencesDomain
+__ HealthKit: _kHKPrivacyPreferencesKeyEnableFitnessTracking
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ NanoPreferencesSync: _OBJC_CLASS_$_NPSDomainAccessor
+__ NanoPreferencesSync: _OBJC_CLASS_$_NPSManager
+__ Sleep: _HKSPSleepEventIdentifierBedtime
+__ Sleep: _HKSPSleepEventIdentifierWakeUp
+__ Sleep: _HKSPSleepEventIdentifierWindDown
+__ Sleep: _NSStringFromHKSPSleepScheduleState
+__ Sleep: _OBJC_CLASS_$_HKSPSleepStore
+__ SoftLinking: __sl_dlopen
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+FIMindfulnessReminder : NSObject <NSSecureCoding>
+ @property  NSDateComponents *customDateComponents
+ @property  unsigned long customWeekdaySelection
+ @property  BOOL enabled
+ @property  long long type
+
+  // class methods
+  +[FIMindfulnessReminder supportsSecureCoding]
+
+  // instance methods
+  -[FIMindfulnessReminder _typeDescription]
+  -[FIMindfulnessReminder initWithType:]
+  -[FIMindfulnessReminder initWithCoder:]
+  -[FIMindfulnessReminder .cxx_destruct]
+  -[FIMindfulnessReminder enabled]
+  -[FIMindfulnessReminder isEqual:]
+  -[FIMindfulnessReminder type]
+  -[FIMindfulnessReminder encodeWithCoder:]
+  -[FIMindfulnessReminder initWithType:customDateComponents:customWeekdaySelection:enabled:]
+  -[FIMindfulnessReminder customDateComponents]
+  -[FIMindfulnessReminder customWeekdaySelection]
+  -[FIMindfulnessReminder initWithType:customDateComponents:]
+
+
+FIMindfulnessAppMigrator : NSObject
+  // instance methods
+  -[FIMindfulnessAppMigrator initWithContainer:]
+  -[FIMindfulnessAppMigrator _removeObjectForKey:]
+  -[FIMindfulnessAppMigrator .cxx_destruct]
+  -[FIMindfulnessAppMigrator init]
+  -[FIMindfulnessAppMigrator _synchronize]
+  -[FIMindfulnessAppMigrator _integerForKey:exists:]
+  -[FIMindfulnessAppMigrator _setInteger:key:]
+  -[FIMindfulnessAppMigrator migrateIfNeeded]
+
+
+FITrailingQuantityTimeSlice : NSObject
+ @property  HKQuantityType *quantityType
+ @property  NSDate *startDate
+ @property  NSDate *endDate
+ @property  NSArray *committedSamples
+ @property  BOOL finalized
+ @property  HKQuantity *committedTotal
+ @property  double committedDuration
+ @property  HKQuantity *committedAndAddedTotal
+
+  // instance methods
+  -[FITrailingQuantityTimeSlice finalized]
+  -[FITrailingQuantityTimeSlice .cxx_destruct]
+  -[FITrailingQuantityTimeSlice startDate]
+  -[FITrailingQuantityTimeSlice endDate]
+  -[FITrailingQuantityTimeSlice quantityType]
+  -[FITrailingQuantityTimeSlice initWithQuantityType:startDate:endDate:]
+  -[FITrailingQuantityTimeSlice initWithQuantityType:startDate:endDate:committedSamples:uncommittedSamples:lastCommitDate:committedTotal:finalized:]
+  -[FITrailingQuantityTimeSlice autoCommitDateForSamples:]
+  -[FITrailingQuantityTimeSlice _commitingSamples:toPreviousCommittedTotal:toPreviousCommittedSamples:untilDate:startDate:endDate:]
+  -[FITrailingQuantityTimeSlice committingUntilDate:]
+  -[FITrailingQuantityTimeSlice settingStartDate:]
+  -[FITrailingQuantityTimeSlice initWithQuantityType:startDate:]
+  -[FITrailingQuantityTimeSlice committedAndAddedTotal]
+  -[FITrailingQuantityTimeSlice committedDuration]
+  -[FITrailingQuantityTimeSlice activeDurationUntilDate:]
+  -[FITrailingQuantityTimeSlice addingSample:error:]
+  -[FITrailingQuantityTimeSlice addingSamples:error:]
+  -[FITrailingQuantityTimeSlice settingEndDate:]
+  -[FITrailingQuantityTimeSlice settingTotalQuantityLimit:]
+  -[FITrailingQuantityTimeSlice committedSamples]
+  -[FITrailingQuantityTimeSlice committedTotal]
+  -[FITrailingQuantityTimeSlice _totalByCommittingSample:toPreviousTotal:startDate:endDate:]
+
+
+FIAppStoreAvailability : NSObject
+  // class methods
+  +[FIAppStoreAvailability _isDeviceTablet]
+  +[FIAppStoreAvailability isFitnessPlusStorefrontContentAvailableWithCompletion:]
+  +[FIAppStoreAvailability _isSupportedWatchAvailableWithCompletion:]
+  +[FIAppStoreAvailability fetchIsFitnessAvailableForDeviceWithCompletion:]
+
+
+FIValidation : NSObject
+ @property  NSString *name
+ @property  @? test
+
+  // class methods
+  +[FIValidation validationWithName:test:]
+  +[FIValidation performValidations:withObject:error:]
+
+  // instance methods
+  -[FIValidation name]
+  -[FIValidation .cxx_destruct]
+  -[FIValidation test]
+  -[FIValidation validateObject:withError:]
+
+
+FISleepDataProvider : NSObject <HKSPSleepStoreObserver>
+ @property  FISleepUserDay *sleepUserDay
+ @property  NSDate *lastGoodMorningDismissedDate
+ @property  BOOL isGoodMorningAlertNotificationEnabled
+ @property  NSDate *lastAlarmWakeUpDate
+ @property  BOOL isUserAwake
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[FISleepDataProvider .cxx_destruct]
+  -[FISleepDataProvider sleepStore:sleepEventRecordDidChange:]
+  -[FISleepDataProvider sleepStore:sleepScheduleDidChange:]
+  -[FISleepDataProvider activate]
+  -[FISleepDataProvider _setUserDefaults:]
+  -[FISleepDataProvider dealloc]
+  -[FISleepDataProvider sleepStore:sleepSettingsDidChange:]
+  -[FISleepDataProvider sleepStore:sleepScheduleStateDidChange:]
+  -[FISleepDataProvider sleepStore:sleepModeOnDidChange:]
+  -[FISleepDataProvider sleepStore:sleepScheduleModelDidChange:]
+  -[FISleepDataProvider _fetchGoodMorningAlertNotificationEnabled]
+  -[FISleepDataProvider _fetchLastGoodMorningDismissedDate]
+  -[FISleepDataProvider _fetchLastAlarmWakeUpDate]
+  -[FISleepDataProvider _updateCurrentSleepScheduleState]
+  -[FISleepDataProvider _initialLoadSleepUserDay]
+  -[FISleepDataProvider _fetchCachedSleepUserDay]
+  -[FISleepDataProvider _setSleepUserDay:]
+  -[FISleepDataProvider _setEmptySleepUserDay:]
+  -[FISleepDataProvider _updateSleepUserDay]
+  -[FISleepDataProvider _clearSleepUserDay]
+  -[FISleepDataProvider _isDate:within24HoursOfDate:]
+  -[FISleepDataProvider _updateSleepUserDayFromWakeUp:currentDate:]
+  -[FISleepDataProvider _updateSleepUserDayFromWindDownOrBedtime:currentDate:]
+  -[FISleepDataProvider _setSleepUserDayWithStartOfDay:endOfDay:]
+  -[FISleepDataProvider _cacheSleepUserDay:]
+  -[FISleepDataProvider _lastAlarmWakeUpDateFromRecord:]
+  -[FISleepDataProvider _clearCurrentSleepScheduleState]
+  -[FISleepDataProvider _updateLastAlarmWakeUpDateIfNeeded:]
+  -[FISleepDataProvider _updateLastGoodMorningDismissedDateIfNeeded:]
+  -[FISleepDataProvider _updateGoodMorningAlertNotificationEnabledIfNeeded:]
+  -[FISleepDataProvider initWithSleepStore:delegate:]
+  -[FISleepDataProvider sleepUserDay]
+  -[FISleepDataProvider lastGoodMorningDismissedDate]
+  -[FISleepDataProvider isGoodMorningAlertNotificationEnabled]
+  -[FISleepDataProvider lastAlarmWakeUpDate]
+  -[FISleepDataProvider isUserAwake]
+  -[FISleepDataProvider setSleepUserDay:]
+  -[FISleepDataProvider setLastGoodMorningDismissedDate:]
+  -[FISleepDataProvider setIsGoodMorningAlertNotificationEnabled:]
+  -[FISleepDataProvider setLastAlarmWakeUpDate:]
+  -[FISleepDataProvider setIsUserAwake:]
+
+
+FIFitnessAppsStateObserver : NSObject <LSApplicationWorkspaceObserverProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[FIFitnessAppsStateObserver .cxx_destruct]
+  -[FIFitnessAppsStateObserver applicationStateDidChange:]
+  -[FIFitnessAppsStateObserver initWithDelegate:]
+  -[FIFitnessAppsStateObserver dealloc]
+  -[FIFitnessAppsStateObserver _cacheInitialFitnessAppsRestrictedState]
+  -[FIFitnessAppsStateObserver _fitnessAppBundleIdentifiers]
+  -[FIFitnessAppsStateObserver _cacheCurrentFitnessAppsRestrictedStateWithProxies:initialLoad:]
+  -[FIFitnessAppsStateObserver areFitnessAppsRestricted]
+
+
+FIMindfulnessSessionDataProvider : NSObject
+  // instance methods
+  -[FIMindfulnessSessionDataProvider .cxx_destruct]
+  -[FIMindfulnessSessionDataProvider dealloc]
+  -[FIMindfulnessSessionDataProvider initWithHealthStore:]
+  -[FIMindfulnessSessionDataProvider startMindfulnessSessionQueryIfNeeded]
+  -[FIMindfulnessSessionDataProvider _queue_retryMindfulSessionQueryWithRetryCount:]
+  -[FIMindfulnessSessionDataProvider _createMindfulnessSessionsQueryWithRetryCount:]
+  -[FIMindfulnessSessionDataProvider _queue_stopMindfulSessionQuery]
+  -[FIMindfulnessSessionDataProvider _queue_startMindfulnessSessionQueryWithRetryCount:]
+  -[FIMindfulnessSessionDataProvider allMindfulnessSessionsWithCompletion:]
+
+
+FITrailingIntervalController : NSObject
+ @property  HKQuantity *threshold
+ @property  BOOL thresholdReached
+ @property  double committedDuration
+ @property  HKQuantity *quantity
+ @property  NSArray *pauseResumeEvents
+
+  // instance methods
+  -[FITrailingIntervalController addSample:]
+  -[FITrailingIntervalController addSamples:]
+  -[FITrailingIntervalController quantity]
+  -[FITrailingIntervalController threshold]
+  -[FITrailingIntervalController .cxx_destruct]
+  -[FITrailingIntervalController setThreshold:]
+  -[FITrailingIntervalController committedDuration]
+  -[FITrailingIntervalController activeDurationUntilDate:]
+  -[FITrailingIntervalController _updateSlicesWithSamples:]
+  -[FITrailingIntervalController _determineAndProcessThresholdReached]
+  -[FITrailingIntervalController _addPauseEvent:]
+  -[FITrailingIntervalController _addResumeEvent:]
+  -[FITrailingIntervalController _processUncommittedSamples]
+  -[FITrailingIntervalController initWithQuantityType:threshold:startDate:]
+  -[FITrailingIntervalController addEvent:withError:]
+  -[FITrailingIntervalController idleDurationUntilDate:]
+  -[FITrailingIntervalController thresholdReached]
+  -[FITrailingIntervalController pauseResumeEvents]
+
+
+FIIntervalDefinition : NSObject <FIDictionaryRepresentable>
+ @property  long long type
+ @property  HKQuantity *quantity
+
+  // class methods
+  +[FIIntervalDefinition intervalDefinitionWithTypeIdentifier:quantity:]
+  +[FIIntervalDefinition definitionFromDictionary:error:]
+
+  // instance methods
+  -[FIIntervalDefinition quantity]
+  -[FIIntervalDefinition .cxx_destruct]
+  -[FIIntervalDefinition dictionaryRepresentation]
+  -[FIIntervalDefinition type]
+  -[FIIntervalDefinition initWithTypeIdentifier:quantity:]
+  -[FIIntervalDefinition byChangingType:quantity:]
+
+
+FIMutableTimeSliceGroup : NSObject
+ @property  NSArray *slices
+ @property  BOOL allSlicesFinalized
+
+  // class methods
+  +[FIMutableTimeSliceGroup timeSliceGroupForQuantityTypes:startDate:]
+
+  // instance methods
+  -[FIMutableTimeSliceGroup slices]
+  -[FIMutableTimeSliceGroup .cxx_destruct]
+  -[FIMutableTimeSliceGroup initWithTimeSlices:]
+  -[FIMutableTimeSliceGroup commitAllSlicesToDate:]
+  -[FIMutableTimeSliceGroup updateSlicesWithEndDate:]
+  -[FIMutableTimeSliceGroup updateSlicesWithSample:]
+  -[FIMutableTimeSliceGroup allSlicesFinalized]
+
+
+FIReduction : NSObject
+ @property  id object
+
+  // class methods
+  +[FIReduction reductionWithObject:]
+
+  // instance methods
+  -[FIReduction initWithObject:]
+  -[FIReduction .cxx_destruct]
+  -[FIReduction object]
+
+
+FISleepUserDay : NSObject <NSSecureCoding>
+ @property  NSDate *creationDate
+ @property  NSDate *startOfDay
+ @property  NSDate *endOfDay
+
+  // class methods
+  +[FISleepUserDay supportsSecureCoding]
+
+  // instance methods
+  -[FISleepUserDay initWithCoder:]
+  -[FISleepUserDay isEmpty]
+  -[FISleepUserDay setCreationDate:]
+  -[FISleepUserDay .cxx_destruct]
+  -[FISleepUserDay creationDate]
+  -[FISleepUserDay endOfDay]
+  -[FISleepUserDay startOfDay]
+  -[FISleepUserDay encodeWithCoder:]
+  -[FISleepUserDay setStartOfDay:]
+  -[FISleepUserDay initEmptySleepUserDay]
+  -[FISleepUserDay initWithStartOfDay:endOfDay:]
+  -[FISleepUserDay setEndOfDay:]
+
+
+FIActivitySettingsController : NSObject <NSCopying>
+ @property  NSDate *dateOfBirth
+ @property  HKQuantity *height
+ @property  HKQuantity *weight
+ @property  long long biologicalSex
+ @property  long long wheelchairUse
+ @property  HKQuantity *leanBodyMass
+ @property  unsigned long experienceType
+ @property  @? updateHandler
+
+  // instance methods
+  -[FIActivitySettingsController setUpdateHandler:]
+  -[FIActivitySettingsController setWeight:]
+  -[FIActivitySettingsController updateHandler]
+  -[FIActivitySettingsController setBiologicalSex:]
+  -[FIActivitySettingsController biologicalSex]
+  -[FIActivitySettingsController weight]
+  -[FIActivitySettingsController .cxx_destruct]
+  -[FIActivitySettingsController setWheelchairUse:]
+  -[FIActivitySettingsController setHeight:]
+  -[FIActivitySettingsController init]
+  -[FIActivitySettingsController height]
+  -[FIActivitySettingsController initWithHealthStore:]
+  -[FIActivitySettingsController dateOfBirth]
+  -[FIActivitySettingsController copyWithZone:]
+  -[FIActivitySettingsController setDateOfBirth:]
+  -[FIActivitySettingsController wheelchairUse]
+  -[FIActivitySettingsController experienceType]
+  -[FIActivitySettingsController _setUncommitedValue:forPropertyKey:]
+  -[FIActivitySettingsController _logAndNilError:operationDescription:]
+  -[FIActivitySettingsController _commitValue:forPropertyKey:error:]
+  -[FIActivitySettingsController _hasDirtyPropertyForPropertyKey:]
+  -[FIActivitySettingsController populateExistingCharacteristics]
+  -[FIActivitySettingsController commmitWithError:]
+  -[FIActivitySettingsController leanBodyMass]
+
+
+FIQuantityTimeSlice : NSObject
+ @property  BOOL finalized
+ @property  HKQuantityType *quantityType
+ @property  NSDate *startDate
+ @property  NSDate *endDate
+ @property  HKQuantity *committedTotal
+ @property  HKQuantity *committedAndAddedTotal
+
+  // instance methods
+  -[FIQuantityTimeSlice finalized]
+  -[FIQuantityTimeSlice .cxx_destruct]
+  -[FIQuantityTimeSlice startDate]
+  -[FIQuantityTimeSlice endDate]
+  -[FIQuantityTimeSlice quantityType]
+  -[FIQuantityTimeSlice initWithQuantityType:startDate:endDate:]
+  -[FIQuantityTimeSlice committingUntilDate:]
+  -[FIQuantityTimeSlice initWithQuantityType:startDate:]
+  -[FIQuantityTimeSlice committedAndAddedTotal]
+  -[FIQuantityTimeSlice addingSample:error:]
+  -[FIQuantityTimeSlice addingSamples:error:]
+  -[FIQuantityTimeSlice settingEndDate:]
+  -[FIQuantityTimeSlice committedTotal]
+  -[FIQuantityTimeSlice _totalByCommittingSample:toPreviousTotal:startDate:endDate:]
+  -[FIQuantityTimeSlice initWithQuantityType:startDate:endDate:uncommitedSamples:lastCommitDate:committedTotal:finalized:]
+  -[FIQuantityTimeSlice _commitingSamples:toPreviousCommittedTotal:untilDate:startDate:endDate:]
+
+
+FIQuantityIntervalController : NSObject <FIIntervalController>
+ @property  BOOL intervalComplete
+ @property  NSDate *intervalEndDate
+ @property  BOOL allSlicesFinalized
+
+  // instance methods
+  -[FIQuantityIntervalController addSample:]
+  -[FIQuantityIntervalController .cxx_destruct]
+  -[FIQuantityIntervalController allSlicesFinalized]
+  -[FIQuantityIntervalController _updateTriggerWithSample:]
+  -[FIQuantityIntervalController intervalComplete]
+  -[FIQuantityIntervalController initWithIntervalQuantityType:threshold:startDate:trackedQuantityTypes:]
+  -[FIQuantityIntervalController isIntervalEndDate]
+
+
+FISimpleHistogram : NSObject
+  // instance methods
+  -[FISimpleHistogram isEqual:]
+  -[FISimpleHistogram bucketCount]
+  -[FISimpleHistogram dealloc]
+  -[FISimpleHistogram descriptionArray]
+  -[FISimpleHistogram initWithNumberOfBuckets:]
+  -[FISimpleHistogram valueForBucketAtIndex:]
+  -[FISimpleHistogram addValue:toBucketAtIndex:]
+  -[FISimpleHistogram numberOfValuesInBucketAtIndex:]
+
+
+FIIntervalWorkoutDefinitionsManager : NSObject
+  // instance methods
+  -[FIIntervalWorkoutDefinitionsManager .cxx_destruct]
+  -[FIIntervalWorkoutDefinitionsManager init]
+  -[FIIntervalWorkoutDefinitionsManager _checkVersion]
+  -[FIIntervalWorkoutDefinitionsManager loadIntervalWorkoutDefinitions]
+  -[FIIntervalWorkoutDefinitionsManager _saveDefaultIntervalWorkouts]
+  -[FIIntervalWorkoutDefinitionsManager _deserializeIntervalWorkoutDefinitions:]
+  -[FIIntervalWorkoutDefinitionsManager _serializeRootIntervalWorkoutDefinitions:]
+  -[FIIntervalWorkoutDefinitionsManager _saveRootIntervalWorkoutDefinitions:]
+  -[FIIntervalWorkoutDefinitionsManager _updateIntervalWorkoutDefinition:activityTypeIdentifier:]
+  -[FIIntervalWorkoutDefinitionsManager _serializeAndSaveRootIntervalWorkoutDefinitions:]
+  -[FIIntervalWorkoutDefinitionsManager _trimRootIntervalWorkoutDefinitions:]
+  -[FIIntervalWorkoutDefinitionsManager _defaultUserIntervalWorkouts]
+  -[FIIntervalWorkoutDefinitionsManager _mockQuarterMileSprints]
+  -[FIIntervalWorkoutDefinitionsManager _mockVariedSpeed]
+  -[FIIntervalWorkoutDefinitionsManager _mockHIIT3010]
+  -[FIIntervalWorkoutDefinitionsManager saveIntervalWorkoutDefinition:activityTypeIdentifier:]
+  -[FIIntervalWorkoutDefinitionsManager removeIntervalWorkoutDefinitionAtIndex:activityTypeIdentifier:]
+  -[FIIntervalWorkoutDefinitionsManager intervalWorkoutDefinitionsForActivityTypeIdentifier:]
+
+
+FIMindfulnessCustomReminderProvider : NSObject
+  // instance methods
+  -[FIMindfulnessCustomReminderProvider .cxx_destruct]
+  -[FIMindfulnessCustomReminderProvider init]
+  -[FIMindfulnessCustomReminderProvider reminders]
+  -[FIMindfulnessCustomReminderProvider updateReminders:]
+
+
+FIIntervalWorkoutDefinition : NSObject <FIDictionaryRepresentable>
+ @property  NSString *name
+ @property  NSUUID *identifier
+ @property  NSArray *sets
+ @property  unsigned long intervalCount
+
+  // class methods
+  +[FIIntervalWorkoutDefinition definitionFromDictionary:error:]
+  +[FIIntervalWorkoutDefinition intervalWorkoutDefinition]
+
+  // instance methods
+  -[FIIntervalWorkoutDefinition name]
+  -[FIIntervalWorkoutDefinition intervalCount]
+  -[FIIntervalWorkoutDefinition .cxx_destruct]
+  -[FIIntervalWorkoutDefinition sets]
+  -[FIIntervalWorkoutDefinition dictionaryRepresentation]
+  -[FIIntervalWorkoutDefinition identifier]
+  -[FIIntervalWorkoutDefinition initWithName:identifier:sets:]
+  -[FIIntervalWorkoutDefinition byReplacingSetDefinitionAtIndex:withSetDefinition:]
+  -[FIIntervalWorkoutDefinition intervalDefinitionForIntervalAtIndex:]
+  -[FIIntervalWorkoutDefinition byChangingName:]
+  -[FIIntervalWorkoutDefinition byAddingSetDefinition:]
+  -[FIIntervalWorkoutDefinition byInsertingSetDefinition:atIndex:]
+  -[FIIntervalWorkoutDefinition byRemovingSetDefinitionAtIndex:]
+  -[FIIntervalWorkoutDefinition byAddingIntervalDefinition:toSetIndex:]
+  -[FIIntervalWorkoutDefinition byInsertingIntervalDefinition:atIndexPath:]
+  -[FIIntervalWorkoutDefinition byReplacingIntervalDefinitionAtIndexPath:withIntervalDefinition:]
+  -[FIIntervalWorkoutDefinition byRemovingIntervalDefinitionAtIndexPath:]
+
+
+FITypicalDayActivityModel : NSObject <FISleepDataProviderDelegate>
+ @property  <FITypicalDayActivityModelDelegate> *delegate
+ @property  long long totalActiveDays
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[FITypicalDayActivityModel _emptySimpleHistogram]
+
+  // instance methods
+  -[FITypicalDayActivityModel currentDate]
+  -[FITypicalDayActivityModel .cxx_destruct]
+  -[FITypicalDayActivityModel setDelegate:]
+  -[FITypicalDayActivityModel delegate]
+  -[FITypicalDayActivityModel currentCalendar]
+  -[FITypicalDayActivityModel _setSleepUserDay:]
+  -[FITypicalDayActivityModel _updateSleepUserDay]
+  -[FITypicalDayActivityModel sleepDataProviderUserDayDidUpdate]
+  -[FITypicalDayActivityModel sleepDataProviderLastAlarmWakeUpDateDidChange]
+  -[FITypicalDayActivityModel sleepDataProviderLastGoodMorningDismissedDateDidChange]
+  -[FITypicalDayActivityModel sleepUserDay]
+  -[FITypicalDayActivityModel initForDateInterval:delegate:sleepDataProvider:]
+  -[FITypicalDayActivityModel _queue_populateHistogramsAndOffWristDateForToday]
+  -[FITypicalDayActivityModel startOfToday]
+  -[FITypicalDayActivityModel _bucketIndexForDate:startOfDay:bucketDates:]
+  -[FITypicalDayActivityModel _waitUntilActivitySummaryLoaded]
+  -[FITypicalDayActivityModel _queue_currentValueForHistogram:]
+  -[FITypicalDayActivityModel _percentageOfTypicalDayComparedToNowForGoal:]
+  -[FITypicalDayActivityModel _willCompleteGoalWithType:bufferPercentage:]
+  -[FITypicalDayActivityModel userEndOfDay]
+  -[FITypicalDayActivityModel endOfToday]
+  -[FITypicalDayActivityModel percentageOfTypicalDayMoveComparedToNow]
+  -[FITypicalDayActivityModel percentageOfTypicalDayBriskMinutesEarnedComparedToNow]
+  -[FITypicalDayActivityModel userStartOfDay]
+  -[FITypicalDayActivityModel totalActiveDays]
+  -[FITypicalDayActivityModel briskWalkTimeToCompleteMoveGoalWithAcitivitySettingsController:]
+  -[FITypicalDayActivityModel _queue_briskWalkTimeToCompleteMoveGoalWithDateOfBirth:biologicalSex:height:weight:wheelchairUse:experienceType:]
+  -[FITypicalDayActivityModel projectedOffWrist]
+  -[FITypicalDayActivityModel _goodMorningAlertDismissedDateForToday]
+  -[FITypicalDayActivityModel _bucketDateForIndex:startOfDay:]
+  -[FITypicalDayActivityModel _queue_updateHistogram:goalType:activitySummary:]
+  -[FITypicalDayActivityModel _queue_updateProjectedOffWristDateHistogram:activitySummary:activeDays:]
+  -[FITypicalDayActivityModel _queue_enumerateActivitySummariesOrderedByCacheIndexWithCalendar:error:handler:]
+  -[FITypicalDayActivityModel _queue_calculateProjectedOffWristDateFromHistogram:activeDays:]
+  -[FITypicalDayActivityModel initForDateInterval:delegate:]
+  -[FITypicalDayActivityModel valueOfTypicalDayBriskMinutesEarnedByNow]
+  -[FITypicalDayActivityModel valueOfTypicalDayMoveEarnedByNow]
+  -[FITypicalDayActivityModel willCompleteMoveGoalWithBufferPercentage:]
+  -[FITypicalDayActivityModel willCompleteExerciseGoalWithBufferPercentage:]
+  -[FITypicalDayActivityModel willCompleteStandGoalOrItIsTooLateWithBufferPercentage:]
+  -[FITypicalDayActivityModel currentMoveGoalPercentage]
+  -[FITypicalDayActivityModel currentExerciseGoalPercentage]
+  -[FITypicalDayActivityModel currentStandGoalPercentage]
+  -[FITypicalDayActivityModel willCompletingMoveRingEarnStreakAchievement]
+  -[FITypicalDayActivityModel projectedToBeatMoveRecordByEndOfDay]
+  -[FITypicalDayActivityModel rebuildWithInterval:]
+  -[FITypicalDayActivityModel shouldSuggestWalkWithActivitySettingsController:]
+  -[FITypicalDayActivityModel projectedDayDuration]
+  -[FITypicalDayActivityModel isSleepAlarmEnabledForToday]
+  -[FITypicalDayActivityModel userWakeUpDateForToday]
+  -[FITypicalDayActivityModel handleUpdatedCurrentActivitySummary:]
+  -[FITypicalDayActivityModel _setProjectedOffWristDateToday:]
+  -[FITypicalDayActivityModel _sleepDataProvider]
+
+
+FIIntervalQuantityTrigger : NSObject
+ @property  HKQuantityType *quantityType
+ @property  BOOL triggered
+ @property  NSDate *triggeredDate
+
+  // instance methods
+  -[FIIntervalQuantityTrigger .cxx_destruct]
+  -[FIIntervalQuantityTrigger triggered]
+  -[FIIntervalQuantityTrigger quantityType]
+  -[FIIntervalQuantityTrigger addingSample:error:]
+  -[FIIntervalQuantityTrigger initWithQuantityType:startDate:threshold:]
+  -[FIIntervalQuantityTrigger triggeredDate]
+  -[FIIntervalQuantityTrigger initWithQuantityTimeslice:threshold:triggeredDate:]
+  -[FIIntervalQuantityTrigger settingTimeSlice:]
+  -[FIIntervalQuantityTrigger _finalizedTriggerByAddingSample:toSlice:withPreviousTotal:threshold:]
+
+
+FIIntervalSetDefinition : NSObject <FIDictionaryRepresentable>
+ @property  NSArray *intervalDefinitions
+ @property  long long repeatCount
+ @property  long long setType
+ @property  unsigned long intervalCount
+
+  // class methods
+  +[FIIntervalSetDefinition definitionFromDictionary:error:]
+
+  // instance methods
+  -[FIIntervalSetDefinition intervalCount]
+  -[FIIntervalSetDefinition .cxx_destruct]
+  -[FIIntervalSetDefinition dictionaryRepresentation]
+  -[FIIntervalSetDefinition repeatCount]
+  -[FIIntervalSetDefinition setType]
+  -[FIIntervalSetDefinition intervalAtIndex:]
+  -[FIIntervalSetDefinition initWithIntervalDefinitions:repeatCount:setType:]
+  -[FIIntervalSetDefinition byAddingIntervalDefinition:]
+  -[FIIntervalSetDefinition byInsertingIntervalDefinition:atIndex:]
+  -[FIIntervalSetDefinition byReplacingIntervalDefinitionAtIndex:withIntervalDefinition:]
+  -[FIIntervalSetDefinition byRemovingIntervalDefinitionAtIndex:]
+  -[FIIntervalSetDefinition intervalDefinitions]
+  -[FIIntervalSetDefinition byChangingRepeatCount:]
+  -[FIIntervalSetDefinition byChangingSetType:]
+
+
+FIQuantityInterval : NSObject
+ @property  FIIntervalDefinition *definition
+ @property  NSDate *startDate
+ @property  HKQuantityType *trackedQuantityType
+ @property  HKQuantity *threshold
+
+  // instance methods
+  -[FIQuantityInterval threshold]
+  -[FIQuantityInterval definition]
+  -[FIQuantityInterval .cxx_destruct]
+  -[FIQuantityInterval startDate]
+  -[FIQuantityInterval initWithIntervalDefinition:activityType:startDate:]
+  -[FIQuantityInterval trackedQuantityType]
+
+
+HKSample(Fitness)
+	// instance methods
+	-[HKSample(Fitness) fi_overlapsStartDate:endDate:]
+	-[HKSample(Fitness) fi_isBeforeDate:]
+	-[HKSample(Fitness) fi_isAfterDate:]
+	-[HKSample(Fitness) fi_spansDate:useStrictDateLimits:]
+
+(FIAdditions)
+	// class methods
+	+[(FIAdditions) fi_arrayByEnumeratingRange:usingBlock:]
+
+	// instance methods
+	-[(FIAdditions) fi_mapUsingBlock:]
+	-[(FIAdditions) fi_flatMapUsingBlock:]
+	-[(FIAdditions) fi_filteredArrayUsingBlock:]
+	-[(FIAdditions) fi_reduceWithReduction:block:]
+
+01 00 0200 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAccountManager 
+01 00 0200 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAppleIDAuthenticationController 
+01 00 0200 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKDeviceListRequestContext 
+01 00 0300 /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices: AMSBag 
+01 00 0600 /System/Library/Frameworks/CoreMotion.framework/CoreMotion: CMFitnessShared 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKAnchoredObjectQuery 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKCategorySample 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKHealthStore 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKObjectType 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKQuantity 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKQuantitySample 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKQuantityType 
+01 00 0a00 /System/Library/PrivateFrameworks/Sleep.framework/Sleep: HKSPSleepStore 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKSample 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKSampleQuery 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKSampleType 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKSortedSampleArray 
+01 00 0700 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKUnit 
+01 00 0400 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 0400 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0800 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0900 /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync: NPSDomainAccessor 
+01 00 0900 /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync: NPSManager 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0c00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

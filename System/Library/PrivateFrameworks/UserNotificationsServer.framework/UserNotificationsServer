@@ -1,0 +1,2947 @@
+|| __DATA.__data _UILocalNotificationToUNSNotificationRecord
+|| __DATA.__data _UIUserNotificationActionToUNSNotificationActionRecord
+|| __DATA.__data _UIUserNotificationCategoryToUNSNotificationCategoryRecord
+|| __DATA.__data _UNNotificationActionToUNSNotificationActionRecord
+|| __DATA.__data _UNNotificationAttachmentToUNSAttachmentRecord
+|| __DATA.__data _UNNotificationCategoryToUNSNotificationCategoryRecord
+|| __DATA.__data _UNNotificationContactToUNSContactRecord
+|| __DATA.__data _UNNotificationRequestToNotificationRecord
+|| __DATA.__data _UNNotificationToNotificationRecord
+|| __DATA.__data _UNNotificationTopicRequestToUNSNotificationTopicRecord
+|| __DATA.__data _UNSAttachmentRecordToDictionary
+|| __DATA.__data _UNSAttachmentRecordToUNNotificationAttachment
+|| __DATA.__data _UNSContactRecordToDictionary
+|| __DATA.__data _UNSContactRecordToUNNotificationContact
+|| __DATA.__data _UNSDictionaryToAttachmentRecord
+|| __DATA.__data _UNSDictionaryToContactRecord
+|| __DATA.__data _UNSDictionaryToNotificationActionRecord
+|| __DATA.__data _UNSDictionaryToNotificationCategoryRecord
+|| __DATA.__data _UNSDictionaryToNotificationRecord
+|| __DATA.__data _UNSDictionaryToNotificationTopicRecord
+|| __DATA.__data _UNSDictionaryToUNSNotificationSchedule
+|| __DATA.__data _UNSDictionaryToUNSPushRegistration
+|| __DATA.__data _UNSNotificationActionRecordToDictionary
+|| __DATA.__data _UNSNotificationCategoryRecordToDictionary
+|| __DATA.__data _UNSNotificationRecordDictionaryMigration
+|| __DATA.__data _UNSNotificationRecordDictionaryValidation
+|| __DATA.__data _UNSNotificationRecordToDictionary
+|| __DATA.__data _UNSNotificationRecordToUNNotificationTrigger
+|| __DATA.__data _UNSNotificationScheduleToDictionary
+|| __DATA.__data _UNSNotificationTopicRecordToDictionary
+|| __DATA.__data _UNSPushRegistrationToDictionary
+|| __DATA.__objc_data _OBJC_CLASS_$_UNSFileHandleWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_UNSNotificationTopicRecordMapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_UNSFileHandleWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_UNSNotificationTopicRecordMapper
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._applicationLauncher
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._applicationService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._applicationStateMonitor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._attachmentsRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._attachmentsService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._categoryRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._communicationContextService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._contentProtectionManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._daemonLauncher
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._dataProviderFactory
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._directory
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._installedSourceQueue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._librarian
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._libraryDirectory
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._localizationService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._locationMonitor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._notificationAuthorizationService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._notificationRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._notificationScheduleRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._notificationSchedulingService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._notificationSettingsService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._pendingNotificationRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._pushRegistrationRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._remoteNotificationService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._settingsGateway
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._systemSourceBundleIdentifiers
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._topicRepository
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._userNotificationServerConnectionListener
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._userNotificationServerRemoteNotificationConnectionListener
+|| __DATA.__objc_ivar _OBJC_IVAR_$_UNSUserNotificationServer._userNotificationServerSettingsConnectionListener
+|| __DATA_CONST.__const _UNNotificationIdentifierKey
+|| __DATA_CONST.__const _UNSKeyedObservableUniversalKey
+|| __DATA_CONST.__const _UNSNotificationServiceExtensionPointIdentifier
+|| __DATA_CONST.__const _kUNNotificationActionTypeDefault
+|| __DATA_CONST.__const _kUNNotificationActionTypeTextInput
+|| __DATA_CONST.__const _kUNNotificationTriggerTypeCalendar
+|| __DATA_CONST.__const _kUNNotificationTriggerTypeLocal
+|| __DATA_CONST.__const _kUNNotificationTriggerTypeLocation
+|| __DATA_CONST.__const _kUNNotificationTriggerTypePush
+|| __DATA_CONST.__const _kUNNotificationTriggerTypeTimeInterval
+|| __DATA_CONST.__const _kUNNotificationTypeLocal
+|| __DATA_CONST.__const _kUNNotificationTypeRemote
+|| __DATA_CONST.__const _kUNSNotificationCategoryBackgroundStyleDark
+|| __DATA_CONST.__const _kUNSNotificationCategoryBackgroundStyleSystem
+|| __DATA_CONST.__const _kUNSNotificationCategoryListPriorityHigh
+|| __DATA_CONST.__const _kUNSNotificationCategoryListPriorityTop
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSApplicationLauncher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSApplicationService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSAtomicDataContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSAttachmentRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSAttachmentsRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSAttachmentsService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSBlueListMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSBundleLibrarian
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSContactRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSContentProtectionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSCriticalAlertAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSDaemonLauncher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSDataStoreReceipt
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSDefaultDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSDefaultDataProviderFactory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSExampleUserNotificationCenter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSFileHandleContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSHybridContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSKeyedDataStoreRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSKeyedDictionaryRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSKeyedObservable
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSLocalNotificationClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSLocalizationService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSLocationMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationActionRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationAuthorizationService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationCategoryRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationCategoryRecordMapper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationCategoryRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationDeliveryAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecordAddUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecordMapper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecordRemoveUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecordReplaceUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRecordUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationSchedule
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationScheduleRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationSchedulingService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationServiceExtension
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationServiceExtensionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationSettingsService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationSourceDescription
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationSourceSettingsDescription
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationTopicRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSNotificationTopicRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSPendingNotificationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSPushRegistration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSPushRegistrationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSRemoteNotificationClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSRemoteNotificationServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSSettingsGateway
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServerConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServerDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServerRemoteNotificationConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServerSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUserNotificationServerSettingsConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_UNSUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSApplicationLauncher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSApplicationService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSAtomicDataContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSAttachmentRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSAttachmentsRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSAttachmentsService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSBlueListMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSBundleLibrarian
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSContactRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSContentProtectionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSCriticalAlertAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSDaemonLauncher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSDataStoreReceipt
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSDefaultDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSDefaultDataProviderFactory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSExampleUserNotificationCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSFileHandleContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSHybridContentProtectionStrategy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSKeyedDataStoreRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSKeyedDictionaryRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSKeyedObservable
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSLocalNotificationClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSLocalizationService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSLocationMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationActionRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationAuthorizationService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationCategoryRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationCategoryRecordMapper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationCategoryRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationDeliveryAuthorizationAlertController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecordAddUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecordMapper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecordRemoveUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecordReplaceUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRecordUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationSchedule
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationScheduleRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationSchedulingService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationServiceExtension
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationServiceExtensionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationSettingsService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationSourceDescription
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationSourceSettingsDescription
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationTopicRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSNotificationTopicRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSPendingNotificationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSPushRegistration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSPushRegistrationRepository
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSRemoteNotificationClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSRemoteNotificationServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSSettingsGateway
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServerConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServerDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServerRemoteNotificationConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServerSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUserNotificationServerSettingsConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_UNSUtilities
+|| __TEXT.__text _BBAnnounceCarPlaySettingFromUNNotificationAnnouncementCarPlaySetting
+|| __TEXT.__text _BBAnnounceSettingFromUNNotificationSetting
+|| __TEXT.__text _BBBulletinGroupingSettingFromUNNotificationGroupingSetting
+|| __TEXT.__text _BBContentPreviewSettingFromUNShowPreviewsSetting
+|| __TEXT.__text _BBScheduledDeliverySettingFromUNNotificationSetting
+|| __TEXT.__text _BBSystemSettingFromUNNotificationSetting
+|| __TEXT.__text _UNEnabledAuthorizationOptionsForPushSettings
+|| __TEXT.__text _UNNotificationAnnouncementCarPlaySettingFromBBAnnounceCarPlaySetting
+|| __TEXT.__text _UNNotificationGroupingSettingFromBBBulletinGroupingSetting
+|| __TEXT.__text _UNNotificationSettingFromBBAnnounceSetting
+|| __TEXT.__text _UNNotificationSettingFromBBScheduledDeliverySetting
+|| __TEXT.__text _UNNotificationSettingFromBBSystemSetting
+|| __TEXT.__text _UNSBundle
+|| __TEXT.__text _UNSExampleUserNotificationCenterRegister
+|| __TEXT.__text _UNSLocalizedStringForKey
+|| __TEXT.__text _UNSPowerLogUserNotificationDefaultTriggerEvent
+|| __TEXT.__text _UNSPowerLogUserNotificationExtendedTriggerEvent
+|| __TEXT.__text _UNSPowerLogUserNotificationRequestEvent
+|| __TEXT.__text _UNSPowerLogUserNotificationTriggerEvent
+|| __TEXT.__text _UNSShowAuthorizationAlert
+|| __TEXT.__text _UNSShowCriticalAlertAuthorizationAlert
+|| __TEXT.__text _UNSShowDeliveryAuthorizationAlert
+|| __TEXT.__text _UNSShowNotificationAuthorizationAlert
+|| __TEXT.__text _UNSShowNotificationDeliveryAuthorizationAlert
+|| __TEXT.__text _UNSTriggerLocationArrow
+|| __TEXT.__text _UNSUserNotificationServerRun
+|| __TEXT.__text _UNShowPreviewsSettingFromBBContentPreviewSetting
+|| __TEXT.__text _UNSupportedAuthorizationOptionsForPushSettings
+|| __TEXT.__text __UNSAPSTopicListDebugString
+|| __TEXT.__text __UNSBKSApplicationStateDebugString
+__ ApplePushService: _APSEnvironmentDemo
+__ ApplePushService: _APSEnvironmentDevelopment
+__ ApplePushService: _APSEnvironmentProduction
+__ ApplePushService: _APSEnvironmentQA2
+__ ApplePushService: _OBJC_CLASS_$_APSConnection
+__ ApplePushService: _OBJC_CLASS_$_APSIncomingMessage
+__ ApplePushService: _OBJC_CLASS_$_APSMessage
+__ BackBoardServices: _BKSApplicationStateDisplayIDKey
+__ BackBoardServices: _BKSApplicationStateKey
+__ BackBoardServices: _OBJC_CLASS_$_BKSApplicationStateMonitor
+__ BackBoardServices: _OBJC_CLASS_$_BKSProcessAssertion
+__ BaseBoard: _BSBundleIDForPID
+__ BaseBoard: _BSIsSymbolicLinkAtPath
+__ BaseBoard: _BSMachAbsoluteTime
+__ BaseBoard: _BSPIDIsBeingDebugged
+__ BaseBoard: _BSSystemRootDirectory
+__ BaseBoard: _BSXPCConnectionHasEntitlement
+__ BaseBoard: _OBJC_CLASS_$_BSAuditToken
+__ BaseBoard: _OBJC_CLASS_$_BSCFBundle
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSHashBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSPlatform
+__ BaseBoard: _OBJC_CLASS_$_BSTimer
+__ BulletinBoard: _BBBulletinContentTypeCallOther
+__ BulletinBoard: _BBBulletinContentTypeDefault
+__ BulletinBoard: _BBBulletinContentTypeIncomingCall
+__ BulletinBoard: _BBBulletinContentTypeIntercom
+__ BulletinBoard: _BBBulletinContentTypeMessagingDirect
+__ BulletinBoard: _BBBulletinContentTypeMessagingGroup
+__ BulletinBoard: _BBBulletinContentTypeMissedCall
+__ BulletinBoard: _BBBulletinContentTypeVoicemail
+__ BulletinBoard: _BBDataProviderClearedBulletinsKey
+__ BulletinBoard: _BBDataProviderClearedInfoKey
+__ BulletinBoard: _BBPublisherDestinationStrings
+__ BulletinBoard: _OBJC_CLASS_$_BBAction
+__ BulletinBoard: _OBJC_CLASS_$_BBBulletinRequest
+__ BulletinBoard: _OBJC_CLASS_$_BBCommunicationContext
+__ BulletinBoard: _OBJC_CLASS_$_BBContact
+__ BulletinBoard: _OBJC_CLASS_$_BBDataProviderConnection
+__ BulletinBoard: _OBJC_CLASS_$_BBImage
+__ BulletinBoard: _OBJC_CLASS_$_BBMutableAttachmentMetadata
+__ BulletinBoard: _OBJC_CLASS_$_BBObserver
+__ BulletinBoard: _OBJC_CLASS_$_BBSectionIcon
+__ BulletinBoard: _OBJC_CLASS_$_BBSectionIconVariant
+__ BulletinBoard: _OBJC_CLASS_$_BBSectionInfo
+__ BulletinBoard: _OBJC_CLASS_$_BBSectionParameters
+__ BulletinBoard: _OBJC_CLASS_$_BBSettingsGateway
+__ BulletinBoard: _OBJC_CLASS_$_BBSound
+__ BulletinBoard: _OBJC_IVAR_$_BBSectionInfo._managedSectionInfoSettings
+__ BulletinBoard: _OBJC_IVAR_$_BBSectionInfo._subsections
+__ BulletinBoard: _kBBBulletinContextLaunchImageKey
+__ BulletinBoard: _kBBResponseContextUserResponseInfoKey
+__ BulletinBoard: _kBBResponseContextUserResponseInfoTypedTextKey
+__ CarKit: _OBJC_CLASS_$_CRCarPlayAppDeclaration
+__ CarKit: _OBJC_CLASS_$_CRCarPlayAppPolicyEvaluator
+__ ClipServices: _OBJC_CLASS_$_CPSClipRequest
+__ CoreDuetContext: _OBJC_CLASS_$__CDClientContext
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextualChangeRegistration
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextualKeyPath
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextualPredicate
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFUserNotificationCreate
+__ CoreFoundation: _CFUserNotificationCreateRunLoopSource
+__ CoreFoundation: _NSCurrentLocaleDidChangeNotification
+__ CoreFoundation: _NSURLFileProtectionNone
+__ CoreFoundation: _NSURLIsExcludedFromBackupKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: __kCFBundleDisplayNameKey
+__ CoreFoundation: _kCFBundleNameKey
+__ CoreFoundation: _kCFRunLoopCommonModes
+__ CoreFoundation: _kCFUserNotificationAlertHeaderKey
+__ CoreFoundation: _kCFUserNotificationAlertMessageKey
+__ CoreFoundation: _kCFUserNotificationAlternateButtonTitleKey
+__ CoreFoundation: _kCFUserNotificationDefaultButtonTitleKey
+__ CoreFoundation: _kCFUserNotificationOtherButtonTitleKey
+__ CoreLocation: _OBJC_CLASS_$_CLLocationManager
+__ CoreLocation: _OBJC_CLASS_$_CLRegion
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CoreServices: _OBJC_CLASS_$_LSBundleProxy
+__ CoreServices: _OBJC_CLASS_$_LSPlugInKitProxy
+__ CoreServices: _UTTypeCopyPreferredTagWithClass
+__ CoreServices: _kUTTagClassFilenameExtension
+__ DuetActivityScheduler: _OBJC_CLASS_$__DASActivity
+__ DuetActivityScheduler: _OBJC_CLASS_$__DASScheduler
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSFileModificationDate
+__ Foundation: _NSFileProtectionComplete
+__ Foundation: _NSFileProtectionCompleteUnlessOpen
+__ Foundation: _NSFileProtectionCompleteUntilFirstUserAuthentication
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSFileSize
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSCountedSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExtension
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyActions
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyActivateSuspended
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyLaunchImageName
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyLaunchOrigin
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyPromptUnlockDevice
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyUnlockDevice
+__ FrontBoardServices: _OBJC_CLASS_$_FBSApplicationDataStore
+__ FrontBoardServices: _OBJC_CLASS_$_FBSOpenApplicationOptions
+__ FrontBoardServices: _OBJC_CLASS_$_FBSOpenApplicationService
+__ IOKit: _IOPMAssertionCreateWithDescription
+__ IOKit: _IOPMAssertionCreateWithProperties
+__ IOKit: _IOPMAssertionRelease
+__ Intents: _INAppCanDonateIntent
+__ Intents: _INReadAnnouncementIntentIdentifier
+__ Intents: _INSendMessageIntentIdentifier
+__ Intents: _INStartCallIntentIdentifier
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MobileKeyBag: _MKBDeviceFormattedForContentProtection
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ MobileKeyBag: _kMobileKeyBagLockStatusNotifyToken
+__ PersistentConnection: _OBJC_CLASS_$_PCPersistentTimer
+__ PowerLog: _PLLogRegisteredEvent
+__ PrototypeTools: _OBJC_CLASS_$_PTDomain
+__ PrototypeTools: _OBJC_CLASS_$_PTDoubleTestRecipe
+__ PrototypeTools: _OBJC_CLASS_$_PTModule
+__ PrototypeTools: _OBJC_CLASS_$_PTSettings
+__ PrototypeTools: _OBJC_METACLASS_$_PTDomain
+__ PrototypeTools: _OBJC_METACLASS_$_PTSettings
+__ SpringBoardServices: _SBUserNotificationAllowMenuButtonDismissal
+__ SpringBoardServices: _SBUserNotificationHeaderImageAssetCatalogImageKey
+__ SpringBoardServices: _SBUserNotificationHeaderImageAssetCatalogPathKey
+__ TCC: _TCCAccessCopyBundleIdentifiersForService
+__ TCC: _kTCCServiceFocusStatus
+__ ToneLibrary: _NSStringFromTLAlertType
+__ ToneLibrary: _OBJC_CLASS_$_TLAlertConfiguration
+__ ToneLibrary: _TLAlertTopicAppNotificationCriticalAlert
+__ UIKit: _OBJC_CLASS_$_UILocalNotification
+__ UIKit: _OBJC_CLASS_$_UINotificationResponseAction
+__ UIKit: _OBJC_CLASS_$_UIWillPresentNotificationAction
+__ UIKit: _OBJC_CLASS_$_UIWillPresentNotificationActionResponse
+__ UIKit: _UIBackgroundModeRemoteNotification
+__ UIKit: _UIBackgroundModesKey
+__ UIKit: _UILocalNotificationDefaultSoundName
+__ UIKit: _UIUserNotificationTextInputActionButtonTitleKey
+__ UIKitServices: _OBJC_CLASS_$_UISApplicationState
+__ UIKitServices: _UISOpenApplicationOptionKeyTargetContentIdentifier
+__ UserNotifications: _OBJC_CLASS_$_UNCalendarNotificationTrigger
+__ UserNotifications: _OBJC_CLASS_$_UNLegacyNotificationTrigger
+__ UserNotifications: _OBJC_CLASS_$_UNLocalizedString
+__ UserNotifications: _OBJC_CLASS_$_UNLocalizedStringFactory
+__ UserNotifications: _OBJC_CLASS_$_UNLocationNotificationTrigger
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationAttachmentOptions
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationCategory
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationContent
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationSound
+__ UserNotifications: _OBJC_CLASS_$_UNNotification
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationAction
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationActionIcon
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationAttachment
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationContent
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationIcon
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationRequest
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationResponse
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationSettings
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationSound
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationTopic
+__ UserNotifications: _OBJC_CLASS_$_UNPushNotificationTrigger
+__ UserNotifications: _OBJC_CLASS_$_UNSecurityScopedURL
+__ UserNotifications: _OBJC_CLASS_$_UNTextInputNotificationAction
+__ UserNotifications: _OBJC_CLASS_$_UNTextInputNotificationResponse
+__ UserNotifications: _OBJC_CLASS_$_UNTimeIntervalNotificationTrigger
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationCenter
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationCenterDelegateService
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationService
+__ UserNotifications: _OBJC_CLASS_$__UNMutableNotificationCommunicationContext
+__ UserNotifications: _OBJC_CLASS_$__UNMutableNotificationContact
+__ UserNotifications: _UNAuthorizationStatusString
+__ UserNotifications: _UNEqualBools
+__ UserNotifications: _UNEqualDoubles
+__ UserNotifications: _UNEqualIntegers
+__ UserNotifications: _UNEqualObjects
+__ UserNotifications: _UNEqualStrings
+__ UserNotifications: _UNFloatIsZero
+__ UserNotifications: _UNFormatLocalizedStringInBundleWithDefaultValue
+__ UserNotifications: _UNIsInternalInstall
+__ UserNotifications: _UNLogAppLaunching
+__ UserNotifications: _UNLogAttachmentsRepository
+__ UserNotifications: _UNLogAttachmentsService
+__ UserNotifications: _UNLogCommunicationNotifications
+__ UserNotifications: _UNLogConnections
+__ UserNotifications: _UNLogContentProtection
+__ UserNotifications: _UNLogDataProvider
+__ UserNotifications: _UNLogDataProviderFactory
+__ UserNotifications: _UNLogDataStore
+__ UserNotifications: _UNLogLocalNotifications
+__ UserNotifications: _UNLogMigration
+__ UserNotifications: _UNLogRemoteNotifications
+__ UserNotifications: _UNLogServiceExtension
+__ UserNotifications: _UNLogSettings
+__ UserNotifications: _UNNotificationActionTextInputButtonTitleKey
+__ UserNotifications: _UNNotificationActionTextInputPlaceholderKey
+__ UserNotifications: _UNNotificationAttachmentFamilyMaximumSize
+__ UserNotifications: _UNNotificationAttachmentOptionsThumbnailClippingRectKey
+__ UserNotifications: _UNNotificationAttachmentOptionsThumbnailTimeKey
+__ UserNotifications: _UNNotificationDefaultActionIdentifier
+__ UserNotifications: _UNNotificationDestinationStrings
+__ UserNotifications: _UNNotificationDismissActionIdentifier
+__ UserNotifications: _UNNotificationInterruptionLevelDefault
+__ UserNotifications: _UNNotificationSilenceActionIdentifier
+__ UserNotifications: _UNRegisterUserNotificationsLogging
+__ UserNotifications: _UNSafeCast
+__ UserNotifications: _UNSafeCastAny
+__ UserNotifications: _UNSimilarArrays
+__ UserNotifications: _UNSimilarSets
+__ UserNotifications: _UNSimilarStrings
+__ UserNotifications: _UNUserNotificationServiceName
+__ UserNotifications: __UNNotificationContentTypeCallOther
+__ UserNotifications: __UNNotificationContentTypeIncomingCall
+__ UserNotifications: __UNNotificationContentTypeIntercom
+__ UserNotifications: __UNNotificationContentTypeMessagingDirect
+__ UserNotifications: __UNNotificationContentTypeMessagingGroup
+__ UserNotifications: __UNNotificationContentTypeMissedCall
+__ UserNotifications: __UNNotificationContentTypeVoicemail
+__ UserNotifications: _kUNResponseContextArchivedUserNotificationKey
+__ UserNotificationsKit: _OBJC_CLASS_$__UNNotificationCommunicationContextService
+__ UserNotificationsSettings: _OBJC_CLASS_$_UNNotificationSource
+__ UserNotificationsSettings: _OBJC_CLASS_$_UNNotificationSourceSettings
+__ UserNotificationsSettings: _OBJC_CLASS_$_UNNotificationSystemSettings
+__ UserNotificationsSettings: _OBJC_CLASS_$_UNNotificationTopicSettings
+__ UserNotificationsSettings: _OBJC_CLASS_$_UNUserNotificationSettingsService
+__ UserNotificationsSettings: _UNUserNotificationSettingsServiceName
+__ libSystem.B.dylib: _CC_SHA1_Final
+__ libSystem.B.dylib: _CC_SHA1_Init
+__ libSystem.B.dylib: _CC_SHA1_Update
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _mkstemp_dprotected_np
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_activity_apply
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _renamex_np
+__ libSystem.B.dylib: _usleep
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+UNSNotificationServiceExtensionManager : NSObject
+  // instance methods
+  -[UNSNotificationServiceExtensionManager extensionForBundleIdentifier:error:]
+  -[UNSNotificationServiceExtensionManager _extensionForAppBundleIdentifier:error:]
+
+
+UNSBundleLibrarian : NSObject
+  // instance methods
+  -[UNSBundleLibrarian bootstrapLibraryForBundleIdentifiers:]
+  -[UNSBundleLibrarian _queue_dataAtPath:]
+  -[UNSBundleLibrarian .cxx_destruct]
+  -[UNSBundleLibrarian bundleIdentifierForUniqueIdentifier:]
+  -[UNSBundleLibrarian _queue_removeUnknownDirectoriesInDirectory:]
+  -[UNSBundleLibrarian _queue_bundleIdentifierForUniqueIdentifier:]
+  -[UNSBundleLibrarian migrateLibraryFromDirectory:toDirectory:]
+  -[UNSBundleLibrarian removeMappingForBundleIdentifier:]
+  -[UNSBundleLibrarian initWithDirectory:]
+  -[UNSBundleLibrarian uniqueIdentifierForBundleIdentifier:]
+  -[UNSBundleLibrarian _queue_saveDictionary:atPath:]
+  -[UNSBundleLibrarian _queue_migrateBundleDirectoriesInDirectory:]
+  -[UNSBundleLibrarian _isUUIDString:]
+  -[UNSBundleLibrarian _queue_loadBundleLibraryIfNeeded]
+  -[UNSBundleLibrarian _queue_removeEntryForBundleIdentifier:]
+  -[UNSBundleLibrarian _queue_loadBundleLibrary]
+  -[UNSBundleLibrarian _queue_dictionaryAtPath:]
+  -[UNSBundleLibrarian _queue_uniqueIdentifierForBundleIdentifier:]
+  -[UNSBundleLibrarian _queue_removeUnknownDirectoriesFromLibrary]
+  -[UNSBundleLibrarian _queue_addEntryForBundleIdentifier:uniqueIdentifier:]
+  -[UNSBundleLibrarian _removeBundleLibrary]
+
+
+UNSContactRecord : NSObject <NSCopying>
+ @property  NSString *handle
+ @property  long long handleType
+ @property  NSString *serviceName
+ @property  NSString *displayName
+ @property  BOOL displayNameSuggested
+ @property  NSString *customIdentifier
+ @property  NSString *cnContactIdentifier
+ @property  NSString *cnContactFullname
+ @property  BOOL cnContactIdentifierSuggested
+
+  // instance methods
+  -[UNSContactRecord displayName]
+  -[UNSContactRecord setServiceName:]
+  -[UNSContactRecord setHandle:]
+  -[UNSContactRecord setCustomIdentifier:]
+  -[UNSContactRecord customIdentifier]
+  -[UNSContactRecord serviceName]
+  -[UNSContactRecord initWithDictionaryRepresentation:]
+  -[UNSContactRecord .cxx_destruct]
+  -[UNSContactRecord isDisplayNameSuggested]
+  -[UNSContactRecord cnContactFullname]
+  -[UNSContactRecord isCNContactIdentifierSuggested]
+  -[UNSContactRecord setDisplayNameSuggested:]
+  -[UNSContactRecord setCnContactIdentifierSuggested:]
+  -[UNSContactRecord setCnContactFullname:]
+  -[UNSContactRecord dictionaryRepresentation]
+  -[UNSContactRecord setHandleType:]
+  -[UNSContactRecord cnContactIdentifier]
+  -[UNSContactRecord isEqual:]
+  -[UNSContactRecord setCnContactIdentifier:]
+  -[UNSContactRecord setDisplayName:]
+  -[UNSContactRecord handle]
+  -[UNSContactRecord handleType]
+  -[UNSContactRecord copyWithZone:]
+
+
+UNSNotificationAuthorizationService : NSObject
+  // instance methods
+  -[UNSNotificationAuthorizationService .cxx_destruct]
+  -[UNSNotificationAuthorizationService requestCriticalAlertAuthorizationForNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService _queue_requestCriticalAlertAuthorizationForNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService requestAuthorizationWithOptions:forNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService initWithDataProviderFactory:settingsService:localizationService:]
+  -[UNSNotificationAuthorizationService _didForegroundApplicationWithBundleIdentifier:]
+  -[UNSNotificationAuthorizationService requestRemoveAuthorizationForNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService _queue_requestAuthorizationWithOptions:forNotificationSourceDescription:withExpirationDate:completionHandler:]
+  -[UNSNotificationAuthorizationService _queue_isCarPlayAvailableForApplication:]
+  -[UNSNotificationAuthorizationService _queue_requestRemoveAuthorizationForNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService requestAuthorizationWithOptions:expirationDate:forNotificationSourceDescription:completionHandler:]
+  -[UNSNotificationAuthorizationService didChangeApplicationState:forBundleIdentifier:]
+
+
+UNSKeyedObservable : NSObject
+  // instance methods
+  -[UNSKeyedObservable .cxx_destruct]
+  -[UNSKeyedObservable removeObserver:forKey:]
+  -[UNSKeyedObservable _observersForKey:]
+  -[UNSKeyedObservable _queue_addObserver:forKey:]
+  -[UNSKeyedObservable initWithQueue:callOutQueue:]
+  -[UNSKeyedObservable _queue_removeObserver:forKey:]
+  -[UNSKeyedObservable notifyObserversKey:usingBlock:]
+  -[UNSKeyedObservable addObserver:forKey:]
+  -[UNSKeyedObservable _callOutQueue_notifyObserversKey:usingBlock:]
+
+
+UNSNotificationServiceExtension : NSObject
+ @property  LSPlugInKitProxy *proxy
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  double serviceTime
+
+  // class methods
+  +[UNSNotificationServiceExtension _extensionIdentifiersCurrentlyAllowedAccessToNotificationCenter]
+  +[UNSNotificationServiceExtension _extensionIdentifiersToPerExtensionQueues]
+  +[UNSNotificationServiceExtension _allowAccessToNotificationCenterForServiceExtensionWithIdentifier:]
+  +[UNSNotificationServiceExtension _disallowAccessToNotificationCenterForServiceExtensionWithIdentifier:]
+  +[UNSNotificationServiceExtension isAccessToNotificationCenterAllowedForServiceExtensionWithIdentifier:]
+
+  // instance methods
+  -[UNSNotificationServiceExtension .cxx_destruct]
+  -[UNSNotificationServiceExtension proxy]
+  -[UNSNotificationServiceExtension queue]
+  -[UNSNotificationServiceExtension _initWithExtension:serviceTime:graceTime:]
+  -[UNSNotificationServiceExtension serviceTime]
+  -[UNSNotificationServiceExtension mutateContentForNotificationRequest:error:]
+
+
+UNSUtilities : NSObject
+
+UNSAttachmentsService : NSObject <UNSNotificationRepositoryObserver, UNSPendingNotificationRepositoryObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[UNSAttachmentsService _notificationIdentifiersForNotificationRecords:]
+  +[UNSAttachmentsService _stagingDirectory]
+  +[UNSAttachmentsService _attachmentURLsRemovedByReplaceUpdate:]
+
+  // instance methods
+  -[UNSAttachmentsService notificationSourcesDidUninstall:]
+  -[UNSAttachmentsService _beginObservingNotificationChanges]
+  -[UNSAttachmentsService .cxx_destruct]
+  -[UNSAttachmentsService pendingNotificationRepository:didPerformUpdates:forBundleIdentifier:]
+  -[UNSAttachmentsService _notificationIdentifiersForBundleIdentifier:replyOnQueue:completionHandler:]
+  -[UNSAttachmentsService _queue_applicationDidUninstall:]
+  -[UNSAttachmentsService _queue_resolvedURLForNotificationAttachment:request:bundleIdentifier:bundleProxy:error:]
+  -[UNSAttachmentsService resolveAttachmentsForRequest:bundleIdentifier:bundleProxy:error:]
+  -[UNSAttachmentsService _queue_ensureIntegrityWithCompletionHandler:]
+  -[UNSAttachmentsService contentProtectionStateChangedForFirstUnlock:]
+  -[UNSAttachmentsService _queue_deleteAttachmentDataForNotificationRecord:bundleIdentifier:]
+  -[UNSAttachmentsService initWithAttachmentsRepository:notificationRepository:notificationSchedulingService:pendingNotificationRepository:]
+  -[UNSAttachmentsService _temporaryAttachmentFileURL]
+  -[UNSAttachmentsService _queue_resolvedFileURLForNotificationAttachment:request:bundleIdentifier:bundleProxy:error:]
+  -[UNSAttachmentsService _repositoryDidPerformUpdates:forBundleIdentifier:]
+  -[UNSAttachmentsService _queue_notificationSourcesDidUninstall:]
+  -[UNSAttachmentsService notificationRepository:didPerformUpdates:forBundleIdentifier:]
+  -[UNSAttachmentsService _queue_resolveAttachmentsForRequest:bundleIdentifier:bundleProxy:continueOnFailure:error:]
+  -[UNSAttachmentsService _queue_validatedRepositoryURLForNotificationAttachment:request:bundleIdentifier:bundleProxy:error:]
+  -[UNSAttachmentsService resolveAttachmentsSkippingErrorsForRequest:bundleIdentifier:bundleProxy:]
+  -[UNSAttachmentsService ensureIntegrityWithCompletionHandler:]
+  -[UNSAttachmentsService _queue_deleteAttachmentDataForNotificationRecords:bundleIdentifier:]
+
+
+UNSNotificationTopicRecordMapper : NSObject
+  // instance methods
+  -[UNSNotificationTopicRecordMapper .cxx_destruct]
+  -[UNSNotificationTopicRecordMapper initWithBundle:]
+  -[UNSNotificationTopicRecordMapper notificationTopicForNotificationTopicRecord:]
+
+
+UNSRemoteNotificationServer : NSObject <APSConnectionDelegate, UNSBlueListMonitorDelegate>
+ @property  <UNSRemoteNotificationServerObserver> *observer
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[UNSRemoteNotificationServer _newPushServiceConnectionWithEnvironmentName:namedDelegatePort:queue:]
+
+  // instance methods
+  -[UNSRemoteNotificationServer performMigration]
+  -[UNSRemoteNotificationServer _queue_performMigration]
+  -[UNSRemoteNotificationServer notificationSourcesDidUninstall:]
+  -[UNSRemoteNotificationServer notificationSourcesDidInstall:]
+  -[UNSRemoteNotificationServer _portNameForEnvironmentName:]
+  -[UNSRemoteNotificationServer connection:didReceivePublicToken:]
+  -[UNSRemoteNotificationServer _queue_reloadRegistrations]
+  -[UNSRemoteNotificationServer _queue_moveTopicsForApplication:fromList:toList:]
+  -[UNSRemoteNotificationServer connection:didReceiveToken:forTopic:identifier:]
+  -[UNSRemoteNotificationServer connection:didReceiveIncomingMessage:]
+  -[UNSRemoteNotificationServer _queue_didChangeApplicationState:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_allowServiceExtensionFilteringForMessage:]
+  -[UNSRemoteNotificationServer .cxx_destruct]
+  -[UNSRemoteNotificationServer _queue_setPushRegistration:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_allTopicsForApplication:]
+  -[UNSRemoteNotificationServer _queue_shouldBoostTopicToEnabled:]
+  -[UNSRemoteNotificationServer _queue_didCompleteInitialization]
+  -[UNSRemoteNotificationServer _queue_isApplicationForeground:]
+  -[UNSRemoteNotificationServer _queue_calculateTopics]
+  -[UNSRemoteNotificationServer didChangeNotificationSettings:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_applicationDidLaunch:]
+  -[UNSRemoteNotificationServer _queue_deliverNotificationRequest:bundleIdentifier:message:enforcePushType:]
+  -[UNSRemoteNotificationServer _queue_connection:didReceivePublicToken:]
+  -[UNSRemoteNotificationServer bluelistStatusChanged]
+  -[UNSRemoteNotificationServer _initWithNotificationRepository:attachmentsService:categoryRepository:pushRegistrationRepository:platform:queue:apsQueue:duetActivityScheduler:serviceExtensionManager:]
+  -[UNSRemoteNotificationServer _queue_invalidateTokenForBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_isVisibleUserNotificationEnabledForApplication:]
+  -[UNSRemoteNotificationServer _queue_messageIsValidForDelivery:]
+  -[UNSRemoteNotificationServer _queue_registerApplicationWithBundleIdentifier:forEnvironment:]
+  -[UNSRemoteNotificationServer invalidateTokenForRemoteNotificationsForBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_applicationDidBecomeBackground:]
+  -[UNSRemoteNotificationServer _queue_backgroundRefreshApplicationsDidChange]
+  -[UNSRemoteNotificationServer _queue_applicationDidBecomeForeground:]
+  -[UNSRemoteNotificationServer _extensionQueue_modifyNotificationRequest:bundleIdentifier:message:extension:enforcePushType:]
+  -[UNSRemoteNotificationServer didCompleteInitialization]
+  -[UNSRemoteNotificationServer observer]
+  -[UNSRemoteNotificationServer _queue_enforcePushTypeForMessage:]
+  -[UNSRemoteNotificationServer initWithNotificationRepository:attachmentsService:categoryRepository:pushRegistrationRepository:platform:]
+  -[UNSRemoteNotificationServer backgroundRefreshApplicationsDidChange]
+  -[UNSRemoteNotificationServer _queue_isPushEnabledForApplication:]
+  -[UNSRemoteNotificationServer _queue_reloadBackgroundAppRefreshDisabledList]
+  -[UNSRemoteNotificationServer _queue_isBackgroundAppRefreshAllowedForBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_applicationDidTerminate:]
+  -[UNSRemoteNotificationServer setObserver:]
+  -[UNSRemoteNotificationServer _scheduleContentAvailablePushActivityForMessage:bundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_isApplicationRunning:]
+  -[UNSRemoteNotificationServer dealloc]
+  -[UNSRemoteNotificationServer _queue_canDeliverMessageToBundle:]
+  -[UNSRemoteNotificationServer _queue_connection:didReceiveToken:forTopic:identifier:]
+  -[UNSRemoteNotificationServer requestRemoteNotificationTokenWithEnvironment:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_didReceiveIncomingMessage:]
+  -[UNSRemoteNotificationServer _queue_removeRegistrationForBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_deliverNotificationRequest:bundleIdentifier:message:enforcePushType:extensionStart:extensionEnd:]
+  -[UNSRemoteNotificationServer _queue_isUserNotificationEnabledForApplication:]
+  -[UNSRemoteNotificationServer _queue_didChangeNotificationSettings:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer allowsRemoteNotificationsForBundleIdentifier:]
+  -[UNSRemoteNotificationServer didChangeApplicationState:forBundleIdentifier:]
+  -[UNSRemoteNotificationServer _queue_tryToModifyNotificationRequest:bundleIdentifier:message:enforcePushType:]
+
+
+UNSAuthorizationAlertController : NSObject
+  // instance methods
+  -[UNSAuthorizationAlertController .cxx_destruct]
+  -[UNSAuthorizationAlertController initWithQueue:]
+  -[UNSAuthorizationAlertController requestAuthorizationForBundleIdentifier:displayName:usageDescription:withResult:]
+  -[UNSAuthorizationAlertController _queue_addResultBlock:forBundleIdentifier:]
+  -[UNSAuthorizationAlertController _queue_isAlertActiveForBundleIdentifier:]
+  -[UNSAuthorizationAlertController _queue_addAlertActiveForBundleIdentifier:]
+  -[UNSAuthorizationAlertController _presentAuthorizationAlertForBundleIdentifier:displayName:usageDescription:withResult:]
+  -[UNSAuthorizationAlertController _queue_removeAlertActiveForBundleIdentifier:]
+  -[UNSAuthorizationAlertController _queue_sendResponse:forBundleIdentifier:]
+  -[UNSAuthorizationAlertController presentAuthorizationAlertForBundleIdentifier:displayName:usageDescription:withResult:]
+
+
+UNSHybridContentProtectionStrategy : NSObject <UNSContentProtectionStrategy>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSHybridContentProtectionStrategy _strategyForProtectionState]
+  -[UNSHybridContentProtectionStrategy dataAtPath:]
+  -[UNSHybridContentProtectionStrategy .cxx_destruct]
+  -[UNSHybridContentProtectionStrategy writeData:atPath:error:]
+  -[UNSHybridContentProtectionStrategy importDataWithImportHandler:]
+  -[UNSHybridContentProtectionStrategy isProtectedDataAvailable]
+  -[UNSHybridContentProtectionStrategy removeItemAtPath:error:]
+  -[UNSHybridContentProtectionStrategy dataIsAvailableAtPath:]
+  -[UNSHybridContentProtectionStrategy initWithFileProtectionType:delegate:]
+  -[UNSHybridContentProtectionStrategy _mergeIsSupported]
+  -[UNSHybridContentProtectionStrategy migrateDataAtPath:toPath:]
+
+
+UNSDaemonLauncher : NSObject <UNUserNotificationCenterDelegateServiceProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSDaemonLauncher didChangeSettings:forBundleIdentifier:]
+  -[UNSDaemonLauncher .cxx_destruct]
+  -[UNSDaemonLauncher didReceiveNotificationResponse:forBundleIdentifier:withCompletionHandler:]
+  -[UNSDaemonLauncher didOpenApplicationForResponse:forBundleIdentifier:]
+  -[UNSDaemonLauncher init]
+  -[UNSDaemonLauncher _queue_interruptedConnectionForBundleIdentifier:]
+  -[UNSDaemonLauncher _queue_ensureConnectionForBundleIdentifier:]
+  -[UNSDaemonLauncher _queue_invalidatedConnectionForBundleIdentifier:]
+
+
+UNSBlueListMonitor : NSObject
+ @property  <UNSBlueListMonitorDelegate> *delegate
+
+  // instance methods
+  -[UNSBlueListMonitor .cxx_destruct]
+  -[UNSBlueListMonitor setDelegate:]
+  -[UNSBlueListMonitor init]
+  -[UNSBlueListMonitor delegate]
+  -[UNSBlueListMonitor _startMonitoring]
+  -[UNSBlueListMonitor shouldBoostOpportunisticTopicsToEnabled]
+
+
+UNSPushRegistration : NSObject <NSCopying>
+ @property  NSString *environment
+ @property  NSData *token
+ @property  NSString *tokenIdentifier
+
+  // class methods
+  +[UNSPushRegistration pushRegistrationWithEnvironment:tokenIdentifier:token:]
+
+  // instance methods
+  -[UNSPushRegistration initWithDictionaryRepresentation:]
+  -[UNSPushRegistration initWithEnvironment:tokenIdentifier:token:]
+  -[UNSPushRegistration .cxx_destruct]
+  -[UNSPushRegistration dictionaryRepresentation]
+  -[UNSPushRegistration isEqual:]
+  -[UNSPushRegistration token]
+  -[UNSPushRegistration copyWithZone:]
+  -[UNSPushRegistration tokenIdentifier]
+  -[UNSPushRegistration environment]
+
+
+UNSNotificationSchedulingService : NSObject
+  // instance methods
+  -[UNSNotificationSchedulingService notificationSourcesDidUninstall:]
+  -[UNSNotificationSchedulingService _queue_removePendingNotificationRecordsWithIdentifiers:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_localeDidChange]
+  -[UNSNotificationSchedulingService _queue_applicationStateDidRestore]
+  -[UNSNotificationSchedulingService _queue_removeSimilarPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService timeDidChangeSignificantly]
+  -[UNSNotificationSchedulingService .cxx_destruct]
+  -[UNSNotificationSchedulingService setPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_removeClientForBundleIdentifier:]
+  -[UNSNotificationSchedulingService didChangeNotificationSettings:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_clientForBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_undeliveredNotificationRequestsForBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_pendingNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationSchedulingService undeliveredNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationSchedulingService addPendingNotificationRecords:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationSchedulingService initWithNotificationRepository:pendingNotificationRepository:notificationScheduleRepository:locationMonitor:]
+  -[UNSNotificationSchedulingService pendingNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_setPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_addClientForBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_notificationSourcesDidUninstall:]
+  -[UNSNotificationSchedulingService removeSimilarPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService _queue_addPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSNotificationSchedulingService localeDidChange]
+  -[UNSNotificationSchedulingService applicationStateDidRestore]
+  -[UNSNotificationSchedulingService _queue_removeAllPendingNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationSchedulingService removeAllPendingNotificationRecordsForBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationSchedulingService removePendingNotificationRecordsWithIdentifiers:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationSchedulingService _queue_timeDidChangeSignificantly]
+  -[UNSNotificationSchedulingService _queue_didChangeNotificationSettings:forBundleIdentifier:]
+
+
+UNSNotificationSchedule : NSObject
+ @property  NSDate *previousTriggerDate
+
+  // instance methods
+  -[UNSNotificationSchedule _dateFormatter]
+  -[UNSNotificationSchedule previousTriggerDate]
+  -[UNSNotificationSchedule initWithDictionaryRepresentation:]
+  -[UNSNotificationSchedule .cxx_destruct]
+  -[UNSNotificationSchedule dictionaryRepresentation]
+  -[UNSNotificationSchedule isEqual:]
+  -[UNSNotificationSchedule setPreviousTriggerDate:]
+
+
+UNSUserNotificationServer : NSObject <LSApplicationWorkspaceObserverProtocol, UNSContentProtectionObserver, UNSDefaultDataProviderFactoryObserver, UNSNotificationRepositoryDelegate, UNSRemoteNotificationServerObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[UNSUserNotificationServer sharedInstance]
+  +[UNSUserNotificationServer sharedInstanceIfExists]
+  +[UNSUserNotificationServer _sharedInstanceCreateIfNecessary:]
+
+  // instance methods
+  -[UNSUserNotificationServer applicationsDidUninstall:]
+  -[UNSUserNotificationServer applicationsDidInstall:]
+  -[UNSUserNotificationServer _migrateNotificationSchedule]
+  -[UNSUserNotificationServer _validateNotificationRepository]
+  -[UNSUserNotificationServer willPresentNotification:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServer _addObserverForSignificantTimeChanges]
+  -[UNSUserNotificationServer _addObserverForApplicationWorkspaceChanges]
+  -[UNSUserNotificationServer _removeNotificationSourceDirectories:]
+  -[UNSUserNotificationServer _addObserverForRemoteNotificationServiceChanges]
+  -[UNSUserNotificationServer .cxx_destruct]
+  -[UNSUserNotificationServer _triggerLocationArrowForBundleIdentifier:]
+  -[UNSUserNotificationServer _migrateNotificationRepository]
+  -[UNSUserNotificationServer didReceiveDeviceToken:forBundleIdentifier:]
+  -[UNSUserNotificationServer didChangeNotificationSettings:forBundleIdentifier:]
+  -[UNSUserNotificationServer contentProtectionStateChangedForFirstUnlock:]
+  -[UNSUserNotificationServer _timeDidChangeSignificantly]
+  -[UNSUserNotificationServer applicationStateDidChange:]
+  -[UNSUserNotificationServer _registerLoggers]
+  -[UNSUserNotificationServer initialSystemNotificationSourcesDidInstall:applicationsDidInstall:]
+  -[UNSUserNotificationServer init]
+  -[UNSUserNotificationServer _addObserverForDataProviderFactoryChanges]
+  -[UNSUserNotificationServer _migratePushRegistrations]
+  -[UNSUserNotificationServer _addObserverForBackgroundRefreshApplicationChanges]
+  -[UNSUserNotificationServer _migrateAttachments]
+  -[UNSUserNotificationServer _sourceDescriptionsForApplications:]
+  -[UNSUserNotificationServer _migratePendingNotificationRequests]
+  -[UNSUserNotificationServer _addObserverForLocaleChanges]
+  -[UNSUserNotificationServer _addObserverForApplicationStateMonitor]
+  -[UNSUserNotificationServer _loadAllSystemNotificationSourceDescriptions]
+  -[UNSUserNotificationServer _localeDidChange]
+  -[UNSUserNotificationServer _applicationsDidInstall:]
+  -[UNSUserNotificationServer _backgroundRefreshApplicationsDidChange]
+  -[UNSUserNotificationServer _didChangeApplicationState:forBundleIdentifier:]
+  -[UNSUserNotificationServer _addObserverForContentProtectionChanges]
+  -[UNSUserNotificationServer _migrateNotificationCategories]
+  -[UNSUserNotificationServer isApplicationForeground:]
+  -[UNSUserNotificationServer _installedSourceQueue_notificationSourcesDidUninstall:]
+  -[UNSUserNotificationServer _removePushStore]
+  -[UNSUserNotificationServer _applicationStateDidRestore]
+  -[UNSUserNotificationServer _addObserverForApplicationStateRestore]
+  -[UNSUserNotificationServer _removeBundleLibrarianMappingsForSourceDescriptions:]
+  -[UNSUserNotificationServer _ensureAttachmentsIntegrity]
+  -[UNSUserNotificationServer _installedSourceQueue_notificationSourcesDidInstall:]
+
+
+UNSNotificationSettingsService : NSObject <UNSSettingsGatewayObserver, UNSNotificationRepositorySettingsProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSNotificationSettingsService notificationSystemSettings]
+  -[UNSNotificationSettingsService setNotificationSystemSettings:]
+  -[UNSNotificationSettingsService authorizationWithOptions:forNotificationSourceIdentifier:withCompletionHandler:]
+  -[UNSNotificationSettingsService .cxx_destruct]
+  -[UNSNotificationSettingsService _queue_removeObserver:]
+  -[UNSNotificationSettingsService _queue_addObserver:]
+  -[UNSNotificationSettingsService notificationSettingsForTopicsWithBundleIdentifier:]
+  -[UNSNotificationSettingsService notificationSourcesForBundleIdentifiers:]
+  -[UNSNotificationSettingsService initWithSettingsGateway:]
+  -[UNSNotificationSettingsService settingsGateway:didUpdateGlobalSettings:]
+  -[UNSNotificationSettingsService addObserver:]
+  -[UNSNotificationSettingsService notificationSourceForBundleIdentifier:]
+  -[UNSNotificationSettingsService resetScheduledDeliverySetting]
+  -[UNSNotificationSettingsService settingsGateway:didUpdateSectionInfoForSectionIDs:]
+  -[UNSNotificationSettingsService replaceNotificationSettings:forNotificationSourceIdentifier:]
+  -[UNSNotificationSettingsService dealloc]
+  -[UNSNotificationSettingsService removeObserver:]
+  -[UNSNotificationSettingsService allNotificationSources]
+  -[UNSNotificationSettingsService notificationSettingsForBundleIdentifier:]
+  -[UNSNotificationSettingsService replaceNotificationTopicSettings:forNotificationSourceIdentifier:topicIdentifier:]
+
+
+UNSKeyedDictionaryRepository : NSObject
+  // instance methods
+  -[UNSKeyedDictionaryRepository setDictionary:forKey:]
+  -[UNSKeyedDictionaryRepository _dictionaryAtPath:]
+  -[UNSKeyedDictionaryRepository _removeDictionaryAtPath:]
+  -[UNSKeyedDictionaryRepository _pathForKey:]
+  -[UNSKeyedDictionaryRepository _saveDictionary:atPath:]
+  -[UNSKeyedDictionaryRepository _dataAtPath:]
+  -[UNSKeyedDictionaryRepository .cxx_destruct]
+  -[UNSKeyedDictionaryRepository allKeys]
+  -[UNSKeyedDictionaryRepository initWithDirectory:fileName:pathExtension:librarian:]
+  -[UNSKeyedDictionaryRepository _directoryForKey:]
+  -[UNSKeyedDictionaryRepository removeDictionaryForKey:]
+  -[UNSKeyedDictionaryRepository dictionaryForKey:]
+
+
+UNSPendingNotificationRepository : NSObject
+  // instance methods
+  -[UNSPendingNotificationRepository allBundleIdentifiers]
+  -[UNSPendingNotificationRepository performMigration]
+  -[UNSPendingNotificationRepository _queue_performMigration]
+  -[UNSPendingNotificationRepository notificationSourcesDidUninstall:]
+  -[UNSPendingNotificationRepository _queue_notifyObserversOfChangesFrom:to:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository .cxx_destruct]
+  -[UNSPendingNotificationRepository setPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository initWithDataStoreRepository:observable:librarian:]
+  -[UNSPendingNotificationRepository addObserver:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository contentProtectionStateChangedForFirstUnlock:]
+  -[UNSPendingNotificationRepository _queue_setPendingNotificationDictionaries:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository _queue_pendingNotificationRecordsForBundleIdentifier:]
+  -[UNSPendingNotificationRepository _queue_performMigrationForBundleIdentifier:]
+  -[UNSPendingNotificationRepository _maxObjectsPerKey]
+  -[UNSPendingNotificationRepository pendingNotificationRecordsForBundleIdentifier:]
+  -[UNSPendingNotificationRepository removeObserver:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository _queue_pendingNotificationDictionariesForBundleIdentifier:]
+  -[UNSPendingNotificationRepository _queue_setPendingNotificationRecords:forBundleIdentifier:]
+  -[UNSPendingNotificationRepository _queue_notificationSourcesDidUninstall:]
+  -[UNSPendingNotificationRepository applicationStateDidRestore]
+  -[UNSPendingNotificationRepository initWithDirectory:librarian:repositoryProtectionStrategy:]
+
+
+UNSExampleUserNotificationCenter : NSObject
+  // instance methods
+  -[UNSExampleUserNotificationCenter sectionIdentifier]
+  -[UNSExampleUserNotificationCenter removeAllNotifications]
+  -[UNSExampleUserNotificationCenter publish]
+  -[UNSExampleUserNotificationCenter _existingNotificationRequestForIdentifier:]
+  -[UNSExampleUserNotificationCenter publish:completion:]
+  -[UNSExampleUserNotificationCenter publish:numberOfUniqueThreads:completion:]
+  -[UNSExampleUserNotificationCenter .cxx_destruct]
+  -[UNSExampleUserNotificationCenter update]
+  -[UNSExampleUserNotificationCenter init]
+  -[UNSExampleUserNotificationCenter _userNotificationCenter]
+  -[UNSExampleUserNotificationCenter publishWithNumberOfUniqueThreads:]
+  -[UNSExampleUserNotificationCenter latestNotificationRequestIdentifier]
+  -[UNSExampleUserNotificationCenter _basicPostUpdateRecipe]
+  -[UNSExampleUserNotificationCenter _newNotificationRequest:threadIdentifier:]
+  -[UNSExampleUserNotificationCenter _postNotificationWithID:threadIdentifier:]
+
+
+UNSUserNotificationServerRemoteNotificationConnectionListener : NSObject <NSXPCListenerDelegate, PKUserNotificationServerRemoteNotificationXPCServer>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _removeConnectionForAllBundleIdentifiers:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener initWithRemoteNotificationService:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _invalidateTokenForRemoteNotificationsForBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener .cxx_destruct]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _allowsRemoteNotificationsForBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener didReceiveDeviceToken:forBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener requestTokenForRemoteNotificationsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener invalidateTokenForRemoteNotificationsForBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener getAllowsRemoteNotificationsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _queue_removeConnectionForAllBundleIdentifiers:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _currentConnection]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener resume]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _queue_didReceiveDeviceToken:forBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener dealloc]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener listener:shouldAcceptNewConnection:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _requestTokenForRemoteNotificationsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _queue_removeConnection:forBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _queue_addConnection:forBundleIdentifier:]
+  -[UNSUserNotificationServerRemoteNotificationConnectionListener _queue_observerConnectionsForBundleIdentifier:]
+
+
+UNSLocalNotificationClient : NSObject <UNSLocationMonitorObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSLocalNotificationClient _dateFormatter]
+  -[UNSLocalNotificationClient handleSignificantTimeChange]
+  -[UNSLocalNotificationClient removePendingNotificationRecords:]
+  -[UNSLocalNotificationClient removeAllPendingNotificationRecords]
+  -[UNSLocalNotificationClient locationMonitor:triggerDidFireForRegion:forBundleIdentifier:]
+  -[UNSLocalNotificationClient _setPendingNotificationRecords:]
+  -[UNSLocalNotificationClient _setMonitoredRegions:]
+  -[UNSLocalNotificationClient _pendingNotificationRecords]
+  -[UNSLocalNotificationClient _lastLocalNotificationFireDate]
+  -[UNSLocalNotificationClient .cxx_destruct]
+  -[UNSLocalNotificationClient _queue_triggerDidFireForRegion:]
+  -[UNSLocalNotificationClient _updateRegionMonitorsForPendingNotificationRecords:]
+  -[UNSLocalNotificationClient addPendingNotificationRecords:]
+  -[UNSLocalNotificationClient _setRequestDateForPendingNotificationRecords:]
+  -[UNSLocalNotificationClient pendingNotificationRecords]
+  -[UNSLocalNotificationClient _invalidateNotificationRecordTimersAndRegionMonitors]
+  -[UNSLocalNotificationClient initWithNotificationRepository:pendingNotificationRepository:notificationScheduleRepository:locationMonitor:bundleIdentifier:queue:]
+  -[UNSLocalNotificationClient _updateTimersForPendingNotificationRecords:]
+  -[UNSLocalNotificationClient _updateTimersAndRegionMonitorsForPendingNotificationRecords:]
+  -[UNSLocalNotificationClient _fireNotification:]
+  -[UNSLocalNotificationClient undeliveredNotificationRecords]
+  -[UNSLocalNotificationClient setPendingNotificationRecords:]
+  -[UNSLocalNotificationClient removePendingNotificationRecordsWithIdentifiers:]
+  -[UNSLocalNotificationClient _sanitizeNotificationRecords:]
+  -[UNSLocalNotificationClient handleApplicationStateRestore]
+  -[UNSLocalNotificationClient handleLocaleChange]
+  -[UNSLocalNotificationClient _setLastLocalNotificationFireDate:]
+  -[UNSLocalNotificationClient dealloc]
+  -[UNSLocalNotificationClient invalidate]
+  -[UNSLocalNotificationClient _invalidatePendingNotificationRecordRegionMonitors]
+  -[UNSLocalNotificationClient _invalidatePendingNotificationRecordTimers]
+  -[UNSLocalNotificationClient _queue_triggerDidFireForTimer:]
+  -[UNSLocalNotificationClient _queue_triggerDidFireForDate:]
+
+
+UNSNotificationTopicRecord : NSObject
+ @property  NSString *identifier
+ @property  NSString *displayName
+ @property  NSString *displayNameLocalizationKey
+ @property  unsigned long priority
+ @property  NSString *sortIdentifier
+ @property  BOOL supportsAlerts
+ @property  BOOL supportsBadges
+ @property  BOOL supportsSounds
+ @property  BOOL supportsLockScreen
+ @property  BOOL supportsNotificationCenter
+ @property  BOOL supportsCarPlay
+ @property  BOOL supportsSpoken
+ @property  BOOL supportsCriticalAlerts
+ @property  BOOL supportsTimeSensitive
+ @property  BOOL enablesAlerts
+ @property  BOOL enablesBadges
+ @property  BOOL enablesSounds
+ @property  BOOL enablesLockScreen
+ @property  BOOL enablesNotificationCenter
+ @property  BOOL enablesCarPlay
+ @property  BOOL enablesSpoken
+ @property  BOOL enablesCriticalAlerts
+ @property  BOOL enablesTimeSensitive
+ @property  BOOL modalAlertStyle
+
+  // instance methods
+  -[UNSNotificationTopicRecord supportsCarPlay]
+  -[UNSNotificationTopicRecord setEnablesSounds:]
+  -[UNSNotificationTopicRecord displayName]
+  -[UNSNotificationTopicRecord setEnablesSpoken:]
+  -[UNSNotificationTopicRecord supportsCriticalAlerts]
+  -[UNSNotificationTopicRecord enablesSpoken]
+  -[UNSNotificationTopicRecord initWithDictionaryRepresentation:]
+  -[UNSNotificationTopicRecord displayNameLocalizationKey]
+  -[UNSNotificationTopicRecord setSupportsSpoken:]
+  -[UNSNotificationTopicRecord setSupportsCarPlay:]
+  -[UNSNotificationTopicRecord enablesTimeSensitive]
+  -[UNSNotificationTopicRecord setEnablesAlerts:]
+  -[UNSNotificationTopicRecord .cxx_destruct]
+  -[UNSNotificationTopicRecord enablesBadges]
+  -[UNSNotificationTopicRecord dictionaryRepresentation]
+  -[UNSNotificationTopicRecord enablesLockScreen]
+  -[UNSNotificationTopicRecord setPriority:]
+  -[UNSNotificationTopicRecord supportsLockScreen]
+  -[UNSNotificationTopicRecord supportsAlerts]
+  -[UNSNotificationTopicRecord supportsNotificationCenter]
+  -[UNSNotificationTopicRecord sortIdentifier]
+  -[UNSNotificationTopicRecord isEqual:]
+  -[UNSNotificationTopicRecord setEnablesCriticalAlerts:]
+  -[UNSNotificationTopicRecord enablesCarPlay]
+  -[UNSNotificationTopicRecord identifier]
+  -[UNSNotificationTopicRecord setSupportsLockScreen:]
+  -[UNSNotificationTopicRecord setDisplayName:]
+  -[UNSNotificationTopicRecord modalAlertStyle]
+  -[UNSNotificationTopicRecord setEnablesBadges:]
+  -[UNSNotificationTopicRecord setSupportsBadges:]
+  -[UNSNotificationTopicRecord priority]
+  -[UNSNotificationTopicRecord supportsTimeSensitive]
+  -[UNSNotificationTopicRecord setSupportsNotificationCenter:]
+  -[UNSNotificationTopicRecord setSupportsSounds:]
+  -[UNSNotificationTopicRecord enablesNotificationCenter]
+  -[UNSNotificationTopicRecord setIdentifier:]
+  -[UNSNotificationTopicRecord setEnablesLockScreen:]
+  -[UNSNotificationTopicRecord setSupportsAlerts:]
+  -[UNSNotificationTopicRecord setDisplayNameLocalizationKey:]
+  -[UNSNotificationTopicRecord supportsSounds]
+  -[UNSNotificationTopicRecord enablesCriticalAlerts]
+  -[UNSNotificationTopicRecord supportsSpoken]
+  -[UNSNotificationTopicRecord setSortIdentifier:]
+  -[UNSNotificationTopicRecord setEnablesNotificationCenter:]
+  -[UNSNotificationTopicRecord setSupportsTimeSensitive:]
+  -[UNSNotificationTopicRecord setModalAlertStyle:]
+  -[UNSNotificationTopicRecord setSupportsCriticalAlerts:]
+  -[UNSNotificationTopicRecord setEnablesCarPlay:]
+  -[UNSNotificationTopicRecord enablesSounds]
+  -[UNSNotificationTopicRecord supportsBadges]
+  -[UNSNotificationTopicRecord setEnablesTimeSensitive:]
+  -[UNSNotificationTopicRecord enablesAlerts]
+
+
+UNSNotificationScheduleRepository : NSObject
+  // instance methods
+  -[UNSNotificationScheduleRepository allBundleIdentifiers]
+  -[UNSNotificationScheduleRepository initWithDirectory:librarian:]
+  -[UNSNotificationScheduleRepository performMigration]
+  -[UNSNotificationScheduleRepository _queue_performMigration]
+  -[UNSNotificationScheduleRepository notificationSourcesDidUninstall:]
+  -[UNSNotificationScheduleRepository _dateFormatter]
+  -[UNSNotificationScheduleRepository .cxx_destruct]
+  -[UNSNotificationScheduleRepository _queue_setSchedule:forBundleIdentifier:]
+  -[UNSNotificationScheduleRepository _queue_removeScheduleForBundleIdentifier:]
+  -[UNSNotificationScheduleRepository _queue_performMigrationForBundleIdentifier:]
+  -[UNSNotificationScheduleRepository scheduleForBundleIdentifier:]
+  -[UNSNotificationScheduleRepository removeScheduleForBundleIdentifier:]
+  -[UNSNotificationScheduleRepository _queue_scheduleForBundleIdentifier:]
+  -[UNSNotificationScheduleRepository setSchedule:forBundleIdentifier:]
+
+
+UNSNotificationSourceSettingsDescription : NSObject
+ @property  BOOL supportsSounds
+ @property  BOOL supportsAlerts
+ @property  BOOL supportsBadges
+ @property  BOOL supportsLockScreen
+ @property  BOOL supportsNotificationCenter
+ @property  BOOL supportsCarPlay
+ @property  BOOL supportsSpoken
+ @property  BOOL modalAlertStyle
+ @property  BOOL alwaysShowPreviews
+ @property  BOOL providesAppNotificationSettings
+ @property  BOOL supportsTimeSensitive
+ @property  BOOL supportsCriticalAlerts
+
+  // class methods
+  +[UNSNotificationSourceSettingsDescription notificationSourceSettingsDescriptionFromDictionary:]
+
+  // instance methods
+  -[UNSNotificationSourceSettingsDescription supportsCarPlay]
+  -[UNSNotificationSourceSettingsDescription setAlwaysShowPreviews:]
+  -[UNSNotificationSourceSettingsDescription supportsCriticalAlerts]
+  -[UNSNotificationSourceSettingsDescription setSupportsSpoken:]
+  -[UNSNotificationSourceSettingsDescription setSupportsCarPlay:]
+  -[UNSNotificationSourceSettingsDescription providesAppNotificationSettings]
+  -[UNSNotificationSourceSettingsDescription supportsLockScreen]
+  -[UNSNotificationSourceSettingsDescription supportsAlerts]
+  -[UNSNotificationSourceSettingsDescription supportsNotificationCenter]
+  -[UNSNotificationSourceSettingsDescription isEqual:]
+  -[UNSNotificationSourceSettingsDescription alwaysShowPreviews]
+  -[UNSNotificationSourceSettingsDescription setSupportsLockScreen:]
+  -[UNSNotificationSourceSettingsDescription setProvidesAppNotificationSettings:]
+  -[UNSNotificationSourceSettingsDescription modalAlertStyle]
+  -[UNSNotificationSourceSettingsDescription setSupportsBadges:]
+  -[UNSNotificationSourceSettingsDescription supportsTimeSensitive]
+  -[UNSNotificationSourceSettingsDescription setSupportsNotificationCenter:]
+  -[UNSNotificationSourceSettingsDescription setSupportsSounds:]
+  -[UNSNotificationSourceSettingsDescription setSupportsAlerts:]
+  -[UNSNotificationSourceSettingsDescription supportsSounds]
+  -[UNSNotificationSourceSettingsDescription supportsSpoken]
+  -[UNSNotificationSourceSettingsDescription setSupportsTimeSensitive:]
+  -[UNSNotificationSourceSettingsDescription setModalAlertStyle:]
+  -[UNSNotificationSourceSettingsDescription setSupportsCriticalAlerts:]
+  -[UNSNotificationSourceSettingsDescription supportsBadges]
+
+
+UNSNotificationSourceDescription : NSObject
+ @property  NSString *bundleIdentifier
+ @property  NSString *displayName
+ @property  NSString *universalApplicationIdentifier
+ @property  NSString *intentsBundleIdentifier
+ @property  NSString *pushEnvironment
+ @property  NSString *defaultIconFile
+ @property  NSString *subordinateIconFile
+ @property  NSString *settingsIconFile
+ @property  NSString *settingsSheetIconFile
+ @property  NSString *carPlayIconFile
+ @property  NSString *watchQuickLookSmallIconFile
+ @property  NSString *watchQuickLookLargeIconFile
+ @property  NSString *watchListSmallIconFile
+ @property  NSString *watchListLargeIconFile
+ @property  NSString *watchQuickLook394hIconFile
+ @property  NSString *watchQuickLook448hIconFile
+ @property  NSString *watchList394hIconFile
+ @property  NSString *watchList448hIconFile
+ @property  NSString *watchQuickLook430hIconFile
+ @property  NSString *watchQuickLook484hIconFile
+ @property  NSString *watchList430hIconFile
+ @property  NSString *watchList484hIconFile
+ @property  NSURL *bundleURL
+ @property  NSURL *dataContainerURL
+ @property  NSDictionary *groupContainerURLS
+ @property  NSArray *defaultCategories
+ @property  UNSNotificationSourceSettingsDescription *defaultSettings
+ @property  NSArray *defaultTopics
+ @property  NSArray *activityTypes
+ @property  NSString *customSettingsBundle
+ @property  NSString *customSettingsDetailControllerClass
+ @property  BOOL automaticallyShowSettings
+ @property  BOOL hideSettings
+ @property  BOOL useDefaultDataProvider
+ @property  BOOL suppressDismissalSync
+ @property  BOOL suppressIconMask
+ @property  BOOL suppressUserAuthorizationPrompt
+ @property  BOOL allowCriticalAlerts
+ @property  BOOL allowTimeSensitive
+ @property  BOOL allowCalls
+ @property  BOOL allowIntercom
+ @property  BOOL allowMessages
+ @property  BOOL allowServiceExtensionFiltering
+ @property  BOOL allowPrivateProperties
+ @property  BOOL allowUnlimitedPendingNotifications
+ @property  BOOL allowUnlimitedContentBody
+ @property  BOOL usesCloudKit
+ @property  BOOL requiresTopics
+ @property  BOOL supportsContentAvailableRemoteNotifications
+ @property  BOOL restricted
+ @property  BOOL daemonShouldReceiveBackgroundResponses
+ @property  BOOL daemonShouldReceiveNotificationSettingsUpdates
+ @property  BOOL daemonShouldReceiveApplicationEvents
+ @property  BOOL isAppClip
+ @property  BOOL wantsEphemeralNotifications
+ @property  BOOL supportsProvisionalAlerts
+
+  // class methods
+  +[UNSNotificationSourceDescription descriptionWithBundleIdentifier:path:allowServiceExtensionFiltering:]
+  +[UNSNotificationSourceDescription applicationSourceDescriptionWithApplication:]
+  +[UNSNotificationSourceDescription systemSourceDescriptionWithBundleURL:]
+  +[UNSNotificationSourceDescription sourceDescriptionWithBundleIdentifier:]
+  +[UNSNotificationSourceDescription _validEnvironmentFromEnvironment:]
+  +[UNSNotificationSourceDescription applicationSourceDescriptionWithBundleIdentifier:]
+  +[UNSNotificationSourceDescription systemSourceDirectoryURLs]
+  +[UNSNotificationSourceDescription systemSourcePathExtension]
+  +[UNSNotificationSourceDescription systemSourceDescriptionWithBundleIdentifier:]
+
+  // instance methods
+  -[UNSNotificationSourceDescription isRestricted]
+  -[UNSNotificationSourceDescription dataContainerURL]
+  -[UNSNotificationSourceDescription setAllowUnlimitedPendingNotifications:]
+  -[UNSNotificationSourceDescription setWatchList448hIconFile:]
+  -[UNSNotificationSourceDescription displayName]
+  -[UNSNotificationSourceDescription setAllowCriticalAlerts:]
+  -[UNSNotificationSourceDescription setSystemPropertiesFromDictionary:bundle:]
+  -[UNSNotificationSourceDescription watchQuickLookLargeIconFile]
+  -[UNSNotificationSourceDescription wantsEphemeralNotifications]
+  -[UNSNotificationSourceDescription setAllowTimeSensitive:]
+  -[UNSNotificationSourceDescription suppressDismissalSync]
+  -[UNSNotificationSourceDescription setRequiresTopics:]
+  -[UNSNotificationSourceDescription bundleIdentifier]
+  -[UNSNotificationSourceDescription setUseDefaultDataProvider:]
+  -[UNSNotificationSourceDescription intentsBundleIdentifier]
+  -[UNSNotificationSourceDescription supportsProvisionalAlerts]
+  -[UNSNotificationSourceDescription setIsAppClip:]
+  -[UNSNotificationSourceDescription pushEnvironment]
+  -[UNSNotificationSourceDescription watchList448hIconFile]
+  -[UNSNotificationSourceDescription subordinateIconFile]
+  -[UNSNotificationSourceDescription allowUnlimitedContentBody]
+  -[UNSNotificationSourceDescription isAppClip]
+  -[UNSNotificationSourceDescription watchQuickLook430hIconFile]
+  -[UNSNotificationSourceDescription setAllowIntercom:]
+  -[UNSNotificationSourceDescription setPushEnvironment:]
+  -[UNSNotificationSourceDescription .cxx_destruct]
+  -[UNSNotificationSourceDescription setWatchListSmallIconFile:]
+  -[UNSNotificationSourceDescription setRestricted:]
+  -[UNSNotificationSourceDescription setSuppressUserAuthorizationPrompt:]
+  -[UNSNotificationSourceDescription setAllowUnlimitedContentBody:]
+  -[UNSNotificationSourceDescription setSupportsProvisionalAlerts:]
+  -[UNSNotificationSourceDescription usesCloudKit]
+  -[UNSNotificationSourceDescription setActivityTypes:]
+  -[UNSNotificationSourceDescription settingsSheetIconFile]
+  -[UNSNotificationSourceDescription watchList484hIconFile]
+  -[UNSNotificationSourceDescription settingsIconFile]
+  -[UNSNotificationSourceDescription setSubordinateIconFile:]
+  -[UNSNotificationSourceDescription setWatchQuickLookLargeIconFile:]
+  -[UNSNotificationSourceDescription setDataContainerURL:]
+  -[UNSNotificationSourceDescription setBundleIdentifier:]
+  -[UNSNotificationSourceDescription watchList430hIconFile]
+  -[UNSNotificationSourceDescription setWatchList484hIconFile:]
+  -[UNSNotificationSourceDescription allowServiceExtensionFiltering]
+  -[UNSNotificationSourceDescription setWatchListLargeIconFile:]
+  -[UNSNotificationSourceDescription bundleURL]
+  -[UNSNotificationSourceDescription hideSettings]
+  -[UNSNotificationSourceDescription requiresTopics]
+  -[UNSNotificationSourceDescription groupContainerURLS]
+  -[UNSNotificationSourceDescription setCustomSettingsDetailControllerClass:]
+  -[UNSNotificationSourceDescription allowIntercom]
+  -[UNSNotificationSourceDescription setAllowServiceExtensionFiltering:]
+  -[UNSNotificationSourceDescription setWantsEphemeralNotifications:]
+  -[UNSNotificationSourceDescription allowCriticalAlerts]
+  -[UNSNotificationSourceDescription isEqual:]
+  -[UNSNotificationSourceDescription setCarPlayIconFile:]
+  -[UNSNotificationSourceDescription setWatchQuickLook394hIconFile:]
+  -[UNSNotificationSourceDescription suppressUserAuthorizationPrompt]
+  -[UNSNotificationSourceDescription setSupportsContentAvailableRemoteNotifications:]
+  -[UNSNotificationSourceDescription setCustomSettingsBundle:]
+  -[UNSNotificationSourceDescription allowUnlimitedPendingNotifications]
+  -[UNSNotificationSourceDescription setAllowMessages:]
+  -[UNSNotificationSourceDescription setAutomaticallyShowSettings:]
+  -[UNSNotificationSourceDescription setSettingsSheetIconFile:]
+  -[UNSNotificationSourceDescription setHideSettings:]
+  -[UNSNotificationSourceDescription defaultTopics]
+  -[UNSNotificationSourceDescription setDisplayName:]
+  -[UNSNotificationSourceDescription setDefaultTopicsFromArray:bundle:]
+  -[UNSNotificationSourceDescription daemonShouldReceiveBackgroundResponses]
+  -[UNSNotificationSourceDescription supportsContentAvailableRemoteNotifications]
+  -[UNSNotificationSourceDescription setDefaultCategoriesFromArray:bundle:]
+  -[UNSNotificationSourceDescription useDefaultDataProvider]
+  -[UNSNotificationSourceDescription setWatchQuickLookSmallIconFile:]
+  -[UNSNotificationSourceDescription setDefaultTopics:]
+  -[UNSNotificationSourceDescription setDaemonShouldReceiveBackgroundResponses:]
+  -[UNSNotificationSourceDescription setSuppressIconMask:]
+  -[UNSNotificationSourceDescription watchList394hIconFile]
+  -[UNSNotificationSourceDescription setDaemonShouldReceiveApplicationEvents:]
+  -[UNSNotificationSourceDescription allowPrivateProperties]
+  -[UNSNotificationSourceDescription setUsesCloudKit:]
+  -[UNSNotificationSourceDescription allowCalls]
+  -[UNSNotificationSourceDescription setWatchList394hIconFile:]
+  -[UNSNotificationSourceDescription setDefaultSettings:]
+  -[UNSNotificationSourceDescription watchListLargeIconFile]
+  -[UNSNotificationSourceDescription carPlayIconFile]
+  -[UNSNotificationSourceDescription setDefaultCategories:]
+  -[UNSNotificationSourceDescription defaultCategories]
+  -[UNSNotificationSourceDescription setDaemonShouldReceiveNotificationSettingsUpdates:]
+  -[UNSNotificationSourceDescription setWatchQuickLook448hIconFile:]
+  -[UNSNotificationSourceDescription automaticallyShowSettings]
+  -[UNSNotificationSourceDescription setGroupContainerURLS:]
+  -[UNSNotificationSourceDescription setDefaultIconFile:]
+  -[UNSNotificationSourceDescription setAllowCalls:]
+  -[UNSNotificationSourceDescription activityTypes]
+  -[UNSNotificationSourceDescription watchQuickLookSmallIconFile]
+  -[UNSNotificationSourceDescription setWatchQuickLook484hIconFile:]
+  -[UNSNotificationSourceDescription defaultSettings]
+  -[UNSNotificationSourceDescription setIconFilesFromDictionary:]
+  -[UNSNotificationSourceDescription setAllowPrivateProperties:]
+  -[UNSNotificationSourceDescription setWatchQuickLook430hIconFile:]
+  -[UNSNotificationSourceDescription setWatchList430hIconFile:]
+  -[UNSNotificationSourceDescription setBundleURL:]
+  -[UNSNotificationSourceDescription setSuppressDismissalSync:]
+  -[UNSNotificationSourceDescription suppressIconMask]
+  -[UNSNotificationSourceDescription defaultIconFile]
+  -[UNSNotificationSourceDescription watchQuickLook394hIconFile]
+  -[UNSNotificationSourceDescription setUniversalApplicationIdentifier:]
+  -[UNSNotificationSourceDescription watchQuickLook448hIconFile]
+  -[UNSNotificationSourceDescription allowTimeSensitive]
+  -[UNSNotificationSourceDescription allowMessages]
+  -[UNSNotificationSourceDescription universalApplicationIdentifier]
+  -[UNSNotificationSourceDescription watchListSmallIconFile]
+  -[UNSNotificationSourceDescription daemonShouldReceiveApplicationEvents]
+  -[UNSNotificationSourceDescription daemonShouldReceiveNotificationSettingsUpdates]
+  -[UNSNotificationSourceDescription customSettingsBundle]
+  -[UNSNotificationSourceDescription watchQuickLook484hIconFile]
+  -[UNSNotificationSourceDescription customSettingsDetailControllerClass]
+  -[UNSNotificationSourceDescription setSettingsIconFile:]
+  -[UNSNotificationSourceDescription setIntentsBundleIdentifier:]
+
+
+UNSNotificationRecord : NSObject <BSDescriptionProviding>
+ @property  NSString *contentType
+ @property  NSString *communicationContextIdentifier
+ @property  NSString *communicationContextBundleIdentifier
+ @property  NSString *communicationContextAssociatedObjectUri
+ @property  NSString *communicationContextDisplayName
+ @property  UNSContactRecord *communicationContextSender
+ @property  NSArray *communicationContextRecipients
+ @property  NSURL *communicationContextContentURL
+ @property  NSString *communicationContextImageName
+ @property  BOOL communicationContextSystemImage
+ @property  BOOL communicationContextMentionsCurrentUser
+ @property  BOOL communicationContextNotifyRecipientAnyway
+ @property  BOOL communicationContextReplyToCurrentUser
+ @property  unsigned long communicationContextRecipientCount
+ @property  NSString *accessoryImageName
+ @property  NSArray *attachments
+ @property  NSNumber *badge
+ @property  NSString *body
+ @property  NSDate *contentDate
+ @property  NSArray *bodyLocalizationArguments
+ @property  NSString *bodyLocalizationKey
+ @property  NSString *categoryIdentifier
+ @property  NSString *threadIdentifier
+ @property  NSNumber *contentAvailable
+ @property  NSNumber *mutableContent
+ @property  NSDate *date
+ @property  unsigned long interruptionLevel
+ @property  BOOL hasDefaultAction
+ @property  NSString *defaultActionTitle
+ @property  NSString *defaultActionTitleLocalizationKey
+ @property  NSURL *defaultActionURL
+ @property  BOOL hasCriticalAlertSound
+ @property  NSDate *expirationDate
+ @property  NSString *header
+ @property  NSArray *headerLocalizationArguments
+ @property  NSString *headerLocalizationKey
+ @property  NSString *footer
+ @property  NSArray *footerLocalizationArguments
+ @property  NSString *footerLocalizationKey
+ @property  NSString *iconApplicationIdentifier
+ @property  NSString *iconName
+ @property  NSString *iconPath
+ @property  NSString *iconSystemImageName
+ @property  NSString *identifier
+ @property  NSString *launchImageName
+ @property  NSDate *requestDate
+ @property  BOOL shouldBadgeApplicationIcon
+ @property  BOOL shouldHideDate
+ @property  BOOL shouldHideTime
+ @property  BOOL shouldIgnoreAccessibilityDisabledVibrationSetting
+ @property  BOOL shouldIgnoreDoNotDisturb
+ @property  BOOL shouldIgnoreDowntime
+ @property  BOOL shouldIgnoreRingerSwitch
+ @property  BOOL shouldSuppressScreenLightUp
+ @property  BOOL shouldPlaySound
+ @property  BOOL shouldPresentAlert
+ @property  unsigned long presentationOptions
+ @property  BOOL shouldAuthenticateDefaultAction
+ @property  BOOL shouldBackgroundDefaultAction
+ @property  BOOL shouldPreventNotificationDismissalAfterDefaultAction
+ @property  BOOL shouldShowSubordinateIcon
+ @property  BOOL shouldSoundRepeat
+ @property  BOOL shouldSuppressSyncDismissalWhenRemoved
+ @property  BOOL shouldUseRequestIdentifierForDismissalSync
+ @property  BOOL shouldPreemptPresentedNotification
+ @property  BOOL shouldDisplayActionsInline
+ @property  NSString *audioCategory
+ @property  NSNumber *audioVolume
+ @property  double soundMaximumDuration
+ @property  NSString *subtitle
+ @property  NSArray *subtitleLocalizationArguments
+ @property  NSString *subtitleLocalizationKey
+ @property  NSString *title
+ @property  NSArray *titleLocalizationArguments
+ @property  NSString *titleLocalizationKey
+ @property  unsigned long realertCount
+ @property  NSString *summaryArgument
+ @property  unsigned long summaryArgumentCount
+ @property  NSString *targetContentIdentifier
+ @property  NSString *toneAlertTopic
+ @property  long long toneAlertType
+ @property  NSString *toneFileName
+ @property  NSURL *toneFileURL
+ @property  NSString *toneIdentifier
+ @property  unsigned long toneMediaLibraryItemIdentifier
+ @property  NSSet *topicIdentifiers
+ @property  BOOL allowsDefaultDestinations
+ @property  BOOL allowsAlertDestination
+ @property  BOOL allowsLockScreenDestination
+ @property  BOOL allowsNotificationCenterDestination
+ @property  BOOL allowsCarPlayDestination
+ @property  NSDate *triggerDate
+ @property  NSDateComponents *triggerDateComponents
+ @property  NSString *triggerRepeatCalendarIdentifier
+ @property  unsigned long triggerRepeatInterval
+ @property  BOOL triggerRepeats
+ @property  CLRegion *triggerRegion
+ @property  double triggerTimeInterval
+ @property  NSTimeZone *triggerTimeZone
+ @property  NSString *triggerType
+ @property  NSDictionary *userInfo
+ @property  NSString *vibrationIdentifier
+ @property  NSURL *vibrationPatternFileURL
+ @property  double relevanceScore
+ @property  BOOL hasAlertContent
+ @property  BOOL hasBadge
+ @property  BOOL hasSound
+ @property  BOOL hasPendingTrigger
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSNotificationRecord setShouldPreemptPresentedNotification:]
+  -[UNSNotificationRecord setToneFileURL:]
+  -[UNSNotificationRecord setShouldAuthenticateDefaultAction:]
+  -[UNSNotificationRecord setShouldSuppressScreenLightUp:]
+  -[UNSNotificationRecord setToneIdentifier:]
+  -[UNSNotificationRecord setTopicIdentifiers:]
+  -[UNSNotificationRecord toneIdentifier]
+  -[UNSNotificationRecord setRealertCount:]
+  -[UNSNotificationRecord setShouldIgnoreAccessibilityDisabledVibrationSetting:]
+  -[UNSNotificationRecord setLaunchImageName:]
+  -[UNSNotificationRecord setVibrationIdentifier:]
+  -[UNSNotificationRecord setTargetContentIdentifier:]
+  -[UNSNotificationRecord setShouldSuppressSyncDismissalWhenRemoved:]
+  -[UNSNotificationRecord setToneFileName:]
+  -[UNSNotificationRecord setShouldDisplayActionsInline:]
+  -[UNSNotificationRecord setHasDefaultAction:]
+  -[UNSNotificationRecord setAudioVolume:]
+  -[UNSNotificationRecord targetContentIdentifier]
+  -[UNSNotificationRecord setAccessoryImageName:]
+  -[UNSNotificationRecord setAudioCategory:]
+  -[UNSNotificationRecord setShouldUseRequestIdentifierForDismissalSync:]
+  -[UNSNotificationRecord shouldIgnoreAccessibilityDisabledVibrationSetting]
+  -[UNSNotificationRecord setRelevanceScore:]
+  -[UNSNotificationRecord setSummaryArgument:]
+  -[UNSNotificationRecord setShouldBackgroundDefaultAction:]
+  -[UNSNotificationRecord setInterruptionLevel:]
+  -[UNSNotificationRecord audioCategory]
+  -[UNSNotificationRecord setShouldIgnoreDowntime:]
+  -[UNSNotificationRecord audioVolume]
+  -[UNSNotificationRecord setCategoryIdentifier:]
+  -[UNSNotificationRecord setDefaultActionURL:]
+  -[UNSNotificationRecord setShouldShowSubordinateIcon:]
+  -[UNSNotificationRecord shouldIgnoreRingerSwitch]
+  -[UNSNotificationRecord setHeader:]
+  -[UNSNotificationRecord titleLocalizationArguments]
+  -[UNSNotificationRecord vibrationIdentifier]
+  -[UNSNotificationRecord setShouldIgnoreRingerSwitch:]
+  -[UNSNotificationRecord setThreadIdentifier:]
+  -[UNSNotificationRecord summaryArgumentCount]
+  -[UNSNotificationRecord attachments]
+  -[UNSNotificationRecord footerLocalizationKey]
+  -[UNSNotificationRecord summaryArgument]
+  -[UNSNotificationRecord setSummaryArgumentCount:]
+  -[UNSNotificationRecord setRequestDate:]
+  -[UNSNotificationRecord headerLocalizationKey]
+  -[UNSNotificationRecord setUserInfo:]
+  -[UNSNotificationRecord setMutableContent:]
+  -[UNSNotificationRecord footer]
+  -[UNSNotificationRecord setTitleLocalizationArguments:]
+  -[UNSNotificationRecord triggerRepeatCalendarIdentifier]
+  -[UNSNotificationRecord triggerTimeZone]
+  -[UNSNotificationRecord setFooter:]
+  -[UNSNotificationRecord allowsDefaultDestinations]
+  -[UNSNotificationRecord defaultActionTitleLocalizationKey]
+  -[UNSNotificationRecord setTitleLocalizationKey:]
+  -[UNSNotificationRecord shouldUseRequestIdentifierForDismissalSync]
+  -[UNSNotificationRecord requestDate]
+  -[UNSNotificationRecord relevanceScore]
+  -[UNSNotificationRecord body]
+  -[UNSNotificationRecord shouldAuthenticateDefaultAction]
+  -[UNSNotificationRecord setCommunicationContextAssociatedObjectUri:]
+  -[UNSNotificationRecord header]
+  -[UNSNotificationRecord allowsNotificationCenterDestination]
+  -[UNSNotificationRecord setTitle:]
+  -[UNSNotificationRecord initWithDictionaryRepresentation:]
+  -[UNSNotificationRecord communicationContextRecipients]
+  -[UNSNotificationRecord defaultActionTitle]
+  -[UNSNotificationRecord shouldPreemptPresentedNotification]
+  -[UNSNotificationRecord setAttachments:]
+  -[UNSNotificationRecord setShouldHideDate:]
+  -[UNSNotificationRecord setToneAlertTopic:]
+  -[UNSNotificationRecord shouldPreventNotificationDismissalAfterDefaultAction]
+  -[UNSNotificationRecord hasSound]
+  -[UNSNotificationRecord shouldBackgroundDefaultAction]
+  -[UNSNotificationRecord setIconPath:]
+  -[UNSNotificationRecord communicationContextReplyToCurrentUser]
+  -[UNSNotificationRecord setDefaultActionTitleLocalizationKey:]
+  -[UNSNotificationRecord setIconApplicationIdentifier:]
+  -[UNSNotificationRecord communicationContextBundleIdentifier]
+  -[UNSNotificationRecord .cxx_destruct]
+  -[UNSNotificationRecord communicationContextSystemImage]
+  -[UNSNotificationRecord setCommunicationContextDisplayName:]
+  -[UNSNotificationRecord setCommunicationContextImageName:]
+  -[UNSNotificationRecord setAllowsLockScreenDestination:]
+  -[UNSNotificationRecord setCommunicationContextBundleIdentifier:]
+  -[UNSNotificationRecord setCommunicationContextReplyToCurrentUser:]
+  -[UNSNotificationRecord communicationContextRecipientCount]
+  -[UNSNotificationRecord topicIdentifiers]
+  -[UNSNotificationRecord shouldBadgeApplicationIcon]
+  -[UNSNotificationRecord headerLocalizationArguments]
+  -[UNSNotificationRecord dictionaryRepresentation]
+  -[UNSNotificationRecord iconApplicationIdentifier]
+  -[UNSNotificationRecord dictionaryRepresentationWithTruncation:]
+  -[UNSNotificationRecord succinctDescriptionBuilder]
+  -[UNSNotificationRecord setSubtitle:]
+  -[UNSNotificationRecord communicationContextAssociatedObjectUri]
+  -[UNSNotificationRecord interruptionLevel]
+  -[UNSNotificationRecord setFooterLocalizationArguments:]
+  -[UNSNotificationRecord setBodyLocalizationArguments:]
+  -[UNSNotificationRecord setContentType:]
+  -[UNSNotificationRecord setBodyLocalizationKey:]
+  -[UNSNotificationRecord shouldPlaySound]
+  -[UNSNotificationRecord setTriggerDate:]
+  -[UNSNotificationRecord setHeaderLocalizationKey:]
+  -[UNSNotificationRecord setShouldPlaySound:]
+  -[UNSNotificationRecord iconSystemImageName]
+  -[UNSNotificationRecord setExpirationDate:]
+  -[UNSNotificationRecord shouldSuppressSyncDismissalWhenRemoved]
+  -[UNSNotificationRecord shouldIgnoreDowntime]
+  -[UNSNotificationRecord setContentDate:]
+  -[UNSNotificationRecord descriptionBuilderWithMultilinePrefix:]
+  -[UNSNotificationRecord shouldPresentAlert]
+  -[UNSNotificationRecord shouldIgnoreDoNotDisturb]
+  -[UNSNotificationRecord init]
+  -[UNSNotificationRecord setTriggerDateComponents:]
+  -[UNSNotificationRecord hasDefaultAction]
+  -[UNSNotificationRecord setShouldIgnoreDoNotDisturb:]
+  -[UNSNotificationRecord setBadge:]
+  -[UNSNotificationRecord setShouldPresentAlert:]
+  -[UNSNotificationRecord isEqual:]
+  -[UNSNotificationRecord allowsCarPlayDestination]
+  -[UNSNotificationRecord contentAvailable]
+  -[UNSNotificationRecord setTriggerRepeats:]
+  -[UNSNotificationRecord descriptionWithMultilinePrefix:]
+  -[UNSNotificationRecord setShouldBadgeApplicationIcon:]
+  -[UNSNotificationRecord setTriggerRepeatCalendarIdentifier:]
+  -[UNSNotificationRecord contentType]
+  -[UNSNotificationRecord bodyLocalizationKey]
+  -[UNSNotificationRecord setCommunicationContextNotifyRecipientAnyway:]
+  -[UNSNotificationRecord identifier]
+  -[UNSNotificationRecord succinctDescription]
+  -[UNSNotificationRecord setShouldSoundRepeat:]
+  -[UNSNotificationRecord categoryIdentifier]
+  -[UNSNotificationRecord triggerType]
+  -[UNSNotificationRecord shouldSoundRepeat]
+  -[UNSNotificationRecord presentationOptions]
+  -[UNSNotificationRecord setCommunicationContextRecipientCount:]
+  -[UNSNotificationRecord allowsAlertDestination]
+  -[UNSNotificationRecord subtitle]
+  -[UNSNotificationRecord setHasCriticalAlertSound:]
+  -[UNSNotificationRecord setCommunicationContextContentURL:]
+  -[UNSNotificationRecord setSoundMaximumDuration:]
+  -[UNSNotificationRecord accessoryImageName]
+  -[UNSNotificationRecord setCommunicationContextMentionsCurrentUser:]
+  -[UNSNotificationRecord setIconName:]
+  -[UNSNotificationRecord setToneAlertType:]
+  -[UNSNotificationRecord toneFileURL]
+  -[UNSNotificationRecord toneAlertType]
+  -[UNSNotificationRecord soundMaximumDuration]
+  -[UNSNotificationRecord setAllowsNotificationCenterDestination:]
+  -[UNSNotificationRecord mutableContent]
+  -[UNSNotificationRecord triggerDateComponents]
+  -[UNSNotificationRecord triggerRepeats]
+  -[UNSNotificationRecord title]
+  -[UNSNotificationRecord realertCount]
+  -[UNSNotificationRecord communicationContextMentionsCurrentUser]
+  -[UNSNotificationRecord setDate:]
+  -[UNSNotificationRecord triggerRepeatInterval]
+  -[UNSNotificationRecord contentDate]
+  -[UNSNotificationRecord setAllowsAlertDestination:]
+  -[UNSNotificationRecord toneAlertTopic]
+  -[UNSNotificationRecord triggerRegion]
+  -[UNSNotificationRecord setAllowsDefaultDestinations:]
+  -[UNSNotificationRecord setBody:]
+  -[UNSNotificationRecord communicationContextDisplayName]
+  -[UNSNotificationRecord triggerTimeInterval]
+  -[UNSNotificationRecord threadIdentifier]
+  -[UNSNotificationRecord communicationContextIdentifier]
+  -[UNSNotificationRecord setContentAvailable:]
+  -[UNSNotificationRecord communicationContextContentURL]
+  -[UNSNotificationRecord setAllowsCarPlayDestination:]
+  -[UNSNotificationRecord setIdentifier:]
+  -[UNSNotificationRecord hasPendingTrigger]
+  -[UNSNotificationRecord setTriggerTimeInterval:]
+  -[UNSNotificationRecord shouldHideDate]
+  -[UNSNotificationRecord setPresentationOptions:]
+  -[UNSNotificationRecord setFooterLocalizationKey:]
+  -[UNSNotificationRecord defaultActionURL]
+  -[UNSNotificationRecord hasAlertContent]
+  -[UNSNotificationRecord subtitleLocalizationArguments]
+  -[UNSNotificationRecord shouldDisplayActionsInline]
+  -[UNSNotificationRecord userInfo]
+  -[UNSNotificationRecord footerLocalizationArguments]
+  -[UNSNotificationRecord toneMediaLibraryItemIdentifier]
+  -[UNSNotificationRecord setTriggerRegion:]
+  -[UNSNotificationRecord setTriggerRepeatInterval:]
+  -[UNSNotificationRecord triggerDate]
+  -[UNSNotificationRecord launchImageName]
+  -[UNSNotificationRecord bodyLocalizationArguments]
+  -[UNSNotificationRecord setCommunicationContextIdentifier:]
+  -[UNSNotificationRecord setShouldPreventNotificationDismissalAfterDefaultAction:]
+  -[UNSNotificationRecord communicationContextSender]
+  -[UNSNotificationRecord hasCriticalAlertSound]
+  -[UNSNotificationRecord setToneMediaLibraryItemIdentifier:]
+  -[UNSNotificationRecord vibrationPatternFileURL]
+  -[UNSNotificationRecord iconPath]
+  -[UNSNotificationRecord badge]
+  -[UNSNotificationRecord hasCommunicationContext]
+  -[UNSNotificationRecord setVibrationPatternFileURL:]
+  -[UNSNotificationRecord expirationDate]
+  -[UNSNotificationRecord toneFileName]
+  -[UNSNotificationRecord setSubtitleLocalizationArguments:]
+  -[UNSNotificationRecord setSubtitleLocalizationKey:]
+  -[UNSNotificationRecord setCommunicationContextSystemImage:]
+  -[UNSNotificationRecord willNotifyUser]
+  -[UNSNotificationRecord communicationContextNotifyRecipientAnyway]
+  -[UNSNotificationRecord setTriggerTimeZone:]
+  -[UNSNotificationRecord isSimilar:]
+  -[UNSNotificationRecord communicationContextImageName]
+  -[UNSNotificationRecord titleLocalizationKey]
+  -[UNSNotificationRecord iconName]
+  -[UNSNotificationRecord shouldShowSubordinateIcon]
+  -[UNSNotificationRecord setShouldHideTime:]
+  -[UNSNotificationRecord subtitleLocalizationKey]
+  -[UNSNotificationRecord setCommunicationContextSender:]
+  -[UNSNotificationRecord setIconSystemImageName:]
+  -[UNSNotificationRecord setCommunicationContextRecipients:]
+  -[UNSNotificationRecord shouldSuppressScreenLightUp]
+  -[UNSNotificationRecord hasBadge]
+  -[UNSNotificationRecord date]
+  -[UNSNotificationRecord setDefaultActionTitle:]
+  -[UNSNotificationRecord allowsLockScreenDestination]
+  -[UNSNotificationRecord shouldHideTime]
+  -[UNSNotificationRecord setTriggerType:]
+  -[UNSNotificationRecord setHeaderLocalizationArguments:]
+
+
+UNSNotificationRecordUpdate : NSObject
+ @property  UNSNotificationRecord *notificationRecord
+
+  // instance methods
+  -[UNSNotificationRecordUpdate .cxx_destruct]
+  -[UNSNotificationRecordUpdate isEqual:]
+  -[UNSNotificationRecordUpdate notificationRecord]
+  -[UNSNotificationRecordUpdate _initWithNotificationRecord:]
+
+
+UNSNotificationRecordAddUpdate : UNSNotificationRecordUpdate
+  // class methods
+  +[UNSNotificationRecordAddUpdate updateWithNotificationRecord:]
+
+
+UNSNotificationRecordReplaceUpdate : UNSNotificationRecordUpdate
+ @property  UNSNotificationRecord *replacedNotificationRecord
+ @property  BOOL shouldRepost
+
+  // class methods
+  +[UNSNotificationRecordReplaceUpdate updateWithNotificationRecord:replacedNotificationRecord:shouldRepost:]
+
+  // instance methods
+  -[UNSNotificationRecordReplaceUpdate .cxx_destruct]
+  -[UNSNotificationRecordReplaceUpdate isEqual:]
+  -[UNSNotificationRecordReplaceUpdate replacedNotificationRecord]
+  -[UNSNotificationRecordReplaceUpdate _initWithNotificationRecord:replacedNotificationRecord:shouldRepost:]
+  -[UNSNotificationRecordReplaceUpdate shouldRepost]
+
+
+UNSNotificationRecordRemoveUpdate : UNSNotificationRecordUpdate
+  // class methods
+  +[UNSNotificationRecordRemoveUpdate updateWithNotificationRecord:]
+
+
+UNSLocalizationService : NSObject
+  // instance methods
+  -[UNSLocalizationService notificationSourcesDidUninstall:]
+  -[UNSLocalizationService notificationSourcesDidInstall:]
+  -[UNSLocalizationService _queue_bundleWithIdentifier:]
+  -[UNSLocalizationService _queue_unloadBundleWithIdentifier:]
+  -[UNSLocalizationService .cxx_destruct]
+  -[UNSLocalizationService init]
+  -[UNSLocalizationService bundleWithIdentifier:]
+  -[UNSLocalizationService _queue_notificationSourcesDidInstall:]
+  -[UNSLocalizationService unloadBundleWithIdentifier:]
+  -[UNSLocalizationService _queue_notificationSourcesDidUninstall:]
+
+
+UNSDefaultDataProvider : NSObject <UNSNotificationRepositoryObserver, UNSNotificationCategoryRepositoryObserver, UNSNotificationTopicRepositoryObserver, BBRemoteDataProvider>
+ @property  BSCFBundle *bundle
+ @property  BBDataProviderProxy *proxy
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSDefaultDataProvider sectionParameters]
+  -[UNSDefaultDataProvider uninstall]
+  -[UNSDefaultDataProvider sectionIdentifier]
+  -[UNSDefaultDataProvider _queue_withdrawBulletinForNotification:]
+  -[UNSDefaultDataProvider bundle]
+  -[UNSDefaultDataProvider _queue_applicableSectionInfosForSubsectionIDs:]
+  -[UNSDefaultDataProvider dataProviderDidLoad]
+  -[UNSDefaultDataProvider setBundle:]
+  -[UNSDefaultDataProvider _actionsFromActionRecords:]
+  -[UNSDefaultDataProvider setEffectiveSectionInfo:]
+  -[UNSDefaultDataProvider _queue_supportsCriticalAlertsForSubsectionIDs:]
+  -[UNSDefaultDataProvider _silenceActionForCategory:]
+  -[UNSDefaultDataProvider syncsBulletinDismissal]
+  -[UNSDefaultDataProvider _unarchiveNotificationFromData:]
+  -[UNSDefaultDataProvider clearedInfoForBulletins:lastClearedInfo:]
+  -[UNSDefaultDataProvider .cxx_destruct]
+  -[UNSDefaultDataProvider _queue_notificationRepositoryDidPerformUpdates:]
+  -[UNSDefaultDataProvider displayNameForSubsectionID:]
+  -[UNSDefaultDataProvider _isTCCUserAvailabilityGrantedForBundleId:]
+  -[UNSDefaultDataProvider clearedInfoAndBulletinsForClearingAllBulletinsWithLimit:lastClearedInfo:]
+  -[UNSDefaultDataProvider initWithNotificationSourceDescription:applicationLauncher:daemonLauncher:categoryRepository:notificationRepository:topicRepository:attachmentsService:localizationService:queue:]
+  -[UNSDefaultDataProvider sectionIcon]
+  -[UNSDefaultDataProvider sectionBundlePath]
+  -[UNSDefaultDataProvider sectionDisplayName]
+  -[UNSDefaultDataProvider proxy]
+  -[UNSDefaultDataProvider _allBulletinsWithMaxCount:sinceDate:]
+  -[UNSDefaultDataProvider _queue_modifyBulletinForNotification:]
+  -[UNSDefaultDataProvider categoryRepository:didChangeCategoriesForBundleIdentifier:]
+  -[UNSDefaultDataProvider sortDescriptors]
+  -[UNSDefaultDataProvider _categoryForIdentifier:]
+  -[UNSDefaultDataProvider unloadBundle]
+  -[UNSDefaultDataProvider _topicForIdentifier:]
+  -[UNSDefaultDataProvider _sectionIconForNotificationSourceDescription:]
+  -[UNSDefaultDataProvider _dismissActionForCategory:]
+  -[UNSDefaultDataProvider notificationRecords]
+  -[UNSDefaultDataProvider _soundsDirectoryPathForContainerBasePath:]
+  -[UNSDefaultDataProvider notificationRepository:didDiscoverContentOnFirstUnlockForBundleIdentifier:]
+  -[UNSDefaultDataProvider _isResourceValidForPath:withContainerPath:]
+  -[UNSDefaultDataProvider _bbContentTypeFromUNContentType:toneAlertType:]
+  -[UNSDefaultDataProvider _actionFromActionRecord:]
+  -[UNSDefaultDataProvider _bbContactFromUNContact:]
+  -[UNSDefaultDataProvider _setNotificationSourceDescription:]
+  -[UNSDefaultDataProvider _allCategories]
+  -[UNSDefaultDataProvider setProxy:]
+  -[UNSDefaultDataProvider universalSectionIdentifier]
+  -[UNSDefaultDataProvider notificationRepository:didPerformUpdates:forBundleIdentifier:]
+  -[UNSDefaultDataProvider handleBulletinActionResponse:withCompletion:]
+  -[UNSDefaultDataProvider _addAttachments:toBulletinRequest:]
+  -[UNSDefaultDataProvider dealloc]
+  -[UNSDefaultDataProvider defaultSubsectionInfos]
+  -[UNSDefaultDataProvider _supplementaryActionsForForCategoryRecord:]
+  -[UNSDefaultDataProvider invalidate]
+  -[UNSDefaultDataProvider _bulletinInterruptionLevelForInterruptionLevel:]
+  -[UNSDefaultDataProvider setNotificationSourceDescription:]
+  -[UNSDefaultDataProvider defaultSectionInfo]
+  -[UNSDefaultDataProvider _queue_bulletinForNotification:]
+  -[UNSDefaultDataProvider _queue_addBulletinForNotification:]
+  -[UNSDefaultDataProvider _sectionIconVariantForImageName:bundlePath:format:precomposed:]
+  -[UNSDefaultDataProvider bulletinsWithRequestParameters:lastCleared:]
+  -[UNSDefaultDataProvider _defaultActionWithNotification:]
+  -[UNSDefaultDataProvider _localizeClientString:inBundle:]
+  -[UNSDefaultDataProvider _handleBulletinActionResponse:withCompletion:]
+  -[UNSDefaultDataProvider _userAvailabilityTCCApprovedBundleIds]
+  -[UNSDefaultDataProvider _pathForSoundName:]
+  -[UNSDefaultDataProvider topicRepository:didChangeTopicsForBundleIdentifier:]
+
+
+UNSDefaultDataProviderFactory : NSObject <BBObserverDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSDefaultDataProviderFactory notificationSourcesDidUninstall:]
+  -[UNSDefaultDataProviderFactory requestRemoveAuthorizationforNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory requestAuthorizationStatus:withOptions:scheduledDeliveryEnabled:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory notificationSourcesDidInstall:]
+  -[UNSDefaultDataProviderFactory initWithApplicationLauncher:daemonLauncher:categoryRepository:notificationRepository:attachmentsService:topicRepository:localizationService:settingsGateway:]
+  -[UNSDefaultDataProviderFactory .cxx_destruct]
+  -[UNSDefaultDataProviderFactory _queue_removeObserver:]
+  -[UNSDefaultDataProviderFactory _queue_addObserver:]
+  -[UNSDefaultDataProviderFactory _queue_updateSettingsWithAuthorizationStatus:options:scheduledDeliveryEnabled:expirationDate:lastUserGrantDate:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory notificationSettingsForTopicsWithBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSettingsForBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSourceDidUninstall:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSourceDidInstall:]
+  -[UNSDefaultDataProviderFactory _queue_createNewDefaultDataProviders:]
+  -[UNSDefaultDataProviderFactory _queue_sectionInfoDidChange:]
+  -[UNSDefaultDataProviderFactory _queue_effectiveSectionInfoForBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory observer:updateSectionInfo:]
+  -[UNSDefaultDataProviderFactory _queue_removeDataProviderWithBundleIdentifier:completionHandler:]
+  -[UNSDefaultDataProviderFactory _queue_sectionInfoForBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory addObserver:]
+  -[UNSDefaultDataProviderFactory requestAuthorizationStatus:withOptions:scheduledDeliveryEnabled:expirationDate:lastUserGrantDate:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory _queue_updateSettingsWithAuthorizationStatus:options:scheduledDeliveryEnabled:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory _queue_setSectionInfo:forBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSourcesDidInstall:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSourcesDidUninstall:]
+  -[UNSDefaultDataProviderFactory updateAuthorizationWithOptions:scheduledDeliveryEnabled:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory setCriticalAlertAuthorization:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory dealloc]
+  -[UNSDefaultDataProviderFactory removeObserver:]
+  -[UNSDefaultDataProviderFactory _queue_createDataProviderWithNotificationSourceDescription:withCompletion:]
+  -[UNSDefaultDataProviderFactory notificationSettingsForBundleIdentifier:]
+  -[UNSDefaultDataProviderFactory _queue_setCriticalAlertAuthorization:forNotificationSourceDescription:completionHandler:]
+  -[UNSDefaultDataProviderFactory observer:removeSection:]
+  -[UNSDefaultDataProviderFactory _queue_notificationSettingsForTopicsWithBundleIdentifier:]
+
+
+UNSNotificationAuthorizationAlertController : UNSAuthorizationAlertController
+  // instance methods
+  -[UNSNotificationAuthorizationAlertController presentAuthorizationAlertForBundleIdentifier:displayName:usageDescription:withResult:]
+
+
+UNSAttachmentRecord : NSObject
+ @property  NSString *identifier
+ @property  NSURL *URL
+ @property  NSString *type
+ @property  BOOL thumbnailHidden
+ @property  NSDictionary *thumbnailClippingRect
+ @property  NSNumber *thumbnailFrameNumber
+ @property  NSDictionary *thumbnailTimestamp
+ @property  BOOL hiddenFromDefaultExpandedView
+
+  // instance methods
+  -[UNSAttachmentRecord initWithDictionaryRepresentation:]
+  -[UNSAttachmentRecord setType:]
+  -[UNSAttachmentRecord setURL:]
+  -[UNSAttachmentRecord .cxx_destruct]
+  -[UNSAttachmentRecord dictionaryRepresentation]
+  -[UNSAttachmentRecord isEqual:]
+  -[UNSAttachmentRecord identifier]
+  -[UNSAttachmentRecord URL]
+  -[UNSAttachmentRecord type]
+  -[UNSAttachmentRecord setIdentifier:]
+  -[UNSAttachmentRecord thumbnailHidden]
+  -[UNSAttachmentRecord hiddenFromDefaultExpandedView]
+  -[UNSAttachmentRecord setThumbnailHidden:]
+  -[UNSAttachmentRecord setHiddenFromDefaultExpandedView:]
+  -[UNSAttachmentRecord thumbnailClippingRect]
+  -[UNSAttachmentRecord thumbnailTimestamp]
+  -[UNSAttachmentRecord thumbnailFrameNumber]
+  -[UNSAttachmentRecord setThumbnailClippingRect:]
+  -[UNSAttachmentRecord setThumbnailFrameNumber:]
+  -[UNSAttachmentRecord setThumbnailTimestamp:]
+
+
+UNSNotificationActionRecord : NSObject
+ @property  NSString *actionType
+ @property  NSString *identifier
+ @property  BOOL hasSystemIcon
+ @property  BOOL authenticationRequired
+ @property  BOOL destructive
+ @property  BOOL foreground
+ @property  BOOL shouldPreventNotificationDismiss
+ @property  NSString *iconImageName
+ @property  NSString *textInputButtonTitle
+ @property  NSArray *textInputButtonTitleLocalizationArguments
+ @property  NSString *textInputButtonTitleLocalizationKey
+ @property  NSString *textInputPlaceholder
+ @property  NSArray *textInputPlaceholderLocalizationArguments
+ @property  NSString *textInputPlaceholderLocalizationKey
+ @property  NSString *title
+ @property  NSArray *titleLocalizationArguments
+ @property  NSString *titleLocalizationKey
+ @property  NSURL *url
+
+  // instance methods
+  -[UNSNotificationActionRecord titleLocalizationArguments]
+  -[UNSNotificationActionRecord setTitleLocalizationArguments:]
+  -[UNSNotificationActionRecord setActionType:]
+  -[UNSNotificationActionRecord setForeground:]
+  -[UNSNotificationActionRecord setTitleLocalizationKey:]
+  -[UNSNotificationActionRecord setDestructive:]
+  -[UNSNotificationActionRecord setTextInputButtonTitleLocalizationArguments:]
+  -[UNSNotificationActionRecord setTitle:]
+  -[UNSNotificationActionRecord initWithDictionaryRepresentation:]
+  -[UNSNotificationActionRecord url]
+  -[UNSNotificationActionRecord isForeground]
+  -[UNSNotificationActionRecord .cxx_destruct]
+  -[UNSNotificationActionRecord dictionaryRepresentation]
+  -[UNSNotificationActionRecord textInputPlaceholderLocalizationArguments]
+  -[UNSNotificationActionRecord isAuthenticationRequired]
+  -[UNSNotificationActionRecord hasSystemIcon]
+  -[UNSNotificationActionRecord textInputButtonTitleLocalizationArguments]
+  -[UNSNotificationActionRecord shouldPreventNotificationDismiss]
+  -[UNSNotificationActionRecord setUrl:]
+  -[UNSNotificationActionRecord setTextInputButtonTitle:]
+  -[UNSNotificationActionRecord setAuthenticationRequired:]
+  -[UNSNotificationActionRecord textInputPlaceholder]
+  -[UNSNotificationActionRecord isEqual:]
+  -[UNSNotificationActionRecord identifier]
+  -[UNSNotificationActionRecord actionType]
+  -[UNSNotificationActionRecord setTextInputPlaceholderLocalizationArguments:]
+  -[UNSNotificationActionRecord title]
+  -[UNSNotificationActionRecord iconImageName]
+  -[UNSNotificationActionRecord textInputPlaceholderLocalizationKey]
+  -[UNSNotificationActionRecord setIdentifier:]
+  -[UNSNotificationActionRecord setTextInputButtonTitleLocalizationKey:]
+  -[UNSNotificationActionRecord textInputButtonTitleLocalizationKey]
+  -[UNSNotificationActionRecord setTextInputPlaceholder:]
+  -[UNSNotificationActionRecord setIconImageName:]
+  -[UNSNotificationActionRecord setShouldPreventNotificationDismiss:]
+  -[UNSNotificationActionRecord setTextInputPlaceholderLocalizationKey:]
+  -[UNSNotificationActionRecord setHasSystemIcon:]
+  -[UNSNotificationActionRecord textInputButtonTitle]
+  -[UNSNotificationActionRecord titleLocalizationKey]
+  -[UNSNotificationActionRecord isDestructive]
+
+
+UNSContentProtectionManager : NSObject
+  // instance methods
+  -[UNSContentProtectionManager _queue_observedState]
+  -[UNSContentProtectionManager classCStrategy]
+  -[UNSContentProtectionManager contentProtectionStrategyForMinimumProtection:]
+  -[UNSContentProtectionManager .cxx_destruct]
+  -[UNSContentProtectionManager init]
+  -[UNSContentProtectionManager _queue_adjustContentProtectionStateWithBlock:]
+  -[UNSContentProtectionManager removeContentProtectionObserver:]
+  -[UNSContentProtectionManager isProtectedDataAvailable]
+  -[UNSContentProtectionManager _queue_keyBagLockState]
+  -[UNSContentProtectionManager deviceUnlockedSinceBoot]
+  -[UNSContentProtectionManager dealloc]
+  -[UNSContentProtectionManager observedState]
+  -[UNSContentProtectionManager addContentProtectionObserver:]
+  -[UNSContentProtectionManager classDStrategy]
+
+
+UNSLocationMonitor : NSObject <CLLocationManagerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSLocationMonitor locationManager:didExitRegion:]
+  -[UNSLocationMonitor locationManager:didEnterRegion:]
+  -[UNSLocationMonitor markAsHavingReceivedLocation]
+  -[UNSLocationMonitor .cxx_destruct]
+  -[UNSLocationMonitor _queue_triggerDidFireForRegion:]
+  -[UNSLocationMonitor addObserver:forBundleIdentifier:]
+  -[UNSLocationMonitor locationManager:didFailWithError:]
+  -[UNSLocationMonitor init]
+  -[UNSLocationMonitor initWithQueue:locationManager:observable:]
+  -[UNSLocationMonitor removeObserver:forBundleIdentifier:]
+  -[UNSLocationMonitor setMonitoredRegions:forBundleIdentifier:withCompletionHandler:]
+  -[UNSLocationMonitor initWithQueue:locationManager:]
+  -[UNSLocationMonitor isBundleIdentifierAuthorizedForRegionMonitoring:]
+  -[UNSLocationMonitor locationManager:didStartMonitoringForRegion:]
+
+
+UNSNotificationCategoryRepository : NSObject
+  // instance methods
+  -[UNSNotificationCategoryRepository allBundleIdentifiers]
+  -[UNSNotificationCategoryRepository performMigration]
+  -[UNSNotificationCategoryRepository _queue_performMigration]
+  -[UNSNotificationCategoryRepository notificationSourcesDidUninstall:]
+  -[UNSNotificationCategoryRepository categoryWithIdentifier:bundleIdentifier:]
+  -[UNSNotificationCategoryRepository .cxx_destruct]
+  -[UNSNotificationCategoryRepository addObserver:forBundleIdentifier:]
+  -[UNSNotificationCategoryRepository contentProtectionStateChangedForFirstUnlock:]
+  -[UNSNotificationCategoryRepository _queue_categoriesForBundleIdentifier:]
+  -[UNSNotificationCategoryRepository _queue_performMigrationForBundleIdentifier:]
+  -[UNSNotificationCategoryRepository _maxObjectsPerKey]
+  -[UNSNotificationCategoryRepository setCategories:forBundleIdentifier:]
+  -[UNSNotificationCategoryRepository removeObserver:forBundleIdentifier:]
+  -[UNSNotificationCategoryRepository initWithDataStoreRepository:observable:]
+  -[UNSNotificationCategoryRepository _queue_notificationSourcesDidUninstall:]
+  -[UNSNotificationCategoryRepository categoriesForBundleIdentifier:]
+  -[UNSNotificationCategoryRepository _queue_setCategories:forBundleIdentifier:]
+  -[UNSNotificationCategoryRepository initWithDirectory:librarian:repositoryProtectionStrategy:]
+
+
+UNSNotificationTopicRepository : NSObject
+  // instance methods
+  -[UNSNotificationTopicRepository allBundleIdentifiers]
+  -[UNSNotificationTopicRepository notificationSourcesDidUninstall:]
+  -[UNSNotificationTopicRepository .cxx_destruct]
+  -[UNSNotificationTopicRepository addObserver:forBundleIdentifier:]
+  -[UNSNotificationTopicRepository contentProtectionStateChangedForFirstUnlock:]
+  -[UNSNotificationTopicRepository _queue_topicsForBundleIdentifier:]
+  -[UNSNotificationTopicRepository topicsForBundleIdentifier:]
+  -[UNSNotificationTopicRepository _maxObjectsPerKey]
+  -[UNSNotificationTopicRepository _queue_setTopics:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationTopicRepository removeObserver:forBundleIdentifier:]
+  -[UNSNotificationTopicRepository initWithDataStoreRepository:observable:]
+  -[UNSNotificationTopicRepository _queue_notificationSourcesDidUninstall:]
+  -[UNSNotificationTopicRepository setTopics:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationTopicRepository initWithDirectory:librarian:repositoryProtectionStrategy:]
+
+
+UNSUserNotificationServerSettingsConnectionListener : NSObject <NSXPCListenerDelegate, UNUserNotificationSettingsServerProtocol, UNSNotificationSettingsServiceObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSUserNotificationServerSettingsConnectionListener getNotificationSource:withCompletionHandler:]
+  -[UNSUserNotificationServerSettingsConnectionListener setNotificationSystemSettings:]
+  -[UNSUserNotificationServerSettingsConnectionListener authorizationWithOptions:forNotificationSourceIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerSettingsConnectionListener .cxx_destruct]
+  -[UNSUserNotificationServerSettingsConnectionListener settingsService:didUpdateNotificationSystemSettings:]
+  -[UNSUserNotificationServerSettingsConnectionListener getNotificationSources:withCompletionHandler:]
+  -[UNSUserNotificationServerSettingsConnectionListener getAllNotificationSourcesWithCompletionHandler:]
+  -[UNSUserNotificationServerSettingsConnectionListener getNotificationSystemSettingsWithCompletionHandler:]
+  -[UNSUserNotificationServerSettingsConnectionListener _currentConnection]
+  -[UNSUserNotificationServerSettingsConnectionListener resetScheduledDeliverySetting]
+  -[UNSUserNotificationServerSettingsConnectionListener resume]
+  -[UNSUserNotificationServerSettingsConnectionListener replaceNotificationSettings:forNotificationSourceIdentifier:]
+  -[UNSUserNotificationServerSettingsConnectionListener dealloc]
+  -[UNSUserNotificationServerSettingsConnectionListener settingsService:didUpdateNotificationSourcesForBundleIdentifiers:]
+  -[UNSUserNotificationServerSettingsConnectionListener listener:shouldAcceptNewConnection:]
+  -[UNSUserNotificationServerSettingsConnectionListener _handleClientConnectionInvalidated:]
+  -[UNSUserNotificationServerSettingsConnectionListener _handleClientConnectionInterrupted:]
+  -[UNSUserNotificationServerSettingsConnectionListener replaceNotificationTopicSettings:forNotificationSourceIdentifier:topicIdentifier:]
+  -[UNSUserNotificationServerSettingsConnectionListener initWithNotificationSettingsService:]
+
+
+UNSApplicationService : NSObject
+  // instance methods
+  -[UNSApplicationService willPresentNotification:forBundleIdentifier:withCompletionHandler:]
+  -[UNSApplicationService _queue_didChangeApplicationState:forBundleIdentifier:]
+  -[UNSApplicationService .cxx_destruct]
+  -[UNSApplicationService initWithApplicationLauncher:categoryRepository:localizationService:]
+  -[UNSApplicationService _queue_willPresentNotification:forBundleIdentifier:withCompletionHandler:]
+  -[UNSApplicationService isApplicationForeground:]
+  -[UNSApplicationService didChangeApplicationState:forBundleIdentifier:]
+
+
+UNSApplicationLauncher : NSObject
+  // instance methods
+  -[UNSApplicationLauncher willPresentNotification:forBundleIdentifier:withCompletionHandler:]
+  -[UNSApplicationLauncher .cxx_destruct]
+  -[UNSApplicationLauncher _queue_willPresentNotification:forBundleIdentifier:withCompletionHandler:]
+  -[UNSApplicationLauncher dealloc]
+  -[UNSApplicationLauncher initWithLocationMonitor:]
+  -[UNSApplicationLauncher foregroundLaunchApplication:withResponse:launchImageName:origin:endpoint:completionHandler:]
+  -[UNSApplicationLauncher backgroundLaunchApplication:withResponse:completionHandler:]
+  -[UNSApplicationLauncher _removeAllProcessAssertionsAndInvalidate:]
+  -[UNSApplicationLauncher _queue_foregroundLaunchApplication:withResponse:launchImageName:origin:endpoint:completionHandler:]
+  -[UNSApplicationLauncher _queue_actionForNotificationResponse:bundleIdentifier:withHandler:]
+  -[UNSApplicationLauncher _queue_backgroundLaunchApplication:withResponse:completionHandler:]
+  -[UNSApplicationLauncher _queue_removeProcessAssertion:forBundleID:invalidate:]
+  -[UNSApplicationLauncher _queue_newProcessAssertionForBundleID:PID:flags:reason:name:watchdogInterval:acquisitionHandler:invalidationHandler:]
+  -[UNSApplicationLauncher _queue_removeProcessAssertionsHavingReason:forBundleID:invalidate:]
+  -[UNSApplicationLauncher _queue_addProcessAssertion:forBundleID:]
+  -[UNSApplicationLauncher _queue_removeAllProcessAssertionsAndInvalidate:]
+
+
+UNSUserNotificationServerConnectionListener : NSObject <NSXPCListenerDelegate, UNUserNotificationServerProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSUserNotificationServerConnectionListener _saveNotificationRecord:shouldRepost:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener getNotificationCategoriesForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener _removeConnectionForAllBundleIdentifiers:]
+  -[UNSUserNotificationServerConnectionListener initWithCategoryRepository:notificationSchedulingService:notificationAuthorizationService:notificationSettingsService:notificationRepository:remoteNotificationConnectionListener:remoteNotificationService:applicationLauncher:attachmentsService:locationMonitor:topicRepository:localizationService:communicationContextService:]
+  -[UNSUserNotificationServerConnectionListener setNotificationRequests:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener setNotificationCategories:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener .cxx_destruct]
+  -[UNSUserNotificationServerConnectionListener removeAllPendingNotificationRequestsForBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener didReceiveDeviceToken:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener getBadgeNumberForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener removeSimilarNotificationRequests:forBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener replaceContentForRequestWithIdentifier:bundleIdentifier:replacementContent:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener getNotificationSettingsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener requestAuthorizationWithOptions:forBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener requestRemoveAuthorizationForBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener getPendingNotificationRequestsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener getClearedInfoForDataProviderMigrationWithBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener getNotificationTopicsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener setNotificationTopics:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener _queue_removeConnectionForAllBundleIdentifiers:]
+  -[UNSUserNotificationServerConnectionListener addNotificationRequest:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener removeAllDeliveredNotificationsForBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener _currentConnection]
+  -[UNSUserNotificationServerConnectionListener setBadgeNumber:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener getDeliveredNotificationsForBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener resume]
+  -[UNSUserNotificationServerConnectionListener _queue_didReceiveDeviceToken:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener removePendingNotificationRequestsWithIdentifiers:forBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener setObservingUserNotifications:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener dealloc]
+  -[UNSUserNotificationServerConnectionListener _queue_notificationRequestsForNotificationRecords:bundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener listener:shouldAcceptNewConnection:]
+  -[UNSUserNotificationServerConnectionListener removeDeliveredNotificationsWithIdentifiers:forBundleIdentifier:completionHandler:]
+  -[UNSUserNotificationServerConnectionListener getNotificationSettingsForTopicsWithBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener _queue_delegateConnectionForBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener setBadgeString:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener _queue_removeConnection:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener _queue_addConnection:forBundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener _queue_notificationsForNotificationRecords:bundleIdentifier:]
+  -[UNSUserNotificationServerConnectionListener _saveNotificationRequest:shouldRepost:deliveredDate:forBundleIdentifier:withCompletionHandler:]
+  -[UNSUserNotificationServerConnectionListener _queue_observerConnectionsForBundleIdentifier:]
+
+
+UNSKeyedDataStoreRepository : NSObject
+  // instance methods
+  -[UNSKeyedDataStoreRepository directoryPath]
+  -[UNSKeyedDataStoreRepository _pathForKey:]
+  -[UNSKeyedDataStoreRepository _dataAtPath:]
+  -[UNSKeyedDataStoreRepository objectsForKey:]
+  -[UNSKeyedDataStoreRepository _setObjects:atPath:]
+  -[UNSKeyedDataStoreRepository _objectsForData:identifier:]
+  -[UNSKeyedDataStoreRepository .cxx_destruct]
+  -[UNSKeyedDataStoreRepository replaceObject:forKey:]
+  -[UNSKeyedDataStoreRepository protectionStateChanged]
+  -[UNSKeyedDataStoreRepository migrateStoreAtPath:forKey:]
+  -[UNSKeyedDataStoreRepository addObject:mustReplace:forKey:]
+  -[UNSKeyedDataStoreRepository allKeys]
+  -[UNSKeyedDataStoreRepository objectsPassingTest:forKey:]
+  -[UNSKeyedDataStoreRepository _removeObjectsPassingTest:atPath:]
+  -[UNSKeyedDataStoreRepository removeObjectsPassingTest:forKey:]
+  -[UNSKeyedDataStoreRepository removeAllObjectsForKey:]
+  -[UNSKeyedDataStoreRepository _isReplacementSupported]
+  -[UNSKeyedDataStoreRepository removeDataStoreRepository]
+  -[UNSKeyedDataStoreRepository initWithDirectory:fileName:pathExtension:librarian:repositoryProtectionStrategy:objectIdentifierKey:maxObjectsPerKey:shouldExcludeFromBackup:]
+  -[UNSKeyedDataStoreRepository _saveObjects:atPath:]
+  -[UNSKeyedDataStoreRepository _useReplacementToImport:into:]
+  -[UNSKeyedDataStoreRepository setObjects:forKey:]
+  -[UNSKeyedDataStoreRepository _removeItemAtPath:]
+  -[UNSKeyedDataStoreRepository _directoryForKey:]
+  -[UNSKeyedDataStoreRepository _addObject:mustReplace:atPath:]
+  -[UNSKeyedDataStoreRepository removeStoreForKey:]
+  -[UNSKeyedDataStoreRepository _addObject:toObjects:mustReplace:receipt:]
+  -[UNSKeyedDataStoreRepository _objectsPassingTest:atPath:]
+  -[UNSKeyedDataStoreRepository addObject:forKey:]
+  -[UNSKeyedDataStoreRepository _objectsAtPath:]
+
+
+UNSCriticalAlertAuthorizationAlertController : UNSAuthorizationAlertController
+  // instance methods
+  -[UNSCriticalAlertAuthorizationAlertController presentAuthorizationAlertForBundleIdentifier:displayName:usageDescription:withResult:]
+
+
+UNSFileHandleContentProtectionStrategy : NSObject <UNSContentProtectionStrategy>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSFileHandleContentProtectionStrategy dataAtPath:]
+  -[UNSFileHandleContentProtectionStrategy .cxx_destruct]
+  -[UNSFileHandleContentProtectionStrategy writeData:atPath:error:]
+  -[UNSFileHandleContentProtectionStrategy allPaths]
+  -[UNSFileHandleContentProtectionStrategy initWithFileProtectionType:]
+  -[UNSFileHandleContentProtectionStrategy removeItemAtPath:error:]
+  -[UNSFileHandleContentProtectionStrategy dataIsAvailableAtPath:]
+  -[UNSFileHandleContentProtectionStrategy migrateDataAtPath:toPath:]
+  -[UNSFileHandleContentProtectionStrategy allDataAtPath:]
+  -[UNSFileHandleContentProtectionStrategy removeAllDataAtPath:error:]
+  -[UNSFileHandleContentProtectionStrategy _fileHandleForCreatingStoreAtPath:protectionType:]
+  -[UNSFileHandleContentProtectionStrategy _isFileProtectionTypeSupported:]
+
+
+UNSFileHandleWrapper : NSObject
+ @property  NSFileHandle *fileHandle
+ @property  NSString *path
+
+  // instance methods
+  -[UNSFileHandleWrapper fileHandle]
+  -[UNSFileHandleWrapper setPath:]
+  -[UNSFileHandleWrapper .cxx_destruct]
+  -[UNSFileHandleWrapper setFileHandle:]
+  -[UNSFileHandleWrapper path]
+
+
+UNSNotificationRepository : NSObject
+ @property  <UNSNotificationRepositorySettingsProvider> *settingsProvider
+ @property  <UNSNotificationRepositoryDelegate> *delegate
+
+  // instance methods
+  -[UNSNotificationRepository allBundleIdentifiers]
+  -[UNSNotificationRepository performMigration]
+  -[UNSNotificationRepository _queue_performMigration]
+  -[UNSNotificationRepository notificationSourcesDidUninstall:]
+  -[UNSNotificationRepository saveNotificationRecord:shouldRepost:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository removeNotificationRepository]
+  -[UNSNotificationRepository badgeNumberForBundleIdentifier:]
+  -[UNSNotificationRepository notificationSourcesDidInstall:]
+  -[UNSNotificationRepository _queue_removeInvalidNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationRepository performValidation]
+  -[UNSNotificationRepository _queue_performValidation]
+  -[UNSNotificationRepository _notificationsForObjects:]
+  -[UNSNotificationRepository _queue_setBadgeNumber:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository .cxx_destruct]
+  -[UNSNotificationRepository notificationRecordsForBundleIdentifier:]
+  -[UNSNotificationRepository initWithDataStoreRepository:observable:librarian:]
+  -[UNSNotificationRepository addObserver:forBundleIdentifier:]
+  -[UNSNotificationRepository removeInvalidNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationRepository setDelegate:]
+  -[UNSNotificationRepository contentProtectionStateChangedForFirstUnlock:]
+  -[UNSNotificationRepository _queue_setBadgeValue:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository _queue_setBadgeString:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository _queue_triggerInvalidationForFirstUnlock]
+  -[UNSNotificationRepository _logNotification:forBundleIdentifier:]
+  -[UNSNotificationRepository _queue_removeNotificationRecordsPassingTest:forBundleIdentifier:]
+  -[UNSNotificationRepository _queue_performMigrationForPushStore]
+  -[UNSNotificationRepository setSettingsProvider:]
+  -[UNSNotificationRepository notificationRecordForForIdentifier:bundleIdentifier:]
+  -[UNSNotificationRepository settingsProvider]
+  -[UNSNotificationRepository _shouldPersistNotificationRecord:forBundleSettings:perTopicSettings:]
+  -[UNSNotificationRepository _queue_performMigrationForBundleIdentifier:]
+  -[UNSNotificationRepository _maxObjectsPerKey]
+  -[UNSNotificationRepository _queue_notificationRecordForForIdentifier:forBundleIdentifier:]
+  -[UNSNotificationRepository _queue_badgeNumberForBundleIdentifier:]
+  -[UNSNotificationRepository _queue_performMigrationForUserNotificationsStore]
+  -[UNSNotificationRepository removeObserver:forBundleIdentifier:]
+  -[UNSNotificationRepository removeNotificationRecordsPassingTest:forBundleIdentifier:]
+  -[UNSNotificationRepository removeStoreForBundleIdentifier:]
+  -[UNSNotificationRepository setBadgeNumber:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository delegate]
+  -[UNSNotificationRepository removeAllNotificationRecordsForBundleIdentifier:]
+  -[UNSNotificationRepository _queue_performMigrationForPushStoreAtPath:]
+  -[UNSNotificationRepository _queue_notificationRecordsForBundleIdentifier:]
+  -[UNSNotificationRepository _queue_saveNotificationRecord:shouldRepost:withOptions:forBundleIdentifier:]
+  -[UNSNotificationRepository _queue_notifyObserversNotificationsDidAddNotifications:replaceNotifications:replacementNotifications:removedNotifications:shouldRepost:forBundleIdentifier:]
+  -[UNSNotificationRepository setBadgeString:forBundleIdentifier:withCompletionHandler:]
+  -[UNSNotificationRepository initWithDirectory:librarian:repositoryProtectionStrategy:]
+  -[UNSNotificationRepository _queue_removeAllNotificationRecordsForBundleIdentifier:]
+
+
+UNSAttachmentsRepository : NSObject
+  // class methods
+  +[UNSAttachmentsRepository _sha1HashOfFileAtURL:]
+
+  // instance methods
+  -[UNSAttachmentsRepository allBundleIdentifiers]
+  -[UNSAttachmentsRepository initWithDirectory:librarian:]
+  -[UNSAttachmentsRepository performMigration]
+  -[UNSAttachmentsRepository _claimedRepositoryURLsForBundleIdentifier:]
+  -[UNSAttachmentsRepository _removeRepositoryURL:]
+  -[UNSAttachmentsRepository isRepositoryURL:]
+  -[UNSAttachmentsRepository bundleIdentifiersClaimingAttachments]
+  -[UNSAttachmentsRepository referencesForBundleIdentifier:]
+  -[UNSAttachmentsRepository _removeAllReferencesForBundleIdentifier:]
+  -[UNSAttachmentsRepository .cxx_destruct]
+  -[UNSAttachmentsRepository _transformNotificationIdentifiersForRepositoryURL:bundleIdentifier:usingTransformBlock:]
+  -[UNSAttachmentsRepository _performAttachmentFilesMigration]
+  -[UNSAttachmentsRepository moveFileIntoRepositoryFromFileURL:forNotificationIdentifier:bundleIdentifier:]
+  -[UNSAttachmentsRepository _attachmentDirectoryForBundleIdentifier:]
+  -[UNSAttachmentsRepository _fileURLForDigestString:extension:bundleIdentifier:]
+  -[UNSAttachmentsRepository removeReferenceToRepositoryURL:forNotificationIdentifier:bundleIdentifier:]
+  -[UNSAttachmentsRepository deleteAllFilesForBundleIdentifier:]
+  -[UNSAttachmentsRepository ensureIntegrityUsingNotificationIdentifiersForBundleIdentifiers:]
+  -[UNSAttachmentsRepository _removeReferencesToRepositoryURL:forNotificationIdentifier:bundleIdentifier:]
+  -[UNSAttachmentsRepository isValidRepositoryURL:forBundleIdentifier:]
+  -[UNSAttachmentsRepository _performAttachmentRepositoryKeyMigration]
+  -[UNSAttachmentsRepository _addReferencesToRepositoryURL:forNotificationIdentifier:bundleIdentifier:]
+  -[UNSAttachmentsRepository _performAttachmentReferencesMigration]
+  -[UNSAttachmentsRepository _transformAttachmentsForBundleIdentifier:usingTransformBlock:]
+  -[UNSAttachmentsRepository _performAttachmentReferencesMigrationForBundleIdentifier:]
+
+
+UNSDataStoreReceipt : NSObject
+ @property  NSArray *addedObjects
+ @property  NSArray *replacedObjects
+ @property  NSArray *replacementObjects
+ @property  NSArray *removedObjects
+
+  // class methods
+  +[UNSDataStoreReceipt receiptWithAddedObjects:replacedObjects:replacementObjects:removedObjects:]
+
+  // instance methods
+  -[UNSDataStoreReceipt replacedObjects]
+  -[UNSDataStoreReceipt addedObjects]
+  -[UNSDataStoreReceipt .cxx_destruct]
+  -[UNSDataStoreReceipt removedObjects]
+  -[UNSDataStoreReceipt initWithAddedObjects:replacedObjects:replacementObjects:removedObjects:]
+  -[UNSDataStoreReceipt hasChanges]
+  -[UNSDataStoreReceipt replacementObjects]
+
+
+UNSNotificationCategoryRecord : NSObject
+ @property  NSArray *actions
+ @property  BOOL hasCustomDismissAction
+ @property  BOOL hasCustomSilenceAction
+ @property  NSString *identifier
+ @property  NSArray *intentIdentifiers
+ @property  NSArray *minimalActions
+ @property  BOOL shouldAllowInCarPlay
+ @property  BOOL privacyOptionShowTitle
+ @property  BOOL privacyOptionShowSubtitle
+ @property  BOOL preventAutomaticRemovalFromRecent
+ @property  BOOL revealAdditionalContentWhenPresented
+ @property  BOOL preventAutomaticLock
+ @property  BOOL preventDismissWhenClosed
+ @property  BOOL presentFullScreenAlertOverList
+ @property  BOOL shouldAllowActionsInCarPlay
+ @property  BOOL shouldAllowPersistentBannersInCarPlay
+ @property  BOOL playMediaWhenRaised
+ @property  BOOL preventClearFromList
+ @property  BOOL alwaysDisplayNotificationsIndicator
+ @property  BOOL suppressDelayForForwardedNotifications
+ @property  BOOL suppressDismissActionInCarPlay
+ @property  NSString *privateBody
+ @property  NSString *summaryFormat
+ @property  NSString *backgroundStyle
+ @property  NSString *listPriority
+
+  // instance methods
+  -[UNSNotificationCategoryRecord setActions:]
+  -[UNSNotificationCategoryRecord intentIdentifiers]
+  -[UNSNotificationCategoryRecord minimalActions]
+  -[UNSNotificationCategoryRecord setBackgroundStyle:]
+  -[UNSNotificationCategoryRecord setHasCustomDismissAction:]
+  -[UNSNotificationCategoryRecord setListPriority:]
+  -[UNSNotificationCategoryRecord initWithDictionaryRepresentation:]
+  -[UNSNotificationCategoryRecord setAlwaysDisplayNotificationsIndicator:]
+  -[UNSNotificationCategoryRecord backgroundStyle]
+  -[UNSNotificationCategoryRecord setPreventDismissWhenClosed:]
+  -[UNSNotificationCategoryRecord .cxx_destruct]
+  -[UNSNotificationCategoryRecord suppressDismissActionInCarPlay]
+  -[UNSNotificationCategoryRecord dictionaryRepresentation]
+  -[UNSNotificationCategoryRecord preventClearFromList]
+  -[UNSNotificationCategoryRecord setHasCustomSilenceAction:]
+  -[UNSNotificationCategoryRecord actions]
+  -[UNSNotificationCategoryRecord preventAutomaticRemovalFromRecent]
+  -[UNSNotificationCategoryRecord shouldAllowInCarPlay]
+  -[UNSNotificationCategoryRecord privacyOptionShowTitle]
+  -[UNSNotificationCategoryRecord privateBody]
+  -[UNSNotificationCategoryRecord presentFullScreenAlertOverList]
+  -[UNSNotificationCategoryRecord isEqual:]
+  -[UNSNotificationCategoryRecord identifier]
+  -[UNSNotificationCategoryRecord summaryFormat]
+  -[UNSNotificationCategoryRecord setRevealAdditionalContentWhenPresented:]
+  -[UNSNotificationCategoryRecord setPresentFullScreenAlertOverList:]
+  -[UNSNotificationCategoryRecord hasCustomSilenceAction]
+  -[UNSNotificationCategoryRecord setShouldAllowActionsInCarPlay:]
+  -[UNSNotificationCategoryRecord listPriority]
+  -[UNSNotificationCategoryRecord setPrivacyOptionShowSubtitle:]
+  -[UNSNotificationCategoryRecord setSummaryFormat:]
+  -[UNSNotificationCategoryRecord shouldAllowActionsInCarPlay]
+  -[UNSNotificationCategoryRecord setPlayMediaWhenRaised:]
+  -[UNSNotificationCategoryRecord setPreventAutomaticRemovalFromRecent:]
+  -[UNSNotificationCategoryRecord setIdentifier:]
+  -[UNSNotificationCategoryRecord privacyOptionShowSubtitle]
+  -[UNSNotificationCategoryRecord setPrivacyOptionShowTitle:]
+  -[UNSNotificationCategoryRecord preventAutomaticLock]
+  -[UNSNotificationCategoryRecord suppressDelayForForwardedNotifications]
+  -[UNSNotificationCategoryRecord alwaysDisplayNotificationsIndicator]
+  -[UNSNotificationCategoryRecord setIntentIdentifiers:]
+  -[UNSNotificationCategoryRecord setSuppressDismissActionInCarPlay:]
+  -[UNSNotificationCategoryRecord setSuppressDelayForForwardedNotifications:]
+  -[UNSNotificationCategoryRecord hasCustomDismissAction]
+  -[UNSNotificationCategoryRecord shouldAllowPersistentBannersInCarPlay]
+  -[UNSNotificationCategoryRecord setMinimalActions:]
+  -[UNSNotificationCategoryRecord setPreventAutomaticLock:]
+  -[UNSNotificationCategoryRecord setShouldAllowPersistentBannersInCarPlay:]
+  -[UNSNotificationCategoryRecord playMediaWhenRaised]
+  -[UNSNotificationCategoryRecord preventDismissWhenClosed]
+  -[UNSNotificationCategoryRecord setPreventClearFromList:]
+  -[UNSNotificationCategoryRecord revealAdditionalContentWhenPresented]
+  -[UNSNotificationCategoryRecord setPrivateBody:]
+  -[UNSNotificationCategoryRecord setShouldAllowInCarPlay:]
+
+
+UNSNotificationRecordMapper : NSObject
+  // instance methods
+  -[UNSNotificationRecordMapper _notificationInterruptionLevelForNotificationRecord:]
+  -[UNSNotificationRecordMapper _notificationCommunicationContextForNotificationRecord:]
+  -[UNSNotificationRecordMapper .cxx_destruct]
+  -[UNSNotificationRecordMapper notificationForNotificationRecord:]
+  -[UNSNotificationRecordMapper initWithBundle:categoryRepository:]
+  -[UNSNotificationRecordMapper _notificationSoundForNotificationRecord:]
+  -[UNSNotificationRecordMapper _notificationTriggerForNotificationRecord:]
+  -[UNSNotificationRecordMapper notificationRequestForNotificationRecord:]
+  -[UNSNotificationRecordMapper _notificationContentForNotificationRecord:]
+  -[UNSNotificationRecordMapper _notificationIconForNotificationRecord:]
+
+
+UNSAtomicDataContentProtectionStrategy : NSObject <UNSContentProtectionStrategy>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSAtomicDataContentProtectionStrategy _dataWritingOptionForFileProtectionType:]
+  -[UNSAtomicDataContentProtectionStrategy dataAtPath:]
+  -[UNSAtomicDataContentProtectionStrategy writeData:atPath:error:]
+  -[UNSAtomicDataContentProtectionStrategy initWithFileProtectionType:]
+  -[UNSAtomicDataContentProtectionStrategy removeItemAtPath:error:]
+  -[UNSAtomicDataContentProtectionStrategy dataIsAvailableAtPath:]
+  -[UNSAtomicDataContentProtectionStrategy migrateDataAtPath:toPath:]
+
+
+UNSSettingsGateway : NSObject <BBObserverDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[UNSSettingsGateway sectionInfoForSectionIDs:]
+  -[UNSSettingsGateway _queue_getSectionInfoForSectionIDs:withCompletion:]
+  -[UNSSettingsGateway _queue_setGlobalContentPreviewSetting:]
+  -[UNSSettingsGateway _queue_setGlobalScheduledDeliveryShowNextSummarySetting:]
+  -[UNSSettingsGateway _queue_setGlobalScheduledDeliverySetting:]
+  -[UNSSettingsGateway _queue_sectionInfoForSectionID:]
+  -[UNSSettingsGateway setGlobalAnnounceCarPlaySetting:]
+  -[UNSSettingsGateway globalScheduledDeliverySetting]
+  -[UNSSettingsGateway setGlobalScheduledDeliveryShowNextSummarySetting:]
+  -[UNSSettingsGateway _queue_globalScheduledDeliveryShowNextSummarySetting]
+  -[UNSSettingsGateway setGlobalScheduledDeliveryTimes:]
+  -[UNSSettingsGateway allEffectiveSectionInfo]
+  -[UNSSettingsGateway .cxx_destruct]
+  -[UNSSettingsGateway allSectionInfo]
+  -[UNSSettingsGateway _queue_setGlobalAnnounceHeadphonesSetting:]
+  -[UNSSettingsGateway effectiveSectionInfoForSectionID:]
+  -[UNSSettingsGateway _queue_removeObserver:]
+  -[UNSSettingsGateway _queue_addObserver:]
+  -[UNSSettingsGateway _queue_effectiveSectionInfoForSectionID:]
+  -[UNSSettingsGateway _queue_globalScheduledDeliverySetting]
+  -[UNSSettingsGateway _queue_globalAnnounceHeadphonesSetting]
+  -[UNSSettingsGateway sectionInfoForSectionID:]
+  -[UNSSettingsGateway _queue_globalAnnounceCarPlaySetting]
+  -[UNSSettingsGateway _queue_setGlobalAnnounceCarPlaySetting:]
+  -[UNSSettingsGateway init]
+  -[UNSSettingsGateway globalAnnounceSetting]
+  -[UNSSettingsGateway globalScheduledDeliveryTimes]
+  -[UNSSettingsGateway _queue_allSectionInfos]
+  -[UNSSettingsGateway observer:updateSectionInfo:]
+  -[UNSSettingsGateway addObserver:]
+  -[UNSSettingsGateway _queue_allEffectiveSectionInfos]
+  -[UNSSettingsGateway _queue_effectiveSectionInfosForSectionIDs:]
+  -[UNSSettingsGateway globalScheduledDeliveryShowNextSummarySetting]
+  -[UNSSettingsGateway _queue_setGlobalAnnounceSetting:]
+  -[UNSSettingsGateway getSectionInfoForSectionIDs:withCompletion:]
+  -[UNSSettingsGateway setGlobalAnnounceSetting:]
+  -[UNSSettingsGateway observer:updateGlobalSettings:]
+  -[UNSSettingsGateway _queue_setSectionInfo:forSectionID:]
+  -[UNSSettingsGateway _queue_globalAnnounceSetting]
+  -[UNSSettingsGateway setGlobalScheduledDeliverySetting:]
+  -[UNSSettingsGateway dealloc]
+  -[UNSSettingsGateway globalContentPreviewSetting]
+  -[UNSSettingsGateway _queue_setGlobalScheduledDeliveryTimes:]
+  -[UNSSettingsGateway removeObserver:]
+  -[UNSSettingsGateway setGlobalAnnounceHeadphonesSetting:]
+  -[UNSSettingsGateway _queue_globalContentPreviewSetting]
+  -[UNSSettingsGateway _queue_sectionInfosForSectionIDs:]
+  -[UNSSettingsGateway _queue_globalScheduledDeliveryTimes]
+  -[UNSSettingsGateway effectiveSectionInfoForSectionIDs:]
+  -[UNSSettingsGateway globalAnnounceHeadphonesSetting]
+  -[UNSSettingsGateway globalAnnounceCarPlaySetting]
+  -[UNSSettingsGateway setGlobalContentPreviewSetting:]
+  -[UNSSettingsGateway setSectionInfo:forSectionID:]
+
+
+UNSNotificationCategoryRecordMapper : NSObject
+  // instance methods
+  -[UNSNotificationCategoryRecordMapper .cxx_destruct]
+  -[UNSNotificationCategoryRecordMapper notificationActionForNotificationActionRecord:]
+  -[UNSNotificationCategoryRecordMapper initWithBundle:]
+  -[UNSNotificationCategoryRecordMapper notificationCategoryForNotificationCategoryRecord:]
+
+
+UNSPushRegistrationRepository : NSObject
+  // instance methods
+  -[UNSPushRegistrationRepository allBundleIdentifiers]
+  -[UNSPushRegistrationRepository initWithDirectory:librarian:]
+  -[UNSPushRegistrationRepository performMigration]
+  -[UNSPushRegistrationRepository _queue_performMigration]
+  -[UNSPushRegistrationRepository notificationSourcesDidUninstall:]
+  -[UNSPushRegistrationRepository .cxx_destruct]
+  -[UNSPushRegistrationRepository setRegistration:forBundleIdentifier:]
+  -[UNSPushRegistrationRepository _queue_performMigrationForBundleIdentifier:]
+  -[UNSPushRegistrationRepository removeRegistrationForBundleIdentifier:]
+  -[UNSPushRegistrationRepository _queue_setRegistration:forBundleIdentifier:]
+  -[UNSPushRegistrationRepository _queue_registrationForBundleIdentifier:]
+  -[UNSPushRegistrationRepository registrationForBundleIdentifier:]
+  -[UNSPushRegistrationRepository _queue_removeRegistrationForBundleIdentifier:]
+
+
+UNSRemoteNotificationClient : NSObject <NSCoding, NSSecureCoding>
+ @property  NSString *tokenIdentifier
+ @property  NSString *environment
+ @property  NSData *lastKnownDeviceToken
+
+  // class methods
+  +[UNSRemoteNotificationClient initialize]
+  +[UNSRemoteNotificationClient supportsSecureCoding]
+
+  // instance methods
+  -[UNSRemoteNotificationClient initWithCoder:]
+  -[UNSRemoteNotificationClient .cxx_destruct]
+  -[UNSRemoteNotificationClient setEnvironment:]
+  -[UNSRemoteNotificationClient tokenIdentifier]
+  -[UNSRemoteNotificationClient environment]
+  -[UNSRemoteNotificationClient encodeWithCoder:]
+  -[UNSRemoteNotificationClient lastKnownDeviceToken]
+  -[UNSRemoteNotificationClient setLastKnownDeviceToken:]
+  -[UNSRemoteNotificationClient setTokenIdentifier:]
+
+
+UNSNotificationDeliveryAuthorizationAlertController : UNSAuthorizationAlertController
+  // instance methods
+  -[UNSNotificationDeliveryAuthorizationAlertController presentAuthorizationAlertForBundleIdentifier:displayName:usageDescription:withResult:]
+
+
+UNSUserNotificationServerSettings : PTSettings
+  // class methods
+  +[UNSUserNotificationServerSettings settingsControllerModule]
+
+
+UNSUserNotificationServerDomain : PTDomain
+  // class methods
+  +[UNSUserNotificationServerDomain domainGroupName]
+  +[UNSUserNotificationServerDomain rootSettings]
+  +[UNSUserNotificationServerDomain domainName]
+  +[UNSUserNotificationServerDomain rootSettingsClass]
+
+
+UNNotificationContent(UserNotificationServer)
+	// instance methods
+	-[UNNotificationContent(UserNotificationServer) uns_willAlertUser]
+	-[UNNotificationContent(UserNotificationServer) uns_willNotifyUser]
+
+APSMessage(UserNotificationsServer)
+	// instance methods
+	-[APSMessage(UserNotificationsServer) uns_bundleIdentifier]
+
+BBSectionInfo(UserNotificationsServer)
+	// instance methods
+	-[BBSectionInfo(UserNotificationsServer) uns_BBSectionInfoSettingForUNNotificationSetting:]
+	-[BBSectionInfo(UserNotificationsServer) uns_BBSectionAnnounceSettingForUNNotificationSetting:]
+	-[BBSectionInfo(UserNotificationsServer) uns_notificationSettingForBBSectionInfoSetting:]
+	-[BBSectionInfo(UserNotificationsServer) uns_notificationSettingForBBSectionAnnounceSetting:]
+	-[BBSectionInfo(UserNotificationsServer) uns_notificationSettings]
+	-[BBSectionInfo(UserNotificationsServer) uns_topicSettings]
+	-[BBSectionInfo(UserNotificationsServer) uns_setPropertiesFromAuthorizationOptions:supportsProvisionalAlerts:]
+	-[BBSectionInfo(UserNotificationsServer) uns_setPropertiesFromNotificationSettings:systemSettings:]
+	-[BBSectionInfo(UserNotificationsServer) uns_setPropertiesFromSourceSettingsDescription:]
+	-[BBSectionInfo(UserNotificationsServer) uns_setPropertiesFromTopicRecord:]
+	-[BBSectionInfo(UserNotificationsServer) uns_notificationSource]
+
+NSFileManager(UserNotificationsServer)
+	// instance methods
+	-[NSFileManager(UserNotificationsServer) uns_securelyMoveItemAtURL:toURL:error:]
+	-[NSFileManager(UserNotificationsServer) uns_contentsSortedByLastModificationDateOfDirectoryAtPath:error:]
+
+NSXPCConnection(UserNotificationsServer)
+	// instance methods
+	-[NSXPCConnection(UserNotificationsServer) uns_hasEntitlement:capability:]
+	-[NSXPCConnection(UserNotificationsServer) uns_clientBundleProxy]
+	-[NSXPCConnection(UserNotificationsServer) uns_isAllowedToRequestUserNotificationsForBundleIdentifier:]
+	-[NSXPCConnection(UserNotificationsServer) uns_isAllowedToReadSettings]
+	-[NSXPCConnection(UserNotificationsServer) uns_isAllowedToWriteSettings]
+	-[NSXPCConnection(UserNotificationsServer) uns_isInternalUserNotificationsTool]
+
+UNNotificationAttachment(Staging)
+	// class methods
+	+[UNNotificationAttachment(Staging) stagingActionForAttachmentURL:bundleProxy:error:]
+	+[UNNotificationAttachment(Staging) _systemDirectoryURL]
+
+(UserNotificationsServer)
+	// class methods
+	+[(UserNotificationsServer) uns_stringWithDigestOfSHA1Hash:]
+
+UILocalNotification(UserNotificationsServer)
+	// instance methods
+	-[UILocalNotification(UserNotificationsServer) uns_safeSetUserInfo:]
+
+(UNSNotificationRecord)
+	// instance methods
+	-[(UNSNotificationRecord) uns_map:usingLibrarian:]
+	-[(UNSNotificationRecord) uns_containsSimilarRecord:]
+
+(UNSNotificationRecord)
+	// instance methods
+	-[(UNSNotificationRecord) uns_nonNilArrayForKey:]
+	-[(UNSNotificationRecord) uns_safeCastNonNilStringForKey:]
+	-[(UNSNotificationRecord) uns_nonNilSetForKey:]
+	-[(UNSNotificationRecord) uns_notificationIdentifier]
+	-[(UNSNotificationRecord) uns_safeCastObjectForKey:class:]
+	-[(UNSNotificationRecord) uns_safeCastObjectForKey:classes:]
+	-[(UNSNotificationRecord) uns_nonEmptyCopy]
+	-[(UNSNotificationRecord) uns_nonNilDictionaryForKey:]
+
+NSExtension(UserNotificationsServer)
+	// instance methods
+	-[NSExtension(UserNotificationsServer) uns_isExtensionSessionBeingDebugged:]
+	-[NSExtension(UserNotificationsServer) uns_extensionContainerBundleProxy]
+	-[NSExtension(UserNotificationsServer) uns_extensionContainerBundleIdentifier]
+
+<DEREK BUG Categories!>(UserNotification)
+	// instance methods
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetObject:forKey:]
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetNonEmptyArray:forKey:]
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetNonEmptyString:withLimit:forKey:]
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetNonEmptyString:forKey:]
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetNonEmptySet:forKey:]
+	-[<DEREK BUG Categories!>(UserNotification) uns_safeSetNonEmptyDictionary:forKey:]
+
+APSIncomingMessage(UserNotificationsServer)
+	// instance methods
+	-[APSIncomingMessage(UserNotificationsServer) uns_pushTypeDescription]
+
+01 00 0d00 /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService: APSConnection 
+01 00 0d00 /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService: APSIncomingMessage 
+01 00 0d00 /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService: APSMessage 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBAction 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBBulletinRequest 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBCommunicationContext 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBContact 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBDataProviderConnection 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBImage 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBMutableAttachmentMetadata 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBObserver 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSectionIcon 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSectionIconVariant 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSectionInfo 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSectionParameters 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSettingsGateway 
+01 00 1000 /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard: BBSound 
+01 00 0e00 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSApplicationStateMonitor 
+01 00 0e00 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSProcessAssertion 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSAuditToken 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSCFBundle 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSHashBuilder 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSPlatform 
+01 00 0f00 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSTimer 
+01 00 1100 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocationManager 
+01 00 1100 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLRegion 
+01 00 0600 /System/Library/PrivateFrameworks/ClipServices.framework/ClipServices: CPSClipRequest 
+01 00 0200 /System/Library/PrivateFrameworks/CarKit.framework/CarKit: CRCarPlayAppDeclaration 
+01 00 0200 /System/Library/PrivateFrameworks/CarKit.framework/CarKit: CRCarPlayAppPolicyEvaluator 
+01 00 1300 /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices: FBSApplicationDataStore 
+01 00 1300 /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices: FBSOpenApplicationOptions 
+01 00 1300 /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices: FBSOpenApplicationService 
+01 00 0a00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 0a00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 0a00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0a00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSBundleProxy 
+01 00 0a00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSPlugInKitProxy 
+01 00 1600 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCountedSet 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtension 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 1c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 1800 /System/Library/PrivateFrameworks/PersistentConnection.framework/PersistentConnection: PCPersistentTimer 
+01 00 0c00 /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools: PTDomain 
+01 00 0c00 /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools: PTDoubleTestRecipe 
+01 00 0c00 /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools: PTModule 
+01 00 0c00 /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools: PTSettings 
+01 00 1400 /System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary: TLAlertConfiguration 
+01 00 1900 /System/Library/Frameworks/UIKit.framework/UIKit: UILocalNotification 
+01 00 1900 /System/Library/Frameworks/UIKit.framework/UIKit: UINotificationResponseAction 
+01 00 1a00 /System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices: UISApplicationState 
+01 00 1900 /System/Library/Frameworks/UIKit.framework/UIKit: UIWillPresentNotificationAction 
+01 00 1900 /System/Library/Frameworks/UIKit.framework/UIKit: UIWillPresentNotificationActionResponse 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNCalendarNotificationTrigger 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNLegacyNotificationTrigger 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNLocalizedString 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNLocalizedStringFactory 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNLocationNotificationTrigger 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationAttachmentOptions 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationCategory 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationContent 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationSound 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotification 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationAction 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationActionIcon 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationAttachment 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationContent 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationIcon 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationRequest 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationResponse 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationSettings 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationSound 
+01 00 0900 /System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings: UNNotificationSource 
+01 00 0900 /System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings: UNNotificationSourceSettings 
+01 00 0900 /System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings: UNNotificationSystemSettings 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationTopic 
+01 00 0900 /System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings: UNNotificationTopicSettings 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNPushNotificationTrigger 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNSecurityScopedURL 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNTextInputNotificationAction 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNTextInputNotificationResponse 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNTimeIntervalNotificationTrigger 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationCenter 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationCenterDelegateService 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationService 
+01 00 0900 /System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings: UNUserNotificationSettingsService 
+01 00 0800 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDClientContext 
+01 00 0800 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextualChangeRegistration 
+01 00 0800 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextualKeyPath 
+01 00 0800 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextualPredicate 
+01 00 0300 /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler: _DASActivity 
+01 00 0300 /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler: _DASScheduler 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: _UNMutableNotificationCommunicationContext 
+01 00 1b00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: _UNMutableNotificationContact 
+01 00 1700 /System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit: _UNNotificationCommunicationContextService 

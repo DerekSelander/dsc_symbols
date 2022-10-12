@@ -1,0 +1,111 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_OSASubmissionClient
+|| __DATA.__objc_data _OBJC_CLASS_$_OSASubmissionClientOptions
+|| __DATA.__objc_data _OBJC_METACLASS_$_OSASubmissionClientOptions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSASubmissionScheduler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSASubmissionClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSASubmissionScheduler
+|| __TEXT.__const _OSASubmissionClientVersionNumber
+|| __TEXT.__const _OSASubmissionClientVersionString
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ OSAnalytics: _OBJC_CLASS_$_OSALog
+__ OSAnalytics: _OBJC_CLASS_$_OSASystemConfiguration
+__ OSAnalytics: _OSAIsRSDDisplay
+__ OSAnalytics: _rtcsc_send
+__ OSAnalyticsPrivate: _OBJC_CLASS_$_OSASubmitter
+__ libSystem.B.dylib: _XPC_ACTIVITY_CHECK_IN
+__ libSystem.B.dylib: _XPC_ACTIVITY_DELAY
+__ libSystem.B.dylib: _XPC_ACTIVITY_GRACE_PERIOD
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL_1_DAY
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL_1_HOUR
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL_4_HOURS
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _xpc_activity_copy_criteria
+__ libSystem.B.dylib: _xpc_activity_get_state
+__ libSystem.B.dylib: _xpc_activity_register
+__ libSystem.B.dylib: _xpc_activity_set_criteria
+__ libSystem.B.dylib: _xpc_activity_set_state
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+OSASubmissionClientOptions : NSObject
+
+OSASubmissionClient : NSObject <OSASubmissionServices>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[OSASubmissionClient .cxx_destruct]
+  -[OSASubmissionClient submit]
+  -[OSASubmissionClient init]
+  -[OSASubmissionClient dealloc]
+  -[OSASubmissionClient initWithErrorHandler:]
+  -[OSASubmissionClient submitWithOptions:resultsCallback:]
+  -[OSASubmissionClient submitWithOptions:]
+
+
+OSASubmissionScheduler : NSObject
+  // class methods
+  +[OSASubmissionScheduler _retryCount]
+  +[OSASubmissionScheduler _scheduleSubmissionPermissive:]
+  +[OSASubmissionScheduler _setCadenceForActivity:]
+  +[OSASubmissionScheduler _lastSuccessTime]
+  +[OSASubmissionScheduler _saveLastSuccessTime]
+  +[OSASubmissionScheduler _setRetryCount:]
+  +[OSASubmissionScheduler scheduleSubmission]
+  +[OSASubmissionScheduler scheduleCleanupWithHomeDirectory:]
+
+
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics: OSALog 
+01 00 0100 /System/Library/PrivateFrameworks/OSAnalyticsPrivate.framework/OSAnalyticsPrivate: OSASubmitter 
+01 00 0200 /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics: OSASystemConfiguration 

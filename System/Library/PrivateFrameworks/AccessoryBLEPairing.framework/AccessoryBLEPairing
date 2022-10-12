@@ -1,0 +1,139 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCBLEPairingAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCBLEPairingProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCBLEPairingAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCBLEPairingProvider
+|| __DATA_CONST.__const _ACCBLEPairingAccDeviceUIDKey
+|| __DATA_CONST.__const _ACCBLEPairingAccFwPendingVer
+|| __DATA_CONST.__const _ACCBLEPairingAccFwVer
+|| __DATA_CONST.__const _ACCBLEPairingAccHwVer
+|| __DATA_CONST.__const _ACCBLEPairingAccManufacturer
+|| __DATA_CONST.__const _ACCBLEPairingAccModel
+|| __DATA_CONST.__const _ACCBLEPairingAccName
+|| __DATA_CONST.__const _ACCBLEPairingAccSerialNum
+|| __DATA_CONST.__const _ACCBLEPairingConnectionIDKey
+|| __DATA_CONST.__const _ACCBLEPairingDidConnectKey
+|| __DATA_CONST.__const _ACCBLEPairingDidDisconnectKey
+|| __DATA_CONST.__const _ACCBLEPairingDidSendPairDataKey
+|| __DATA_CONST.__const _ACCBLEPairingDidSendPairInfoKey
+|| __DATA_CONST.__const _ACCBLEPairingDidUpdateStateKey
+|| __DATA_CONST.__const _ACCBLEPairingIsSupported
+|| __DATA_CONST.__const _ACCBLEPairingLaunchNotification
+|| __DATA_CONST.__const _ACCBLEPairingPairDataKey
+|| __DATA_CONST.__const _ACCBLEPairingPairInfoArrayKey
+|| __DATA_CONST.__const _ACCBLEPairingPairModeKey
+|| __DATA_CONST.__const _ACCBLEPairingPairStateKey
+|| __DATA_CONST.__const _ACCBLEPairingRadioStateKey
+|| __DATA_CONST.__const _ACCBLEPairingSupports2WayKey
+|| __DATA_CONST.__const _ACCBLEPairingTypesSupportedKey
+|| __DATA_CONST.__const _ACCBLEPairingUUIDKey
+|| __TEXT.__const _AccessoryBLEPairingVersionNumber
+|| __TEXT.__const _AccessoryBLEPairingVersionString
+|| __TEXT.__text _oobPairing_bleToOobPairingType
+|| __TEXT.__text _oobPairing_oobToBlePairingType
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+ACCBLEPairingAccessory : NSObject
+ @property  NSString *accessoryUID
+ @property  BOOL desiredBLEPairingState
+ @property  NSDictionary *accInfo
+
+  // instance methods
+  -[ACCBLEPairingAccessory .cxx_destruct]
+  -[ACCBLEPairingAccessory accInfo]
+  -[ACCBLEPairingAccessory accessoryUID]
+  -[ACCBLEPairingAccessory setAccessoryUID:]
+  -[ACCBLEPairingAccessory initWithAccessoryUID:andAccInfo:]
+  -[ACCBLEPairingAccessory desiredBLEPairingState]
+  -[ACCBLEPairingAccessory setDesiredBLEPairingState:]
+  -[ACCBLEPairingAccessory setAccInfo:]
+
+
+ACCBLEPairingProvider : NSObject
+ @property  NSString *providerUID
+ @property  NSXPCConnection *serverConnection
+ @property  <ACCBLEPairingXPCServerProtocol> *remoteObject
+ @property  NSMutableDictionary *accessories
+ @property  int accDetectToken
+ @property  <ACCBLEPairingProviderProtocol> *delegate
+ @property  int lastScorpiusDetectType
+
+  // instance methods
+  -[ACCBLEPairingProvider serverConnection]
+  -[ACCBLEPairingProvider setRemoteObject:]
+  -[ACCBLEPairingProvider remoteObject]
+  -[ACCBLEPairingProvider setAccessories:]
+  -[ACCBLEPairingProvider .cxx_destruct]
+  -[ACCBLEPairingProvider setDelegate:]
+  -[ACCBLEPairingProvider setServerConnection:]
+  -[ACCBLEPairingProvider initWithDelegate:]
+  -[ACCBLEPairingProvider delegate]
+  -[ACCBLEPairingProvider connectToServer]
+  -[ACCBLEPairingProvider dealloc]
+  -[ACCBLEPairingProvider providerUID]
+  -[ACCBLEPairingProvider accessories]
+  -[ACCBLEPairingProvider setProviderUID:]
+  -[ACCBLEPairingProvider getAccDetectType:]
+  -[ACCBLEPairingProvider lastScorpiusDetectType]
+  -[ACCBLEPairingProvider setLastScorpiusDetectType:]
+  -[ACCBLEPairingProvider startBLEUpdates:blePairingUUID:pairType:bRadioUpdatesOn:bPairInfoUpdatesOn:]
+  -[ACCBLEPairingProvider deviceStateUpdate:blePairingUUID:bRadioOn:pairState:bPairModeOn:]
+  -[ACCBLEPairingProvider devicePairingData:blePairingUUID:pairType:pairData:]
+  -[ACCBLEPairingProvider deviceUpdatePairingInfo:blePairingUUID:pairType:pairInfo:]
+  -[ACCBLEPairingProvider stopBLEUpdates:blePairingUUID:]
+  -[ACCBLEPairingProvider accessoryBLEPairingAttached:blePairingUUID:accInfoDict:supportedPairTypes:]
+  -[ACCBLEPairingProvider accessoryBLEPairingDetached:blePairingUUID:]
+  -[ACCBLEPairingProvider accessoryBLEPairingStateUpdate:blePairingUUID:validMask:btRadioOn:pairingState:pairingModeOn:]
+  -[ACCBLEPairingProvider accessoryBLEPairingInfoUpdate:blePairingUUID:pairType:pairInfoList:]
+  -[ACCBLEPairingProvider accessoryBLEPairingDataUpdate:blePairingUUID:pairType:pairData:]
+  -[ACCBLEPairingProvider accessoryBLEPairingFinished:blePairingUUID:]
+  -[ACCBLEPairingProvider accDetectToken]
+  -[ACCBLEPairingProvider setAccDetectToken:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

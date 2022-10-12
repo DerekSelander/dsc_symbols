@@ -1,0 +1,774 @@
+|| __DATA.__common _gNRMPKLLoggingEnabled
+|| __DATA.__common _gNRPacketLoggingEnabled
+|| __DATA.__data _kNRXPCCommNotificationTypeXPCommDictionary
+|| __DATA.__objc_data _OBJC_CLASS_$_NRBluetoothLinkPreferences
+|| __DATA.__objc_data _OBJC_CLASS_$_NRBluetoothPacketParser
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDeviceIdentifier
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDeviceMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDeviceOperationalProperties
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDevicePairingProperties
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDevicePreferences
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDevicePreferencesQuickRelay
+|| __DATA.__objc_data _OBJC_CLASS_$_NRDeviceProperties
+|| __DATA.__objc_data _OBJC_CLASS_$_NREndpoint
+|| __DATA.__objc_data _OBJC_CLASS_$_NRLinkPreferences
+|| __DATA.__objc_data _OBJC_CLASS_$_NRParameters
+|| __DATA.__objc_data _OBJC_CLASS_$_NRParametersPhoneCallRelay
+|| __DATA.__objc_data _OBJC_CLASS_$_NRXPCComm
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRBluetoothLinkPreferences
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRBluetoothPacketParser
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDeviceIdentifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDeviceMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDeviceOperationalProperties
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDevicePairingProperties
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDevicePreferences
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDevicePreferencesQuickRelay
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRDeviceProperties
+|| __DATA.__objc_data _OBJC_METACLASS_$_NREndpoint
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRLinkPreferences
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRParameters
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRParametersPhoneCallRelay
+|| __DATA.__objc_data _OBJC_METACLASS_$_NRXPCComm
+|| __DATA_CONST.__const _NRDeviceManagerErrorDomain
+|| __DATA_CONST.__const _NRParametersAllowedAppUUIDString
+|| __DATA_CONST.__const _NRParametersWhitelistedAppUUIDString
+|| __DATA_CONST.__const _nrXPCEntitlementCompanionLink
+|| __DATA_CONST.__const _nrXPCEntitlementCompanionLinkIsEnabled
+|| __DATA_CONST.__const _nrXPCEntitlementDeviceMonitor
+|| __DATA_CONST.__const _nrXPCEntitlementDevicePreferences
+|| __DATA_CONST.__const _nrXPCEntitlementDevicesRead
+|| __DATA_CONST.__const _nrXPCEntitlementDevicesWrite
+|| __DATA_CONST.__const _nrXPCEntitlementDiagnostic
+|| __DATA_CONST.__const _nrXPCEntitlementFixedInterfaceMode
+|| __DATA_CONST.__const _nrXPCEntitlementPairing
+|| __DATA_CONST.__const _nrXPCEntitlementPing
+|| __DATA_CONST.__const _nrXPCEntitlementRetryConnections
+|| __DATA_CONST.__const _nrXPCEntitlementTestLinkRecommendation
+|| __DATA_CONST.__const _nrXPCEntitlementTesting
+|| __DATA_CONST.__const _nrXPCEntitlementXPCComm
+|| __DATA_CONST.__const _nrXPCKeyAWDLAddressData
+|| __DATA_CONST.__const _nrXPCKeyBTLatency
+|| __DATA_CONST.__const _nrXPCKeyBabelRoutes
+|| __DATA_CONST.__const _nrXPCKeyBlockIDSTraffic
+|| __DATA_CONST.__const _nrXPCKeyBlockSHOESTraffic
+|| __DATA_CONST.__const _nrXPCKeyBluetoothUUID
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkCount
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkEncryptionType
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkIsEnabled
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusDumpFilePaths
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusDumpToDirectoryPath
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusDumpToFileDescriptor
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusDumpToFilePath
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusMessage
+|| __DATA_CONST.__const _nrXPCKeyCompanionLinkStatusSandboxExtensionToken
+|| __DATA_CONST.__const _nrXPCKeyDataProtectionClass
+|| __DATA_CONST.__const _nrXPCKeyDeviceIdentifier
+|| __DATA_CONST.__const _nrXPCKeyDeviceListString
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusHasUnpairedBluetooth
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsAsleep
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsClassCConnected
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsCloudConnected
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsConnected
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsEnabled
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsNearby
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusIsRegistered
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusLinkSubtype
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusLinkType
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusProxySvcIntfName
+|| __DATA_CONST.__const _nrXPCKeyDeviceMonitorStatusResponse
+|| __DATA_CONST.__const _nrXPCKeyDevicePreferencesBTLinkPreferences
+|| __DATA_CONST.__const _nrXPCKeyDevicePreferencesIdentifier
+|| __DATA_CONST.__const _nrXPCKeyDevicePreferencesIsDeviceSetupInProgress
+|| __DATA_CONST.__const _nrXPCKeyDevicePreferencesPolicyTrafficClassifiers
+|| __DATA_CONST.__const _nrXPCKeyEnableBluetoothPacketParser
+|| __DATA_CONST.__const _nrXPCKeyErrorDescription
+|| __DATA_CONST.__const _nrXPCKeyFixedInterfaceModeInterfaceName
+|| __DATA_CONST.__const _nrXPCKeyFixedInterfaceModePeerAddress
+|| __DATA_CONST.__const _nrXPCKeyFixedInterfaceModeSetEnabled
+|| __DATA_CONST.__const _nrXPCKeyIPv6Address
+|| __DATA_CONST.__const _nrXPCKeyIsAltAccountPairing
+|| __DATA_CONST.__const _nrXPCKeyIsEphemeral
+|| __DATA_CONST.__const _nrXPCKeyMPKLLoggingVal
+|| __DATA_CONST.__const _nrXPCKeyNRUUID
+|| __DATA_CONST.__const _nrXPCKeyNetworkRelayVersion
+|| __DATA_CONST.__const _nrXPCKeyOperationalPropData
+|| __DATA_CONST.__const _nrXPCKeyOutOfBandKey
+|| __DATA_CONST.__const _nrXPCKeyPacketLoggingVal
+|| __DATA_CONST.__const _nrXPCKeyPairWithSPPLink
+|| __DATA_CONST.__const _nrXPCKeyPairingProtocolVersion
+|| __DATA_CONST.__const _nrXPCKeyPeerNetworkRelayVersion
+|| __DATA_CONST.__const _nrXPCKeyPingMessage
+|| __DATA_CONST.__const _nrXPCKeyPreferWiFiAllowed
+|| __DATA_CONST.__const _nrXPCKeyRemoteDeviceCBIdentifier
+|| __DATA_CONST.__const _nrXPCKeyRemoteDeviceMACAddress
+|| __DATA_CONST.__const _nrXPCKeyRemoteUUIDs
+|| __DATA_CONST.__const _nrXPCKeyResult
+|| __DATA_CONST.__const _nrXPCKeySimulateAltAccount
+|| __DATA_CONST.__const _nrXPCKeySimulateWakePacket
+|| __DATA_CONST.__const _nrXPCKeySupportsRestrictedPorts
+|| __DATA_CONST.__const _nrXPCKeyTestBTLinkRecommendation
+|| __DATA_CONST.__const _nrXPCKeyTestCompanionWiFiLinkRecommendation
+|| __DATA_CONST.__const _nrXPCKeyTestDirectWiFiLinkRecommendation
+|| __DATA_CONST.__const _nrXPCKeyTestNRLinkDirectorMessage
+|| __DATA_CONST.__const _nrXPCKeyType
+|| __DATA_CONST.__const _nrXPCKeyWasInitiallySetupUsingIDSPairing
+|| __DATA_CONST.__const _nrXPCKeyWatchRoleSwitchAllowed
+|| __DATA_CONST.__const _nrXPCKeyWiFiRangeExtensionAllowed
+|| __DATA_CONST.__const _nrXPCKeyXPCCommNotification
+|| __DATA_CONST.__const _nrXPCServiceName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_NRDeviceManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_NRDeviceManager
+|| __TEXT.__text _NRBluetoothPacketParserCancel
+|| __TEXT.__text _NRBluetoothPacketParserCreate
+|| __TEXT.__text _NRBluetoothPacketParserCreateReadContext
+|| __TEXT.__text _NRBluetoothPacketParserCreateWriteContext
+|| __TEXT.__text _NRBluetoothPacketParserGetSlotCount
+|| __TEXT.__text _NRBluetoothPacketParserResetContext
+|| __TEXT.__text _NRBluetoothPacketParserStart
+|| __TEXT.__text _NRCompanionLinkIsEnabled
+|| __TEXT.__text _NRCompanionLinkRetryConnections
+|| __TEXT.__text _NRDataProtectionClassCreateString
+|| __TEXT.__text _NRDeviceSupportsIDSRestrictedPorts
+|| __TEXT.__text _NRDiagnosticSaveNetworkRelayStatusToDirectory
+|| __TEXT.__text _NRDiagnosticSaveNetworkRelayStatusToFile
+|| __TEXT.__text _NRDiagnosticSaveNetworkRelayStatusToTempDirectory
+|| __TEXT.__text _NRPreferWiFiHasRequest
+|| __TEXT.__text _NRPreferWiFiReset
+|| __TEXT.__text _NRPreferWiFiSet
+|| __TEXT.__text __NRCopyPolicyTrafficClassifiersDescription
+|| __TEXT.__text __NRCopySerialQueueAttr
+|| __TEXT.__text __NRCopyTimeString
+|| __TEXT.__text __NRCopyTimeStringForDate
+|| __TEXT.__text __NRCreateDataString
+|| __TEXT.__text __NRCreateMACAddressString
+|| __TEXT.__text __NRIsAppleInternal
+|| __TEXT.__text __NRIsUUIDNonZero
+|| __TEXT.__text __NRKeyCreateLogString
+|| __TEXT.__text __NRLogAbortWithPack
+|| __TEXT.__text __NRLogIsLevelEnabled
+|| __TEXT.__text __NRLogPackSend
+|| __TEXT.__text __NRLogRegisterSimCrashHook
+|| __TEXT.__text __NRLogSetCopyToStderr
+|| __TEXT.__text __NRLogSetPacketLoggingState
+|| __TEXT.__text __NRLogWithArgs
+|| __TEXT.__text __NRShouldDebugAutoRelease
+|| __TEXT.__text _createIKEv2PacketString
+|| __TEXT.__text _createIOVecString
+|| __TEXT.__text _createIOVecStringWithContents
+|| __TEXT.__text _createIPProtoString
+|| __TEXT.__text _createIPv6AddrString
+|| __TEXT.__text _createIPv6AddrStringFromData
+|| __TEXT.__text _createPacketString
+|| __TEXT.__text _createShortStringFromNRLinkSubtype
+|| __TEXT.__text _createShortStringFromNRLinkType
+|| __TEXT.__text _createSockaddrString
+|| __TEXT.__text _createSockaddrStringFromData
+|| __TEXT.__text _createStringFromNRLinkSubtype
+|| __TEXT.__text _createStringFromNRLinkType
+|| __TEXT.__text _createStringFromNRTLVType
+|| __TEXT.__text _createStringFromNRXPCRes
+|| __TEXT.__text _createStringFromNRXPCType
+|| __TEXT.__text _getDSCPFromPacket
+|| __TEXT.__text _getESPSPIFromPacket
+|| __TEXT.__text _getESPSequenceNumberFromPacket
+|| __TEXT.__text _isPacketValidIPv6
+|| __TEXT.__text _nrCopyAccountIdentifierForNRUUID
+|| __TEXT.__text _nrMaxPacketLengthForTLV
+|| __TEXT.__text _nrMaxTLVLengthForPacket
+|| __TEXT.__text _nrPacketToTLV
+|| __TEXT.__text _nrTLVToPacket
+|| __TEXT.__text _nrXPCCompanionBlockIDSTraffic
+|| __TEXT.__text _nrXPCCompanionBlockSHOESTraffic
+|| __TEXT.__text _nrXPCCompanionDisableCloudLink
+|| __TEXT.__text _nrXPCCompanionEnableBluetoothPacketParser
+|| __TEXT.__text _nrXPCCompanionEnableCloudLink
+|| __TEXT.__text _nrXPCCompanionLinkCancel
+|| __TEXT.__text _nrXPCCompanionLinkCopyStatus
+|| __TEXT.__text _nrXPCCompanionLinkDefault
+|| __TEXT.__text _nrXPCCompanionLinkDisable
+|| __TEXT.__text _nrXPCCompanionLinkEnable
+|| __TEXT.__text _nrXPCCompanionLinkIsEnabled
+|| __TEXT.__text _nrXPCCompanionLinkSetEncryptionType
+|| __TEXT.__text _nrXPCCompanionLinkSubmitTestBTLinkRecommendation
+|| __TEXT.__text _nrXPCCompanionLinkSubmitTestCompanionWiFiLinkRecommendation
+|| __TEXT.__text _nrXPCCompanionLinkSubmitTestDirectWiFiLinkRecommendation
+|| __TEXT.__text _nrXPCCompanionSetFixedInterfaceMode
+|| __TEXT.__text _nrXPCCompanionSetPreferWiFiAllowed
+|| __TEXT.__text _nrXPCCompanionSetRangeExtensionAllowed
+|| __TEXT.__text _nrXPCCompanionSetSimulateAltAccount
+|| __TEXT.__text _nrXPCCompanionSetWatchRoleSwitchAllowed
+|| __TEXT.__text _nrXPCCompanionSimulateWakePacket
+|| __TEXT.__text _nrXPCMeasureBTLatency
+|| __TEXT.__text _nrXPCRefreshCompanionProxyAgent
+|| __TEXT.__text _nrXPCSendPingCopyResponse
+|| __TEXT.__text _nrXPCSetMPKLLogging
+|| __TEXT.__text _nrXPCSetPacketLogging
+|| __TEXT.__text _nrXPCSupportsRestrictedPorts
+|| __TEXT.__text _nrXPCTestCopyBabelRoutes
+|| __TEXT.__text _nrXPCTestNRLinkDirectorMessage
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: __CFXPCCreateXPCObjectFromCFObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Network: _OBJC_CLASS_$_NWAddressEndpoint
+__ Network: _OBJC_CLASS_$_NWHostEndpoint
+__ Network: _OBJC_CLASS_$_NWParameters
+__ libSystem.B.dylib: _CC_SHA512
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: __dispatch_source_type_read
+__ libSystem.B.dylib: __dispatch_source_type_write
+__ libSystem.B.dylib: __os_log_pack_fill
+__ libSystem.B.dylib: __os_log_pack_size
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_termination_imminent
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_data
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_int64
+__ libSystem.B.dylib: __xpc_type_uint64
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _cc_clear
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_cancel_handler
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _getnameinfo
+__ libSystem.B.dylib: _inet_ntop
+__ libSystem.B.dylib: _localtime_r
+__ libSystem.B.dylib: _mach_get_times
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_check
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_buflet_get_data_length
+__ libSystem.B.dylib: _os_buflet_get_data_offset
+__ libSystem.B.dylib: _os_buflet_get_object_address
+__ libSystem.B.dylib: _os_channel_advance_slot
+__ libSystem.B.dylib: _os_channel_attr_create
+__ libSystem.B.dylib: _os_channel_attr_destroy
+__ libSystem.B.dylib: _os_channel_attr_set
+__ libSystem.B.dylib: _os_channel_available_slot_count
+__ libSystem.B.dylib: _os_channel_create_extended
+__ libSystem.B.dylib: _os_channel_destroy
+__ libSystem.B.dylib: _os_channel_get_fd
+__ libSystem.B.dylib: _os_channel_get_next_slot
+__ libSystem.B.dylib: _os_channel_ring_id
+__ libSystem.B.dylib: _os_channel_rx_ring
+__ libSystem.B.dylib: _os_channel_set_slot_properties
+__ libSystem.B.dylib: _os_channel_slot_get_packet
+__ libSystem.B.dylib: _os_channel_sync
+__ libSystem.B.dylib: _os_channel_tx_ring
+__ libSystem.B.dylib: _os_inet_checksum
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_pack_compose
+__ libSystem.B.dylib: _os_log_pack_send
+__ libSystem.B.dylib: _os_log_pack_send_and_compose
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_log_with_args
+__ libSystem.B.dylib: _os_packet_get_next_buflet
+__ libSystem.B.dylib: _os_unfair_lock_assert_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strerror_r
+__ libSystem.B.dylib: _strftime
+__ libSystem.B.dylib: _strlcpy
+__ libSystem.B.dylib: _tzset
+__ libSystem.B.dylib: _uuid_copy
+__ libSystem.B.dylib: _uuid_is_null
+__ libSystem.B.dylib: _xpc_array_append_value
+__ libSystem.B.dylib: _xpc_array_create
+__ libSystem.B.dylib: _xpc_array_set_string
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_data_get_bytes
+__ libSystem.B.dylib: _xpc_dictionary_apply
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_dictionary
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_uuid
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_fd
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_uuid
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_int64_get_value
+__ libSystem.B.dylib: _xpc_string_create
+__ libSystem.B.dylib: _xpc_uint64_get_value
+__ libnetwork.dylib: __nw_parameters_configure_protocol_default_configuration
+__ libnetwork.dylib: _nw_endpoint_create_host
+__ libnetwork.dylib: _nw_parameters_copy
+__ libnetwork.dylib: _nw_parameters_copy_default_protocol_stack
+__ libnetwork.dylib: _nw_parameters_create
+__ libnetwork.dylib: _nw_parameters_create_legacy_tcp_socket
+__ libnetwork.dylib: _nw_parameters_set_data_mode
+__ libnetwork.dylib: _nw_parameters_set_indefinite
+__ libnetwork.dylib: _nw_parameters_set_local_address
+__ libnetwork.dylib: _nw_parameters_set_no_proxy
+__ libnetwork.dylib: _nw_parameters_set_required_netagent_classes
+__ libnetwork.dylib: _nw_parameters_set_reuse_local_address
+__ libnetwork.dylib: _nw_parameters_set_service_class
+__ libnetwork.dylib: _nw_path_assert_agent
+__ libnetwork.dylib: _nw_path_copy_netagent_dictionary
+__ libnetwork.dylib: _nw_path_create_evaluator_for_endpoint
+__ libnetwork.dylib: _nw_path_evaluator_cancel
+__ libnetwork.dylib: _nw_path_evaluator_copy_path
+__ libnetwork.dylib: _nw_path_evaluator_set_update_handler
+__ libnetwork.dylib: _nw_path_get_status
+__ libnetwork.dylib: _nw_protocol_stack_set_transport_protocol
+__ libnetwork.dylib: _nw_udp_create_options
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+NREndpoint : NSObject <NSCopying>
+ @property  NRDeviceIdentifier *deviceIdentifier
+ @property  NSString *portString
+ @property  unsigned char dataProtectionClass
+
+  // instance methods
+  -[NREndpoint dataProtectionClass]
+  -[NREndpoint .cxx_destruct]
+  -[NREndpoint deviceIdentifier]
+  -[NREndpoint setDataProtectionClass:]
+  -[NREndpoint copyWithZone:]
+  -[NREndpoint setDeviceIdentifier:]
+  -[NREndpoint copyEndpoint]
+  -[NREndpoint setPortString:]
+  -[NREndpoint portString]
+  -[NREndpoint initWithDeviceIdentifier:portString:dataProtectionClass:]
+  -[NREndpoint copyNWEndpoint]
+
+
+NRPreferWiFi : NSObject
+  // instance methods
+  -[NRPreferWiFi .cxx_destruct]
+  -[NRPreferWiFi init]
+  -[NRPreferWiFi dealloc]
+
+
+NRDevicePreferences : NSObject
+ @property  NRDeviceIdentifier *deviceIdentifier
+ @property  NRBluetoothLinkPreferences *bluetoothLinkPreferences
+ @property  BOOL hasPreferWiFiRequest
+ @property  BOOL hasQuickRelayRequest
+ @property  NSSet *policyTrafficClassifiers
+
+  // instance methods
+  -[NRDevicePreferences .cxx_destruct]
+  -[NRDevicePreferences initWithDeviceIdentifier:]
+  -[NRDevicePreferences cancel]
+  -[NRDevicePreferences deviceIdentifier]
+  -[NRDevicePreferences dealloc]
+  -[NRDevicePreferences setDeviceIdentifier:]
+  -[NRDevicePreferences addQuickRelayRequest]
+  -[NRDevicePreferences removeAllQuickRelayRequests]
+  -[NRDevicePreferences removeQuickRelayRequest]
+  -[NRDevicePreferences deviceSetupStarted]
+  -[NRDevicePreferences deviceSetupCompleted]
+  -[NRDevicePreferences addPreferWiFiRequest]
+  -[NRDevicePreferences removePreferWiFiRequest]
+  -[NRDevicePreferences hasPreferWiFiRequest]
+  -[NRDevicePreferences hasQuickRelayRequest]
+  -[NRDevicePreferences bluetoothLinkPreferences]
+  -[NRDevicePreferences setBluetoothLinkPreferences:]
+  -[NRDevicePreferences policyTrafficClassifiers]
+  -[NRDevicePreferences setPolicyTrafficClassifiers:]
+
+
+NRDeviceMonitor : NSObject
+ @property  NRDeviceIdentifier *deviceIdentifier
+ @property  BOOL isRegistered
+ @property  BOOL isEnabled
+ @property  BOOL isNearby
+ @property  BOOL isConnected
+ @property  BOOL isCloudConnected
+ @property  BOOL isAsleep
+ @property  unsigned char linkType
+ @property  unsigned char linkSubtype
+ @property  NSString *proxyServiceInterfaceName
+ @property  BOOL isClassCConnected
+
+  // instance methods
+  -[NRDeviceMonitor isRegistered]
+  -[NRDeviceMonitor isConnected]
+  -[NRDeviceMonitor .cxx_destruct]
+  -[NRDeviceMonitor linkType]
+  -[NRDeviceMonitor isNearby]
+  -[NRDeviceMonitor isEnabled]
+  -[NRDeviceMonitor deviceIdentifier]
+  -[NRDeviceMonitor isCloudConnected]
+  -[NRDeviceMonitor dealloc]
+  -[NRDeviceMonitor isAsleep]
+  -[NRDeviceMonitor initWithDeviceIdentifier:delegate:queue:]
+  -[NRDeviceMonitor isClassCConnected]
+  -[NRDeviceMonitor linkSubtype]
+  -[NRDeviceMonitor proxyServiceInterfaceName]
+
+
+NRXPCComm : NSObject
+ @property  NRDeviceIdentifier *deviceIdentifier
+
+  // instance methods
+  -[NRXPCComm .cxx_destruct]
+  -[NRXPCComm activate]
+  -[NRXPCComm cancel]
+  -[NRXPCComm deviceIdentifier]
+  -[NRXPCComm dealloc]
+  -[NRXPCComm setDeviceIdentifier:]
+  -[NRXPCComm initWithDeviceIdentifier:notificationQueue:notificationBlock:]
+  -[NRXPCComm sendXPCCommDictionary:]
+
+
+NRLinkPreferences : NSObject <NSCopying>
+ @property  unsigned char linkType
+
+  // class methods
+  +[NRLinkPreferences createFromEncodedXPCDict:]
+
+  // instance methods
+  -[NRLinkPreferences isNotEmpty]
+  -[NRLinkPreferences linkType]
+  -[NRLinkPreferences copyShortDescription]
+  -[NRLinkPreferences copyWithZone:]
+  -[NRLinkPreferences initWithLinkType:]
+  -[NRLinkPreferences copyEncodedXPCDict]
+  -[NRLinkPreferences copyLongDescription]
+
+
+NRBluetoothLinkPreferences : NRLinkPreferences
+ @property  NSNumber *inputBytesPerSecond
+ @property  NSNumber *outputBytesPerSecond
+ @property  NSNumber *packetsPerSecond
+
+  // instance methods
+  -[NRBluetoothLinkPreferences .cxx_destruct]
+  -[NRBluetoothLinkPreferences isNotEmpty]
+  -[NRBluetoothLinkPreferences init]
+  -[NRBluetoothLinkPreferences copyShortDescription]
+  -[NRBluetoothLinkPreferences isEqual:]
+  -[NRBluetoothLinkPreferences copyWithZone:]
+  -[NRBluetoothLinkPreferences copyEncodedXPCDict]
+  -[NRBluetoothLinkPreferences setInputBytesPerSecond:]
+  -[NRBluetoothLinkPreferences setOutputBytesPerSecond:]
+  -[NRBluetoothLinkPreferences setPacketsPerSecond:]
+  -[NRBluetoothLinkPreferences copyLongDescription]
+  -[NRBluetoothLinkPreferences inputBytesPerSecond]
+  -[NRBluetoothLinkPreferences outputBytesPerSecond]
+  -[NRBluetoothLinkPreferences packetsPerSecond]
+  -[NRBluetoothLinkPreferences combinePreferences:]
+
+
+NRBluetoothPacketParserManager : NSObject
+  // instance methods
+  -[NRBluetoothPacketParserManager .cxx_destruct]
+  -[NRBluetoothPacketParserManager init]
+
+
+NRBluetoothPacketParser : NSObject <NENexusDelegate>
+ @property  NSUUID *bluetoothUUID
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[NRBluetoothPacketParser .cxx_destruct]
+  -[NRBluetoothPacketParser acceptNewFlow:fromNexus:completionHandler:]
+  -[NRBluetoothPacketParser handleRequestToActivateNexus:fromFlow:]
+  -[NRBluetoothPacketParser setBluetoothUUID:]
+  -[NRBluetoothPacketParser bluetoothUUID]
+  -[NRBluetoothPacketParser cancel]
+  -[NRBluetoothPacketParser start]
+  -[NRBluetoothPacketParser resetContextForPriority:]
+  -[NRBluetoothPacketParser initWithBluetoothUUID:queue:]
+  -[NRBluetoothPacketParser createReadContextForPriority:readAvailableCallback:readAvailableContext:]
+  -[NRBluetoothPacketParser createWriteContextForPriority:writeOutputCallback:writeOutputContext:]
+  -[NRBluetoothPacketParser initWithDeviceIdentifier:queue:]
+
+
+NRDeviceIdentifier : NSObject <NSSecureCoding, NSCopying>
+ @property  NSUUID *nrDeviceIdentifier
+ @property  BOOL ephemeral
+
+  // class methods
+  +[NRDeviceIdentifier supportsSecureCoding]
+  +[NRDeviceIdentifier newDeviceIdentifierWithBluetoothUUID:]
+  +[NRDeviceIdentifier newEphemeralDeviceIdentifier]
+  +[NRDeviceIdentifier copyBestTestingDeviceIdentifier]
+
+  // instance methods
+  -[NRDeviceIdentifier isEphemeral]
+  -[NRDeviceIdentifier initWithCoder:]
+  -[NRDeviceIdentifier ephemeral]
+  -[NRDeviceIdentifier .cxx_destruct]
+  -[NRDeviceIdentifier setEphemeral:]
+  -[NRDeviceIdentifier initWithUUID:]
+  -[NRDeviceIdentifier isEqual:]
+  -[NRDeviceIdentifier copyWithZone:]
+  -[NRDeviceIdentifier encodeWithCoder:]
+  -[NRDeviceIdentifier nrDeviceIdentifier]
+  -[NRDeviceIdentifier setNrDeviceIdentifier:]
+
+
+NRDevicePreferencesQuickRelay : NSObject
+  // instance methods
+  -[NRDevicePreferencesQuickRelay .cxx_destruct]
+  -[NRDevicePreferencesQuickRelay dealloc]
+  -[NRDevicePreferencesQuickRelay initWithNRUUID:]
+  -[NRDevicePreferencesQuickRelay addQuickRelayRequest]
+  -[NRDevicePreferencesQuickRelay removeAllQuickRelayRequests]
+  -[NRDevicePreferencesQuickRelay removeQuickRelayRequest]
+
+
+NRDeviceProperties : NSObject <NSSecureCoding, NSCopying>
+ @property  unsigned long pairingProtocolVersion
+ @property  unsigned short peerNetworkRelayVersion
+
+  // class methods
+  +[NRDeviceProperties supportsSecureCoding]
+  +[NRDeviceProperties getNetworkRelayVersion]
+
+  // instance methods
+  -[NRDeviceProperties initWithCoder:]
+  -[NRDeviceProperties pairingProtocolVersion]
+  -[NRDeviceProperties copyWithZone:]
+  -[NRDeviceProperties encodeWithCoder:]
+  -[NRDeviceProperties setPairingProtocolVersion:]
+  -[NRDeviceProperties peerNetworkRelayVersion]
+  -[NRDeviceProperties setPeerNetworkRelayVersion:]
+
+
+NRDevicePairingProperties : NRDeviceProperties
+ @property  NSData *outOfBandKey
+ @property  BOOL wasInitiallySetupUsingIDSPairing
+ @property  BOOL pairWithSPPLink
+ @property  BOOL isAltAccountPairing
+ @property  NSData *bluetoothMACAddress
+ @property  NSData *awdlAddressData
+
+  // class methods
+  +[NRDevicePairingProperties supportsSecureCoding]
+
+  // instance methods
+  -[NRDevicePairingProperties initWithCoder:]
+  -[NRDevicePairingProperties .cxx_destruct]
+  -[NRDevicePairingProperties copyWithZone:]
+  -[NRDevicePairingProperties encodeWithCoder:]
+  -[NRDevicePairingProperties bluetoothMACAddress]
+  -[NRDevicePairingProperties setBluetoothMACAddress:]
+  -[NRDevicePairingProperties outOfBandKey]
+  -[NRDevicePairingProperties setOutOfBandKey:]
+  -[NRDevicePairingProperties wasInitiallySetupUsingIDSPairing]
+  -[NRDevicePairingProperties setWasInitiallySetupUsingIDSPairing:]
+  -[NRDevicePairingProperties pairWithSPPLink]
+  -[NRDevicePairingProperties setPairWithSPPLink:]
+  -[NRDevicePairingProperties isAltAccountPairing]
+  -[NRDevicePairingProperties setIsAltAccountPairing:]
+  -[NRDevicePairingProperties awdlAddressData]
+  -[NRDevicePairingProperties setAwdlAddressData:]
+
+
+NRDeviceOperationalProperties : NRDeviceProperties
+ @property  unsigned short version
+ @property  BOOL providesPhoneCallRelaySupport
+ @property  BOOL isReachableOverWiFi
+ @property  BOOL handlesLinkRecommendations
+ @property  BOOL allowsPermittedClientsOnly
+ @property  BOOL allowsDirectToCloud
+ @property  unsigned long proxyCapability
+ @property  unsigned long bluetoothRole
+ @property  unsigned long bluetoothEndpointType
+ @property  NSArray *allowedLinkTypes
+ @property  NSArray *allowedLinkSubtypes
+ @property  BOOL requiresReachability
+ @property  BOOL proxyProviderRequiresWiFi
+
+  // class methods
+  +[NRDeviceOperationalProperties supportsSecureCoding]
+  +[NRDeviceOperationalProperties copyPropertiesForDefaultPairedPhone]
+  +[NRDeviceOperationalProperties copyPropertiesForDefaultPairedWatch]
+
+  // instance methods
+  -[NRDeviceOperationalProperties resolve]
+  -[NRDeviceOperationalProperties initWithCoder:]
+  -[NRDeviceOperationalProperties .cxx_destruct]
+  -[NRDeviceOperationalProperties init]
+  -[NRDeviceOperationalProperties setVersion:]
+  -[NRDeviceOperationalProperties version]
+  -[NRDeviceOperationalProperties setBluetoothEndpointType:]
+  -[NRDeviceOperationalProperties copyWithZone:]
+  -[NRDeviceOperationalProperties bluetoothEndpointType]
+  -[NRDeviceOperationalProperties encodeWithCoder:]
+  -[NRDeviceOperationalProperties setAllowedLinkTypes:]
+  -[NRDeviceOperationalProperties setIsReachableOverWiFi:]
+  -[NRDeviceOperationalProperties proxyCapability]
+  -[NRDeviceOperationalProperties setProxyCapability:]
+  -[NRDeviceOperationalProperties bluetoothRole]
+  -[NRDeviceOperationalProperties setBluetoothRole:]
+  -[NRDeviceOperationalProperties handlesLinkRecommendations]
+  -[NRDeviceOperationalProperties setHandlesLinkRecommendations:]
+  -[NRDeviceOperationalProperties requiresReachability]
+  -[NRDeviceOperationalProperties setRequiresReachability:]
+  -[NRDeviceOperationalProperties proxyProviderRequiresWiFi]
+  -[NRDeviceOperationalProperties setProxyProviderRequiresWiFi:]
+  -[NRDeviceOperationalProperties providesPhoneCallRelaySupport]
+  -[NRDeviceOperationalProperties setProvidesPhoneCallRelaySupport:]
+  -[NRDeviceOperationalProperties allowsPermittedClientsOnly]
+  -[NRDeviceOperationalProperties setAllowsPermittedClientsOnly:]
+  -[NRDeviceOperationalProperties allowsDirectToCloud]
+  -[NRDeviceOperationalProperties setAllowsDirectToCloud:]
+  -[NRDeviceOperationalProperties isReachableOverWiFi]
+  -[NRDeviceOperationalProperties allowedLinkTypes]
+  -[NRDeviceOperationalProperties allowedLinkSubtypes]
+  -[NRDeviceOperationalProperties setAllowedLinkSubtypes:]
+
+
+NRDeviceManager : NSObject
+  // class methods
+  +[NRDeviceManager copySharedDeviceManager]
+
+  // instance methods
+  -[NRDeviceManager registerDevice:properties:operationalproperties:queue:completionBlock:]
+  -[NRDeviceManager enableDevice:]
+  -[NRDeviceManager .cxx_destruct]
+  -[NRDeviceManager unregisterAllDevicesWithQueue:completionBlock:]
+  -[NRDeviceManager disableDevice:queue:completionBlock:]
+  -[NRDeviceManager registerDevice:properties:queue:completionBlock:]
+  -[NRDeviceManager copyDeviceListString]
+  -[NRDeviceManager disableDevice:]
+  -[NRDeviceManager enableDevice:queue:completionBlock:]
+  -[NRDeviceManager unregisterDevice:]
+  -[NRDeviceManager unregisterDevice:queue:completionBlock:]
+
+
+NRParameters : NSObject
+ @property  unsigned char serviceClass
+
+  // instance methods
+  -[NRParameters setServiceClass:]
+  -[NRParameters copyParameters]
+  -[NRParameters .cxx_destruct]
+  -[NRParameters init]
+  -[NRParameters serviceClass]
+  -[NRParameters initWithParameters:]
+
+
+NRParametersPhoneCallRelay : NRParameters
+  // instance methods
+  -[NRParametersPhoneCallRelay initWithLocalPort:]
+
+
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0200 /System/Library/Frameworks/Network.framework/Network: NWAddressEndpoint 
+01 00 0200 /System/Library/Frameworks/Network.framework/Network: NWHostEndpoint 
+01 00 0200 /System/Library/Frameworks/Network.framework/Network: NWParameters 

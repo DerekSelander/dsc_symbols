@@ -1,0 +1,807 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_BKHIDEventSequenceRecognizer
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKHIDEventSequenceRecognizer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BKHIDEventClient._queue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDAccessibilitySender
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDClientConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDClientConnectionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDDefaultEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventDeliveryClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventDeliveryManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventDeliveryObserverService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventDeliveryObserverServiceListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventProcessorCreationContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventProcessorRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventRecognizerEngine
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDEventSenderCache
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDNullEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDPrimaryEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDSystem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKHIDUnknownSender
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKIOHIDService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BKIOHIDServiceMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BKHIDEventDeliveryRoot
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BKHIDKeyCommandDeliveryRoot
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BKIOHIDServiceDisappearanceObserverInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDAccessibilitySender
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDClientConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDClientConnectionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDDefaultEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventDeliveryClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventDeliveryManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventDeliveryObserverService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventDeliveryObserverServiceListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventProcessorCreationContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventProcessorRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventRecognizerEngine
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDEventSenderCache
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDNullEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDPrimaryEventProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDSystem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKHIDUnknownSender
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKIOHIDService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BKIOHIDServiceMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BKHIDEventDeliveryRoot
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BKHIDKeyCommandDeliveryRoot
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BKIOHIDServiceDisappearanceObserverInfo
+|| __TEXT.__const _BackBoardHIDEventFoundationVersionNumber
+|| __TEXT.__const _BackBoardHIDEventFoundationVersionString
+|| __TEXT.__text _BKGetEventTapCallback
+|| __TEXT.__text _BKGetHIDEventTapCallback
+|| __TEXT.__text _BKHIDCreatePrimaryEventProcessor
+|| __TEXT.__text _BKHIDCreatePrimaryEventProcessorWithDictionary
+|| __TEXT.__text _BKHIDEventRoutingGetClientConnectionManager
+|| __TEXT.__text _BKHIDEventRoutingInit
+|| __TEXT.__text _BKLogAccelerometer
+|| __TEXT.__text _BKLogBootUI
+|| __TEXT.__text _BKLogButton
+|| __TEXT.__text _BKLogDisplayAnnotations
+|| __TEXT.__text _BKLogGenericGesture
+|| __TEXT.__text _BKLogHID
+|| __TEXT.__text _BKLogIdleTimer
+|| __TEXT.__text _BKLogKeyPresses
+|| __TEXT.__text _BKLogKeyboard
+|| __TEXT.__text _BKLogMotionEvents
+|| __TEXT.__text _BKLogRenderOverlay
+|| __TEXT.__text _BKLogSendHIDEvent
+|| __TEXT.__text _BKLogTouchDeliveryPolicy
+|| __TEXT.__text _BKLogTouchEvents
+|| __TEXT.__text _BKSendGSEvent
+|| __TEXT.__text _BKSendHIDEventToClientWithDestination
+|| __TEXT.__text _BKSendHIDEventToClientWithDestinationAsRedirect
+|| __TEXT.__text _BKSendHIDEventToClientWithTaskPort
+|| __TEXT.__text _BKSetEventTapCallback
+|| __TEXT.__text _BKSetHIDEventTapCallback
+|| __TEXT.__text __BKHIDNoteUserEventOccurredOnDisplay
+|| __TEXT.__text __BKHIDSetUserEventNotifier
+|| __TEXT.__text __BKHandleIOHIDEventFromSender
+|| __TEXT.__text __BKSendHIDEventToClientWithDestination
+__ BackBoardServices: _BKLogCommon
+__ BackBoardServices: _BKLogDetailed
+__ BackBoardServices: _BKLogEventDelivery
+__ BackBoardServices: _BKLogTouchDeliveryObserver
+__ BackBoardServices: _BKLoggingSubsystem
+__ BackBoardServices: _BKSHIDEventDeliveryObserverBSServiceName
+__ BackBoardServices: _BKSHIDEventGetBaseAttributes
+__ BackBoardServices: _BKSHIDEventGetConciseDescription
+__ BackBoardServices: _BKSHIDEventSetSimpleDeliveryInfo
+__ BackBoardServices: _BKSHIDServiceConnectionBSServiceDomainName
+__ BackBoardServices: _NSStringFromBKSHIDEventSource
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventAuthenticationOriginator
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventDeferringEnvironment
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventDeferringResolution
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventDescriptor
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventDisplay
+__ BackBoardServices: _OBJC_CLASS_$_BKSHIDEventSenderDescriptor
+__ BackBoardServices: _OBJC_CLASS_$_BKSMutableHIDEventDeferringPredicate
+__ BackBoardServices: _OBJC_CLASS_$_BKSMutableHIDEventDeferringResolution
+__ BackBoardServices: _OBJC_CLASS_$_BKSMutableHIDEventDeferringTarget
+__ BackBoardServices: _OBJC_CLASS_$_BKSMutableHIDEventSenderDescriptor
+__ BaseBoard: _BSAuditTokenForTask
+__ BaseBoard: _BSDispatchQueueCreateSerial
+__ BaseBoard: _BSEqualObjects
+__ BaseBoard: _BSPIDForAuditToken
+__ BaseBoard: _BSProcessDescriptionForPID
+__ BaseBoard: _BSSystemRootDirectory
+__ BaseBoard: _BSVersionedPIDForAuditToken
+__ BaseBoard: _NSStringFromBSVersionedPID
+__ BaseBoard: _OBJC_CLASS_$_BSCompoundAssertion
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionStream
+__ BaseBoard: _OBJC_CLASS_$_BSMutableIntegerMap
+__ BaseBoard: _OBJC_CLASS_$_BSObjCProtocol
+__ BaseBoard: _OBJC_CLASS_$_BSPortDeathSentinel
+__ BaseBoard: _OBJC_CLASS_$_BSProcessDeathWatcher
+__ BaseBoard: __BSSafeCast
+__ BaseBoard: __bs_set_crash_log_message
+__ BoardServices: _OBJC_CLASS_$_BSServiceConnection
+__ BoardServices: _OBJC_CLASS_$_BSServiceConnectionListener
+__ BoardServices: _OBJC_CLASS_$_BSServiceInterface
+__ BoardServices: _OBJC_CLASS_$_BSServiceQuality
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFHash
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopPerformBlock
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSClassFromString
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ GraphicsServices: _GSEventDeviceOrientation
+__ GraphicsServices: _GSEventGetType
+__ GraphicsServices: _GSEventRemoveShouldRouteToFrontMost
+__ GraphicsServices: _GSEventShouldRouteToFrontMost
+__ GraphicsServices: _GSSendEvent
+__ GraphicsServices: _GSSendSystemAppEvent
+__ GraphicsServices: __GSEventGetGSEventRecord
+__ IOKit: _IOHIDEventCreateCopy
+__ IOKit: _IOHIDEventGetAttributeDataLength
+__ IOKit: _IOHIDEventGetIntegerValue
+__ IOKit: _IOHIDEventGetSenderID
+__ IOKit: _IOHIDEventGetTimeStamp
+__ IOKit: _IOHIDEventGetType
+__ IOKit: _IOHIDEventSystemClientCreate
+__ IOKit: _IOHIDEventSystemClientScheduleWithRunLoop
+__ IOKit: _IOHIDEventSystemConnectionDispatchEvent
+__ IOKit: _IOHIDEventSystemConnectionGetAttribute
+__ IOKit: _IOHIDEventSystemConnectionGetTaskNamePort
+__ IOKit: _IOHIDEventSystemCopyConnections
+__ IOKit: _IOHIDEventSystemCopyEvent
+__ IOKit: _IOHIDEventSystemCopyServices
+__ IOKit: _IOHIDEventSystemCreate
+__ IOKit: _IOHIDEventSystemGetProperty
+__ IOKit: _IOHIDEventSystemOpen
+__ IOKit: _IOHIDEventSystemRegisterConnectionAdditionCallback
+__ IOKit: _IOHIDEventSystemRegisterConnectionRemovalCallback
+__ IOKit: _IOHIDEventSystemRegisterServicesCallback
+__ IOKit: _IOHIDEventSystemSetCallback
+__ IOKit: _IOHIDEventSystemSetProperty
+__ IOKit: _IOHIDEventSystemUnregisterConnectionAdditionCallback
+__ IOKit: _IOHIDEventSystemUnregisterConnectionRemovalCallback
+__ IOKit: _IOHIDEventSystemUnregisterServicesCallback
+__ IOKit: _IOHIDEventTypeGetName
+__ IOKit: _IOHIDServiceCreateRemovalNotification
+__ IOKit: _IOHIDServiceGetProperty
+__ IOKit: _IOHIDServiceGetRegistryID
+__ IOKit: _IOHIDServiceSetElementValue
+__ IOKit: _IOHIDServiceSetProperty
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _mach_error_string
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_assert_not_owner
+__ libSystem.B.dylib: _os_unfair_lock_assert_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _usleep
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+BKHIDAccessibilitySender : NSObject <BKHIDEventSenderInfo>
+ @property  NSString *displayUUID
+ @property  int eventSource
+ @property  unsigned long senderID
+ @property  unsigned int primaryUsagePage
+ @property  unsigned int primaryUsage
+ @property  BOOL authenticated
+ @property  BOOL builtIn
+ @property  BKSHIDEventSenderDescriptor *senderDescriptor
+ @property  BOOL isPencilDigitizer
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDAccessibilitySender accessibilityHIDServices]
+
+  // instance methods
+  -[BKHIDAccessibilitySender setPrimaryUsage:]
+  -[BKHIDAccessibilitySender displayUUID]
+  -[BKHIDAccessibilitySender setPrimaryUsagePage:]
+  -[BKHIDAccessibilitySender setAuthenticated:]
+  -[BKHIDAccessibilitySender setDisplayUUID:]
+  -[BKHIDAccessibilitySender setSenderID:]
+  -[BKHIDAccessibilitySender isAuthenticated]
+  -[BKHIDAccessibilitySender .cxx_destruct]
+  -[BKHIDAccessibilitySender isPencilDigitizer]
+  -[BKHIDAccessibilitySender setEventSource:]
+  -[BKHIDAccessibilitySender setSenderDescriptor:]
+  -[BKHIDAccessibilitySender senderID]
+  -[BKHIDAccessibilitySender eventSource]
+  -[BKHIDAccessibilitySender setBuiltIn:]
+  -[BKHIDAccessibilitySender senderDescriptor]
+  -[BKHIDAccessibilitySender primaryUsagePage]
+  -[BKHIDAccessibilitySender initWithSenderID:]
+  -[BKHIDAccessibilitySender isBuiltIn]
+  -[BKHIDAccessibilitySender primaryUsage]
+
+
+BKHIDClientConnection : NSObject <BSInvalidatable>
+ @property  BSProcessDeathWatcher *processDeathWatcher
+ @property  NSString *bundleID
+ @property  int pid
+ @property  long long versionedPID
+ @property  unsigned int task
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDClientConnection connectionWithConnection:]
+
+  // instance methods
+  -[BKHIDClientConnection bundleID]
+  -[BKHIDClientConnection .cxx_destruct]
+  -[BKHIDClientConnection versionedPID]
+  -[BKHIDClientConnection isEqual:]
+  -[BKHIDClientConnection initWithConnection:]
+  -[BKHIDClientConnection connection]
+  -[BKHIDClientConnection pid]
+  -[BKHIDClientConnection task]
+  -[BKHIDClientConnection dealloc]
+  -[BKHIDClientConnection invalidate]
+  -[BKHIDClientConnection addDisconnectionObserverBlock:]
+  -[BKHIDClientConnection processDeathWatcher]
+  -[BKHIDClientConnection setProcessDeathWatcher:]
+
+
+_BKHIDEventDeliveryRoot : NSObject
+  // instance methods
+  -[_BKHIDEventDeliveryRoot .cxx_destruct]
+
+
+_BKHIDKeyCommandDeliveryRoot : NSObject
+  // instance methods
+  -[_BKHIDKeyCommandDeliveryRoot .cxx_destruct]
+
+
+BKHIDEventDeliveryClient : BKHIDEventClient
+  // instance methods
+  -[BKHIDEventDeliveryClient .cxx_destruct]
+
+
+BKHIDEventDeliveryManager : NSObject <BKHIDEventClientDelegate>
+ @property  <BKHIDEventDeliveryResolutionObserver> *resolutionObserver
+ @property  BOOL observeClientDeath
+ @property  BKSHIDEventDisplay *mainDisplay
+ @property  BKSHIDEventAuthenticationOriginator *authenticationOriginator
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventDeliveryManager mainDisplay]
+  -[BKHIDEventDeliveryManager setResolutionObserver:]
+  -[BKHIDEventDeliveryManager setObserveClientDeath:]
+  -[BKHIDEventDeliveryManager descriptionOfResolutionPathForEventDescriptor:senderDescriptor:]
+  -[BKHIDEventDeliveryManager .cxx_destruct]
+  -[BKHIDEventDeliveryManager init]
+  -[BKHIDEventDeliveryManager destinationsForEvent:sender:]
+  -[BKHIDEventDeliveryManager destinationsForKeyCommand:sender:]
+  -[BKHIDEventDeliveryManager authenticationOriginator]
+  -[BKHIDEventDeliveryManager setDeferringRules:forClientWithPID:]
+  -[BKHIDEventDeliveryManager initWithObserverService:]
+  -[BKHIDEventDeliveryManager resolutionObserver]
+  -[BKHIDEventDeliveryManager destinationsStartingFromPID:deferringPredicate:]
+  -[BKHIDEventDeliveryManager setMainDisplay:]
+  -[BKHIDEventDeliveryManager dealloc]
+  -[BKHIDEventDeliveryManager setDispatchingRuleSets:forClientWithPID:]
+  -[BKHIDEventDeliveryManager setKeyCommandDispatchingRules:forClientWithPID:]
+  -[BKHIDEventDeliveryManager observeClientDeath]
+  -[BKHIDEventDeliveryManager setKeyCommandsRegistrations:forClientWithPID:]
+  -[BKHIDEventDeliveryManager clientDied:]
+
+
+BKHIDClientConnectionManager : NSObject
+  // instance methods
+  -[BKHIDClientConnectionManager clientForDestination:]
+  -[BKHIDClientConnectionManager bundleIDForPID:]
+  -[BKHIDClientConnectionManager .cxx_destruct]
+  -[BKHIDClientConnectionManager versionedPIDForPID:]
+  -[BKHIDClientConnectionManager pidForBundleID:]
+  -[BKHIDClientConnectionManager addRemovalObserverForConnectionWithVersionedPID:observerBlock:]
+  -[BKHIDClientConnectionManager clientForTaskPort:]
+  -[BKHIDClientConnectionManager copyClientForDestination:]
+  -[BKHIDClientConnectionManager initWithHIDEventSystem:]
+  -[BKHIDClientConnectionManager dealloc]
+  -[BKHIDClientConnectionManager copyClientForTaskPort:]
+
+
+BKHIDDefaultEventProcessor : NSObject <BKHIDEventProcessor>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDDefaultEventProcessor processEvent:sender:dispatcher:]
+
+
+BKHIDEventDeliveryObserverServiceListener : NSObject <BSServiceConnectionListenerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventDeliveryObserverServiceListener listener:didReceiveConnection:withContext:]
+  -[BKHIDEventDeliveryObserverServiceListener initWithService:]
+  -[BKHIDEventDeliveryObserverServiceListener .cxx_destruct]
+
+
+BKHIDNullEventProcessor : NSObject <BKHIDEventProcessor>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDNullEventProcessor processEvent:sender:dispatcher:]
+
+
+BKIOHIDServiceMatcher : NSObject <BSInvalidatable>
+ @property  NSDictionary *matchingDictionary
+ @property  Class serviceClass
+ @property  <BKIOHIDServiceMatchObserver> *observer
+ @property  NSObject<OS_dispatch_queue> *observerQueue
+ @property  <BKIOHIDServiceMatcherDataProviding> *dataProvider
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKIOHIDServiceMatcher setServiceClass:]
+  -[BKIOHIDServiceMatcher _lock_servicesAdded:]
+  -[BKIOHIDServiceMatcher .cxx_destruct]
+  -[BKIOHIDServiceMatcher matchingDictionary]
+  -[BKIOHIDServiceMatcher setMatchingDictionary:]
+  -[BKIOHIDServiceMatcher initWithMatchingDictionary:serviceClass:dataProvider:]
+  -[BKIOHIDServiceMatcher setDataProvider:]
+  -[BKIOHIDServiceMatcher _servicesForIOHIDServiceRefs:]
+  -[BKIOHIDServiceMatcher serviceClass]
+  -[BKIOHIDServiceMatcher setObserverQueue:]
+  -[BKIOHIDServiceMatcher existingServices]
+  -[BKIOHIDServiceMatcher _servicesAdded:]
+  -[BKIOHIDServiceMatcher observer]
+  -[BKIOHIDServiceMatcher observerQueue]
+  -[BKIOHIDServiceMatcher setObserver:]
+  -[BKIOHIDServiceMatcher dealloc]
+  -[BKIOHIDServiceMatcher startObserving:queue:]
+  -[BKIOHIDServiceMatcher invalidate]
+  -[BKIOHIDServiceMatcher dataProvider]
+  -[BKIOHIDServiceMatcher initWithUsagePage:usage:builtIn:dataProvider:]
+  -[BKIOHIDServiceMatcher initWithMatchingDictionary:dataProvider:]
+  -[BKIOHIDServiceMatcher _expectDeallocation]
+
+
+BKHIDEventDeliveryObserverService : NSObject <BKSHIDEventObserverServerInterface, BKHIDEventDeliveryResolutionObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventDeliveryObserverService .cxx_destruct]
+  -[BKHIDEventDeliveryObserverService resolutionsDidChange:forPID:]
+  -[BKHIDEventDeliveryObserverService init]
+  -[BKHIDEventDeliveryObserverService removeConnectionForPID:]
+  -[BKHIDEventDeliveryObserverService addConnection:forPID:]
+  -[BKHIDEventDeliveryObserverService setObservesDeferringResolutions:]
+
+
+_BKIOHIDServiceDisappearanceObserverInfo : NSObject
+  // instance methods
+  -[_BKIOHIDServiceDisappearanceObserverInfo .cxx_destruct]
+
+
+BKIOHIDService : NSObject <BKHIDEventSenderInfo, BSDescriptionProviding, NSCopying>
+ @property  ^{__IOHIDService=} IOHIDService
+ @property  NSString *displayUUID
+ @property  int eventSource
+ @property  unsigned long senderID
+ @property  unsigned int primaryUsagePage
+ @property  unsigned int primaryUsage
+ @property  BOOL authenticated
+ @property  BOOL builtIn
+ @property  BKSHIDEventSenderDescriptor *senderDescriptor
+ @property  long long serviceStatus
+ @property  NSString *uniqueProductIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKIOHIDService setPrimaryUsage:]
+  -[BKIOHIDService displayUUID]
+  -[BKIOHIDService setPrimaryUsagePage:]
+  -[BKIOHIDService setAuthenticated:]
+  -[BKIOHIDService setDisplayUUID:]
+  -[BKIOHIDService setSenderID:]
+  -[BKIOHIDService isAuthenticated]
+  -[BKIOHIDService .cxx_destruct]
+  -[BKIOHIDService setProperty:forKey:]
+  -[BKIOHIDService serviceStatus]
+  -[BKIOHIDService setServiceStatus:]
+  -[BKIOHIDService succinctDescriptionBuilder]
+  -[BKIOHIDService removeDisappearanceObserver:]
+  -[BKIOHIDService setIOHIDService:]
+  -[BKIOHIDService setEventSource:]
+  -[BKIOHIDService setSenderDescriptor:]
+  -[BKIOHIDService IOHIDService]
+  -[BKIOHIDService _initForTestingWithSenderID:setUpInitialProperties:]
+  -[BKIOHIDService descriptionBuilderWithMultilinePrefix:]
+  -[BKIOHIDService asyncSetProperty:forKey:]
+  -[BKIOHIDService senderID]
+  -[BKIOHIDService descriptionWithMultilinePrefix:]
+  -[BKIOHIDService _disappearanceObservers]
+  -[BKIOHIDService asyncSetProperties:]
+  -[BKIOHIDService eventSource]
+  -[BKIOHIDService claimsToConformToUsagePage:usage:]
+  -[BKIOHIDService setBuiltIn:]
+  -[BKIOHIDService succinctDescription]
+  -[BKIOHIDService setProperties:]
+  -[BKIOHIDService _serviceWasRemoved]
+  -[BKIOHIDService asyncSetProperty:forKey:andDelayForSeconds:]
+  -[BKIOHIDService setElementValue:forUsagePage:usage:]
+  -[BKIOHIDService senderDescriptor]
+  -[BKIOHIDService uniqueProductIdentifier]
+  -[BKIOHIDService initWithHIDServiceRef:]
+  -[BKIOHIDService propertyForKey:]
+  -[BKIOHIDService primaryUsagePage]
+  -[BKIOHIDService addDisappearanceObserver:queue:]
+  -[BKIOHIDService initForSimulatorWithDisplayUUID:]
+  -[BKIOHIDService dealloc]
+  -[BKIOHIDService copyWithZone:]
+  -[BKIOHIDService _workQueue_startIOServiceRemovalNotifications]
+  -[BKIOHIDService _workQueue_stopIOServiceRemovalNotifications]
+  -[BKIOHIDService isBuiltIn]
+  -[BKIOHIDService propertyOfClass:forKey:]
+  -[BKIOHIDService _setUpInitialProperties]
+  -[BKIOHIDService primaryUsage]
+
+
+BKHIDEventClient : NSObject <BSDescriptionProviding>
+ @property  <BKHIDEventClientDelegate> *delegate
+ @property  int pid
+ @property  BSMachPortSendRight *sendRight
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventClient initWithPid:sendRight:]
+  -[BKHIDEventClient _queue_invalidate]
+  -[BKHIDEventClient .cxx_destruct]
+  -[BKHIDEventClient succinctDescriptionBuilder]
+  -[BKHIDEventClient setDelegate:]
+  -[BKHIDEventClient _queue_performDelegateCallout:]
+  -[BKHIDEventClient descriptionBuilderWithMultilinePrefix:]
+  -[BKHIDEventClient init]
+  -[BKHIDEventClient descriptionWithMultilinePrefix:]
+  -[BKHIDEventClient _deathBySendRight]
+  -[BKHIDEventClient succinctDescription]
+  -[BKHIDEventClient pid]
+  -[BKHIDEventClient initWithPid:sendRight:queue:]
+  -[BKHIDEventClient delegate]
+  -[BKHIDEventClient dealloc]
+  -[BKHIDEventClient invalidate]
+  -[BKHIDEventClient sendRight]
+  -[BKHIDEventClient _deathByPid]
+  -[BKHIDEventClient initWithPid:sendRight:queue:processName:]
+
+
+BKHIDEventSenderCache : NSObject <BKIOHIDServiceDisappearanceObserver>
+ @property  NSMutableDictionary *senderIDToSenderInfo
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventSenderCache sync]
+  -[BKHIDEventSenderCache senderIDToSenderInfo]
+  -[BKHIDEventSenderCache .cxx_destruct]
+  -[BKHIDEventSenderCache addSenderInfo:]
+  -[BKHIDEventSenderCache initWithQueue:]
+  -[BKHIDEventSenderCache serviceDidDisappear:]
+  -[BKHIDEventSenderCache removeSenderInfo:]
+  -[BKHIDEventSenderCache senderInfoForSenderID:]
+  -[BKHIDEventSenderCache setSenderIDToSenderInfo:]
+  -[BKHIDEventSenderCache addSenderInfo:forSenderID:]
+
+
+BKHIDEventProcessorCreationContext : NSObject
+ @property  <BKHIDSystemInterfacing> *systemInterface
+ @property  <BKIOHIDServiceMatcherDataProviding> *serviceMatcherDataProvider
+ @property  <BKHIDEventProcessorRegistering> *eventProcessorRegistry
+
+  // instance methods
+  -[BKHIDEventProcessorCreationContext .cxx_destruct]
+  -[BKHIDEventProcessorCreationContext eventProcessorRegistry]
+  -[BKHIDEventProcessorCreationContext systemInterface]
+  -[BKHIDEventProcessorCreationContext setSystemInterface:]
+  -[BKHIDEventProcessorCreationContext serviceMatcherDataProvider]
+  -[BKHIDEventProcessorCreationContext setServiceMatcherDataProvider:]
+  -[BKHIDEventProcessorCreationContext setEventProcessorRegistry:]
+
+
+BKHIDPrimaryEventProcessor : NSObject <BKHIDEventProcessor>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDPrimaryEventProcessor _eventProcessorsForEventType:]
+  -[BKHIDPrimaryEventProcessor .cxx_destruct]
+  -[BKHIDPrimaryEventProcessor initWithSubProcessors:defaultProcessor:]
+  -[BKHIDPrimaryEventProcessor processEvent:sender:dispatcher:]
+
+
+BKHIDEventSequenceRecognizer : NSObject <BKHIDEventRecognizer>
+ @property  BOOL shouldConsumeEvents
+ @property  NSArray *descriptors
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDEventSequenceRecognizer recognizerForEventDescriptor:]
+  +[BKHIDEventSequenceRecognizer recognizerForEventDescriptors:]
+
+  // instance methods
+  -[BKHIDEventSequenceRecognizer descriptors]
+  -[BKHIDEventSequenceRecognizer .cxx_destruct]
+  -[BKHIDEventSequenceRecognizer processEvent:shouldConsume:]
+  -[BKHIDEventSequenceRecognizer shouldConsumeEvents]
+  -[BKHIDEventSequenceRecognizer setShouldConsumeEvents:]
+
+
+BKHIDUnknownSender : NSObject <BKHIDEventSenderInfo>
+ @property  NSString *displayUUID
+ @property  int eventSource
+ @property  unsigned long senderID
+ @property  unsigned int primaryUsagePage
+ @property  unsigned int primaryUsage
+ @property  BOOL authenticated
+ @property  BOOL builtIn
+ @property  BKSHIDEventSenderDescriptor *senderDescriptor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDUnknownSender unknownSenderInfo]
+
+  // instance methods
+  -[BKHIDUnknownSender setPrimaryUsage:]
+  -[BKHIDUnknownSender displayUUID]
+  -[BKHIDUnknownSender setPrimaryUsagePage:]
+  -[BKHIDUnknownSender setAuthenticated:]
+  -[BKHIDUnknownSender setDisplayUUID:]
+  -[BKHIDUnknownSender setSenderID:]
+  -[BKHIDUnknownSender isAuthenticated]
+  -[BKHIDUnknownSender .cxx_destruct]
+  -[BKHIDUnknownSender setEventSource:]
+  -[BKHIDUnknownSender setSenderDescriptor:]
+  -[BKHIDUnknownSender init]
+  -[BKHIDUnknownSender senderID]
+  -[BKHIDUnknownSender eventSource]
+  -[BKHIDUnknownSender setBuiltIn:]
+  -[BKHIDUnknownSender senderDescriptor]
+  -[BKHIDUnknownSender primaryUsagePage]
+  -[BKHIDUnknownSender isBuiltIn]
+  -[BKHIDUnknownSender primaryUsage]
+
+
+BKHIDEventRecognizerEngine : NSObject <BKHIDEventProcessor>
+ @property  NSMutableArray *recognizers
+ @property  NSMutableArray *blocks
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKHIDEventRecognizerEngine recognizers]
+  -[BKHIDEventRecognizerEngine .cxx_destruct]
+  -[BKHIDEventRecognizerEngine removeRecognizer:]
+  -[BKHIDEventRecognizerEngine init]
+  -[BKHIDEventRecognizerEngine setRecognizers:]
+  -[BKHIDEventRecognizerEngine blocks]
+  -[BKHIDEventRecognizerEngine addRecognizer:recognitionBlock:]
+  -[BKHIDEventRecognizerEngine setBlocks:]
+  -[BKHIDEventRecognizerEngine processEvent:sender:dispatcher:]
+
+
+BKHIDEventProcessorRegistry : NSObject <BKHIDEventProcessorRegistering>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDEventProcessorRegistry sharedInstance]
+
+  // instance methods
+  -[BKHIDEventProcessorRegistry .cxx_destruct]
+  -[BKHIDEventProcessorRegistry eventProcessorOfClass:]
+  -[BKHIDEventProcessorRegistry init]
+  -[BKHIDEventProcessorRegistry addEventProcessor:]
+
+
+BKHIDSystem : NSObject <BKHIDSystemInterfacing>
+ @property  BOOL fullyInitialized
+ @property  NSObject<OS_dispatch_mach> *HIDSystemChannel
+ @property  <BKHIDEventProcessor> *eventProcessor
+ @property  <BKHIDDisplayChangeObserving> *mainDisplayObserver
+ @property  <BKHIDEventDispatcherProviding> *dispatcherProvider
+ @property  <BKHIDSystemDelegate> *delegate
+ @property  BKHIDEventDeliveryManager *deliveryManager
+ @property  BKHIDEventSenderCache *senderCache
+ @property  BKHIDClientConnectionManager *clientConnectionManager
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKHIDSystem sharedInstance]
+
+  // instance methods
+  -[BKHIDSystem senderCache]
+  -[BKHIDSystem setSystemProperty:forKey:]
+  -[BKHIDSystem deliveryManager]
+  -[BKHIDSystem .cxx_destruct]
+  -[BKHIDSystem setMainDisplayObserver:]
+  -[BKHIDSystem clientConnectionManager]
+  -[BKHIDSystem HIDSystemChannel]
+  -[BKHIDSystem registerIOHIDServicesCallback:matchingDictionary:target:refCon:]
+  -[BKHIDSystem setFullyInitialized:]
+  -[BKHIDSystem setDelegate:]
+  -[BKHIDSystem _performSynchronized:]
+  -[BKHIDSystem injectGSEvent:]
+  -[BKHIDSystem init]
+  -[BKHIDSystem startEventProcessor:mainDisplayObserver:deliveryManager:dispatcherProvider:]
+  -[BKHIDSystem setDispatcherProvider:]
+  -[BKHIDSystem dispatcherProvider]
+  -[BKHIDSystem IOHIDServicesMatching:]
+  -[BKHIDSystem unregisterIOHIDServicesCallback:matchingDictionary:target:refCon:]
+  -[BKHIDSystem startHIDSystem]
+  -[BKHIDSystem delegate]
+  -[BKHIDSystem setHIDSystemChannel:]
+  -[BKHIDSystem injectHIDEvent:]
+  -[BKHIDSystem dealloc]
+  -[BKHIDSystem mainDisplayObserver]
+  -[BKHIDSystem startEventRouting]
+  -[BKHIDSystem systemPropertyForKey:]
+  -[BKHIDSystem _beginHandlingEvents]
+  -[BKHIDSystem eventProcessor]
+  -[BKHIDSystem isFullyInitialized]
+  -[BKHIDSystem systemEventOfType:matchingEvent:options:]
+  -[BKHIDSystem startServerWithChannel:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventAuthenticationOriginator 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventDeferringEnvironment 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventDeferringResolution 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventDescriptor 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventDisplay 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSHIDEventSenderDescriptor 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSMutableHIDEventDeferringPredicate 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSMutableHIDEventDeferringResolution 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSMutableHIDEventDeferringTarget 
+01 00 0100 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSMutableHIDEventSenderDescriptor 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSCompoundAssertion 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionStream 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableIntegerMap 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSObjCProtocol 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSPortDeathSentinel 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSProcessDeathWatcher 
+01 00 0300 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceConnection 
+01 00 0300 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceConnectionListener 
+01 00 0300 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceInterface 
+01 00 0300 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceQuality 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

@@ -1,0 +1,948 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanArrayValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanBoolValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanDataValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanDateParser
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanDictionaryValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanJsonResponseParser
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanNumberValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanProfile
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanStringValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanSubscription
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanSubscriptionDataUsage
+|| __DATA.__objc_data _OBJC_CLASS_$_CTCellularPlanSubscriptionParser
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanArrayValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanBoolValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanDataValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanDateParser
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanDictionaryValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanJsonResponseParser
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanNumberValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanProfile
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanStringValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanSubscription
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanSubscriptionDataUsage
+|| __DATA.__objc_data _OBJC_METACLASS_$_CTCellularPlanSubscriptionParser
+|| __DATA_CONST.__const _CTCarrierInfoDidChangeNotification
+|| __DATA_CONST.__const _CTCellularPlanConnectionPropertiesKey
+|| __DATA_CONST.__const _CTCellularPlanDanglingListDidChangeNotification
+|| __DATA_CONST.__const _CTCellularPlanErrorDomain
+|| __DATA_CONST.__const _CTCellularPlanInfoDidChangeNotification
+|| __DATA_CONST.__const _CTCellularPlanItemIdentifierHomePlan
+|| __DATA_CONST.__const _CTCellularPlanItemIdentifierHomePlanWithRoaming
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionLiveIDKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsAppNameKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsCarrierPostData
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsCsnKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsFlowTypeIsLegacyKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsFlowTypeIsRemotePlanKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsFlowTypeIsSequoiaKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsFlowTypeIsSequoiaPlusKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsFlowTypeIsSimSetupKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsIccidKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsIsJsonWebsheetRequestKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsParametersKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsResponseTypeIsBuddyMLKey
+|| __DATA_CONST.__const _CTCellularPlanLaunchOptionsURLKey
+|| __DATA_CONST.__const _CTCellularPlanLocalInfoDidChangeNotification
+|| __DATA_CONST.__const _CTCellularPlanLocalInfoError
+|| __DATA_CONST.__const _CTCellularPlanPendingTransferDidChangeNotification
+|| __DATA_CONST.__const _CTCellularPlanProxyKey
+|| __DATA_CONST.__const _CTCellularPlanRemoteProvisioningDidBecomeAvailable
+|| __DATA_CONST.__const _CTCellularPlanRequestUrlsKey
+|| __DATA_CONST.__const _CTCellularPlanSocketIdentifier
+|| __DATA_CONST.__const _CTCellularPlanSocketTimeoutKey
+|| __DATA_CONST.__const _CTCellularPlanSubscriptionKey
+|| __DATA_CONST.__const _CTCellularPlanUseCarrierPostDataAsBodyKey
+|| __DATA_CONST.__const _kCTDaemonReadyNotification
+|| __DATA_CONST.__const _kCellularPlanDaemonService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlan
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanCarrierItem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanError
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanItem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanPendingTransfer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTCellularPlanRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTDanglingPlanItem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CTUserLabel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlan
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanCarrierItem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanError
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanItem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanPendingTransfer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTCellularPlanRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTDanglingPlanItem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CTUserLabel
+|| __TEXT.__text _CTCellularPlanCarrierItemXpcWhitelistSet
+|| __TEXT.__text _CTCellularPlanPendingTransferStatusAsString
+|| __TEXT.__text _CTCellularPlanXpcWhitelistSet
+__ CFNetwork: _CFURLRequestSetProxySettings
+__ CFNetwork: _OBJC_CLASS_$_NSHTTPCookie
+__ CFNetwork: _OBJC_CLASS_$_NSHTTPCookieStorage
+__ CFNetwork: _OBJC_CLASS_$_NSMutableURLRequest
+__ CFNetwork: _OBJC_CLASS_$_NSURLConnection
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_retain
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+CTCellularPlanError : NSObject
+  // class methods
+  +[CTCellularPlanError errorForCode:withDescription:]
+  +[CTCellularPlanError errorForCode:]
+
+
+CTCellularPlanItem : NSObject <NSCopying, NSSecureCoding>
+ @property  NSNumber *isSelectedOverride
+ @property  long long type
+ @property  long long lockState
+ @property  BOOL shouldDisplayType
+ @property  BOOL shouldAutoSelectWhenInRange
+ @property  BOOL isSimStateValid
+ @property  BOOL isSelectable
+ @property  BOOL shouldAppearDisabled
+ @property  BOOL shouldDisplay
+ @property  BOOL isActiveDataPlan
+ @property  BOOL isDefaultVoice
+ @property  BOOL shouldDisplayExtendedConsentInfo
+ @property  BOOL isLocalTransferToeSIMSupported
+ @property  BOOL isTransferred
+ @property  NSUUID *companionSlotUuid
+ @property  NSString *companionSimLabelId
+ @property  NSString *phoneNumber
+ @property  NSString *label
+ @property  CTUserLabel *userLabel
+ @property  NSString *identifier
+ @property  NSString *name
+ @property  CTCellularPlan *plan
+ @property  BOOL isBackedByCellularPlan
+ @property  BOOL isSelected
+ @property  BOOL isInstalling
+ @property  long long transferredStatus
+ @property  NSString *transferredToDeviceDisplayName
+ @property  NSString *uuid
+ @property  NSString *iccid
+ @property  NSString *carrierName
+
+  // class methods
+  +[CTCellularPlanItem supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanItem plan]
+  -[CTCellularPlanItem iccid]
+  -[CTCellularPlanItem setLockState:]
+  -[CTCellularPlanItem isSelectable]
+  -[CTCellularPlanItem label]
+  -[CTCellularPlanItem lockState]
+  -[CTCellularPlanItem name]
+  -[CTCellularPlanItem redactedDescription]
+  -[CTCellularPlanItem initWithCoder:]
+  -[CTCellularPlanItem userLabel]
+  -[CTCellularPlanItem setPhoneNumber:]
+  -[CTCellularPlanItem setType:]
+  -[CTCellularPlanItem carrierName]
+  -[CTCellularPlanItem .cxx_destruct]
+  -[CTCellularPlanItem phoneNumber]
+  -[CTCellularPlanItem typeAsString:]
+  -[CTCellularPlanItem identifier]
+  -[CTCellularPlanItem customDescription]
+  -[CTCellularPlanItem isSelected]
+  -[CTCellularPlanItem setIsSelectable:]
+  -[CTCellularPlanItem compare:]
+  -[CTCellularPlanItem type]
+  -[CTCellularPlanItem uuid]
+  -[CTCellularPlanItem setLabel:]
+  -[CTCellularPlanItem copyWithZone:]
+  -[CTCellularPlanItem encodeWithCoder:]
+  -[CTCellularPlanItem isInstalling]
+  -[CTCellularPlanItem setUserLabel:]
+  -[CTCellularPlanItem isTransferred]
+  -[CTCellularPlanItem transferredStatus]
+  -[CTCellularPlanItem transferredToDeviceDisplayName]
+  -[CTCellularPlanItem isBackedByCellularPlan]
+  -[CTCellularPlanItem isLocalTransferToeSIMSupported]
+  -[CTCellularPlanItem isActiveDataPlan]
+  -[CTCellularPlanItem isSimStateValid]
+  -[CTCellularPlanItem shouldDisplay]
+  -[CTCellularPlanItem setShouldDisplay:]
+  -[CTCellularPlanItem companionSlotUuid]
+  -[CTCellularPlanItem initWithCellularPlan:uuid:iccid:name:type:phoneNumber:label:isLocalTransferToeSIMSupported:isTransferred:transferredStatus:transferredToDeviceDisplayName:]
+  -[CTCellularPlanItem isSelectedOverride]
+  -[CTCellularPlanItem transferredStatusAsString:]
+  -[CTCellularPlanItem initWithCellularPlan:uuid:type:phoneNumber:label:transferredStatus:transferredToDeviceDisplayName:]
+  -[CTCellularPlanItem initWithIccid:uuid:name:phoneNumber:label:isLocalTransferToeSIMSupported:isTransferred:transferredStatus:transferredToDeviceDisplayName:]
+  -[CTCellularPlanItem companionSimLabelId]
+  -[CTCellularPlanItem shouldDisplayType]
+  -[CTCellularPlanItem setShouldDisplayType:]
+  -[CTCellularPlanItem shouldAutoSelectWhenInRange]
+  -[CTCellularPlanItem setShouldAutoSelectWhenInRange:]
+  -[CTCellularPlanItem shouldDisplayExtendedConsentInfo]
+  -[CTCellularPlanItem setShouldDisplayExtendedConsentInfo:]
+  -[CTCellularPlanItem setIsSimStateValid:]
+  -[CTCellularPlanItem shouldAppearDisabled]
+  -[CTCellularPlanItem setShouldAppearDisabled:]
+  -[CTCellularPlanItem setIsActiveDataPlan:]
+  -[CTCellularPlanItem isDefaultVoice]
+  -[CTCellularPlanItem setIsDefaultVoice:]
+  -[CTCellularPlanItem setIsLocalTransferToeSIMSupported:]
+  -[CTCellularPlanItem setIsTransferred:]
+  -[CTCellularPlanItem setIsSelectedOverride:]
+  -[CTCellularPlanItem setCompanionSlotUuid:]
+  -[CTCellularPlanItem setCompanionSimLabelId:]
+
+
+CTDanglingPlanItem : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *iccid
+ @property  NSString *phoneNumber
+ @property  NSString *simLabelID
+ @property  CTUserLabel *userLabel
+
+  // class methods
+  +[CTDanglingPlanItem supportsSecureCoding]
+
+  // instance methods
+  -[CTDanglingPlanItem iccid]
+  -[CTDanglingPlanItem setIccid:]
+  -[CTDanglingPlanItem initWithCoder:]
+  -[CTDanglingPlanItem userLabel]
+  -[CTDanglingPlanItem setPhoneNumber:]
+  -[CTDanglingPlanItem .cxx_destruct]
+  -[CTDanglingPlanItem phoneNumber]
+  -[CTDanglingPlanItem simLabelID]
+  -[CTDanglingPlanItem copyWithZone:]
+  -[CTDanglingPlanItem encodeWithCoder:]
+  -[CTDanglingPlanItem setUserLabel:]
+  -[CTDanglingPlanItem setSimLabelID:]
+  -[CTDanglingPlanItem initWithIccid:phoneNumber:label:labelID:]
+
+
+CTCellularPlanPendingTransfer : NSObject <NSSecureCoding>
+ @property  NSString *sourceIccid
+ @property  NSString *carrierName
+ @property  NSString *deviceName
+ @property  CTUserLabel *planLabel
+ @property  NSString *phoneNumber
+ @property  NSString *countryCode
+ @property  long long status
+
+  // class methods
+  +[CTCellularPlanPendingTransfer supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanPendingTransfer planLabel]
+  -[CTCellularPlanPendingTransfer setCountryCode:]
+  -[CTCellularPlanPendingTransfer sourceIccid]
+  -[CTCellularPlanPendingTransfer setPlanLabel:]
+  -[CTCellularPlanPendingTransfer initWithCoder:]
+  -[CTCellularPlanPendingTransfer setSourceIccid:]
+  -[CTCellularPlanPendingTransfer deviceName]
+  -[CTCellularPlanPendingTransfer countryCode]
+  -[CTCellularPlanPendingTransfer setPhoneNumber:]
+  -[CTCellularPlanPendingTransfer carrierName]
+  -[CTCellularPlanPendingTransfer .cxx_destruct]
+  -[CTCellularPlanPendingTransfer setDeviceName:]
+  -[CTCellularPlanPendingTransfer phoneNumber]
+  -[CTCellularPlanPendingTransfer init]
+  -[CTCellularPlanPendingTransfer status]
+  -[CTCellularPlanPendingTransfer setStatus:]
+  -[CTCellularPlanPendingTransfer setCarrierName:]
+  -[CTCellularPlanPendingTransfer encodeWithCoder:]
+
+
+CTCellularPlanResponseCodeParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanResponseCodeParser validate:]
+  +[CTCellularPlanResponseCodeParser validate:parseTo:responseText:error:]
+
+
+CTCellularPlanSubscriptionTypeParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanSubscriptionTypeParser validate:]
+  +[CTCellularPlanSubscriptionTypeParser validate:parseTo:]
+
+
+CTCellularPlanSubscriptionStatusParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanSubscriptionStatusParser validate:]
+  +[CTCellularPlanSubscriptionStatusParser validate:parseTo:]
+
+
+CTCellularPlanSubscriptionAccountStatusParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanSubscriptionAccountStatusParser validate:]
+  +[CTCellularPlanSubscriptionAccountStatusParser validate:parseTo:]
+
+
+CTCellularPlanSubscriptionDataUsageParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanSubscriptionDataUsageParser validate:]
+  +[CTCellularPlanSubscriptionDataUsageParser validate:parseTo:]
+
+
+CTCellularPlanSubscriptionParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanSubscriptionParser validate:]
+  +[CTCellularPlanSubscriptionParser validate:parseTo:]
+
+
+CTCellularPlanJsonResponseParser : NSObject
+  // class methods
+  +[CTCellularPlanJsonResponseParser sessionIdFromObject:]
+  +[CTCellularPlanJsonResponseParser sessionIdFromJsonData:]
+  +[CTCellularPlanJsonResponseParser parseCreateSessionResponseData:intoSessionId:podId:urls:error:]
+  +[CTCellularPlanJsonResponseParser parseHandoffTokenResponseData:intoHandoffToken:error:]
+  +[CTCellularPlanJsonResponseParser parseInitiatePurchaseResponseData:intoShouldPurchase:responseCode:responseText:buddyML:error:]
+  +[CTCellularPlanJsonResponseParser parsePurchaseResponseData:intoShouldDownloadProfile:iccid:responseCode:responseText:error:]
+  +[CTCellularPlanJsonResponseParser parseSubscriptionsResponseData:intoSubscriptions:error:]
+  +[CTCellularPlanJsonResponseParser parseCountryListResponseData:intoSupportedCountryList:intoUnsupportedCountryList:error:]
+  +[CTCellularPlanJsonResponseParser parseResponseJson:setUrl:setParameters:]
+
+
+CTCellularPlanCarrierItem : NSObject <NSCopying, NSSecureCoding>
+ @property  BOOL applePaySupported
+ @property  NSString *name
+ @property  NSString *websheetURL
+ @property  NSString *planPurchaseEndpointType
+ @property  NSString *warningText
+ @property  NSString *addOnWebsheetURL
+ @property  NSString *addOnEndpointType
+
+  // class methods
+  +[CTCellularPlanCarrierItem supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanCarrierItem name]
+  -[CTCellularPlanCarrierItem initWithCoder:]
+  -[CTCellularPlanCarrierItem .cxx_destruct]
+  -[CTCellularPlanCarrierItem copyWithZone:]
+  -[CTCellularPlanCarrierItem warningText]
+  -[CTCellularPlanCarrierItem encodeWithCoder:]
+  -[CTCellularPlanCarrierItem initWithName:url:applePaySupported:responseType:warningText:addOnUrl:addOnEndpointType:]
+  -[CTCellularPlanCarrierItem websheetURL]
+  -[CTCellularPlanCarrierItem applePaySupported]
+  -[CTCellularPlanCarrierItem setApplePaySupported:]
+  -[CTCellularPlanCarrierItem planPurchaseEndpointType]
+  -[CTCellularPlanCarrierItem addOnWebsheetURL]
+  -[CTCellularPlanCarrierItem addOnEndpointType]
+
+
+CTCellularPlan : NSObject <NSCopying, NSSecureCoding>
+ @property  CTCellularPlanProfile *profile
+ @property  CTCellularPlanSubscription *subscription
+ @property  NSNumber *subscriptionStatusOverride
+ @property  BOOL isHomePlan
+ @property  NSString *phoneNumber
+ @property  BOOL requiresUserConsent
+ @property  NSData *profileId
+ @property  BOOL isSelected
+ @property  NSString *iccid
+ @property  BOOL autoRenew
+ @property  double timestamp
+ @property  double billingStartDate
+ @property  double billingEndDate
+ @property  NSString *carrierName
+ @property  int planType
+ @property  NSString *planDescription
+ @property  int planStatus
+ @property  int accountStatus
+ @property  NSString *accountURL
+ @property  BOOL isDisableNotAllowed
+ @property  BOOL isDeleteNotAllowed
+ @property  NSArray *dataUsage
+ @property  int status
+ @property  BOOL isSelectable
+
+  // class methods
+  +[CTCellularPlan supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlan accountStatus]
+  -[CTCellularPlan iccid]
+  -[CTCellularPlan setProfile:]
+  -[CTCellularPlan subscription]
+  -[CTCellularPlan planType]
+  -[CTCellularPlan isSelectable]
+  -[CTCellularPlan statusAsString:]
+  -[CTCellularPlan setSubscription:]
+  -[CTCellularPlan planStatus]
+  -[CTCellularPlan redactedDescription]
+  -[CTCellularPlan initWithCoder:]
+  -[CTCellularPlan setPhoneNumber:]
+  -[CTCellularPlan carrierName]
+  -[CTCellularPlan .cxx_destruct]
+  -[CTCellularPlan dataUsage]
+  -[CTCellularPlan phoneNumber]
+  -[CTCellularPlan init]
+  -[CTCellularPlan isSelected]
+  -[CTCellularPlan profile]
+  -[CTCellularPlan status]
+  -[CTCellularPlan timestamp]
+  -[CTCellularPlan copyWithZone:]
+  -[CTCellularPlan encodeWithCoder:]
+  -[CTCellularPlan profileId]
+  -[CTCellularPlan accountURL]
+  -[CTCellularPlan isDeleteNotAllowed]
+  -[CTCellularPlan planDescription]
+  -[CTCellularPlan billingStartDate]
+  -[CTCellularPlan billingEndDate]
+  -[CTCellularPlan subscriptionStatusOverride]
+  -[CTCellularPlan requiresUserConsent]
+  -[CTCellularPlan setRequiresUserConsent:]
+  -[CTCellularPlan isDisableNotAllowed]
+  -[CTCellularPlan initWithProfile:subscription:]
+  -[CTCellularPlan autoRenew]
+  -[CTCellularPlan setSubscriptionStatusOverride:]
+  -[CTCellularPlan planDescriptionCompare:]
+  -[CTCellularPlan isHomePlan]
+  -[CTCellularPlan setIsHomePlan:]
+
+
+CTCellularPlanDictionaryValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanDictionaryValidator validate:]
+
+
+CTCellularPlanArrayValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanArrayValidator validate:]
+
+
+CTCellularPlanStringValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanStringValidator validate:]
+
+
+CTCellularPlanDataValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanDataValidator validate:]
+
+
+CTCellularPlanNumberValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanNumberValidator validate:]
+
+
+CTCellularPlanBoolValidator : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanBoolValidator validate:]
+
+
+CTCellularPlanDateParser : NSObject <CTCellularPlanValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanDateParser validate:]
+  +[CTCellularPlanDateParser validate:parseTo:]
+
+
+CTCellularPlanSubscriptionDataUsage : NSObject <NSCopying, NSSecureCoding>
+ @property  double dataUsed
+ @property  double dataCapacity
+ @property  NSString *dataCategory
+
+  // class methods
+  +[CTCellularPlanSubscriptionDataUsage supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanSubscriptionDataUsage initWithCoder:]
+  -[CTCellularPlanSubscriptionDataUsage .cxx_destruct]
+  -[CTCellularPlanSubscriptionDataUsage dataUsed]
+  -[CTCellularPlanSubscriptionDataUsage copyWithZone:]
+  -[CTCellularPlanSubscriptionDataUsage encodeWithCoder:]
+  -[CTCellularPlanSubscriptionDataUsage dataCapacity]
+  -[CTCellularPlanSubscriptionDataUsage dataCategory]
+  -[CTCellularPlanSubscriptionDataUsage initWithCategory:andDataUsed:andDataCapacity:]
+
+
+CTCellularPlanSubscription : NSObject <NSCopying, NSSecureCoding>
+ @property  int subscriptionResult
+ @property  int planStatus
+ @property  NSString *carrierName
+ @property  NSString *iccid
+ @property  BOOL autoRenew
+ @property  double billingStartDate
+ @property  double billingEndDate
+ @property  int planType
+ @property  NSString *planDescription
+ @property  int accountStatus
+ @property  NSString *accountURL
+ @property  double timestamp
+ @property  NSArray *homeCountryList
+ @property  NSArray *dataUsage
+
+  // class methods
+  +[CTCellularPlanSubscription supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanSubscription accountStatus]
+  -[CTCellularPlanSubscription iccid]
+  -[CTCellularPlanSubscription planType]
+  -[CTCellularPlanSubscription planStatus]
+  -[CTCellularPlanSubscription redactedDescription]
+  -[CTCellularPlanSubscription initWithCoder:]
+  -[CTCellularPlanSubscription carrierName]
+  -[CTCellularPlanSubscription .cxx_destruct]
+  -[CTCellularPlanSubscription dataUsage]
+  -[CTCellularPlanSubscription timestamp]
+  -[CTCellularPlanSubscription setCarrierName:]
+  -[CTCellularPlanSubscription copyWithZone:]
+  -[CTCellularPlanSubscription encodeWithCoder:]
+  -[CTCellularPlanSubscription accountURL]
+  -[CTCellularPlanSubscription planDescription]
+  -[CTCellularPlanSubscription billingStartDate]
+  -[CTCellularPlanSubscription billingEndDate]
+  -[CTCellularPlanSubscription initWithIccid:subscriptionResult:autoRenew:billingStartDate:billingEndDate:carrierName:planType:planDescription:planStatus:accountStatus:accountURL:timestamp:homeCountryList:dataUsage:]
+  -[CTCellularPlanSubscription autoRenew]
+  -[CTCellularPlanSubscription subscriptionResult]
+  -[CTCellularPlanSubscription isEqualOrNewerThanSubscription:]
+  -[CTCellularPlanSubscription setPlanStatus:]
+  -[CTCellularPlanSubscription homeCountryList]
+  -[CTCellularPlanSubscription setSubscriptionResult:]
+
+
+CTCellularPlanProfile : NSObject <NSCopying, NSSecureCoding>
+ @property  BOOL isSelected
+ @property  BOOL isBootstrap
+ @property  BOOL isDisableNotAllowed
+ @property  BOOL isDeleteNotAllowed
+ @property  BOOL requiresUserConsent
+ @property  NSData *profileId
+ @property  NSString *iccid
+
+  // class methods
+  +[CTCellularPlanProfile supportsSecureCoding]
+
+  // instance methods
+  -[CTCellularPlanProfile iccid]
+  -[CTCellularPlanProfile setIccid:]
+  -[CTCellularPlanProfile redactedDescription]
+  -[CTCellularPlanProfile initWithCoder:]
+  -[CTCellularPlanProfile .cxx_destruct]
+  -[CTCellularPlanProfile isSelected]
+  -[CTCellularPlanProfile setIsSelected:]
+  -[CTCellularPlanProfile copyWithZone:]
+  -[CTCellularPlanProfile encodeWithCoder:]
+  -[CTCellularPlanProfile profileId]
+  -[CTCellularPlanProfile setProfileId:]
+  -[CTCellularPlanProfile isDeleteNotAllowed]
+  -[CTCellularPlanProfile requiresUserConsent]
+  -[CTCellularPlanProfile setRequiresUserConsent:]
+  -[CTCellularPlanProfile isDisableNotAllowed]
+  -[CTCellularPlanProfile setIsBootstrap:]
+  -[CTCellularPlanProfile setIsDisableNotAllowed:]
+  -[CTCellularPlanProfile setIsDeleteNotAllowed:]
+  -[CTCellularPlanProfile initWithProfileId:iccid:selected:bootstrap:disableNotAllowed:deleteNotAllowed:requiresUserConsent:]
+  -[CTCellularPlanProfile isBootstrap]
+
+
+CTCellularPlanManagerDelegate : NSObject <CTCellularPlanClientDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CTCellularPlanManagerDelegate remoteProvisioningDidBecomeAvailable]
+  -[CTCellularPlanManagerDelegate localPlanInfoDidUpdate:]
+  -[CTCellularPlanManagerDelegate pendingTransferPlanInfoDidUpdate]
+  -[CTCellularPlanManagerDelegate planInfoDidUpdate]
+  -[CTCellularPlanManagerDelegate carrierInfoDidUpdate]
+
+
+CTCellularPlanManager : NSObject
+  // class methods
+  +[CTCellularPlanManager sharedManager]
+  +[CTCellularPlanManager calculateInstallConsentTextTypeFor:]
+
+  // instance methods
+  -[CTCellularPlanManager ping]
+  -[CTCellularPlanManager getSupportedFlowTypes:]
+  -[CTCellularPlanManager setRoamingSignupOverride:]
+  -[CTCellularPlanManager activatePlanPendingTransfer:completion:]
+  -[CTCellularPlanManager remapSimLabel:to:]
+  -[CTCellularPlanManager addNewPlanWithFlowType:completion:]
+  -[CTCellularPlanManager exitSimSetupWithCompletion:]
+  -[CTCellularPlanManager addNewPlanWithAddress:matchingId:oid:confirmationCode:triggerType:userConsent:completion:]
+  -[CTCellularPlanManager getShortLabelsForLabels:]
+  -[CTCellularPlanManager shouldShowPlanList:]
+  -[CTCellularPlanManager subscriptionDetailsForCompletion:]
+  -[CTCellularPlanManager finishProvisioningWithCompletion:]
+  -[CTCellularPlanManager isAddButtonEnabled:]
+  -[CTCellularPlanManager mccMncOverride:]
+  -[CTCellularPlanManager shouldShowAddNewRemotePlanWithContext:completion:]
+  -[CTCellularPlanManager planItemsShouldUpdate:]
+  -[CTCellularPlanManager eraseAllRemotePlansWithCSN:completion:]
+  -[CTCellularPlanManager setLabelForPlan:label:]
+  -[CTCellularPlanManager getSelectedEnv:]
+  -[CTCellularPlanManager remotePlanLaunchInfoForEid:completion:]
+  -[CTCellularPlanManager launchSequoia]
+  -[CTCellularPlanManager plansForRenewalWithProgress:andCompletion:]
+  -[CTCellularPlanManager setSelectedEnv:]
+  -[CTCellularPlanManager openInternalUrlId:]
+  -[CTCellularPlanManager didSelectRemotePlanItem:completion:]
+  -[CTCellularPlanManager _reconnect]
+  -[CTCellularPlanManager didDeleteRemotePlanItem:completion:]
+  -[CTCellularPlanManager eraseAllPlans:]
+  -[CTCellularPlanManager deletePlanPendingTransfer:completion:]
+  -[CTCellularPlanManager selectRemoteProfile:]
+  -[CTCellularPlanManager didPurchasePlanForCsn:iccid:profileServer:]
+  -[CTCellularPlanManager startRemoteProvisioningForCSN:completion:]
+  -[CTCellularPlanManager latitudeLongitudeOverride:]
+  -[CTCellularPlanManager userDidProvideResponse:confirmationCode:forPlan:isRemote:completion:]
+  -[CTCellularPlanManager didSelectPlanForDefaultVoice:]
+  -[CTCellularPlanManager eraseAllRemotePlansWithCompletion:]
+  -[CTCellularPlanManager carrierItemsShouldUpdate:completion:]
+  -[CTCellularPlanManager setSelectedProxy:]
+  -[CTCellularPlanManager getDeviceInfo:]
+  -[CTCellularPlanManager didPurchasePlanForCsn:iccid:profileServer:state:]
+  -[CTCellularPlanManager planItemsWithCompletion:]
+  -[CTCellularPlanManager resolveSimLabel:completion:]
+  -[CTCellularPlanManager getAutoPlanSelectionWithCompletion:]
+  -[CTCellularPlanManager getESimServerURL:]
+  -[CTCellularPlanManager getPlansPendingTransfer:]
+  -[CTCellularPlanManager addNewPlanWithCarrierItem:triggerType:userConsent:completion:]
+  -[CTCellularPlanManager deleteRemoteProfile:]
+  -[CTCellularPlanManager resolveSimLabel:]
+  -[CTCellularPlanManager _plansForRenewal:progress:completion:additionalParameters:]
+  -[CTCellularPlanManager addNewPlanWithUserInWebsheetWithUserConsent:completion:]
+  -[CTCellularPlanManager getIMEIPrefix:]
+  -[CTCellularPlanManager addNewRemotePlanWithCardData:confirmationCode:isPairing:withCSN:withContext:userConsent:completion:]
+  -[CTCellularPlanManager didPurchaseRemotePlanForEid:imei:meid:iccid:alternateSmdpFqdn:completion:]
+  -[CTCellularPlanManager setSkipEligibilityCheck:]
+  -[CTCellularPlanManager init]
+  -[CTCellularPlanManager setAutoPlanSelection:]
+  -[CTCellularPlanManager addNewPlanWithUserInWebsheetWithCompletion:]
+  -[CTCellularPlanManager setUserInPurchaseFlow:]
+  -[CTCellularPlanManager enterSimSetupWithCompletion:]
+  -[CTCellularPlanManager didPurchasePlanForCarrier:mnc:gid1:gid2:state:]
+  -[CTCellularPlanManager manageAccountForRemotePlan:completion:]
+  -[CTCellularPlanManager didDeletePlanItem:completion:]
+  -[CTCellularPlanManager cancelPlanActivation:]
+  -[CTCellularPlanManager isMultipleDataPlanSupportAvailable:]
+  -[CTCellularPlanManager setLatitude:andLongitude:]
+  -[CTCellularPlanManager danglingPlanItemsShouldUpdate:]
+  -[CTCellularPlanManager startProvisioningWithCompletion:]
+  -[CTCellularPlanManager didCancelRemotePlan]
+  -[CTCellularPlanManager remotePlanItemsWithUpdateFetch:withCSN:completion:]
+  -[CTCellularPlanManager getRoamingSignupOverrideWithCompletion:]
+  -[CTCellularPlanManager didSelectPlanItem:isEnable:]
+  -[CTCellularPlanManager isNewDataPlanCapable:]
+  -[CTCellularPlanManager planLaunchInfoWithCompletion:]
+  -[CTCellularPlanManager setESimServerURL:]
+  -[CTCellularPlanManager plansWithProgress:andCompletion:]
+  -[CTCellularPlanManager didEnablePlanItems:]
+  -[CTCellularPlanManager didSelectPlanForData:completion:]
+  -[CTCellularPlanManager plansWithProgress:andCompletion:additionalParameters:]
+  -[CTCellularPlanManager setMcc:andMnc:]
+  -[CTCellularPlanManager _ensureConnected_sync]
+  -[CTCellularPlanManager addNewAddonPlanDuringBuddy:userConsent:completion:]
+  -[CTCellularPlanManager willDisplayPlanItems]
+  -[CTCellularPlanManager manageAccountForPlan:completion:]
+  -[CTCellularPlanManager didTransferPlanForCsn:iccid:profileServer:state:]
+  -[CTCellularPlanManager planItemsShouldUpdate:completion:]
+  -[CTCellularPlanManager finishRemoteProvisioningForCSN:completion:]
+  -[CTCellularPlanManager loadPlansWithUrl:postData:completion:]
+  -[CTCellularPlanManager addNewPlanWithCardData:confirmationCode:triggerType:userConsent:completion:]
+  -[CTCellularPlanManager setIMEIPrefix:]
+  -[CTCellularPlanManager _connect_sync]
+  -[CTCellularPlanManager didSelectPlansForIMessage:completion:]
+  -[CTCellularPlanManager resumePlanProvisioning:userConsent:completion:]
+  -[CTCellularPlanManager installPendingRemotePlan:completion:]
+  -[CTCellularPlanManager enableVinylFlowTypeOverride:]
+  -[CTCellularPlanManager remapSimLabel:to:completion:]
+  -[CTCellularPlanManager addNewRemotePlan:withCSN:withContext:userConsent:completion:]
+  -[CTCellularPlanManager shouldShowPlanList]
+  -[CTCellularPlanManager userSignupInitiatedOrFailed]
+  -[CTCellularPlanManager synchronousProxyWithErrorHandler:]
+  -[CTCellularPlanManager didSelectPlanForDefaultVoice:completion:]
+  -[CTCellularPlanManager pendingReleaseRemotePlan]
+  -[CTCellularPlanManager setUseNewCellularPlanUI:]
+  -[CTCellularPlanManager carrierHandoffToken:]
+  -[CTCellularPlanManager connectionSettings:]
+  -[CTCellularPlanManager getPredefinedLabels]
+  -[CTCellularPlanManager dealloc]
+  -[CTCellularPlanManager didPurchasePlanWithIccid:downloadProfile:]
+  -[CTCellularPlanManager didSelectPlanItem:isEnable:completion:]
+  -[CTCellularPlanManager getSelectedProxy:]
+  -[CTCellularPlanManager isAddButtonEnabled]
+  -[CTCellularPlanManager getEnableVinylFlowTypeOverride]
+  -[CTCellularPlanManager didSelectPlanForData:]
+  -[CTCellularPlanManager showUiIgnoringActivationFlags:]
+  -[CTCellularPlanManager getSubscriptionContextUUIDforPlan:]
+  -[CTCellularPlanManager getSkipEligibilityCheck:]
+  -[CTCellularPlanManager userDidProvideConsentResponse:forPlan:isRemote:completion:]
+  -[CTCellularPlanManager getPhoneAuthTokenWithMessage:completion:]
+  -[CTCellularPlanManager didTransferPlanForCsn:iccid:srcIccid:profileServer:state:]
+  -[CTCellularPlanManager addNewRemotePlanWithAddress:matchingId:oid:confirmationCode:isPairing:withCSN:withContext:userConsent:completion:]
+  -[CTCellularPlanManager isRemotePlanCapableWithContext:completion:]
+  -[CTCellularPlanManager getRemoteInfo:]
+  -[CTCellularPlanManager launchDataActivationNextWithUrl:]
+  -[CTCellularPlanManager getSupportedFlowTypes]
+  -[CTCellularPlanManager triggerAddNewDataPlan:]
+  -[CTCellularPlanManager expirePlan]
+  -[CTCellularPlanManager danglingPlanItemsShouldUpdate:completion:]
+  -[CTCellularPlanManager fetchRemoteProfiles:]
+  -[CTCellularPlanManager remotePlanItemsWithCompletion:]
+  -[CTCellularPlanManager deleteAllRemoteProfiles]
+  -[CTCellularPlanManager shouldShowPlanSetup:]
+
+
+CTCellularPlanRequest : NSObject <NSURLConnectionDataDelegate>
+ @property  ^{dispatch_queue_s=} queue
+ @property  @? completionBlock
+ @property  NSURLConnection *connection
+ @property  NSMutableData *receivedData
+ @property  NSMutableURLRequest *request
+ @property  NSURLResponse *response
+ @property  NSError *error
+ @property  NSData *serializedCookies
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CTCellularPlanRequest initialize]
+  +[CTCellularPlanRequest newInitiatePurchaseWithSessionId:planId:]
+  +[CTCellularPlanRequest setRequestUrls:]
+  +[CTCellularPlanRequest plansRequestWithSignIdMap:renewalIccid:urls:]
+  +[CTCellularPlanRequest newPurchaseWithSessionId:receipt:userId:userName:]
+  +[CTCellularPlanRequest isRetriableErrorCode:]
+  +[CTCellularPlanRequest setInternetConnectionSettings:]
+  +[CTCellularPlanRequest subscriptionDetailsRequestWithIccids:signIdMap:urls:]
+  +[CTCellularPlanRequest connectionSettingsForServiceType:]
+  +[CTCellularPlanRequest requestHandoffTokenWithSignIdMap:urls:]
+  +[CTCellularPlanRequest loadPlansRequestWithUrl:postData:]
+  +[CTCellularPlanRequest setBootstrapConnectionSettings:]
+  +[CTCellularPlanRequest createSessionRequest]
+
+  // instance methods
+  -[CTCellularPlanRequest setRequest:]
+  -[CTCellularPlanRequest setReceivedData:]
+  -[CTCellularPlanRequest receivedData]
+  -[CTCellularPlanRequest _callback]
+  -[CTCellularPlanRequest connection:didReceiveResponse:]
+  -[CTCellularPlanRequest setConnection:]
+  -[CTCellularPlanRequest setQueue:]
+  -[CTCellularPlanRequest connection]
+  -[CTCellularPlanRequest request]
+  -[CTCellularPlanRequest response]
+  -[CTCellularPlanRequest cancel]
+  -[CTCellularPlanRequest connectionDidFinishLoading:]
+  -[CTCellularPlanRequest _isRetryableError:]
+  -[CTCellularPlanRequest queue]
+  -[CTCellularPlanRequest connection:didReceiveData:]
+  -[CTCellularPlanRequest completionBlock]
+  -[CTCellularPlanRequest dealloc]
+  -[CTCellularPlanRequest setCompletionBlock:]
+  -[CTCellularPlanRequest connection:didFailWithError:]
+  -[CTCellularPlanRequest setError:]
+  -[CTCellularPlanRequest error]
+  -[CTCellularPlanRequest setResponse:]
+  -[CTCellularPlanRequest serializedCookies]
+  -[CTCellularPlanRequest startRequestWithReplyQueue:completion:]
+  -[CTCellularPlanRequest _initWithUrl:httpMethod:httpHeaders:httpBody:internetSettings:bootstrapSettings:]
+  -[CTCellularPlanRequest _canTryAnotherConnectionType]
+  -[CTCellularPlanRequest _connectionSettingsForNextConnectionType]
+  -[CTCellularPlanRequest _startRequestWithNextConnectionTypeOrFail]
+  -[CTCellularPlanRequest initWithUrl:httpMethod:httpHeaders:httpBody:]
+  -[CTCellularPlanRequest initGetWithUrl:]
+  -[CTCellularPlanRequest initPostWithUrl:]
+  -[CTCellularPlanRequest initJsonPostWithUrl:jsonData:]
+  -[CTCellularPlanRequest initJsonPostWithUrl:jsonData:internetSettings:bootstrapSettings:]
+  -[CTCellularPlanRequest setSerializedCookies:]
+
+
+CTUserLabel : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *key
+ @property  NSString *label
+ @property  NSString *labelId
+
+  // class methods
+  +[CTUserLabel supportsSecureCoding]
+
+  // instance methods
+  -[CTUserLabel label]
+  -[CTUserLabel initWithLabel:]
+  -[CTUserLabel initWithCoder:]
+  -[CTUserLabel labelId]
+  -[CTUserLabel .cxx_destruct]
+  -[CTUserLabel isEqual:]
+  -[CTUserLabel key]
+  -[CTUserLabel copyWithZone:]
+  -[CTUserLabel encodeWithCoder:]
+  -[CTUserLabel indexInPredefinedLabels:]
+  -[CTUserLabel initWithKey:label:labelId:]
+  -[CTUserLabel _labelKeyDescription]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0100 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSHTTPCookie 
+01 00 0100 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSHTTPCookieStorage 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0100 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSMutableURLRequest 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSURLConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

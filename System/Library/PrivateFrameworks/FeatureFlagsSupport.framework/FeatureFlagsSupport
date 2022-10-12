@@ -1,0 +1,203 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FFConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FFFeatureAttribute
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FFFeatureState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FFConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FFFeatureAttribute
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FFFeatureState
+|| __TEXT.__text _FFConfigurationValidateProfilePayload
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSDebugDescriptionErrorKey
+__ Foundation: _NSFileGroupOwnerAccountID
+__ Foundation: _NSFileOwnerAccountID
+__ Foundation: _NSFilePosixPermissions
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_once
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+FFFeatureAttribute : NSObject
+ @property  NSString *name
+ @property  NSString *value
+
+  // instance methods
+  -[FFFeatureAttribute initWithName:value:]
+  -[FFFeatureAttribute name]
+  -[FFFeatureAttribute .cxx_destruct]
+  -[FFFeatureAttribute setName:]
+  -[FFFeatureAttribute matchesAgainst:]
+  -[FFFeatureAttribute setValue:]
+  -[FFFeatureAttribute value]
+
+
+FFFeatureState : NSObject
+ @property  NSDictionary *attributes
+ @property  NSString *domain
+ @property  NSString *feature
+ @property  long long value
+ @property  NSString *disclosurerequired
+
+  // instance methods
+  -[FFFeatureState initWithDomain:feature:value:disclosureRequired:attributes:]
+  -[FFFeatureState setDomain:]
+  -[FFFeatureState .cxx_destruct]
+  -[FFFeatureState domain]
+  -[FFFeatureState disclosurerequired]
+  -[FFFeatureState setDisclosurerequired:]
+  -[FFFeatureState setValue:]
+  -[FFFeatureState setAttributes:]
+  -[FFFeatureState value]
+  -[FFFeatureState feature]
+  -[FFFeatureState attributes]
+  -[FFFeatureState setFeature:]
+  -[FFFeatureState initWithDomain:feature:value:]
+
+
+FFDefaultFileReader : NSObject <FFFileReader>
+  // instance methods
+  -[FFDefaultFileReader dictionaryWithContentsOfURL:error:]
+
+
+FFDefaultFileWriter : NSObject <FFFileWriter>
+ @property  NSDictionary *fileAttributes
+ @property  NSDictionary *dirAttributes
+
+  // instance methods
+  -[FFDefaultFileWriter writeData:toFile:error:]
+  -[FFDefaultFileWriter dirAttributes]
+  -[FFDefaultFileWriter .cxx_destruct]
+  -[FFDefaultFileWriter init]
+  -[FFDefaultFileWriter createDirectoryAtURL:error:]
+  -[FFDefaultFileWriter fileAttributes]
+
+
+FFConfiguration : NSObject
+ @property  <FFFileWriter> *filewriter
+ @property  <FFFileReader> *filereader
+ @property  NSMutableArray *profilePayloads
+ @property  NSSet *domains
+
+  // class methods
+  +[FFConfiguration shared]
+  +[FFConfiguration _configurationForTestingWithFileReader:fileWriter:]
+  +[FFConfiguration configurationForTestingWithFileWriter:]
+  +[FFConfiguration configurationForProfileManagement]
+  +[FFConfiguration configurationForTestingWithFileReader:fileWriter:]
+  +[FFConfiguration isValidDisclosureName:]
+  +[FFConfiguration configurationForTestingWithFileReader:]
+  +[FFConfiguration isValidName:]
+
+  // instance methods
+  -[FFConfiguration initPrivate]
+  -[FFConfiguration removeAllDisclosuresAtLevel:]
+  -[FFConfiguration loadDomain:level:]
+  -[FFConfiguration filewriter]
+  -[FFConfiguration disableFeature:domain:level:]
+  -[FFConfiguration prepareToAddProfilePayloads]
+  -[FFConfiguration domains]
+  -[FFConfiguration commitUpdates:]
+  -[FFConfiguration resetDomain:error:]
+  -[FFConfiguration fileURLForDomain:pathIndex:]
+  -[FFConfiguration resolvedStateForFeature:domain:]
+  -[FFConfiguration setProfilePayloads:]
+  -[FFConfiguration fileURLForLevel:pathIndex:]
+  -[FFConfiguration removeDisclosure:atLevel:]
+  -[FFConfiguration invalidateCache]
+  -[FFConfiguration createMutableDomainConfig:level:]
+  -[FFConfiguration .cxx_destruct]
+  -[FFConfiguration mutableDisclosureSetAtLevel:]
+  -[FFConfiguration defaultStateForFeature:domain:]
+  -[FFConfiguration loadCombinedDataForLevel:]
+  -[FFConfiguration writeDisclosureUpdates:]
+  -[FFConfiguration effectiveStateForFeature:domain:level:]
+  -[FFConfiguration profilePayloads]
+  -[FFConfiguration setValue:feature:domain:level:]
+  -[FFConfiguration disableFeaturesMatchingAttribute:level:]
+  -[FFConfiguration disclosureFileURLForLevel:pathIndex:]
+  -[FFConfiguration reset:]
+  -[FFConfiguration stateForFeature:domain:level:]
+  -[FFConfiguration populateDictionary:withFeatures:]
+  -[FFConfiguration currentDisclosures]
+  -[FFConfiguration unsetFeaturesMatchingAttribute:level:]
+  -[FFConfiguration enableFeaturesMatchingAttribute:level:]
+  -[FFConfiguration enableFeature:domain:level:]
+  -[FFConfiguration writeCombinedUpdates:]
+  -[FFConfiguration writeCombinedUpdatesAtLevel:error:]
+  -[FFConfiguration loadAllLevelsForDomain:]
+  -[FFConfiguration addProfilePayload:error:]
+  -[FFConfiguration currentDisclosuresAtLevel:]
+  -[FFConfiguration loadAllData]
+  -[FFConfiguration writeDomainUpdates:]
+  -[FFConfiguration featuresForDomain:]
+  -[FFConfiguration resolvedStateForDisclosure:]
+  -[FFConfiguration unsetFeature:domain:level:]
+  -[FFConfiguration commitProfilePayloadsAndReturnError:]
+  -[FFConfiguration makeFeatureDictionaryFrom:forDomain:]
+  -[FFConfiguration setFilereader:]
+  -[FFConfiguration stateForFeature:domain:]
+  -[FFConfiguration filereader]
+  -[FFConfiguration isFeatureHidden:domain:]
+  -[FFConfiguration addDisclosure:atLevel:]
+  -[FFConfiguration isValidDisclosureName:]
+  -[FFConfiguration clearCachedData]
+  -[FFConfiguration setFeaturesMatchingAttribute:level:value:]
+  -[FFConfiguration writeDisclosureUpdatesAtlevel:error:]
+  -[FFConfiguration setFilewriter:]
+  -[FFConfiguration addFeaturesForDomain:pathIndex:fromURL:]
+  -[FFConfiguration isValidName:]
+  -[FFConfiguration validateName:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

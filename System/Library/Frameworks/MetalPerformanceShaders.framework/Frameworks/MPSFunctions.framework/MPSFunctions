@@ -1,0 +1,165 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MPSFColorConversion
+|| __DATA.__objc_data _OBJC_CLASS_$_MPSFunction
+|| __DATA.__objc_data _OBJC_METACLASS_$_MPSFColorConversion
+|| __DATA.__objc_data _OBJC_METACLASS_$_MPSFunction
+__ Accelerate: _vImageByteSwap_Planar16U
+__ Accelerate: _vImagePermuteChannels_ARGB16U
+__ Accelerate: _vImagePermuteChannels_ARGB8888
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Metal: _MTLCreateSystemDefaultDevice
+__ Metal: _MTLLibraryErrorDomain
+__ Metal: _OBJC_CLASS_$_MTLFunctionConstantValues
+__ Metal: _OBJC_CLASS_$_MTLFunctionDescriptor
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _dirname_r
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once_f
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dladdr
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _logf
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memset_pattern4
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _stpncpy
+__ libSystem.B.dylib: _strncpy
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _vsnprintf
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTIi
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+CompilationResult : NSObject
+ @property  <MTLFunction> *function
+ @property  NSError *error
+
+  // instance methods
+  -[CompilationResult init]
+  -[CompilationResult function]
+  -[CompilationResult dealloc]
+  -[CompilationResult completionHandler]
+  -[CompilationResult error]
+  -[CompilationResult initWithFunction:error:]
+
+
+MPSFunction : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *name
+ @property  <MTLDevice> *device
+ @property  <MTLFunction> *function
+ @property  NSError *error
+
+  // class methods
+  +[MPSFunction supportsSecureCoding]
+
+  // instance methods
+  -[MPSFunction name]
+  -[MPSFunction initWithCoder:]
+  -[MPSFunction init]
+  -[MPSFunction copyWithZone:device:]
+  -[MPSFunction function]
+  -[MPSFunction dealloc]
+  -[MPSFunction copyWithZone:]
+  -[MPSFunction device]
+  -[MPSFunction encodeWithCoder:]
+  -[MPSFunction error]
+  -[MPSFunction initWithDevice:functionName:zone:error:]
+  -[MPSFunction initWithCoder:device:error:]
+  -[MPSFunction newDAGUsingFunctionList:]
+  -[MPSFunction buildAsync:withLibrary:]
+  -[MPSFunction buildIsCompleteWithFunction:error:]
+  -[MPSFunction buildStitchedFunctionAsyncWithName:]
+  -[MPSFunction functionPrototype]
+
+
+MPSFColorConversion : MPSFunction
+ @property  unsigned long options
+ @property  unsigned long inputColorChannels
+ @property  unsigned long outputColorChannels
+
+  // instance methods
+  -[MPSFColorConversion options]
+  -[MPSFColorConversion copyWithZone:device:]
+  -[MPSFColorConversion dealloc]
+  -[MPSFColorConversion encodeWithCoder:]
+  -[MPSFColorConversion initWithCoder:device:error:]
+  -[MPSFColorConversion newDAGUsingFunctionList:]
+  -[MPSFColorConversion functionPrototype]
+  -[MPSFColorConversion initWithDevice:conversion:functionName:sourceRange:options:error:]
+  -[MPSFColorConversion addTRCStage:stage:count:trcIndices:error:]
+  -[MPSFColorConversion addMatrixStage:stage:index:]
+  -[MPSFColorConversion addNxMStage:stage:index:error:]
+  -[MPSFColorConversion addGrayToRGBStage]
+  -[MPSFColorConversion optimizeStages]
+  -[MPSFColorConversion find1DTexture1Stage]
+  -[MPSFColorConversion find3dTextureStageAtIndex:]
+  -[MPSFColorConversion initWithDevice:startColorSpace:endColorSpace:functionName:sourceRange:options:error:]
+  -[MPSFColorConversion newSubroutineListWithError:]
+  -[MPSFColorConversion effectiveRange:]
+  -[MPSFColorConversion descriptorFor1DTexture1]
+  -[MPSFColorConversion descriptorFor3DTexture1]
+  -[MPSFColorConversion descriptorFor3DTexture2]
+  -[MPSFColorConversion initialize1DTexture1:]
+  -[MPSFColorConversion initialize3DTexture1:]
+  -[MPSFColorConversion initialize3DTexture2:]
+  -[MPSFColorConversion inputColorChannels]
+  -[MPSFColorConversion outputColorChannels]
+
+
+01 00 0300 /System/Library/Frameworks/Metal.framework/Metal: MTLFunctionConstantValues 
+01 00 0300 /System/Library/Frameworks/Metal.framework/Metal: MTLFunctionDescriptor 
+01 00 0300 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

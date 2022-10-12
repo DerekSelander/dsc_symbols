@@ -1,0 +1,111 @@
+|| __DATA_CONST.__const _FTCServiceAvailabilityAvailabilityKey
+|| __DATA_CONST.__const _FTCServiceAvailabilityDidChangeNotification
+|| __DATA_CONST.__const _FTCServiceAvailabilityServiceTypeKey
+|| __DATA_CONST.__const _FTCServiceNameCalling
+|| __DATA_CONST.__const _FTCServiceNameFaceTime
+|| __DATA_CONST.__const _FTCServiceNameMadrid
+|| __DATA_CONST.__const _FTCServiceNameiMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FTCServiceAvailabilityCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FTCServiceAvailabilityCenter
+|| __TEXT.__text _FTCServiceNameForServiceType
+|| __TEXT.__text _FTCServiceTypeForServiceName
+__ CommonUtilities: _OBJC_CLASS_$_CUTWeakReference
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IMFoundation: _IMDispatchForNotify
+__ IMFoundation: _IMUserScopedNotification
+__ IMFoundation: _OSLogHandleForRegistrationCategory
+__ IMFoundation: _im_dispatch_after
+__ Marco: _MarcoLogRegistration
+__ Marco: _MarcoShouldLogRegistration
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _os_log_shim_legacy_logging_enabled
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+FTCServiceAvailabilityCenter : NSObject
+  // class methods
+  +[FTCServiceAvailabilityCenter sharedInstance]
+
+  // instance methods
+  -[FTCServiceAvailabilityCenter removeListenerID:forService:]
+  -[FTCServiceAvailabilityCenter hasListenerID:forService:]
+  -[FTCServiceAvailabilityCenter containerForService:create:]
+  -[FTCServiceAvailabilityCenter addListenerID:forService:]
+  -[FTCServiceAvailabilityCenter _handleServiceMonitorNotification:]
+  -[FTCServiceAvailabilityCenter init]
+  -[FTCServiceAvailabilityCenter _postNotificationForService:availability:]
+  -[FTCServiceAvailabilityCenter availabilityForListenerID:forService:]
+  -[FTCServiceAvailabilityCenter _startListeningToMonitor:]
+  -[FTCServiceAvailabilityCenter _isValidServiceType:]
+  -[FTCServiceAvailabilityCenter dealloc]
+  -[FTCServiceAvailabilityCenter _stopListeningToMonitor:]
+
+
+FTCServiceContainer : NSObject
+ @property  FTCServiceMonitor *monitor
+ @property  NSMutableSet *listeners
+
+  // instance methods
+  -[FTCServiceContainer setMonitor:]
+  -[FTCServiceContainer removeListenerID:]
+  -[FTCServiceContainer monitor]
+  -[FTCServiceContainer initWithServiceType:]
+  -[FTCServiceContainer hasListenerID:]
+  -[FTCServiceContainer addListenerID:]
+  -[FTCServiceContainer listeners]
+  -[FTCServiceContainer dealloc]
+
+
+FTCServiceMonitor : NSObject
+ @property  long long serviceType
+
+  // instance methods
+  -[FTCServiceMonitor _postAvailability:]
+  -[FTCServiceMonitor serviceAvailability]
+  -[FTCServiceMonitor initWithServiceType:]
+  -[FTCServiceMonitor _updateAvailability]
+  -[FTCServiceMonitor updateAvailability]
+  -[FTCServiceMonitor dealloc]
+  -[FTCServiceMonitor serviceType]
+
+
+01 00 0300 /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities: CUTWeakReference 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

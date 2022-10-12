@@ -1,0 +1,778 @@
+|| __DATA.__common _TCSLogDefault
+|| __DATA.__objc_data _OBJC_CLASS_$_TCDialRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSAvailability
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSBehavior
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSCall
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSCallCenter
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSCallLog
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSContacts
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSContactsDataSource
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSIDSIDStatusController
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSServer
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSSuggestions
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSSuggestionsDataSource
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSTinCanUserDefaults
+|| __DATA.__objc_data _OBJC_CLASS_$_TCSignposts
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCDialRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSAvailability
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSBehavior
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSCall
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSCallCenter
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSCallLog
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSContacts
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSContactsDataSource
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSIDSIDStatusController
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSServer
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSSuggestions
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSSuggestionsDataSource
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSTinCanUserDefaults
+|| __DATA.__objc_data _OBJC_METACLASS_$_TCSignposts
+|| __DATA_CONST.__const _TCSAvailabilityDidChangeNotification
+|| __DATA_CONST.__const _TCSContactsDidChangeNotification
+|| __DATA_CONST.__const _TCSDefaultsFirstSuggestionGenerationTimestampKey
+|| __DATA_CONST.__const _TCSDefaultsPhotoCacheImageHashDictionaryKey
+|| __DATA_CONST.__const _TCSDefaultsPreviousSuggestionGenerationTimestampKey
+|| __DATA_CONST.__const _TCSDefaultsSawTalkButtonTutorialKey
+|| __DATA_CONST.__const _TCSDefaultsSuggestionAddedTimestampKey
+|| __DATA_CONST.__const _TCSDefaultsSuggestionExpiredKey
+|| __DATA_CONST.__const _TCSDefaultsSuggestionExpiryReasonAgedOut
+|| __DATA_CONST.__const _TCSDefaultsSuggestionExpiryReasonInviter
+|| __DATA_CONST.__const _TCSDefaultsSuggestionExpiryReasonKey
+|| __DATA_CONST.__const _TCSDefaultsSuggestionsKey
+|| __DATA_CONST.__const _TCSDefaultsUnavailableBySchoolModeKey
+|| __DATA_CONST.__const _TCSDefaultsUnavailableByTheaterModeKey
+|| __DATA_CONST.__const _TCSDefaultsUnavailableKey
+|| __DATA_CONST.__const _TCSFirstUnlockNotification
+|| __DATA_CONST.__const _TCSStatusIndicatorStateDidChangeNotification
+|| __DATA_CONST.__const _TCSTinCanAppBundleIdentifier
+|| __DATA_CONST.__const _TCSTinCanAppInstallationStateChangedNotification
+|| __DATA_CONST.__const _TCSTinCanAppIsInstalledOnWatchKey
+|| __DATA_CONST.__const _TCSTinCanBBActionAcceptIdentifier
+|| __DATA_CONST.__const _TCSTinCanBBActionCallbackDeclineIdentifier
+|| __DATA_CONST.__const _TCSTinCanBBActionCallbackIdentifier
+|| __DATA_CONST.__const _TCSTinCanBBActionDeclineIdentifier
+|| __DATA_CONST.__const _TCSTinCanBBActionOpenAppIdentifier
+|| __DATA_CONST.__const _TCSTinCanIDSServiceName
+|| __DATA_CONST.__const _TCSTinCanInvalidUserNotification
+|| __DATA_CONST.__const _TCSTinCanInviteAcceptanceNotification
+|| __DATA_CONST.__const _TCSTinCanInviteAcceptedNotification
+|| __DATA_CONST.__const _TCSTinCanInviteDeclinedNotification
+|| __DATA_CONST.__const _TCSTinCanInviteNotification
+|| __DATA_CONST.__const _TCSTinCanInviteNotificationContactIdentifierKey
+|| __DATA_CONST.__const _TCSTinCanInviteNotificationFullNameKey
+|| __DATA_CONST.__const _TCSTinCanInviteNotificationHandleKey
+|| __DATA_CONST.__const _TCSTinCanInviteNotificationShortNameKey
+|| __DATA_CONST.__const _TCSTinCanInviteTimeoutNotification
+|| __DATA_CONST.__const _TCSTinCanMissedCallbackNotification
+|| __DATA_CONST.__const _TCSTinCanMissedNotification
+|| __DATA_CONST.__const _TCSTinCanPTTTransmissionDurationKey
+|| __DATA_CONST.__const _TCSTinCanPTTTransmissionKey
+|| __DATA_CONST.__const _TCSTinCanSharedBundleIdentifier
+|| __DATA_CONST.__const _TCSTinCanSwitchRemoteUserKey
+|| __DATA_CONST.__const _TCSTinCanUITriggerInviteName
+|| __DATA_CONST.__const _TCSTinCanUITriggerMissedName
+|| __DATA_CONST.__const _TCSTinCanURLScheme
+|| __DATA_CONST.__const _TCSTinCanUserActivityStartSessionType
+|| __DATA_CONST.__const _TCSTinCanUserActivityStartSessionURLKey
+|| __DATA_CONST.__const _TCSTinCanUserDefaultsDomain
+|| __DATA_CONST.__const _TCSTinCanWakeUpNotification
+|| __DATA_CONST.__const _kTCSessionStateConnecting
+|| __DATA_CONST.__const _kTCSessionStateDisconnected
+|| __DATA_CONST.__const _kTCSessionStateIdle
+|| __DATA_CONST.__const _kTCSessionStateReceiving
+|| __DATA_CONST.__const _kTCSessionStateTransmitting
+|| __DATA_CONST.__const _kTCSessionStateUndefined
+|| __TEXT.__const _TinCanSharedVersionNumber
+|| __TEXT.__const _TinCanSharedVersionString
+|| __TEXT.__text _NSStringFromTCSessionState
+|| __TEXT.__text _NSStringFromTUCallDisconnectedReason
+|| __TEXT.__text _NSStringFromTUCallStatus
+|| __TEXT.__text _NSStringFromTinCanIDSIDStatus
+|| __TEXT.__text _TCSGuaranteeMainThread
+|| __TEXT.__text _TCSIsProcessCarousel
+|| __TEXT.__text _TCSIsProcessTinCan
+|| __TEXT.__text _TCSLogSafeDescription
+|| __TEXT.__text _TCSessionStateFromString
+|| __TEXT.__text __TCSInitializeLogging
+__ CallHistory: _OBJC_CLASS_$_CHManager
+__ CallHistory: _kCHCoalescingStrategyRecents
+__ Contacts: _CNContactEmailAddressesKey
+__ Contacts: _CNContactIOSLegacyIdentifierInvalid
+__ Contacts: _CNContactIdentifierKey
+__ Contacts: _CNContactLinkIdentifierKey
+__ Contacts: _CNContactPhoneNumbersKey
+__ Contacts: _CNContactStoreDidChangeNotification
+__ Contacts: _CNLabelHome
+__ Contacts: _CNLabelPhoneNumberMain
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNContactFormatter
+__ Contacts: _OBJC_CLASS_$_CNContactStore
+__ Contacts: _OBJC_CLASS_$_CNContactsUserDefaults
+__ Contacts: _OBJC_CLASS_$_CNFavorites
+__ Contacts: _OBJC_CLASS_$_CNLabeledValue
+__ Contacts: _OBJC_CLASS_$_CNMutableContact
+__ Contacts: _OBJC_CLASS_$_CNPhoneNumber
+__ ContactsFoundation: _OBJC_CLASS_$_CNCoalescingTimer
+__ ContactsFoundation: _OBJC_CLASS_$_CNSchedulerProvider
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFPreferencesSetValue
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_METACLASS_$_NSUserDefaults
+__ CoreFoundation: __CFPreferencesSetDaemonCacheEnabled
+__ CoreFoundation: __CFPreferencesSetFileProtectionClass
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFPreferencesCurrentHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreRecents: _CRAddressKindEmail
+__ CoreRecents: _CRAddressKindPhoneNumber
+__ CoreRecents: _CRRecentsDomainFaceTime
+__ CoreRecents: _CRRecentsDomainMessages
+__ CoreRecents: _OBJC_CLASS_$_CRRecentContactsLibrary
+__ CoreRecents: _OBJC_CLASS_$_CRSearchQuery
+__ Foundation: _NSStringFromBOOL
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ Foundation: _OBJC_CLASS_$_NSURLQueryItem
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ IDS: _IDSCopyRawAddressForDestination
+__ IDS: _OBJC_CLASS_$_IDSBatchIDQueryController
+__ IntlPreferences: _NSPersonNamePreferencesDidChangeNotification
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ NanoPreferencesSync: _NPSHasCompletedInitialSync
+__ NanoPreferencesSync: _OBJC_CLASS_$_NPSManager
+__ NanoPreferencesSync: _kNPSInitialSyncCompletionDarwinNotification
+__ NanoRegistry: _NRPairedDeviceRegistryDeviceDidPairNotification
+__ NanoRegistry: _OBJC_CLASS_$_NRPairedDeviceRegistry
+__ TelephonyUtilities: _OBJC_CLASS_$_TUCall
+__ TelephonyUtilities: _OBJC_CLASS_$_TUDialRequest
+__ TelephonyUtilities: _OBJC_CLASS_$_TUPhoneNumber
+__ TelephonyUtilities: _OBJC_METACLASS_$_TUDialRequest
+__ TelephonyUtilities: _TUHomeCountryCode
+__ TelephonyUtilities: _TUStringForCallStatus
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationCenter
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetProductType
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+TCSSuggestions : NSObject <IDSBatchIDQueryControllerDelegate, TCSContactsObserver>
+ @property  CNContactStore *contactStore
+ @property  TCSContacts *contacts
+ @property  NSUserDefaults *defaults
+ @property  BOOL shouldObserveSuggestionsDefaultChanges
+ @property  NSMutableDictionary *suggestions
+ @property  NSArray *suggestedDestinations
+ @property  BOOL generationTimerEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TCSSuggestions _descriptorForRequiredKeys]
+
+  // instance methods
+  -[TCSSuggestions contactStore]
+  -[TCSSuggestions setContactStore:]
+  -[TCSSuggestions setDefaults:]
+  -[TCSSuggestions _deviceDidPair:]
+  -[TCSSuggestions defaults]
+  -[TCSSuggestions setSuggestions:]
+  -[TCSSuggestions batchQueryController:updatedDestinationsStatus:onService:error:]
+  -[TCSSuggestions .cxx_destruct]
+  -[TCSSuggestions suggestions]
+  -[TCSSuggestions addObserver:]
+  -[TCSSuggestions _invalidate]
+  -[TCSSuggestions contacts]
+  -[TCSSuggestions setContacts:]
+  -[TCSSuggestions dealloc]
+  -[TCSSuggestions removeObserver:]
+  -[TCSSuggestions observeValueForKeyPath:ofObject:change:context:]
+  -[TCSSuggestions _saveSuggestions]
+  -[TCSSuggestions setShouldObserveSuggestionsDefaultChanges:]
+  -[TCSSuggestions _handleDeviceFirstUnlock]
+  -[TCSSuggestions _shouldGenerateNewSuggestions]
+  -[TCSSuggestions _generateNewSuggestions]
+  -[TCSSuggestions _performHousekeepingOnSuggestions:]
+  -[TCSSuggestions generateNewSuggestionsIfNecessary]
+  -[TCSSuggestions _stopGenerationTimer]
+  -[TCSSuggestions _addSuggestedDestination:withTimestamp:]
+  -[TCSSuggestions _notifyObserversSuggestionsChanged]
+  -[TCSSuggestions _startGenerationTimerWithFireDate:]
+  -[TCSSuggestions _destinationsFromFavorites]
+  -[TCSSuggestions _destinationsFromCallHistory]
+  -[TCSSuggestions _destinationsFromCoreRecents]
+  -[TCSSuggestions _updateGenerationTimestamps]
+  -[TCSSuggestions _performIDQueryForSuggestions:]
+  -[TCSSuggestions _syncSuggestions]
+  -[TCSSuggestions destinationsDidChange:]
+  -[TCSSuggestions initWithContactStore:contacts:]
+  -[TCSSuggestions suggestedDestinations]
+  -[TCSSuggestions setGenerationTimerEnabled:]
+  -[TCSSuggestions _deleteSuggestions]
+  -[TCSSuggestions generationTimerEnabled]
+  -[TCSSuggestions shouldObserveSuggestionsDefaultChanges]
+  -[TCSSuggestions setSuggestedDestinations:]
+
+
+TCDialRequest : TUDialRequest
+ @property  unsigned long state
+ @property  BOOL remoteUplinkMuted
+
+  // instance methods
+  -[TCDialRequest setState:]
+  -[TCDialRequest state]
+  -[TCDialRequest URL]
+  -[TCDialRequest initWithURL:]
+  -[TCDialRequest isRemoteUplinkMuted]
+  -[TCDialRequest setRemoteUplinkMuted:]
+
+
+TCSContactsDataSource : NSObject <TCSContactsObserver>
+ @property  NSArray *sortedContacts
+ @property  NSArray *sortedInviters
+ @property  NSArray *sortedInvitees
+ @property  <TCSContactsDataSourceDelegate> *delegate
+ @property  CNContactStore *contactStore
+ @property  TCSContacts *contacts
+ @property  unsigned long sectionCount
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TCSContactsDataSource descriptorForRequiredKeys]
+
+  // instance methods
+  -[TCSContactsDataSource contactStore]
+  -[TCSContactsDataSource .cxx_destruct]
+  -[TCSContactsDataSource setDelegate:]
+  -[TCSContactsDataSource removeContact:]
+  -[TCSContactsDataSource sectionCount]
+  -[TCSContactsDataSource contactWithIdentifier:]
+  -[TCSContactsDataSource delegate]
+  -[TCSContactsDataSource contacts]
+  -[TCSContactsDataSource _notifyDelegateContactsChanged]
+  -[TCSContactsDataSource dealloc]
+  -[TCSContactsDataSource _handleDeviceFirstUnlock]
+  -[TCSContactsDataSource destinationsDidChange:]
+  -[TCSContactsDataSource recencyDidChange:]
+  -[TCSContactsDataSource contactBecameAccepted:]
+  -[TCSContactsDataSource initWithContactStore:contacts:]
+  -[TCSContactsDataSource _handlePersonNamePreferencesChangeNotification]
+  -[TCSContactsDataSource _handleContactStoreDidChange:]
+  -[TCSContactsDataSource _updateSortedContactsAndNotifyIfChanged:]
+  -[TCSContactsDataSource sortedInvitees]
+  -[TCSContactsDataSource sortedInviters]
+  -[TCSContactsDataSource sortedContacts]
+  -[TCSContactsDataSource _sortedContactsArrayFromArray:]
+  -[TCSContactsDataSource _contactMapFromArray:]
+  -[TCSContactsDataSource _sectionForContact:]
+  -[TCSContactsDataSource removeContact:inSection:]
+  -[TCSContactsDataSource _contactsForSection:]
+  -[TCSContactsDataSource _notifyDelegateRecencyChanged]
+  -[TCSContactsDataSource _unsortedContactsArray]
+  -[TCSContactsDataSource _sortedContactsArrayFromArray:forSection:]
+  -[TCSContactsDataSource _contactArray:differsFromArray:]
+  -[TCSContactsDataSource logSortedContacts]
+  -[TCSContactsDataSource inviteContact:]
+  -[TCSContactsDataSource isContactAllowed:]
+  -[TCSContactsDataSource isContactAnInviter:]
+  -[TCSContactsDataSource setSortedContacts:]
+  -[TCSContactsDataSource setSortedInviters:]
+  -[TCSContactsDataSource setSortedInvitees:]
+
+
+TCSBehavior : NSObject
+ @property  BOOL isMobileKeyBagDisabledOrDeviceUnlockedSinceBoot
+ @property  BOOL isAppleInternalInstall
+ @property  BOOL isM8Device
+ @property  NSString *regionCode
+
+  // class methods
+  +[TCSBehavior regionCode]
+  +[TCSBehavior sharedBehavior]
+  +[TCSBehavior isAppleInternalInstall]
+  +[TCSBehavior isMobileKeyBagDisabledOrDeviceUnlockedSinceBoot]
+  +[TCSBehavior _isAppleInternalInstall]
+  +[TCSBehavior _regionCode]
+  +[TCSBehavior _isMobileKeyBagDisabledOrDeviceUnlockedSinceBoot]
+  +[TCSBehavior _isM8Device]
+  +[TCSBehavior isM8Device]
+
+  // instance methods
+  -[TCSBehavior regionCode]
+  -[TCSBehavior .cxx_destruct]
+  -[TCSBehavior isAppleInternalInstall]
+  -[TCSBehavior isMobileKeyBagDisabledOrDeviceUnlockedSinceBoot]
+  -[TCSBehavior init]
+  -[TCSBehavior dealloc]
+  -[TCSBehavior _handleDeviceFirstUnlock]
+  -[TCSBehavior isM8Device]
+
+
+TCSCallLog : NSObject
+ @property  NSMutableDictionary *calls
+ @property  NSMutableOrderedSet *identifiers
+
+  // instance methods
+  -[TCSCallLog callWithUniqueProxyIdentifier:]
+  -[TCSCallLog calls]
+  -[TCSCallLog setCalls:]
+  -[TCSCallLog .cxx_destruct]
+  -[TCSCallLog identifiers]
+  -[TCSCallLog init]
+  -[TCSCallLog setIdentifiers:]
+  -[TCSCallLog _trimCache]
+  -[TCSCallLog addCall:]
+
+
+TCSServer : NSObject <TCSServerXPC, NSXPCListenerDelegate>
+ @property  <TCSServerXPC> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[TCSServer _removeConnection:]
+  -[TCSServer .cxx_destruct]
+  -[TCSServer disconnectCall:]
+  -[TCSServer setDelegate:]
+  -[TCSServer init]
+  -[TCSServer callStatusChanged:]
+  -[TCSServer _addConnection:]
+  -[TCSServer delegate]
+  -[TCSServer listener:shouldAcceptNewConnection:]
+  -[TCSServer hasValidConnection]
+  -[TCSServer sessionViewControllerViewDidAppear]
+  -[TCSServer getCall:]
+  -[TCSServer getLogEntryForCallWithUniqueProxyIdentifier:completion:]
+  -[TCSServer setUplinkMuted:for:completion:]
+  -[TCSServer ensureUplinkMuted]
+  -[TCSServer queryIsTinCannable:]
+  -[TCSServer callConnected:]
+  -[TCSServer remoteUplinkMuteChanged:]
+  -[TCSServer _enumerateConnectionsWithBlock:]
+
+
+TCSCallCenter : NSObject <TCSClientXPC>
+ @property  <TCSCallCenterDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[TCSCallCenter applicationWillEnterForeground]
+  -[TCSCallCenter .cxx_destruct]
+  -[TCSCallCenter disconnectCall:]
+  -[TCSCallCenter setDelegate:]
+  -[TCSCallCenter init]
+  -[TCSCallCenter callStatusChanged:]
+  -[TCSCallCenter delegate]
+  -[TCSCallCenter activeCall]
+  -[TCSCallCenter invalidate]
+  -[TCSCallCenter hasValidConnection]
+  -[TCSCallCenter currentCall]
+  -[TCSCallCenter sessionViewControllerViewDidAppear]
+  -[TCSCallCenter setUplinkMuted:for:completion:]
+  -[TCSCallCenter queryIsTinCannable:]
+  -[TCSCallCenter callConnected:]
+  -[TCSCallCenter remoteUplinkMuteChanged:]
+  -[TCSCallCenter synchronouslyFetchCall]
+  -[TCSCallCenter _callPassingPredicate:]
+  -[TCSCallCenter ringingCall]
+  -[TCSCallCenter endingCall]
+  -[TCSCallCenter logEntryForCallWithUniqueProxyIdentifier:completion:]
+
+
+TCSCall : NSObject <NSSecureCoding>
+ @property  BOOL isConnected
+ @property  BOOL isOutgoing
+ @property  BOOL isIncoming
+ @property  BOOL isRemoteUplinkMuted
+ @property  BOOL isActive
+ @property  NSString *contactIdentifier
+ @property  NSString *handleValue
+ @property  int status
+ @property  NSString *uniqueProxyIdentifier
+ @property  int disconnectedReason
+ @property  NSDate *dateAnsweredOrDialed
+ @property  NSDate *dateConnected
+
+  // class methods
+  +[TCSCall supportsSecureCoding]
+
+  // instance methods
+  -[TCSCall isOutgoing]
+  -[TCSCall initWithCoder:]
+  -[TCSCall setCallCenter:]
+  -[TCSCall isConnected]
+  -[TCSCall isActive]
+  -[TCSCall .cxx_destruct]
+  -[TCSCall contactIdentifier]
+  -[TCSCall isEqual:]
+  -[TCSCall status]
+  -[TCSCall isIncoming]
+  -[TCSCall encodeWithCoder:]
+  -[TCSCall dateConnected]
+  -[TCSCall uniqueProxyIdentifier]
+  -[TCSCall initWithCall:]
+  -[TCSCall disconnectedReason]
+  -[TCSCall isRemoteUplinkMuted]
+  -[TCSCall isEqualToCall:]
+  -[TCSCall dateAnsweredOrDialed]
+  -[TCSCall handleValue]
+  -[TCSCall setUplinkMuted:completion:]
+
+
+TCSSuggestionsDataSource : NSObject <TCSSuggestionsObserver>
+ @property  TCSSuggestions *suggestions
+ @property  NSArray *suggestedContacts
+ @property  <TCSSuggestionsDataSourceDelegate> *delegate
+ @property  BOOL hasSuggestions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TCSSuggestionsDataSource descriptorForRequiredKeys]
+
+  // instance methods
+  -[TCSSuggestionsDataSource suggestedContacts]
+  -[TCSSuggestionsDataSource setSuggestedContacts:]
+  -[TCSSuggestionsDataSource setSuggestions:]
+  -[TCSSuggestionsDataSource .cxx_destruct]
+  -[TCSSuggestionsDataSource setDelegate:]
+  -[TCSSuggestionsDataSource suggestions]
+  -[TCSSuggestionsDataSource _invalidate]
+  -[TCSSuggestionsDataSource delegate]
+  -[TCSSuggestionsDataSource suggestionsDidChange:]
+  -[TCSSuggestionsDataSource hasSuggestions]
+  -[TCSSuggestionsDataSource dealloc]
+  -[TCSSuggestionsDataSource initWithSuggestions:]
+  -[TCSSuggestionsDataSource _handleDeviceFirstUnlock]
+  -[TCSSuggestionsDataSource _handlePersonNamePreferencesChangeNotification]
+  -[TCSSuggestionsDataSource _handleContactStoreDidChange:]
+  -[TCSSuggestionsDataSource _sortedContactsArrayFromArray:]
+  -[TCSSuggestionsDataSource _notifyDelegateSuggestionsChanged]
+
+
+TCSIDSIDStatusController : NSObject <IDSBatchIDQueryControllerDelegate>
+ @property  IDSBatchIDQueryController *queryController
+ @property  NSArray *destinations
+ @property  NSMutableDictionary *destinationToStatus
+ @property  <TUIDSLookup> *item
+ @property  NSNumber *status
+ @property  NSString *tinCanHandle
+ @property  <TCSIDSIDStatusControllerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TCSIDSIDStatusController stringForDestinationToStatus:]
+
+  // instance methods
+  -[TCSIDSIDStatusController queryController]
+  -[TCSIDSIDStatusController batchQueryController:updatedDestinationsStatus:onService:error:]
+  -[TCSIDSIDStatusController .cxx_destruct]
+  -[TCSIDSIDStatusController item]
+  -[TCSIDSIDStatusController destinations]
+  -[TCSIDSIDStatusController execute]
+  -[TCSIDSIDStatusController status]
+  -[TCSIDSIDStatusController delegate]
+  -[TCSIDSIDStatusController dealloc]
+  -[TCSIDSIDStatusController setQueryController:]
+  -[TCSIDSIDStatusController _statusQueryTimedOut]
+  -[TCSIDSIDStatusController destinationToStatus]
+  -[TCSIDSIDStatusController initWithItem:delegate:timeout:]
+  -[TCSIDSIDStatusController tinCanHandle]
+
+
+TCSignposts : NSObject
+  // class methods
+  +[TCSignposts trace:]
+
+
+TCSTinCanUserDefaults : NSUserDefaults
+  // class methods
+  +[TCSTinCanUserDefaults defaults]
+  +[TCSTinCanUserDefaults suggestionExpiryReasonAllowlistedValue]
+  +[TCSTinCanUserDefaults allowListKey]
+  +[TCSTinCanUserDefaults storeDemoAllowlistKey]
+
+  // instance methods
+  -[TCSTinCanUserDefaults clearUserData]
+
+
+TCSContacts : NSObject
+ @property  NSUserDefaults *defaults
+ @property  BOOL shouldObserveAllowlistDefaultChanges
+ @property  NSMutableDictionary *allowlist
+ @property  NSArray *destinations
+
+  // class methods
+  +[TCSContacts canonicalDestinationsForContact:]
+  +[TCSContacts _canonicalDestinationForString:]
+  +[TCSContacts _safeContactDetailStringForLogging:]
+  +[TCSContacts _unifiedContactWithIdentifier:orDestination:usingContactStore:keysToFetch:]
+  +[TCSContacts _isUnknownContact:equalToUnknownContact:]
+  +[TCSContacts _unifiedMeContactFromContactStore:keysToFetch:]
+  +[TCSContacts _tinCanUserNotificationCenter]
+  +[TCSContacts validatedAllowlistFromDictionary:]
+  +[TCSContacts _destinationsFromAllowlistDictionary:onlyAccepted:]
+  +[TCSContacts _pauseCharacterSet]
+  +[TCSContacts _unknownContactWithDestination:]
+  +[TCSContacts _canonicalPhoneNumberFromCNPhoneNumber:]
+  +[TCSContacts _canonicalPhoneNumberFromPhoneNumberString:]
+  +[TCSContacts _contact:hasKeysForFormatterStye:]
+  +[TCSContacts _firstPhoneNumberOrEmailAddressFromContact:formatPhoneNumber:]
+  +[TCSContacts dismissInvitationNotificationsFromContact:]
+  +[TCSContacts _isContact:similarToContact:]
+  +[TCSContacts _safeContactNameStringForLogging:handle:]
+
+  // instance methods
+  -[TCSContacts setDefaults:]
+  -[TCSContacts defaults]
+  -[TCSContacts setDestinations:]
+  -[TCSContacts .cxx_destruct]
+  -[TCSContacts destinations]
+  -[TCSContacts init]
+  -[TCSContacts addObserver:]
+  -[TCSContacts setAllowlist:]
+  -[TCSContacts allowlist]
+  -[TCSContacts dealloc]
+  -[TCSContacts removeObserver:]
+  -[TCSContacts observeValueForKeyPath:ofObject:change:context:]
+  -[TCSContacts addDestinations:]
+  -[TCSContacts _handleDeviceFirstUnlock]
+  -[TCSContacts isDestinationAccepted:]
+  -[TCSContacts isDestinationAnInviter:]
+  -[TCSContacts removeDestinations:]
+  -[TCSContacts stateForContact:]
+  -[TCSContacts isContactAnInviter:]
+  -[TCSContacts isContactAccepted:]
+  -[TCSContacts _loadDataFromDefaults]
+  -[TCSContacts _saveAllowlist]
+  -[TCSContacts setShouldObserveAllowlistDefaultChanges:]
+  -[TCSContacts _handleContactsPrefSync]
+  -[TCSContacts _addDestinations:asType:]
+  -[TCSContacts _removeDestinationFromAllowlist:]
+  -[TCSContacts _generateDestinationsFromAllowlist]
+  -[TCSContacts _notifyObserversDestinationsChanged]
+  -[TCSContacts _notifyObserversRecencyChanged]
+  -[TCSContacts setDestinationAsAccepted:]
+  -[TCSContacts _notifyObserversContactBecameAccepted:]
+  -[TCSContacts _didInitiateCallToDestination:date:]
+  -[TCSContacts _didReceiveCallFromDestination:date:]
+  -[TCSContacts mostRecentCallDateForDestination:]
+  -[TCSContacts mostRecentCallDateForContact:]
+  -[TCSContacts contactSupportsTinCan:]
+  -[TCSContacts _reloadAllowlist]
+  -[TCSContacts _loadAllowlistFromDefaults]
+  -[TCSContacts _logDestinations]
+  -[TCSContacts _didIncomingOutgoingOrSupportChange:]
+  -[TCSContacts _shouldHandleResetStoreDemoContent]
+  -[TCSContacts addDestinationsForInviter:]
+  -[TCSContacts setContact:supportsTinCan:]
+  -[TCSContacts setContactAsAccepted:]
+  -[TCSContacts didInitiateCallToContact:date:]
+  -[TCSContacts didReceiveCallFromContact:date:]
+  -[TCSContacts dateAddedForDestination:]
+  -[TCSContacts _resetStoreDemoContent]
+  -[TCSContacts _deleteAllowlist]
+  -[TCSContacts shouldObserveAllowlistDefaultChanges]
+
+
+TCSAvailability : NSObject
+ @property  BOOL shouldObserveFriendListDefaultChanges
+ @property  BOOL shouldObserveUnavailabilityDefaultChanges
+ @property  BOOL shouldShowStatusIndicator
+
+  // class methods
+  +[TCSAvailability sharedInstance]
+  +[TCSAvailability isUserAvailable]
+  +[TCSAvailability setUserAvailable:]
+  +[TCSAvailability shouldShowWalkieTalkieStatusIndicator]
+
+  // instance methods
+  -[TCSAvailability .cxx_destruct]
+  -[TCSAvailability init]
+  -[TCSAvailability dealloc]
+  -[TCSAvailability observeValueForKeyPath:ofObject:change:context:]
+  -[TCSAvailability _handleDeviceFirstUnlock]
+  -[TCSAvailability _calculateShouldShowStatusIndicator]
+  -[TCSAvailability setShouldObserveUnavailabilityDefaultChanges:]
+  -[TCSAvailability setShouldObserveFriendListDefaultChanges:]
+  -[TCSAvailability _postNotificationName:]
+  -[TCSAvailability _isUserUnavailable]
+  -[TCSAvailability _setUserUnavailable:]
+  -[TCSAvailability shouldShowStatusIndicator]
+  -[TCSAvailability setShouldShowStatusIndicator:]
+  -[TCSAvailability _unavailabilityText:]
+  -[TCSAvailability _hasConnectivity]
+  -[TCSAvailability shouldObserveFriendListDefaultChanges]
+  -[TCSAvailability shouldObserveUnavailabilityDefaultChanges]
+
+
+TUCall(TCSClientServer)
+	// instance methods
+	-[TUCall(TCSClientServer) tc_useUnderlyingRemoteUplinkMuted]
+	-[TUCall(TCSClientServer) tc_setUseUnderlyingRemoteUplinkMuted:]
+
+NSUserDefaults(TCSTinCanUserDefaults)
+	// instance methods
+	-[NSUserDefaults(TCSTinCanUserDefaults) _tcsEnsureProtectionClass]
+	-[NSUserDefaults(TCSTinCanUserDefaults) _tcsSetPrefsDaemonCacheEnabled:]
+	-[NSUserDefaults(TCSTinCanUserDefaults) _tcsSetPrefsObject:forKey:]
+	-[NSUserDefaults(TCSTinCanUserDefaults) _tcsHandleDeviceFirstUnlock]
+
+<DEREK BUG Categories!>(Queue)
+	// instance methods
+	-[<DEREK BUG Categories!>(Queue) dequeue]
+	-[<DEREK BUG Categories!>(Queue) enqueue:]
+
+01 00 0400 /System/Library/PrivateFrameworks/CallHistory.framework/CallHistory: CHManager 
+01 00 0600 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNCoalescingTimer 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactFormatter 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStore 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactsUserDefaults 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNFavorites 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNLabeledValue 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNMutableContact 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNPhoneNumber 
+01 00 0600 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNSchedulerProvider 
+01 00 0300 /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents: CRRecentContactsLibrary 
+01 00 0300 /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents: CRSearchQuery 
+01 00 0700 /System/Library/PrivateFrameworks/IDS.framework/IDS: IDSBatchIDQueryController 
+01 00 0a00 /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync: NPSManager 
+01 00 0200 /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry: NRPairedDeviceRegistry 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLQueryItem 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0b00 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUCall 
+01 00 0b00 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUDialRequest 
+01 00 0b00 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUPhoneNumber 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0d00 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationCenter 

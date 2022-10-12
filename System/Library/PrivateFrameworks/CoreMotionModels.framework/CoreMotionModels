@@ -1,0 +1,88 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CMWorkoutClassifier
+|| __DATA.__objc_data _OBJC_CLASS_$_CMWorkoutClassifierCNN
+|| __DATA.__objc_data _OBJC_CLASS_$_CMWorkoutClassifierCNNInput
+|| __DATA.__objc_data _OBJC_CLASS_$_CMWorkoutClassifierCNNOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$_CMWorkoutClassifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_CMWorkoutClassifierCNN
+|| __DATA.__objc_data _OBJC_METACLASS_$_CMWorkoutClassifierCNNInput
+|| __DATA.__objc_data _OBJC_METACLASS_$_CMWorkoutClassifierCNNOutput
+|| __TEXT.__const _CoreMotionModelsVersionNumber
+|| __TEXT.__const _CoreMotionModelsVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreML: _OBJC_CLASS_$_MLFeatureValue
+__ CoreML: _OBJC_CLASS_$_MLInternalSettings
+__ CoreML: _OBJC_CLASS_$_MLModel
+__ CoreML: _OBJC_CLASS_$_MLPredictionOptions
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+CMWorkoutClassifierCNNInput : NSObject <MLFeatureProvider>
+ @property  MLMultiArray *X__0
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[CMWorkoutClassifierCNNInput .cxx_destruct]
+  -[CMWorkoutClassifierCNNInput X__0]
+  -[CMWorkoutClassifierCNNInput featureNames]
+  -[CMWorkoutClassifierCNNInput featureValueForName:]
+  -[CMWorkoutClassifierCNNInput initWithX__0:]
+  -[CMWorkoutClassifierCNNInput setX__0:]
+
+
+CMWorkoutClassifierCNNOutput : NSObject <MLFeatureProvider>
+ @property  MLMultiArray *softmax__0
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[CMWorkoutClassifierCNNOutput .cxx_destruct]
+  -[CMWorkoutClassifierCNNOutput featureNames]
+  -[CMWorkoutClassifierCNNOutput featureValueForName:]
+  -[CMWorkoutClassifierCNNOutput initWithSoftmax__0:]
+  -[CMWorkoutClassifierCNNOutput softmax__0]
+  -[CMWorkoutClassifierCNNOutput setSoftmax__0:]
+
+
+CMWorkoutClassifierCNN : NSObject
+ @property  MLModel *model
+
+  // instance methods
+  -[CMWorkoutClassifierCNN initWithContentsOfURL:error:]
+  -[CMWorkoutClassifierCNN .cxx_destruct]
+  -[CMWorkoutClassifierCNN predictionFromFeatures:error:]
+  -[CMWorkoutClassifierCNN init]
+  -[CMWorkoutClassifierCNN model]
+  -[CMWorkoutClassifierCNN predictionFromX__0:error:]
+
+
+CMWorkoutClassifier : NSObject
+  // instance methods
+  -[CMWorkoutClassifier .cxx_destruct]
+  -[CMWorkoutClassifier init]
+  -[CMWorkoutClassifier predictionFromX__0:error:]
+
+
+01 00 0100 /System/Library/Frameworks/CoreML.framework/CoreML: MLFeatureValue 
+01 00 0100 /System/Library/Frameworks/CoreML.framework/CoreML: MLInternalSettings 
+01 00 0100 /System/Library/Frameworks/CoreML.framework/CoreML: MLModel 
+01 00 0100 /System/Library/Frameworks/CoreML.framework/CoreML: MLPredictionOptions 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

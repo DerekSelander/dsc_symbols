@@ -1,0 +1,127 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_AXFocusManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_AXFocusManager
+|| __TEXT.__const _AccessibilityFocusEngineVersionNumber
+|| __TEXT.__const _AccessibilityFocusEngineVersionString
+__ AXRuntime: _OBJC_CLASS_$_AXElement
+__ AXRuntime: __AXShouldDispatchNonMainThreadCallbacksOnMainThreadPopReason
+__ AXRuntime: __AXShouldDispatchNonMainThreadCallbacksOnMainThreadPushReason
+__ AXRuntime: __AXUIElementCreateAppElementWithPid
+__ AccessibilityUtilities: _AXInCallServiceName
+__ AccessibilityUtilities: _AXLogFocusEngine
+__ AccessibilityUtilities: _OBJC_CLASS_$_AXSpringBoardServer
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreGraphics: _CGSizeZero
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_storeStrong
+AXFocusManager : NSObject
+ @property  NSString *typeaheadString
+ @property  int pidForSuccessfulTypeaheadMovement
+ @property  NSObject<OS_dispatch_queue> *movementQueue
+ @property  NSHashTable *observers
+ @property  NSObject<OS_dispatch_queue> *observersQueue
+ @property  {os_unfair_lock_s=I} observersLock
+ @property  AXElement *currentApplication
+
+  // instance methods
+  -[AXFocusManager observersLock]
+  -[AXFocusManager _enumerateObservers:]
+  -[AXFocusManager .cxx_destruct]
+  -[AXFocusManager setObservers:]
+  -[AXFocusManager init]
+  -[AXFocusManager addObserver:]
+  -[AXFocusManager setObserversLock:]
+  -[AXFocusManager observers]
+  -[AXFocusManager removeObserver:]
+  -[AXFocusManager currentApplication]
+  -[AXFocusManager setMovementQueue:]
+  -[AXFocusManager setObserversQueue:]
+  -[AXFocusManager _currentApplications]
+  -[AXFocusManager _focusOnApplicationWithPID:]
+  -[AXFocusManager movementQueue]
+  -[AXFocusManager typeaheadString]
+  -[AXFocusManager _moveFocusWithHeading:byGroup:queryString:shouldWrap:]
+  -[AXFocusManager moveFocusInsideForward:shouldWrap:]
+  -[AXFocusManager currentElement]
+  -[AXFocusManager setTypeaheadString:]
+  -[AXFocusManager setPidForSuccessfulTypeaheadMovement:]
+  -[AXFocusManager _moveToElementWithHeading:queryString:]
+  -[AXFocusManager _moveFocusWithHeading:byGroup:shouldWrap:]
+  -[AXFocusManager _verifyPIDForTypeahead]
+  -[AXFocusManager pidForSuccessfulTypeaheadMovement]
+  -[AXFocusManager _indexOfTypeaheadPIDInApplications:]
+  -[AXFocusManager _moveFocusInApplication:withHeading:queryString:]
+  -[AXFocusManager _recursiveMoveFocusInApplication:withHeading:queryString:]
+  -[AXFocusManager _recursiveMoveFocusInApplication:withHeading:byGroup:]
+  -[AXFocusManager _moveFocusInRemoteElement:withHeading:byGroup:]
+  -[AXFocusManager _handleFailedFocusMovementWithHeading:byGroup:]
+  -[AXFocusManager _moveApplicationFocusInDirection:]
+  -[AXFocusManager moveFocusWithHeading:byGroup:]
+  -[AXFocusManager observersQueue]
+  -[AXFocusManager moveFocusInsideForward:]
+  -[AXFocusManager moveFocusWithHeading:queryString:]
+  -[AXFocusManager focusOnApplicationForTypeahead]
+
+
+AXElement(AXFocusEngine)
+	// instance methods
+	-[AXElement(AXFocusEngine) elementName]
+	-[AXElement(AXFocusEngine) elementFrame]
+	-[AXElement(AXFocusEngine) elementLabelContainerSize]
+	-[AXElement(AXFocusEngine) hasRemoteFocusSystem]
+	-[AXElement(AXFocusEngine) applicationForRemoteFocusSystem]
+	-[AXElement(AXFocusEngine) disableFocus]
+	-[AXElement(AXFocusEngine) currentFocusElement]
+	-[AXElement(AXFocusEngine) focusOnApplication]
+	-[AXElement(AXFocusEngine) focusOnRemoteSceneID]
+	-[AXElement(AXFocusEngine) moveFocusWithHeading:withQueryString:]
+	-[AXElement(AXFocusEngine) applicationIsExtension]
+	-[AXElement(AXFocusEngine) applicationForHostFocusSystem]
+	-[AXElement(AXFocusEngine) moveFocusWithHeading:byGroup:]
+	-[AXElement(AXFocusEngine) enableFocus]
+	-[AXElement(AXFocusEngine) typeaheadQueryString]
+	-[AXElement(AXFocusEngine) remoteSceneID]
+	-[AXElement(AXFocusEngine) setTypeaheadQueryString:]
+
+01 00 0300 /System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime: AXElement 
+01 00 0200 /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities: AXSpringBoardServer 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 

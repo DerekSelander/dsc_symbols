@@ -1,0 +1,293 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_BAGLog
+|| __DATA.__objc_data _OBJC_CLASS_$_BAGResourceVendor
+|| __DATA.__objc_data _OBJC_METACLASS_$_BAGLog
+|| __DATA.__objc_data _OBJC_METACLASS_$_BAGResourceVendor
+|| __DATA_CONST.__const _BAGResourceVendorErrorDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BAGConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BAGFile
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BAGResourceOptions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BAGResourceUpdateContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BAGXPCInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BAGConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BAGFile
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BAGResourceOptions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BAGResourceUpdateContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BAGXPCInterface
+|| __TEXT.__text _BAGIsValidConfigKeyType
+|| __TEXT.__text _BAGIsValidLoadState
+|| __TEXT.__text _BAGIsValidResourceType
+|| __TEXT.__text _BAGResourceLoadStateToString
+|| __TEXT.__text _BAGResourceTypeToString
+__ CommonUtilities: _CUTGetMainBundleIdentifier
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ IDS: _OBJC_CLASS_$_IDSXPCDaemonController
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_storeStrong
+BAGXPCInterface : NSObject
+  // class methods
+  +[BAGXPCInterface interface]
+
+
+BAGFile : NSObject <NSSecureCoding, BAGResource>
+ @property  BAGResourceOptions *options
+ @property  NSData *resource
+ @property  NSString *contentType
+ @property  unsigned long type
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BAGFile supportsSecureCoding]
+
+  // instance methods
+  -[BAGFile initWithData:contentType:options:]
+  -[BAGFile setResource:]
+  -[BAGFile initWithCoder:]
+  -[BAGFile options]
+  -[BAGFile setOptions:]
+  -[BAGFile .cxx_destruct]
+  -[BAGFile resource]
+  -[BAGFile setContentType:]
+  -[BAGFile isEqual:]
+  -[BAGFile contentType]
+  -[BAGFile type]
+  -[BAGFile encodeWithCoder:]
+
+
+BAGResourceVendor : NSObject <BAGXPCProtocolClient>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  IDSXPCDaemonController *daemonController
+ @property  NSMutableDictionary *updateBlocksByOptions
+ @property  NSUUID *vendorID
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BAGResourceVendor setVendorID:]
+  -[BAGResourceVendor .cxx_destruct]
+  -[BAGResourceVendor vendorID]
+  -[BAGResourceVendor setQueue:]
+  -[BAGResourceVendor initWithQueue:]
+  -[BAGResourceVendor setDaemonController:]
+  -[BAGResourceVendor queue]
+  -[BAGResourceVendor _handleInterruption]
+  -[BAGResourceVendor dealloc]
+  -[BAGResourceVendor daemonController]
+  -[BAGResourceVendor resourceUpdated:forOptions:withContext:]
+  -[BAGResourceVendor initWithQueue:daemonController:]
+  -[BAGResourceVendor updateBlocksByOptions]
+  -[BAGResourceVendor _performFetchForOptions:]
+  -[BAGResourceVendor _performCancelForOptions:]
+  -[BAGResourceVendor _calloutToBlocksForOptions:withResource:andContext:]
+  -[BAGResourceVendor trackResourceForOptions:updateBlock:]
+  -[BAGResourceVendor stopTrackingResourceForOptions:]
+  -[BAGResourceVendor setUpdateBlocksByOptions:]
+
+
+BAGConfig : NSObject <NSSecureCoding, BAGResource>
+ @property  NSDictionary *configuration
+ @property  BAGResourceOptions *options
+ @property  unsigned long type
+ @property  unsigned long defaultKeyType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BAGConfig supportsSecureCoding]
+
+  // instance methods
+  -[BAGConfig numberForKey:]
+  -[BAGConfig initWithCoder:]
+  -[BAGConfig dataForKey:]
+  -[BAGConfig configuration]
+  -[BAGConfig options]
+  -[BAGConfig setOptions:]
+  -[BAGConfig .cxx_destruct]
+  -[BAGConfig boolForKey:]
+  -[BAGConfig isEqual:]
+  -[BAGConfig stringForKey:]
+  -[BAGConfig arrayForKey:]
+  -[BAGConfig type]
+  -[BAGConfig encodeWithCoder:]
+  -[BAGConfig setConfiguration:]
+  -[BAGConfig dictionaryForKey:]
+  -[BAGConfig initWithDictionary:options:]
+  -[BAGConfig defaultKeyType]
+  -[BAGConfig _boolNumberFromString:]
+  -[BAGConfig _checkIsArrayObject:typeBlock:]
+  -[BAGConfig arrayForKey:keyType:]
+  -[BAGConfig _traverseKeyList:]
+  -[BAGConfig arrayForKeyList:keyType:]
+  -[BAGConfig _checkIsDataObject:]
+  -[BAGConfig arrayOfDataForKey:keyType:]
+  -[BAGConfig arrayOfDataForKeyList:keyType:]
+  -[BAGConfig _checkIsNumberObject:]
+  -[BAGConfig arrayOfNumbersForKey:keyType:]
+  -[BAGConfig arrayOfNumbersForKeyList:keyType:]
+  -[BAGConfig _checkIsStringObject:]
+  -[BAGConfig arrayOfStringsForKey:keyType:]
+  -[BAGConfig arrayOfStringsForKeyList:keyType:]
+  -[BAGConfig _checkIsBoolObject:]
+  -[BAGConfig boolForKey:keyType:]
+  -[BAGConfig boolForKeyList:keyType:]
+  -[BAGConfig dataForKey:keyType:]
+  -[BAGConfig dataForKeyList:keyType:]
+  -[BAGConfig _checkIsDictionaryObject:typeBlock:]
+  -[BAGConfig dictionaryForKey:keyType:]
+  -[BAGConfig dictionaryForKeyList:keyType:]
+  -[BAGConfig dictionaryOfDataForKey:keyType:]
+  -[BAGConfig dictionaryOfDataForKeyList:keyType:]
+  -[BAGConfig dictionaryOfNumbersForKey:keyType:]
+  -[BAGConfig dictionaryOfNumbersForKeyList:keyType:]
+  -[BAGConfig dictionaryOfStringsForKey:keyType:]
+  -[BAGConfig dictionaryOfStringsForKeyList:keyType:]
+  -[BAGConfig numberForKey:keyType:]
+  -[BAGConfig numberForKeyList:keyType:]
+  -[BAGConfig stringForKey:keyType:]
+  -[BAGConfig stringForKeyList:keyType:]
+  -[BAGConfig arrayForKeyList:]
+  -[BAGConfig arrayOfDataForKey:]
+  -[BAGConfig arrayOfDataForKeyList:]
+  -[BAGConfig arrayOfNumbersForKey:]
+  -[BAGConfig arrayOfNumbersForKeyList:]
+  -[BAGConfig arrayOfStringsForKey:]
+  -[BAGConfig arrayOfStringsForKeyList:]
+  -[BAGConfig boolForKeyList:]
+  -[BAGConfig dataForKeyList:]
+  -[BAGConfig dictionaryForKeyList:]
+  -[BAGConfig dictionaryOfDataForKey:]
+  -[BAGConfig dictionaryOfDataForKeyList:]
+  -[BAGConfig dictionaryOfNumbersForKey:]
+  -[BAGConfig dictionaryOfNumbersForKeyList:]
+  -[BAGConfig dictionaryOfStringsForKey:]
+  -[BAGConfig dictionaryOfStringsForKeyList:]
+  -[BAGConfig numberForKeyList:]
+  -[BAGConfig stringForKeyList:]
+  -[BAGConfig setDefaultKeyType:]
+
+
+BAGResourceOptions : NSObject <NSSecureCoding, NSCopying>
+ @property  NSString *bundleID
+ @property  NSString *name
+ @property  unsigned long type
+ @property  NSDictionary *additionalOptions
+
+  // class methods
+  +[BAGResourceOptions supportsSecureCoding]
+
+  // instance methods
+  -[BAGResourceOptions additionalOptions]
+  -[BAGResourceOptions bundleID]
+  -[BAGResourceOptions setAdditionalOptions:]
+  -[BAGResourceOptions name]
+  -[BAGResourceOptions initWithCoder:]
+  -[BAGResourceOptions setType:]
+  -[BAGResourceOptions .cxx_destruct]
+  -[BAGResourceOptions setName:]
+  -[BAGResourceOptions isEqual:]
+  -[BAGResourceOptions setBundleID:]
+  -[BAGResourceOptions type]
+  -[BAGResourceOptions initWithName:type:]
+  -[BAGResourceOptions copyWithZone:]
+  -[BAGResourceOptions encodeWithCoder:]
+  -[BAGResourceOptions initWithName:type:additionalOptions:]
+  -[BAGResourceOptions initWithBundleID:name:type:additionalOptions:]
+
+
+BAGResourceUpdateContext : NSObject <NSSecureCoding>
+ @property  unsigned long loadState
+ @property  NSError *error
+
+  // class methods
+  +[BAGResourceUpdateContext supportsSecureCoding]
+
+  // instance methods
+  -[BAGResourceUpdateContext initWithCoder:]
+  -[BAGResourceUpdateContext loadState]
+  -[BAGResourceUpdateContext .cxx_destruct]
+  -[BAGResourceUpdateContext setError:]
+  -[BAGResourceUpdateContext encodeWithCoder:]
+  -[BAGResourceUpdateContext error]
+  -[BAGResourceUpdateContext initWithLoadState:error:]
+  -[BAGResourceUpdateContext setLoadState:]
+
+
+BAGLog : NSObject
+  // class methods
+  +[BAGLog resourceVending]
+
+
+IDSXPCDaemonController(BagKit)
+	// instance methods
+	-[IDSXPCDaemonController(BagKit) bagKitCollaboratorWithErrorHandler:]
+
+01 00 0100 /System/Library/PrivateFrameworks/IDS.framework/IDS: IDSXPCDaemonController 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

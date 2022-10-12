@@ -1,0 +1,129 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileAssetUpdater
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileAssetUpdater
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._alternateAssetTypes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._asset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._assetDownloaded
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._assetType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._downloadOnCellularAllowed
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._lock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._logger
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._overrideApplied
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._overrideFile
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._participateInSeed
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._purgeOverrideFile
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._query
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileAssetUpdater._requireAssetMetadata
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSLogv
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ MobileAsset: _ASServerURLForAssetType
+__ MobileAsset: _ASSetAssetServerURLForAssetType
+__ MobileAsset: _OBJC_CLASS_$_ASAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAssetQuery
+__ MobileAsset: _OBJC_CLASS_$_MADownloadOptions
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+MobileAssetUpdater : NSObject
+ @property  MAAsset *asset
+ @property  MAAssetQuery *query
+ @property  NSString *assetType
+ @property  NSMutableArray *alternateAssetTypes
+ @property  NSString *overrideFile
+ @property  NSString *purgeOverrideFile
+ @property  BOOL assetAvailable
+ @property  BOOL assetDownloaded
+ @property  BOOL overrideApplied
+ @property  BOOL requireAssetMetadata
+ @property  @? logger
+ @property  BOOL downloadOnCellularAllowed
+ @property  NSURL *assetLocation
+ @property  NSURL *assetLocationOverride
+
+  // instance methods
+  -[MobileAssetUpdater setLogger:]
+  -[MobileAssetUpdater logger]
+  -[MobileAssetUpdater setQuery:]
+  -[MobileAssetUpdater assetType]
+  -[MobileAssetUpdater query]
+  -[MobileAssetUpdater isDeploymentAllowed:]
+  -[MobileAssetUpdater setAssetType:]
+  -[MobileAssetUpdater setAsset:]
+  -[MobileAssetUpdater asset]
+  -[MobileAssetUpdater validateAssetAttributes:]
+  -[MobileAssetUpdater log:format:]
+  -[MobileAssetUpdater validateAsset]
+  -[MobileAssetUpdater assetWithMaxVersion:]
+  -[MobileAssetUpdater dealloc]
+  -[MobileAssetUpdater queryPredicate]
+  -[MobileAssetUpdater initWithAssetType:]
+  -[MobileAssetUpdater assetLocation]
+  -[MobileAssetUpdater downloadOnCellularAllowed]
+  -[MobileAssetUpdater setDownloadOnCellularAllowed:]
+  -[MobileAssetUpdater doneWithAsset]
+  -[MobileAssetUpdater setRequireAssetMetadata:]
+  -[MobileAssetUpdater overrideFile]
+  -[MobileAssetUpdater queryComplete:remote:status:completion:]
+  -[MobileAssetUpdater filterFoundAssets:]
+  -[MobileAssetUpdater findAsset:completion:]
+  -[MobileAssetUpdater requireAssetMetadata]
+  -[MobileAssetUpdater filterAsset:osBuild:osVersion:]
+  -[MobileAssetUpdater downloadComplete:completion:]
+  -[MobileAssetUpdater purgeOverrideFile]
+  -[MobileAssetUpdater setAlternateAssetTypes:]
+  -[MobileAssetUpdater assetAvailable]
+  -[MobileAssetUpdater purgeAsset]
+  -[MobileAssetUpdater downloadAsset:]
+  -[MobileAssetUpdater overrideQueryPredicateFromDict:]
+  -[MobileAssetUpdater alternateAssetTypes]
+  -[MobileAssetUpdater setOverrideFile:]
+  -[MobileAssetUpdater setPurgeOverrideFile:]
+  -[MobileAssetUpdater assetDownloaded]
+  -[MobileAssetUpdater overrideApplied]
+  -[MobileAssetUpdater setAssetLocation:]
+  -[MobileAssetUpdater assetLocationOverride]
+  -[MobileAssetUpdater setAssetLocationOverride:]
+
+
+01 00 0200 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: ASAsset 
+01 00 0200 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAsset 
+01 00 0200 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAssetQuery 
+01 00 0200 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MADownloadOptions 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

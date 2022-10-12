@@ -1,0 +1,121 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_XCTDaemonConnectionProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_XCTTargetSession
+|| __DATA.__objc_data _OBJC_METACLASS_$_XCTDaemonConnectionProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_XCTTargetSession
+|| __TEXT.__text _XCTSetSharedDaemonConnectionProvider
+|| __TEXT.__text _XCTSharedDaemonConnectionProvider
+|| __TEXT.__text _XCTTBDefaultLog
+|| __TEXT.__text _XCTTargetBootstrap
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+XCTDaemonConnectionProvider : NSObject <XCTDaemonConnectionProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[XCTDaemonConnectionProvider makeNewDaemonConnectionWithServiceName:]
+
+
+XCTTargetSession : NSObject <NSXPCListenerDelegate, XCTMessagingChannel_DaemonToUIProcess, XCTInternalEntitlementChecking>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSXPCConnection *daemonConnection
+ @property  NSXPCListener *clientListener
+ @property  <XCTConnectionAccepting> *connectionHandler
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[XCTTargetSession connect]
+  -[XCTTargetSession setDaemonConnection:]
+  -[XCTTargetSession daemonConnection]
+  -[XCTTargetSession initWithServiceName:]
+  -[XCTTargetSession .cxx_destruct]
+  -[XCTTargetSession setQueue:]
+  -[XCTTargetSession setConnectionHandler:]
+  -[XCTTargetSession clientListener]
+  -[XCTTargetSession setClientListener:]
+  -[XCTTargetSession queue]
+  -[XCTTargetSession connectionHandler]
+  -[XCTTargetSession listener:shouldAcceptNewConnection:]
+  -[XCTTargetSession initWithDaemonConnection:]
+  -[XCTTargetSession _on_queue_connect]
+  -[XCTTargetSession _XCT_requestEndpointWithAutomationSupportLibraryPath:protocolVersion:reply:]
+  -[XCTTargetSession _on_queue_startListeningForClientConnections]
+  -[XCTTargetSession _on_queue_loadAutomationSupportLibraryFromPath:error:]
+  -[XCTTargetSession _on_queue_getListenerEndpoint]
+  -[XCTTargetSession isInternallyEntitledConnection:]
+
+
+(XCTErrors)
+	// class methods
+	+[(XCTErrors) _xct_error:description:]
+	+[(XCTErrors) _xct_error:description:userInfo:]
+
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

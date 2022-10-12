@@ -1,0 +1,109 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DRPasteAnnouncement
+|| __DATA.__objc_data _OBJC_CLASS_$_DRPasteAnnouncementApplicationEndpoint
+|| __DATA.__objc_data _OBJC_CLASS_$_DRPasteAnnouncementContinuityEndpoint
+|| __DATA.__objc_data _OBJC_CLASS_$_DRPasteAnnouncementEndpoint
+|| __DATA.__objc_data _OBJC_METACLASS_$_DRPasteAnnouncement
+|| __DATA.__objc_data _OBJC_METACLASS_$_DRPasteAnnouncementApplicationEndpoint
+|| __DATA.__objc_data _OBJC_METACLASS_$_DRPasteAnnouncementContinuityEndpoint
+|| __DATA.__objc_data _OBJC_METACLASS_$_DRPasteAnnouncementEndpoint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DRPasteAnnouncementEndpoint._localizedName
+|| __DATA_CONST.__const _DRPasteAnnouncementAccessibilityValueKey
+|| __DATA_CONST.__const _DRPasteAnnouncementEntitlement
+|| __DATA_CONST.__const _DRPasteAnnouncementServiceName
+|| __TEXT.__text _DRLogTarget
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSBundleRecord
+__ CoreServices: _OBJC_CLASS_$_LSRecord
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+DRPasteAnnouncementEndpoint : NSObject <NSSecureCoding>
+  // class methods
+  +[DRPasteAnnouncementEndpoint supportsSecureCoding]
+
+  // instance methods
+  -[DRPasteAnnouncementEndpoint localizedName]
+  -[DRPasteAnnouncementEndpoint initWithCoder:]
+  -[DRPasteAnnouncementEndpoint _initWithLocalizedName:]
+  -[DRPasteAnnouncementEndpoint .cxx_destruct]
+  -[DRPasteAnnouncementEndpoint encodeWithCoder:]
+
+
+DRPasteAnnouncementApplicationEndpoint : DRPasteAnnouncementEndpoint
+ @property  NSString *localizedName
+ @property  NSData *persistentIdentifier
+
+  // class methods
+  +[DRPasteAnnouncementApplicationEndpoint supportsSecureCoding]
+  +[DRPasteAnnouncementApplicationEndpoint homeScreenEndpoint]
+
+  // instance methods
+  -[DRPasteAnnouncementApplicationEndpoint initWithCoder:]
+  -[DRPasteAnnouncementApplicationEndpoint persistentIdentifier]
+  -[DRPasteAnnouncementApplicationEndpoint .cxx_destruct]
+  -[DRPasteAnnouncementApplicationEndpoint encodeWithCoder:]
+  -[DRPasteAnnouncementApplicationEndpoint initWithLocalizedName:persistentIdentifier:]
+
+
+DRPasteAnnouncementContinuityEndpoint : DRPasteAnnouncementEndpoint
+ @property  NSString *deviceName
+
+  // instance methods
+  -[DRPasteAnnouncementContinuityEndpoint deviceName]
+  -[DRPasteAnnouncementContinuityEndpoint initWithDeviceName:]
+
+
+DRPasteAnnouncement : NSObject <NSSecureCoding>
+ @property  NSString *localizedAnnouncementText
+ @property  DRPasteAnnouncementEndpoint *source
+ @property  DRPasteAnnouncementEndpoint *destination
+ @property  NSUUID *pasteboardUUID
+
+  // class methods
+  +[DRPasteAnnouncement supportsSecureCoding]
+
+  // instance methods
+  -[DRPasteAnnouncement initWithCoder:]
+  -[DRPasteAnnouncement .cxx_destruct]
+  -[DRPasteAnnouncement destination]
+  -[DRPasteAnnouncement source]
+  -[DRPasteAnnouncement encodeWithCoder:]
+  -[DRPasteAnnouncement initWithSource:destination:pasteboardUUID:]
+  -[DRPasteAnnouncement pasteboardUUID]
+  -[DRPasteAnnouncement localizedAnnouncementText]
+  -[DRPasteAnnouncement canCoalesceWithAnnouncement:]
+
+
+01 00 0100 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 0100 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSBundleRecord 
+01 00 0100 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSRecord 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 

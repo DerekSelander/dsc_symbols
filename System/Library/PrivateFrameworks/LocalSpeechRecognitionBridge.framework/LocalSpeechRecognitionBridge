@@ -1,0 +1,158 @@
+|| __DATA.__data _LBLoggingSubsystem
+|| __DATA.__data _kLBLoggingContextFramework
+|| __DATA_CONST.__const _LBErrorDomain
+|| __DATA_CONST.__const _LBLocalSpeechServiceName
+|| __DATA_DIRTY.__common _LBLogContextFacilityLocalSRBridge
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_LBLocalSpeechRecognitionSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_LBLocalSpeechRecognizerClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_LBLocalSpeechRecognitionSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_LBLocalSpeechRecognizerClient
+|| __TEXT.__const _kLBLocalSpeechRecognizerMaximumLocalRecognitionDuration
+|| __TEXT.__text _LBLocalSpeechServiceDelegateGetXPCInterface
+|| __TEXT.__text _LBLocalSpeechServiceGetXPCInterface
+|| __TEXT.__text _LBLogInitIfNeeded
+__ AssistantServices: _OBJC_CLASS_$_AFSpeechPackage
+__ AssistantServices: _OBJC_CLASS_$_AFSpeechToken
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+LBLocalSpeechRecognizerClient : NSObject <LBLocalSpeechServiceDelegate>
+ @property  <LBLocalSpeechRecognizerClientDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[LBLocalSpeechRecognizerClient isInstalledFromStatusString:]
+
+  // instance methods
+  -[LBLocalSpeechRecognizerClient _connection]
+  -[LBLocalSpeechRecognizerClient .cxx_destruct]
+  -[LBLocalSpeechRecognizerClient setDelegate:]
+  -[LBLocalSpeechRecognizerClient _newConnection]
+  -[LBLocalSpeechRecognizerClient initWithDelegate:]
+  -[LBLocalSpeechRecognizerClient delegate]
+  -[LBLocalSpeechRecognizerClient _service]
+  -[LBLocalSpeechRecognizerClient invalidate]
+  -[LBLocalSpeechRecognizerClient preheatLocalSpeechRecognitionWithLanguage:source:]
+  -[LBLocalSpeechRecognizerClient startDeliverLocalSpeechRecognitionResultsWithSettings:]
+  -[LBLocalSpeechRecognizerClient disableLocalSpeechRecognitionForRequestId:]
+  -[LBLocalSpeechRecognizerClient localSpeechServiceDidReceivedPartialResultWithRequestId:language:tokens:]
+  -[LBLocalSpeechRecognizerClient localSpeechServiceDidReceivedFinalResultWithRequestId:speechPackage:]
+  -[LBLocalSpeechRecognizerClient localSpeechServiceDidReceivedEagerRecognitionCandidateWithRequestId:rcId:speechPackage:duration:]
+  -[LBLocalSpeechRecognizerClient localSpeechServiceDidReceivedEagerResultWithRequestId:rcId:shouldAccept:mitigationSignal:featuresToLog:]
+  -[LBLocalSpeechRecognizerClient localSpeechServiceDidCompletionRecognitionWithStatistics:requestId:endpointMode:error:]
+  -[LBLocalSpeechRecognizerClient stopLocalSpeechRecognitionTaskWithReason:]
+
+
+LBLocalSpeechRecognitionSettings : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *requestId
+ @property  NSString *inputOrigin
+ @property  unsigned long speechRecognitionTask
+ @property  CLLocation *location
+ @property  NSArray *jitGrammar
+ @property  NSString *overrideModelPath
+ @property  NSString *applicationName
+ @property  BOOL detectUtterances
+ @property  BOOL continuousListening
+ @property  BOOL shouldHandleCapitalization
+ @property  BOOL secureOfflineOnly
+ @property  double maximumRecognitionDuration
+ @property  NSDictionary *recognitionOverrides
+ @property  BOOL shouldStoreAudioOnDevice
+ @property  BOOL deliverEagerPackage
+ @property  NSString *UILanguage
+
+  // class methods
+  +[LBLocalSpeechRecognitionSettings supportsSecureCoding]
+
+  // instance methods
+  -[LBLocalSpeechRecognitionSettings applicationName]
+  -[LBLocalSpeechRecognitionSettings initWithCoder:]
+  -[LBLocalSpeechRecognitionSettings .cxx_destruct]
+  -[LBLocalSpeechRecognitionSettings secureOfflineOnly]
+  -[LBLocalSpeechRecognitionSettings detectUtterances]
+  -[LBLocalSpeechRecognitionSettings continuousListening]
+  -[LBLocalSpeechRecognitionSettings inputOrigin]
+  -[LBLocalSpeechRecognitionSettings location]
+  -[LBLocalSpeechRecognitionSettings shouldHandleCapitalization]
+  -[LBLocalSpeechRecognitionSettings maximumRecognitionDuration]
+  -[LBLocalSpeechRecognitionSettings recognitionOverrides]
+  -[LBLocalSpeechRecognitionSettings copyWithZone:]
+  -[LBLocalSpeechRecognitionSettings shouldStoreAudioOnDevice]
+  -[LBLocalSpeechRecognitionSettings jitGrammar]
+  -[LBLocalSpeechRecognitionSettings encodeWithCoder:]
+  -[LBLocalSpeechRecognitionSettings overrideModelPath]
+  -[LBLocalSpeechRecognitionSettings requestId]
+  -[LBLocalSpeechRecognitionSettings deliverEagerPackage]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:overrideModelPath:]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:overrideModelPath:applicationName:detectUtterances:continuousListening:shouldHandleCapitalization:secureOfflineOnly:maximumRecognitionDuration:recognitionOverrides:]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:overrideModelPath:applicationName:detectUtterances:continuousListening:shouldHandleCapitalization:secureOfflineOnly:maximumRecognitionDuration:recognitionOverrides:shouldStoreAudioOnDevice:]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:overrideModelPath:applicationName:detectUtterances:continuousListening:shouldHandleCapitalization:secureOfflineOnly:maximumRecognitionDuration:recognitionOverrides:shouldStoreAudioOnDevice:deliverEagerPackage:]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:overrideModelPath:applicationName:detectUtterances:continuousListening:shouldHandleCapitalization:secureOfflineOnly:maximumRecognitionDuration:recognitionOverrides:shouldStoreAudioOnDevice:deliverEagerPackage:UILanguage:]
+  -[LBLocalSpeechRecognitionSettings initWithRequestId:inputOrigin:speechRecognitionTaskName:location:jitGrammar:]
+  -[LBLocalSpeechRecognitionSettings speechRecognitionTask]
+  -[LBLocalSpeechRecognitionSettings UILanguage]
+
+
+01 00 0200 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFSpeechPackage 
+01 00 0200 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFSpeechToken 
+01 00 0300 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

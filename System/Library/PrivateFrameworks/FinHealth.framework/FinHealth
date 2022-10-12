@@ -1,0 +1,611 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FHMerchantDetails
+|| __DATA.__objc_data _OBJC_CLASS_$_FHPaymentRingSuggestionController
+|| __DATA.__objc_data _OBJC_CLASS_$_FHPaymentRingSuggestionResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_FHStatementDetails
+|| __DATA.__objc_data _OBJC_CLASS_$_FHTransactionDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_FHMerchantDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_FHPaymentRingSuggestionController
+|| __DATA.__objc_data _OBJC_METACLASS_$_FHPaymentRingSuggestionResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_FHStatementDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_FHTransactionDetails
+|| __DATA_CONST.__const _FHAggregateFeatureNameKey
+|| __DATA_CONST.__const _FHAggregateFeatureProcessingWindowEndDateKey
+|| __DATA_CONST.__const _FHAggregateFeatureProcessingWindowStartDateKey
+|| __DATA_CONST.__const _FHConnectionErrorDomain
+|| __DATA_CONST.__const _FHMapsMerchantBrandIDKey
+|| __DATA_CONST.__const _FHMapsMerchantBrandResultProviderIDKey
+|| __DATA_CONST.__const _FHMapsMerchantIDKey
+|| __DATA_CONST.__const _FHMapsResultProviderIDKey
+|| __DATA_CONST.__const _FHMerchantCategoryKey
+|| __DATA_CONST.__const _FHMerchantCountryKey
+|| __DATA_CONST.__const _FHMerchantDetailedCategoryKey
+|| __DATA_CONST.__const _FHMerchantDisplayNameKey
+|| __DATA_CONST.__const _FHMerchantIdKey
+|| __DATA_CONST.__const _FHMerchantIndustryCategoryKey
+|| __DATA_CONST.__const _FHMerchantIndustryCodeKey
+|| __DATA_CONST.__const _FHMerchantNameKey
+|| __DATA_CONST.__const _FHMerchantRawNameKey
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeAmountAboveAverage
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeAmountBelowAverage
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeAmountVeryExpensive
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeAmountVeryExpensiveFromBinaryPrediction
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeAmountVeryExpensiveMonthly
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeFavoriteRestaurant
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeFrequentShop
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeIrregular
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypePeakSpend
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypePeakSpendMonthly
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeRecurring
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeRegular
+|| __DATA_CONST.__const _FHSmartFeatureAggregateTypeTopMerchant
+|| __DATA_CONST.__const _FHSmartFeatureCompoundTypeEventTagging
+|| __DATA_CONST.__const _FHSmartFeatureCompoundTypePointsOfInterest
+|| __DATA_CONST.__const _FHSmartFeatureCompoundTypeRecurringChange
+|| __DATA_CONST.__const _FHSmartFeatureCompoundTypeRelatedMerchants
+|| __DATA_CONST.__const _FHSmartFeatureCompoundTypeSoldProducts
+|| __DATA_CONST.__const _FHTransactionAccountTypeKey
+|| __DATA_CONST.__const _FHTransactionAmountFromDatabaseKey
+|| __DATA_CONST.__const _FHTransactionAmountKey
+|| __DATA_CONST.__const _FHTransactionCurrencyCodeKey
+|| __DATA_CONST.__const _FHTransactionDateKey
+|| __DATA_CONST.__const _FHTransactionHasLocationKey
+|| __DATA_CONST.__const _FHTransactionIdentifierKey
+|| __DATA_CONST.__const _FHTransactionInternalStateKey
+|| __DATA_CONST.__const _FHTransactionLocationHorizontalAccuracyKey
+|| __DATA_CONST.__const _FHTransactionLocationKey
+|| __DATA_CONST.__const _FHTransactionLocationLatitudeKey
+|| __DATA_CONST.__const _FHTransactionLocationLongitudeKey
+|| __DATA_CONST.__const _FHTransactionLocationVerticalAccuracyKey
+|| __DATA_CONST.__const _FHTransactionSourceIdentifierKey
+|| __DATA_CONST.__const _FHTransactionSourceKey
+|| __DATA_CONST.__const _FHTransactionStatusChangedDateKey
+|| __DATA_CONST.__const _FHTransactionStatusKey
+|| __DATA_CONST.__const _FHTransactionTimeZoneKey
+|| __DATA_CONST.__const _FHTransactionTypeKey
+|| __DATA_CONST.__const _FinHealthClientLogFacility
+|| __DATA_CONST.__const _FinHealthCoreLogFacility
+|| __DATA_CONST.__const _FinHealthSQLiteLogFacility
+|| __DATA_CONST.__const _FinHealthServerLogFacility
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHAmountAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHDateTimeAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHFeaturesResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHMerchantAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHPaymentRingSuggestionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHSearchSuggestionController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHSmartCompoundFeature
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHSmartCompoundFeatureRankedValue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FHTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHAmountAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHDateTimeAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHFeaturesResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHMerchantAggregateFeature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHPaymentRingSuggestionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHSearchSuggestionController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHSmartCompoundFeature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHSmartCompoundFeatureRankedValue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FHTransaction
+|| __TEXT.__const _FHTransactionsFeaturesBatchSize
+|| __TEXT.__const _FinHealthVersionNumber
+|| __TEXT.__const _FinHealthVersionString
+|| __TEXT.__text _FHPaymentRingSuggestionCategoryFromString
+|| __TEXT.__text _FHPaymentRingSuggestionCategoryToString
+|| __TEXT.__text _FHTransactionAccountTypeFromString
+|| __TEXT.__text _FHTransactionAccountTypeToString
+|| __TEXT.__text _FHTransactionInternalStateFromString
+|| __TEXT.__text _FHTransactionInternalStateToString
+|| __TEXT.__text _FinHealthLogFacilities
+|| __TEXT.__text _FinHealthLogObject
+|| __TEXT.__text _TransactionFromPKPaymentTransaction
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreLocation: _CLLocationCoordinate2DIsValid
+__ CoreLocation: _CLLocationCoordinate2DMake
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDecimalNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ PassKitCore: _OBJC_CLASS_$_PKPaymentTransaction
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_copyIvarList
+__ libobjc.A.dylib: _ivar_getName
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+FHAggregateFeature : NSObject <NSSecureCoding>
+ @property  unsigned long type
+ @property  NSString *name
+ @property  NSDate *processingWindowStartDate
+ @property  NSDate *processingWindowEndDate
+
+  // class methods
+  +[FHAggregateFeature supportsSecureCoding]
+
+  // instance methods
+  -[FHAggregateFeature name]
+  -[FHAggregateFeature initWithCoder:]
+  -[FHAggregateFeature setType:]
+  -[FHAggregateFeature .cxx_destruct]
+  -[FHAggregateFeature setName:]
+  -[FHAggregateFeature isEqual:]
+  -[FHAggregateFeature type]
+  -[FHAggregateFeature encodeWithCoder:]
+  -[FHAggregateFeature processingWindowStartDate]
+  -[FHAggregateFeature processingWindowEndDate]
+  -[FHAggregateFeature setProcessingWindowStartDate:]
+  -[FHAggregateFeature setProcessingWindowEndDate:]
+
+
+FHAmountAggregateFeature : FHAggregateFeature
+ @property  NSString *comparator
+ @property  unsigned long amount
+
+  // class methods
+  +[FHAmountAggregateFeature supportsSecureCoding]
+
+  // instance methods
+  -[FHAmountAggregateFeature amount]
+  -[FHAmountAggregateFeature initWithCoder:]
+  -[FHAmountAggregateFeature .cxx_destruct]
+  -[FHAmountAggregateFeature isEqual:]
+  -[FHAmountAggregateFeature setAmount:]
+  -[FHAmountAggregateFeature setComparator:]
+  -[FHAmountAggregateFeature comparator]
+  -[FHAmountAggregateFeature encodeWithCoder:]
+  -[FHAmountAggregateFeature initWithAmount:comparator:]
+
+
+FHMerchantAggregateFeature : FHAggregateFeature
+ @property  NSString *merchantID
+ @property  NSString *merchantDisplayName
+
+  // class methods
+  +[FHMerchantAggregateFeature supportsSecureCoding]
+
+  // instance methods
+  -[FHMerchantAggregateFeature initWithCoder:]
+  -[FHMerchantAggregateFeature .cxx_destruct]
+  -[FHMerchantAggregateFeature setMerchantDisplayName:]
+  -[FHMerchantAggregateFeature isEqual:]
+  -[FHMerchantAggregateFeature merchantDisplayName]
+  -[FHMerchantAggregateFeature merchantID]
+  -[FHMerchantAggregateFeature encodeWithCoder:]
+  -[FHMerchantAggregateFeature setMerchantID:]
+  -[FHMerchantAggregateFeature initWithMerchantID:merchantDisplayName:]
+
+
+FHDateTimeAggregateFeature : FHAggregateFeature
+ @property  NSDate *startDate
+ @property  NSDate *endDate
+
+  // class methods
+  +[FHDateTimeAggregateFeature supportsSecureCoding]
+
+  // instance methods
+  -[FHDateTimeAggregateFeature initWithCoder:]
+  -[FHDateTimeAggregateFeature setEndDate:]
+  -[FHDateTimeAggregateFeature .cxx_destruct]
+  -[FHDateTimeAggregateFeature setStartDate:]
+  -[FHDateTimeAggregateFeature initWithStartDate:endDate:]
+  -[FHDateTimeAggregateFeature isEqual:]
+  -[FHDateTimeAggregateFeature startDate]
+  -[FHDateTimeAggregateFeature endDate]
+  -[FHDateTimeAggregateFeature encodeWithCoder:]
+
+
+FHPaymentRingSuggestionController : NSObject
+ @property  NSXPCConnection *connection
+
+  // instance methods
+  -[FHPaymentRingSuggestionController .cxx_destruct]
+  -[FHPaymentRingSuggestionController setConnection:]
+  -[FHPaymentRingSuggestionController clientConnection]
+  -[FHPaymentRingSuggestionController connection]
+  -[FHPaymentRingSuggestionController generatePaymentRingSuggestion:completion:]
+
+
+FHSmartCompoundFeatureRankedValue : NSObject <NSSecureCoding>
+ @property  NSArray *eventIdentifiers
+ @property  NSDate *eventStartDate
+ @property  NSDate *eventEndDate
+ @property  NSString *featureLabel
+ @property  NSDecimalNumber *featureRank
+
+  // class methods
+  +[FHSmartCompoundFeatureRankedValue supportsSecureCoding]
+
+  // instance methods
+  -[FHSmartCompoundFeatureRankedValue eventIdentifiers]
+  -[FHSmartCompoundFeatureRankedValue initWithCoder:]
+  -[FHSmartCompoundFeatureRankedValue .cxx_destruct]
+  -[FHSmartCompoundFeatureRankedValue isEqual:]
+  -[FHSmartCompoundFeatureRankedValue setEventStartDate:]
+  -[FHSmartCompoundFeatureRankedValue setEventEndDate:]
+  -[FHSmartCompoundFeatureRankedValue eventStartDate]
+  -[FHSmartCompoundFeatureRankedValue eventEndDate]
+  -[FHSmartCompoundFeatureRankedValue encodeWithCoder:]
+  -[FHSmartCompoundFeatureRankedValue setEventIdentifiers:]
+  -[FHSmartCompoundFeatureRankedValue featureLabel]
+  -[FHSmartCompoundFeatureRankedValue featureRank]
+  -[FHSmartCompoundFeatureRankedValue initWithLabelAndRank:featureRank:]
+
+
+FHSearchSuggestionController : NSObject
+ @property  NSXPCConnection *connection
+ @property  {os_unfair_lock_s=I} lockConnection
+ @property  <FHSuggestionDelegate> *delegate
+
+  // instance methods
+  -[FHSearchSuggestionController setLockConnection:]
+  -[FHSearchSuggestionController _clientConnection]
+  -[FHSearchSuggestionController featuresForApplication:withCompletion:]
+  -[FHSearchSuggestionController lockConnection]
+  -[FHSearchSuggestionController featureResponsesForApplication:withCompletion:]
+  -[FHSearchSuggestionController _remoteObjectInterface]
+  -[FHSearchSuggestionController transactionsRequireSyncing]
+  -[FHSearchSuggestionController .cxx_destruct]
+  -[FHSearchSuggestionController setConnection:]
+  -[FHSearchSuggestionController setDelegate:]
+  -[FHSearchSuggestionController _newClientConnection]
+  -[FHSearchSuggestionController _sendAllTransactionFeatures:]
+  -[FHSearchSuggestionController connection]
+  -[FHSearchSuggestionController deleteTransactionByTransactionIdentifier:completion:]
+  -[FHSearchSuggestionController deleteAllData:]
+  -[FHSearchSuggestionController initWithDelegate:]
+  -[FHSearchSuggestionController deleteDataForPassesWithSourceIdentifiers:completion:]
+  -[FHSearchSuggestionController delegate]
+  -[FHSearchSuggestionController reevaluateTransactionFeatures]
+  -[FHSearchSuggestionController dealloc]
+  -[FHSearchSuggestionController sendAllTransactionFeatures]
+  -[FHSearchSuggestionController _remoteObjectProxyWithErrorHandler]
+  -[FHSearchSuggestionController featuresWithCompletion:]
+  -[FHSearchSuggestionController getSerializedTrialValues:]
+  -[FHSearchSuggestionController aggregateFeaturesWithHandler:]
+  -[FHSearchSuggestionController transactionUpdated:deferFeatureComputation:completion:]
+
+
+FHTransaction : NSObject <NSSecureCoding>
+ @property  unsigned long transactionInternalState
+ @property  NSString *uniqHistogramKey
+ @property  BOOL hasLocation
+ @property  long long amountFromDatabase
+ @property  NSString *identifier
+ @property  NSString *transactionSourceIdentifier
+ @property  NSDecimalNumber *amount
+ @property  NSString *currencyCode
+ @property  NSDate *transactionDate
+ @property  NSDate *transactionStatusChangedDate
+ @property  long long transactionStatus
+ @property  unsigned long transactionSource
+ @property  long long transactionType
+ @property  long long accountType
+ @property  NSTimeZone *timeZone
+ @property  NSString *merchantUniqueIdentifier
+ @property  unsigned long mapsMerchantID
+ @property  int mapsMerchantResultProviderID
+ @property  unsigned long mapsMerchantBrandID
+ @property  int mapsMerchantBrandResultProviderID
+ @property  NSString *name
+ @property  NSString *rawName
+ @property  long long industryCode
+ @property  NSString *industryCategory
+ @property  NSString *displayName
+ @property  NSString *country
+ @property  NSString *merchantDetailedCategory
+ @property  long long category
+ @property  CLLocation *location
+
+  // class methods
+  +[FHTransaction supportsSecureCoding]
+  +[FHTransaction fhProperties]
+  +[FHTransaction FHMerchantCategoryFromString:]
+
+  // instance methods
+  -[FHTransaction accountType]
+  -[FHTransaction setTimeZone:]
+  -[FHTransaction displayName]
+  -[FHTransaction timeZone]
+  -[FHTransaction toDictionary]
+  -[FHTransaction name]
+  -[FHTransaction amount]
+  -[FHTransaction initWithCoder:]
+  -[FHTransaction industryCategory]
+  -[FHTransaction setIndustryCategory:]
+  -[FHTransaction industryCode]
+  -[FHTransaction setIndustryCode:]
+  -[FHTransaction transactionDate]
+  -[FHTransaction setAccountType:]
+  -[FHTransaction .cxx_destruct]
+  -[FHTransaction setTransactionStatusChangedDate:]
+  -[FHTransaction setLocation:]
+  -[FHTransaction currencyCode]
+  -[FHTransaction setName:]
+  -[FHTransaction rawName]
+  -[FHTransaction transactionSourceIdentifier]
+  -[FHTransaction isEqual:]
+  -[FHTransaction hasLocation]
+  -[FHTransaction setTransactionSource:]
+  -[FHTransaction setTransactionStatus:]
+  -[FHTransaction identifier]
+  -[FHTransaction transactionSource]
+  -[FHTransaction setDisplayName:]
+  -[FHTransaction location]
+  -[FHTransaction setHasLocation:]
+  -[FHTransaction setAmount:]
+  -[FHTransaction country]
+  -[FHTransaction initWithDictionary:]
+  -[FHTransaction transactionStatusChangedDate]
+  -[FHTransaction transactionStatus]
+  -[FHTransaction setIdentifier:]
+  -[FHTransaction setCountry:]
+  -[FHTransaction setTransactionDate:]
+  -[FHTransaction category]
+  -[FHTransaction setRawName:]
+  -[FHTransaction transactionType]
+  -[FHTransaction setTransactionType:]
+  -[FHTransaction setTransactionSourceIdentifier:]
+  -[FHTransaction setCategory:]
+  -[FHTransaction initWithJsonString:]
+  -[FHTransaction setCurrencyCode:]
+  -[FHTransaction encodeWithCoder:]
+  -[FHTransaction transactionInternalState]
+  -[FHTransaction merchantUniqueIdentifier]
+  -[FHTransaction merchantDetailedCategory]
+  -[FHTransaction mapsMerchantID]
+  -[FHTransaction mapsMerchantResultProviderID]
+  -[FHTransaction mapsMerchantBrandID]
+  -[FHTransaction mapsMerchantBrandResultProviderID]
+  -[FHTransaction setTransactionInternalState:]
+  -[FHTransaction setMerchantUniqueIdentifier:]
+  -[FHTransaction setMerchantDetailedCategory:]
+  -[FHTransaction setMapsMerchantID:]
+  -[FHTransaction setMapsMerchantResultProviderID:]
+  -[FHTransaction setMapsMerchantBrandID:]
+  -[FHTransaction setMapsMerchantBrandResultProviderID:]
+  -[FHTransaction initWithDictionary:dateFormatter:]
+  -[FHTransaction toJson:]
+  -[FHTransaction uniqHistogramKey]
+  -[FHTransaction setUniqHistogramKey:]
+  -[FHTransaction amountFromDatabase]
+  -[FHTransaction setAmountFromDatabase:]
+
+
+FHTransactionDetails : NSObject
+ @property  NSString *transactionIdentifier
+ @property  NSDate *transactionDate
+ @property  NSDecimalNumber *transactionAmount
+ @property  ^Q suggestionCategory
+ @property  FHMerchantDetails *merchantCategory
+
+  // instance methods
+  -[FHTransactionDetails transactionDate]
+  -[FHTransactionDetails .cxx_destruct]
+  -[FHTransactionDetails setTransactionAmount:]
+  -[FHTransactionDetails transactionAmount]
+  -[FHTransactionDetails transactionIdentifier]
+  -[FHTransactionDetails setTransactionDate:]
+  -[FHTransactionDetails merchantCategory]
+  -[FHTransactionDetails setMerchantCategory:]
+  -[FHTransactionDetails setTransactionIdentifier:]
+  -[FHTransactionDetails suggestionCategory]
+  -[FHTransactionDetails setSuggestionCategory:]
+
+
+FHPaymentRingSuggestionResponse : NSObject <NSSecureCoding>
+ @property  unsigned long category
+ @property  NSDecimalNumber *amount
+ @property  long long priority
+
+  // class methods
+  +[FHPaymentRingSuggestionResponse supportsSecureCoding]
+
+  // instance methods
+  -[FHPaymentRingSuggestionResponse amount]
+  -[FHPaymentRingSuggestionResponse initWithCoder:]
+  -[FHPaymentRingSuggestionResponse .cxx_destruct]
+  -[FHPaymentRingSuggestionResponse setPriority:]
+  -[FHPaymentRingSuggestionResponse isEqual:]
+  -[FHPaymentRingSuggestionResponse setAmount:]
+  -[FHPaymentRingSuggestionResponse compare:]
+  -[FHPaymentRingSuggestionResponse priority]
+  -[FHPaymentRingSuggestionResponse initWithAmount:category:]
+  -[FHPaymentRingSuggestionResponse category]
+  -[FHPaymentRingSuggestionResponse setCategory:]
+  -[FHPaymentRingSuggestionResponse encodeWithCoder:]
+
+
+FHMerchantDetails : NSObject
+ @property  long long category
+
+  // instance methods
+  -[FHMerchantDetails category]
+  -[FHMerchantDetails setCategory:]
+
+
+FHPaymentRingSuggestionRequest : NSObject
+ @property  FHStatementDetails *currentStatement
+ @property  FHStatementDetails *previousStatement
+
+  // class methods
+  +[FHPaymentRingSuggestionRequest supportsSecureCoding]
+
+  // instance methods
+  -[FHPaymentRingSuggestionRequest .cxx_destruct]
+  -[FHPaymentRingSuggestionRequest isEqual:]
+  -[FHPaymentRingSuggestionRequest currentStatement]
+  -[FHPaymentRingSuggestionRequest setCurrentStatement:]
+  -[FHPaymentRingSuggestionRequest previousStatement]
+  -[FHPaymentRingSuggestionRequest initWithcurrentStatement:previousStatement:]
+  -[FHPaymentRingSuggestionRequest setPreviousStatement:]
+
+
+FHSmartCompoundFeature : NSObject <NSSecureCoding>
+ @property  NSString *featureKey
+ @property  NSString *compoundFeatureKey
+ @property  NSArray *rankedValues
+ @property  NSString *locale
+
+  // class methods
+  +[FHSmartCompoundFeature supportsSecureCoding]
+
+  // instance methods
+  -[FHSmartCompoundFeature initWithCoder:]
+  -[FHSmartCompoundFeature .cxx_destruct]
+  -[FHSmartCompoundFeature featureKey]
+  -[FHSmartCompoundFeature isEqual:]
+  -[FHSmartCompoundFeature locale]
+  -[FHSmartCompoundFeature encodeWithCoder:]
+  -[FHSmartCompoundFeature compoundFeatureKey]
+  -[FHSmartCompoundFeature rankedValues]
+  -[FHSmartCompoundFeature initWithCompoundFeatureKey:smartCompoundFeatures:locale:]
+
+
+FHFeaturesResponse : NSObject <NSSecureCoding>
+ @property  NSArray *smartFeatures
+ @property  NSArray *aggregateFeatures
+ @property  NSArray *compoundFeatures
+ @property  NSString *transactionIdentifier
+ @property  NSArray *aggregateFeaturesWithProcessingWindow
+
+  // class methods
+  +[FHFeaturesResponse supportsSecureCoding]
+
+  // instance methods
+  -[FHFeaturesResponse initWithCoder:]
+  -[FHFeaturesResponse .cxx_destruct]
+  -[FHFeaturesResponse isEqual:]
+  -[FHFeaturesResponse transactionIdentifier]
+  -[FHFeaturesResponse encodeWithCoder:]
+  -[FHFeaturesResponse aggregateFeatures]
+  -[FHFeaturesResponse aggregateFeaturesWithProcessingWindow]
+  -[FHFeaturesResponse compoundFeatures]
+  -[FHFeaturesResponse initWithSmartFeatures:aggregateFeatureswithProcessingWindow:compoundFeatures:transactionID:]
+  -[FHFeaturesResponse smartFeatures]
+
+
+FHStatementDetails : NSObject
+ @property  NSString *statementIdentifier
+ @property  NSDecimalNumber *remainingStatementBalance
+ @property  NSDecimalNumber *remainingMinimumPayment
+ @property  NSDecimalNumber *minimumDue
+ @property  NSDecimalNumber *creditLimit
+ @property  NSDecimalNumber *statementBalance
+ @property  NSDecimalNumber *currentBalance
+ @property  NSString *currentStatementIdentifier
+ @property  NSArray *transactionPurchasesDetails
+ @property  NSArray *transactionPaymentDetails
+ @property  BOOL isMonthZero
+ @property  BOOL isMonthOne
+
+  // instance methods
+  -[FHStatementDetails minimumDue]
+  -[FHStatementDetails setMinimumDue:]
+  -[FHStatementDetails .cxx_destruct]
+  -[FHStatementDetails creditLimit]
+  -[FHStatementDetails setCreditLimit:]
+  -[FHStatementDetails currentBalance]
+  -[FHStatementDetails setCurrentBalance:]
+  -[FHStatementDetails remainingStatementBalance]
+  -[FHStatementDetails setRemainingStatementBalance:]
+  -[FHStatementDetails remainingMinimumPayment]
+  -[FHStatementDetails setRemainingMinimumPayment:]
+  -[FHStatementDetails statementIdentifier]
+  -[FHStatementDetails setStatementIdentifier:]
+  -[FHStatementDetails statementBalance]
+  -[FHStatementDetails setStatementBalance:]
+  -[FHStatementDetails currentStatementIdentifier]
+  -[FHStatementDetails setCurrentStatementIdentifier:]
+  -[FHStatementDetails transactionPurchasesDetails]
+  -[FHStatementDetails setTransactionPurchasesDetails:]
+  -[FHStatementDetails transactionPaymentDetails]
+  -[FHStatementDetails setTransactionPaymentDetails:]
+  -[FHStatementDetails isMonthZero]
+  -[FHStatementDetails setIsMonthZero:]
+  -[FHStatementDetails isMonthOne]
+  -[FHStatementDetails setIsMonthOne:]
+
+
+<DEREK BUG Categories!>(FHDictionarySafeMethods)
+	// instance methods
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setInteger:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setInt32:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setBool:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setDouble:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) safelySetObject:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setLongLong:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setObjectOrNull:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setUnsignedLongLong:forKey:]
+	-[<DEREK BUG Categories!>(FHDictionarySafeMethods) setDate:forKey:]
+
+01 00 0100 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDecimalNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0240 /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore: PKPaymentTransaction 

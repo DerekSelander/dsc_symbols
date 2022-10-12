@@ -1,0 +1,977 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ServerSpeechRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSBoostRuleMatch
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSPhonemeSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSRange
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSRegexHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSTimerObject
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSUTF8Offset
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSVocalizer
+|| __DATA.__objc_data _OBJC_CLASS_$_TTSVoiceAssetManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_ServerSpeechRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSBoostRuleMatch
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSPhonemeSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSRange
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSRegexHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSTimerObject
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSUTF8Offset
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSVocalizer
+|| __DATA.__objc_data _OBJC_METACLASS_$_TTSVoiceAssetManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.attributedText
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.audioBufferCallback
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.audioQueueFlags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.audioSessionID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.channels
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.clientRequest
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.clientServer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.footprint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.gender
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.languageCode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.maintainInput
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.notifyMarkStart
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.outputPathURL
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.pitch
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.rate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.rulesetRangeAdjustments
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.skipLuthorRules
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.supportsAccurateWordCallbacks
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.synthesizeSilently
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.text
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.useSharedSession
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.voiceName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.voiceResource
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.voiceType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ServerSpeechRequest.volume
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSNashvilleSpeechVoice
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechServerInstance
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSTimer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSNashvilleSpeechVoice
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechServerInstance
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSTimer
+|| __TEXT.__const _TextToSpeechBundleSupportVersionNumber
+|| __TEXT.__const _TextToSpeechBundleSupportVersionString
+|| __TEXT.__text _TTSApplyRulesets
+|| __TEXT.__text _TTSChannelLayoutChanged
+|| __TEXT.__text _TTSNuanceRuleForIPA
+|| __TEXT.__text _TTSNuanceRuleForLHP
+|| __TEXT.__text _TTSPlaybackAudioQueueFlags
+|| __TEXT.__text _TTSPlaybackAudioSessionID
+|| __TEXT.__text _TTSPlaybackCompletedAndBuffersReturned
+|| __TEXT.__text _TTSPlaybackContinue
+|| __TEXT.__text _TTSPlaybackCreate
+|| __TEXT.__text _TTSPlaybackDequeueAvailableAudioQueueBuffer
+|| __TEXT.__text _TTSPlaybackEnqueueFullAudioQueueBuffer
+|| __TEXT.__text _TTSPlaybackFlushAndPause
+|| __TEXT.__text _TTSPlaybackFlushForCompletion
+|| __TEXT.__text _TTSPlaybackGetAudioQueue
+|| __TEXT.__text _TTSPlaybackGetBufferSize
+|| __TEXT.__text _TTSPlaybackGetNumberOfChannels
+|| __TEXT.__text _TTSPlaybackGetSampleSize
+|| __TEXT.__text _TTSPlaybackInitialStreamDescription
+|| __TEXT.__text _TTSPlaybackIsPaused
+|| __TEXT.__text _TTSPlaybackIsPlaying
+|| __TEXT.__text _TTSPlaybackIsUsingSharedSession
+|| __TEXT.__text _TTSPlaybackIsValid
+|| __TEXT.__text _TTSPlaybackIsValidForAudioSessionID
+|| __TEXT.__text _TTSPlaybackPause
+|| __TEXT.__text _TTSPlaybackPauseOnly
+|| __TEXT.__text _TTSPlaybackPerform
+|| __TEXT.__text _TTSPlaybackReset
+|| __TEXT.__text _TTSPlaybackSetAudioQueueFlags
+|| __TEXT.__text _TTSPlaybackSetSynthesizeSilently
+|| __TEXT.__text _TTSPlaybackStop
+|| __TEXT.__text _TTSPlaybackStreamDescription
+|| __TEXT.__text _TTSPlaybackUnpauseOnly
+|| __TEXT.__text _TTSSpeechCopyStringSubsitutingTones
+|| __TEXT.__text _TTSVocalizerAddProgrammaticRules
+|| __TEXT.__text _TTSVocalizerAddUnitTestingRules
+|| __TEXT.__text _TTSVocalizerAppendPhonemeToString
+|| __TEXT.__text _TTSVocalizerCopyAvailableVoiceInfo
+|| __TEXT.__text _TTSVocalizerCopyEscapedStringFromAttributedString
+|| __TEXT.__text _TTSVocalizerCreateInstance
+|| __TEXT.__text _TTSVocalizerDataClassCopyLanguageCode
+|| __TEXT.__text _TTSVocalizerDataClassCopyResourceURL
+|| __TEXT.__text _TTSVocalizerDataClassCreate
+|| __TEXT.__text _TTSVocalizerDataClassDefaultVoiceIsFallback
+|| __TEXT.__text _TTSVocalizerDataClassDestroy
+|| __TEXT.__text _TTSVocalizerDataClassGetBrokerInfo
+|| __TEXT.__text _TTSVocalizerDataClassGetDefaultVoiceName
+|| __TEXT.__text _TTSVocalizerDataClassGetGender
+|| __TEXT.__text _TTSVocalizerDataClassGetPathForDataId
+|| __TEXT.__text _TTSVocalizerDataClassSupportsVoiceParamters
+|| __TEXT.__text _TTSVocalizerDefaultVoiceIsFallback
+|| __TEXT.__text _TTSVocalizerDestroy
+|| __TEXT.__text _TTSVocalizerDestroyInstance
+|| __TEXT.__text _TTSVocalizerErrorToTTSError
+|| __TEXT.__text _TTSVocalizerGetCriticalSectionImpl
+|| __TEXT.__text _TTSVocalizerGetDataMappingImpl
+|| __TEXT.__text _TTSVocalizerGetDataStreamImpl
+|| __TEXT.__text _TTSVocalizerGetHeapImpl
+|| __TEXT.__text _TTSVocalizerGetLogImpl
+|| __TEXT.__text _TTSVocalizerInstanceGetFrequency
+|| __TEXT.__text _TTSVocalizerInstanceGetSampleRate
+|| __TEXT.__text _TTSVocalizerIsInitialized
+|| __TEXT.__text _TTSVocalizerLoadProgrammaticRules
+|| __TEXT.__text _TTSVocalizerLoadResource
+|| __TEXT.__text _TTSVocalizerLoadUnitTestingRules
+|| __TEXT.__text _TTSVocalizerLoadedResources
+|| __TEXT.__text _TTSVocalizerProcessText
+|| __TEXT.__text _TTSVocalizerSetParameters
+|| __TEXT.__text _TTSVocalizerSpeechGender
+|| __TEXT.__text _TTSVocalizerStopProcessingText
+|| __TEXT.__text _TTSVocalizerVoiceInfoForActiveLanguage
+|| __TEXT.__text __BuiltInVoiceNameForLanguage
+|| __TEXT.__text __EmbeddedMarkupStringLengthForClientRequest
+|| __TEXT.__text __PostNotificationAfterDelay
+|| __TEXT.__text __SpeechMarkIsNotifyable
+|| __TEXT.__text __TTSIsInternalInstall
+|| __TEXT.__text __TTSLoadIPAToNashvilleMapForLanguage
+|| __TEXT.__text __TTSSortedAssetsFromAssets
+|| __TEXT.__text __TTSStoreUserRules
+|| __TEXT.__text __TTSThreadRegistryCreateRunLoopSource
+|| __TEXT.__text __TTSThreadRegistryInitialize
+|| __TEXT.__text __TTSThreadRegistryMarkRunLoopSourceBusy
+|| __TEXT.__text __TTSThreadRegistryRunLoopSourceWillTerminate
+|| __TEXT.__text __TTSThreadRegistryShouldTerminate
+|| __TEXT.__text __TTSThreadRegistryTerminate
+|| __TEXT.__text __TTSVocalizerClampPitch
+|| __TEXT.__text __TTSVocalizerClampRate
+|| __TEXT.__text __TTSVocalizerClampVolume
+|| __TEXT.__text __TTSVocalizerResourceFileNameForResource
+|| __TEXT.__text __Z25AXProcessIsVoiceOverTouchv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10match_failEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10match_jumpEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10match_thenEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10match_wildEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10unwind_altEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE10unwind_endEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE11match_matchEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE11unwind_caseEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE11unwind_thenEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE12match_acceptEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE12match_commitEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE12match_prefixEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE12unwind_parenEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE13match_backrefEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE13match_endmarkEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE13match_literalEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE13unwind_commitEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE14match_backstepEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE14match_end_lineEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE14match_long_setEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE14match_word_endEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE15match_combiningEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE15match_recursionEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE15match_startmarkEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16find_restart_anyEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16find_restart_bufEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16find_restart_litEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16match_buffer_endEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16match_set_repeatEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16match_start_lineEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16match_word_startEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16unwind_assertionEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE16unwind_recursionEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE17find_restart_lineEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE17find_restart_wordEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE17match_char_repeatEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE17match_toggle_caseEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE17match_within_wordEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE18match_buffer_startEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE18unwind_char_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE18unwind_extra_blockEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE19match_word_boundaryEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE20unwind_recursion_popEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE21match_long_set_repeatEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE21match_soft_buffer_endEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE22match_restart_continueEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE22unwind_fast_dot_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE22unwind_long_set_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE22unwind_slow_dot_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE23unwind_repeater_counterEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE23unwind_short_set_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE24unwind_non_greedy_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE24unwind_recursion_stopperEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE27unwind_greedy_single_repeatEb
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE9match_altEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE9match_repEv
+|| __TEXT.__text __ZN5boost16re_detail_10650012perl_matcherINSt3__111__wrap_iterIPKcEENS2_9allocatorINS_9sub_matchIS6_EEEENS_12regex_traitsIcNS_16cpp_regex_traitsIcEEEEE9match_setEv
+__ AVFAudio: _OBJC_CLASS_$_AVAudioFormat
+__ AXCoreUtilities: _AXTTSLogCommon
+__ AXCoreUtilities: _AXTTSLogRange
+__ AssistantServices: _OBJC_CLASS_$_AFFeatureFlags
+__ AudioToolbox: _AudioConverterDispose
+__ AudioToolbox: _AudioFileClose
+__ AudioToolbox: _AudioQueueAddPropertyListener
+__ AudioToolbox: _AudioQueueAllocateBuffer
+__ AudioToolbox: _AudioQueueDispose
+__ AudioToolbox: _AudioQueueEnqueueBuffer
+__ AudioToolbox: _AudioQueueFlush
+__ AudioToolbox: _AudioQueueFreeBuffer
+__ AudioToolbox: _AudioQueueGetProperty
+__ AudioToolbox: _AudioQueueNewOutputWithAudioSession
+__ AudioToolbox: _AudioQueuePause
+__ AudioToolbox: _AudioQueueRemovePropertyListener
+__ AudioToolbox: _AudioQueueReset
+__ AudioToolbox: _AudioQueueSetProperty
+__ AudioToolbox: _AudioQueueStart
+__ AudioToolbox: _AudioQueueStop
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArrayRemoveValueAtIndex
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDictionaryApplyFunction
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFErrorGetCode
+__ CoreFoundation: _CFErrorGetDomain
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFMakeCollectable
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopAddTimer
+__ CoreFoundation: _CFRunLoopGetCurrent
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopRemoveSource
+__ CoreFoundation: _CFRunLoopRunInMode
+__ CoreFoundation: _CFRunLoopSourceCreate
+__ CoreFoundation: _CFRunLoopSourceGetContext
+__ CoreFoundation: _CFRunLoopSourceInvalidate
+__ CoreFoundation: _CFRunLoopSourceSignal
+__ CoreFoundation: _CFRunLoopStop
+__ CoreFoundation: _CFRunLoopTimerCreate
+__ CoreFoundation: _CFRunLoopTimerInvalidate
+__ CoreFoundation: _CFRunLoopTimerIsValid
+__ CoreFoundation: _CFRunLoopWakeUp
+__ CoreFoundation: _CFSetAddValue
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFSetGetCount
+__ CoreFoundation: _CFSetRemoveValue
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCreateArrayWithFindResults
+__ CoreFoundation: _CFStringCreateCopy
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringFindWithOptions
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetFileSystemRepresentation
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetMaximumSizeForEncoding
+__ CoreFoundation: _CFStringGetMaximumSizeOfFileSystemRepresentation
+__ CoreFoundation: _CFStringHasPrefix
+__ CoreFoundation: _CFStringReplace
+__ CoreFoundation: _CFURLCreateCopyAppendingPathComponent
+__ CoreFoundation: _CFURLCreateFromFileSystemRepresentation
+__ CoreFoundation: _CFURLGetString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFRuntimeCreateInstance
+__ CoreFoundation: __CFRuntimeRegisterClass
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSUnionRange
+__ Foundation: _OBJC_CLASS_$_NSAutoreleasePool
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ MobileAsset: _ASAttributeCompatibilityVersion
+__ MobileAsset: _ASAttributeContentVersion
+__ MobileAsset: _ASAttributeMasteredVersion
+__ MobileAsset: _OBJC_CLASS_$_MAAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAssetQuery
+__ MobileAsset: _OBJC_CLASS_$_MADownloadOptions
+__ SiriTTS: _gryphon_GetCurrentCompatibilityVersion
+__ SiriTTS: _gryphon_GetMinCompatibilityVersion
+__ SiriTTS: _ve_ttsStop
+__ TextToSpeech: _OBJC_CLASS_$_TTSAudioSessionChannel
+__ TextToSpeech: _OBJC_CLASS_$_TTSSiriAssetManager
+__ TextToSpeech: _OBJC_CLASS_$_TTSSpeechChannel
+__ TextToSpeech: _OBJC_CLASS_$_TTSSpeechRequest
+__ TextToSpeech: _OBJC_CLASS_$_TTSSpeechSynthesizer
+__ TextToSpeech: _OBJC_CLASS_$_TTSSpeechVoice
+__ TextToSpeech: _OBJC_CLASS_$_TTSVoiceAsset
+__ TextToSpeech: _OBJC_CLASS_$_TTSVoiceResourceAsset
+__ TextToSpeech: _OBJC_METACLASS_$_TTSSpeechVoice
+__ TextToSpeech: _TTSAssetKeyCustomVoiceCompatibilityVersion
+__ TextToSpeech: _TTSAssetKeyCustomVoiceFootprint
+__ TextToSpeech: _TTSAssetKeyCustomVoiceGender
+__ TextToSpeech: _TTSAssetKeyCustomVoiceLanguages
+__ TextToSpeech: _TTSAssetKeyCustomVoiceMasteredVersion
+__ TextToSpeech: _TTSAssetKeyCustomVoiceName
+__ TextToSpeech: _TTSAssetKeyCustomVoiceType
+__ TextToSpeech: _TTSAssetKeyGryphonVoiceLanguages
+__ TextToSpeech: _TTSAssetTypeCombinedVoice
+__ TextToSpeech: _TTSAssetTypeCombinedVoiceId
+__ TextToSpeech: _TTSAssetTypeCombinedVoiceProjectKey
+__ TextToSpeech: _TTSAssetTypeCustomVoice
+__ TextToSpeech: _TTSAssetTypeGryphonVoice
+__ TextToSpeech: _TTSAssetTypeSystemVoice
+__ TextToSpeech: _TTSAssetValueCustomVoiceFootprintCompact
+__ TextToSpeech: _TTSAssetValueCustomVoiceFootprintPremium
+__ TextToSpeech: _TTSAssetValueCustomVoiceFootprintPremiumHigh
+__ TextToSpeech: _TTSAssetValueCustomVoiceGenderFemale
+__ TextToSpeech: _TTSAssetValueCustomVoiceGenderMale
+__ TextToSpeech: _TTSAssetValueCustomVoiceTypeNeural
+__ TextToSpeech: _TTSAssetValueSystemVoiceFormatVersionKey
+__ TextToSpeech: _TTSAssetValueSystemVoiceLanguageKey
+__ TextToSpeech: _TTSAudioSessionDeregisterQueue
+__ TextToSpeech: _TTSAudioSessionGetAudioSessionID
+__ TextToSpeech: _TTSAudioSessionGetServerGeneration
+__ TextToSpeech: _TTSAudioSessionPreferredHardwareSampleRate
+__ TextToSpeech: _TTSAudioSessionPreferredHardwareSampleRateGryphon
+__ TextToSpeech: _TTSAudioSessionRegisterQueue
+__ TextToSpeech: _TTSAudioSessionSetActive
+__ TextToSpeech: _TTSCFAttributedStringCreateStringByBracketingAttributeWithString
+__ TextToSpeech: _TTSCreateDataFromContentsOfURL
+__ TextToSpeech: _TTSCreateDecryptedDataFromEncryptedData
+__ TextToSpeech: _TTSFileExistsAtURL
+__ TextToSpeech: _TTSIsInternalBuild
+__ TextToSpeech: _TTSPreferencesCopyDefaultOutputLanguageIdentifierForUserPreferences
+__ TextToSpeech: _TTSSetThreadPriorityHigh
+__ TextToSpeech: _TTSSortedAssetsFromAssets
+__ TextToSpeech: _TTSSpeechRateToNashvilleRate
+__ TextToSpeech: _TTSSpeechRateToNashvilleRateWithMonarchOverride
+__ TextToSpeech: _TTSSpeechUnitTestingMode
+__ TextToSpeech: _TTSSpeechVolumeModulation
+__ TextToSpeech: _TTSStringForSpeechFootprint
+__ TextToSpeech: _TTSStringForSpeechGender
+__ TextToSpeech: _TTSSupportsNeuralVoices
+__ TextToSpeech: _TTSVocalizerCopyFileNameForToneName
+__ TextToSpeech: _TTSVocalizerCopyPathForCommonResources
+__ TextToSpeech: _TTSVocalizerCopyPathForLocalizedResources
+__ TextToSpeech: _TTSVocalizerCopyPathForResources
+__ TextToSpeech: _TTSVocalizerCopyPathForTones
+__ TextToSpeech: _TTSVoiceIsGryphonAssetType
+__ TextToSpeech: _TTSVoiceResourceAssetBundleIdentifier
+__ TextToSpeech: _TTSVoiceResourceAssetConfigPlist
+__ TextToSpeech: __SpeechGenderForVocalizerGender
+__ TextToSpeech: __TTSIdentifierForVoiceInformation
+__ TextToSpeech: __VocalizerFootprintForSpeechFootprint
+__ TextToSpeech: __VocalizerGenderForSpeechGender
+__ TextToSpeech: _kTTSAlternativeAssetBrokerHeaderFileName
+__ TextToSpeech: _kTTSErrorDomain
+__ TextToSpeech: _kTTSGryphonVoiceIdentifierPrefix
+__ TextToSpeech: _kTTSNeuralVoiceIdentifierPrefix
+__ TextToSpeech: _kTTSOriginalAssetBrokerHeaderFileName
+__ TextToSpeech: _kTTSSiriVoiceIdentifierPrefix
+__ TextToSpeech: _kTTSSpeechTextClassAttribute
+__ TextToSpeech: _kTTSSystemVoiceIdentifierPrefix
+__ TextToSpeech: _kTTSVocalizerResourceAssetInstalledNotification
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___cxa_atexit
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___sprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___strcat_chk
+__ libSystem.B.dylib: ___tolower
+__ libSystem.B.dylib: ___toupper
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_retain
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _ferror
+__ libSystem.B.dylib: _fileno
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseek
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getpagesize
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _pthread_attr_destroy
+__ libSystem.B.dylib: _pthread_attr_init
+__ libSystem.B.dylib: _pthread_attr_setdetachstate
+__ libSystem.B.dylib: _pthread_create
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_mutexattr_destroy
+__ libSystem.B.dylib: _pthread_mutexattr_init
+__ libSystem.B.dylib: _pthread_mutexattr_settype
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _pthread_setname_np
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strcpy
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlcpy
+__ libSystem.B.dylib: _strlen
+__ libc++.1.dylib: __ZNKSt11logic_error4whatEv
+__ libc++.1.dylib: __ZNKSt13runtime_error4whatEv
+__ libc++.1.dylib: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEPKc
+__ libc++.1.dylib: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKcm
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__16locale9has_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__16locale9use_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__18ios_base6getlocEv
+__ libc++.1.dylib: __ZNSt11logic_errorC1EPKc
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt11logic_errorC2ERKS_
+__ libc++.1.dylib: __ZNSt11logic_errorD1Ev
+__ libc++.1.dylib: __ZNSt11logic_errorD2Ev
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt13exception_ptrC1ERKS_
+__ libc++.1.dylib: __ZNSt13exception_ptrD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorC1EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+__ libc++.1.dylib: __ZNSt13runtime_errorC2EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+__ libc++.1.dylib: __ZNSt13runtime_errorC2ERKS_
+__ libc++.1.dylib: __ZNSt13runtime_errorD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorD2Ev
+__ libc++.1.dylib: __ZNSt16invalid_argumentD1Ev
+__ libc++.1.dylib: __ZNSt16invalid_argumentD2Ev
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEmc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEmc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertENS_11__wrap_iterIPKcEEc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_mmRKS4_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4syncEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE8overflowEi
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9pbackfailEi
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9underflowEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEEC2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__15ctypeIcE2idE
+__ libc++.1.dylib: __ZNSt3__16localeC1ERKS0_
+__ libc++.1.dylib: __ZNSt3__16localeC1Ev
+__ libc++.1.dylib: __ZNSt3__16localeD1Ev
+__ libc++.1.dylib: __ZNSt3__16localeaSERKS0_
+__ libc++.1.dylib: __ZNSt3__17collateIcE2idE
+__ libc++.1.dylib: __ZNSt3__18ios_base4initEPv
+__ libc++.1.dylib: __ZNSt3__18ios_base5clearEj
+__ libc++.1.dylib: __ZNSt3__18messagesIcE2idE
+__ libc++.1.dylib: __ZNSt3__18numpunctIcE2idE
+__ libc++.1.dylib: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZSt17current_exceptionv
+__ libc++.1.dylib: __ZSt17rethrow_exceptionSt13exception_ptr
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTINSt3__115basic_streambufIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTISt11logic_error
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt13runtime_error
+__ libc++.1.dylib: __ZTISt16invalid_argument
+__ libc++.1.dylib: __ZTISt9exception
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv121__vmi_class_type_infoE
+__ libc++.1.dylib: __ZTVNSt3__113basic_istreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt16invalid_argument
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_call_unexpected
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_guard_acquire
+__ libc++.1.dylib: ___cxa_guard_release
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_rethrow
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+TTSVoiceAssetManager : NSObject
+  // class methods
+  +[TTSVoiceAssetManager sharedInstance]
+  +[TTSVoiceAssetManager _nonLocalMobileAssetQueue]
+  +[TTSVoiceAssetManager _downloadCatalogForAssetType:]
+  +[TTSVoiceAssetManager _getLatestAssetFromArray:]
+  +[TTSVoiceAssetManager queryForVoiceResourceAsset:localOnly:]
+  +[TTSVoiceAssetManager voiceResourceAssetForLanguage:voiceType:]
+  +[TTSVoiceAssetManager voiceResourceFromAsset:voiceType:]
+
+  // instance methods
+  -[TTSVoiceAssetManager .cxx_destruct]
+  -[TTSVoiceAssetManager resourcePathForLanguage:gender:footprint:voiceName:voiceType:outAsset:]
+  -[TTSVoiceAssetManager _voiceAssetQueryForVoiceName:language:gender:footprint:version:voiceType:]
+  -[TTSVoiceAssetManager _voiceAssetQueryResultsPredicateForLanguage:voiceType:]
+  -[TTSVoiceAssetManager _assetExistsOnDisk:]
+  -[TTSVoiceAssetManager _voiceAssetForMAAsset:voiceType:]
+  -[TTSVoiceAssetManager _resourcePathForStandardAssets:gender:footprint:voiceName:voiceType:]
+  -[TTSVoiceAssetManager _voiceAssetExistsOnDisk:]
+  -[TTSVoiceAssetManager getInstalledGryphonAssetsForLanguage:]
+  -[TTSVoiceAssetManager getInstalledNeuralAssetsForLanguage:]
+  -[TTSVoiceAssetManager convertVSVoiceAssetSelectionsToTTSVoiceAssets:language:]
+  -[TTSVoiceAssetManager getCustomVoiceAssetsLocalOnly:language:voiceType:reply:]
+
+
+TTSTimerObject : NSObject
+ @property  double endTime
+ @property  long long intId
+ @property  double remainingTime
+ @property  @? block
+
+  // instance methods
+  -[TTSTimerObject setBlock:]
+  -[TTSTimerObject endTime]
+  -[TTSTimerObject setEndTime:]
+  -[TTSTimerObject remainingTime]
+  -[TTSTimerObject intId]
+  -[TTSTimerObject setRemainingTime:]
+  -[TTSTimerObject dealloc]
+  -[TTSTimerObject block]
+  -[TTSTimerObject setIntId:]
+
+
+TTSTimer : NSObject
+  // instance methods
+  -[TTSTimer _startTimer:]
+  -[TTSTimer _createTimer]
+  -[TTSTimer clearQueue]
+  -[TTSTimer initWithDispatchQueue:]
+  -[TTSTimer dealloc]
+  -[TTSTimer pauseQueue]
+  -[TTSTimer _handleTimerFired]
+  -[TTSTimer enqueueBlock:withDelay:withId:]
+  -[TTSTimer continueQueue]
+
+
+TTSPhonemeSupport : NSObject
+  // class methods
+  +[TTSPhonemeSupport supportedIPAPhonemeLanguages]
+  +[TTSPhonemeSupport lhPhonemesFromIPA:language:]
+  +[TTSPhonemeSupport phonemesFromIPA:language:]
+
+
+TTSUTF8Offset : NSObject
+ @property  long long cStringOffset
+ @property  long long actualPos
+ @property  long long actualLength
+ @property  long long lengthDifference
+
+  // instance methods
+  -[TTSUTF8Offset actualLength]
+  -[TTSUTF8Offset cStringOffset]
+  -[TTSUTF8Offset lengthDifference]
+  -[TTSUTF8Offset actualPos]
+  -[TTSUTF8Offset setCStringOffset:]
+  -[TTSUTF8Offset setActualPos:]
+  -[TTSUTF8Offset setActualLength:]
+  -[TTSUTF8Offset setLengthDifference:]
+
+
+TTSRange : NSObject
+ @property  {_NSRange=QQ} range
+
+  // instance methods
+  -[TTSRange range]
+  -[TTSRange setRange:]
+
+
+TTSBoostRuleMatch : NSObject
+ @property  NSString *rule
+ @property  {_NSRange=QQ} range
+ @property  long long boostRuleIndex
+ @property  NSArray *groupings
+
+  // instance methods
+  -[TTSBoostRuleMatch range]
+  -[TTSBoostRuleMatch setRule:]
+  -[TTSBoostRuleMatch .cxx_destruct]
+  -[TTSBoostRuleMatch setRange:]
+  -[TTSBoostRuleMatch rule]
+  -[TTSBoostRuleMatch setGroupings:]
+  -[TTSBoostRuleMatch groupings]
+  -[TTSBoostRuleMatch boostRuleIndex]
+  -[TTSBoostRuleMatch setBoostRuleIndex:]
+
+
+TTSRegexHelper : NSObject
+ @property  int regexStyle
+ @property  BOOL skipLuthorRules
+
+  // class methods
+  +[TTSRegexHelper sharedInstance]
+
+  // instance methods
+  -[TTSRegexHelper .cxx_construct]
+  -[TTSRegexHelper .cxx_destruct]
+  -[TTSRegexHelper init]
+  -[TTSRegexHelper setSkipLuthorRules:]
+  -[TTSRegexHelper skipLuthorRules]
+  -[TTSRegexHelper setRegexStyle:]
+  -[TTSRegexHelper _addRules:]
+  -[TTSRegexHelper regexStyle]
+  -[TTSRegexHelper _addNSRule:ruleApplication:caseInsensitive:]
+  -[TTSRegexHelper _boostApplyRulesForText:rangeAdjustments:]
+  -[TTSRegexHelper _nsApplyRulesForText:rangeAdjustments:]
+  -[TTSRegexHelper _calculatedUTF8Offsets:]
+  -[TTSRegexHelper _boostApplyMatches:rangeAdjustments:text:logging:]
+  -[TTSRegexHelper _processReplacementStringForSpecialCharacters:]
+  -[TTSRegexHelper addRules:]
+  -[TTSRegexHelper applyRulesForText:rangeAdjustments:]
+  -[TTSRegexHelper regexRules]
+  -[TTSRegexHelper boostRules]
+  -[TTSRegexHelper hasStoredRules]
+  -[TTSRegexHelper resetStoredRules]
+
+
+TTSNashvilleSpeechVoice : TTSSpeechVoice
+ @property  long long voiceType
+ @property  BOOL overrideDefault
+ @property  BOOL overrideFallbackDefault
+ @property  BOOL overrideExcludeInAvailableVoiceList
+
+  // class methods
+  +[TTSNashvilleSpeechVoice supportsSecureCoding]
+
+  // instance methods
+  -[TTSNashvilleSpeechVoice initWithCoder:]
+  -[TTSNashvilleSpeechVoice isFallbackDefault]
+  -[TTSNashvilleSpeechVoice isDefault]
+  -[TTSNashvilleSpeechVoice setVoiceType:]
+  -[TTSNashvilleSpeechVoice isSystemVoice]
+  -[TTSNashvilleSpeechVoice copyWithZone:]
+  -[TTSNashvilleSpeechVoice encodeWithCoder:]
+  -[TTSNashvilleSpeechVoice voiceType]
+  -[TTSNashvilleSpeechVoice excludeInAvailableVoiceList]
+  -[TTSNashvilleSpeechVoice isCombinedFootprint]
+  -[TTSNashvilleSpeechVoice setOverrideDefault:]
+  -[TTSNashvilleSpeechVoice setOverrideFallbackDefault:]
+  -[TTSNashvilleSpeechVoice setOverrideExcludeInAvailableVoiceList:]
+  -[TTSNashvilleSpeechVoice overrideDefault]
+  -[TTSNashvilleSpeechVoice overrideFallbackDefault]
+  -[TTSNashvilleSpeechVoice overrideExcludeInAvailableVoiceList]
+
+
+ServerSpeechRequest : NSObject
+  // instance methods
+  -[ServerSpeechRequest dealloc]
+
+
+TTSSpeechServerInstance : NSObject
+ @property  TTSTimer *wordCallbackTimer
+ @property  unsigned long synthesizerId
+ @property  TTSSpeechServer *speechService
+ @property  NSObject<OS_dispatch_queue> *serviceQueue
+ @property  TTSVocalizer *vocalizer
+ @property  @? unitTestMarkerProcessingCallback
+
+  // instance methods
+  -[TTSSpeechServerInstance stopSpeechRequest:atMark:]
+  -[TTSSpeechServerInstance serviceQueue]
+  -[TTSSpeechServerInstance pauseSpeechRequest:atMark:]
+  -[TTSSpeechServerInstance init]
+  -[TTSSpeechServerInstance startSpeechRequest:]
+  -[TTSSpeechServerInstance dealloc]
+  -[TTSSpeechServerInstance continueSpeechRequest:]
+  -[TTSSpeechServerInstance vocalizer]
+  -[TTSSpeechServerInstance getSpeechIsActiveForRequest:reply:]
+  -[TTSSpeechServerInstance setSpeechService:]
+  -[TTSSpeechServerInstance speechService]
+  -[TTSSpeechServerInstance setWordCallbackTimer:]
+  -[TTSSpeechServerInstance setServiceQueue:]
+  -[TTSSpeechServerInstance setUnitTestMarkerProcessingCallback:]
+  -[TTSSpeechServerInstance _getAvailableVoiceForVoice:]
+  -[TTSSpeechServerInstance _appendSpeechRequestAndStart:]
+  -[TTSSpeechServerInstance _startSpeechThread]
+  -[TTSSpeechServerInstance _initializeSpeech:]
+  -[TTSSpeechServerInstance _activeRequestShouldStopAtAnyMark:]
+  -[TTSSpeechServerInstance _setActiveRequestActionForMark:clientRequest:markType:]
+  -[TTSSpeechServerInstance wordCallbackTimer]
+  -[TTSSpeechServerInstance _initializeSpeechEngine:]
+  -[TTSSpeechServerInstance _processCurrentRequest:]
+  -[TTSSpeechServerInstance _cleanupAfterRequest:]
+  -[TTSSpeechServerInstance _ttsLogSpeechForServerRequest:]
+  -[TTSSpeechServerInstance _activeRequestShouldStopImmediately:]
+  -[TTSSpeechServerInstance _activeRequestShouldPauseImmediately:]
+  -[TTSSpeechServerInstance _activeRequestShouldContinue:]
+  -[TTSSpeechServerInstance _uninitializeSpeech:]
+  -[TTSSpeechServerInstance _needsParameterChange:lock:rate:pitch:volume:footprint:voiceType:]
+  -[TTSSpeechServerInstance _setParameters:rate:pitch:volume:footprint:]
+  -[TTSSpeechServerInstance unitTestMarkerProcessingCallback]
+  -[TTSSpeechServerInstance _footprintOrVoiceNameHasChanged:]
+  -[TTSSpeechServerInstance _loadVoiceResource:voiceResource:]
+  -[TTSSpeechServerInstance _speechThreadSignal]
+  -[TTSSpeechServerInstance _terminateThread]
+  -[TTSSpeechServerInstance _vocalizerMessageBufferDone:context:outData:]
+  -[TTSSpeechServerInstance _handleSpeechThread]
+  -[TTSSpeechServerInstance _shouldContinueSpeechGivenMark:markType:blockIfPaused:]
+  -[TTSSpeechServerInstance processMarker:withByteOffset:markerPosition:markerLength:context:currentTime:secondPass:]
+  -[TTSSpeechServerInstance _newVoiceInstalled]
+  -[TTSSpeechServerInstance _ttSSpeechServerCopyVoiceInfoForLanguage:voiceType:queryingMobileAssets:]
+  -[TTSSpeechServerInstance _defaultVoiceIsFallback]
+  -[TTSSpeechServerInstance loadedVoiceResources]
+  -[TTSSpeechServerInstance _speechVocalizerPlaybackDataProviderWithVocalizer:playback:inContext:]
+  -[TTSSpeechServerInstance setVocalizer:]
+  -[TTSSpeechServerInstance synthesizerId]
+  -[TTSSpeechServerInstance setSynthesizerId:]
+
+
+TTSSpeechServer : NSObject <TTSSpeechService, TTSSpeechServiceUnitTesting>
+ @property  TTSSpeechServerInstance *speechInitializationInstance
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TTSSpeechServer regexRules]
+
+  // instance methods
+  -[TTSSpeechServer stopSpeechRequest:atMark:]
+  -[TTSSpeechServer pauseSpeechRequest:atMark:]
+  -[TTSSpeechServer init]
+  -[TTSSpeechServer supportedIPAPhonemeLanguages]
+  -[TTSSpeechServer startSpeechRequest:]
+  -[TTSSpeechServer dealloc]
+  -[TTSSpeechServer continueSpeechRequest:]
+  -[TTSSpeechServer audioFileSettingsForVoice:]
+  -[TTSSpeechServer initializeSpeechServerInstance:]
+  -[TTSSpeechServer synthesizerInstanceDestroyed:]
+  -[TTSSpeechServer setServiceQueue:forSynthesizerInstanceID:]
+  -[TTSSpeechServer getVoicesForLanguage:reply:]
+  -[TTSSpeechServer getSpeechIsActiveForRequest:reply:]
+  -[TTSSpeechServer speechMarkupStringForType:voice:string:]
+  -[TTSSpeechServer isVoiceValid:]
+  -[TTSSpeechServer employSpeechMarkupForType:language:]
+  -[TTSSpeechServer lhPhonemesFromIPA:language:]
+  -[TTSSpeechServer phonemesFromIPA:language:]
+  -[TTSSpeechServer enclosedStringWithPhonemes:]
+  -[TTSSpeechServer nashvilleVoiceIdentifier:footprint:voiceType:gender:assetVoiceName:]
+  -[TTSSpeechServer nashvilleVoiceName:footprint:voiceType:gender:assetVoiceName:]
+  -[TTSSpeechServer embeddedRateMarkupForVoice:string:rate:]
+  -[TTSSpeechServer embeddedPitchMarkupForVoice:string:pitch:]
+  -[TTSSpeechServer embeddedVolumeMarkupForVoice:string:volume:]
+  -[TTSSpeechServer isSiriService]
+  -[TTSSpeechServer isNashvilleService]
+  -[TTSSpeechServer isSiriNeuralVoice:]
+  -[TTSSpeechServer getVocalizerWithLanguage:defaultLanguage:reinitIfNecessary:instanceToDestroy:forceReinit:voiceType:gender:footprint:voiceName:error:]
+  -[TTSSpeechServer loadedVoiceResources]
+  -[TTSSpeechServer getNewSpeechServerInstance]
+  -[TTSSpeechServer nashvilleVoiceIdentifier:footprint:voiceType:gender:assetVoiceName:voiceId:voiceName:]
+  -[TTSSpeechServer _ttsCopyVoiceInfo:type:queryingMobileAssets:]
+  -[TTSSpeechServer _behavesBadlyWithSpellMarkupForVoice:string:markupType:]
+  -[TTSSpeechServer canInitializeSpeech:]
+  -[TTSSpeechServer requiresLHPPhonemes]
+  -[TTSSpeechServer speechInitializationInstance]
+  -[TTSSpeechServer setSpeechInitializationInstance:]
+
+
+TTSVocalizer : NSObject
+ @property  ^v ttsVocalizerDataClass
+ @property  ^{__CFArray=} ttsVocalizerResourceDataPtrs
+ @property  ^{__CFData=} ttsVocalizerRulesetData
+ @property  NSString *ttsVocalizerCurrentLanguageCode
+ @property  long long speechGender
+
+  // instance methods
+  -[TTSVocalizer dealloc]
+  -[TTSVocalizer stopSynthesis]
+  -[TTSVocalizer readyForSynthesis:]
+  -[TTSVocalizer ttsVocalizerDataClass]
+  -[TTSVocalizer initWithLanguage:defaultLanguage:reinitIfNecessary:instanceToDestroy:forceReinit:voiceType:gender:footprint:voiceName:error:]
+  -[TTSVocalizer _ttsVocalizerDefaultVoiceIsFallback]
+  -[TTSVocalizer _ttsVocalizerSpeechGender]
+  -[TTSVocalizer _ttsVocalizerDestroy]
+  -[TTSVocalizer _ttsVocalizerCopyAvailableVoiceInfo:]
+  -[TTSVocalizer _ttsVocalizerLoadProgrammaticRules:supportsAccurateWordCallbacks:forTests:]
+  -[TTSVocalizer _ttsVocalizerReallyLoadResource:mimeType:rules:resource:supportsAccurateWordCallbacks:resourceIdentifier:]
+  -[TTSVocalizer loadResource:mimeType:resourceURL:supportsAccurateWordCallbacks:]
+  -[TTSVocalizer _ttsVocalizerLoadedResources]
+  -[TTSVocalizer _ttsVocalizerIsInitialized]
+  -[TTSVocalizer _ttsVocalizerVoiceInfoForActiveLanguage:]
+  -[TTSVocalizer _ttsVocalizerCreateInstance:desiredVoiceName:desiredFootprint:languageCode:voiceType:]
+  -[TTSVocalizer _ttsVocalizerDestroyInstance:]
+  -[TTSVocalizer _ttsVocalizerGetSampleRate:]
+  -[TTSVocalizer _ttsVocalizerSetParameters:rate:pitch:volume:footprintID:]
+  -[TTSVocalizer _ttsVocalizerProcessText:instance:callback:context:]
+  -[TTSVocalizer _ttsVocalizerAppendPhonemeToString:phoneme:phonemeString:]
+  -[TTSVocalizer setTtsVocalizerDataClass:]
+  -[TTSVocalizer ttsVocalizerResourceDataPtrs]
+  -[TTSVocalizer setTtsVocalizerResourceDataPtrs:]
+  -[TTSVocalizer ttsVocalizerRulesetData]
+  -[TTSVocalizer setTtsVocalizerRulesetData:]
+  -[TTSVocalizer ttsVocalizerCurrentLanguageCode]
+  -[TTSVocalizer setTtsVocalizerCurrentLanguageCode:]
+  -[TTSVocalizer speechGender]
+  -[TTSVocalizer setSpeechGender:]
+
+
+01 00 0a00 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFFeatureFlags 
+01 00 0e00 /System/Library/Frameworks/AVFAudio.framework/AVFAudio: AVAudioFormat 
+01 00 0400 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAsset 
+01 00 0400 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAssetQuery 
+01 00 0400 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MADownloadOptions 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSAutoreleasePool 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSAudioSessionChannel 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSSiriAssetManager 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSSpeechChannel 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSSpeechRequest 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSSpeechSynthesizer 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSSpeechVoice 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSVoiceAsset 
+01 00 0900 /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech: TTSVoiceResourceAsset 

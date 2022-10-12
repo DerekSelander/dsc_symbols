@@ -1,0 +1,353 @@
+|| __DATA.__objc_data _OBJC_CLASS_$__OSChargePredictor
+|| __DATA.__objc_data _OBJC_CLASS_$__OSInactivityPredictionClient
+|| __DATA.__objc_data _OBJC_CLASS_$__OSInactivityPredictorOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSChargePredictor
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSInactivityPredictionClient
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSInactivityPredictorOutput
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSBatteryDrainPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__dayDrainInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSBatteryDrainPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__dayDrainInfo
+|| __TEXT.__const _OSIntelligenceVersionNumber
+|| __TEXT.__const _OSIntelligenceVersionString
+|| __TEXT.__const _kInvalidPredictedDuration
+__ BiomeStreams: _OBJC_CLASS_$_BMStreams
+__ CoreDuet: _OBJC_CLASS_$__DKEventQuery
+__ CoreDuet: _OBJC_CLASS_$__DKQuery
+__ CoreDuet: _OBJC_CLASS_$__DKSystemEventStreams
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreML: _OBJC_CLASS_$_MLArrayBatchProvider
+__ CoreML: _OBJC_CLASS_$_MLFeatureValue
+__ CoreML: _OBJC_CLASS_$_MLModel
+__ CoreML: _OBJC_CLASS_$_MLPredictionOptions
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+_OSInactivityPredictionClient : NSObject <_OSInactivityPredictionProtocol_Private, _OSInactivityPredictionProtocol>
+ @property  NSXPCConnection *connection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_OSInactivityPredictionClient .cxx_destruct]
+  -[_OSInactivityPredictionClient init]
+  -[_OSInactivityPredictionClient connection]
+  -[_OSInactivityPredictionClient modelDescription]
+  -[_OSInactivityPredictionClient recommendedWaitTimeWithHandler:]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultWithHandler:]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultAtDate:withHandler:]
+  -[_OSInactivityPredictionClient modelDescriptionWithHandler:]
+  -[_OSInactivityPredictionClient hasEnoughActivityHistoryWithHandler:]
+  -[_OSInactivityPredictionClient fixModelOutput:withHandler:]
+  -[_OSInactivityPredictionClient unfixModelOutputWithHandler:]
+  -[_OSInactivityPredictionClient overrideRecommendedWaitTimeTo:withHandler:]
+  -[_OSInactivityPredictionClient restoreRecommendedWaitTimeWithHandler:]
+  -[_OSInactivityPredictionClient recommendedWaitTime]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultWithError:]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultAtDate:withError:]
+  -[_OSInactivityPredictionClient hasEnoughActivityHistory]
+  -[_OSInactivityPredictionClient fixModelOutput:]
+  -[_OSInactivityPredictionClient unfixModelOutput]
+  -[_OSInactivityPredictionClient overrideRecommendedWaitTimeTo:]
+  -[_OSInactivityPredictionClient restoreRecommendedWaitTime]
+
+
+_OSInactivityPredictorOutput : NSObject <NSSecureCoding>
+ @property  long long confidenceLevel
+ @property  double confidenceValue
+ @property  double predictedDuration
+
+  // class methods
+  +[_OSInactivityPredictorOutput supportsSecureCoding]
+
+  // instance methods
+  -[_OSInactivityPredictorOutput confidenceLevel]
+  -[_OSInactivityPredictorOutput initWithCoder:]
+  -[_OSInactivityPredictorOutput encodeWithCoder:]
+  -[_OSInactivityPredictorOutput confidenceLevelString]
+  -[_OSInactivityPredictorOutput confidenceValueString]
+  -[_OSInactivityPredictorOutput predictedDurationString]
+  -[_OSInactivityPredictorOutput initInvalidOutput]
+  -[_OSInactivityPredictorOutput initWithConfidenceLevel:andConfidenceValue:andPredictedDuration:]
+  -[_OSInactivityPredictorOutput initWithConfidenceValue:andRelaxedThreshold:andStrictThreshold:andPredictedDuration:]
+  -[_OSInactivityPredictorOutput adjustPredictedDurationWithStrictLeeway:andRelaxedLeeway:]
+  -[_OSInactivityPredictorOutput confidenceValue]
+  -[_OSInactivityPredictorOutput predictedDuration]
+
+
+_OSChargePredictor : NSObject
+  // class methods
+  +[_OSChargePredictor predictor]
+
+  // instance methods
+  -[_OSChargePredictor init]
+  -[_OSChargePredictor longChargeExpectedWithConfidence:]
+  -[_OSChargePredictor timeUntilNextExpectedPluginWithConfidence:]
+  -[_OSChargePredictor longChargeExpected]
+  -[_OSChargePredictor timeUntilNextExpectedPlugin]
+  -[_OSChargePredictor isDeepDischargeExpected]
+  -[_OSChargePredictor expectedMinimumDischarge]
+
+
+_dayDrainInfo : NSObject
+ @property  long long drainSoFar
+ @property  long long lastBatterySoC
+
+  // instance methods
+  -[_dayDrainInfo drainSoFar]
+  -[_dayDrainInfo setDrainSoFar:]
+  -[_dayDrainInfo init]
+  -[_dayDrainInfo lastBatterySoC]
+  -[_dayDrainInfo setLastBatterySoC:]
+
+
+_OSBatteryDrainPredictor : NSObject
+ @property  NSObject<OS_os_log> *log
+
+  // class methods
+  +[_OSBatteryDrainPredictor predictor]
+  +[_OSBatteryDrainPredictor behaviorDescription:]
+
+  // instance methods
+  -[_OSBatteryDrainPredictor historicalClassification]
+  -[_OSBatteryDrainPredictor log]
+  -[_OSBatteryDrainPredictor .cxx_destruct]
+  -[_OSBatteryDrainPredictor setLog:]
+  -[_OSBatteryDrainPredictor init]
+  -[_OSBatteryDrainPredictor drainPerDayFromDate:forNumberOfDays:]
+  -[_OSBatteryDrainPredictor logCompletion:]
+  -[_OSBatteryDrainPredictor drainForEventsFromStream:matchingQuery:]
+
+
+inactivityEngageModelInput : NSObject <MLFeatureProvider>
+ @property  double all_dur_avg_2
+ @property  double all_dur_std_2
+ @property  double all_long_percent_2
+ @property  double recent_dur_avg_2
+ @property  double recent_dur_std_2
+ @property  double recent_long_percent_2
+ @property  double dow_dur_avg_2
+ @property  double dow_dur_std_2
+ @property  double dow_long_percent_2
+ @property  double start_time_sin
+ @property  double start_time_cos
+ @property  double start_dow_sin
+ @property  double start_dow_cos
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[inactivityEngageModelInput featureNames]
+  -[inactivityEngageModelInput featureValueForName:]
+  -[inactivityEngageModelInput initWithAll_dur_avg_2:all_dur_std_2:all_long_percent_2:recent_dur_avg_2:recent_dur_std_2:recent_long_percent_2:dow_dur_avg_2:dow_dur_std_2:dow_long_percent_2:start_time_sin:start_time_cos:start_dow_sin:start_dow_cos:]
+  -[inactivityEngageModelInput all_dur_avg_2]
+  -[inactivityEngageModelInput setAll_dur_avg_2:]
+  -[inactivityEngageModelInput all_dur_std_2]
+  -[inactivityEngageModelInput setAll_dur_std_2:]
+  -[inactivityEngageModelInput all_long_percent_2]
+  -[inactivityEngageModelInput setAll_long_percent_2:]
+  -[inactivityEngageModelInput recent_dur_avg_2]
+  -[inactivityEngageModelInput setRecent_dur_avg_2:]
+  -[inactivityEngageModelInput recent_dur_std_2]
+  -[inactivityEngageModelInput setRecent_dur_std_2:]
+  -[inactivityEngageModelInput recent_long_percent_2]
+  -[inactivityEngageModelInput setRecent_long_percent_2:]
+  -[inactivityEngageModelInput dow_dur_avg_2]
+  -[inactivityEngageModelInput setDow_dur_avg_2:]
+  -[inactivityEngageModelInput dow_dur_std_2]
+  -[inactivityEngageModelInput setDow_dur_std_2:]
+  -[inactivityEngageModelInput dow_long_percent_2]
+  -[inactivityEngageModelInput setDow_long_percent_2:]
+  -[inactivityEngageModelInput start_time_sin]
+  -[inactivityEngageModelInput setStart_time_sin:]
+  -[inactivityEngageModelInput start_time_cos]
+  -[inactivityEngageModelInput setStart_time_cos:]
+  -[inactivityEngageModelInput start_dow_sin]
+  -[inactivityEngageModelInput setStart_dow_sin:]
+  -[inactivityEngageModelInput start_dow_cos]
+  -[inactivityEngageModelInput setStart_dow_cos:]
+
+
+inactivityEngageModelOutput : NSObject <MLFeatureProvider>
+ @property  long long is_long
+ @property  NSDictionary *classProbability
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[inactivityEngageModelOutput .cxx_destruct]
+  -[inactivityEngageModelOutput featureNames]
+  -[inactivityEngageModelOutput featureValueForName:]
+  -[inactivityEngageModelOutput classProbability]
+  -[inactivityEngageModelOutput setClassProbability:]
+  -[inactivityEngageModelOutput initWithIs_long:classProbability:]
+  -[inactivityEngageModelOutput is_long]
+  -[inactivityEngageModelOutput setIs_long:]
+
+
+inactivityEngageModel : NSObject
+ @property  MLModel *model
+
+  // class methods
+  +[inactivityEngageModel URLOfModelInThisBundle]
+  +[inactivityEngageModel loadContentsOfURL:configuration:completionHandler:]
+  +[inactivityEngageModel loadWithConfiguration:completionHandler:]
+
+  // instance methods
+  -[inactivityEngageModel initWithContentsOfURL:error:]
+  -[inactivityEngageModel predictionsFromInputs:options:error:]
+  -[inactivityEngageModel .cxx_destruct]
+  -[inactivityEngageModel predictionFromFeatures:error:]
+  -[inactivityEngageModel init]
+  -[inactivityEngageModel initWithContentsOfURL:configuration:error:]
+  -[inactivityEngageModel predictionFromFeatures:options:error:]
+  -[inactivityEngageModel model]
+  -[inactivityEngageModel initWithMLModel:]
+  -[inactivityEngageModel initWithConfiguration:error:]
+  -[inactivityEngageModel predictionFromAll_dur_avg_2:all_dur_std_2:all_long_percent_2:recent_dur_avg_2:recent_dur_std_2:recent_long_percent_2:dow_dur_avg_2:dow_dur_std_2:dow_long_percent_2:start_time_sin:start_time_cos:start_dow_sin:start_dow_cos:error:]
+
+
+inactivityDurationModelInput : NSObject <MLFeatureProvider>
+ @property  double start_time_sin
+ @property  double start_time_cos
+ @property  double start_dow_sin
+ @property  double start_dow_cos
+ @property  double all_dur_avg_2
+ @property  double all_dur_std_2
+ @property  double all_long_percent_2
+ @property  double recent_dur_avg_2
+ @property  double recent_dur_std_2
+ @property  double recent_long_percent_2
+ @property  double dow_dur_avg_2
+ @property  double dow_dur_std_2
+ @property  double dow_long_percent_2
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[inactivityDurationModelInput featureNames]
+  -[inactivityDurationModelInput featureValueForName:]
+  -[inactivityDurationModelInput all_dur_avg_2]
+  -[inactivityDurationModelInput setAll_dur_avg_2:]
+  -[inactivityDurationModelInput all_dur_std_2]
+  -[inactivityDurationModelInput setAll_dur_std_2:]
+  -[inactivityDurationModelInput all_long_percent_2]
+  -[inactivityDurationModelInput setAll_long_percent_2:]
+  -[inactivityDurationModelInput recent_dur_avg_2]
+  -[inactivityDurationModelInput setRecent_dur_avg_2:]
+  -[inactivityDurationModelInput recent_dur_std_2]
+  -[inactivityDurationModelInput setRecent_dur_std_2:]
+  -[inactivityDurationModelInput recent_long_percent_2]
+  -[inactivityDurationModelInput setRecent_long_percent_2:]
+  -[inactivityDurationModelInput dow_dur_avg_2]
+  -[inactivityDurationModelInput setDow_dur_avg_2:]
+  -[inactivityDurationModelInput dow_dur_std_2]
+  -[inactivityDurationModelInput setDow_dur_std_2:]
+  -[inactivityDurationModelInput dow_long_percent_2]
+  -[inactivityDurationModelInput setDow_long_percent_2:]
+  -[inactivityDurationModelInput start_time_sin]
+  -[inactivityDurationModelInput setStart_time_sin:]
+  -[inactivityDurationModelInput start_time_cos]
+  -[inactivityDurationModelInput setStart_time_cos:]
+  -[inactivityDurationModelInput start_dow_sin]
+  -[inactivityDurationModelInput setStart_dow_sin:]
+  -[inactivityDurationModelInput start_dow_cos]
+  -[inactivityDurationModelInput setStart_dow_cos:]
+  -[inactivityDurationModelInput initWithStart_time_sin:start_time_cos:start_dow_sin:start_dow_cos:all_dur_avg_2:all_dur_std_2:all_long_percent_2:recent_dur_avg_2:recent_dur_std_2:recent_long_percent_2:dow_dur_avg_2:dow_dur_std_2:dow_long_percent_2:]
+
+
+inactivityDurationModelOutput : NSObject <MLFeatureProvider>
+ @property  double predicted_duration
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[inactivityDurationModelOutput featureNames]
+  -[inactivityDurationModelOutput featureValueForName:]
+  -[inactivityDurationModelOutput initWithPredicted_duration:]
+  -[inactivityDurationModelOutput predicted_duration]
+  -[inactivityDurationModelOutput setPredicted_duration:]
+
+
+inactivityDurationModel : NSObject
+ @property  MLModel *model
+
+  // class methods
+  +[inactivityDurationModel URLOfModelInThisBundle]
+  +[inactivityDurationModel loadContentsOfURL:configuration:completionHandler:]
+  +[inactivityDurationModel loadWithConfiguration:completionHandler:]
+
+  // instance methods
+  -[inactivityDurationModel initWithContentsOfURL:error:]
+  -[inactivityDurationModel predictionsFromInputs:options:error:]
+  -[inactivityDurationModel .cxx_destruct]
+  -[inactivityDurationModel predictionFromFeatures:error:]
+  -[inactivityDurationModel init]
+  -[inactivityDurationModel initWithContentsOfURL:configuration:error:]
+  -[inactivityDurationModel predictionFromFeatures:options:error:]
+  -[inactivityDurationModel model]
+  -[inactivityDurationModel initWithMLModel:]
+  -[inactivityDurationModel initWithConfiguration:error:]
+  -[inactivityDurationModel predictionFromStart_time_sin:start_time_cos:start_dow_sin:start_dow_cos:all_dur_avg_2:all_dur_std_2:all_long_percent_2:recent_dur_avg_2:recent_dur_std_2:recent_long_percent_2:dow_dur_avg_2:dow_dur_std_2:dow_long_percent_2:error:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams: BMStreams 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLArrayBatchProvider 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLFeatureValue 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLModel 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLPredictionOptions 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEventQuery 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKQuery 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSystemEventStreams 

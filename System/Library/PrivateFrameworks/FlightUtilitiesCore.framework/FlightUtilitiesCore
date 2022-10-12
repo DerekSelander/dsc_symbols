@@ -1,0 +1,401 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FUAirline
+|| __DATA.__objc_data _OBJC_CLASS_$_FUAirport
+|| __DATA.__objc_data _OBJC_CLASS_$_FUFlight
+|| __DATA.__objc_data _OBJC_CLASS_$_FUFlightFactory
+|| __DATA.__objc_data _OBJC_CLASS_$_FUFlightLeg
+|| __DATA.__objc_data _OBJC_CLASS_$_FUFlightStep
+|| __DATA.__objc_data _OBJC_CLASS_$_FUStepTime
+|| __DATA.__objc_data _OBJC_CLASS_$_FUUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUAirline
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUAirport
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUFlight
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUFlightFactory
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUFlightLeg
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUFlightStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUStepTime
+|| __DATA.__objc_data _OBJC_METACLASS_$_FUUtils
+|| __DATA.__objc_ivar _OBJC_IVAR_$_FUFlightStep._delayFromSchedule
+|| __DATA_CONST.__const _FUFactoryProvider_Default
+|| __DATA_CONST.__const _FUFactoryProvider_Parsec
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFBundleVersionKey
+__ CoreLocation: _CLLocationCoordinate2DMake
+__ CoreLocation: _OBJC_CLASS_$_CLGeocoder
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ CoreLocation: _OBJC_CLASS_$_CLPlacemark
+__ CoreParsec: _OBJC_CLASS_$_PARRequest
+__ CoreParsec: _OBJC_CLASS_$_PARSession
+__ CoreParsec: _OBJC_CLASS_$_PARSessionConfiguration
+__ DataDetectorsCore: _DDBinderAirlineCodeKey
+__ DataDetectorsCore: _DDBinderFlightInformationKey
+__ DataDetectorsCore: _DDBinderFlightNumberKey
+__ DataDetectorsCore: _DDResultGetSubresultWithType
+__ DataDetectorsCore: _DDResultGetValue
+__ DataDetectorsCore: _DDResultHasType
+__ DataDetectorsCore: _DDScannerCopyResultsWithOptions
+__ DataDetectorsCore: _DDScannerCreate
+__ DataDetectorsCore: _DDScannerScanString
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+FUUtils : NSObject
+  // class methods
+  +[FUUtils convertFlightModel:withError:]
+  +[FUUtils extractTimeForFlightStep:fromLeg:]
+  +[FUUtils airportFromSFAirport:]
+  +[FUUtils testDate]
+  +[FUUtils setTestDate:]
+  +[FUUtils enumerateFlightCodesInString:usingBlock:]
+
+
+FUFlight : NSObject <NSCopying, NSSecureCoding>
+ @property  NSArray *codeShares
+ @property  FUAirline *displayAirline
+ @property  NSString *queriedAirlineTitle
+ @property  unsigned long displayFlightNumber
+ @property  FUAirline *airline
+ @property  unsigned long flightNumber
+ @property  NSString *flightIdentifier
+ @property  NSString *cancellationMessage
+ @property  NSArray *allLegs
+ @property  NSArray *legs
+ @property  NSString *identifier
+ @property  unsigned long departureLegIndex
+ @property  unsigned long arrivalLegIndex
+ @property  NSDate *expirationDate
+ @property  NSString *rawResponse
+ @property  NSString *displayFlightCode
+ @property  NSString *flightCode
+ @property  long long status
+ @property  FUFlightStep *departure
+ @property  FUFlightStep *arrival
+ @property  double duration
+
+  // class methods
+  +[FUFlight supportsSecureCoding]
+  +[FUFlight loadFlightsWithNumber:airlineCode:date:dateType:completionHandler:]
+  +[FUFlight timeFormatterForIdentifier]
+
+  // instance methods
+  -[FUFlight legs]
+  -[FUFlight arrival]
+  -[FUFlight initWithCoder:]
+  -[FUFlight .cxx_destruct]
+  -[FUFlight airline]
+  -[FUFlight flightNumber]
+  -[FUFlight flightCode]
+  -[FUFlight setExpirationDate:]
+  -[FUFlight rawResponse]
+  -[FUFlight setLegs:]
+  -[FUFlight setFlightNumber:]
+  -[FUFlight setAirline:]
+  -[FUFlight isEqual:]
+  -[FUFlight setRawResponse:]
+  -[FUFlight departure]
+  -[FUFlight identifier]
+  -[FUFlight status]
+  -[FUFlight setIdentifier:]
+  -[FUFlight copyWithZone:]
+  -[FUFlight expirationDate]
+  -[FUFlight allLegs]
+  -[FUFlight lastLeg]
+  -[FUFlight duration]
+  -[FUFlight encodeWithCoder:]
+  -[FUFlight displayFlightCode]
+  -[FUFlight displayAirline]
+  -[FUFlight setAllLegs:]
+  -[FUFlight setDisplayFlightNumber:]
+  -[FUFlight setFlightIdentifier:]
+  -[FUFlight setDisplayAirline:]
+  -[FUFlight setQueriedAirlineTitle:]
+  -[FUFlight codeShares]
+  -[FUFlight queriedAirlineTitle]
+  -[FUFlight displayFlightNumber]
+  -[FUFlight cancellationMessage]
+  -[FUFlight departureLegIndex]
+  -[FUFlight arrivalLegIndex]
+  -[FUFlight setCancellationMessage:]
+  -[FUFlight setDepartureLegIndex:arrivalLegIndex:]
+  -[FUFlight setDepartureLegIndex:]
+  -[FUFlight setArrivalLegIndex:]
+  -[FUFlight firstLeg]
+  -[FUFlight legsAsFlights]
+  -[FUFlight relevantLeg]
+  -[FUFlight flightIdentifier]
+  -[FUFlight setCodeShares:]
+
+
+FUFlightLeg : NSObject <NSSecureCoding>
+ @property  long long status
+ @property  double duration
+ @property  double currentProgress
+ @property  FUFlightStep *departure
+ @property  FUFlightStep *arrival
+ @property  NSString *baggageClaim
+
+  // class methods
+  +[FUFlightLeg supportsSecureCoding]
+
+  // instance methods
+  -[FUFlightLeg arrival]
+  -[FUFlightLeg initWithCoder:]
+  -[FUFlightLeg .cxx_destruct]
+  -[FUFlightLeg setDuration:]
+  -[FUFlightLeg currentProgress]
+  -[FUFlightLeg setBaggageClaim:]
+  -[FUFlightLeg isEqual:]
+  -[FUFlightLeg departure]
+  -[FUFlightLeg setDeparture:]
+  -[FUFlightLeg status]
+  -[FUFlightLeg setStatus:]
+  -[FUFlightLeg setArrival:]
+  -[FUFlightLeg duration]
+  -[FUFlightLeg encodeWithCoder:]
+  -[FUFlightLeg baggageClaim]
+
+
+FUFlightCodeShare : NSObject <NSSecureCoding>
+ @property  FUAirline *airline
+ @property  unsigned long flightNumber
+
+  // class methods
+  +[FUFlightCodeShare supportsSecureCoding]
+
+  // instance methods
+  -[FUFlightCodeShare initWithCoder:]
+  -[FUFlightCodeShare .cxx_destruct]
+  -[FUFlightCodeShare airline]
+  -[FUFlightCodeShare flightNumber]
+  -[FUFlightCodeShare setFlightNumber:]
+  -[FUFlightCodeShare setAirline:]
+  -[FUFlightCodeShare isEqual:]
+  -[FUFlightCodeShare encodeWithCoder:]
+
+
+FUAirline : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *IATACode
+ @property  NSString *FAACode
+ @property  NSString *name
+ @property  NSString *phoneNumber
+ @property  NSURL *URL
+
+  // class methods
+  +[FUAirline supportsSecureCoding]
+
+  // instance methods
+  -[FUAirline name]
+  -[FUAirline initWithCoder:]
+  -[FUAirline setPhoneNumber:]
+  -[FUAirline setURL:]
+  -[FUAirline .cxx_destruct]
+  -[FUAirline setName:]
+  -[FUAirline phoneNumber]
+  -[FUAirline isEqual:]
+  -[FUAirline URL]
+  -[FUAirline copyWithZone:]
+  -[FUAirline FAACode]
+  -[FUAirline encodeWithCoder:]
+  -[FUAirline IATACode]
+  -[FUAirline setIATACode:]
+  -[FUAirline setFAACode:]
+
+
+FUStepTime : NSObject <NSSecureCoding, NSCopying>
+ @property  unsigned long type
+ @property  NSDate *date
+ @property  double timeIntervalSinceNow
+
+  // class methods
+  +[FUStepTime supportsSecureCoding]
+
+  // instance methods
+  -[FUStepTime initWithCoder:]
+  -[FUStepTime setType:]
+  -[FUStepTime .cxx_destruct]
+  -[FUStepTime isEqual:]
+  -[FUStepTime setDate:]
+  -[FUStepTime initWithType:date:]
+  -[FUStepTime type]
+  -[FUStepTime timeIntervalSinceNow]
+  -[FUStepTime copyWithZone:]
+  -[FUStepTime encodeWithCoder:]
+  -[FUStepTime date]
+
+
+FUFlightStep : NSObject <NSSecureCoding, NSCopying>
+ @property  FUAirport *airport
+ @property  NSString *gate
+ @property  NSString *terminal
+ @property  long long legStatus
+ @property  NSNumber *delayFromSchedule
+ @property  FUStepTime *scheduledTime
+ @property  FUStepTime *estimatedTime
+ @property  FUStepTime *actualTime
+ @property  FUStepTime *runwayTime
+ @property  BOOL taxiing
+ @property  BOOL departure
+ @property  FUStepTime *plannedTime
+ @property  FUStepTime *time
+ @property  unsigned long status
+
+  // class methods
+  +[FUFlightStep supportsSecureCoding]
+
+  // instance methods
+  -[FUFlightStep gate]
+  -[FUFlightStep initWithCoder:]
+  -[FUFlightStep scheduledTime]
+  -[FUFlightStep .cxx_destruct]
+  -[FUFlightStep setScheduledTime:]
+  -[FUFlightStep airport]
+  -[FUFlightStep setGate:]
+  -[FUFlightStep isEqual:]
+  -[FUFlightStep setAirport:]
+  -[FUFlightStep departure]
+  -[FUFlightStep terminal]
+  -[FUFlightStep time]
+  -[FUFlightStep setDeparture:]
+  -[FUFlightStep setTerminal:]
+  -[FUFlightStep status]
+  -[FUFlightStep copyWithZone:]
+  -[FUFlightStep taxiing]
+  -[FUFlightStep encodeWithCoder:]
+  -[FUFlightStep actualTime]
+  -[FUFlightStep setActualTime:]
+  -[FUFlightStep delayFromSchedule]
+  -[FUFlightStep setEstimatedTime:]
+  -[FUFlightStep setRunwayTime:]
+  -[FUFlightStep setPlannedTime:]
+  -[FUFlightStep setLegStatus:]
+  -[FUFlightStep runwayTime]
+  -[FUFlightStep legStatus]
+  -[FUFlightStep estimatedTime]
+  -[FUFlightStep plannedTime]
+  -[FUFlightStep setDelayFromSchedule:]
+
+
+FUFlightFactory : NSObject <FUFlightFactoryInternalProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[FUFlightFactory flightFactoryClassWithProvider:]
+  +[FUFlightFactory loadFlightsWithNumber:airlineCode:date:dateType:completionHandler:]
+  +[FUFlightFactory loadFlightsWithNumber:airlineCode:date:dateType:userAgent:sessionID:completionHandler:]
+  +[FUFlightFactory loadFlightDataWithFlightNumber:airlineCode:date:dateType:completionHandler:]
+  +[FUFlightFactory loadFlightWithIdentifier:completionHandler:]
+
+  // instance methods
+  -[FUFlightFactory parseFlightData:withError:]
+
+
+FUAirport : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *IATACode
+ @property  NSString *name
+ @property  NSString *city
+ @property  NSTimeZone *timeZone
+ @property  {CLLocationCoordinate2D=dd} location
+ @property  CLPlacemark *placemark
+
+  // class methods
+  +[FUAirport supportsSecureCoding]
+
+  // instance methods
+  -[FUAirport setTimeZone:]
+  -[FUAirport timeZone]
+  -[FUAirport name]
+  -[FUAirport initWithCoder:]
+  -[FUAirport .cxx_destruct]
+  -[FUAirport setLocation:]
+  -[FUAirport setName:]
+  -[FUAirport setCity:]
+  -[FUAirport setPlacemark:]
+  -[FUAirport isEqual:]
+  -[FUAirport location]
+  -[FUAirport placemark]
+  -[FUAirport city]
+  -[FUAirport copyWithZone:]
+  -[FUAirport encodeWithCoder:]
+  -[FUAirport IATACode]
+  -[FUAirport setIATACode:]
+  -[FUAirport fetchPlacemarkWithCompletionHandler:]
+
+
+FUFlightFactory_Parsec : FUFlightFactory <FUFlightFactoryInternalProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[FUFlightFactory_Parsec loadFlightsWithNumber:airlineCode:date:dateType:userAgent:sessionID:completionHandler:]
+  +[FUFlightFactory_Parsec loadFlightStructuresWithFlightNumber:airlineCode:date:dateType:userAgent:sessionID:completionHandler:]
+
+
+01 00 0200 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLGeocoder 
+01 00 0200 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 0200 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLPlacemark 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec: PARRequest 
+01 00 0100 /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec: PARSession 
+01 00 0100 /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec: PARSessionConfiguration 

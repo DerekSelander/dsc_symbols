@@ -1,0 +1,1899 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PipeDataTransfer
+|| __DATA.__objc_data _OBJC_CLASS_$_PipeInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_WPDConnection
+|| __DATA.__objc_data _OBJC_METACLASS_$_PipeDataTransfer
+|| __DATA.__objc_data _OBJC_METACLASS_$_PipeInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_WPDConnection
+|| __DATA_CONST.__const _WPErrorDomain
+|| __DATA_CONST.__const _kCBAdditionalAppleMfgAdvertisements
+|| __DATA_CONST.__const _kCBAdvAppleMfgTypeKey
+|| __DATA_CONST.__const _kCBAdvOptionUseFGInterval
+|| __DATA_CONST.__const _kSPAdvertisementData
+|| __DATA_CONST.__const _kSPChannel
+|| __DATA_CONST.__const _kSPDeviceAddress
+|| __DATA_CONST.__const _kSPOptional
+|| __DATA_CONST.__const _kSPSaturated
+|| __DATA_CONST.__const _kSPScanDate
+|| __DATA_CONST.__const _kSPStatus
+|| __DATA_CONST.__const _kSPrssi
+|| __DATA_CONST.__const _kWPDFrameworkMessageQueue
+|| __DATA_DIRTY.__common _WPLogInitOnce
+|| __DATA_DIRTY.__common _WiProxLog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_Endpoint
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPAdvertisingRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPAdvertisingRequestsQueue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPCharacteristic
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDAdvertisingData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDAdvertisingManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDObjectDiscoveryClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDObjectDiscoveryData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDObjectDiscoveryManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDPendingCompletions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDPersistence
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDPipeManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDScanManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDSearchPartyAgent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDStat
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDStatsManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDXPCInterfaces
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDZoneManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPDaemonServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPPeerTrackingRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPScanRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WPZoneTrackingRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_Endpoint
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPAdvertisingRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPAdvertisingRequestsQueue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPCharacteristic
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDAdvertisingData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDAdvertisingManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDObjectDiscoveryClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDObjectDiscoveryData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDObjectDiscoveryManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDPendingCompletions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDPersistence
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDPipeManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDScanManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDSearchPartyAgent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDStat
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDStatsManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDXPCInterfaces
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDZoneManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPDaemonServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPPeerTrackingRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPScanRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WPZoneTrackingRequest
+|| __TEXT.__const _advertisingHeader
+|| __TEXT.__const _kAppleManufacturerTypeBottom
+|| __TEXT.__const _kAppleManufacturerTypeTop
+|| __TEXT.__const _kGapManufacturerDataType
+|| __TEXT.__text _WPLoggingInit
+__ CoreBluetooth: _CBAdvOptionInstanceAddress
+__ CoreBluetooth: _CBAdvOptionInstanceRandomAddressBytes
+__ CoreBluetooth: _CBAdvOptionObjectLocatorOnThisInstance
+__ CoreBluetooth: _CBAdvOptionStopOnAdvertisingAddressChange
+__ CoreBluetooth: _CBAdvertisementDataAppleMfgData
+__ CoreBluetooth: _CBAdvertisementDataChannel
+__ CoreBluetooth: _CBAdvertisementDataDeviceAddress
+__ CoreBluetooth: _CBAdvertisementDataIsConnectable
+__ CoreBluetooth: _CBAdvertisementDataIsObjectDiscovery
+__ CoreBluetooth: _CBAdvertisementDataManufacturerDataKey
+__ CoreBluetooth: _CBAdvertisementDataOverflowServiceUUIDsKey
+__ CoreBluetooth: _CBAdvertisementDataSaturated
+__ CoreBluetooth: _CBAdvertisementDataServiceDataKey
+__ CoreBluetooth: _CBAdvertisementDataServiceUUIDsKey
+__ CoreBluetooth: _CBAdvertisementDataSolicitedServiceUUIDsKey
+__ CoreBluetooth: _CBAdvertisementDataTimestamp
+__ CoreBluetooth: _CBAdvertisementRawBytesData
+__ CoreBluetooth: _CBCancelPeripheralConnectionOptionForce
+__ CoreBluetooth: _CBCentralManagerMatchActionRuleLocalAddress
+__ CoreBluetooth: _CBCentralManagerMatchActionRulePeerAddress
+__ CoreBluetooth: _CBCentralManagerScanOptionActive
+__ CoreBluetooth: _CBCentralManagerScanOptionAllowDuplicatesKey
+__ CoreBluetooth: _CBCentralManagerScanOptionCacheResults
+__ CoreBluetooth: _CBCentralManagerScanOptionHWObjectDiscoveryNearOwner
+__ CoreBluetooth: _CBCentralManagerScanOptionHWObjectDiscoveryWild
+__ CoreBluetooth: _CBCentralManagerScanOptionLatencyCritical
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRuleBypassFilterDuplicate
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRuleKey
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRuleMaskKey
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRulePayloadKey
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRuleRSSIKey
+__ CoreBluetooth: _CBCentralManagerScanOptionMatchingRuleTypeKey
+__ CoreBluetooth: _CBCentralManagerScanOptionPeersKey
+__ CoreBluetooth: _CBCentralManagerScanOptionPriorityCritical
+__ CoreBluetooth: _CBCentralManagerScanOptionRange
+__ CoreBluetooth: _CBCentralManagerScanOptionRetainDuplicates
+__ CoreBluetooth: _CBCentralManagerScanOptionScanInterval
+__ CoreBluetooth: _CBCentralManagerScanOptionScanWindow
+__ CoreBluetooth: _CBCentralManagerScanOptionZonesKey
+__ CoreBluetooth: _CBCentralManagerScanParametersOptionObjectLocator
+__ CoreBluetooth: _CBCentralManagerScanParametersOptionScanWithPowerAssertion
+__ CoreBluetooth: _CBConnectPeripheralOptionClientBundleID
+__ CoreBluetooth: _CBConnectPeripheralOptionClientProcessID
+__ CoreBluetooth: _CBErrorDomain
+__ CoreBluetooth: _CBManagerIsPrivilegedDaemonKey
+__ CoreBluetooth: _CBManagerListOfClients
+__ CoreBluetooth: _CBManagerNeedsRestrictedStateOperation
+__ CoreBluetooth: _CBPeripheralManagerAdvertisingInterval
+__ CoreBluetooth: _CBPeripheralManagerAdvertisingWithPowerAssertion
+__ CoreBluetooth: _CBScalablePipeOptionDisableBluetoothReliability
+__ CoreBluetooth: _CBScalablePipeOptionRequiresEncryption
+__ CoreBluetooth: _CBScalablePipeOptionTransport
+__ CoreBluetooth: _OBJC_CLASS_$_CBCentralManager
+__ CoreBluetooth: _OBJC_CLASS_$_CBController
+__ CoreBluetooth: _OBJC_CLASS_$_CBMutableCharacteristic
+__ CoreBluetooth: _OBJC_CLASS_$_CBMutableService
+__ CoreBluetooth: _OBJC_CLASS_$_CBPeripheralManager
+__ CoreBluetooth: _OBJC_CLASS_$_CBScalablePipeManager
+__ CoreBluetooth: _OBJC_CLASS_$_CBUUID
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ PowerLog: _PLLogRegisteredEvent
+__ PowerLog: _PLShouldLogRegisteredEvent
+__ SPOwner: _OBJC_CLASS_$_SPBeaconManager
+__ SPOwner: _OBJC_CLASS_$_SPBeaconingKey
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___memset_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_read
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_initially_inactive
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_create_with_target$V2
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_source_testcancel
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_channel_advance_slot
+__ libSystem.B.dylib: _os_channel_available_slot_count
+__ libSystem.B.dylib: _os_channel_get_fd
+__ libSystem.B.dylib: _os_channel_get_next_slot
+__ libSystem.B.dylib: _os_channel_ring_id
+__ libSystem.B.dylib: _os_channel_rx_ring
+__ libSystem.B.dylib: _os_channel_set_slot_properties
+__ libSystem.B.dylib: _os_channel_sync
+__ libSystem.B.dylib: _os_channel_tx_ring
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_state_add_handler
+__ libSystem.B.dylib: _os_variant_has_internal_content
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _voucher_copy
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+WPDState : NSObject
+ @property  long long state
+ @property  BOOL restricted
+ @property  NSObject<OS_dispatch_queue> *cbQueue
+ @property  @? notification
+ @property  NSMutableSet *cbManagers
+ @property  NSMutableDictionary *cbStates
+ @property  BOOL initialUpdate
+
+  // class methods
+  +[WPDState getWPStateFromCBManagerState:]
+
+  // instance methods
+  -[WPDState notification]
+  -[WPDState cbQueue]
+  -[WPDState setCbStates:]
+  -[WPDState .cxx_destruct]
+  -[WPDState setRestricted:]
+  -[WPDState updateWithCompletion:]
+  -[WPDState setState:]
+  -[WPDState registerManager:]
+  -[WPDState initialUpdate]
+  -[WPDState setNotification:]
+  -[WPDState updateWithManager:Completion:]
+  -[WPDState cbManagers]
+  -[WPDState initWithQueue:]
+  -[WPDState state]
+  -[WPDState cbStates]
+  -[WPDState setInitialUpdate:]
+  -[WPDState setCbManagers:]
+  -[WPDState dealloc]
+  -[WPDState coalesceState:Restricted:UpdateCache:]
+  -[WPDState setCbQueue:]
+  -[WPDState restricted]
+
+
+WPDManager : NSObject <CBCentralManagerDelegate, CBPeripheralManagerDelegate, CBScalablePipeManagerDelegate>
+ @property  long long state
+ @property  WPDaemonServer *server
+ @property  NSString *name
+ @property  BOOL isHomePod
+ @property  BOOL restricted
+ @property  BOOL testMode
+ @property  NSSet *cbManagers
+ @property  BOOL isInternalBuild
+ @property  NSIndexSet *scanAllowlist
+ @property  NSIndexSet *advAllowlist
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WPDManager initialize]
+  +[WPDManager initializeAdvDenylist:AdvAllowlist:ScanDenylist:ScanAllowlist:]
+  +[WPDManager isInternalBuild]
+  +[WPDManager cbStateAsString:]
+  +[WPDManager scanAllowlist]
+  +[WPDManager advAllowlist]
+  +[WPDManager wpStateAsString:]
+
+  // instance methods
+  -[WPDManager setServer:]
+  -[WPDManager name]
+  -[WPDManager cleanup]
+  -[WPDManager updateState:Restricted:]
+  -[WPDManager generateStateDumpStrings]
+  -[WPDManager isAdvertisingAllowlistedForType:]
+  -[WPDManager .cxx_destruct]
+  -[WPDManager setRestricted:]
+  -[WPDManager initWithServer:Name:]
+  -[WPDManager update]
+  -[WPDManager centralManagerDidUpdateState:]
+  -[WPDManager setName:]
+  -[WPDManager setState:]
+  -[WPDManager isScanAllowlistedForType:]
+  -[WPDManager isInternalBuild]
+  -[WPDManager cbManagers]
+  -[WPDManager generateStateDump]
+  -[WPDManager testMode]
+  -[WPDManager state]
+  -[WPDManager server]
+  -[WPDManager scalablePipeManagerDidUpdateState:]
+  -[WPDManager peripheralManagerDidUpdateState:]
+  -[WPDManager setCbManagers:]
+  -[WPDManager setTestMode:]
+  -[WPDManager dealloc]
+  -[WPDManager isHomePod]
+  -[WPDManager scanAllowlist]
+  -[WPDManager advAllowlist]
+  -[WPDManager cbManagerDidUpdateState:]
+  -[WPDManager restricted]
+
+
+WPAdvertisingRequest : NSObject <NSSecureCoding, NSCopying>
+ @property  unsigned char clientType
+ @property  long long priorityValue
+ @property  NSData *advertisingData
+ @property  long long advertisingRate
+ @property  double updateTime
+ @property  BOOL connectable
+ @property  NSDictionary *advertisingOptions
+ @property  BOOL isRanging
+ @property  BOOL stopOnAdvertisingAddressChange
+ @property  BOOL holdVoucher
+
+  // class methods
+  +[WPAdvertisingRequest supportsSecureCoding]
+  +[WPAdvertisingRequest requestForClientType:]
+
+  // instance methods
+  -[WPAdvertisingRequest setClientType:]
+  -[WPAdvertisingRequest clientType]
+  -[WPAdvertisingRequest initWithCoder:]
+  -[WPAdvertisingRequest connectable]
+  -[WPAdvertisingRequest setUpdateTime:]
+  -[WPAdvertisingRequest .cxx_destruct]
+  -[WPAdvertisingRequest isRanging]
+  -[WPAdvertisingRequest init]
+  -[WPAdvertisingRequest setConnectable:]
+  -[WPAdvertisingRequest setIsRanging:]
+  -[WPAdvertisingRequest compare:]
+  -[WPAdvertisingRequest updateTime]
+  -[WPAdvertisingRequest copyWithZone:]
+  -[WPAdvertisingRequest encodeWithCoder:]
+  -[WPAdvertisingRequest setAdvertisingRate:]
+  -[WPAdvertisingRequest setAdvertisingData:]
+  -[WPAdvertisingRequest advertisingData]
+  -[WPAdvertisingRequest advertisingRate]
+  -[WPAdvertisingRequest priorityValue]
+  -[WPAdvertisingRequest setPriorityValue:]
+  -[WPAdvertisingRequest advertisingOptions]
+  -[WPAdvertisingRequest setAdvertisingOptions:]
+  -[WPAdvertisingRequest stopOnAdvertisingAddressChange]
+  -[WPAdvertisingRequest setStopOnAdvertisingAddressChange:]
+  -[WPAdvertisingRequest holdVoucher]
+  -[WPAdvertisingRequest setHoldVoucher:]
+  -[WPAdvertisingRequest changePriorityValue:]
+
+
+WPZoneTrackingRequest : NSObject <NSSecureCoding>
+ @property  unsigned char clientType
+ @property  {?=qqq} scanningRates
+ @property  BOOL scanWhenScreenOff
+ @property  NSMutableSet *zones
+
+  // class methods
+  +[WPZoneTrackingRequest supportsSecureCoding]
+
+  // instance methods
+  -[WPZoneTrackingRequest setClientType:]
+  -[WPZoneTrackingRequest clientType]
+  -[WPZoneTrackingRequest zones]
+  -[WPZoneTrackingRequest initWithCoder:]
+  -[WPZoneTrackingRequest .cxx_destruct]
+  -[WPZoneTrackingRequest setZones:]
+  -[WPZoneTrackingRequest init]
+  -[WPZoneTrackingRequest encodeWithCoder:]
+  -[WPZoneTrackingRequest setScanningRates:]
+  -[WPZoneTrackingRequest scanningRates]
+  -[WPZoneTrackingRequest scanWhenScreenOff]
+  -[WPZoneTrackingRequest setScanWhenScreenOff:]
+
+
+WPCharacteristic : NSObject <NSSecureCoding>
+ @property  NSUUID *uuid
+ @property  unsigned long properties
+ @property  unsigned long permissions
+ @property  NSData *data
+ @property  long long writeType
+
+  // class methods
+  +[WPCharacteristic supportsSecureCoding]
+
+  // instance methods
+  -[WPCharacteristic setPermissions:]
+  -[WPCharacteristic initWithCoder:]
+  -[WPCharacteristic .cxx_destruct]
+  -[WPCharacteristic properties]
+  -[WPCharacteristic data]
+  -[WPCharacteristic permissions]
+  -[WPCharacteristic setProperties:]
+  -[WPCharacteristic uuid]
+  -[WPCharacteristic setData:]
+  -[WPCharacteristic setUuid:]
+  -[WPCharacteristic encodeWithCoder:]
+  -[WPCharacteristic writeType]
+  -[WPCharacteristic setWriteType:]
+
+
+WPScanRequest : NSObject <NSSecureCoding>
+ @property  unsigned char clientType
+ @property  {?=qqq} scanningRates
+ @property  BOOL allowDuplicates
+ @property  BOOL scanWhenLocked
+ @property  BOOL activeScanning
+ @property  BOOL scanCache
+ @property  NSNumber *rssiThreshold
+ @property  NSData *blobValue
+ @property  NSData *maskValue
+ @property  NSDictionary *options
+ @property  NSArray *peers
+ @property  double updateTime
+ @property  long long nearbyScanMode
+ @property  long long advBuffer
+ @property  BOOL priorityCritical
+ @property  BOOL range
+ @property  BOOL holdVoucher
+ @property  BOOL retainDuplicates
+ @property  BOOL startPending
+
+  // class methods
+  +[WPScanRequest supportsSecureCoding]
+
+  // instance methods
+  -[WPScanRequest setClientType:]
+  -[WPScanRequest range]
+  -[WPScanRequest clientType]
+  -[WPScanRequest initWithCoder:]
+  -[WPScanRequest options]
+  -[WPScanRequest peers]
+  -[WPScanRequest setOptions:]
+  -[WPScanRequest setUpdateTime:]
+  -[WPScanRequest .cxx_destruct]
+  -[WPScanRequest setRssiThreshold:]
+  -[WPScanRequest setRange:]
+  -[WPScanRequest setScanCache:]
+  -[WPScanRequest setAllowDuplicates:]
+  -[WPScanRequest init]
+  -[WPScanRequest allowDuplicates]
+  -[WPScanRequest scanCache]
+  -[WPScanRequest rssiThreshold]
+  -[WPScanRequest updateTime]
+  -[WPScanRequest copyWithZone:]
+  -[WPScanRequest setPeers:]
+  -[WPScanRequest encodeWithCoder:]
+  -[WPScanRequest maskValue]
+  -[WPScanRequest setMaskValue:]
+  -[WPScanRequest setStartPending:]
+  -[WPScanRequest startPending]
+  -[WPScanRequest setScanningRates:]
+  -[WPScanRequest setActiveScanning:]
+  -[WPScanRequest setBlobValue:]
+  -[WPScanRequest setRetainDuplicates:]
+  -[WPScanRequest scanningRates]
+  -[WPScanRequest holdVoucher]
+  -[WPScanRequest setHoldVoucher:]
+  -[WPScanRequest setNearbyScanMode:]
+  -[WPScanRequest scanWhenLocked]
+  -[WPScanRequest setScanWhenLocked:]
+  -[WPScanRequest activeScanning]
+  -[WPScanRequest blobValue]
+  -[WPScanRequest nearbyScanMode]
+  -[WPScanRequest advBuffer]
+  -[WPScanRequest setAdvBuffer:]
+  -[WPScanRequest priorityCritical]
+  -[WPScanRequest setPriorityCritical:]
+  -[WPScanRequest retainDuplicates]
+
+
+WPDPendingCompletions : NSObject
+ @property  NSMutableArray *pendingCompletions
+ @property  unsigned long lastID
+ @property  NSString *name
+
+  // instance methods
+  -[WPDPendingCompletions name]
+  -[WPDPendingCompletions addCompletion:]
+  -[WPDPendingCompletions .cxx_destruct]
+  -[WPDPendingCompletions setPendingCompletions:]
+  -[WPDPendingCompletions pendingCompletions]
+  -[WPDPendingCompletions setName:]
+  -[WPDPendingCompletions initWithName:]
+  -[WPDPendingCompletions lastID]
+  -[WPDPendingCompletions setLastID:]
+  -[WPDPendingCompletions completeID:success:]
+
+
+WPDSearchPartyAgent : NSObject
+ @property  NSData *beaconKey
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  BOOL disableScans
+ @property  BOOL isTestMode
+ @property  BOOL spBeaconState
+ @property  unsigned char spBeaconStatus
+ @property  NSData *spBeaconReserved
+ @property  BOOL testBeaconState
+ @property  unsigned char testBeaconStatus
+ @property  NSData *testBeaconReserved
+ @property  SPBeaconManager *beaconManager
+ @property  @? beaconChange
+ @property  NSArray *spBeaconKeys
+ @property  NSDate *spBeaconKeysUpdated
+ @property  @? beaconStateChangedBlock
+ @property  @? beaconKeysChangedBlock
+ @property  @? beaconStatusChangedBlock
+ @property  @? nearbyTokensChangedBlock
+ @property  @? tokensChange
+ @property  NSArray *spNearbyTokens
+ @property  NSDate *spNearbyTokensUpdated
+ @property  NSArray *testNearbyTokens
+ @property  NSArray *testBeaconKeys
+ @property  NSDate *testNearbyTokensUpdated
+ @property  NSDate *testBeaconKeysUpdated
+ @property  NSArray *beaconKeys
+ @property  NSDate *nearbyTokensUpdated
+ @property  NSDate *beaconKeysUpdated
+ @property  BOOL continueAdvOnFail
+ @property  WPDPendingCompletions *pendingKeyCompletions
+ @property  WPDPendingCompletions *pendingTokenCompletions
+ @property  BOOL beaconState
+ @property  unsigned char beaconStatus
+ @property  NSData *beaconReserved
+ @property  NSArray *nearbyTokens
+
+  // class methods
+  +[WPDSearchPartyAgent spBeaconKeyFromTestKey:]
+
+  // instance methods
+  -[WPDSearchPartyAgent setBeaconManager:]
+  -[WPDSearchPartyAgent completedTokenRequestID:success:]
+  -[WPDSearchPartyAgent beaconKeysChangedBlock]
+  -[WPDSearchPartyAgent rollTokens_async]
+  -[WPDSearchPartyAgent startTest]
+  -[WPDSearchPartyAgent testBeaconStatus]
+  -[WPDSearchPartyAgent stopTest]
+  -[WPDSearchPartyAgent spBeaconKeysUpdated]
+  -[WPDSearchPartyAgent nearbyTokensUpdated]
+  -[WPDSearchPartyAgent setTestNearbyTokens:]
+  -[WPDSearchPartyAgent beaconReserved]
+  -[WPDSearchPartyAgent updateTestBeaconStatus:]
+  -[WPDSearchPartyAgent setBeaconKey:]
+  -[WPDSearchPartyAgent setTokensChange:]
+  -[WPDSearchPartyAgent rollTokens_async_completion:]
+  -[WPDSearchPartyAgent .cxx_destruct]
+  -[WPDSearchPartyAgent isTestMode]
+  -[WPDSearchPartyAgent tokensChange]
+  -[WPDSearchPartyAgent setSpBeaconState:]
+  -[WPDSearchPartyAgent setBeaconStatusChangedBlock:]
+  -[WPDSearchPartyAgent rollKeys_async]
+  -[WPDSearchPartyAgent setIsTestMode:]
+  -[WPDSearchPartyAgent spBeaconState]
+  -[WPDSearchPartyAgent disableScans]
+  -[WPDSearchPartyAgent beaconStatus]
+  -[WPDSearchPartyAgent setSpNearbyTokens:]
+  -[WPDSearchPartyAgent setSpBeaconStatus:]
+  -[WPDSearchPartyAgent setContinueAdvOnFail:]
+  -[WPDSearchPartyAgent setTestBeaconState:]
+  -[WPDSearchPartyAgent testBeaconReserved]
+  -[WPDSearchPartyAgent initWithQueue:beaconChange:tokensChange:]
+  -[WPDSearchPartyAgent testNearbyTokens]
+  -[WPDSearchPartyAgent pendingTokenCompletions]
+  -[WPDSearchPartyAgent setTestBeaconReserved:]
+  -[WPDSearchPartyAgent rollTokensWithRequestID:]
+  -[WPDSearchPartyAgent testNearbyTokensUpdated]
+  -[WPDSearchPartyAgent beaconManager]
+  -[WPDSearchPartyAgent setPendingKeyCompletions:]
+  -[WPDSearchPartyAgent beaconKeys]
+  -[WPDSearchPartyAgent beaconKey]
+  -[WPDSearchPartyAgent updateTestBeaconExtended:]
+  -[WPDSearchPartyAgent generateStateDump]
+  -[WPDSearchPartyAgent setSpNearbyTokensUpdated:]
+  -[WPDSearchPartyAgent testBeaconState]
+  -[WPDSearchPartyAgent setSpBeaconKeysUpdated:]
+  -[WPDSearchPartyAgent initSPObjects]
+  -[WPDSearchPartyAgent spNearbyTokens]
+  -[WPDSearchPartyAgent nearbyTokens]
+  -[WPDSearchPartyAgent continueAdvOnFail]
+  -[WPDSearchPartyAgent updateTestBeaconState:]
+  -[WPDSearchPartyAgent setTestBeaconKeys:]
+  -[WPDSearchPartyAgent setBeaconStateChangedBlock:]
+  -[WPDSearchPartyAgent spBeaconKeys]
+  -[WPDSearchPartyAgent spBeaconStatus]
+  -[WPDSearchPartyAgent testBeaconKeys]
+  -[WPDSearchPartyAgent testBeaconKeysUpdated]
+  -[WPDSearchPartyAgent beaconStateChangedBlock]
+  -[WPDSearchPartyAgent beaconState]
+  -[WPDSearchPartyAgent rollKeys_async_completion:]
+  -[WPDSearchPartyAgent queue]
+  -[WPDSearchPartyAgent setBeaconChange:]
+  -[WPDSearchPartyAgent setDisableScans:]
+  -[WPDSearchPartyAgent setTestBeaconStatus:]
+  -[WPDSearchPartyAgent nearbyTokensChangedBlock]
+  -[WPDSearchPartyAgent beaconKeysUpdated]
+  -[WPDSearchPartyAgent dealloc]
+  -[WPDSearchPartyAgent updateTestBeaconKeys:]
+  -[WPDSearchPartyAgent rollKeysWithRequestID:]
+  -[WPDSearchPartyAgent setNearbyTokensChangedBlock:]
+  -[WPDSearchPartyAgent beaconStatusChangedBlock]
+  -[WPDSearchPartyAgent setBeaconKeysChangedBlock:]
+  -[WPDSearchPartyAgent spBeaconReserved]
+  -[WPDSearchPartyAgent updateTestNearOwnerTokens:]
+  -[WPDSearchPartyAgent setTestBeaconKeysUpdated:]
+  -[WPDSearchPartyAgent completedKeyRequestID:success:]
+  -[WPDSearchPartyAgent pendingKeyCompletions]
+  -[WPDSearchPartyAgent beaconChange]
+  -[WPDSearchPartyAgent setSpBeaconKeys:]
+  -[WPDSearchPartyAgent setPendingTokenCompletions:]
+  -[WPDSearchPartyAgent setTestNearbyTokensUpdated:]
+  -[WPDSearchPartyAgent spNearbyTokensUpdated]
+
+
+WPPeerTrackingRequest : NSObject <NSSecureCoding>
+ @property  unsigned char clientType
+ @property  NSUUID *peerUUID
+ @property  NSDictionary *peerTrackingDictionary
+
+  // class methods
+  +[WPPeerTrackingRequest supportsSecureCoding]
+
+  // instance methods
+  -[WPPeerTrackingRequest setClientType:]
+  -[WPPeerTrackingRequest clientType]
+  -[WPPeerTrackingRequest initWithCoder:]
+  -[WPPeerTrackingRequest .cxx_destruct]
+  -[WPPeerTrackingRequest init]
+  -[WPPeerTrackingRequest isEqual:]
+  -[WPPeerTrackingRequest encodeWithCoder:]
+  -[WPPeerTrackingRequest peerUUID]
+  -[WPPeerTrackingRequest setPeerUUID:]
+  -[WPPeerTrackingRequest peerTrackingDictionary]
+  -[WPPeerTrackingRequest setPeerTrackingDictionary:]
+
+
+WPDPersistence : NSObject
+ @property  BOOL needsInit
+ @property  BOOL systemFirstUnlocked
+ @property  NSString *bootUUID
+ @property  BOOL isRangingEnabled
+
+  // instance methods
+  -[WPDPersistence isRangingEnabled]
+  -[WPDPersistence .cxx_destruct]
+  -[WPDPersistence init]
+  -[WPDPersistence currentBootSessionUUID]
+  -[WPDPersistence dealloc]
+  -[WPDPersistence bootUUID]
+  -[WPDPersistence synchronisePrefs]
+  -[WPDPersistence writeBoolProperty:Value:]
+  -[WPDPersistence writeStringProperty:Value:]
+  -[WPDPersistence setSystemFirstUnlocked:]
+  -[WPDPersistence setNeedsInit:]
+  -[WPDPersistence needsInit]
+  -[WPDPersistence readStringPropertyValue:]
+  -[WPDPersistence readBoolPropertyValue:]
+  -[WPDPersistence setIsRangingEnabled:]
+  -[WPDPersistence systemFirstUnlocked]
+  -[WPDPersistence firstUnlockedWithEvent:]
+  -[WPDPersistence deletePropertyValue:]
+  -[WPDPersistence setBootUUID:]
+
+
+WPDaemonServer : NSObject <NSXPCListenerDelegate>
+ @property  WPDState *wpdState
+ @property  long long cbState
+ @property  unsigned char coreBluetoothState
+ @property  NSObject<OS_dispatch_queue> *serverQueue
+ @property  WPDScanManager *scanManager
+ @property  WPDAdvertisingManager *advertisingManager
+ @property  WPDZoneManager *zoneManager
+ @property  WPDPipeManager *pipeManager
+ @property  WPDObjectDiscoveryManager *objectDiscoveryManager
+ @property  WPDClient *spObjectDiscoveryClient
+ @property  WPDPersistence *persistence
+ @property  NSArray *managers
+ @property  WPDStatsManager *statsManager
+ @property  NSMutableDictionary *clients
+ @property  NSMutableSet *testClients
+ @property  NSMutableSet *privilegedClients
+ @property  NSMapTable *clientsWithMach
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSXPCListener *listener
+ @property  int lockStatusChangedToken
+ @property  int screenStateToken
+ @property  int firstUnlockStatusChangedToken
+ @property  BOOL screenOff
+ @property  BOOL systemLocked
+ @property  BOOL isTesting
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WPDaemonServer initialize]
+  +[WPDaemonServer supportsRanging]
+  +[WPDaemonServer isInternalBuild]
+  +[WPDaemonServer isHomePod]
+  +[WPDaemonServer isAppleTV]
+
+  // instance methods
+  -[WPDaemonServer setClients:]
+  -[WPDaemonServer setScreenOff:]
+  -[WPDaemonServer addClient:]
+  -[WPDaemonServer clients]
+  -[WPDaemonServer setWpdState:]
+  -[WPDaemonServer screenOff]
+  -[WPDaemonServer getClientForUUID:]
+  -[WPDaemonServer setSystemLocked:]
+  -[WPDaemonServer privilegedClients]
+  -[WPDaemonServer initManagers]
+  -[WPDaemonServer screenStateToken]
+  -[WPDaemonServer setPipeManager:]
+  -[WPDaemonServer cbState]
+  -[WPDaemonServer screenStateUpdate]
+  -[WPDaemonServer removeClient:]
+  -[WPDaemonServer disableScanningForClient:]
+  -[WPDaemonServer startListening]
+  -[WPDaemonServer coreBluetoothState]
+  -[WPDaemonServer serverQueue]
+  -[WPDaemonServer setPersistence:]
+  -[WPDaemonServer setObjectDiscoveryManager:]
+  -[WPDaemonServer registerClient:withMachName:withCompletion:]
+  -[WPDaemonServer dumpDaemonStateAsync]
+  -[WPDaemonServer enableRanging:]
+  -[WPDaemonServer persistence]
+  -[WPDaemonServer setServerQueue:]
+  -[WPDaemonServer isRangingEnabled]
+  -[WPDaemonServer .cxx_destruct]
+  -[WPDaemonServer managers]
+  -[WPDaemonServer clientForMachName:]
+  -[WPDaemonServer setListener:]
+  -[WPDaemonServer advertisingManager]
+  -[WPDaemonServer setCbState:]
+  -[WPDaemonServer notifyManagersOfStateChange]
+  -[WPDaemonServer wpdState]
+  -[WPDaemonServer clientsWithMach]
+  -[WPDaemonServer lockStatusChangedToken]
+  -[WPDaemonServer notifyClientsOfStateChange]
+  -[WPDaemonServer pipeManager]
+  -[WPDaemonServer SetupSignalHandler]
+  -[WPDaemonServer updateState]
+  -[WPDaemonServer init]
+  -[WPDaemonServer isTesting]
+  -[WPDaemonServer registerForSpringboardNotifications]
+  -[WPDaemonServer listener]
+  -[WPDaemonServer setQueue:]
+  -[WPDaemonServer getAllClients]
+  -[WPDaemonServer setAdvertisingManager:]
+  -[WPDaemonServer testClients]
+  -[WPDaemonServer setIsTesting:]
+  -[WPDaemonServer setCoreBluetoothState:]
+  -[WPDaemonServer generateStateDump]
+  -[WPDaemonServer scanManager]
+  -[WPDaemonServer enableTestMode]
+  -[WPDaemonServer setLockStatusChangedToken:]
+  -[WPDaemonServer setZoneManager:]
+  -[WPDaemonServer setTestClients:]
+  -[WPDaemonServer isClientTestMode:]
+  -[WPDaemonServer initClients]
+  -[WPDaemonServer lockStateUpdate]
+  -[WPDaemonServer setPrivilegedClients:]
+  -[WPDaemonServer setStatsManager:]
+  -[WPDaemonServer statsManager]
+  -[WPDaemonServer setFirstUnlockStatusChangedToken:]
+  -[WPDaemonServer setScreenStateToken:]
+  -[WPDaemonServer queue]
+  -[WPDaemonServer zoneManager]
+  -[WPDaemonServer spObjectDiscoveryClient]
+  -[WPDaemonServer dealloc]
+  -[WPDaemonServer enableTestMode:]
+  -[WPDaemonServer setClientsWithMach:]
+  -[WPDaemonServer listener:shouldAcceptNewConnection:]
+  -[WPDaemonServer systemLocked]
+  -[WPDaemonServer objectDiscoveryManager]
+  -[WPDaemonServer firstUnlockStatusChangedToken]
+  -[WPDaemonServer setScanManager:]
+  -[WPDaemonServer cbManagerDidUpdateState:]
+  -[WPDaemonServer dumpDaemonState]
+  -[WPDaemonServer setManagers:]
+
+
+WPDClient : NSObject <WPXPCDaemonProtocol, WPDClientProtocol>
+ @property  BOOL portTickled
+ @property  long long holdVouchers
+ @property  int processID
+ @property  NSString *processName
+ @property  NSString *clientTypeString
+ @property  NSString *machName
+ @property  NSUUID *clientUUID
+ @property  NSString *bundleID
+ @property  WPDScanManager *scanManager
+ @property  WPDAdvertisingManager *advertisingManager
+ @property  WPDZoneManager *zoneManager
+ @property  WPDPipeManager *pipeManager
+ @property  WPDObjectDiscoveryManager *objectDiscoveryManager
+ @property  NSMutableDictionary *connections
+ @property  NSUUID *identifier
+ @property  BOOL entitledForZones
+ @property  BOOL entitledForObjectDiscovery
+ @property  BOOL entitledForRanging
+ @property  BOOL pendingSent
+ @property  NSMutableDictionary *advertTimers
+ @property  NSMutableDictionary *advertTimerState
+ @property  NSMutableDictionary *scanTimers
+ @property  NSMutableDictionary *connectionTimer
+ @property  BOOL scanDenylisted
+ @property  BOOL scansOff
+ @property  NSMutableSet *lePipePeersSet
+ @property  NSMutableSet *endpointsSet
+ @property  BOOL isObjectDiscovery
+ @property  BOOL supportsObjectDiscovery
+ @property  BOOL supportsRanging
+ @property  NSObject<OS_voucher> *scanVoucher
+ @property  NSObject<OS_voucher> *advertVoucher
+ @property  <WPDClientDelegate> *delegate
+ @property  BOOL isTestModeClient
+ @property  BOOL canDisableScans
+ @property  NSXPCConnection *conn
+ @property  NSObject<OS_dispatch_queue> *messageQueue
+ @property  BOOL registered
+ @property  WPDaemonServer *server
+ @property  NSObject<OS_dispatch_queue> *serverQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WPDClient initialize]
+  +[WPDClient enableScanAdvertVouchers]
+
+  // instance methods
+  -[WPDClient registerForAnyScanResults:]
+  -[WPDClient anyDiscoveredDevice:]
+  -[WPDClient stoppedTrackingPeer:ofType:]
+  -[WPDClient unregisterEndpoint:]
+  -[WPDClient machName]
+  -[WPDClient receivedTestResponse:]
+  -[WPDClient setMachName:]
+  -[WPDClient advertisingStoppedOfType:withError:]
+  -[WPDClient startAdvertising:]
+  -[WPDClient disconnectedDeviceOverLEPipe:withError:]
+  -[WPDClient stopScanning:]
+  -[WPDClient resetConnection]
+  -[WPDClient lostPeer:ofType:]
+  -[WPDClient connectToPeer:withOptions:]
+  -[WPDClient enteredZone:manufacturerData:]
+  -[WPDClient advertisingFailedToStart:ofType:]
+  -[WPDClient bundleID]
+  -[WPDClient advertisingStartedOfType:]
+  -[WPDClient peerTrackingAvailable]
+  -[WPDClient sentData:toEndpoint:forPeripheral:withError:]
+  -[WPDClient foundPeer:ofType:]
+  -[WPDClient connectedDevice:withError:shouldDiscover:]
+  -[WPDClient setConnections:]
+  -[WPDClient sentData:forCharacteristic:inService:forPeripheral:withError:]
+  -[WPDClient startAdvertising_async:]
+  -[WPDClient advertisingPendingOfType:]
+  -[WPDClient discoverCharacteristicsAndServices:forPeripheral:]
+  -[WPDClient resumeCommunicationWithConnection:andProcessID:]
+  -[WPDClient peerTrackingFull]
+  -[WPDClient discoveredCharacteristicsAndServices:forPeripheral:]
+  -[WPDClient createdConnection:]
+  -[WPDClient setPipeManager:]
+  -[WPDClient isTestModeClient]
+  -[WPDClient supportsObjectDiscovery]
+  -[WPDClient sendDatatoLePipe:forPeer:]
+  -[WPDClient connectedDeviceOverLEPipe:]
+  -[WPDClient stopTrackingAllZones]
+  -[WPDClient bandwidthStateUpdated:]
+  -[WPDClient discoveredDevice:]
+  -[WPDClient setLePipePeersSet:]
+  -[WPDClient receivedData:fromEndpoint:forPeripheral:]
+  -[WPDClient updatedNotificationState:forCharacteristic:inService:withPeripheral:]
+  -[WPDClient setScanVoucher:]
+  -[WPDClient disconnectFromPeer:]
+  -[WPDClient setEndpointsSet:]
+  -[WPDClient disableScanning]
+  -[WPDClient getPowerLogStats:]
+  -[WPDClient checkAllowDuplicates:]
+  -[WPDClient central:subscribed:toCharacteristic:inService:]
+  -[WPDClient serverQueue]
+  -[WPDClient setObjectDiscoveryManager:]
+  -[WPDClient startTrackingZone:]
+  -[WPDClient setPendingSent:]
+  -[WPDClient sendTestRequest:]
+  -[WPDClient sendDataToCharacteristic:inService:forPeer:]
+  -[WPDClient conn]
+  -[WPDClient scanVoucher]
+  -[WPDClient scanTimers]
+  -[WPDClient setAdvertTimers:]
+  -[WPDClient cancelConnectionTimer:]
+  -[WPDClient .cxx_destruct]
+  -[WPDClient setConnectionTimer:]
+  -[WPDClient registered]
+  -[WPDClient setupConnection]
+  -[WPDClient advertisingManager]
+  -[WPDClient setScansOff:]
+  -[WPDClient setConn:]
+  -[WPDClient setRegistered:]
+  -[WPDClient supportsRanging]
+  -[WPDClient setIsTestModeClient:]
+  -[WPDClient setCanDisableScans:]
+  -[WPDClient startTrackingPeerWithRequest:]
+  -[WPDClient endTestMode]
+  -[WPDClient pipeManager]
+  -[WPDClient setClientUUID:]
+  -[WPDClient stopAdvertising_async:]
+  -[WPDClient processName]
+  -[WPDClient advertVoucher]
+  -[WPDClient exitedZone:]
+  -[WPDClient entitledForRanging]
+  -[WPDClient setProcessID:]
+  -[WPDClient setAdvertVoucher:]
+  -[WPDClient connectionForUUID:]
+  -[WPDClient setIsObjectDiscovery:]
+  -[WPDClient holdVouchers]
+  -[WPDClient connections]
+  -[WPDClient destroy]
+  -[WPDClient pendingSent]
+  -[WPDClient stopScanning_async:]
+  -[WPDClient setAdvertisingManager:]
+  -[WPDClient startScanning:]
+  -[WPDClient setPortTickled:]
+  -[WPDClient addCharacteristic:forService:]
+  -[WPDClient enableRanging:reply:]
+  -[WPDClient processID]
+  -[WPDClient tickleMachPort]
+  -[WPDClient notifyClientStateChange:Restricted:]
+  -[WPDClient advertTimers]
+  -[WPDClient scanDenylisted]
+  -[WPDClient identifier]
+  -[WPDClient setEntitledForObjectDiscovery:]
+  -[WPDClient lePipePeersSet]
+  -[WPDClient generateStateDump]
+  -[WPDClient messageQueue]
+  -[WPDClient scanManager]
+  -[WPDClient listenToBandwidthNotifications]
+  -[WPDClient enableTestMode]
+  -[WPDClient stopTrackingPeerWithRequest:]
+  -[WPDClient disconnectedPeer:error:]
+  -[WPDClient clientUUID]
+  -[WPDClient stopAdvertising:]
+  -[WPDClient scansOff]
+  -[WPDClient setScanDenylisted:]
+  -[WPDClient rangingEnabled:withError:]
+  -[WPDClient setZoneManager:]
+  -[WPDClient setBundleID:]
+  -[WPDClient setAdvertTimerState:]
+  -[WPDClient xpcConnectionForClient]
+  -[WPDClient sendRegisteredWithDaemonAndContinuingSession:]
+  -[WPDClient setClientTypeString:]
+  -[WPDClient server]
+  -[WPDClient isObjectDiscovery]
+  -[WPDClient registerWithDaemon:forProcess:machName:holdVouchers:]
+  -[WPDClient setEntitledForRanging:]
+  -[WPDClient stopTrackingZones:]
+  -[WPDClient setProcessName:]
+  -[WPDClient connectionTimer]
+  -[WPDClient isRangingEnabledReply:]
+  -[WPDClient delegate]
+  -[WPDClient canDisableScans]
+  -[WPDClient shouldSubscribe:toPeer:withCharacteristic:inService:]
+  -[WPDClient setIdentifier:]
+  -[WPDClient zoneManager]
+  -[WPDClient endpointsSet]
+  -[WPDClient setMessageQueue:]
+  -[WPDClient queueBlock:]
+  -[WPDClient dealloc]
+  -[WPDClient setHoldVouchers:]
+  -[WPDClient clientTypeString]
+  -[WPDClient startScanning_async:]
+  -[WPDClient receivedData:fromCharacteristic:inService:forPeripheral:]
+  -[WPDClient portTickled]
+  -[WPDClient entitledForObjectDiscovery]
+  -[WPDClient objectDiscoveryManager]
+  -[WPDClient checkEntitlements]
+  -[WPDClient readyForDataTransfer]
+  -[WPDClient registerEndpoint:requireAck:requireEncryption:]
+  -[WPDClient getManager]
+  -[WPDClient getAllTrackedZones]
+  -[WPDClient setScanManager:]
+  -[WPDClient setScanTimers:]
+  -[WPDClient entitledForZones]
+  -[WPDClient discoveredDevices:]
+  -[WPDClient initWithXPCConnection:server:]
+  -[WPDClient destroy_async]
+  -[WPDClient dumpDaemonState]
+  -[WPDClient stopScans]
+  -[WPDClient setEntitledForZones:]
+  -[WPDClient advertTimerState]
+
+
+WPDXPCInterfaces : NSObject
+  // class methods
+  +[WPDXPCInterfaces serverInterface]
+  +[WPDXPCInterfaces clientInterface]
+
+
+WPDAdvertisingData : NSObject
+ @property  NSMutableData *internalData
+ @property  NSMutableSet *types
+ @property  long long advertRate
+ @property  NSData *data
+ @property  BOOL isRanging
+ @property  BOOL assertPower
+
+  // instance methods
+  -[WPDAdvertisingData types]
+  -[WPDAdvertisingData advertRate]
+  -[WPDAdvertisingData .cxx_destruct]
+  -[WPDAdvertisingData setTypes:]
+  -[WPDAdvertisingData isRanging]
+  -[WPDAdvertisingData internalData]
+  -[WPDAdvertisingData addAdvertisingRequest:]
+  -[WPDAdvertisingData init]
+  -[WPDAdvertisingData getData]
+  -[WPDAdvertisingData isEqualToData:]
+  -[WPDAdvertisingData setIsRanging:]
+  -[WPDAdvertisingData isValidWithAdditionalRequest:]
+  -[WPDAdvertisingData setAdvertRate:]
+  -[WPDAdvertisingData assertPower]
+  -[WPDAdvertisingData setAssertPower:]
+  -[WPDAdvertisingData setInternalData:]
+
+
+WPAdvertisingRequestsQueue : NSObject
+ @property  NSMutableArray *queue
+ @property  NSMutableSet *clientTypes
+
+  // instance methods
+  -[WPAdvertisingRequestsQueue remove:]
+  -[WPAdvertisingRequestsQueue add:]
+  -[WPAdvertisingRequestsQueue .cxx_destruct]
+  -[WPAdvertisingRequestsQueue count]
+  -[WPAdvertisingRequestsQueue init]
+  -[WPAdvertisingRequestsQueue setQueue:]
+  -[WPAdvertisingRequestsQueue removeRequestsOfClientType:]
+  -[WPAdvertisingRequestsQueue setClientTypes:]
+  -[WPAdvertisingRequestsQueue clientTypes]
+  -[WPAdvertisingRequestsQueue isAdvertisingForClientType:]
+  -[WPAdvertisingRequestsQueue queue]
+  -[WPAdvertisingRequestsQueue removeAll]
+  -[WPAdvertisingRequestsQueue allRequests]
+
+
+WPDObjectDiscoveryManager : WPDManager <CBPeripheralManagerDelegate, CBCentralManagerDelegate, WPDObjectDiscoveryAdvertiser, WPDObjectDiscoveryScanner>
+ @property  NSObject<OS_dispatch_queue> *serverQueue
+ @property  CBPeripheralManager *peripheralManager
+ @property  BOOL advertising
+ @property  WPAdvertisingRequest *advertRequest
+ @property  NSUUID *advertClientUUID
+ @property  NSDictionary *advertOptions
+ @property  unsigned long advertHash
+ @property  BOOL advAllowlisted
+ @property  BOOL scanning
+ @property  CBCentralManager *centralManager
+ @property  NSMutableDictionary *scanRequests
+ @property  NSMutableSet *currentScanners
+ @property  NSDictionary *scanOptions
+ @property  NSObject<OS_dispatch_source> *scanStopTimer
+ @property  int advBuffersToRead
+ @property  NSArray *nearbyTokensRequest
+ @property  NSArray *matchActionRules
+ @property  BOOL scanAllowlisted
+ @property  BOOL scanningDisabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WPDObjectDiscoveryManager peripheralManager]
+  -[WPDObjectDiscoveryManager setScanOptions:]
+  -[WPDObjectDiscoveryManager addScanRequest:forClient:]
+  -[WPDObjectDiscoveryManager currentScanners]
+  -[WPDObjectDiscoveryManager advertising]
+  -[WPDObjectDiscoveryManager updateAdvertisingOptionsWithError:]
+  -[WPDObjectDiscoveryManager setAdvertising:]
+  -[WPDObjectDiscoveryManager startAdvertiser]
+  -[WPDObjectDiscoveryManager setAdvertOptions:]
+  -[WPDObjectDiscoveryManager getScanRequestsForClient:]
+  -[WPDObjectDiscoveryManager matchActionRules]
+  -[WPDObjectDiscoveryManager setScanningDisabled:]
+  -[WPDObjectDiscoveryManager cleanup]
+  -[WPDObjectDiscoveryManager setScanning:]
+  -[WPDObjectDiscoveryManager setCurrentScanners:]
+  -[WPDObjectDiscoveryManager scanOptions]
+  -[WPDObjectDiscoveryManager peripheralManagerDidStartAdvertising:error:]
+  -[WPDObjectDiscoveryManager centralManager:didDiscoverMultiplePeripherals:]
+  -[WPDObjectDiscoveryManager setAdvertRequest:]
+  -[WPDObjectDiscoveryManager setScanRequests:]
+  -[WPDObjectDiscoveryManager setCentralManager:]
+  -[WPDObjectDiscoveryManager scanning]
+  -[WPDObjectDiscoveryManager removeScanRequestsForClient:]
+  -[WPDObjectDiscoveryManager serverQueue]
+  -[WPDObjectDiscoveryManager generateStateDumpStrings]
+  -[WPDObjectDiscoveryManager setPeripheralManager:]
+  -[WPDObjectDiscoveryManager centralManager:didFailToScanWithError:]
+  -[WPDObjectDiscoveryManager setMatchActionRules:]
+  -[WPDObjectDiscoveryManager resetAdvertiser]
+  -[WPDObjectDiscoveryManager scanningDisabled]
+  -[WPDObjectDiscoveryManager advertOptionsChanged:]
+  -[WPDObjectDiscoveryManager stopAdvertiser]
+  -[WPDObjectDiscoveryManager .cxx_destruct]
+  -[WPDObjectDiscoveryManager setNearbyTokensRequest:]
+  -[WPDObjectDiscoveryManager updateScanRules]
+  -[WPDObjectDiscoveryManager forceReadADVBuffer:]
+  -[WPDObjectDiscoveryManager updateNearbyTokens:]
+  -[WPDObjectDiscoveryManager setScanStopTimer:]
+  -[WPDObjectDiscoveryManager scanRequests]
+  -[WPDObjectDiscoveryManager update]
+  -[WPDObjectDiscoveryManager advertOptions]
+  -[WPDObjectDiscoveryManager nearbyTokensRequest]
+  -[WPDObjectDiscoveryManager centralManager]
+  -[WPDObjectDiscoveryManager advertRequest]
+  -[WPDObjectDiscoveryManager removeAdvertisingRequest:forClient:]
+  -[WPDObjectDiscoveryManager advertClientUUID]
+  -[WPDObjectDiscoveryManager setAdvBuffersToRead:]
+  -[WPDObjectDiscoveryManager updateAdvertiser]
+  -[WPDObjectDiscoveryManager rulesFromTokens:]
+  -[WPDObjectDiscoveryManager updateReports:Peripheral:AdvertisementData:RSSI:]
+  -[WPDObjectDiscoveryManager activateADVBuffer]
+  -[WPDObjectDiscoveryManager deactivateADVBuffer]
+  -[WPDObjectDiscoveryManager scanStopTimer]
+  -[WPDObjectDiscoveryManager addAdvertisingRequest:forClient:]
+  -[WPDObjectDiscoveryManager updateScanner]
+  -[WPDObjectDiscoveryManager setAdvertClientUUID:]
+  -[WPDObjectDiscoveryManager initWithServer:]
+  -[WPDObjectDiscoveryManager changedScanOptions:Clients:]
+  -[WPDObjectDiscoveryManager advertHash]
+  -[WPDObjectDiscoveryManager setAdvertHash:]
+  -[WPDObjectDiscoveryManager removeAdvertisingRequestsForClient:]
+  -[WPDObjectDiscoveryManager cancelScanStopTimer]
+  -[WPDObjectDiscoveryManager updateClientsWithReports:]
+  -[WPDObjectDiscoveryManager peripheralManager:didStopAdvertisingWithError:]
+  -[WPDObjectDiscoveryManager advAllowlisted]
+  -[WPDObjectDiscoveryManager scanAllowlisted]
+  -[WPDObjectDiscoveryManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]
+  -[WPDObjectDiscoveryManager addScanStopTimer]
+  -[WPDObjectDiscoveryManager advBuffersToRead]
+  -[WPDObjectDiscoveryManager updateReports:fromReport:]
+
+
+WPDZoneManager : WPDManager <CBCentralManagerDelegate>
+ @property  NSMutableDictionary *trackRequests
+ @property  NSMutableDictionary *trackedZones
+ @property  CBCentralManager *centralManager
+ @property  NSObject<OS_dispatch_source> *exitTimer
+ @property  NSNumber *zoneExitTimeout
+ @property  NSDate *lastTimeScannerStarted
+ @property  BOOL scanAllowlisted
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WPDZoneManager trackRequests]
+  -[WPDZoneManager cleanup]
+  -[WPDZoneManager lastTimeScannerStarted]
+  -[WPDZoneManager setCentralManager:]
+  -[WPDZoneManager generateStateDumpStrings]
+  -[WPDZoneManager setTrackRequests:]
+  -[WPDZoneManager getAllZones]
+  -[WPDZoneManager .cxx_destruct]
+  -[WPDZoneManager trackedZones]
+  -[WPDZoneManager update]
+  -[WPDZoneManager addZoneTrackingRequest:forClient:]
+  -[WPDZoneManager startExitTimer]
+  -[WPDZoneManager centralManager]
+  -[WPDZoneManager centralManager:didLoseZone:mask:]
+  -[WPDZoneManager unregisterAllZones]
+  -[WPDZoneManager addSingleZoneTrackingRequest:forClient:]
+  -[WPDZoneManager exitTimerFired]
+  -[WPDZoneManager setZoneExitTimeout:]
+  -[WPDZoneManager setExitTimer:]
+  -[WPDZoneManager cancelExitTimer]
+  -[WPDZoneManager setLastTimeScannerStarted:]
+  -[WPDZoneManager unregisterZonesForClient:]
+  -[WPDZoneManager printTrackedZones]
+  -[WPDZoneManager updateScanner]
+  -[WPDZoneManager unregisterZonesForClient:updateScanner:]
+  -[WPDZoneManager initWithServer:]
+  -[WPDZoneManager setTrackedZones:]
+  -[WPDZoneManager scanAllowlisted]
+  -[WPDZoneManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]
+  -[WPDZoneManager zoneExitTimeout]
+  -[WPDZoneManager exitTimer]
+  -[WPDZoneManager unregisterZones:forClient:]
+
+
+WPDObjectDiscoveryClient : WPDClient
+ @property  BOOL pendingSent
+ @property  WPDObjectDiscoveryManager *objectDiscoveryManager
+ @property  WPDObjectDiscoveryData *keyAddressAndPayload
+ @property  unsigned long keyRequestID
+ @property  unsigned long tokenRequestID
+ @property  WPDSearchPartyAgent *spAgent
+ @property  NSNumber *testBeaconingInterval
+
+  // instance methods
+  -[WPDObjectDiscoveryClient startAdvertising:]
+  -[WPDObjectDiscoveryClient spAgent]
+  -[WPDObjectDiscoveryClient setSpAgent:]
+  -[WPDObjectDiscoveryClient completeSPNearbyTockensWithSuccess:]
+  -[WPDObjectDiscoveryClient setObjectDiscoveryManager:]
+  -[WPDObjectDiscoveryClient setPendingSent:]
+  -[WPDObjectDiscoveryClient sendTestRequest:]
+  -[WPDObjectDiscoveryClient keyAddressAndPayload]
+  -[WPDObjectDiscoveryClient setTestBeaconingInterval:]
+  -[WPDObjectDiscoveryClient setTokenRequestID:]
+  -[WPDObjectDiscoveryClient .cxx_destruct]
+  -[WPDObjectDiscoveryClient setKeyRequestID:]
+  -[WPDObjectDiscoveryClient endTestMode]
+  -[WPDObjectDiscoveryClient destroy]
+  -[WPDObjectDiscoveryClient pendingSent]
+  -[WPDObjectDiscoveryClient updateSPBeaconing]
+  -[WPDObjectDiscoveryClient notifyClientStateChange:Restricted:]
+  -[WPDObjectDiscoveryClient stopSPBeaconing]
+  -[WPDObjectDiscoveryClient generateStateDump]
+  -[WPDObjectDiscoveryClient stopAdvertising:]
+  -[WPDObjectDiscoveryClient completeSPBeaconingWithSuccess:]
+  -[WPDObjectDiscoveryClient sendRegisteredWithDaemonAndContinuingSession:]
+  -[WPDObjectDiscoveryClient registerWithDaemon:forProcess:machName:holdVouchers:]
+  -[WPDObjectDiscoveryClient updateSPNearbyTokens]
+  -[WPDObjectDiscoveryClient notifyClientObjectDiscoveryStateChange:]
+  -[WPDObjectDiscoveryClient startSPBeaconing]
+  -[WPDObjectDiscoveryClient dealloc]
+  -[WPDObjectDiscoveryClient objectDiscoveryManager]
+  -[WPDObjectDiscoveryClient testBeaconingInterval]
+  -[WPDObjectDiscoveryClient keyRequestID]
+  -[WPDObjectDiscoveryClient initWithXPCConnection:server:]
+  -[WPDObjectDiscoveryClient tokenRequestID]
+
+
+WPDScanManager : WPDManager <CBCentralManagerDelegate>
+ @property  NSMutableDictionary *scanRequests
+ @property  NSMutableDictionary *peerRequests
+ @property  NSMutableDictionary *connectionsInProgress
+ @property  NSMutableSet *peripheralConnections
+ @property  NSIndexSet *currentScanners
+ @property  CBCentralManager *centralManager
+ @property  CBController *cbDiscoveryAsserter
+ @property  BOOL scanning
+ @property  NSMutableSet *spyScanClients
+ @property  NSDictionary *scanOptions
+ @property  NSSet *scanRequestHashes
+ @property  NSSet *scanRuleHashes
+ @property  NSObject<OS_dispatch_queue> *serverQueue
+ @property  BOOL isRanging
+ @property  NSIndexSet *rangingTypes
+ @property  BOOL scanningDisabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WPDScanManager zonesAvailableForType:]
+
+  // instance methods
+  -[WPDScanManager setScanOptions:]
+  -[WPDScanManager addScanRequest:forClient:]
+  -[WPDScanManager addSpyScanClient:]
+  -[WPDScanManager currentScanners]
+  -[WPDScanManager getScanRequestsForClient:]
+  -[WPDScanManager centralManager:didFindPeripheral:forType:]
+  -[WPDScanManager setScanningDisabled:]
+  -[WPDScanManager centralManager:didFailToConnectPeripheral:error:]
+  -[WPDScanManager cleanup]
+  -[WPDScanManager setScanning:]
+  -[WPDScanManager setCurrentScanners:]
+  -[WPDScanManager scanOptions]
+  -[WPDScanManager centralManager:didDiscoverMultiplePeripherals:]
+  -[WPDScanManager scanRequestHashes]
+  -[WPDScanManager rangingTypes]
+  -[WPDScanManager setScanRequests:]
+  -[WPDScanManager spyScanClients]
+  -[WPDScanManager assertCBDiscoveryScan:]
+  -[WPDScanManager setCentralManager:]
+  -[WPDScanManager scanning]
+  -[WPDScanManager removeScanRequestsForClient:]
+  -[WPDScanManager centralManager:didDisconnectPeripheral:error:]
+  -[WPDScanManager serverQueue]
+  -[WPDScanManager generateStateDumpStrings]
+  -[WPDScanManager heySiriScanActive:]
+  -[WPDScanManager connectToPeripheral:fromClient:withOptions:]
+  -[WPDScanManager scanRuleHashes]
+  -[WPDScanManager setSpyScanClients:]
+  -[WPDScanManager enableRanging:]
+  -[WPDScanManager removeAllPeerTrackingRequestsForClient:]
+  -[WPDScanManager centralManager:didFailToScanWithError:]
+  -[WPDScanManager setServerQueue:]
+  -[WPDScanManager scanningDisabled]
+  -[WPDScanManager scanOptionsChanged:ForRequests:]
+  -[WPDScanManager .cxx_destruct]
+  -[WPDScanManager peerRequests]
+  -[WPDScanManager addPeerTrackingRequest:forClient:]
+  -[WPDScanManager updateScanRules]
+  -[WPDScanManager isRanging]
+  -[WPDScanManager setScanRuleHashes:]
+  -[WPDScanManager scanRequests]
+  -[WPDScanManager centralManager:didConnectPeripheral:]
+  -[WPDScanManager update]
+  -[WPDScanManager centralManagerDidUpdateState:]
+  -[WPDScanManager removePeripheralConnectionsForClient:]
+  -[WPDScanManager peripheralConnections]
+  -[WPDScanManager centralManager]
+  -[WPDScanManager clearExistingConnections]
+  -[WPDScanManager scanRequestHashesFromScanRequests:]
+  -[WPDScanManager setConnectionsInProgress:]
+  -[WPDScanManager setIsRanging:]
+  -[WPDScanManager reconcileScanRule:withRule:]
+  -[WPDScanManager logScanTypes:method:window:interval:]
+  -[WPDScanManager removeConflictingRequest:forClient:]
+  -[WPDScanManager removeScanRequest:forClient:]
+  -[WPDScanManager retrievePeripheralWithUUID:]
+  -[WPDScanManager ruleHashesFromScanOptions:]
+  -[WPDScanManager disconnectFromCentral:forClient:]
+  -[WPDScanManager updateScanner]
+  -[WPDScanManager removePeerTrackingRequest:checkZonesAvailable:forClient:]
+  -[WPDScanManager duplicateRulesGuard:forRule:]
+  -[WPDScanManager initWithServer:]
+  -[WPDScanManager setScanRequestHashes:]
+  -[WPDScanManager shallStop]
+  -[WPDScanManager connectionsInProgress]
+  -[WPDScanManager logScanRequests:method:window:interval:]
+  -[WPDScanManager stopTrackingPeripheral:ofType:]
+  -[WPDScanManager cbDiscoveryAsserter]
+  -[WPDScanManager setPeerRequests:]
+  -[WPDScanManager removeSpyScanClient:]
+  -[WPDScanManager disconnectFromPeripheral:withSubscribedCharacteristics:forClient:]
+  -[WPDScanManager isScannerTestMode]
+  -[WPDScanManager setCbDiscoveryAsserter:]
+  -[WPDScanManager removePeripheralConnection:forClient:]
+  -[WPDScanManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]
+  -[WPDScanManager setPeripheralConnections:]
+  -[WPDScanManager centralManager:didLosePeripheral:forType:]
+  -[WPDScanManager startTrackingPeripheral:ofType:]
+
+
+WPDConnection : NSObject <CBPeripheralDelegate>
+ @property  CBPeripheral *peripheral
+ @property  CBCentral *central
+ @property  NSDictionary *charsAndServicesToDiscover
+ @property  WPCharacteristic *characteristicToSend
+ @property  NSString *characteristicService
+ @property  unsigned long dataLeftToSend
+ @property  CBCharacteristic *centralCharacteristic
+ @property  CBService *centralService
+ @property  CBPeripheralManager *sendDataManager
+ @property  BOOL connectablePacket
+ @property  NSObject<OS_voucher> *voucher
+ @property  WPDClient *client
+ @property  NSMutableSet *subscribedCharacteristics
+ @property  long long connectionType
+ @property  BOOL didConnectSent
+ @property  long long recentRole
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WPDConnection connectionType]
+  -[WPDConnection resetData]
+  -[WPDConnection discoverCharacteristicsAndServices:forPeripheral:]
+  -[WPDConnection peripheral]
+  -[WPDConnection setConnectionType:]
+  -[WPDConnection sendDataToCharacteristic:inService:forPeer:]
+  -[WPDConnection .cxx_destruct]
+  -[WPDConnection setClient:]
+  -[WPDConnection init]
+  -[WPDConnection central]
+  -[WPDConnection voucher]
+  -[WPDConnection client]
+  -[WPDConnection dealloc]
+  -[WPDConnection readyForDataTransfer]
+  -[WPDConnection setPeripheral:]
+  -[WPDConnection peripheral:didModifyServices:]
+  -[WPDConnection peripheral:didDiscoverServices:]
+  -[WPDConnection peripheral:didDiscoverCharacteristicsForService:error:]
+  -[WPDConnection peripheral:didUpdateValueForCharacteristic:error:]
+  -[WPDConnection peripheral:didWriteValueForCharacteristic:error:]
+  -[WPDConnection peripheral:didUpdateNotificationStateForCharacteristic:error:]
+  -[WPDConnection setVoucher:]
+  -[WPDConnection holdVoucher]
+  -[WPDConnection initWithPeripheral:]
+  -[WPDConnection updateWithPeripheral:]
+  -[WPDConnection setCentral:]
+  -[WPDConnection getPeripheral]
+  -[WPDConnection didConnectSent]
+  -[WPDConnection setDidConnectSent:]
+  -[WPDConnection subscribedCharacteristics]
+  -[WPDConnection fetchConnectionType]
+  -[WPDConnection getPeripheralUUID]
+  -[WPDConnection recentRole]
+  -[WPDConnection subscribe:toPeer:withCharacteristic:inService:]
+  -[WPDConnection updateWithCentral:characteristic:]
+  -[WPDConnection setRecentRole:]
+  -[WPDConnection setCharsAndServicesToDiscover:]
+  -[WPDConnection setSubscribedCharacteristics:]
+  -[WPDConnection setCentralCharacteristic:]
+  -[WPDConnection setCentralService:]
+  -[WPDConnection charsAndServicesToDiscover]
+  -[WPDConnection getCharacteristicWithUUID:inService:forPeripheral:]
+  -[WPDConnection characteristicToSend]
+  -[WPDConnection setDataLeftToSend:]
+  -[WPDConnection setCharacteristicToSend:]
+  -[WPDConnection setCharacteristicService:]
+  -[WPDConnection sendDataToCentral]
+  -[WPDConnection sendDataToPeripheral]
+  -[WPDConnection dataLeftToSend]
+  -[WPDConnection centralCharacteristic]
+  -[WPDConnection centralService]
+  -[WPDConnection characteristicService]
+  -[WPDConnection initWithCentral:characteristic:]
+  -[WPDConnection getCentral]
+  -[WPDConnection sendDataManager]
+  -[WPDConnection setSendDataManager:]
+  -[WPDConnection connectablePacket]
+  -[WPDConnection setConnectablePacket:]
+
+
+WPDAdvertisingManager : WPDManager <CBPeripheralManagerDelegate>
+ @property  WPAdvertisingRequestsQueue *advertisingRequests
+ @property  NSMutableDictionary *clientAdvertisingRequests
+ @property  NSMutableIndexSet *currentAdvertisers
+ @property  NSMutableSet *clientsToNotifyOnAddressChange
+ @property  NSMutableDictionary *publishedServices
+ @property  CBPeripheralManager *connectablePeripheralManager
+ @property  CBPeripheralManager *nonConnectablePeripheralManager
+ @property  WPDAdvertisingData *currentConnectableAdvertisingData
+ @property  WPDAdvertisingData *currentNonConnectableAdvertisingData
+ @property  BOOL allowCompoundAdvertisements
+ @property  NSMutableDictionary *preallocatedServices
+ @property  BOOL isRanging
+ @property  NSIndexSet *rangingTypes
+ @property  NSMutableSet *rangingClients
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WPDAdvertisingManager setPreallocatedServices:]
+  -[WPDAdvertisingManager setPublishedServices:]
+  -[WPDAdvertisingManager peripheralManagerDidStartAdvertising:error:]
+  -[WPDAdvertisingManager rangingTypes]
+  -[WPDAdvertisingManager setCurrentNonConnectableAdvertisingData:]
+  -[WPDAdvertisingManager allowCompoundAdvertisements]
+  -[WPDAdvertisingManager generateStateDumpStrings]
+  -[WPDAdvertisingManager setClientsToNotifyOnAddressChange:]
+  -[WPDAdvertisingManager removeServiceForClient:]
+  -[WPDAdvertisingManager publishedServices]
+  -[WPDAdvertisingManager .cxx_destruct]
+  -[WPDAdvertisingManager currentAdvertisers]
+  -[WPDAdvertisingManager setCurrentConnectableAdvertisingData:]
+  -[WPDAdvertisingManager isRanging]
+  -[WPDAdvertisingManager addCharacteristic:forService:forClient:]
+  -[WPDAdvertisingManager enableRanging:forClient:]
+  -[WPDAdvertisingManager update]
+  -[WPDAdvertisingManager setClientAdvertisingRequests:]
+  -[WPDAdvertisingManager rangingClients]
+  -[WPDAdvertisingManager peripheralManager:didAddService:error:]
+  -[WPDAdvertisingManager isAdvertiserTestMode]
+  -[WPDAdvertisingManager setConnectablePeripheralManager:]
+  -[WPDAdvertisingManager clientsToNotifyOnAddressChange]
+  -[WPDAdvertisingManager peripheralManager:central:didUnsubscribeFromCharacteristic:]
+  -[WPDAdvertisingManager removeAdvertisingRequest:forDaemon:]
+  -[WPDAdvertisingManager advertisingRequests]
+  -[WPDAdvertisingManager NSUUIDfromCBUUID:]
+  -[WPDAdvertisingManager connectablePeripheralManager]
+  -[WPDAdvertisingManager informClientsAdvertisingPending:]
+  -[WPDAdvertisingManager removeAdvertisingRequest:forClient:]
+  -[WPDAdvertisingManager addAdvertisingRequest:forDaemon:]
+  -[WPDAdvertisingManager requestFromAdvertisingDataConnectable:AddressChangeNotificationNeeded:]
+  -[WPDAdvertisingManager peripheralManagerIsReadyToUpdateSubscribers:]
+  -[WPDAdvertisingManager peripheralManager:didReceiveReadRequest:]
+  -[WPDAdvertisingManager peripheralManager:didReceiveWriteRequests:]
+  -[WPDAdvertisingManager updateAdvertiser]
+  -[WPDAdvertisingManager clientForAdvRequest:]
+  -[WPDAdvertisingManager removeAdvertisingRequest:forClient:shouldUpdate:]
+  -[WPDAdvertisingManager peripheralManager:central:didSubscribeToCharacteristic:]
+  -[WPDAdvertisingManager getCurrentAdvertisers]
+  -[WPDAdvertisingManager setCurrentAdvertisers:]
+  -[WPDAdvertisingManager setNonConnectablePeripheralManager:]
+  -[WPDAdvertisingManager addCharacteristic:Properties:Permissions:Service:Name:]
+  -[WPDAdvertisingManager addAdvertisingRequest:forClient:]
+  -[WPDAdvertisingManager clientAdvertisingRequests]
+  -[WPDAdvertisingManager nonConnectablePeripheralManager]
+  -[WPDAdvertisingManager preallocateServices]
+  -[WPDAdvertisingManager advertisingRules]
+  -[WPDAdvertisingManager initWithServer:]
+  -[WPDAdvertisingManager currentConnectableAdvertisingData]
+  -[WPDAdvertisingManager setRangingClients:]
+  -[WPDAdvertisingManager removeAdvertisingRequestsForClient:]
+  -[WPDAdvertisingManager peripheralManager:didStopAdvertisingWithError:]
+  -[WPDAdvertisingManager setAllowCompoundAdvertisements:]
+  -[WPDAdvertisingManager preallocatedServices]
+  -[WPDAdvertisingManager currentNonConnectableAdvertisingData]
+  -[WPDAdvertisingManager heySiriAdvertActive:]
+  -[WPDAdvertisingManager getManager]
+  -[WPDAdvertisingManager resetAdvertisingManager]
+  -[WPDAdvertisingManager getCharacteristicForClient:]
+  -[WPDAdvertisingManager platformSupportsMultipleAdvertising]
+  -[WPDAdvertisingManager setAdvertisingRequests:]
+  -[WPDAdvertisingManager getClientUUIDsForCharacteristic:]
+
+
+WPDStat : NSObject
+ @property  double currentTime
+ @property  NSDate *lastTime
+
+  // instance methods
+  -[WPDStat setLastTime:]
+  -[WPDStat stopTime]
+  -[WPDStat .cxx_destruct]
+  -[WPDStat setCurrentTime:]
+  -[WPDStat init]
+  -[WPDStat currentTime]
+  -[WPDStat startTime]
+  -[WPDStat lastTime]
+  -[WPDStat calculateTimeUpdate]
+
+
+WPDStatsManager : NSObject
+ @property  NSString *name
+ @property  NSDictionary *scanArray
+ @property  NSMutableArray *regularScanArray
+ @property  NSMutableArray *aggressiveScanArray
+ @property  NSMutableArray *advertisingArray
+ @property  ^Q resetScanArray
+ @property  ^Q resetAdvertisingArray
+ @property  NSObject<OS_dispatch_queue> *reportQueue
+ @property  double nextPushTime
+ @property  BOOL PLLogAvailable
+ @property  WPDaemonServer *server
+
+  // class methods
+  +[WPDStatsManager getStringFromActivity:]
+
+  // instance methods
+  -[WPDStatsManager name]
+  -[WPDStatsManager resetActivityAsync:forType:]
+  -[WPDStatsManager stopActivity:]
+  -[WPDStatsManager generateStateDumpStrings]
+  -[WPDStatsManager resetScanArray]
+  -[WPDStatsManager .cxx_destruct]
+  -[WPDStatsManager scanArray]
+  -[WPDStatsManager setResetScanArray:]
+  -[WPDStatsManager stopActivityAsync:]
+  -[WPDStatsManager resetAdvertisingArray]
+  -[WPDStatsManager advertisingArray]
+  -[WPDStatsManager setRegularScanArray:]
+  -[WPDStatsManager stopActivityAsync:forType:]
+  -[WPDStatsManager setReportQueue:]
+  -[WPDStatsManager reportQueue]
+  -[WPDStatsManager generateStateDump]
+  -[WPDStatsManager resetActivity:forType:]
+  -[WPDStatsManager regularScanArray]
+  -[WPDStatsManager startActivity:forType:scanRate:]
+  -[WPDStatsManager startActivity:forType:]
+  -[WPDStatsManager server]
+  -[WPDStatsManager setNextPushTime:]
+  -[WPDStatsManager setAdvertisingArray:]
+  -[WPDStatsManager nextPushTime]
+  -[WPDStatsManager stopActivity:forType:]
+  -[WPDStatsManager setResetAdvertisingArray:]
+  -[WPDStatsManager aggressiveScanArray]
+  -[WPDStatsManager PLLogAvailable]
+  -[WPDStatsManager initWithServer:]
+  -[WPDStatsManager startActivityAsync:forType:]
+  -[WPDStatsManager dealloc]
+  -[WPDStatsManager setAggressiveScanArray:]
+  -[WPDStatsManager getStatsDictionary]
+  -[WPDStatsManager reportPLStats]
+  -[WPDStatsManager setScanArray:]
+  -[WPDStatsManager startActivityAsync:forType:scanRate:]
+
+
+PipeDataTransfer : NSObject
+ @property  NSUUID *peerUUID
+ @property  unsigned char txSeqNum
+ @property  unsigned short txTotalLenToSend
+ @property  NSData *txTotalDataToSend
+ @property  NSData *txData
+ @property  unsigned long txDataLeftToSend
+ @property  unsigned char rxSeqNum
+ @property  BOOL rxFirstPacket
+ @property  unsigned short rxTotalLenToReceive
+ @property  NSData *rxTotalDataToReceive
+ @property  NSData *rxData
+ @property  unsigned short rxCurrentDataSize
+ @property  NSMutableData *rxCurrentReceivedData
+ @property  NSMutableData *rxTotalDataWithLen
+ @property  BOOL rxWaitForMoreData
+
+  // instance methods
+  -[PipeDataTransfer .cxx_destruct]
+  -[PipeDataTransfer txData]
+  -[PipeDataTransfer rxData]
+  -[PipeDataTransfer peerUUID]
+  -[PipeDataTransfer setPeerUUID:]
+  -[PipeDataTransfer setTxSeqNum:]
+  -[PipeDataTransfer resetRxTransfer]
+  -[PipeDataTransfer resetTxTransfer]
+  -[PipeDataTransfer setTxTotalLenToSend:]
+  -[PipeDataTransfer setTxTotalDataToSend:]
+  -[PipeDataTransfer setTxData:]
+  -[PipeDataTransfer setTxDataLeftToSend:]
+  -[PipeDataTransfer setRxSeqNum:]
+  -[PipeDataTransfer setRxFirstPacket:]
+  -[PipeDataTransfer setRxTotalLenToReceive:]
+  -[PipeDataTransfer setRxTotalDataToReceive:]
+  -[PipeDataTransfer setRxData:]
+  -[PipeDataTransfer setRxCurrentDataSize:]
+  -[PipeDataTransfer setRxCurrentReceivedData:]
+  -[PipeDataTransfer setRxTotalDataWithLen:]
+  -[PipeDataTransfer setRxWaitForMoreData:]
+  -[PipeDataTransfer txSeqNum]
+  -[PipeDataTransfer initPipeDataTransferForPeer:]
+  -[PipeDataTransfer resetAllTransfer]
+  -[PipeDataTransfer generateSequenceNumber]
+  -[PipeDataTransfer txTotalLenToSend]
+  -[PipeDataTransfer txTotalDataToSend]
+  -[PipeDataTransfer txDataLeftToSend]
+  -[PipeDataTransfer rxSeqNum]
+  -[PipeDataTransfer rxFirstPacket]
+  -[PipeDataTransfer rxTotalLenToReceive]
+  -[PipeDataTransfer rxTotalDataToReceive]
+  -[PipeDataTransfer rxCurrentDataSize]
+  -[PipeDataTransfer rxCurrentReceivedData]
+  -[PipeDataTransfer rxTotalDataWithLen]
+  -[PipeDataTransfer rxWaitForMoreData]
+
+
+Endpoint : NSObject
+ @property  unsigned char requireAck
+ @property  BOOL requireEncyption
+ @property  NSUUID *clientUUID
+
+  // instance methods
+  -[Endpoint requireAck]
+  -[Endpoint .cxx_destruct]
+  -[Endpoint setClientUUID:]
+  -[Endpoint setRequireEncyption:]
+  -[Endpoint clientUUID]
+  -[Endpoint setRequireAck:]
+  -[Endpoint requireEncyption]
+
+
+PipeInfo : NSObject
+ @property  NSObject<OS_dispatch_source> *pipeReadSource
+ @property  CBScalablePipe *pipe
+ @property  NSObject<OS_voucher> *voucher
+ @property  BOOL newProtocol
+ @property  BOOL versionInfoSent
+ @property  BOOL versionInfoReceived
+ @property  BOOL pipeDidConnectSent
+ @property  unsigned char version
+ @property  unsigned int supportedFeatures
+ @property  PipeDataTransfer *pipeDataTransfer
+ @property  PipeDataTransfer *ackData
+ @property  unsigned char localVersion
+ @property  unsigned int localSupportedFeatures
+ @property  BOOL useConnectStatusPDU
+ @property  BOOL connectionInitiator
+
+  // instance methods
+  -[PipeInfo .cxx_destruct]
+  -[PipeInfo setVersion:]
+  -[PipeInfo setSupportedFeatures:]
+  -[PipeInfo supportedFeatures]
+  -[PipeInfo voucher]
+  -[PipeInfo pipe]
+  -[PipeInfo setLocalVersion:]
+  -[PipeInfo version]
+  -[PipeInfo dealloc]
+  -[PipeInfo setVoucher:]
+  -[PipeInfo localVersion]
+  -[PipeInfo setPipe:]
+  -[PipeInfo releaseQOSOverride]
+  -[PipeInfo applyQOSOverride]
+  -[PipeInfo pipeReadSource]
+  -[PipeInfo setPipeReadSource:]
+  -[PipeInfo newProtocol]
+  -[PipeInfo setNewProtocol:]
+  -[PipeInfo versionInfoSent]
+  -[PipeInfo setVersionInfoSent:]
+  -[PipeInfo versionInfoReceived]
+  -[PipeInfo setVersionInfoReceived:]
+  -[PipeInfo pipeDidConnectSent]
+  -[PipeInfo setPipeDidConnectSent:]
+  -[PipeInfo pipeDataTransfer]
+  -[PipeInfo setPipeDataTransfer:]
+  -[PipeInfo ackData]
+  -[PipeInfo setAckData:]
+  -[PipeInfo localSupportedFeatures]
+  -[PipeInfo setLocalSupportedFeatures:]
+  -[PipeInfo useConnectStatusPDU]
+  -[PipeInfo setUseConnectStatusPDU:]
+  -[PipeInfo connectionInitiator]
+  -[PipeInfo setConnectionInitiator:]
+
+
+WPDPipeManager : WPDManager <CBScalablePipeManagerDelegate, NSStreamDelegate>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  CBScalablePipeManager *pipeManager
+ @property  NSMutableDictionary *endpointsDict
+ @property  NSMutableDictionary *peerPipesDict
+ @property  NSMutableDictionary *connectionInitiators
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WPDPipeManager setPipeManager:]
+  -[WPDPipeManager generateStateDumpStrings]
+  -[WPDPipeManager .cxx_destruct]
+  -[WPDPipeManager update]
+  -[WPDPipeManager scalablePipeManager:didRegisterEndpoint:error:]
+  -[WPDPipeManager pipeManager]
+  -[WPDPipeManager setQueue:]
+  -[WPDPipeManager scalablePipeManager:pipeDidConnect:]
+  -[WPDPipeManager channelHasData:]
+  -[WPDPipeManager connectionInitiators]
+  -[WPDPipeManager endpointsDict]
+  -[WPDPipeManager handleIncomingPipeData:data:dataSize:]
+  -[WPDPipeManager peerPipesDict]
+  -[WPDPipeManager pipeManagerState:]
+  -[WPDPipeManager pipeInfo:forClient:]
+  -[WPDPipeManager receivedConnectStatus:data:dataSize:]
+  -[WPDPipeManager receivedError:data:dataSize:]
+  -[WPDPipeManager receivedVersionInfo:data:dataSize:]
+  -[WPDPipeManager scalablePipeManager:pipeDidDisconnect:error:]
+  -[WPDPipeManager sendAck:errorCode:]
+  -[WPDPipeManager sendData:forPeer:forClient:]
+  -[WPDPipeManager receivedAck:data:dataSize:]
+  -[WPDPipeManager sendErrorResponse:errorCode:]
+  -[WPDPipeManager sendRemainingData:wpClient:]
+  -[WPDPipeManager sendConnectStatus:connectStatus:]
+  -[WPDPipeManager initWithServer:]
+  -[WPDPipeManager invalidatePipeInfo:forPeer:]
+  -[WPDPipeManager queue]
+  -[WPDPipeManager sendVersionInfo:]
+  -[WPDPipeManager scalablePipeManager:didUnregisterEndpoint:]
+  -[WPDPipeManager setConnectionInitiator:forPeer:forClient:]
+  -[WPDPipeManager setConnectionInitiators:]
+  -[WPDPipeManager setEndpointsDict:]
+  -[WPDPipeManager setPeerPipesDict:]
+  -[WPDPipeManager setPipeClientConnectionStatus:forPeer:forClient:]
+  -[WPDPipeManager streamEvent:]
+  -[WPDPipeManager stream:handleEvent:]
+  -[WPDPipeManager receivedPayload:data:dataSize:]
+  -[WPDPipeManager registerEndpoint:requireAck:requireEncryption:forClient:]
+  -[WPDPipeManager sendChannelData:]
+  -[WPDPipeManager unregisterEndpoint:forClient:]
+  -[WPDPipeManager writeDataToPipe:pipe:]
+
+
+WPDObjectDiscoveryData : NSObject
+ @property  NSMutableData *address
+ @property  NSMutableData *payload
+ @property  long long length
+
+  // class methods
+  +[WPDObjectDiscoveryData applyMaskToAddress:]
+  +[WPDObjectDiscoveryData addressFromNearbyToken:]
+  +[WPDObjectDiscoveryData objectDiscoveryReportFromAdvReport:]
+  +[WPDObjectDiscoveryData addressesFromNearbyTokens:]
+
+  // instance methods
+  -[WPDObjectDiscoveryData setAddress:]
+  -[WPDObjectDiscoveryData setPayload:]
+  -[WPDObjectDiscoveryData payload]
+  -[WPDObjectDiscoveryData .cxx_destruct]
+  -[WPDObjectDiscoveryData address]
+  -[WPDObjectDiscoveryData init]
+  -[WPDObjectDiscoveryData length]
+  -[WPDObjectDiscoveryData setLength:]
+  -[WPDObjectDiscoveryData wipeout]
+  -[WPDObjectDiscoveryData updateWithKey:Status:Reserved:]
+
+
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBCentralManager 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBController 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBMutableCharacteristic 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBMutableService 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBPeripheralManager 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBScalablePipeManager 
+01 00 0700 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBUUID 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0240 /System/Library/PrivateFrameworks/SPOwner.framework/SPOwner: SPBeaconManager 
+01 00 0240 /System/Library/PrivateFrameworks/SPOwner.framework/SPOwner: SPBeaconingKey 

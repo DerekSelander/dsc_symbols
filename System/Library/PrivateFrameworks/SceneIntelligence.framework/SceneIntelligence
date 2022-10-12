@@ -1,0 +1,745 @@
+|| __DATA.__data _kSIMLSceneSegmentationInputTensorName
+|| __DATA.__data _kSIMLSceneSegmentationNetworkName
+|| __DATA.__data _kSIMLSceneSegmentationOutputExponentiatedLogitsTensorName
+|| __DATA.__data _kSIMLSceneSegmentationOutputLabelsTensorName
+|| __DATA.__data _kSIMLSceneSegmentationOutputNormalizationTensorName
+|| __DATA.__data _kSIMPeopleSegmentationInputTensorName
+|| __DATA.__data _kSIMPeopleSegmentationNetworkEspressoName
+|| __DATA.__data _kSIMPeopleSegmentationOutputTensorName
+|| __DATA.__data _kSIMPeopleSegmentationTemporalTensorName
+|| __DATA.__data _kSIMPersonDetectorInputTensorName
+|| __DATA.__data _kSIMPersonDetectorNetworkName
+|| __DATA.__data _kSIMPersonDetectorOutputBoundingBoxCenterTensorName
+|| __DATA.__data _kSIMPersonDetectorOutputBoundingBoxSizeTensorName
+|| __DATA.__data _kSIMPersonDetectorOutputHeatMapMaxPoolTensorName
+|| __DATA.__data _kSIMPersonDetectorOutputHeatMapTensorName
+|| __DATA.__data _kSIMSceneSegmentationInputTensorName
+|| __DATA.__data _kSIMSceneSegmentationLegacyInputTensorName
+|| __DATA.__data _kSIMSceneSegmentationLegacyNetworkName
+|| __DATA.__data _kSIMSceneSegmentationLegacyOutputLabelsTensorName
+|| __DATA.__data _kSIMSceneSegmentationLegacyOutputNormalsTensorName
+|| __DATA.__data _kSIMSceneSegmentationLegacyOutputProbabilitiesTensorName
+|| __DATA.__data _kSIMSceneSegmentationNetworkName
+|| __DATA.__data _kSIMSceneSegmentationOutputLabelsTensorName
+|| __DATA.__data _kSIMSceneSegmentationOutputNormalsTensorName
+|| __DATA.__data _kSIMSceneSegmentationOutputProbabilitiesTensorName
+|| __DATA.__data _kSIMSceneUnderstandingInputTensorName
+|| __DATA.__data _kSIMSceneUnderstandingNetworkName
+|| __DATA.__data _kSIMSceneUnderstandingOutputLabelsTensorName
+|| __DATA.__data _kSIMSceneUnderstandingOutputNormalsTensorName
+|| __DATA.__data _kSIMSceneUnderstandingOutputProbabilitiesTensorName
+|| __DATA.__objc_data _OBJC_CLASS_$_SIAbs
+|| __DATA.__objc_data _OBJC_CLASS_$_SIBaseNetwork
+|| __DATA.__objc_data _OBJC_CLASS_$_SIBinaryDilation
+|| __DATA.__objc_data _OBJC_CLASS_$_SIBinaryErosion
+|| __DATA.__objc_data _OBJC_CLASS_$_SIBoxBlurFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_SIDownsampler
+|| __DATA.__objc_data _OBJC_CLASS_$_SIIOSurfaceWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_SILaplacian
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMLSceneSegmentation
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMPersonDetector
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMPersonSegmentation
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMSceneSegmentation
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMSceneSegmentationLegacy
+|| __DATA.__objc_data _OBJC_CLASS_$_SIMSceneUnderstanding
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPeopleSegmentation
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPeopleSegmentationAlgorithm
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPeopleSegmentationEspresso
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPersonDetector
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPersonDetectorAlgorithm
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPersonDetectorBoundingBox
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPixelBufferWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_SIPixelwiseComparison
+|| __DATA.__objc_data _OBJC_CLASS_$_SIResourceFactory
+|| __DATA.__objc_data _OBJC_CLASS_$_SIScaler
+|| __DATA.__objc_data _OBJC_CLASS_$_SISceneSegmentation
+|| __DATA.__objc_data _OBJC_CLASS_$_SISceneSegmentationAlgorithm
+|| __DATA.__objc_data _OBJC_CLASS_$_SISceneUnderstanding
+|| __DATA.__objc_data _OBJC_CLASS_$_SISceneUnderstandingAlgorithm
+|| __DATA.__objc_data _OBJC_CLASS_$_SISceneUnderstandingResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SIUpsampler
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIAbs
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIBaseNetwork
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIBinaryDilation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIBinaryErosion
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIBoxBlurFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIDownsampler
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIIOSurfaceWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SILaplacian
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMLSceneSegmentation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMPersonDetector
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMPersonSegmentation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMSceneSegmentation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMSceneSegmentationLegacy
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIMSceneUnderstanding
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPeopleSegmentation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPeopleSegmentationAlgorithm
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPeopleSegmentationEspresso
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPersonDetector
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPersonDetectorAlgorithm
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPersonDetectorBoundingBox
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPixelBufferWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIPixelwiseComparison
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIResourceFactory
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIScaler
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISceneSegmentation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISceneSegmentationAlgorithm
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISceneUnderstanding
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISceneUnderstandingAlgorithm
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISceneUnderstandingResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SIUpsampler
+|| __DATA_CONST.__const _SceneIntelligenceErrorDomain
+|| __TEXT.__const _SceneIntelligenceVersionNumber
+|| __TEXT.__const _SceneIntelligenceVersionString
+|| __TEXT.__const _hh
+|| __TEXT.__const _kSIActiveDepthDataFormat
+|| __TEXT.__const _kSICameraDataFormat
+|| __TEXT.__const _kSICoefficientsDataFormat
+|| __TEXT.__const _kSIDepthDataFormat
+|| __TEXT.__const _kSIInterimDepthDataFormat
+|| __TEXT.__const _kSILowResCoefficientsDataFormat
+|| __TEXT.__const _kSILowResSceneDataFormat
+|| __TEXT.__const _kSILowResSize
+|| __TEXT.__const _kSILowResStencilDataFormat
+|| __TEXT.__const _kSINormalsResultFormat
+|| __TEXT.__const _kSIPeopleDataFormat
+|| __TEXT.__const _kSIProbabilitiesResultFormat
+|| __TEXT.__const _kSISceneDataFormat
+|| __TEXT.__const _kSISegmentationDataFormat
+|| __TEXT.__const _kSISegmentationResultFormat
+|| __TEXT.__const _kSIStandardSize
+|| __TEXT.__const _kSIStencilDataFormat
+|| __TEXT.__const _ww
+|| __TEXT.__text _SIBytesPerElement
+|| __TEXT.__text _SICheckPixelBuffer
+|| __TEXT.__text _SICheckSurface
+|| __TEXT.__text _SICheckTexture
+|| __TEXT.__text _SICopySurface
+|| __TEXT.__text _SICopyTexture
+|| __TEXT.__text _SICreateCVPixelBuffer
+|| __TEXT.__text _SICreateIOSurfaceBacked420vImageFromBuffers
+|| __TEXT.__text _SICreateIOSurfaceBacked420vTestImage_640x480
+|| __TEXT.__text _SIGetMaterialColorByLabel
+|| __TEXT.__text _SIGetSemanticColorByLabel
+|| __TEXT.__text _SIImageFormatFromPixelBuffer
+|| __TEXT.__text _SIImageFormatFromSurface
+|| __TEXT.__text _SIImageFormatFromTexture
+|| __TEXT.__text _SIImageFormatMake
+|| __TEXT.__text _SIImageFormatMatch
+|| __TEXT.__text _SIMLModelAddANEVersion
+|| __TEXT.__text _SIMLModelFolder
+|| __TEXT.__text _SIMLModelPath
+|| __TEXT.__text _SIMTLPixelFormatFromOSType
+|| __TEXT.__text _SIOSTypeFromMTLPixelFormat
+|| __TEXT.__text _SIPeekTexture
+|| __TEXT.__text _SIPixelBufferConvertYCbCrToRGBA
+|| __TEXT.__text _SIPixelBufferPoolCreate
+|| __TEXT.__text _SIPixelFormatToStr
+|| __TEXT.__text _SISaveCGImageAsPNG
+|| __TEXT.__text _SISaveTextureAsBinary
+|| __TEXT.__text _SISaveTextureAsPNG
+|| __TEXT.__text _SISceneSegmentationGetLegacyToV2LabelMapping
+|| __TEXT.__text _SISceneSegmentationGetSupportedResolution
+|| __TEXT.__text _SISceneSegmentationGetV2ToLegacyLabelMapping
+|| __TEXT.__text _SISetCheckerboardTexture
+|| __TEXT.__text _SISetNullTexture
+|| __TEXT.__text _SIUnpackDepth
+|| __TEXT.__text _SIWrapCVPixelBufferAsVImage
+|| __TEXT.__text __Z16voxel_pointcloudRKNSt3__16vectorIDv3_fNS_9allocatorIS1_EEEEfRNS0_IiNS2_IiEEEE
+|| __TEXT.__text __Z19cal_xy_max_distanceRKNSt3__16vectorIDv3_fNS_9allocatorIS1_EEEERKS1_PfPi
+|| __TEXT.__text __Z21cal_center_pointcloudRKNSt3__16vectorIDv3_fNS_9allocatorIS1_EEEERS1_
+|| __TEXT.__text __ZN15PointCloudVoxel13Index3DHasherclERKDv3_i
+|| __TEXT.__text __ZN15PointCloudVoxel14Index3DEqualerclERKDv3_iS3_
+|| __TEXT.__text __ZN15PointCloudVoxel14add_pointcloudERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEE
+|| __TEXT.__text __ZN15PointCloudVoxel14add_pointcloudERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEERNS1_IiNS3_IiEEEE
+|| __TEXT.__text __ZN15PointCloudVoxel14get_voxel_sizeEv
+|| __TEXT.__text __ZN15PointCloudVoxel16voxel_pointcloudERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEERNS1_IiNS3_IiEEEEf
+|| __TEXT.__text __ZN15PointCloudVoxel7initialEv
+|| __TEXT.__text __ZN15PointCloudVoxelC1Ef
+|| __TEXT.__text __ZN15PointCloudVoxelC2Ef
+|| __TEXT.__text __ZN15PointCloudVoxelD1Ev
+|| __TEXT.__text __ZN15PointCloudVoxelD2Ev
+|| __TEXT.__text __ZN17Project3DBirdview22cal_projection_densityERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEE
+|| __TEXT.__text __ZN17Project3DBirdview22update_center_and_sizeERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEE
+|| __TEXT.__text __ZN17Project3DBirdview25cal_projection_probabiltyERKNSt3__16vectorIDv3_fNS0_9allocatorIS2_EEEERNS1_I9_ProbInfoNS3_IS8_EEEE
+|| __TEXT.__text __ZN17Project3DBirdview7initialEv
+|| __TEXT.__text __ZN17Project3DBirdviewC1Efiii
+|| __TEXT.__text __ZN17Project3DBirdviewC2Efiii
+|| __TEXT.__text __ZN17Project3DBirdviewD1Ev
+|| __TEXT.__text __ZN17Project3DBirdviewD2Ev
+|| __TEXT.__text ___SceneIntelligenceLogSharedInstance
+|| __TEXT.__text _callback
+|| __TEXT.__text _kannalaforw
+__ Accelerate: _kvImage_YpCbCrToARGBMatrix_ITU_R_709_2
+__ Accelerate: _vImageConvert_420Yp8_CbCr8ToARGB8888
+__ Accelerate: _vImageConvert_YpCbCrToARGB_GenerateConversion
+__ AppleNeuralEngine: _OBJC_CLASS_$__ANEDeviceInfo
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreGraphics: _CGImageRelease
+__ CoreImage: _OBJC_CLASS_$_CIContext
+__ CoreImage: _OBJC_CLASS_$_CIImage
+__ CoreVideo: _CVPixelBufferCreate
+__ CoreVideo: _CVPixelBufferCreateWithBytes
+__ CoreVideo: _CVPixelBufferCreateWithIOSurface
+__ CoreVideo: _CVPixelBufferGetAttributes
+__ CoreVideo: _CVPixelBufferGetBaseAddress
+__ CoreVideo: _CVPixelBufferGetBaseAddressOfPlane
+__ CoreVideo: _CVPixelBufferGetBytesPerRow
+__ CoreVideo: _CVPixelBufferGetBytesPerRowOfPlane
+__ CoreVideo: _CVPixelBufferGetFixedPointFractionalBits
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetHeightOfPlane
+__ CoreVideo: _CVPixelBufferGetIOSurface
+__ CoreVideo: _CVPixelBufferGetPixelFormatType
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferGetWidthOfPlane
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferPoolCreate
+__ CoreVideo: _CVPixelBufferPoolCreatePixelBuffer
+__ CoreVideo: _CVPixelBufferPoolRelease
+__ CoreVideo: _CVPixelBufferRelease
+__ CoreVideo: _CVPixelBufferRetain
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ CoreVideo: _kCVPixelBufferFixedPointOffsetKey
+__ CoreVideo: _kCVPixelBufferHeightKey
+__ CoreVideo: _kCVPixelBufferIOSurfacePropertiesKey
+__ CoreVideo: _kCVPixelBufferPixelFormatTypeKey
+__ CoreVideo: _kCVPixelBufferPlaneAlignmentKey
+__ CoreVideo: _kCVPixelBufferWidthKey
+__ Espresso: __ZN8Espresso20get_internal_contextEPv
+__ Espresso: _espresso_buffer_pack_tensor_shape
+__ Espresso: _espresso_context_destroy
+__ Espresso: _espresso_create_context
+__ Espresso: _espresso_create_plan
+__ Espresso: _espresso_get_output_blob_name
+__ Espresso: _espresso_network_bind_buffer
+__ Espresso: _espresso_network_bind_cvpixelbuffer
+__ Espresso: _espresso_network_bind_direct_cvpixelbuffer
+__ Espresso: _espresso_network_query_blob_dimensions
+__ Espresso: _espresso_network_select_configuration
+__ Espresso: _espresso_plan_add_network
+__ Espresso: _espresso_plan_build
+__ Espresso: _espresso_plan_build_clean
+__ Espresso: _espresso_plan_destroy
+__ Espresso: _espresso_plan_execute_sync
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOSurface: _IOSurfaceCreate
+__ IOSurface: _IOSurfaceGetBaseAddress
+__ IOSurface: _IOSurfaceGetBytesPerElement
+__ IOSurface: _IOSurfaceGetBytesPerRow
+__ IOSurface: _IOSurfaceGetHeight
+__ IOSurface: _IOSurfaceGetPixelFormat
+__ IOSurface: _IOSurfaceGetWidth
+__ IOSurface: _IOSurfaceLock
+__ IOSurface: _IOSurfaceUnlock
+__ IOSurface: _kIOSurfaceBytesPerElement
+__ IOSurface: _kIOSurfaceHeight
+__ IOSurface: _kIOSurfacePixelFormat
+__ IOSurface: _kIOSurfaceWidth
+__ ImageIO: _CGImageDestinationAddImage
+__ ImageIO: _CGImageDestinationCreateWithURL
+__ ImageIO: _CGImageDestinationFinalize
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageAreaMax
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageAreaMin
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageLaplacian
+__ VideoToolbox: _VTPixelTransferSessionCreate
+__ VideoToolbox: _VTPixelTransferSessionInvalidate
+__ VideoToolbox: _VTPixelTransferSessionTransferImage
+__ VideoToolbox: _VTSessionSetProperty
+__ VideoToolbox: _kVTPixelTransferPropertyKey_ScalingMode
+__ VideoToolbox: _kVTScalingMode_Normal
+__ VideoToolbox: _kVTScalingMode_Trim
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _atan2f
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _clock
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _strlen
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_count14__release_weakEv
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+SIScaler : NSObject
+  // instance methods
+  -[SIScaler dealloc]
+  -[SIScaler initForOutputResolution:outputPixelFormat:mode:]
+  -[SIScaler _imageConformsToOutput:]
+  -[SIScaler initForInputResolution:outputResolution:outputPixelFormat:mode:]
+  -[SIScaler initForInputResolution:outputResolution:outputPixelFormat:]
+  -[SIScaler scaleImage:outputBuffer:]
+  -[SIScaler scaleImage:]
+
+
+SISceneSegmentation : SIBaseNetwork
+ @property  {CGSize=dd} inputResolution
+
+  // class methods
+  +[SISceneSegmentation outputResolution]
+  +[SISceneSegmentation inputResolution]
+
+  // instance methods
+  -[SISceneSegmentation dealloc]
+  -[SISceneSegmentation getOutputResolution]
+  -[SISceneSegmentation initWithComputeEngine:networkMode:]
+  -[SISceneSegmentation initWithComputeEngine:networkMode:uncertaintyThreshold:]
+  -[SISceneSegmentation _configurationToString:]
+  -[SISceneSegmentation initializeUncertaintyThresholds:]
+  -[SISceneSegmentation getInputResolution]
+  -[SISceneSegmentation writeProbabilities:withUncertainty:resampleOutput:]
+  -[SISceneSegmentation inputResolution]
+  -[SISceneSegmentation getConfiguration]
+  -[SISceneSegmentation initWithComputeEngine:]
+  -[SISceneSegmentation preSetup]
+  -[SISceneSegmentation switchNetworkConfiguration:]
+  -[SISceneSegmentation evaluateImage:]
+  -[SISceneSegmentation writeProbabilities:resampleOutput:]
+  -[SISceneSegmentation writeLabels:resampleOutput:]
+
+
+SISceneUnderstandingResult : NSObject
+ @property  {CGSize=dd} resolution
+ @property  {_SITensorDim=[4Q]} labelTensorDimensions
+ @property  {_SITensorDim=[4Q]} normalTensorDimensions
+ @property  {_SITensorDim=[4Q]} probabilitiesTensorDimensions
+
+  // class methods
+  +[SISceneUnderstandingResult outputDimensions]
+
+  // instance methods
+  -[SISceneUnderstandingResult resolution]
+  -[SISceneUnderstandingResult dealloc]
+  -[SISceneUnderstandingResult initWithModel:]
+  -[SISceneUnderstandingResult labelTensorDimensions]
+  -[SISceneUnderstandingResult normalTensorDimensions]
+  -[SISceneUnderstandingResult probabilitiesTensorDimensions]
+  -[SISceneUnderstandingResult labelsTensor]
+  -[SISceneUnderstandingResult normalsTensor]
+  -[SISceneUnderstandingResult probabilitiesTensor]
+  -[SISceneUnderstandingResult writeNormals:orientation:]
+  -[SISceneUnderstandingResult writeProbabilities:]
+  -[SISceneUnderstandingResult writeLabels:]
+
+
+SISceneUnderstanding : NSObject
+ @property  {_SITensorDim=[4Q]} labelTensorDimensions
+ @property  {_SITensorDim=[4Q]} normalTensorDimensions
+ @property  {_SITensorDim=[4Q]} probabilitiesTensorDimensions
+
+  // class methods
+  +[SISceneUnderstanding inputResolution]
+
+  // instance methods
+  -[SISceneUnderstanding dealloc]
+  -[SISceneUnderstanding initWithComputeEngine:]
+  -[SISceneUnderstanding labelTensorDimensions]
+  -[SISceneUnderstanding normalTensorDimensions]
+  -[SISceneUnderstanding probabilitiesTensorDimensions]
+  -[SISceneUnderstanding initMLNetworkWithComputeEngine:]
+  -[SISceneUnderstanding evaluateImage:results:]
+
+
+SIBinaryDilation : NSObject
+  // instance methods
+  -[SIBinaryDilation .cxx_destruct]
+  -[SIBinaryDilation encodeToCommandBuffer:sourceTexture:destinationTexture:]
+  -[SIBinaryDilation initWithFactory:kernelRadius:]
+
+
+SIPixelBufferWrapper : NSObject
+ @property  ^{__CVBuffer=} pixelBuffer
+
+  // instance methods
+  -[SIPixelBufferWrapper pixelBuffer]
+  -[SIPixelBufferWrapper dealloc]
+  -[SIPixelBufferWrapper setPixelBuffer:]
+  -[SIPixelBufferWrapper initWithResolution:]
+  -[SIPixelBufferWrapper initWithResolution:pixelformat:]
+
+
+SIIOSurfaceWrapper : NSObject
+ @property  ^{__IOSurface=} iosurface
+
+  // instance methods
+  -[SIIOSurfaceWrapper iosurface]
+  -[SIIOSurfaceWrapper dealloc]
+  -[SIIOSurfaceWrapper initWithResolution:]
+  -[SIIOSurfaceWrapper initWithResolution:pixelformat:]
+  -[SIIOSurfaceWrapper _bytesPerElement:]
+  -[SIIOSurfaceWrapper setIosurface:]
+
+
+SIResourceFactory : NSObject
+ @property  <MTLLibrary> *library
+ @property  <MTLDevice> *device
+
+  // instance methods
+  -[SIResourceFactory initWithDevice:]
+  -[SIResourceFactory library]
+  -[SIResourceFactory .cxx_destruct]
+  -[SIResourceFactory newFunctionWithName:constantValues:error:]
+  -[SIResourceFactory device]
+  -[SIResourceFactory commandBuffer]
+  -[SIResourceFactory newFunctionWithName:]
+  -[SIResourceFactory newTextureWithFormat:surface:]
+  -[SIResourceFactory newComputePipelineStateWithName:]
+  -[SIResourceFactory newCubemapWithFormat:]
+  -[SIResourceFactory newTextureWithFormat:]
+  -[SIResourceFactory newIOSurfaceBackedTexture:]
+  -[SIResourceFactory newTextureWithFormat:pixelBuffer:]
+  -[SIResourceFactory newTextureFromPixelBuffer:]
+  -[SIResourceFactory textureFromDictionary:]
+  -[SIResourceFactory dictionaryFromTexture:]
+
+
+SISceneUnderstandingAlgorithm : NSObject
+  // class methods
+  +[SISceneUnderstandingAlgorithm outputResolution]
+
+  // instance methods
+  -[SISceneUnderstandingAlgorithm .cxx_destruct]
+  -[SISceneUnderstandingAlgorithm initWithInputResolution:andComputeEngine:]
+  -[SISceneUnderstandingAlgorithm runWithInput:output:confidenceOutput:normalsOutput:orientation:]
+  -[SISceneUnderstandingAlgorithm initWithInputResolution:]
+  -[SISceneUnderstandingAlgorithm runWithInput:output:confidenceOutput:normalsOutput:]
+
+
+SIBinaryErosion : NSObject
+  // instance methods
+  -[SIBinaryErosion .cxx_destruct]
+  -[SIBinaryErosion encodeToCommandBuffer:sourceTexture:destinationTexture:]
+  -[SIBinaryErosion initWithFactory:kernelRadius:]
+
+
+SIMSceneUnderstanding : NSObject
+  // class methods
+  +[SIMSceneUnderstanding compiledModelPath]
+
+
+SIPersonDetector : SIBaseNetwork
+  // instance methods
+  -[SIPersonDetector getOutputResolution]
+  -[SIPersonDetector initWithComputeEngine:networkMode:]
+  -[SIPersonDetector _configurationToString:]
+  -[SIPersonDetector getInputResolution]
+  -[SIPersonDetector initWithComputeEngine:]
+  -[SIPersonDetector preSetup]
+  -[SIPersonDetector switchNetworkConfiguration:]
+  -[SIPersonDetector evaluateImage:]
+  -[SIPersonDetector postSetup]
+  -[SIPersonDetector copyOutput:]
+
+
+SIBoxBlurFilter : NSObject
+ @property  unsigned long radius
+
+  // instance methods
+  -[SIBoxBlurFilter .cxx_destruct]
+  -[SIBoxBlurFilter radius]
+  -[SIBoxBlurFilter setRadius:]
+  -[SIBoxBlurFilter initWithFactory:size:pixelFormat:andRadius:]
+  -[SIBoxBlurFilter encodeToCommandBuffer:sourceTexture:blurred:]
+
+
+SIUpsampler : NSObject
+  // instance methods
+  -[SIUpsampler .cxx_destruct]
+  -[SIUpsampler initWithFactory:]
+  -[SIUpsampler encodeToCommandBuffer:input:output:]
+
+
+SIPeopleSegmentation : NSObject <SIPeopleSegmentationModelProtocol>
+
+SIPixelwiseComparison : NSObject
+  // instance methods
+  -[SIPixelwiseComparison .cxx_destruct]
+  -[SIPixelwiseComparison initWithFactory:comparisonOperator:]
+  -[SIPixelwiseComparison encodeToCommandBuffer:sourceTexture:value:destinationTexture:]
+
+
+SIMLSceneSegmentation : NSObject
+  // class methods
+  +[SIMLSceneSegmentation compiledModelPath]
+
+
+SILaplacian : NSObject
+  // instance methods
+  -[SILaplacian .cxx_destruct]
+  -[SILaplacian init]
+  -[SILaplacian encodeToCommandBuffer:sourceTexture:destinationTexture:]
+
+
+SIBaseNetwork : NSObject
+ @property  ^v context
+ @property  ^v plan
+ @property  {?=^vi} network
+ @property  long long engineType
+ @property  {?=ffffB} preprocessor
+ @property  BOOL enablePreprocess
+ @property  NSString *modelName
+ @property  NSString *networkMode
+ @property  BOOL useANEZeroCopyInput
+ @property  BOOL useANEZeroCopyOutput
+ @property  BOOL useManagedBuffers
+
+  // class methods
+  +[SIBaseNetwork supportsANE]
+
+  // instance methods
+  -[SIBaseNetwork plan]
+  -[SIBaseNetwork modelName]
+  -[SIBaseNetwork network]
+  -[SIBaseNetwork .cxx_construct]
+  -[SIBaseNetwork .cxx_destruct]
+  -[SIBaseNetwork engineType]
+  -[SIBaseNetwork dealloc]
+  -[SIBaseNetwork context]
+  -[SIBaseNetwork preprocessor]
+  -[SIBaseNetwork getResolutionByBlobName:]
+  -[SIBaseNetwork initWithNetworkPath:andEngine:networkMode:usingManagedBuffers:]
+  -[SIBaseNetwork setEnablePreprocess:]
+  -[SIBaseNetwork setUseANEZeroCopyInput:]
+  -[SIBaseNetwork setUseANEZeroCopyOutput:]
+  -[SIBaseNetwork switchConfiguration:]
+  -[SIBaseNetwork bindNetworkInputWithImage:withInputName:]
+  -[SIBaseNetwork getModelOutputPtrByName:toDstPtr:withRowStride:]
+  -[SIBaseNetwork getBlobDimensionByName:andDestination:]
+  -[SIBaseNetwork unlockModelOutputPtrByName:]
+  -[SIBaseNetwork preSetup]
+  -[SIBaseNetwork getTensorByName:]
+  -[SIBaseNetwork postSetup]
+  -[SIBaseNetwork initMLNetwork]
+  -[SIBaseNetwork isUsingANE]
+  -[SIBaseNetwork initContext]
+  -[SIBaseNetwork initPlan]
+  -[SIBaseNetwork initNetwork]
+  -[SIBaseNetwork buildPlan]
+  -[SIBaseNetwork validateNetworkOutputDimension]
+  -[SIBaseNetwork initNetworkOutput]
+  -[SIBaseNetwork initPreprocess]
+  -[SIBaseNetwork updateOutputBlobMap]
+  -[SIBaseNetwork bindNetworkOutput:optionalExternalBuffer:]
+  -[SIBaseNetwork useANEZeroCopyInput]
+  -[SIBaseNetwork isUsingZeroCopyOutput]
+  -[SIBaseNetwork getOutPixelBufferByName:]
+  -[SIBaseNetwork networkMode]
+  -[SIBaseNetwork cleanUpOutputPixelBufferMap]
+  -[SIBaseNetwork setNetworkMode:]
+  -[SIBaseNetwork setExpectedDimension:andDimension:]
+  -[SIBaseNetwork bindNetworkOutput:toExternalBuffer:]
+  -[SIBaseNetwork setPreprocessor:]
+  -[SIBaseNetwork enablePreprocess]
+  -[SIBaseNetwork useANEZeroCopyOutput]
+  -[SIBaseNetwork useManagedBuffers]
+  -[SIBaseNetwork setUseManagedBuffers:]
+
+
+SIMPersonSegmentation : NSObject
+  // class methods
+  +[SIMPersonSegmentation compiledModelPathEspresso]
+
+
+SIMPersonDetector : NSObject
+  // class methods
+  +[SIMPersonDetector compiledModelPath]
+
+
+SISceneSegmentationAlgorithm : NSObject
+  // class methods
+  +[SISceneSegmentationAlgorithm supportsANE]
+  +[SISceneSegmentationAlgorithm outputResolution]
+  +[SISceneSegmentationAlgorithm getOutputResolution:]
+
+  // instance methods
+  -[SISceneSegmentationAlgorithm .cxx_destruct]
+  -[SISceneSegmentationAlgorithm getOutputResolution]
+  -[SISceneSegmentationAlgorithm initWithInputResolution:andComputeEngine:]
+  -[SISceneSegmentationAlgorithm initWithComputeEngine:andNetworkConfiguration:uncertaintyThreshold:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:networkConfiguration:]
+  -[SISceneSegmentationAlgorithm initWithComputeEngine:andNetworkConfiguration:]
+  -[SISceneSegmentationAlgorithm getInputResolution]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:resampleOutput:]
+  -[SISceneSegmentationAlgorithm _switchConfiguration:]
+  -[SISceneSegmentationAlgorithm initWithComputeEngine:andNetworkConfiguration:managedBuffers:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:resampleOutput:networkConfiguration:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:uncertaintyOutput:]
+  -[SISceneSegmentationAlgorithm runWithInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:networkConfiguration:earlyExit:]
+
+
+SIMSceneSegmentationLegacy : NSObject
+  // class methods
+  +[SIMSceneSegmentationLegacy compiledModelPath]
+
+
+SIPersonDetectorAlgorithm : NSObject
+  // class methods
+  +[SIPersonDetectorAlgorithm supportsANE]
+
+  // instance methods
+  -[SIPersonDetectorAlgorithm .cxx_destruct]
+  -[SIPersonDetectorAlgorithm runWithInput:output:networkConfiguration:]
+  -[SIPersonDetectorAlgorithm getOutputResolution]
+  -[SIPersonDetectorAlgorithm initWithComputeEngine:andNetworkConfiguration:]
+  -[SIPersonDetectorAlgorithm runWithInput:output:]
+  -[SIPersonDetectorAlgorithm getInputResolution]
+
+
+SIDownsampler : NSObject
+  // instance methods
+  -[SIDownsampler .cxx_destruct]
+  -[SIDownsampler encodeToCommandBuffer:input:output:]
+  -[SIDownsampler initWithFactory:scaleFactor:]
+
+
+SIPersonDetectorBoundingBox : NSObject
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} boundingBox
+ @property  float confidence
+
+  // instance methods
+  -[SIPersonDetectorBoundingBox setConfidence:]
+  -[SIPersonDetectorBoundingBox setBoundingBox:]
+  -[SIPersonDetectorBoundingBox boundingBox]
+  -[SIPersonDetectorBoundingBox confidence]
+  -[SIPersonDetectorBoundingBox initWithBoundingBox:confidence:]
+
+
+SIMSceneSegmentation : NSObject
+  // class methods
+  +[SIMSceneSegmentation compiledModelPath]
+
+
+SIPeopleSegmentationAlgorithm : NSObject
+  // class methods
+  +[SIPeopleSegmentationAlgorithm supportsANE]
+  +[SIPeopleSegmentationAlgorithm outputResolution]
+
+  // instance methods
+  -[SIPeopleSegmentationAlgorithm .cxx_destruct]
+  -[SIPeopleSegmentationAlgorithm initWithComputeEngine:andNetworkConfiguration:useAppleNeuralEngineFramework:]
+  -[SIPeopleSegmentationAlgorithm runWithInput:output:networkConfiguration:]
+  -[SIPeopleSegmentationAlgorithm getOutputResolution]
+  -[SIPeopleSegmentationAlgorithm initWithComputeEngine:andNetworkConfiguration:]
+  -[SIPeopleSegmentationAlgorithm runWithInput:output:]
+  -[SIPeopleSegmentationAlgorithm getInputResolution]
+  -[SIPeopleSegmentationAlgorithm initWithComputeEngine:]
+  -[SIPeopleSegmentationAlgorithm initWithInputResolution:]
+
+
+SIAbs : NSObject
+  // instance methods
+  -[SIAbs .cxx_destruct]
+  -[SIAbs encodeToCommandBuffer:sourceTexture:destinationTexture:]
+  -[SIAbs initWithFactory:]
+  -[SIAbs encodeInPlaceToCommandBuffer:texture:]
+
+
+SIPeopleSegmentationEspresso : SIBaseNetwork <SIPeopleSegmentationModelProtocol>
+  // class methods
+  +[SIPeopleSegmentationEspresso getOutputResolution]
+  +[SIPeopleSegmentationEspresso getInputResolution]
+
+  // instance methods
+  -[SIPeopleSegmentationEspresso .cxx_destruct]
+  -[SIPeopleSegmentationEspresso init]
+  -[SIPeopleSegmentationEspresso dealloc]
+  -[SIPeopleSegmentationEspresso getOutputResolution]
+  -[SIPeopleSegmentationEspresso initWithComputeEngine:andNetworkConfiguration:]
+  -[SIPeopleSegmentationEspresso _configurationToString:]
+  -[SIPeopleSegmentationEspresso getInputResolution]
+  -[SIPeopleSegmentationEspresso getConfiguration]
+  -[SIPeopleSegmentationEspresso initWithComputeEngine:]
+  -[SIPeopleSegmentationEspresso preSetup]
+  -[SIPeopleSegmentationEspresso switchNetworkConfiguration:]
+  -[SIPeopleSegmentationEspresso postSetup]
+  -[SIPeopleSegmentationEspresso evaluateSemanticsForImage:andOutputSurface:]
+  -[SIPeopleSegmentationEspresso initMLVariables]
+  -[SIPeopleSegmentationEspresso copyResultsToOtherBuffers:]
+
+
+01 00 0d00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIContext 
+01 00 0d00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIImage 
+01 00 0400 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageAreaMax 
+01 00 0400 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageAreaMin 
+01 00 0400 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageLaplacian 
+01 00 0c00 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0a00 /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine: _ANEDeviceInfo 

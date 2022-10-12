@@ -1,0 +1,93 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_AKAvailability
+|| __DATA.__objc_data _OBJC_CLASS_$_AKAvailabilityInvitation
+|| __DATA.__objc_data _OBJC_METACLASS_$_AKAvailability
+|| __DATA.__objc_data _OBJC_METACLASS_$_AKAvailabilityInvitation
+|| __DATA_CONST.__const _AKAvailabilityStatusTypeIdentifier
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ StatusKit: _OBJC_CLASS_$_SKInvitationPayload
+__ StatusKit: _OBJC_CLASS_$_SKStatusPayload
+__ StatusKit: _OBJC_CLASS_$_SKStatusPublishRequest
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+AKAvailability : NSObject
+ @property  BOOL availableToMe
+ @property  NSUUID *activityIdentifier
+ @property  BOOL personalizedAvailability
+ @property  BOOL available
+ @property  NSString *activityIdentifierString
+
+  // class methods
+  +[AKAvailability logger]
+
+  // instance methods
+  -[AKAvailability .cxx_destruct]
+  -[AKAvailability isAvailable]
+  -[AKAvailability activityIdentifier]
+  -[AKAvailability initWithPublishedStatus:]
+  -[AKAvailability _payloadDictionary]
+  -[AKAvailability isAvailableToMe]
+  -[AKAvailability initWithAvailable:activityIdentifierString:]
+  -[AKAvailability statusPublishRequest]
+  -[AKAvailability initWithStatusPayload:invitationPayload:]
+  -[AKAvailability activityIdentifierString]
+  -[AKAvailability _initWithAvailable:activityIdentifierString:personalizedAvailability:]
+  -[AKAvailability personalizedAvailability]
+  -[AKAvailability initWithAvailable:activityIdentifier:]
+
+
+AKAvailabilityInvitation : NSObject
+ @property  NSArray *availableDuringActivityIdentifiers
+
+  // instance methods
+  -[AKAvailabilityInvitation .cxx_destruct]
+  -[AKAvailabilityInvitation initWithAvailableDuringActivityIdentifiers:]
+  -[AKAvailabilityInvitation statusKitInvitationPayloadWithDateCreated:]
+  -[AKAvailabilityInvitation _payloadDictionary]
+  -[AKAvailabilityInvitation initWithStatusKitInvitationPayload:]
+  -[AKAvailabilityInvitation availableDuringActivityIdentifiers]
+
+
+(AvailabilityKit)
+	// instance methods
+	-[(AvailabilityKit) availabilityKit_boolForKey:defaultValue:]
+	-[(AvailabilityKit) availabilityKit_stringForKey:]
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/PrivateFrameworks/StatusKit.framework/StatusKit: SKInvitationPayload 
+01 00 0100 /System/Library/PrivateFrameworks/StatusKit.framework/StatusKit: SKStatusPayload 
+01 00 0100 /System/Library/PrivateFrameworks/StatusKit.framework/StatusKit: SKStatusPublishRequest 

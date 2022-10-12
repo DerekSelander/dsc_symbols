@@ -1,0 +1,154 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatch
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchCalendarEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchEmailAddress
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchFlightNumber
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchLink
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchMoneyAmount
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchPhoneNumber
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchPostalAddress
+|| __DATA.__objc_data _OBJC_CLASS_$_DDMatchShipmentTrackingNumber
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatch
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchCalendarEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchEmailAddress
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchFlightNumber
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchLink
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchMoneyAmount
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchPhoneNumber
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchPostalAddress
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDMatchShipmentTrackingNumber
+__ DataDetectorsCore: _DDBinderDateDurationKey
+__ DataDetectorsCore: _DDBinderEmailKey
+__ DataDetectorsCore: _DDBinderFlightInformationKey
+__ DataDetectorsCore: _DDBinderTimeDurationKey
+__ DataDetectorsCore: _DDBinderTrackingNumberKey
+__ DataDetectorsCore: _DDResultHasType
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+DDMatch : NSObject
+ @property  {_NSRange=QQ} matchedRange
+ @property  NSString *matchedString
+
+  // class methods
+  +[DDMatch resultWithDDScannerResult:originalString:]
+  +[DDMatch resultWithDDScannerResult:]
+
+  // instance methods
+  -[DDMatch .cxx_destruct]
+  -[DDMatch matchedString]
+  -[DDMatch initWithDDScannerResult:]
+  -[DDMatch commonInitWithDDScannerResult:originalString:]
+  -[DDMatch initWithDDScannerResult:originalString:]
+  -[DDMatch matchedRange]
+
+
+DDMatchLink : DDMatch
+ @property  NSURL *URL
+
+  // instance methods
+  -[DDMatchLink .cxx_destruct]
+  -[DDMatchLink initWithDDScannerResult:]
+  -[DDMatchLink URL]
+
+
+DDMatchPhoneNumber : DDMatch
+ @property  NSString *phoneNumber
+ @property  NSString *label
+
+  // instance methods
+  -[DDMatchPhoneNumber label]
+  -[DDMatchPhoneNumber .cxx_destruct]
+  -[DDMatchPhoneNumber initWithDDScannerResult:]
+  -[DDMatchPhoneNumber phoneNumber]
+
+
+DDMatchEmailAddress : DDMatch
+ @property  NSString *emailAddress
+ @property  NSString *label
+
+  // instance methods
+  -[DDMatchEmailAddress label]
+  -[DDMatchEmailAddress .cxx_destruct]
+  -[DDMatchEmailAddress emailAddress]
+  -[DDMatchEmailAddress initWithDDScannerResult:]
+
+
+DDMatchCalendarEvent : DDMatch
+ @property  BOOL allDay
+ @property  NSDate *startDate
+ @property  NSTimeZone *startTimeZone
+ @property  NSDate *endDate
+ @property  NSTimeZone *endTimeZone
+
+  // instance methods
+  -[DDMatchCalendarEvent .cxx_destruct]
+  -[DDMatchCalendarEvent initWithDDScannerResult:]
+  -[DDMatchCalendarEvent startTimeZone]
+  -[DDMatchCalendarEvent isAllDay]
+  -[DDMatchCalendarEvent startDate]
+  -[DDMatchCalendarEvent endDate]
+  -[DDMatchCalendarEvent endTimeZone]
+
+
+DDMatchPostalAddress : DDMatch
+ @property  NSString *street
+ @property  NSString *city
+ @property  NSString *state
+ @property  NSString *postalCode
+ @property  NSString *country
+
+  // instance methods
+  -[DDMatchPostalAddress postalCode]
+  -[DDMatchPostalAddress street]
+  -[DDMatchPostalAddress .cxx_destruct]
+  -[DDMatchPostalAddress initWithDDScannerResult:]
+  -[DDMatchPostalAddress state]
+  -[DDMatchPostalAddress country]
+  -[DDMatchPostalAddress city]
+
+
+DDMatchShipmentTrackingNumber : DDMatch
+ @property  NSString *carrier
+ @property  NSString *trackingNumber
+
+  // instance methods
+  -[DDMatchShipmentTrackingNumber .cxx_destruct]
+  -[DDMatchShipmentTrackingNumber initWithDDScannerResult:]
+  -[DDMatchShipmentTrackingNumber carrier]
+  -[DDMatchShipmentTrackingNumber trackingNumber]
+
+
+DDMatchFlightNumber : DDMatch
+ @property  NSString *airline
+ @property  NSString *flightNumber
+
+  // instance methods
+  -[DDMatchFlightNumber .cxx_destruct]
+  -[DDMatchFlightNumber airline]
+  -[DDMatchFlightNumber flightNumber]
+  -[DDMatchFlightNumber initWithDDScannerResult:]
+
+
+DDMatchMoneyAmount : DDMatch
+ @property  NSString *currency
+ @property  double amount
+
+  // instance methods
+  -[DDMatchMoneyAmount amount]
+  -[DDMatchMoneyAmount .cxx_destruct]
+  -[DDMatchMoneyAmount initWithDDScannerResult:]
+  -[DDMatchMoneyAmount currency]
+
+
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 

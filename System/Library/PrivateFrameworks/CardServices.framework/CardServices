@@ -1,0 +1,211 @@
+|| __DATA.__objc_data _OBJC_CLASS_$__CRSCardServiceBundle
+|| __DATA.__objc_data _OBJC_CLASS_$__CRSCardServiceBundleManager
+|| __DATA.__objc_data _OBJC_CLASS_$__CRSServiceBundle
+|| __DATA.__objc_data _OBJC_CLASS_$__CRSServiceBundleManager
+|| __DATA.__objc_data _OBJC_METACLASS_$__CRSCardServiceBundle
+|| __DATA.__objc_data _OBJC_METACLASS_$__CRSCardServiceBundleManager
+|| __DATA.__objc_data _OBJC_METACLASS_$__CRSServiceBundle
+|| __DATA.__objc_data _OBJC_METACLASS_$__CRSServiceBundleManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSCardRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSCardResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSIdentifiedServiceRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CRSPassthroughService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSCardRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSCardResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSIdentifiedServiceRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CRSPassthroughService
+|| __TEXT.__const _CardServicesVersionNumber
+|| __TEXT.__const _CardServicesVersionString
+__ Cards: _CRErrorDomain
+__ Cards: _CRLogContextCards
+__ Cards: _CRLogInitIfNeeded
+__ Cards: _OBJC_CLASS_$_CRBundleManager
+__ Cards: _OBJC_METACLASS_$_CRBundleManager
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSDebugDescriptionErrorKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_METACLASS_$_NSBundle
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+_CRSServiceBundleManager : CRBundleManager
+  // class methods
+  +[_CRSServiceBundleManager sharedInstance]
+  +[_CRSServiceBundleManager bundleDirectoryName]
+  +[_CRSServiceBundleManager bundleClass]
+
+  // instance methods
+  -[_CRSServiceBundleManager getServiceBundlesWithCompletion:]
+
+
+_CRSPassthroughService : NSObject <CRSCardServing, CRSIdentifiedServing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *serviceIdentifier
+
+  // instance methods
+  -[_CRSPassthroughService serviceIdentifier]
+  -[_CRSPassthroughService canSatisfyCardRequest:]
+  -[_CRSPassthroughService servicePriorityForRequest:]
+  -[_CRSPassthroughService requestCard:reply:]
+
+
+CRSResponse : NSObject
+
+CRSIdentifiedServiceRegistry : NSObject
+  // class methods
+  +[CRSIdentifiedServiceRegistry sharedInstance]
+
+  // instance methods
+  -[CRSIdentifiedServiceRegistry .cxx_destruct]
+  -[CRSIdentifiedServiceRegistry init]
+  -[CRSIdentifiedServiceRegistry registerIdentifiedService:]
+  -[CRSIdentifiedServiceRegistry identifiedServices]
+
+
+_CRSServiceBundle : NSBundle <CRSIdentifiedServing>
+ @property  NSString *serviceIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[_CRSServiceBundle supportsSecureCoding]
+
+  // instance methods
+  -[_CRSServiceBundle initWithCoder:]
+  -[_CRSServiceBundle serviceIdentifier]
+  -[_CRSServiceBundle .cxx_destruct]
+  -[_CRSServiceBundle underlyingService]
+  -[_CRSServiceBundle encodeWithCoder:]
+  -[_CRSServiceBundle _initializeServiceWithClass:]
+
+
+CRSCardResponse : CRSResponse
+ @property  CRSCardRequest *request
+ @property  <CRCard> *card
+
+  // instance methods
+  -[CRSCardResponse setRequest:]
+  -[CRSCardResponse card]
+  -[CRSCardResponse .cxx_destruct]
+  -[CRSCardResponse request]
+  -[CRSCardResponse setCard:]
+
+
+CRSCardRequest : CRSRequest <CRSCardRequesting>
+ @property  NSSet *excludedServiceIdentifiers
+ @property  <CRContent> *content
+ @property  unsigned long format
+ @property  BOOL loadsBundleServices
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CRSCardRequest initialize]
+  +[CRSCardRequest registerService:]
+
+  // instance methods
+  -[CRSCardRequest setContent:]
+  -[CRSCardRequest content]
+  -[CRSCardRequest .cxx_destruct]
+  -[CRSCardRequest setFormat:]
+  -[CRSCardRequest init]
+  -[CRSCardRequest format]
+  -[CRSCardRequest startWithReply:]
+  -[CRSCardRequest setLoadsBundleServices:]
+  -[CRSCardRequest initWithContent:format:]
+  -[CRSCardRequest _excludedServiceIdentifiers]
+  -[CRSCardRequest _tryRemainingCardServices:reply:]
+  -[CRSCardRequest _loadAndRegisterBundleServices:]
+  -[CRSCardRequest loadsBundleServices]
+  -[CRSCardRequest _setExcludedServiceIdentifiers:]
+
+
+_CRSCardServiceBundleManager : _CRSServiceBundleManager
+  // class methods
+  +[_CRSCardServiceBundleManager bundleClass]
+
+
+_CRSCardServiceBundle : _CRSServiceBundle <CRSCardServing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CRSCardServiceBundle .cxx_destruct]
+  -[_CRSCardServiceBundle underlyingService]
+  -[_CRSCardServiceBundle canSatisfyCardRequest:]
+  -[_CRSCardServiceBundle servicePriorityForRequest:]
+  -[_CRSCardServiceBundle requestCard:reply:]
+  -[_CRSCardServiceBundle _initializeCardServiceWithClass:]
+
+
+CRSRequest : NSObject
+
+01 00 0200 /System/Library/PrivateFrameworks/Cards.framework/Cards: CRBundleManager 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

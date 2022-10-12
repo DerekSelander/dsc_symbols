@@ -1,0 +1,162 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_BMDeviceMetadataUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_BMDeviceMetadataUtils
+|| __DATA_CONST.__const _BMAppleInternalReadEntitlement
+|| __DATA_CONST.__const _BMAppleInternalWriteEntitlement
+|| __DATA_CONST.__const _BMReadEntitlement
+|| __DATA_CONST.__const _BMWriteEntitlement
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMCoreAnalyticsEvents
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMPaths
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMPublicStreamUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreDirectory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMCoreAnalyticsEvents
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMPaths
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMPublicStreamUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreDirectory
+|| __TEXT.__const _BiomeFoundationVersionNumber
+|| __TEXT.__const _BiomeFoundationVersionString
+|| __TEXT.__text _BMAbsoluteTimeFromCFAbsoluteTime
+|| __TEXT.__text _BMAbsoluteTimeFromContinuousTime
+|| __TEXT.__text _BMAbsoluteTimeGetCurrent
+|| __TEXT.__text _BMAbsoluteTimeGetOffsets
+|| __TEXT.__text _BMAbsoluteTimeInitWithSyntheticStart
+|| __TEXT.__text _BMAbsoluteTimeSetSyntheticStartFromRemoteTime
+|| __TEXT.__text _BMAbsoluteTimeToCFAbsoluteTime
+|| __TEXT.__text _BMArbitraryTimestampToCFAbsoluteTime
+|| __TEXT.__text _BMCopyValueForEntitlement
+|| __TEXT.__text _BMCopyValuesForEntitlement
+|| __TEXT.__text _BMDevicePlatformFromModelString
+|| __TEXT.__text _BMDevicePlatformGetDescription
+|| __TEXT.__text _BMStreamIdentifierIsPathSafe
+|| __TEXT.__text ___biome_log_create
+|| __TEXT.__text ___biome_log_create_for_category
+__ CoreAnalytics: _AnalyticsIsEventUsed
+__ CoreAnalytics: _AnalyticsSendEvent
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: _kCFAbsoluteTimeIntervalSince1970
+__ CoreTime: _TMConvertTicksToSeconds
+__ CoreTime: _TMGetKernelMonotonicClock
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateFromSelf
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _mach_continuous_time
+__ libSystem.B.dylib: _mach_get_times
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _sysctlbyname_get_data_np
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+BMPaths : NSObject
+  // class methods
+  +[BMPaths pathForStreamType:]
+  +[BMPaths unsetBasePathForTesting]
+  +[BMPaths isTestPathOverridden]
+  +[BMPaths rootBiomeDirectory]
+  +[BMPaths privacyURLToString:]
+  +[BMPaths setBasePathForTestingWithPath:]
+  +[BMPaths pathForStreamIdentifier:streamType:]
+  +[BMPaths localDSLDirectory]
+  +[BMPaths syncDirectory]
+  +[BMPaths basePathForTesting]
+  +[BMPaths _simRootDirectory]
+  +[BMPaths localFlexibleStorageDirectory]
+  +[BMPaths rootLibraryDirectory]
+  +[BMPaths privacyPathname:]
+  +[BMPaths _unitTestsRootDirectory]
+
+
+BMDeviceMetadataUtils : NSObject
+  // class methods
+  +[BMDeviceMetadataUtils osBuildVersion]
+  +[BMDeviceMetadataUtils platform]
+
+
+BMPublicStreamUtilities : NSObject
+  // class methods
+  +[BMPublicStreamUtilities streamIdentifiers]
+  +[BMPublicStreamUtilities streamForStreamIdentifier:]
+  +[BMPublicStreamUtilities streamIdentifierForStream:]
+  +[BMPublicStreamUtilities writeAllowedForStream:processIdentifier:]
+  +[BMPublicStreamUtilities allowedStreamWriteIdentifiersForStream:]
+
+
+BMCoreAnalyticsEvents : NSObject
+  // class methods
+  +[BMCoreAnalyticsEvents dictionaryWithAppLaunchEventWritten:size:]
+  +[BMCoreAnalyticsEvents dictionaryWithUnreadableSegment:stream:size:]
+  +[BMCoreAnalyticsEvents sendIntentEventWritten:size:]
+  +[BMCoreAnalyticsEvents sendUnreadableEventTime:stream:segmentTime:]
+  +[BMCoreAnalyticsEvents dictionaryWithBookmarkResumeFailureTime:bookmarkCreationTime:publicStream:]
+  +[BMCoreAnalyticsEvents dictionaryWithPrunePublicStream:deletionInterval:eventDeletionCount:]
+  +[BMCoreAnalyticsEvents sendUnreadableSegment:stream:size:]
+  +[BMCoreAnalyticsEvents dictionaryWithUnreadableEventTime:stream:segmentTime:]
+  +[BMCoreAnalyticsEvents sendAppLaunchEventWritten:size:]
+  +[BMCoreAnalyticsEvents dictionaryWithIntentEventWritten:size:]
+  +[BMCoreAnalyticsEvents sendEvent:payload:]
+  +[BMCoreAnalyticsEvents sendPrunePublicStream:deletionInterval:eventDeletionCount:]
+  +[BMCoreAnalyticsEvents sendBookmarkResumeFailureTime:bookmarkCreationTime:publicStream:]
+  +[BMCoreAnalyticsEvents dictionaryWithAllStreamsEventWritten:size:streamIdentifier:]
+  +[BMCoreAnalyticsEvents sendAllStreamsEventWritten:size:streamIdentifier:]
+
+
+BMStoreDirectory : NSObject
+  // class methods
+  +[BMStoreDirectory directoryForPrivateStreams]
+  +[BMStoreDirectory unsetBasePathForTesting]
+  +[BMStoreDirectory directoryForRestrictedStreams]
+  +[BMStoreDirectory _directoryForType:]
+  +[BMStoreDirectory setBasePathForTestingWithPath:]
+  +[BMStoreDirectory directoryForPublicStreams]
+
+
+(BMAbsoluteTime)
+	// class methods
+	+[(BMAbsoluteTime) dateWithBMAbsoluteTime:]
+
+	// instance methods
+	-[(BMAbsoluteTime) initWithBMAbsoluteTime:]
+	-[(BMAbsoluteTime) bmAbsoluteTime]
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 

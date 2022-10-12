@@ -1,0 +1,655 @@
+|| __DATA.__data _HAENAccessoryInfoErrorDomain
+|| __DATA.__data _HAENotificationsFrameworkVersionNumber
+|| __DATA.__objc_data _OBJC_CLASS_$_HAENAccessoryInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_HAENHealthKitStore
+|| __DATA.__objc_data _OBJC_CLASS_$_HAENSystemSoundPlayer
+|| __DATA.__objc_data _OBJC_CLASS_$_HAENTPSDiscoverabilitySignal
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAENAccessoryInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAENHealthKitStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAENSystemSoundPlayer
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAENTPSDiscoverabilitySignal
+|| __DATA_CONST.__const _HAENErrorDomain
+|| __DATA_CONST.__const _HAENHeadphoneAudioLimitSettingURL
+|| __DATA_CONST.__const _HAENHealthEducationURL
+|| __DATA_CONST.__const _HAENHealthPrivacyURL
+|| __DATA_CONST.__const _HAENMetadataIdentifierAudioCategory
+|| __DATA_CONST.__const _HAENMetadataIdentifierAudioMode
+|| __DATA_CONST.__const _HAENMetadataIdentifierDeviceIdentifier
+|| __DATA_CONST.__const _HAENMetadataIdentifierDeviceName
+|| __DATA_CONST.__const _HAENMetadataIdentifierHeadsetIsHeadphoneJack
+|| __DATA_CONST.__const _HAENMetadataIdentifierHeadsetIsWired
+|| __DATA_CONST.__const _HAENMetadataIdentifierHeadsetSensitivity
+|| __DATA_CONST.__const _HAENMetadataIdentifierHeadsetTargetScalarVolume74dB
+|| __DATA_CONST.__const _HAENMetadataIdentifierHeadsetTargetScalarVolume80dB
+|| __DATA_CONST.__const _HAENMetadataIdentifierRouteSubType
+|| __DATA_CONST.__const _HAENMetadataIdentifierRouteType
+|| __DATA_CONST.__const _HAENMetadataIdentifierVolumeGain
+|| __DATA_CONST.__const _HAENMetadataIdentifierWeeklyDosage
+|| __DATA_CONST.__const _HAENMetadataIdentifierWeeklyExposureDuration
+|| __DATA_CONST.__const _HAENMetadataIdentifierWeeklyIncludesPrunableData
+|| __DATA_CONST.__const _kDefaultsKeyHAENFeatureMandatory
+|| __DATA_CONST.__const _kDefaultsKeyHAENGeoLocationFinalized
+|| __DATA_CONST.__const _kDefaultsKeyHAENGeoLocationSource
+|| __DATA_CONST.__const _kHAENKeyEventAudioExposureLevel
+|| __DATA_CONST.__const _kHAENKeyEventDateInterval
+|| __DATA_CONST.__const _kHAENKeyEventMetadata
+|| __DATA_CONST.__const _kHAENKeyEventType
+|| __DATA_CONST.__const _kHAENKeyEventUUID
+|| __DATA_CONST.__const _kHAENMandatoryPlistFilePath
+|| __DATA_CONST.__const _kISOCountryCode_SOUTH_KOREA
+|| __DATA_CONST.__const _kRegionalPlistKey
+|| __DATA_CONST.__const _kWiredHeadsetName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENDefaults
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENGeoLocation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENLocationGatingHelper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENUnknownDeviceManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENVolumeControl
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENotificationCenter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENotificationCenterClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENotificationCenterManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENotificationCenterServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAENotificationEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_NotificationCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENDefaults
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENGeoLocation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENLocationGatingHelper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENUnknownDeviceManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENVolumeControl
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENotificationCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENotificationCenterClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENotificationCenterManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENotificationCenterServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAENotificationEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_NotificationCenter
+|| __TEXT.__const _HAENErrorCodeFailedToCreateHKSample
+|| __TEXT.__const _HAENErrorCodeFeatureDisabled
+|| __TEXT.__const _HAENErrorCodeInvalidEventType
+|| __TEXT.__const _HAENErrorCodeLiveExposureBelowLimit
+|| __TEXT.__const _HAENErrorCodeNilHAENCenterDelegate
+|| __TEXT.__const _HAENErrorCodeNilXPCListener
+|| __TEXT.__const _HAENotificationsFrameworkVersionString
+|| __TEXT.__const _HAENotificationsVersionNumber
+|| __TEXT.__const _HAENotificationsVersionString
+|| __TEXT.__const _kHAENVolumeReductionUnitDelta
+|| __TEXT.__const _kInvalidADAMSessionID
+|| __TEXT.__text _GeoLocationDidChange
+|| __TEXT.__text _GetDeviceSpecificDefaults
+|| __TEXT.__text _HAENLocalizationUtilityGetBundle
+|| __TEXT.__text _HAENotificationsLog
+|| __TEXT.__text _NSErrorWithHAENErrorCode
+|| __TEXT.__text _ReleaseHAENRouteInfo
+|| __TEXT.__text _RemoveDeviceSpecificDefaultsFor
+|| __TEXT.__text _SetDeviceSpecificDefaultsFor
+|| __TEXT.__text _SyncDeviceSpecificDomain
+|| __TEXT.__text _settingsChanged
+__ AudioDataAnalysis: _ADAFDarwinNotificationKey
+__ AudioDataAnalysis: _ADAFDarwinNotificationKeyClearAllAdapters
+__ AudioDataAnalysis: _ADAFDarwinNotificationKeyDeviceDataDispositionDidChange
+__ AudioDataAnalysis: _ADAFDarwinNotificationKeyNano
+__ AudioDataAnalysis: _ADAFDarwinNotificationKeyRLSStatusDidChange
+__ AudioDataAnalysis: _ADAFDarwinNotificationKeyUnknownWiredDeviceStatusChanged
+__ AudioDataAnalysis: _ADAFDeviceDispositionKeyErase
+__ AudioDataAnalysis: _ADAFDeviceDispositionKeyUpdate
+__ AudioDataAnalysis: _ADAFDeviceSpecificPreferenceDomain
+__ AudioDataAnalysis: _ADAFPreferenceKeyConnectedWiredDeviceIsHeadphone
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENDeviceCountryCodeOverride
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENDeviceDisposition
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENDeviceProductTypeOverride
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENKnownAccessories
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENKnownAccessoryExpiryDays
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENotificationFeatureEnabled
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENotificationIsMandatory
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENotificationLiveThreshold
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAENotificationLiveWindowInSeconds
+__ AudioDataAnalysis: _ADAFPreferenceKeyHAESampleTransient
+__ AudioDataAnalysis: _ADAFPreferenceKeyMXVolumeLimitOn
+__ AudioDataAnalysis: _ADAFPreferenceKeyVolumeLimitEnabled
+__ AudioDataAnalysis: _ADAFPreferenceKeyVolumeLimitThreshold
+__ AudioDataAnalysis: _ADAFPreferenceKeyVolumeReductionDelta
+__ AudioDataAnalysis: _OBJC_CLASS_$_ADASManager
+__ AudioToolbox: _AudioServicesPlaySystemSoundWithOptions
+__ AudioToolbox: _kAudioServicesPlaySystemSoundOptionFlagsKey
+__ AudioToolbox: _kAudioServicesPlaySystemSoundOptionIgnoreRingerSwitchKey
+__ AudioToolbox: _kAudioServicesPlaySystemSoundOptionVolumeKey
+__ BiomeStreams: _OBJC_CLASS_$_BMDiscoverabilitySignalEvent
+__ BiomeStreams: _OBJC_CLASS_$_BMStreams
+__ CoreDuet: _OBJC_CLASS_$__DKDiscoverabilitySignalsMetadataKey
+__ CoreDuet: _OBJC_CLASS_$__DKEvent
+__ CoreDuet: _OBJC_CLASS_$__DKKnowledgeStore
+__ CoreDuet: _OBJC_CLASS_$__DKSource
+__ CoreDuet: _OBJC_CLASS_$__DKSystemEventStreams
+__ CoreDuetContext: _OBJC_CLASS_$__CDClientContext
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextualKeyPath
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesCopyMultiple
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _CFUserNotificationCancel
+__ CoreFoundation: _CFUserNotificationCreate
+__ CoreFoundation: _CFUserNotificationReceiveResponse
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFUserNotificationAlertHeaderKey
+__ CoreFoundation: _kCFUserNotificationAlertMessageKey
+__ CoreFoundation: _kCFUserNotificationAlternateButtonTitleKey
+__ CoreFoundation: _kCFUserNotificationDefaultButtonTitleKey
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSMachErrorDomain
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyPromptUnlockDevice
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyUnlockDevice
+__ GeoServices: _GEOCountryConfigurationCountryCodeDidChangeNotification
+__ GeoServices: _OBJC_CLASS_$_GEOCountryConfiguration
+__ HealthKit: _HKCategoryTypeIdentifierHeadphoneAudioExposureEvent
+__ HealthKit: _HKMetadataKeyAudioExposureDuration
+__ HealthKit: _HKMetadataKeyAudioExposureLevel
+__ HealthKit: _OBJC_CLASS_$_HKCategorySample
+__ HealthKit: _OBJC_CLASS_$_HKHealthStore
+__ HealthKit: _OBJC_CLASS_$_HKObjectType
+__ HealthKit: _OBJC_CLASS_$_HKQuantity
+__ HealthKit: _OBJC_CLASS_$_HKUnit
+__ HealthKit: _OBJC_CLASS_$__HKBehavior
+__ HealthKit: _kHKHealthAppBundleIdentifier
+__ IOKit: _IOIteratorNext
+__ IOKit: _IOObjectRelease
+__ IOKit: _IORegistryEntryCreateCFProperties
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingServices
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ ManagedConfiguration: _MCFeatureHealthAllowed
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MediaExperience: _CMSessionManagerPerformVolumeOperationWithSequenceNumber
+__ MediaExperience: _CMSessionMgrCopyDeviceRouteForRouteConfiguration
+__ MediaExperience: _OBJC_CLASS_$_MXVolumeManager
+__ MediaExperience: _kMXSessionAudioCategory_MediaPlayback
+__ PersonalAudio: _OBJC_CLASS_$_PASettings
+__ ToneLibrary: _TLAlertTopicSystemNotificationHeadphoneAudioExposure
+__ ToneLibrary: _TLToneIdentifierNone
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationContent
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationSound
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationAction
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationCategory
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationRequest
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationCenter
+__ UserNotifications: _UNNotificationDefaultActionIdentifier
+__ libAudioStatistics.dylib: _OBJC_CLASS_$_CAReporter
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerCopyDeviceInfo
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetServiceWithPrimaryPort
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetProductType
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+HAENotificationEvent : NSObject <NSSecureCoding, NSCopying>
+ @property  double level
+ @property  NSDateInterval *dateInterval
+ @property  unsigned int eventType
+ @property  NSDictionary *metadata
+ @property  NSUUID *uuid
+
+  // class methods
+  +[HAENotificationEvent supportsSecureCoding]
+
+  // instance methods
+  -[HAENotificationEvent level]
+  -[HAENotificationEvent initWithCoder:]
+  -[HAENotificationEvent .cxx_destruct]
+  -[HAENotificationEvent dateInterval]
+  -[HAENotificationEvent metadata]
+  -[HAENotificationEvent uuid]
+  -[HAENotificationEvent eventType]
+  -[HAENotificationEvent copyWithZone:]
+  -[HAENotificationEvent encodeWithCoder:]
+  -[HAENotificationEvent initWithEventType:exposureLevel:dateInterval:metadata:]
+  -[HAENotificationEvent getEventTypeString]
+
+
+HAENotificationCenterManager : NSObject
+  // class methods
+  +[HAENotificationCenterManager sharedInstance]
+
+  // instance methods
+  -[HAENotificationCenterManager .cxx_destruct]
+  -[HAENotificationCenterManager init]
+  -[HAENotificationCenterManager addHAENotificationEvent:]
+  -[HAENotificationCenterManager sendBannerNotificationWithEvent:volumeLoweringAction:]
+  -[HAENotificationCenterManager donateSignalToTipsKit:]
+  -[HAENotificationCenterManager sendLiveExposureEvent:volumeLoweringAction:]
+  -[HAENotificationCenterManager sendWeeklyExposureEvent:volumeLoweringAction:]
+
+
+HAENStatistics : NSObject
+  // class methods
+  +[HAENStatistics sharedInstance]
+
+  // instance methods
+  -[HAENStatistics .cxx_destruct]
+  -[HAENStatistics init]
+  -[HAENStatistics processMessage:]
+  -[HAENStatistics _sendMessage:]
+  -[HAENStatistics processStatsForEvent:]
+  -[HAENStatistics volumeActionString:]
+  -[HAENStatistics processStatsForLocationGating:]
+
+
+HAENHealthKitStore : NSObject
+  // class methods
+  +[HAENHealthKitStore sharedInstance]
+  +[HAENHealthKitStore createHKCategorySampleForEvent:]
+
+  // instance methods
+  -[HAENHealthKitStore .cxx_destruct]
+  -[HAENHealthKitStore init]
+  -[HAENHealthKitStore saveNotificationEventToHealthKit:]
+  -[HAENHealthKitStore saveNotificationEventToHealthKit:withDelegate:]
+
+
+NotificationCenter : NSObject <UNUserNotificationCenterDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[NotificationCenter _healthAppHidden]
+
+  // instance methods
+  -[NotificationCenter .cxx_destruct]
+  -[NotificationCenter init]
+  -[NotificationCenter userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:]
+  -[NotificationCenter sendNotificationWithExposureLevel:duration:eventType:volumeLoweringAction:]
+  -[NotificationCenter handleNotificationAction:]
+
+
+HAENVolumeControl : NSObject
+  // class methods
+  +[HAENVolumeControl sharedInstance]
+
+  // instance methods
+  -[HAENVolumeControl _updateFlags]
+  -[HAENVolumeControl setDeviceInfo:]
+  -[HAENVolumeControl init]
+  -[HAENVolumeControl getStats]
+  -[HAENVolumeControl limitVolume:]
+  -[HAENVolumeControl _setMXVolumeLimit:]
+  -[HAENVolumeControl PME_enabled]
+  -[HAENVolumeControl _fetchCategory:routeInfo:]
+  -[HAENVolumeControl _updateMXVolumeLimit]
+  -[HAENVolumeControl _RLSAllowsMXVolumeLimit]
+  -[HAENVolumeControl computeLimitedVolume:event:action:]
+  -[HAENVolumeControl getCurrentVolumeForCategory:route:]
+  -[HAENVolumeControl applyVolumeLoweringAtNextSession]
+  -[HAENVolumeControl limitVolumeTo:category:route:actionResult:]
+  -[HAENVolumeControl updateMXVolumeLimitStatus]
+  -[HAENVolumeControl wiredHeadphoneConnected:]
+
+
+HAENSystemSoundPlayer : NSObject
+  // class methods
+  +[HAENSystemSoundPlayer sharedInstance]
+
+  // instance methods
+  -[HAENSystemSoundPlayer .cxx_destruct]
+  -[HAENSystemSoundPlayer init]
+  -[HAENSystemSoundPlayer dealloc]
+  -[HAENSystemSoundPlayer playSystemSoundWithEvent:completion:]
+
+
+HAENotificationCenterServer : NSObject <NSXPCListenerDelegate, HAENotificationCenterDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[HAENotificationCenterServer sharedInstance]
+
+  // instance methods
+  -[HAENotificationCenterServer .cxx_destruct]
+  -[HAENotificationCenterServer init]
+  -[HAENotificationCenterServer addHAENotificationEvent:]
+  -[HAENotificationCenterServer listener:shouldAcceptNewConnection:]
+  -[HAENotificationCenterServer verifyInvariants]
+
+
+HAENDefaults : NSObject
+  // class methods
+  +[HAENDefaults sharedInstance]
+  +[HAENDefaults isCurrentProcessMediaserverd]
+  +[HAENDefaults isRunningCITests]
+  +[HAENDefaults HAENSupportedForCurrentDeviceClass]
+
+  // instance methods
+  -[HAENDefaults isHAENFeatureOptedIn]
+  -[HAENDefaults .cxx_destruct]
+  -[HAENDefaults isHAENFeatureMandatory]
+  -[HAENDefaults _shouldRepromptSinceDate:]
+  -[HAENDefaults setUserVolumeWithValue:mininum:]
+  -[HAENDefaults updateAudioAccessoryIsConnectedToHeadphones:]
+  -[HAENDefaults init]
+  -[HAENDefaults isReduceLoudSoundEnabled]
+  -[HAENDefaults isHAENFeatureEnabled]
+  -[HAENDefaults updateUserVolumeForVolumeLimit]
+  -[HAENDefaults isEUVolumeLimitOn]
+  -[HAENDefaults setAudioAccessoryIsConnectedToHeadphones:]
+  -[HAENDefaults getReduceLoudSoundThreshold]
+  -[HAENDefaults getAudioAccessoryConnectionInfo]
+  -[HAENDefaults volumeReductionDelta]
+  -[HAENDefaults removeAllAdapters]
+  -[HAENDefaults isConnectedUnknownWiredDeviceHeadphone]
+  -[HAENDefaults _updateSetting:value:notify:]
+  -[HAENDefaults _generateAccessoryKeyWithManufacture:andSerialNumber:]
+  -[HAENDefaults isSKVolumeLimitOn]
+  -[HAENDefaults wiredDeviceStatusDidChange]
+  -[HAENDefaults updateRLSSettings]
+  -[HAENDefaults getLiveMonitorTimeWindowInSeconds]
+  -[HAENDefaults getLiveMonitoringThreshold]
+  -[HAENDefaults forceReadDefaults]
+  -[HAENDefaults softwareVersionEnabled]
+  -[HAENDefaults isCurrentAudioAccessoryHeadphone]
+  -[HAENDefaults _registerNotification:]
+
+
+HAENotificationCenterClient : NSObject <HAENotificationCenterDelegate>
+ @property  NSString *bundleID
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HAENotificationCenterClient initWithBundleID:]
+  -[HAENotificationCenterClient bundleID]
+  -[HAENotificationCenterClient .cxx_destruct]
+  -[HAENotificationCenterClient setupConnection]
+  -[HAENotificationCenterClient setBundleID:]
+  -[HAENotificationCenterClient addHAENotificationEvent:]
+
+
+HAENUnknownDeviceManager : NSObject
+  // class methods
+  +[HAENUnknownDeviceManager sharedInstance]
+
+  // instance methods
+  -[HAENUnknownDeviceManager _isAlertSupported]
+  -[HAENUnknownDeviceManager .cxx_destruct]
+  -[HAENUnknownDeviceManager init]
+  -[HAENUnknownDeviceManager unknownWiredHeadsetConnectedThroughB204]
+  -[HAENUnknownDeviceManager updateWiredDeviceStatus]
+  -[HAENUnknownDeviceManager unknownWiredConnectionDidChange:]
+  -[HAENUnknownDeviceManager _wiredDeviceSessionCreated:SessionID:]
+  -[HAENUnknownDeviceManager _wiredDeviceSessionInit:]
+  -[HAENUnknownDeviceManager _processWiredDevice:]
+  -[HAENUnknownDeviceManager _resetWiredStatus]
+  -[HAENUnknownDeviceManager _shouldSurfaceAlert:]
+  -[HAENUnknownDeviceManager _processPrompt:]
+  -[HAENUnknownDeviceManager _updateMXVolumeLimitStatus:]
+  -[HAENUnknownDeviceManager _isUnknownWiredHeadset:]
+  -[HAENUnknownDeviceManager surfaceAlertBox]
+  -[HAENUnknownDeviceManager _wiredDeviceSessionDestroyed:]
+  -[HAENUnknownDeviceManager deviceSessionCreated:SessionID:]
+  -[HAENUnknownDeviceManager getDeviceName]
+  -[HAENUnknownDeviceManager isDeviceHeadphoneJack:]
+  -[HAENUnknownDeviceManager deviceSessionDestroyed:isWired:]
+
+
+HAENTPSDiscoverabilitySignal : NSObject
+ @property  NSString *identifier
+ @property  NSString *bundleIdentifier
+ @property  NSString *context
+
+  // class methods
+  +[HAENTPSDiscoverabilitySignal osBuild]
+
+  // instance methods
+  -[HAENTPSDiscoverabilitySignal initWithIdentifier:bundleIdentifier:context:]
+  -[HAENTPSDiscoverabilitySignal donateSignalWithCompletion:]
+  -[HAENTPSDiscoverabilitySignal bundleIdentifier]
+  -[HAENTPSDiscoverabilitySignal initWithIdentifier:]
+  -[HAENTPSDiscoverabilitySignal .cxx_destruct]
+  -[HAENTPSDiscoverabilitySignal setBundleIdentifier:]
+  -[HAENTPSDiscoverabilitySignal identifier]
+  -[HAENTPSDiscoverabilitySignal setIdentifier:]
+  -[HAENTPSDiscoverabilitySignal setContext:]
+  -[HAENTPSDiscoverabilitySignal _knowledgeStore]
+  -[HAENTPSDiscoverabilitySignal context]
+  -[HAENTPSDiscoverabilitySignal _discoverabilitySignalsStream]
+
+
+HAENAccessoryInfo : NSObject
+ @property  NSString *manufacturer
+ @property  NSString *serialNumber
+ @property  NSString *name
+ @property  NSString *modelNumber
+ @property  NSNumber *interfaceDeviceSerialNumber
+ @property  NSString *interfaceModuleSerialNumber
+
+  // class methods
+  +[HAENAccessoryInfo getAccessoryInfo:]
+  +[HAENAccessoryInfo getAccessoryInfoFromIOAccesoryManager:]
+  +[HAENAccessoryInfo getAccessoryInfoFromIOKitDirectly:]
+
+  // instance methods
+  -[HAENAccessoryInfo modelNumber]
+  -[HAENAccessoryInfo serialNumber]
+  -[HAENAccessoryInfo name]
+  -[HAENAccessoryInfo .cxx_destruct]
+  -[HAENAccessoryInfo manufacturer]
+  -[HAENAccessoryInfo interfaceDeviceSerialNumber]
+  -[HAENAccessoryInfo interfaceModuleSerialNumber]
+
+
+HAENGeoLocation : NSObject
+ @property  NSString *countryCode
+ @property  unsigned int source
+ @property  unsigned int sourceDevice
+ @property  NSDate *timestamp
+
+  // instance methods
+  -[HAENGeoLocation sourceDevice]
+  -[HAENGeoLocation countryCode]
+  -[HAENGeoLocation .cxx_destruct]
+  -[HAENGeoLocation init]
+  -[HAENGeoLocation describeSource]
+  -[HAENGeoLocation timestamp]
+  -[HAENGeoLocation fetchGeoLocation]
+  -[HAENGeoLocation source]
+
+
+HAENLocationGatingHelper : NSObject
+  // class methods
+  +[HAENLocationGatingHelper sharedInstance]
+
+  // instance methods
+  -[HAENLocationGatingHelper _validDataDisposition:]
+  -[HAENLocationGatingHelper _setFeatureMandatoryFlag:]
+  -[HAENLocationGatingHelper deviceDataDispositionDidChange]
+  -[HAENLocationGatingHelper reloadProductTypeOverride]
+  -[HAENLocationGatingHelper .cxx_destruct]
+  -[HAENLocationGatingHelper update]
+  -[HAENLocationGatingHelper _updateLocationGatingFlags]
+  -[HAENLocationGatingHelper _readDeviceDisposition]
+  -[HAENLocationGatingHelper _isIPod]
+  -[HAENLocationGatingHelper init]
+  -[HAENLocationGatingHelper _updateSampleTransient:]
+  -[HAENLocationGatingHelper _updateStatsWithGeoLocation:disposition:andMandatoryFlag:]
+  -[HAENLocationGatingHelper _logLocationGatingFlags]
+  -[HAENLocationGatingHelper _contryConfigurationDidChange:]
+  -[HAENLocationGatingHelper _shouldUpdateLocation:]
+  -[HAENLocationGatingHelper _donateSignalToTipsKit:]
+  -[HAENLocationGatingHelper _donateSignalToTipsKitOnInitialization]
+  -[HAENLocationGatingHelper _regionAndDeviceMandatesFeature:]
+  -[HAENLocationGatingHelper _getMGProductType]
+  -[HAENLocationGatingHelper _loadRegionPlistFile]
+  -[HAENLocationGatingHelper dealloc]
+  -[HAENLocationGatingHelper _setHEANEnabled:]
+  -[HAENLocationGatingHelper _updateImpl]
+  -[HAENLocationGatingHelper _validCountryCodeSource:]
+  -[HAENLocationGatingHelper getStats]
+  -[HAENLocationGatingHelper _isHAENFeatureMandatory:dataDisposition:]
+
+
+HAENotificationCenter : NSObject
+ @property  <HAENotificationCenterUserDelegate> *delegate
+ @property  NSString *bundleID
+ @property  double liveMonitorWindowInSec
+ @property  double liveThresholdInDBA
+
+  // class methods
+  +[HAENotificationCenter connectedWiredDeviceIsHeadphone]
+  +[HAENotificationCenter connectedWiredDeviceIsHeadphoneWithUUID:]
+  +[HAENotificationCenter startNotificationCenterServer]
+
+  // instance methods
+  -[HAENotificationCenter bundleID]
+  -[HAENotificationCenter .cxx_destruct]
+  -[HAENotificationCenter setDelegate:]
+  -[HAENotificationCenter liveMonitorWindowInSec]
+  -[HAENotificationCenter initWithBundleIdentifier:]
+  -[HAENotificationCenter addHAENotificationEvent:completion:]
+  -[HAENotificationCenter delegate]
+  -[HAENotificationCenter addHAENotificationEvent:error:]
+  -[HAENotificationCenter liveThresholdInDBA]
+
+
+01 00 0500 /System/Library/PrivateFrameworks/AudioDataAnalysis.framework/AudioDataAnalysis: ADASManager 
+01 00 0d40 /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams: BMDiscoverabilitySignalEvent 
+01 00 0d40 /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams: BMStreams 
+01 00 0c00 /usr/lib/libAudioStatistics.dylib: CAReporter 
+01 00 0700 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOCountryConfiguration 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKCategorySample 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKHealthStore 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKObjectType 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKQuantity 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKUnit 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 1100 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0a00 /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience: MXVolumeManager 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0b40 /System/Library/PrivateFrameworks/PersonalAudio.framework/PersonalAudio: PASettings 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationContent 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationSound 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationAction 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationCategory 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationRequest 
+01 00 1300 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationCenter 
+01 00 0400 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDClientContext 
+01 00 0400 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextualKeyPath 
+01 00 0300 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKDiscoverabilitySignalsMetadataKey 
+01 00 0300 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEvent 
+01 00 0300 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKKnowledgeStore 
+01 00 0300 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSource 
+01 00 0300 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSystemEventStreams 
+01 00 0240 /System/Library/Frameworks/HealthKit.framework/HealthKit: _HKBehavior 

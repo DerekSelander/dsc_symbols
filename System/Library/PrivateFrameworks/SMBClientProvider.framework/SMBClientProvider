@@ -1,0 +1,62 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBClientManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBClientManager
+|| __TEXT.__const _SMBClientProviderVersionNumber
+|| __TEXT.__const _SMBClientProviderVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ LiveFS: _OBJC_CLASS_$_LiveFSClient
+__ LiveFS: _OBJC_IVAR_$_LiveFSClient.conn
+__ LiveFS: _OBJC_METACLASS_$_LiveFSClient
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+SMBClientManager : LiveFSClient
+  // class methods
+  +[SMBClientManager newManager]
+
+  // instance methods
+  -[SMBClientManager volumes:]
+  -[SMBClientManager listenerForVolume:completionHandler:]
+  -[SMBClientManager listenerForVolume:error:]
+  -[SMBClientManager forgetVolume:]
+  -[SMBClientManager addSMBServerOrShare:completionHandler:]
+  -[SMBClientManager forgetVolume:withFlags:completionHandler:]
+  -[SMBClientManager volumesWithCompletionHandler:]
+  -[SMBClientManager forgetVolume:completionHandler:]
+  -[SMBClientManager addVolume:atServer:credentialType:credential:]
+  -[SMBClientManager addVolumes:atServer:credentialType:credential:completionHandler:]
+  -[SMBClientManager sharesAtServer:credentialType:credential:error:]
+  -[SMBClientManager sharesAtServer:credentialType:credential:completionHandler:]
+  -[SMBClientManager credentialTypesForServer:completionHandler:]
+  -[SMBClientManager mountsFromServer:completionHandler:]
+
+
+01 00 0200 /System/Library/PrivateFrameworks/LiveFS.framework/LiveFS: LiveFSClient 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

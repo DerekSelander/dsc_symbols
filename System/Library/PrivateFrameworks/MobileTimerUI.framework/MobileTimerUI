@@ -1,0 +1,991 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUIBitmapHandView
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUISelectionTableViewController
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUISelectionViewData
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUIShadowInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUISleepMetadata
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUISwitchTableViewCell
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUITonePickerStyleProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_MTUIUtility
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUIBitmapHandView
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUISelectionTableViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUISelectionViewData
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUIShadowInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUISleepMetadata
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUISwitchTableViewCell
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUITonePickerStyleProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_MTUIUtility
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._calendar
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._dayHands
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._faceDayImage
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._faceNightImage
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._faceView
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._flutterIndex
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._isRenderStateStale
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._middleDotDay
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._middleDotNight
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._middleRedDot
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._minuteHourAnimationTriggered
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._nightHands
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._nighttime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._runMode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._seconds
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIAnalogClockView._time
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIBitmapHandView._partViews
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIBitmapHandView._partViewsMaintainingOrientation
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIDigitalClockLabel._baseDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIDigitalClockLabel._calendar
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIDigitalClockLabel._hour
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIDigitalClockLabel._minute
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._allowCaching
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._angleCache
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._imagePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._offset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._page
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._registeredClientsCount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._resourcesBundle
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._scale
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MTUIRenderedHandViewFactory._viewSize
+|| __DATA_CONST.__const _AnalogClockDidChangeNighttimeNotification
+|| __DATA_CONST.__const _AnalogClockDidCrossMidnightNotification
+|| __DATA_CONST.__const _AnalogClockDidCrossNoonNotification
+|| __DATA_CONST.__const _MTUIAlarmDetailLabelIdentifier
+|| __DATA_CONST.__const _MTUIAlarmEnabledSwitchIdentifier
+|| __DATA_CONST.__const _MTUIAlarmRootViewIdentifier
+|| __DATA_CONST.__const _MTUIAlarmTimeLabelIdentifier
+|| __DATA_CONST.__const _MTUIBitmapClockHandPartMaintainsOrientationKey
+|| __DATA_CONST.__const _MTUIBitmapClockHandPartNameKey
+|| __DATA_CONST.__const _MTUIBitmapClockHandPartOffsetKey
+|| __DATA_CONST.__const _MTUISelectionTableViewCellIdentifier
+|| __DATA_CONST.__const _kMTUIBaseTableViewCellIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIAlarmView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIAnalogClockView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIBaseTableViewCell
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIChevronTableViewCell
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUICollectionCellAnalogClockView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIDateLabel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIDigitalClockLabel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIGlyphTimeView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIRenderedHandViewFactory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUITimeView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUITimerCountdownView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MTUIWorldClockCellView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIAlarmView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIAnalogClockView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIBaseTableViewCell
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIChevronTableViewCell
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUICollectionCellAnalogClockView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIDateLabel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIDigitalClockLabel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIGlyphTimeView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIRenderedHandViewFactory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUITimeView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUITimerCountdownView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MTUIWorldClockCellView
+|| __TEXT.__const _MTUIAlarmTableViewHeaderHeight
+|| __TEXT.__const _MTUIAlarmTableViewHeaderLabelBottomMargin
+|| __TEXT.__const _MTUIAlarmTableViewInsetEdit
+|| __TEXT.__const _MTUIAlarmTableViewInsetRegular
+|| __TEXT.__const _ShadowBlurPadding
+|| __TEXT.__text _MTUIDeleteButtonImage
+|| __TEXT.__text _MTUIFloorToPixel
+|| __TEXT.__text _MTUIIsLargeText
+|| __TEXT.__text _MTUIIsPadIdiom
+|| __TEXT.__text _MTUIIsPhoneIdiom
+|| __TEXT.__text _MTUIIsVeryShortPhoneSize
+|| __TEXT.__text _MTUIIsVeryWidePhoneSize
+|| __TEXT.__text _MTUILocationCoordinate2DMake
+|| __TEXT.__text _MTUIMainScreenScale
+|| __TEXT.__text _MTUIRoundToPixel
+|| __TEXT.__text _MTUIShouldUseLargePadLayout
+|| __TEXT.__text _MTUIShouldUseLargePadLayoutForSize
+|| __TEXT.__text _MTUIStandardizeAngle
+__ AppSupportUI: _NUIContainerViewSizeUseDefault
+__ AppSupportUI: _OBJC_CLASS_$_NUIContainerGridView
+__ AppSupportUI: _OBJC_METACLASS_$_NUIContainerGridView
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _NSCurrentLocaleDidChangeNotification
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGContextDrawPDFPage
+__ CoreGraphics: _CGContextRotateCTM
+__ CoreGraphics: _CGContextScaleCTM
+__ CoreGraphics: _CGContextSetShadowWithColor
+__ CoreGraphics: _CGContextTranslateCTM
+__ CoreGraphics: _CGPDFDocumentCreateWithURL
+__ CoreGraphics: _CGPDFDocumentGetPage
+__ CoreGraphics: _CGPDFPageGetBoxRect
+__ CoreGraphics: _CGPDFPageRelease
+__ CoreGraphics: _CGPDFPageRetain
+__ CoreGraphics: _CGPointZero
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetMaxX
+__ CoreGraphics: _CGRectGetMidX
+__ CoreGraphics: _CGRectGetMidY
+__ CoreGraphics: _CGRectGetMinX
+__ CoreGraphics: _CGRectGetWidth
+__ CoreGraphics: _CGRectUnion
+__ CoreGraphics: _CGRectZero
+__ CoreGraphics: _CGSizeZero
+__ CoreText: _CTFontCreateCopyOfSystemUIFontWithGrade
+__ CoreText: _CTFontCreateUIFontForLanguage
+__ CoreText: _kCTFontOpticalSizeAttribute
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateComponentsFormatter
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSIndexPath
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ HealthKit: _HKCategoryTypeIdentifierSleepAnalysis
+__ HealthKit: _OBJC_CLASS_$_HKObjectType
+__ HealthKit: __HKCreateURLForSampleType
+__ IntlPreferences: _OBJC_CLASS_$_IntlUtility
+__ MobileTimer: _DateMaskToString
+__ MobileTimer: _FormatTime
+__ MobileTimer: _MTDateFormattingLocaleDidChangeNotification
+__ MobileTimer: _MTLogForCategory
+__ MobileTimer: _OBJC_CLASS_$_MTAnalytics
+__ MobileTimer: _OBJC_CLASS_$_MTDateFormatting
+__ MobileTimer: _ResetTimeFormatter
+__ MobileTimer: _kMTCASleepAlarmHistoryViews
+__ QuartzCore: _CACurrentMediaTime
+__ QuartzCore: _OBJC_CLASS_$_CABasicAnimation
+__ QuartzCore: _OBJC_CLASS_$_CALayer
+__ QuartzCore: _OBJC_CLASS_$_CAMediaTimingFunction
+__ QuartzCore: _OBJC_CLASS_$_CAShapeLayer
+__ QuartzCore: _kCALineCapRound
+__ QuartzCore: _kCAMediaTimingFunctionLinear
+__ Sleep: _OBJC_CLASS_$_HKSPSleepStore
+__ UIKit: _NSFontAttributeName
+__ UIKit: _NSForegroundColorAttributeName
+__ UIKit: _NSParagraphStyleAttributeName
+__ UIKit: _NSStringFromCGPoint
+__ UIKit: _NSStringFromCGSize
+__ UIKit: _OBJC_CLASS_$_NSMutableParagraphStyle
+__ UIKit: _OBJC_CLASS_$_NSParagraphStyle
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIBezierPath
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIImageSymbolConfiguration
+__ UIKit: _OBJC_CLASS_$_UIImageView
+__ UIKit: _OBJC_CLASS_$_UILabel
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UISwitch
+__ UIKit: _OBJC_CLASS_$_UITableView
+__ UIKit: _OBJC_CLASS_$_UITableViewCell
+__ UIKit: _OBJC_CLASS_$_UITableViewController
+__ UIKit: _OBJC_CLASS_$_UITableViewHeaderFooterView
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_METACLASS_$_UILabel
+__ UIKit: _OBJC_METACLASS_$_UITableViewCell
+__ UIKit: _OBJC_METACLASS_$_UITableViewController
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _UIApp
+__ UIKit: _UIApplicationDidReceiveMemoryWarningNotification
+__ UIKit: _UIApplicationSignificantTimeChangeNotification
+__ UIKit: _UIContentSizeCategoryAccessibilityLarge
+__ UIKit: _UIContentSizeCategoryDidChangeNotification
+__ UIKit: _UIContentSizeCategoryIsAccessibilityCategory
+__ UIKit: _UIEdgeInsetsZero
+__ UIKit: _UIFontDescriptorFeatureSettingsAttribute
+__ UIKit: _UIFontFeatureSelectorIdentifierKey
+__ UIKit: _UIFontFeatureTypeIdentifierKey
+__ UIKit: _UIFontTextStyleBody
+__ UIKit: _UIFontTextStyleSubhead
+__ UIKit: _UIFontTextStyleTitle1
+__ UIKit: _UIFontWeightLight
+__ UIKit: _UIFontWeightRegular
+__ UIKit: _UIGraphicsBeginImageContextWithOptions
+__ UIKit: _UIGraphicsEndImageContext
+__ UIKit: _UIGraphicsGetCurrentContext
+__ UIKit: _UIGraphicsGetImageFromCurrentImageContext
+__ UIKit: _UIImagePNGRepresentation
+__ UIKit: _UIOffsetZero
+__ UIKit: _UIRectCenteredAboutPointScale
+__ UIKit: _UIRectGetCenter
+__ UIKit: _UITableViewAutomaticDimension
+__ UIKit: _UITableViewDefaultRowHeight
+__ UIKit: _UITrackingRunLoopMode
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: _CC_SHA1
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___sincosf_stret
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: _modf
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+MTUIWorldClockCellView : UIView <MTClock>
+ @property  <MTUIWorldClockCellViewDelegate> *delegate
+ @property  BOOL started
+ @property  MTUIDigitalClockLabel *digitalClock
+ @property  UILabel *nameLabel
+ @property  UILabel *combinedLabel
+ @property  BOOL shouldStackViews
+ @property  long long runMode
+
+  // class methods
+  +[MTUIWorldClockCellView defaultHeight]
+  +[MTUIWorldClockCellView dayAndTimeZoneOffsetStringFromDate:withTimeZoneOffset:timeZoneAbbreviation:spaceBeforeTimeDesignator:]
+  +[MTUIWorldClockCellView dayAndTimeZoneOffsetStringFromDate:withTimeZoneOffset:timeZoneAbbreviation:spaceBeforeTimeDesignator:hoursOnly:]
+
+  // instance methods
+  -[MTUIWorldClockCellView setTimeZone:]
+  -[MTUIWorldClockCellView combinedLabel]
+  -[MTUIWorldClockCellView updateLabelAdjustFontSize]
+  -[MTUIWorldClockCellView started]
+  -[MTUIWorldClockCellView setEditing:animated:]
+  -[MTUIWorldClockCellView coarseUpdateInterval]
+  -[MTUIWorldClockCellView .cxx_destruct]
+  -[MTUIWorldClockCellView layoutSubviews]
+  -[MTUIWorldClockCellView stop]
+  -[MTUIWorldClockCellView setDelegate:]
+  -[MTUIWorldClockCellView shouldStackViews]
+  -[MTUIWorldClockCellView _configureFonts]
+  -[MTUIWorldClockCellView handleTextSizeChange:]
+  -[MTUIWorldClockCellView significantTimeChange:]
+  -[MTUIWorldClockCellView localeChange:]
+  -[MTUIWorldClockCellView digitalClock]
+  -[MTUIWorldClockCellView initWithFrame:]
+  -[MTUIWorldClockCellView delegate]
+  -[MTUIWorldClockCellView runMode]
+  -[MTUIWorldClockCellView start]
+  -[MTUIWorldClockCellView updateTimeContinuously:]
+  -[MTUIWorldClockCellView updateInterval]
+  -[MTUIWorldClockCellView updateTime]
+  -[MTUIWorldClockCellView nameLabel]
+  -[MTUIWorldClockCellView setShouldStackViews:]
+
+
+MTUIBitmapHandView : UIView
+  // class methods
+  +[MTUIBitmapHandView partInfoWithName:offset:maintainsOrientation:]
+  +[MTUIBitmapHandView partInfoWithName:]
+
+  // instance methods
+  -[MTUIBitmapHandView .cxx_destruct]
+  -[MTUIBitmapHandView initWithBundle:resourcePath:partInfoList:rotationalCenter:]
+  -[MTUIBitmapHandView initWithImage:rotationalCenter:]
+
+
+MTUIRenderedHandViewFactory : NSObject
+ @property  NSString *key
+ @property  unsigned long registeredClientsCount
+ @property  BOOL allowCaching
+
+  // class methods
+  +[MTUIRenderedHandViewFactory flushAllCaches]
+  +[MTUIRenderedHandViewFactory keyForBundle:imagePath:offset:scale:]
+  +[MTUIRenderedHandViewFactory registerForFactoryWithBundle:imagePath:offset:scale:allowCaching:]
+  +[MTUIRenderedHandViewFactory unregisterForFactory:]
+
+  // instance methods
+  -[MTUIRenderedHandViewFactory .cxx_destruct]
+  -[MTUIRenderedHandViewFactory flushCache]
+  -[MTUIRenderedHandViewFactory key]
+  -[MTUIRenderedHandViewFactory dealloc]
+  -[MTUIRenderedHandViewFactory initWithBundle:imagePath:offset:scale:allowCaching:]
+  -[MTUIRenderedHandViewFactory registeredClientsCount]
+  -[MTUIRenderedHandViewFactory setRegisteredClientsCount:]
+  -[MTUIRenderedHandViewFactory renderImageForAngle:viewSize:]
+  -[MTUIRenderedHandViewFactory imageForAngle:viewSize:]
+  -[MTUIRenderedHandViewFactory allowCaching]
+
+
+MTUISelectionViewData : NSObject
+ @property  NSString *title
+ @property  BOOL isSelected
+
+  // instance methods
+  -[MTUISelectionViewData setTitle:]
+  -[MTUISelectionViewData .cxx_destruct]
+  -[MTUISelectionViewData isSelected]
+  -[MTUISelectionViewData title]
+  -[MTUISelectionViewData setIsSelected:]
+
+
+MTUIGlyphTimeView : UIView
+ @property  UIImageView *glyphImageView
+ @property  NSString *glyphName
+ @property  unsigned long style
+ @property  UILabel *timeLabel
+
+  // instance methods
+  -[MTUIGlyphTimeView glyphImageView]
+  -[MTUIGlyphTimeView setGlyphImageView:]
+  -[MTUIGlyphTimeView .cxx_destruct]
+  -[MTUIGlyphTimeView setStyle:]
+  -[MTUIGlyphTimeView glyphName]
+  -[MTUIGlyphTimeView setComponentColor:]
+  -[MTUIGlyphTimeView setupGlyphName:size:glyphColor:]
+  -[MTUIGlyphTimeView setTimeLabel:]
+  -[MTUIGlyphTimeView setupTimeLabelWithFont:textColor:]
+  -[MTUIGlyphTimeView timeLabel]
+  -[MTUIGlyphTimeView setGlyphName:]
+  -[MTUIGlyphTimeView setupConstraints]
+  -[MTUIGlyphTimeView initWithFont:textColor:glyphName:style:]
+  -[MTUIGlyphTimeView style]
+
+
+MTUIBaseTableViewCell : UITableViewCell
+  // instance methods
+  -[MTUIBaseTableViewCell didMoveToSuperview]
+  -[MTUIBaseTableViewCell init]
+  -[MTUIBaseTableViewCell initWithStyle:reuseIdentifier:]
+  -[MTUIBaseTableViewCell preferredHeight]
+
+
+MTUIDateLabel : UIView
+ @property  NSDate *date
+ @property  NSTimeZone *timeZone
+ @property  UILabel *dateLabel
+ @property  NSString *dateLabelText
+ @property  UIColor *textColor
+ @property  UIFont *font
+ @property  UIFont *timeDesignatorFont
+
+  // instance methods
+  -[MTUIDateLabel viewForFirstBaselineLayout]
+  -[MTUIDateLabel setTimeZone:]
+  -[MTUIDateLabel timeZone]
+  -[MTUIDateLabel viewForLastBaselineLayout]
+  -[MTUIDateLabel setFont:]
+  -[MTUIDateLabel _updateLabel]
+  -[MTUIDateLabel .cxx_destruct]
+  -[MTUIDateLabel textColor]
+  -[MTUIDateLabel layoutSubviews]
+  -[MTUIDateLabel dateLabel]
+  -[MTUIDateLabel timeDesignatorFont]
+  -[MTUIDateLabel sizeThatFits:]
+  -[MTUIDateLabel setTextColor:]
+  -[MTUIDateLabel font]
+  -[MTUIDateLabel _fontInfoForBaselineSpacing]
+  -[MTUIDateLabel _hasFontInfoForVerticalBaselineSpacing]
+  -[MTUIDateLabel setDate:]
+  -[MTUIDateLabel initWithFrame:]
+  -[MTUIDateLabel intrinsicContentSize]
+  -[MTUIDateLabel date]
+  -[MTUIDateLabel setDateLabelText:]
+  -[MTUIDateLabel dateLabelText]
+  -[MTUIDateLabel setTimeDesignatorFont:]
+  -[MTUIDateLabel _updateDateString]
+  -[MTUIDateLabel _updateTextString]
+
+
+MTUITonePickerStyleProvider : NSObject <TKTonePickerStyleProvider, TKVibrationPickerStyleProvider>
+ @property  BOOL tonePickerUsesOpaqueBackground
+ @property  long long tonePickerTableViewSeparatorStyle
+ @property  UIFont *tonePickerCellTextFont
+ @property  UIColor *tonePickerCellTextColor
+ @property  UIColor *tonePickerCellHighlightedTextColor
+ @property  UIColor *tonePickerCellBackgroundColor
+ @property  BOOL wantsCustomTonePickerHeaderView
+ @property  UIFont *tonePickerHeaderTextFont
+ @property  UIColor *tonePickerHeaderTextColor
+ @property  UIColor *tonePickerHeaderTextShadowColor
+ @property  {UIOffset=dd} tonePickerHeaderTextShadowOffset
+ @property  {UIEdgeInsets=dddd} tonePickerHeaderTextPaddingInsets
+ @property  UIColor *tonePickerCustomTableSeparatorColor
+ @property  long long tonePickerCustomTableSeparatorBackdropOverlayBlendMode
+ @property  BOOL tonePickerHeaderTextShouldBeUppercase
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  BOOL vibrationPickerUsesOpaqueBackground
+ @property  long long vibrationPickerTableViewSeparatorStyle
+ @property  UIFont *vibrationPickerCellTextFont
+ @property  UIColor *vibrationPickerCellTextColor
+ @property  UIColor *vibrationPickerCellHighlightedTextColor
+ @property  UIColor *vibrationPickerCellBackgroundColor
+ @property  BOOL wantsCustomVibrationPickerHeaderView
+ @property  UIFont *vibrationPickerHeaderTextFont
+ @property  UIColor *vibrationPickerHeaderTextColor
+ @property  UIColor *vibrationPickerHeaderTextShadowColor
+ @property  {UIOffset=dd} vibrationPickerHeaderTextShadowOffset
+ @property  {UIEdgeInsets=dddd} vibrationPickerHeaderTextPaddingInsets
+ @property  UIColor *vibrationPickerCustomBackgroundColor
+ @property  UIColor *vibrationPickerCustomTableSeparatorColor
+ @property  long long vibrationPickerCustomTableSeparatorBackdropOverlayBlendMode
+ @property  BOOL vibrationPickerHeaderTextShouldBeUppercase
+
+  // instance methods
+  -[MTUITonePickerStyleProvider tonePickerCellTextColor]
+  -[MTUITonePickerStyleProvider tonePickerUsesOpaqueBackground]
+  -[MTUITonePickerStyleProvider tonePickerTableViewSeparatorStyle]
+  -[MTUITonePickerStyleProvider tonePickerCellHighlightedTextColor]
+  -[MTUITonePickerStyleProvider tonePickerCellTextFont]
+  -[MTUITonePickerStyleProvider tonePickerCellBackgroundColor]
+  -[MTUITonePickerStyleProvider newBackgroundViewForSelectedTonePickerCell:]
+  -[MTUITonePickerStyleProvider newAccessoryDisclosureIndicatorViewForTonePickerCell]
+  -[MTUITonePickerStyleProvider wantsCustomTonePickerHeaderView]
+  -[MTUITonePickerStyleProvider tonePickerHeaderTextFont]
+  -[MTUITonePickerStyleProvider tonePickerHeaderTextColor]
+  -[MTUITonePickerStyleProvider tonePickerHeaderTextShadowColor]
+  -[MTUITonePickerStyleProvider tonePickerHeaderTextShadowOffset]
+  -[MTUITonePickerStyleProvider tonePickerHeaderTextPaddingInsets]
+  -[MTUITonePickerStyleProvider newBackgroundViewForSelectedVibrationPickerCell:]
+  -[MTUITonePickerStyleProvider newAccessoryDisclosureIndicatorViewForVibrationPickerCell]
+  -[MTUITonePickerStyleProvider vibrationPickerCellTextFont]
+  -[MTUITonePickerStyleProvider vibrationPickerUsesOpaqueBackground]
+  -[MTUITonePickerStyleProvider vibrationPickerTableViewSeparatorStyle]
+  -[MTUITonePickerStyleProvider vibrationPickerCellTextColor]
+  -[MTUITonePickerStyleProvider vibrationPickerCellHighlightedTextColor]
+  -[MTUITonePickerStyleProvider vibrationPickerCellBackgroundColor]
+  -[MTUITonePickerStyleProvider wantsCustomVibrationPickerHeaderView]
+  -[MTUITonePickerStyleProvider vibrationPickerHeaderTextFont]
+  -[MTUITonePickerStyleProvider vibrationPickerHeaderTextColor]
+  -[MTUITonePickerStyleProvider vibrationPickerHeaderTextShadowColor]
+  -[MTUITonePickerStyleProvider vibrationPickerHeaderTextShadowOffset]
+  -[MTUITonePickerStyleProvider vibrationPickerHeaderTextPaddingInsets]
+  -[MTUITonePickerStyleProvider vibrationPickerCustomBackgroundColor]
+
+
+MTUISleepMetadata : NSObject
+ @property  NSString *detailedDescription
+ @property  NSString *mainDescription
+ @property  NSDateComponents *alarmComponents
+ @property  BOOL displaysTime
+
+  // instance methods
+  -[MTUISleepMetadata detailedDescription]
+  -[MTUISleepMetadata .cxx_destruct]
+  -[MTUISleepMetadata setDetailedDescription:]
+  -[MTUISleepMetadata mainDescription]
+  -[MTUISleepMetadata setMainDescription:]
+  -[MTUISleepMetadata alarmComponents]
+  -[MTUISleepMetadata setAlarmComponents:]
+  -[MTUISleepMetadata displaysTime]
+  -[MTUISleepMetadata setDisplaysTime:]
+
+
+MTUISwitchTableViewCell : MTUIBaseTableViewCell
+ @property  UISwitch *enabledSwitch
+ @property  <MTUISwitchTableViewCellDelegate> *delegate
+
+  // instance methods
+  -[MTUISwitchTableViewCell .cxx_destruct]
+  -[MTUISwitchTableViewCell setDelegate:]
+  -[MTUISwitchTableViewCell enabledSwitch]
+  -[MTUISwitchTableViewCell delegate]
+  -[MTUISwitchTableViewCell initWithStyle:reuseIdentifier:]
+  -[MTUISwitchTableViewCell setEnabledSwitch:]
+  -[MTUISwitchTableViewCell switchAction:]
+  -[MTUISwitchTableViewCell setSwitchStateEnabled:]
+
+
+MTUITimeView : UILabel
+ @property  double time
+
+  // instance methods
+  -[MTUITimeView setTime:]
+  -[MTUITimeView time]
+  -[MTUITimeView handleLocaleChange]
+
+
+MTUISelectionTableViewController : UITableViewController
+ @property  NSArray *selectionData
+ @property  <MTUISelectionTableViewControllerDelegate> *delegate
+ @property  NSIndexPath *parentIndexPath
+ @property  BOOL allowsNone
+
+  // instance methods
+  -[MTUISelectionTableViewController numberOfSectionsInTableView:]
+  -[MTUISelectionTableViewController tableView:numberOfRowsInSection:]
+  -[MTUISelectionTableViewController .cxx_destruct]
+  -[MTUISelectionTableViewController tableView:didSelectRowAtIndexPath:]
+  -[MTUISelectionTableViewController viewDidLoad]
+  -[MTUISelectionTableViewController tableView:cellForRowAtIndexPath:]
+  -[MTUISelectionTableViewController setDelegate:]
+  -[MTUISelectionTableViewController delegate]
+  -[MTUISelectionTableViewController _canShowWhileLocked]
+  -[MTUISelectionTableViewController setSelectionData:]
+  -[MTUISelectionTableViewController setParentIndexPath:]
+  -[MTUISelectionTableViewController setAllowsNone:]
+  -[MTUISelectionTableViewController selectionData]
+  -[MTUISelectionTableViewController allowsNone]
+  -[MTUISelectionTableViewController deselectRowsExcluding:]
+  -[MTUISelectionTableViewController parentIndexPath]
+  -[MTUISelectionTableViewController initWithStyle:title:selectionData:parentIndexPath:allowsMultiple:allowsNone:delegate:]
+
+
+MTUIAlarmView : NUIContainerGridView
+ @property  NSString *name
+ @property  NSString *repeatText
+ @property  NSArray *currentConstraints
+ @property  long long style
+ @property  MTUIDigitalClockLabel *timeLabel
+ @property  UILabel *detailLabel
+ @property  UIFont *nameFont
+ @property  UIFont *repeatFont
+ @property  UISwitch *enabledSwitch
+ @property  NSDictionary *viewsByIdentifier
+ @property  BOOL shouldAddLayoutConstraints
+ @property  BOOL switchVisible
+
+  // instance methods
+  -[MTUIAlarmView name]
+  -[MTUIAlarmView .cxx_destruct]
+  -[MTUIAlarmView setStyle:]
+  -[MTUIAlarmView setName:]
+  -[MTUIAlarmView currentConstraints]
+  -[MTUIAlarmView setLayoutMargins:]
+  -[MTUIAlarmView setCurrentConstraints:]
+  -[MTUIAlarmView timeLabel]
+  -[MTUIAlarmView nameFont]
+  -[MTUIAlarmView initWithFrame:]
+  -[MTUIAlarmView enabledSwitch]
+  -[MTUIAlarmView detailLabel]
+  -[MTUIAlarmView style]
+  -[MTUIAlarmView setNameFont:]
+  -[MTUIAlarmView _loadFontsWithTextStyles]
+  -[MTUIAlarmView tearDownContentSizeChangeObserver]
+  -[MTUIAlarmView setRepeatText:]
+  -[MTUIAlarmView setShouldAddLayoutConstraints:]
+  -[MTUIAlarmView setSwitchVisible:]
+  -[MTUIAlarmView isSwitchVisible]
+  -[MTUIAlarmView setRepeatFont:]
+  -[MTUIAlarmView updatePreferredMaxLayoutWidthForDetailContainerLabels]
+  -[MTUIAlarmView setName:andRepeatText:textColor:]
+  -[MTUIAlarmView repeatText]
+  -[MTUIAlarmView repeatFont]
+  -[MTUIAlarmView viewsByIdentifier]
+  -[MTUIAlarmView shouldAddLayoutConstraints]
+
+
+MTUIShadowInfo : NSObject
+ @property  UIColor *color
+ @property  double radius
+ @property  {CGSize=dd} offset
+ @property  double scale
+
+  // instance methods
+  -[MTUIShadowInfo offset]
+  -[MTUIShadowInfo color]
+  -[MTUIShadowInfo .cxx_destruct]
+  -[MTUIShadowInfo radius]
+  -[MTUIShadowInfo setColor:]
+  -[MTUIShadowInfo setRadius:]
+  -[MTUIShadowInfo setScale:]
+  -[MTUIShadowInfo setOffset:]
+  -[MTUIShadowInfo scale]
+  -[MTUIShadowInfo initWithColor:radius:offset:scale:]
+
+
+MTUIAnalogClockView : UIView <MTClock>
+ @property  long long runMode
+ @property  long long style
+ @property  UIImageView *faceView
+ @property  long long hour
+ @property  long long minute
+ @property  NSDate *time
+ @property  NSTimeZone *timeZone
+ @property  BOOL nighttime
+ @property  BOOL started
+
+  // class methods
+  +[MTUIAnalogClockView initialize]
+  +[MTUIAnalogClockView nightTimeSecondHandColor]
+  +[MTUIAnalogClockView imageForType:dayTime:generation:]
+  +[MTUIAnalogClockView clockFaceForDaytime:ignoreCache:]
+  +[MTUIAnalogClockView clockSize]
+  +[MTUIAnalogClockView nightTimeHourHandColor]
+  +[MTUIAnalogClockView registerTickingClock:]
+  +[MTUIAnalogClockView shadowInfoAtIndex:]
+  +[MTUIAnalogClockView dayTimeMinuteHandColor]
+  +[MTUIAnalogClockView nightTimeOverHourHandDotColor]
+  +[MTUIAnalogClockView sizeForStyle:]
+  +[MTUIAnalogClockView shadowRotationalCenterForHand:]
+  +[MTUIAnalogClockView clockFaceForDaytime:]
+  +[MTUIAnalogClockView nightTimeFaceColor]
+  +[MTUIAnalogClockView cacheVersionedPath]
+  +[MTUIAnalogClockView dayTimeSecondHandColor]
+  +[MTUIAnalogClockView analogClockWithStyle:]
+  +[MTUIAnalogClockView secondHandMainLength]
+  +[MTUIAnalogClockView shadowInsets]
+  +[MTUIAnalogClockView overHourHandDotSize]
+  +[MTUIAnalogClockView resourcePath]
+  +[MTUIAnalogClockView unregisterSweepingClock:]
+  +[MTUIAnalogClockView registerClock:]
+  +[MTUIAnalogClockView updateTimeForAllSweeping]
+  +[MTUIAnalogClockView imageCacheNameForType:daytime:]
+  +[MTUIAnalogClockView dayTimeFaceColor]
+  +[MTUIAnalogClockView makeClockHand:daytime:]
+  +[MTUIAnalogClockView hourHandLength]
+  +[MTUIAnalogClockView dayTimeTextColor]
+  +[MTUIAnalogClockView overHourHandDotImageForDaytime:]
+  +[MTUIAnalogClockView secondHandLength]
+  +[MTUIAnalogClockView dayTimeOverHourHandDotColor]
+  +[MTUIAnalogClockView nightTimeTextColor]
+  +[MTUIAnalogClockView overSecondHandDotSize]
+  +[MTUIAnalogClockView antialiasPaddingRatio]
+  +[MTUIAnalogClockView nightTimeMinuteHandColor]
+  +[MTUIAnalogClockView handRotationalCenterForHand:]
+  +[MTUIAnalogClockView numeralFont]
+  +[MTUIAnalogClockView numeralInset]
+  +[MTUIAnalogClockView imageInBundleForName:]
+  +[MTUIAnalogClockView overSecondHandDotImage]
+  +[MTUIAnalogClockView updateFlutterForAllTicking]
+  +[MTUIAnalogClockView dayTimeHourHandColor]
+  +[MTUIAnalogClockView unregisterClock:]
+  +[MTUIAnalogClockView updateTimeForAllTicking]
+  +[MTUIAnalogClockView cacheTopLevelPath]
+  +[MTUIAnalogClockView insetsForStyle:]
+  +[MTUIAnalogClockView registerSweepingClock:]
+  +[MTUIAnalogClockView hasOverHourHandDot]
+  +[MTUIAnalogClockView makeOverSecondHandDotImage]
+  +[MTUIAnalogClockView secondHandWidth]
+  +[MTUIAnalogClockView imageForType:dayTime:generation:ignoreCache:]
+  +[MTUIAnalogClockView overHourHandDotForDayTime:]
+  +[MTUIAnalogClockView makeClockFaceForDaytime:]
+  +[MTUIAnalogClockView minuteHandWidth]
+  +[MTUIAnalogClockView makeDotImageSize:color:]
+  +[MTUIAnalogClockView hourHandWidth]
+  +[MTUIAnalogClockView secondHandOverhangLength]
+  +[MTUIAnalogClockView faceRadius]
+  +[MTUIAnalogClockView adjustNumberalCenter:forNumeralIndex:]
+  +[MTUIAnalogClockView overSecondHandDotColor]
+  +[MTUIAnalogClockView cacheVersionHash]
+  +[MTUIAnalogClockView classForStyle:]
+  +[MTUIAnalogClockView hasOverSecondHandDot]
+  +[MTUIAnalogClockView style]
+  +[MTUIAnalogClockView minuteHandLength]
+  +[MTUIAnalogClockView doesFaceHaveShadow]
+  +[MTUIAnalogClockView isClockRegistered:]
+  +[MTUIAnalogClockView shouldCacheImageOnDiskForType:dayTime:]
+  +[MTUIAnalogClockView unregisterTickingClock:]
+  +[MTUIAnalogClockView clockHand:daytime:]
+
+  // instance methods
+  -[MTUIAnalogClockView minute]
+  -[MTUIAnalogClockView hour]
+  -[MTUIAnalogClockView setTimeZone:]
+  -[MTUIAnalogClockView timeZone]
+  -[MTUIAnalogClockView setTime:]
+  -[MTUIAnalogClockView coarseUpdateInterval]
+  -[MTUIAnalogClockView .cxx_destruct]
+  -[MTUIAnalogClockView setFrame:]
+  -[MTUIAnalogClockView isStarted]
+  -[MTUIAnalogClockView stop]
+  -[MTUIAnalogClockView init]
+  -[MTUIAnalogClockView time]
+  -[MTUIAnalogClockView faceView]
+  -[MTUIAnalogClockView runMode]
+  -[MTUIAnalogClockView start]
+  -[MTUIAnalogClockView handleLocaleChange]
+  -[MTUIAnalogClockView updateTimeContinuously:]
+  -[MTUIAnalogClockView updateInterval]
+  -[MTUIAnalogClockView setRunMode:]
+  -[MTUIAnalogClockView updateTime]
+  -[MTUIAnalogClockView style]
+  -[MTUIAnalogClockView intrinsicContentSize]
+  -[MTUIAnalogClockView updateFlutter]
+  -[MTUIAnalogClockView setHandTransformForHandIndex:]
+  -[MTUIAnalogClockView setHandAngle:forHandIndex:]
+  -[MTUIAnalogClockView updateTimeAnimated:]
+  -[MTUIAnalogClockView setTime:animated:]
+  -[MTUIAnalogClockView setNighttime:]
+  -[MTUIAnalogClockView isNighttime]
+
+
+MTUIUtility : NSObject
+  // class methods
+  +[MTUIUtility openSleepInHealthApp]
+
+
+MTUIChevronTableViewCell : MTUIBaseTableViewCell
+  // instance methods
+  -[MTUIChevronTableViewCell initWithStyle:reuseIdentifier:]
+
+
+MTUICollectionCellAnalogClockView : MTUIAnalogClockView
+  // class methods
+  +[MTUICollectionCellAnalogClockView secondHandMainLength]
+  +[MTUICollectionCellAnalogClockView overHourHandDotSize]
+  +[MTUICollectionCellAnalogClockView hourHandLength]
+  +[MTUICollectionCellAnalogClockView overSecondHandDotSize]
+  +[MTUICollectionCellAnalogClockView handRotationalCenterForHand:]
+  +[MTUICollectionCellAnalogClockView secondHandWidth]
+  +[MTUICollectionCellAnalogClockView makeClockFaceForDaytime:]
+  +[MTUICollectionCellAnalogClockView minuteHandWidth]
+  +[MTUICollectionCellAnalogClockView hourHandWidth]
+  +[MTUICollectionCellAnalogClockView secondHandOverhangLength]
+  +[MTUICollectionCellAnalogClockView faceRadius]
+  +[MTUICollectionCellAnalogClockView style]
+  +[MTUICollectionCellAnalogClockView minuteHandLength]
+  +[MTUICollectionCellAnalogClockView shouldCacheImageOnDiskForType:dayTime:]
+
+  // instance methods
+  -[MTUICollectionCellAnalogClockView coarseUpdateInterval]
+  -[MTUICollectionCellAnalogClockView updateInterval]
+
+
+MTUIDigitalClockLabel : MTUIDateLabel
+  // instance methods
+  -[MTUIDigitalClockLabel .cxx_destruct]
+  -[MTUIDigitalClockLabel significantTimeChange:]
+  -[MTUIDigitalClockLabel resetFontSizes]
+  -[MTUIDigitalClockLabel setTimeLabelText:]
+  -[MTUIDigitalClockLabel initWithFrame:]
+  -[MTUIDigitalClockLabel refreshUI]
+  -[MTUIDigitalClockLabel setHour:minute:]
+  -[MTUIDigitalClockLabel forceSetHour:minute:]
+
+
+MTUITimerCountdownView : UIView
+ @property  CAShapeLayer *backgroundCircleLayer
+ @property  CAShapeLayer *countdownCircleLayer
+ @property  UIColor *barColor
+ @property  UIColor *backgroundBarColor
+ @property  double barWidth
+ @property  CALayer *mainLayer
+ @property  double remainingTime
+ @property  double duration
+ @property  long long state
+
+  // instance methods
+  -[MTUITimerCountdownView setBarColor:]
+  -[MTUITimerCountdownView backgroundBarColor]
+  -[MTUITimerCountdownView remainingTime]
+  -[MTUITimerCountdownView .cxx_destruct]
+  -[MTUITimerCountdownView setupBackgroundCircle]
+  -[MTUITimerCountdownView setDuration:]
+  -[MTUITimerCountdownView angleForValue:total:]
+  -[MTUITimerCountdownView setCountdownCircleLayer:]
+  -[MTUITimerCountdownView layoutSubviews]
+  -[MTUITimerCountdownView isStarted]
+  -[MTUITimerCountdownView stop]
+  -[MTUITimerCountdownView degToRad:]
+  -[MTUITimerCountdownView setRemainingTime:]
+  -[MTUITimerCountdownView setState:]
+  -[MTUITimerCountdownView backgroundCircleLayer]
+  -[MTUITimerCountdownView barWidth]
+  -[MTUITimerCountdownView pause]
+  -[MTUITimerCountdownView setAnimationRemainingTime:totalTime:]
+  -[MTUITimerCountdownView state]
+  -[MTUITimerCountdownView setBackgroundCircleLayer:]
+  -[MTUITimerCountdownView mainLayer]
+  -[MTUITimerCountdownView initWithBarColor:backgroundBarColor:barWidth:]
+  -[MTUITimerCountdownView countdownCircleLayer]
+  -[MTUITimerCountdownView resume]
+  -[MTUITimerCountdownView setMainLayer:]
+  -[MTUITimerCountdownView start]
+  -[MTUITimerCountdownView setBackgroundBarColor:]
+  -[MTUITimerCountdownView setBarWidth:]
+  -[MTUITimerCountdownView barColor]
+  -[MTUITimerCountdownView initWithBarColor:backgroundBarColor:barWidth:remainingTime:duration:]
+  -[MTUITimerCountdownView duration]
+
+
+UILabel(MTUI)
+	// instance methods
+	-[UILabel(MTUI) mtui_setText:hyphenationFactor:]
+
+HKSPSleepStore(MobileTimerUIAdditions)
+	// class methods
+	+[HKSPSleepStore(MobileTimerUIAdditions) mt_getDetailedAlarmTitleForDate:calendar:onlyAppliesOnce:]
+
+	// instance methods
+	-[HKSPSleepStore(MobileTimerUIAdditions) mt_sleepMetaDataForUpcomingAlarmInCalendar:error:]
+
+UIView(MTUIAdditions)
+	// instance methods
+	-[UIView(MTUIAdditions) mtui_isRTL]
+	-[UIView(MTUIAdditions) mtui_boundsCenter]
+
+UIColor(MTUIStyling)
+	// class methods
+	+[UIColor(MTUIStyling) mtui_primaryTextColor]
+	+[UIColor(MTUIStyling) mtui_secondaryTextColor]
+	+[UIColor(MTUIStyling) mtui_backgroundColor]
+	+[UIColor(MTUIStyling) mtui_cellHighlightColor]
+	+[UIColor(MTUIStyling) mtui_secondaryColor]
+	+[UIColor(MTUIStyling) mtui_foregroundColor]
+	+[UIColor(MTUIStyling) mtui_switchTintColor]
+	+[UIColor(MTUIStyling) mtui_quaternaryColor]
+	+[UIColor(MTUIStyling) mtui_tertiaryColor]
+	+[UIColor(MTUIStyling) mtui_startResumeButtonTextColor]
+	+[UIColor(MTUIStyling) mtui_pauseButtonTextColor]
+	+[UIColor(MTUIStyling) mtui_stopButtonTextColor]
+	+[UIColor(MTUIStyling) mtui_lapResetButtonTextColor]
+	+[UIColor(MTUIStyling) mtui_tintColor]
+	+[UIColor(MTUIStyling) mtui_primaryColor]
+	+[UIColor(MTUIStyling) mtui_cellSeparatorColor]
+	+[UIColor(MTUIStyling) mtui_cellAccessoryColor]
+	+[UIColor(MTUIStyling) mtui_buttonBackgroundColor]
+	+[UIColor(MTUIStyling) mtui_worldClockMapLandColor]
+	+[UIColor(MTUIStyling) mtui_disabledTextColor]
+	+[UIColor(MTUIStyling) mtui_stopwatchMajorTickMarkColor]
+	+[UIColor(MTUIStyling) mtui_stopwatchMinorTickMarkColor]
+	+[UIColor(MTUIStyling) mtui_startResumeButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_pauseButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_stopButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_lapResetButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_disabledButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_disabledStartButtonTintColor]
+	+[UIColor(MTUIStyling) mtui_sleepColor]
+	+[UIColor(MTUIStyling) mtui_wakeColor]
+
+UIImage(MTUIStyling)
+	// class methods
+	+[UIImage(MTUIStyling) mtui_imageWithSymbolName:pointSize:color:]
+	+[UIImage(MTUIStyling) mtui_imageWithSymbolName:pointSize:]
+	+[UIImage(MTUIStyling) mtui_imageWithSymbolName:scale:textStyle:andTintColor:]
+	+[UIImage(MTUIStyling) mtui_imageWithSymbolName:font:andTintColor:]
+	+[UIImage(MTUIStyling) mtui_sleepImage]
+	+[UIImage(MTUIStyling) mtui_wakeImage]
+	+[UIImage(MTUIStyling) mtui_imageWithSymbolName:style:]
+
+	// instance methods
+	-[UIImage(MTUIStyling) mtui_imageWithTintColor:]
+
+UITableViewCell(MTUIStyling)
+	// instance methods
+	-[UITableViewCell(MTUIStyling) setSelectedBackgroundColor:]
+
+UITableView(MTUIUtil)
+	// class methods
+	+[UITableView(MTUIUtil) wordWrapParagraphStyle]
+
+	// instance methods
+	-[UITableView(MTUIUtil) mtui_sectionHeaderHeightWithString:]
+
+UIFont(MTUIFonts)
+	// class methods
+	+[UIFont(MTUIFonts) mtui_thinTimeFont]
+	+[UIFont(MTUIFonts) mtui_defaultTimeDesignatorFont]
+	+[UIFont(MTUIFonts) mtui_defaultTimeDesignatorFontSize]
+	+[UIFont(MTUIFonts) mtui_defaultTimeFontSize]
+	+[UIFont(MTUIFonts) mtui_thinTimeFontOfSize:]
+
+	// instance methods
+	-[UIFont(MTUIFonts) mtui_fontByAddingAttributes:]
+	-[UIFont(MTUIFonts) mtui_fontByAddingTimeFontAttributes]
+
+(MTUIString)
+	// class methods
+	+[(MTUIString) mtui_daySettingString:options:]
+
+01 00 0300 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CABasicAnimation 
+01 00 0300 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CALayer 
+01 00 0300 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAMediaTimingFunction 
+01 00 0300 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAShapeLayer 
+01 00 0600 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKObjectType 
+01 00 0140 /System/Library/PrivateFrameworks/Sleep.framework/Sleep: HKSPSleepStore 
+01 00 0200 /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences: IntlUtility 
+01 00 0a00 /System/Library/PrivateFrameworks/MobileTimer.framework/MobileTimer: MTAnalytics 
+01 00 0a00 /System/Library/PrivateFrameworks/MobileTimer.framework/MobileTimer: MTDateFormatting 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateComponentsFormatter 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexPath 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: NSMutableParagraphStyle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: NSParagraphStyle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0400 /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI: NUIContainerGridView 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIBezierPath 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImageSymbolConfiguration 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImageView 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UILabel 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UISwitch 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UITableView 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UITableViewCell 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UITableViewController 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UITableViewHeaderFooterView 
+01 00 0c00 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 

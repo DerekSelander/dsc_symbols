@@ -1,0 +1,909 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_BMPBTombstoneEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_BMStreamTombstoneEventDatastore
+|| __DATA.__objc_data _OBJC_CLASS_$_BMTombstoneEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_BMTombstoneEventEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_BMPBTombstoneEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_BMStreamTombstoneEventDatastore
+|| __DATA.__objc_data _OBJC_METACLASS_$_BMTombstoneEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_BMTombstoneEventEnumerator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBStoreBookmark._has
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBStoreBookmark._iterationStartTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBStoreBookmark._offset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBStoreBookmark._segmentName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBStoreBookmark._streamId
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBTombstoneEvent._has
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBTombstoneEvent._length
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBTombstoneEvent._offset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBTombstoneEvent._reason
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BMPBTombstoneEvent._segmentName
+|| __DATA_CONST.__const _bm_kLocalDeviceIdentifier
+|| __DATA_CONST.__const _bm_kRemoteDeviceIdentifier
+|| __DATA_CONST.__const _kTombstoneSubdirectory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMDataProtection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMFileAttributes
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMFileHandleIntern
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMFileLock
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMFrame
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMFrameStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMMemoryMapping
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMPBStoreBookmark
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMPruningPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreBookmark
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreEnumerator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreEnumeratorBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStoreEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastoreBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastoreDeviceLockState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastorePruner
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastoreReader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamDatastoreWriter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BMStreamMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMDataProtection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMFileAttributes
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMFileHandleIntern
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMFileLock
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMFrame
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMFrameStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMMemoryMapping
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMPBStoreBookmark
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMPruningPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreBookmark
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreEnumerator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreEnumeratorBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStoreEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastoreBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastoreDeviceLockState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastorePruner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastoreReader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamDatastoreWriter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BMStreamMetadata
+|| __TEXT.__const _BMPruningPolicyMaxAgeNoLimit
+|| __TEXT.__const _BiomeStorageVersionNumber
+|| __TEXT.__const _BiomeStorageVersionString
+|| __TEXT.__const _bm_defaultStoreSegmentSize
+|| __TEXT.__const _bm_defaultStoreVersion
+|| __TEXT.__text _BMPBStoreBookmarkReadFrom
+|| __TEXT.__text _BMPBTombstoneEventReadFrom
+|| __TEXT.__text _bm_frame_bytes
+|| __TEXT.__text _bm_frame_header_info
+|| __TEXT.__text _bm_frame_header_status
+|| __TEXT.__text _bm_generateChecksum
+|| __TEXT.__text _bm_useAdler32
+|| __TEXT.__text _bm_useCrc32
+__ BiomeFoundation: _BMArbitraryTimestampToCFAbsoluteTime
+__ BiomeFoundation: _OBJC_CLASS_$_BMCoreAnalyticsEvents
+__ BiomeFoundation: _OBJC_CLASS_$_BMPaths
+__ BiomeFoundation: _OBJC_CLASS_$_BMPublicStreamUtilities
+__ BiomeFoundation: _OBJC_CLASS_$_BMStoreDirectory
+__ BiomeFoundation: ___biome_log_create_for_category
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _NSURLFileSizeKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSClassFromString
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSPageSize
+__ Foundation: _NSRoundDownToMultipleOfPageSize
+__ Foundation: _NSRoundUpToMultipleOfPageSize
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ ProactiveSupport: _OBJC_CLASS_$__PASDeviceState
+__ ProactiveSupport: _OBJC_CLASS_$__PASLock
+__ ProactiveSupport: __PASIsAllDigits
+__ ProtocolBuffer: _OBJC_CLASS_$_PBCodable
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._bytes
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._error
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._length
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._pos
+__ ProtocolBuffer: _OBJC_METACLASS_$_PBCodable
+__ ProtocolBuffer: _PBDataWriterWriteDoubleField
+__ ProtocolBuffer: _PBDataWriterWriteInt32Field
+__ ProtocolBuffer: _PBDataWriterWriteStringField
+__ ProtocolBuffer: _PBDataWriterWriteUint32Field
+__ ProtocolBuffer: _PBReaderReadString
+__ ProtocolBuffer: _PBReaderSkipValueWithTag
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _flock
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: _madvise
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memset_s
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _msync
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _open_dprotected_np
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _unlink
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libz.1.dylib: _adler32
+__ libz.1.dylib: _crc32
+BMPBTombstoneEvent : PBCodable <NSCopying>
+ @property  BOOL hasSegmentName
+ @property  NSString *segmentName
+ @property  BOOL hasOffset
+ @property  unsigned int offset
+ @property  BOOL hasLength
+ @property  unsigned int length
+ @property  BOOL hasReason
+ @property  int reason
+
+  // instance methods
+  -[BMPBTombstoneEvent hasLength]
+  -[BMPBTombstoneEvent setHasOffset:]
+  -[BMPBTombstoneEvent hasOffset]
+  -[BMPBTombstoneEvent setHasLength:]
+  -[BMPBTombstoneEvent segmentName]
+  -[BMPBTombstoneEvent setSegmentName:]
+  -[BMPBTombstoneEvent setHasReason:]
+  -[BMPBTombstoneEvent mergeFrom:]
+  -[BMPBTombstoneEvent hasReason]
+  -[BMPBTombstoneEvent offset]
+  -[BMPBTombstoneEvent reasonAsString:]
+  -[BMPBTombstoneEvent .cxx_destruct]
+  -[BMPBTombstoneEvent StringAsReason:]
+  -[BMPBTombstoneEvent dictionaryRepresentation]
+  -[BMPBTombstoneEvent writeTo:]
+  -[BMPBTombstoneEvent length]
+  -[BMPBTombstoneEvent isEqual:]
+  -[BMPBTombstoneEvent copyTo:]
+  -[BMPBTombstoneEvent readFrom:]
+  -[BMPBTombstoneEvent setLength:]
+  -[BMPBTombstoneEvent reason]
+  -[BMPBTombstoneEvent setReason:]
+  -[BMPBTombstoneEvent setOffset:]
+  -[BMPBTombstoneEvent hasSegmentName]
+  -[BMPBTombstoneEvent copyWithZone:]
+
+
+BMStoreEvent : NSObject <BMStoreEvent, NSSecureCoding>
+ @property  BMFrame *frame
+ @property  Class dataType
+ @property  BMStreamMetadata *metadata
+ @property  NSData *eventBodyData
+ @property  unsigned long eventCategory
+ @property  double timestamp
+ @property  <BMStoreData> *eventBody
+ @property  unsigned char error
+ @property  NSString *segmentName
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BMStoreEvent supportsSecureCoding]
+  +[BMStoreEvent eventWithEventType:eventData:dataVersion:]
+
+  // instance methods
+  -[BMStoreEvent segmentName]
+  -[BMStoreEvent bookmark]
+  -[BMStoreEvent initWithCoder:]
+  -[BMStoreEvent initWithFrame:error:]
+  -[BMStoreEvent initWithFrame:segmentName:frameOffset:eventBodyData:eventBodyDataVersion:dataType:eventCategory:timestamp:metadata:error:]
+  -[BMStoreEvent initWithFrame:segmentName:error:eventCategory:metadata:dataType:]
+  -[BMStoreEvent .cxx_destruct]
+  -[BMStoreEvent init]
+  -[BMStoreEvent initWithFrame:error:metadata:]
+  -[BMStoreEvent dataType]
+  -[BMStoreEvent isEqual:]
+  -[BMStoreEvent metadata]
+  -[BMStoreEvent eventBodyData]
+  -[BMStoreEvent frame]
+  -[BMStoreEvent checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[BMStoreEvent timestamp]
+  -[BMStoreEvent eventCategory]
+  -[BMStoreEvent initWithEventBody:timestamp:]
+  -[BMStoreEvent encodeWithCoder:]
+  -[BMStoreEvent error]
+  -[BMStoreEvent eventBody]
+
+
+BMFileAttributes : NSObject <NSCopying>
+ @property  NSString *path
+ @property  unsigned long permission
+ @property  unsigned long protectionClass
+
+  // instance methods
+  -[BMFileAttributes setProtectionClass:]
+  -[BMFileAttributes setPath:]
+  -[BMFileAttributes protectionClass]
+  -[BMFileAttributes setPermission:]
+  -[BMFileAttributes .cxx_destruct]
+  -[BMFileAttributes isEqual:]
+  -[BMFileAttributes initWithFilePath:permission:protectionClass:]
+  -[BMFileAttributes path]
+  -[BMFileAttributes permission]
+  -[BMFileAttributes copyWithZone:]
+
+
+BMFileHandleIntern : NSObject
+  // class methods
+  +[BMFileHandleIntern sharedInstance]
+
+  // instance methods
+  -[BMFileHandleIntern fileHandleForFilePath:permissions:protectionClass:createIfNotCached:createNewFile:error:]
+  -[BMFileHandleIntern .cxx_destruct]
+  -[BMFileHandleIntern init]
+  -[BMFileHandleIntern openFileWithAttributes:createNewFile:error:]
+
+
+BMTombstoneEvent : NSObject <BMProtoBufWrapper, NSSecureCoding, BMStoreData>
+ @property  NSString *segmentName
+ @property  unsigned long offset
+ @property  unsigned long length
+ @property  unsigned long deletionReason
+ @property  unsigned int dataVersion
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BMTombstoneEvent supportsSecureCoding]
+  +[BMTombstoneEvent eventWithData:dataVersion:]
+
+  // instance methods
+  -[BMTombstoneEvent segmentName]
+  -[BMTombstoneEvent initWithCoder:]
+  -[BMTombstoneEvent proto]
+  -[BMTombstoneEvent offset]
+  -[BMTombstoneEvent .cxx_destruct]
+  -[BMTombstoneEvent initWithProtoData:]
+  -[BMTombstoneEvent init]
+  -[BMTombstoneEvent length]
+  -[BMTombstoneEvent isEqual:]
+  -[BMTombstoneEvent serialize]
+  -[BMTombstoneEvent dataVersion]
+  -[BMTombstoneEvent initWithProto:]
+  -[BMTombstoneEvent encodeAsProto]
+  -[BMTombstoneEvent encodeWithCoder:]
+  -[BMTombstoneEvent initWithSegmentName:offset:length:reason:]
+  -[BMTombstoneEvent initWithSegmentName:offset:length:]
+  -[BMTombstoneEvent deletionReason]
+
+
+BMStoreEnumeratorBase : NSObject
+ @property  BMFrameStore *currentFrameStore
+ @property  BMStreamMetadata *metadata
+ @property  BMStreamDatastoreBase *ds
+ @property  BMStoreBookmark *bookmark
+
+  // instance methods
+  -[BMStoreEnumeratorBase ds]
+  -[BMStoreEnumeratorBase bookmark]
+  -[BMStoreEnumeratorBase setFrameStoreOffset:]
+  -[BMStoreEnumeratorBase initWithStreamDatastore:bookmark:options:]
+  -[BMStoreEnumeratorBase .cxx_destruct]
+  -[BMStoreEnumeratorBase isDataAccessible]
+  -[BMStoreEnumeratorBase _eventWithFrameStore:frame:error:]
+  -[BMStoreEnumeratorBase currentFrameStore]
+  -[BMStoreEnumeratorBase metadata]
+  -[BMStoreEnumeratorBase initWithStreamDatastore:currentFrameStore:frameStoreOffset:iterationStartTime:endTime:maxEvents:lastN:options:]
+  -[BMStoreEnumeratorBase advanceBookmarkToStartTime:eventsFound:lastN:]
+  -[BMStoreEnumeratorBase copyNextEventAndMoveBookmark:]
+  -[BMStoreEnumeratorBase initWithStreamDatastore:startTime:endTime:maxEvents:lastN:options:]
+  -[BMStoreEnumeratorBase nextEventWithContext:]
+  -[BMStoreEnumeratorBase peekEvent]
+  -[BMStoreEnumeratorBase nextEvent]
+  -[BMStoreEnumeratorBase copyNextEventAndMoveBookmark:makeEvent:]
+
+
+BMDataProtection : NSObject
+  // class methods
+  +[BMDataProtection requiresUnlockToOpen:]
+  +[BMDataProtection canOpenFilesForProtectionClass:createNewFile:]
+  +[BMDataProtection canOpenFilesForProtectionClass:]
+  +[BMDataProtection biomeProtectionClassToOSProtectionClass:]
+  +[BMDataProtection losesReadAccessOnLock:]
+
+
+BMStoreEnumerator : BMStoreEnumeratorBase
+
+BMFrameStore : NSObject
+ @property  unsigned int usedBytes
+ @property  NSString *segmentName
+ @property  NSFileHandle *backingFile
+ @property  NSString *segmentPath
+ @property  BOOL filterByAgeOnRead
+ @property  BOOL pruneOnAccess
+ @property  double maxAge
+ @property  unsigned long frameStoreSize
+
+  // instance methods
+  -[BMFrameStore setMaxAge:]
+  -[BMFrameStore segmentName]
+  -[BMFrameStore setSegmentName:]
+  -[BMFrameStore sync]
+  -[BMFrameStore resizeBackingFileTo:]
+  -[BMFrameStore filterByAgeOnRead]
+  -[BMFrameStore markFrameAsRemoved:]
+  -[BMFrameStore setPruneOnAccess:]
+  -[BMFrameStore initWithFileHandle:streamPath:filename:maxSize:permission:datastoreVersion:]
+  -[BMFrameStore .cxx_destruct]
+  -[BMFrameStore writeFrameForBytes:length:dataVersion:timestamp:]
+  -[BMFrameStore expectedTimestamp:]
+  -[BMFrameStore maxAge]
+  -[BMFrameStore setFilterByAgeOnRead:]
+  -[BMFrameStore backingFile]
+  -[BMFrameStore init]
+  -[BMFrameStore segmentPath]
+  -[BMFrameStore setBackingFile:]
+  -[BMFrameStore appendFrameHeader:offset:]
+  -[BMFrameStore writeFrameForBytes:length:dataVersion:timestamp:outOffset:]
+  -[BMFrameStore segmentHeaderFromFile:withVersion:fileSize:]
+  -[BMFrameStore frameWithOffset:expectedState:]
+  -[BMFrameStore pruneOnAccess]
+  -[BMFrameStore enumerateFromOffset:withCallback:]
+  -[BMFrameStore isValidFrame:expectedState:copyOfData:frameStatus:validations:]
+  -[BMFrameStore updateFrameStoreIndex]
+  -[BMFrameStore dealloc]
+  -[BMFrameStore enumerateWithOptions:fromOffset:usingBlock:]
+  -[BMFrameStore frameStoreSize]
+  -[BMFrameStore usedBytes]
+  -[BMFrameStore getReverseOffsetIndex:]
+  -[BMFrameStore updateHeader]
+
+
+BMStreamDatastoreDeviceLockState : NSObject
+ @property  BOOL canReadOrPruneData
+ @property  NSMutableOrderedSet *segmentNames
+ @property  NSMutableDictionary *segmentFileHandles
+
+  // instance methods
+  -[BMStreamDatastoreDeviceLockState canReadOrPruneData]
+  -[BMStreamDatastoreDeviceLockState .cxx_destruct]
+  -[BMStreamDatastoreDeviceLockState setSegmentNames:]
+  -[BMStreamDatastoreDeviceLockState setSegmentFileHandles:]
+  -[BMStreamDatastoreDeviceLockState segmentNames]
+  -[BMStreamDatastoreDeviceLockState setCanReadOrPruneData:]
+  -[BMStreamDatastoreDeviceLockState segmentFileHandles]
+  -[BMStreamDatastoreDeviceLockState initWithDeviceStateIsUnlocked:]
+
+
+BMStreamDatastoreBase : NSObject
+ @property  unsigned long permission
+ @property  unsigned long datastoreVersion
+ @property  unsigned long maxFileSize
+ @property  NSString *streamPath
+ @property  BOOL isRemote
+ @property  NSString *remoteStreamName
+ @property  BMPruningPolicy *pruningPolicy
+ @property  NSString *streamId
+ @property  BOOL canReadOrPruneData
+ @property  BMFrameStore *framesStore
+ @property  BMStreamMetadata *metadata
+ @property  BMStoreConfig *config
+
+  // class methods
+  +[BMStreamDatastoreBase fileNameWithTimestamp:]
+  +[BMStreamDatastoreBase fileSizeOfURL:]
+  +[BMStreamDatastoreBase orderedSegmentsInDirectory:includeZeroSizeSegments:]
+  +[BMStreamDatastoreBase timestampWithFilename:]
+  +[BMStreamDatastoreBase indexOfSegmentContainingEventTime:fromSegments:]
+
+  // instance methods
+  -[BMStreamDatastoreBase eventBodyClass]
+  -[BMStreamDatastoreBase fetchEventsFrom:to:]
+  -[BMStreamDatastoreBase newEnumeratorFromStartTime:]
+  -[BMStreamDatastoreBase canReadOrPruneData]
+  -[BMStreamDatastoreBase streamId]
+  -[BMStreamDatastoreBase newEnumeratorFromStartTime:options:]
+  -[BMStreamDatastoreBase maxFileSize]
+  -[BMStreamDatastoreBase datastoreVersion]
+  -[BMStreamDatastoreBase newEnumeratorFromStartTime:endTime:options:]
+  -[BMStreamDatastoreBase removeEventsFrom:to:pruneFutureEvents:shouldDeleteUsingBlock:]
+  -[BMStreamDatastoreBase fileHandleForFile:createNewFile:error:]
+  -[BMStreamDatastoreBase initWithStream:streamPath:permission:config:]
+  -[BMStreamDatastoreBase updateMetadata:]
+  -[BMStreamDatastoreBase enumerateSegmentsNamesFrom:to:withBlock:]
+  -[BMStreamDatastoreBase removeFrameStoreFileWithSegmentName:]
+  -[BMStreamDatastoreBase pruneStreamToMaxSegmentAge:]
+  -[BMStreamDatastoreBase newEnumeratorFromStartTime:endTime:maxEvents:lastN:options:]
+  -[BMStreamDatastoreBase isNotLastSegment:]
+  -[BMStreamDatastoreBase eventsFrom:to:shouldDeleteUsingBlock:]
+  -[BMStreamDatastoreBase .cxx_destruct]
+  -[BMStreamDatastoreBase writeEventWithEventBody:timestamp:]
+  -[BMStreamDatastoreBase reverseEnumerateSegmentsNamesFrom:to:withBlock:]
+  -[BMStreamDatastoreBase didMarkFrameAsRemovedWithSegmentName:frame:reason:]
+  -[BMStreamDatastoreBase writeEventBytes:length:dataVersion:timestamp:]
+  -[BMStreamDatastoreBase enumerateEventsFrom:to:options:usingBlock:]
+  -[BMStreamDatastoreBase writeEventWithEventBody:]
+  -[BMStreamDatastoreBase streamPath]
+  -[BMStreamDatastoreBase reverseEnumerateSegmentsFrom:to:withBlock:]
+  -[BMStreamDatastoreBase segmentWithFilename:error:]
+  -[BMStreamDatastoreBase writeEventWithEventBody:timestamp:outBookmark:]
+  -[BMStreamDatastoreBase filelockPath]
+  -[BMStreamDatastoreBase _remoteStreamPath]
+  -[BMStreamDatastoreBase writeEventData:dataVersion:timestamp:]
+  -[BMStreamDatastoreBase config]
+  -[BMStreamDatastoreBase newEnumeratorFromBookmark:options:]
+  -[BMStreamDatastoreBase fetchEventsFrom:to:options:]
+  -[BMStreamDatastoreBase removeEventsFrom:to:reason:pruneFutureEvents:shouldDeleteUsingBlock:]
+  -[BMStreamDatastoreBase shouldCacheFileDescriptors]
+  -[BMStreamDatastoreBase enumerateSegmentsFrom:to:withBlock:]
+  -[BMStreamDatastoreBase updateSegments]
+  -[BMStreamDatastoreBase _segmentStillExists:]
+  -[BMStreamDatastoreBase filePathForFilename:]
+  -[BMStreamDatastoreBase metadata]
+  -[BMStreamDatastoreBase frameStoreOfSegmentContainingEventTime:]
+  -[BMStreamDatastoreBase newEnumeratorFromBookmark:]
+  -[BMStreamDatastoreBase segmentAfterFrameStore:createNewSegment:direction:]
+  -[BMStreamDatastoreBase segmentFileSize:]
+  -[BMStreamDatastoreBase segmentAfterFrameStore:createNewSegment:]
+  -[BMStreamDatastoreBase isRemote]
+  -[BMStreamDatastoreBase newFramestoreWithTime:]
+  -[BMStreamDatastoreBase newFramestoreWithTime:segmentNames:segmentFileHandles:]
+  -[BMStreamDatastoreBase newEnumeratorFromStartTime:endTime:maxEvents:options:]
+  -[BMStreamDatastoreBase updateSegmentsWithGuardedDeviceLockStateData:]
+  -[BMStreamDatastoreBase pruningPolicy]
+  -[BMStreamDatastoreBase _localStreamPath]
+  -[BMStreamDatastoreBase updateMetadata:pruningPolicy:]
+  -[BMStreamDatastoreBase saveMetadata:]
+  -[BMStreamDatastoreBase writeEventData:dataVersion:timestamp:outBookmark:]
+  -[BMStreamDatastoreBase nextSegmentAfterFrameStore:segmentNames:direction:]
+  -[BMStreamDatastoreBase openFiles:saveToOpenFiles:]
+  -[BMStreamDatastoreBase fetchEventFromFrameStore:atOffset:withOptions:callback:]
+  -[BMStreamDatastoreBase metadataPath]
+  -[BMStreamDatastoreBase streamSizeInBytes]
+  -[BMStreamDatastoreBase handleDeviceLocking]
+  -[BMStreamDatastoreBase syncMappedFiles]
+  -[BMStreamDatastoreBase segmentNames]
+  -[BMStreamDatastoreBase _bookmarkWithSegmentName:offset:]
+  -[BMStreamDatastoreBase loadMetadata]
+  -[BMStreamDatastoreBase effectiveStreamPath]
+  -[BMStreamDatastoreBase dealloc]
+  -[BMStreamDatastoreBase writeEventBytes:length:dataVersion:timestamp:outBookmark:]
+  -[BMStreamDatastoreBase removeEventsFrom:to:reason:pruneFutureEvents:usingBlock:]
+  -[BMStreamDatastoreBase framesStore]
+  -[BMStreamDatastoreBase initWithStream:permission:config:]
+  -[BMStreamDatastoreBase permission]
+  -[BMStreamDatastoreBase segmentWithFilename:segmentNames:segmentFileHandles:createNewFile:error:]
+  -[BMStreamDatastoreBase removeEventsFrom:to:pruneFutureEvents:usingBlock:]
+  -[BMStreamDatastoreBase handleDeviceUnlock]
+  -[BMStreamDatastoreBase remoteStreamName]
+  -[BMStreamDatastoreBase deleteEventAtBookmark:outTombstoneBookmark:]
+  -[BMStreamDatastoreBase eventsFrom:to:reason:shouldDeleteUsingBlock:]
+  -[BMStreamDatastoreBase didMarkFrameAsRemovedWithSegmentName:frame:reason:outTombstoneBookmark:]
+  -[BMStreamDatastoreBase setFramesStore:]
+  -[BMStreamDatastoreBase pruneStreamToMaxStreamSizeInBytes:]
+
+
+BMMemoryMapping : NSObject
+  // instance methods
+  -[BMMemoryMapping canAtomicallyAccessOffset:]
+  -[BMMemoryMapping init]
+  -[BMMemoryMapping dealloc]
+
+
+BMStoreBookmark : NSObject <NSCopying, NSSecureCoding, BMProtoBufWrapper>
+ @property  NSString *streamId
+ @property  NSString *segmentName
+ @property  double iterationStartTime
+ @property  unsigned long offset
+
+  // class methods
+  +[BMStoreBookmark supportsSecureCoding]
+
+  // instance methods
+  -[BMStoreBookmark streamId]
+  -[BMStoreBookmark segmentName]
+  -[BMStoreBookmark initWithCoder:]
+  -[BMStoreBookmark proto]
+  -[BMStoreBookmark offset]
+  -[BMStoreBookmark checkAndReportDecodingFailureIfNeededFordouble:key:coder:errorDomain:errorCode:]
+  -[BMStoreBookmark .cxx_destruct]
+  -[BMStoreBookmark initWithProtoData:]
+  -[BMStoreBookmark isEqual:]
+  -[BMStoreBookmark _descriptionDict]
+  -[BMStoreBookmark initWithStream:segment:iterationStartTime:offset:]
+  -[BMStoreBookmark checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[BMStoreBookmark copyWithZone:]
+  -[BMStoreBookmark initWithProto:]
+  -[BMStoreBookmark iterationStartTime]
+  -[BMStoreBookmark encodeAsProto]
+  -[BMStoreBookmark encodeWithCoder:]
+
+
+BMPBStoreBookmark : PBCodable <NSCopying>
+ @property  BOOL hasStreamId
+ @property  NSString *streamId
+ @property  BOOL hasSegmentName
+ @property  NSString *segmentName
+ @property  BOOL hasIterationStartTime
+ @property  double iterationStartTime
+ @property  BOOL hasOffset
+ @property  unsigned int offset
+
+  // instance methods
+  -[BMPBStoreBookmark setHasOffset:]
+  -[BMPBStoreBookmark hasOffset]
+  -[BMPBStoreBookmark streamId]
+  -[BMPBStoreBookmark segmentName]
+  -[BMPBStoreBookmark setSegmentName:]
+  -[BMPBStoreBookmark mergeFrom:]
+  -[BMPBStoreBookmark offset]
+  -[BMPBStoreBookmark hasIterationStartTime]
+  -[BMPBStoreBookmark .cxx_destruct]
+  -[BMPBStoreBookmark dictionaryRepresentation]
+  -[BMPBStoreBookmark writeTo:]
+  -[BMPBStoreBookmark isEqual:]
+  -[BMPBStoreBookmark copyTo:]
+  -[BMPBStoreBookmark setStreamId:]
+  -[BMPBStoreBookmark readFrom:]
+  -[BMPBStoreBookmark setHasIterationStartTime:]
+  -[BMPBStoreBookmark hasStreamId]
+  -[BMPBStoreBookmark setOffset:]
+  -[BMPBStoreBookmark setIterationStartTime:]
+  -[BMPBStoreBookmark hasSegmentName]
+  -[BMPBStoreBookmark copyWithZone:]
+  -[BMPBStoreBookmark iterationStartTime]
+
+
+BMPruningPolicy : NSObject
+ @property  BOOL pruneOnAccess
+ @property  BOOL filterByAgeOnRead
+ @property  double maxAge
+ @property  unsigned long maxStreamSize
+
+  // instance methods
+  -[BMPruningPolicy setMaxAge:]
+  -[BMPruningPolicy maxStreamSize]
+  -[BMPruningPolicy filterByAgeOnRead]
+  -[BMPruningPolicy setPruneOnAccess:]
+  -[BMPruningPolicy maxAge]
+  -[BMPruningPolicy setFilterByAgeOnRead:]
+  -[BMPruningPolicy init]
+  -[BMPruningPolicy isEqual:]
+  -[BMPruningPolicy pruneOnAccess]
+  -[BMPruningPolicy setMaxStreamSize:]
+  -[BMPruningPolicy initPruneOnAccess:filterByAgeOnRead:maxAge:maxStreamSize:]
+  -[BMPruningPolicy copyWithZone:]
+
+
+BMStreamTombstoneEventDatastore : BMStreamDatastoreBase
+  // instance methods
+  -[BMStreamTombstoneEventDatastore newEnumeratorFromStartTime:]
+  -[BMStreamTombstoneEventDatastore newEnumeratorFromStartTime:options:]
+  -[BMStreamTombstoneEventDatastore writeTombstoneEvent:outTombstoneBookmark:]
+  -[BMStreamTombstoneEventDatastore originalEventFromTombstoneEvent:]
+  -[BMStreamTombstoneEventDatastore eventClass]
+  -[BMStreamTombstoneEventDatastore initWithStream:streamPath:permission:config:streamDatastore:]
+  -[BMStreamTombstoneEventDatastore .cxx_destruct]
+  -[BMStreamTombstoneEventDatastore enumerateEventsFrom:to:options:usingBlock:]
+  -[BMStreamTombstoneEventDatastore writeEventWithEventBody:timestamp:outBookmark:]
+  -[BMStreamTombstoneEventDatastore _remoteStreamPath]
+  -[BMStreamTombstoneEventDatastore newEnumeratorFromBookmark:options:]
+  -[BMStreamTombstoneEventDatastore newEnumeratorFromBookmark:]
+  -[BMStreamTombstoneEventDatastore _localStreamPath]
+  -[BMStreamTombstoneEventDatastore effectiveStreamPath]
+  -[BMStreamTombstoneEventDatastore deleteEventAtBookmark:outTombstoneBookmark:]
+
+
+BMStoreConfig : NSObject <NSCopying>
+ @property  unsigned long datastoreVersion
+ @property  long long storeLocationOption
+ @property  NSString *remoteStreamName
+ @property  BMPruningPolicy *pruningPolicy
+ @property  NSString *datastorePath
+ @property  unsigned long segmentSize
+ @property  unsigned long protectionClass
+
+  // class methods
+  +[BMStoreConfig newPrivateStreamDefaultConfigurationWithStoreBasePath:]
+  +[BMStoreConfig newStreamDefaultConfigurationForPublicStream:]
+  +[BMStoreConfig newPublicStreamDefaultConfigurationWithProtectionClass:]
+  +[BMStoreConfig newStreamDefaultConfigurationForPublicStream:protectionClass:]
+  +[BMStoreConfig newStreamDefaultConfigurationForPublicStream:protectionClass:segmentSize:]
+  +[BMStoreConfig newRestrictedStreamDefaultConfigurationWithProtectionClass:]
+  +[BMStoreConfig newRestrictedStreamWithSegmentSize:protectionClass:]
+  +[BMStoreConfig newPrivateStreamDefaultConfigurationWithStoreBasePath:protectionClass:]
+  +[BMStoreConfig streamTypeFromStorePath:]
+  +[BMStoreConfig newPublicStreamDefaultConfiguration]
+  +[BMStoreConfig newRestrictedStreamDefaultConfiguration]
+  +[BMStoreConfig newRestrictedStreamWithSegmentSize:]
+  +[BMStoreConfig newPrivateStreamDefaultConfigurationWithProtectionClass:segmentSize:]
+
+  // instance methods
+  -[BMStoreConfig datastoreVersion]
+  -[BMStoreConfig setPruningPolicy:]
+  -[BMStoreConfig protectionClass]
+  -[BMStoreConfig initWithStoreVersion:storeBasePath:segmentSize:protectionClass:]
+  -[BMStoreConfig initWithStoreBasePath:segmentSize:]
+  -[BMStoreConfig .cxx_destruct]
+  -[BMStoreConfig streamType]
+  -[BMStoreConfig datastorePath]
+  -[BMStoreConfig init]
+  -[BMStoreConfig isEqual:]
+  -[BMStoreConfig setRemoteStreamName:]
+  -[BMStoreConfig pruningPolicy]
+  -[BMStoreConfig initWithStoreVersion:datastorePath:maxAllowedMappedPages:segmentSize:segmentResizeFactor:segmentPaddingFactor:]
+  -[BMStoreConfig segmentSize]
+  -[BMStoreConfig setStoreLocationOption:]
+  -[BMStoreConfig initWithStoreVersion:storeBasePath:segmentSize:protectionClass:storeLocationOption:remoteStreamName:pruningPolicy:]
+  -[BMStoreConfig initWithStoreBasePath:segmentSize:protectionClass:]
+  -[BMStoreConfig copyWithZone:]
+  -[BMStoreConfig storeLocationOption]
+  -[BMStoreConfig remoteStreamName]
+  -[BMStoreConfig copyStoreConfigWithOption:remoteStreamName:]
+
+
+BMStreamDatastore : BMStreamDatastoreBase
+ @property  BOOL includeTombstones
+
+  // instance methods
+  -[BMStreamDatastore .cxx_destruct]
+  -[BMStreamDatastore didMarkFrameAsRemovedWithSegmentName:frame:reason:]
+  -[BMStreamDatastore includeTombstones]
+  -[BMStreamDatastore writeTombstoneEventWithSegmentName:offset:length:reason:]
+  -[BMStreamDatastore tombstoneStore]
+  -[BMStreamDatastore newTombstoneEnumeratorFromBookmark:]
+  -[BMStreamDatastore updatePruningPolicy:]
+  -[BMStreamDatastore initForWritingWithStream:config:includeTombstones:]
+  -[BMStreamDatastore initWithStream:permission:config:includeTombstones:]
+  -[BMStreamDatastore initForReadingWithStream:config:includeTombstones:]
+  -[BMStreamDatastore newTombstoneEnumeratorFromStartTime:]
+  -[BMStreamDatastore writeTombstoneEventWithSegmentName:offset:length:reason:outTombstoneBookmark:]
+  -[BMStreamDatastore initWithStream:streamPath:permission:config:includeTombstones:]
+  -[BMStreamDatastore didMarkFrameAsRemovedWithSegmentName:frame:reason:outTombstoneBookmark:]
+  -[BMStreamDatastore initForPruningWithStream:config:includeTombstones:]
+
+
+BMTombstoneEventEnumerator : BMStoreEnumeratorBase
+  // instance methods
+  -[BMTombstoneEventEnumerator _eventWithFrameStore:frame:error:]
+  -[BMTombstoneEventEnumerator peekTombstoneEvent]
+  -[BMTombstoneEventEnumerator _originaleventWithFrameStore:frame:error:]
+  -[BMTombstoneEventEnumerator nextTombstoneEvent]
+  -[BMTombstoneEventEnumerator peekEvent]
+  -[BMTombstoneEventEnumerator nextEvent]
+
+
+BMStreamMetadata : NSObject <NSSecureCoding>
+ @property  NSString *remoteStreamName
+ @property  NSString *streamId
+ @property  BOOL isRemote
+ @property  Class eventDataClass
+ @property  BMPruningPolicy *pruningPolicy
+
+  // class methods
+  +[BMStreamMetadata supportsSecureCoding]
+
+  // instance methods
+  -[BMStreamMetadata streamId]
+  -[BMStreamMetadata initWithCoder:]
+  -[BMStreamMetadata .cxx_destruct]
+  -[BMStreamMetadata isEqual:]
+  -[BMStreamMetadata setRemoteStreamName:]
+  -[BMStreamMetadata isRemote]
+  -[BMStreamMetadata isEqualStreamMetadata:]
+  -[BMStreamMetadata pruningPolicy]
+  -[BMStreamMetadata checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[BMStreamMetadata initWithStreamId:eventType:remoteStreamName:pruningPolicy:]
+  -[BMStreamMetadata eventDataClass]
+  -[BMStreamMetadata remoteStreamName]
+  -[BMStreamMetadata encodeWithCoder:]
+
+
+BMStreamDatastoreWriter : NSObject
+ @property  BOOL canReadOrPruneData
+
+  // instance methods
+  -[BMStreamDatastoreWriter eventBodyClass]
+  -[BMStreamDatastoreWriter canReadOrPruneData]
+  -[BMStreamDatastoreWriter .cxx_destruct]
+  -[BMStreamDatastoreWriter writeEventWithEventBody:timestamp:]
+  -[BMStreamDatastoreWriter writeEventWithEventBody:]
+  -[BMStreamDatastoreWriter writeEventBodyClass:]
+  -[BMStreamDatastoreWriter syncMappedFiles]
+  -[BMStreamDatastoreWriter initWithStream:config:]
+  -[BMStreamDatastoreWriter _writeEventData:dataVersion:timestamp:outBookmark:]
+  -[BMStreamDatastoreWriter streamIdentifier]
+
+
+BMStreamDatastoreReader : NSObject
+ @property  BMStreamDatastore *inner
+ @property  BOOL canReadOrPruneData
+
+  // instance methods
+  -[BMStreamDatastoreReader eventBodyClass]
+  -[BMStreamDatastoreReader fetchEventsFrom:to:]
+  -[BMStreamDatastoreReader newEnumeratorFromStartTime:]
+  -[BMStreamDatastoreReader canReadOrPruneData]
+  -[BMStreamDatastoreReader newEnumeratorFromStartTime:options:]
+  -[BMStreamDatastoreReader newEnumeratorFromStartTime:endTime:maxEvents:lastN:options:]
+  -[BMStreamDatastoreReader .cxx_destruct]
+  -[BMStreamDatastoreReader newEnumeratorFromBookmark:options:]
+  -[BMStreamDatastoreReader fetchEventsFrom:to:options:]
+  -[BMStreamDatastoreReader newEnumeratorFromBookmark:]
+  -[BMStreamDatastoreReader newEnumeratorFromStartTime:endTime:maxEvents:options:]
+  -[BMStreamDatastoreReader inner]
+  -[BMStreamDatastoreReader initWithStream:config:]
+  -[BMStreamDatastoreReader streamIdentifier]
+
+
+BMStreamDatastorePruner : NSObject
+ @property  BOOL canReadOrPruneData
+
+  // instance methods
+  -[BMStreamDatastorePruner eventBodyClass]
+  -[BMStreamDatastorePruner fetchEventsFrom:to:]
+  -[BMStreamDatastorePruner newEnumeratorFromStartTime:]
+  -[BMStreamDatastorePruner canReadOrPruneData]
+  -[BMStreamDatastorePruner removeEventsFrom:to:callback:]
+  -[BMStreamDatastorePruner eventsFrom:to:shouldDeleteUsingBlock:]
+  -[BMStreamDatastorePruner removeEventsFrom:to:usingBlock:]
+  -[BMStreamDatastorePruner .cxx_destruct]
+  -[BMStreamDatastorePruner newEnumeratorFromBookmark:]
+  -[BMStreamDatastorePruner removeEventsFrom:to:reason:usingBlock:]
+  -[BMStreamDatastorePruner syncMappedFiles]
+  -[BMStreamDatastorePruner initWithStream:config:]
+  -[BMStreamDatastorePruner streamIdentifier]
+  -[BMStreamDatastorePruner deleteEventAtBookmark:outTombstoneBookmark:]
+  -[BMStreamDatastorePruner eventsFrom:to:reason:shouldDeleteUsingBlock:]
+
+
+BMFrame : NSObject
+ @property  ^v framePtr
+ @property  {?=(?={?=II}Q){?=ddII}} frameHeader
+ @property  NSString *storePath
+ @property  unsigned int dataVersion
+ @property  NSData *data
+ @property  unsigned long offset
+ @property  unsigned long nextOffset
+ @property  double creationTimestamp
+ @property  double modifiedTimestamp
+ @property  unsigned int state
+
+  // instance methods
+  -[BMFrame storePath]
+  -[BMFrame framePtr]
+  -[BMFrame offset]
+  -[BMFrame .cxx_destruct]
+  -[BMFrame data]
+  -[BMFrame initWithHeader:storePath:data:framePtr:offset:nextOffset:]
+  -[BMFrame state]
+  -[BMFrame frameHeader]
+  -[BMFrame modifiedTimestamp]
+  -[BMFrame dataVersion]
+  -[BMFrame creationTimestamp]
+  -[BMFrame nextOffset]
+
+
+BMFileLock : NSObject
+  // class methods
+  +[BMFileLock acquireLockfile:andRunBlock:]
+
+  // instance methods
+  -[BMFileLock init]
+
+
+BMPublicStreamUtilities(Storage)
+	// class methods
+	+[BMPublicStreamUtilities(Storage) storeConfigurationForStream:protectionClass:]
+	+[BMPublicStreamUtilities(Storage) streamPathForStream:]
+	+[BMPublicStreamUtilities(Storage) storeConfigurationForStream:]
+
+NSFileHandle(BMSegmentName)
+	// instance methods
+	-[NSFileHandle(BMSegmentName) bmPathname]
+	-[NSFileHandle(BMSegmentName) bmSegmentName]
+
+PBCodable(BMStoreData)
+	// class methods
+	+[PBCodable(BMStoreData) eventWithData:dataVersion:]
+
+	// instance methods
+	-[PBCodable(BMStoreData) serialize]
+	-[PBCodable(BMStoreData) dataVersion]
+
+01 00 0400 /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation: BMCoreAnalyticsEvents 
+01 00 0400 /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation: BMPaths 
+01 00 0400 /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation: BMPublicStreamUtilities 
+01 00 0400 /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation: BMStoreDirectory 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSOrderedSet 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer: PBCodable 
+01 00 0200 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASDeviceState 
+01 00 0200 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASLock 

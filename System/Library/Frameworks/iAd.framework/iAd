@@ -1,0 +1,137 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ADInterstitialAd
+|| __DATA.__objc_data _OBJC_CLASS_$_ADInterstitialAdPresentationViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_ADInterstitialAd
+|| __DATA.__objc_data _OBJC_METACLASS_$_ADInterstitialAdPresentationViewController
+|| __DATA_CONST.__const _ADBannerContentSizeIdentifier320x50
+|| __DATA_CONST.__const _ADBannerContentSizeIdentifier480x32
+|| __DATA_CONST.__const _ADBannerContentSizeIdentifierLandscape
+|| __DATA_CONST.__const _ADBannerContentSizeIdentifierPortrait
+|| __DATA_CONST.__const _ADClientErrorDomain
+|| __DATA_CONST.__const _ADErrorDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADBannerView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADBannerView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADClient
+|| __TEXT.__text _ADClampedBannerSize
+__ AVKit: _OBJC_CLASS_$_AVPlayerViewController
+__ AdPlatforms: _OBJC_CLASS_$_ADAttribution
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreGraphics: _CGSizeZero
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ StoreKit: _OBJC_CLASS_$_SKAdNetwork
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+ADInterstitialAd : NSObject
+ @property  id delegate
+ @property  BOOL loaded
+ @property  BOOL actionInProgress
+
+  // instance methods
+  -[ADInterstitialAd cancelAction]
+  -[ADInterstitialAd .cxx_destruct]
+  -[ADInterstitialAd isLoaded]
+  -[ADInterstitialAd setDelegate:]
+  -[ADInterstitialAd delegate]
+  -[ADInterstitialAd presentFromViewController:]
+  -[ADInterstitialAd isActionInProgress]
+  -[ADInterstitialAd presentInView:]
+
+
+ADInterstitialAdPresentationViewController : UIViewController
+  // instance methods
+  -[ADInterstitialAdPresentationViewController initForInterstitialAd:]
+  -[ADInterstitialAdPresentationViewController shouldTestVisibilityAtPoint:]
+
+
+ADClient : NSObject
+  // class methods
+  +[ADClient sharedClient]
+
+  // instance methods
+  -[ADClient requestAttributionDetailsWithBlock:]
+  -[ADClient addClientToSegments:replaceExisting:]
+  -[ADClient determineAppInstallationAttributionWithCompletionHandler:]
+  -[ADClient lookupAdConversionDetails:]
+  -[ADClient segmentDataForSignedInUserWithBlock:]
+
+
+ADBannerView : UIView
+ @property  long long adType
+ @property  id delegate
+ @property  BOOL bannerLoaded
+ @property  BOOL bannerViewActionInProgress
+ @property  id advertisingSection
+ @property  id requiredContentSizeIdentifiers
+ @property  id currentContentSizeIdentifier
+
+  // class methods
+  +[ADBannerView sizeFromBannerContentSizeIdentifier:]
+
+  // instance methods
+  -[ADBannerView .cxx_destruct]
+  -[ADBannerView setDelegate:]
+  -[ADBannerView adType]
+  -[ADBannerView delegate]
+  -[ADBannerView initWithAdType:]
+  -[ADBannerView cancelBannerViewAction]
+  -[ADBannerView isBannerLoaded]
+  -[ADBannerView isBannerViewActionInProgress]
+  -[ADBannerView advertisingSection]
+  -[ADBannerView setAdvertisingSection:]
+  -[ADBannerView requiredContentSizeIdentifiers]
+  -[ADBannerView setRequiredContentSizeIdentifiers:]
+  -[ADBannerView currentContentSizeIdentifier]
+  -[ADBannerView setCurrentContentSizeIdentifier:]
+
+
+AVPlayerViewController(AdLibAdditions)
+	// class methods
+	+[AVPlayerViewController(AdLibAdditions) preparePrerollAds]
+
+	// instance methods
+	-[AVPlayerViewController(AdLibAdditions) playPrerollAdWithCompletionHandler:]
+	-[AVPlayerViewController(AdLibAdditions) cancelPreroll]
+
+UIViewController(AdLibAdditions)
+	// class methods
+	+[UIViewController(AdLibAdditions) prepareInterstitialAds]
+
+	// instance methods
+	-[UIViewController(AdLibAdditions) requestInterstitialAdPresentation]
+
+01 00 0200 /System/Library/PrivateFrameworks/AdPlatforms.framework/AdPlatforms: ADAttribution 
+01 00 0300 /System/Library/Frameworks/AVKit.framework/AVKit: AVPlayerViewController 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/StoreKit.framework/StoreKit: SKAdNetwork 
+01 00 0500 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0500 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 

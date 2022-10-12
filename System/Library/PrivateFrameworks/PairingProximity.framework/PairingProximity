@@ -1,0 +1,165 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PPDiscoveryManager
+|| __DATA.__objc_data _OBJC_CLASS_$_PPNearbyWatchNotifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_PPDiscoveryManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_PPNearbyWatchNotifier
+|| __DATA_CONST.__const _PPDeviceWasDiscoveredNotification
+|| __DATA_CONST.__const _PPDiscoveredDeviceAdvertisingName
+|| __DATA_CONST.__const _PPDiscoveredDeviceRSSIValue
+|| __DATA_CONST.__const _kBridgeDomain
+|| __DATA_CONST.__const _kGizmoPeripheralService
+|| __TEXT.__const _PPDiscoveryLimitBridge
+|| __TEXT.__const _PairingProximityVersionNumber
+|| __TEXT.__const _PairingProximityVersionString
+|| __TEXT.__text _pbb_accountsignin_log
+|| __TEXT.__text _pbb_activation_log
+|| __TEXT.__text _pbb_bridge_log
+|| __TEXT.__text _pbb_discover_log
+|| __TEXT.__text _pbb_manualunpairing_log
+|| __TEXT.__text _pbb_mobileasset_log
+|| __TEXT.__text _pbb_setup_log
+|| __TEXT.__text _pbb_setupflow_log
+|| __TEXT.__text _pbb_shared_log
+__ CoreBluetooth: _CBAdvertisementDataLocalNameKey
+__ CoreBluetooth: _CBCentralManagerOptionShowPowerAlertKey
+__ CoreBluetooth: _CBCentralManagerScanOptionActive
+__ CoreBluetooth: _CBCentralManagerScanOptionAllowDuplicatesKey
+__ CoreBluetooth: _CBCentralManagerScanOptionScanInterval
+__ CoreBluetooth: _CBCentralManagerScanOptionScanWindow
+__ CoreBluetooth: _CBManagerIsPrivilegedDaemonKey
+__ CoreBluetooth: _OBJC_CLASS_$_CBCentralManager
+__ CoreBluetooth: _OBJC_CLASS_$_CBUUID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+PPNearbyWatchNotifier : NSObject <PPDiscoveryManagerDelegate>
+ @property  NSObject<OS_dispatch_source> *timerSource
+ @property  PPDiscoveryManager *discoveryManager
+ @property  @? discoveryCompletion
+ @property  NSXPCConnection *notificationService
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PPNearbyWatchNotifier sharedNotifier]
+  +[PPNearbyWatchNotifier shouldScanForNearbyDevices]
+  +[PPNearbyWatchNotifier isWatchAppRemoved]
+
+  // instance methods
+  -[PPNearbyWatchNotifier discoveryManager]
+  -[PPNearbyWatchNotifier .cxx_destruct]
+  -[PPNearbyWatchNotifier timerSource]
+  -[PPNearbyWatchNotifier setTimerSource:]
+  -[PPNearbyWatchNotifier notificationService]
+  -[PPNearbyWatchNotifier setNotificationService:]
+  -[PPNearbyWatchNotifier discoverForTimeInterval:signalLimit:completion:]
+  -[PPNearbyWatchNotifier didStopDiscovering]
+  -[PPNearbyWatchNotifier _cleanupDiscoveryDidFindDevice:error:]
+  -[PPNearbyWatchNotifier prepareServiceConnectionIfNeeded]
+  -[PPNearbyWatchNotifier didDiscoverDeviceWithAdvertisingID:signalStrength:]
+  -[PPNearbyWatchNotifier discoverForNearbyWatchesWithCompletion:]
+  -[PPNearbyWatchNotifier cancelDiscovery]
+  -[PPNearbyWatchNotifier setDiscoveryManager:]
+  -[PPNearbyWatchNotifier discoveryCompletion]
+  -[PPNearbyWatchNotifier setDiscoveryCompletion:]
+
+
+PPDiscoveryManager : NSObject <CBCentralManagerDelegate>
+ @property  CBCentralManager *central
+ @property  NSObject<OS_dispatch_queue> *discoveryQueue
+ @property  BOOL bluetoothIsScanning
+ @property  long long signalLimitOverride
+ @property  <PPDiscoveryManagerDelegate> *discoveryDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PPDiscoveryManager sharedDiscoveryManager]
+  +[PPDiscoveryManager isBluetoothPoweredOn:]
+  +[PPDiscoveryManager isBluetoothConnected:]
+
+  // instance methods
+  -[PPDiscoveryManager begin]
+  -[PPDiscoveryManager .cxx_destruct]
+  -[PPDiscoveryManager centralManagerDidUpdateState:]
+  -[PPDiscoveryManager end]
+  -[PPDiscoveryManager beginDiscovery]
+  -[PPDiscoveryManager init]
+  -[PPDiscoveryManager discoveryQueue]
+  -[PPDiscoveryManager central]
+  -[PPDiscoveryManager setDiscoveryQueue:]
+  -[PPDiscoveryManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]
+  -[PPDiscoveryManager setCentral:]
+  -[PPDiscoveryManager setSignalLimitOverride:]
+  -[PPDiscoveryManager setDiscoveryDelegate:]
+  -[PPDiscoveryManager forceEndDiscovery]
+  -[PPDiscoveryManager updateFromBTState:]
+  -[PPDiscoveryManager signalLimitOverride]
+  -[PPDiscoveryManager discoveryDelegate]
+  -[PPDiscoveryManager bluetoothIsScanning]
+  -[PPDiscoveryManager setBluetoothIsScanning:]
+
+
+01 00 0200 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBCentralManager 
+01 00 0200 /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth: CBUUID 
+01 00 0100 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
