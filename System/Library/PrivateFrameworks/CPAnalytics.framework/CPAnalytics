@@ -1,0 +1,892 @@
+|| __DATA_CONST.__const _CPAnalyticKnowledgeStoreVersionType
+|| __DATA_CONST.__const _CPAnalyticKnowledgeStoreVersionValue
+|| __DATA_CONST.__const _CPAnalyticsConfigAppStateCounters
+|| __DATA_CONST.__const _CPAnalyticsConfigAppStateFeatures
+|| __DATA_CONST.__const _CPAnalyticsDashboardAppEvent
+|| __DATA_CONST.__const _CPAnalyticsDashboardAppEventSampled
+|| __DATA_CONST.__const _CPAnalyticsDashboardErrorEvent
+|| __DATA_CONST.__const _CPAnalyticsDashboardIntervalEvent
+|| __DATA_CONST.__const _CPAnalyticsDashboardMediaEvent
+|| __DATA_CONST.__const _CPAnalyticsDashboardMediaEventSampled
+|| __DATA_CONST.__const _CPAnalyticsDashboardScreenViewEvent
+|| __DATA_CONST.__const _CPAnalyticsDashboardScreenViewEventSampled
+|| __DATA_CONST.__const _CPAnalyticsDashboardSessionEvent
+|| __DATA_CONST.__const _CPAnalyticsDemographicPropertyUserAgeRange
+|| __DATA_CONST.__const _CPAnalyticsDemographicPropertyUserGender
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceCritical
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceHigh
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceLow
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceMedium
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceVeryHigh
+|| __DATA_CONST.__const _CPAnalyticsDeviceFreeSpaceVeryLow
+|| __DATA_CONST.__const _CPAnalyticsErrorPropertyCode
+|| __DATA_CONST.__const _CPAnalyticsErrorPropertyDomain
+|| __DATA_CONST.__const _CPAnalyticsEventAppDidBecomeActive
+|| __DATA_CONST.__const _CPAnalyticsEventAppSession
+|| __DATA_CONST.__const _CPAnalyticsEventAppWillResignActive
+|| __DATA_CONST.__const _CPAnalyticsEventAssetCollectionViewed
+|| __DATA_CONST.__const _CPAnalyticsEventAssetExportItemPreparationCompleted
+|| __DATA_CONST.__const _CPAnalyticsEventAssetExportPreparationCanceled
+|| __DATA_CONST.__const _CPAnalyticsEventAssetExportPreparationCompleted
+|| __DATA_CONST.__const _CPAnalyticsEventAssetExportPreparationFailed
+|| __DATA_CONST.__const _CPAnalyticsEventAssetFavorited
+|| __DATA_CONST.__const _CPAnalyticsEventAssetUnfavorited
+|| __DATA_CONST.__const _CPAnalyticsEventAssetViewed
+|| __DATA_CONST.__const _CPAnalyticsEventAssetsDeleted
+|| __DATA_CONST.__const _CPAnalyticsEventExitEdit
+|| __DATA_CONST.__const _CPAnalyticsEventFeatureUsageCounts
+|| __DATA_CONST.__const _CPAnalyticsEventInterval
+|| __DATA_CONST.__const _CPAnalyticsEventMediaViewed
+|| __DATA_CONST.__const _CPAnalyticsEventPropertyDayOfWeek
+|| __DATA_CONST.__const _CPAnalyticsEventPropertyHourOfDay
+|| __DATA_CONST.__const _CPAnalyticsEventPropertyIsAppEvent
+|| __DATA_CONST.__const _CPAnalyticsEventScreenManagerUnknownView
+|| __DATA_CONST.__const _CPAnalyticsEventScreenView
+|| __DATA_CONST.__const _CPAnalyticsEventShareCanceled
+|| __DATA_CONST.__const _CPAnalyticsEventShareCompleted
+|| __DATA_CONST.__const _CPAnalyticsEventTabIdentifierChanged
+|| __DATA_CONST.__const _CPAnalyticsEventUnknownIntervalName
+|| __DATA_CONST.__const _CPAnalyticsEventViewDidAppear
+|| __DATA_CONST.__const _CPAnalyticsEventViewDidDisappear
+|| __DATA_CONST.__const _CPAnalyticsIgnoreIntervalsKey
+|| __DATA_CONST.__const _CPAnalyticsKnowledgeStoreSampleIdentifierKey
+|| __DATA_CONST.__const _CPAnalyticsKnowledgeStoreSampleSubsetKey
+|| __DATA_CONST.__const _CPAnalyticsKnowledgeStoreSavedEvent
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyAdjusted
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyCameraType
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyFavorite
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyImportSource
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyLocalIdentifier
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaAge
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaAgeInMinutes
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaCount
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaDuration
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaSubtype
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyMediaType
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyOrientation
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertySceneType
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertySubject
+|| __DATA_CONST.__const _CPAnalyticsMediaPropertyUUID
+|| __DATA_CONST.__const _CPAnalyticsPayloadAppEventNameKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadAssetCollectionKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadAssetCollectionLocalIdentifierKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadAssetEditAdjustmentsKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadAssetsKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadClassNameKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadErrorKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadGenericAssetCollectionCountKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadGenericAssetCountKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadIntervalDurationKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadIntervalEndDateKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadIntervalNameKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadIntervalStartDateKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadTabIdentifierDescriptionKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadTimeOnScreenKey
+|| __DATA_CONST.__const _CPAnalyticsPayloadViewIDKey
+|| __DATA_CONST.__const _CPAnalyticsScreenManagerIgnoreViewsKey
+|| __DATA_CONST.__const _CPAnalyticsScreenManagerMaxScreenViews
+|| __DATA_CONST.__const _CPAnalyticsScreenManagerTrackViewsKey
+|| __DATA_CONST.__const _CPAnalyticsScreenViewAppSectionName
+|| __DATA_CONST.__const _CPAnalyticsScreenViewCurrentScreen
+|| __DATA_CONST.__const _CPAnalyticsScreenViewIsTracked
+|| __DATA_CONST.__const _CPAnalyticsScreenViewPriorScreen
+|| __DATA_CONST.__const _CPAnalyticsScreenViewScreensCount
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen1
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen2
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen3
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen4
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen5
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen6
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen7
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen8
+|| __DATA_CONST.__const _CPAnalyticsScreenViewTrackerPriorScreen9
+|| __DATA_CONST.__const _CPAnalyticsSessionExitScreen
+|| __DATA_CONST.__const _CPAnalyticsSessionScreenViewsCount
+|| __DATA_CONST.__const _CPAnalyticsSessionTimeInApp
+|| __DATA_CONST.__const _CPAnalyticsSignpostDurationPayloadKey
+|| __DATA_CONST.__const _CPAnalyticsSignpostEndEvent
+|| __DATA_CONST.__const _CPAnalyticsSignpostEventAppVisiblePeriod
+|| __DATA_CONST.__const _CPAnalyticsSignpostEventNamePayloadKey
+|| __DATA_CONST.__const _CPAnalyticsSignpostEventViewTime
+|| __DATA_CONST.__const _CPAnalyticsSignpostIDPayloadKey
+|| __DATA_CONST.__const _CPAnalyticsSignpostStartEvent
+|| __DATA_CONST.__const _CPAnalyticsStreamName
+|| __DATA_CONST.__const _CPAnalyticsSubsetName
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyCollectionCount
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyDeviceFreeSpace
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyDeviceModel
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyLibrarySizeRange
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyLowPowerModeEnabled
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyOSVersion
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyPhotosCount
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyProcess
+|| __DATA_CONST.__const _CPAnalyticsSystemPropertyVideosCount
+|| __DATA_CONST.__const _CPAnalyticsTrackIntervalsKey
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRange18_25
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRange26_35
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRange36_45
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRange46_55
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRange56_65
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRangeMoreThan65
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRangeUnder18
+|| __DATA_CONST.__const _CPAnalyticsUserAgeRangeUnknown
+|| __DATA_CONST.__const _CPAnalyticsUserGenderFemale
+|| __DATA_CONST.__const _CPAnalyticsUserGenderMale
+|| __DATA_CONST.__const _CPAnalyticsUserGenderUnknown
+|| __DATA_CONST.__const _CPAnalyticsUserPropertyiCPLEnabled
+|| __DATA_CONST.__const _CPAnalyticsUserPropertyiCPLExceedingQuota
+|| __DATA_CONST.__const _CPAnalyticsUserPropertyiCPLHasChangesToProcess
+|| __DATA_CONST.__const _CPAnalyticsUserPropertyiCPLLowDiskSpace
+|| __DATA_CONST.__const _ScreenViewTrackerNoScreenName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsAppStateDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsCompoundEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsConditional
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsCoreAnalyticsHelper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsCoreDuetEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsDashboardDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsDestinationsRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsDevLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsErrorPropertyProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsEventCounter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsIntervalDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsKnowledgeStoreDatasetSample
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsKnowledgeStoreDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsLogDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsLogEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsMetricEventRoute
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsMetricsDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsPropertyProviderClassLoader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsScreenManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsSignpostDestination
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPAnalyticsSystemProperties
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PhotosAnalyticsDemographicPropertyProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PhotosAnalyticsSystemPropertyProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsAppStateDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsCompoundEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsConditional
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsCoreAnalyticsHelper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsCoreDuetEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsDashboardDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsDestinationsRegistry
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsDevLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsErrorPropertyProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsEventCounter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsIntervalDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsKnowledgeStoreDatasetSample
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsKnowledgeStoreDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsLogDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsLogEventMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsMetricEventRoute
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsMetricsDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsPropertyProviderClassLoader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsScreenManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsSignpostDestination
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPAnalyticsSystemProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PhotosAnalyticsDemographicPropertyProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PhotosAnalyticsSystemPropertyProvider
+|| __TEXT.__const _CPAnalyticsDashboardAppEventSampleRate
+|| __TEXT.__const _CPAnalyticsDashboardMediaEventSampleRate
+|| __TEXT.__const _CPAnalyticsDashboardScreenViewEventSampleRate
+|| __TEXT.__const _CPAnalyticsVersionNumber
+|| __TEXT.__const _CPAnalyticsVersionString
+|| __TEXT.__text _CPAnalyticsLog
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreDuet: _OBJC_CLASS_$__DKCustomIdentifier
+__ CoreDuet: _OBJC_CLASS_$__DKEvent
+__ CoreDuet: _OBJC_CLASS_$__DKEventStream
+__ CoreDuet: _OBJC_CLASS_$__DKIdentifier
+__ CoreDuet: _OBJC_CLASS_$__DKKnowledgeStore
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _NSClassFromString
+__ Foundation: _NSExtensionHostDidBecomeActiveNotification
+__ Foundation: _NSExtensionHostWillResignActiveNotification
+__ Foundation: _NSFileSystemFreeSize
+__ Foundation: _NSFileSystemSize
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_bool_true
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_block_create
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_initially_inactive
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _uname
+__ libSystem.B.dylib: _xpc_copy_entitlement_for_self
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_getInstanceMethod
+__ libobjc.A.dylib: _class_getMethodImplementation
+__ libobjc.A.dylib: _imp_implementationWithBlock
+__ libobjc.A.dylib: _method_setImplementation
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _sel_registerName
+CPAnalyticsErrorPropertyProvider : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDynamicPropertyProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsErrorPropertyProvider getDynamicProperty:forEventName:payloadForSystemPropertyExtraction:]
+  -[CPAnalyticsErrorPropertyProvider registerSystemProperties:]
+
+
+CPAnalyticsSignpostDestination : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  CPAnalytics *cpAnalyticsInstance
+ @property  NSMutableIndexSet *startedSignpostIDs
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsSignpostDestination .cxx_destruct]
+  -[CPAnalyticsSignpostDestination _sendCPAnalyticsEvent:withPayload:withDuration:]
+  -[CPAnalyticsSignpostDestination processEvent:]
+  -[CPAnalyticsSignpostDestination _checkSignpostsEndForEvent:]
+  -[CPAnalyticsSignpostDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsSignpostDestination _trackSignpostsStartForEvent:]
+  -[CPAnalyticsSignpostDestination startedSignpostIDs]
+  -[CPAnalyticsSignpostDestination cpAnalyticsInstance]
+  -[CPAnalyticsSignpostDestination setCpAnalyticsInstance:]
+
+
+CPAnalyticsKnowledgeStoreDatasetSample : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *identifier
+ @property  NSDate *date
+ @property  NSString *subset
+
+  // instance methods
+  -[CPAnalyticsKnowledgeStoreDatasetSample .cxx_destruct]
+  -[CPAnalyticsKnowledgeStoreDatasetSample date]
+  -[CPAnalyticsKnowledgeStoreDatasetSample identifier]
+  -[CPAnalyticsKnowledgeStoreDatasetSample initWithIdentifier:andDate:forSubset:]
+  -[CPAnalyticsKnowledgeStoreDatasetSample subset]
+  -[CPAnalyticsKnowledgeStoreDatasetSample metadata]
+
+
+CPAnalyticsKnowledgeStoreDestination : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  NSMutableArray *matchers
+ @property  <_DKKnowledgeSaving> *knowledgeStore
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsKnowledgeStoreDestination knowledgeStore]
+  -[CPAnalyticsKnowledgeStoreDestination .cxx_destruct]
+  -[CPAnalyticsKnowledgeStoreDestination processEvent:]
+  -[CPAnalyticsKnowledgeStoreDestination _addCoreDuetDatasetSample:toDataset:]
+  -[CPAnalyticsKnowledgeStoreDestination matchers]
+  -[CPAnalyticsKnowledgeStoreDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsKnowledgeStoreDestination _datasetSampleFromEvent:andMatcher:]
+
+
+CPAnalyticsCoreDuetEventMatcher : CPAnalyticsEventMatcher
+ @property  NSString *datasetName
+ @property  NSString *identifierPropertyName
+ @property  NSString *subsetPropertyName
+ @property  NSObject *subsetPropertyValue
+ @property  BOOL matchNextEvent
+
+  // instance methods
+  -[CPAnalyticsCoreDuetEventMatcher init]
+  -[CPAnalyticsCoreDuetEventMatcher subsetPropertyValue]
+  -[CPAnalyticsCoreDuetEventMatcher identifierPropertyName]
+  -[CPAnalyticsCoreDuetEventMatcher .cxx_destruct]
+  -[CPAnalyticsCoreDuetEventMatcher initWithConfig:]
+  -[CPAnalyticsCoreDuetEventMatcher doesMatch:]
+  -[CPAnalyticsCoreDuetEventMatcher matchNextEvent]
+  -[CPAnalyticsCoreDuetEventMatcher subsetPropertyName]
+  -[CPAnalyticsCoreDuetEventMatcher datasetName]
+
+
+CPAnalyticsDevLogger : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPAnalyticsDevLogger disabled]
+
+  // instance methods
+  -[CPAnalyticsDevLogger processEvent:]
+  -[CPAnalyticsDevLogger initWithConfig:cpAnalyticsInstance:]
+
+
+CPAnalyticsEventCounter : NSObject /usr/lib/libSystem.B.dylib
+ @property  CPAnalyticsEventMatcher *matcher
+ @property  NSString *countKey
+ @property  unsigned long count
+ @property  NSString *name
+
+  // class methods
+  +[CPAnalyticsEventCounter _validateAndParseEventName:]
+
+  // instance methods
+  -[CPAnalyticsEventCounter countEvent:]
+  -[CPAnalyticsEventCounter setCount:]
+  -[CPAnalyticsEventCounter initWithEventName:]
+  -[CPAnalyticsEventCounter initWithName:matcher:]
+  -[CPAnalyticsEventCounter matcher]
+  -[CPAnalyticsEventCounter .cxx_destruct]
+  -[CPAnalyticsEventCounter name]
+  -[CPAnalyticsEventCounter initWithConfig:]
+  -[CPAnalyticsEventCounter count]
+  -[CPAnalyticsEventCounter resetCount]
+  -[CPAnalyticsEventCounter countKey]
+
+
+CPAnalyticsDashboardDestination : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  CPAnalytics *cpAnalyticsInstance
+ @property  NSArray *allStandardProperties
+ @property  NSArray *allMediaProperties
+ @property  NSArray *allErrorProperties
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsDashboardDestination init]
+  -[CPAnalyticsDashboardDestination .cxx_destruct]
+  -[CPAnalyticsDashboardDestination processEvent:]
+  -[CPAnalyticsDashboardDestination allStandardProperties]
+  -[CPAnalyticsDashboardDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsDashboardDestination cpAnalyticsInstance]
+  -[CPAnalyticsDashboardDestination allMediaProperties]
+  -[CPAnalyticsDashboardDestination allErrorProperties]
+  -[CPAnalyticsDashboardDestination isMediaEvent:]
+  -[CPAnalyticsDashboardDestination sendCoreAnalyticsEventWithStandardPropertiesForEventWithName:fromSourceEvent:payload:]
+  -[CPAnalyticsDashboardDestination buildCoreAnalyticsEventPayloadWithProperties:fromSourceEvent:intoTargetEventPayload:]
+  -[CPAnalyticsDashboardDestination reportMalformedEvent:malformationDescriptionWithFormat:]
+
+
+PhotosAnalyticsDemographicPropertyProvider : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[PhotosAnalyticsDemographicPropertyProvider getDynamicProperty:forEventName:payloadForSystemPropertyExtraction:]
+  -[PhotosAnalyticsDemographicPropertyProvider registerSystemProperties:]
+  -[PhotosAnalyticsDemographicPropertyProvider _ageRangeDescriptionFromBirthday:]
+  -[PhotosAnalyticsDemographicPropertyProvider _genderDescriptionFromGivenName:]
+
+
+CPAnalyticsIntervalDestination : CPAnalyticsDashboardDestination
+ @property  NSSet *trackedIntervalNames
+ @property  NSSet *ignoredIntervalNames
+
+  // instance methods
+  -[CPAnalyticsIntervalDestination updateWithConfig:]
+  -[CPAnalyticsIntervalDestination .cxx_destruct]
+  -[CPAnalyticsIntervalDestination trackedIntervalNames]
+  -[CPAnalyticsIntervalDestination processEvent:]
+  -[CPAnalyticsIntervalDestination ignoredIntervalNames]
+  -[CPAnalyticsIntervalDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsIntervalDestination _intervalNamesForKey:inConfiguration:]
+  -[CPAnalyticsIntervalDestination _handleEvent:withUnknownIntervalName:]
+  -[CPAnalyticsIntervalDestination sendDashboardIntervalEventForEvent:]
+
+
+CPAnalyticsEventMatcher : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *eventKeyToMatch
+ @property  NSDictionary *eventPropertiesToMatch
+ @property  NSArray *conditionalChecks
+
+  // class methods
+  +[CPAnalyticsEventMatcher eventMatcherWithConfiguration:]
+  +[CPAnalyticsEventMatcher eventMatcherWithEventName:]
+  +[CPAnalyticsEventMatcher eventMatcherWithEventName:properties:]
+
+  // instance methods
+  -[CPAnalyticsEventMatcher eventPropertiesToMatch]
+  -[CPAnalyticsEventMatcher .cxx_destruct]
+  -[CPAnalyticsEventMatcher initWithConfig:]
+  -[CPAnalyticsEventMatcher doesMatch:]
+  -[CPAnalyticsEventMatcher conditionalChecks]
+  -[CPAnalyticsEventMatcher _validateAndParseEventProperties:]
+  -[CPAnalyticsEventMatcher _validateAndParseConditionalChecks:]
+  -[CPAnalyticsEventMatcher _validateAndParseEventKey:]
+  -[CPAnalyticsEventMatcher eventKeyToMatch]
+
+
+CPAnalyticsLogDestination : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  NSArray *logEventMatchers
+ @property  NSObject<OS_os_log> *log
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsLogDestination logEventMatchers]
+  -[CPAnalyticsLogDestination init]
+  -[CPAnalyticsLogDestination log]
+  -[CPAnalyticsLogDestination .cxx_destruct]
+  -[CPAnalyticsLogDestination processEvent:]
+  -[CPAnalyticsLogDestination _logEventMatchersInConfiguration:]
+  -[CPAnalyticsLogDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsLogDestination logEvent:withLabel:shouldLogEventName:propertiesToLog:]
+
+
+CPAnalyticsEvent : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsEventProtocol>
+ @property  NSDictionary *payload
+ @property  CPAnalyticsSystemProperties *systemProperties
+ @property  NSCalendar *gregorianCalendar
+ @property  NSString *name
+ @property  NSDate *timestamp
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPAnalyticsEvent initialize]
+  +[CPAnalyticsEvent _hourOfDayFromDate:]
+  +[CPAnalyticsEvent _dayOfWeekFromDate:]
+
+  // instance methods
+  -[CPAnalyticsEvent payload]
+  -[CPAnalyticsEvent propertyForKey:]
+  -[CPAnalyticsEvent .cxx_destruct]
+  -[CPAnalyticsEvent name]
+  -[CPAnalyticsEvent timestamp]
+  -[CPAnalyticsEvent copyRawPayload]
+  -[CPAnalyticsEvent initWithName:payload:systemProperties:]
+  -[CPAnalyticsEvent systemProperties]
+  -[CPAnalyticsEvent gregorianCalendar]
+
+
+CPAnalyticsDestinationsRegistry : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *destinations
+
+  // instance methods
+  -[CPAnalyticsDestinationsRegistry init]
+  -[CPAnalyticsDestinationsRegistry destinations]
+  -[CPAnalyticsDestinationsRegistry _parseDestinationsFromConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsDestinationsRegistry .cxx_destruct]
+  -[CPAnalyticsDestinationsRegistry removeDestination:]
+  -[CPAnalyticsDestinationsRegistry setupWithConfigurationAtURL:cpAnalyticsInstance:]
+  -[CPAnalyticsDestinationsRegistry addDestination:]
+  -[CPAnalyticsDestinationsRegistry updateWithConfigurationAtURL:cpAnalyticsInstance:]
+  -[CPAnalyticsDestinationsRegistry removePhotoLibraryFromDestinations]
+  -[CPAnalyticsDestinationsRegistry sendToAllDestinations:]
+  -[CPAnalyticsDestinationsRegistry _readConfiguration:]
+
+
+CPAnalyticsLogEventMatcher : CPAnalyticsEventMatcher
+ @property  NSString *eventTypeLabel
+ @property  BOOL shouldLogEventName
+ @property  NSArray *eventPropertiesToLog
+
+  // instance methods
+  -[CPAnalyticsLogEventMatcher eventTypeLabel]
+  -[CPAnalyticsLogEventMatcher init]
+  -[CPAnalyticsLogEventMatcher eventPropertiesToLog]
+  -[CPAnalyticsLogEventMatcher .cxx_destruct]
+  -[CPAnalyticsLogEventMatcher initWithConfig:]
+  -[CPAnalyticsLogEventMatcher doesMatch:]
+  -[CPAnalyticsLogEventMatcher shouldLogEventName]
+
+
+CPAnalytics : NSObject /usr/lib/libSystem.B.dylib
+ @property  PHPhotoLibrary *photoLibrary
+ @property  CPAnalyticsDestinationsRegistry *registry
+ @property  NSObject<OS_dispatch_queue> *eventsQueue
+ @property  long long signpostUniqueValue
+ @property  CPAnalyticsSystemProperties *systemProperties
+
+  // class methods
+  +[CPAnalytics bucketNameForDouble:bucketLimits:numberFormatter:]
+  +[CPAnalytics startAppTracking]
+  +[CPAnalytics isAllowed]
+  +[CPAnalytics sendEvent:withPayload:]
+  +[CPAnalytics startSignpost]
+  +[CPAnalytics removeDestination:]
+  +[CPAnalytics endSignpost:forEventName:withPayload:]
+  +[CPAnalytics bucketNameForInteger:bucketLimits:]
+  +[CPAnalytics activateEventQueue]
+  +[CPAnalytics setupSystemPropertyProvidersForLibrary:]
+  +[CPAnalytics addDestination:]
+  +[CPAnalytics setupWithConfigurationFilename:inBundle:]
+  +[CPAnalytics setupWithConfigurationAtURL:]
+  +[CPAnalytics releasePhotoLibrary]
+  +[CPAnalytics updateWithConfigurationFilename:inBundle:]
+  +[CPAnalytics startViewTracking]
+  +[CPAnalytics creationDateForSignpost:]
+  +[CPAnalytics _sharedInstance]
+
+  // instance methods
+  -[CPAnalytics photoLibrary]
+  -[CPAnalytics init]
+  -[CPAnalytics sendEvent:withPayload:]
+  -[CPAnalytics startSignpost]
+  -[CPAnalytics setPhotoLibrary:]
+  -[CPAnalytics .cxx_destruct]
+  -[CPAnalytics removeDestination:]
+  -[CPAnalytics endSignpost:forEventName:withPayload:]
+  -[CPAnalytics activateEventQueue]
+  -[CPAnalytics setupSystemPropertyProvidersForLibrary:]
+  -[CPAnalytics addDestination:]
+  -[CPAnalytics setupWithConfigurationFilename:inBundle:]
+  -[CPAnalytics signpostUniqueValue]
+  -[CPAnalytics _generateNextSignpostID]
+  -[CPAnalytics eventsQueue]
+  -[CPAnalytics _setupSystemPropertyProviders]
+  -[CPAnalytics setupWithConfigurationAtURL:]
+  -[CPAnalytics registry]
+  -[CPAnalytics releasePhotoLibrary]
+  -[CPAnalytics systemProperties]
+  -[CPAnalytics updateWithConfigurationFilename:inBundle:]
+
+
+CPAnalyticsScreenManager : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDynamicPropertyProvider>
+ @property  CPAnalytics *cpAnalyticsInstance
+ @property  long long appVisiblePeriodSignpostID
+ @property  NSSet *namesOfViewsToTrack
+ @property  NSSet *namesOfViewsToIgnore
+ @property  NSString *currentTabIdentifierDescription
+ @property  NSString *pendingTabIdentifierDescription
+ @property  NSMutableArray *currentlyOpenViews
+ @property  unsigned long priorViewsMaxIndex
+ @property  NSMutableArray *priorViews
+ @property  NSDate *currentScreenStartTime
+ @property  long long screensViewCount
+ @property  long long foregroundEventCount
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPAnalyticsScreenManager _combinedViewName:withID:]
+  +[CPAnalyticsScreenManager _isValidTabIdentifierChangedEvent:]
+  +[CPAnalyticsScreenManager _viewNameFromCombined:]
+  +[CPAnalyticsScreenManager _isValidScreenViewEvent:]
+
+  // instance methods
+  -[CPAnalyticsScreenManager setCurrentScreenStartTime:]
+  -[CPAnalyticsScreenManager updateWithConfig:]
+  -[CPAnalyticsScreenManager getDynamicProperty:forEventName:payloadForSystemPropertyExtraction:]
+  -[CPAnalyticsScreenManager _updateAppLifeCycle:]
+  -[CPAnalyticsScreenManager setPendingTabIdentifierDescription:]
+  -[CPAnalyticsScreenManager _handleUnknownViewIfNeeded:]
+  -[CPAnalyticsScreenManager _initializeScreenViewTrackers:]
+  -[CPAnalyticsScreenManager setNamesOfViewsToIgnore:]
+  -[CPAnalyticsScreenManager setNamesOfViewsToTrack:]
+  -[CPAnalyticsScreenManager .cxx_destruct]
+  -[CPAnalyticsScreenManager priorViews]
+  -[CPAnalyticsScreenManager _trackView:withEventName:viewID:eventTime:]
+  -[CPAnalyticsScreenManager lastScreenName]
+  -[CPAnalyticsScreenManager _updateScreenTracking:]
+  -[CPAnalyticsScreenManager _resetSessionWithTime:]
+  -[CPAnalyticsScreenManager _updateTabTracking:]
+  -[CPAnalyticsScreenManager registerSystemProperties:]
+  -[CPAnalyticsScreenManager setAppVisiblePeriodSignpostID:]
+  -[CPAnalyticsScreenManager processEvent:]
+  -[CPAnalyticsScreenManager currentScreenViewName]
+  -[CPAnalyticsScreenManager setScreensViewCount:]
+  -[CPAnalyticsScreenManager _screenViewNameAt:]
+  -[CPAnalyticsScreenManager namesOfViewsToTrack]
+  -[CPAnalyticsScreenManager foregroundEventCount]
+  -[CPAnalyticsScreenManager setForegroundEventCount:]
+  -[CPAnalyticsScreenManager _updateCurrentScreenToViewName:withEventTime:]
+  -[CPAnalyticsScreenManager screensViewCount]
+  -[CPAnalyticsScreenManager currentScreenStartTime]
+  -[CPAnalyticsScreenManager setCurrentTabIdentifierDescription:]
+  -[CPAnalyticsScreenManager currentlyOpenViews]
+  -[CPAnalyticsScreenManager appVisiblePeriodSignpostID]
+  -[CPAnalyticsScreenManager initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsScreenManager pendingTabIdentifierDescription]
+  -[CPAnalyticsScreenManager _sendCPAnalyticsScreenViewEventWithEndTime:]
+  -[CPAnalyticsScreenManager _updateCurrentTabIdentifier:]
+  -[CPAnalyticsScreenManager currentTabIdentifierDescription]
+  -[CPAnalyticsScreenManager cpAnalyticsInstance]
+  -[CPAnalyticsScreenManager setCurrentlyOpenViews:]
+  -[CPAnalyticsScreenManager setPriorViews:]
+  -[CPAnalyticsScreenManager namesOfViewsToIgnore]
+  -[CPAnalyticsScreenManager setCpAnalyticsInstance:]
+  -[CPAnalyticsScreenManager priorViewsMaxIndex]
+
+
+CPAnalyticsPropertyProviderClassLoader : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPAnalyticsPropertyProviderClassLoader mediaPropertyProviderForPHPhotoLibrary:]
+  +[CPAnalyticsPropertyProviderClassLoader propertyProviderForPHPhotoLibrary:]
+  +[CPAnalyticsPropertyProviderClassLoader _loadDynamicPHPropertyProvider:forPHPhotoLibrary:]
+
+
+CPAnalyticsCoreAnalyticsHelper : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPAnalyticsCoreAnalyticsHelper _caCompatiblePayloadKey:]
+  +[CPAnalyticsCoreAnalyticsHelper _sendCoreAnalyticsEvent:withCompatiblePayload:]
+  +[CPAnalyticsCoreAnalyticsHelper sendCoreAnalyticsEvent:withPayload:]
+  +[CPAnalyticsCoreAnalyticsHelper _buildCACompatiblePayload:]
+
+
+CPAnalyticsCompoundEventMatcher : CPAnalyticsEventMatcher
+ @property  unsigned long type
+ @property  NSArray *subEventMatchers
+
+  // class methods
+  +[CPAnalyticsCompoundEventMatcher andEventMatcherWithSubEventMatchers:]
+  +[CPAnalyticsCompoundEventMatcher orEventMatcherWithSubEventMatchers:]
+  +[CPAnalyticsCompoundEventMatcher notEventMatcherWithSubEventMatcher:]
+
+  // instance methods
+  -[CPAnalyticsCompoundEventMatcher initWithType:subEventMatchers:]
+  -[CPAnalyticsCompoundEventMatcher init]
+  -[CPAnalyticsCompoundEventMatcher subEventMatchers]
+  -[CPAnalyticsCompoundEventMatcher .cxx_destruct]
+  -[CPAnalyticsCompoundEventMatcher doesMatch:]
+  -[CPAnalyticsCompoundEventMatcher type]
+
+
+CPAnalyticsMetricEventRoute : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *destination
+ @property  NSString *destinationEventKey
+ @property  NSArray *propertiesToInclude
+
+  // instance methods
+  -[CPAnalyticsMetricEventRoute destination]
+  -[CPAnalyticsMetricEventRoute destinationEventKey]
+  -[CPAnalyticsMetricEventRoute .cxx_destruct]
+  -[CPAnalyticsMetricEventRoute initWithConfig:]
+  -[CPAnalyticsMetricEventRoute propertiesToInclude]
+
+
+CPAnalyticsMetricsDestination : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDestination>
+ @property  NSMapTable *eventRoutes
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPAnalyticsMetricsDestination eventRoutes]
+  -[CPAnalyticsMetricsDestination .cxx_destruct]
+  -[CPAnalyticsMetricsDestination _sendCoreAnalyticsEvent:eventPayload:]
+  -[CPAnalyticsMetricsDestination _sendCoreAnalyticsEventWithCustomConfig:eventRoute:]
+  -[CPAnalyticsMetricsDestination processEvent:]
+  -[CPAnalyticsMetricsDestination _buildCustomCoreAnalyticsPayloadForEvent:withPropertiesToInclude:]
+  -[CPAnalyticsMetricsDestination initWithConfig:cpAnalyticsInstance:]
+
+
+CPAnalyticsAppStateDestination : CPAnalyticsDashboardDestination <CPAnalyticsDynamicPropertyProvider>
+ @property  CPAnalyticsScreenManager *screenManager
+ @property  NSSet *appEventNames
+ @property  NSArray *sessionCounters
+ @property  NSArray *featureCounters
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPAnalyticsAppStateDestination _isValidSessionEndEvent:]
+
+  // instance methods
+  -[CPAnalyticsAppStateDestination screenManager]
+  -[CPAnalyticsAppStateDestination _sendFeatureCounts]
+  -[CPAnalyticsAppStateDestination updateWithConfig:]
+  -[CPAnalyticsAppStateDestination _sendDashboardErrorEventForEvent:]
+  -[CPAnalyticsAppStateDestination getDynamicProperty:forEventName:payloadForSystemPropertyExtraction:]
+  -[CPAnalyticsAppStateDestination setSessionCounters:]
+  -[CPAnalyticsAppStateDestination _sendDashboardMediaEventForEvent:]
+  -[CPAnalyticsAppStateDestination _computeSessionData:]
+  -[CPAnalyticsAppStateDestination _sendDashboardMediaEventIfNeededForEvent:]
+  -[CPAnalyticsAppStateDestination _validateAndParseAppEvents:]
+  -[CPAnalyticsAppStateDestination appEventNames]
+  -[CPAnalyticsAppStateDestination .cxx_destruct]
+  -[CPAnalyticsAppStateDestination _updateDependenciesBeforeProcessingEvent:]
+  -[CPAnalyticsAppStateDestination _shouldSendSampleWithRate:]
+  -[CPAnalyticsAppStateDestination registerSystemProperties:]
+  -[CPAnalyticsAppStateDestination processEvent:]
+  -[CPAnalyticsAppStateDestination _sendAppSessionEventFromSourceEvent:payload:]
+  -[CPAnalyticsAppStateDestination allStandardProperties]
+  -[CPAnalyticsAppStateDestination _sendDashboardErrorEventIfNeededForEvent:]
+  -[CPAnalyticsAppStateDestination _sendDashboardAppEventForEvent:]
+  -[CPAnalyticsAppStateDestination initWithConfig:cpAnalyticsInstance:]
+  -[CPAnalyticsAppStateDestination _sendDashboardScreenViewEventForEvent:]
+  -[CPAnalyticsAppStateDestination _resetCounters]
+  -[CPAnalyticsAppStateDestination _createCountersFromConfig:withKey:]
+  -[CPAnalyticsAppStateDestination sessionCounters]
+  -[CPAnalyticsAppStateDestination featureCounters]
+  -[CPAnalyticsAppStateDestination setFeatureCounters:]
+  -[CPAnalyticsAppStateDestination _createCountersFromAppEvents:]
+  -[CPAnalyticsAppStateDestination _createCountersFromScreenNames:]
+
+
+PhotosAnalyticsSystemPropertyProvider : NSObject /usr/lib/libSystem.B.dylib <CPAnalyticsDynamicPropertyProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PhotosAnalyticsSystemPropertyProvider getDynamicProperty:forEventName:payloadForSystemPropertyExtraction:]
+  -[PhotosAnalyticsSystemPropertyProvider _deviceModel]
+  -[PhotosAnalyticsSystemPropertyProvider registerSystemProperties:]
+  -[PhotosAnalyticsSystemPropertyProvider _deviceFreeSpaceDescription]
+  -[PhotosAnalyticsSystemPropertyProvider _lowPowerModeEnabled]
+  -[PhotosAnalyticsSystemPropertyProvider _osVersion]
+  -[PhotosAnalyticsSystemPropertyProvider _percentageOfFreeSpaceOnDevice]
+  -[PhotosAnalyticsSystemPropertyProvider _process]
+
+
+CPAnalyticsConditional : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *property
+ @property  NSPredicate *predicate
+
+  // instance methods
+  -[CPAnalyticsConditional _validateAndParseConfig:forKey:]
+  -[CPAnalyticsConditional .cxx_destruct]
+  -[CPAnalyticsConditional initWithConfig:]
+  -[CPAnalyticsConditional property]
+  -[CPAnalyticsConditional predicate]
+
+
+CPAnalyticsSystemProperties : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *systemProperties
+ @property  NSMutableDictionary *dynamicProperties
+
+  // class methods
+  +[CPAnalyticsSystemProperties dynamicPhotoLibraryProperties]
+  +[CPAnalyticsSystemProperties staticPhotoLibraryProperties]
+
+  // instance methods
+  -[CPAnalyticsSystemProperties init]
+  -[CPAnalyticsSystemProperties .cxx_destruct]
+  -[CPAnalyticsSystemProperties removePhotoLibraryProperties]
+  -[CPAnalyticsSystemProperties dynamicProperties]
+  -[CPAnalyticsSystemProperties setSystemProperties:]
+  -[CPAnalyticsSystemProperties addProperty:withValue:]
+  -[CPAnalyticsSystemProperties addDynamicProperty:withProvider:]
+  -[CPAnalyticsSystemProperties systemProperties]
+  -[CPAnalyticsSystemProperties setDynamicProperties:]
+  -[CPAnalyticsSystemProperties propertyForKey:forEventName:payloadForSystemPropertyExtraction:]
+
+
+(CPAnalytics)
+	// instance methods
+	-[(CPAnalytics) CPAnalyticsSignpostIDValue]
+
+(CPAnalytics)
+	// class methods
+	+[(CPAnalytics) cpa_daysAgo:]
+	+[(CPAnalytics) cpa_hoursAgo:]
+	+[(CPAnalytics) cpa_minutesAgo:]
+	+[(CPAnalytics) cpa_secondsAgo:]
+	+[(CPAnalytics) cpa_yearsAgo:]
+
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKCustomIdentifier 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEvent 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEventStream 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKIdentifier 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKKnowledgeStore 

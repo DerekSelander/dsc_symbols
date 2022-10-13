@@ -1,0 +1,2302 @@
+|| __DATA.__common __chineseTokenizer
+|| __DATA.__common __languageRankingModel
+|| __DATA.__common _sSubclasses
+|| __DATA.__data _RKAssetsConstantClasses
+|| __DATA.__data _RKMessageResponseDontOverrideLanguageID
+|| __DATA.__data _RK_QUERY_ALTERNATIVE_MAX_PHRASAL_LENGTH
+|| __DATA.__data __Volumes_Data_trunk_ResponseKit_Assets_Asset_Generator_RKAssetsConstantClasses
+|| __DATA.__data __kMRLModelFileLocationKey
+|| __DATA.__data _kAllowedPunctuations
+|| __DATA.__data _kEMDash
+|| __DATA.__data _kEmojiPlaceholder
+|| __DATA.__data _kLMMaxTriggerLen
+|| __DATA.__data _kMaxCharRepetitionAllowed
+|| __DATA.__data _kMaxCharToConsiderForEmoticonDetection
+|| __DATA.__data _kMaxSequenceLength
+|| __DATA.__data _kMinCharToConsiderForEmoticonDetection
+|| __DATA.__data _multiWordOrLength
+|| __DATA.__objc_data _OBJC_CLASS_$_RKConversation
+|| __DATA.__objc_data _OBJC_CLASS_$_RKCurrencyAmount
+|| __DATA.__objc_data _OBJC_CLASS_$_RKLinguisticDataProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_RKMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_RKRankLearner
+|| __DATA.__objc_data _OBJC_CLASS_$_RKRankedResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RKRankingDataManager
+|| __DATA.__objc_data _OBJC_CLASS_$_RKRankingInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_RKResponseCandidate
+|| __DATA.__objc_data _OBJC_CLASS_$_RKResponseCountTimestampRecipient
+|| __DATA.__objc_data _OBJC_CLASS_$_RKResponseFeatures
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ar_AE
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ca_ES
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_cs_CZ
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_da_DK
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_de_DE
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_el_GR
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_es_ES
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_fi_FI
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_fr_BE
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_fr_FR
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_he_IL
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_hi_IN
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_hr_HR
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_hu_HU
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_id_ID
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_it_IT
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ja_JP
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ko_KO
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ms_MY
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_nb_NO
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_nl_BE
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_nl_NL
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_pl_PL
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_pt_BR
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ro_RO
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_ru_RU
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_sk_SK
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_sv_SE
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_th_TH
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_tr_TR
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_uk_UA
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_vi_VN
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_zh_Hans_CN
+|| __DATA.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_zh_Hant_CN
+|| __DATA.__objc_data _OBJC_CLASS_$_RankingInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKConversation
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKCurrencyAmount
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKLinguisticDataProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKRankLearner
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKRankedResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKRankingDataManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKRankingInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKResponseCandidate
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKResponseCountTimestampRecipient
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKResponseFeatures
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ar_AE
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ca_ES
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_cs_CZ
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_da_DK
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_de_DE
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_el_GR
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_es_ES
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_fi_FI
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_fr_BE
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_fr_FR
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_he_IL
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_hi_IN
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_hr_HR
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_hu_HU
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_id_ID
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_it_IT
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ja_JP
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ko_KO
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ms_MY
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_nb_NO
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_nl_BE
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_nl_NL
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_pl_PL
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_pt_BR
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ro_RO
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_ru_RU
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_sk_SK
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_sv_SE
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_th_TH
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_tr_TR
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_uk_UA
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_vi_VN
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_zh_Hans_CN
+|| __DATA.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_zh_Hant_CN
+|| __DATA.__objc_data _OBJC_METACLASS_$_RankingInfo
+|| __DATA_CONST.__const _RKAggdStatisticsActionSelected
+|| __DATA_CONST.__const _RKAggdStatisticsActionSuggested
+|| __DATA_CONST.__const _RKAggdStatisticsActionTriggered
+|| __DATA_CONST.__const _RKAttributedTokenBirthdayType
+|| __DATA_CONST.__const _RKAttributedTokenChineseNewYearType
+|| __DATA_CONST.__const _RKAttributedTokenCongratulationType
+|| __DATA_CONST.__const _RKAttributedTokenMomentType
+|| __DATA_CONST.__const _RKAttributedTokenMoneyType
+|| __DATA_CONST.__const _RKAttributedTokenMoneyValuesQualifier
+|| __DATA_CONST.__const _RKAttributedTokenNewYearType
+|| __DATA_CONST.__const _RKAttributedTokenPhotosharingKeywordRangesKey
+|| __DATA_CONST.__const _RKAttributedTokenPhotosharingKeywordsKey
+|| __DATA_CONST.__const _RKAttributedTokenPhotosharingMessageKey
+|| __DATA_CONST.__const _RKAttributedTokenPhotosharingType
+|| __DATA_CONST.__const _RKAttributedTokenShootingStarType
+|| __DATA_CONST.__const _RKAttributedTokenSubTypeKey
+|| __DATA_CONST.__const _RKAttributedTokenThinkingOfYouType
+|| __DATA_CONST.__const _RKAttributedTokenTypeKey
+|| __DATA_CONST.__const _RKCoreAnalyticsActionSelected
+|| __DATA_CONST.__const _RKCoreAnalyticsActionSuggested
+|| __DATA_CONST.__const _RKCoreAnalyticsActionTriggered
+|| __DATA_CONST.__const _RKCoreAnalyticsEventName
+|| __DATA_CONST.__const _RKLinguisticCategoryStatementExpressEmotionString
+|| __DATA_CONST.__const _RKLinguisticCategoryStatementSpecialEventString
+|| __DATA_CONST.__const _RKLinguisticTagDataDetected
+|| __DATA_CONST.__const _RKRankingInfoDBDir
+|| __DATA_CONST.__const _RKResponseCandidateIsSelectedKey
+|| __DATA_CONST.__const _RKResponseCandidateRankKey
+|| __DATA_CONST.__const _RKResponseCategoryKey
+|| __DATA_CONST.__const _RKResponseInputMethodKey
+|| __DATA_CONST.__const _RKResponseMessageKey
+|| __DATA_CONST.__const _RKResponseRankedCandidateListKey
+|| __DATA_CONST.__const _RKResponseRecipientKey
+|| __DATA_CONST.__const _RKResponseSetTypeDefaultStringValue
+|| __DATA_CONST.__const _RKResponseSetTypeSmartStringValue
+|| __DATA_CONST.__const _RKResponseSetTypeUserGeneratedStringValue
+|| __DATA_CONST.__const _RKResponseSourceKey
+|| __DATA_CONST.__const _RKResponseStringKey
+|| __DATA_CONST.__const _obj0
+|| __DATA_CONST.__const _obj101
+|| __DATA_CONST.__const _obj11
+|| __DATA_CONST.__const _obj117
+|| __DATA_CONST.__const _obj1478
+|| __DATA_CONST.__const _obj148
+|| __DATA_CONST.__const _obj1489
+|| __DATA_CONST.__const _obj1498
+|| __DATA_CONST.__const _obj1511
+|| __DATA_CONST.__const _obj1512
+|| __DATA_CONST.__const _obj1514
+|| __DATA_CONST.__const _obj1520
+|| __DATA_CONST.__const _obj1525
+|| __DATA_CONST.__const _obj1528
+|| __DATA_CONST.__const _obj1533
+|| __DATA_CONST.__const _obj1552
+|| __DATA_CONST.__const _obj1558
+|| __DATA_CONST.__const _obj1565
+|| __DATA_CONST.__const _obj1568
+|| __DATA_CONST.__const _obj157
+|| __DATA_CONST.__const _obj1572
+|| __DATA_CONST.__const _obj1587
+|| __DATA_CONST.__const _obj1590
+|| __DATA_CONST.__const _obj1591
+|| __DATA_CONST.__const _obj1593
+|| __DATA_CONST.__const _obj1614
+|| __DATA_CONST.__const _obj1663
+|| __DATA_CONST.__const _obj1687
+|| __DATA_CONST.__const _obj1695
+|| __DATA_CONST.__const _obj1710
+|| __DATA_CONST.__const _obj1727
+|| __DATA_CONST.__const _obj1790
+|| __DATA_CONST.__const _obj1797
+|| __DATA_CONST.__const _obj1824
+|| __DATA_CONST.__const _obj1846
+|| __DATA_CONST.__const _obj1880
+|| __DATA_CONST.__const _obj1890
+|| __DATA_CONST.__const _obj1911
+|| __DATA_CONST.__const _obj1913
+|| __DATA_CONST.__const _obj192
+|| __DATA_CONST.__const _obj1937
+|| __DATA_CONST.__const _obj1951
+|| __DATA_CONST.__const _obj1955
+|| __DATA_CONST.__const _obj1977
+|| __DATA_CONST.__const _obj1998
+|| __DATA_CONST.__const _obj2
+|| __DATA_CONST.__const _obj2016
+|| __DATA_CONST.__const _obj2045
+|| __DATA_CONST.__const _obj2066
+|| __DATA_CONST.__const _obj2074
+|| __DATA_CONST.__const _obj2076
+|| __DATA_CONST.__const _obj2089
+|| __DATA_CONST.__const _obj2113
+|| __DATA_CONST.__const _obj2147
+|| __DATA_CONST.__const _obj2174
+|| __DATA_CONST.__const _obj2176
+|| __DATA_CONST.__const _obj2179
+|| __DATA_CONST.__const _obj2207
+|| __DATA_CONST.__const _obj2228
+|| __DATA_CONST.__const _obj225
+|| __DATA_CONST.__const _obj2261
+|| __DATA_CONST.__const _obj2286
+|| __DATA_CONST.__const _obj2321
+|| __DATA_CONST.__const _obj2323
+|| __DATA_CONST.__const _obj2327
+|| __DATA_CONST.__const _obj2335
+|| __DATA_CONST.__const _obj2343
+|| __DATA_CONST.__const _obj2345
+|| __DATA_CONST.__const _obj2347
+|| __DATA_CONST.__const _obj2351
+|| __DATA_CONST.__const _obj2356
+|| __DATA_CONST.__const _obj2365
+|| __DATA_CONST.__const _obj2367
+|| __DATA_CONST.__const _obj237
+|| __DATA_CONST.__const _obj2370
+|| __DATA_CONST.__const _obj2377
+|| __DATA_CONST.__const _obj2382
+|| __DATA_CONST.__const _obj2384
+|| __DATA_CONST.__const _obj2391
+|| __DATA_CONST.__const _obj2400
+|| __DATA_CONST.__const _obj2403
+|| __DATA_CONST.__const _obj2431
+|| __DATA_CONST.__const _obj2461
+|| __DATA_CONST.__const _obj2474
+|| __DATA_CONST.__const _obj2496
+|| __DATA_CONST.__const _obj2504
+|| __DATA_CONST.__const _obj2511
+|| __DATA_CONST.__const _obj2515
+|| __DATA_CONST.__const _obj2523
+|| __DATA_CONST.__const _obj2535
+|| __DATA_CONST.__const _obj2544
+|| __DATA_CONST.__const _obj2546
+|| __DATA_CONST.__const _obj2567
+|| __DATA_CONST.__const _obj2570
+|| __DATA_CONST.__const _obj2606
+|| __DATA_CONST.__const _obj2623
+|| __DATA_CONST.__const _obj2651
+|| __DATA_CONST.__const _obj268
+|| __DATA_CONST.__const _obj2683
+|| __DATA_CONST.__const _obj2696
+|| __DATA_CONST.__const _obj27
+|| __DATA_CONST.__const _obj2718
+|| __DATA_CONST.__const _obj2735
+|| __DATA_CONST.__const _obj2737
+|| __DATA_CONST.__const _obj2745
+|| __DATA_CONST.__const _obj2777
+|| __DATA_CONST.__const _obj279
+|| __DATA_CONST.__const _obj2792
+|| __DATA_CONST.__const _obj2798
+|| __DATA_CONST.__const _obj2812
+|| __DATA_CONST.__const _obj2814
+|| __DATA_CONST.__const _obj2817
+|| __DATA_CONST.__const _obj2832
+|| __DATA_CONST.__const _obj2846
+|| __DATA_CONST.__const _obj2852
+|| __DATA_CONST.__const _obj2857
+|| __DATA_CONST.__const _obj2859
+|| __DATA_CONST.__const _obj2886
+|| __DATA_CONST.__const _obj290
+|| __DATA_CONST.__const _obj2904
+|| __DATA_CONST.__const _obj2923
+|| __DATA_CONST.__const _obj2931
+|| __DATA_CONST.__const _obj2943
+|| __DATA_CONST.__const _obj2949
+|| __DATA_CONST.__const _obj2954
+|| __DATA_CONST.__const _obj2968
+|| __DATA_CONST.__const _obj2982
+|| __DATA_CONST.__const _obj2985
+|| __DATA_CONST.__const _obj2986
+|| __DATA_CONST.__const _obj2998
+|| __DATA_CONST.__const _obj3007
+|| __DATA_CONST.__const _obj3014
+|| __DATA_CONST.__const _obj3017
+|| __DATA_CONST.__const _obj3027
+|| __DATA_CONST.__const _obj3042
+|| __DATA_CONST.__const _obj3047
+|| __DATA_CONST.__const _obj3065
+|| __DATA_CONST.__const _obj3069
+|| __DATA_CONST.__const _obj307
+|| __DATA_CONST.__const _obj3073
+|| __DATA_CONST.__const _obj3090
+|| __DATA_CONST.__const _obj3113
+|| __DATA_CONST.__const _obj3136
+|| __DATA_CONST.__const _obj3138
+|| __DATA_CONST.__const _obj3142
+|| __DATA_CONST.__const _obj3152
+|| __DATA_CONST.__const _obj3160
+|| __DATA_CONST.__const _obj3162
+|| __DATA_CONST.__const _obj3181
+|| __DATA_CONST.__const _obj3190
+|| __DATA_CONST.__const _obj3193
+|| __DATA_CONST.__const _obj3199
+|| __DATA_CONST.__const _obj3204
+|| __DATA_CONST.__const _obj3210
+|| __DATA_CONST.__const _obj3217
+|| __DATA_CONST.__const _obj3221
+|| __DATA_CONST.__const _obj3231
+|| __DATA_CONST.__const _obj3234
+|| __DATA_CONST.__const _obj3238
+|| __DATA_CONST.__const _obj3242
+|| __DATA_CONST.__const _obj3244
+|| __DATA_CONST.__const _obj3254
+|| __DATA_CONST.__const _obj3260
+|| __DATA_CONST.__const _obj3271
+|| __DATA_CONST.__const _obj3278
+|| __DATA_CONST.__const _obj3283
+|| __DATA_CONST.__const _obj3290
+|| __DATA_CONST.__const _obj3298
+|| __DATA_CONST.__const _obj3303
+|| __DATA_CONST.__const _obj3312
+|| __DATA_CONST.__const _obj3325
+|| __DATA_CONST.__const _obj3335
+|| __DATA_CONST.__const _obj3343
+|| __DATA_CONST.__const _obj3345
+|| __DATA_CONST.__const _obj339
+|| __DATA_CONST.__const _obj3448
+|| __DATA_CONST.__const _obj3484
+|| __DATA_CONST.__const _obj353
+|| __DATA_CONST.__const _obj3571
+|| __DATA_CONST.__const _obj3573
+|| __DATA_CONST.__const _obj360
+|| __DATA_CONST.__const _obj3629
+|| __DATA_CONST.__const _obj367
+|| __DATA_CONST.__const _obj3727
+|| __DATA_CONST.__const _obj374
+|| __DATA_CONST.__const _obj3779
+|| __DATA_CONST.__const _obj379
+|| __DATA_CONST.__const _obj3799
+|| __DATA_CONST.__const _obj3855
+|| __DATA_CONST.__const _obj3857
+|| __DATA_CONST.__const _obj387
+|| __DATA_CONST.__const _obj3886
+|| __DATA_CONST.__const _obj4
+|| __DATA_CONST.__const _obj40
+|| __DATA_CONST.__const _obj4019
+|| __DATA_CONST.__const _obj4056
+|| __DATA_CONST.__const _obj4080
+|| __DATA_CONST.__const _obj4110
+|| __DATA_CONST.__const _obj4154
+|| __DATA_CONST.__const _obj419
+|| __DATA_CONST.__const _obj4206
+|| __DATA_CONST.__const _obj434
+|| __DATA_CONST.__const _obj4357
+|| __DATA_CONST.__const _obj4384
+|| __DATA_CONST.__const _obj4413
+|| __DATA_CONST.__const _obj4419
+|| __DATA_CONST.__const _obj4420
+|| __DATA_CONST.__const _obj4447
+|| __DATA_CONST.__const _obj4476
+|| __DATA_CONST.__const _obj4495
+|| __DATA_CONST.__const _obj4513
+|| __DATA_CONST.__const _obj4533
+|| __DATA_CONST.__const _obj4546
+|| __DATA_CONST.__const _obj4556
+|| __DATA_CONST.__const _obj457
+|| __DATA_CONST.__const _obj4715
+|| __DATA_CONST.__const _obj4738
+|| __DATA_CONST.__const _obj4746
+|| __DATA_CONST.__const _obj481
+|| __DATA_CONST.__const _obj490
+|| __DATA_CONST.__const _obj4902
+|| __DATA_CONST.__const _obj4946
+|| __DATA_CONST.__const _obj4960
+|| __DATA_CONST.__const _obj4961
+|| __DATA_CONST.__const _obj4985
+|| __DATA_CONST.__const _obj50
+|| __DATA_CONST.__const _obj5020
+|| __DATA_CONST.__const _obj5042
+|| __DATA_CONST.__const _obj5055
+|| __DATA_CONST.__const _obj5068
+|| __DATA_CONST.__const _obj5085
+|| __DATA_CONST.__const _obj5096
+|| __DATA_CONST.__const _obj5148
+|| __DATA_CONST.__const _obj5171
+|| __DATA_CONST.__const _obj5182
+|| __DATA_CONST.__const _obj52
+|| __DATA_CONST.__const _obj5242
+|| __DATA_CONST.__const _obj5264
+|| __DATA_CONST.__const _obj5278
+|| __DATA_CONST.__const _obj5280
+|| __DATA_CONST.__const _obj5297
+|| __DATA_CONST.__const _obj5335
+|| __DATA_CONST.__const _obj5343
+|| __DATA_CONST.__const _obj5360
+|| __DATA_CONST.__const _obj5381
+|| __DATA_CONST.__const _obj5387
+|| __DATA_CONST.__const _obj5428
+|| __DATA_CONST.__const _obj5450
+|| __DATA_CONST.__const _obj5458
+|| __DATA_CONST.__const _obj5464
+|| __DATA_CONST.__const _obj5474
+|| __DATA_CONST.__const _obj5475
+|| __DATA_CONST.__const _obj5477
+|| __DATA_CONST.__const _obj5479
+|| __DATA_CONST.__const _obj5481
+|| __DATA_CONST.__const _obj5483
+|| __DATA_CONST.__const _obj5484
+|| __DATA_CONST.__const _obj5486
+|| __DATA_CONST.__const _obj5487
+|| __DATA_CONST.__const _obj5489
+|| __DATA_CONST.__const _obj5490
+|| __DATA_CONST.__const _obj5492
+|| __DATA_CONST.__const _obj5493
+|| __DATA_CONST.__const _obj5495
+|| __DATA_CONST.__const _obj5496
+|| __DATA_CONST.__const _obj5498
+|| __DATA_CONST.__const _obj5499
+|| __DATA_CONST.__const _obj5501
+|| __DATA_CONST.__const _obj5502
+|| __DATA_CONST.__const _obj5504
+|| __DATA_CONST.__const _obj5505
+|| __DATA_CONST.__const _obj5507
+|| __DATA_CONST.__const _obj5508
+|| __DATA_CONST.__const _obj5510
+|| __DATA_CONST.__const _obj5511
+|| __DATA_CONST.__const _obj5513
+|| __DATA_CONST.__const _obj5514
+|| __DATA_CONST.__const _obj5516
+|| __DATA_CONST.__const _obj5517
+|| __DATA_CONST.__const _obj5519
+|| __DATA_CONST.__const _obj5520
+|| __DATA_CONST.__const _obj5522
+|| __DATA_CONST.__const _obj5523
+|| __DATA_CONST.__const _obj5525
+|| __DATA_CONST.__const _obj5526
+|| __DATA_CONST.__const _obj5528
+|| __DATA_CONST.__const _obj5529
+|| __DATA_CONST.__const _obj5531
+|| __DATA_CONST.__const _obj5532
+|| __DATA_CONST.__const _obj5534
+|| __DATA_CONST.__const _obj5535
+|| __DATA_CONST.__const _obj5536
+|| __DATA_CONST.__const _obj5538
+|| __DATA_CONST.__const _obj5539
+|| __DATA_CONST.__const _obj5544
+|| __DATA_CONST.__const _obj5551
+|| __DATA_CONST.__const _obj5552
+|| __DATA_CONST.__const _obj5554
+|| __DATA_CONST.__const _obj5555
+|| __DATA_CONST.__const _obj5564
+|| __DATA_CONST.__const _obj5566
+|| __DATA_CONST.__const _obj5568
+|| __DATA_CONST.__const _obj5569
+|| __DATA_CONST.__const _obj5571
+|| __DATA_CONST.__const _obj5575
+|| __DATA_CONST.__const _obj5578
+|| __DATA_CONST.__const _obj5582
+|| __DATA_CONST.__const _obj5584
+|| __DATA_CONST.__const _obj5587
+|| __DATA_CONST.__const _obj5589
+|| __DATA_CONST.__const _obj5591
+|| __DATA_CONST.__const _obj5595
+|| __DATA_CONST.__const _obj5598
+|| __DATA_CONST.__const _obj5601
+|| __DATA_CONST.__const _obj5605
+|| __DATA_CONST.__const _obj5608
+|| __DATA_CONST.__const _obj5611
+|| __DATA_CONST.__const _obj5613
+|| __DATA_CONST.__const _obj5614
+|| __DATA_CONST.__const _obj5616
+|| __DATA_CONST.__const _obj5617
+|| __DATA_CONST.__const _obj5636
+|| __DATA_CONST.__const _obj5639
+|| __DATA_CONST.__const _obj5644
+|| __DATA_CONST.__const _obj5645
+|| __DATA_CONST.__const _obj5650
+|| __DATA_CONST.__const _obj5659
+|| __DATA_CONST.__const _obj5665
+|| __DATA_CONST.__const _obj5671
+|| __DATA_CONST.__const _obj5673
+|| __DATA_CONST.__const _obj5674
+|| __DATA_CONST.__const _obj5695
+|| __DATA_CONST.__const _obj571
+|| __DATA_CONST.__const _obj5715
+|| __DATA_CONST.__const _obj5735
+|| __DATA_CONST.__const _obj5755
+|| __DATA_CONST.__const _obj5772
+|| __DATA_CONST.__const _obj5778
+|| __DATA_CONST.__const _obj5779
+|| __DATA_CONST.__const _obj5785
+|| __DATA_CONST.__const _obj5786
+|| __DATA_CONST.__const _obj5788
+|| __DATA_CONST.__const _obj5793
+|| __DATA_CONST.__const _obj5795
+|| __DATA_CONST.__const _obj5801
+|| __DATA_CONST.__const _obj5805
+|| __DATA_CONST.__const _obj5815
+|| __DATA_CONST.__const _obj5817
+|| __DATA_CONST.__const _obj5820
+|| __DATA_CONST.__const _obj5821
+|| __DATA_CONST.__const _obj5842
+|| __DATA_CONST.__const _obj5862
+|| __DATA_CONST.__const _obj5875
+|| __DATA_CONST.__const _obj5881
+|| __DATA_CONST.__const _obj5883
+|| __DATA_CONST.__const _obj5890
+|| __DATA_CONST.__const _obj5891
+|| __DATA_CONST.__const _obj5911
+|| __DATA_CONST.__const _obj5927
+|| __DATA_CONST.__const _obj5934
+|| __DATA_CONST.__const _obj5953
+|| __DATA_CONST.__const _obj5973
+|| __DATA_CONST.__const _obj5990
+|| __DATA_CONST.__const _obj5994
+|| __DATA_CONST.__const _obj5999
+|| __DATA_CONST.__const _obj6024
+|| __DATA_CONST.__const _obj6027
+|| __DATA_CONST.__const _obj6029
+|| __DATA_CONST.__const _obj603
+|| __DATA_CONST.__const _obj6039
+|| __DATA_CONST.__const _obj6043
+|| __DATA_CONST.__const _obj6046
+|| __DATA_CONST.__const _obj6049
+|| __DATA_CONST.__const _obj6053
+|| __DATA_CONST.__const _obj6065
+|| __DATA_CONST.__const _obj6067
+|| __DATA_CONST.__const _obj6079
+|| __DATA_CONST.__const _obj608
+|| __DATA_CONST.__const _obj6081
+|| __DATA_CONST.__const _obj6096
+|| __DATA_CONST.__const _obj6115
+|| __DATA_CONST.__const _obj6121
+|| __DATA_CONST.__const _obj6140
+|| __DATA_CONST.__const _obj6162
+|| __DATA_CONST.__const _obj6185
+|| __DATA_CONST.__const _obj6206
+|| __DATA_CONST.__const _obj621
+|| __DATA_CONST.__const _obj6226
+|| __DATA_CONST.__const _obj6244
+|| __DATA_CONST.__const _obj6263
+|| __DATA_CONST.__const _obj6286
+|| __DATA_CONST.__const _obj6306
+|| __DATA_CONST.__const _obj632
+|| __DATA_CONST.__const _obj6321
+|| __DATA_CONST.__const _obj6344
+|| __DATA_CONST.__const _obj6345
+|| __DATA_CONST.__const _obj6347
+|| __DATA_CONST.__const _obj6369
+|| __DATA_CONST.__const _obj6370
+|| __DATA_CONST.__const _obj6371
+|| __DATA_CONST.__const _obj6382
+|| __DATA_CONST.__const _obj6383
+|| __DATA_CONST.__const _obj6384
+|| __DATA_CONST.__const _obj6395
+|| __DATA_CONST.__const _obj6397
+|| __DATA_CONST.__const _obj6398
+|| __DATA_CONST.__const _obj6409
+|| __DATA_CONST.__const _obj6417
+|| __DATA_CONST.__const _obj6418
+|| __DATA_CONST.__const _obj6429
+|| __DATA_CONST.__const _obj6432
+|| __DATA_CONST.__const _obj6433
+|| __DATA_CONST.__const _obj6444
+|| __DATA_CONST.__const _obj6447
+|| __DATA_CONST.__const _obj6448
+|| __DATA_CONST.__const _obj6458
+|| __DATA_CONST.__const _obj6459
+|| __DATA_CONST.__const _obj647
+|| __DATA_CONST.__const _obj6470
+|| __DATA_CONST.__const _obj6471
+|| __DATA_CONST.__const _obj6472
+|| __DATA_CONST.__const _obj6483
+|| __DATA_CONST.__const _obj6484
+|| __DATA_CONST.__const _obj6485
+|| __DATA_CONST.__const _obj6496
+|| __DATA_CONST.__const _obj6506
+|| __DATA_CONST.__const _obj6507
+|| __DATA_CONST.__const _obj6518
+|| __DATA_CONST.__const _obj6519
+|| __DATA_CONST.__const _obj6520
+|| __DATA_CONST.__const _obj6531
+|| __DATA_CONST.__const _obj6533
+|| __DATA_CONST.__const _obj6534
+|| __DATA_CONST.__const _obj6542
+|| __DATA_CONST.__const _obj6552
+|| __DATA_CONST.__const _obj6553
+|| __DATA_CONST.__const _obj6563
+|| __DATA_CONST.__const _obj6571
+|| __DATA_CONST.__const _obj6572
+|| __DATA_CONST.__const _obj6579
+|| __DATA_CONST.__const _obj6581
+|| __DATA_CONST.__const _obj6582
+|| __DATA_CONST.__const _obj6593
+|| __DATA_CONST.__const _obj6595
+|| __DATA_CONST.__const _obj6596
+|| __DATA_CONST.__const _obj6604
+|| __DATA_CONST.__const _obj6612
+|| __DATA_CONST.__const _obj6613
+|| __DATA_CONST.__const _obj6624
+|| __DATA_CONST.__const _obj6626
+|| __DATA_CONST.__const _obj6627
+|| __DATA_CONST.__const _obj6638
+|| __DATA_CONST.__const _obj6639
+|| __DATA_CONST.__const _obj6640
+|| __DATA_CONST.__const _obj6649
+|| __DATA_CONST.__const _obj665
+|| __DATA_CONST.__const _obj6650
+|| __DATA_CONST.__const _obj6661
+|| __DATA_CONST.__const _obj6662
+|| __DATA_CONST.__const _obj6663
+|| __DATA_CONST.__const _obj6674
+|| __DATA_CONST.__const _obj6683
+|| __DATA_CONST.__const _obj6684
+|| __DATA_CONST.__const _obj6694
+|| __DATA_CONST.__const _obj6698
+|| __DATA_CONST.__const _obj6699
+|| __DATA_CONST.__const _obj6701
+|| __DATA_CONST.__const _obj6703
+|| __DATA_CONST.__const _obj6704
+|| __DATA_CONST.__const _obj6713
+|| __DATA_CONST.__const _obj6714
+|| __DATA_CONST.__const _obj6723
+|| __DATA_CONST.__const _obj6726
+|| __DATA_CONST.__const _obj6727
+|| __DATA_CONST.__const _obj6731
+|| __DATA_CONST.__const _obj6735
+|| __DATA_CONST.__const _obj6736
+|| __DATA_CONST.__const _obj6747
+|| __DATA_CONST.__const _obj6748
+|| __DATA_CONST.__const _obj6749
+|| __DATA_CONST.__const _obj6760
+|| __DATA_CONST.__const _obj6762
+|| __DATA_CONST.__const _obj6763
+|| __DATA_CONST.__const _obj6766
+|| __DATA_CONST.__const _obj6767
+|| __DATA_CONST.__const _obj6768
+|| __DATA_CONST.__const _obj6777
+|| __DATA_CONST.__const _obj6778
+|| __DATA_CONST.__const _obj6787
+|| __DATA_CONST.__const _obj6789
+|| __DATA_CONST.__const _obj6790
+|| __DATA_CONST.__const _obj6801
+|| __DATA_CONST.__const _obj6810
+|| __DATA_CONST.__const _obj6811
+|| __DATA_CONST.__const _obj6817
+|| __DATA_CONST.__const _obj6818
+|| __DATA_CONST.__const _obj6823
+|| __DATA_CONST.__const _obj6824
+|| __DATA_CONST.__const _obj6825
+|| __DATA_CONST.__const _obj6836
+|| __DATA_CONST.__const _obj6837
+|| __DATA_CONST.__const _obj6848
+|| __DATA_CONST.__const _obj6849
+|| __DATA_CONST.__const _obj6850
+|| __DATA_CONST.__const _obj6861
+|| __DATA_CONST.__const _obj6863
+|| __DATA_CONST.__const _obj6865
+|| __DATA_CONST.__const _obj6866
+|| __DATA_CONST.__const _obj6877
+|| __DATA_CONST.__const _obj6886
+|| __DATA_CONST.__const _obj6887
+|| __DATA_CONST.__const _obj6898
+|| __DATA_CONST.__const _obj6900
+|| __DATA_CONST.__const _obj6901
+|| __DATA_CONST.__const _obj6912
+|| __DATA_CONST.__const _obj6913
+|| __DATA_CONST.__const _obj6914
+|| __DATA_CONST.__const _obj6925
+|| __DATA_CONST.__const _obj6934
+|| __DATA_CONST.__const _obj6935
+|| __DATA_CONST.__const _obj6936
+|| __DATA_CONST.__const _obj6937
+|| __DATA_CONST.__const _obj6948
+|| __DATA_CONST.__const _obj695
+|| __DATA_CONST.__const _obj6960
+|| __DATA_CONST.__const _obj6961
+|| __DATA_CONST.__const _obj6966
+|| __DATA_CONST.__const _obj6967
+|| __DATA_CONST.__const _obj6978
+|| __DATA_CONST.__const _obj6987
+|| __DATA_CONST.__const _obj6988
+|| __DATA_CONST.__const _obj6998
+|| __DATA_CONST.__const _obj7007
+|| __DATA_CONST.__const _obj7008
+|| __DATA_CONST.__const _obj7020
+|| __DATA_CONST.__const _obj7021
+|| __DATA_CONST.__const _obj7023
+|| __DATA_CONST.__const _obj7024
+|| __DATA_CONST.__const _obj7025
+|| __DATA_CONST.__const _obj7036
+|| __DATA_CONST.__const _obj7037
+|| __DATA_CONST.__const _obj7038
+|| __DATA_CONST.__const _obj7049
+|| __DATA_CONST.__const _obj7052
+|| __DATA_CONST.__const _obj7053
+|| __DATA_CONST.__const _obj7060
+|| __DATA_CONST.__const _obj7061
+|| __DATA_CONST.__const _obj7070
+|| __DATA_CONST.__const _obj7080
+|| __DATA_CONST.__const _obj7090
+|| __DATA_CONST.__const _obj7093
+|| __DATA_CONST.__const _obj7099
+|| __DATA_CONST.__const _obj7105
+|| __DATA_CONST.__const _obj7113
+|| __DATA_CONST.__const _obj7118
+|| __DATA_CONST.__const _obj7123
+|| __DATA_CONST.__const _obj7134
+|| __DATA_CONST.__const _obj7148
+|| __DATA_CONST.__const _obj7158
+|| __DATA_CONST.__const _obj7169
+|| __DATA_CONST.__const _obj7175
+|| __DATA_CONST.__const _obj7180
+|| __DATA_CONST.__const _obj7189
+|| __DATA_CONST.__const _obj719
+|| __DATA_CONST.__const _obj7199
+|| __DATA_CONST.__const _obj7206
+|| __DATA_CONST.__const _obj7212
+|| __DATA_CONST.__const _obj7214
+|| __DATA_CONST.__const _obj7224
+|| __DATA_CONST.__const _obj7231
+|| __DATA_CONST.__const _obj7238
+|| __DATA_CONST.__const _obj7245
+|| __DATA_CONST.__const _obj7252
+|| __DATA_CONST.__const _obj7253
+|| __DATA_CONST.__const _obj7255
+|| __DATA_CONST.__const _obj7257
+|| __DATA_CONST.__const _obj7259
+|| __DATA_CONST.__const _obj7263
+|| __DATA_CONST.__const _obj7266
+|| __DATA_CONST.__const _obj7270
+|| __DATA_CONST.__const _obj7272
+|| __DATA_CONST.__const _obj7277
+|| __DATA_CONST.__const _obj7279
+|| __DATA_CONST.__const _obj7280
+|| __DATA_CONST.__const _obj729
+|| __DATA_CONST.__const _obj7290
+|| __DATA_CONST.__const _obj7291
+|| __DATA_CONST.__const _obj7293
+|| __DATA_CONST.__const _obj7296
+|| __DATA_CONST.__const _obj7298
+|| __DATA_CONST.__const _obj7302
+|| __DATA_CONST.__const _obj7304
+|| __DATA_CONST.__const _obj7308
+|| __DATA_CONST.__const _obj7312
+|| __DATA_CONST.__const _obj7315
+|| __DATA_CONST.__const _obj7318
+|| __DATA_CONST.__const _obj7320
+|| __DATA_CONST.__const _obj7323
+|| __DATA_CONST.__const _obj7325
+|| __DATA_CONST.__const _obj7329
+|| __DATA_CONST.__const _obj7330
+|| __DATA_CONST.__const _obj7332
+|| __DATA_CONST.__const _obj7335
+|| __DATA_CONST.__const _obj7336
+|| __DATA_CONST.__const _obj7344
+|| __DATA_CONST.__const _obj7360
+|| __DATA_CONST.__const _obj7370
+|| __DATA_CONST.__const _obj739
+|| __DATA_CONST.__const _obj7394
+|| __DATA_CONST.__const _obj7410
+|| __DATA_CONST.__const _obj7416
+|| __DATA_CONST.__const _obj7431
+|| __DATA_CONST.__const _obj7443
+|| __DATA_CONST.__const _obj7447
+|| __DATA_CONST.__const _obj7452
+|| __DATA_CONST.__const _obj7492
+|| __DATA_CONST.__const _obj7495
+|| __DATA_CONST.__const _obj7514
+|| __DATA_CONST.__const _obj7520
+|| __DATA_CONST.__const _obj7536
+|| __DATA_CONST.__const _obj7545
+|| __DATA_CONST.__const _obj7555
+|| __DATA_CONST.__const _obj7575
+|| __DATA_CONST.__const _obj7589
+|| __DATA_CONST.__const _obj7603
+|| __DATA_CONST.__const _obj7611
+|| __DATA_CONST.__const _obj7624
+|| __DATA_CONST.__const _obj7637
+|| __DATA_CONST.__const _obj7652
+|| __DATA_CONST.__const _obj7662
+|| __DATA_CONST.__const _obj7670
+|| __DATA_CONST.__const _obj768
+|| __DATA_CONST.__const _obj7694
+|| __DATA_CONST.__const _obj7709
+|| __DATA_CONST.__const _obj7719
+|| __DATA_CONST.__const _obj7727
+|| __DATA_CONST.__const _obj7735
+|| __DATA_CONST.__const _obj7747
+|| __DATA_CONST.__const _obj7748
+|| __DATA_CONST.__const _obj7755
+|| __DATA_CONST.__const _obj7764
+|| __DATA_CONST.__const _obj7774
+|| __DATA_CONST.__const _obj7783
+|| __DATA_CONST.__const _obj7810
+|| __DATA_CONST.__const _obj7850
+|| __DATA_CONST.__const _obj7861
+|| __DATA_CONST.__const _obj787
+|| __DATA_CONST.__const _obj7894
+|| __DATA_CONST.__const _obj7914
+|| __DATA_CONST.__const _obj7921
+|| __DATA_CONST.__const _obj7930
+|| __DATA_CONST.__const _obj7939
+|| __DATA_CONST.__const _obj7951
+|| __DATA_CONST.__const _obj7962
+|| __DATA_CONST.__const _obj7968
+|| __DATA_CONST.__const _obj800
+|| __DATA_CONST.__const _obj8015
+|| __DATA_CONST.__const _obj8021
+|| __DATA_CONST.__const _obj8030
+|| __DATA_CONST.__const _obj8037
+|| __DATA_CONST.__const _obj8041
+|| __DATA_CONST.__const _obj8049
+|| __DATA_CONST.__const _obj8055
+|| __DATA_CONST.__const _obj8089
+|| __DATA_CONST.__const _obj8090
+|| __DATA_CONST.__const _obj8091
+|| __DATA_CONST.__const _obj8097
+|| __DATA_CONST.__const _obj8101
+|| __DATA_CONST.__const _obj8109
+|| __DATA_CONST.__const _obj8114
+|| __DATA_CONST.__const _obj8119
+|| __DATA_CONST.__const _obj812
+|| __DATA_CONST.__const _obj8121
+|| __DATA_CONST.__const _obj8123
+|| __DATA_CONST.__const _obj8129
+|| __DATA_CONST.__const _obj8136
+|| __DATA_CONST.__const _obj8144
+|| __DATA_CONST.__const _obj8151
+|| __DATA_CONST.__const _obj8154
+|| __DATA_CONST.__const _obj8162
+|| __DATA_CONST.__const _obj8166
+|| __DATA_CONST.__const _obj8177
+|| __DATA_CONST.__const _obj8181
+|| __DATA_CONST.__const _obj8186
+|| __DATA_CONST.__const _obj8188
+|| __DATA_CONST.__const _obj8201
+|| __DATA_CONST.__const _obj8210
+|| __DATA_CONST.__const _obj822
+|| __DATA_CONST.__const _obj8220
+|| __DATA_CONST.__const _obj8224
+|| __DATA_CONST.__const _obj8228
+|| __DATA_CONST.__const _obj8236
+|| __DATA_CONST.__const _obj8237
+|| __DATA_CONST.__const _obj8244
+|| __DATA_CONST.__const _obj8247
+|| __DATA_CONST.__const _obj8250
+|| __DATA_CONST.__const _obj8253
+|| __DATA_CONST.__const _obj8257
+|| __DATA_CONST.__const _obj8262
+|| __DATA_CONST.__const _obj89
+|| __DATA_DIRTY.__common __localeEquivalenceClass
+|| __DATA_DIRTY.__common __localeGrammarBundlePath
+|| __DATA_DIRTY.__common __localeLangModel
+|| __DATA_DIRTY.__common __localeMessageIntentRecognizer
+|| __DATA_DIRTY.__common _emoticonCategoryDict
+|| __DATA_DIRTY.__common _happyEmojiSet
+|| __DATA_DIRTY.__common _sadEmojiSet
+|| __DATA_DIRTY.__common _specialCharMapping
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKAggdStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKAssets
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKBundleDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKClassification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKConversationTurn
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKCoreAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKEventIdentification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKEventIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKLexicalEntity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKMessageClassifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKMessageIntentRecognizer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKMessageResponseManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKMontrealModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKNLEventToken
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKNLEventTokenizer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKPaymentIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKPersistentPersonalizer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKProactiveGrammar
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKResponseCollection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKSentenceClassifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKSentenceClassifier_en_US
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKText
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKTextAnnotation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RKUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__RKResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKAggdStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKAssets
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKBundleDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKClassification
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKConversationTurn
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKCoreAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKEventIdentification
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKEventIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKLexicalEntity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKMessageClassifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKMessageIntentRecognizer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKMessageResponseManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKMontrealModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKNLEventToken
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKNLEventTokenizer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKPaymentIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKPersistentPersonalizer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKProactiveGrammar
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKResponseCollection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKSentenceClassifier_en_US
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKText
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKTextAnnotation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RKUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__RKResponse
+|| __TEXT.__const _RKMaxHistoryForConversationTurns
+|| __TEXT.__const _RKPersistentPersonalizerTrainingThreshhold
+|| __TEXT.__const _RKResponseKitVersionNumber
+|| __TEXT.__const _RKResponseKitVersionString
+|| __TEXT.__const _ninetyDaysInSeconds
+|| __TEXT.__text _NSSubtractRange
+|| __TEXT.__text _RKLinguisticCategoryForFSMType
+|| __TEXT.__text _RKLinguisticCategoryFromPreferenceKey
+|| __TEXT.__text _RKLinguisticCategoryToPreferenceKey
+__ ConstantClasses: _OBJC_CLASS_$__NSConstantArray
+__ ConstantClasses: _OBJC_CLASS_$__NSConstantDictionary
+__ ConstantClasses: _OBJC_CLASS_$__NSConstantNumberInt
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreData: _NSReadOnlyPersistentStoreOption
+__ CoreData: _NSSQLiteStoreType
+__ CoreData: _OBJC_CLASS_$_NSBatchDeleteRequest
+__ CoreData: _OBJC_CLASS_$_NSEntityDescription
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectContext
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectModel
+__ CoreData: _OBJC_CLASS_$_NSPersistentStoreCoordinator
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreEmoji: _CEMEmojiTokenGetString
+__ CoreEmoji: _CEMEnumerateEmojiTokensInStringWithBlock
+__ CoreEmoji: _CEMStringContainsEmoji
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArrayInsertValueAtIndex
+__ CoreFoundation: _CFDateCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFLocaleCreate
+__ CoreFoundation: _CFLocaleCreateCanonicalLocaleIdentifierFromString
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithCharactersNoCopy
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetRangeOfComposedCharactersAtIndex
+__ CoreFoundation: _CFStringLowercase
+__ CoreFoundation: _CFStringNormalize
+__ CoreFoundation: _CFStringTokenizerAdvanceToNextToken
+__ CoreFoundation: _CFStringTokenizerCreate
+__ CoreFoundation: _CFStringTokenizerGetCurrentTokenRange
+__ CoreFoundation: _CFStringTokenizerSetString
+__ CoreFoundation: _CFStringTransform
+__ CoreFoundation: _CFStringTrimWhitespace
+__ CoreFoundation: _CFURLCopyLastPathComponent
+__ CoreFoundation: _CFURLCopyPath
+__ CoreFoundation: _NSLocaleLanguageCode
+__ CoreFoundation: _NSLocaleScriptCode
+__ CoreFoundation: _NSRangeException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFAllocatorNull
+__ CoreFoundation: _kCFStringTransformStripCombiningMarks
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ DataDetectorsCore: _DDBinderDateDurationKey
+__ DataDetectorsCore: _DDBinderDateKey
+__ DataDetectorsCore: _DDBinderDateTimeKey
+__ DataDetectorsCore: _DDBinderMoneyKey
+__ DataDetectorsCore: _DDBinderTimeDurationKey
+__ DataDetectorsCore: _DDBinderTimeKey
+__ DataDetectorsCore: _DDBinderTimestampKey
+__ DataDetectorsCore: _DDResultCurrencyExtraction
+__ DataDetectorsCore: _DDResultGetCategory
+__ DataDetectorsCore: _DDResultGetRange
+__ DataDetectorsCore: _DDResultGetType
+__ DataDetectorsCore: _DDResultGetValue
+__ DataDetectorsCore: _DDResultHasType
+__ DataDetectorsCore: _DDScannerCopyResultsOptionsForPassiveUse
+__ DataDetectorsCore: _DDScannerCopyResultsWithOptions
+__ DataDetectorsCore: _DDScannerCreateWithType
+__ DataDetectorsCore: _DDScannerScanString
+__ Foundation: _NSClassFromString
+__ Foundation: _NSFileCreationDate
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSLinguisticTagAdjective
+__ Foundation: _NSLinguisticTagAdverb
+__ Foundation: _NSLinguisticTagClassifier
+__ Foundation: _NSLinguisticTagCloseParenthesis
+__ Foundation: _NSLinguisticTagCloseQuote
+__ Foundation: _NSLinguisticTagConjunction
+__ Foundation: _NSLinguisticTagDash
+__ Foundation: _NSLinguisticTagDeterminer
+__ Foundation: _NSLinguisticTagInterjection
+__ Foundation: _NSLinguisticTagNoun
+__ Foundation: _NSLinguisticTagNumber
+__ Foundation: _NSLinguisticTagOpenParenthesis
+__ Foundation: _NSLinguisticTagOpenQuote
+__ Foundation: _NSLinguisticTagOrganizationName
+__ Foundation: _NSLinguisticTagOtherPunctuation
+__ Foundation: _NSLinguisticTagOtherWord
+__ Foundation: _NSLinguisticTagParticle
+__ Foundation: _NSLinguisticTagPersonalName
+__ Foundation: _NSLinguisticTagPlaceName
+__ Foundation: _NSLinguisticTagPreposition
+__ Foundation: _NSLinguisticTagPronoun
+__ Foundation: _NSLinguisticTagPunctuation
+__ Foundation: _NSLinguisticTagSchemeLanguage
+__ Foundation: _NSLinguisticTagSchemeLemma
+__ Foundation: _NSLinguisticTagSchemeLexicalClass
+__ Foundation: _NSLinguisticTagSchemeNameType
+__ Foundation: _NSLinguisticTagSchemeNameTypeOrLexicalClass
+__ Foundation: _NSLinguisticTagSchemeTokenType
+__ Foundation: _NSLinguisticTagSentenceTerminator
+__ Foundation: _NSLinguisticTagVerb
+__ Foundation: _NSLinguisticTagWhitespace
+__ Foundation: _NSLinguisticTagWordJoiner
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSUnionRange
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSCountedSet
+__ Foundation: _OBJC_CLASS_$_NSDataDetector
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSLinguisticTagger
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOrthography
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ LanguageModeling: _LMLanguageModelAddTokenForString
+__ LanguageModeling: _LMLanguageModelAddTransientVocabulary
+__ LanguageModeling: _LMLanguageModelCopyDynamicModelBundlePath
+__ LanguageModeling: _LMLanguageModelCopyTokenAttributes
+__ LanguageModeling: _LMLanguageModelCreate
+__ LanguageModeling: _LMLanguageModelCreatePredictionEnumerator
+__ LanguageModeling: _LMLanguageModelCreateStringForTokenID
+__ LanguageModeling: _LMLanguageModelDynamicModelIsEmpty
+__ LanguageModeling: _LMLanguageModelEnumeratePredictionsWithBlock
+__ LanguageModeling: _LMLanguageModelFlushDynamicData
+__ LanguageModeling: _LMLanguageModelGetTokenIDForString
+__ LanguageModeling: _LMLanguageModelIncrementUsageCount
+__ LanguageModeling: _LMLanguageModelIncrementUsageCountWithEffectiveTime
+__ LanguageModeling: _LMLanguageModelRelease
+__ LanguageModeling: _LMLanguageModelRemoveModelBundlesInDirectory
+__ LanguageModeling: _LMLanguageModelSetParameterValue
+__ LanguageModeling: _LMPredictionEnumeratorAdvance
+__ LanguageModeling: _LMPredictionEnumeratorGetPrediction
+__ LanguageModeling: _LMPredictionEnumeratorRelease
+__ LanguageModeling: _LMVocabularyContainsLemma
+__ LanguageModeling: _LMVocabularyContainsLemmaForCharacters
+__ LanguageModeling: _LMVocabularyGetSharedVocabulary
+__ LanguageModeling: _kLMAttributedTokenQualifiersKey
+__ LanguageModeling: _kLMAttributedTokenTypeKey
+__ LanguageModeling: _kLMLanguageModelAdaptationEnabledKey
+__ LanguageModeling: _kLMLanguageModelAppContextKey
+__ LanguageModeling: _kLMLanguageModelCustomDynamicResourceDirectoryKey
+__ LanguageModeling: _kLMLanguageModelCustomResourceDirectoryKey
+__ LanguageModeling: _kLMLanguageModelLanguageLikelihoodModelEnabledKey
+__ LanguageModeling: _kLMLanguageModelLocaleKey
+__ LanguageModeling: _kLMLanguageModelRecipientContextKey
+__ LanguageModeling: _kLMLanguageModelStaticModelsEnabledKey
+__ LanguageModeling: _kLMLanguageModelUseDynamicTokenCharacterFilterKey
+__ LinguisticData: _LDEnumerateAssetDataItems
+__ LinguisticData: _kLDAssetTypeEventDetectionModel
+__ LinguisticData: _kLDAssetTypeProactiveGrammar
+__ NLP: _NLMessageConversationCreate
+__ NLP: _NLMessageConversationTurnCreate
+__ NLP: _NLMessageIntentCandidateCopyAttributes
+__ NLP: _NLMessageIntentCandidateGetIntentType
+__ NLP: _NLMessageIntentCandidateGetScore
+__ NLP: _NLMessageIntentRecognizerCopyTopNIntentCandidates
+__ NLP: _NLMessageIntentRecognizerCreate
+__ NLP: _kNLMessageIntentAttributeKeywordsKey
+__ NLP: _kNLMessageIntentRecognizerLocaleKey
+__ libChineseTokenizer.dylib: _ChineseTokenizerAdvanceToNextToken
+__ libChineseTokenizer.dylib: _ChineseTokenizerCreate
+__ libChineseTokenizer.dylib: _ChineseTokenizerGetCurrentTokenRange
+__ libChineseTokenizer.dylib: _ChineseTokenizerRelease
+__ libChineseTokenizer.dylib: _ChineseTokenizerSetCustomWordCheckBlock
+__ libChineseTokenizer.dylib: _ChineseTokenizerSetString
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_set_target_queue
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _qsort_b
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libicucore.A.dylib: _uloc_addLikelySubtags
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+RKSentenceClassifier_ko_KO : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ko_KO addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ko_KO analyzeSentence]
+  -[RKSentenceClassifier_ko_KO classifySentence]
+  -[RKSentenceClassifier_ko_KO alternativeConjunctions]
+
+
+RKSentenceClassifier_fr_FR : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_fr_FR analyzeSentence]
+  -[RKSentenceClassifier_fr_FR classifySentence]
+  -[RKSentenceClassifier_fr_FR alternativeConjunctions]
+  -[RKSentenceClassifier_fr_FR lexicalEntitiesFromString:]
+
+
+RKSentenceClassifier_tr_TR : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_tr_TR addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_tr_TR analyzeSentence]
+  -[RKSentenceClassifier_tr_TR classifySentence]
+  -[RKSentenceClassifier_tr_TR alternativeConjunctions]
+
+
+_RKResponse : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *speechAct
+ @property  NSString *headword
+ @property  NSString *text
+ @property  unsigned long type
+
+  // instance methods
+  -[_RKResponse init]
+  -[_RKResponse text]
+  -[_RKResponse .cxx_destruct]
+  -[_RKResponse type]
+  -[_RKResponse isEqual:]
+  -[_RKResponse speechAct]
+  -[_RKResponse initWithSpeechAct:headword:text:]
+  -[_RKResponse headword]
+
+
+RKResponseCollection : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableDictionary *responseCatalog
+ @property  NSMutableDictionary *personalizersByLanguageID
+ @property  NSURL *dynamicDataURL
+ @property  <RKDisplayStringsProvider> *displayStringsProvider
+
+  // class methods
+  +[RKResponseCollection speechActsForCategory:platform:]
+  +[RKResponseCollection responsesForFixedPhrase:withLanguage:]
+  +[RKResponseCollection responsesForFullScreenMoments:]
+  +[RKResponseCollection responsesForFullScreenMoments:withLanguage:]
+
+  // instance methods
+  -[RKResponseCollection .cxx_destruct]
+  -[RKResponseCollection flushDynamicData]
+  -[RKResponseCollection resetRegisteredResponses]
+  -[RKResponseCollection personalizersByLanguageID]
+  -[RKResponseCollection dynamicDataURL]
+  -[RKResponseCollection responseCatalog]
+  -[RKResponseCollection setResponseCatalog:]
+  -[RKResponseCollection displayStringsProvider]
+  -[RKResponseCollection personalizerForLanguageID:]
+  -[RKResponseCollection standardResponsesByCategoryForLanguageIdentifier:andUsage:]
+  -[RKResponseCollection initWithDynamicDataURL:displayStringsProvider:]
+  -[RKResponseCollection cannedResponsesForCategory:withLanguage:options:]
+  -[RKResponseCollection responsesForCategory:gender:maximumResponses:withLanguage:context:options:]
+  -[RKResponseCollection registerResponse:forMessage:withLanguage:context:effectiveDate:]
+  -[RKResponseCollection setPersonalizersByLanguageID:]
+
+
+RKSentenceClassifier_el_GR : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_el_GR addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_el_GR analyzeSentence]
+  -[RKSentenceClassifier_el_GR classifySentence]
+  -[RKSentenceClassifier_el_GR alternativeConjunctions]
+
+
+RKSentenceClassifier_ar_AE : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ar_AE addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ar_AE analyzeSentence]
+  -[RKSentenceClassifier_ar_AE classifySentence]
+  -[RKSentenceClassifier_ar_AE alternativeConjunctions]
+
+
+RKNLEventToken : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *string
+ @property  unsigned int tokenID
+ @property  long long location
+ @property  long long length
+
+  // instance methods
+  -[RKNLEventToken setLength:]
+  -[RKNLEventToken tokenID]
+  -[RKNLEventToken length]
+  -[RKNLEventToken .cxx_destruct]
+  -[RKNLEventToken setTokenID:]
+  -[RKNLEventToken setLocation:]
+  -[RKNLEventToken setString:]
+  -[RKNLEventToken string]
+  -[RKNLEventToken location]
+  -[RKNLEventToken initWithString:location:length:]
+
+
+RKNLEventTokenizer : NSObject /usr/lib/libc++.1.dylib
+ @property  ^{__CFStringTokenizer=} tokenizer
+ @property  NSString *languageID
+
+  // class methods
+  +[RKNLEventTokenizer initialize]
+  +[RKNLEventTokenizer isSpecialToken:]
+
+  // instance methods
+  -[RKNLEventTokenizer tokenizer]
+  -[RKNLEventTokenizer dealloc]
+  -[RKNLEventTokenizer .cxx_destruct]
+  -[RKNLEventTokenizer languageID]
+  -[RKNLEventTokenizer setTokenizer:]
+  -[RKNLEventTokenizer transform:]
+  -[RKNLEventTokenizer hasEmoticon:]
+  -[RKNLEventTokenizer processForEmoticons:]
+  -[RKNLEventTokenizer processForHyphenation:]
+  -[RKNLEventTokenizer tokenizeWithDataDetectors:]
+  -[RKNLEventTokenizer processForEmoticonsAndEmojis:]
+  -[RKNLEventTokenizer getTokens:]
+  -[RKNLEventTokenizer initWithLanguageID:]
+  -[RKNLEventTokenizer buildTokenSquence:withOffset:]
+
+
+RKSentenceClassifier_th_TH : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_th_TH addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_th_TH analyzeSentence]
+  -[RKSentenceClassifier_th_TH classifySentence]
+  -[RKSentenceClassifier_th_TH alternativeConjunctions]
+
+
+RKClassification : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *language
+ @property  unsigned long sentenceType
+ @property  int sensitive
+ @property  unsigned long gender
+ @property  NSArray *customResponses
+ @property  NSString *taggedText
+ @property  NSArray *sentenceEntities
+ @property  NSArray *matchedRanges
+
+  // instance methods
+  -[RKClassification isSensitive]
+  -[RKClassification setSensitive:]
+  -[RKClassification init]
+  -[RKClassification setLanguage:]
+  -[RKClassification .cxx_destruct]
+  -[RKClassification gender]
+  -[RKClassification setGender:]
+  -[RKClassification language]
+  -[RKClassification sentenceType]
+  -[RKClassification setSentenceType:]
+  -[RKClassification sentenceEntities]
+  -[RKClassification customResponses]
+  -[RKClassification setCustomResponses:]
+  -[RKClassification taggedText]
+  -[RKClassification setTaggedText:]
+  -[RKClassification setSentenceEntities:]
+  -[RKClassification matchedRanges]
+  -[RKClassification setMatchedRanges:]
+
+
+RKLexicalEntity : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *internalWord
+ @property  NSString *string
+ @property  NSString *tokenType
+ @property  NSString *partOfSpeech
+ @property  NSString *lemma
+ @property  NSString *language
+ @property  {_NSRange=QQ} tokenRange
+ @property  NSString *word
+
+  // instance methods
+  -[RKLexicalEntity word]
+  -[RKLexicalEntity setLanguage:]
+  -[RKLexicalEntity lemma]
+  -[RKLexicalEntity .cxx_destruct]
+  -[RKLexicalEntity setString:]
+  -[RKLexicalEntity tokenType]
+  -[RKLexicalEntity setTokenType:]
+  -[RKLexicalEntity string]
+  -[RKLexicalEntity partOfSpeech]
+  -[RKLexicalEntity setPartOfSpeech:]
+  -[RKLexicalEntity language]
+  -[RKLexicalEntity internalWord]
+  -[RKLexicalEntity setInternalWord:]
+  -[RKLexicalEntity setLemma:]
+  -[RKLexicalEntity tokenRange]
+  -[RKLexicalEntity setTokenRange:]
+
+
+RKSentenceClassifier : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *languageIdentifier
+ @property  NSMutableDictionary *partofSpeechAvailabilityByLanguage
+ @property  NSMutableDictionary *lemmaAvailabilityByLanguage
+ @property  NSString *sentenceStringOriginal
+ @property  NSString *sentenceString
+ @property  BOOL sentenceIsTerminated
+ @property  BOOL sentenceIsAllSymbols
+ @property  BOOL sentenceHasQuestionTerminator
+ @property  BOOL sentenceHasAlternativeConjunction
+ @property  NSValue *sentenceTag
+ @property  NSArray *inversions
+ @property  NSArray *interrogatives
+ @property  NSArray *choiceDelimiters
+ @property  NSArray *alternatives
+ @property  NSArray *appreciations
+ @property  NSArray *dataDetected
+ @property  NSString *RKLinguisticTagDataDetected
+ @property  NSArray *alternativeConjunctions
+ @property  NSArray *sentenceEntities
+ @property  NSArray *matchedRanges
+
+  // class methods
+  +[RKSentenceClassifier canClassifyLanguageIdentifier:]
+  +[RKSentenceClassifier languageIdentifierFromClassName]
+  +[RKSentenceClassifier subclassForLanguageIdentifier:]
+  +[RKSentenceClassifier subclassForLocale:]
+  +[RKSentenceClassifier sensitiveSubjectRegularExpressionForLanguage:]
+  +[RKSentenceClassifier polarTagRegularExpressionForLanguage:]
+  +[RKSentenceClassifier categoryKeywordMapForLanguage:]
+  +[RKSentenceClassifier appreciationKeywordsForLanguage:]
+  +[RKSentenceClassifier alternativeInversionsForLanguage:]
+  +[RKSentenceClassifier preProcessTextMessageForLinguisticTagger:withLocale:]
+  +[RKSentenceClassifier stringFromLexicalEntities:]
+  +[RKSentenceClassifier sentenceClassification:withLanguageIdentifier:options:]
+
+  // instance methods
+  -[RKSentenceClassifier init]
+  -[RKSentenceClassifier .cxx_destruct]
+  -[RKSentenceClassifier alternatives]
+  -[RKSentenceClassifier languageIdentifier]
+  -[RKSentenceClassifier setAlternatives:]
+  -[RKSentenceClassifier addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier analyzeSentence]
+  -[RKSentenceClassifier classifySentence]
+  -[RKSentenceClassifier interrogatives]
+  -[RKSentenceClassifier sentenceHasQuestionTerminator]
+  -[RKSentenceClassifier alternativeConjunctions]
+  -[RKSentenceClassifier lexicalEntitiesFromString:]
+  -[RKSentenceClassifier setInversions:]
+  -[RKSentenceClassifier sentenceEntities]
+  -[RKSentenceClassifier inversions]
+  -[RKSentenceClassifier sentenceString]
+  -[RKSentenceClassifier appreciations]
+  -[RKSentenceClassifier setSentenceEntities:]
+  -[RKSentenceClassifier matchedRanges]
+  -[RKSentenceClassifier setMatchedRanges:]
+  -[RKSentenceClassifier sentenceClassification:options:]
+  -[RKSentenceClassifier setSentenceString:]
+  -[RKSentenceClassifier setSentenceStringOriginal:]
+  -[RKSentenceClassifier setSentenceIsTerminated:]
+  -[RKSentenceClassifier setSentenceHasQuestionTerminator:]
+  -[RKSentenceClassifier sentenceIsTerminated]
+  -[RKSentenceClassifier sentenceStringOriginal]
+  -[RKSentenceClassifier setSentenceIsAllSymbols:]
+  -[RKSentenceClassifier setSentenceTag:]
+  -[RKSentenceClassifier setInterrogatives:]
+  -[RKSentenceClassifier setDataDetected:]
+  -[RKSentenceClassifier setChoiceDelimiters:]
+  -[RKSentenceClassifier setSentenceHasAlternativeConjunction:]
+  -[RKSentenceClassifier sentenceHasAlternativeConjunction]
+  -[RKSentenceClassifier dataDetected]
+  -[RKSentenceClassifier choiceDelimiters]
+  -[RKSentenceClassifier setAppreciations:]
+  -[RKSentenceClassifier sentenceIsAllSymbols]
+  -[RKSentenceClassifier sentenceTag]
+  -[RKSentenceClassifier partofSpeechAvailabilityByLanguage]
+  -[RKSentenceClassifier setPartofSpeechAvailabilityByLanguage:]
+  -[RKSentenceClassifier lemmaAvailabilityByLanguage]
+  -[RKSentenceClassifier setLemmaAvailabilityByLanguage:]
+  -[RKSentenceClassifier RKLinguisticTagDataDetected]
+  -[RKSentenceClassifier setRKLinguisticTagDataDetected:]
+
+
+RKSentenceClassifier_nb_NO : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_nb_NO addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_nb_NO analyzeSentence]
+  -[RKSentenceClassifier_nb_NO classifySentence]
+  -[RKSentenceClassifier_nb_NO alternativeConjunctions]
+
+
+RKSentenceClassifier_uk_UA : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_uk_UA addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_uk_UA analyzeSentence]
+  -[RKSentenceClassifier_uk_UA classifySentence]
+  -[RKSentenceClassifier_uk_UA alternativeConjunctions]
+
+
+RKResponseFeatures : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *response
+ @property  int count
+ @property  double numOfElapsedDays
+ @property  double normalizedSourceAppCount
+ @property  double normalizedSourceNotificationCount
+ @property  double normalizedInputMethodCannedCount
+ @property  double normalizedInputMethodScribbleCount
+ @property  double normalizedInputMethodDictationCount
+ @property  unsigned long responseLength
+ @property  int sameRecipientCount
+
+  // instance methods
+  -[RKResponseFeatures .cxx_destruct]
+  -[RKResponseFeatures count]
+  -[RKResponseFeatures response]
+  -[RKResponseFeatures initWithFeatures:count:numOfElapsedDays:sourceAppCount:sourceNotificationCount:inputSourceCannedCount:inputSourceScribbleCount:inputSourceDictationCount:responseLength:sameRecipientCount:]
+  -[RKResponseFeatures numOfElapsedDays]
+  -[RKResponseFeatures normalizedSourceAppCount]
+  -[RKResponseFeatures normalizedSourceNotificationCount]
+  -[RKResponseFeatures normalizedInputMethodCannedCount]
+  -[RKResponseFeatures normalizedInputMethodScribbleCount]
+  -[RKResponseFeatures normalizedInputMethodDictationCount]
+  -[RKResponseFeatures responseLength]
+  -[RKResponseFeatures sameRecipientCount]
+
+
+RKResponseCountTimestampRecipient : NSObject /usr/lib/libc++.1.dylib
+ @property  int count
+ @property  NSDate *timestamp
+ @property  BOOL hasSameRecipient
+
+  // instance methods
+  -[RKResponseCountTimestampRecipient setCount:]
+  -[RKResponseCountTimestampRecipient .cxx_destruct]
+  -[RKResponseCountTimestampRecipient timestamp]
+  -[RKResponseCountTimestampRecipient setTimestamp:]
+  -[RKResponseCountTimestampRecipient count]
+  -[RKResponseCountTimestampRecipient initWithCount:timestamp:hasSameRecipient:]
+  -[RKResponseCountTimestampRecipient hasSameRecipient]
+  -[RKResponseCountTimestampRecipient setHasSameRecipient:]
+
+
+RKRankedResponse : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *response
+ @property  unsigned long inputMethod
+ @property  double score
+
+  // instance methods
+  -[RKRankedResponse setScore:]
+  -[RKRankedResponse .cxx_destruct]
+  -[RKRankedResponse score]
+  -[RKRankedResponse setResponse:]
+  -[RKRankedResponse response]
+  -[RKRankedResponse initWithResponse:inputMethod:score:]
+  -[RKRankedResponse inputMethod]
+  -[RKRankedResponse setInputMethod:]
+
+
+RKRankLearner : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[RKRankLearner init]
+  -[RKRankLearner getDBManager:]
+  -[RKRankLearner updateFeaturesForResponse:selectCounts:inputMethodCounts:sourceCounts:currentTime:languageCode:]
+  -[RKRankLearner rankResponses:]
+  -[RKRankLearner getDBManager:withCustomPath:]
+  -[RKRankLearner insertRankingInfo:forLanguageID:]
+  -[RKRankLearner getRankedResponses:forRecipientID:withLanguageID:]
+  -[RKRankLearner flushRankingData:]
+
+
+RKAggdStatistics : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKAggdStatistics incrementAggdKeyForCategory:forAction:withLanguageID:]
+  +[RKAggdStatistics decrementAggdKeyForCategory:forAction:withLanguageID:]
+  +[RKAggdStatistics clearScalarValuesForLanguage:]
+
+
+RKSentenceClassifier_es_ES : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_es_ES addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_es_ES analyzeSentence]
+  -[RKSentenceClassifier_es_ES classifySentence]
+  -[RKSentenceClassifier_es_ES alternativeConjunctions]
+
+
+RKLinguisticDataProvider : NSObject /usr/lib/libc++.1.dylib <RKPolarityDataProvider>
+ @property  NSMutableDictionary *polarityMapsByLanguageID
+
+  // instance methods
+  -[RKLinguisticDataProvider init]
+  -[RKLinguisticDataProvider .cxx_destruct]
+  -[RKLinguisticDataProvider polarityMapsByLanguageID]
+  -[RKLinguisticDataProvider setPolarityMapsByLanguageID:]
+
+
+RKSentenceClassifier_hi_IN : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_hi_IN addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_hi_IN analyzeSentence]
+  -[RKSentenceClassifier_hi_IN classifySentence]
+  -[RKSentenceClassifier_hi_IN alternativeConjunctions]
+
+
+RKSentenceClassifier_fi_FI : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_fi_FI addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_fi_FI analyzeSentence]
+  -[RKSentenceClassifier_fi_FI classifySentence]
+  -[RKSentenceClassifier_fi_FI alternativeConjunctions]
+
+
+RKSentenceClassifier_he_IL : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_he_IL addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_he_IL analyzeSentence]
+  -[RKSentenceClassifier_he_IL classifySentence]
+  -[RKSentenceClassifier_he_IL alternativeConjunctions]
+
+
+RKSentenceClassifier_en_US : RKSentenceClassifier
+  // class methods
+  +[RKSentenceClassifier_en_US preProcessTextMessageForLinguisticTagger:]
+
+  // instance methods
+  -[RKSentenceClassifier_en_US addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_en_US analyzeSentence]
+  -[RKSentenceClassifier_en_US classifySentence]
+  -[RKSentenceClassifier_en_US alternativeConjunctions]
+
+
+RKSentenceClassifier_vi_VN : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_vi_VN addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_vi_VN analyzeSentence]
+  -[RKSentenceClassifier_vi_VN classifySentence]
+  -[RKSentenceClassifier_vi_VN alternativeConjunctions]
+
+
+RKPersistentPersonalizer : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *languageID
+ @property  NSLocale *languageLocale
+ @property  NSURL *dynamicDataURL
+ @property  <RKDisplayStringsProvider> *displayStringsProvider
+ @property  ^v model
+ @property  NSDate *lastObservedDynamicDataCreationDate
+ @property  NSDate *lastDynamicDataCreationCheckDate
+ @property  NSMutableDictionary *synonyms
+
+  // class methods
+  +[RKPersistentPersonalizer removeAllDynamicModelsInDirectory:]
+  +[RKPersistentPersonalizer nonEmptyStringsPredicate]
+
+  // instance methods
+  -[RKPersistentPersonalizer init]
+  -[RKPersistentPersonalizer dealloc]
+  -[RKPersistentPersonalizer .cxx_destruct]
+  -[RKPersistentPersonalizer setSynonyms:]
+  -[RKPersistentPersonalizer languageID]
+  -[RKPersistentPersonalizer setLanguageID:]
+  -[RKPersistentPersonalizer model]
+  -[RKPersistentPersonalizer synonyms]
+  -[RKPersistentPersonalizer flushDynamicData]
+  -[RKPersistentPersonalizer dynamicDataURL]
+  -[RKPersistentPersonalizer displayStringsProvider]
+  -[RKPersistentPersonalizer headwordsForSynonym:]
+  -[RKPersistentPersonalizer topSynonymsForSpeechAct:headword:recipientContext:maxCount:]
+  -[RKPersistentPersonalizer headwordsForSynonymPrefix:]
+  -[RKPersistentPersonalizer trainSynonymForSpeechAct:headword:userResponse:recipientContext:weight:effectiveDate:]
+  -[RKPersistentPersonalizer initWithLanguageIdentifier:andDynamicDataURL:displayStringsProvider:]
+  -[RKPersistentPersonalizer createLanguageModel]
+  -[RKPersistentPersonalizer dynamicDataCreationDate]
+  -[RKPersistentPersonalizer initializeDynamicLanguageModel]
+  -[RKPersistentPersonalizer lastDynamicDataCreationCheckDate]
+  -[RKPersistentPersonalizer setLastDynamicDataCreationCheckDate:]
+  -[RKPersistentPersonalizer lastObservedDynamicDataCreationDate]
+  -[RKPersistentPersonalizer setLastObservedDynamicDataCreationDate:]
+  -[RKPersistentPersonalizer setDynamicDataURL:]
+  -[RKPersistentPersonalizer languageLocale]
+  -[RKPersistentPersonalizer setLanguageLocale:]
+
+
+RKSentenceClassifier_nl_NL : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_nl_NL addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_nl_NL analyzeSentence]
+  -[RKSentenceClassifier_nl_NL classifySentence]
+  -[RKSentenceClassifier_nl_NL alternativeConjunctions]
+
+
+RKSentenceClassifier_zh_Hans_CN : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_zh_Hans_CN addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_zh_Hans_CN analyzeSentence]
+  -[RKSentenceClassifier_zh_Hans_CN classifySentence]
+  -[RKSentenceClassifier_zh_Hans_CN alternativeConjunctions]
+
+
+RKSentenceClassifier_zh_Hant_CN : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_zh_Hant_CN addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_zh_Hant_CN analyzeSentence]
+  -[RKSentenceClassifier_zh_Hant_CN classifySentence]
+  -[RKSentenceClassifier_zh_Hant_CN alternativeConjunctions]
+
+
+RKSentenceClassifier_pt_BR : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_pt_BR addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_pt_BR analyzeSentence]
+  -[RKSentenceClassifier_pt_BR classifySentence]
+  -[RKSentenceClassifier_pt_BR alternativeConjunctions]
+
+
+RKSentenceClassifier_ms_MY : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ms_MY addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ms_MY analyzeSentence]
+  -[RKSentenceClassifier_ms_MY classifySentence]
+  -[RKSentenceClassifier_ms_MY alternativeConjunctions]
+
+
+RKRankingInfo : NSManagedObject /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+ @property  long long responseId
+ @property  NSString *message
+ @property  NSString *response
+ @property  NSString *category
+ @property  NSString *recipientId
+ @property  unsigned long source
+ @property  unsigned long inputMethod
+ @property  NSString *rankedList
+ @property  NSDate *timestamp
+
+
+RKSentenceClassifier_pl_PL : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_pl_PL addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_pl_PL analyzeSentence]
+  -[RKSentenceClassifier_pl_PL classifySentence]
+  -[RKSentenceClassifier_pl_PL alternativeConjunctions]
+
+
+RKCoreAnalytics : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKCoreAnalytics sendCoreAnalyticsEvent:forAction:withLanguageID:]
+  +[RKCoreAnalytics assignCoreAnalyticsCategory:forAction:withLanguageID:]
+
+
+RKTextAnnotation : NSObject /usr/lib/libc++.1.dylib
+ @property  {_NSRange=QQ} range
+ @property  unsigned long type
+ @property  BOOL machineGenerated
+
+  // instance methods
+  -[RKTextAnnotation range]
+  -[RKTextAnnotation init]
+  -[RKTextAnnotation setRange:]
+  -[RKTextAnnotation setType:]
+  -[RKTextAnnotation type]
+  -[RKTextAnnotation isEqual:]
+  -[RKTextAnnotation initWithRange:andType:machineGenerated:]
+  -[RKTextAnnotation machineGenerated]
+  -[RKTextAnnotation setMachineGenerated:]
+
+
+RKText : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *string
+ @property  NSString *languageID
+ @property  double trainingWeight
+ @property  BOOL trainVerbatim
+ @property  NSMutableArray *annotations
+ @property  NSString *processedText
+
+  // class methods
+  +[RKText initialize]
+  +[RKText annotationNameFromType:]
+  +[RKText defaultDataProvider]
+  +[RKText annotationTypeFromName:]
+  +[RKText polarityNameFromType:]
+  +[RKText polarityTypeFromName:]
+
+  // instance methods
+  -[RKText annotations]
+  -[RKText init]
+  -[RKText setAnnotations:]
+  -[RKText .cxx_destruct]
+  -[RKText languageID]
+  -[RKText setLanguageID:]
+  -[RKText setString:]
+  -[RKText string]
+  -[RKText lsmText]
+  -[RKText taggedText]
+  -[RKText initWithString:andLanguageIdentifier:trainingWeight:trainVerbatim:]
+  -[RKText annotateRange:type:machineGenerated:]
+  -[RKText setProcessedText:]
+  -[RKText trainingWeight]
+  -[RKText trainVerbatim]
+  -[RKText annotateRange:type:]
+  -[RKText subTextWithRange:]
+  -[RKText processedText]
+  -[RKText initWithString:andLanguageIdentifier:]
+  -[RKText enumerateAnnotationsInRange:usingBlock:]
+  -[RKText cleanupData]
+  -[RKText subTextsByPolarity]
+  -[RKText annotatedPolarity]
+  -[RKText setTrainingWeight:]
+  -[RKText setTrainVerbatim:]
+
+
+RKResponse : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *string
+ @property  NSDictionary *attributes
+ @property  NSString *category
+
+  // instance methods
+  -[RKResponse category]
+  -[RKResponse .cxx_destruct]
+  -[RKResponse setAttributes:]
+  -[RKResponse attributes]
+  -[RKResponse setString:]
+  -[RKResponse string]
+  -[RKResponse setCategory:]
+  -[RKResponse initWithString:attributes:category:]
+
+
+RKConversationTurn : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *text
+ @property  NSString *senderId
+ @property  NSDate *timestamp
+
+  // instance methods
+  -[RKConversationTurn text]
+  -[RKConversationTurn .cxx_destruct]
+  -[RKConversationTurn timestamp]
+  -[RKConversationTurn initWithString:senderID:timestamp:]
+  -[RKConversationTurn senderId]
+
+
+RKResponseCandidate : RKResponse
+  // instance methods
+  -[RKResponseCandidate initWithString:attributes:]
+
+
+RKMessageResponseManager : NSObject /usr/lib/libc++.1.dylib
+ @property  RKResponseCollection *collection
+ @property  NSObject<OS_dispatch_queue> *dispatchQueue
+ @property  NSArray *preferredLanguages
+ @property  RKRankLearner *rankLearner
+
+  // class methods
+  +[RKMessageResponseManager sharedManager]
+
+  // instance methods
+  -[RKMessageResponseManager collection]
+  -[RKMessageResponseManager setCollection:]
+  -[RKMessageResponseManager preferredLanguages]
+  -[RKMessageResponseManager init]
+  -[RKMessageResponseManager .cxx_destruct]
+  -[RKMessageResponseManager dispatchQueue]
+  -[RKMessageResponseManager setDispatchQueue:]
+  -[RKMessageResponseManager setPreferredLanguages:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:forContext:withLanguage:options:completionBlock:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:forContext:withLanguage:options:]
+  -[RKMessageResponseManager registerResponse:forMessage:forContext:withLanguage:]
+  -[RKMessageResponseManager initWithDynamicDataURL:]
+  -[RKMessageResponseManager flushDynamicData]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:forConversationHistory:withLanguage:options:]
+  -[RKMessageResponseManager resetRegisteredResponses]
+  -[RKMessageResponseManager initWithDynamicDataURL:displayStringsProvider:]
+  -[RKMessageResponseManager responsesForMessageImp:maximumResponses:forRecipientID:forConversationHistory:forContext:withLanguage:options:]
+  -[RKMessageResponseManager responsesForMessageWithLanguageDetectionImp:maximumResponses:forRecipientID:forConversationHistory:forContext:withLanguage:inputModes:options:]
+  -[RKMessageResponseManager usePersonalizedRanking]
+  -[RKMessageResponseManager getRankLearner]
+  -[RKMessageResponseManager rankLearner]
+  -[RKMessageResponseManager registerResponse:forMessage:forContext:withEffectiveDate:withLanguage:]
+  -[RKMessageResponseManager categoryForMessageWithoutQueue:langID:]
+  -[RKMessageResponseManager initWithDynamicDataURL:withBundleURL:]
+  -[RKMessageResponseManager initWithAssetPlistURL:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:forConversationHistory:withLanguage:options:completionBlock:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:recipientID:forConversationHistory:withLanguage:options:completionBlock:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:recipientID:forConversationHistory:withLanguage:options:]
+  -[RKMessageResponseManager responsesForMessageWithLanguageDetection:maximumResponses:forConversationHistory:forContext:withLanguage:options:completionBlock:]
+  -[RKMessageResponseManager responsesForMessage:maximumResponses:forConversationHistory:withLanguage:inputModes:options:]
+  -[RKMessageResponseManager responsesForMessageWithLanguageDetection:maximumResponses:forConversationHistory:forContext:withLanguage:options:]
+  -[RKMessageResponseManager categoryForMessage:langID:]
+  -[RKMessageResponseManager registerResponse:forMessage:metadata:withLanguage:]
+  -[RKMessageResponseManager prunePersonalizedUserDatabase:]
+  -[RKMessageResponseManager isQuestion:withLanguage:]
+  -[RKMessageResponseManager setRankLearner:]
+
+
+RKSentenceClassifier_nl_BE : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_nl_BE addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_nl_BE analyzeSentence]
+  -[RKSentenceClassifier_nl_BE classifySentence]
+  -[RKSentenceClassifier_nl_BE alternativeConjunctions]
+
+
+RKSentenceClassifier_ru_RU : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ru_RU addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ru_RU analyzeSentence]
+  -[RKSentenceClassifier_ru_RU classifySentence]
+  -[RKSentenceClassifier_ru_RU alternativeConjunctions]
+
+
+RKSentenceClassifier_cs_CZ : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_cs_CZ addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_cs_CZ analyzeSentence]
+  -[RKSentenceClassifier_cs_CZ classifySentence]
+  -[RKSentenceClassifier_cs_CZ alternativeConjunctions]
+
+
+RKSentenceClassifier_sk_SK : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_sk_SK addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_sk_SK analyzeSentence]
+  -[RKSentenceClassifier_sk_SK classifySentence]
+  -[RKSentenceClassifier_sk_SK alternativeConjunctions]
+
+
+RKSentenceClassifier_fr_BE : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_fr_BE addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_fr_BE analyzeSentence]
+  -[RKSentenceClassifier_fr_BE classifySentence]
+  -[RKSentenceClassifier_fr_BE alternativeConjunctions]
+
+
+RKSentenceClassifier_ro_RO : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ro_RO addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ro_RO analyzeSentence]
+  -[RKSentenceClassifier_ro_RO classifySentence]
+  -[RKSentenceClassifier_ro_RO alternativeConjunctions]
+
+
+RKSentenceClassifier_da_DK : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_da_DK addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_da_DK analyzeSentence]
+  -[RKSentenceClassifier_da_DK classifySentence]
+  -[RKSentenceClassifier_da_DK alternativeConjunctions]
+
+
+RKSentenceClassifier_ca_ES : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ca_ES addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ca_ES analyzeSentence]
+  -[RKSentenceClassifier_ca_ES classifySentence]
+  -[RKSentenceClassifier_ca_ES alternativeConjunctions]
+
+
+RKMessageIntentRecognizer : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKMessageIntentRecognizer sharedManager]
+  +[RKMessageIntentRecognizer getRangesOfKeywords:forMessage:]
+
+  // instance methods
+  -[RKMessageIntentRecognizer init]
+  -[RKMessageIntentRecognizer dealloc]
+  -[RKMessageIntentRecognizer copyAttributedTokensForMessage:conversationTurns:metadata:languageID:]
+  -[RKMessageIntentRecognizer getMessageIntentRecognizer:]
+
+
+RKAssets : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKAssets localizedStrings]
+  +[RKAssets synonyms]
+  +[RKAssets contractedResponses]
+  +[RKAssets fixedPhrases]
+  +[RKAssets momentsPhrases]
+  +[RKAssets categoryKeywordMap]
+  +[RKAssets sensitiveSubjectRegularExpressionPatterns]
+  +[RKAssets polarTagKeywords]
+  +[RKAssets alternativeInversions]
+  +[RKAssets appreciationKeywords]
+  +[RKAssets constantClasses]
+
+  // instance methods
+  -[RKAssets init]
+  -[RKAssets initWithPlistURL:]
+
+
+RKSentenceClassifier_ja_JP : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_ja_JP addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_ja_JP analyzeSentence]
+  -[RKSentenceClassifier_ja_JP classifySentence]
+  -[RKSentenceClassifier_ja_JP alternativeConjunctions]
+
+
+RKSentenceClassifier_hr_HR : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_hr_HR addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_hr_HR analyzeSentence]
+  -[RKSentenceClassifier_hr_HR classifySentence]
+  -[RKSentenceClassifier_hr_HR alternativeConjunctions]
+
+
+RKMontrealModel : NSObject /usr/lib/libc++.1.dylib
+ @property  ^v model
+
+  // class methods
+  +[RKMontrealModel modelForLanguage:]
+  +[RKMontrealModel pathForLanguage:]
+
+  // instance methods
+  -[RKMontrealModel dealloc]
+  -[RKMontrealModel initWithPath:]
+  -[RKMontrealModel reset]
+  -[RKMontrealModel model]
+
+
+RKEventIdentifier : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[RKEventIdentifier init]
+  -[RKEventIdentifier .cxx_destruct]
+  -[RKEventIdentifier initWithLanguageID:]
+  -[RKEventIdentifier _identifyOwnedTokenSequences:]
+  -[RKEventIdentifier _identifyStrings:otherDateCount:otherDates:]
+  -[RKEventIdentifier resetEventIdentifierModel]
+  -[RKEventIdentifier identifyStrings:]
+  -[RKEventIdentifier identifyText:]
+  -[RKEventIdentifier identifyMessage:]
+
+
+RKEventIdentification : NSObject /usr/lib/libc++.1.dylib
+ @property  NSArray *tokenSequences
+
+  // instance methods
+  -[RKEventIdentification init]
+  -[RKEventIdentification dealloc]
+  -[RKEventIdentification .cxx_destruct]
+  -[RKEventIdentification initWithOwnedTokenSequences:probabilities:]
+  -[RKEventIdentification getTopKClassifications:block:]
+  -[RKEventIdentification enumerateClassifiedTokens:]
+  -[RKEventIdentification enumerateTopKClassificationsForEachString:block:]
+  -[RKEventIdentification topClassification]
+  -[RKEventIdentification tokenSequences]
+
+
+RKSentenceClassifier_it_IT : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_it_IT addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_it_IT analyzeSentence]
+  -[RKSentenceClassifier_it_IT classifySentence]
+  -[RKSentenceClassifier_it_IT alternativeConjunctions]
+  -[RKSentenceClassifier_it_IT lexicalEntitiesFromString:]
+
+
+RKProactiveGrammar : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKProactiveGrammar sharedManager]
+  +[RKProactiveGrammar getOTAPathForRKBundle:]
+  +[RKProactiveGrammar getEntities:]
+
+  // instance methods
+  -[RKProactiveGrammar init]
+  -[RKProactiveGrammar dealloc]
+  -[RKProactiveGrammar copyAttributedTokenForText:forLanguage:]
+  -[RKProactiveGrammar getLanguageModel:]
+  -[RKProactiveGrammar getEquivalenceClass:]
+  -[RKProactiveGrammar copyAttributedTokenForText:forLanguageModel:withLanguageCode:]
+  -[RKProactiveGrammar chineseTokenizer]
+
+
+RKRankingDataManager : NSObject /usr/lib/libc++.1.dylib
+ @property  NSManagedObjectContext *managedObjectContext
+ @property  NSPersistentStoreCoordinator *persistentStoreCoordinator
+ @property  NSPersistentStore *persistentStore
+
+  // instance methods
+  -[RKRankingDataManager persistentStore]
+  -[RKRankingDataManager setPersistentStore:]
+  -[RKRankingDataManager .cxx_destruct]
+  -[RKRankingDataManager persistentStoreCoordinator]
+  -[RKRankingDataManager setPersistentStoreCoordinator:]
+  -[RKRankingDataManager managedObjectContext]
+  -[RKRankingDataManager setManagedObjectContext:]
+  -[RKRankingDataManager initWithLanguageID:]
+  -[RKRankingDataManager initWithDatabaseFilename:]
+  -[RKRankingDataManager insertRankingInfoFromDictionary:]
+  -[RKRankingDataManager fetchRankingInfoForCategory:]
+  -[RKRankingDataManager flushRankingData]
+  -[RKRankingDataManager pruneUserDatabase]
+  -[RKRankingDataManager insertRankingInfoFromDictionary:withDate:]
+  -[RKRankingDataManager fetchRankingInfoFromDB]
+  -[RKRankingDataManager getNumberOfEntriesInDB]
+  -[RKRankingDataManager resetRankingData]
+
+
+RKBundleDataProvider : NSObject /usr/lib/libc++.1.dylib <RKDisplayStringsProvider, RKPolarityDataProvider>
+ @property  NSBundle *bundle
+ @property  RKAssets *assets
+ @property  NSURL *assetPlistURL
+ @property  NSMutableDictionary *displayStringsByPlatformByLanguage
+ @property  NSMutableDictionary *polarityMapsByLanguageID
+ @property  NSMutableDictionary *localizationsByLanguageID
+
+  // instance methods
+  -[RKBundleDataProvider assets]
+  -[RKBundleDataProvider bundle]
+  -[RKBundleDataProvider init]
+  -[RKBundleDataProvider initWithBundle:]
+  -[RKBundleDataProvider .cxx_destruct]
+  -[RKBundleDataProvider displayStringsForPlatform:languageID:]
+  -[RKBundleDataProvider initWithAssetPlist:]
+  -[RKBundleDataProvider polarityMapsByLanguageID]
+  -[RKBundleDataProvider displayStringsByPlatformByLanguage]
+  -[RKBundleDataProvider stringsFromTable:forLanguageIdentifier:]
+  -[RKBundleDataProvider assetPlistURL]
+  -[RKBundleDataProvider localizationsByLanguageID]
+  -[RKBundleDataProvider setLocalizationsByLanguageID:]
+
+
+RKConversation : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long type
+ @property  NSArray *messages
+
+  // instance methods
+  -[RKConversation messages]
+  -[RKConversation .cxx_destruct]
+  -[RKConversation type]
+  -[RKConversation initWithString:messages:]
+
+
+RKMessage : RKText
+ @property  NSString *title
+ @property  NSUUID *senderUUID
+ @property  NSDate *dateSent
+ @property  unsigned long position
+
+  // instance methods
+  -[RKMessage position]
+  -[RKMessage dateSent]
+  -[RKMessage .cxx_destruct]
+  -[RKMessage title]
+  -[RKMessage initWithString:title:languageIdentifier:senderUUID:dateSent:position:]
+  -[RKMessage annotateRange:type:field:]
+  -[RKMessage senderUUID]
+
+
+RKSentenceClassifier_sv_SE : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_sv_SE addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_sv_SE analyzeSentence]
+  -[RKSentenceClassifier_sv_SE classifySentence]
+  -[RKSentenceClassifier_sv_SE alternativeConjunctions]
+
+
+RKSentenceClassifier_de_DE : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_de_DE addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_de_DE analyzeSentence]
+  -[RKSentenceClassifier_de_DE classifySentence]
+  -[RKSentenceClassifier_de_DE alternativeConjunctions]
+
+
+RKSentenceClassifier_id_ID : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_id_ID addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_id_ID analyzeSentence]
+  -[RKSentenceClassifier_id_ID classifySentence]
+  -[RKSentenceClassifier_id_ID alternativeConjunctions]
+
+
+RKMessageClassifier : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKMessageClassifier preferredLanguages]
+  +[RKMessageClassifier setPreferredLanguages:]
+  +[RKMessageClassifier messageClassification:withLanguageIdentifier:]
+  +[RKMessageClassifier messageClassification:withLanguageIdentifier:conversationTurns:]
+  +[RKMessageClassifier questionClassification:withLanguageIdentifier:]
+
+
+RKSentenceClassifier_hu_HU : RKSentenceClassifier
+  // instance methods
+  -[RKSentenceClassifier_hu_HU addSentenceTerminatorQuestion:]
+  -[RKSentenceClassifier_hu_HU analyzeSentence]
+  -[RKSentenceClassifier_hu_HU classifySentence]
+  -[RKSentenceClassifier_hu_HU alternativeConjunctions]
+
+
+RKUtilities : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKUtilities addLikelySubtagsForLocaleIdentifier:]
+  +[RKUtilities prefixInArray:withArray:]
+  +[RKUtilities suffixInArray:withArray:]
+  +[RKUtilities tokenInArray:withArray:]
+  +[RKUtilities normalizeForPersonalization:]
+  +[RKUtilities canonicalLanguageAndScriptCodeIdentifierForIdentifier:]
+  +[RKUtilities removeEmoji:]
+  +[RKUtilities stripDiacritics:]
+  +[RKUtilities RKRepairStringNeeded:]
+  +[RKUtilities getDeviceModel]
+  +[RKUtilities isDeviceSupportedForLSTMBasedLanguageIdentification:]
+  +[RKUtilities stripPunctuations:]
+  +[RKUtilities removeMultipleWhitespaces:]
+  +[RKUtilities isLanguageSupportedByNSLinguisticTaggerForLanguageIdentification:]
+  +[RKUtilities isLanguageSupportedBySmartPunctuation:]
+  +[RKUtilities stripEmojiSkinTones:]
+  +[RKUtilities isLanguageSupportedForLemmatization:]
+  +[RKUtilities isLanguageSupportedForPartOfSpeech:]
+
+
+RKCurrencyAmount : NSObject /usr/lib/libc++.1.dylib <NSSecureCoding>
+ @property  NSString *string
+ @property  NSString *currency
+ @property  double value
+
+  // class methods
+  +[RKCurrencyAmount supportsSecureCoding]
+
+  // instance methods
+  -[RKCurrencyAmount .cxx_destruct]
+  -[RKCurrencyAmount encodeWithCoder:]
+  -[RKCurrencyAmount currency]
+  -[RKCurrencyAmount string]
+  -[RKCurrencyAmount value]
+  -[RKCurrencyAmount initWithCoder:]
+  -[RKCurrencyAmount initWithString:currency:value:]
+
+
+RKPaymentIdentifier : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[RKPaymentIdentifier sharedManager]
+
+  // instance methods
+  -[RKPaymentIdentifier copyAttributedTokensForText:]
+  -[RKPaymentIdentifier amountsFromMessage:]
+
+
+RankingInfo : NSManagedObject /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+ @property  NSString *category
+ @property  short inputMethod
+ @property  NSString *message
+ @property  NSString *rankedList
+ @property  NSString *recipientId
+ @property  NSString *response
+ @property  short source
+ @property  NSDate *timestamp
+
+  // class methods
+  +[RankingInfo fetchRequest]
+
+
+(NSString_FirstWordExtensions)
+	// instance methods
+	-[(NSString_FirstWordExtensions) lowercaseFirstWordString]
+	-[(NSString_FirstWordExtensions) uppercaseFirstWordString]
+	-[(NSString_FirstWordExtensions) stringByEscapingXMLEntities]
+	-[(NSString_FirstWordExtensions) stringByUnescapingXMLEntities]
+	-[(NSString_FirstWordExtensions) consistsOfCharactersFromSet:options:]
+
+NSLinguisticTagger(RKPrivate)
+	// instance methods
+	-[NSLinguisticTagger(RKPrivate) containsAsianCharacters]
+	-[NSLinguisticTagger(RKPrivate) languageOfRange:withAdditionalContext:withPreferredLanguages:]
+
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSBatchDeleteRequest 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCountedSet 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDataDetector 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSEntityDescription 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLinguisticTagger 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectContext 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectModel 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableCharacterSet 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSOrthography 
+01 00 0500 /System/Library/Frameworks/CoreData.framework/CoreData: NSPersistentStoreCoordinator 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0d00 /System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses: _NSConstantArray 
+01 00 0d00 /System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses: _NSConstantDictionary 
+01 00 0d00 /System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses: _NSConstantNumberInt 

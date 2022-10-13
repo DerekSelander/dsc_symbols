@@ -1,0 +1,114 @@
+|| __DATA_DIRTY.__common _gNotifyPort
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PPMClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PPMClientUserClientInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PPMClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PPMClientUserClientInterface
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValues
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetKeysAndValues
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ IOKit: _IOConnectCallScalarMethod
+__ IOKit: _IOConnectCallStructMethod
+__ IOKit: _IOIteratorNext
+__ IOKit: _IONotificationPortCreate
+__ IOKit: _IONotificationPortDestroy
+__ IOKit: _IONotificationPortSetDispatchQueue
+__ IOKit: _IOObjectRelease
+__ IOKit: _IORegistryEntryGetName
+__ IOKit: _IORegistryEntryGetPath
+__ IOKit: _IOServiceAddInterestNotification
+__ IOKit: _IOServiceGetMatchingServices
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___sprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___strcat_chk
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _strcpy
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+PPMClient : NSObject /usr/lib/libSystem.B.dylib
+ @property  PPMClientUserClientInterface *userClient
+ @property  unsigned int connect
+ @property  NSString *identifier
+ @property  unsigned int version
+
+  // class methods
+  +[PPMClient sharedInstanceWithClientRepresentation:options:error:]
+  +[PPMClient sharedInstanceWithClientRepresentation:error:]
+
+  // instance methods
+  -[PPMClient connect]
+  -[PPMClient activityStoppedWithLevel:options:error:]
+  -[PPMClient .cxx_destruct]
+  -[PPMClient setUserClient:]
+  -[PPMClient setIdentifier:]
+  -[PPMClient getClientNumber:]
+  -[PPMClient setVersion:]
+  -[PPMClient identifier]
+  -[PPMClient setConnect:]
+  -[PPMClient activityStartedWithLevel:options:error:]
+  -[PPMClient pushTelemetryToPPM:error:]
+  -[PPMClient registerForNotificationsWithError:handler:]
+  -[PPMClient setupIOKitUserClientWith:error:]
+  -[PPMClient initWithClient:error:]
+  -[PPMClient version]
+  -[PPMClient endInteraction:]
+  -[PPMClient initWithClientIdentifier:]
+  -[PPMClient admissionCheckWithLevel:options:error:handler:]
+  -[PPMClient userClient]
+
+
+PPMClientUserClientInterface : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL attribute
+ @property  unsigned int connect
+
+  // instance methods
+  -[PPMClientUserClientInterface connect]
+  -[PPMClientUserClientInterface attribute]
+  -[PPMClientUserClientInterface openPPMUserClient:clientNumber:]
+  -[PPMClientUserClientInterface admissionCheckOfValuePPM:clientNumber:level:result:]
+  -[PPMClientUserClientInterface stopActivity:clientNumber:level:]
+  -[PPMClientUserClientInterface startActivity:clientNumber:level:]
+  -[PPMClientUserClientInterface pushTelemetry:userDictRef:]
+  -[PPMClientUserClientInterface setBudget:clientNumber:value:]
+  -[PPMClientUserClientInterface setDebugFlag:value:]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 

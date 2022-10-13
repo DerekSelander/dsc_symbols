@@ -1,0 +1,604 @@
+|| __DATA.__common __connect
+|| __DATA.__common _connObj
+|| __DATA.__common _logInitialized
+|| __DATA.__data _kCCD20
+|| __DATA.__data _kCCD21
+|| __DATA.__data _kCCD22
+|| __DATA.__data _kCCD3X
+|| __DATA.__data _kCCD4X
+|| __DATA.__data _kCCD5X
+|| __DATA.__data _kCCN104
+|| __DATA.__data _kCCN84
+|| __DATA.__data _md5_digest_info
+|| __DATA.__data _sha1_digest_info
+|| __DATA.__data _sha256_digest_info
+|| __DATA.__data _sha384_digest_info
+|| __DATA.__data _sha512_digest_info
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheck
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckBase
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckBaseband
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckBattery
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckCamera
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckDeviceSN
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckMGKey
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckMGSN
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckMesa
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckSEID
+|| __DATA.__objc_data _OBJC_CLASS_$_HSComponentCheckTristar
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheck
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckBase
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckBaseband
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckBattery
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckCamera
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckDeviceSN
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckMGKey
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckMGSN
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckMesa
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckSEID
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSComponentCheckTristar
+|| __DATA_CONST.__const _BAAGenerationErrorDomain
+|| __DATA_CONST.__const _BAAGenerationFunctionNameErrorKey
+|| __DATA_CONST.__const _BAAGenerationSourceFileLineErrorKey
+|| __DATA_CONST.__const _kAMSupportDigestInfoSha1
+|| __DATA_CONST.__const _kAMSupportDigestInfoSha256
+|| __DATA_CONST.__const _kAMSupportDigestInfoSha384
+|| __DATA_CONST.__const _kAMSupportDigestInfoSha512
+|| __DATA_CONST.__const _kImg4DecodeLocalPolicyEc384Sha384
+|| __DATA_CONST.__const _kImg4DecodeLocalPolicyEc384Sha384Hacktivate
+|| __DATA_CONST.__const _kImg4DecodeLocalPolicyRsa4kSha384
+|| __DATA_CONST.__const _kImg4DecodeLocalPolicyRsa4kSha384Hacktivate
+|| __DATA_CONST.__const _kImg4DecodeSecureBootEc192Sha256
+|| __DATA_CONST.__const _kImg4DecodeSecureBootEc256Sha256
+|| __DATA_CONST.__const _kImg4DecodeSecureBootEc384Sha384
+|| __DATA_CONST.__const _kImg4DecodeSecureBootEc521Sha512
+|| __DATA_CONST.__const _kImg4DecodeSecureBootRsa1kSha1
+|| __DATA_CONST.__const _kImg4DecodeSecureBootRsa3kSha384
+|| __DATA_CONST.__const _kImg4DecodeSecureBootRsa4kSha384
+|| __DATA_CONST.__const _kImg4DecodeSecureBootRsa4kSha384X86
+|| __DATA_CONST.__const _kMAOptionsBAACACert
+|| __DATA_CONST.__const _kMAOptionsBAAKeychainAccessGroup
+|| __DATA_CONST.__const _kMAOptionsBAAKeychainLabel
+|| __DATA_CONST.__const _kMAOptionsBAAOIDSToInclude
+|| __DATA_CONST.__const _kMAOptionsBAARKCertificationPublicKey
+|| __DATA_CONST.__const _kMAOptionsBAARKProperties
+|| __DATA_CONST.__const _kMAOptionsBAARKPropertiesSignature
+|| __DATA_CONST.__const _kMAOptionsBAARKSigning
+|| __DATA_CONST.__const _kMAOptionsBAARKSigningPublicKey
+|| __DATA_CONST.__const _kMAOptionsBAASCRTAttestation
+|| __DATA_CONST.__const _kMAOptionsBAAUIKPublicKey
+|| __DATA_CONST.__const _kMAOptionsBAAValidity
+|| __DATA_CONST.__const _kMARKCertification
+|| __TEXT.__const _DERImg4CompressionItemSpecs
+|| __TEXT.__const _DERImg4ItemSpecs
+|| __TEXT.__const _DERImg4ManifestItemSpecs
+|| __TEXT.__const _DERImg4PayloadItemSpecs
+|| __TEXT.__const _DERImg4RestoreInfoItemSpecs
+|| __TEXT.__const _DERImg4UnsignedManifestItemSpecs
+|| __TEXT.__const _DERNumImg4CompressionItemSpecs
+|| __TEXT.__const _DERNumImg4ItemSpecs
+|| __TEXT.__const _DERNumImg4ManifestItemSpecs
+|| __TEXT.__const _DERNumImg4PayloadItemSpecs
+|| __TEXT.__const _DERNumImg4RestoreInfoItemSpecs
+|| __TEXT.__const _DERNumImg4UnsignedManifestItemSpecs
+|| __TEXT.__const _EC384_SHA384_LP_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _EC384_SHA384_LP_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _LOCAL_EC256_SHA256_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _LOCAL_EC256_SHA256_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _LOCAL_EC384_SHA384_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _LOCAL_EC384_SHA384_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _LOCAL_RSA4K_SHA384_LP_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _LOCAL_RSA4K_SHA384_LP_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _ROOT_CA_CERTIFICATE
+|| __TEXT.__const _ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _RSA3K_SHA384_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _RSA3K_SHA384_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _RSA4K_SHA384_LP_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _RSA4K_SHA384_LP_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _RSA4K_SHA384_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _RSA4K_SHA384_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _RSA4K_SHA384_X86_ROOT_CA_CERTIFICATE
+|| __TEXT.__const _RSA4K_SHA384_X86_ROOT_CA_CERTIFICATE_SIZE
+|| __TEXT.__const _kAMSupportChainValidationKeySize3k
+|| __TEXT.__const _kAMSupportChainValidationKeySize4k
+|| __TEXT.__text _DERImg4Decode
+|| __TEXT.__text _DERImg4DecodeContentFindItemWithTag
+|| __TEXT.__text _DERImg4DecodeFindInSequence
+|| __TEXT.__text _DERImg4DecodeFindProperty
+|| __TEXT.__text _DERImg4DecodeManifest
+|| __TEXT.__text _DERImg4DecodeParseManifestProperties
+|| __TEXT.__text _DERImg4DecodePayload
+|| __TEXT.__text _DERImg4DecodeProperty
+|| __TEXT.__text _DERImg4DecodeRestoreInfo
+|| __TEXT.__text _DERImg4DecodeTagCompare
+|| __TEXT.__text _DERImg4DecodeUnsignedManifest
+|| __TEXT.__text _DatatoHexString
+|| __TEXT.__text _Img4DecodeComputeDigest
+|| __TEXT.__text _Img4DecodeCopyManifestDigest
+|| __TEXT.__text _Img4DecodeCopyManifestHash
+|| __TEXT.__text _Img4DecodeCopyManifestHashWithCallback
+|| __TEXT.__text _Img4DecodeCopyManifestTrustedBootPolicyMeasurement
+|| __TEXT.__text _Img4DecodeCopyPayloadDigest
+|| __TEXT.__text _Img4DecodeCopyPayloadHash
+|| __TEXT.__text _Img4DecodeCopyPayloadHashWithCallback
+|| __TEXT.__text _Img4DecodeDigestFinal
+|| __TEXT.__text _Img4DecodeDigestInit
+|| __TEXT.__text _Img4DecodeDigestUpdate
+|| __TEXT.__text _Img4DecodeEvaluateCertificateProperties
+|| __TEXT.__text _Img4DecodeEvaluateDictionaryProperties
+|| __TEXT.__text _Img4DecodeEvaluateManifestProperties
+|| __TEXT.__text _Img4DecodeEvaluateObjectProperties
+|| __TEXT.__text _Img4DecodeEvaluateTrust
+|| __TEXT.__text _Img4DecodeEvaluateTrustWithCallbacks
+|| __TEXT.__text _Img4DecodeGetBooleanFromSection
+|| __TEXT.__text _Img4DecodeGetDataFromSection
+|| __TEXT.__text _Img4DecodeGetInteger64FromSection
+|| __TEXT.__text _Img4DecodeGetIntegerFromSection
+|| __TEXT.__text _Img4DecodeGetManifest
+|| __TEXT.__text _Img4DecodeGetObjectProperty
+|| __TEXT.__text _Img4DecodeGetObjectPropertyBoolean
+|| __TEXT.__text _Img4DecodeGetObjectPropertyData
+|| __TEXT.__text _Img4DecodeGetObjectPropertyInteger
+|| __TEXT.__text _Img4DecodeGetObjectPropertyInteger64
+|| __TEXT.__text _Img4DecodeGetObjectPropertyString
+|| __TEXT.__text _Img4DecodeGetPayload
+|| __TEXT.__text _Img4DecodeGetPayloadCompressionInfo
+|| __TEXT.__text _Img4DecodeGetPayloadKeybag
+|| __TEXT.__text _Img4DecodeGetPayloadType
+|| __TEXT.__text _Img4DecodeGetPayloadVersion
+|| __TEXT.__text _Img4DecodeGetPayloadVersionPropertyString
+|| __TEXT.__text _Img4DecodeGetPropertyBoolean
+|| __TEXT.__text _Img4DecodeGetPropertyData
+|| __TEXT.__text _Img4DecodeGetPropertyFromSection
+|| __TEXT.__text _Img4DecodeGetPropertyInteger
+|| __TEXT.__text _Img4DecodeGetPropertyInteger64
+|| __TEXT.__text _Img4DecodeGetRestoreInfoBoolean
+|| __TEXT.__text _Img4DecodeGetRestoreInfoData
+|| __TEXT.__text _Img4DecodeGetRestoreInfoInteger
+|| __TEXT.__text _Img4DecodeGetRestoreInfoInteger64
+|| __TEXT.__text _Img4DecodeInit
+|| __TEXT.__text _Img4DecodeInitManifest
+|| __TEXT.__text _Img4DecodeInitPayload
+|| __TEXT.__text _Img4DecodeInitUnsignedManifest
+|| __TEXT.__text _Img4DecodeManifestExists
+|| __TEXT.__text _Img4DecodeParseLengthFromBuffer
+|| __TEXT.__text _Img4DecodeParseLengthFromBufferWithTag
+|| __TEXT.__text _Img4DecodePayloadCompressionInfoExists
+|| __TEXT.__text _Img4DecodePayloadExists
+|| __TEXT.__text _Img4DecodePayloadKeybagExists
+|| __TEXT.__text _Img4DecodePerformManifestTrustEvaluationWithCallbacks
+|| __TEXT.__text _Img4DecodePerformTrustEvaluatation
+|| __TEXT.__text _Img4DecodePerformTrustEvaluatationWithCallbacks
+|| __TEXT.__text _Img4DecodePerformTrustEvaluation
+|| __TEXT.__text _Img4DecodePerformTrustEvaluationWithCallbacks
+|| __TEXT.__text _Img4DecodeRestoreInfoExists
+|| __TEXT.__text _Img4DecodeSectionExists
+|| __TEXT.__text ___getSensorSerialNumber
+|| __TEXT.__text ___getSensorSerialNumberReal
+|| __TEXT.__text ___performCommand
+|| __TEXT.__text _base64EncodedString
+|| __TEXT.__text _clean
+|| __TEXT.__text _compareSNs
+|| __TEXT.__text _convertDataToDictionary
+|| __TEXT.__text _convertDictionaryToData
+|| __TEXT.__text _create_request_payload_and_signed_data
+|| __TEXT.__text _fdrPut
+|| __TEXT.__text _getCamera
+|| __TEXT.__text _getChipID
+|| __TEXT.__text _getDigestFromAPTicket
+|| __TEXT.__text _getECID
+|| __TEXT.__text _getGestaltSNs
+|| __TEXT.__text _getHWModel
+|| __TEXT.__text _hasMesa
+|| __TEXT.__text _img4_verify_signature_with_chain
+|| __TEXT.__text _initFDRTrustObject
+|| __TEXT.__text _initialize
+|| __TEXT.__text _makeFDROptions
+|| __TEXT.__text _makeRequestPayload
+|| __TEXT.__text _newLog
+|| __TEXT.__text _newResponseDictionary
+|| __TEXT.__text _responseDictionary
+|| __TEXT.__text _sha1_digest
+|| __TEXT.__text _sign_data
+|| __TEXT.__text _stringFromHexString
+|| __TEXT.__text _stringFromNSError
+|| __TEXT.__text _verify_chain_img4_ec_v1
+|| __TEXT.__text _verify_chain_img4_ecdsa256
+|| __TEXT.__text _verify_chain_img4_ecdsa384
+|| __TEXT.__text _verify_chain_img4_ecdsa384_hacktivate
+|| __TEXT.__text _verify_chain_img4_ecdsa384_local_policy
+|| __TEXT.__text _verify_chain_img4_tatsu_local_policy
+|| __TEXT.__text _verify_chain_img4_tatsu_local_policy_hacktivate
+|| __TEXT.__text _verify_chain_img4_v1
+|| __TEXT.__text _verify_chain_img4_v2
+|| __TEXT.__text _verify_chain_img4_v2_rsa3k
+|| __TEXT.__text _verify_chain_img4_x86
+|| __TEXT.__text _verify_signature_ecdsa
+|| __TEXT.__text _verify_signature_rsa
+|| __TEXT.__text _verify_signature_rsa3k
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFCopyTypeIDDescription
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDataGetTypeID
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryGetValueIfPresent
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFErrorCopyDescription
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopGetCurrent
+__ CoreFoundation: _CFRunLoopRunInMode
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringCreateWithFormatAndArguments
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOKit: _IOConnectCallMethod
+__ IOKit: _IOConnectCallScalarMethod
+__ IOKit: _IOConnectCallStructMethod
+__ IOKit: _IOConnectSetNotificationPort
+__ IOKit: _IOIteratorNext
+__ IOKit: _IOMasterPort
+__ IOKit: _IONotificationPortCreate
+__ IOKit: _IONotificationPortDestroy
+__ IOKit: _IONotificationPortGetRunLoopSource
+__ IOKit: _IOObjectRelease
+__ IOKit: _IORegistryEntryCreateCFProperties
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IORegistryEntryFromPath
+__ IOKit: _IORegistryEntrySearchCFProperty
+__ IOKit: _IOServiceAddMatchingNotification
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ MSUDataAccessor: _OBJC_CLASS_$_MSUDataAccessor
+__ Security: _oidAnsip384r1
+__ Security: _oidAnsip521r1
+__ Security: _oidCommonName
+__ Security: _oidEcPrime192v1
+__ Security: _oidEcPrime256v1
+__ Security: _oidEcPubKey
+__ Security: _oidRsa
+__ Security: _oidSha1
+__ Security: _oidSha1Rsa
+__ Security: _oidSha256
+__ Security: _oidSha256Ecdsa
+__ Security: _oidSha384
+__ Security: _oidSha384Ecdsa
+__ Security: _oidSha384Rsa
+__ Security: _oidSha512
+__ Security: _oidSha512Ecdsa
+__ libFDR.dylib: _AMFDRCreateInstanceString
+__ libFDR.dylib: _AMFDRCreateWithOptions
+__ libFDR.dylib: _AMFDRDataCopyTrustObject
+__ libFDR.dylib: _AMFDRDataPut
+__ libFDR.dylib: _AMFDRGetInfo
+__ libFDR.dylib: _AMFDRLogSetHandler
+__ libFDR.dylib: _AMFDRSealingMapGetFDRDataVersionForDevice
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetProductType
+__ libSystem.B.dylib: _CCDigest
+__ libSystem.B.dylib: _CCRandomCopyBytes
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _bootstrap_port
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _cc_clear
+__ libSystem.B.dylib: _ccder_decode_constructed_tl
+__ libSystem.B.dylib: _ccder_decode_len
+__ libSystem.B.dylib: _ccder_decode_sequence_tl
+__ libSystem.B.dylib: _ccder_decode_tag
+__ libSystem.B.dylib: _ccder_decode_tl
+__ libSystem.B.dylib: _ccder_encode_body
+__ libSystem.B.dylib: _ccder_encode_constructed_tl
+__ libSystem.B.dylib: _ccder_encode_tl
+__ libSystem.B.dylib: _ccder_sizeof
+__ libSystem.B.dylib: _ccdigest
+__ libSystem.B.dylib: _ccdigest_init
+__ libSystem.B.dylib: _ccdigest_update
+__ libSystem.B.dylib: _ccec_compact_import_pub
+__ libSystem.B.dylib: _ccec_cp_256
+__ libSystem.B.dylib: _ccec_cp_384
+__ libSystem.B.dylib: _ccec_export_pub
+__ libSystem.B.dylib: _ccec_get_cp
+__ libSystem.B.dylib: _ccec_import_pub
+__ libSystem.B.dylib: _ccec_keysize_is_supported
+__ libSystem.B.dylib: _ccec_verify
+__ libSystem.B.dylib: _ccec_x963_import_pub_size
+__ libSystem.B.dylib: _cced25519_verify
+__ libSystem.B.dylib: _ccmd5_ltc_di
+__ libSystem.B.dylib: _ccn_read_uint
+__ libSystem.B.dylib: _ccpbkdf2_hmac
+__ libSystem.B.dylib: _ccrsa_verify_pkcs1v15
+__ libSystem.B.dylib: _ccsha1_ltc_di
+__ libSystem.B.dylib: _ccsha256_di
+__ libSystem.B.dylib: _ccsha256_ltc_di
+__ libSystem.B.dylib: _ccsha384_ltc_di
+__ libSystem.B.dylib: _ccsha512_di
+__ libSystem.B.dylib: _ccsha512_ltc_di
+__ libSystem.B.dylib: _cczp_init
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseeko
+__ libSystem.B.dylib: _ftello
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _kCCRandomDefault
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _memset_s
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _open_dprotected_np
+__ libSystem.B.dylib: _read
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _sleep
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _sprintf
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _syslog
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: dyld_stub_binder
+__ libamsupport.dylib: _AMSupportCopyHexStringFromData
+__ libamsupport.dylib: _AMSupportDigestSha512
+__ libamsupport.dylib: _AMSupportLogSetHandler
+__ libamsupport.dylib: _DERAlgorithmIdItemSpecs
+__ libamsupport.dylib: _DERAttributeTypeAndValueItemSpecs
+__ libamsupport.dylib: _DERDecodeItem
+__ libamsupport.dylib: _DERDecodeItemPartialBufferGetLength
+__ libamsupport.dylib: _DERDecodeSeqContentInit
+__ libamsupport.dylib: _DERDecodeSeqInit
+__ libamsupport.dylib: _DERDecodeSeqNext
+__ libamsupport.dylib: _DERExtensionItemSpecs
+__ libamsupport.dylib: _DERNumAlgorithmIdItemSpecs
+__ libamsupport.dylib: _DERNumAttributeTypeAndValueItemSpecs
+__ libamsupport.dylib: _DERNumExtensionItemSpecs
+__ libamsupport.dylib: _DERNumRSAPubKeyPKCS1ItemSpecs
+__ libamsupport.dylib: _DERNumSignedCertCrlItemSpecs
+__ libamsupport.dylib: _DERNumSubjPubKeyInfoItemSpecs
+__ libamsupport.dylib: _DERNumTBSCertItemSpecs
+__ libamsupport.dylib: _DEROidCompare
+__ libamsupport.dylib: _DERParseBitString
+__ libamsupport.dylib: _DERParseBoolean
+__ libamsupport.dylib: _DERParseInteger
+__ libamsupport.dylib: _DERParseInteger64
+__ libamsupport.dylib: _DERParseSequence
+__ libamsupport.dylib: _DERParseSequenceContent
+__ libamsupport.dylib: _DERRSAPubKeyPKCS1ItemSpecs
+__ libamsupport.dylib: _DERSignedCertCrlItemSpecs
+__ libamsupport.dylib: _DERSubjPubKeyInfoItemSpecs
+__ libamsupport.dylib: _DERTBSCertItemSpecs
+__ libamsupport.dylib: _oidAppleImg4ManifestCertSpec
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libz.1.dylib: _inflate
+__ libz.1.dylib: _inflateEnd
+__ libz.1.dylib: _inflateInit2_
+HSComponentCheckSEID : HSComponentCheckBase
+  // instance methods
+  -[HSComponentCheckSEID getSEID]
+  -[HSComponentCheckSEID querySN]
+
+
+HSComponentCheckMGSN : HSComponentCheckBase
+  // instance methods
+  -[HSComponentCheckMGSN querySN]
+
+
+HSComponentCheckMesa : HSComponentCheckBase
+  // class methods
+  +[HSComponentCheckMesa sharedSingleton]
+
+  // instance methods
+  -[HSComponentCheckMesa init]
+  -[HSComponentCheckMesa .cxx_destruct]
+  -[HSComponentCheckMesa querySN]
+  -[HSComponentCheckMesa getMesaSensorSerialNumber:]
+  -[HSComponentCheckMesa getUniqueChipId:]
+  -[HSComponentCheckMesa getUniqueDeviceId:]
+
+
+HSComponentCheckBaseband : HSComponentCheckBase
+  // instance methods
+  -[HSComponentCheckBaseband .cxx_destruct]
+  -[HSComponentCheckBaseband querySN]
+  -[HSComponentCheckBaseband getBasebandInfo:response:]
+
+
+HSComponentCheckBase : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[HSComponentCheckBase init]
+  -[HSComponentCheckBase setup]
+  -[HSComponentCheckBase querySN]
+  -[HSComponentCheckBase setupInRamdisk]
+
+
+HSComponentCheckTristar : HSComponentCheckBase
+  // class methods
+  +[HSComponentCheckTristar sharedSingleton]
+
+  // instance methods
+  -[HSComponentCheckTristar init]
+  -[HSComponentCheckTristar .cxx_destruct]
+  -[HSComponentCheckTristar querySN]
+  -[HSComponentCheckTristar getTristarID:]
+
+
+HSComponentCheck : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[HSComponentCheck getContext]
+  +[HSComponentCheck setContext:]
+  +[HSComponentCheck sharedSingleton]
+
+  // instance methods
+  -[HSComponentCheck init]
+  -[HSComponentCheck createChallenge]
+  -[HSComponentCheck generateSignedKETS:status:errorStr:]
+  -[HSComponentCheck calculateSHA512:]
+  -[HSComponentCheck processComponentCheckCommand:response:]
+
+
+HSComponentCheckCamera : HSComponentCheckBase
+  // instance methods
+  -[HSComponentCheckCamera setup]
+  -[HSComponentCheckCamera querySN]
+  -[HSComponentCheckCamera setupInRamdisk]
+
+
+HSComponentCheckMGKey : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *key
+ @property  NSArray *keys
+ @property  @? transform
+
+  // class methods
+  +[HSComponentCheckMGKey key:]
+  +[HSComponentCheckMGKey key:transform:]
+  +[HSComponentCheckMGKey keys:transform:]
+
+  // instance methods
+  -[HSComponentCheckMGKey keys]
+  -[HSComponentCheckMGKey setTransform:]
+  -[HSComponentCheckMGKey setKeys:]
+  -[HSComponentCheckMGKey .cxx_destruct]
+  -[HSComponentCheckMGKey setKey:]
+  -[HSComponentCheckMGKey key]
+  -[HSComponentCheckMGKey transform]
+
+
+HSComponentCheckDeviceSN : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[HSComponentCheckDeviceSN init]
+  -[HSComponentCheckDeviceSN getSNs]
+
+
+HSComponentCheckBattery : HSComponentCheckBase
+  // instance methods
+  -[HSComponentCheckBattery querySN]
+  -[HSComponentCheckBattery getBatterySN]
+
+
+01 00 0140 /System/Library/PrivateFrameworks/MSUDataAccessor.framework/MSUDataAccessor: MSUDataAccessor 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0a00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

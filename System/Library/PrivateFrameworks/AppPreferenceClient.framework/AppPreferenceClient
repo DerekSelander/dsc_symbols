@@ -1,0 +1,123 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_APRAppPreferenceClient
+|| __DATA.__objc_data _OBJC_CLASS_$_APRAppPreferenceResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_APRAppPreferenceTypes
+|| __DATA.__objc_data _OBJC_CLASS_$_APRIntentStreamUpdateClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_APRAppPreferenceClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_APRAppPreferenceResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_APRAppPreferenceTypes
+|| __DATA.__objc_data _OBJC_METACLASS_$_APRIntentStreamUpdateClient
+|| __DATA_CONST.__const _kAPRAppPreferenceInterfaceMachServiceName
+|| __DATA_CONST.__const _kAPRIntentStreamUpdateInterfaceMachServiceName
+|| __TEXT.__const _AppPreferenceClientVersionNumber
+|| __TEXT.__const _AppPreferenceClientVersionString
+|| __TEXT.__text _APRAppPreferenceInterface
+|| __TEXT.__text _APRIntentStreamUpdateInterface
+__ AppPredictionClient: _OBJC_CLASS_$_ATXResponse
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+APRAppPreferenceClient : NSObject /usr/lib/libSystem.B.dylib <APRAppPreferenceInterface>
+  // class methods
+  +[APRAppPreferenceClient sharedInstance]
+
+  // instance methods
+  -[APRAppPreferenceClient prewarmWithReply:]
+  -[APRAppPreferenceClient getAppPredictionsForIntent:candidateBundleIdentifiers:reply:]
+  -[APRAppPreferenceClient getAppPredictionsForIntent:candidateBundleIdentifiers:limit:reply:]
+  -[APRAppPreferenceClient sendFeedbackForIntent:aprResponse:]
+  -[APRAppPreferenceClient getAppPredictionsForIntent:reply:]
+
+
+APRAppPreferenceTypes : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[APRAppPreferenceTypes engagementTypeToString:]
+  +[APRAppPreferenceTypes siriExperienceToString:]
+  +[APRAppPreferenceTypes feedbackSourceToString:]
+  +[APRAppPreferenceTypes stringToSiriExperience:]
+
+
+APRAppPreferenceResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *intentType
+ @property  unsigned long experience
+ @property  ATXResponse *atxResponse
+ @property  NSString *ABGroup
+ @property  NSArray *bundleIds
+ @property  unsigned long feedbackSource
+ @property  unsigned long engagementType
+ @property  NSString *engagedBundleId
+
+  // class methods
+  +[APRAppPreferenceResponse supportsSecureCoding]
+
+  // instance methods
+  -[APRAppPreferenceResponse jsonDescription]
+  -[APRAppPreferenceResponse sessionId]
+  -[APRAppPreferenceResponse json]
+  -[APRAppPreferenceResponse .cxx_destruct]
+  -[APRAppPreferenceResponse encodeWithCoder:]
+  -[APRAppPreferenceResponse setIntentType:]
+  -[APRAppPreferenceResponse jsonData]
+  -[APRAppPreferenceResponse engagementType]
+  -[APRAppPreferenceResponse isEqual:]
+  -[APRAppPreferenceResponse bundleIds]
+  -[APRAppPreferenceResponse ABGroup]
+  -[APRAppPreferenceResponse initWithCoder:]
+  -[APRAppPreferenceResponse intentType]
+  -[APRAppPreferenceResponse engagedBundleId]
+  -[APRAppPreferenceResponse isEqualToAppPreferenceResponse:]
+  -[APRAppPreferenceResponse initWithAtxResponse:abGroup:experience:intentType:]
+  -[APRAppPreferenceResponse updateFeedbackSource:engagementType:engagedBundleId:]
+  -[APRAppPreferenceResponse updateExperience:]
+  -[APRAppPreferenceResponse atxResponse]
+  -[APRAppPreferenceResponse experience]
+  -[APRAppPreferenceResponse setExperience:]
+  -[APRAppPreferenceResponse feedbackSource]
+
+
+APRIntentStreamUpdateClient : NSObject /usr/lib/libSystem.B.dylib <APRIntentStreamUpdateInterface>
+  // class methods
+  +[APRIntentStreamUpdateClient sharedInstance]
+
+  // instance methods
+  -[APRIntentStreamUpdateClient notifyAboutIntentStreamChangeWithReply:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient: ATXResponse 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

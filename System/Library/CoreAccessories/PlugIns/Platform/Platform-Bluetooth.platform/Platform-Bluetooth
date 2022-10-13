@@ -1,0 +1,165 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCPlatformBluetoothStatusAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCPlatformPluginBluetooth
+|| __DATA.__objc_data _OBJC_CLASS_$__ACCBluetoothStatusComponent
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCPlatformBluetoothStatusAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCPlatformPluginBluetooth
+|| __DATA.__objc_data _OBJC_METACLASS_$__ACCBluetoothStatusComponent
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoAccessoryUID
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoEnabled
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoID
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoMACAddr
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoName
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentInfoUID
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentUpdateInfoAccessoryUID
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentUpdateInfoProfiles
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentUpdateInfoUID
+|| __DATA_CONST.__const _ACCBluetoothStatusComponentUpdateNotification
+|| __TEXT.__text __sendBluetoothConnectionStatusNotification
+|| __TEXT.__text _init_logging
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ MobileBluetooth: _BTAccessoryManagerGetDefault
+__ MobileBluetooth: _BTAccessoryManagerPlugInDevice
+__ MobileBluetooth: _BTAccessoryManagerRegisterDevice
+__ MobileBluetooth: _BTAccessoryManagerUnplugDevice
+__ MobileBluetooth: _BTDeviceAddressFromString
+__ MobileBluetooth: _BTDeviceConnect
+__ MobileBluetooth: _BTDeviceDisconnect
+__ MobileBluetooth: _BTDeviceFromAddress
+__ MobileBluetooth: _BTDeviceGetAddressString
+__ MobileBluetooth: _BTDeviceGetConnectedServices
+__ MobileBluetooth: _BTDeviceGetName
+__ MobileBluetooth: _BTLocalDeviceAddCallbacks
+__ MobileBluetooth: _BTLocalDeviceGetConnectedDevices
+__ MobileBluetooth: _BTLocalDeviceGetDefault
+__ MobileBluetooth: _BTLocalDeviceGetModulePower
+__ MobileBluetooth: _BTServiceAddCallbacks
+__ MobileBluetooth: _BTSessionAttachWithQueue
+__ MobileBluetooth: _BTSessionDetachWithQueue
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+_ACCBluetoothStatusComponent : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *accessoryUID
+ @property  NSString *componentUID
+ @property  NSData *macAddr
+ @property  NSString *name
+ @property  ^{BTAccessoryManagerImpl=} btAccessoryManager
+ @property  ^{BTDeviceImpl=} btDevice
+ @property  BOOL needToUnplugBTDevice
+
+  // class methods
+  +[_ACCBluetoothStatusComponent createComponentFromDict:]
+
+  // instance methods
+  -[_ACCBluetoothStatusComponent .cxx_destruct]
+  -[_ACCBluetoothStatusComponent name]
+  -[_ACCBluetoothStatusComponent macAddr]
+  -[_ACCBluetoothStatusComponent accessoryUID]
+  -[_ACCBluetoothStatusComponent initWithUID:macAddr:name:forAccessoryUID:]
+  -[_ACCBluetoothStatusComponent componentUID]
+  -[_ACCBluetoothStatusComponent btAccessoryManager]
+  -[_ACCBluetoothStatusComponent setBtAccessoryManager:]
+  -[_ACCBluetoothStatusComponent btDevice]
+  -[_ACCBluetoothStatusComponent setBtDevice:]
+  -[_ACCBluetoothStatusComponent needToUnplugBTDevice]
+  -[_ACCBluetoothStatusComponent setNeedToUnplugBTDevice:]
+
+
+ACCPlatformBluetoothStatusAccessory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *accessoryUID
+ @property  NSMutableDictionary *componentList
+
+  // instance methods
+  -[ACCPlatformBluetoothStatusAccessory .cxx_destruct]
+  -[ACCPlatformBluetoothStatusAccessory accessoryUID]
+  -[ACCPlatformBluetoothStatusAccessory componentList]
+  -[ACCPlatformBluetoothStatusAccessory initWithUID:]
+
+
+ACCPlatformPluginBluetooth : NSObject /usr/lib/libSystem.B.dylib <ACCPlatformBluetoothStatusPluginProtocol, ACCPlatformBluetoothAccessoryInformationPluginProtocol>
+ @property  BOOL isRunning
+ @property  BOOL btUpdatesStarted
+ @property  ^{BTSessionImpl=} btSession
+ @property  NSObject<OS_dispatch_queue> *btEventQueue
+ @property  NSMutableDictionary *accessoryList
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *pluginName
+
+  // instance methods
+  -[ACCPlatformPluginBluetooth stopPlugin]
+  -[ACCPlatformPluginBluetooth startPlugin]
+  -[ACCPlatformPluginBluetooth setIsRunning:]
+  -[ACCPlatformPluginBluetooth initPlugin]
+  -[ACCPlatformPluginBluetooth pluginName]
+  -[ACCPlatformPluginBluetooth updateBTComponent:forAccessory:withEnabledState:]
+  -[ACCPlatformPluginBluetooth setBtEventQueue:]
+  -[ACCPlatformPluginBluetooth .cxx_destruct]
+  -[ACCPlatformPluginBluetooth accessoryAttached:]
+  -[ACCPlatformPluginBluetooth iterateRegisteredComponentsForKnownAddresses:allOFF:]
+  -[ACCPlatformPluginBluetooth stopCheckingForUpdates:forAccessory:]
+  -[ACCPlatformPluginBluetooth getAccessoryList]
+  -[ACCPlatformPluginBluetooth btSession]
+  -[ACCPlatformPluginBluetooth accessoryList]
+  -[ACCPlatformPluginBluetooth nameForMacAddress:]
+  -[ACCPlatformPluginBluetooth performInit]
+  -[ACCPlatformPluginBluetooth accessoryDetached:]
+  -[ACCPlatformPluginBluetooth btEventQueue]
+  -[ACCPlatformPluginBluetooth setBtUpdatesStarted:]
+  -[ACCPlatformPluginBluetooth pluginBTDevice:btAccessoryManager:btDevice:]
+  -[ACCPlatformPluginBluetooth unplugBTDevice:btAccessoryManager:btDevice:]
+  -[ACCPlatformPluginBluetooth setBtSession:]
+  -[ACCPlatformPluginBluetooth isRunning]
+  -[ACCPlatformPluginBluetooth startCheckingForUpdates:forAccessory:]
+  -[ACCPlatformPluginBluetooth setAccessoryList:]
+  -[ACCPlatformPluginBluetooth btUpdatesStarted]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

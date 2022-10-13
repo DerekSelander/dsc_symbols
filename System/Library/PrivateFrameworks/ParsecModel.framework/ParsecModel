@@ -1,0 +1,163 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PARSessionEngagementsByTrigger
+|| __DATA.__objc_data _OBJC_METACLASS_$_PARSessionEngagementsByTrigger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARCategory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARCollectionStartEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PAREvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARImagesPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSafariPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSpotlightPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARUsageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARCategory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARCollectionStartEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PAREvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARImagesPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARSafariPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARSpotlightPropensity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARUsageEvent
+|| __TEXT.__const _ParsecModelVersionNumber
+|| __TEXT.__const _ParsecModelVersionString
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_storeStrong
+PARSessionEngagementsByTrigger : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short go
+ @property  short tap
+ @property  short client
+ @property  NSDate *timestamp
+ @property  BOOL isTopHit
+ @property  BOOL isSuggestion
+
+  // class methods
+  +[PARSessionEngagementsByTrigger fetchRequest]
+
+
+PAREvent : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSDate *timestamp
+
+  // class methods
+  +[PAREvent fetchRequest]
+
+
+PARFlushEvent : PAREvent
+ @property  int type
+
+  // class methods
+  +[PARFlushEvent fetchRequest]
+
+  // instance methods
+  -[PARFlushEvent setType:]
+  -[PARFlushEvent type]
+
+
+PARUsageEvent : PAREvent
+ @property  PARCategory *usageCategory
+
+  // class methods
+  +[PARUsageEvent fetchRequest]
+
+  // instance methods
+  -[PARUsageEvent .cxx_destruct]
+  -[PARUsageEvent usageCategory]
+  -[PARUsageEvent setUsageCategory:]
+
+
+PARSpotlightPropensity : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short appLaunch
+ @property  short onDeviceAddressBookData
+ @property  short onDeviceOtherPersonalData
+ @property  short other
+ @property  short parsec
+ @property  short parsecAppStore
+ @property  short parsecMaps
+ @property  short parsecNews
+ @property  short parsecOther
+ @property  short parsecStocks
+ @property  short parsecWeather
+ @property  short parsecWeb
+ @property  short parsecWiki
+ @property  short punchout
+ @property  short querySuggestion
+ @property  short siriSuggestions
+ @property  short thirdPartyInAppContent
+ @property  NSDate *timestamp
+ @property  short webSuggestions
+
+  // class methods
+  +[PARSpotlightPropensity fetchRequest]
+
+
+PARCollectionStartEvent : PAREvent
+  // class methods
+  +[PARCollectionStartEvent fetchRequest]
+
+
+PARImagesPropensity : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short image
+ @property  short other
+ @property  short querySuggestion
+ @property  short recentResult
+ @property  NSDate *timestamp
+ @property  short zkw
+
+  // class methods
+  +[PARImagesPropensity fetchRequest]
+
+
+PARCategory : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  int clientIntVal
+ @property  BOOL isGoTo
+ @property  BOOL isPunchout
+ @property  BOOL isTop
+ @property  int resultTypeIntVal
+ @property  PARUsageEvent *usageEvent
+
+  // class methods
+  +[PARCategory fetchRequest]
+
+  // instance methods
+  -[PARCategory isTop]
+  -[PARCategory isGoTo]
+  -[PARCategory clientIntVal]
+  -[PARCategory setClientIntVal:]
+  -[PARCategory setIsGoTo:]
+  -[PARCategory isPunchout]
+  -[PARCategory setIsPunchout:]
+  -[PARCategory setIsTop:]
+  -[PARCategory resultTypeIntVal]
+  -[PARCategory setResultTypeIntVal:]
+
+
+PARSafariPropensity : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short goToSite
+ @property  short localGoto
+ @property  short localTap
+ @property  short other
+ @property  short parsecAppStore
+ @property  short parsecGoto
+ @property  short parsecMaps
+ @property  short parsecNews
+ @property  short parsecOther
+ @property  short parsecStocks
+ @property  short parsecTap
+ @property  short parsecWeather
+ @property  short parsecWeb
+ @property  short parsecWiki
+ @property  short thirdPartyCompletionOrRecentSearch
+ @property  short thirdPartyGoto
+ @property  short thirdPartyTap
+ @property  NSDate *timestamp
+
+  // class methods
+  +[PARSafariPropensity fetchRequest]
+
+
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 

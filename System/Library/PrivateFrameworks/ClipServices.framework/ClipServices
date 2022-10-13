@@ -1,0 +1,1634 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSAnalyticsLogger
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSAppBundleInstaller
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSAppClipRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipDataSQLiteStore
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipEntryPointRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipEventsReporter
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipInvocationPolicy
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipLaunchOptions
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipMetadata
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipMetadataRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSClipRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSDeveloperOverride
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSImageLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSInstallationController
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSLocationConfirmationRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSLocationProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSMapsImageLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSOpenClipCardPresenter
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSPromise
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSSession
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSSessionConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSSessionManager
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSSessionProxy
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSSessionRemoteObserver
+|| __DATA.__objc_data _OBJC_CLASS_$_CPSUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSAnalyticsLogger
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSAppBundleInstaller
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSAppClipRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipDataSQLiteStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipEntryPointRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipEventsReporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipInvocationPolicy
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipLaunchOptions
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipMetadata
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipMetadataRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSClipRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSDeveloperOverride
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSImageLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSInstallationController
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSLocationConfirmationRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSLocationProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSMapsImageLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSOpenClipCardPresenter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSPromise
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSSession
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSSessionConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSSessionManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSSessionProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSSessionRemoteObserver
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPSUtilities
+|| __DATA_CONST.__const _CPSAppClipBundleIdentifierPrefix
+|| __DATA_CONST.__const _CPSBypassAccountEligibilityCheckKey
+|| __DATA_CONST.__const _CPSClipMetadataFetchIgnoresCacheKey
+|| __DATA_CONST.__const _CPSClipMetadataKeyABRClipAction
+|| __DATA_CONST.__const _CPSClipMetadataKeyABRClipCaption
+|| __DATA_CONST.__const _CPSClipMetadataKeyABRClipHeroImage
+|| __DATA_CONST.__const _CPSClipMetadataKeyABRClipName
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipBundleID
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipBusinessIconStyleAttributes
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipBusinessIconURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipBuyParams
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipIPAURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipIncompatibleWithCurrentDevice
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipMapItemMUID
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipMinimumOSVersion
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipRequestURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipRequestsLocationConfirmationPermission
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipRequestsNotificationPermission
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipTargetURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipURLHash
+|| __DATA_CONST.__const _CPSClipMetadataKeyClipVerifiedAssociatedDomains
+|| __DATA_CONST.__const _CPSClipMetadataKeyDeviceCapabilitiesDontMatch
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppBundleID
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppCaption
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppContentRating
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppIconCachedFilePath
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppIconURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppName
+|| __DATA_CONST.__const _CPSClipMetadataKeyFullAppStoreURL
+|| __DATA_CONST.__const _CPSClipMetadataKeyHasAppStoreMetadata
+|| __DATA_CONST.__const _CPSClipMetadataKeyHasBusinessItemMetadata
+|| __DATA_CONST.__const _CPSClipMetadataKeyInvocationPolicy
+|| __DATA_CONST.__const _CPSClipMetadataKeyItemID
+|| __DATA_CONST.__const _CPSClipMetadataKeyPoweredByThirdParty
+|| __DATA_CONST.__const _CPSClipMetadataKeyProvider
+|| __DATA_CONST.__const _CPSClipMetadataKeyStoreClipCaption
+|| __DATA_CONST.__const _CPSClipMetadataKeyStoreClipHeroImage
+|| __DATA_CONST.__const _CPSClipMetadataKeyStoreClipName
+|| __DATA_CONST.__const _CPSClipMetadataKeyWebClipID
+|| __DATA_CONST.__const _CPSClipShouldStallProgressKey
+|| __DATA_CONST.__const _CPSClipURLIsEnabledPreferenceKey
+|| __DATA_CONST.__const _CPSClipUsesDemoMetadataKey
+|| __DATA_CONST.__const _CPSClipUsesDemoProgressFillKey
+|| __DATA_CONST.__const _CPSDaemonMachServiceName
+|| __DATA_CONST.__const _CPSErrorDomain
+|| __DATA_CONST.__const _CPSFullScreenWebAppBundleIdentifierPrefix
+|| __DATA_CONST.__const _CPSIsDeveloperOverrideKey
+|| __DATA_CONST.__const _CPSLaunchAlertViewControllerName
+|| __DATA_CONST.__const _CPSNotificationNameTestComplete
+|| __DATA_CONST.__const _CPSSessionAvailabilityOptionsKeyLaunchReason
+|| __DATA_CONST.__const _CPSSessionAvailabilityOptionsKeyOriginIsControlCenter
+|| __DATA_CONST.__const _CPSSessionAvailabilityOptionsKeyReferrerBundleID
+|| __DATA_CONST.__const _CPSSessionAvailabilityOptionsKeyRegisteredForTest
+|| __DATA_CONST.__const _CPSSessionAvailabilityOptionsKeySourceBundleID
+|| __DATA_CONST.__const _CPSSessionLaunchReasonAnalyticsAppReferral
+|| __DATA_CONST.__const _CPSSessionLaunchReasonAnalyticsWebReferral
+|| __DATA_CONST.__const _CPSSessionLaunchReasonClipTester
+|| __DATA_CONST.__const _CPSSessionLaunchReasonDeveloperTools
+|| __DATA_CONST.__const _CPSSessionLaunchReasonLocationBased
+|| __DATA_CONST.__const _CPSSessionLaunchReasonMail
+|| __DATA_CONST.__const _CPSSessionLaunchReasonMaps
+|| __DATA_CONST.__const _CPSSessionLaunchReasonMessages
+|| __DATA_CONST.__const _CPSSessionLaunchReasonNFC
+|| __DATA_CONST.__const _CPSSessionLaunchReasonOther
+|| __DATA_CONST.__const _CPSSessionLaunchReasonQR
+|| __DATA_CONST.__const _CPSSessionLaunchReasonSafari
+|| __DATA_CONST.__const _CPSSessionLaunchReasonSiri
+|| __DATA_CONST.__const _CPSSessionLaunchReasonSpotlight
+|| __DATA_CONST.__const _CPSSessionLaunchReasonSpringBoard
+|| __DATA_CONST.__const _CPSSingleWhiteSpaceString
+|| __DATA_CONST.__const _CPSSkipValidatingAssociatedDomainsKey
+|| __DATA_CONST.__const _CPSViewServiceBundleIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSAppInfoFetcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSAppInstaller
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSBusinessItemFetcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSClipCleanupManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSClipURL
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSImageDownloader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSImageStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSWebClip
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPSWebClipStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSAppInfoFetcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSAppInstaller
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSBusinessItemFetcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSClipCleanupManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSClipURL
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSImageDownloader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSImageStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSWebClip
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPSWebClipStore
+|| __TEXT.__const _CPSClipIconSize
+|| __TEXT.__text _CPSAccountPolicyOverride
+|| __TEXT.__text _CPSBypassAccountEligibilityCheck
+|| __TEXT.__text _CPSClipMetadataFetchIgnoresCache
+|| __TEXT.__text _CPSClipsFeatureEnabled
+|| __TEXT.__text _CPSConfigurationContextForObject
+|| __TEXT.__text _CPSShouldValidateAssociatedDomains
+|| __TEXT.__text _CPSUsesDemoProgressFill
+|| __TEXT.__text __CPSLocalizedString
+__ AppStoreDaemon: _ASDErrorDomain
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDAccountStatusTask
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDClipCardMetricsEvent
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDClipMetricsCoordinator
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDClipRequest
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDClipRestrictionsTask
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDClipSession
+__ AppStoreDaemon: _OBJC_CLASS_$_ASDMediaClipTask
+__ AppSupport: _CPCopyBundleIdentifierAndTeamFromApplicationIdentifier
+__ AppSupport: _CPSharedResourcesDirectory
+__ AppleMediaServices: _AMSErrorDomain
+__ AppleMediaServices: _OBJC_CLASS_$_AMSBag
+__ AppleMediaServices: _OBJC_CLASS_$_AMSBagKeySet
+__ AppleMediaServices: _OBJC_CLASS_$_AMSProcessInfo
+__ BaseBoard: _OBJC_CLASS_$_BSAction
+__ BaseBoard: _OBJC_CLASS_$_BSActionResponse
+__ BaseBoard: _OBJC_CLASS_$_BSMutableSettings
+__ BusinessChatService: _OBJC_CLASS_$_BCSBusinessQueryService
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _CFBundleCopyInfoDictionaryForURL
+__ CoreFoundation: _CFDataCreateMutable
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSURLContentModificationDateKey
+__ CoreFoundation: _NSURLCreationDateKey
+__ CoreFoundation: _NSURLIsExcludedFromBackupKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __CFBundleCopyBundleURLForExecutableURL
+__ CoreFoundation: __CFBundleCopyFrameworkURLForExecutablePath
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreGraphics: _CGBitmapContextCreate
+__ CoreGraphics: _CGBitmapContextCreateImage
+__ CoreGraphics: _CGBitmapGetAlignedBytesPerRow
+__ CoreGraphics: _CGColorSpaceCreateWithName
+__ CoreGraphics: _CGColorSpaceGetNumberOfComponents
+__ CoreGraphics: _CGColorSpaceRelease
+__ CoreGraphics: _CGContextClearRect
+__ CoreGraphics: _CGContextDrawImage
+__ CoreGraphics: _CGContextFillRect
+__ CoreGraphics: _CGContextGetCTM
+__ CoreGraphics: _CGContextRelease
+__ CoreGraphics: _CGContextScaleCTM
+__ CoreGraphics: _CGContextSetBaseCTM
+__ CoreGraphics: _CGContextSetFillColorWithColor
+__ CoreGraphics: _CGDataProviderCreateWithCFData
+__ CoreGraphics: _CGImageCreateCopy
+__ CoreGraphics: _CGImageCreateWithJPEGDataProvider
+__ CoreGraphics: _CGImageCreateWithPNGDataProvider
+__ CoreGraphics: _CGImageRelease
+__ CoreGraphics: _CGImageRetain
+__ CoreGraphics: _kCGColorSpaceSRGB
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ CoreLocation: _OBJC_CLASS_$_CLLocationManager
+__ CoreLocation: _OBJC_CLASS_$_CLRegion
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CoreServices: _OBJC_CLASS_$_NSUserActivity
+__ CoreServices: _kUTTypePNG
+__ FileProvider: _OBJC_CLASS_$_FPArchiveService
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _NSUserActivityTypeBrowsingWeb
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConditionLock
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ Foundation: _OBJC_CLASS_$_NSURLQueryItem
+__ Foundation: _OBJC_CLASS_$_NSURLRequest
+__ Foundation: _OBJC_CLASS_$_NSURLSession
+__ Foundation: _OBJC_CLASS_$_NSURLSessionConfiguration
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyLaunchOrigin
+__ FrontBoardServices: _FBSOpenApplicationOptionKeyPromptUnlockDevice
+__ GeoServices: _OBJC_CLASS_$_GEOFeatureStyleAttributes
+__ GeoServices: _OBJC_CLASS_$_GEOMapItemIdentifier
+__ GeoServices: _OBJC_CLASS_$_GEOMapService
+__ GeoServices: _OBJC_CLASS_$_GEOStyleAttributes
+__ IconServices: _OBJC_CLASS_$_ISIcon
+__ IconServices: _OBJC_CLASS_$_ISImageDescriptor
+__ ImageIO: _CGImageDestinationAddImage
+__ ImageIO: _CGImageDestinationCreateWithData
+__ ImageIO: _CGImageDestinationFinalize
+__ ImageIO: _kCGImagePropertyPNGBandCount
+__ ImageIO: _kCGImagePropertyPNGCompressionFilter
+__ ImageIO: _kCGImagePropertyPNGDictionary
+__ InstallCoordination: _IXStringForClientID
+__ InstallCoordination: _OBJC_CLASS_$_IXAppInstallCoordinator
+__ InstallCoordination: _OBJC_CLASS_$_IXInitiatingAppInstallCoordinator
+__ InstallCoordination: _OBJC_CLASS_$_IXPlaceholder
+__ InstallCoordination: _OBJC_CLASS_$_IXPromisedTransferToPath
+__ MobileInstallation: _OBJC_CLASS_$_MIInstallOptions
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ Network: _OBJC_CLASS_$_NWPathEvaluator
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessPredicate
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTerminateContext
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTerminationAssertion
+__ SafariCore: _OBJC_CLASS_$_WBSSQLiteDatabase
+__ SafariCore: _OBJC_CLASS_$_WBSSQLiteStatement
+__ SharedWebCredentials: _OBJC_CLASS_$__SWCServiceSpecifier
+__ Sharing: _OBJC_CLASS_$_SFClient
+__ SoftLinking: __sl_dlopen_audited
+__ SpringBoardServices: _OBJC_CLASS_$_SBSRemoteAlertActivationContext
+__ SpringBoardServices: _OBJC_CLASS_$_SBSRemoteAlertConfigurationContext
+__ SpringBoardServices: _OBJC_CLASS_$_SBSRemoteAlertDefinition
+__ SpringBoardServices: _OBJC_CLASS_$_SBSRemoteAlertHandle
+__ SpringBoardServices: _OBJC_CLASS_$_SBSWebClipService
+__ SpringBoardServices: _SBRemoveWebClipFromHomeScreen
+__ SpringBoardServices: _SBSSpringBoardServerPort
+__ TCC: _TCCAccessCopyInformationForBundleId
+__ TCC: _TCCAccessSetForBundleId
+__ TCC: _kTCCInfoGranted
+__ TCC: _kTCCInfoService
+__ TCC: _kTCCServiceBluetoothAlways
+__ TCC: _kTCCServiceCamera
+__ TCC: _kTCCServiceMicrophone
+__ VectorKit: _OBJC_CLASS_$_VKIconManager
+__ VectorKit: _OBJC_CLASS_$_VKIconModifiers
+__ libMobileGestalt.dylib: _MGCopyMultipleAnswers
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetFloat32Answer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: _CC_SHA256
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_memorypressure
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __xpc_event_key_name
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_data
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _dyld_image_path_containing_address
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_set_event_stream_handler
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+CPSClipEntryPointRecord : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *appClipBundleID
+ @property  NSString *webClipIdentifier
+ @property  double lastABRFetchTime
+
+  // instance methods
+  -[CPSClipEntryPointRecord .cxx_destruct]
+  -[CPSClipEntryPointRecord webClipIdentifier]
+  -[CPSClipEntryPointRecord initWithSQLiteRow:]
+  -[CPSClipEntryPointRecord setWebClipIdentifier:]
+  -[CPSClipEntryPointRecord appClipBundleID]
+  -[CPSClipEntryPointRecord setAppClipBundleID:]
+  -[CPSClipEntryPointRecord lastABRFetchTime]
+  -[CPSClipEntryPointRecord setLastABRFetchTime:]
+
+
+CPSBusinessItemFetcher : NSObject /usr/lib/libSystem.B.dylib <CPSBusinessItemFetching>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSBusinessItemFetcher .cxx_destruct]
+  -[CPSBusinessItemFetcher fetchBusinessMetadataForURL:availabilityHandler:completion:]
+  -[CPSBusinessItemFetcher fetchBusinessMetadataForURLHash:completion:]
+  -[CPSBusinessItemFetcher fetchBusinessMetadataForURL:completion:]
+
+
+CPSAppInstaller : NSObject /usr/lib/libSystem.B.dylib <CPSAppInstalling>
+ @property  <CPSAppInfoFetching> *appInfoFetcher
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSAppInstaller .cxx_destruct]
+  -[CPSAppInstaller stopStallingCurrentInstallation]
+  -[CPSAppInstaller installDownloadedAppWithBundleID:localFilePath:completionHandler:]
+  -[CPSAppInstaller initWithAppInfoFetcher:]
+  -[CPSAppInstaller appInfoFetcher]
+
+
+CPSAppBundleInstaller : NSObject /usr/lib/libSystem.B.dylib <IXAppInstallCoordinatorObserver>
+ @property  NSString *bundleIdentifier
+ @property  BOOL inactive
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSAppBundleInstaller .cxx_destruct]
+  -[CPSAppBundleInstaller inactive]
+  -[CPSAppBundleInstaller bundleIdentifier]
+  -[CPSAppBundleInstaller coordinator:canceledWithReason:client:]
+  -[CPSAppBundleInstaller coordinatorDidCompleteSuccessfully:]
+  -[CPSAppBundleInstaller coordinatorDidInstallPlaceholder:]
+  -[CPSAppBundleInstaller initWithBundleIdentifier:extractedBundleURL:]
+  -[CPSAppBundleInstaller installWithCompletionHandler:]
+  -[CPSAppBundleInstaller stopStallingCurrentInstallation]
+
+
+CPSClipCleanupManager : NSObject /usr/lib/libSystem.B.dylib <LSApplicationWorkspaceObserverProtocol, RBSTerminationAssertionObserving>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSClipCleanupManager sharedManager]
+  +[CPSClipCleanupManager _parentBundleIDsFromAppRecord:]
+
+  // instance methods
+  -[CPSClipCleanupManager init]
+  -[CPSClipCleanupManager dealloc]
+  -[CPSClipCleanupManager .cxx_destruct]
+  -[CPSClipCleanupManager assertionTargetProcessDidExit:]
+  -[CPSClipCleanupManager applicationsDidInstall:]
+  -[CPSClipCleanupManager applicationsDidUninstall:]
+  -[CPSClipCleanupManager _registerDistributedNotificationHandler]
+  -[CPSClipCleanupManager _registerLocalNotifications]
+  -[CPSClipCleanupManager _removeClipCancellingPendingRemovalIfNeeded:completionHandler:]
+  -[CPSClipCleanupManager _uninstallClipWithBundleIdentifier:deletionPromise:]
+  -[CPSClipCleanupManager _allAppClipsForPlaceholderOnly:]
+  -[CPSClipCleanupManager _shouldDeleteClipWithRecord:parentRecord:]
+  -[CPSClipCleanupManager _deleteClipWhenBackgrounded:completionHandler:]
+  -[CPSClipCleanupManager _didReceiveApplicationRegisteredNotification:]
+  -[CPSClipCleanupManager _didReceiveApplicationUnregisteredNotification:]
+  -[CPSClipCleanupManager _didReceiveMCSettingsChangedNotification:]
+  -[CPSClipCleanupManager _handleNewInstalledAppWithBundleID:]
+  -[CPSClipCleanupManager _didReceiveApplicationChangedNotification:operationHandler:]
+  -[CPSClipCleanupManager _handleNewUninstalledAppWithBundleID:]
+  -[CPSClipCleanupManager _applicationsDidChange:operationHandler:]
+  -[CPSClipCleanupManager _transferTCCPermissionsFromClipWithBundleID:toParentAppWithBundleID:]
+  -[CPSClipCleanupManager removeClipsByUser:completionHandler:]
+  -[CPSClipCleanupManager removeFailedClipInstallsWithCompletionHandler:]
+  -[CPSClipCleanupManager uninstallClipsWithParentAppInstalledWithCompletionHandler:]
+
+
+CPSInstallationController : NSObject /usr/lib/libSystem.B.dylib <ASDClipSessionDelegate>
+ @property  <CPSInstallationControllerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSInstallationController .cxx_destruct]
+  -[CPSInstallationController clipSessionDidCompleteSuccessfully:]
+  -[CPSInstallationController clipSession:didFailWithError:]
+  -[CPSInstallationController clipSessionDidInstallPlaceholder:]
+  -[CPSInstallationController setDelegate:]
+  -[CPSInstallationController clipSession:didUpdateProgress:]
+  -[CPSInstallationController delegate]
+  -[CPSInstallationController stopStallingCurrentInstallation]
+  -[CPSInstallationController initWithAppInfoFetcher:]
+  -[CPSInstallationController _placeholderArtworkForSession:]
+  -[CPSInstallationController _prewarmDemoIPAWithBundleID:session:completion:]
+  -[CPSInstallationController _informDelegateDidInstallPlaceholder:]
+  -[CPSInstallationController _asdClipRequestWithSession:]
+  -[CPSInstallationController _cancelClipSessionWithBundleID:completion:]
+  -[CPSInstallationController _continueInstallForBundleID:session:completion:]
+  -[CPSInstallationController _getClipSessionForBundleID:sourceBundleID:forInstall:completion:]
+  -[CPSInstallationController _bundleIDFromSession:]
+  -[CPSInstallationController _doneWithSession:error:]
+  -[CPSInstallationController prewarmClipWithBundleID:session:completion:]
+  -[CPSInstallationController cancelPrewarmForBundleID:completion:]
+  -[CPSInstallationController installClipWithBundleID:session:completion:]
+
+
+CPSImageDownloader : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[CPSImageDownloader init]
+  -[CPSImageDownloader .cxx_destruct]
+  -[CPSImageDownloader _downloadImageWithURL:completionHandler:]
+  -[CPSImageDownloader downloadImageWithURL:completionHandler:]
+
+
+CPSClipLaunchOptions : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSNumber *userNotificationGranted
+ @property  NSNumber *locationConfirmationGranted
+ @property  NSString *predefinedBundleID
+ @property  BOOL skipsLaunching
+ @property  BOOL showsAppAttributionBanner
+
+  // class methods
+  +[CPSClipLaunchOptions supportsSecureCoding]
+  +[CPSClipLaunchOptions optionsForAppClipRecord:]
+
+  // instance methods
+  -[CPSClipLaunchOptions copyWithZone:]
+  -[CPSClipLaunchOptions .cxx_destruct]
+  -[CPSClipLaunchOptions encodeWithCoder:]
+  -[CPSClipLaunchOptions initWithCoder:]
+  -[CPSClipLaunchOptions userNotificationGranted]
+  -[CPSClipLaunchOptions setUserNotificationGranted:]
+  -[CPSClipLaunchOptions locationConfirmationGranted]
+  -[CPSClipLaunchOptions setLocationConfirmationGranted:]
+  -[CPSClipLaunchOptions setPredefinedBundleID:]
+  -[CPSClipLaunchOptions setSkipsLaunching:]
+  -[CPSClipLaunchOptions setShowsAppAttributionBanner:]
+  -[CPSClipLaunchOptions predefinedBundleID]
+  -[CPSClipLaunchOptions skipsLaunching]
+  -[CPSClipLaunchOptions showsAppAttributionBanner]
+
+
+CPSSessionManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  CPSInstallationController *clipInstaller
+ @property  <CPSLegacyAppInstalling> *legacyInstaller
+ @property  NSArray *allSessions
+
+  // class methods
+  +[CPSSessionManager sharedManager]
+
+  // instance methods
+  -[CPSSessionManager init]
+  -[CPSSessionManager allSessions]
+  -[CPSSessionManager .cxx_destruct]
+  -[CPSSessionManager legacyInstaller]
+  -[CPSSessionManager _setUpMemoryPressureHandler]
+  -[CPSSessionManager _handleMemoryPressure:]
+  -[CPSSessionManager getSessionWithURL:configuration:completion:]
+  -[CPSSessionManager sessionWithURL:createIfNoExist:]
+  -[CPSSessionManager clearSessionWithURL:]
+  -[CPSSessionManager getSessionWithURL:completion:]
+  -[CPSSessionManager clipInstaller]
+  -[CPSSessionManager setLegacyInstaller:]
+
+
+CPSWebClipStore : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSWebClipStore _urlForWebClipWithIdentifier:]
+  +[CPSWebClipStore _readWebClipDictionaryRepresentationFromDiskWithWebClipIdentifier:]
+  +[CPSWebClipStore sharedStore]
+
+  // instance methods
+  -[CPSWebClipStore _enumerateAndFilterClipsWithBlock:]
+  -[CPSWebClipStore _removeWebClipWithIdentifier:error:]
+  -[CPSWebClipStore updateAppClipIcon:forWebClipWithIdentifier:completionHandler:]
+  -[CPSWebClipStore _redirectPoweredByWebClipsWithApplicationBundleIdentifier:toParentApplicationBundleIdentifier:errors:]
+  -[CPSWebClipStore reloadSpringBoardIconForWebClipWithIdentifier:]
+  -[CPSWebClipStore .cxx_destruct]
+  -[CPSWebClipStore fetchAppClipsWithCompletionHandler:]
+  -[CPSWebClipStore _removeWebClipsWithApplicationBundleIdentifier:errors:]
+  -[CPSWebClipStore _createOrUpdateExistingWebClipWithClipMetadata:createdNewWebClip:error:]
+  -[CPSWebClipStore getWebClipsBackedbyAppClipIdentifier:completion:]
+  -[CPSWebClipStore _reloadSpringBoardIconForWebClipWithIdentifier:]
+  -[CPSWebClipStore redirectPoweredByWebClipsWithApplicationBundleIdentifier:toParentApplicationBundleIdentifier:completionHandler:]
+  -[CPSWebClipStore _init]
+  -[CPSWebClipStore removeAppClipIconForWebClipWithIdentifier:completionHandler:]
+  -[CPSWebClipStore getAppClipWithIdentifier:receiveOnQueue:completionHandler:]
+  -[CPSWebClipStore _copyOrReplaceExistingFileAtPath:withNewFileAtPath:]
+  -[CPSWebClipStore saveWebClip:completionHandler:]
+  -[CPSWebClipStore removeWebClipsWithApplicationBundleIdentifiers:completionHandler:]
+  -[CPSWebClipStore _fetchInstalledAppClips]
+  -[CPSWebClipStore createOrUpdateExistingWebClipWithMetadata:comletionHandler:]
+  -[CPSWebClipStore _saveWebClip:error:]
+  -[CPSWebClipStore synchronouslyGetAppClipWithIdentifier:]
+  -[CPSWebClipStore removeWebClipWithIdentifier:completionHandler:]
+  -[CPSWebClipStore fetchBookmarkWebClipsWithCompletionHandler:]
+  -[CPSWebClipStore _appClips]
+  -[CPSWebClipStore _bookmarkWebClips]
+  -[CPSWebClipStore _removeFileFromPath:]
+  -[CPSWebClipStore getAppClipWithURLHash:completionHandler:]
+  -[CPSWebClipStore removeWebClipsWithApplicationBundleIdentifier:completionHandler:]
+  -[CPSWebClipStore getWebClipWithURL:completionHandler:]
+
+
+CPSClipURL : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSURL *URL
+
+  // class methods
+  +[CPSClipURL isSupported]
+  +[CPSClipURL shouldStallProgress]
+  +[CPSClipURL usesDemoMetadata]
+  +[CPSClipURL stopStallingCurrentInstallationWithCompletionHandler:]
+
+  // instance methods
+  -[CPSClipURL openWithCompletionHandler:]
+  -[CPSClipURL initWithURL:]
+  -[CPSClipURL .cxx_destruct]
+  -[CPSClipURL URL]
+  -[CPSClipURL checkAvailabilityWithCompletionHandler:]
+  -[CPSClipURL prewarmClipWithCompletionHandler:]
+  -[CPSClipURL cancelPrewarmingClipWithCompletionHandler:]
+  -[CPSClipURL installClipWithCompletionHandler:]
+  -[CPSClipURL fetchClipMetadataWithCompletionHandler:]
+  -[CPSClipURL test_uninstallClipWithCompletionHandler:]
+
+
+CPSSessionRemoteObserver : NSObject /usr/lib/libSystem.B.dylib <CPSSessionObserving>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSSessionRemoteObserver observerWithXPCProxy:]
+
+  // instance methods
+  -[CPSSessionRemoteObserver forwardingTargetForSelector:]
+  -[CPSSessionRemoteObserver .cxx_destruct]
+  -[CPSSessionRemoteObserver initWithXPCProxy:]
+
+
+CPSWebClip : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *_dictionaryRepresentation
+ @property  NSString *_temporaryIconPath
+ @property  unsigned long bundleVersion
+ @property  NSString *title
+ @property  NSString *identifier
+ @property  NSString *bundleIdentifier
+ @property  ^{CGImage=} iconImage
+ @property  NSString *iconImagePath
+ @property  NSString *applicationBundleIdentifier
+ @property  NSURL *pageURL
+ @property  NSURL *registeredURL
+ @property  NSUserActivity *appClipUserActivity
+ @property  long long webClipType
+ @property  BOOL scenelessBackgroundLaunch
+ @property  BOOL poweredBy
+ @property  NSString *localizedSubtitle
+ @property  NSString *fullAppName
+ @property  NSString *fullAppCaption
+ @property  NSURL *fullAppStoreURL
+ @property  BOOL applicationInstalled
+
+  // class methods
+  +[CPSWebClip appClips]
+
+  // instance methods
+  -[CPSWebClip setApplicationBundleIdentifier:]
+  -[CPSWebClip bundleVersion]
+  -[CPSWebClip pageURL]
+  -[CPSWebClip fullAppName]
+  -[CPSWebClip .cxx_destruct]
+  -[CPSWebClip iconImage]
+  -[CPSWebClip localizedSubtitle]
+  -[CPSWebClip setTitle:]
+  -[CPSWebClip _dictionaryRepresentation]
+  -[CPSWebClip setIdentifier:]
+  -[CPSWebClip applicationBundleIdentifier]
+  -[CPSWebClip identifier]
+  -[CPSWebClip setPageURL:]
+  -[CPSWebClip _init]
+  -[CPSWebClip title]
+  -[CPSWebClip _bundleResourceWithName:]
+  -[CPSWebClip iconImagePath]
+  -[CPSWebClip appClipUserActivity]
+  -[CPSWebClip scenelessBackgroundLaunch]
+  -[CPSWebClip setScenelessBackgroundLaunch:]
+  -[CPSWebClip webClipType]
+  -[CPSWebClip isApplicationInstalled]
+  -[CPSWebClip bundleIdentifier]
+  -[CPSWebClip isPoweredBy]
+  -[CPSWebClip _temporaryIconPath]
+  -[CPSWebClip _initWithIdentifier:webClipDictionary:]
+  -[CPSWebClip registeredURL]
+  -[CPSWebClip _updateWithClipMetadata:]
+  -[CPSWebClip fullAppCaption]
+  -[CPSWebClip setRegisteredURL:]
+  -[CPSWebClip fullAppStoreURL]
+  -[CPSWebClip setPoweredBy:]
+  -[CPSWebClip set_temporaryIconPath:]
+  -[CPSWebClip setFullAppName:]
+  -[CPSWebClip setFullAppCaption:]
+  -[CPSWebClip setFullAppStoreURL:]
+
+
+CPSSession : NSObject /usr/lib/libSystem.B.dylib <CPSInstallationControllerDelegate>
+ @property  NSURL *url
+ @property  NSURL *applicationIconFileURL
+ @property  CPSClipMetadata *metadata
+ @property  NSNumber *estimatedProgress
+ @property  <CPSAppInfoFetching> *appInfoFetcher
+ @property  <CPSBusinessItemFetching> *businessItemFetcher
+ @property  BOOL registeredForTest
+ @property  NSString *logID
+ @property  CPSClipLaunchOptions *launchOptions
+ @property  CPSSessionConfiguration *configuration
+ @property  BOOL purgeable
+ @property  BOOL openingWebClipFromDaemon
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSSession launchOptions]
+  -[CPSSession logID]
+  -[CPSSession url]
+  -[CPSSession .cxx_destruct]
+  -[CPSSession configuration]
+  -[CPSSession estimatedProgress]
+  -[CPSSession metadata]
+  -[CPSSession setConfiguration:]
+  -[CPSSession isPurgeable]
+  -[CPSSession _didUpdateMetadata:]
+  -[CPSSession appInfoFetcher]
+  -[CPSSession installationControllerWillStartInstall:]
+  -[CPSSession installationControllerDidInstallPlaceholder:]
+  -[CPSSession installationController:didUpdateProgress:]
+  -[CPSSession applicationIconFileURL]
+  -[CPSSession installationController:didFinishWithError:]
+  -[CPSSession initWithURL:usingQueue:]
+  -[CPSSession setBusinessItemFetcher:]
+  -[CPSSession setAppInfoFetcher:]
+  -[CPSSession initWithURL:usingQueue:configuration:]
+  -[CPSSession setPreloadedMetadata:]
+  -[CPSSession _fetchBusinessMetadata]
+  -[CPSSession _availabilityOptions]
+  -[CPSSession _notifyObserversOfMetadataFetchResultUpdates:]
+  -[CPSSession _didDetermineAvailability:]
+  -[CPSSession _didFinishLoadingWithError:]
+  -[CPSSession _fetchBusinessIconIfNeeded]
+  -[CPSSession _fetchAppMetadataWithBundleID:]
+  -[CPSSession _fetchParentApplicationMetadataWithBundleID:]
+  -[CPSSession registeredForTest]
+  -[CPSSession _retrieveApplicationIconWithAppIconURL:clipBundleID:]
+  -[CPSSession _didFetchBusinessIconWithURL:]
+  -[CPSSession _evictFromCache]
+  -[CPSSession fetchHeroImage]
+  -[CPSSession clearMetadataAndRefetch]
+  -[CPSSession _retrieveHeroImageWithHeroImageURL:]
+  -[CPSSession _updateLocationConfirmationForRecord:permissionGranted:]
+  -[CPSSession _updateEntryPointForWebClip:]
+  -[CPSSession _retrieveInstalledApplicationIconWithAppIconURL:clipBundleID:]
+  -[CPSSession _retrieveImageWithURL:didFetchImage:fileURL:fetchCompletion:proxyCompletion:]
+  -[CPSSession _updateWebClipIcon:metadata:]
+  -[CPSSession fetchMetadataWithCompletion:]
+  -[CPSSession _retrieveApplicationIconWithCompletionHandler:]
+  -[CPSSession addRemoteObjectProxy:]
+  -[CPSSession removeRemoteObjectProxy:]
+  -[CPSSession didCompleteTestSessionAtTime:]
+  -[CPSSession checkAndConsumeShowsAppAttributionBannerLaunchOption]
+  -[CPSSession updateClipDataForEntryPointWithWebClip:launchOptions:]
+  -[CPSSession businessItemFetcher]
+  -[CPSSession isOpeningWebClipFromDaemon]
+  -[CPSSession setOpeningWebClipFromDaemon:]
+
+
+CPSClipInvocationPolicy : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  BOOL eligible
+ @property  BOOL recoverable
+ @property  long long reason
+ @property  NSString *localizedTitle
+ @property  BOOL canShowHeroImage
+
+  // class methods
+  +[CPSClipInvocationPolicy supportsSecureCoding]
+  +[CPSClipInvocationPolicy requestAccountPolicyWithCompletion:]
+  +[CPSClipInvocationPolicy ineligiblePolicyWithReason:]
+  +[CPSClipInvocationPolicy eligiblePolicy]
+  +[CPSClipInvocationPolicy invocationPolicyWithAMSDict:]
+
+  // instance methods
+  -[CPSClipInvocationPolicy localizedTitle]
+  -[CPSClipInvocationPolicy encodeWithCoder:]
+  -[CPSClipInvocationPolicy isEligible]
+  -[CPSClipInvocationPolicy isRecoverable]
+  -[CPSClipInvocationPolicy reason]
+  -[CPSClipInvocationPolicy initWithCoder:]
+  -[CPSClipInvocationPolicy initWithEligible:reason:]
+  -[CPSClipInvocationPolicy localizedMessageForClipMetadata:]
+  -[CPSClipInvocationPolicy canShowHeroImage]
+
+
+CPSLocationProvider : NSObject /usr/lib/libSystem.B.dylib <CLLocationManagerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSLocationProvider sharedProvider]
+  +[CPSLocationProvider locationServiceEnabled]
+  +[CPSLocationProvider setLocationServiceEnabled:]
+
+  // instance methods
+  -[CPSLocationProvider init]
+  -[CPSLocationProvider locationManager:didFailWithError:]
+  -[CPSLocationProvider .cxx_destruct]
+  -[CPSLocationProvider locationManagerDidChangeAuthorization:]
+  -[CPSLocationProvider locationManager:didUpdateLocations:]
+  -[CPSLocationProvider getCurrentLocationWithCompletion:]
+  -[CPSLocationProvider confirmCurrentLocationInRegion:completion:]
+
+
+CPSAppClipRecord : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *bundleID
+ @property  NSNumber *userNotificationGranted
+ @property  NSNumber *locationConfirmationGranted
+ @property  long long locationConfirmationState
+ @property  double lastProxCardLaunchTime
+ @property  double lastVersionCheckTime
+ @property  double lastInstallTime
+ @property  NSString *fullApplicationName
+ @property  NSString *fullApplicationCaption
+ @property  NSURL *fullApplicationStoreURL
+ @property  id debug_fullApplicationIcon
+
+  // instance methods
+  -[CPSAppClipRecord setBundleID:]
+  -[CPSAppClipRecord initWithBundleID:]
+  -[CPSAppClipRecord .cxx_destruct]
+  -[CPSAppClipRecord bundleID]
+  -[CPSAppClipRecord userNotificationGranted]
+  -[CPSAppClipRecord setUserNotificationGranted:]
+  -[CPSAppClipRecord locationConfirmationGranted]
+  -[CPSAppClipRecord setLocationConfirmationGranted:]
+  -[CPSAppClipRecord fullApplicationName]
+  -[CPSAppClipRecord fullApplicationCaption]
+  -[CPSAppClipRecord setLocationConfirmationState:]
+  -[CPSAppClipRecord setFullApplicationName:]
+  -[CPSAppClipRecord setFullApplicationCaption:]
+  -[CPSAppClipRecord setFullApplicationStoreURL:]
+  -[CPSAppClipRecord setLastProxCardLaunchTime:]
+  -[CPSAppClipRecord initWithSQLiteRow:bundleID:]
+  -[CPSAppClipRecord locationConfirmationState]
+  -[CPSAppClipRecord lastProxCardLaunchTime]
+  -[CPSAppClipRecord lastVersionCheckTime]
+  -[CPSAppClipRecord setLastVersionCheckTime:]
+  -[CPSAppClipRecord lastInstallTime]
+  -[CPSAppClipRecord setLastInstallTime:]
+  -[CPSAppClipRecord fullApplicationStoreURL]
+  -[CPSAppClipRecord debug_fullApplicationIcon]
+  -[CPSAppClipRecord debug_setFullApplicationIcon:]
+
+
+CPSSessionConfiguration : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSUUID *sessionID
+ @property  NSString *sourceBundleID
+ @property  BOOL usedByPPT
+ @property  BOOL useLocalContent
+ @property  NSString *fallbackClipBundleID
+ @property  NSString *referrerBundleID
+ @property  BOOL canPrefetchEncryptionKey
+ @property  BOOL mayLaunchWithoutInvocationUI
+ @property  NSString *launchReason
+ @property  NSString *analyticsReferrerBundleID
+ @property  NSString *analyticsLaunchReason
+ @property  BOOL analyticsShouldIncludeReferrerURL
+ @property  BOOL originIsControlCenter
+ @property  BOOL isForSwitcherOverlay
+
+  // class methods
+  +[CPSSessionConfiguration supportsSecureCoding]
+  +[CPSSessionConfiguration standardConfiguration]
+  +[CPSSessionConfiguration standardConfigurationWithFallbackClipBundleID:]
+  +[CPSSessionConfiguration reasonForSourceBundleID:]
+  +[CPSSessionConfiguration _defaultSourceBundleIDToReasonMap]
+  +[CPSSessionConfiguration localConfiguration]
+  +[CPSSessionConfiguration pptConfiguration]
+  +[CPSSessionConfiguration pptLocalConfiguration]
+
+  // instance methods
+  -[CPSSessionConfiguration setSessionID:]
+  -[CPSSessionConfiguration sessionID]
+  -[CPSSessionConfiguration setLaunchReason:]
+  -[CPSSessionConfiguration .cxx_destruct]
+  -[CPSSessionConfiguration encodeWithCoder:]
+  -[CPSSessionConfiguration sourceBundleID]
+  -[CPSSessionConfiguration referrerBundleID]
+  -[CPSSessionConfiguration launchReason]
+  -[CPSSessionConfiguration setReferrerBundleID:]
+  -[CPSSessionConfiguration initWithCoder:]
+  -[CPSSessionConfiguration canPrefetchEncryptionKey]
+  -[CPSSessionConfiguration analyticsReferrerBundleID]
+  -[CPSSessionConfiguration analyticsLaunchReason]
+  -[CPSSessionConfiguration usedByPPT]
+  -[CPSSessionConfiguration useLocalContent]
+  -[CPSSessionConfiguration isForSwitcherOverlay]
+  -[CPSSessionConfiguration setIsForSwitcherOverlay:]
+  -[CPSSessionConfiguration fallbackClipBundleID]
+  -[CPSSessionConfiguration originIsControlCenter]
+  -[CPSSessionConfiguration setSourceBundleID:]
+  -[CPSSessionConfiguration setFallbackClipBundleID:]
+  -[CPSSessionConfiguration setUseLocalContent:]
+  -[CPSSessionConfiguration setUsedByPPT:]
+  -[CPSSessionConfiguration analyticsShouldIncludeReferrerURL]
+  -[CPSSessionConfiguration mayLaunchWithoutInvocationUI]
+  -[CPSSessionConfiguration setOriginIsControlCenter:]
+
+
+CPSUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSUtilities openURL:]
+  +[CPSUtilities openURL:withOptions:]
+  +[CPSUtilities deviceHasCapabilities:]
+  +[CPSUtilities deviceIsPad]
+  +[CPSUtilities localizedDeviceName]
+  +[CPSUtilities _deviceClass]
+  +[CPSUtilities deviceHasHomeButton]
+  +[CPSUtilities deviceIsLocked]
+  +[CPSUtilities isNetworkConstrained]
+  +[CPSUtilities isBundleIdentifierBeingInstalled:]
+  +[CPSUtilities versionIdentifierForAppWithBundleIdentifier:isPlaceholder:]
+  +[CPSUtilities uninstallAppWithBundleIdentifier:completion:]
+  +[CPSUtilities poweredByCaptionForAppName:]
+  +[CPSUtilities openURL:inAppWithBundleIdentifier:promptForUnlock:originIsControlCenter:completionHandler:]
+  +[CPSUtilities openURL:inAppWithBundleIdentifier:completionHandler:]
+  +[CPSUtilities openAppWithBundleIdentifier:]
+  +[CPSUtilities lowercasedDeviceFamilyName]
+  +[CPSUtilities oppositeDeviceFamilyName]
+  +[CPSUtilities shouldPlayHaptics]
+
+
+CPSImageStore : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSImageStore keyForImageURL:error:]
+  +[CPSImageStore _storeDirectoryURL:]
+  +[CPSImageStore keyForMapsCategoryID:error:]
+  +[CPSImageStore keyForGEOStyleAttributes:error:]
+  +[CPSImageStore keyForPOIMuid:error:]
+
+  // instance methods
+  -[CPSImageStore storeImageData:forKey:error:]
+  -[CPSImageStore _purgeOldFilesInDirectory:timeToLive:]
+  -[CPSImageStore storedImageForKey:]
+  -[CPSImageStore purgeOldImagesWithCompletionHandler:]
+  -[CPSImageStore test_purgeOldFilesInDirectory:timeToLive:]
+
+
+CPSClipEventsReporter : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSClipEventsReporter reporter]
+
+  // instance methods
+  -[CPSClipEventsReporter init]
+  -[CPSClipEventsReporter .cxx_destruct]
+  -[CPSClipEventsReporter logClipLaunchEventForSession:]
+
+
+CPSClipMetadata : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *localizedTitleForClipSuggestion
+ @property  NSString *localizedSubtitleForClipSuggestion
+ @property  NSString *buyParams
+ @property  NSString *clipBundleID
+ @property  BOOL clipIncompatibleWithCurrentDevice
+ @property  BOOL hasFullAppInstalledOnSystem
+ @property  NSURL *clipIpaURL
+ @property  NSURL *clipURL
+ @property  NSURL *clipRequestURL
+ @property  NSString *fullAppName
+ @property  NSString *fullAppCaption
+ @property  NSString *fullAppContentRating
+ @property  NSString *fullAppBundleID
+ @property  NSURL *fullAppStoreURL
+ @property  NSURL *fullAppIconURL
+ @property  NSString *provider
+ @property  NSNumber *itemID
+ @property  NSString *webClipID
+ @property  NSString *clipURLHash
+ @property  NSArray *test_clipVerifiedAssociatedDomains
+ @property  BOOL isDeveloperOverride
+ @property  NSDictionary *amsDictionary
+ @property  unsigned long clipVersionIdentifier
+ @property  NSURL *clipLaunchURL
+ @property  CPSClipInvocationPolicy *invocationPolicy
+ @property  BOOL deviceCapabilitiesDontMatch
+ @property  NSString *clipName
+ @property  NSString *clipCaption
+ @property  long long clipAction
+ @property  NSString *clipMinimumOSVersion
+ @property  NSURL *clipHeroImageURL
+ @property  NSString *clipOpenButtonTitle
+ @property  NSURL *clipTargetURL
+ @property  NSURL *clipBusinessIconURL
+ @property  NSDictionary *clipBusinessIconStyleAttributes
+ @property  NSNumber *clipMapItemMUID
+ @property  BOOL clipRequestsNotificationPermission
+ @property  BOOL clipRequestsLocationConfirmationPermission
+ @property  NSArray *clipVerifiedAssociatedDomains
+ @property  BOOL hasBusinessItemMetadata
+ @property  BOOL hasAppStoreMetadata
+ @property  BOOL poweredByThirdParty
+ @property  NSString *fullAppCachedIconFilePath
+
+  // class methods
+  +[CPSClipMetadata supportsSecureCoding]
+
+  // instance methods
+  -[CPSClipMetadata provider]
+  -[CPSClipMetadata clipBundleID]
+  -[CPSClipMetadata clipAction]
+  -[CPSClipMetadata clipURL]
+  -[CPSClipMetadata fullAppName]
+  -[CPSClipMetadata .cxx_destruct]
+  -[CPSClipMetadata clipBusinessIconURL]
+  -[CPSClipMetadata fullAppIconURL]
+  -[CPSClipMetadata encodeWithCoder:]
+  -[CPSClipMetadata clipHeroImageURL]
+  -[CPSClipMetadata clipCaption]
+  -[CPSClipMetadata clipOpenButtonTitle]
+  -[CPSClipMetadata buyParams]
+  -[CPSClipMetadata invocationPolicy]
+  -[CPSClipMetadata itemID]
+  -[CPSClipMetadata setItemID:]
+  -[CPSClipMetadata clipName]
+  -[CPSClipMetadata setProvider:]
+  -[CPSClipMetadata setBuyParams:]
+  -[CPSClipMetadata clipIncompatibleWithCurrentDevice]
+  -[CPSClipMetadata setClipBundleID:]
+  -[CPSClipMetadata initWithCoder:]
+  -[CPSClipMetadata setClipURL:]
+  -[CPSClipMetadata webClipID]
+  -[CPSClipMetadata setFullAppCachedIconFilePath:]
+  -[CPSClipMetadata initWithBusinessItem:]
+  -[CPSClipMetadata clipRequestURL]
+  -[CPSClipMetadata setClipRequestURL:]
+  -[CPSClipMetadata amsDictionary]
+  -[CPSClipMetadata hasUpToDateVersionInstalledOnSystemIsPlaceholder:]
+  -[CPSClipMetadata initWithDeveloperOverride:invocationURL:]
+  -[CPSClipMetadata isPoweredByThirdParty]
+  -[CPSClipMetadata fullAppCaption]
+  -[CPSClipMetadata localizedTitleForClipSuggestion]
+  -[CPSClipMetadata localizedSubtitleForClipSuggestion]
+  -[CPSClipMetadata fullAppCachedIconFilePath]
+  -[CPSClipMetadata fullAppStoreURL]
+  -[CPSClipMetadata clipLaunchURL]
+  -[CPSClipMetadata setFullAppName:]
+  -[CPSClipMetadata setFullAppCaption:]
+  -[CPSClipMetadata setFullAppStoreURL:]
+  -[CPSClipMetadata setInvocationPolicy:]
+  -[CPSClipMetadata _updateWithAMSMetadata:]
+  -[CPSClipMetadata hasValidAssociatedDomainsToLaunchAppClip]
+  -[CPSClipMetadata clipMapItemMUID]
+  -[CPSClipMetadata clipBusinessIconStyleAttributes]
+  -[CPSClipMetadata isDeveloperOverride]
+  -[CPSClipMetadata clipRequestsLocationConfirmationPermission]
+  -[CPSClipMetadata clipRequestsNotificationPermission]
+  -[CPSClipMetadata clipVersionIdentifier]
+  -[CPSClipMetadata setWebClipID:]
+  -[CPSClipMetadata clipMinimumOSVersion]
+  -[CPSClipMetadata clipURLHash]
+  -[CPSClipMetadata fullAppBundleID]
+  -[CPSClipMetadata initWithDictionary:bundleURL:]
+  -[CPSClipMetadata initWithUncheckedDictionary:]
+  -[CPSClipMetadata setFullAppBundleID:]
+  -[CPSClipMetadata setFullAppIconURL:]
+  -[CPSClipMetadata setClipVersionIdentifier:]
+  -[CPSClipMetadata setClipIncompatibleWithCurrentDevice:]
+  -[CPSClipMetadata setFullAppContentRating:]
+  -[CPSClipMetadata _itemIDFromAppURLString:]
+  -[CPSClipMetadata clipVerifiedAssociatedDomains]
+  -[CPSClipMetadata fullAppContentRating]
+  -[CPSClipMetadata clipIpaURL]
+  -[CPSClipMetadata setClipIpaURL:]
+  -[CPSClipMetadata deviceCapabilitiesDontMatch]
+  -[CPSClipMetadata initWithDemoBundleURL:]
+  -[CPSClipMetadata updateWithStoreParentAppMetadata:]
+  -[CPSClipMetadata updateWithStoreClipMetadata:]
+  -[CPSClipMetadata hasFullAppInstalledOnSystem]
+  -[CPSClipMetadata test_clipVerifiedAssociatedDomains]
+  -[CPSClipMetadata setTest_clipVerifiedAssociatedDomains:]
+  -[CPSClipMetadata clipTargetURL]
+  -[CPSClipMetadata setClipURLHash:]
+  -[CPSClipMetadata hasBusinessItemMetadata]
+  -[CPSClipMetadata hasAppStoreMetadata]
+  -[CPSClipMetadata setDeviceCapabilitiesDontMatch:]
+  -[CPSClipMetadata setAmsDictionary:]
+
+
+CPSImageLoader : NSObject /usr/lib/libSystem.B.dylib
+ @property  CPSImageDownloader *imageDownloader
+ @property  CPSMapsImageLoader *mapsImageLoader
+ @property  CPSImageStore *imageStore
+
+  // instance methods
+  -[CPSImageLoader init]
+  -[CPSImageLoader imageStore]
+  -[CPSImageLoader .cxx_destruct]
+  -[CPSImageLoader setImageStore:]
+  -[CPSImageLoader loadImageWithURL:completionHandler:]
+  -[CPSImageLoader loadImageForMapItemMUID:completionHandler:]
+  -[CPSImageLoader loadImageForGEOStyleAttributes:completionHandler:]
+  -[CPSImageLoader imageDownloader]
+  -[CPSImageLoader mapsImageLoader]
+  -[CPSImageLoader setImageDownloader:]
+  -[CPSImageLoader setMapsImageLoader:]
+
+
+CPSClipMetadataRequest : NSObject /usr/lib/libSystem.B.dylib <CPSSessionProxyDelegate>
+ @property  BOOL likelyAvailable
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CPSClipMetadataRequest initWithURL:]
+  -[CPSClipMetadataRequest dealloc]
+  -[CPSClipMetadataRequest initWithURL:fallbackClipBundleID:]
+  -[CPSClipMetadataRequest requestDownloadedIconWithMetadata:completion:]
+  -[CPSClipMetadataRequest requestMetadataWithCompletion:]
+  -[CPSClipMetadataRequest .cxx_destruct]
+  -[CPSClipMetadataRequest getClipMetadataSynchronously]
+  -[CPSClipMetadataRequest initWithURLHash:]
+  -[CPSClipMetadataRequest _setUpSessionProxyAndPromisesWithURL:fallbackClipBundleID:]
+  -[CPSClipMetadataRequest isLikelyAvailable]
+  -[CPSClipMetadataRequest proxy:didDetermineAvailability:]
+  -[CPSClipMetadataRequest proxyDidUpdateMetadata:]
+  -[CPSClipMetadataRequest proxyDidRetrieveBusinessIcon:]
+  -[CPSClipMetadataRequest proxy:didRetrieveApplicationIcon:]
+  -[CPSClipMetadataRequest proxy:didFinishLoadingWithError:]
+  -[CPSClipMetadataRequest proxyRemoteServiceDidCrash:]
+  -[CPSClipMetadataRequest getDownloadedIconURLSynchronously]
+
+
+CPSSessionProxy : NSObject /usr/lib/libSystem.B.dylib
+ @property  <CPSSessionProxyDelegate> *delegate
+ @property  NSURL *url
+ @property  CPSClipMetadata *metadata
+ @property  NSNumber *estimatedProgress
+ @property  NSURL *applicationIconFileURL
+ @property  NSURL *heroImageFileURL
+ @property  BOOL usedByPPT
+ @property  BOOL originIsControlCenter
+ @property  BOOL invokedByPhysicalCode
+ @property  NSString *launchReason
+ @property  NSString *sourceBundleID
+ @property  NSString *referrerBundleID
+ @property  CPSSessionConfiguration *configuration
+ @property  double appLaunchTime
+ @property  NSURL *businessIconURL
+
+  // instance methods
+  -[CPSSessionProxy disconnect]
+  -[CPSSessionProxy setLaunchReason:]
+  -[CPSSessionProxy url]
+  -[CPSSessionProxy initWithURL:]
+  -[CPSSessionProxy .cxx_destruct]
+  -[CPSSessionProxy cancel]
+  -[CPSSessionProxy sourceBundleID]
+  -[CPSSessionProxy configuration]
+  -[CPSSessionProxy isEqual:]
+  -[CPSSessionProxy referrerBundleID]
+  -[CPSSessionProxy launchReason]
+  -[CPSSessionProxy estimatedProgress]
+  -[CPSSessionProxy setDelegate:]
+  -[CPSSessionProxy metadata]
+  -[CPSSessionProxy setReferrerBundleID:]
+  -[CPSSessionProxy delegate]
+  -[CPSSessionProxy setConfiguration:]
+  -[CPSSessionProxy applicationIconFileURL]
+  -[CPSSessionProxy usedByPPT]
+  -[CPSSessionProxy prewarmClipWithCompletionHandler:]
+  -[CPSSessionProxy didUpdateMetadata:]
+  -[CPSSessionProxy didFinishLoadingWithError:]
+  -[CPSSessionProxy didUpdateInstallProgress:]
+  -[CPSSessionProxy didInstallApplicationPlaceholder]
+  -[CPSSessionProxy didRetrieveApplicationIcon:]
+  -[CPSSessionProxy didRetrieveHeroImage:]
+  -[CPSSessionProxy didFinishTestingAtTime:]
+  -[CPSSessionProxy didRetrieveBusinessIcon:]
+  -[CPSSessionProxy originIsControlCenter]
+  -[CPSSessionProxy setSourceBundleID:]
+  -[CPSSessionProxy setUsedByPPT:]
+  -[CPSSessionProxy setOriginIsControlCenter:]
+  -[CPSSessionProxy connectToService]
+  -[CPSSessionProxy businessIconURL]
+  -[CPSSessionProxy notifyWebClipActivationWithBundleID:]
+  -[CPSSessionProxy _checkAndConsumeShowsAppAttributionBannerIfNeeded]
+  -[CPSSessionProxy isInvokedByPhysicalCode]
+  -[CPSSessionProxy prewarmClip]
+  -[CPSSessionProxy fetchClipMetadataAndImages]
+  -[CPSSessionProxy installClip]
+  -[CPSSessionProxy openClipWithLaunchOptions:completion:]
+  -[CPSSessionProxy getLastLaunchOptionsWithCompletion:]
+  -[CPSSessionProxy checkAndConsumeShowsAppAttributionBannerWithCompletion:]
+  -[CPSSessionProxy didDetermineAvailability:]
+  -[CPSSessionProxy remoteServiceDidCrash]
+  -[CPSSessionProxy heroImageFileURL]
+  -[CPSSessionProxy appLaunchTime]
+
+
+CPSPromise : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSPromise promise]
+
+  // instance methods
+  -[CPSPromise finishWithResult:]
+  -[CPSPromise _flushCompletionBlocks]
+  -[CPSPromise finishWithError:]
+  -[CPSPromise _isFinished]
+  -[CPSPromise init]
+  -[CPSPromise .cxx_destruct]
+  -[CPSPromise addCompletionBlock:]
+  -[CPSPromise finish]
+  -[CPSPromise _finishWithResult:error:]
+
+
+CPSClipRequest : NSObject /usr/lib/libSystem.B.dylib <CPSSessionProxyDelegate>
+ @property  BOOL shouldReturnErrorOnUserCancellation
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSClipRequest getUserNotificationConsentForBundleID:completion:]
+  +[CPSClipRequest confirmLocationWithURL:inRegion:completion:]
+  +[CPSClipRequest deleteClipsWithBundleIDs:completion:]
+  +[CPSClipRequest getLocationConfirmationConsentForBundleID:completion:]
+
+  // instance methods
+  -[CPSClipRequest initWithURL:]
+  -[CPSClipRequest dealloc]
+  -[CPSClipRequest initWithURL:fallbackClipBundleID:]
+  -[CPSClipRequest .cxx_destruct]
+  -[CPSClipRequest requestClipWithCompletion:]
+  -[CPSClipRequest sessionProxy]
+  -[CPSClipRequest cancel]
+  -[CPSClipRequest setShouldReturnErrorOnUserCancellation:]
+  -[CPSClipRequest proxy:didDetermineAvailability:]
+  -[CPSClipRequest proxyDidUpdateMetadata:]
+  -[CPSClipRequest proxy:didFinishLoadingWithError:]
+  -[CPSClipRequest proxyAppDidLaunchForTesting:]
+  -[CPSClipRequest proxyRemoteServiceDidCrash:]
+  -[CPSClipRequest shouldReturnErrorOnUserCancellation]
+  -[CPSClipRequest _errorIgnoringUserCancelledErrorIfNeeded:]
+  -[CPSClipRequest _openClipWithInvocationUI]
+  -[CPSClipRequest installClipWithBundleID:completion:]
+
+
+CPSOpenClipCardPresenter : NSObject /usr/lib/libSystem.B.dylib <SBSRemoteAlertHandleObserver>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSOpenClipCardPresenter sharedPresenter]
+  +[CPSOpenClipCardPresenter responseForOpenClipAction:]
+
+  // instance methods
+  -[CPSOpenClipCardPresenter init]
+  -[CPSOpenClipCardPresenter .cxx_destruct]
+  -[CPSOpenClipCardPresenter remoteAlertHandle:didInvalidateWithError:]
+  -[CPSOpenClipCardPresenter remoteAlertHandleDidDeactivate:]
+  -[CPSOpenClipCardPresenter _activateAlertHandleWithURL:completionHandler:]
+  -[CPSOpenClipCardPresenter _showCardWithOptions:activationHandler:completionHandler:]
+  -[CPSOpenClipCardPresenter _activateAlertHandleWithSettings:viewControllerClassName:repsonseHandler:]
+  -[CPSOpenClipCardPresenter _sharingClientDidInvalidate]
+  -[CPSOpenClipCardPresenter _invalidateSharingClient]
+  -[CPSOpenClipCardPresenter _performStagedLocationConfirmationDisplayIfNeeded]
+  -[CPSOpenClipCardPresenter showCardWithURL:completionHandler:]
+  -[CPSOpenClipCardPresenter showLocationConfirmationSheetWithRequest:completion:]
+
+
+CPSDaemonConnection : NSObject /usr/lib/libSystem.B.dylib <CPSSessionObserving>
+ @property  NSXPCConnection *xpcConnection
+ @property  NSXPCConnection *xpcConnectionNotEntitled
+ @property  CPSSessionProxy *sessionProxy
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSDaemonConnection sharedConnection]
+
+  // instance methods
+  -[CPSDaemonConnection init]
+  -[CPSDaemonConnection xpcConnection]
+  -[CPSDaemonConnection .cxx_destruct]
+  -[CPSDaemonConnection sessionProxy]
+  -[CPSDaemonConnection stopStallingCurrentInstallationWithCompletionHandler:]
+  -[CPSDaemonConnection isClipURL:completionHandler:]
+  -[CPSDaemonConnection openClipWithURL:completionHandler:]
+  -[CPSDaemonConnection prewarmClipWithURL:completionHandler:]
+  -[CPSDaemonConnection cancelPrewarmingClipWithURL:completionHandler:]
+  -[CPSDaemonConnection installClipWithURL:completionHandler:]
+  -[CPSDaemonConnection fetchClipMetadataWithURL:completionHandler:]
+  -[CPSDaemonConnection uninstallClipWithURL:completionHandler:]
+  -[CPSDaemonConnection didDetermineAvailability:options:]
+  -[CPSDaemonConnection didUpdateMetadata:]
+  -[CPSDaemonConnection didFinishLoadingWithError:]
+  -[CPSDaemonConnection didUpdateInstallProgress:]
+  -[CPSDaemonConnection didInstallApplicationPlaceholder]
+  -[CPSDaemonConnection didRetrieveApplicationIcon:]
+  -[CPSDaemonConnection didRetrieveHeroImage:]
+  -[CPSDaemonConnection didFinishTestingAtTime:]
+  -[CPSDaemonConnection didRetrieveBusinessIcon:]
+  -[CPSDaemonConnection fetchClipMetadataWithURLHash:completionHandler:]
+  -[CPSDaemonConnection registerSessionProxy:]
+  -[CPSDaemonConnection unregisterSessionProxy:]
+  -[CPSDaemonConnection fetchClipMetadataAndImagesWithURL:completionHandler:]
+  -[CPSDaemonConnection openClipWithURL:launchOptions:completion:]
+  -[CPSDaemonConnection notifyWebClipActivationWithBundleID:]
+  -[CPSDaemonConnection getLastLaunchOptionsWithBundleID:completion:]
+  -[CPSDaemonConnection checkAndConsumeShowsAppAttributionBannerForBundleID:completion:]
+  -[CPSDaemonConnection remoteServiceDidCrash]
+  -[CPSDaemonConnection uninstallClipsWithBundleIDs:completionHandler:]
+  -[CPSDaemonConnection getUserNotificationConsentForBundleID:completion:]
+  -[CPSDaemonConnection confirmLocationWithURL:inRegion:completion:]
+  -[CPSDaemonConnection openClipWithInvocationUIIfNeededWithURL:completionHandler:]
+  -[CPSDaemonConnection xpcConnectionNotEntitled]
+  -[CPSDaemonConnection setSessionProxy:]
+
+
+CPSClipDataSQLiteStore : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSClipDataSQLiteStore defaultStore]
+
+  // instance methods
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_3]
+  -[CPSClipDataSQLiteStore initWithDatabaseURL:]
+  -[CPSClipDataSQLiteStore init]
+  -[CPSClipDataSQLiteStore _migrateToCurrentSchemaVersionIfNeeded]
+  -[CPSClipDataSQLiteStore .cxx_destruct]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_7]
+  -[CPSClipDataSQLiteStore _setDatabaseSchemaVersion:]
+  -[CPSClipDataSQLiteStore _schemaVersion]
+  -[CPSClipDataSQLiteStore _isDatabaseOpen]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_6]
+  -[CPSClipDataSQLiteStore _openDatabaseAndCheckIntegrity:]
+  -[CPSClipDataSQLiteStore _closeDatabase]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_4]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_5]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion_2]
+  -[CPSClipDataSQLiteStore _createFreshDatabaseSchema]
+  -[CPSClipDataSQLiteStore _checkDatabaseIntegrity]
+  -[CPSClipDataSQLiteStore _migrateToSchemaVersion:]
+  -[CPSClipDataSQLiteStore removeRecordWithBundleID:]
+  -[CPSClipDataSQLiteStore getAppClipRecordWithBundleID:completion:]
+  -[CPSClipDataSQLiteStore saveAppClipRecord:completion:]
+  -[CPSClipDataSQLiteStore saveClipEntryPointRecord:completion:]
+  -[CPSClipDataSQLiteStore getEntryPointRecordWithWebClipIdentifier:completion:]
+  -[CPSClipDataSQLiteStore _createClipEntryPointsTable]
+  -[CPSClipDataSQLiteStore _migrateToSchemeVersion_8]
+  -[CPSClipDataSQLiteStore _updateAppClipRecord:]
+  -[CPSClipDataSQLiteStore _insertAppClipRecord:]
+  -[CPSClipDataSQLiteStore _insertOrReplaceEntryPointRecord:]
+
+
+CPSAppInfoFetcher : NSObject /usr/lib/libSystem.B.dylib <CPSAppInfoFetching>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CPSAppInfoFetcher _sharedAMSBag]
+  +[CPSAppInfoFetcher _cachedIconFileURLForItemID:]
+
+  // instance methods
+  -[CPSAppInfoFetcher init]
+  -[CPSAppInfoFetcher .cxx_destruct]
+  -[CPSAppInfoFetcher lookUpClipMetadataByBundleID:sourceBundleID:downloadIconIfNeeded:skipCaching:completionHandler:]
+  -[CPSAppInfoFetcher _downloadIconIfNeeded:completionHandler:]
+  -[CPSAppInfoFetcher _lookUpClipDemoAMSMetadataWithBundleID:completion:]
+
+
+CPSMapsImageLoader : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[CPSMapsImageLoader .cxx_destruct]
+  -[CPSMapsImageLoader loadImageForMapItemMUID:completionHandler:]
+  -[CPSMapsImageLoader loadImageForGEOStyleAttributes:completionHandler:]
+  -[CPSMapsImageLoader initWithImageDownloader:]
+  -[CPSMapsImageLoader _loadImageForGEOFeatureStyleAttributes:completionHandler:]
+
+
+CPSDeveloperOverride : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *invocationURL
+ @property  NSString *clipBundleID
+ @property  ^{CGImage=} heroImage
+ @property  NSString *title
+ @property  NSString *subtitle
+ @property  long long action
+ @property  NSURL *heroImageURL
+ @property  BOOL isComplete
+ @property  BOOL valid
+
+  // class methods
+  +[CPSDeveloperOverride supportsSecureCoding]
+  +[CPSDeveloperOverride hasOverride]
+  +[CPSDeveloperOverride allOverrides]
+  +[CPSDeveloperOverride overrideForURL:]
+  +[CPSDeveloperOverride loadAllOverridesIfNeeded]
+  +[CPSDeveloperOverride _indexOf:]
+  +[CPSDeveloperOverride persistAllOverrides]
+
+  // instance methods
+  -[CPSDeveloperOverride copyWithZone:]
+  -[CPSDeveloperOverride isComplete]
+  -[CPSDeveloperOverride clear]
+  -[CPSDeveloperOverride setSubtitle:]
+  -[CPSDeveloperOverride save]
+  -[CPSDeveloperOverride clipBundleID]
+  -[CPSDeveloperOverride setAction:]
+  -[CPSDeveloperOverride .cxx_destruct]
+  -[CPSDeveloperOverride action]
+  -[CPSDeveloperOverride setTitle:]
+  -[CPSDeveloperOverride encodeWithCoder:]
+  -[CPSDeveloperOverride title]
+  -[CPSDeveloperOverride isValid]
+  -[CPSDeveloperOverride initWithDictionary:]
+  -[CPSDeveloperOverride heroImage]
+  -[CPSDeveloperOverride setHeroImage:]
+  -[CPSDeveloperOverride subtitle]
+  -[CPSDeveloperOverride dictionaryRepresentation]
+  -[CPSDeveloperOverride setClipBundleID:]
+  -[CPSDeveloperOverride initWithCoder:]
+  -[CPSDeveloperOverride heroImageURL]
+  -[CPSDeveloperOverride invocationURL]
+  -[CPSDeveloperOverride setInvocationURL:]
+
+
+CPSAnalyticsLogger : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPSAnalyticsLogger sharedLogger]
+
+  // instance methods
+  -[CPSAnalyticsLogger .cxx_destruct]
+  -[CPSAnalyticsLogger initWithQueue:]
+  -[CPSAnalyticsLogger didUpgradeToFullAppFromClip:]
+  -[CPSAnalyticsLogger didDiscoverClip:event:alreadyInstalled:]
+  -[CPSAnalyticsLogger recordDidInstallWithBundleID:succeeded:]
+  -[CPSAnalyticsLogger recordClientMetadataRequestWithBundleID:launchReason:]
+  -[CPSAnalyticsLogger recordClientClipRequestWithBundleID:launchReason:]
+  -[CPSAnalyticsLogger _sendEventLazyWithName:clipBundleIdentifier:payload:]
+  -[CPSAnalyticsLogger recordDidActivateCardWithBundleID:launchReason:deviceLocked:]
+  -[CPSAnalyticsLogger didPresentInvocationCardForClip:adamID:sourceBundleIdentifier:referrerBundleIdentifier:event:url:]
+  -[CPSAnalyticsLogger didUseClip:atLatitude:longitude:]
+  -[CPSAnalyticsLogger didAgeOutClip:]
+  -[CPSAnalyticsLogger didManuallyDeleteClip:withEvent:]
+  -[CPSAnalyticsLogger didCancelInterstitialForClip:withEvent:]
+  -[CPSAnalyticsLogger recordDidTapOpenButtonInCardWithBundleID:metadata:launchReason:launchOptions:]
+  -[CPSAnalyticsLogger recordDidShowErrorWithBundleID:place:errorCode:]
+  -[CPSAnalyticsLogger recordDidTapAppStoreBannerWithBundleID:]
+  -[CPSAnalyticsLogger recordDidShowLocationConsentWithBundleID:response:]
+  -[CPSAnalyticsLogger recordDidOpenAppClipWithBundleID:launchReason:didShowCard:didOpenFullApp:didInstallAppClip:]
+
+
+CPSLocationConfirmationRequest : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  long long requestState
+ @property  CLLocation *deviceLocation
+ @property  CLRegion *expectedRegion
+ @property  NSString *clipBundleID
+ @property  NSString *applicationName
+
+  // class methods
+  +[CPSLocationConfirmationRequest supportsSecureCoding]
+
+  // instance methods
+  -[CPSLocationConfirmationRequest copyWithZone:]
+  -[CPSLocationConfirmationRequest clipBundleID]
+  -[CPSLocationConfirmationRequest applicationName]
+  -[CPSLocationConfirmationRequest deviceLocation]
+  -[CPSLocationConfirmationRequest .cxx_destruct]
+  -[CPSLocationConfirmationRequest requestState]
+  -[CPSLocationConfirmationRequest encodeWithCoder:]
+  -[CPSLocationConfirmationRequest initWithCoder:]
+  -[CPSLocationConfirmationRequest initWithRequestState:clipBundleID:applicationName:deviceLocation:expectedRegion:]
+  -[CPSLocationConfirmationRequest expectedRegion]
+
+
+(ClipServicesExtras)
+	// instance methods
+	-[(ClipServicesExtras) cps_privacyPreservingDescription]
+	-[(ClipServicesExtras) cps_sha256]
+	-[(ClipServicesExtras) cps_isAlphaNumeric]
+	-[(ClipServicesExtras) cps_sha256String]
+	-[(ClipServicesExtras) cps_stringByRemovingPrefix:]
+	-[(ClipServicesExtras) cps_looksLikeUUIDOrWebClipIdentifier]
+
+(ClipServicesExtras)
+	// class methods
+	+[(ClipServicesExtras) cps_resolvedURLWithStoreIconURLString:iconSize:]
+	+[(ClipServicesExtras) cps_preIngestedURLWithBundleIdentifier:]
+
+	// instance methods
+	-[(ClipServicesExtras) cps_isHTTPFamilyURL]
+	-[(ClipServicesExtras) cps_isFileURL]
+	-[(ClipServicesExtras) cps_domain]
+
+(ClipServicesExtras)
+	// class methods
+	+[(ClipServicesExtras) cps_errorWithCode:underlyingError:]
+	+[(ClipServicesExtras) cps_errorWithCode:]
+
+	// instance methods
+	-[(ClipServicesExtras) cps_privacyPreservingDescription]
+	-[(ClipServicesExtras) cps_isUserCanceledError]
+
+NSURLComponents(ClipServicesExtras)
+	// instance methods
+	-[NSURLComponents(ClipServicesExtras) cps_addQueryItem:]
+
+NSUserDefaults(ClipServicesExtras)
+	// class methods
+	+[NSUserDefaults(ClipServicesExtras) cps_clipServicesDefaults]
+
+	// instance methods
+	-[NSUserDefaults(ClipServicesExtras) cps_didShowFirstTimeLocationConsent]
+	-[NSUserDefaults(ClipServicesExtras) setCps_didShowFirstTimeLocationConsent:]
+
+01 00 1900 /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices: AMSBag 
+01 00 1900 /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices: AMSBagKeySet 
+01 00 1900 /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices: AMSProcessInfo 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDAccountStatusTask 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDClipCardMetricsEvent 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDClipMetricsCoordinator 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDClipRequest 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDClipRestrictionsTask 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDClipSession 
+01 00 0700 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon: ASDMediaClipTask 
+01 00 1a00 /System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService: BCSBusinessQueryService 
+01 00 0800 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSAction 
+01 00 0800 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSActionResponse 
+01 00 0800 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableSettings 
+01 00 0d00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 0d00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocationManager 
+01 00 0d00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLRegion 
+01 00 1200 /System/Library/Frameworks/FileProvider.framework/FileProvider: FPArchiveService 
+01 00 1700 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOFeatureStyleAttributes 
+01 00 1700 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOMapItemIdentifier 
+01 00 1700 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOMapService 
+01 00 1700 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOStyleAttributes 
+01 00 0300 /System/Library/PrivateFrameworks/IconServices.framework/IconServices: ISIcon 
+01 00 0300 /System/Library/PrivateFrameworks/IconServices.framework/IconServices: ISImageDescriptor 
+01 00 1400 /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination: IXAppInstallCoordinator 
+01 00 1400 /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination: IXInitiatingAppInstallCoordinator 
+01 00 1400 /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination: IXPlaceholder 
+01 00 1400 /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination: IXPromisedTransferToPath 
+01 00 1c00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 1c00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 1c00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 1300 /System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation: MIInstallOptions 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConditionLock 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLQueryItem 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLRequest 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSession 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSessionConfiguration 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1c00 /System/Library/Frameworks/CoreServices.framework/CoreServices: NSUserActivity 
+01 00 2000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 1d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 1000 /System/Library/Frameworks/Network.framework/Network: NWPathEvaluator 
+01 00 0e00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessPredicate 
+01 00 0e00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTerminateContext 
+01 00 0e00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTerminationAssertion 
+01 00 0900 /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices: SBSRemoteAlertActivationContext 
+01 00 0900 /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices: SBSRemoteAlertConfigurationContext 
+01 00 0900 /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices: SBSRemoteAlertDefinition 
+01 00 0900 /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices: SBSRemoteAlertHandle 
+01 00 0900 /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices: SBSWebClipService 
+01 00 1100 /System/Library/PrivateFrameworks/Sharing.framework/Sharing: SFClient 
+01 00 1800 /System/Library/PrivateFrameworks/VectorKit.framework/VectorKit: VKIconManager 
+01 00 1800 /System/Library/PrivateFrameworks/VectorKit.framework/VectorKit: VKIconModifiers 
+01 00 1b00 /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore: WBSSQLiteDatabase 
+01 00 1b00 /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore: WBSSQLiteStatement 
+01 00 0f00 /System/Library/PrivateFrameworks/SharedWebCredentials.framework/SharedWebCredentials: _SWCServiceSpecifier 

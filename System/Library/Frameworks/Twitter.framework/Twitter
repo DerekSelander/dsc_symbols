@@ -1,0 +1,68 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_TWRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_TWTweetComposeViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_TWRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_TWTweetComposeViewController
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSDataDetector
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Social: _OBJC_CLASS_$_SLComposeViewController
+__ Social: _SLServiceTypeTwitter
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+TWRequest : NSObject
+ @property  ACAccount *account
+ @property  long long requestMethod
+ @property  NSURL *URL
+ @property  NSDictionary *parameters
+
+  // instance methods
+  -[TWRequest parameters]
+  -[TWRequest performRequestWithHandler:]
+  -[TWRequest setAccount:]
+  -[TWRequest dealloc]
+  -[TWRequest account]
+  -[TWRequest requestMethod]
+  -[TWRequest URL]
+  -[TWRequest addMultiPartData:withName:type:]
+  -[TWRequest initWithURL:parameters:requestMethod:]
+  -[TWRequest signedURLRequest]
+
+
+TWTweetComposeViewController : UIViewController /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  @? completionHandler
+
+  // class methods
+  +[TWTweetComposeViewController canSendTweet]
+
+  // instance methods
+  -[TWTweetComposeViewController removeAllImages]
+  -[TWTweetComposeViewController init]
+  -[TWTweetComposeViewController addURL:]
+  -[TWTweetComposeViewController setInitialText:]
+  -[TWTweetComposeViewController addImage:]
+  -[TWTweetComposeViewController completionHandler]
+  -[TWTweetComposeViewController setCompletionHandler:]
+  -[TWTweetComposeViewController removeAllURLs]
+  -[TWTweetComposeViewController addDownSampledImageDataByProxyWithPreviewImage:]
+  -[TWTweetComposeViewController setLongitude:latitude:name:]
+  -[TWTweetComposeViewController addURLWithProxyPreviewImage:]
+
+
+(TWStringAdditions)
+	// instance methods
+	-[(TWStringAdditions) TWTwitterCharacterCountWithShortenedURLLength:]
+
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDataDetector 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Social.framework/Social: SLComposeViewController 
+01 00 0200 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 

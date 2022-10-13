@@ -1,0 +1,99 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCAssistiveTouchAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCAssistiveTouchProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCAssistiveTouchAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCAssistiveTouchProvider
+|| __TEXT.__const _AccessoryAssistiveTouchVersionNumber
+|| __TEXT.__const _AccessoryAssistiveTouchVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+ACCAssistiveTouchAccessory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *accessoryUID
+ @property  BOOL desiredAssistiveTouchState
+
+  // instance methods
+  -[ACCAssistiveTouchAccessory .cxx_destruct]
+  -[ACCAssistiveTouchAccessory initWithAccessoryUID:]
+  -[ACCAssistiveTouchAccessory accessoryUID]
+  -[ACCAssistiveTouchAccessory setAccessoryUID:]
+  -[ACCAssistiveTouchAccessory desiredAssistiveTouchState]
+  -[ACCAssistiveTouchAccessory setDesiredAssistiveTouchState:]
+
+
+ACCAssistiveTouchProvider : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *providerUID
+ @property  <ACCAssistiveTouchProviderProtocol> *delegate
+ @property  NSXPCConnection *serverConnection
+ @property  <ACCAssistiveTouchXPCServerProtocol> *remoteObject
+ @property  NSMutableDictionary *accessories
+ @property  BOOL cachedState
+
+  // instance methods
+  -[ACCAssistiveTouchProvider serverConnection]
+  -[ACCAssistiveTouchProvider remoteObject]
+  -[ACCAssistiveTouchProvider setRemoteObject:]
+  -[ACCAssistiveTouchProvider dealloc]
+  -[ACCAssistiveTouchProvider .cxx_destruct]
+  -[ACCAssistiveTouchProvider setCachedState:]
+  -[ACCAssistiveTouchProvider accessories]
+  -[ACCAssistiveTouchProvider cachedState]
+  -[ACCAssistiveTouchProvider setServerConnection:]
+  -[ACCAssistiveTouchProvider setDelegate:]
+  -[ACCAssistiveTouchProvider setAccessories:]
+  -[ACCAssistiveTouchProvider delegate]
+  -[ACCAssistiveTouchProvider providerUID]
+  -[ACCAssistiveTouchProvider setProviderUID:]
+  -[ACCAssistiveTouchProvider connectToServer]
+  -[ACCAssistiveTouchProvider accessoryAssistiveTouchAttached:]
+  -[ACCAssistiveTouchProvider accessoryAssistiveTouchDetached:]
+  -[ACCAssistiveTouchProvider setEnabled:flag:]
+  -[ACCAssistiveTouchProvider requestState:]
+  -[ACCAssistiveTouchProvider calculateDesiredState:]
+  -[ACCAssistiveTouchProvider notifyAssistiveTouchEnabledState:]
+  -[ACCAssistiveTouchProvider initWithDelegate:initialState:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

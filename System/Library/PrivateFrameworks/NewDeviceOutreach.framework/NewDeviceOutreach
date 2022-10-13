@@ -1,0 +1,299 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_NDOManager
+|| __DATA.__objc_data _OBJC_CLASS_$_NDOServerVersionUtilities
+|| __DATA.__objc_data _OBJC_CLASS_$_NDOWarranty
+|| __DATA.__objc_data _OBJC_METACLASS_$_NDOManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_NDOServerVersionUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_NDOWarranty
+|| __DATA_CONST.__const _kAppAvailabilityType
+|| __DATA_CONST.__const _kAppAvailablityText
+|| __DATA_CONST.__const _kAppBundleID
+|| __DATA_CONST.__const _kAppIconURL
+|| __DATA_CONST.__const _kAppLinkURL
+|| __DATA_CONST.__const _kAppTitle
+|| __DATA_CONST.__const _kAppVendorName
+|| __TEXT.__const _NewDeviceOutreachVersionNumber
+|| __TEXT.__const _NewDeviceOutreachVersionString
+|| __TEXT.__text __NDOLogSystem
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __NSIsNSString
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSHomeDirectory
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ UIKitCore: _OBJC_CLASS_$_UIDevice
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+NDOServerVersionUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[NDOServerVersionUtilities _dictionaryFromURL:]
+  +[NDOServerVersionUtilities _supportedVersionsForClientAndServer:]
+  +[NDOServerVersionUtilities isHighServerVersionFeaturesetEnabled:]
+  +[NDOServerVersionUtilities serverVersionSupported]
+  +[NDOServerVersionUtilities isHighServerVersionFeaturesetEnabled]
+  +[NDOServerVersionUtilities readWebURLOverride]
+  +[NDOServerVersionUtilities readSerialNumberOverride]
+
+
+NDOManager : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[NDOManager serialNumber]
+  -[NDOManager agentConnection]
+  -[NDOManager isHighServerVersionFeaturesetEnabled]
+  -[NDOManager scheduleOutreachWithReply:]
+  -[NDOManager getWarrantyUsingPolicy:withReply:]
+  -[NDOManager serialNumberOverride:]
+  -[NDOManager checkIsAvailableInStore:]
+  -[NDOManager appSupportDictionaryWithCompletion:]
+  -[NDOManager isHighServerVersionFeaturesetEnabledWithStatusHandler:]
+  -[NDOManager webURLOverride:]
+
+
+NDOWarranty : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  BOOL covered
+ @property  NSDate *coverageEndDate
+ @property  NSDate *coverageValidityDate
+ @property  NSString *localizedCoveredDeviceDateLabelFormat
+ @property  NSString *coverageLocalizedLabel
+ @property  NSString *coverageLocalizedDesc
+ @property  NSString *coverageLocalizedDescLong
+ @property  NSString *coverageLocalizedExpirationLabel
+ @property  NSString *footer1FormatString
+ @property  NSString *footer1LinkLabel
+ @property  NSString *footer1LinkURL
+ @property  NSString *footer2FormatString
+ @property  NSString *footer2LinkLabel
+ @property  NSString *footer2LinkURL
+ @property  BOOL acOfferEligible
+ @property  NSDate *acOfferEligibleUntil
+ @property  NSString *acOfferIdentifier
+ @property  NSString *acLocalizedOfferLabel
+ @property  NSString *acLocalizedOfferPluralDescFormat
+ @property  NSString *acLocalizedOfferSingularDesc
+ @property  NSString *acLocalizedOfferCTA
+ @property  NSString *acLocalizedOfferDetails
+ @property  NSString *acLocalizedOfferDetailsPluralEligibilityFormat
+ @property  NSString *acLocalizedOfferDetailsSingularEligibility
+ @property  BOOL acOfferDisplay
+ @property  BOOL acOfferSettingsAppBadge
+ @property  BOOL acOfferSettingsRowBadge
+ @property  double acOfferDurationBeforeEndDate
+ @property  NSArray *acOfferToggle
+ @property  double acOfferBadgeDurationBeforeEndDate
+ @property  BOOL coverageHasACLogo
+ @property  NSString *localizedCoverageSubTitleForServicesPartnerString
+ @property  NSString *localizedCoverageFooterFormatString
+ @property  NSString *localizedCoverageFooterLinkLabel
+ @property  NSString *localizedSupportAppLabel
+ @property  BOOL isCoveragePlanSubscriptionType
+ @property  NSString *localizedManagePlanLabel
+ @property  NSNumber *acOfferBadgeDaysBeforeEndDate
+ @property  BOOL isACServicesPartner
+ @property  NSDictionary *coverageDetailsDictionary
+ @property  NSString *localizedCoverageDetailsTitle
+ @property  NSArray *coverageDetailsArray
+ @property  NSString *localizedCoverageDetailsLabel
+ @property  NSString *localizedCoverageDetailsValue
+ @property  NSDictionary *coverageBenefitsDictionary
+ @property  NSString *localizedBenefitsCardTitle
+ @property  NSString *localizedBenefitsCardSubTitle
+ @property  NSArray *benefitDetailsArray
+ @property  NSString *localizedBenefitLabelKey
+ @property  NSString *localizedBenefitValueKey
+ @property  NSString *localizedBenefitsCardFooter
+ @property  BOOL displayRepairAndSupport
+ @property  NSString *agsURL
+ @property  NSDictionary *dictionaryRepresentation
+ @property  NSString *acLocalizedOfferDesc
+ @property  NSString *acLocalizedOfferDetailsEligibility
+ @property  unsigned int daysEligible
+
+  // class methods
+  +[NDOWarranty supportsSecureCoding]
+  +[NDOWarranty _warrantyPath]
+  +[NDOWarranty warrantyWithDictionary:]
+  +[NDOWarranty cachedWarranty]
+
+  // instance methods
+  -[NDOWarranty .cxx_destruct]
+  -[NDOWarranty cache]
+  -[NDOWarranty setDictionaryRepresentation:]
+  -[NDOWarranty encodeWithCoder:]
+  -[NDOWarranty initWithDictionary:]
+  -[NDOWarranty agsURL]
+  -[NDOWarranty isEqual:]
+  -[NDOWarranty dictionaryRepresentation]
+  -[NDOWarranty covered]
+  -[NDOWarranty initWithCoder:]
+  -[NDOWarranty setCovered:]
+  -[NDOWarranty _dateWithEpochNumber:]
+  -[NDOWarranty setCoverageEndDate:]
+  -[NDOWarranty setLocalizedCoveredDeviceDateLabelFormat:]
+  -[NDOWarranty setCoverageLocalizedLabel:]
+  -[NDOWarranty setCoverageLocalizedDesc:]
+  -[NDOWarranty setCoverageLocalizedDescLong:]
+  -[NDOWarranty setCoverageLocalizedExpirationLabel:]
+  -[NDOWarranty setFooter1FormatString:]
+  -[NDOWarranty setFooter1LinkLabel:]
+  -[NDOWarranty setFooter1LinkURL:]
+  -[NDOWarranty setFooter2FormatString:]
+  -[NDOWarranty setFooter2LinkLabel:]
+  -[NDOWarranty setFooter2LinkURL:]
+  -[NDOWarranty setAcOfferEligible:]
+  -[NDOWarranty setAcOfferEligibleUntil:]
+  -[NDOWarranty setAcOfferIdentifier:]
+  -[NDOWarranty setAcLocalizedOfferLabel:]
+  -[NDOWarranty setAcLocalizedOfferPluralDescFormat:]
+  -[NDOWarranty setAcLocalizedOfferSingularDesc:]
+  -[NDOWarranty setAcLocalizedOfferCTA:]
+  -[NDOWarranty setAcLocalizedOfferDetails:]
+  -[NDOWarranty setAcLocalizedOfferDetailsPluralEligibilityFormat:]
+  -[NDOWarranty setAcLocalizedOfferDetailsSingularEligibility:]
+  -[NDOWarranty setAcOfferDisplay:]
+  -[NDOWarranty setAcOfferSettingsAppBadge:]
+  -[NDOWarranty setAcOfferSettingsRowBadge:]
+  -[NDOWarranty setAcOfferDurationBeforeEndDate:]
+  -[NDOWarranty setAcOfferToggle:]
+  -[NDOWarranty setAcOfferBadgeDurationBeforeEndDate:]
+  -[NDOWarranty setCoverageHasACLogo:]
+  -[NDOWarranty setLocalizedCoverageSubTitleForServicesPartnerString:]
+  -[NDOWarranty setLocalizedSupportAppLabel:]
+  -[NDOWarranty setLocalizedManagePlanLabel:]
+  -[NDOWarranty setAcOfferBadgeDaysBeforeEndDate:]
+  -[NDOWarranty setIsCoveragePlanSubscriptionType:]
+  -[NDOWarranty setIsACServicesPartner:]
+  -[NDOWarranty setCoverageDetailsDictionary:]
+  -[NDOWarranty coverageDetailsDictionary]
+  -[NDOWarranty setLocalizedCoverageDetailsTitle:]
+  -[NDOWarranty setCoverageDetailsArray:]
+  -[NDOWarranty setLocalizedCoverageFooterFormatString:]
+  -[NDOWarranty setLocalizedCoverageFooterLinkLabel:]
+  -[NDOWarranty setCoverageBenefitsDictionary:]
+  -[NDOWarranty coverageBenefitsDictionary]
+  -[NDOWarranty setLocalizedBenefitsCardTitle:]
+  -[NDOWarranty setLocalizedBenefitsCardSubTitle:]
+  -[NDOWarranty setBenefitDetailsArray:]
+  -[NDOWarranty setLocalizedBenefitsCardFooter:]
+  -[NDOWarranty setDisplayRepairAndSupport:]
+  -[NDOWarranty setAgsURL:]
+  -[NDOWarranty daysEligible]
+  -[NDOWarranty acLocalizedOfferSingularDesc]
+  -[NDOWarranty acLocalizedOfferPluralDescFormat]
+  -[NDOWarranty acLocalizedOfferDetailsSingularEligibility]
+  -[NDOWarranty acLocalizedOfferDetailsPluralEligibilityFormat]
+  -[NDOWarranty acOfferEligibleUntil]
+  -[NDOWarranty acLocalizedOfferDesc]
+  -[NDOWarranty acLocalizedOfferDetailsEligibility]
+  -[NDOWarranty coverageEndDate]
+  -[NDOWarranty localizedCoveredDeviceDateLabelFormat]
+  -[NDOWarranty coverageLocalizedLabel]
+  -[NDOWarranty coverageLocalizedDesc]
+  -[NDOWarranty coverageLocalizedDescLong]
+  -[NDOWarranty coverageLocalizedExpirationLabel]
+  -[NDOWarranty footer1FormatString]
+  -[NDOWarranty footer1LinkLabel]
+  -[NDOWarranty footer1LinkURL]
+  -[NDOWarranty footer2FormatString]
+  -[NDOWarranty footer2LinkLabel]
+  -[NDOWarranty footer2LinkURL]
+  -[NDOWarranty acOfferEligible]
+  -[NDOWarranty acOfferIdentifier]
+  -[NDOWarranty acLocalizedOfferLabel]
+  -[NDOWarranty acLocalizedOfferCTA]
+  -[NDOWarranty acLocalizedOfferDetails]
+  -[NDOWarranty acOfferDisplay]
+  -[NDOWarranty acOfferSettingsAppBadge]
+  -[NDOWarranty acOfferSettingsRowBadge]
+  -[NDOWarranty acOfferDurationBeforeEndDate]
+  -[NDOWarranty acOfferToggle]
+  -[NDOWarranty acOfferBadgeDurationBeforeEndDate]
+  -[NDOWarranty coverageHasACLogo]
+  -[NDOWarranty localizedCoverageSubTitleForServicesPartnerString]
+  -[NDOWarranty localizedCoverageFooterFormatString]
+  -[NDOWarranty localizedCoverageFooterLinkLabel]
+  -[NDOWarranty localizedSupportAppLabel]
+  -[NDOWarranty isCoveragePlanSubscriptionType]
+  -[NDOWarranty localizedManagePlanLabel]
+  -[NDOWarranty acOfferBadgeDaysBeforeEndDate]
+  -[NDOWarranty isACServicesPartner]
+  -[NDOWarranty localizedCoverageDetailsTitle]
+  -[NDOWarranty coverageDetailsArray]
+  -[NDOWarranty localizedCoverageDetailsLabel]
+  -[NDOWarranty setLocalizedCoverageDetailsLabel:]
+  -[NDOWarranty localizedCoverageDetailsValue]
+  -[NDOWarranty setLocalizedCoverageDetailsValue:]
+  -[NDOWarranty localizedBenefitsCardTitle]
+  -[NDOWarranty localizedBenefitsCardSubTitle]
+  -[NDOWarranty benefitDetailsArray]
+  -[NDOWarranty localizedBenefitsCardFooter]
+  -[NDOWarranty displayRepairAndSupport]
+  -[NDOWarranty coverageValidityDate]
+  -[NDOWarranty setCoverageValidityDate:]
+  -[NDOWarranty localizedBenefitLabelKey]
+  -[NDOWarranty setLocalizedBenefitLabelKey:]
+  -[NDOWarranty localizedBenefitValueKey]
+  -[NDOWarranty setLocalizedBenefitValueKey:]
+
+
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore: UIDevice 

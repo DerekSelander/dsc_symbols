@@ -1,0 +1,216 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CKCourse
+|| __DATA.__objc_data _OBJC_CLASS_$_CKCourseLibrary
+|| __DATA.__objc_data _OBJC_CLASS_$_CKSharedCourse
+|| __DATA.__objc_data _OBJC_CLASS_$_CKSharedDatabase
+|| __DATA.__objc_data _OBJC_METACLASS_$_CKCourse
+|| __DATA.__objc_data _OBJC_METACLASS_$_CKCourseLibrary
+|| __DATA.__objc_data _OBJC_METACLASS_$_CKSharedCourse
+|| __DATA.__objc_data _OBJC_METACLASS_$_CKSharedDatabase
+__ CoreData: _NSInferMappingModelAutomaticallyOption
+__ CoreData: _NSMergeByPropertyStoreTrumpMergePolicy
+__ CoreData: _NSMigratePersistentStoresAutomaticallyOption
+__ CoreData: _NSSQLiteStoreType
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectContext
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectModel
+__ CoreData: _OBJC_CLASS_$_NSPersistentStoreCoordinator
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValueTransformer
+__ Foundation: _OBJC_METACLASS_$_NSValueTransformer
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _UIImagePNGRepresentation
+__ UserManagement: _OBJC_CLASS_$_UMUserManager
+__ libSystem.B.dylib: _CC_MD5_Final
+__ libSystem.B.dylib: _CC_MD5_Init
+__ libSystem.B.dylib: _CC_MD5_Update
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _container_system_group_path_for_identifier
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+CKCourseLibrary : NSObject /usr/lib/libSystem.B.dylib
+ @property  CKSharedDatabase *sharedDatabase
+ @property  NSManagedObjectContext *moc
+
+  // class methods
+  +[CKCourseLibrary sharedDocumentsDirectory]
+  +[CKCourseLibrary sharedCourseLibrary]
+  +[CKCourseLibrary isCourseLibraryAvailable]
+  +[CKCourseLibrary openCourse:]
+
+  // instance methods
+  -[CKCourseLibrary moc]
+  -[CKCourseLibrary init]
+  -[CKCourseLibrary .cxx_destruct]
+  -[CKCourseLibrary setMoc:]
+  -[CKCourseLibrary sharedDatabase]
+  -[CKCourseLibrary allCourses]
+  -[CKCourseLibrary courseWithCourseID:]
+  -[CKCourseLibrary courseLibrayVersion]
+  -[CKCourseLibrary setSharedDatabase:]
+
+
+CKCourse : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *sharedCourse
+ @property  NSString *courseID
+ @property  NSNumber *managedClassID
+ @property  long long enrollmentType
+ @property  NSString *shortName
+ @property  NSString *longName
+ @property  NSString *institutionName
+ @property  UIImage *courseCover
+ @property  NSURL *courseURL
+
+  // class methods
+  +[CKCourse initialize]
+  +[CKCourse sharedCoursePropertiesToFetch]
+
+  // instance methods
+  -[CKCourse shortName]
+  -[CKCourse .cxx_destruct]
+  -[CKCourse initWithSharedCourse:]
+  -[CKCourse courseURL]
+  -[CKCourse sharedCourse]
+  -[CKCourse courseID]
+  -[CKCourse managedClassID]
+  -[CKCourse enrollmentType]
+  -[CKCourse longName]
+  -[CKCourse institutionName]
+  -[CKCourse courseCover]
+  -[CKCourse setSharedCourse:]
+
+
+CKImageTransformer : NSValueTransformer /usr/lib/libobjc.A.dylib
+  // class methods
+  +[CKImageTransformer transformedValueClass]
+  +[CKImageTransformer allowsReverseTransformation]
+  +[CKImageTransformer registerValueTransformer]
+
+  // instance methods
+  -[CKImageTransformer transformedValue:]
+  -[CKImageTransformer reverseTransformedValue:]
+
+
+CKSharedDatabase : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSManagedObjectContext *mainManagedObjectContext
+ @property  NSManagedObjectModel *managedObjectModel
+ @property  NSPersistentStoreCoordinator *persistentStoreCoordinator
+
+  // class methods
+  +[CKSharedDatabase databaseURL]
+
+  // instance methods
+  -[CKSharedDatabase .cxx_destruct]
+  -[CKSharedDatabase setManagedObjectModel:]
+  -[CKSharedDatabase managedObjectModel]
+  -[CKSharedDatabase persistentStoreCoordinator]
+  -[CKSharedDatabase setPersistentStoreCoordinator:]
+  -[CKSharedDatabase newManagedObjectContext]
+  -[CKSharedDatabase urlForDataModel]
+  -[CKSharedDatabase mainManagedObjectContext]
+  -[CKSharedDatabase setMainManagedObjectContext:]
+
+
+CKSharedCourse : NSManagedObject /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+ @property  NSString *courseID
+ @property  NSNumber *managedClassID
+ @property  long long enrollmentType
+ @property  NSString *shortName
+ @property  NSString *longName
+ @property  NSString *institutionName
+ @property  UIImage *courseCover
+ @property  NSString *courseCoverChecksum
+
+  // instance methods
+  -[CKSharedCourse setShortName:]
+  -[CKSharedCourse setCourseID:]
+  -[CKSharedCourse setManagedClassID:]
+  -[CKSharedCourse setEnrollmentType:]
+  -[CKSharedCourse setLongName:]
+  -[CKSharedCourse setInstitutionName:]
+  -[CKSharedCourse setCourseCover:]
+
+
+(CKAdditions)
+	// instance methods
+	-[(CKAdditions) md5]
+
+NSManagedObject(CKAdditions)
+	// instance methods
+	-[NSManagedObject(CKAdditions) updateKey:withValue:condition:]
+
+(CKAdditions)
+	// instance methods
+	-[(CKAdditions) compareToVersion:]
+
+01 00 0900 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 0900 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0200 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 
+01 00 0200 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectContext 
+01 00 0200 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectModel 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/CoreData.framework/CoreData: NSPersistentStoreCoordinator 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSValueTransformer 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0340 /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement: UMUserManager 

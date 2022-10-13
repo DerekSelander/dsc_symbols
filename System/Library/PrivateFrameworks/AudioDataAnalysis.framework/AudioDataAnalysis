@@ -1,0 +1,312 @@
+|| __DATA.__data _AudioDataAnalysisFrameworkVersionNumber
+|| __DATA_CONST.__const _ADAFDarwinNotificationKey
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyClearAllAdapters
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyDeviceDataDispositionDidChange
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyNano
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyRLSStatusDidChange
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyUnknownWiredDeviceStatusChanged
+|| __DATA_CONST.__const _ADAFDarwinNotificationKeyVolumeLimitStatusDidChange
+|| __DATA_CONST.__const _ADAFDeviceDispositionKeyErase
+|| __DATA_CONST.__const _ADAFDeviceDispositionKeyUpdate
+|| __DATA_CONST.__const _ADAFDeviceSpecificPreferenceDomain
+|| __DATA_CONST.__const _ADAFErrorDomain
+|| __DATA_CONST.__const _ADAFMetadataKeyDeviceID
+|| __DATA_CONST.__const _ADAFMetadataKeyHAEDataForGauge
+|| __DATA_CONST.__const _ADAFMetadataKeyIsLoud
+|| __DATA_CONST.__const _ADAFPreferenceDomain
+|| __DATA_CONST.__const _ADAFPreferenceKeyConnectedWiredDeviceIsHeadphone
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAEEnableHKWrite
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAEEnableOtherDevices
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENDeviceCountryCodeOverride
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENDeviceDisposition
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENDeviceProductTypeOverride
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENKnownAccessories
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENKnownAccessoryExpiryDays
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENotificationFeatureEnabled
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENotificationIsMandatory
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENotificationLiveThreshold
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENotificationLiveWindowInSeconds
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAENotificationVolumeReductionEnabled
+|| __DATA_CONST.__const _ADAFPreferenceKeyHAESampleTransient
+|| __DATA_CONST.__const _ADAFPreferenceKeyLoudnessCompensationEnabled
+|| __DATA_CONST.__const _ADAFPreferenceKeyMXVolumeLimitOn
+|| __DATA_CONST.__const _ADAFPreferenceKeyVolumeLimitEnabled
+|| __DATA_CONST.__const _ADAFPreferenceKeyVolumeLimitThreshold
+|| __DATA_CONST.__const _ADAFPreferenceKeyVolumeReductionDelta
+|| __DATA_CONST.__const _kADAMAudioDataAnalysisData
+|| __DATA_CONST.__const _kADAMAudioDataAnalysisSampleDateInterval
+|| __DATA_CONST.__const _kADAMAudioDataAnalysisSampleMetadata
+|| __DATA_CONST.__const _kADAMAudioDataAnalysisSampleUUID
+|| __DATA_CONST.__const _kADAMAudioDataAnalysisType
+|| __DATA_CONST.__const _kADAMEnvironmentalDosageString
+|| __DATA_CONST.__const _kADAMHeadphoneAudioExposureString
+|| __DATA_CONST.__const _kADAMUnknownDataTypeString
+|| __DATA_CONST.__const _kDefaultsKeyConnectedUnknownDeviceIsHeadphone
+|| __DATA_CONST.__const _kDefaultsKeyHAEDisableMigrationAlert
+|| __DATA_CONST.__const _kDefaultsKeyHAEEnableOtherDevices
+|| __DATA_CONST.__const _kDefaultsKeyHAEMeasureLevel
+|| __DATA_CONST.__const _kDefaultsKeyHAENDeviceProductTypeOverride
+|| __DATA_CONST.__const _kDefaultsKeyHAENFeatureMandatory
+|| __DATA_CONST.__const _kDefaultsKeyHAENFeatureMandatoryOverride
+|| __DATA_CONST.__const _kDefaultsKeyHAENKnownAccessories
+|| __DATA_CONST.__const _kDefaultsKeyHAENKnownAccessoryExpiryDays
+|| __DATA_CONST.__const _kDefaultsKeyHAENRegionCodeOverride
+|| __DATA_CONST.__const _kDefaultsKeyHAENotificationFeatureEnabled
+|| __DATA_CONST.__const _kDefaultsKeyHAENotificationLiveMonitorInSeconds
+|| __DATA_CONST.__const _kDefaultsKeyHAENotificationLiveThreshold
+|| __DATA_CONST.__const _kDefaultsKeyHAESampleTransient
+|| __DATA_CONST.__const _kDefaultsKeyLoudnessCompensationEnabled
+|| __DATA_CONST.__const _kDefaultsKeyMXVolumeLimitOn
+|| __DATA_CONST.__const _kDefaultsKeyMigrationAlertSurfaced
+|| __DATA_CONST.__const _kDefaultsKeySurfaceMigrationAlert
+|| __DATA_CONST.__const _kDefaultsKeyVolumeLimitEnabled
+|| __DATA_CONST.__const _kDefaultsKeyVolumeLimitThreshold
+|| __DATA_CONST.__const _kDefaultsKeyVolumeReductionDelta
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADAFUtil
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADAMAudioDataAnalysisSample
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADAMAudioDataReceiver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADASManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADASPreferenceStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADAFUtil
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADAMAudioDataAnalysisSample
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADAMAudioDataReceiver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADASManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADASPreferenceStore
+|| __TEXT.__const _ADAFErrorInvalidPreferenceValue
+|| __TEXT.__const _ADAFErrorNanoSettingsUnavailable
+|| __TEXT.__const _ADAFErrorUnknownPreferenceKey
+|| __TEXT.__const _ADAMEnvConfigKeys
+|| __TEXT.__const _AudioDataAnalysisFrameworkVersionString
+|| __TEXT.__const _AudioDataAnalysisVersionNumber
+|| __TEXT.__const _AudioDataAnalysisVersionString
+|| __TEXT.__text _ADAFLog
+__ Celestial: _OBJC_CLASS_$_AVSystemController
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ MediaExperience: _OBJC_CLASS_$_MXSystemController
+__ MediaExperience: _kMXSystemControllerProperty_HeadphoneVolumeLimit
+__ NanoPreferencesSync: _OBJC_CLASS_$_NPSDomainAccessor
+__ NanoPreferencesSync: _OBJC_CLASS_$_NPSManager
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_once_f
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseek
+__ libSystem.B.dylib: _ftell
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _rewind
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+ADAMAudioDataReceiver : NSObject /usr/lib/libSystem.B.dylib <ADAMClientDelegate>
+ @property  BOOL connectionDidInvalidate
+ @property  <ADAMAudioDataReceiverDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[ADAMAudioDataReceiver reconnect]
+  -[ADAMAudioDataReceiver receiveAudioSample:]
+  -[ADAMAudioDataReceiver verifyInvariants]
+  -[ADAMAudioDataReceiver stopReceivingAudioSampleType:]
+  -[ADAMAudioDataReceiver setupConnection]
+  -[ADAMAudioDataReceiver startReceivingAudioSampleType:withCallback:]
+  -[ADAMAudioDataReceiver dealloc]
+  -[ADAMAudioDataReceiver receiveAudioSample:type:metadata:]
+  -[ADAMAudioDataReceiver .cxx_destruct]
+  -[ADAMAudioDataReceiver initWithIdentifier:]
+  -[ADAMAudioDataReceiver getCurrentConfigurationForAudioSampleType:]
+  -[ADAMAudioDataReceiver startReceivingAudioSampleType:]
+  -[ADAMAudioDataReceiver reset]
+  -[ADAMAudioDataReceiver connectionDidInvalidate]
+  -[ADAMAudioDataReceiver configureAudioSampleType:configuration:]
+  -[ADAMAudioDataReceiver setConnectionDidInvalidate:]
+  -[ADAMAudioDataReceiver stopMeasuringAudioSampleType:]
+  -[ADAMAudioDataReceiver isMeasurementOnForAudioSampleType:]
+  -[ADAMAudioDataReceiver setDelegate:]
+  -[ADAMAudioDataReceiver startMeasuringAudioSampleType:withConfiguration:]
+  -[ADAMAudioDataReceiver delegate]
+  -[ADAMAudioDataReceiver handleAndLogError:]
+
+
+ADAFUtil : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[ADAFUtil stringFromDataType:]
+  +[ADAFUtil isProcessMediaserverd]
+
+
+ADASPreferenceStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *keyMap
+ @property  NSDictionary *defaultValues
+ @property  NSDictionary *specialDarwinKeys
+ @property  NPSDomainAccessor *coreAudioDomain
+ @property  NPSDomainAccessor *coreAudioDeviceDomain
+
+  // class methods
+  +[ADASPreferenceStore sharedInstance]
+
+  // instance methods
+  -[ADASPreferenceStore setCoreAudioDomain:]
+  -[ADASPreferenceStore init]
+  -[ADASPreferenceStore coreAudioDomain]
+  -[ADASPreferenceStore keyMap]
+  -[ADASPreferenceStore .cxx_destruct]
+  -[ADASPreferenceStore defaultValues]
+  -[ADASPreferenceStore coreAudioDeviceDomain]
+  -[ADASPreferenceStore specialDarwinKeys]
+  -[ADASPreferenceStore setCoreAudioDeviceDomain:]
+
+
+ADASManager : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[ADASManager migrateKeyEnableHAEHKMeasurement:]
+  -[ADASManager getNanoPreferenceFor:]
+  -[ADASManager init]
+  -[ADASManager _migrateVolumeLimitThreshold:]
+  -[ADASManager _getDefaultsFor:]
+  -[ADASManager getPreferencesFor:]
+  -[ADASManager _syncNanoForRead:]
+  -[ADASManager _error:]
+  -[ADASManager _isDeviceMandatoryForHAENotification:]
+  -[ADASManager _featureFlagEnabled]
+  -[ADASManager .cxx_destruct]
+  -[ADASManager _sync]
+  -[ADASManager _setDefaultsFor:value:]
+  -[ADASManager getNanoPreferencesFor:]
+  -[ADASManager didSurfaceMigrationAlert]
+  -[ADASManager setNanoPreferenceFor:value:notify:]
+  -[ADASManager getPreferenceFor:]
+  -[ADASManager setPreferenceFor:value:]
+  -[ADASManager _setDefaultValueIfNeeded:nano:sync:]
+  -[ADASManager _getDeviceSpecificDefaultsFor:]
+  -[ADASManager _syncNanoDeviceSpecificForRead:]
+  -[ADASManager _isAlertSupported]
+  -[ADASManager _setChainedKeys:val:nano:modifiedKeys:]
+  -[ADASManager removePreferenceFor:]
+  -[ADASManager setNanoPreferenceFor:value:]
+  -[ADASManager _syncNanoForWrite:]
+  -[ADASManager _syncDeviceSpecificDomain]
+  -[ADASManager _softwareVersionEnabled]
+  -[ADASManager removePreferenceFor:notify:]
+  -[ADASManager removeNanoPreferenceFor:notify:]
+  -[ADASManager _notify:]
+  -[ADASManager _getDefaultsKey:]
+  -[ADASManager _setDeviceSpecificDefaultsFor:value:]
+  -[ADASManager shouldSufaceHAENotificationMigrationAlert]
+  -[ADASManager _getCurrentVolumeLimit]
+  -[ADASManager nanoSettingsAvailable]
+  -[ADASManager _clearCurrentVolumeLimit]
+  -[ADASManager setPreferenceFor:value:notify:]
+  -[ADASManager _getSpecialKeys:nano:]
+  -[ADASManager removeNanoPreferenceFor:]
+
+
+ADAMAudioDataAnalysisSample : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  NSNumber *data
+ @property  NSDateInterval *dateInterval
+ @property  unsigned int type
+ @property  NSDictionary *metadata
+ @property  NSUUID *uuid
+
+  // class methods
+  +[ADAMAudioDataAnalysisSample supportsSecureCoding]
+
+  // instance methods
+  -[ADAMAudioDataAnalysisSample copyWithZone:]
+  -[ADAMAudioDataAnalysisSample dateInterval]
+  -[ADAMAudioDataAnalysisSample uuid]
+  -[ADAMAudioDataAnalysisSample .cxx_destruct]
+  -[ADAMAudioDataAnalysisSample encodeWithCoder:]
+  -[ADAMAudioDataAnalysisSample data]
+  -[ADAMAudioDataAnalysisSample type]
+  -[ADAMAudioDataAnalysisSample metadata]
+  -[ADAMAudioDataAnalysisSample initWithCoder:]
+  -[ADAMAudioDataAnalysisSample initAudioSampleWithType:data:dateInterval:metadata:]
+
+
+01 00 0400 /System/Library/PrivateFrameworks/Celestial.framework/Celestial: AVSystemController 
+01 00 0300 /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience: MXSystemController 
+01 00 0200 /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync: NPSDomainAccessor 
+01 00 0200 /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync: NPSManager 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

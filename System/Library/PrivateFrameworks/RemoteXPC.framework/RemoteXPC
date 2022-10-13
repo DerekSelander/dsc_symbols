@@ -1,0 +1,285 @@
+|| __DATA.__data _XPC_REMOTE_CONNECTION_PROTOCOL_VERSION_CURRENT
+|| __DATA.__objc_data _OBJC_CLASS_$_OS_xpc_remote_outstanding_reply
+|| __DATA.__objc_data _OBJC_CLASS_$_OS_xpc_remote_pending_stream
+|| __DATA.__objc_data _OBJC_CLASS_$_OS_xpc_remote_stream
+|| __DATA.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_outstanding_reply
+|| __DATA.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_pending_stream
+|| __DATA.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_stream
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.conn
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.error
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.event_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.msg_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.parent_io
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.state
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.stream_direction
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.stream_io
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.tx_complete
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_channel.wire_version
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_listener.accept_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_listener.cancel_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_listener.canceled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_listener.queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_listener.type
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.barrier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.body
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.link_stqe_next
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.msg_id
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.ool
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.ool_length
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.reply_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_message.reply_queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_outstanding_reply.link_stqe_next
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_outstanding_reply.msg_id
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_outstanding_reply.reply_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_outstanding_reply.reply_queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.channel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.completion_handler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.direction
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.error
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.io
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.link_stqe_next
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_pending_stream.stream_id
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_stream.channel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OS_xpc_remote_stream.link_stqe_next
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OS_xpc_remote_channel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OS_xpc_remote_connection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OS_xpc_remote_listener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OS_xpc_remote_message
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_channel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_connection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_listener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OS_xpc_remote_message
+|| __DATA_DIRTY.__objc_data __xpc_type_remote_connection
+|| __TEXT.__text _xpc_remote_channel_arm_read
+|| __TEXT.__text _xpc_remote_channel_attach_stream
+|| __TEXT.__text _xpc_remote_channel_cancel
+|| __TEXT.__text _xpc_remote_channel_create
+|| __TEXT.__text _xpc_remote_channel_send
+|| __TEXT.__text _xpc_remote_connection_activate
+|| __TEXT.__text _xpc_remote_connection_cancel
+|| __TEXT.__text _xpc_remote_connection_copy_remote_address_string
+|| __TEXT.__text _xpc_remote_connection_copy_remote_endpoint
+|| __TEXT.__text _xpc_remote_connection_create_asymmetric_connected_ipv6_pair
+|| __TEXT.__text _xpc_remote_connection_create_connected_ipv6_pair
+|| __TEXT.__text _xpc_remote_connection_create_connected_pair
+|| __TEXT.__text _xpc_remote_connection_create_remote_service_listener
+|| __TEXT.__text _xpc_remote_connection_create_with_connected_fd
+|| __TEXT.__text _xpc_remote_connection_create_with_nw_connection
+|| __TEXT.__text _xpc_remote_connection_create_with_remote_service
+|| __TEXT.__text _xpc_remote_connection_get_failsafe_version_flags
+|| __TEXT.__text _xpc_remote_connection_get_remote_service_version
+|| __TEXT.__text _xpc_remote_connection_get_version_flags
+|| __TEXT.__text _xpc_remote_connection_send_barrier
+|| __TEXT.__text _xpc_remote_connection_send_message
+|| __TEXT.__text _xpc_remote_connection_send_message_with_reply
+|| __TEXT.__text _xpc_remote_connection_send_message_with_reply_sync
+|| __TEXT.__text _xpc_remote_connection_set_event_handler
+|| __TEXT.__text _xpc_remote_connection_set_local_service_version
+|| __TEXT.__text _xpc_remote_connection_set_target_queue
+|| __TEXT.__text _xpc_remote_connection_set_traffic_class
+|| __TEXT.__text _xpc_remote_connection_setup_nw_parameters
+|| __TEXT.__text _xpc_remote_listener_cancel
+|| __TEXT.__text _xpc_remote_listener_create_for_remote_service
+__ RemoteServiceDiscovery: _remote_device_get_xpc_remote_connection_version_flags
+__ RemoteServiceDiscovery: _remote_service_connect_socket
+__ RemoteServiceDiscovery: _remote_service_get_name
+__ RemoteServiceDiscovery: _remote_service_get_version
+__ RemoteServiceDiscovery: _remote_service_get_xpc_remote_connection_version_flags
+__ RemoteServiceDiscovery: _remote_service_listen_with_device
+__ RemoteServiceDiscovery: _remote_socket_create_connected_ipv6_pair
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_data_destructor_free
+__ libSystem.B.dylib: __dispatch_data_empty
+__ libSystem.B.dylib: __os_assumes_log
+__ libSystem.B.dylib: __os_crash
+__ libSystem.B.dylib: __os_crash_fmt
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_log_pack_fill
+__ libSystem.B.dylib: __os_log_pack_size
+__ libSystem.B.dylib: __xpc_dictionary_extract_reply_msg_id
+__ libSystem.B.dylib: __xpc_dictionary_get_reply_msg_id
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_type_data
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_file_transfer
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_data_create
+__ libSystem.B.dylib: _dispatch_data_create_concat
+__ libSystem.B.dylib: _dispatch_data_create_map
+__ libSystem.B.dylib: _dispatch_data_get_size
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_io_close
+__ libSystem.B.dylib: _dispatch_io_create_with_io
+__ libSystem.B.dylib: _dispatch_io_read
+__ libSystem.B.dylib: _dispatch_io_set_low_water
+__ libSystem.B.dylib: _dispatch_io_write
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _setsockopt
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _socketpair
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strtoul
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_create_from_serialization
+__ libSystem.B.dylib: _xpc_data_get_length
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_extension_type_init
+__ libSystem.B.dylib: _xpc_file_transfer_copy_io
+__ libSystem.B.dylib: _xpc_file_transfer_get_transfer_id
+__ libSystem.B.dylib: _xpc_file_transfer_send_finished
+__ libSystem.B.dylib: _xpc_file_transfer_set_transport_writing_callbacks
+__ libSystem.B.dylib: _xpc_file_transfer_write_finished
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_install_remote_hooks
+__ libSystem.B.dylib: _xpc_make_serialization
+__ libSystem.B.dylib: _xpc_make_serialization_with_ool
+__ libSystem.B.dylib: _xpc_receive_remote_msg
+__ libSystem.B.dylib: _xpc_transaction_begin
+__ libSystem.B.dylib: dyld_stub_binder
+__ libnetwork.dylib: __nw_content_context_default_message
+__ libnetwork.dylib: __nw_content_context_final_send
+__ libnetwork.dylib: _nw_connection_cancel
+__ libnetwork.dylib: _nw_connection_copy_connected_remote_endpoint
+__ libnetwork.dylib: _nw_connection_copy_parameters
+__ libnetwork.dylib: _nw_connection_create_with_connected_socket_and_parameters
+__ libnetwork.dylib: _nw_connection_create_with_connection
+__ libnetwork.dylib: _nw_connection_receive
+__ libnetwork.dylib: _nw_connection_send
+__ libnetwork.dylib: _nw_connection_set_adaptive_write_handler
+__ libnetwork.dylib: _nw_connection_set_cancel_handler
+__ libnetwork.dylib: _nw_connection_set_event_handler
+__ libnetwork.dylib: _nw_connection_set_queue
+__ libnetwork.dylib: _nw_connection_set_read_close_handler
+__ libnetwork.dylib: _nw_connection_set_viability_changed_handler
+__ libnetwork.dylib: _nw_connection_set_write_close_handler
+__ libnetwork.dylib: _nw_connection_start
+__ libnetwork.dylib: _nw_endpoint_copy_address_string
+__ libnetwork.dylib: _nw_error_get_error_code
+__ libnetwork.dylib: _nw_error_get_error_domain
+__ libnetwork.dylib: _nw_listener_cancel
+__ libnetwork.dylib: _nw_listener_create_with_connection
+__ libnetwork.dylib: _nw_listener_set_event_handler
+__ libnetwork.dylib: _nw_listener_set_new_connection_handler
+__ libnetwork.dylib: _nw_listener_set_queue
+__ libnetwork.dylib: _nw_listener_start
+__ libnetwork.dylib: _nw_parameters_add_protocol_stack_member
+__ libnetwork.dylib: _nw_parameters_copy
+__ libnetwork.dylib: _nw_parameters_create
+__ libnetwork.dylib: _nw_parameters_create_protocol_parameters
+__ libnetwork.dylib: _nw_parameters_set_data_mode
+__ libnetwork.dylib: _nw_parameters_set_server_mode
+__ libnetwork.dylib: _nw_protocol_http2_transport_identifier
+__ libnetwork.dylib: _nw_protocol_http2_transport_parameters_set_connection_receive_window_size
+__ libnetwork.dylib: _nw_protocol_http2_transport_parameters_set_stream_receive_window_size
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+OS_xpc_remote_pending_stream : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_pending_stream .cxx_destruct]
+
+
+OS_xpc_remote_stream : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_stream .cxx_destruct]
+
+
+OS_xpc_remote_message : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_message .cxx_destruct]
+
+
+OS_xpc_remote_outstanding_reply : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_outstanding_reply .cxx_destruct]
+
+
+OS_xpc_remote_connection : NSObject /usr/lib/libSystem.B.dylib <OS_xpc_object>
+ @property  NSObject<OS_dispatch_queue> *internal_queue
+ @property  NSObject<OS_dispatch_queue> *target_queue
+ @property  @? event_handler
+ @property  int state
+ @property  int type
+ @property  BOOL send_in_progress
+ @property  OS_xpc_remote_listener *listener
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[OS_xpc_remote_connection listener]
+  -[OS_xpc_remote_connection setListener:]
+  -[OS_xpc_remote_connection dealloc]
+  -[OS_xpc_remote_connection setState:]
+  -[OS_xpc_remote_connection setType:]
+  -[OS_xpc_remote_connection .cxx_destruct]
+  -[OS_xpc_remote_connection internal_queue]
+  -[OS_xpc_remote_connection target_queue]
+  -[OS_xpc_remote_connection type]
+  -[OS_xpc_remote_connection setSend_in_progress:]
+  -[OS_xpc_remote_connection setInternal_queue:]
+  -[OS_xpc_remote_connection setEvent_handler:]
+  -[OS_xpc_remote_connection state]
+  -[OS_xpc_remote_connection event_handler]
+  -[OS_xpc_remote_connection send_in_progress]
+  -[OS_xpc_remote_connection setTarget_queue:]
+
+
+OS_xpc_remote_channel : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_channel .cxx_destruct]
+
+
+OS_xpc_remote_listener : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[OS_xpc_remote_listener dealloc]
+  -[OS_xpc_remote_listener .cxx_destruct]
+
+
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 

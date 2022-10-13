@@ -1,0 +1,124 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCVoiceOverAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCVoiceOverProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCVoiceOverAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCVoiceOverProvider
+|| __DATA_CONST.__const _ACCVoiceOverActionParameterPointXKey
+|| __DATA_CONST.__const _ACCVoiceOverActionParameterPointYKey
+|| __DATA_CONST.__const _ACCVoiceOverActionParameterScaleKey
+|| __DATA_CONST.__const _ACCVoiceOverActionParameterTextKey
+|| __DATA_CONST.__const _ACCVoiceOverActionParameterTouchTypeKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateContextKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateFrameBottomXKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateFrameBottomYKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateFrameKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateFrameTopXKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateFrameTopYKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateHintKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateLabelKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateTraitsKey
+|| __DATA_CONST.__const _ACCVoiceOverCursorInformationUpdateValueKey
+|| __DATA_CONST.__const _ACCVoiceOverInformationUpdateContextKey
+|| __DATA_CONST.__const _ACCVoiceOverInformationUpdateEnabledKey
+|| __DATA_CONST.__const _ACCVoiceOverInformationUpdateSpeakingRateKey
+|| __DATA_CONST.__const _ACCVoiceOverInformationUpdateSpeakingVolumeKey
+|| __TEXT.__const _AccessoryVoiceOverVersionNumber
+|| __TEXT.__const _AccessoryVoiceOverVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+ACCVoiceOverAccessory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *accessoryUID
+ @property  BOOL desiredVoiceOverState
+
+  // instance methods
+  -[ACCVoiceOverAccessory .cxx_destruct]
+  -[ACCVoiceOverAccessory initWithAccessoryUID:]
+  -[ACCVoiceOverAccessory accessoryUID]
+  -[ACCVoiceOverAccessory setAccessoryUID:]
+  -[ACCVoiceOverAccessory desiredVoiceOverState]
+  -[ACCVoiceOverAccessory setDesiredVoiceOverState:]
+
+
+ACCVoiceOverProvider : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *providerUID
+ @property  NSXPCConnection *serverConnection
+ @property  <ACCVoiceOverXPCServerProtocol> *remoteObject
+ @property  NSMutableDictionary *accessories
+ @property  <ACCVoiceOverProviderProtocol> *delegate
+
+  // instance methods
+  -[ACCVoiceOverProvider serverConnection]
+  -[ACCVoiceOverProvider initWithDelegate:]
+  -[ACCVoiceOverProvider remoteObject]
+  -[ACCVoiceOverProvider setRemoteObject:]
+  -[ACCVoiceOverProvider dealloc]
+  -[ACCVoiceOverProvider .cxx_destruct]
+  -[ACCVoiceOverProvider accessories]
+  -[ACCVoiceOverProvider setServerConnection:]
+  -[ACCVoiceOverProvider setDelegate:]
+  -[ACCVoiceOverProvider setAccessories:]
+  -[ACCVoiceOverProvider delegate]
+  -[ACCVoiceOverProvider providerUID]
+  -[ACCVoiceOverProvider setProviderUID:]
+  -[ACCVoiceOverProvider connectToServer]
+  -[ACCVoiceOverProvider calculateDesiredState:]
+  -[ACCVoiceOverProvider accessoryVoiceOverAttached:]
+  -[ACCVoiceOverProvider accessoryVoiceOverDetached:]
+  -[ACCVoiceOverProvider accessoryVoiceOver:setEnabled:]
+  -[ACCVoiceOverProvider accessoryVoiceOver:setContext:]
+  -[ACCVoiceOverProvider accessoryVoiceOver:performAction:parameters:]
+  -[ACCVoiceOverProvider accessoryVoiceOver:requestConfiguration:param:]
+  -[ACCVoiceOverProvider accessoryVoiceOverStartInformationUpdate:]
+  -[ACCVoiceOverProvider accessoryVoiceOverStopInformationUpdate:]
+  -[ACCVoiceOverProvider accessoryVoiceOverStartCursorInformationUpdate:]
+  -[ACCVoiceOverProvider accessoryVoiceOverStopCursorInformationUpdate:]
+  -[ACCVoiceOverProvider updateVoiceOverInfo:]
+  -[ACCVoiceOverProvider updateVoiceOverCursorInfo:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

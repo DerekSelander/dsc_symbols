@@ -1,0 +1,305 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_GVEdge
+|| __DATA.__objc_data _OBJC_CLASS_$_GVGraph
+|| __DATA.__objc_data _OBJC_CLASS_$_GVInternalRenderer
+|| __DATA.__objc_data _OBJC_CLASS_$_GVLayout
+|| __DATA.__objc_data _OBJC_CLASS_$_GVNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_GVEdge
+|| __DATA.__objc_data _OBJC_METACLASS_$_GVGraph
+|| __DATA.__objc_data _OBJC_METACLASS_$_GVInternalRenderer
+|| __DATA.__objc_data _OBJC_METACLASS_$_GVLayout
+|| __DATA.__objc_data _OBJC_METACLASS_$_GVNode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.h
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.inNodes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.inPriority
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.index
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.next
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.outNodes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.outPriority
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.prev
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.rank
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.w
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.x
+|| __DATA.__objc_ivar _OBJC_IVAR_$_GVNode.y
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreGraphics: _CGSizeZero
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _object_getClassName
+GVNode : NSObject
+ @property  double x
+ @property  double y
+ @property  double w
+ @property  double h
+ @property  double cx
+ @property  double cy
+ @property  NSMutableOrderedSet *inNodes
+ @property  NSMutableOrderedSet *outNodes
+ @property  unsigned long inDegree
+ @property  unsigned long outDegree
+ @property  long long rank
+ @property  long long index
+ @property  GVNode *prev
+ @property  GVNode *next
+ @property  unsigned long inPriority
+ @property  unsigned long outPriority
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} frame
+ @property  {CGPoint=dd} origin
+ @property  {CGPoint=dd} center
+ @property  {CGSize=dd} size
+
+  // instance methods
+  -[GVNode setOrigin:]
+  -[GVNode setW:]
+  -[GVNode w]
+  -[GVNode cx]
+  -[GVNode index]
+  -[GVNode cy]
+  -[GVNode next]
+  -[GVNode init]
+  -[GVNode rank]
+  -[GVNode setIndex:]
+  -[GVNode origin]
+  -[GVNode x]
+  -[GVNode frame]
+  -[GVNode setRank:]
+  -[GVNode dealloc]
+  -[GVNode size]
+  -[GVNode setY:]
+  -[GVNode setX:]
+  -[GVNode setCenter:]
+  -[GVNode y]
+  -[GVNode prev]
+  -[GVNode setPrev:]
+  -[GVNode setCy:]
+  -[GVNode setH:]
+  -[GVNode setFrame:]
+  -[GVNode setSize:]
+  -[GVNode center]
+  -[GVNode inNodes]
+  -[GVNode h]
+  -[GVNode setNext:]
+  -[GVNode setCx:]
+  -[GVNode outNodes]
+  -[GVNode inDegree]
+  -[GVNode outDegree]
+  -[GVNode hasEdgeFrom:]
+  -[GVNode hasEdgeTo:]
+  -[GVNode addEdgeFrom:]
+  -[GVNode addEdgeTo:]
+  -[GVNode removeEdgeFrom:]
+  -[GVNode removeEdgeTo:]
+  -[GVNode computePriority]
+  -[GVNode traversePostorder:withCallback:stopper:randomize:]
+  -[GVNode traversePreorder:withCallback:randomize:]
+  -[GVNode setInNodes:]
+  -[GVNode setOutNodes:]
+  -[GVNode inPriority]
+  -[GVNode setInPriority:]
+  -[GVNode outPriority]
+  -[GVNode setOutPriority:]
+
+
+GVDummyNode : GVNode
+  // instance methods
+  -[GVDummyNode computePriority]
+
+
+GVEdge : NSObject
+ @property  NSMutableArray *dummies
+ @property  BOOL reversed
+ @property  GVNode *from
+ @property  GVNode *to
+
+  // instance methods
+  -[GVEdge to]
+  -[GVEdge from]
+  -[GVEdge setReversed:]
+  -[GVEdge init]
+  -[GVEdge dealloc]
+  -[GVEdge reversed]
+  -[GVEdge dummies]
+  -[GVEdge initWithFromNode:to:]
+  -[GVEdge setDummies:]
+
+
+GVGraph : NSObject
+ @property  NSMutableOrderedSet *nodes
+ @property  NSMutableOrderedSet *edges
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} bounds
+
+  // instance methods
+  -[GVGraph render:]
+  -[GVGraph init]
+  -[GVGraph addNode:]
+  -[GVGraph dealloc]
+  -[GVGraph allEdges]
+  -[GVGraph edges]
+  -[GVGraph bounds]
+  -[GVGraph setEdges:]
+  -[GVGraph removeNode:]
+  -[GVGraph setNodes:]
+  -[GVGraph allNodes]
+  -[GVGraph nodes]
+  -[GVGraph addEdgeFrom:to:]
+  -[GVGraph hasEdgeFrom:to:]
+  -[GVGraph edgeFrom:to:]
+  -[GVGraph removeEdgeFrom:to:]
+  -[GVGraph addEdgeFrom:to:reversed:]
+  -[GVGraph hasNode:]
+  -[GVGraph reverseEdge:]
+  -[GVGraph undoReverseEdge:]
+  -[GVGraph connectedSubgraphs]
+  -[GVGraph iterateOverAllEdges:]
+  -[GVGraph iterateOverAllNodes:]
+
+
+GVRank : NSObject
+ @property  GVRank *prev
+ @property  GVRank *next
+ @property  double width
+ @property  double height
+
+  // instance methods
+  -[GVRank next]
+  -[GVRank addNode:]
+  -[GVRank dealloc]
+  -[GVRank width]
+  -[GVRank prev]
+  -[GVRank setPrev:]
+  -[GVRank height]
+  -[GVRank removeNode:]
+  -[GVRank nodes]
+  -[GVRank setNext:]
+  -[GVRank initWithSeparation:]
+  -[GVRank neighborsOfNode:]
+  -[GVRank sortByIndex]
+  -[GVRank exchangeNodeAtIndex:withNodeAtIndex:]
+  -[GVRank buildNodeIterators]
+  -[GVRank inCrossings]
+  -[GVRank outCrossings]
+  -[GVRank sizeForDummy]
+  -[GVRank centerNodesWithRespectoTo:]
+  -[GVRank centerNode:at:]
+
+
+GVHorizontalRank : GVRank
+  // instance methods
+  -[GVHorizontalRank width]
+  -[GVHorizontalRank height]
+  -[GVHorizontalRank initWithSeparation:]
+  -[GVHorizontalRank sizeForDummy]
+  -[GVHorizontalRank centerNodesWithRespectoTo:]
+  -[GVHorizontalRank centerNode:at:]
+
+
+GVVerticalRank : GVRank
+  // instance methods
+  -[GVVerticalRank width]
+  -[GVVerticalRank height]
+  -[GVVerticalRank initWithSeparation:]
+  -[GVVerticalRank sizeForDummy]
+  -[GVVerticalRank centerNodesWithRespectoTo:]
+  -[GVVerticalRank centerNode:at:]
+
+
+GVLayout : NSObject
+ @property  GVGraph *graph
+ @property  int direction
+ @property  {CGSize=dd} separation
+ @property  NSMutableArray *selfEdges
+ @property  NSMutableArray *ranks
+
+  // class methods
+  +[GVLayout layoutGraph:withDirection:separation:]
+
+  // instance methods
+  -[GVLayout graph]
+  -[GVLayout setGraph:]
+  -[GVLayout direction]
+  -[GVLayout dealloc]
+  -[GVLayout setRanks:]
+  -[GVLayout setDirection:]
+  -[GVLayout transpose]
+  -[GVLayout ranks]
+  -[GVLayout separation]
+  -[GVLayout setSeparation:]
+  -[GVLayout doLayout:direction:separation:]
+  -[GVLayout removeSelfEdges]
+  -[GVLayout removeCycles]
+  -[GVLayout assignRanks]
+  -[GVLayout orderVertices]
+  -[GVLayout assignCoordinates]
+  -[GVLayout undoRemoveCycles]
+  -[GVLayout _removeCycleDFS:visistedNodes:nodesInStack:]
+  -[GVLayout makeFeasibleTree]
+  -[GVLayout minimizeCutValues]
+  -[GVLayout normalizeRanks]
+  -[GVLayout balanceRanks]
+  -[GVLayout buildRankIterators]
+  -[GVLayout initializeRanks]
+  -[GVLayout initializeOrder]
+  -[GVLayout weightedMedian:]
+  -[GVLayout commitOrder]
+  -[GVLayout crossings]
+  -[GVLayout saveOrder]
+  -[GVLayout restoreOrder]
+  -[GVLayout medianValueOf:withRespectTo:]
+  -[GVLayout medianSort:withRespectTo:]
+  -[GVLayout assignNodePriorities]
+  -[GVLayout assignNodeCoordinates]
+  -[GVLayout assignRankCoordinates]
+  -[GVLayout initializeNodeCoordinates]
+  -[GVLayout medianPosition:]
+  -[GVLayout packCutX:]
+  -[GVLayout straightenX]
+  -[GVLayout packCutY:]
+  -[GVLayout straightenY]
+  -[GVLayout undoRemoveSelfEdges]
+  -[GVLayout selfEdges]
+  -[GVLayout setSelfEdges:]
+
+
+GVInternalRenderer : NSObject
+  // class methods
+  +[GVInternalRenderer render:renderer:]
+  +[GVInternalRenderer drawAllEdges:renderer:]
+  +[GVInternalRenderer drawAllNodes:renderer:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 

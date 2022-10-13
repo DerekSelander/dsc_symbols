@@ -1,0 +1,143 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FFConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_FFFeatureAttribute
+|| __DATA.__objc_data _OBJC_CLASS_$_FFFeatureState
+|| __DATA.__objc_data _OBJC_METACLASS_$_FFConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_FFFeatureAttribute
+|| __DATA.__objc_data _OBJC_METACLASS_$_FFFeatureState
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _NSFileGroupOwnerAccountID
+__ Foundation: _NSFileOwnerAccountID
+__ Foundation: _NSFilePosixPermissions
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_once
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+FFFeatureAttribute : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  NSString *value
+
+  // instance methods
+  -[FFFeatureAttribute initWithName:value:]
+  -[FFFeatureAttribute .cxx_destruct]
+  -[FFFeatureAttribute name]
+  -[FFFeatureAttribute setValue:]
+  -[FFFeatureAttribute value]
+  -[FFFeatureAttribute setName:]
+
+
+FFFeatureState : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *attributes
+ @property  NSString *domain
+ @property  NSString *feature
+ @property  BOOL hidden
+ @property  long long value
+
+  // instance methods
+  -[FFFeatureState domain]
+  -[FFFeatureState .cxx_destruct]
+  -[FFFeatureState setAttributes:]
+  -[FFFeatureState setDomain:]
+  -[FFFeatureState attributes]
+  -[FFFeatureState feature]
+  -[FFFeatureState setValue:]
+  -[FFFeatureState hidden]
+  -[FFFeatureState value]
+  -[FFFeatureState setHidden:]
+  -[FFFeatureState setFeature:]
+  -[FFFeatureState initWithDomain:feature:value:hidden:attributes:]
+  -[FFFeatureState initWithDomain:feature:value:]
+
+
+FFConfiguration : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSSet *domains
+
+  // class methods
+  +[FFConfiguration shared]
+
+  // instance methods
+  -[FFConfiguration reset:]
+  -[FFConfiguration .cxx_destruct]
+  -[FFConfiguration enableFeature:domain:level:]
+  -[FFConfiguration stateForFeature:domain:level:]
+  -[FFConfiguration disableFeature:domain:level:]
+  -[FFConfiguration stateForFeature:domain:]
+  -[FFConfiguration invalidateCache]
+  -[FFConfiguration domains]
+  -[FFConfiguration commitUpdates:]
+  -[FFConfiguration initPrivate]
+  -[FFConfiguration clearCachedData]
+  -[FFConfiguration validateName:]
+  -[FFConfiguration isValidName:]
+  -[FFConfiguration fileURLForLevel:pathIndex:]
+  -[FFConfiguration makeFeatureDictionaryFrom:forDomain:]
+  -[FFConfiguration fileURLForDomain:pathIndex:]
+  -[FFConfiguration addFeaturesForDomain:pathIndex:fromURL:]
+  -[FFConfiguration loadCombinedDataForLevel:]
+  -[FFConfiguration loadDomain:level:]
+  -[FFConfiguration effectiveStateForFeature:domain:level:]
+  -[FFConfiguration createMutableDomainConfig:level:]
+  -[FFConfiguration loadAllData]
+  -[FFConfiguration isFeatureHidden:domain:]
+  -[FFConfiguration setValue:feature:domain:level:]
+  -[FFConfiguration createDirectoryAtURL:error:]
+  -[FFConfiguration populateDictionary:withFeatures:]
+  -[FFConfiguration writeData:toFile:error:]
+  -[FFConfiguration loadAllLevelsForDomain:]
+  -[FFConfiguration resolvedStateForFeature:domain:]
+  -[FFConfiguration setFeaturesMatchingAttribute:level:value:]
+  -[FFConfiguration writeDomainUpdates:]
+  -[FFConfiguration writeCombinedUpdates:]
+  -[FFConfiguration featuresForDomain:]
+  -[FFConfiguration defaultStateForFeature:domain:]
+  -[FFConfiguration enableFeaturesMatchingAttribute:level:]
+  -[FFConfiguration disableFeaturesMatchingAttribute:level:]
+  -[FFConfiguration unsetFeature:domain:level:]
+  -[FFConfiguration unsetFeaturesMatchingAttribute:level:]
+  -[FFConfiguration resetDomain:error:]
+
+
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

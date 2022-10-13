@@ -1,0 +1,1316 @@
+|| __DATA.__data _STSystemStatusLoggingSubsystem
+|| __DATA.__objc_data _OBJC_CLASS_$_STMutableVoiceControlStatusDomainData
+|| __DATA.__objc_data _OBJC_CLASS_$_STStatusDomainXPCServerHandle
+|| __DATA.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomainSIMInfoDiff
+|| __DATA.__objc_data _OBJC_CLASS_$_STVoiceControlStatusDomainPublisher
+|| __DATA.__objc_data _OBJC_METACLASS_$_STMutableVoiceControlStatusDomainData
+|| __DATA.__objc_data _OBJC_METACLASS_$_STStatusDomainXPCServerHandle
+|| __DATA.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomainSIMInfoDiff
+|| __DATA.__objc_data _OBJC_METACLASS_$_STVoiceControlStatusDomainPublisher
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STBatteryStatusDomainData._batterySaverModeActive
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STBatteryStatusDomainData._chargingDescription
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STBatteryStatusDomainData._chargingDescriptionType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STBatteryStatusDomainData._chargingState
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STBatteryStatusDomainData._percentCharge
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainData._SIMOneInfo
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainData._SIMTwoInfo
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainData._cellularRadioCapabilityEnabled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainData._dualSIMEnabled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainData._radioModuleDead
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._SIMPresent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._callForwardingEnabled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._cellularServiceState
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._dataNetworkType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._label
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._maxSignalStrengthBars
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._preferredForDataConnections
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._providingDataConnection
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._registeredWithoutCellular
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._secondaryServiceDescription
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._serviceDescription
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._serviceState
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._shortLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STTelephonyStatusDomainSIMInfo._signalStrengthBars
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STVoiceControlStatusDomainData._listeningState
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STVoiceControlStatusDomainData._voiceControlActive
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STWifiStatusDomainData._associatedToIOSHotspot
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STWifiStatusDomainData._signalStrengthBars
+|| __DATA.__objc_ivar _OBJC_IVAR_$_STWifiStatusDomainData._wifiActive
+|| __DATA_CONST.__const _STDynamicAttributionEntitlement
+|| __DATA_CONST.__const _STDynamicAttributionServiceName
+|| __DATA_CONST.__const _STStatusDomainEntitlement
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueBattery
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueCalling
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueMedia
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueTelephony
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueVoiceControl
+|| __DATA_CONST.__const _STStatusDomainEntitlementValueWifi
+|| __DATA_CONST.__const _STStatusDomainPublisherEntitlement
+|| __DATA_CONST.__const _STStatusDomainPublisherServiceName
+|| __DATA_CONST.__const _STStatusDomainServiceName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STActivityAttribution
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STActivityAttributionCatalog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STActivityAttributionCatalogDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STBatteryStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STBatteryStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STBatteryStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STBatteryStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STCallingStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STCallingStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STCallingStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STCallingStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STCallingStatusDomainUserInteraction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STDynamicActivityAttributionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STDynamicActivityAttributionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STDynamicActivityAttributionPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STDynamicActivityAttributionXPCClientHandle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMediaStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMediaStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMediaStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMediaStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableActivityAttributionCatalog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableBatteryStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableCallingStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableMediaStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableTelephonyStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableTelephonyStatusDomainSIMInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STMutableWifiStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STStatusDomainPublisherXPCServerHandle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STTelephonyStatusDomainSIMInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STUserInteractionHandlingStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STUserInteractionReportingStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STVoiceControlStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STVoiceControlStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STVoiceControlStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STWifiStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STWifiStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STWifiStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_STWifiStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STActivityAttribution
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STActivityAttributionCatalog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STActivityAttributionCatalogDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STBatteryStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STBatteryStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STBatteryStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STBatteryStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STCallingStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STCallingStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STCallingStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STCallingStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STCallingStatusDomainUserInteraction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STDynamicActivityAttributionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STDynamicActivityAttributionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STDynamicActivityAttributionPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STDynamicActivityAttributionXPCClientHandle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMediaStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMediaStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMediaStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMediaStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableActivityAttributionCatalog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableBatteryStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableCallingStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableMediaStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableTelephonyStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableTelephonyStatusDomainSIMInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STMutableWifiStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STStatusDomainPublisherXPCServerHandle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STTelephonyStatusDomainSIMInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STUserInteractionHandlingStatusDomainPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STUserInteractionReportingStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STVoiceControlStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STVoiceControlStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STVoiceControlStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STWifiStatusDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STWifiStatusDomainData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STWifiStatusDomainDataDiff
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_STWifiStatusDomainPublisher
+|| __TEXT.__const _SystemStatusVersionNumber
+|| __TEXT.__const _SystemStatusVersionString
+|| __TEXT.__text _STDynamicAttributionXPCServerInterface
+|| __TEXT.__text _STIsValidDataForStatusDomain
+|| __TEXT.__text _STIsValidDiffForStatusDomain
+|| __TEXT.__text _STIsValidUserInteractionForStatusDomain
+|| __TEXT.__text _STStatusDomainPublisherXPCClientInterface
+|| __TEXT.__text _STStatusDomainPublisherXPCServerInterface
+|| __TEXT.__text _STStatusDomainXPCClientInterface
+|| __TEXT.__text _STStatusDomainXPCServerInterface
+|| __TEXT.__text _STSystemStatusDescriptionForDomain
+|| __TEXT.__text _STSystemStatusLogDynamicAttribution
+|| __TEXT.__text _STValidStatusDomainDataTypes
+|| __TEXT.__text _STValidStatusDomainDiffTypes
+|| __TEXT.__text _STValidStatusDomainUserInteractionTypes
+__ BaseBoard: _BSDispatchQueueCreateSerial
+__ BaseBoard: _BSExecutablePathForPID
+__ BaseBoard: _BSLogAddStateCaptureBlockWithTitle
+__ BaseBoard: _BSPIDForAuditToken
+__ BaseBoard: _BSSettingFlagForBool
+__ BaseBoard: _BSSettingFlagIsExplicitNo
+__ BaseBoard: _BSSettingFlagIsYes
+__ BaseBoard: _OBJC_CLASS_$_BSAuditToken
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSEqualsBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSHashBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSMutableIntegerMap
+__ BaseBoard: _OBJC_CLASS_$_BSMutableSettings
+__ BaseBoard: _OBJC_CLASS_$_BSSettings
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+STDynamicActivityAttributionListener : NSObject /usr/lib/libSystem.B.dylib <NSXPCListenerDelegate>
+ @property  <STDynamicActivityAttributionServerHandle> *serverHandle
+ @property  NSXPCListener *xpcListener
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STDynamicActivityAttributionListener xpcListener]
+  -[STDynamicActivityAttributionListener initWithServerHandle:]
+  -[STDynamicActivityAttributionListener dealloc]
+  -[STDynamicActivityAttributionListener .cxx_destruct]
+  -[STDynamicActivityAttributionListener serverHandle]
+  -[STDynamicActivityAttributionListener listener:shouldAcceptNewConnection:]
+
+
+STDynamicActivityAttributionXPCClientHandle : NSObject /usr/lib/libSystem.B.dylib <STDynamicAttributionXPCServerProtocol>
+ @property  <STDynamicActivityAttributionServerHandle> *serverHandle
+ @property  NSXPCConnection *clientXPCConnection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STDynamicActivityAttributionXPCClientHandle .cxx_destruct]
+  -[STDynamicActivityAttributionXPCClientHandle serverHandle]
+  -[STDynamicActivityAttributionXPCClientHandle initWithXPCConnection:serverHandle:]
+  -[STDynamicActivityAttributionXPCClientHandle clientXPCConnection]
+  -[STDynamicActivityAttributionXPCClientHandle setCurrentAttributionKey:application:reply:]
+
+
+STDynamicActivityAttributionManager : NSObject /usr/lib/libSystem.B.dylib <STDynamicActivityAttributionServerHandle>
+ @property  STDynamicActivityAttributionListener *dynamicAttributionListener
+ @property  NSObject<OS_dispatch_queue> *internalQueue
+ @property  NSMutableDictionary *clientAttributionMap
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STDynamicActivityAttributionManager internalQueue]
+  -[STDynamicActivityAttributionManager init]
+  -[STDynamicActivityAttributionManager .cxx_destruct]
+  -[STDynamicActivityAttributionManager currentAttributedAppForClient:]
+  -[STDynamicActivityAttributionManager currentAttributionKeyForClient:]
+  -[STDynamicActivityAttributionManager setLocalizableAttributionKey:andApplication:forClient:]
+  -[STDynamicActivityAttributionManager clientAttributionMap]
+  -[STDynamicActivityAttributionManager _internalQueue_setAttributionKey:andApplication:forClient:]
+  -[STDynamicActivityAttributionManager dynamicAttributionListener]
+  -[STDynamicActivityAttributionManager setClientAttributionMap:]
+
+
+STActivityAttributionCatalogDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff, NSCopying>
+ @property  STActivityAttributionCatalog *attributionsAdded
+ @property  STActivityAttributionCatalog *attributionsRemoved
+ @property  NSDictionary *attributionsCleared
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STActivityAttributionCatalogDiff supportsSecureCoding]
+  +[STActivityAttributionCatalogDiff diffFromCatalog:toCatalog:]
+
+  // instance methods
+  -[STActivityAttributionCatalogDiff copyWithZone:]
+  -[STActivityAttributionCatalogDiff init]
+  -[STActivityAttributionCatalogDiff initWithAttributionsAdded:attributionsRemoved:attributionsCleared:]
+  -[STActivityAttributionCatalogDiff attributionsAdded]
+  -[STActivityAttributionCatalogDiff catalogByApplyingToCatalog:]
+  -[STActivityAttributionCatalogDiff .cxx_destruct]
+  -[STActivityAttributionCatalogDiff encodeWithCoder:]
+  -[STActivityAttributionCatalogDiff attributionsCleared]
+  -[STActivityAttributionCatalogDiff isEqual:]
+  -[STActivityAttributionCatalogDiff attributionsRemoved]
+  -[STActivityAttributionCatalogDiff applyToMutableCatalog:]
+  -[STActivityAttributionCatalogDiff isEmpty]
+  -[STActivityAttributionCatalogDiff initWithCoder:]
+
+
+STBatteryStatusDomain : STStatusDomain
+  // class methods
+  +[STBatteryStatusDomain statusDomainName]
+
+
+STWifiStatusDomain : STStatusDomain
+  // class methods
+  +[STWifiStatusDomain statusDomainName]
+
+
+STTelephonyStatusDomainSIMInfoDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff, NSCopying>
+ @property  BSSettings *changes
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STTelephonyStatusDomainSIMInfoDiff supportsSecureCoding]
+  +[STTelephonyStatusDomainSIMInfoDiff diffFromInfo:toInfo:]
+
+  // instance methods
+  -[STTelephonyStatusDomainSIMInfoDiff changes]
+  -[STTelephonyStatusDomainSIMInfoDiff copyWithZone:]
+  -[STTelephonyStatusDomainSIMInfoDiff initWithChanges:]
+  -[STTelephonyStatusDomainSIMInfoDiff init]
+  -[STTelephonyStatusDomainSIMInfoDiff .cxx_destruct]
+  -[STTelephonyStatusDomainSIMInfoDiff encodeWithCoder:]
+  -[STTelephonyStatusDomainSIMInfoDiff isEqual:]
+  -[STTelephonyStatusDomainSIMInfoDiff isEmpty]
+  -[STTelephonyStatusDomainSIMInfoDiff initWithCoder:]
+  -[STTelephonyStatusDomainSIMInfoDiff applyToMutableInfo:]
+  -[STTelephonyStatusDomainSIMInfoDiff infoByApplyingToInfo:]
+
+
+STStatusDomainXPCServerHandle : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainXPCClient, BSDescriptionProviding, STStatusDomainServerHandle>
+ @property  BSMutableIntegerMap *dataByDomain
+ @property  BSMutableIntegerMap *clientsByDomain
+ @property  NSObject<OS_dispatch_queue> *internalQueue
+ @property  NSObject<OS_dispatch_queue> *clientQueue
+ @property  NSXPCConnection *serverXPCConnection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STStatusDomainXPCServerHandle sharedInstance]
+
+  // instance methods
+  -[STStatusDomainXPCServerHandle internalQueue]
+  -[STStatusDomainXPCServerHandle _tearDownXPCConnection]
+  -[STStatusDomainXPCServerHandle init]
+  -[STStatusDomainXPCServerHandle _internalQueue_dataForDomain:]
+  -[STStatusDomainXPCServerHandle registerClient:forDomain:]
+  -[STStatusDomainXPCServerHandle _internalQueue_setupXPCConnectionIfNecessary]
+  -[STStatusDomainXPCServerHandle reportUserInteraction:forClient:domain:]
+  -[STStatusDomainXPCServerHandle .cxx_destruct]
+  -[STStatusDomainXPCServerHandle dataByDomain]
+  -[STStatusDomainXPCServerHandle succinctDescriptionBuilder]
+  -[STStatusDomainXPCServerHandle setServerXPCConnection:]
+  -[STStatusDomainXPCServerHandle serverXPCConnection]
+  -[STStatusDomainXPCServerHandle clientQueue]
+  -[STStatusDomainXPCServerHandle clientsByDomain]
+  -[STStatusDomainXPCServerHandle succinctDescription]
+  -[STStatusDomainXPCServerHandle removeClient:forDomain:]
+  -[STStatusDomainXPCServerHandle dataForDomain:]
+  -[STStatusDomainXPCServerHandle descriptionWithMultilinePrefix:]
+  -[STStatusDomainXPCServerHandle descriptionBuilderWithMultilinePrefix:]
+  -[STStatusDomainXPCServerHandle observeData:forDomain:]
+  -[STStatusDomainXPCServerHandle _reregisterForDomains]
+  -[STStatusDomainXPCServerHandle observeDiff:forDomain:]
+
+
+STUserInteractionReportingStatusDomain : STStatusDomain
+  // instance methods
+  -[STUserInteractionReportingStatusDomain reportUserInteraction:]
+
+
+STTelephonyStatusDomainSIMInfo : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  BOOL SIMPresent
+ @property  NSString *label
+ @property  NSString *shortLabel
+ @property  unsigned long signalStrengthBars
+ @property  unsigned long maxSignalStrengthBars
+ @property  unsigned long serviceState
+ @property  unsigned long cellularServiceState
+ @property  NSString *serviceDescription
+ @property  NSString *secondaryServiceDescription
+ @property  unsigned long dataNetworkType
+ @property  BOOL providingDataConnection
+ @property  BOOL preferredForDataConnections
+ @property  BOOL registeredWithoutCellular
+ @property  BOOL callForwardingEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STTelephonyStatusDomainSIMInfo supportsSecureCoding]
+
+  // instance methods
+  -[STTelephonyStatusDomainSIMInfo serviceDescription]
+  -[STTelephonyStatusDomainSIMInfo copyWithZone:]
+  -[STTelephonyStatusDomainSIMInfo dataByApplyingDiff:]
+  -[STTelephonyStatusDomainSIMInfo dataNetworkType]
+  -[STTelephonyStatusDomainSIMInfo maxSignalStrengthBars]
+  -[STTelephonyStatusDomainSIMInfo shortLabel]
+  -[STTelephonyStatusDomainSIMInfo secondaryServiceDescription]
+  -[STTelephonyStatusDomainSIMInfo serviceState]
+  -[STTelephonyStatusDomainSIMInfo init]
+  -[STTelephonyStatusDomainSIMInfo initWithSIMInfo:]
+  -[STTelephonyStatusDomainSIMInfo isCallForwardingEnabled]
+  -[STTelephonyStatusDomainSIMInfo cellularServiceState]
+  -[STTelephonyStatusDomainSIMInfo diffFromData:]
+  -[STTelephonyStatusDomainSIMInfo isSIMPresent]
+  -[STTelephonyStatusDomainSIMInfo signalStrengthBars]
+  -[STTelephonyStatusDomainSIMInfo initWithSIMPresent:label:shortLabel:signalStrengthBars:maxSignalStrengthBars:serviceState:cellularServiceState:serviceDescription:secondaryServiceDescription:dataNetworkType:providingDataConnection:preferredForDataConnections:registeredWithoutCellular:callForwardingEnabled:]
+  -[STTelephonyStatusDomainSIMInfo .cxx_destruct]
+  -[STTelephonyStatusDomainSIMInfo label]
+  -[STTelephonyStatusDomainSIMInfo isRegisteredWithoutCellular]
+  -[STTelephonyStatusDomainSIMInfo succinctDescriptionBuilder]
+  -[STTelephonyStatusDomainSIMInfo encodeWithCoder:]
+  -[STTelephonyStatusDomainSIMInfo isProvidingDataConnection]
+  -[STTelephonyStatusDomainSIMInfo isPreferredForDataConnections]
+  -[STTelephonyStatusDomainSIMInfo succinctDescription]
+  -[STTelephonyStatusDomainSIMInfo isEqual:]
+  -[STTelephonyStatusDomainSIMInfo mutableCopyWithZone:]
+  -[STTelephonyStatusDomainSIMInfo descriptionWithMultilinePrefix:]
+  -[STTelephonyStatusDomainSIMInfo initWithCoder:]
+  -[STTelephonyStatusDomainSIMInfo descriptionBuilderWithMultilinePrefix:]
+
+
+STMutableTelephonyStatusDomainSIMInfo : STTelephonyStatusDomainSIMInfo <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  BOOL SIMPresent
+ @property  NSString *label
+ @property  NSString *shortLabel
+ @property  unsigned long signalStrengthBars
+ @property  unsigned long maxSignalStrengthBars
+ @property  unsigned long serviceState
+ @property  unsigned long cellularServiceState
+ @property  NSString *serviceDescription
+ @property  NSString *secondaryServiceDescription
+ @property  unsigned long dataNetworkType
+ @property  BOOL providingDataConnection
+ @property  BOOL preferredForDataConnections
+ @property  BOOL registeredWithoutCellular
+ @property  BOOL callForwardingEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableTelephonyStatusDomainSIMInfo copyWithZone:]
+  -[STMutableTelephonyStatusDomainSIMInfo setServiceDescription:]
+  -[STMutableTelephonyStatusDomainSIMInfo setSignalStrengthBars:]
+  -[STMutableTelephonyStatusDomainSIMInfo setSecondaryServiceDescription:]
+  -[STMutableTelephonyStatusDomainSIMInfo setServiceState:]
+  -[STMutableTelephonyStatusDomainSIMInfo setMaxSignalStrengthBars:]
+  -[STMutableTelephonyStatusDomainSIMInfo setPreferredForDataConnections:]
+  -[STMutableTelephonyStatusDomainSIMInfo setCallForwardingEnabled:]
+  -[STMutableTelephonyStatusDomainSIMInfo setProvidingDataConnection:]
+  -[STMutableTelephonyStatusDomainSIMInfo setDataNetworkType:]
+  -[STMutableTelephonyStatusDomainSIMInfo setCellularServiceState:]
+  -[STMutableTelephonyStatusDomainSIMInfo setLabel:]
+  -[STMutableTelephonyStatusDomainSIMInfo setSIMPresent:]
+  -[STMutableTelephonyStatusDomainSIMInfo setRegisteredWithoutCellular:]
+  -[STMutableTelephonyStatusDomainSIMInfo setShortLabel:]
+  -[STMutableTelephonyStatusDomainSIMInfo applyDiff:]
+
+
+STUserInteractionHandlingStatusDomainPublisher : STStatusDomainPublisher
+ @property  @? userInteractionHandlerBlock
+
+  // instance methods
+  -[STUserInteractionHandlingStatusDomainPublisher .cxx_destruct]
+  -[STUserInteractionHandlingStatusDomainPublisher handleUserInteraction:forDomain:]
+  -[STUserInteractionHandlingStatusDomainPublisher userInteractionHandlerBlock]
+  -[STUserInteractionHandlingStatusDomainPublisher setUserInteractionHandlerBlock:]
+  -[STUserInteractionHandlingStatusDomainPublisher handleUserInteractionsWithBlock:]
+
+
+STMediaStatusDomainPublisher : STStatusDomainPublisher
+  // class methods
+  +[STMediaStatusDomainPublisher statusDomainName]
+  +[STMediaStatusDomainPublisher emptyData]
+
+
+STTelephonyStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  STTelephonyStatusDomainSIMInfo *SIMOneInfo
+ @property  STTelephonyStatusDomainSIMInfo *SIMTwoInfo
+ @property  BOOL cellularRadioCapabilityEnabled
+ @property  BOOL dualSIMEnabled
+ @property  BOOL radioModuleDead
+ @property  STTelephonyStatusDomainSIMInfo *primarySIMInfo
+ @property  STTelephonyStatusDomainSIMInfo *secondarySIMInfo
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STTelephonyStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STTelephonyStatusDomainData isDualSIMEnabled]
+  -[STTelephonyStatusDomainData copyWithZone:]
+  -[STTelephonyStatusDomainData isRadioModuleDead]
+  -[STTelephonyStatusDomainData dataByApplyingDiff:]
+  -[STTelephonyStatusDomainData isCellularRadioCapabilityEnabled]
+  -[STTelephonyStatusDomainData init]
+  -[STTelephonyStatusDomainData diffFromData:]
+  -[STTelephonyStatusDomainData _anySIMInfoWithSIMPresent]
+  -[STTelephonyStatusDomainData _dataPreferredSIMInfoIfSIMPresent]
+  -[STTelephonyStatusDomainData .cxx_destruct]
+  -[STTelephonyStatusDomainData initWithData:]
+  -[STTelephonyStatusDomainData SIMOneInfo]
+  -[STTelephonyStatusDomainData succinctDescriptionBuilder]
+  -[STTelephonyStatusDomainData encodeWithCoder:]
+  -[STTelephonyStatusDomainData primarySIMInfo]
+  -[STTelephonyStatusDomainData succinctDescription]
+  -[STTelephonyStatusDomainData isEqual:]
+  -[STTelephonyStatusDomainData SIMTwoInfo]
+  -[STTelephonyStatusDomainData secondarySIMInfo]
+  -[STTelephonyStatusDomainData mutableCopyWithZone:]
+  -[STTelephonyStatusDomainData descriptionWithMultilinePrefix:]
+  -[STTelephonyStatusDomainData _otherSIMInfoIfSIMPresent:]
+  -[STTelephonyStatusDomainData initWithCoder:]
+  -[STTelephonyStatusDomainData initWithSIMOneInfo:SIMTwoInfo:cellularRadioCapabilityEnabled:dualSIMEnabled:radioModuleDead:]
+  -[STTelephonyStatusDomainData descriptionBuilderWithMultilinePrefix:]
+
+
+STMutableTelephonyStatusDomainData : STTelephonyStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  STTelephonyStatusDomainSIMInfo *SIMOneInfo
+ @property  STTelephonyStatusDomainSIMInfo *SIMTwoInfo
+ @property  BOOL cellularRadioCapabilityEnabled
+ @property  BOOL dualSIMEnabled
+ @property  BOOL radioModuleDead
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableTelephonyStatusDomainData copyWithZone:]
+  -[STMutableTelephonyStatusDomainData setDualSIMEnabled:]
+  -[STMutableTelephonyStatusDomainData setRadioModuleDead:]
+  -[STMutableTelephonyStatusDomainData setSIMOneInfo:]
+  -[STMutableTelephonyStatusDomainData updateSIMTwoInfoWithBlock:]
+  -[STMutableTelephonyStatusDomainData setCellularRadioCapabilityEnabled:]
+  -[STMutableTelephonyStatusDomainData setSIMTwoInfo:]
+  -[STMutableTelephonyStatusDomainData applyDiff:]
+  -[STMutableTelephonyStatusDomainData updateSIMOneInfoWithBlock:]
+
+
+STVoiceControlStatusDomain : STStatusDomain
+  // class methods
+  +[STVoiceControlStatusDomain statusDomainName]
+
+
+STStatusDomainPublisher : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainPublisherClientHandle>
+ @property  <STStatusDomainPublisherServerHandle> *serverHandle
+ @property  <STStatusDomainData> *data
+ @property  <STStatusDomainData> *volatileData
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STStatusDomainPublisher statusDomainName]
+  +[STStatusDomainPublisher emptyData]
+
+  // instance methods
+  -[STStatusDomainPublisher setData:]
+  -[STStatusDomainPublisher init]
+  -[STStatusDomainPublisher initWithServerHandle:]
+  -[STStatusDomainPublisher dealloc]
+  -[STStatusDomainPublisher .cxx_destruct]
+  -[STStatusDomainPublisher updateVolatileDataWithBlock:]
+  -[STStatusDomainPublisher data]
+  -[STStatusDomainPublisher serverHandle]
+  -[STStatusDomainPublisher updateVolatileDataWithBlock:completion:]
+  -[STStatusDomainPublisher handleUserInteraction:forDomain:]
+  -[STStatusDomainPublisher updateDataWithBlock:]
+  -[STStatusDomainPublisher _setData:completion:]
+  -[STStatusDomainPublisher _updateDataWithBlock:completion:]
+  -[STStatusDomainPublisher _setVolatileData:completion:]
+  -[STStatusDomainPublisher _updateVolatileDataWithBlock:completion:]
+  -[STStatusDomainPublisher setData:completion:]
+  -[STStatusDomainPublisher updateDataWithBlock:completion:]
+  -[STStatusDomainPublisher volatileData]
+  -[STStatusDomainPublisher setVolatileData:]
+  -[STStatusDomainPublisher setVolatileData:completion:]
+
+
+STVoiceControlStatusDomainPublisher : STStatusDomainPublisher
+  // class methods
+  +[STVoiceControlStatusDomainPublisher statusDomainName]
+  +[STVoiceControlStatusDomainPublisher emptyData]
+
+
+STDynamicActivityAttributionPublisher : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *internalQueue
+ @property  NSXPCConnection *serverXPCConnection
+ @property  NSString *cachedLocalizedPlistKey
+ @property  NSString *cachedAppBundleID
+
+  // class methods
+  +[STDynamicActivityAttributionPublisher sharedInstance]
+  +[STDynamicActivityAttributionPublisher setCurrentAttributionKey:andApp:]
+
+  // instance methods
+  -[STDynamicActivityAttributionPublisher internalQueue]
+  -[STDynamicActivityAttributionPublisher _tearDownXPCConnection]
+  -[STDynamicActivityAttributionPublisher init]
+  -[STDynamicActivityAttributionPublisher _internalQueue_setupXPCConnectionIfNecessary]
+  -[STDynamicActivityAttributionPublisher .cxx_destruct]
+  -[STDynamicActivityAttributionPublisher setServerXPCConnection:]
+  -[STDynamicActivityAttributionPublisher serverXPCConnection]
+  -[STDynamicActivityAttributionPublisher setCurrentAttributionKey:application:]
+  -[STDynamicActivityAttributionPublisher setCachedLocalizedPlistKey:]
+  -[STDynamicActivityAttributionPublisher setCachedAppBundleID:]
+  -[STDynamicActivityAttributionPublisher _internalQueue_sendAttributionKey:andApp:]
+  -[STDynamicActivityAttributionPublisher _resendAttributionData]
+  -[STDynamicActivityAttributionPublisher cachedLocalizedPlistKey]
+  -[STDynamicActivityAttributionPublisher cachedAppBundleID]
+
+
+STActivityAttribution : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, BSDescriptionProviding>
+ @property  int clientProvidedPID
+ @property  BSAuditToken *bsAuditToken
+ @property  {?=[8I]} auditToken
+ @property  int pid
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STActivityAttribution supportsSecureCoding]
+  +[STActivityAttribution attributionWithPID:]
+  +[STActivityAttribution attributionWithAuditToken:]
+
+  // instance methods
+  -[STActivityAttribution auditToken]
+  -[STActivityAttribution init]
+  -[STActivityAttribution initWithAuditToken:]
+  -[STActivityAttribution .cxx_destruct]
+  -[STActivityAttribution succinctDescriptionBuilder]
+  -[STActivityAttribution encodeWithCoder:]
+  -[STActivityAttribution pid]
+  -[STActivityAttribution initWithPID:]
+  -[STActivityAttribution succinctDescription]
+  -[STActivityAttribution isEqual:]
+  -[STActivityAttribution bsAuditToken]
+  -[STActivityAttribution clientProvidedPID]
+  -[STActivityAttribution initWithBSAuditToken:clientProvidedPID:]
+  -[STActivityAttribution descriptionWithMultilinePrefix:]
+  -[STActivityAttribution initWithCoder:]
+  -[STActivityAttribution descriptionBuilderWithMultilinePrefix:]
+
+
+STCallingStatusDomainPublisher : STUserInteractionHandlingStatusDomainPublisher
+  // class methods
+  +[STCallingStatusDomainPublisher statusDomainName]
+  +[STCallingStatusDomainPublisher emptyData]
+
+
+STStatusDomain : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainClientHandle>
+ @property  @? dataChangedBlock
+ @property  <STStatusDomainServerHandle> *serverHandle
+ @property  <STStatusDomainData> *data
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STStatusDomain statusDomainName]
+
+  // instance methods
+  -[STStatusDomain init]
+  -[STStatusDomain initWithServerHandle:]
+  -[STStatusDomain dealloc]
+  -[STStatusDomain .cxx_destruct]
+  -[STStatusDomain data]
+  -[STStatusDomain serverHandle]
+  -[STStatusDomain observeDataWithBlock:]
+  -[STStatusDomain observeData:forDomain:]
+  -[STStatusDomain dataChangedBlock]
+  -[STStatusDomain setDataChangedBlock:]
+
+
+STCallingStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  STActivityAttributionCatalog *attributionCatalog
+ @property  NSSet *activeCallAttributions
+ @property  NSSet *ringingCallAttributions
+ @property  NSSet *activeVideoConferenceAttributions
+ @property  NSSet *ringingVideoConferenceAttributions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STCallingStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STCallingStatusDomainData copyWithZone:]
+  -[STCallingStatusDomainData dataByApplyingDiff:]
+  -[STCallingStatusDomainData init]
+  -[STCallingStatusDomainData diffFromData:]
+  -[STCallingStatusDomainData activeVideoConferenceAttributions]
+  -[STCallingStatusDomainData activeCallAttributions]
+  -[STCallingStatusDomainData .cxx_destruct]
+  -[STCallingStatusDomainData initWithData:]
+  -[STCallingStatusDomainData succinctDescriptionBuilder]
+  -[STCallingStatusDomainData encodeWithCoder:]
+  -[STCallingStatusDomainData succinctDescription]
+  -[STCallingStatusDomainData _initWithAttributionCatalog:]
+  -[STCallingStatusDomainData ringingVideoConferenceAttributions]
+  -[STCallingStatusDomainData isEqual:]
+  -[STCallingStatusDomainData attributionCatalog]
+  -[STCallingStatusDomainData mutableCopyWithZone:]
+  -[STCallingStatusDomainData ringingCallAttributions]
+  -[STCallingStatusDomainData descriptionWithMultilinePrefix:]
+  -[STCallingStatusDomainData initWithCoder:]
+  -[STCallingStatusDomainData descriptionBuilderWithMultilinePrefix:]
+  -[STCallingStatusDomainData initWithAttributionCatalog:]
+
+
+STMutableCallingStatusDomainData : STCallingStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  STMutableActivityAttributionCatalog *attributionCatalog
+ @property  NSSet *activeCallAttributions
+ @property  NSSet *ringingCallAttributions
+ @property  NSSet *activeVideoConferenceAttributions
+ @property  NSSet *ringingVideoConferenceAttributions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableCallingStatusDomainData copyWithZone:]
+  -[STMutableCallingStatusDomainData removeRingingVideoConferenceAttribution:]
+  -[STMutableCallingStatusDomainData setRingingVideoConferenceAttributions:]
+  -[STMutableCallingStatusDomainData addActiveCallAttribution:]
+  -[STMutableCallingStatusDomainData addActiveVideoConferenceAttribution:]
+  -[STMutableCallingStatusDomainData setActiveVideoConferenceAttributions:]
+  -[STMutableCallingStatusDomainData setActiveCallAttributions:]
+  -[STMutableCallingStatusDomainData removeActiveCallAttribution:]
+  -[STMutableCallingStatusDomainData addRingingVideoConferenceAttribution:]
+  -[STMutableCallingStatusDomainData addRingingCallAttribution:]
+  -[STMutableCallingStatusDomainData removeRingingCallAttribution:]
+  -[STMutableCallingStatusDomainData setRingingCallAttributions:]
+  -[STMutableCallingStatusDomainData attributionCatalog]
+  -[STMutableCallingStatusDomainData removeActiveVideoConferenceAttribution:]
+  -[STMutableCallingStatusDomainData applyDiff:]
+  -[STMutableCallingStatusDomainData initWithAttributionCatalog:]
+
+
+STVoiceControlStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  BOOL voiceControlActive
+ @property  unsigned long listeningState
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STVoiceControlStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STVoiceControlStatusDomainData copyWithZone:]
+  -[STVoiceControlStatusDomainData dataByApplyingDiff:]
+  -[STVoiceControlStatusDomainData init]
+  -[STVoiceControlStatusDomainData diffFromData:]
+  -[STVoiceControlStatusDomainData initWithData:]
+  -[STVoiceControlStatusDomainData succinctDescriptionBuilder]
+  -[STVoiceControlStatusDomainData encodeWithCoder:]
+  -[STVoiceControlStatusDomainData succinctDescription]
+  -[STVoiceControlStatusDomainData isEqual:]
+  -[STVoiceControlStatusDomainData mutableCopyWithZone:]
+  -[STVoiceControlStatusDomainData descriptionWithMultilinePrefix:]
+  -[STVoiceControlStatusDomainData initWithCoder:]
+  -[STVoiceControlStatusDomainData descriptionBuilderWithMultilinePrefix:]
+  -[STVoiceControlStatusDomainData isVoiceControlActive]
+  -[STVoiceControlStatusDomainData listeningState]
+  -[STVoiceControlStatusDomainData initWithVoiceControlActive:listeningState:]
+
+
+STMutableVoiceControlStatusDomainData : STVoiceControlStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  BOOL voiceControlActive
+ @property  unsigned long listeningState
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableVoiceControlStatusDomainData copyWithZone:]
+  -[STMutableVoiceControlStatusDomainData applyDiff:]
+  -[STMutableVoiceControlStatusDomainData setVoiceControlActive:]
+  -[STMutableVoiceControlStatusDomainData setListeningState:]
+
+
+STWifiStatusDomainPublisher : STStatusDomainPublisher
+  // class methods
+  +[STWifiStatusDomainPublisher statusDomainName]
+  +[STWifiStatusDomainPublisher emptyData]
+
+
+STTelephonyStatusDomain : STStatusDomain
+  // class methods
+  +[STTelephonyStatusDomain statusDomainName]
+
+
+STTelephonyStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  STTelephonyStatusDomainSIMInfoDiff *SIMOneInfoDiff
+ @property  STTelephonyStatusDomainSIMInfoDiff *SIMTwoInfoDiff
+ @property  BSSettings *changes
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STTelephonyStatusDomainDataDiff supportsSecureCoding]
+  +[STTelephonyStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STTelephonyStatusDomainDataDiff changes]
+  -[STTelephonyStatusDomainDataDiff init]
+  -[STTelephonyStatusDomainDataDiff .cxx_destruct]
+  -[STTelephonyStatusDomainDataDiff encodeWithCoder:]
+  -[STTelephonyStatusDomainDataDiff isEqual:]
+  -[STTelephonyStatusDomainDataDiff applyToMutableData:]
+  -[STTelephonyStatusDomainDataDiff isEmpty]
+  -[STTelephonyStatusDomainDataDiff initWithCoder:]
+  -[STTelephonyStatusDomainDataDiff dataByApplyingToData:]
+  -[STTelephonyStatusDomainDataDiff initWithSIMOneInfoDiff:SIMTwoInfoDiff:changes:]
+  -[STTelephonyStatusDomainDataDiff SIMOneInfoDiff]
+  -[STTelephonyStatusDomainDataDiff SIMTwoInfoDiff]
+
+
+STCallingStatusDomain : STUserInteractionReportingStatusDomain
+  // class methods
+  +[STCallingStatusDomain statusDomainName]
+
+
+STWifiStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  BOOL wifiActive
+ @property  unsigned long signalStrengthBars
+ @property  BOOL associatedToIOSHotspot
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STWifiStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STWifiStatusDomainData copyWithZone:]
+  -[STWifiStatusDomainData dataByApplyingDiff:]
+  -[STWifiStatusDomainData init]
+  -[STWifiStatusDomainData diffFromData:]
+  -[STWifiStatusDomainData signalStrengthBars]
+  -[STWifiStatusDomainData initWithData:]
+  -[STWifiStatusDomainData isAssociatedToIOSHotspot]
+  -[STWifiStatusDomainData succinctDescriptionBuilder]
+  -[STWifiStatusDomainData isWifiActive]
+  -[STWifiStatusDomainData encodeWithCoder:]
+  -[STWifiStatusDomainData succinctDescription]
+  -[STWifiStatusDomainData isEqual:]
+  -[STWifiStatusDomainData mutableCopyWithZone:]
+  -[STWifiStatusDomainData descriptionWithMultilinePrefix:]
+  -[STWifiStatusDomainData initWithWifiActive:signalStrengthBars:associatedToIOSHotspot:]
+  -[STWifiStatusDomainData initWithCoder:]
+  -[STWifiStatusDomainData descriptionBuilderWithMultilinePrefix:]
+
+
+STMutableWifiStatusDomainData : STWifiStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  BOOL wifiActive
+ @property  unsigned long signalStrengthBars
+ @property  BOOL associatedToIOSHotspot
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableWifiStatusDomainData copyWithZone:]
+  -[STMutableWifiStatusDomainData setSignalStrengthBars:]
+  -[STMutableWifiStatusDomainData setAssociatedToIOSHotspot:]
+  -[STMutableWifiStatusDomainData setWifiActive:]
+  -[STMutableWifiStatusDomainData applyDiff:]
+
+
+STCallingStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  STActivityAttributionCatalogDiff *attributionCatalogDiff
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STCallingStatusDomainDataDiff supportsSecureCoding]
+  +[STCallingStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STCallingStatusDomainDataDiff init]
+  -[STCallingStatusDomainDataDiff .cxx_destruct]
+  -[STCallingStatusDomainDataDiff encodeWithCoder:]
+  -[STCallingStatusDomainDataDiff initWithAttributionCatalogDiff:]
+  -[STCallingStatusDomainDataDiff isEqual:]
+  -[STCallingStatusDomainDataDiff applyToMutableData:]
+  -[STCallingStatusDomainDataDiff isEmpty]
+  -[STCallingStatusDomainDataDiff attributionCatalogDiff]
+  -[STCallingStatusDomainDataDiff initWithCoder:]
+  -[STCallingStatusDomainDataDiff dataByApplyingToData:]
+
+
+STStatusDomainPublisherXPCServerHandle : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainPublisherXPCClient, BSDescriptionProviding, STStatusDomainPublisherServerHandle>
+ @property  BSMutableIntegerMap *dataByDomain
+ @property  BSMutableIntegerMap *hasSentDataByDomain
+ @property  BSMutableIntegerMap *dataMutationCompletionsByDomain
+ @property  BSMutableIntegerMap *volatileDataByDomain
+ @property  BSMutableIntegerMap *hasSentVolatileDataByDomain
+ @property  BSMutableIntegerMap *volatileDataMutationCompletionsByDomain
+ @property  BSMutableIntegerMap *publisherClientsByDomain
+ @property  NSObject<OS_dispatch_queue> *internalQueue
+ @property  NSObject<OS_dispatch_queue> *clientQueue
+ @property  NSXPCConnection *serverXPCConnection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STStatusDomainPublisherXPCServerHandle sharedInstance]
+
+  // instance methods
+  -[STStatusDomainPublisherXPCServerHandle internalQueue]
+  -[STStatusDomainPublisherXPCServerHandle _tearDownXPCConnection]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_reregisterForPublishingDomains]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_publishDiffToServer:forDomain:discardingOnExit:reply:]
+  -[STStatusDomainPublisherXPCServerHandle init]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_dataForDomain:]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_setupXPCConnectionIfNecessary]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_publishData:forDomain:discardingOnExit:dataSendBlock:diffSendBlock:completion:]
+  -[STStatusDomainPublisherXPCServerHandle publishVolatileData:forPublisherClient:domain:completion:]
+  -[STStatusDomainPublisherXPCServerHandle updateVolatileDataForPublisherClient:domain:usingBlock:fallbackDataProvider:completion:]
+  -[STStatusDomainPublisherXPCServerHandle .cxx_destruct]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_volatileDataForDomain:]
+  -[STStatusDomainPublisherXPCServerHandle dataByDomain]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_publishDataToServer:forDomain:discardingOnExit:reply:]
+  -[STStatusDomainPublisherXPCServerHandle succinctDescriptionBuilder]
+  -[STStatusDomainPublisherXPCServerHandle setServerXPCConnection:]
+  -[STStatusDomainPublisherXPCServerHandle serverXPCConnection]
+  -[STStatusDomainPublisherXPCServerHandle clientQueue]
+  -[STStatusDomainPublisherXPCServerHandle hasSentDataByDomain]
+  -[STStatusDomainPublisherXPCServerHandle dataMutationCompletionsByDomain]
+  -[STStatusDomainPublisherXPCServerHandle publishData:forPublisherClient:domain:completion:]
+  -[STStatusDomainPublisherXPCServerHandle publisherClientsByDomain]
+  -[STStatusDomainPublisherXPCServerHandle updateDataForPublisherClient:domain:usingBlock:fallbackDataProvider:completion:]
+  -[STStatusDomainPublisherXPCServerHandle succinctDescription]
+  -[STStatusDomainPublisherXPCServerHandle _internalQueue_publishData:forDomain:discardingOnExit:completion:]
+  -[STStatusDomainPublisherXPCServerHandle publishedDataForDomain:]
+  -[STStatusDomainPublisherXPCServerHandle registerPublisherClient:forDomain:]
+  -[STStatusDomainPublisherXPCServerHandle volatileDataByDomain]
+  -[STStatusDomainPublisherXPCServerHandle removePublisherClient:forDomain:]
+  -[STStatusDomainPublisherXPCServerHandle _resendData]
+  -[STStatusDomainPublisherXPCServerHandle descriptionWithMultilinePrefix:]
+  -[STStatusDomainPublisherXPCServerHandle publishedVolatileDataForDomain:]
+  -[STStatusDomainPublisherXPCServerHandle volatileDataMutationCompletionsByDomain]
+  -[STStatusDomainPublisherXPCServerHandle hasSentVolatileDataByDomain]
+  -[STStatusDomainPublisherXPCServerHandle descriptionBuilderWithMultilinePrefix:]
+  -[STStatusDomainPublisherXPCServerHandle handleUserInteraction:forDomain:]
+
+
+STCallingStatusDomainUserInteraction : STCallingStatusDomainData <STStatusDomainUserInteraction>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STCallingStatusDomainUserInteraction initWithData:]
+
+
+STMediaStatusDomain : STStatusDomain
+  // class methods
+  +[STMediaStatusDomain statusDomainName]
+
+
+STMediaStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  STActivityAttributionCatalogDiff *attributionCatalogDiff
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STMediaStatusDomainDataDiff supportsSecureCoding]
+  +[STMediaStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STMediaStatusDomainDataDiff init]
+  -[STMediaStatusDomainDataDiff .cxx_destruct]
+  -[STMediaStatusDomainDataDiff encodeWithCoder:]
+  -[STMediaStatusDomainDataDiff initWithAttributionCatalogDiff:]
+  -[STMediaStatusDomainDataDiff isEqual:]
+  -[STMediaStatusDomainDataDiff applyToMutableData:]
+  -[STMediaStatusDomainDataDiff isEmpty]
+  -[STMediaStatusDomainDataDiff attributionCatalogDiff]
+  -[STMediaStatusDomainDataDiff initWithCoder:]
+  -[STMediaStatusDomainDataDiff dataByApplyingToData:]
+
+
+STBatteryStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  unsigned long chargingState
+ @property  unsigned long percentCharge
+ @property  BOOL batterySaverModeActive
+ @property  NSString *chargingDescription
+ @property  unsigned long chargingDescriptionType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STBatteryStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STBatteryStatusDomainData isBatterySaverModeActive]
+  -[STBatteryStatusDomainData copyWithZone:]
+  -[STBatteryStatusDomainData dataByApplyingDiff:]
+  -[STBatteryStatusDomainData init]
+  -[STBatteryStatusDomainData diffFromData:]
+  -[STBatteryStatusDomainData .cxx_destruct]
+  -[STBatteryStatusDomainData initWithData:]
+  -[STBatteryStatusDomainData initWithChargingState:percentCharge:batterySaverModeActive:chargingDescription:chargingDescriptionType:]
+  -[STBatteryStatusDomainData succinctDescriptionBuilder]
+  -[STBatteryStatusDomainData chargingState]
+  -[STBatteryStatusDomainData chargingDescriptionType]
+  -[STBatteryStatusDomainData encodeWithCoder:]
+  -[STBatteryStatusDomainData percentCharge]
+  -[STBatteryStatusDomainData succinctDescription]
+  -[STBatteryStatusDomainData isEqual:]
+  -[STBatteryStatusDomainData chargingDescription]
+  -[STBatteryStatusDomainData mutableCopyWithZone:]
+  -[STBatteryStatusDomainData descriptionWithMultilinePrefix:]
+  -[STBatteryStatusDomainData initWithCoder:]
+  -[STBatteryStatusDomainData descriptionBuilderWithMultilinePrefix:]
+
+
+STMutableBatteryStatusDomainData : STBatteryStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  unsigned long chargingState
+ @property  unsigned long percentCharge
+ @property  BOOL batterySaverModeActive
+ @property  NSString *chargingDescription
+ @property  unsigned long chargingDescriptionType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableBatteryStatusDomainData copyWithZone:]
+  -[STMutableBatteryStatusDomainData setBatterySaverModeActive:]
+  -[STMutableBatteryStatusDomainData setChargingDescriptionType:]
+  -[STMutableBatteryStatusDomainData setChargingDescription:]
+  -[STMutableBatteryStatusDomainData setPercentCharge:]
+  -[STMutableBatteryStatusDomainData setChargingState:]
+  -[STMutableBatteryStatusDomainData applyDiff:]
+
+
+STActivityAttributionCatalog : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainData, STStatusDomainDataDifferencing, NSSecureCoding>
+ @property  NSMutableDictionary *attributionsByKey
+ @property  BOOL empty
+ @property  NSArray *allKeys
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STActivityAttributionCatalog supportsSecureCoding]
+
+  // instance methods
+  -[STActivityAttributionCatalog copyWithZone:]
+  -[STActivityAttributionCatalog dataByApplyingDiff:]
+  -[STActivityAttributionCatalog init]
+  -[STActivityAttributionCatalog diffFromData:]
+  -[STActivityAttributionCatalog initWithCatalog:]
+  -[STActivityAttributionCatalog initWithAttributionsByKey:]
+  -[STActivityAttributionCatalog .cxx_destruct]
+  -[STActivityAttributionCatalog succinctDescriptionBuilder]
+  -[STActivityAttributionCatalog attributionsForKey:]
+  -[STActivityAttributionCatalog encodeWithCoder:]
+  -[STActivityAttributionCatalog succinctDescription]
+  -[STActivityAttributionCatalog isEqual:]
+  -[STActivityAttributionCatalog enumerateAttributionsUsingBlock:]
+  -[STActivityAttributionCatalog isEmpty]
+  -[STActivityAttributionCatalog allKeys]
+  -[STActivityAttributionCatalog mutableCopyWithZone:]
+  -[STActivityAttributionCatalog descriptionWithMultilinePrefix:]
+  -[STActivityAttributionCatalog attributionsByKey]
+  -[STActivityAttributionCatalog initWithCoder:]
+  -[STActivityAttributionCatalog descriptionBuilderWithMultilinePrefix:]
+
+
+STMutableActivityAttributionCatalog : STActivityAttributionCatalog <STMutableStatusDomainData, STMutableStatusDomainDataDifferencing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableActivityAttributionCatalog copyWithZone:]
+  -[STMutableActivityAttributionCatalog removeAttributionsForKey:]
+  -[STMutableActivityAttributionCatalog setAttributions:forKey:]
+  -[STMutableActivityAttributionCatalog removeAttribution:forKey:]
+  -[STMutableActivityAttributionCatalog addAttribution:forKey:]
+  -[STMutableActivityAttributionCatalog applyDiff:]
+
+
+STBatteryStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  BSSettings *changes
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STBatteryStatusDomainDataDiff supportsSecureCoding]
+  +[STBatteryStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STBatteryStatusDomainDataDiff changes]
+  -[STBatteryStatusDomainDataDiff initWithChanges:]
+  -[STBatteryStatusDomainDataDiff init]
+  -[STBatteryStatusDomainDataDiff .cxx_destruct]
+  -[STBatteryStatusDomainDataDiff encodeWithCoder:]
+  -[STBatteryStatusDomainDataDiff isEqual:]
+  -[STBatteryStatusDomainDataDiff applyToMutableData:]
+  -[STBatteryStatusDomainDataDiff isEmpty]
+  -[STBatteryStatusDomainDataDiff initWithCoder:]
+  -[STBatteryStatusDomainDataDiff dataByApplyingToData:]
+
+
+STVoiceControlStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  BSSettings *changes
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STVoiceControlStatusDomainDataDiff supportsSecureCoding]
+  +[STVoiceControlStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STVoiceControlStatusDomainDataDiff changes]
+  -[STVoiceControlStatusDomainDataDiff initWithChanges:]
+  -[STVoiceControlStatusDomainDataDiff init]
+  -[STVoiceControlStatusDomainDataDiff .cxx_destruct]
+  -[STVoiceControlStatusDomainDataDiff encodeWithCoder:]
+  -[STVoiceControlStatusDomainDataDiff isEqual:]
+  -[STVoiceControlStatusDomainDataDiff applyToMutableData:]
+  -[STVoiceControlStatusDomainDataDiff isEmpty]
+  -[STVoiceControlStatusDomainDataDiff initWithCoder:]
+  -[STVoiceControlStatusDomainDataDiff dataByApplyingToData:]
+
+
+STBatteryStatusDomainPublisher : STStatusDomainPublisher
+  // class methods
+  +[STBatteryStatusDomainPublisher statusDomainName]
+  +[STBatteryStatusDomainPublisher emptyData]
+
+
+STMediaStatusDomainData : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+ @property  STActivityAttributionCatalog *attributionCatalog
+ @property  NSSet *audioRecordingAttributions
+ @property  NSSet *mutedAudioRecordingAttributions
+ @property  NSSet *cameraCaptureAttributions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STMediaStatusDomainData supportsSecureCoding]
+
+  // instance methods
+  -[STMediaStatusDomainData copyWithZone:]
+  -[STMediaStatusDomainData dataByApplyingDiff:]
+  -[STMediaStatusDomainData init]
+  -[STMediaStatusDomainData diffFromData:]
+  -[STMediaStatusDomainData cameraCaptureAttributions]
+  -[STMediaStatusDomainData .cxx_destruct]
+  -[STMediaStatusDomainData initWithData:]
+  -[STMediaStatusDomainData succinctDescriptionBuilder]
+  -[STMediaStatusDomainData encodeWithCoder:]
+  -[STMediaStatusDomainData succinctDescription]
+  -[STMediaStatusDomainData _initWithAttributionCatalog:]
+  -[STMediaStatusDomainData isEqual:]
+  -[STMediaStatusDomainData attributionCatalog]
+  -[STMediaStatusDomainData audioRecordingAttributions]
+  -[STMediaStatusDomainData mutableCopyWithZone:]
+  -[STMediaStatusDomainData descriptionWithMultilinePrefix:]
+  -[STMediaStatusDomainData initWithCoder:]
+  -[STMediaStatusDomainData descriptionBuilderWithMultilinePrefix:]
+  -[STMediaStatusDomainData initWithAttributionCatalog:]
+  -[STMediaStatusDomainData mutedAudioRecordingAttributions]
+
+
+STMutableMediaStatusDomainData : STMediaStatusDomainData <STMutableStatusDomainDataDifferencing, STMutableStatusDomainData>
+ @property  STMutableActivityAttributionCatalog *attributionCatalog
+ @property  NSSet *audioRecordingAttributions
+ @property  NSSet *mutedAudioRecordingAttributions
+ @property  NSSet *cameraCaptureAttributions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[STMutableMediaStatusDomainData copyWithZone:]
+  -[STMutableMediaStatusDomainData addCameraCaptureAttribution:]
+  -[STMutableMediaStatusDomainData removeAudioRecordingAttribution:]
+  -[STMutableMediaStatusDomainData setAudioRecordingAttributions:]
+  -[STMutableMediaStatusDomainData addAudioRecordingAttribution:]
+  -[STMutableMediaStatusDomainData removeCameraCaptureAttribution:]
+  -[STMutableMediaStatusDomainData removeMutedAudioRecordingAttribution:]
+  -[STMutableMediaStatusDomainData setMutedAudioRecordingAttributions:]
+  -[STMutableMediaStatusDomainData attributionCatalog]
+  -[STMutableMediaStatusDomainData applyDiff:]
+  -[STMutableMediaStatusDomainData initWithAttributionCatalog:]
+  -[STMutableMediaStatusDomainData addMutedAudioRecordingAttribution:]
+  -[STMutableMediaStatusDomainData setCameraCaptureAttributions:]
+
+
+STWifiStatusDomainDataDiff : NSObject /usr/lib/libSystem.B.dylib <STStatusDomainDataDiff>
+ @property  BSSettings *changes
+ @property  BOOL empty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[STWifiStatusDomainDataDiff supportsSecureCoding]
+  +[STWifiStatusDomainDataDiff diffFromData:toData:]
+
+  // instance methods
+  -[STWifiStatusDomainDataDiff changes]
+  -[STWifiStatusDomainDataDiff initWithChanges:]
+  -[STWifiStatusDomainDataDiff init]
+  -[STWifiStatusDomainDataDiff .cxx_destruct]
+  -[STWifiStatusDomainDataDiff encodeWithCoder:]
+  -[STWifiStatusDomainDataDiff isEqual:]
+  -[STWifiStatusDomainDataDiff applyToMutableData:]
+  -[STWifiStatusDomainDataDiff isEmpty]
+  -[STWifiStatusDomainDataDiff initWithCoder:]
+  -[STWifiStatusDomainDataDiff dataByApplyingToData:]
+
+
+STTelephonyStatusDomainPublisher : STStatusDomainPublisher
+  // class methods
+  +[STTelephonyStatusDomainPublisher statusDomainName]
+  +[STTelephonyStatusDomainPublisher emptyData]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSAuditToken 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSEqualsBuilder 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSHashBuilder 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableIntegerMap 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableSettings 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSSettings 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

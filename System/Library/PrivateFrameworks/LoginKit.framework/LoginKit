@@ -1,0 +1,841 @@
+|| __DATA.__common _LKLogDefault
+|| __DATA.__common _LKLogParsing
+|| __DATA.__common _LKLogRegression
+|| __DATA.__data _LKLogSubsystem
+|| __DATA.__objc_data _OBJC_CLASS_$_LKBacktraceLogger
+|| __DATA.__objc_data _OBJC_CLASS_$_LKClass
+|| __DATA.__objc_data _OBJC_CLASS_$_LKClassConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_LKClassGroup
+|| __DATA.__objc_data _OBJC_CLASS_$_LKClasses
+|| __DATA.__objc_data _OBJC_CLASS_$_LKControlCenterSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_LKError
+|| __DATA.__objc_data _OBJC_CLASS_$_LKHangDetectionQueue
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLogEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLogEventController
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLogKeychainItemAdditionEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLoginController
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLoginSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_LKLogoutSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_LKNamingSimilarity
+|| __DATA.__objc_data _OBJC_CLASS_$_LKNotificationListenerOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_LKOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_LKPlatformSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_LKRecoverEMCSOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_LKRegression
+|| __DATA.__objc_data _OBJC_CLASS_$_LKSwitchOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_LKUniversalDiskStorage
+|| __DATA.__objc_data _OBJC_CLASS_$_LKUser
+|| __DATA.__objc_data _OBJC_CLASS_$_LKUsers
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKBacktraceLogger
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKClass
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKClassConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKClassGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKClasses
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKControlCenterSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKError
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKHangDetectionQueue
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLogEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLogEventController
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLogKeychainItemAdditionEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLoginController
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLoginSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKLogoutSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKNamingSimilarity
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKNotificationListenerOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKPlatformSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKRecoverEMCSOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKRegression
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKSwitchOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKUniversalDiskStorage
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKUser
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKUsers
+|| __DATA_CONST.__const _LKAnonymousUserUsernameKey
+|| __DATA_CONST.__const _LKBuddLogPredicate
+|| __DATA_CONST.__const _LKBuddProcessName
+|| __DATA_CONST.__const _LKControlCenterModuleScreenRecording
+|| __DATA_CONST.__const _LKCourseDescriptionKey
+|| __DATA_CONST.__const _LKCourseEnrolledStudentIdentifiersKey
+|| __DATA_CONST.__const _LKCourseGroupNameKey
+|| __DATA_CONST.__const _LKCourseGroupsKey
+|| __DATA_CONST.__const _LKCourseIDKey
+|| __DATA_CONST.__const _LKCourseIDsKey
+|| __DATA_CONST.__const _LKCourseInstructorIdentifiersKey
+|| __DATA_CONST.__const _LKCourseNameKey
+|| __DATA_CONST.__const _LKCoursesKey
+|| __DATA_CONST.__const _LKDirectUserSwitchMessage
+|| __DATA_CONST.__const _LKEMCSRecoveryCompletionMessage
+|| __DATA_CONST.__const _LKEMCSRecoveryStartUpMessage
+|| __DATA_CONST.__const _LKErrorDomain
+|| __DATA_CONST.__const _LKErrorPasscodeBackOffInterval
+|| __DATA_CONST.__const _LKFastLogoutMessage
+|| __DATA_CONST.__const _LKKeychainItemAdditionMessage
+|| __DATA_CONST.__const _LKKeychainItemInsertionMessage
+|| __DATA_CONST.__const _LKKeychaingItemDeviceOnlyCheckMessage
+|| __DATA_CONST.__const _LKKeychaingItemSecureObjectSyncCheckMessage
+|| __DATA_CONST.__const _LKLegacyLogoutMessage
+|| __DATA_CONST.__const _LKLoggedInNotificationName
+|| __DATA_CONST.__const _LKLoginDaemonClientEntitlement
+|| __DATA_CONST.__const _LKLoginDaemonClientServiceName
+|| __DATA_CONST.__const _LKLoginDaemonLoginUIEntitlement
+|| __DATA_CONST.__const _LKLoginDaemonLoginUIServiceName
+|| __DATA_CONST.__const _LKLoginUILogPredicate
+|| __DATA_CONST.__const _LKLoginUIProcessName
+|| __DATA_CONST.__const _LKOrganizationDisplayNameKey
+|| __DATA_CONST.__const _LKPayloadCertificatePersistentID
+|| __DATA_CONST.__const _LKReadyToLoginNotificationName
+|| __DATA_CONST.__const _LKSecurityFrameworkName
+|| __DATA_CONST.__const _LKSecurityLogPredicate
+|| __DATA_CONST.__const _LKSecurityProcessName
+|| __DATA_CONST.__const _LKSpringBoardProcessName
+|| __DATA_CONST.__const _LKStartUpTransitionCompletionMessage
+|| __DATA_CONST.__const _LKStartupTransitionLogPredicate
+|| __DATA_CONST.__const _LKUserAppleIDKey
+|| __DATA_CONST.__const _LKUserFamilyNameKey
+|| __DATA_CONST.__const _LKUserFullNameKey
+|| __DATA_CONST.__const _LKUserGivenNameKey
+|| __DATA_CONST.__const _LKUserIdentifierKey
+|| __DATA_CONST.__const _LKUserLargeImageURLKey
+|| __DATA_CONST.__const _LKUserManagementFrameworkName
+|| __DATA_CONST.__const _LKUserManagementLogPredicate
+|| __DATA_CONST.__const _LKUserMediumImageURLKey
+|| __DATA_CONST.__const _LKUserPasswordComplexKey
+|| __DATA_CONST.__const _LKUserPasswordFourDigitKey
+|| __DATA_CONST.__const _LKUserPasswordSixDigitKey
+|| __DATA_CONST.__const _LKUserPasswordTypeKey
+|| __DATA_CONST.__const _LKUserPhoneticFamilyNameKey
+|| __DATA_CONST.__const _LKUserPhoneticGivenNameKey
+|| __DATA_CONST.__const _LKUserSwitchMessage
+|| __DATA_CONST.__const _LKUsersKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_LKStartupSupport
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_LKStartupSupport
+|| __TEXT.__text _LKAnalyticsSendLoginEvent
+|| __TEXT.__text _LKRegisterLoginKitLogging
+__ Contacts: _OBJC_CLASS_$_CNMutableContact
+__ ControlCenterServices: _OBJC_CLASS_$_CCSControlCenterService
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringTokenizerAdvanceToNextToken
+__ CoreFoundation: _CFStringTokenizerCopyCurrentTokenAttribute
+__ CoreFoundation: _CFStringTokenizerCreate
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDecimalNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperation
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSPersonNameComponents
+__ Foundation: _OBJC_CLASS_$_NSPersonNameComponentsFormatter
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSOperation
+__ LoggingSupport: _OBJC_CLASS_$_OSLogEventStore
+__ LoggingSupport: _OBJC_CLASS_$_OSLogEventStream
+__ LoggingSupport: _OBJC_CLASS_$_OSLogPersistence
+__ UserManagement: _OBJC_CLASS_$_UMMutableUser
+__ UserManagement: _OBJC_CLASS_$_UMUserManager
+__ UserManagement: _OBJC_METACLASS_$_UMMutableUser
+__ libAccessibility.dylib: __AXSCurrentAccessibilitySettingsCanSupportLoginUI
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __vproc_set_global_on_demand
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _container_create_or_lookup_system_group_paths
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dladdr
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _mach_thread_self
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _notify_set_state
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_rwlock_init
+__ libSystem.B.dylib: _pthread_rwlock_rdlock
+__ libSystem.B.dylib: _pthread_rwlock_unlock
+__ libSystem.B.dylib: _pthread_rwlock_wrlock
+__ libSystem.B.dylib: _strrchr
+__ libSystem.B.dylib: _thread_get_state
+__ libSystem.B.dylib: _vm_read_overwrite
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+LKOperation : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *startTime
+ @property  NSDate *endTime
+ @property  double duration
+
+  // instance methods
+  -[LKOperation endTime]
+  -[LKOperation setEndTime:]
+  -[LKOperation setStartTime:]
+  -[LKOperation init]
+  -[LKOperation .cxx_destruct]
+  -[LKOperation dictionary]
+  -[LKOperation setDuration:]
+  -[LKOperation startTime]
+  -[LKOperation duration]
+
+
+LKLogEventController : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *switchOperationsMutableArray
+ @property  NSMutableDictionary *mutableKeychainItemsAddedByActivityID
+ @property  LKSwitchOperation *switchOperation
+ @property  NSObject<OS_dispatch_semaphore> *dynamicdsema
+ @property  NSDate *logEnumarationEndTime
+ @property  BOOL streamingLogs
+ @property  @? logEventHandler
+
+  // class methods
+  +[LKLogEventController loginDetailsPredicate]
+
+  // instance methods
+  -[LKLogEventController init]
+  -[LKLogEventController .cxx_destruct]
+  -[LKLogEventController streamingLogs]
+  -[LKLogEventController logEnumarationEndTime]
+  -[LKLogEventController dynamicdsema]
+  -[LKLogEventController _parseUserManagementFrameworkLog:]
+  -[LKLogEventController _parseBuddLog:]
+  -[LKLogEventController _parseSpringBoardLog:]
+  -[LKLogEventController _needToParseSecurityLogs]
+  -[LKLogEventController _isKeychainLog:]
+  -[LKLogEventController _parseKeychainLog:]
+  -[LKLogEventController switchOperation]
+  -[LKLogEventController switchOperationsMutableArray]
+  -[LKLogEventController setSwitchOperation:]
+  -[LKLogEventController _handleKeychainItemEventFromLogEvent:]
+  -[LKLogEventController mutableKeychainItemsAddedByActivityID]
+  -[LKLogEventController setDynamicdsema:]
+  -[LKLogEventController setStreamingLogs:]
+  -[LKLogEventController logEventHandler]
+  -[LKLogEventController enumuratePersistentLogsSynchronouslyFromDate:logArchivePath:predicate:logEventHandler:]
+  -[LKLogEventController setLogEnumarationEndTime:]
+  -[LKLogEventController enumurateLogEventsSynchronouslyFromDate:predicate:logEventHandler:]
+  -[LKLogEventController loginDetailsWithStartDate:logArchivePath:]
+  -[LKLogEventController setSwitchOperationsMutableArray:]
+  -[LKLogEventController setMutableKeychainItemsAddedByActivityID:]
+  -[LKLogEventController setLogEventHandler:]
+
+
+LKNamingSimilarity : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  unsigned long similarity
+
+  // class methods
+  +[LKNamingSimilarity supportsSecureCoding]
+  +[LKNamingSimilarity namingSimilarityWithSimilarity:]
+
+  // instance methods
+  -[LKNamingSimilarity init]
+  -[LKNamingSimilarity encodeWithCoder:]
+  -[LKNamingSimilarity isEqual:]
+  -[LKNamingSimilarity initWithCoder:]
+  -[LKNamingSimilarity similarity]
+  -[LKNamingSimilarity setSimilarity:]
+  -[LKNamingSimilarity isEqualToLKNamingSimilarity:]
+
+
+LKLogKeychainItemAdditionEvent : LKLogEvent
+ @property  NSString *keychainItemAdded
+
+  // class methods
+  +[LKLogKeychainItemAdditionEvent eventFromLKLogEvent:]
+
+  // instance methods
+  -[LKLogKeychainItemAdditionEvent .cxx_destruct]
+  -[LKLogKeychainItemAdditionEvent dictionary]
+  -[LKLogKeychainItemAdditionEvent setKeychainItemAdded:]
+  -[LKLogKeychainItemAdditionEvent keychainItemAdded]
+
+
+LKStartupSupport : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[LKStartupSupport postStartupTransitionActions]
+  +[LKStartupSupport inUserSessionLoginUI]
+  +[LKStartupSupport postStartupActions]
+
+
+LKLogEvent : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *process
+ @property  NSDate *date
+ @property  NSString *senderImagePath
+ @property  NSString *composedMessage
+ @property  unsigned long activityIdentifier
+
+  // instance methods
+  -[LKLogEvent process]
+  -[LKLogEvent copyWithZone:]
+  -[LKLogEvent activityIdentifier]
+  -[LKLogEvent composedMessage]
+  -[LKLogEvent .cxx_destruct]
+  -[LKLogEvent date]
+  -[LKLogEvent setDate:]
+  -[LKLogEvent setProcess:]
+  -[LKLogEvent dictionary]
+  -[LKLogEvent senderImagePath]
+  -[LKLogEvent setActivityIdentifier:]
+  -[LKLogEvent loggedByFramework:]
+  -[LKLogEvent loggedByProcess:]
+  -[LKLogEvent containsMessage:]
+  -[LKLogEvent setComposedMessage:]
+  -[LKLogEvent setSenderImagePath:]
+
+
+LKRegression : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[LKRegression executeDelayByUserDefaultIfSet:]
+
+
+LKLoginController : NSObject /usr/lib/libSystem.B.dylib <LKLoginDaemonProtocol>
+ @property  NSXPCConnection *connection
+ @property  @? completionHandler
+
+  // class methods
+  +[LKLoginController sharedController]
+
+  // instance methods
+  -[LKLoginController init]
+  -[LKLoginController proxy]
+  -[LKLoginController .cxx_destruct]
+  -[LKLoginController setConnection:]
+  -[LKLoginController completionHandler]
+  -[LKLoginController connection]
+  -[LKLoginController setCompletionHandler:]
+  -[LKLoginController checkInWithCurrentEnvironment:completionHandler:]
+  -[LKLoginController chooseUserWithIdentifier:inClassWithID:password:withCompletionHandler:]
+  -[LKLoginController loginAppleID:password:localLoginOnly:withCompletionHandler:]
+  -[LKLoginController saveClassConfiguration:withCompletionHandler:]
+  -[LKLoginController triggerLocalUserSwitchTestForType:count:username:password:completionHandler:]
+  -[LKLoginController interruptLocalUserSwitchTest]
+  -[LKLoginController isReadyToLoginWithCompletionHandler:]
+  -[LKLoginController isReadyToLogoutWithCompletionHandler:]
+  -[LKLoginController updateGlobalDefaultsValue:forKey:completionHandler:]
+  -[LKLoginController logoutWithLogoutType:completionHandler:]
+  -[LKLoginController recentUsers]
+
+
+LKUser : UMMutableUser /System/Library/Frameworks/Foundation.framework/Foundation <NSSecureCoding, NSCopying>
+ @property  NSDate *lastOnlineAuth
+ @property  unsigned long passwordType
+ @property  NSURL *mediumImageURL
+ @property  NSURL *largeImageURL
+ @property  NSURL *localMediumImageURL
+ @property  NSURL *localLargeImageURL
+ @property  long long retryCount
+ @property  CNContact *contact
+ @property  NSMutableDictionary *namingSimilarityInfoByClassID
+ @property  NSString *identifier
+ @property  NSString *phoneticGivenName
+ @property  NSString *phoneticFamilyName
+ @property  BOOL isPhoneticInfoProvidedInConfiguration
+ @property  NSString *tokenizedPhoneticDisplayName
+ @property  BOOL isAttemptedPhoneticTranscription
+
+  // class methods
+  +[LKUser supportsSecureCoding]
+  +[LKUser userFromUMUser:]
+  +[LKUser UMUserPasscodeTypeFromLKPasswordType:]
+  +[LKUser LKPasswordTypeFromUMUserPasscodeType:]
+  +[LKUser fullNameWithFamilyName:givenName:]
+  +[LKUser passwordTypeFromPasswordTypeString:]
+  +[LKUser setAutogeneratesPhoneticNameWithLocale:]
+  +[LKUser userFromDictionary:]
+
+  // instance methods
+  -[LKUser setRetryCount:]
+  -[LKUser passwordType]
+  -[LKUser copyWithZone:]
+  -[LKUser isAttemptedPhoneticTranscription]
+  -[LKUser setDiffUMUserPropertiesFromUMUser:]
+  -[LKUser contact]
+  -[LKUser setPasswordType:]
+  -[LKUser setIsPhoneticInfoProvidedInConfiguration:]
+  -[LKUser retryCount]
+  -[LKUser setContact:]
+  -[LKUser setMediumImageURL:]
+  -[LKUser .cxx_destruct]
+  -[LKUser phoneticFamilyName]
+  -[LKUser setTokenizedPhoneticDisplayName:]
+  -[LKUser setIdentifier:]
+  -[LKUser encodeWithCoder:]
+  -[LKUser identifier]
+  -[LKUser setIsAttemptedPhoneticTranscription:]
+  -[LKUser setPhoneticFamilyName:]
+  -[LKUser lastOnlineAuth]
+  -[LKUser setLargeImageURL:]
+  -[LKUser localLargeImageURL]
+  -[LKUser tokenizedPhoneticDisplayName]
+  -[LKUser setPhoneticGivenName:]
+  -[LKUser isEqual:]
+  -[LKUser setLocalLargeImageURL:]
+  -[LKUser phoneticGivenName]
+  -[LKUser setNamingSimilarityInfoByClassID:]
+  -[LKUser mediumImageURL]
+  -[LKUser largeImageURL]
+  -[LKUser isEqualToLKUser:]
+  -[LKUser mutableCopyWithZone:]
+  -[LKUser namingSimilarityInfoByClassID]
+  -[LKUser setLocalMediumImageURL:]
+  -[LKUser setLastOnlineAuth:]
+  -[LKUser initWithCoder:]
+  -[LKUser localMediumImageURL]
+  -[LKUser isPhoneticInfoProvidedInConfiguration]
+
+
+LKUsers : NSObject /usr/lib/libSystem.B.dylib <LKStudentProviding>
+ @property  NSArray *students
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[LKUsers .cxx_destruct]
+  -[LKUsers initWithUsers:]
+  -[LKUsers students]
+  -[LKUsers setStudents:]
+
+
+LKControlCenterSupport : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[LKControlCenterSupport enableControlCenterModule:completionHandler:]
+
+
+LKNotificationListenerOperation : NSOperation /usr/lib/libobjc.A.dylib
+ @property  unsigned long notificationType
+ @property  double timeOutPeriod
+ @property  @? notificationListenerCompletionBlock
+ @property  BOOL operationExecuting
+ @property  BOOL operationFinished
+ @property  BOOL operationCancelled
+ @property  BOOL operationReady
+ @property  int notifyToken
+ @property  @? listenerStartedBlock
+
+  // instance methods
+  -[LKNotificationListenerOperation isCancelled]
+  -[LKNotificationListenerOperation setNotifyToken:]
+  -[LKNotificationListenerOperation notificationType]
+  -[LKNotificationListenerOperation setNotificationType:]
+  -[LKNotificationListenerOperation .cxx_destruct]
+  -[LKNotificationListenerOperation isExecuting]
+  -[LKNotificationListenerOperation isFinished]
+  -[LKNotificationListenerOperation cancel]
+  -[LKNotificationListenerOperation start]
+  -[LKNotificationListenerOperation notifyToken]
+  -[LKNotificationListenerOperation setOperationExecuting:]
+  -[LKNotificationListenerOperation operationExecuting]
+  -[LKNotificationListenerOperation _endOperation]
+  -[LKNotificationListenerOperation notificationListenerCompletionBlock]
+  -[LKNotificationListenerOperation timeOutPeriod]
+  -[LKNotificationListenerOperation _errorForNotificationType:]
+  -[LKNotificationListenerOperation _notificationForNotificationType:]
+  -[LKNotificationListenerOperation listenerStartedBlock]
+  -[LKNotificationListenerOperation setListenerStartedBlock:]
+  -[LKNotificationListenerOperation setOperationFinished:]
+  -[LKNotificationListenerOperation initWithNotificationType:timeOutPeriod:completionBlock:]
+  -[LKNotificationListenerOperation setOperationReady:]
+  -[LKNotificationListenerOperation setOperationCancelled:]
+  -[LKNotificationListenerOperation setTimeOutPeriod:]
+  -[LKNotificationListenerOperation setNotificationListenerCompletionBlock:]
+  -[LKNotificationListenerOperation operationFinished]
+  -[LKNotificationListenerOperation operationCancelled]
+  -[LKNotificationListenerOperation operationReady]
+
+
+LKHangDetectionQueue : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *workerQueue
+ @property  NSObject<OS_dispatch_queue> *logQueue
+ @property  double threshold
+ @property  LKBacktraceLogger *backtraceLogger
+ @property  NSArray *lastPrintedCallStack
+
+  // instance methods
+  -[LKHangDetectionQueue threshold]
+  -[LKHangDetectionQueue init]
+  -[LKHangDetectionQueue .cxx_destruct]
+  -[LKHangDetectionQueue workerQueue]
+  -[LKHangDetectionQueue setLogQueue:]
+  -[LKHangDetectionQueue setThreshold:]
+  -[LKHangDetectionQueue queueBlock:]
+  -[LKHangDetectionQueue logQueue]
+  -[LKHangDetectionQueue setWorkerQueue:]
+  -[LKHangDetectionQueue initWithQoS:hangThreshold:]
+  -[LKHangDetectionQueue backtraceLogger]
+  -[LKHangDetectionQueue lastPrintedCallStack]
+  -[LKHangDetectionQueue setLastPrintedCallStack:]
+  -[LKHangDetectionQueue setBacktraceLogger:]
+
+
+LKClassGroup : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *classGroupName
+ @property  NSArray *classes
+
+  // class methods
+  +[LKClassGroup supportsSecureCoding]
+
+  // instance methods
+  -[LKClassGroup .cxx_destruct]
+  -[LKClassGroup classes]
+  -[LKClassGroup encodeWithCoder:]
+  -[LKClassGroup isEqual:]
+  -[LKClassGroup initWithCoder:]
+  -[LKClassGroup isEqualToLKClassGroup:]
+  -[LKClassGroup classGroupName]
+  -[LKClassGroup initWithGroupName:classes:]
+  -[LKClassGroup initWithClassGroupDictionary:classesDictionaryByClassID:]
+
+
+LKPlatformSupport : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[LKPlatformSupport isInternalBuild]
+
+
+LKLoginSupport : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSOperationQueue *listenerQueue
+ @property  NSOperationQueue *completionQueue
+
+  // class methods
+  +[LKLoginSupport hasCleanUser]
+  +[LKLoginSupport findLeastRecentlyUsedCleanUser]
+  +[LKLoginSupport isNewUserAbleToLogin]
+
+  // instance methods
+  -[LKLoginSupport completionQueue]
+  -[LKLoginSupport setCompletionQueue:]
+  -[LKLoginSupport init]
+  -[LKLoginSupport .cxx_destruct]
+  -[LKLoginSupport listenerQueue]
+  -[LKLoginSupport setListenerQueue:]
+  -[LKLoginSupport _errorForNotificationType:]
+  -[LKLoginSupport _notificationForNotificationType:]
+  -[LKLoginSupport _timeOutAfterTimePeriod:withError:block:]
+  -[LKLoginSupport _runWithTimeOutPeriod:notificationType:completionBlock:]
+  -[LKLoginSupport _runWhenDarwinNotificationPosted:timeOutPeriod:block:]
+  -[LKLoginSupport runWithTimeOutPeriod:loggedInBlock:]
+  -[LKLoginSupport runWithTimeOutPeriod:readyToLoginBlock:]
+
+
+LKClass : NSObject /usr/lib/libSystem.B.dylib <LKStudentProviding, NSSecureCoding>
+ @property  NSString *classDescription
+ @property  NSString *className
+ @property  NSString *classImageURL
+ @property  NSNumber *classID
+ @property  NSArray *instructors
+ @property  NSMutableDictionary *avatarNameSimilarityDictionary
+ @property  NSMutableDictionary *givenNameSimilarityDictionary
+ @property  NSArray *students
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[LKClass supportsSecureCoding]
+
+  // instance methods
+  -[LKClass setClassName:]
+  -[LKClass .cxx_destruct]
+  -[LKClass encodeWithCoder:]
+  -[LKClass className]
+  -[LKClass isEqual:]
+  -[LKClass initWithCoder:]
+  -[LKClass classID]
+  -[LKClass setClassID:]
+  -[LKClass instructors]
+  -[LKClass setInstructors:]
+  -[LKClass students]
+  -[LKClass setStudents:]
+  -[LKClass isEqualToLKClass:]
+  -[LKClass classDescription]
+  -[LKClass sortUsers:]
+  -[LKClass _updateNamingSimilarityInfoForUser:]
+  -[LKClass initWithStudents:instructors:className:classID:]
+  -[LKClass initWithClassDictionary:usersByUserIdentifier:]
+  -[LKClass setClassDescription:]
+  -[LKClass classImageURL]
+  -[LKClass setClassImageURL:]
+  -[LKClass avatarNameSimilarityDictionary]
+  -[LKClass setAvatarNameSimilarityDictionary:]
+  -[LKClass givenNameSimilarityDictionary]
+  -[LKClass setGivenNameSimilarityDictionary:]
+
+
+LKClasses : NSObject /usr/lib/libSystem.B.dylib <LKClassProviding>
+ @property  NSArray *classes
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[LKClasses .cxx_destruct]
+  -[LKClasses classes]
+  -[LKClasses isEqual:]
+  -[LKClasses isEqualToLKClasses:]
+  -[LKClasses initWithClassArray:]
+
+
+LKClassConfiguration : NSObject /usr/lib/libSystem.B.dylib <LKClassConfigurationProviding, NSSecureCoding>
+ @property  NSMutableDictionary *classesByClassID
+ @property  NSMutableDictionary *usersWithAppleIDByIdentifier
+ @property  NSMutableDictionary *usersByUsername
+ @property  NSMutableDictionary *classesByClassGroupName
+ @property  NSDictionary *classRosterInformationDictionary
+ @property  NSData *payloadCertificatePersistentID
+ @property  NSArray *classGroups
+ @property  NSArray *instructors
+ @property  NSString *schoolName
+ @property  NSArray *students
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *classes
+
+  // class methods
+  +[LKClassConfiguration supportsSecureCoding]
+
+  // instance methods
+  -[LKClassConfiguration .cxx_destruct]
+  -[LKClassConfiguration classes]
+  -[LKClassConfiguration dictionary]
+  -[LKClassConfiguration encodeWithCoder:]
+  -[LKClassConfiguration initWithDictionary:]
+  -[LKClassConfiguration payloadCertificatePersistentID]
+  -[LKClassConfiguration initWithPropertyList:]
+  -[LKClassConfiguration initWithCoder:]
+  -[LKClassConfiguration instructors]
+  -[LKClassConfiguration students]
+  -[LKClassConfiguration setStudents:]
+  -[LKClassConfiguration usersWithAppleIDByIdentifier]
+  -[LKClassConfiguration usersByUsername]
+  -[LKClassConfiguration schoolName]
+  -[LKClassConfiguration classInfoForClassID:]
+  -[LKClassConfiguration studentForStudentIdentifier:inClass:]
+  -[LKClassConfiguration studentForStudentIdentifier:]
+  -[LKClassConfiguration studentForUsername:inClass:]
+  -[LKClassConfiguration studentForUsername:]
+  -[LKClassConfiguration classesByClassGroupNameDictionary]
+  -[LKClassConfiguration classGroups]
+  -[LKClassConfiguration setClassGroups:]
+  -[LKClassConfiguration classesByClassID]
+  -[LKClassConfiguration setClassesByClassID:]
+  -[LKClassConfiguration setUsersWithAppleIDByIdentifier:]
+  -[LKClassConfiguration setUsersByUsername:]
+  -[LKClassConfiguration classesByClassGroupName]
+  -[LKClassConfiguration setClassesByClassGroupName:]
+  -[LKClassConfiguration classRosterInformationDictionary]
+  -[LKClassConfiguration setClassRosterInformationDictionary:]
+
+
+LKError : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[LKError errorWithCode:userInfo:]
+  +[LKError errorWithCode:]
+
+
+LKRecoverEMCSOperation : LKOperation
+ @property  long long recoveredKeychainItemCount
+
+  // instance methods
+  -[LKRecoverEMCSOperation init]
+  -[LKRecoverEMCSOperation dictionary]
+  -[LKRecoverEMCSOperation recoveredKeychainItemCount]
+  -[LKRecoverEMCSOperation setRecoveredKeychainItemCount:]
+
+
+LKBacktraceLogger : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned int trackedThread
+
+  // instance methods
+  -[LKBacktraceLogger getBacktraceFromTrackedThread]
+  -[LKBacktraceLogger trackCurrentThread]
+  -[LKBacktraceLogger setTrackedThread:]
+  -[LKBacktraceLogger trackedThread]
+  -[LKBacktraceLogger _getBacktraceFromThread:]
+  -[LKBacktraceLogger _getThreadStateForThread:]
+  -[LKBacktraceLogger _getPCFromThreadState:]
+  -[LKBacktraceLogger _getLRFromThreadState:]
+  -[LKBacktraceLogger _getFPFromThreadState:]
+  -[LKBacktraceLogger _copyFrameInformation:destination:size:]
+  -[LKBacktraceLogger _symbolicateBuffer:symbolsBuffer:count:]
+  -[LKBacktraceLogger _logWithSymbol:address:index:]
+
+
+LKUniversalDiskStorage : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *storageQueue
+ @property  {_opaque_pthread_rwlock_t=q[192c]} lock
+ @property  NSDictionary *storageDictionary
+ @property  BOOL storageDictionaryModified
+
+  // class methods
+  +[LKUniversalDiskStorage sharedStorage]
+  +[LKUniversalDiskStorage localDirectoryPath]
+  +[LKUniversalDiskStorage localDictionaryPath]
+
+  // instance methods
+  -[LKUniversalDiskStorage setLock:]
+  -[LKUniversalDiskStorage init]
+  -[LKUniversalDiskStorage .cxx_destruct]
+  -[LKUniversalDiskStorage lock]
+  -[LKUniversalDiskStorage storageQueue]
+  -[LKUniversalDiskStorage setStorageQueue:]
+  -[LKUniversalDiskStorage _refreshStorageCacheIfNeeded]
+  -[LKUniversalDiskStorage storageDictionary]
+  -[LKUniversalDiskStorage setStorageDictionary:]
+  -[LKUniversalDiskStorage setStorageDictionaryModified:]
+  -[LKUniversalDiskStorage isStorageDictionaryModified]
+  -[LKUniversalDiskStorage saveKeyValuePairs:completionHandler:]
+  -[LKUniversalDiskStorage retrieveValueForKey:]
+  -[LKUniversalDiskStorage clearKeys:completionHandler:]
+  -[LKUniversalDiskStorage clearAllKeyValueStorage:]
+
+
+LKSwitchOperation : LKOperation
+ @property  NSMutableArray *mutableKeychainItemsAddedAfterRecoverEMCS
+ @property  LKRecoverEMCSOperation *recoverEMCSOperation
+ @property  NSArray *keychainItemsAddedAfterRecoverEMCS
+ @property  unsigned long switchType
+
+  // instance methods
+  -[LKSwitchOperation init]
+  -[LKSwitchOperation .cxx_destruct]
+  -[LKSwitchOperation dictionary]
+  -[LKSwitchOperation setRecoverEMCSOperation:]
+  -[LKSwitchOperation recoverEMCSOperation]
+  -[LKSwitchOperation switchType]
+  -[LKSwitchOperation setSwitchType:]
+  -[LKSwitchOperation addKeychainItemAdditionEvent:]
+  -[LKSwitchOperation mutableKeychainItemsAddedAfterRecoverEMCS]
+  -[LKSwitchOperation keychainItemsAddedAfterRecoverEMCS]
+  -[LKSwitchOperation switchTypeString]
+  -[LKSwitchOperation removeLastKeychainItemAdditionEvent]
+  -[LKSwitchOperation setMutableKeychainItemsAddedAfterRecoverEMCS:]
+
+
+LKLogoutSupport : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[LKLogoutSupport init]
+  -[LKLogoutSupport isCurrentUserAnonymous]
+  -[LKLogoutSupport logoutToLoginSessionWithCompletionHandler:]
+  -[LKLogoutSupport logoutToLoginWindowWithCompletionHandler:]
+  -[LKLogoutSupport logoutToLoginUserWithCompletionHandler:]
+  -[LKLogoutSupport _canLogoutToLoginSession]
+  -[LKLogoutSupport logoutWarningMessage]
+
+
+01 00 0240 /System/Library/PrivateFrameworks/ControlCenterServices.framework/ControlCenterServices: CCSControlCenterService 
+01 00 0500 /System/Library/Frameworks/Contacts.framework/Contacts: CNMutableContact 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSDecimalNumber 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperation 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSPersonNameComponents 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSPersonNameComponentsFormatter 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0300 /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport: OSLogEventStore 
+01 00 0300 /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport: OSLogEventStream 
+01 00 0300 /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport: OSLogPersistence 
+01 00 0700 /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement: UMMutableUser 
+01 00 0700 /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement: UMUserManager 

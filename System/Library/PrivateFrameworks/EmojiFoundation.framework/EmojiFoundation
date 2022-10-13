@@ -1,0 +1,974 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFAbstractIndexStrategy
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFDefaultAutocompleteCandidateProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFEmojiPreferencesService
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFEmojiSearchEngine
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFIndexLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFIndexManager
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFIndexStrategyDefault
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFIndexStrategyFactory
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFIndexStrategySingleStemmedIndexOnly
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFInvertedIndex
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQuery
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryEvaluator
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryLogger
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryResult
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryResultOverride
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryResultOverrideList
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryResultOverrideListLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFQueryUntokenized
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFSearchEngineBundleLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFStringStemmer
+|| __DATA.__objc_data _OBJC_CLASS_$_EMFStringUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFAbstractIndexStrategy
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFDefaultAutocompleteCandidateProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFEmojiPreferencesService
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFEmojiSearchEngine
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFIndexLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFIndexManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFIndexStrategyDefault
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFIndexStrategyFactory
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFIndexStrategySingleStemmedIndexOnly
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFInvertedIndex
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQuery
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryEvaluator
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryLogger
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryResultOverride
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryResultOverrideList
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryResultOverrideListLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFQueryUntokenized
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFSearchEngineBundleLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFStringStemmer
+|| __DATA.__objc_data _OBJC_METACLASS_$_EMFStringUtilities
+|| __DATA_CONST.__const _EMFEmojiCategoryActivity
+|| __DATA_CONST.__const _EMFEmojiCategoryFlags
+|| __DATA_CONST.__const _EMFEmojiCategoryFoodAndDrink
+|| __DATA_CONST.__const _EMFEmojiCategoryNature
+|| __DATA_CONST.__const _EMFEmojiCategoryObjects
+|| __DATA_CONST.__const _EMFEmojiCategoryPeople
+|| __DATA_CONST.__const _EMFEmojiCategoryPrepopulated
+|| __DATA_CONST.__const _EMFEmojiCategoryRecents
+|| __DATA_CONST.__const _EMFEmojiCategorySymbols
+|| __DATA_CONST.__const _EMFEmojiCategoryTravelAndPlaces
+|| __DATA_CONST.__const _EMFEmojiPreferencesChangedNotification
+|| __DATA_CONST.__const _EMFEmojiPreferencesServiceName
+|| __DATA_CONST.__const _EMFEmojiUsageAdornment
+|| __DATA_CONST.__const _EMFEmojiUsageKeyboard
+|| __DATA_CONST.__const _EMFEmojiUsageKeywordMatch
+|| __DATA_CONST.__const _EMFEmojiUsageLearning
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrick1_2
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrick3
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrick4
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrick5
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrick6
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrickNone
+|| __DATA_CONST.__const _EMFSkinToneSpecifierTypeFitzpatrickSilhouette
+|| __DATA_CONST.__const _kEMFEmojiIndexRaisedFistSkintone4
+|| __DATA_CONST.__const _kEMFEmojiIndexRaisedFistSkintone5
+|| __DATA_CONST.__const _kEMFEmojiIndexRaisedFistSkintone6
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EMFEmojiCategory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EMFEmojiLocaleData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EMFEmojiPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EMFEmojiPreferencesClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EMFEmojiToken
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EMFEmojiCategory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EMFEmojiLocaleData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EMFEmojiPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EMFEmojiPreferencesClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EMFEmojiToken
+|| __TEXT.__text _EMFGetDeviceBuildVersion
+|| __TEXT.__text _EMFGetDeviceRegionCode
+|| __TEXT.__text _EMFIsDeviceInGreaterChina
+|| __TEXT.__text _SN_close_env
+|| __TEXT.__text _SN_create_env
+|| __TEXT.__text _SN_set_current
+|| __TEXT.__text __createNormalizedString
+|| __TEXT.__text __createStemmedTokensForTokenArray
+|| __TEXT.__text __createStrippedFallbackLocaleIdentifierForLocale
+|| __TEXT.__text __createStrippedLocaleIdentifierForLocale
+|| __TEXT.__text __createTokensForString
+|| __TEXT.__text __strategyClassForIndex
+|| __TEXT.__text _arabic_UTF_8_close_env
+|| __TEXT.__text _arabic_UTF_8_create_env
+|| __TEXT.__text _arabic_UTF_8_stem
+|| __TEXT.__text _assign_to
+|| __TEXT.__text _basque_UTF_8_close_env
+|| __TEXT.__text _basque_UTF_8_create_env
+|| __TEXT.__text _basque_UTF_8_stem
+|| __TEXT.__text _catalan_UTF_8_close_env
+|| __TEXT.__text _catalan_UTF_8_create_env
+|| __TEXT.__text _catalan_UTF_8_stem
+|| __TEXT.__text _create_s
+|| __TEXT.__text _danish_UTF_8_close_env
+|| __TEXT.__text _danish_UTF_8_create_env
+|| __TEXT.__text _danish_UTF_8_stem
+|| __TEXT.__text _dutch_UTF_8_close_env
+|| __TEXT.__text _dutch_UTF_8_create_env
+|| __TEXT.__text _dutch_UTF_8_stem
+|| __TEXT.__text _emf_logging_get_default_log
+|| __TEXT.__text _emf_logging_get_query_log
+|| __TEXT.__text _emf_signpost_get_log
+|| __TEXT.__text _english_UTF_8_close_env
+|| __TEXT.__text _english_UTF_8_create_env
+|| __TEXT.__text _english_UTF_8_stem
+|| __TEXT.__text _eq_s
+|| __TEXT.__text _eq_s_b
+|| __TEXT.__text _eq_v
+|| __TEXT.__text _eq_v_b
+|| __TEXT.__text _find_among
+|| __TEXT.__text _find_among_b
+|| __TEXT.__text _finnish_UTF_8_close_env
+|| __TEXT.__text _finnish_UTF_8_create_env
+|| __TEXT.__text _finnish_UTF_8_stem
+|| __TEXT.__text _french_UTF_8_close_env
+|| __TEXT.__text _french_UTF_8_create_env
+|| __TEXT.__text _french_UTF_8_stem
+|| __TEXT.__text _german_UTF_8_close_env
+|| __TEXT.__text _german_UTF_8_create_env
+|| __TEXT.__text _german_UTF_8_stem
+|| __TEXT.__text _greek_UTF_8_close_env
+|| __TEXT.__text _greek_UTF_8_create_env
+|| __TEXT.__text _greek_UTF_8_stem
+|| __TEXT.__text _hindi_UTF_8_close_env
+|| __TEXT.__text _hindi_UTF_8_create_env
+|| __TEXT.__text _hindi_UTF_8_stem
+|| __TEXT.__text _hungarian_UTF_8_close_env
+|| __TEXT.__text _hungarian_UTF_8_create_env
+|| __TEXT.__text _hungarian_UTF_8_stem
+|| __TEXT.__text _in_grouping
+|| __TEXT.__text _in_grouping_U
+|| __TEXT.__text _in_grouping_b
+|| __TEXT.__text _in_grouping_b_U
+|| __TEXT.__text _indonesian_UTF_8_close_env
+|| __TEXT.__text _indonesian_UTF_8_create_env
+|| __TEXT.__text _indonesian_UTF_8_stem
+|| __TEXT.__text _insert_s
+|| __TEXT.__text _insert_v
+|| __TEXT.__text _irish_UTF_8_close_env
+|| __TEXT.__text _irish_UTF_8_create_env
+|| __TEXT.__text _irish_UTF_8_stem
+|| __TEXT.__text _italian_UTF_8_close_env
+|| __TEXT.__text _italian_UTF_8_create_env
+|| __TEXT.__text _italian_UTF_8_stem
+|| __TEXT.__text _len_utf8
+|| __TEXT.__text _lithuanian_UTF_8_close_env
+|| __TEXT.__text _lithuanian_UTF_8_create_env
+|| __TEXT.__text _lithuanian_UTF_8_stem
+|| __TEXT.__text _log_emoji_string_lookup_error
+|| __TEXT.__text _lose_s
+|| __TEXT.__text _nepali_UTF_8_close_env
+|| __TEXT.__text _nepali_UTF_8_create_env
+|| __TEXT.__text _nepali_UTF_8_stem
+|| __TEXT.__text _norwegian_UTF_8_close_env
+|| __TEXT.__text _norwegian_UTF_8_create_env
+|| __TEXT.__text _norwegian_UTF_8_stem
+|| __TEXT.__text _out_grouping
+|| __TEXT.__text _out_grouping_U
+|| __TEXT.__text _out_grouping_b
+|| __TEXT.__text _out_grouping_b_U
+|| __TEXT.__text _porter_UTF_8_close_env
+|| __TEXT.__text _porter_UTF_8_create_env
+|| __TEXT.__text _porter_UTF_8_stem
+|| __TEXT.__text _portuguese_UTF_8_close_env
+|| __TEXT.__text _portuguese_UTF_8_create_env
+|| __TEXT.__text _portuguese_UTF_8_stem
+|| __TEXT.__text _replace_s
+|| __TEXT.__text _romanian_UTF_8_close_env
+|| __TEXT.__text _romanian_UTF_8_create_env
+|| __TEXT.__text _romanian_UTF_8_stem
+|| __TEXT.__text _russian_UTF_8_close_env
+|| __TEXT.__text _russian_UTF_8_create_env
+|| __TEXT.__text _russian_UTF_8_stem
+|| __TEXT.__text _sb_stemmer_delete
+|| __TEXT.__text _sb_stemmer_length
+|| __TEXT.__text _sb_stemmer_list
+|| __TEXT.__text _sb_stemmer_new
+|| __TEXT.__text _sb_stemmer_stem
+|| __TEXT.__text _skip_utf8
+|| __TEXT.__text _slice_del
+|| __TEXT.__text _slice_from_s
+|| __TEXT.__text _slice_from_v
+|| __TEXT.__text _slice_to
+|| __TEXT.__text _spanish_UTF_8_close_env
+|| __TEXT.__text _spanish_UTF_8_create_env
+|| __TEXT.__text _spanish_UTF_8_stem
+|| __TEXT.__text _swedish_UTF_8_close_env
+|| __TEXT.__text _swedish_UTF_8_create_env
+|| __TEXT.__text _swedish_UTF_8_stem
+|| __TEXT.__text _tamil_UTF_8_close_env
+|| __TEXT.__text _tamil_UTF_8_create_env
+|| __TEXT.__text _tamil_UTF_8_stem
+|| __TEXT.__text _turkish_UTF_8_close_env
+|| __TEXT.__text _turkish_UTF_8_create_env
+|| __TEXT.__text _turkish_UTF_8_stem
+__ CoreEmoji: _CEMCopyEmojiTokens
+__ CoreEmoji: _CEMCreateEmojiCharacterSet
+__ CoreEmoji: _CEMCreateEmojiLocaleData
+__ CoreEmoji: _CEMEMFSearchEngineCreateBundleForLocaleIdentifier
+__ CoreEmoji: _CEMEMFSearchEngineIsLocaleSupported
+__ CoreEmoji: _CEMEmojiLocaleDataCopyCommonEmojiTokens
+__ CoreEmoji: _CEMEmojiLocaleDataCreateEmojiTokensForString
+__ CoreEmoji: _CEMEmojiLocaleDataEnumerateSearchResultsInStringWithBlock
+__ CoreEmoji: _CEMEmojiLocaleDataGetLocaleIdentifier
+__ CoreEmoji: _CEMEmojiTokenCopyName
+__ CoreEmoji: _CEMEmojiTokenCopyRelatedEmoji
+__ CoreEmoji: _CEMEmojiTokenCreateCopyRemovingModifiers
+__ CoreEmoji: _CEMEmojiTokenCreatePresentationVariant
+__ CoreEmoji: _CEMEmojiTokenCreateWithIndex
+__ CoreEmoji: _CEMEmojiTokenCreateWithLongCharacter
+__ CoreEmoji: _CEMEmojiTokenCreateWithString
+__ CoreEmoji: _CEMEmojiTokenGetLocaleData
+__ CoreEmoji: _CEMEmojiTokenGetPresentationStyle
+__ CoreEmoji: _CEMEmojiTokenGetSkinTone
+__ CoreEmoji: _CEMEmojiTokenGetString
+__ CoreEmoji: _CEMEmojiTokenIsCommon
+__ CoreEmoji: _CEMEmojiTokenSupportsPresentationStyle
+__ CoreEmoji: _CEMEnumerateEmojiTokensInStringWithBlock
+__ CoreEmoji: _CEMStringIsSingleEmoji
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFBundleCopyBundleURL
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPropertyListCreateDeepCopy
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFStringCreateCopy
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringFindAndReplace
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringLowercase
+__ CoreFoundation: _CFStringNormalize
+__ CoreFoundation: _CFStringTokenizerAdvanceToNextToken
+__ CoreFoundation: _CFStringTokenizerCreate
+__ CoreFoundation: _CFStringTokenizerGetCurrentTokenRange
+__ CoreFoundation: _NSLocaleCollatorIdentifier
+__ CoreFoundation: _NSLocaleCountryCode
+__ CoreFoundation: _NSLocaleLanguageCode
+__ CoreFoundation: _NSLocaleScriptCode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_set_target_queue
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_lookUpClass
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+EMFIndexStrategyDefault : EMFAbstractIndexStrategy
+  // instance methods
+  -[EMFIndexStrategyDefault termsForDocument:]
+  -[EMFIndexStrategyDefault postingsForTerm:]
+  -[EMFIndexStrategyDefault commonDocumentsForTerms:]
+  -[EMFIndexStrategyDefault _calculateCumulativeTermWeightForQueryTokenCounts:inDocumentID:]
+  -[EMFIndexStrategyDefault termWeightForTerm:inDocument:]
+  -[EMFIndexStrategyDefault calculateDocumentWeightsForQueryTokenCounts:]
+
+
+EMFAbstractIndexStrategy : NSObject /usr/lib/libSystem.B.dylib <EMFIndexStrategy>
+ @property  NSDictionary *termIndex
+ @property  NSDictionary *documentIndex
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[EMFAbstractIndexStrategy .cxx_destruct]
+  -[EMFAbstractIndexStrategy termIndex]
+  -[EMFAbstractIndexStrategy documentIndex]
+  -[EMFAbstractIndexStrategy termsForDocument:]
+  -[EMFAbstractIndexStrategy postingsForTerm:]
+  -[EMFAbstractIndexStrategy commonDocumentsForTerms:]
+  -[EMFAbstractIndexStrategy termWeightForTerm:inDocument:]
+  -[EMFAbstractIndexStrategy calculateDocumentWeightsForQueryTokenCounts:]
+  -[EMFAbstractIndexStrategy assertMethodNeedsConcreteImplementation:]
+  -[EMFAbstractIndexStrategy initWithTermIndex:andDocumentIndex:]
+  -[EMFAbstractIndexStrategy setTermIndex:]
+  -[EMFAbstractIndexStrategy setDocumentIndex:]
+
+
+EMFQueryUntokenized : EMFQuery
+  // instance methods
+  -[EMFQueryUntokenized tokens]
+  -[EMFQueryUntokenized hasMultipleConstituentTokens]
+
+
+EMFEmojiPreferences : NSObject /usr/lib/libSystem.B.dylib <EMFEmojiPreferenceActions>
+ @property  unsigned long maximumRecentsCount
+ @property  NSArray *allRecents
+ @property  NSArray *recentEmojis
+ @property  NSString *previouslyUsedCategory
+ @property  BOOL hasDisplayedSkinToneHelp
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[EMFEmojiPreferences defaultsDomain]
+  +[EMFEmojiPreferences _recentEmojiStrings]
+  +[EMFEmojiPreferences differentialPrivacyDomain]
+  +[EMFEmojiPreferences _recentStringsInCharacterSet:]
+  +[EMFEmojiPreferences _cacheDomain]
+  +[EMFEmojiPreferences differentialPrivacyRecorderForEmoji:usageMode:]
+  +[EMFEmojiPreferences _allRecentStrings]
+  +[EMFEmojiPreferences _cachedFlagCategoryEmoji:]
+
+  // instance methods
+  -[EMFEmojiPreferences init]
+  -[EMFEmojiPreferences .cxx_destruct]
+  -[EMFEmojiPreferences hasDisplayedSkinToneHelp]
+  -[EMFEmojiPreferences didDisplaySkinToneHelp]
+  -[EMFEmojiPreferences writeEmojiDefaults]
+  -[EMFEmojiPreferences readEmojiDefaults]
+  -[EMFEmojiPreferences maximumRecentsCount]
+  -[EMFEmojiPreferences setMaximumRecentsCount:]
+  -[EMFEmojiPreferences didViewEmojiIndex:forCategory:]
+  -[EMFEmojiPreferences previouslyUsedIndexInCategory:]
+  -[EMFEmojiPreferences hasLastUsedVariantForEmoji:]
+  -[EMFEmojiPreferences lastUsedVariantEmojiForEmoji:]
+  -[EMFEmojiPreferences previouslyUsedCategory]
+  -[EMFEmojiPreferences typingNameForEmoji:]
+  -[EMFEmojiPreferences didUseEmoji:usageMode:typingName:]
+  -[EMFEmojiPreferences didUseEmoji:usageMode:]
+  -[EMFEmojiPreferences recentEmojis]
+  -[EMFEmojiPreferences loadDefaultsIfNecessary]
+  -[EMFEmojiPreferences recentsInCharacterSet:]
+  -[EMFEmojiPreferences writeEmojiDefaultsAndNotify:]
+  -[EMFEmojiPreferences _readPreferencesFromDefaults]
+  -[EMFEmojiPreferences _pruneInvalidEmojiFromHistory]
+  -[EMFEmojiPreferences _pruneOldestEmojiUsageFromHistory]
+  -[EMFEmojiPreferences _checkForDingbatDuplicates]
+  -[EMFEmojiPreferences _cleanUpOldFlagsCaches]
+  -[EMFEmojiPreferences shouldCountEmojiStringForUsageHistory:]
+  -[EMFEmojiPreferences scoreForSequence:]
+  -[EMFEmojiPreferences scoreForEmojiString:]
+  -[EMFEmojiPreferences didUseEmoji:]
+  -[EMFEmojiPreferences allRecents]
+  -[EMFEmojiPreferences resetEmojiDefaults]
+  -[EMFEmojiPreferences migrateFromMajorOSVersion:]
+  -[EMFEmojiPreferences migrateInRecentEmoji:usages:typingNames:]
+  -[EMFEmojiPreferences migrateInSkinTonePreferences:]
+  -[EMFEmojiPreferences migrateInPreviouslyUsedCategory:]
+  -[EMFEmojiPreferences migrateInPreviouslyUsedCategoryIndexes:]
+  -[EMFEmojiPreferences migrateInDidDisplaySkinToneHelp:]
+  -[EMFEmojiPreferences recentVariantEmojiForEmoji:]
+  -[EMFEmojiPreferences _setRecentStrings:]
+
+
+EMFEmojiPreferencesClient : EMFEmojiPreferences
+ @property  NSString *machName
+ @property  BOOL isValid
+
+  // class methods
+  +[EMFEmojiPreferencesClient serviceInterface]
+  +[EMFEmojiPreferencesClient differentialPrivacyRecorderForEmoji:usageMode:]
+
+  // instance methods
+  -[EMFEmojiPreferencesClient setMachName:]
+  -[EMFEmojiPreferencesClient machName]
+  -[EMFEmojiPreferencesClient createConnectionIfNecessary]
+  -[EMFEmojiPreferencesClient dealloc]
+  -[EMFEmojiPreferencesClient .cxx_destruct]
+  -[EMFEmojiPreferencesClient isValid]
+  -[EMFEmojiPreferencesClient didDisplaySkinToneHelp]
+  -[EMFEmojiPreferencesClient _disconnect]
+  -[EMFEmojiPreferencesClient writeEmojiDefaults]
+  -[EMFEmojiPreferencesClient _initWithoutConnection]
+  -[EMFEmojiPreferencesClient didViewEmojiIndex:forCategory:]
+  -[EMFEmojiPreferencesClient didUseEmoji:usageMode:typingName:]
+  -[EMFEmojiPreferencesClient didUseEmoji:usageMode:]
+  -[EMFEmojiPreferencesClient initWithMachName:]
+  -[EMFEmojiPreferencesClient setIsValid:]
+  -[EMFEmojiPreferencesClient didUseEmoji:]
+
+
+EMFEmojiPreferencesService : NSObject /usr/lib/libSystem.B.dylib <NSXPCListenerDelegate>
+ @property  EMFEmojiPreferences *preferences
+ @property  NSObject<OS_dispatch_queue> *dispatchQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[EMFEmojiPreferencesService sharedServiceWithMachName:]
+
+  // instance methods
+  -[EMFEmojiPreferencesService setPreferences:]
+  -[EMFEmojiPreferencesService dealloc]
+  -[EMFEmojiPreferencesService preferences]
+  -[EMFEmojiPreferencesService .cxx_destruct]
+  -[EMFEmojiPreferencesService dispatchQueue]
+  -[EMFEmojiPreferencesService listener:shouldAcceptNewConnection:]
+  -[EMFEmojiPreferencesService initWithMachName:]
+  -[EMFEmojiPreferencesService _createPreferencesIfNecessary]
+
+
+EMFIndexStrategyFactory : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EMFIndexStrategyFactory inferStrategyForIndex:]
+  +[EMFIndexStrategyFactory defaultStrategyWithTermIndex:andDocumentIndex:]
+
+
+EMFQueryLogger : NSObject /usr/lib/libSystem.B.dylib
+ @property  r^{__EmojiLocaleDataWrapper=} localeData
+
+  // class methods
+  +[EMFQueryLogger documentWeightsStringFromQueryResult:usingLocaleData:]
+  +[EMFQueryLogger overriddenResultsStringFromQueryResult:usingLocaleData:]
+
+  // instance methods
+  -[EMFQueryLogger dealloc]
+  -[EMFQueryLogger localeData]
+  -[EMFQueryLogger initWithEmojiLocaleData:]
+  -[EMFQueryLogger logQueryResult:]
+
+
+EMFEmojiCategory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *identifier
+ @property  NSString *localizedName
+ @property  NSString *shortLocalizedName
+
+  // class methods
+  +[EMFEmojiCategory _isGenderEmoji:]
+  +[EMFEmojiCategory _isNoneVariantEmoji:]
+  +[EMFEmojiCategory _isDingbatsVariantEmoji:]
+  +[EMFEmojiCategory _isSkinToneEmoji:]
+  +[EMFEmojiCategory _isCoupleMultiSkinToneEmoji:]
+  +[EMFEmojiCategory _isProfessionEmoji:]
+  +[EMFEmojiCategory _emojiSetForIdentifier:]
+  +[EMFEmojiCategory categoryWithIdentifier:]
+  +[EMFEmojiCategory localizedSkinToneEmojiDescription]
+  +[EMFEmojiCategory _isComposedCoupleMultiSkinToneEmoji:]
+  +[EMFEmojiCategory PrepopulatedEmoji]
+  +[EMFEmojiCategory PeopleEmoji]
+  +[EMFEmojiCategory NatureEmoji]
+  +[EMFEmojiCategory FoodAndDrinkEmoji]
+  +[EMFEmojiCategory ActivityEmoji]
+  +[EMFEmojiCategory TravelAndPlacesEmoji]
+  +[EMFEmojiCategory ObjectsEmoji]
+  +[EMFEmojiCategory SymbolsEmoji]
+  +[EMFEmojiCategory computeEmojiFlagsSortedByLanguage]
+  +[EMFEmojiCategory extraFlagsForCountryCode:]
+  +[EMFEmojiCategory flagEmojiCountryCodesCommon]
+  +[EMFEmojiCategory stringToRegionalIndicatorString:]
+  +[EMFEmojiCategory insertionFlagsForCountryCodes:inSortedCountryCodes:]
+  +[EMFEmojiCategory insertToSortedCountries:withAdditionalFlags:]
+  +[EMFEmojiCategory FlagsEmoji]
+  +[EMFEmojiCategory _baseLocalizationKeyForIdentifier:]
+  +[EMFEmojiCategory DingbatsVariantEmoji]
+  +[EMFEmojiCategory NoneVariantEmoji]
+  +[EMFEmojiCategory SkinToneEmoji]
+  +[EMFEmojiCategory GenderEmoji]
+  +[EMFEmojiCategory ProfessionEmoji]
+  +[EMFEmojiCategory CoupleMultiSkinToneEmoji]
+  +[EMFEmojiCategory MultiPersonFamilySkinToneEmoji]
+  +[EMFEmojiCategory NewlyAddedEmoji]
+  +[EMFEmojiCategory categoryIdentifierList]
+  +[EMFEmojiCategory localizedRecentsDescription]
+  +[EMFEmojiCategory _isFlagEmoji:]
+  +[EMFEmojiCategory _isMultiPersonFamilySkinToneEmoji:]
+  +[EMFEmojiCategory _isNewlyAddedEmoji:]
+  +[EMFEmojiCategory ProfessionWithoutSkinToneEmoji]
+  +[EMFEmojiCategory CelebrationEmoji]
+
+  // instance methods
+  -[EMFEmojiCategory dealloc]
+  -[EMFEmojiCategory .cxx_destruct]
+  -[EMFEmojiCategory localizedName]
+  -[EMFEmojiCategory initWithIdentifier:]
+  -[EMFEmojiCategory identifier]
+  -[EMFEmojiCategory emojiTokensForLocaleData:]
+  -[EMFEmojiCategory shortLocalizedName]
+
+
+EMFQueryResult : NSObject /usr/lib/libSystem.B.dylib
+ @property  EMFQuery *query
+ @property  NSArray *matches
+ @property  NSDictionary *matchingDocumentWeights
+ @property  EMFQueryResultOverride *resultOverride
+
+  // class methods
+  +[EMFQueryResult _emojiStringForDocumentID:usingLocaleData:]
+
+  // instance methods
+  -[EMFQueryResult matches]
+  -[EMFQueryResult .cxx_destruct]
+  -[EMFQueryResult query]
+  -[EMFQueryResult emojiMatchesAndDocumentWeightsUsingEmojiLocaleData:]
+  -[EMFQueryResult resultOverride]
+  -[EMFQueryResult emojiMatchesForOverriddenResultsUsingEmojiLocaleData:]
+  -[EMFQueryResult initWithQuery:matchingDocumentWeights:resultOverride:]
+  -[EMFQueryResult _matchingDocumentWeightsContainsOnlyBlackLivesMatterResults]
+  -[EMFQueryResult _handleOverrideResultInterpolationForStandardResults:]
+  -[EMFQueryResult _interpolateOverriddenResultsByPrepending:]
+  -[EMFQueryResult _interpolateOverriddenResultsByAppending:]
+  -[EMFQueryResult _interpolateOverriddenResultsByAppendingAndMoving:]
+  -[EMFQueryResult _interpolateOverriddenResultsByFiltering:]
+  -[EMFQueryResult _interpolateOverriddenResultsByOverwriting]
+  -[EMFQueryResult initWithQuery:andMatchingDocumentWeights:]
+  -[EMFQueryResult emojiMatchesUsingEmojiLocaleData:]
+  -[EMFQueryResult matchingDocumentWeights]
+
+
+EMFQueryResultOverrideList : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[EMFQueryResultOverrideList .cxx_destruct]
+  -[EMFQueryResultOverrideList overriddenResultsForQuery:searchType:]
+  -[EMFQueryResultOverrideList _overriddenResultsRawStringExactMatchForQuery:]
+  -[EMFQueryResultOverrideList _overriddenResultsRawStringPrefixMatchForQuery:]
+  -[EMFQueryResultOverrideList _overriddenResultsTokenExactMatchForQuery:]
+  -[EMFQueryResultOverrideList _overriddenResultsTokenPrefixMatchForQuery:]
+  -[EMFQueryResultOverrideList _metadataForString:]
+  -[EMFQueryResultOverrideList _overriddenResultsRawStringExactMatchForRawString:andSearchType:]
+  -[EMFQueryResultOverrideList initWithOverrideListURL:]
+  -[EMFQueryResultOverrideList overriddenResultsForQuery:]
+
+
+EMFStringStemmer : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSLocale *locale
+ @property  unsigned long encoding
+
+  // class methods
+  +[EMFStringStemmer stemmerLanguageNameForLocale:]
+  +[EMFStringStemmer _createSnowballStemmerForLocale:]
+  +[EMFStringStemmer supportsLocale:]
+  +[EMFStringStemmer supportedLanguageNames]
+
+  // instance methods
+  -[EMFStringStemmer initWithLocale:]
+  -[EMFStringStemmer locale]
+  -[EMFStringStemmer dealloc]
+  -[EMFStringStemmer .cxx_destruct]
+  -[EMFStringStemmer encoding]
+  -[EMFStringStemmer setEncoding:]
+  -[EMFStringStemmer stemToken:]
+  -[EMFStringStemmer stemTokens:]
+
+
+EMFQuery : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *queryString
+ @property  NSString *trimmedQueryString
+ @property  NSString *normalizedQueryString
+ @property  NSArray *tokens
+ @property  NSLocale *locale
+ @property  EMFStringStemmer *stringStemmer
+
+  // instance methods
+  -[EMFQuery tokens]
+  -[EMFQuery setTokens:]
+  -[EMFQuery copyWithZone:]
+  -[EMFQuery initWithLocale:]
+  -[EMFQuery setQueryString:]
+  -[EMFQuery locale]
+  -[EMFQuery .cxx_destruct]
+  -[EMFQuery queryString]
+  -[EMFQuery initWithQueryString:andLocale:]
+  -[EMFQuery reset]
+  -[EMFQuery normalizedQueryString]
+  -[EMFQuery initWithQueryString:andQueryTokens:andLocale:]
+  -[EMFQuery _finalTokenAnalyzed:]
+  -[EMFQuery trimmedQueryString]
+  -[EMFQuery setStringStemmer:]
+  -[EMFQuery initWithQueryTokens:andLocale:]
+  -[EMFQuery finalTokenAnalyzed]
+  -[EMFQuery finalTokenUnanalyzed]
+  -[EMFQuery tokenCounts]
+  -[EMFQuery stringStemmer]
+
+
+EMFInvertedIndex : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *termIndex
+ @property  NSDictionary *documentIndex
+ @property  NSURL *termIndexURL
+ @property  NSURL *documentIndexURL
+ @property  NSBundle *assetBundle
+ @property  <EMFIndexStrategy> *strategy
+
+  // instance methods
+  -[EMFInvertedIndex strategy]
+  -[EMFInvertedIndex setStrategy:]
+  -[EMFInvertedIndex .cxx_destruct]
+  -[EMFInvertedIndex assetBundle]
+  -[EMFInvertedIndex setAssetBundle:]
+  -[EMFInvertedIndex termIndex]
+  -[EMFInvertedIndex documentIndex]
+  -[EMFInvertedIndex termsForDocument:]
+  -[EMFInvertedIndex postingsForTerm:]
+  -[EMFInvertedIndex commonDocumentsForTerms:]
+  -[EMFInvertedIndex termWeightForTerm:inDocument:]
+  -[EMFInvertedIndex calculateDocumentWeightsForQueryTokenCounts:]
+  -[EMFInvertedIndex initWithTermIndex:andDocumentIndex:]
+  -[EMFInvertedIndex setTermIndex:]
+  -[EMFInvertedIndex setDocumentIndex:]
+  -[EMFInvertedIndex termIndexURL]
+  -[EMFInvertedIndex documentIndexURL]
+  -[EMFInvertedIndex setTermIndexURL:]
+  -[EMFInvertedIndex setDocumentIndexURL:]
+
+
+EMFSearchEngineBundleLoader : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EMFSearchEngineBundleLoader isLocaleSupported:]
+  +[EMFSearchEngineBundleLoader assetBundleForLocale:]
+
+
+EMFEmojiToken : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *localeIdentifier
+ @property  NSString *string
+ @property  NSString *_baseString
+ @property  NSArray *_skinToneVariantStrings
+ @property  BOOL _shouldHighlightEmoji
+ @property  r^{__EmojiTokenWrapper=} emojiTokenRef
+ @property  EMFEmojiLocaleData *localeData
+ @property  BOOL supportsSkinToneVariants
+ @property  int skinTone
+ @property  NSArray *skinToneSpecifiers
+ @property  NSArray *skinToneChooserVariants
+ @property  NSArray *skinToneVariants
+ @property  int presentationStyle
+ @property  BOOL isCommon
+
+  // class methods
+  +[EMFEmojiToken supportsSecureCoding]
+  +[EMFEmojiToken emojiTokenWithString:localeData:]
+  +[EMFEmojiToken emojiTokensForCEMEmojiTokens:]
+  +[EMFEmojiToken emojiTokenWithCEMEmojiToken:]
+  +[EMFEmojiToken emojiTokenWithLongCharacter:localeData:]
+
+  // instance methods
+  -[EMFEmojiToken copyWithZone:]
+  -[EMFEmojiToken localeIdentifier]
+  -[EMFEmojiToken setLocaleIdentifier:]
+  -[EMFEmojiToken presentationStyle]
+  -[EMFEmojiToken dealloc]
+  -[EMFEmojiToken .cxx_destruct]
+  -[EMFEmojiToken _baseString]
+  -[EMFEmojiToken encodeWithCoder:]
+  -[EMFEmojiToken skinToneVariants]
+  -[EMFEmojiToken localeData]
+  -[EMFEmojiToken setString:]
+  -[EMFEmojiToken supportsSkinToneVariants]
+  -[EMFEmojiToken _skinToneVariantStrings]
+  -[EMFEmojiToken _shouldHighlightEmoji]
+  -[EMFEmojiToken isEqual:]
+  -[EMFEmojiToken string]
+  -[EMFEmojiToken skinTone]
+  -[EMFEmojiToken initWithCoder:]
+  -[EMFEmojiToken copyWithSkinToneVariant:]
+  -[EMFEmojiToken copyWithSkinToneVariantSpecifier:]
+  -[EMFEmojiToken isEqualIgnoringModifiers:]
+  -[EMFEmojiToken copyWithoutModifiers]
+  -[EMFEmojiToken initWithCEMEmojiToken:]
+  -[EMFEmojiToken initWithString:localeIdentifier:]
+  -[EMFEmojiToken _createEmojiTokenRefIfNecessary]
+  -[EMFEmojiToken emojiTokenRef]
+  -[EMFEmojiToken skinToneSpecifiers]
+  -[EMFEmojiToken skinToneChooserVariants]
+  -[EMFEmojiToken supportsPresentationStyle:]
+  -[EMFEmojiToken copyWithPresentationStyle:]
+  -[EMFEmojiToken isCommon]
+  -[EMFEmojiToken relatedEmojiTokens:]
+  -[EMFEmojiToken nameForType:]
+
+
+EMFQueryResultOverrideListLoader : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EMFQueryResultOverrideListLoader overrideListForLocale:]
+
+
+EMFIndexLoader : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EMFIndexLoader _invertedIndexWithTermIndexURL:andDocumentIndexURL:fromBundle:]
+  +[EMFIndexLoader _loadDictionaryResource:]
+  +[EMFIndexLoader _inferAndApplyStrategyToIndex:]
+  +[EMFIndexLoader defaultIndexForBundle:]
+  +[EMFIndexLoader stemmedIndexForBundle:]
+
+
+EMFStringUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EMFStringUtilities professionSkinToneEmojiBaseKey:]
+  +[EMFStringUtilities _baseStringForEmojiString:]
+  +[EMFStringUtilities _stringWithUnichar:]
+  +[EMFStringUtilities _skinToneChooserVariantsForString:]
+  +[EMFStringUtilities _skinToneSpecifiersForString:]
+  +[EMFStringUtilities _multiPersonStringForString:skinToneVariantSpecifier:]
+  +[EMFStringUtilities _preferenceIndexString:]
+  +[EMFStringUtilities _isNewlyAddedEmoji:]
+  +[EMFStringUtilities _genderEmojiBaseStringNeedVariantSelector:]
+  +[EMFStringUtilities _hasSkinToneVariantsForString:]
+  +[EMFStringUtilities _skinToneForString:]
+  +[EMFStringUtilities _skinToneVariantsForString:]
+  +[EMFStringUtilities _skinToneModifierFromSpecifierType:]
+  +[EMFStringUtilities _firstLongCharacterOfString:]
+  +[EMFStringUtilities _emojiString:containsSubstring:]
+  +[EMFStringUtilities multiPersonTypeForString:]
+  +[EMFStringUtilities _baseFirstCharacterString:]
+  +[EMFStringUtilities skinToneSpecifierTypeFromEmojiFitzpatrickModifier:]
+  +[EMFStringUtilities _tokenizedMultiPersonFromString:]
+  +[EMFStringUtilities _skinToneChooserVariantsForMultiPersonType:]
+  +[EMFStringUtilities _skinToneVariantsForMultiPersonType:]
+  +[EMFStringUtilities _skinToneSuffixFromSpecifierType:]
+
+
+EMFDefaultAutocompleteCandidateProvider : NSObject /usr/lib/libSystem.B.dylib <EMFAutocompleteCandidateProvider>
+ @property  NSArray *tokens
+
+  // class methods
+  +[EMFDefaultAutocompleteCandidateProvider providerFromInvertedIndex:]
+
+  // instance methods
+  -[EMFDefaultAutocompleteCandidateProvider tokens]
+  -[EMFDefaultAutocompleteCandidateProvider initWithBundle:]
+  -[EMFDefaultAutocompleteCandidateProvider .cxx_destruct]
+  -[EMFDefaultAutocompleteCandidateProvider initWithTokens:]
+  -[EMFDefaultAutocompleteCandidateProvider firstMatchForPrefix:]
+  -[EMFDefaultAutocompleteCandidateProvider matchesForPrefix:usingAlgorithm:]
+  -[EMFDefaultAutocompleteCandidateProvider enumerateCandidatesMatchingPrefix:withEnumerationType:maxCandidates:usingBlock:]
+  -[EMFDefaultAutocompleteCandidateProvider firstCandidateMatchingPrefix:]
+  -[EMFDefaultAutocompleteCandidateProvider isValidToken:]
+
+
+EMFQueryEvaluator : NSObject /usr/lib/libSystem.B.dylib
+ @property  EMFInvertedIndex *index
+ @property  EMFQueryResultOverrideList *overrideList
+
+  // instance methods
+  -[EMFQueryEvaluator index]
+  -[EMFQueryEvaluator .cxx_destruct]
+  -[EMFQueryEvaluator initWithIndex:]
+  -[EMFQueryEvaluator performQuery:]
+  -[EMFQueryEvaluator initWithIndex:andOverrideList:]
+  -[EMFQueryEvaluator _overriddenResultsForQuery:]
+  -[EMFQueryEvaluator overrideList]
+  -[EMFQueryEvaluator setOverrideList:]
+
+
+EMFIndexManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  EMFInvertedIndex *defaultIndex
+ @property  EMFInvertedIndex *stemmedIndex
+
+  // instance methods
+  -[EMFIndexManager initWithBundle:]
+  -[EMFIndexManager .cxx_destruct]
+  -[EMFIndexManager defaultIndex]
+  -[EMFIndexManager setDefaultIndex:]
+  -[EMFIndexManager stemmedIndex]
+  -[EMFIndexManager preheatIndexes]
+  -[EMFIndexManager setStemmedIndex:]
+
+
+EMFEmojiSearchEngine : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSLocale *locale
+ @property  EMFIndexManager *indexManager
+ @property  EMFStringStemmer *stringStemmer
+ @property  <EMFAutocompleteCandidateProvider> *autocompleteProvider
+ @property  EMFQueryResultOverrideList *overrideList
+ @property  BOOL enableAutocomplete
+
+  // class methods
+  +[EMFEmojiSearchEngine isLocaleSupported:]
+
+  // instance methods
+  -[EMFEmojiSearchEngine initWithLocale:]
+  -[EMFEmojiSearchEngine preheat]
+  -[EMFEmojiSearchEngine init]
+  -[EMFEmojiSearchEngine locale]
+  -[EMFEmojiSearchEngine dealloc]
+  -[EMFEmojiSearchEngine .cxx_destruct]
+  -[EMFEmojiSearchEngine indexManager]
+  -[EMFEmojiSearchEngine stringStemmer]
+  -[EMFEmojiSearchEngine overrideList]
+  -[EMFEmojiSearchEngine initWithLocale:andAssetBundle:]
+  -[EMFEmojiSearchEngine initWithLocale:andIndexManager:andStringStemmer:andAutocompleteProvider:]
+  -[EMFEmojiSearchEngine _performStringQueryUntokenized:usingIndex:]
+  -[EMFEmojiSearchEngine _performStringQueryOverride:usingIndex:]
+  -[EMFEmojiSearchEngine _performStringQuery:usingIndex:shouldAutocomplete:shouldStem:]
+  -[EMFEmojiSearchEngine performQuery:usingIndex:]
+  -[EMFEmojiSearchEngine _performAutocompletedQueryForQuery:usingIndex:]
+  -[EMFEmojiSearchEngine autocompleteProvider]
+  -[EMFEmojiSearchEngine performStringQuery:]
+  -[EMFEmojiSearchEngine enableAutocomplete]
+  -[EMFEmojiSearchEngine setEnableAutocomplete:]
+
+
+EMFIndexStrategySingleStemmedIndexOnly : EMFAbstractIndexStrategy
+  // instance methods
+  -[EMFIndexStrategySingleStemmedIndexOnly termsForDocument:]
+  -[EMFIndexStrategySingleStemmedIndexOnly postingsForTerm:]
+  -[EMFIndexStrategySingleStemmedIndexOnly commonDocumentsForTerms:]
+  -[EMFIndexStrategySingleStemmedIndexOnly termWeightForTerm:inDocument:]
+  -[EMFIndexStrategySingleStemmedIndexOnly calculateDocumentWeightsForQueryTokenCounts:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _postingsForTerm:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _termsForDocument:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _termWeightForTerm:inDocument:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _calculateDocumentWeightsForQueryTokenCounts:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _commonDocumentsForTerms:]
+  -[EMFIndexStrategySingleStemmedIndexOnly _postingsForTerms:]
+
+
+EMFEmojiLocaleData : NSObject /usr/lib/libSystem.B.dylib
+ @property  EMFEmojiSearchEngine *searchEngine
+ @property  NSString *localeIdentifier
+ @property  r^{__EmojiLocaleDataWrapper=} emojiLocaleDataRef
+ @property  NSArray *emojiTokens
+
+  // class methods
+  +[EMFEmojiLocaleData emojiLocaleDataWithLocaleIdentifier:]
+  +[EMFEmojiLocaleData emojiLocaleDataWithCEMEmojiLocaleData:]
+
+  // instance methods
+  -[EMFEmojiLocaleData localeIdentifier]
+  -[EMFEmojiLocaleData initWithLocaleIdentifier:]
+  -[EMFEmojiLocaleData dealloc]
+  -[EMFEmojiLocaleData .cxx_destruct]
+  -[EMFEmojiLocaleData emojiTokensForText:phoneticReading:options:searchType:includePrefixMatches:]
+  -[EMFEmojiLocaleData enumerateSearchResultsInText:range:options:searchType:usingBlock:]
+  -[EMFEmojiLocaleData emojiLocaleDataRef]
+  -[EMFEmojiLocaleData initWithCEMEmojiLocaleData:]
+  -[EMFEmojiLocaleData cfCompareFlagsFromNSOptions:]
+  -[EMFEmojiLocaleData searchEngine]
+  -[EMFEmojiLocaleData emojiTokens]
+  -[EMFEmojiLocaleData emojiTokensForOptions:presentationStyle:]
+  -[EMFEmojiLocaleData preheatSearchEngine]
+  -[EMFEmojiLocaleData _rawSearchEngineReference]
+
+
+EMFQueryResultOverride : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSArray *results
+ @property  unsigned long overrideSearchType
+ @property  unsigned long overrideBehavior
+
+  // instance methods
+  -[EMFQueryResultOverride results]
+  -[EMFQueryResultOverride .cxx_destruct]
+  -[EMFQueryResultOverride overrideBehavior]
+  -[EMFQueryResultOverride overrideSearchType]
+  -[EMFQueryResultOverride initWithOverridesArray:searchType:behavior:]
+
+
+NSCharacterSet(EMFEmojiExtras)
+	// class methods
+	+[NSCharacterSet(EMFEmojiExtras) _emojiCharacterSet]
+
+(EMFEmojiExtras)
+	// instance methods
+	-[(EMFEmojiExtras) _enumerateEmojiTokensInRange:block:]
+	-[(EMFEmojiExtras) _isSingleEmoji]
+	-[(EMFEmojiExtras) _containsEmoji]
+
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSOrderedSet 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

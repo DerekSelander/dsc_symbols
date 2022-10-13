@@ -1,0 +1,962 @@
+|| __DATA.__common _gAppleCareLogArray
+|| __DATA.__common _gEnableTimeToDryPopup
+|| __DATA.__common _gLdcmBehaviorPlist
+|| __DATA.__common _gPrevLog
+|| __DATA.__common _stats
+|| __DATA.__data _enableVoltageEventMonitorModeAggD
+|| __DATA.__data _enableVoltageEventMonitorModeAppleCareLogging
+|| __DATA.__data _enableVoltageEventMonitorModeConsole
+|| __DATA.__data _gEnableTapToRadarPopup
+|| __DATA.__data _gGiveUserRadarOption
+|| __DATA.__data _kIOAMLDCMBehaviorDryThresholdDictionarykey
+|| __DATA.__data _kIOAMLDCMBehaviorPlistBehaviorBitmaskKey
+|| __DATA.__data _kIOAMLDCMBehaviorPlistConsecutiveDetectedInterval
+|| __DATA.__data _kIOAMLDCMBehaviorPlistConsecutiveDetectedThresh
+|| __DATA.__data _kIOAMLDCMBehaviorPlistConsecutiveNotDetectedInterval
+|| __DATA.__data _kIOAMLDCMBehaviorPlistConsecutiveNotDetectedThresh
+|| __DATA.__data _kIOAMLDCMBehaviorPlistDeviceGen1SubKey
+|| __DATA.__data _kIOAMLDCMBehaviorPlistFdpBitmaskKey
+|| __DATA.__data _kIOAMLDCMBehaviorPlistLegacySubKey
+|| __DATA.__data _kIOAMLDCMBehaviorPlistVersionKey
+|| __DATA.__data _kIOAMLDCMBehaviorThresholdDefaultKey
+|| __DATA.__data _kIOAMLDCMBehaviorWetThresholdDictionaryKey
+|| __DATA.__objc_data _OBJC_CLASS_$_HalogenLdcmCalc
+|| __DATA.__objc_data _OBJC_CLASS_$_HalogenMeasurement
+|| __DATA.__objc_data _OBJC_CLASS_$_HalogenWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_IOAccessoryLdcmHealthClass
+|| __DATA.__objc_data _OBJC_METACLASS_$_HalogenLdcmCalc
+|| __DATA.__objc_data _OBJC_METACLASS_$_HalogenMeasurement
+|| __DATA.__objc_data _OBJC_METACLASS_$_HalogenWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_IOAccessoryLdcmHealthClass
+|| __DATA_DIRTY.__common _gAccyHealthDictionary
+|| __DATA_DIRTY.__common _gAssetContext
+|| __DATA_DIRTY.__common _gBatteryStatusNotificationContext
+|| __DATA_DIRTY.__common _gDigitalIDCountWetDict
+|| __DATA_DIRTY.__common _gDigitalIDTimeWetDict
+|| __DATA_DIRTY.__common _gDockState
+|| __DATA_DIRTY.__common _gHalogenMeasurements
+|| __DATA_DIRTY.__common _gIOAMLogFilepath
+|| __DATA_DIRTY.__common _gIOAMLogLock
+|| __DATA_DIRTY.__common _gIOiter
+|| __DATA_DIRTY.__common _gIOnotify
+|| __DATA_DIRTY.__common _gIsInternalBuild
+|| __DATA_DIRTY.__common _gLdcmParams
+|| __DATA_DIRTY.__common _gLiquidNotificationContext
+|| __DATA_DIRTY.__common _gUserLdcmParams
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_IOAccessoryUserLdcmParamClass
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_IOAccessoryUserLdcmParamClass
+|| __TEXT.__const _DRY_TRANSITION_CAPACITANCE_THRESHOLD_NF
+|| __TEXT.__const _IOAccessoryManagerVersionNumber
+|| __TEXT.__const _IOAccessoryManagerVersionString
+|| __TEXT.__const _WET_TRANSITION_CAPACITANCE_THRESHOLD_NF
+|| __TEXT.__const _kAccyHealthDictionaryMaxCount
+|| __TEXT.__const _kAggDKnownDigitalID
+|| __TEXT.__const _kAggDUnknownDigitalID
+|| __TEXT.__const _kLdcmMaxEventHistoryCount
+|| __TEXT.__const _kMaximumErrorAssetQueryExtraSec
+|| __TEXT.__const _kMaximumRegularAssetQueryExtraSec
+|| __TEXT.__const _kMinimumErrorAssetQueryIntervalSec
+|| __TEXT.__const _kMinimumRegularAssetQueryIntervalSec
+|| __TEXT.__const _kSupportedLdcmBehaviorPlistVersion
+|| __TEXT.__text _IOAccessoryRequestResetLifetimeDuration
+|| __TEXT.__text _IOAccessoryResetLifetimeDuration
+|| __TEXT.__text _IOAccessoryStartVoltageEventMonitor
+|| __TEXT.__text _IOAccessoryVoltageEventMonitorMode
+|| __TEXT.__text _absoluteToNanoseconds
+|| __TEXT.__text _compare
+__ Accelerate: _vDSP_create_fftsetupD
+__ Accelerate: _vDSP_destroy_fftsetupD
+__ Accelerate: _vDSP_fft_zripD
+__ AudioToolbox: _AudioComponentFindNext
+__ AudioToolbox: _AudioComponentInstanceDispose
+__ AudioToolbox: _AudioComponentInstanceNew
+__ AudioToolbox: _AudioOutputUnitStart
+__ AudioToolbox: _AudioOutputUnitStop
+__ AudioToolbox: _AudioUnitInitialize
+__ AudioToolbox: _AudioUnitRender
+__ AudioToolbox: _AudioUnitSetProperty
+__ AudioToolbox: _AudioUnitUninitialize
+__ AudioToolbox: _ExtAudioFileCreateWithURL
+__ AudioToolbox: _ExtAudioFileDispose
+__ AudioToolbox: _ExtAudioFileWrite
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFCalendarCreateWithIdentifier
+__ CoreFoundation: _CFCalendarDecomposeAbsoluteTime
+__ CoreFoundation: _CFCalendarSetTimeZone
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopRemoveSource
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFTimeZoneCopySystem
+__ CoreFoundation: _CFURLCreateFromFileSystemRepresentation
+__ CoreFoundation: _CFUserNotificationCancel
+__ CoreFoundation: _CFUserNotificationCreate
+__ CoreFoundation: _CFUserNotificationCreateRunLoopSource
+__ CoreFoundation: _CFUserNotificationDisplayAlert
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFGregorianCalendar
+__ CoreFoundation: _kCFRunLoopCommonModes
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFUserNotificationAlertTopMostKey
+__ CoreFoundation: _kCFUserNotificationAlternateButtonTitleKey
+__ CoreFoundation: _kCFUserNotificationDefaultButtonTitleKey
+__ CoreFoundation: _kCFUserNotificationLocalizationURLKey
+__ CoreFoundation: _kCFUserNotificationOtherButtonTitleKey
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ Foundation: _NSFileCreationDate
+__ Foundation: _NSFileHandleOperationException
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSCondition
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSExtensionItem
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPipe
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSTask
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ IOKit: _IOAllowPowerChange
+__ IOKit: _IODeregisterForSystemPower
+__ IOKit: _IOIteratorNext
+__ IOKit: _IONotificationPortCreate
+__ IOKit: _IONotificationPortDestroy
+__ IOKit: _IONotificationPortGetRunLoopSource
+__ IOKit: _IONotificationPortSetDispatchQueue
+__ IOKit: _IOObjectRelease
+__ IOKit: _IOPMAssertionCreateWithProperties
+__ IOKit: _IOPMAssertionRelease
+__ IOKit: _IORegisterForSystemPower
+__ IOKit: _IORegistryEntryCreateCFProperties
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IORegistryEntrySetCFProperty
+__ IOKit: _IOServiceAddInterestNotification
+__ IOKit: _IOServiceAddMatchingNotification
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingServices
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ MobileAsset: _OBJC_CLASS_$_ASAssetQuery
+__ SpringBoardServices: _SBUserNotificationDismissOnLock
+__ SpringBoardServices: _SBUserNotificationDontDismissOnUnlock
+__ SpringBoardServices: _SBUserNotificationExtensionIdentifierKey
+__ SpringBoardServices: _SBUserNotificationExtensionItemsKey
+__ SpringBoardServices: _SBUserNotificationIconImagePath
+__ SpringBoardServices: _SBUserNotificationLockScreenAlertHeaderKey
+__ SpringBoardServices: _SBUserNotificationLockScreenAlertMessageKey
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerConfigureGoldbondMode
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerCopyDeviceInfo
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetAccessoryID
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetDigitalID
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetFreePinMask
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetLdcmParams
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetPrimaryPort
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetServiceWithPrimaryPort
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetType
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerRequestLdcmMeasurement
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerSelectEisPin
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerSetVoltageDetected
+__ libIOAccessoryManager.dylib: _OBJC_CLASS_$_BaseResourceArbiterClient
+__ libIOAccessoryManager.dylib: _OBJC_CLASS_$_ResourceArbiterClient
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _cabs
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _carg
+__ libSystem.B.dylib: _cos
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_walltime
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _mach_continuous_time
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _qsort
+__ libSystem.B.dylib: _scalbn
+__ libSystem.B.dylib: _scalbnf
+__ libSystem.B.dylib: _sin
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+IOAccessoryLdcmHealthClass : NSObject <NSSecureCoding>
+ @property  unsigned int version
+ @property  BOOL isHealthy
+ @property  unsigned long leakagePassedCount
+ @property  unsigned long dryCount
+ @property  unsigned long wetCount
+ @property  unsigned long overVoltageCount
+ @property  unsigned long outOfProfileCount
+ @property  unsigned long lastSeenTimestamp
+ @property  unsigned long rsvd0
+ @property  unsigned long rsvd1
+ @property  unsigned long rsvd2
+ @property  unsigned long rsvd3
+ @property  unsigned long overVoltageTimestamp
+
+  // class methods
+  +[IOAccessoryLdcmHealthClass supportsSecureCoding]
+
+  // instance methods
+  -[IOAccessoryLdcmHealthClass lastSeenTimestamp]
+  -[IOAccessoryLdcmHealthClass isHealthy]
+  -[IOAccessoryLdcmHealthClass setRsvd2:]
+  -[IOAccessoryLdcmHealthClass rsvd2]
+  -[IOAccessoryLdcmHealthClass init]
+  -[IOAccessoryLdcmHealthClass setLastSeenTimestamp:]
+  -[IOAccessoryLdcmHealthClass setRsvd0:]
+  -[IOAccessoryLdcmHealthClass setRsvd3:]
+  -[IOAccessoryLdcmHealthClass rsvd0]
+  -[IOAccessoryLdcmHealthClass dryCount]
+  -[IOAccessoryLdcmHealthClass setLeakagePassedCount:]
+  -[IOAccessoryLdcmHealthClass setOverVoltageTimestamp:]
+  -[IOAccessoryLdcmHealthClass leakagePassedCount]
+  -[IOAccessoryLdcmHealthClass setVersion:]
+  -[IOAccessoryLdcmHealthClass encodeWithCoder:]
+  -[IOAccessoryLdcmHealthClass setOutOfProfileCount:]
+  -[IOAccessoryLdcmHealthClass wetCount]
+  -[IOAccessoryLdcmHealthClass rsvd3]
+  -[IOAccessoryLdcmHealthClass rsvd1]
+  -[IOAccessoryLdcmHealthClass setIsHealthy:]
+  -[IOAccessoryLdcmHealthClass outOfProfileCount]
+  -[IOAccessoryLdcmHealthClass setDryCount:]
+  -[IOAccessoryLdcmHealthClass version]
+  -[IOAccessoryLdcmHealthClass setOverVoltageCount:]
+  -[IOAccessoryLdcmHealthClass setRsvd1:]
+  -[IOAccessoryLdcmHealthClass setWetCount:]
+  -[IOAccessoryLdcmHealthClass overVoltageCount]
+  -[IOAccessoryLdcmHealthClass overVoltageTimestamp]
+  -[IOAccessoryLdcmHealthClass initWithCoder:]
+
+
+IOAccessoryUserLdcmParamClass : NSObject
+ @property  unsigned long minVhiDurationSec
+ @property  unsigned long maxVhiDurationSec
+ @property  unsigned long maxUpFluctuationMv
+ @property  int userBehaviorMask
+ @property  int fdpBehaviorMask
+ @property  unsigned long numEisHalogenSamples
+ @property  unsigned long wetPollingIntervalSec
+ @property  unsigned long dryPollingIntervalSec
+ @property  unsigned long ldcmArbiterRetrySec
+ @property  unsigned long ldcmStartMeasurementsDelayMs
+ @property  unsigned long ldcmStartMeasurementsRetryMs
+ @property  unsigned long minDryReadings
+ @property  unsigned long enableHalogenSnrTtr
+ @property  unsigned long enableHalogenMitigationsAndUI
+ @property  double wetTransitionCapacitanceThreshold
+ @property  double dryTransitionCapacitanceThreshold
+
+  // instance methods
+  -[IOAccessoryUserLdcmParamClass setLdcmArbiterRetrySec:]
+  -[IOAccessoryUserLdcmParamClass ldcmStartMeasurementsRetryMs]
+  -[IOAccessoryUserLdcmParamClass dryTransitionCapacitanceThreshold]
+  -[IOAccessoryUserLdcmParamClass maxVhiDurationSec]
+  -[IOAccessoryUserLdcmParamClass init]
+  -[IOAccessoryUserLdcmParamClass wetPollingIntervalSec]
+  -[IOAccessoryUserLdcmParamClass minVhiDurationSec]
+  -[IOAccessoryUserLdcmParamClass setDryPollingIntervalSec:]
+  -[IOAccessoryUserLdcmParamClass setUserBehaviorMask:]
+  -[IOAccessoryUserLdcmParamClass enableHalogenMitigationsAndUI]
+  -[IOAccessoryUserLdcmParamClass ldcmStartMeasurementsDelayMs]
+  -[IOAccessoryUserLdcmParamClass setFdpBehaviorMask:]
+  -[IOAccessoryUserLdcmParamClass setNumEisHalogenSamples:]
+  -[IOAccessoryUserLdcmParamClass minDryReadings]
+  -[IOAccessoryUserLdcmParamClass setEnableHalogenMitigationsAndUI:]
+  -[IOAccessoryUserLdcmParamClass setWetTransitionCapacitanceThreshold:]
+  -[IOAccessoryUserLdcmParamClass setLdcmStartMeasurementsRetryMs:]
+  -[IOAccessoryUserLdcmParamClass maxUpFluctuationMv]
+  -[IOAccessoryUserLdcmParamClass setWetPollingIntervalSec:]
+  -[IOAccessoryUserLdcmParamClass setDryTransitionCapacitanceThreshold:]
+  -[IOAccessoryUserLdcmParamClass setMaxVhiDurationSec:]
+  -[IOAccessoryUserLdcmParamClass setMinDryReadings:]
+  -[IOAccessoryUserLdcmParamClass dryPollingIntervalSec]
+  -[IOAccessoryUserLdcmParamClass setMaxUpFluctuationMv:]
+  -[IOAccessoryUserLdcmParamClass userBehaviorMask]
+  -[IOAccessoryUserLdcmParamClass enableHalogenSnrTtr]
+  -[IOAccessoryUserLdcmParamClass wetTransitionCapacitanceThreshold]
+  -[IOAccessoryUserLdcmParamClass numEisHalogenSamples]
+  -[IOAccessoryUserLdcmParamClass ldcmArbiterRetrySec]
+  -[IOAccessoryUserLdcmParamClass setLdcmStartMeasurementsDelayMs:]
+  -[IOAccessoryUserLdcmParamClass fdpBehaviorMask]
+  -[IOAccessoryUserLdcmParamClass setEnableHalogenSnrTtr:]
+  -[IOAccessoryUserLdcmParamClass setMinVhiDurationSec:]
+
+
+HalogenWrapper : NSObject
+ @property  NSObject<OS_dispatch_queue> *halogenMeasurementDispatchQueue
+ @property  NSObject<OS_dispatch_queue> *halogenTtrDispatchQueue
+ @property  NSObject<OS_dispatch_source> *timer
+ @property  BOOL attachDelayTimerRunning
+ @property  unsigned long wetPollingIntervalNs
+ @property  unsigned long dryPollingIntervalNs
+ @property  unsigned long ldcmArbiterRetryNs
+ @property  unsigned long ldcmStartMeasurementsDelayNs
+ @property  unsigned long ldcmStartMeasurementsRetryNs
+ @property  unsigned long minDryReadings
+ @property  unsigned long dryCnt
+ @property  unsigned long firstDryTimestamp
+ @property  BOOL isWet
+ @property  BOOL wasTapToRadarShown
+ @property  BOOL isTapToRadarPending
+ @property  BOOL isReceptacleEmpty
+ @property  unsigned long wetDryTransitionTimestamp
+ @property  BOOL isTimestampValid
+ @property  NSCondition *cond
+ @property  BOOL isMeasurementEnabled
+ @property  BOOL isMeasurementActive
+ @property  HalogenMeasurement *halogenMeasurement
+ @property  unsigned int service
+ @property  int portID
+ @property  NSData *eventBasedPDigitalID
+ @property  unsigned long eventBasedDigitalID
+ @property  int eventBasedOrientation
+ @property  NSData *connectedAccessoryPDigitalID
+ @property  unsigned long connectedAccessoryDigitalID
+ @property  int connectedAccessoryOrientation
+ @property  int pinID
+ @property  BOOL didNotify
+ @property  BOOL didConfidentNotify
+ @property  BOOL didHighConfidentNotify
+ @property  BOOL didWetDuration
+ @property  BOOL accessoryConnectedWhileWet
+ @property  unsigned long wetAccessoryAttachTimestamp
+ @property  BOOL didWetTooLong
+ @property  BOOL isHeadsetConnected
+ @property  BOOL isDebugAccessoryConnected
+ @property  BOOL isBlacklistedAccessoryConnected
+ @property  BOOL justDetached
+ @property  BOOL justAttachedCase
+ @property  BOOL isPowerAssertionHeld
+ @property  unsigned int sleepAssertionID
+
+  // instance methods
+  -[HalogenWrapper init]
+  -[HalogenWrapper setService:]
+  -[HalogenWrapper cond]
+  -[HalogenWrapper timer]
+  -[HalogenWrapper isWet]
+  -[HalogenWrapper pinID]
+  -[HalogenWrapper dealloc]
+  -[HalogenWrapper setTimer:]
+  -[HalogenWrapper dryCnt]
+  -[HalogenWrapper portID]
+  -[HalogenWrapper minDryReadings]
+  -[HalogenWrapper service]
+  -[HalogenWrapper isMeasurementEnabled]
+  -[HalogenWrapper setMinDryReadings:]
+  -[HalogenWrapper halogenMeasurementDispatchQueue]
+  -[HalogenWrapper setHalogenMeasurementDispatchQueue:]
+  -[HalogenWrapper halogenTtrDispatchQueue]
+  -[HalogenWrapper setHalogenTtrDispatchQueue:]
+  -[HalogenWrapper attachDelayTimerRunning]
+  -[HalogenWrapper setAttachDelayTimerRunning:]
+  -[HalogenWrapper wetPollingIntervalNs]
+  -[HalogenWrapper setWetPollingIntervalNs:]
+  -[HalogenWrapper dryPollingIntervalNs]
+  -[HalogenWrapper setDryPollingIntervalNs:]
+  -[HalogenWrapper ldcmArbiterRetryNs]
+  -[HalogenWrapper setLdcmArbiterRetryNs:]
+  -[HalogenWrapper ldcmStartMeasurementsDelayNs]
+  -[HalogenWrapper setLdcmStartMeasurementsDelayNs:]
+  -[HalogenWrapper ldcmStartMeasurementsRetryNs]
+  -[HalogenWrapper setLdcmStartMeasurementsRetryNs:]
+  -[HalogenWrapper setDryCnt:]
+  -[HalogenWrapper firstDryTimestamp]
+  -[HalogenWrapper setFirstDryTimestamp:]
+  -[HalogenWrapper setIsWet:]
+  -[HalogenWrapper wasTapToRadarShown]
+  -[HalogenWrapper setWasTapToRadarShown:]
+  -[HalogenWrapper isTapToRadarPending]
+  -[HalogenWrapper setIsTapToRadarPending:]
+  -[HalogenWrapper isReceptacleEmpty]
+  -[HalogenWrapper setIsReceptacleEmpty:]
+  -[HalogenWrapper wetDryTransitionTimestamp]
+  -[HalogenWrapper setWetDryTransitionTimestamp:]
+  -[HalogenWrapper isTimestampValid]
+  -[HalogenWrapper setIsTimestampValid:]
+  -[HalogenWrapper setCond:]
+  -[HalogenWrapper setIsMeasurementEnabled:]
+  -[HalogenWrapper isMeasurementActive]
+  -[HalogenWrapper setIsMeasurementActive:]
+  -[HalogenWrapper halogenMeasurement]
+  -[HalogenWrapper setHalogenMeasurement:]
+  -[HalogenWrapper setPortID:]
+  -[HalogenWrapper eventBasedPDigitalID]
+  -[HalogenWrapper setEventBasedPDigitalID:]
+  -[HalogenWrapper eventBasedDigitalID]
+  -[HalogenWrapper setEventBasedDigitalID:]
+  -[HalogenWrapper eventBasedOrientation]
+  -[HalogenWrapper setEventBasedOrientation:]
+  -[HalogenWrapper connectedAccessoryPDigitalID]
+  -[HalogenWrapper setConnectedAccessoryPDigitalID:]
+  -[HalogenWrapper connectedAccessoryDigitalID]
+  -[HalogenWrapper setConnectedAccessoryDigitalID:]
+  -[HalogenWrapper connectedAccessoryOrientation]
+  -[HalogenWrapper setConnectedAccessoryOrientation:]
+  -[HalogenWrapper setPinID:]
+  -[HalogenWrapper didNotify]
+  -[HalogenWrapper setDidNotify:]
+  -[HalogenWrapper didConfidentNotify]
+  -[HalogenWrapper setDidConfidentNotify:]
+  -[HalogenWrapper didHighConfidentNotify]
+  -[HalogenWrapper setDidHighConfidentNotify:]
+  -[HalogenWrapper didWetDuration]
+  -[HalogenWrapper setDidWetDuration:]
+  -[HalogenWrapper accessoryConnectedWhileWet]
+  -[HalogenWrapper setAccessoryConnectedWhileWet:]
+  -[HalogenWrapper wetAccessoryAttachTimestamp]
+  -[HalogenWrapper setWetAccessoryAttachTimestamp:]
+  -[HalogenWrapper didWetTooLong]
+  -[HalogenWrapper setDidWetTooLong:]
+  -[HalogenWrapper isHeadsetConnected]
+  -[HalogenWrapper setIsHeadsetConnected:]
+  -[HalogenWrapper isDebugAccessoryConnected]
+  -[HalogenWrapper setIsDebugAccessoryConnected:]
+  -[HalogenWrapper isBlacklistedAccessoryConnected]
+  -[HalogenWrapper setIsBlacklistedAccessoryConnected:]
+  -[HalogenWrapper justDetached]
+  -[HalogenWrapper setJustDetached:]
+  -[HalogenWrapper justAttachedCase]
+  -[HalogenWrapper setJustAttachedCase:]
+  -[HalogenWrapper isPowerAssertionHeld]
+  -[HalogenWrapper setIsPowerAssertionHeld:]
+  -[HalogenWrapper sleepAssertionID]
+  -[HalogenWrapper setSleepAssertionID:]
+
+
+HalogenLdcmCalc : NSObject
+ @property  int nSamples
+ @property  int diffWindowSize
+ @property  int clipDetectWindowSize
+ @property  int sizeofSample
+ @property  double sampleRate
+ @property  double signalFrequency
+ @property  double adcGain
+ @property  double tiaGain
+ @property  double hydraImpedance
+ @property  double movesumClipThreshold
+ @property  double hydraR
+ @property  double ldcmAcCap
+ @property  double sanitycheckImpedanceLowerbound
+ @property  double sanitycheckImpedanceUpperbound
+ @property  double sanitycheckPhaseLowerbound
+ @property  double sanitycheckPhaseUperbound
+ @property  double sanitycheckVoltageGainCorrectionLowerbound
+ @property  double sanitycheckVoltageGainCorrectionUpperbound
+ @property  double sanitycheckCurrentGainCorrectionLowerbound
+ @property  double sanitycheckCurrentGainCorrectionUpperbound
+ @property  double sanitycheckCurrentPhaseCompensationLowerbound
+ @property  double sanitycheckCurrentPhaseCompensationUpperbound
+ @property  BOOL isDigitalFilterTrigger
+ @property  NSMutableData *tmp1DataBuff
+ @property  int tmp1DataBuffSize
+ @property  NSMutableData *tmp2DataBuff
+ @property  int tmp2DataBuffSize
+ @property  NSMutableData *tmp3DataBuff
+ @property  int tmp3DataBuffSize
+ @property  ^{OpaqueFFTSetupD=} fftContext
+ @property  double precalVoltageSignalLevel
+ @property  double precalVoltageNoiseLevel
+ @property  double precalVoltageSNR
+ @property  double precalCurrentSignalLevel
+ @property  double precalCurrentNoiseLevel
+ @property  double precalCurrentSNR
+ @property  double voltageGainCorrection
+ @property  double currentGainCorrection
+ @property  double currentPhaseCompensation
+ @property  double calVoltageSignalLevel
+ @property  double calVoltageNoiseLevel
+ @property  double calVoltageSNR
+ @property  double calCurrentSignalLevel
+ @property  double calCurrentNoiseLevel
+ @property  double calCurrentSNR
+ @property  double goertzelImpedance
+ @property  double goertzelPhase
+ @property  double compensatedImpedance
+ @property  double compensatedPhase
+ @property  double clippingScore
+ @property  double resistanceInOhms
+ @property  double capacitanceInNanoF
+ @property  double measurementVoltageSignalLevel
+ @property  double measurementVoltageNoiseLevel
+ @property  double measurementVoltageSNR
+ @property  double measurementCurrentSignalLevel
+ @property  double measurementCurrentNoiseLevel
+ @property  double measurementCurrentSNR
+ @property  double measurementCondetSNR
+
+  // instance methods
+  -[HalogenLdcmCalc dealloc]
+  -[HalogenLdcmCalc hydraR]
+  -[HalogenLdcmCalc initWithSize:]
+  -[HalogenLdcmCalc adcGain]
+  -[HalogenLdcmCalc tiaGain]
+  -[HalogenLdcmCalc setSampleRate:]
+  -[HalogenLdcmCalc _freeBuffers]
+  -[HalogenLdcmCalc sampleRate]
+  -[HalogenLdcmCalc voltageGainCorrection]
+  -[HalogenLdcmCalc currentGainCorrection]
+  -[HalogenLdcmCalc currentPhaseCompensation]
+  -[HalogenLdcmCalc goertzelImpedance]
+  -[HalogenLdcmCalc goertzelPhase]
+  -[HalogenLdcmCalc compensatedImpedance]
+  -[HalogenLdcmCalc compensatedPhase]
+  -[HalogenLdcmCalc clippingScore]
+  -[HalogenLdcmCalc resistanceInOhms]
+  -[HalogenLdcmCalc capacitanceInNanoF]
+  -[HalogenLdcmCalc precalVoltageSignalLevel]
+  -[HalogenLdcmCalc precalVoltageNoiseLevel]
+  -[HalogenLdcmCalc precalVoltageSNR]
+  -[HalogenLdcmCalc precalCurrentSignalLevel]
+  -[HalogenLdcmCalc precalCurrentNoiseLevel]
+  -[HalogenLdcmCalc precalCurrentSNR]
+  -[HalogenLdcmCalc calVoltageSignalLevel]
+  -[HalogenLdcmCalc calVoltageNoiseLevel]
+  -[HalogenLdcmCalc calVoltageSNR]
+  -[HalogenLdcmCalc calCurrentSignalLevel]
+  -[HalogenLdcmCalc calCurrentNoiseLevel]
+  -[HalogenLdcmCalc calCurrentSNR]
+  -[HalogenLdcmCalc measurementVoltageSignalLevel]
+  -[HalogenLdcmCalc measurementVoltageNoiseLevel]
+  -[HalogenLdcmCalc measurementVoltageSNR]
+  -[HalogenLdcmCalc measurementCurrentSignalLevel]
+  -[HalogenLdcmCalc measurementCurrentNoiseLevel]
+  -[HalogenLdcmCalc measurementCurrentSNR]
+  -[HalogenLdcmCalc measurementCondetSNR]
+  -[HalogenLdcmCalc isBoundViolation_currentGainCorrection]
+  -[HalogenLdcmCalc isBoundViolation_currentPhaseCompensation]
+  -[HalogenLdcmCalc isLowerBoundViolation_goertzelImpedance]
+  -[HalogenLdcmCalc isUpperBoundViolation_goertzelImpedance]
+  -[HalogenLdcmCalc isLowerBoundViolation_goertzelPhase]
+  -[HalogenLdcmCalc isUpperBoundViolation_goertzelPhase]
+  -[HalogenLdcmCalc isBoundViolation_measurementCondetSNR]
+  -[HalogenLdcmCalc _allocBuffers]
+  -[HalogenLdcmCalc _snr:withGain:hasSignalLevel:hasNoiseLevel:hasCondetSnr:]
+  -[HalogenLdcmCalc _goertzelSecondOrder:hasFftValue:hasPhase:withHanning:]
+  -[HalogenLdcmCalc isBoundViolation_voltageGainCorrection]
+  -[HalogenLdcmCalc _applyGain:toData:]
+  -[HalogenLdcmCalc _applyFractionalPhaseShift:withPhaseDelay:]
+  -[HalogenLdcmCalc _isClipped:]
+  -[HalogenLdcmCalc _applyTiaGain:toCurrentData:]
+  -[HalogenLdcmCalc setIsDigitalFilterTrigger:]
+  -[HalogenLdcmCalc _applyDigitalFilter:]
+  -[HalogenLdcmCalc _doHydraComp:withPhase:]
+  -[HalogenLdcmCalc _rcSolver]
+  -[HalogenLdcmCalc _applyHanningWindow:withSize:]
+  -[HalogenLdcmCalc _condetSnr:]
+  -[HalogenLdcmCalc _mean:ofSize:]
+  -[HalogenLdcmCalc _variance:ofSize:]
+  -[HalogenLdcmCalc _median:ofSize:]
+  -[HalogenLdcmCalc _stdev:ofSize:]
+  -[HalogenLdcmCalc _reconstructSignal:]
+  -[HalogenLdcmCalc _sineExtractor:]
+  -[HalogenLdcmCalc doPreCalibration:withCurrentData:]
+  -[HalogenLdcmCalc doCalibration:withCurrentData:]
+  -[HalogenLdcmCalc doLiquidDetection:withCurrentData:isReceptacleEmpty:isReceptacleWet:withWetTransitionThreshold:withDryTransitionThreshold:]
+  -[HalogenLdcmCalc nSamples]
+  -[HalogenLdcmCalc setNSamples:]
+  -[HalogenLdcmCalc diffWindowSize]
+  -[HalogenLdcmCalc setDiffWindowSize:]
+  -[HalogenLdcmCalc clipDetectWindowSize]
+  -[HalogenLdcmCalc setClipDetectWindowSize:]
+  -[HalogenLdcmCalc sizeofSample]
+  -[HalogenLdcmCalc setSizeofSample:]
+  -[HalogenLdcmCalc signalFrequency]
+  -[HalogenLdcmCalc setSignalFrequency:]
+  -[HalogenLdcmCalc setAdcGain:]
+  -[HalogenLdcmCalc setTiaGain:]
+  -[HalogenLdcmCalc hydraImpedance]
+  -[HalogenLdcmCalc setHydraImpedance:]
+  -[HalogenLdcmCalc movesumClipThreshold]
+  -[HalogenLdcmCalc setMovesumClipThreshold:]
+  -[HalogenLdcmCalc setHydraR:]
+  -[HalogenLdcmCalc ldcmAcCap]
+  -[HalogenLdcmCalc setLdcmAcCap:]
+  -[HalogenLdcmCalc sanitycheckImpedanceLowerbound]
+  -[HalogenLdcmCalc setSanitycheckImpedanceLowerbound:]
+  -[HalogenLdcmCalc sanitycheckImpedanceUpperbound]
+  -[HalogenLdcmCalc setSanitycheckImpedanceUpperbound:]
+  -[HalogenLdcmCalc sanitycheckPhaseLowerbound]
+  -[HalogenLdcmCalc setSanitycheckPhaseLowerbound:]
+  -[HalogenLdcmCalc sanitycheckPhaseUperbound]
+  -[HalogenLdcmCalc setSanitycheckPhaseUperbound:]
+  -[HalogenLdcmCalc sanitycheckVoltageGainCorrectionLowerbound]
+  -[HalogenLdcmCalc setSanitycheckVoltageGainCorrectionLowerbound:]
+  -[HalogenLdcmCalc sanitycheckVoltageGainCorrectionUpperbound]
+  -[HalogenLdcmCalc setSanitycheckVoltageGainCorrectionUpperbound:]
+  -[HalogenLdcmCalc sanitycheckCurrentGainCorrectionLowerbound]
+  -[HalogenLdcmCalc setSanitycheckCurrentGainCorrectionLowerbound:]
+  -[HalogenLdcmCalc sanitycheckCurrentGainCorrectionUpperbound]
+  -[HalogenLdcmCalc setSanitycheckCurrentGainCorrectionUpperbound:]
+  -[HalogenLdcmCalc sanitycheckCurrentPhaseCompensationLowerbound]
+  -[HalogenLdcmCalc setSanitycheckCurrentPhaseCompensationLowerbound:]
+  -[HalogenLdcmCalc sanitycheckCurrentPhaseCompensationUpperbound]
+  -[HalogenLdcmCalc setSanitycheckCurrentPhaseCompensationUpperbound:]
+  -[HalogenLdcmCalc isDigitalFilterTrigger]
+  -[HalogenLdcmCalc tmp1DataBuff]
+  -[HalogenLdcmCalc setTmp1DataBuff:]
+  -[HalogenLdcmCalc tmp1DataBuffSize]
+  -[HalogenLdcmCalc setTmp1DataBuffSize:]
+  -[HalogenLdcmCalc tmp2DataBuff]
+  -[HalogenLdcmCalc setTmp2DataBuff:]
+  -[HalogenLdcmCalc tmp2DataBuffSize]
+  -[HalogenLdcmCalc setTmp2DataBuffSize:]
+  -[HalogenLdcmCalc tmp3DataBuff]
+  -[HalogenLdcmCalc setTmp3DataBuff:]
+  -[HalogenLdcmCalc tmp3DataBuffSize]
+  -[HalogenLdcmCalc setTmp3DataBuffSize:]
+  -[HalogenLdcmCalc fftContext]
+  -[HalogenLdcmCalc setFftContext:]
+
+
+HalogenMeasurement : NSObject
+ @property  HalogenLdcmCalc *halogenLdcmCalc
+ @property  int nInputChannels
+ @property  int nOutputChannels
+ @property  int sampleRate
+ @property  int bitDepth
+ @property  int inputFrameSizeInBytes
+ @property  int outputFrameSizeInBytes
+ @property  ^{OpaqueAudioComponentInstance=} audioComponentInst
+ @property  int warmupTimeInMs
+ @property  int hydraSettlingTimeInMs
+ @property  int nMeasurementSamples
+ @property  int nWarmupSamples
+ @property  int nHydraSettlingSamples
+ @property  int nTotalSamples
+ @property  int nPaddingSamples
+ @property  double signalFreq
+ @property  int initalPhaseInDegrees
+ @property  unsigned short maxOutputAmplitude
+ @property  unsigned short signalOffset
+ @property  NSMutableData *pcmInputData
+ @property  int pcmInputDataMaxSzInBytes
+ @property  int pcmInputDataIndexInBytes
+ @property  int pcmInputDataSampleCnt
+ @property  BOOL isCalibrationDone
+ @property  BOOL isMeasurementDone
+ @property  NSMutableData *pcmOutputData
+ @property  int pcmOutputDataMaxSzInBytes
+ @property  int pcmOutputDataIndexInBytes
+ @property  NSMutableData *currentData
+ @property  NSMutableData *voltageData
+ @property  BOOL shouldInvertData
+ @property  int audioTimeoutInSec
+ @property  NSCondition *audioTimeoutCond
+ @property  int measurementSampleOffsetInFrames
+ @property  unsigned int service
+ @property  unsigned int connect
+ @property  int pinToMeasure
+ @property  unsigned long eisPinToken1
+ @property  unsigned long eisPinToken2
+ @property  NSObject<OS_dispatch_queue> *systemPowerQueue
+ @property  unsigned int systemPowerPort
+ @property  ^{IONotificationPort=} systemPowerNotifyPortRef
+ @property  unsigned int systemPowerIterator
+ @property  int powerState
+ @property  NSCondition *powerStateCond
+ @property  BaseResourceArbiterClient *arbiterClient
+ @property  BOOL arbiterLocked
+ @property  BOOL arbitrationRequired
+ @property  int precalibrationSampleOffsetInFrames
+ @property  double precalVoltageSignalLevel
+ @property  double precalVoltageNoiseLevel
+ @property  double precalVoltageSNR
+ @property  double precalCurrentSignalLevel
+ @property  double precalCurrentNoiseLevel
+ @property  double precalCurrentSNR
+ @property  int calibrationSampleOffsetInFrames
+ @property  double voltageGainCorrection
+ @property  double currentGainCorrection
+ @property  double currentPhaseCompensation
+ @property  double calVoltageSignalLevel
+ @property  double calVoltageNoiseLevel
+ @property  double calVoltageSNR
+ @property  double calCurrentSignalLevel
+ @property  double calCurrentNoiseLevel
+ @property  double calCurrentSNR
+ @property  double goertzelImpedance
+ @property  double goertzelPhase
+ @property  double compensatedImpedance
+ @property  double compensatedPhase
+ @property  double resistanceInOhms
+ @property  double capacitanceInNanoF
+ @property  double clippingScore
+ @property  double measurementVoltageSignalLevel
+ @property  double measurementVoltageNoiseLevel
+ @property  double measurementVoltageSNR
+ @property  double measurementCurrentSignalLevel
+ @property  double measurementCurrentNoiseLevel
+ @property  double measurementCurrentSNR
+ @property  double measurementCondetSNR
+ @property  int halogenResult
+
+  // instance methods
+  -[HalogenMeasurement connect]
+  -[HalogenMeasurement powerState]
+  -[HalogenMeasurement systemPowerQueue]
+  -[HalogenMeasurement setService:]
+  -[HalogenMeasurement currentData]
+  -[HalogenMeasurement dealloc]
+  -[HalogenMeasurement systemPowerPort]
+  -[HalogenMeasurement bitDepth]
+  -[HalogenMeasurement setConnect:]
+  -[HalogenMeasurement service]
+  -[HalogenMeasurement systemPowerIterator]
+  -[HalogenMeasurement setPowerState:]
+  -[HalogenMeasurement setSampleRate:]
+  -[HalogenMeasurement _freeBuffers]
+  -[HalogenMeasurement sampleRate]
+  -[HalogenMeasurement setSystemPowerQueue:]
+  -[HalogenMeasurement setSystemPowerIterator:]
+  -[HalogenMeasurement systemPowerNotifyPortRef]
+  -[HalogenMeasurement setSystemPowerPort:]
+  -[HalogenMeasurement setSystemPowerNotifyPortRef:]
+  -[HalogenMeasurement initWithSize:onPort:]
+  -[HalogenMeasurement precalibrationSampleOffsetInFrames]
+  -[HalogenMeasurement calibrationSampleOffsetInFrames]
+  -[HalogenMeasurement measurementSampleOffsetInFrames]
+  -[HalogenMeasurement voltageGainCorrection]
+  -[HalogenMeasurement currentGainCorrection]
+  -[HalogenMeasurement currentPhaseCompensation]
+  -[HalogenMeasurement goertzelImpedance]
+  -[HalogenMeasurement goertzelPhase]
+  -[HalogenMeasurement compensatedImpedance]
+  -[HalogenMeasurement compensatedPhase]
+  -[HalogenMeasurement clippingScore]
+  -[HalogenMeasurement resistanceInOhms]
+  -[HalogenMeasurement capacitanceInNanoF]
+  -[HalogenMeasurement precalVoltageSignalLevel]
+  -[HalogenMeasurement precalVoltageNoiseLevel]
+  -[HalogenMeasurement precalVoltageSNR]
+  -[HalogenMeasurement precalCurrentSignalLevel]
+  -[HalogenMeasurement precalCurrentNoiseLevel]
+  -[HalogenMeasurement precalCurrentSNR]
+  -[HalogenMeasurement calVoltageSignalLevel]
+  -[HalogenMeasurement calVoltageNoiseLevel]
+  -[HalogenMeasurement calVoltageSNR]
+  -[HalogenMeasurement calCurrentSignalLevel]
+  -[HalogenMeasurement calCurrentNoiseLevel]
+  -[HalogenMeasurement calCurrentSNR]
+  -[HalogenMeasurement measurementVoltageSignalLevel]
+  -[HalogenMeasurement measurementVoltageNoiseLevel]
+  -[HalogenMeasurement measurementVoltageSNR]
+  -[HalogenMeasurement measurementCurrentSignalLevel]
+  -[HalogenMeasurement measurementCurrentNoiseLevel]
+  -[HalogenMeasurement measurementCurrentSNR]
+  -[HalogenMeasurement measurementCondetSNR]
+  -[HalogenMeasurement getResultString]
+  -[HalogenMeasurement doMeasurement:onPin:isReceptacleEmpty:isReceptacleWet:withWetTransitionThreshold:withDryTransitionThreshold:]
+  -[HalogenMeasurement halogenResult]
+  -[HalogenMeasurement saveAsWav:]
+  -[HalogenMeasurement isBoundViolation_currentGainCorrection]
+  -[HalogenMeasurement isBoundViolation_currentPhaseCompensation]
+  -[HalogenMeasurement isLowerBoundViolation_goertzelImpedance]
+  -[HalogenMeasurement isUpperBoundViolation_goertzelImpedance]
+  -[HalogenMeasurement isLowerBoundViolation_goertzelPhase]
+  -[HalogenMeasurement isUpperBoundViolation_goertzelPhase]
+  -[HalogenMeasurement isBoundViolation_measurementCondetSNR]
+  -[HalogenMeasurement _allocBuffers]
+  -[HalogenMeasurement isBoundViolation_voltageGainCorrection]
+  -[HalogenMeasurement _generateSineWave]
+  -[HalogenMeasurement _connectToAccessoryManager:]
+  -[HalogenMeasurement _createSleepWakeNotifier]
+  -[HalogenMeasurement _initArbiter]
+  -[HalogenMeasurement _destroySleepWakeNotifier]
+  -[HalogenMeasurement _disconnectFromAccessoryManager]
+  -[HalogenMeasurement _deinitArbiter]
+  -[HalogenMeasurement maxOutputAmplitude]
+  -[HalogenMeasurement signalOffset]
+  -[HalogenMeasurement setPowerStateCond:]
+  -[HalogenMeasurement powerStateCond]
+  -[HalogenMeasurement _initAudioPath]
+  -[HalogenMeasurement _doHalogenLdcmCalc:isReceptacleWet:withWetTransitionThreshold:withDryTransitionThreshold:]
+  -[HalogenMeasurement _deinitAudioPath]
+  -[HalogenMeasurement shouldInvertData]
+  -[HalogenMeasurement _resetCalcValues]
+  -[HalogenMeasurement setMeasurementSampleOffsetInFrames:]
+  -[HalogenMeasurement halogenLdcmCalc]
+  -[HalogenMeasurement setHalogenLdcmCalc:]
+  -[HalogenMeasurement nInputChannels]
+  -[HalogenMeasurement setNInputChannels:]
+  -[HalogenMeasurement nOutputChannels]
+  -[HalogenMeasurement setNOutputChannels:]
+  -[HalogenMeasurement setBitDepth:]
+  -[HalogenMeasurement inputFrameSizeInBytes]
+  -[HalogenMeasurement setInputFrameSizeInBytes:]
+  -[HalogenMeasurement outputFrameSizeInBytes]
+  -[HalogenMeasurement setOutputFrameSizeInBytes:]
+  -[HalogenMeasurement audioComponentInst]
+  -[HalogenMeasurement setAudioComponentInst:]
+  -[HalogenMeasurement warmupTimeInMs]
+  -[HalogenMeasurement setWarmupTimeInMs:]
+  -[HalogenMeasurement hydraSettlingTimeInMs]
+  -[HalogenMeasurement setHydraSettlingTimeInMs:]
+  -[HalogenMeasurement nMeasurementSamples]
+  -[HalogenMeasurement setNMeasurementSamples:]
+  -[HalogenMeasurement nWarmupSamples]
+  -[HalogenMeasurement setNWarmupSamples:]
+  -[HalogenMeasurement nHydraSettlingSamples]
+  -[HalogenMeasurement setNHydraSettlingSamples:]
+  -[HalogenMeasurement nTotalSamples]
+  -[HalogenMeasurement setNTotalSamples:]
+  -[HalogenMeasurement nPaddingSamples]
+  -[HalogenMeasurement setNPaddingSamples:]
+  -[HalogenMeasurement signalFreq]
+  -[HalogenMeasurement setSignalFreq:]
+  -[HalogenMeasurement initalPhaseInDegrees]
+  -[HalogenMeasurement setInitalPhaseInDegrees:]
+  -[HalogenMeasurement pcmInputData]
+  -[HalogenMeasurement setPcmInputData:]
+  -[HalogenMeasurement pcmInputDataMaxSzInBytes]
+  -[HalogenMeasurement setPcmInputDataMaxSzInBytes:]
+  -[HalogenMeasurement pcmInputDataIndexInBytes]
+  -[HalogenMeasurement setPcmInputDataIndexInBytes:]
+  -[HalogenMeasurement pcmInputDataSampleCnt]
+  -[HalogenMeasurement setPcmInputDataSampleCnt:]
+  -[HalogenMeasurement isCalibrationDone]
+  -[HalogenMeasurement setIsCalibrationDone:]
+  -[HalogenMeasurement isMeasurementDone]
+  -[HalogenMeasurement setIsMeasurementDone:]
+  -[HalogenMeasurement pcmOutputData]
+  -[HalogenMeasurement setPcmOutputData:]
+  -[HalogenMeasurement pcmOutputDataMaxSzInBytes]
+  -[HalogenMeasurement setPcmOutputDataMaxSzInBytes:]
+  -[HalogenMeasurement pcmOutputDataIndexInBytes]
+  -[HalogenMeasurement setPcmOutputDataIndexInBytes:]
+  -[HalogenMeasurement setCurrentData:]
+  -[HalogenMeasurement voltageData]
+  -[HalogenMeasurement setVoltageData:]
+  -[HalogenMeasurement audioTimeoutInSec]
+  -[HalogenMeasurement setAudioTimeoutInSec:]
+  -[HalogenMeasurement audioTimeoutCond]
+  -[HalogenMeasurement setAudioTimeoutCond:]
+  -[HalogenMeasurement pinToMeasure]
+  -[HalogenMeasurement setPinToMeasure:]
+  -[HalogenMeasurement eisPinToken1]
+  -[HalogenMeasurement setEisPinToken1:]
+  -[HalogenMeasurement eisPinToken2]
+  -[HalogenMeasurement setEisPinToken2:]
+  -[HalogenMeasurement arbiterClient]
+  -[HalogenMeasurement arbiterLocked]
+  -[HalogenMeasurement arbitrationRequired]
+
+
+(DockState)
+	// class methods
+	+[(DockState) valueWithDockState:]
+
+	// instance methods
+	-[(DockState) dockStateValue]
+
+01 00 0600 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: ASAssetQuery 
+01 00 0800 /usr/lib/libIOAccessoryManager.dylib: BaseResourceArbiterClient 
+01 00 0900 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCondition 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtensionItem 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPipe 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSTask 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0800 /usr/lib/libIOAccessoryManager.dylib: ResourceArbiterClient 

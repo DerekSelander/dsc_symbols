@@ -1,0 +1,785 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MAAbsoluteAssetId
+|| __DATA.__objc_data _OBJC_CLASS_$_MAAssetDiff
+|| __DATA.__objc_data _OBJC_CLASS_$_MADownloadConfig
+|| __DATA.__objc_data _OBJC_CLASS_$_MAMsuDownloadOptions
+|| __DATA.__objc_data _OBJC_CLASS_$_MAProgressNotification
+|| __DATA.__objc_data _OBJC_METACLASS_$_MAAbsoluteAssetId
+|| __DATA.__objc_data _OBJC_METACLASS_$_MAAssetDiff
+|| __DATA.__objc_data _OBJC_METACLASS_$_MADownloadConfig
+|| __DATA.__objc_data _OBJC_METACLASS_$_MAMsuDownloadOptions
+|| __DATA.__objc_data _OBJC_METACLASS_$_MAProgressNotification
+|| __DATA_CONST.__const _ASAttributeAutomaticUpdateDisabled
+|| __DATA_CONST.__const _ASAttributeCompatibilityVersion
+|| __DATA_CONST.__const _ASAttributeContentVersion
+|| __DATA_CONST.__const _ASAttributeDownloadSize
+|| __DATA_CONST.__const _ASAttributeEventRecordingServiceURL
+|| __DATA_CONST.__const _ASAttributeIsZipStreamable
+|| __DATA_CONST.__const _ASAttributeMasteredVersion
+|| __DATA_CONST.__const _ASAttributeUnarchivedSize
+|| __DATA_CONST.__const _ASDownloadOptionAllow2G
+|| __DATA_CONST.__const _ASDownloadOptionAllow3G
+|| __DATA_CONST.__const _ASDownloadOptionAllow4G
+|| __DATA_CONST.__const _ASDownloadOptionAllowBatteryPower
+|| __DATA_CONST.__const _ASDownloadOptionAllowRoaming
+|| __DATA_CONST.__const _ASDownloadOptionAllowWiFi
+|| __DATA_CONST.__const _ASDownloadOptionAssetVersionString
+|| __DATA_CONST.__const _ASDownloadOptionPauseBeforeUnarchiving
+|| __DATA_CONST.__const _ASDownloadOptionPriority
+|| __DATA_CONST.__const _ASDownloadOptionSecondaryIdentifier
+|| __DATA_CONST.__const _ASDownloadOptionUseStreamingZip
+|| __DATA_CONST.__const _ASDownloadPriorityBackground
+|| __DATA_CONST.__const _ASDownloadPriorityHigh
+|| __DATA_CONST.__const _ASDownloadPriorityLow
+|| __DATA_CONST.__const _ASDownloadPriorityNormal
+|| __DATA_CONST.__const _ASErrorDomain
+|| __DATA_CONST.__const _ASOperationCompleted
+|| __DATA_CONST.__const _ASOperationDownloadPaused
+|| __DATA_CONST.__const _ASOperationDownloadQueued
+|| __DATA_CONST.__const _ASOperationDownloadingAsset
+|| __DATA_CONST.__const _ASOperationStalled
+|| __DATA_CONST.__const _ASOperationUnarchivingAsset
+|| __DATA_CONST.__const _ASOperationVerifyingAsset
+|| __DATA_CONST.__const _ASOperationWaitingToDownload
+|| __DATA_CONST.__const _ASQueryAssets
+|| __DATA_CONST.__const _ASQueryMetadata
+|| __DATA_CONST.__const _ASQueryMetadataReleaseDate
+|| __DATA_CONST.__const _ASStateOperation
+|| __DATA_CONST.__const _ASStateOperationEstimatedTimeRemaining
+|| __DATA_CONST.__const _ASStateOperationProgress
+|| __DATA_CONST.__const _ASStatePausedOperation
+|| __DATA_CONST.__const _ASStateStallError
+|| __DATA_CONST.__const _ASStateStallReason
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MAAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MAAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MADownloadOptions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MAProgressHandler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MAAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MAAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MADownloadOptions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MAProgressHandler
+|| __TEXT.__text _ASEnsureDataVault
+|| __TEXT.__text _ASNonUserInitiatedDownloadsAllowed
+|| __TEXT.__text _ASServerURLForAssetType
+|| __TEXT.__text _ASSetAssetServerURL
+|| __TEXT.__text _ASSetAssetServerURLForAssetType
+|| __TEXT.__text _ASSetDefaultAssetServerURLForAssetType
+|| __TEXT.__text _ASSetLogLevel
+|| __TEXT.__text _MACleanV1Repository
+|| __TEXT.__text _MAGetPallasAudience
+|| __TEXT.__text _MAIsCancelDownloadResultFailure
+|| __TEXT.__text _MAIsDownloadResultFailure
+|| __TEXT.__text _MAIsQueryResultFailure
+|| __TEXT.__text _MALogClientWithNSLogOSLog
+|| __TEXT.__text _MAMigrateAssets
+|| __TEXT.__text _MAPurgeAll
+|| __TEXT.__text _MAPurgeAllExceptGivenIds
+|| __TEXT.__text _MAPurgeCatalogs
+|| __TEXT.__text _MASendRepairState
+|| __TEXT.__text _MASetPallasAudience
+|| __TEXT.__text _MASetPallasUrl
+|| __TEXT.__text _MASetServerUrlOverride
+|| __TEXT.__text _MASoftwareLookupCancelDownload
+|| __TEXT.__text _MASoftwareLookupQuery
+|| __TEXT.__text _MASoftwareLookupQueryVersionsOnly
+|| __TEXT.__text _MASoftwareLookupStartDownload
+|| __TEXT.__text _MAStringForMAAssetState
+|| __TEXT.__text _MAStringForMACancelDownloadResult
+|| __TEXT.__text _MAStringForMADownloadResult
+|| __TEXT.__text _MAStringForMAOperationResult
+|| __TEXT.__text _MAStringForMAPurgeResult
+|| __TEXT.__text _MAStringForMAQueryResult
+|| __TEXT.__text _MAStringForMAQueryReturnTypes
+|| __TEXT.__text _MAStringForMAXpcError
+|| __TEXT.__text _MobileAssetQueryCreate
+|| __TEXT.__text _MobileAssetQueryCreateArrayOfKnownAssets
+|| __TEXT.__text _MobileAssetQueryGetMatchingAsset
+|| __TEXT.__text _MobileAssetQueryGetTypeID
+|| __TEXT.__text _MobileAssetQueryRefreshAssetsAgainstLocalCache
+|| __TEXT.__text _MobileAssetQueryRefreshKnownAssets
+|| __TEXT.__text __ForceMetadataUpdate
+|| __TEXT.__text __MACleanV1Repository
+|| __TEXT.__text __MAClientSendRepairState
+|| __TEXT.__text __MAMigrateAssets
+|| __TEXT.__text __MAclientSendCoverageDump
+|| __TEXT.__text __MAclientSendQueryNSUrlState
+|| __TEXT.__text __MAclientSendRepairStateSync
+|| __TEXT.__text __MAclientSendServerUrlOverride
+|| __TEXT.__text __MAensureExtension
+|| __TEXT.__text __MAsendCancelDownload
+|| __TEXT.__text __MAsendCancelDownloadMetaData
+|| __TEXT.__text __MAsendConfigDownload
+|| __TEXT.__text __MAsendDownloadAsset
+|| __TEXT.__text __MAsendDownloadMetaData
+|| __TEXT.__text __MAsendDumpClientAccess
+|| __TEXT.__text __MAsendGarbageCollect
+|| __TEXT.__text __MAsendGetPallasAudience
+|| __TEXT.__text __MAsendPurgeAsset
+|| __TEXT.__text __MAsendQueryMetaData
+|| __TEXT.__text __MAsendSetPallasAudience
+|| __TEXT.__text __MAsendSetPallasUrl
+|| __TEXT.__text __MAsendUpdateClientAccessGetPathSync
+|| __TEXT.__text __MobileAssetFault
+|| __TEXT.__text __MobileAssetGarbageCollectionBehaviorForAttributes
+|| __TEXT.__text __MobileAssetLog
+|| __TEXT.__text ___DiscardDownloadQueueToken
+|| __TEXT.__text ___ForceMigration
+|| __TEXT.__text ___RetryQueuedDownloads
+|| __TEXT.__text ___StartBackgroundedDownloads
+|| __TEXT.__text ___TriggerAssetMigration
+|| __TEXT.__text __getClientCallbackQueue
+|| __TEXT.__text _addObjectToMessage
+__ AppSupport: _CPFreeSpaceRequestBytesAtPathWithCompletionBlock
+__ AppSupport: _kCPFreeSpaceEffortLevelKey
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayApplyFunction
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayCreateMutableCopy
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetCountOfValue
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDataGetTypeID
+__ CoreFoundation: _CFDateGetAbsoluteTime
+__ CoreFoundation: _CFDateGetTypeID
+__ CoreFoundation: _CFDictionaryContainsKey
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetKeysAndValues
+__ CoreFoundation: _CFDictionaryGetTypeID
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFErrorCopyUserInfo
+__ CoreFoundation: _CFErrorCreate
+__ CoreFoundation: _CFErrorGetCode
+__ CoreFoundation: _CFErrorGetDomain
+__ CoreFoundation: _CFGetAllocator
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFSetAddValue
+__ CoreFoundation: _CFSetContainsValue
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetMaximumSizeForEncoding
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFRuntimeCreateInstance
+__ CoreFoundation: __CFRuntimeRegisterClass
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: __CFXPCCreateXPCObjectFromCFObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFErrorDescriptionKey
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAutoreleasePool
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ StreamingZip: _OBJC_CLASS_$_SZExtractor
+__ StreamingZip: _SZExtractorHashTypeSHA1
+__ StreamingZip: _SZExtractorOptionsDenyInvalidSymlinks
+__ StreamingZip: _SZExtractorOptionsHashType
+__ StreamingZip: _SZExtractorOptionsHashedChunkSize
+__ StreamingZip: _SZExtractorOptionsHashesArray
+__ libSystem.B.dylib: _CC_SHA1
+__ libSystem.B.dylib: _CC_SHA1_Final
+__ libSystem.B.dylib: _CC_SHA1_Init
+__ libSystem.B.dylib: _CC_SHA1_Update
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_error_termination_imminent
+__ libSystem.B.dylib: __xpc_type_array
+__ libSystem.B.dylib: __xpc_type_bool
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_data
+__ libSystem.B.dylib: __xpc_type_date
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_double
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_fd
+__ libSystem.B.dylib: __xpc_type_int64
+__ libSystem.B.dylib: __xpc_type_null
+__ libSystem.B.dylib: __xpc_type_shmem
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: __xpc_type_uint64
+__ libSystem.B.dylib: __xpc_type_uuid
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getprogname
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _sandbox_extension_consume
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_context
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_set_context
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_finalizer_f
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_double
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_double
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_release
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+MAProgressHandler : NSObject
+ @property  unsigned long notificationInterval
+ @property  NSMutableArray *callBackArray
+
+  // instance methods
+  -[MAProgressHandler dealloc]
+  -[MAProgressHandler addCallBack:]
+  -[MAProgressHandler initWithCallBack:]
+  -[MAProgressHandler notificationInterval]
+  -[MAProgressHandler setNotificationInterval:]
+  -[MAProgressHandler callBackArray]
+
+
+MAAbsoluteAssetId : NSObject <NSSecureCoding>
+ @property  NSString *assetId
+ @property  NSString *assetType
+
+  // class methods
+  +[MAAbsoluteAssetId supportsSecureCoding]
+
+  // instance methods
+  -[MAAbsoluteAssetId summary]
+  -[MAAbsoluteAssetId assetType]
+  -[MAAbsoluteAssetId assetId]
+  -[MAAbsoluteAssetId contentHash]
+  -[MAAbsoluteAssetId dealloc]
+  -[MAAbsoluteAssetId encodeWithCoder:]
+  -[MAAbsoluteAssetId urlHash]
+  -[MAAbsoluteAssetId assetIdHash]
+  -[MAAbsoluteAssetId initWithAssetId:forAssetType:attributes:]
+  -[MAAbsoluteAssetId allAttributesHash]
+  -[MAAbsoluteAssetId nonIdHash]
+  -[MAAbsoluteAssetId policyHash]
+  -[MAAbsoluteAssetId pallasDynamicAssetIdHash]
+  -[MAAbsoluteAssetId diffFrom:]
+  -[MAAbsoluteAssetId hasOnlyAssetTypeAndId]
+  -[MAAbsoluteAssetId initWithAssetId:forAssetType:]
+  -[MAAbsoluteAssetId diffFromAsset:]
+  -[MAAbsoluteAssetId setAssetId:]
+  -[MAAbsoluteAssetId diffFromAssetId:assetType:attributes:]
+  -[MAAbsoluteAssetId setAssetType:]
+  -[MAAbsoluteAssetId isEqual:]
+  -[MAAbsoluteAssetId initWithCoder:]
+
+
+MAAsset : NSObject
+ @property  NSDictionary *attributes
+ @property  NSString *assetType
+ @property  NSString *assetId
+ @property  long long state
+
+  // class methods
+  +[MAAsset loadSync:error:]
+  +[MAAsset startCatalogDownload:options:then:]
+  +[MAAsset cancelCatalogDownload:then:]
+  +[MAAsset startCatalogDownload:then:]
+  +[MAAsset startCatalogDownload:options:completionWithError:]
+  +[MAAsset loadSync:allowingDifferences:error:]
+  +[MAAsset getLoadResultFromMessage:]
+
+  // instance methods
+  -[MAAsset assetType]
+  -[MAAsset assetId]
+  -[MAAsset wasLocal]
+  -[MAAsset purge:]
+  -[MAAsset dealloc]
+  -[MAAsset attributes]
+  -[MAAsset purgeSync]
+  -[MAAsset nonUserInitiatedDownloadsAllowed]
+  -[MAAsset cancelDownload:]
+  -[MAAsset initWithAttributes:]
+  -[MAAsset logAsset]
+  -[MAAsset startDownload:]
+  -[MAAsset absoluteAssetId]
+  -[MAAsset getLocalFilePath]
+  -[MAAsset getLocalUrl]
+  -[MAAsset startDownloadWithExtractor:options:completion:]
+  -[MAAsset startDownloadWithExtractor:options:completionWithError:]
+  -[MAAsset hashToString:]
+  -[MAAsset invokeClientDownloadCompletion:completionBlockWithError:]
+  -[MAAsset createExtractor]
+  -[MAAsset commonAssetDownload:options:then:]
+  -[MAAsset startDownload:completionWithError:]
+  -[MAAsset invokeClientDownloadCompletionAlreadyOnQueue:completionBlockWithError:]
+  -[MAAsset assetProperty:]
+  -[MAAsset calculateTimeout]
+  -[MAAsset purgeWithError:]
+  -[MAAsset wasPreinstalled]
+  -[MAAsset wasInCatalog]
+  -[MAAsset wasDownloadable]
+  -[MAAsset assetServerUrl]
+  -[MAAsset startDownloadWithExtractor:completion:]
+  -[MAAsset cancelDownloadSync]
+  -[MAAsset configDownload:completion:]
+  -[MAAsset configDownloadSync:]
+  -[MAAsset spaceCheck:]
+  -[MAAsset overrideGarbageCollectionThreshold:]
+  -[MAAsset isEqual:]
+  -[MAAsset refreshState]
+  -[MAAsset wasPurgeable]
+  -[MAAsset state]
+  -[MAAsset attachProgressCallBack:]
+  -[MAAsset getLocalFileUrl]
+  -[MAAsset startDownload:then:]
+
+
+MAAssetQuery : NSObject
+ @property  NSMutableArray *queryParams
+ @property  NSString *assetType
+ @property  BOOL doNotBlockBeforeFirstUnlock
+ @property  BOOL doNotBlockOnNetworkStatus
+ @property  NSArray *results
+ @property  long long resultCode
+ @property  BOOL isDone
+ @property  NSSet *assetIds
+ @property  long long returnTypes
+ @property  NSDate *lastFetchDate
+ @property  NSDate *postedDate
+
+  // instance methods
+  -[MAAssetQuery queryParams]
+  -[MAAssetQuery assetType]
+  -[MAAssetQuery setDoNotBlockBeforeFirstUnlock:]
+  -[MAAssetQuery returnTypes:]
+  -[MAAssetQuery results]
+  -[MAAssetQuery getResultsFromMessage:]
+  -[MAAssetQuery dealloc]
+  -[MAAssetQuery initWithType:]
+  -[MAAssetQuery isCatalogFetchedWithinThePastFewDays:]
+  -[MAAssetQuery resultCode]
+  -[MAAssetQuery isCatalogFetchedFromLiveServer]
+  -[MAAssetQuery addKeyValueNull:]
+  -[MAAssetQuery queryMetaDataWithError:]
+  -[MAAssetQuery addKeyValuePair:with:]
+  -[MAAssetQuery assetIds]
+  -[MAAssetQuery queryMetaData:]
+  -[MAAssetQuery queryInstalledAssetIds]
+  -[MAAssetQuery returnTypes]
+  -[MAAssetQuery doNotBlockBeforeFirstUnlock]
+  -[MAAssetQuery queryMetaDataSync]
+  -[MAAssetQuery addKeyValueArray:with:]
+  -[MAAssetQuery postedDate]
+  -[MAAssetQuery isDone]
+  -[MAAssetQuery doNotBlockOnNetworkStatus]
+  -[MAAssetQuery augmentResultsWithState:]
+  -[MAAssetQuery lastFetchDate]
+  -[MAAssetQuery setDoNotBlockOnNetworkStatus:]
+
+
+ASAsset : NSObject
+ @property  NSString *clientName
+ @property  NSDictionary *fullAttributes
+ @property  NSDictionary *downloadOptions
+ @property  NSString *assetType
+ @property  NSDictionary *attributes
+ @property  long long state
+ @property  NSDate *installDate
+ @property  NSURL *localURL
+ @property  long long garbageCollectionBehavior
+ @property  @? progressHandler
+ @property  BOOL userInitiatedDownload
+
+  // class methods
+  +[ASAsset nonUserInitiatedDownloadsAllowed]
+
+  // instance methods
+  -[ASAsset assetType]
+  -[ASAsset localURL]
+  -[ASAsset clientName]
+  -[ASAsset purge:]
+  -[ASAsset dealloc]
+  -[ASAsset setProgressHandler:]
+  -[ASAsset progressHandler]
+  -[ASAsset attributes]
+  -[ASAsset identifier]
+  -[ASAsset cancelDownload:]
+  -[ASAsset assetServerUrl]
+  -[ASAsset _getLocalAttribute:]
+  -[ASAsset assetStateForStateString:]
+  -[ASAsset mobileAsset]
+  -[ASAsset requiredDiskSpaceIsAvailableForDownloadOptions:requiredBytes:error:]
+  -[ASAsset setDownloadOptions:]
+  -[ASAsset userInitiatedDownload]
+  -[ASAsset _downloadWithOptions:shouldFireCallback:]
+  -[ASAsset pauseDownloadAndReturnError:]
+  -[ASAsset pauseDownload:]
+  -[ASAsset resumeDownloadAndReturnError:]
+  -[ASAsset cancelDownloadAndReturnError:]
+  -[ASAsset purgeAndReturnError:]
+  -[ASAsset systemAppServerUrl]
+  -[ASAsset garbageCollectionBehavior]
+  -[ASAsset setGarbageCollectionBehavior:]
+  -[ASAsset requiredDiskSpaceIsAvailable:error:]
+  -[ASAsset adjustDownloadOptions:completion:]
+  -[ASAsset beginDownloadWithOptions:]
+  -[ASAsset resumeDownload:]
+  -[ASAsset downloadOptions]
+  -[ASAsset setUserInitiatedDownload:]
+  -[ASAsset initWithAssetType:attributes:]
+  -[ASAsset fullAttributes]
+  -[ASAsset isPresentOnDisk]
+  -[ASAsset installDate]
+  -[ASAsset isEqual:]
+  -[ASAsset setClientName:]
+  -[ASAsset state]
+
+
+ASAssetQuery : NSObject
+ @property  NSString *assetType
+ @property  NSString *sessionIdentifier
+ @property  NSArray *results
+ @property  NSPredicate *predicate
+ @property  BOOL queriesLocalAssetInformationOnly
+ @property  double networkTimeout
+
+  // class methods
+  +[ASAssetQuery queryPredicateForProperties:]
+
+  // instance methods
+  -[ASAssetQuery setResults:]
+  -[ASAssetQuery assetType]
+  -[ASAssetQuery runQueryForInfoReturnError:]
+  -[ASAssetQuery initWithAssetType:]
+  -[ASAssetQuery results]
+  -[ASAssetQuery runQueryAndReturnError:]
+  -[ASAssetQuery dealloc]
+  -[ASAssetQuery queriesLocalAssetInformationOnly]
+  -[ASAssetQuery setQueriesLocalAssetInformationOnly:]
+  -[ASAssetQuery predicate]
+  -[ASAssetQuery sessionIdentifier]
+  -[ASAssetQuery setSessionIdentifier:]
+  -[ASAssetQuery stopQuery]
+  -[ASAssetQuery setPredicate:]
+  -[ASAssetQuery setAssetType:]
+  -[ASAssetQuery networkTimeout]
+  -[ASAssetQuery setNetworkTimeout:]
+  -[ASAssetQuery initWithAssetType:sessionIdentifier:]
+  -[ASAssetQuery startQuery:]
+
+
+MAXpcManager : NSObject
+  // instance methods
+  -[MAXpcManager setClientConnectionHandler]
+  -[MAXpcManager sendSync:]
+  -[MAXpcManager dealloc]
+  -[MAXpcManager sendAsync:clientHandler:taskDescriptor:]
+  -[MAXpcManager initWithServiceName:callbackQueue:]
+  -[MAXpcManager attachProgressHandler:assetId:callBack:]
+  -[MAXpcManager setClientName:]
+  -[MAXpcManager clearConnection:]
+  -[MAXpcManager ensureConnection]
+
+
+MAAssetDiff : NSObject <NSSecureCoding>
+  // class methods
+  +[MAAssetDiff supportsSecureCoding]
+  +[MAAssetDiff allowEverythingDifferent]
+  +[MAAssetDiff requireSameAssetTypeAndAssetId]
+  +[MAAssetDiff requireSameAssetTypeAndDownloadContent]
+  +[MAAssetDiff requireSameAssetTypeAndAllAttributes]
+
+  // instance methods
+  -[MAAssetDiff summary]
+  -[MAAssetDiff category]
+  -[MAAssetDiff encodeWithCoder:]
+  -[MAAssetDiff initDifferentAssetType:assetId:attributes:assetIdAttributes:dynamicAssetId:nonIdAttributes:content:url:policy:]
+  -[MAAssetDiff initFromDiff:]
+  -[MAAssetDiff initFromInverseOfCategories:]
+  -[MAAssetDiff isAnythingDifferent]
+  -[MAAssetDiff isSameAssetType]
+  -[MAAssetDiff isSameForAllAttributes]
+  -[MAAssetDiff isSameAssetId]
+  -[MAAssetDiff isSameForNonAssetIdAttributes]
+  -[MAAssetDiff isSameDownloadContent]
+  -[MAAssetDiff isSameDownloadUrl]
+  -[MAAssetDiff isSameDownloadPolicy]
+  -[MAAssetDiff hasOnlyAllowedDifferences:]
+  -[MAAssetDiff initWithCoder:]
+
+
+MADownloadOptions : NSObject <NSSecureCoding>
+ @property  BOOL allowsCellularAccess
+ @property  long long timeoutIntervalForResource
+ @property  BOOL discretionary
+ @property  BOOL allowsExpensiveAccess
+ @property  BOOL requiresPowerPluggedIn
+ @property  BOOL canUseLocalCacheServer
+ @property  BOOL prefersInfraWiFi
+ @property  NSString *sessionId
+ @property  NSMutableDictionary *additionalServerParams
+ @property  BOOL liveServerCatalogOnly
+ @property  BOOL liveServerCatalogOnlyIsOverridden
+
+  // class methods
+  +[MADownloadOptions supportsSecureCoding]
+
+  // instance methods
+  -[MADownloadOptions setSessionId:]
+  -[MADownloadOptions sessionId]
+  -[MADownloadOptions allowsCellularAccess]
+  -[MADownloadOptions init]
+  -[MADownloadOptions timeoutIntervalForResource]
+  -[MADownloadOptions liveServerCatalogOnlyIsOverridden]
+  -[MADownloadOptions dealloc]
+  -[MADownloadOptions setTimeoutIntervalForResource:]
+  -[MADownloadOptions setLiveServerCatalogOnly:]
+  -[MADownloadOptions setAllowsExpensiveAccess:]
+  -[MADownloadOptions encodeWithCoder:]
+  -[MADownloadOptions allowsExpensiveAccess]
+  -[MADownloadOptions setDiscretionary:]
+  -[MADownloadOptions setRequiresPowerPluggedIn:]
+  -[MADownloadOptions setAdditionalServerParams:]
+  -[MADownloadOptions setCanUseLocalCacheServer:]
+  -[MADownloadOptions canUseLocalCacheServer]
+  -[MADownloadOptions prefersInfraWiFi]
+  -[MADownloadOptions requiresPowerPluggedIn]
+  -[MADownloadOptions additionalServerParams]
+  -[MADownloadOptions discretionary]
+  -[MADownloadOptions setLiveServerCatalogOnlyIsOverridden:]
+  -[MADownloadOptions liveServerCatalogOnly]
+  -[MADownloadOptions logOptions]
+  -[MADownloadOptions initWithCoder:]
+  -[MADownloadOptions setAllowsCellularAccess:]
+  -[MADownloadOptions setPrefersInfraWiFi:]
+
+
+MAMsuDownloadOptions : MADownloadOptions
+ @property  NSString *requestedProductVersion
+ @property  long long delayPeriod
+ @property  BOOL supervised
+ @property  BOOL allowSameVersion
+ @property  NSString *prerequisiteBuildVersion
+ @property  NSString *prerequisiteProductVersion
+ @property  NSString *prerequisiteReleaseType
+ @property  BOOL prerequisiteReleaseTypeIsOverridden
+ @property  NSString *downloadAuthorizationHeader
+
+  // class methods
+  +[MAMsuDownloadOptions supportsSecureCoding]
+
+  // instance methods
+  -[MAMsuDownloadOptions setDownloadAuthorizationHeader:]
+  -[MAMsuDownloadOptions downloadAuthorizationHeader]
+  -[MAMsuDownloadOptions prerequisiteBuildVersion]
+  -[MAMsuDownloadOptions init]
+  -[MAMsuDownloadOptions setPrerequisiteReleaseType:]
+  -[MAMsuDownloadOptions setAllowSameVersion:]
+  -[MAMsuDownloadOptions delayPeriod]
+  -[MAMsuDownloadOptions dealloc]
+  -[MAMsuDownloadOptions setPrerequisiteReleaseTypeIsOverridden:]
+  -[MAMsuDownloadOptions setPrerequisiteBuildVersion:]
+  -[MAMsuDownloadOptions encodeWithCoder:]
+  -[MAMsuDownloadOptions requestedProductVersion]
+  -[MAMsuDownloadOptions supervised]
+  -[MAMsuDownloadOptions setRequestedProductVersion:]
+  -[MAMsuDownloadOptions prerequisiteReleaseType]
+  -[MAMsuDownloadOptions prerequisiteProductVersion]
+  -[MAMsuDownloadOptions setSupervised:]
+  -[MAMsuDownloadOptions allowSameVersion]
+  -[MAMsuDownloadOptions setPrerequisiteProductVersion:]
+  -[MAMsuDownloadOptions initWithCoder:]
+  -[MAMsuDownloadOptions prerequisiteReleaseTypeIsOverridden]
+  -[MAMsuDownloadOptions setDelayPeriod:]
+
+
+MADownloadConfig : NSObject <NSSecureCoding>
+ @property  BOOL discretionary
+
+  // class methods
+  +[MADownloadConfig supportsSecureCoding]
+
+  // instance methods
+  -[MADownloadConfig init]
+  -[MADownloadConfig logConfig]
+  -[MADownloadConfig dealloc]
+  -[MADownloadConfig encodeWithCoder:]
+  -[MADownloadConfig setDiscretionary:]
+  -[MADownloadConfig discretionary]
+  -[MADownloadConfig initWithCoder:]
+
+
+MAProgressNotification : NSObject
+ @property  long long totalExpected
+ @property  long long totalWritten
+ @property  BOOL isStalled
+ @property  double expectedTimeRemaining
+
+  // instance methods
+  -[MAProgressNotification totalExpected]
+  -[MAProgressNotification isStalled]
+  -[MAProgressNotification expectedTimeRemaining]
+  -[MAProgressNotification setTotalWritten:]
+  -[MAProgressNotification setTotalExpected:]
+  -[MAProgressNotification setExpectedTimeRemaining:]
+  -[MAProgressNotification setIsStalled:]
+  -[MAProgressNotification totalWritten]
+
+
+MAXpcConnection : NSObject
+ @property  NSObject<OS_xpc_object> *connection
+ @property  NSString *connectionId
+
+  // instance methods
+  -[MAXpcConnection initWithServiceName:]
+  -[MAXpcConnection dealloc]
+  -[MAXpcConnection connectionId]
+  -[MAXpcConnection notValid]
+  -[MAXpcConnection connection]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAutoreleasePool 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0200 /System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip: SZExtractor 

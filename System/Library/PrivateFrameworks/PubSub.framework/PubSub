@@ -1,0 +1,248 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PSBroker
+|| __DATA.__objc_data _OBJC_CLASS_$_PSEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_PSEventBlockInvocation
+|| __DATA.__objc_data _OBJC_CLASS_$_PSEventSelectorInvocation
+|| __DATA.__objc_data _OBJC_CLASS_$_PSRemoteTopicConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_PSSubscription
+|| __DATA.__objc_data _OBJC_CLASS_$_PSSubscriptionConditional
+|| __DATA.__objc_data _OBJC_CLASS_$_PSTopic
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSBroker
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSEventBlockInvocation
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSEventSelectorInvocation
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSRemoteTopicConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSSubscription
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSSubscriptionConditional
+|| __DATA.__objc_data _OBJC_METACLASS_$_PSTopic
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSInvocation
+__ CoreFoundation: _OBJC_CLASS_$_NSMethodSignature
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSString
+__ HMFoundation: _HMFGetLogCategory
+__ HMFoundation: _HMFGetLogIdentifier
+__ HMFoundation: _HMFMethodDescription
+__ HMFoundation: _OBJC_CLASS_$_HMFAttributeDescription
+__ HMFoundation: _OBJC_CLASS_$_HMFLogCategory
+__ HMFoundation: _OBJC_CLASS_$_HMFObject
+__ HMFoundation: _OBJC_CLASS_$_HMFUnfairLock
+__ HMFoundation: _OBJC_METACLASS_$_HMFObject
+__ HMFoundation: __HMFPreconditionFailure
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+PSSubscriptionConditional : NSObject /usr/lib/libSystem.B.dylib
+
+PSSubscription : HMFObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  PSTopic *topic
+ @property  NSSet *filters
+ @property  NSSet *conditionals
+
+  // instance methods
+  -[PSSubscription unsubscribe]
+  -[PSSubscription topic]
+  -[PSSubscription attributeDescriptions]
+  -[PSSubscription .cxx_destruct]
+  -[PSSubscription filters]
+  -[PSSubscription isEqual:]
+  -[PSSubscription conditionals]
+  -[PSSubscription initWithTopic:filters:conditionals:]
+
+
+PSLocalSubscription : PSSubscription
+  // instance methods
+  -[PSLocalSubscription attributeDescriptions]
+  -[PSLocalSubscription .cxx_destruct]
+  -[PSLocalSubscription isEqual:]
+  -[PSLocalSubscription invokeWithEvent:forTopicWithName:]
+  -[PSLocalSubscription initWithTopic:filters:conditionals:invocation:]
+
+
+PSRemoteSubscription : PSSubscription
+ @property  NSUUID *remoteDeviceIdentifier
+
+  // instance methods
+  -[PSRemoteSubscription attributeDescriptions]
+  -[PSRemoteSubscription .cxx_destruct]
+  -[PSRemoteSubscription isEqual:]
+  -[PSRemoteSubscription remoteDeviceIdentifier]
+  -[PSRemoteSubscription initWithTopic:filters:conditionals:remoteDeviceIdentifier:]
+
+
+PSEventBlockInvocation : NSObject /usr/lib/libSystem.B.dylib <PSEventInvocation>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PSEventBlockInvocation initWithBlock:]
+  -[PSEventBlockInvocation .cxx_destruct]
+  -[PSEventBlockInvocation invokeWithEvent:forTopicWithName:]
+
+
+PSEventSelectorInvocation : NSObject /usr/lib/libSystem.B.dylib <PSEventInvocation>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PSEventSelectorInvocation .cxx_destruct]
+  -[PSEventSelectorInvocation invokeWithEvent:forTopicWithName:]
+  -[PSEventSelectorInvocation initWithReceiver:selector:]
+
+
+PSBrokerTransportCollection : HMFObject /System/Library/Frameworks/Foundation.framework/Foundation <PSBrokerTransport>
+ @property  NSString *identifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PSBrokerTransportCollection init]
+  -[PSBrokerTransportCollection .cxx_destruct]
+  -[PSBrokerTransportCollection identifier]
+  -[PSBrokerTransportCollection addTransport:]
+  -[PSBrokerTransportCollection addSubscriptions:forTopicWithName:]
+  -[PSBrokerTransportCollection removeSubscriptions:forTopicWithName:]
+  -[PSBrokerTransportCollection publishEvent:forTopicWithName:toRemoteDevices:]
+
+
+PSBroker : HMFObject /System/Library/Frameworks/Foundation.framework/Foundation <HMFLogging, PSBrokerCapabilities>
+ @property  NSArray *availableTopics
+ @property  NSString *displayName
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSUUID *identifier
+ @property  NSArray *exportedTopics
+ @property  NSSet *supportedTransportIdentifiers
+
+  // class methods
+  +[PSBroker logCategory]
+
+  // instance methods
+  -[PSBroker logIdentifier]
+  -[PSBroker attributeDescriptions]
+  -[PSBroker .cxx_destruct]
+  -[PSBroker identifier]
+  -[PSBroker setDisplayName:]
+  -[PSBroker displayName]
+  -[PSBroker supportedTransportIdentifiers]
+  -[PSBroker exportedTopics]
+  -[PSBroker availableTopics]
+  -[PSBroker initWithIdentifier:transportFactories:]
+  -[PSBroker addRemoteBroker:]
+  -[PSBroker removeRemoteBrokerWithIdentifier:]
+  -[PSBroker registerManager:forTopicWithName:]
+  -[PSBroker topicWithName:]
+
+
+PSRemoteTopicConfiguration : HMFObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *name
+ @property  NSSet *supportedTransportIdentifiers
+
+  // instance methods
+  -[PSRemoteTopicConfiguration .cxx_destruct]
+  -[PSRemoteTopicConfiguration name]
+  -[PSRemoteTopicConfiguration supportedTransportIdentifiers]
+  -[PSRemoteTopicConfiguration initWithTopicName:supportedTransportIdentifiers:]
+
+
+PSTopic : HMFObject /System/Library/Frameworks/Foundation.framework/Foundation <HMFLogging>
+ @property  NSArray *subscriptions
+ @property  NSString *logIdentifier
+ @property  <PSTopicManager> *topicManager
+ @property  PSBroker *broker
+ @property  PSBrokerTransportCollection *transportAdapter
+ @property  NSString *name
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PSTopic logCategory]
+
+  // instance methods
+  -[PSTopic subscriptions]
+  -[PSTopic logIdentifier]
+  -[PSTopic attributeDescriptions]
+  -[PSTopic topicManager]
+  -[PSTopic .cxx_destruct]
+  -[PSTopic name]
+  -[PSTopic broker]
+  -[PSTopic unsubscribe:]
+  -[PSTopic isEqual:]
+  -[PSTopic setTopicManager:]
+  -[PSTopic initWithName:broker:]
+  -[PSTopic setBroker:]
+  -[PSTopic transportAdapter]
+  -[PSTopic addSubscriptionWithFilters:conditionals:invocation:]
+  -[PSTopic addRemoteSubscriptionWithFilters:conditionals:remoteDeviceIdentifier:]
+  -[PSTopic publishEvent:]
+  -[PSTopic republishEvent:]
+
+
+PSEvent : NSObject /usr/lib/libSystem.B.dylib
+
+01 00 0100 /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation: HMFAttributeDescription 
+01 00 0100 /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation: HMFLogCategory 
+01 00 0100 /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation: HMFObject 
+01 00 0100 /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation: HMFUnfairLock 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSInvocation 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMethodSignature 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

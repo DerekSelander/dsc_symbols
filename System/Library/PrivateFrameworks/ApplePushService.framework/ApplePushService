@@ -1,0 +1,769 @@
+|| __DATA.__data _APSLaunchdJobLabel
+|| __DATA.__objc_data _OBJC_CLASS_$_APSAccessCheck
+|| __DATA.__objc_data _OBJC_CLASS_$_APSDNSRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_APSDNSResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_APSOutgoingMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_APSOutgoingMessageCheckpointTrace
+|| __DATA.__objc_data _OBJC_CLASS_$_APSTaskClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSAccessCheck
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSDNSRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSDNSResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSOutgoingMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSOutgoingMessageCheckpointTrace
+|| __DATA.__objc_data _OBJC_METACLASS_$_APSTaskClient
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._environment
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._flags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._hostname
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._requestStartTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._responseBlock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSRequest._timeout
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSResponse._hostname
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSResponse._ipv4Address
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSDNSResponse._ipv6Address
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSIncomingMessage._checkpointTrace
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSOutgoingMessage._checkpointTrace
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSTaskClient._clientQueue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSTaskClient._connection
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSTaskClient._environment
+|| __DATA.__objc_ivar _OBJC_IVAR_$_APSTaskClient._outstandingDNSRequests
+|| __DATA_CONST.__const _APSBundleIdentifier
+|| __DATA_CONST.__const _APSCachedIPKey
+|| __DATA_CONST.__const _APSCarrierNameKey
+|| __DATA_CONST.__const _APSClientIdentityUpdatedNotification
+|| __DATA_CONST.__const _APSConnectionInitiateEntitlement
+|| __DATA_CONST.__const _APSConnectionOverrideNamedDelegatePort
+|| __DATA_CONST.__const _APSConnectionSystemProcessEntitlement
+|| __DATA_CONST.__const _APSCriticalWakeEntitlement
+|| __DATA_CONST.__const _APSDarkWakeEntitlement
+|| __DATA_CONST.__const _APSDefaultTokenName
+|| __DATA_CONST.__const _APSDefaultUserID
+|| __DATA_CONST.__const _APSDemoHostsKey
+|| __DATA_CONST.__const _APSEnvironmentDemo
+|| __DATA_CONST.__const _APSEnvironmentDevelopment
+|| __DATA_CONST.__const _APSEnvironmentProduction
+|| __DATA_CONST.__const _APSEnvironmentQA2
+|| __DATA_CONST.__const _APSErrorDomain
+|| __DATA_CONST.__const _APSForceKeepAliveV1Key
+|| __DATA_CONST.__const _APSIsST
+|| __DATA_CONST.__const _APSPerAppTokenAppIdsKey
+|| __DATA_CONST.__const _APSPersistentTopicsKey
+|| __DATA_CONST.__const _APSPushWakeEntitlement
+|| __DATA_CONST.__const _APSSystemUsersKey
+|| __DATA_CONST.__const _APSUsesAppLaunchStatsKey
+|| __DATA_CONST.__const _APSXPCMessageTypeKey
+|| __DATA_CONST.__const _kAPSTaskClientServiceName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_APSConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_APSIncomingMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_APSIncomingMessageCheckpointTrace
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_APSLog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_APSMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_APSConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_APSIncomingMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_APSIncomingMessageCheckpointTrace
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_APSLog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_APSMessage
+|| __TEXT.__text _APSAlert
+|| __TEXT.__text _APSCreateDictionaryFromXPCObject
+|| __TEXT.__text _APSCreateXPCObjectFromDictionary
+|| __TEXT.__text _APSDataForPropertyList
+|| __TEXT.__text _APSDecodeDictionary
+|| __TEXT.__text _APSEncodeDictionary
+|| __TEXT.__text _APSError
+|| __TEXT.__text _APSGetEnableCriticalReliability
+|| __TEXT.__text _APSGetEnableStatusNotifications
+|| __TEXT.__text _APSGetEnabledTopicsFromXPCDictionary
+|| __TEXT.__text _APSGetIgnoredTopicsFromXPCDictionary
+|| __TEXT.__text _APSGetNonWakingTopicsFromXPCDictionary
+|| __TEXT.__text _APSGetOpportunisticTopicsFromXPCDictionary
+|| __TEXT.__text _APSGetUsesAppLaunchStats
+|| __TEXT.__text _APSGetXPCArrayFromDictionary
+|| __TEXT.__text _APSGetXPCBoolFromDictionary
+|| __TEXT.__text _APSGetXPCConnectionContext
+|| __TEXT.__text _APSGetXPCDataFromDictionary
+|| __TEXT.__text _APSGetXPCDictionaryFromDictionary
+|| __TEXT.__text _APSGetXPCDoubleFromDictionary
+|| __TEXT.__text _APSGetXPCIntFromDictionary
+|| __TEXT.__text _APSGetXPCNSUIntegerFromDictionary
+|| __TEXT.__text _APSGetXPCStringFromDictionary
+|| __TEXT.__text _APSHexStringFromNSData
+|| __TEXT.__text _APSIncomingMessagePriorityString
+|| __TEXT.__text _APSInsertBoolsToXPCDictionary
+|| __TEXT.__text _APSInsertDatasToXPCDictionary
+|| __TEXT.__text _APSInsertDoublesToXPCDictionary
+|| __TEXT.__text _APSInsertEnabledTopicsToXPCDictionary
+|| __TEXT.__text _APSInsertIgnoredTopicsToXPCDictionary
+|| __TEXT.__text _APSInsertIntsToXPCDictionary
+|| __TEXT.__text _APSInsertNSArraysToXPCDictionary
+|| __TEXT.__text _APSInsertNSDictionariesToXPCDictionary
+|| __TEXT.__text _APSInsertNSStringsToXPCDictionary
+|| __TEXT.__text _APSInsertNSUIntegersToXPCDictionary
+|| __TEXT.__text _APSInsertNonWakingTopicsToXPCDictionary
+|| __TEXT.__text _APSInsertOpportunisticTopicsToXPCDictionary
+|| __TEXT.__text _APSNSDataFromHexString
+|| __TEXT.__text _APSPowerLog
+|| __TEXT.__text _APSPrettyPrintCollection
+|| __TEXT.__text _APSPropertyListFromNSData
+|| __TEXT.__text _APSSafeArrayOfStrings
+|| __TEXT.__text _APSSetXPCConnectionContext
+|| __TEXT.__text _APSUnderlyingError
+|| __TEXT.__text _APSXPCConfigureConnection
+|| __TEXT.__text _APSXPCConnectionSetEventHandlers
+|| __TEXT.__text _APSXPCCreateConnectionForService
+|| __TEXT.__text _APSXPCCreateConnectionForServiceWithQueue
+|| __TEXT.__text _APSXPCCreateServerConnection
+__ CommonUtilities: _CUTWeakLinkClass
+__ CommonUtilities: _CUTWeakLinkSymbol
+__ CommonUtilities: _CUTXPCAlertv
+__ CommonUtilities: _OBJC_CLASS_$_CUTCheckpointTrace
+__ CommonUtilities: _OBJC_CLASS_$_CUTWeakReference
+__ CommonUtilities: _OBJC_METACLASS_$_CUTCheckpointTrace
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopSourceCreate
+__ CoreFoundation: _CFRunLoopSourceGetContext
+__ CoreFoundation: _CFStringCreateWithBytes
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringGetBytes
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFPreferencesCopyValueWithContainer
+__ CoreFoundation: __CFPreferencesSetValueWithContainer
+__ CoreFoundation: __CFPreferencesSynchronizeWithContainer
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCMessage
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: __CFXPCCreateXPCMessageWithCFObject
+__ CoreFoundation: __CFXPCCreateXPCObjectFromCFObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorSystemDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFPreferencesCurrentHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Security: _SecItemCopyMatching
+__ Security: _kSecAttrAccessGroup
+__ Security: _kSecAttrLabel
+__ Security: _kSecClass
+__ Security: _kSecClassIdentity
+__ Security: _kSecReturnRef
+__ Security: _kSecUseSystemKeychain
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: _NDR_record
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_mach_recv
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_error_termination_imminent
+__ libSystem.B.dylib: __xpc_type_array
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: _bootstrap_check_in2
+__ libSystem.B.dylib: _bootstrap_port
+__ libSystem.B.dylib: _container_system_path_for_identifier
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_mig_server
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel_and_wait
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_handle
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_error_string
+__ libSystem.B.dylib: _mach_msg
+__ libSystem.B.dylib: _mach_msg_destroy
+__ libSystem.B.dylib: _mach_port_allocate
+__ libSystem.B.dylib: _mach_port_mod_refs
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _notify_set_state
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _pthread_getspecific
+__ libSystem.B.dylib: _pthread_key_create
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _pthread_setspecific
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_context
+__ libSystem.B.dylib: _xpc_connection_get_name
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_set_context
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_finalizer_f
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_double
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_double
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_storeStrong
+APSMultiUserMode : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL isMultiUser
+ @property  BOOL isLoggedInUser
+
+  // class methods
+  +[APSMultiUserMode sharedInstance]
+  +[APSMultiUserMode _getIsCurrentlyLoggedIn]
+  +[APSMultiUserMode _getMultiUserMode]
+
+  // instance methods
+  -[APSMultiUserMode initWithIsMultiUserMode:loggedInUser:]
+  -[APSMultiUserMode isMultiUser]
+  -[APSMultiUserMode isLoggedInUser]
+  -[APSMultiUserMode isMultiAndLoggedIn]
+
+
+APSTaskClient : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[APSTaskClient dealloc]
+  -[APSTaskClient .cxx_destruct]
+  -[APSTaskClient _clearOutstandingTasks:]
+  -[APSTaskClient _timeoutOutstandingRequests]
+  -[APSTaskClient initWithEnvironment:queue:]
+  -[APSTaskClient _findDNSRequestForHostname:]
+  -[APSTaskClient resolveDNS:]
+
+
+APSLog : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[APSLog stream]
+  +[APSLog daemon]
+  +[APSLog connectionServer]
+  +[APSLog main]
+  +[APSLog shouldPowerLogEvent:]
+  +[APSLog networking]
+  +[APSLog topicManager]
+  +[APSLog ttlCollection]
+  +[APSLog database]
+  +[APSLog alert]
+  +[APSLog certificate]
+  +[APSLog topicManagerOversized]
+  +[APSLog courierOversized]
+  +[APSLog telemetry]
+  +[APSLog taskManager]
+  +[APSLog connection]
+  +[APSLog preference]
+  +[APSLog courier]
+  +[APSLog xpc]
+  +[APSLog nonce]
+  +[APSLog pushHistory]
+
+
+APSConnection : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *delegateQueue
+ @property  NSObject<OS_dispatch_queue> *ivarQueue
+ @property  BOOL isShutdown
+ @property  unsigned long messageSize
+ @property  unsigned long largeMessageSize
+ @property  NSArray *enabledTopics
+ @property  NSArray *ignoredTopics
+ @property  NSArray *opportunisticTopics
+ @property  NSArray *nonWakingTopics
+ @property  NSData *publicToken
+ @property  BOOL usesAppLaunchStats
+ @property  <APSConnectionDelegate> *delegate
+
+  // class methods
+  +[APSConnection keepAliveIntervalForEnvironmentName:]
+  +[APSConnection copyIdentity]
+  +[APSConnection serverTime]
+  +[APSConnection geoRegion]
+  +[APSConnection _createXPCConnectionWithQueueName:]
+  +[APSConnection _safelyCancelAndReleaseConnection:]
+  +[APSConnection _blockingXPCCallWithArgumentBlock:resultHandler:]
+  +[APSConnection _setTokenState]
+  +[APSConnection isValidEnvironment:]
+  +[APSConnection _flushIdentityCache]
+  +[APSConnection requestCourierConnection]
+  +[APSConnection invalidateDeviceIdentity]
+  +[APSConnection connectionsDebuggingState]
+  +[APSConnection notifySafeToSendFilter]
+
+  // instance methods
+  -[APSConnection isConnected]
+  -[APSConnection setEnableStatusNotifications:]
+  -[APSConnection _connectIfNecessary]
+  -[APSConnection _deliverOutgoingMessageResultWithID:checkpointTraceData:error:sendRTT:ackTimestamp:]
+  -[APSConnection hasIdentity]
+  -[APSConnection isShutdown]
+  -[APSConnection shutdown]
+  -[APSConnection _deliverToken:forTopic:identifier:]
+  -[APSConnection _setIgnoredTopics:]
+  -[APSConnection _initWithEnvironmentName:namedDelegatePort:enablePushDuringSleep:queue:]
+  -[APSConnection moveTopic:fromList:toList:]
+  -[APSConnection _shutdownFromDealloc]
+  -[APSConnection setNonWakingTopics:]
+  -[APSConnection delegateQueue]
+  -[APSConnection _addEnableStatusNotificationsToXPCMessage:]
+  -[APSConnection dealloc]
+  -[APSConnection initWithEnvironmentName:]
+  -[APSConnection _listForIdentifierOnIvarQueue:]
+  -[APSConnection .cxx_destruct]
+  -[APSConnection _setUsesAppLaunchStats:sendToDaemon:]
+  -[APSConnection _addUsesAppLaunchStatsToXPCMessage:]
+  -[APSConnection _setEnableStatusNotifications:sendToDaemon:]
+  -[APSConnection initWithEnvironmentName:namedDelegatePort:queue:]
+  -[APSConnection setOpportunisticTopics:]
+  -[APSConnection _asyncOnDelegateQueueWithBlock:]
+  -[APSConnection _deliverPublicToken:withCompletionBlock:]
+  -[APSConnection setEnabledTopics:]
+  -[APSConnection setLargeMessageSize:]
+  -[APSConnection setMessageSize:]
+  -[APSConnection messageSize]
+  -[APSConnection removeFromRunLoop]
+  -[APSConnection _deliverMessage:]
+  -[APSConnection setEnabledTopics:ignoredTopics:]
+  -[APSConnection cancelOutgoingMessage:]
+  -[APSConnection publicToken]
+  -[APSConnection requestKeepAlive]
+  -[APSConnection sendOutgoingMessage:]
+  -[APSConnection enabledTopics]
+  -[APSConnection largeMessageSize]
+  -[APSConnection _deliverOutgoingMessageResultWithID:error:sendRTT:]
+  -[APSConnection confirmReceiptForMessage:]
+  -[APSConnection sendFakeMessage:]
+  -[APSConnection _setEnableCriticalReliability:sendToDaemon:]
+  -[APSConnection initWithEnvironmentName:queue:]
+  -[APSConnection _deliverConnectionStatusFromDealloc:]
+  -[APSConnection ivarQueue]
+  -[APSConnection setEnableCriticalReliability:]
+  -[APSConnection _disconnect]
+  -[APSConnection setEnabledTopics:ignoredTopics:opportunisticTopics:nonWakingTopics:completion:]
+  -[APSConnection _setNonWakingTopics:]
+  -[APSConnection setUsesAppLaunchStats:]
+  -[APSConnection initWithEnvironmentName:namedDelegatePort:]
+  -[APSConnection _setOpportunisticTopics:]
+  -[APSConnection _setEnabledTopics:]
+  -[APSConnection _cancelConnectionOnIvarQueue]
+  -[APSConnection _cancelConnection]
+  -[APSConnection invalidateTokenForTopic:identifier:]
+  -[APSConnection requestTokenForTopic:identifier:]
+  -[APSConnection _onIvarQueue_setEnabledTopics:ignoredTopics:opportunisticTopics:nonWakingTopics:sendToDaemon:completion:]
+  -[APSConnection _setEnabledTopics:ignoredTopics:opportunisticTopics:nonWakingTopics:sendToDaemon:completion:]
+  -[APSConnection opportunisticTopics]
+  -[APSConnection usesAppLaunchStats]
+  -[APSConnection setDelegate:]
+  -[APSConnection _reconnectIfNecessaryOnIvarQueueAfterDelay]
+  -[APSConnection _disconnectFromDealloc]
+  -[APSConnection nonWakingTopics]
+  -[APSConnection _connectIfNecessaryOnIvarQueue]
+  -[APSConnection setEnabledTopics:ignoredTopics:opportunisticTopics:]
+  -[APSConnection _sendOutgoingMessage:fake:]
+  -[APSConnection _addEnableCriticalReliabilityToXPCMessage:]
+  -[APSConnection _deliverDidReconnectOnIvarQueue]
+  -[APSConnection _deliverConnectionStatusChange:]
+  -[APSConnection delegate]
+  -[APSConnection _topicListNameForLogging:]
+  -[APSConnection setEnabledTopics:ignoredTopics:opportunisticTopics:nonWakingTopics:]
+  -[APSConnection ignoredTopics]
+  -[APSConnection _deliverPublicTokenOnIvarQueue:withCompletionBlock:]
+  -[APSConnection _disconnectOnIvarQueue]
+  -[APSConnection _noteDisconnectedFromDaemonOnIvarQueue]
+  -[APSConnection _shutdownOnIvarQueue]
+  -[APSConnection _dispatch_async_to_ivarQueue:]
+  -[APSConnection setIgnoredTopics:]
+  -[APSConnection scheduleInRunLoop:]
+  -[APSConnection _handleEvent:withHandler:]
+
+
+APSAccessCheck : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[APSAccessCheck environmentForAuditToken:]
+
+
+APSOutgoingMessage : APSMessage
+ @property  unsigned long timeout
+ @property  BOOL critical
+ @property  unsigned long payloadFormat
+ @property  unsigned long payloadLength
+ @property  NSString *senderTokenName
+ @property  APSOutgoingMessageCheckpointTrace *checkpointTrace
+ @property  BOOL sendRetried
+ @property  BOOL ackReceived
+ @property  unsigned long ackTimestamp
+
+  // instance methods
+  -[APSOutgoingMessage setCancelled:]
+  -[APSOutgoingMessage setCheckpointTrace:]
+  -[APSOutgoingMessage timeout]
+  -[APSOutgoingMessage setOriginator:]
+  -[APSOutgoingMessage setTimeout:]
+  -[APSOutgoingMessage setMessageID:]
+  -[APSOutgoingMessage isCritical]
+  -[APSOutgoingMessage messageID]
+  -[APSOutgoingMessage .cxx_destruct]
+  -[APSOutgoingMessage setPayloadLength:]
+  -[APSOutgoingMessage payloadLength]
+  -[APSOutgoingMessage timestamp]
+  -[APSOutgoingMessage setTimestamp:]
+  -[APSOutgoingMessage originator]
+  -[APSOutgoingMessage encodeWithCoder:]
+  -[APSOutgoingMessage checkpointTrace]
+  -[APSOutgoingMessage isEager]
+  -[APSOutgoingMessage wasSent]
+  -[APSOutgoingMessage setCritical:]
+  -[APSOutgoingMessage setPayloadFormat:]
+  -[APSOutgoingMessage ackTimestamp]
+  -[APSOutgoingMessage setSent:]
+  -[APSOutgoingMessage setAckTimestamp:]
+  -[APSOutgoingMessage setPriority:]
+  -[APSOutgoingMessage wasCancelled]
+  -[APSOutgoingMessage eagernessTimeoutTime]
+  -[APSOutgoingMessage _effectiveSendTimeout]
+  -[APSOutgoingMessage sendTimeoutTime]
+  -[APSOutgoingMessage hasTimedOut]
+  -[APSOutgoingMessage rawTimeoutTime]
+  -[APSOutgoingMessage sendInterface]
+  -[APSOutgoingMessage setSendInterface:]
+  -[APSOutgoingMessage setTimedOut:]
+  -[APSOutgoingMessage payloadFormat]
+  -[APSOutgoingMessage setPushType:]
+  -[APSOutgoingMessage senderTokenName]
+  -[APSOutgoingMessage setSenderTokenName:]
+  -[APSOutgoingMessage setSentTimestamp:]
+  -[APSOutgoingMessage sentTimestamp]
+  -[APSOutgoingMessage setSendRetried:]
+  -[APSOutgoingMessage sendRetried]
+  -[APSOutgoingMessage pushFlags]
+  -[APSOutgoingMessage setPushFlags:]
+  -[APSOutgoingMessage ackReceived]
+  -[APSOutgoingMessage setAckReceived:]
+  -[APSOutgoingMessage priority]
+  -[APSOutgoingMessage pushType]
+  -[APSOutgoingMessage initWithCoder:]
+
+
+APSMessage : NSObject /usr/lib/libSystem.B.dylib <NSCoding>
+ @property  NSString *topic
+ @property  NSDictionary *userInfo
+ @property  unsigned long identifier
+ @property  NSString *correlationIdentifier
+ @property  unsigned long sendRTT
+
+  // instance methods
+  -[APSMessage topic]
+  -[APSMessage setTopic:]
+  -[APSMessage guid]
+  -[APSMessage setUserInfo:]
+  -[APSMessage .cxx_destruct]
+  -[APSMessage setGuid:]
+  -[APSMessage setObject:forKey:]
+  -[APSMessage objectForKey:]
+  -[APSMessage setIdentifier:]
+  -[APSMessage encodeWithCoder:]
+  -[APSMessage identifier]
+  -[APSMessage initWithDictionary:]
+  -[APSMessage sendRTT]
+  -[APSMessage userInfo]
+  -[APSMessage initWithTopic:userInfo:]
+  -[APSMessage setSendRTT:]
+  -[APSMessage setInstanceObject:forKey:]
+  -[APSMessage instanceObjectForKey:]
+  -[APSMessage initWithDictionary:xpcMessage:]
+  -[APSMessage dictionaryRepresentation]
+  -[APSMessage correlationIdentifier]
+  -[APSMessage setCorrelationIdentifier:]
+  -[APSMessage initWithCoder:]
+
+
+APSOutgoingMessageCheckpointTrace : CUTCheckpointTrace /usr/lib/libobjc.A.dylib
+ @property  CUTCheckpointRange *sendToDaemon
+ @property  CUTCheckpointRange *messageOnQueue
+ @property  CUTCheckpointRange *waitForACK
+
+  // instance methods
+  -[APSOutgoingMessageCheckpointTrace initWithUniqueIdentifier:]
+  -[APSOutgoingMessageCheckpointTrace initWithStartDate:endDate:name:uniqueIdentifier:]
+  -[APSOutgoingMessageCheckpointTrace .cxx_destruct]
+  -[APSOutgoingMessageCheckpointTrace messageOnQueue]
+  -[APSOutgoingMessageCheckpointTrace waitForACK]
+  -[APSOutgoingMessageCheckpointTrace sendToDaemon]
+
+
+APSIncomingMessage : APSMessage
+ @property  NSDate *timestamp
+ @property  NSData *token
+ @property  BOOL fromStorage
+ @property  BOOL lastMessageFromStorage
+ @property  long long priority
+ @property  APSIncomingMessageCheckpointTrace *checkpointTrace
+ @property  BOOL tracingEnabled
+ @property  NSData *tracingUUID
+ @property  unsigned long pushType
+ @property  unsigned int pushFlags
+
+  // instance methods
+  -[APSIncomingMessage setCheckpointTrace:]
+  -[APSIncomingMessage .cxx_destruct]
+  -[APSIncomingMessage timestamp]
+  -[APSIncomingMessage setTimestamp:]
+  -[APSIncomingMessage setTracingEnabled:]
+  -[APSIncomingMessage encodeWithCoder:]
+  -[APSIncomingMessage checkpointTrace]
+  -[APSIncomingMessage token]
+  -[APSIncomingMessage setToken:]
+  -[APSIncomingMessage isTracingEnabled]
+  -[APSIncomingMessage tracingUUID]
+  -[APSIncomingMessage setPriority:]
+  -[APSIncomingMessage setPushType:]
+  -[APSIncomingMessage pushFlags]
+  -[APSIncomingMessage setPushFlags:]
+  -[APSIncomingMessage wasFromStorage]
+  -[APSIncomingMessage setFromStorage:]
+  -[APSIncomingMessage wasLastMessageFromStorage]
+  -[APSIncomingMessage setLastMessageFromStorage:]
+  -[APSIncomingMessage setTracingUUID:]
+  -[APSIncomingMessage priority]
+  -[APSIncomingMessage pushType]
+  -[APSIncomingMessage initWithCoder:]
+
+
+APSPair : NSObject /usr/lib/libSystem.B.dylib
+ @property  id first
+ @property  id second
+
+  // class methods
+  +[APSPair pairWithFirst:second:]
+
+  // instance methods
+  -[APSPair second]
+  -[APSPair first]
+  -[APSPair initWithFirst:second:]
+  -[APSPair .cxx_destruct]
+  -[APSPair setFirst:]
+  -[APSPair setSecond:]
+
+
+APSIncomingMessageCheckpointTrace : CUTCheckpointTrace /usr/lib/libobjc.A.dylib
+ @property  CUTCheckpointRange *sendToClient
+ @property  CUTCheckpointRange *storeInMessageStore
+
+  // instance methods
+  -[APSIncomingMessageCheckpointTrace init]
+  -[APSIncomingMessageCheckpointTrace initWithStartDate:endDate:name:uniqueIdentifier:]
+  -[APSIncomingMessageCheckpointTrace .cxx_destruct]
+  -[APSIncomingMessageCheckpointTrace storeInMessageStore]
+  -[APSIncomingMessageCheckpointTrace sendToClient]
+
+
+APSDNSResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *hostname
+ @property  NSArray *ipv4Address
+ @property  NSArray *ipv6Address
+
+  // class methods
+  +[APSDNSResponse supportsSecureCoding]
+
+  // instance methods
+  -[APSDNSResponse hostname]
+  -[APSDNSResponse .cxx_destruct]
+  -[APSDNSResponse encodeWithCoder:]
+  -[APSDNSResponse initResponseForHostname:ipv4Address:ipv6Address:]
+  -[APSDNSResponse ipv4Address]
+  -[APSDNSResponse ipv6Address]
+  -[APSDNSResponse initWithCoder:]
+
+
+APSDNSRequest : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *hostname
+ @property  double timeout
+ @property  @? responseBlock
+ @property  NSString *environment
+ @property  NSDate *requestStartTime
+
+  // class methods
+  +[APSDNSRequest supportsSecureCoding]
+
+  // instance methods
+  -[APSDNSRequest hostname]
+  -[APSDNSRequest setEnvironment:]
+  -[APSDNSRequest timeout]
+  -[APSDNSRequest responseBlock]
+  -[APSDNSRequest setRequestStartTime:]
+  -[APSDNSRequest .cxx_destruct]
+  -[APSDNSRequest encodeWithCoder:]
+  -[APSDNSRequest requestStartTime]
+  -[APSDNSRequest initWithHostname:timeoutInSeconds:requestFlags:responseBlock:]
+  -[APSDNSRequest environment]
+  -[APSDNSRequest initWithCoder:]
+
+
+APSMultiUserFS : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL isMultiUser
+
+  // class methods
+  +[APSMultiUserFS sharedInstance]
+
+  // instance methods
+  -[APSMultiUserFS initWithIsMultiUserMode:]
+  -[APSMultiUserFS .cxx_destruct]
+  -[APSMultiUserFS isMultiUser]
+  -[APSMultiUserFS systemPath]
+
+
+(APSAdditions)
+	// class methods
+	+[(APSAdditions) apsStringGUID]
+
+01 00 0400 /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities: CUTCheckpointTrace 
+01 00 0400 /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities: CUTWeakReference 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

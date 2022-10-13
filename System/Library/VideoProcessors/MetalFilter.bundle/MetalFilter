@@ -1,0 +1,117 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FigColorCubeMetalFilter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FigColorCubeMetalFilter
+__ Accelerate: _vImageConvert_PlanarFtoPlanar8
+__ CMCapture: _OBJC_CLASS_$_FigMetalContext
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreGraphics: _kCGColorSpaceDisplayP3
+__ CoreMedia: _FigSignalErrorAt
+__ CoreVideo: _CVPixelBufferCreate
+__ CoreVideo: _CVPixelBufferGetIOSurface
+__ CoreVideo: _kCVPixelBufferIOSurfacePropertiesKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Metal: _MTLPixelFormatGetInfoForDevice
+__ Metal: _OBJC_CLASS_$_MTLFunctionConstantValues
+__ Metal: _OBJC_CLASS_$_MTLRenderPassDescriptor
+__ Metal: _OBJC_CLASS_$_MTLRenderPipelineDescriptor
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ Metal: _OBJC_CLASS_$_MTLVertexDescriptor
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+FigColorCubeMetalFilter : NSObject /usr/lib/libSystem.B.dylib <ImageBufferProcessor>
+ @property  <MTLCommandQueue> *commandQueue
+ @property  ^{?=iiBi} filterDescriptor
+ @property  ^{__CVBuffer=} inputPixelBuffer
+ @property  ^{__CVBuffer=} outputPixelBuffer
+ @property  ^{__CVBuffer=} mattePixelbuffer
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[FigColorCubeMetalFilter createCubeTexture:ofSize:cubesCount:textureType:withDevice:]
+  +[FigColorCubeMetalFilter loadCube:ofSize:intoTexture:toSliceIndex:]
+
+  // instance methods
+  -[FigColorCubeMetalFilter process]
+  -[FigColorCubeMetalFilter releaseResources]
+  -[FigColorCubeMetalFilter filterDescriptor]
+  -[FigColorCubeMetalFilter setForegroundCubesWithNames:data:]
+  -[FigColorCubeMetalFilter setInputPixelBuffer:]
+  -[FigColorCubeMetalFilter setMattePixelbuffer:]
+  -[FigColorCubeMetalFilter setOutputPixelBuffer:]
+  -[FigColorCubeMetalFilter init]
+  -[FigColorCubeMetalFilter setup]
+  -[FigColorCubeMetalFilter dealloc]
+  -[FigColorCubeMetalFilter .cxx_destruct]
+  -[FigColorCubeMetalFilter purgeResources]
+  -[FigColorCubeMetalFilter cameraInfoByPortType]
+  -[FigColorCubeMetalFilter setCameraInfoByPortType:]
+  -[FigColorCubeMetalFilter prewarmWithTuningParameters:]
+  -[FigColorCubeMetalFilter tuningParameters]
+  -[FigColorCubeMetalFilter prewarm]
+  -[FigColorCubeMetalFilter finishProcessing]
+  -[FigColorCubeMetalFilter commandQueue]
+  -[FigColorCubeMetalFilter initWithCommandQueue:]
+  -[FigColorCubeMetalFilter resetState]
+  -[FigColorCubeMetalFilter allocateResources]
+  -[FigColorCubeMetalFilter prepareToProcess:]
+  -[FigColorCubeMetalFilter setTuningParameters:]
+  -[FigColorCubeMetalFilter setBackgroundCubeWithName:data:]
+  -[FigColorCubeMetalFilter inputPixelBuffer]
+  -[FigColorCubeMetalFilter outputPixelBuffer]
+  -[FigColorCubeMetalFilter createKernels]
+  -[FigColorCubeMetalFilter convertCubeWithSrcTexture:dstTexture:isP3Cube:]
+  -[FigColorCubeMetalFilter runWithInputPixelBuffer:mattePixelBuffer:outputPixelBuffer:]
+  -[FigColorCubeMetalFilter createPipelineStateWithVertexFunction:fragmentName:isLuma:useBgCube:manyFgCubes:colorSpace:]
+  -[FigColorCubeMetalFilter createPipelineStatesWithFragmentName:vertexFunction:]
+  -[FigColorCubeMetalFilter createPipelineStatesForCubeConversionWithVertexFunction:]
+  -[FigColorCubeMetalFilter prewarmMetalInternalShader]
+  -[FigColorCubeMetalFilter setFilterDescriptor:]
+  -[FigColorCubeMetalFilter mattePixelbuffer]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture: FigMetalContext 
+01 00 0600 /System/Library/Frameworks/Metal.framework/Metal: MTLFunctionConstantValues 
+01 00 0600 /System/Library/Frameworks/Metal.framework/Metal: MTLRenderPassDescriptor 
+01 00 0600 /System/Library/Frameworks/Metal.framework/Metal: MTLRenderPipelineDescriptor 
+01 00 0600 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0600 /System/Library/Frameworks/Metal.framework/Metal: MTLVertexDescriptor 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 

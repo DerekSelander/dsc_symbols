@@ -1,0 +1,654 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolCommandRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolCommandRequest_StatusReason
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolCommandResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolCommandResponse_Command
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolDeclarationItemsResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolDeclarationItemsResponse_DeclarationItem
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolDeclarationItemsResponse_Declarations
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolDeclarationResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolEnrollReferralResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolEnrollRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolEnrollResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolErrorResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolOrganizationDetails
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolOrganizationDetailsResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolOrganizationDetails_Proof
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolPushMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolServerCapabilities
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolServerCapabilitiesResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolStatusReport
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolStatusReport_Errors
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolStatusReport_StatusReason
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolSupportedFeatures
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolSynchronizationTokens
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolTokensResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolWellKnownResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_RMProtocolWellKnownResponse_WellKnownResponseServer
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolCommandRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolCommandRequest_StatusReason
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolCommandResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolCommandResponse_Command
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolDeclarationItemsResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolDeclarationItemsResponse_DeclarationItem
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolDeclarationItemsResponse_Declarations
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolDeclarationResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolEnrollReferralResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolEnrollRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolEnrollResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolErrorResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolOrganizationDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolOrganizationDetailsResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolOrganizationDetails_Proof
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolPushMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolServerCapabilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolServerCapabilitiesResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolStatusReport
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolStatusReport_Errors
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolStatusReport_StatusReason
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolSupportedFeatures
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolSynchronizationTokens
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolTokensResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolWellKnownResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMProtocolWellKnownResponse_WellKnownResponseServer
+|| __DATA_CONST.__const _RMProtocolChannelDevice
+|| __DATA_CONST.__const _RMProtocolChannelUser
+|| __DATA_CONST.__const _RMProtocolCommandRequest_Status_busy
+|| __DATA_CONST.__const _RMProtocolCommandRequest_Status_completed
+|| __DATA_CONST.__const _RMProtocolCommandRequest_Status_failed
+|| __DATA_CONST.__const _RMProtocolCommandRequest_Status_ready
+|| __DATA_CONST.__const _RMProtocolEndpointCommand
+|| __DATA_CONST.__const _RMProtocolEndpointDeclarationActivation
+|| __DATA_CONST.__const _RMProtocolEndpointDeclarationAsset
+|| __DATA_CONST.__const _RMProtocolEndpointDeclarationConfiguration
+|| __DATA_CONST.__const _RMProtocolEndpointDeclarationItems
+|| __DATA_CONST.__const _RMProtocolEndpointEnroll
+|| __DATA_CONST.__const _RMProtocolEndpointEnrollment
+|| __DATA_CONST.__const _RMProtocolEndpointOrganizationDetails
+|| __DATA_CONST.__const _RMProtocolEndpointServerCapabilities
+|| __DATA_CONST.__const _RMProtocolEndpointStatus
+|| __DATA_CONST.__const _RMProtocolEndpointTokens
+|| __DATA_CONST.__const _RMProtocolEndpointWellknown
+|| __DATA_CONST.__const _RMProtocolEnrollResponse_PushEnvironment_development
+|| __DATA_CONST.__const _RMProtocolEnrollResponse_PushEnvironment_production
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_clientVersionInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_deviceAuthInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_deviceAuthMissing
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_enrollmentNotAllowed
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_enrollmentTokenInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_internalError
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_jsonInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_jsonObjectInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_missingRequestBody
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_userAuthInvalid
+|| __DATA_CONST.__const _RMProtocolErrorResponse_Code_userAuthMissing
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSString
+__ RemoteManagementModel: _OBJC_CLASS_$_RMModelAnyPayload
+__ RemoteManagementModel: _OBJC_CLASS_$_RMModelPayloadBase
+__ RemoteManagementModel: _OBJC_METACLASS_$_RMModelPayloadBase
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+RMProtocolCommandRequest : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *requestStatus
+ @property  NSString *requestIdentifier
+ @property  RMModelAnyPayload *requestResult
+ @property  NSArray *requestReasons
+
+  // class methods
+  +[RMProtocolCommandRequest requestWithStatus:identifier:result:reasons:]
+
+  // instance methods
+  -[RMProtocolCommandRequest copyWithZone:]
+  -[RMProtocolCommandRequest setRequestIdentifier:]
+  -[RMProtocolCommandRequest requestIdentifier]
+  -[RMProtocolCommandRequest .cxx_destruct]
+  -[RMProtocolCommandRequest requestStatus]
+  -[RMProtocolCommandRequest setRequestStatus:]
+  -[RMProtocolCommandRequest serializeWithType:]
+  -[RMProtocolCommandRequest loadFromDictionary:serializationType:error:]
+  -[RMProtocolCommandRequest setRequestResult:]
+  -[RMProtocolCommandRequest setRequestReasons:]
+  -[RMProtocolCommandRequest requestResult]
+  -[RMProtocolCommandRequest requestReasons]
+
+
+RMProtocolCommandRequest_StatusReason : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *requestCode
+ @property  NSString *requestDescription
+ @property  RMModelAnyPayload *requestDetails
+
+  // class methods
+  +[RMProtocolCommandRequest_StatusReason buildRequiredOnlyWithCode:]
+  +[RMProtocolCommandRequest_StatusReason buildWithCode:description:details:]
+  +[RMProtocolCommandRequest_StatusReason allowedRequestKeys]
+
+  // instance methods
+  -[RMProtocolCommandRequest_StatusReason copyWithZone:]
+  -[RMProtocolCommandRequest_StatusReason .cxx_destruct]
+  -[RMProtocolCommandRequest_StatusReason requestDescription]
+  -[RMProtocolCommandRequest_StatusReason requestCode]
+  -[RMProtocolCommandRequest_StatusReason setRequestCode:]
+  -[RMProtocolCommandRequest_StatusReason setRequestDescription:]
+  -[RMProtocolCommandRequest_StatusReason serializeWithType:]
+  -[RMProtocolCommandRequest_StatusReason loadFromDictionary:serializationType:error:]
+  -[RMProtocolCommandRequest_StatusReason setRequestDetails:]
+  -[RMProtocolCommandRequest_StatusReason requestDetails]
+
+
+RMProtocolCommandResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseCommandToken
+ @property  RMProtocolCommandResponse_Command *responseCommand
+
+  // class methods
+  +[RMProtocolCommandResponse requestWithCommandToken:command:]
+
+  // instance methods
+  -[RMProtocolCommandResponse copyWithZone:]
+  -[RMProtocolCommandResponse .cxx_destruct]
+  -[RMProtocolCommandResponse responseCommand]
+  -[RMProtocolCommandResponse setResponseCommand:]
+  -[RMProtocolCommandResponse serializeWithType:]
+  -[RMProtocolCommandResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolCommandResponse setResponseCommandToken:]
+  -[RMProtocolCommandResponse responseCommandToken]
+
+
+RMProtocolCommandResponse_Command : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseType
+ @property  NSString *responseIdentifier
+ @property  RMModelAnyPayload *responsePayload
+
+  // class methods
+  +[RMProtocolCommandResponse_Command allowedResponseKeys]
+  +[RMProtocolCommandResponse_Command buildWithType:identifier:payload:]
+  +[RMProtocolCommandResponse_Command buildRequiredOnlyWithType:identifier:]
+
+  // instance methods
+  -[RMProtocolCommandResponse_Command copyWithZone:]
+  -[RMProtocolCommandResponse_Command .cxx_destruct]
+  -[RMProtocolCommandResponse_Command responseType]
+  -[RMProtocolCommandResponse_Command setResponseType:]
+  -[RMProtocolCommandResponse_Command responsePayload]
+  -[RMProtocolCommandResponse_Command responseIdentifier]
+  -[RMProtocolCommandResponse_Command setResponseIdentifier:]
+  -[RMProtocolCommandResponse_Command serializeWithType:]
+  -[RMProtocolCommandResponse_Command loadFromDictionary:serializationType:error:]
+  -[RMProtocolCommandResponse_Command setResponsePayload:]
+
+
+RMProtocolDeclarationItemsResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  RMProtocolDeclarationItemsResponse_Declarations *responseDeclarations
+ @property  NSString *responseDeclarationsToken
+
+  // class methods
+  +[RMProtocolDeclarationItemsResponse requestWithDeclarations:declarationsToken:]
+
+  // instance methods
+  -[RMProtocolDeclarationItemsResponse copyWithZone:]
+  -[RMProtocolDeclarationItemsResponse .cxx_destruct]
+  -[RMProtocolDeclarationItemsResponse serializeWithType:]
+  -[RMProtocolDeclarationItemsResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolDeclarationItemsResponse setResponseDeclarations:]
+  -[RMProtocolDeclarationItemsResponse setResponseDeclarationsToken:]
+  -[RMProtocolDeclarationItemsResponse responseDeclarations]
+  -[RMProtocolDeclarationItemsResponse responseDeclarationsToken]
+
+
+RMProtocolDeclarationItemsResponse_Declarations : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSArray *responseActivations
+ @property  NSArray *responseConfigurations
+ @property  NSArray *responseAssets
+
+  // class methods
+  +[RMProtocolDeclarationItemsResponse_Declarations buildWithActivations:configurations:assets:]
+  +[RMProtocolDeclarationItemsResponse_Declarations buildRequiredOnlyWithActivations:configurations:assets:]
+  +[RMProtocolDeclarationItemsResponse_Declarations allowedResponseKeys]
+
+  // instance methods
+  -[RMProtocolDeclarationItemsResponse_Declarations copyWithZone:]
+  -[RMProtocolDeclarationItemsResponse_Declarations .cxx_destruct]
+  -[RMProtocolDeclarationItemsResponse_Declarations serializeWithType:]
+  -[RMProtocolDeclarationItemsResponse_Declarations loadFromDictionary:serializationType:error:]
+  -[RMProtocolDeclarationItemsResponse_Declarations setResponseActivations:]
+  -[RMProtocolDeclarationItemsResponse_Declarations setResponseConfigurations:]
+  -[RMProtocolDeclarationItemsResponse_Declarations setResponseAssets:]
+  -[RMProtocolDeclarationItemsResponse_Declarations responseActivations]
+  -[RMProtocolDeclarationItemsResponse_Declarations responseConfigurations]
+  -[RMProtocolDeclarationItemsResponse_Declarations responseAssets]
+
+
+RMProtocolDeclarationItemsResponse_DeclarationItem : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseIdentifier
+ @property  NSString *responseServerToken
+
+  // class methods
+  +[RMProtocolDeclarationItemsResponse_DeclarationItem allowedResponseKeys]
+  +[RMProtocolDeclarationItemsResponse_DeclarationItem buildWithIdentifier:serverToken:]
+  +[RMProtocolDeclarationItemsResponse_DeclarationItem buildRequiredOnlyWithIdentifier:serverToken:]
+
+  // instance methods
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem copyWithZone:]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem .cxx_destruct]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem responseIdentifier]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem setResponseIdentifier:]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem serializeWithType:]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem loadFromDictionary:serializationType:error:]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem setResponseServerToken:]
+  -[RMProtocolDeclarationItemsResponse_DeclarationItem responseServerToken]
+
+
+RMProtocolDeclarationResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseType
+ @property  NSString *responseIdentifier
+ @property  NSString *responseServerToken
+ @property  RMModelAnyPayload *responsePayload
+
+  // class methods
+  +[RMProtocolDeclarationResponse requestWithType:identifier:serverToken:payload:]
+
+  // instance methods
+  -[RMProtocolDeclarationResponse copyWithZone:]
+  -[RMProtocolDeclarationResponse .cxx_destruct]
+  -[RMProtocolDeclarationResponse responseType]
+  -[RMProtocolDeclarationResponse setResponseType:]
+  -[RMProtocolDeclarationResponse responsePayload]
+  -[RMProtocolDeclarationResponse responseIdentifier]
+  -[RMProtocolDeclarationResponse setResponseIdentifier:]
+  -[RMProtocolDeclarationResponse serializeWithType:]
+  -[RMProtocolDeclarationResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolDeclarationResponse setResponsePayload:]
+  -[RMProtocolDeclarationResponse setResponseServerToken:]
+  -[RMProtocolDeclarationResponse responseServerToken]
+
+
+RMProtocolEnrollReferralResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseReferralBaseURL
+
+  // class methods
+  +[RMProtocolEnrollReferralResponse requestWithReferralBaseURL:]
+
+  // instance methods
+  -[RMProtocolEnrollReferralResponse copyWithZone:]
+  -[RMProtocolEnrollReferralResponse .cxx_destruct]
+  -[RMProtocolEnrollReferralResponse serializeWithType:]
+  -[RMProtocolEnrollReferralResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolEnrollReferralResponse setResponseReferralBaseURL:]
+  -[RMProtocolEnrollReferralResponse responseReferralBaseURL]
+
+
+RMProtocolEnrollRequest : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *requestEnrollmentToken
+ @property  RMModelAnyPayload *requestStatusItems
+
+  // class methods
+  +[RMProtocolEnrollRequest requestWithEnrollmentToken:statusItems:]
+
+  // instance methods
+  -[RMProtocolEnrollRequest copyWithZone:]
+  -[RMProtocolEnrollRequest .cxx_destruct]
+  -[RMProtocolEnrollRequest serializeWithType:]
+  -[RMProtocolEnrollRequest loadFromDictionary:serializationType:error:]
+  -[RMProtocolEnrollRequest setRequestEnrollmentToken:]
+  -[RMProtocolEnrollRequest setRequestStatusItems:]
+  -[RMProtocolEnrollRequest requestEnrollmentToken]
+  -[RMProtocolEnrollRequest requestStatusItems]
+
+
+RMProtocolEnrollResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responsePushTopic
+ @property  NSString *responsePushEnvironment
+ @property  NSString *responseOrganizationDetailsToken
+ @property  RMProtocolOrganizationDetails *responseOrganizationDetails
+ @property  NSString *responseCapabilitiesToken
+ @property  RMProtocolServerCapabilities *responseCapabilities
+ @property  NSArray *responseStatusItems
+
+  // class methods
+  +[RMProtocolEnrollResponse requestWithPushTopic:pushEnvironment:organizationDetailsToken:organizationDetails:capabilitiesToken:capabilities:statusItems:]
+
+  // instance methods
+  -[RMProtocolEnrollResponse copyWithZone:]
+  -[RMProtocolEnrollResponse .cxx_destruct]
+  -[RMProtocolEnrollResponse serializeWithType:]
+  -[RMProtocolEnrollResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolEnrollResponse setResponsePushTopic:]
+  -[RMProtocolEnrollResponse setResponsePushEnvironment:]
+  -[RMProtocolEnrollResponse setResponseOrganizationDetailsToken:]
+  -[RMProtocolEnrollResponse setResponseOrganizationDetails:]
+  -[RMProtocolEnrollResponse setResponseCapabilitiesToken:]
+  -[RMProtocolEnrollResponse setResponseCapabilities:]
+  -[RMProtocolEnrollResponse setResponseStatusItems:]
+  -[RMProtocolEnrollResponse responsePushTopic]
+  -[RMProtocolEnrollResponse responsePushEnvironment]
+  -[RMProtocolEnrollResponse responseOrganizationDetailsToken]
+  -[RMProtocolEnrollResponse responseOrganizationDetails]
+  -[RMProtocolEnrollResponse responseCapabilitiesToken]
+  -[RMProtocolEnrollResponse responseCapabilities]
+  -[RMProtocolEnrollResponse responseStatusItems]
+
+
+RMProtocolErrorResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseCode
+ @property  NSString *responseDescription
+ @property  RMModelAnyPayload *responseDetails
+
+  // class methods
+  +[RMProtocolErrorResponse requestWithCode:description:details:]
+
+  // instance methods
+  -[RMProtocolErrorResponse copyWithZone:]
+  -[RMProtocolErrorResponse .cxx_destruct]
+  -[RMProtocolErrorResponse setResponseCode:]
+  -[RMProtocolErrorResponse responseCode]
+  -[RMProtocolErrorResponse responseDescription]
+  -[RMProtocolErrorResponse setResponseDescription:]
+  -[RMProtocolErrorResponse serializeWithType:]
+  -[RMProtocolErrorResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolErrorResponse setResponseDetails:]
+  -[RMProtocolErrorResponse responseDetails]
+
+
+RMProtocolOrganizationDetails : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *detailsName
+ @property  NSString *detailsEmail
+ @property  NSString *detailsURL
+ @property  RMProtocolOrganizationDetails_Proof *detailsProof
+
+  // class methods
+  +[RMProtocolOrganizationDetails requestWithName:email:URL:proof:]
+
+  // instance methods
+  -[RMProtocolOrganizationDetails copyWithZone:]
+  -[RMProtocolOrganizationDetails .cxx_destruct]
+  -[RMProtocolOrganizationDetails serializeWithType:]
+  -[RMProtocolOrganizationDetails loadFromDictionary:serializationType:error:]
+  -[RMProtocolOrganizationDetails setDetailsName:]
+  -[RMProtocolOrganizationDetails setDetailsEmail:]
+  -[RMProtocolOrganizationDetails setDetailsURL:]
+  -[RMProtocolOrganizationDetails setDetailsProof:]
+  -[RMProtocolOrganizationDetails detailsName]
+  -[RMProtocolOrganizationDetails detailsEmail]
+  -[RMProtocolOrganizationDetails detailsURL]
+  -[RMProtocolOrganizationDetails detailsProof]
+
+
+RMProtocolOrganizationDetails_Proof : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *detailsIdentityToken
+
+  // class methods
+  +[RMProtocolOrganizationDetails_Proof buildRequiredOnly]
+  +[RMProtocolOrganizationDetails_Proof allowedDetailsKeys]
+  +[RMProtocolOrganizationDetails_Proof buildWithIdentityToken:]
+
+  // instance methods
+  -[RMProtocolOrganizationDetails_Proof copyWithZone:]
+  -[RMProtocolOrganizationDetails_Proof .cxx_destruct]
+  -[RMProtocolOrganizationDetails_Proof serializeWithType:]
+  -[RMProtocolOrganizationDetails_Proof loadFromDictionary:serializationType:error:]
+  -[RMProtocolOrganizationDetails_Proof setDetailsIdentityToken:]
+  -[RMProtocolOrganizationDetails_Proof detailsIdentityToken]
+
+
+RMProtocolOrganizationDetailsResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseOrganizationDetailsToken
+ @property  RMProtocolOrganizationDetails *responseOrganizationDetails
+
+  // class methods
+  +[RMProtocolOrganizationDetailsResponse requestWithOrganizationDetailsToken:organizationDetails:]
+
+  // instance methods
+  -[RMProtocolOrganizationDetailsResponse copyWithZone:]
+  -[RMProtocolOrganizationDetailsResponse .cxx_destruct]
+  -[RMProtocolOrganizationDetailsResponse serializeWithType:]
+  -[RMProtocolOrganizationDetailsResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolOrganizationDetailsResponse setResponseOrganizationDetailsToken:]
+  -[RMProtocolOrganizationDetailsResponse setResponseOrganizationDetails:]
+  -[RMProtocolOrganizationDetailsResponse responseOrganizationDetailsToken]
+  -[RMProtocolOrganizationDetailsResponse responseOrganizationDetails]
+
+
+RMProtocolPushMessage : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *messageEnrollmentToken
+ @property  RMProtocolSynchronizationTokens *messageSyncTokens
+
+  // class methods
+  +[RMProtocolPushMessage requestWithEnrollmentToken:syncTokens:]
+
+  // instance methods
+  -[RMProtocolPushMessage copyWithZone:]
+  -[RMProtocolPushMessage .cxx_destruct]
+  -[RMProtocolPushMessage serializeWithType:]
+  -[RMProtocolPushMessage loadFromDictionary:serializationType:error:]
+  -[RMProtocolPushMessage setMessageEnrollmentToken:]
+  -[RMProtocolPushMessage setMessageSyncTokens:]
+  -[RMProtocolPushMessage messageEnrollmentToken]
+  -[RMProtocolPushMessage messageSyncTokens]
+
+
+RMProtocolServerCapabilities : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *capabilitiesVersion
+ @property  RMProtocolSupportedFeatures *capabilitiesSupportedFeatures
+
+  // class methods
+  +[RMProtocolServerCapabilities requestWithVersion:supportedFeatures:]
+
+  // instance methods
+  -[RMProtocolServerCapabilities copyWithZone:]
+  -[RMProtocolServerCapabilities .cxx_destruct]
+  -[RMProtocolServerCapabilities capabilitiesVersion]
+  -[RMProtocolServerCapabilities setCapabilitiesVersion:]
+  -[RMProtocolServerCapabilities serializeWithType:]
+  -[RMProtocolServerCapabilities loadFromDictionary:serializationType:error:]
+  -[RMProtocolServerCapabilities setCapabilitiesSupportedFeatures:]
+  -[RMProtocolServerCapabilities capabilitiesSupportedFeatures]
+
+
+RMProtocolServerCapabilitiesResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseCapabilitiesToken
+ @property  RMProtocolServerCapabilities *responseCapabilities
+
+  // class methods
+  +[RMProtocolServerCapabilitiesResponse requestWithCapabilitiesToken:capabilities:]
+
+  // instance methods
+  -[RMProtocolServerCapabilitiesResponse copyWithZone:]
+  -[RMProtocolServerCapabilitiesResponse .cxx_destruct]
+  -[RMProtocolServerCapabilitiesResponse serializeWithType:]
+  -[RMProtocolServerCapabilitiesResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolServerCapabilitiesResponse setResponseCapabilitiesToken:]
+  -[RMProtocolServerCapabilitiesResponse setResponseCapabilities:]
+  -[RMProtocolServerCapabilitiesResponse responseCapabilitiesToken]
+  -[RMProtocolServerCapabilitiesResponse responseCapabilities]
+
+
+RMProtocolStatusReport : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  RMModelAnyPayload *reportStatusItems
+ @property  NSArray *reportErrors
+
+  // class methods
+  +[RMProtocolStatusReport requestWithStatusItems:errors:]
+
+  // instance methods
+  -[RMProtocolStatusReport copyWithZone:]
+  -[RMProtocolStatusReport .cxx_destruct]
+  -[RMProtocolStatusReport serializeWithType:]
+  -[RMProtocolStatusReport loadFromDictionary:serializationType:error:]
+  -[RMProtocolStatusReport setReportStatusItems:]
+  -[RMProtocolStatusReport setReportErrors:]
+  -[RMProtocolStatusReport reportStatusItems]
+  -[RMProtocolStatusReport reportErrors]
+
+
+RMProtocolStatusReport_Errors : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *reportStatusItem
+ @property  NSArray *reportReasons
+
+  // class methods
+  +[RMProtocolStatusReport_Errors allowedReportKeys]
+  +[RMProtocolStatusReport_Errors buildWithStatusItem:reasons:]
+  +[RMProtocolStatusReport_Errors buildRequiredOnlyWithStatusItem:]
+
+  // instance methods
+  -[RMProtocolStatusReport_Errors copyWithZone:]
+  -[RMProtocolStatusReport_Errors .cxx_destruct]
+  -[RMProtocolStatusReport_Errors serializeWithType:]
+  -[RMProtocolStatusReport_Errors loadFromDictionary:serializationType:error:]
+  -[RMProtocolStatusReport_Errors setReportStatusItem:]
+  -[RMProtocolStatusReport_Errors setReportReasons:]
+  -[RMProtocolStatusReport_Errors reportStatusItem]
+  -[RMProtocolStatusReport_Errors reportReasons]
+
+
+RMProtocolStatusReport_StatusReason : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *reportCode
+ @property  NSString *reportDescription
+ @property  RMModelAnyPayload *reportDetails
+
+  // class methods
+  +[RMProtocolStatusReport_StatusReason buildRequiredOnlyWithCode:]
+  +[RMProtocolStatusReport_StatusReason buildWithCode:description:details:]
+  +[RMProtocolStatusReport_StatusReason allowedReportKeys]
+
+  // instance methods
+  -[RMProtocolStatusReport_StatusReason copyWithZone:]
+  -[RMProtocolStatusReport_StatusReason .cxx_destruct]
+  -[RMProtocolStatusReport_StatusReason serializeWithType:]
+  -[RMProtocolStatusReport_StatusReason loadFromDictionary:serializationType:error:]
+  -[RMProtocolStatusReport_StatusReason setReportCode:]
+  -[RMProtocolStatusReport_StatusReason setReportDescription:]
+  -[RMProtocolStatusReport_StatusReason setReportDetails:]
+  -[RMProtocolStatusReport_StatusReason reportCode]
+  -[RMProtocolStatusReport_StatusReason reportDescription]
+  -[RMProtocolStatusReport_StatusReason reportDetails]
+
+
+RMProtocolSupportedFeatures : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+  // class methods
+  +[RMProtocolSupportedFeatures build]
+
+  // instance methods
+  -[RMProtocolSupportedFeatures copyWithZone:]
+  -[RMProtocolSupportedFeatures serializeWithType:]
+  -[RMProtocolSupportedFeatures loadFromDictionary:serializationType:error:]
+
+
+RMProtocolSynchronizationTokens : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSDate *tokensTimestamp
+ @property  NSString *tokensCapabilitiesToken
+ @property  NSString *tokensCommandToken
+ @property  NSString *tokensDeclarationsToken
+ @property  NSString *tokensOrganizationDetailsToken
+
+  // class methods
+  +[RMProtocolSynchronizationTokens requestWithTimestamp:capabilitiesToken:commandToken:declarationsToken:organizationDetailsToken:]
+
+  // instance methods
+  -[RMProtocolSynchronizationTokens copyWithZone:]
+  -[RMProtocolSynchronizationTokens .cxx_destruct]
+  -[RMProtocolSynchronizationTokens serializeWithType:]
+  -[RMProtocolSynchronizationTokens loadFromDictionary:serializationType:error:]
+  -[RMProtocolSynchronizationTokens setTokensTimestamp:]
+  -[RMProtocolSynchronizationTokens setTokensCapabilitiesToken:]
+  -[RMProtocolSynchronizationTokens setTokensCommandToken:]
+  -[RMProtocolSynchronizationTokens setTokensDeclarationsToken:]
+  -[RMProtocolSynchronizationTokens setTokensOrganizationDetailsToken:]
+  -[RMProtocolSynchronizationTokens tokensTimestamp]
+  -[RMProtocolSynchronizationTokens tokensCapabilitiesToken]
+  -[RMProtocolSynchronizationTokens tokensCommandToken]
+  -[RMProtocolSynchronizationTokens tokensDeclarationsToken]
+  -[RMProtocolSynchronizationTokens tokensOrganizationDetailsToken]
+
+
+RMProtocolTokensResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  RMProtocolSynchronizationTokens *responseSyncTokens
+
+  // class methods
+  +[RMProtocolTokensResponse requestWithSyncTokens:]
+
+  // instance methods
+  -[RMProtocolTokensResponse copyWithZone:]
+  -[RMProtocolTokensResponse .cxx_destruct]
+  -[RMProtocolTokensResponse serializeWithType:]
+  -[RMProtocolTokensResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolTokensResponse setResponseSyncTokens:]
+  -[RMProtocolTokensResponse responseSyncTokens]
+
+
+RMProtocolWellKnownResponse : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSArray *responseServers
+
+  // class methods
+  +[RMProtocolWellKnownResponse requestWithServers:]
+
+  // instance methods
+  -[RMProtocolWellKnownResponse copyWithZone:]
+  -[RMProtocolWellKnownResponse .cxx_destruct]
+  -[RMProtocolWellKnownResponse serializeWithType:]
+  -[RMProtocolWellKnownResponse loadFromDictionary:serializationType:error:]
+  -[RMProtocolWellKnownResponse setResponseServers:]
+  -[RMProtocolWellKnownResponse responseServers]
+
+
+RMProtocolWellKnownResponse_WellKnownResponseServer : RMModelPayloadBase /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSString *responseVersion
+ @property  NSString *responseBaseURL
+ @property  NSArray *responsePinnedCertificates
+ @property  NSNumber *responsePinningRevocationCheckRequired
+
+  // class methods
+  +[RMProtocolWellKnownResponse_WellKnownResponseServer allowedResponseKeys]
+  +[RMProtocolWellKnownResponse_WellKnownResponseServer buildWithVersion:baseURL:pinnedCertificates:pinningRevocationCheckRequired:]
+  +[RMProtocolWellKnownResponse_WellKnownResponseServer buildRequiredOnlyWithVersion:baseURL:]
+
+  // instance methods
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer copyWithZone:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer .cxx_destruct]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer serializeWithType:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer loadFromDictionary:serializationType:error:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer setResponseVersion:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer setResponseBaseURL:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer setResponsePinnedCertificates:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer setResponsePinningRevocationCheckRequired:]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer responseVersion]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer responseBaseURL]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer responsePinnedCertificates]
+  -[RMProtocolWellKnownResponse_WellKnownResponseServer responsePinningRevocationCheckRequired]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel: RMModelAnyPayload 
+01 00 0100 /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel: RMModelPayloadBase 

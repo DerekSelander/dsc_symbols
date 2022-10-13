@@ -1,0 +1,85 @@
+|| __DATA.__common _kCPMLExpertProposalMoot
+|| __DATA.__common _kCPMLExpertProposalNoDetail
+|| __DATA.__objc_data _OBJC_CLASS_$_CPMLBestAppShim
+|| __DATA.__objc_data _OBJC_CLASS_$_CPMLBestShim
+|| __DATA.__objc_data _OBJC_CLASS_$_CPMLBestShimContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPMLBestAppShim
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPMLBestShim
+|| __DATA.__objc_data _OBJC_METACLASS_$_CPMLBestShimContext
+|| __DATA_CONST.__const _kCPMLAppTitle
+|| __DATA_CONST.__const _kCPMLAppType
+|| __DATA_CONST.__const _kCPMLAppUsageTime
+|| __DATA_CONST.__const _kCPMLBTCondition
+|| __DATA_CONST.__const _kCPMLBundleID
+|| __DATA_CONST.__const _kCPMLChangeCount
+|| __DATA_CONST.__const _kCPMLConfidence
+|| __DATA_CONST.__const _kCPMLConnectStatus
+|| __DATA_CONST.__const _kCPMLDeviceType
+|| __DATA_CONST.__const _kCPMLEmergenceHalfLife
+|| __DATA_CONST.__const _kCPMLEmergenceTime
+|| __DATA_CONST.__const _kCPMLEventSunrise
+|| __DATA_CONST.__const _kCPMLEventSunset
+|| __DATA_CONST.__const _kCPMLEventTime
+|| __DATA_CONST.__const _kCPMLExpertProposal
+|| __DATA_CONST.__const _kCPMLExpertType
+|| __DATA_CONST.__const _kCPMLExpertTypeByEmergence
+|| __DATA_CONST.__const _kCPMLExpertTypeByEventTime
+|| __DATA_CONST.__const _kCPMLExpertTypeByPrediction
+|| __DATA_CONST.__const _kCPMLExpertUniqueX1
+|| __DATA_CONST.__const _kCPMLExpertUniqueX2
+|| __DATA_CONST.__const _kCPMLExpertUniqueX3
+|| __DATA_CONST.__const _kCPMLLastModifiedDate
+|| __DATA_CONST.__const _kCPMLRadioCondition
+|| __DATA_CONST.__const _kCPMLTimeSinceLastUsed
+|| __DATA_CONST.__const _kCPMLUUID
+|| __DATA_CONST.__const _kCPMLWifiCondition
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLog
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+CPMLBestShim : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CPMLBestShim bestShim]
+  +[CPMLBestShim bestShimWithDBPath:withModelPath:withPListPath:]
+
+  // instance methods
+  -[CPMLBestShim rankItems:withMetaInfo:withNumOfRankItem:]
+  -[CPMLBestShim feedback:withItemsVisited:]
+
+
+CPMLBestShimContext : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSArray *orderedSuggestions
+
+  // instance methods
+  -[CPMLBestShimContext .cxx_destruct]
+  -[CPMLBestShimContext orderedSuggestions]
+  -[CPMLBestShimContext setOrderedSuggestions:]
+
+
+CPMLBestAppShim : CPMLBestShim
+  // class methods
+  +[CPMLBestAppShim bestShim]
+  +[CPMLBestAppShim bestShimWithDBPath:withModelPath:withPListPath:]
+
+  // instance methods
+  -[CPMLBestAppShim rankItems:withMetaInfo:withNumOfRankItem:]
+  -[CPMLBestAppShim feedback:withItemsVisited:]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 

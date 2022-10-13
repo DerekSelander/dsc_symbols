@@ -1,0 +1,203 @@
+|| __DATA.__objc_data _OBJC_CLASS_$__DASLogCondition
+|| __DATA.__objc_data _OBJC_CLASS_$__DASLogConditionHistory
+|| __DATA.__objc_data _OBJC_CLASS_$__DASLogEntry
+|| __DATA.__objc_data _OBJC_CLASS_$__DASLogExtractor
+|| __DATA.__objc_data _OBJC_CLASS_$__DASLogValueInterval
+|| __DATA.__objc_data _OBJC_METACLASS_$__DASLogCondition
+|| __DATA.__objc_data _OBJC_METACLASS_$__DASLogConditionHistory
+|| __DATA.__objc_data _OBJC_METACLASS_$__DASLogEntry
+|| __DATA.__objc_data _OBJC_METACLASS_$__DASLogExtractor
+|| __DATA.__objc_data _OBJC_METACLASS_$__DASLogValueInterval
+|| __TEXT.__const _DASDaemonVersionNumber
+|| __TEXT.__const _DASDaemonVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ LoggingSupport: _OBJC_CLASS_$_OSLogEventStore
+__ LoggingSupport: _OBJC_CLASS_$_OSLogEventStream
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+_DASLogValueInterval : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *startDate
+ @property  NSDate *endDate
+ @property  NSObject *value
+
+  // instance methods
+  -[_DASLogValueInterval durationString]
+  -[_DASLogValueInterval setEndDate:]
+  -[_DASLogValueInterval startDate]
+  -[_DASLogValueInterval .cxx_destruct]
+  -[_DASLogValueInterval endDate]
+  -[_DASLogValueInterval setValue:]
+  -[_DASLogValueInterval isEqual:]
+  -[_DASLogValueInterval value]
+  -[_DASLogValueInterval setStartDate:]
+  -[_DASLogValueInterval duration]
+  -[_DASLogValueInterval intervalString]
+
+
+_DASLogEntry : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *date
+ @property  NSString *category
+ @property  NSString *message
+
+  // class methods
+  +[_DASLogEntry logEntryForDate:category:message:]
+
+  // instance methods
+  -[_DASLogEntry category]
+  -[_DASLogEntry message]
+  -[_DASLogEntry setMessage:]
+  -[_DASLogEntry .cxx_destruct]
+  -[_DASLogEntry date]
+  -[_DASLogEntry setDate:]
+  -[_DASLogEntry setCategory:]
+
+
+_DASLogCondition : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject *condition
+ @property  BOOL isIdeal
+
+  // class methods
+  +[_DASLogCondition withCondition:]
+
+  // instance methods
+  -[_DASLogCondition condition]
+  -[_DASLogCondition isIdeal]
+  -[_DASLogCondition .cxx_destruct]
+  -[_DASLogCondition setCondition:]
+  -[_DASLogCondition setIsIdeal:]
+
+
+_DASLogConditionHistory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *conditions
+ @property  NSMutableArray *intervals
+
+  // class methods
+  +[_DASLogConditionHistory condition:fromDate:]
+
+  // instance methods
+  -[_DASLogConditionHistory conditions]
+  -[_DASLogConditionHistory .cxx_destruct]
+  -[_DASLogConditionHistory intervals]
+  -[_DASLogConditionHistory setIntervals:]
+  -[_DASLogConditionHistory setConditions:]
+  -[_DASLogConditionHistory initWithCondition:fromDate:]
+  -[_DASLogConditionHistory addCondition:atDate:]
+  -[_DASLogConditionHistory idealIntervals]
+
+
+_DASLogExtractor : NSObject /usr/lib/libSystem.B.dylib
+ @property  OSLogEventStore *logStore
+ @property  NSDateFormatter *dateFormatter
+ @property  OSLogEventStream *eventStream
+ @property  NSString *subsystem
+ @property  NSString *category
+
+  // class methods
+  +[_DASLogExtractor extractorForArchive:]
+
+  // instance methods
+  -[_DASLogExtractor subsystem]
+  -[_DASLogExtractor dateFormatter]
+  -[_DASLogExtractor eventStream]
+  -[_DASLogExtractor category]
+  -[_DASLogExtractor initWithArchive:]
+  -[_DASLogExtractor .cxx_destruct]
+  -[_DASLogExtractor setSubsystem:]
+  -[_DASLogExtractor setEventStream:]
+  -[_DASLogExtractor setCategory:]
+  -[_DASLogExtractor setDateFormatter:]
+  -[_DASLogExtractor getDefaultFilterPredicate]
+  -[_DASLogExtractor getPolicyDenialReasonsFromMessage:]
+  -[_DASLogExtractor getpolicyToIntervals:]
+  -[_DASLogExtractor summarizePolicyDenialsOverMessages:maxDuration:]
+  -[_DASLogExtractor descriptionOfPolicyToIntervalsMap:]
+  -[_DASLogExtractor getIncompatibilityReasons:forActivity:]
+  -[_DASLogExtractor descriptionOfIncompatibilityDenials:]
+  -[_DASLogExtractor getInstancesOfHigherThreshold:forActivity:]
+  -[_DASLogExtractor descriptionOfHigherThresholds:]
+  -[_DASLogExtractor getScheduledBlocksOfMessages:forActivity:]
+  -[_DASLogExtractor getMessagesBeforeRunning:forActivity:]
+  -[_DASLogExtractor summarizeAllDenialsOverMessages:forActivity:detail:]
+  -[_DASLogExtractor getActivityStartBeforeDate:forActivity:]
+  -[_DASLogExtractor didActivityRun:forActivity:]
+  -[_DASLogExtractor getMessagesAfterRunning:forActivity:]
+  -[_DASLogExtractor summarizeRuntimeOverMessages:forActivity:]
+  -[_DASLogExtractor didActivityFinish:forActivity:]
+  -[_DASLogExtractor copyActivitySummary:startDate:endDate:detail:error:]
+  -[_DASLogExtractor handleLogEventsLogEvents:sinceDate:withHandler:]
+  -[_DASLogExtractor getSummaryFromLogs:forActivity:detail:]
+  -[_DASLogExtractor objectForTrigger:fromCondition:compactRepresentation:]
+  -[_DASLogExtractor addConditionToHistory:fromMessage:atTimestamp:compactRepresentation:]
+  -[_DASLogExtractor summarizeActivity:startDate:endDate:detail:]
+  -[_DASLogExtractor sysConditionsLog:startDate:endDate:]
+  -[_DASLogExtractor logStore]
+  -[_DASLogExtractor setLogStore:]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0100 /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport: OSLogEventStore 
+01 00 0100 /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport: OSLogEventStream 

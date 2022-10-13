@@ -1,0 +1,132 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DAAccountChangeUpdaterACDAccountStoreWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_DAAccountNotifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_DAAccountChangeUpdaterACDAccountStoreWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_DAAccountNotifier
+__ Accounts: _ACAccountPropertyAllowsInsecureAuthentication
+__ Accounts: _ACAccountPropertyHostname
+__ Accounts: _ACAccountPropertyIdentityEmailAddress
+__ Accounts: _ACAccountPropertyPortNumber
+__ Accounts: _ACAccountPropertySSLEnabled
+__ Accounts: _ACAccountTypeIdentifierCalDAV
+__ Accounts: _ACPropertyKeyAuthenticated
+__ Accounts: _ACPropertyKeyCredential
+__ Accounts: _kAccountDataclassCalendars
+__ Accounts: _kAccountDataclassContacts
+__ Accounts: _kAccountDataclassContactsSearch
+__ Accounts: _kAccountDataclassMail
+__ Accounts: _kAccountDataclassNotes
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ DataAccess: _OBJC_CLASS_$_DAAccount
+__ DataAccess: _OBJC_CLASS_$_DAAccountChangeHandler
+__ DataAccessExpress: _DALoggingwithCategory
+__ DataAccessExpress: _OBJC_CLASS_$_DAAccountChangeInfo
+__ DataAccessExpress: _OBJC_CLASS_$_DADConnection
+__ DataAccessExpress: _OBJC_CLASS_$_DASharedAccountProperties
+__ DataAccessExpress: __CPLog_to_os_log_type
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Message: _MFDAMailAccountStoreDraftsOnServer
+__ Message: _MFMailAccountArchive
+__ Message: _MFMailAccountClass
+__ Message: _MFMailAccountEncryptByDefaultUserOverrideable
+__ Message: _MFMailAccountEncryptionEnabled
+__ Message: _MFMailAccountEncryptionIdentityUserOverrideable
+__ Message: _MFMailAccountSigningEnabled
+__ Message: _MFMailAccountSigningIdentityUserOverrideable
+__ Message: _MFMailAccountSigningUserOverrideable
+__ Message: _MFMailAccountUsername
+__ Message: _MailAccountFullUserName
+__ Message: _MailAccountHostname
+__ Message: _MailAccountPortNumber
+__ Message: _MailAccountSSLEnabled
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+DAAccountNotifier : NSObject /usr/lib/libSystem.B.dylib <ACDAccountNotificationPlugin>
+ @property  NSMutableDictionary *stopMonitoringAgentsTokens
+ @property  BOOL shouldProcessAccountChanges
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DAAccountNotifier _dataclassesWeCareAbout]
+  +[DAAccountNotifier _isStoreFromRemindd:]
+  +[DAAccountNotifier _daAccountChangeType:forACAccountChangeType:]
+  +[DAAccountNotifier _isStoreFromDataAccess:]
+  +[DAAccountNotifier _isStore:fromClient:]
+  +[DAAccountNotifier _propertiesThatTriggerRefresh]
+  +[DAAccountNotifier _accountPropertiesThatTriggerRefresh]
+
+  // instance methods
+  -[DAAccountNotifier init]
+  -[DAAccountNotifier .cxx_destruct]
+  -[DAAccountNotifier canSaveAccount:inStore:]
+  -[DAAccountNotifier account:willChangeWithType:inStore:oldAccount:]
+  -[DAAccountNotifier account:didChangeWithType:inStore:oldAccount:]
+  -[DAAccountNotifier stopMonitoringAgentsTokens]
+  -[DAAccountNotifier _popMonitoringAgentsTokenForAccountWithIdentifier:]
+  -[DAAccountNotifier shouldProcessAccountChanges]
+  -[DAAccountNotifier _shouldRefreshForChangeOfType:forAccount:oldAccount:]
+  -[DAAccountNotifier _stopMonitoringAgentsForAccountWithIdentifier:]
+  -[DAAccountNotifier _modifiedDataclassesForAccount:oldAccount:]
+  -[DAAccountNotifier _disableLocalStoreIfNeedForAccount:]
+  -[DAAccountNotifier _startMonitoringAgentsIfNeededForAccountWithIdentifier:]
+
+
+DAAccountChangeUpdaterACDAccountStoreWrapper : NSObject /usr/lib/libSystem.B.dylib <DAAccountChangeHandlerAccountStoreUpdater>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DAAccountChangeUpdaterACDAccountStoreWrapper .cxx_destruct]
+  -[DAAccountChangeUpdaterACDAccountStoreWrapper removeAccount:completion:]
+  -[DAAccountChangeUpdaterACDAccountStoreWrapper addAccount:withCompletionHandler:]
+  -[DAAccountChangeUpdaterACDAccountStoreWrapper updateAccount:withCompletionHandler:]
+  -[DAAccountChangeUpdaterACDAccountStoreWrapper initWithAccount:store:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAAccount 
+01 00 0100 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAAccountChangeHandler 
+01 00 0400 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DAAccountChangeInfo 
+01 00 0400 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DADConnection 
+01 00 0400 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DASharedAccountProperties 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 

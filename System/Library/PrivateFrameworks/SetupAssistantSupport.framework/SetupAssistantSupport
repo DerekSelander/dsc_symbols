@@ -1,0 +1,685 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SASLogging
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityAnisetteDataProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityAnisetteRequestAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityBackupAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityCompanionAuthRequestAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityFinishedAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityHandshake
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityHandshakeAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityInformation
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityInformationAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityMigrationStartAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityMigrationTransferPreparationAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityPasscodeValidationAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximityReadyAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximitySession
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximitySessionSharingTransport
+|| __DATA.__objc_data _OBJC_CLASS_$_SASProximitySessionTransport
+|| __DATA.__objc_data _OBJC_CLASS_$_SASSystemInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASLogging
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityAnisetteDataProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityAnisetteRequestAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityBackupAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityCompanionAuthRequestAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityFinishedAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityHandshake
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityHandshakeAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityInformationAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityMigrationStartAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityMigrationTransferPreparationAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityPasscodeValidationAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximityReadyAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximitySession
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximitySessionSharingTransport
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASProximitySessionTransport
+|| __DATA.__objc_data _OBJC_METACLASS_$_SASSystemInformation
+|| __DATA_CONST.__const _SASProximityActionTypeKey
+|| __DATA_CONST.__const _SASProximityErrorDomain
+|| __DATA_CONST.__const _SASProximityPayloadTypeKey
+|| __DATA_CONST.__const _SASProximityVersionKey
+|| __DATA_CONST.__const _kSASProximityAnisetteRequestKey
+|| __DATA_CONST.__const _kSASProximityAnisetteResponseAnisetteKey
+|| __DATA_CONST.__const _kSASProximityAnisetteResponseSuccessKey
+|| __DATA_CONST.__const _kSASProximityBackupCompletionDateKey
+|| __DATA_CONST.__const _kSASProximityBackupErrorCodeKey
+|| __DATA_CONST.__const _kSASProximityBackupErrorDomainKey
+|| __DATA_CONST.__const _kSASProximityBackupFinishedKey
+|| __DATA_CONST.__const _kSASProximityBackupPercentCompleteKey
+|| __DATA_CONST.__const _kSASProximityBackupShouldStartKey
+|| __DATA_CONST.__const _kSASProximityBackupTimeRemainingKey
+|| __DATA_CONST.__const _kSASProximityCompanionAuthRequestAccountKey
+|| __DATA_CONST.__const _kSASProximityCompanionAuthRequestDeviceKey
+|| __DATA_CONST.__const _kSASProximityHandshakeHasPasscodeSetKey
+|| __DATA_CONST.__const _kSASProximityHandshakeKey
+|| __DATA_CONST.__const _kSASProximityHandshakePlatformMac
+|| __DATA_CONST.__const _kSASProximityHandshakePlatformTypeKey
+|| __DATA_CONST.__const _kSASProximityHandshakePlatformiOS
+|| __DATA_CONST.__const _kSASProximityHandshakeSimplePasscodeTypeKey
+|| __DATA_CONST.__const _kSASProximityHandshakeUnlockTypeKey
+|| __DATA_CONST.__const _kSASProximityInformationAcessibilitySettingsKey
+|| __DATA_CONST.__const _kSASProximityInformationAppAnalyticsKey
+|| __DATA_CONST.__const _kSASProximityInformationAppleIDKey
+|| __DATA_CONST.__const _kSASProximityInformationAutoTimeZoneKey
+|| __DATA_CONST.__const _kSASProximityInformationBackupEnabledKey
+|| __DATA_CONST.__const _kSASProximityInformationBackupMetadataKey
+|| __DATA_CONST.__const _kSASProximityInformationBackupUUIDKey
+|| __DATA_CONST.__const _kSASProximityInformationClassKey
+|| __DATA_CONST.__const _kSASProximityInformationConnectedToWiFiKey
+|| __DATA_CONST.__const _kSASProximityInformationDateOfLastBackupKey
+|| __DATA_CONST.__const _kSASProximityInformationDeviceAnalyticsKey
+|| __DATA_CONST.__const _kSASProximityInformationDeviceNameKey
+|| __DATA_CONST.__const _kSASProximityInformationDeviceTermsIdentifierKey
+|| __DATA_CONST.__const _kSASProximityInformationDeviceToDeviceMigrationVersionKey
+|| __DATA_CONST.__const _kSASProximityInformationFindMyDeviceKey
+|| __DATA_CONST.__const _kSASProximityInformationHasHomeButtonKey
+|| __DATA_CONST.__const _kSASProximityInformationKey
+|| __DATA_CONST.__const _kSASProximityInformationKeyboardsKey
+|| __DATA_CONST.__const _kSASProximityInformationLocalePreferencesKey
+|| __DATA_CONST.__const _kSASProximityInformationLocationServicesDataKey
+|| __DATA_CONST.__const _kSASProximityInformationLocationServicesKey
+|| __DATA_CONST.__const _kSASProximityInformationModelKey
+|| __DATA_CONST.__const _kSASProximityInformationNameKey
+|| __DATA_CONST.__const _kSASProximityInformationNetworkPasswordsKey
+|| __DATA_CONST.__const _kSASProximityInformationNetworksKey
+|| __DATA_CONST.__const _kSASProximityInformationPreventSoftwareUpdateDeviceMigration
+|| __DATA_CONST.__const _kSASProximityInformationProductVersionKey
+|| __DATA_CONST.__const _kSASProximityInformationRestoringKey
+|| __DATA_CONST.__const _kSASProximityInformationSameAccountKey
+|| __DATA_CONST.__const _kSASProximityInformationSiriKey
+|| __DATA_CONST.__const _kSASProximityInformationSiriVoiceProfileAvailabilityMetdataKey
+|| __DATA_CONST.__const _kSASProximityInformationStorageAvailableKey
+|| __DATA_CONST.__const _kSASProximityInformationStorageCapacityKey
+|| __DATA_CONST.__const _kSASProximityInformationSupportsDeviceToDeviceMigrationKey
+|| __DATA_CONST.__const _kSASProximityInformationTimeZoneKey
+|| __DATA_CONST.__const _kSASProximityInformationTransferableTelephonyPlanKey
+|| __DATA_CONST.__const _kSASProximityMigrationPrepartionDeviceNameKey
+|| __DATA_CONST.__const _kSASProximityPasscodeValidationActionPasscodeKey
+|| __DATA_CONST.__const _kSASProximityPasscodeValidationActionSuccessKey
+|| __DATA_CONST.__const _kSASProximitySessionDataKey
+|| __TEXT.__const _SASProximityDeviceToDeviceCurrentVersion
+|| __TEXT.__const _SASProximityVersionValue
+|| __TEXT.__const _SetupAssistantSupportVersionNumber
+|| __TEXT.__const _SetupAssistantSupportVersionString
+__ Accounts: _ACAccountTypeIdentifierIDMS
+__ Accounts: _ACAccountTypeIdentifieriTunesStore
+__ Accounts: _OBJC_CLASS_$_ACAccount
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ AuthKit: _OBJC_CLASS_$_AKAccountManager
+__ AuthKit: _OBJC_CLASS_$_AKAnisetteData
+__ AuthKit: _OBJC_CLASS_$_AKAnisetteProvisioningController
+__ AuthKit: _OBJC_CLASS_$_AKDevice
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRunLoopGetCurrent
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFCopySystemVersionDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: __kCFSystemVersionProductVersionKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFPreferencesAnyApplication
+__ CoreFoundation: _kCFPreferencesCurrentHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFRunLoopCommonModes
+__ CoreTime: _TMIsAutomaticTimeZoneEnabled
+__ CoreUtils: _OBJC_CLASS_$_CUMessageSession
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPort
+__ Foundation: _OBJC_CLASS_$_NSString
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MobileWiFi: _WiFiDeviceClientCopyCurrentNetwork
+__ MobileWiFi: _WiFiDeviceClientScanAsync
+__ MobileWiFi: _WiFiManagerClientCopyDevices
+__ MobileWiFi: _WiFiManagerClientCopyNetworks
+__ MobileWiFi: _WiFiManagerClientCreate
+__ MobileWiFi: _WiFiManagerClientScheduleWithRunLoop
+__ MobileWiFi: _WiFiNetworkCopyPassword
+__ MobileWiFi: _WiFiNetworkCopyRecord
+__ MobileWiFi: _WiFiNetworkGetType
+__ MobileWiFi: _WiFiNetworkIsCaptive
+__ MobileWiFi: _WiFiNetworkIsEAP
+__ MobileWiFi: _WiFiNetworkIsExpirable
+__ MobileWiFi: _WiFiNetworkIsProfileBased
+__ SoftLinking: __sl_dlopen_audited
+__ libAccessibility.dylib: __AXSCopySettingsDataBlobForBuddy
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libMobileGestalt.dylib: _kMGQDiskUsageTotalDataAvailable
+__ libMobileGestalt.dylib: _kMGQDiskUsageTotalDataCapacity
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_variant_has_internal_ui
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+SASProximityMigrationTransferPreparationAction : SASProximityAction
+ @property  NSString *deviceName
+
+  // class methods
+  +[SASProximityMigrationTransferPreparationAction actionID]
+  +[SASProximityMigrationTransferPreparationAction actionFromDictionary:]
+
+  // instance methods
+  -[SASProximityMigrationTransferPreparationAction deviceName]
+  -[SASProximityMigrationTransferPreparationAction .cxx_destruct]
+  -[SASProximityMigrationTransferPreparationAction setDeviceName:]
+  -[SASProximityMigrationTransferPreparationAction hasResponse]
+  -[SASProximityMigrationTransferPreparationAction requestPayload]
+
+
+SASProximityInformationAction : SASProximityAction
+ @property  SASProximityInformation *information
+
+  // class methods
+  +[SASProximityInformationAction actionID]
+
+  // instance methods
+  -[SASProximityInformationAction init]
+  -[SASProximityInformationAction information]
+  -[SASProximityInformationAction setInformation:]
+  -[SASProximityInformationAction .cxx_destruct]
+  -[SASProximityInformationAction hasResponse]
+  -[SASProximityInformationAction setResponseFromData:]
+  -[SASProximityInformationAction responsePayload]
+
+
+SASProximityCompanionAuthRequestAction : SASProximityAction
+ @property  AKDevice *companionDevice
+ @property  ACAccount *account
+
+  // class methods
+  +[SASProximityCompanionAuthRequestAction actionID]
+
+  // instance methods
+  -[SASProximityCompanionAuthRequestAction setCompanionDevice:]
+  -[SASProximityCompanionAuthRequestAction companionDevice]
+  -[SASProximityCompanionAuthRequestAction setAccount:]
+  -[SASProximityCompanionAuthRequestAction account]
+  -[SASProximityCompanionAuthRequestAction .cxx_destruct]
+  -[SASProximityCompanionAuthRequestAction hasResponse]
+  -[SASProximityCompanionAuthRequestAction setResponseFromData:]
+  -[SASProximityCompanionAuthRequestAction responsePayload]
+  -[SASProximityCompanionAuthRequestAction idmsAccountForiCloud]
+
+
+SASSystemInformation : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SASSystemInformation productVersion]
+  +[SASSystemInformation storageCapacity]
+  +[SASSystemInformation storageAvailable]
+  +[SASSystemInformation compareProductVersion:toProductVersion:]
+
+
+SASProximityHandshakeAction : SASProximityAction
+ @property  SASProximityHandshake *handshake
+
+  // class methods
+  +[SASProximityHandshakeAction actionID]
+
+  // instance methods
+  -[SASProximityHandshakeAction init]
+  -[SASProximityHandshakeAction .cxx_destruct]
+  -[SASProximityHandshakeAction hasResponse]
+  -[SASProximityHandshakeAction handshake]
+  -[SASProximityHandshakeAction setResponseFromData:]
+  -[SASProximityHandshakeAction responsePayload]
+  -[SASProximityHandshakeAction setHandshake:]
+
+
+SASProximityReadyAction : SASProximityAction
+  // class methods
+  +[SASProximityReadyAction actionID]
+
+
+SASLogging : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SASLogging facility]
+
+
+SASProximitySession : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *actionQueue
+ @property  SASProximitySessionTransport *transport
+ @property  <SASProximitySessionDelegate> *delegate
+ @property  CUMessageSession *sharingMessageSession
+ @property  BOOL connected
+
+  // instance methods
+  -[SASProximitySession isConnected]
+  -[SASProximitySession setTransport:]
+  -[SASProximitySession setConnected:]
+  -[SASProximitySession transport]
+  -[SASProximitySession init]
+  -[SASProximitySession activate]
+  -[SASProximitySession .cxx_destruct]
+  -[SASProximitySession setActionQueue:]
+  -[SASProximitySession sendAction:]
+  -[SASProximitySession setDelegate:]
+  -[SASProximitySession invalidate]
+  -[SASProximitySession delegate]
+  -[SASProximitySession actionQueue]
+  -[SASProximitySession handleAction:]
+  -[SASProximitySession receivedAction:response:]
+  -[SASProximitySession actionFromData:]
+  -[SASProximitySession setSharingMessageSession:]
+  -[SASProximitySession sharingMessageSession]
+
+
+SASProximityPasscodeValidationAction : SASProximityAction
+ @property  NSString *passcode
+ @property  BOOL passcodeValid
+
+  // class methods
+  +[SASProximityPasscodeValidationAction actionID]
+  +[SASProximityPasscodeValidationAction actionFromDictionary:]
+
+  // instance methods
+  -[SASProximityPasscodeValidationAction passcode]
+  -[SASProximityPasscodeValidationAction .cxx_destruct]
+  -[SASProximityPasscodeValidationAction setPasscode:]
+  -[SASProximityPasscodeValidationAction hasResponse]
+  -[SASProximityPasscodeValidationAction requestPayload]
+  -[SASProximityPasscodeValidationAction setResponseFromData:]
+  -[SASProximityPasscodeValidationAction responsePayload]
+  -[SASProximityPasscodeValidationAction setPasscodeValid:]
+  -[SASProximityPasscodeValidationAction passcodeValid]
+
+
+SASProximityAction : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SASProximityAction actionID]
+  +[SASProximityAction actionFromDictionary:]
+
+  // instance methods
+  -[SASProximityAction hasResponse]
+  -[SASProximityAction requestPayload]
+  -[SASProximityAction setResponseFromData:]
+  -[SASProximityAction responsePayload]
+
+
+SASProximityMigrationStartAction : SASProximityAction
+  // class methods
+  +[SASProximityMigrationStartAction actionID]
+
+
+SASProximityHandshake : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  long long platformType
+ @property  BOOL hasPasscodeSet
+ @property  int simplePasscodeType
+ @property  int unlockType
+
+  // class methods
+  +[SASProximityHandshake supportsSecureCoding]
+
+  // instance methods
+  -[SASProximityHandshake setPlatformType:]
+  -[SASProximityHandshake encodeWithCoder:]
+  -[SASProximityHandshake hasPasscodeSet]
+  -[SASProximityHandshake platformType]
+  -[SASProximityHandshake initWithCoder:]
+  -[SASProximityHandshake setHasPasscodeSet:]
+  -[SASProximityHandshake loadInformation]
+  -[SASProximityHandshake simplePasscodeType]
+  -[SASProximityHandshake unlockType]
+  -[SASProximityHandshake setSimplePasscodeType:]
+  -[SASProximityHandshake setUnlockType:]
+
+
+SASProximityFinishedAction : SASProximityAction
+  // class methods
+  +[SASProximityFinishedAction actionID]
+
+  // instance methods
+  -[SASProximityFinishedAction hasResponse]
+
+
+SASProximitySessionSharingTransport : SASProximitySessionTransport
+ @property  CUMessageSession *messageSession
+ @property  CUMessageSession *actionMessageSession
+
+  // instance methods
+  -[SASProximitySessionSharingTransport initWithMessageSession:]
+  -[SASProximitySessionSharingTransport activate]
+  -[SASProximitySessionSharingTransport .cxx_destruct]
+  -[SASProximitySessionSharingTransport messageSession]
+  -[SASProximitySessionSharingTransport setMessageSession:]
+  -[SASProximitySessionSharingTransport invalidate]
+  -[SASProximitySessionSharingTransport sendData:response:]
+  -[SASProximitySessionSharingTransport setActionMessageSession:]
+  -[SASProximitySessionSharingTransport actionMessageSession]
+
+
+SASProximityBackupAction : SASProximityAction
+ @property  BOOL shouldStartBackup
+ @property  BOOL finishedBackup
+ @property  NSError *error
+ @property  double percentComplete
+ @property  unsigned long timeRemaining
+ @property  NSDate *completionDate
+
+  // class methods
+  +[SASProximityBackupAction actionID]
+  +[SASProximityBackupAction actionFromDictionary:]
+
+  // instance methods
+  -[SASProximityBackupAction completionDate]
+  -[SASProximityBackupAction setError:]
+  -[SASProximityBackupAction .cxx_destruct]
+  -[SASProximityBackupAction error]
+  -[SASProximityBackupAction setTimeRemaining:]
+  -[SASProximityBackupAction timeRemaining]
+  -[SASProximityBackupAction setPercentComplete:]
+  -[SASProximityBackupAction setCompletionDate:]
+  -[SASProximityBackupAction percentComplete]
+  -[SASProximityBackupAction requestPayload]
+  -[SASProximityBackupAction setShouldStartBackup:]
+  -[SASProximityBackupAction setFinishedBackup:]
+  -[SASProximityBackupAction shouldStartBackup]
+  -[SASProximityBackupAction finishedBackup]
+
+
+SASProximityInformation : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSSet *nearbyNetworks
+ @property  NSObject<OS_dispatch_semaphore> *nearbyNetworksSemaphore
+ @property  NSArray *keyboards
+ @property  NSString *appleID
+ @property  BOOL usesSameAccountForiTunes
+ @property  NSArray *networks
+ @property  NSArray *networkPasswords
+ @property  NSNumber *connectedToWiFi
+ @property  NSDictionary *localePreferences
+ @property  BOOL automaticTimeZoneEnabled
+ @property  NSString *timeZone
+ @property  NSData *accessibilitySettings
+ @property  NSString *firstName
+ @property  NSString *deviceModel
+ @property  NSString *deviceClass
+ @property  BOOL hasHomeButton
+ @property  BOOL restoring
+ @property  NSString *deviceName
+ @property  NSString *backupUUID
+ @property  BOOL backupEnabled
+ @property  NSDate *dateOfLastBackup
+ @property  NSData *backupMetadata
+ @property  BOOL locationServicesOptIn
+ @property  NSData *locationServicesData
+ @property  NSNumber *findMyDeviceOptIn
+ @property  NSNumber *deviceAnalyticsOptIn
+ @property  NSNumber *appAnalyticsOptIn
+ @property  NSNumber *siriOptIn
+ @property  NSData *siriVoiceProfileAvailabilityMetadata
+ @property  NSNumber *deviceTermsIdentifier
+ @property  NSString *productVersion
+ @property  NSNumber *supportsDeviceToDeviceMigration
+ @property  NSNumber *deviceToDeviceMigrationVersion
+ @property  NSNumber *storageAvailable
+ @property  NSNumber *storageCapacity
+ @property  NSNumber *preventSoftwareUpdateDeviceMigration
+ @property  NSNumber *hasTransferrableTelephonyPlan
+
+  // class methods
+  +[SASProximityInformation supportsSecureCoding]
+
+  // instance methods
+  -[SASProximityInformation setDeviceModel:]
+  -[SASProximityInformation networks]
+  -[SASProximityInformation productVersion]
+  -[SASProximityInformation deviceModel]
+  -[SASProximityInformation dateOfLastBackup]
+  -[SASProximityInformation setBackupEnabled:]
+  -[SASProximityInformation setNetworks:]
+  -[SASProximityInformation timeZone]
+  -[SASProximityInformation deviceName]
+  -[SASProximityInformation deviceClass]
+  -[SASProximityInformation appleID]
+  -[SASProximityInformation setAppleID:]
+  -[SASProximityInformation setDeviceClass:]
+  -[SASProximityInformation isBackupEnabled]
+  -[SASProximityInformation setRestoring:]
+  -[SASProximityInformation setFirstName:]
+  -[SASProximityInformation setTimeZone:]
+  -[SASProximityInformation firstName]
+  -[SASProximityInformation .cxx_destruct]
+  -[SASProximityInformation setProductVersion:]
+  -[SASProximityInformation storageCapacity]
+  -[SASProximityInformation encodeWithCoder:]
+  -[SASProximityInformation hasHomeButton]
+  -[SASProximityInformation backupMetadata]
+  -[SASProximityInformation isRestoring]
+  -[SASProximityInformation keyboards]
+  -[SASProximityInformation setDeviceName:]
+  -[SASProximityInformation setDeviceAnalyticsOptIn:]
+  -[SASProximityInformation setAppAnalyticsOptIn:]
+  -[SASProximityInformation setLocationServicesOptIn:]
+  -[SASProximityInformation siriOptIn]
+  -[SASProximityInformation setSiriOptIn:]
+  -[SASProximityInformation deviceAnalyticsOptIn]
+  -[SASProximityInformation appAnalyticsOptIn]
+  -[SASProximityInformation locationServicesOptIn]
+  -[SASProximityInformation setHasHomeButton:]
+  -[SASProximityInformation setKeyboards:]
+  -[SASProximityInformation initWithCoder:]
+  -[SASProximityInformation setBackupMetadata:]
+  -[SASProximityInformation backupUUID]
+  -[SASProximityInformation storageAvailable]
+  -[SASProximityInformation setBackupUUID:]
+  -[SASProximityInformation loadInformation]
+  -[SASProximityInformation usesSameAccountForiTunes]
+  -[SASProximityInformation networkPasswords]
+  -[SASProximityInformation connectedToWiFi]
+  -[SASProximityInformation localePreferences]
+  -[SASProximityInformation automaticTimeZoneEnabled]
+  -[SASProximityInformation accessibilitySettings]
+  -[SASProximityInformation locationServicesData]
+  -[SASProximityInformation findMyDeviceOptIn]
+  -[SASProximityInformation siriVoiceProfileAvailabilityMetadata]
+  -[SASProximityInformation deviceTermsIdentifier]
+  -[SASProximityInformation supportsDeviceToDeviceMigration]
+  -[SASProximityInformation deviceToDeviceMigrationVersion]
+  -[SASProximityInformation preventSoftwareUpdateDeviceMigration]
+  -[SASProximityInformation hasTransferrableTelephonyPlan]
+  -[SASProximityInformation setUsesSameAccountForiTunes:]
+  -[SASProximityInformation setNetworkPasswords:]
+  -[SASProximityInformation setConnectedToWiFi:]
+  -[SASProximityInformation setLocalePreferences:]
+  -[SASProximityInformation setAutomaticTimeZoneEnabled:]
+  -[SASProximityInformation setAccessibilitySettings:]
+  -[SASProximityInformation setDateOfLastBackup:]
+  -[SASProximityInformation setLocationServicesData:]
+  -[SASProximityInformation setFindMyDeviceOptIn:]
+  -[SASProximityInformation setSiriVoiceProfileAvailabilityMetadata:]
+  -[SASProximityInformation setDeviceTermsIdentifier:]
+  -[SASProximityInformation setSupportsDeviceToDeviceMigration:]
+  -[SASProximityInformation setDeviceToDeviceMigrationVersion:]
+  -[SASProximityInformation setStorageAvailable:]
+  -[SASProximityInformation setStorageCapacity:]
+  -[SASProximityInformation setPreventSoftwareUpdateDeviceMigration:]
+  -[SASProximityInformation setHasTransferrableTelephonyPlan:]
+  -[SASProximityInformation isNetworkTransferrable:]
+  -[SASProximityInformation setNearbyNetworksSemaphore:]
+  -[SASProximityInformation nearbyNetworksSemaphore]
+  -[SASProximityInformation nearbyNetworks]
+  -[SASProximityInformation _getFindMyDeviceOptIn]
+  -[SASProximityInformation numberFromMCUserBoolSetting:]
+  -[SASProximityInformation setNearbyNetworks:]
+  -[SASProximityInformation wirelessScanComplete:error:]
+
+
+SASProximityAnisetteRequestAction : SASProximityAction <AKAnisetteServiceProtocol>
+ @property  long long request
+ @property  NSData *sim
+ @property  BOOL shouldProvision
+ @property  NSString *dsid
+ @property  AKAnisetteData *anisetteData
+ @property  BOOL success
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SASProximityAnisetteRequestAction actionID]
+  +[SASProximityAnisetteRequestAction actionFromDictionary:]
+
+  // instance methods
+  -[SASProximityAnisetteRequestAction success]
+  -[SASProximityAnisetteRequestAction dsid]
+  -[SASProximityAnisetteRequestAction setShouldProvision:]
+  -[SASProximityAnisetteRequestAction anisetteData]
+  -[SASProximityAnisetteRequestAction setAnisetteData:]
+  -[SASProximityAnisetteRequestAction sim]
+  -[SASProximityAnisetteRequestAction setRequest:]
+  -[SASProximityAnisetteRequestAction .cxx_destruct]
+  -[SASProximityAnisetteRequestAction provisionAnisetteWithCompletion:]
+  -[SASProximityAnisetteRequestAction eraseAnisetteWithCompletion:]
+  -[SASProximityAnisetteRequestAction syncAnisetteWithSIMData:completion:]
+  -[SASProximityAnisetteRequestAction legacyAnisetteDataForDSID:withCompletion:]
+  -[SASProximityAnisetteRequestAction setSim:]
+  -[SASProximityAnisetteRequestAction fetchAnisetteDataAndProvisionIfNecessary:withCompletion:]
+  -[SASProximityAnisetteRequestAction request]
+  -[SASProximityAnisetteRequestAction setSuccess:]
+  -[SASProximityAnisetteRequestAction setDsid:]
+  -[SASProximityAnisetteRequestAction hasResponse]
+  -[SASProximityAnisetteRequestAction shouldProvision]
+  -[SASProximityAnisetteRequestAction requestPayload]
+  -[SASProximityAnisetteRequestAction setResponseFromData:]
+  -[SASProximityAnisetteRequestAction responsePayload]
+
+
+SASProximitySessionTransport : NSObject /usr/lib/libSystem.B.dylib
+ @property  @? receivedDataBlock
+
+  // instance methods
+  -[SASProximitySessionTransport activate]
+  -[SASProximitySessionTransport .cxx_destruct]
+  -[SASProximitySessionTransport invalidate]
+  -[SASProximitySessionTransport setReceivedDataBlock:]
+  -[SASProximitySessionTransport sendData:response:]
+  -[SASProximitySessionTransport receivedDataBlock]
+
+
+SASProximityAnisetteDataProvider : NSObject /usr/lib/libSystem.B.dylib <NSCopying, AKAnisetteServiceProtocol>
+ @property  SASProximitySession *session
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SASProximityAnisetteDataProvider copyWithZone:]
+  -[SASProximityAnisetteDataProvider setSession:]
+  -[SASProximityAnisetteDataProvider session]
+  -[SASProximityAnisetteDataProvider .cxx_destruct]
+  -[SASProximityAnisetteDataProvider provisionAnisetteWithCompletion:]
+  -[SASProximityAnisetteDataProvider eraseAnisetteWithCompletion:]
+  -[SASProximityAnisetteDataProvider syncAnisetteWithSIMData:completion:]
+  -[SASProximityAnisetteDataProvider legacyAnisetteDataForDSID:withCompletion:]
+  -[SASProximityAnisetteDataProvider fetchAnisetteDataAndProvisionIfNecessary:withCompletion:]
+
+
+01 00 0400 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccount 
+01 00 0400 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0b00 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAccountManager 
+01 00 0b00 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAnisetteData 
+01 00 0b00 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAnisetteProvisioningController 
+01 00 0b00 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKDevice 
+01 00 0800 /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils: CUMessageSession 
+01 00 0700 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPort 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 

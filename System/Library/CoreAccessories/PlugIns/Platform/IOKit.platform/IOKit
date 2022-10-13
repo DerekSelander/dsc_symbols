@@ -1,0 +1,569 @@
+|| __DATA.__data _kUSBCardReaderClass
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCPlatformPluginIOKit
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCUserDefaults
+|| __DATA.__objc_data _OBJC_CLASS_$_IAPUIDManager
+|| __DATA.__objc_data _OBJC_CLASS_$_PowerMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$_SleepAssertionManager
+|| __DATA.__objc_data _OBJC_CLASS_$_USBCableTypeMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$_USBCameraKitHubMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$_USBFaultMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCPlatformPluginIOKit
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCUserDefaults
+|| __DATA.__objc_data _OBJC_METACLASS_$_IAPUIDManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_PowerMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_SleepAssertionManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_USBCableTypeMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_USBCameraKitHubMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_USBFaultMonitor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._ioUSB30XHCIRemovablePortMatchIterator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._ioUSB30XHCIRemovablePortNotification
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._ioUSB30XHCIRemovablePortNotifyPort
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._ioUSB30XHCIRemovablePortService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._ioUSB30XHCIRemovablePortTerminateIterator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._registeredUUIDs
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBCableTypeMonitor._uid
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._ioUSBCardReaderMatchIterator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._ioUSBCardReaderNotification
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._ioUSBCardReaderNotifyPort
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._ioUSBCardReaderService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._ioUSBCardReaderTerminateIterator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._registeredUUIDs
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._requestedUSBFaultNotifications
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._uid
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._usbFaultStates
+|| __DATA.__objc_ivar _OBJC_IVAR_$_USBFaultMonitor._usbFaultStatesSent
+|| __DATA_CONST.__const _ACCPlatformIOKitPowerPlugin_BatteryChargeLevel
+|| __DATA_CONST.__const _ACCPlatformIOKitPowerPlugin_BatteryChargingState
+|| __DATA_CONST.__const _ACCPlatformIOKitPowerPlugin_BatteryChargingTypeChanged
+|| __DATA_CONST.__const _ACCPlatformIOKitPowerPlugin_IsExternalChargerConnected
+|| __DATA_CONST.__const _ACCPlatformSystemPower_SystemCanSleepNotification
+|| __DATA_CONST.__const _ACCPlatformSystemPower_SystemHasPoweredOnNotification
+|| __DATA_CONST.__const _ACCPlatformSystemPower_SystemWillSleepNotification
+|| __DATA_CONST.__const _ACCPlatformUSBCableTypePlugin_ConnectionUUID
+|| __DATA_CONST.__const _ACCPlatformUSBCableTypePlugin_USBCableTypeDidChange
+|| __DATA_CONST.__const _ACCPlatformUSBCableTypePlugin_USBCableTypeKey
+|| __DATA_CONST.__const _ACCPlatformUSBCameraKitHubPlugin_ConnectionUUID
+|| __DATA_CONST.__const _ACCPlatformUSBCameraKitHubPlugin_HubChange
+|| __DATA_CONST.__const _ACCPlatformUSBFaultPlugin_USBFaultNotification
+|| __DATA_CONST.__const _ACCPlatformUSBFaultPlugin_USBFaultNotification_ConnectionUUIDKey
+|| __DATA_CONST.__const _ACCPlatformUSBFaultPlugin_USBFaultNotification_FaultTypeKey
+|| __DATA_CONST.__const _ACCUserDefaultsDomain
+|| __DATA_CONST.__const _ACCUserDefaultsIapdDomain
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_ChargingPowerBehavior
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_ChargingPowerOverride
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_PretendAccessoryType
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_PretendBatteryLevel
+|| __DATA_CONST.__const _ACCUserDefaultsIapdNotification
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ACCAuthProtocolAllowMutualAuth
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ACCAuthProtocolMaxMessageSize
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ACCAuthProtocolPretendAuth
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ACCAuthProtocolRoleSupport
+|| __DATA_CONST.__const _ACCUserDefaultsKey_AllowACCAuthProtocolOnAllTransport
+|| __DATA_CONST.__const _ACCUserDefaultsKey_BypassTrustDialog
+|| __DATA_CONST.__const _ACCUserDefaultsKey_DisableWirelessCTA
+|| __DATA_CONST.__const _ACCUserDefaultsKey_EnableTrustDialog
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ForceAuthFail
+|| __DATA_CONST.__const _ACCUserDefaultsKey_KnownAccessories
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ShowHiddenAccessories
+|| __DATA_CONST.__const _ACCUserDefaultsNotification
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_ChargingPowerBehavior
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_ChargingPowerOverride
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_PretendAccessoryType
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_PretendBatteryLevel
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_ACCAuthProtocolAllowMutualAuth
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_ACCAuthProtocolMaxMessageSize
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_ACCAuthProtocolPretendAuth
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_ACCAuthProtocolRoleSupport
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_AllowACCAuthProtocolOnAllTransport
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_AuthenticationOverride
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_DisableWirelessCTA
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_EnableTrustDialog
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_ForceAuthFail
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_MaxOutboundiAP2PacketSize
+|| __DATA_CONST.__const _kUSBBusCurrentAllocation
+|| __DATA_CONST.__const _kUSBCameraKitHubTotalCurrent
+|| __DATA_CONST.__const _kUSBFailedRequestedPower
+|| __TEXT.__text ___mapFamilyCodeToChargingType
+|| __TEXT.__text _acc_userDefaultsIapd_boolForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyArrayForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyDictionaryForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyDoubleForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyIntegerForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyStringForKey
+|| __TEXT.__text _acc_userDefaults_boolForKey
+|| __TEXT.__text _acc_userDefaults_copyArrayForKey
+|| __TEXT.__text _acc_userDefaults_copyDictionaryForKey
+|| __TEXT.__text _acc_userDefaults_copyDoubleForKey
+|| __TEXT.__text _acc_userDefaults_copyIntegerForKey
+|| __TEXT.__text _acc_userDefaults_copyStringForKey
+|| __TEXT.__text _init_logging
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopRemoveSource
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_METACLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ IOKit: _IOAllowPowerChange
+__ IOKit: _IODeregisterForSystemPower
+__ IOKit: _IOIteratorNext
+__ IOKit: _IOIteratorReset
+__ IOKit: _IOMasterPort
+__ IOKit: _IONotificationPortCreate
+__ IOKit: _IONotificationPortDestroy
+__ IOKit: _IONotificationPortGetRunLoopSource
+__ IOKit: _IONotificationPortSetDispatchQueue
+__ IOKit: _IOObjectRelease
+__ IOKit: _IOObjectRetain
+__ IOKit: _IOPMAssertionCreateWithProperties
+__ IOKit: _IOPMAssertionRelease
+__ IOKit: _IORegisterForSystemPower
+__ IOKit: _IORegistryEntryCreateCFProperties
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IORegistryEntryGetChildEntry
+__ IOKit: _IORegistryEntrySearchCFProperty
+__ IOKit: _IORegistryGetRootEntry
+__ IOKit: _IOServiceAddInterestNotification
+__ IOKit: _IOServiceAddMatchingNotification
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceMatching
+__ IOKit: _kIOMasterPortDefault
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dispatch_walltime
+__ libSystem.B.dylib: _mach_port_deallocate
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+SleepAssertionManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *assertions
+ @property  BOOL sleepAssertionHeld
+ @property  NSObject<OS_dispatch_queue> *sleepAssertionsLock
+ @property  BOOL eaSleepAssertionHeld
+ @property  unsigned int eaSleepAssertionID
+ @property  BOOL applePencilSleepAssertionHeld
+ @property  unsigned int applePencilSleepAssertionID
+ @property  NSObject<OS_dispatch_source> *applePencilSleepAssertionTimer
+ @property  NSObject<OS_dispatch_queue> *applePencilSleepAssertionTimerQueue
+
+  // class methods
+  +[SleepAssertionManager sharedManager]
+
+  // instance methods
+  -[SleepAssertionManager destroySleepAssertionForUUID:]
+  -[SleepAssertionManager createApplePencilSleepAssertion]
+  -[SleepAssertionManager init]
+  -[SleepAssertionManager removeApplePencilSleepAssertion]
+  -[SleepAssertionManager dealloc]
+  -[SleepAssertionManager .cxx_destruct]
+  -[SleepAssertionManager createSleepAssertionForUUID:]
+  -[SleepAssertionManager createEASleepAssertion]
+  -[SleepAssertionManager removeEASleepAssertion]
+  -[SleepAssertionManager setAssertions:]
+  -[SleepAssertionManager assertions]
+  -[SleepAssertionManager applePencilSleepAssertionTimer]
+  -[SleepAssertionManager eaSleepAssertionHeld]
+  -[SleepAssertionManager setEaSleepAssertionHeld:]
+  -[SleepAssertionManager applePencilSleepAssertionTimerQueue]
+  -[SleepAssertionManager applePencilSleepAssertionHeld]
+  -[SleepAssertionManager setApplePencilSleepAssertionHeld:]
+  -[SleepAssertionManager sleepAssertionHeld]
+  -[SleepAssertionManager setSleepAssertionHeld:]
+  -[SleepAssertionManager sleepAssertionsLock]
+  -[SleepAssertionManager setSleepAssertionsLock:]
+  -[SleepAssertionManager eaSleepAssertionID]
+  -[SleepAssertionManager setEaSleepAssertionID:]
+  -[SleepAssertionManager applePencilSleepAssertionID]
+  -[SleepAssertionManager setApplePencilSleepAssertionID:]
+  -[SleepAssertionManager setApplePencilSleepAssertionTimer:]
+  -[SleepAssertionManager setApplePencilSleepAssertionTimerQueue:]
+
+
+ACCPlatformPluginIOKit : NSObject /usr/lib/libSystem.B.dylib <ACCPlatformUSBFaultPluginProtocol, ACCPlatformUSBCableTypePluginProtocol, ACCPlatformIOKitPowerPluginProtocol, ACCPlatformUSBCameraKitHubPluginProtocol, ACCPlatformSleepAssertionPluginProtocol>
+ @property  BOOL isRunning
+ @property  USBFaultMonitor *monitor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *pluginName
+
+  // instance methods
+  -[ACCPlatformPluginIOKit stopPlugin]
+  -[ACCPlatformPluginIOKit monitor]
+  -[ACCPlatformPluginIOKit startPlugin]
+  -[ACCPlatformPluginIOKit setIsRunning:]
+  -[ACCPlatformPluginIOKit initPlugin]
+  -[ACCPlatformPluginIOKit pluginName]
+  -[ACCPlatformPluginIOKit getBatteryChargingTypeIsInductive]
+  -[ACCPlatformPluginIOKit destroySleepAssertionForUUID:]
+  -[ACCPlatformPluginIOKit createApplePencilSleepAssertion]
+  -[ACCPlatformPluginIOKit removeApplePencilSleepAssertion]
+  -[ACCPlatformPluginIOKit getUSBFaultStateforType:]
+  -[ACCPlatformPluginIOKit createBatteryNotificationClient]
+  -[ACCPlatformPluginIOKit .cxx_destruct]
+  -[ACCPlatformPluginIOKit setUSBHubOverCurrentSiphoning:]
+  -[ACCPlatformPluginIOKit getBatteryChargeLevel]
+  -[ACCPlatformPluginIOKit getUSBHubSiphoningCurrentActualRequirementInmA:]
+  -[ACCPlatformPluginIOKit getBatteryChargingState]
+  -[ACCPlatformPluginIOKit getExternalBatteryChargingTypeIsInductive]
+  -[ACCPlatformPluginIOKit createSleepAssertionForUUID:]
+  -[ACCPlatformPluginIOKit isExternalChargerConnected]
+  -[ACCPlatformPluginIOKit getExternalBatteryChargingType]
+  -[ACCPlatformPluginIOKit clientHandledSleepNotification:]
+  -[ACCPlatformPluginIOKit usbFaultMonitor:forUUID:]
+  -[ACCPlatformPluginIOKit getUSBHubOverCurrentState:]
+  -[ACCPlatformPluginIOKit createEASleepAssertion]
+  -[ACCPlatformPluginIOKit removeEASleepAssertion]
+  -[ACCPlatformPluginIOKit getUSBHubUnitLoadInmA:]
+  -[ACCPlatformPluginIOKit isRunning]
+  -[ACCPlatformPluginIOKit resetUSBHubOverCurrentSiphoning:]
+  -[ACCPlatformPluginIOKit initUSBCameraKitHubNotifications:]
+  -[ACCPlatformPluginIOKit getBatteryChargingType]
+  -[ACCPlatformPluginIOKit destroySleepNotificationsForClient:]
+  -[ACCPlatformPluginIOKit usbCableTypeMonitor:forUUID:]
+  -[ACCPlatformPluginIOKit getUSBHubSiphoningCurrentRequirementInmA:]
+  -[ACCPlatformPluginIOKit setMonitor:]
+  -[ACCPlatformPluginIOKit createSleepNotificationClient]
+  -[ACCPlatformPluginIOKit destroyBatteryNotificationsForClient:]
+
+
+USBFaultMonitor : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[USBFaultMonitor sharedMonitor]
+
+  // instance methods
+  -[USBFaultMonitor init]
+  -[USBFaultMonitor dealloc]
+  -[USBFaultMonitor .cxx_destruct]
+  -[USBFaultMonitor startFaultMonitoringForUUID:]
+  -[USBFaultMonitor stopFaultMonitoringForUUID:]
+  -[USBFaultMonitor getFaultState:]
+  -[USBFaultMonitor registerFaultInterest:]
+  -[USBFaultMonitor initFaultConditionNotifications]
+  -[USBFaultMonitor setFaultState:flag:]
+  -[USBFaultMonitor sendUSBFaultNotification]
+  -[USBFaultMonitor checkUSBCardReaderProperty:]
+
+
+USBCameraKitHubMonitor : NSObject /usr/lib/libSystem.B.dylib
+ @property  ^{IONotificationPort=} ioUSB20CameraKitHubNotifyPort
+ @property  unsigned int ioUSB20CameraKitHubNotification
+ @property  unsigned int ioUSB20CameraKitHubService
+ @property  unsigned int ioUSB20CameraKitHubMatchIterator
+ @property  unsigned int ioUSB20CameraKitHubTerminateIterator
+ @property  unsigned int ioUSB20CameraKitHubCurrentNeeded
+ @property  unsigned int ioUSB20CameraKitHubPortCurrentAllocation
+ @property  unsigned int ioUSB20CameraKitHubPortFailedRequestedPower
+ @property  unsigned int ioUSB20CameraKitHubExtraRequestedPower
+ @property  ^{IONotificationPort=} ioUSB20CameraKitHubPortNotifyPort
+ @property  unsigned int ioUSB20CameraKitHubPortNotification
+ @property  unsigned int ioUSB20CameraKitHubPortService
+ @property  unsigned int ioUSB20CameraKitHubPortMatchIterator
+ @property  unsigned int ioUSB20CameraKitHubPortTerminateIterator
+ @property  ^{IONotificationPort=} ioUSB30CameraKitHubNotifyPort
+ @property  unsigned int ioUSB30CameraKitHubNotification
+ @property  unsigned int ioUSB30CameraKitHubService
+ @property  unsigned int ioUSB30CameraKitHubMatchIterator
+ @property  unsigned int ioUSB30CameraKitHubTerminateIterator
+ @property  unsigned int ioUSB30CameraKitHubCurrentNeeded
+ @property  unsigned int ioUSB30CameraKitHubPortCurrentAllocation
+ @property  unsigned int ioUSB30CameraKitHubPortFailedRequestedPower
+ @property  ^{IONotificationPort=} ioUSB30CameraKitHubPortNotifyPort
+ @property  unsigned int ioUSB30CameraKitHubPortNotification
+ @property  unsigned int ioUSB30CameraKitHubPortService
+ @property  unsigned int ioUSB30CameraKitHubPortMatchIterator
+ @property  unsigned int ioUSB30CameraKitHubPortTerminateIterator
+ @property  unsigned int ioUSBCameraKitHubTotalCurrent
+ @property  BOOL ioUSBCameraKitHubCurrentNeedUpdate
+ @property  BOOL ioUSBCameraKitHubOverCurrentDetected
+ @property  long long once
+ @property  NSObject<OS_dispatch_queue> *queue
+
+  // class methods
+  +[USBCameraKitHubMonitor sharedMonitor]
+
+  // instance methods
+  -[USBCameraKitHubMonitor init]
+  -[USBCameraKitHubMonitor once]
+  -[USBCameraKitHubMonitor dealloc]
+  -[USBCameraKitHubMonitor .cxx_destruct]
+  -[USBCameraKitHubMonitor getUSBHubSiphoningCurrentActualRequirementInmA:]
+  -[USBCameraKitHubMonitor setQueue:]
+  -[USBCameraKitHubMonitor queue]
+  -[USBCameraKitHubMonitor getUSBHubUnitLoadInmA:]
+  -[USBCameraKitHubMonitor initUSBCameraKitHubNotifications:]
+  -[USBCameraKitHubMonitor getUSBHubSiphoningCurrentRequirementInmA:]
+  -[USBCameraKitHubMonitor overcurrentState:]
+  -[USBCameraKitHubMonitor resetOvercurrentSiphoning:]
+  -[USBCameraKitHubMonitor setOvercurrentSiphoning:]
+  -[USBCameraKitHubMonitor _setOvercurrentSiphoning:forUUID:]
+  -[USBCameraKitHubMonitor _updateSiphoningValuesFromDrivers:]
+  -[USBCameraKitHubMonitor _powerPostCCKHubChangeNotification]
+  -[USBCameraKitHubMonitor supportsUSB30CameraKitHub:]
+  -[USBCameraKitHubMonitor supportsUSB20CameraKitHub:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubNotifyPort]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubNotifyPort:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubNotification]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubNotification:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubService]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubService:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubMatchIterator]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubMatchIterator:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubTerminateIterator]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubTerminateIterator:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubCurrentNeeded]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubCurrentNeeded:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortCurrentAllocation]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortCurrentAllocation:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortFailedRequestedPower]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortFailedRequestedPower:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubExtraRequestedPower]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubExtraRequestedPower:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortNotifyPort]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortNotifyPort:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortNotification]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortNotification:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortService]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortService:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortMatchIterator]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortMatchIterator:]
+  -[USBCameraKitHubMonitor ioUSB20CameraKitHubPortTerminateIterator]
+  -[USBCameraKitHubMonitor setIoUSB20CameraKitHubPortTerminateIterator:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubNotifyPort]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubNotifyPort:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubNotification]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubNotification:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubService]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubService:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubMatchIterator]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubMatchIterator:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubTerminateIterator]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubTerminateIterator:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubCurrentNeeded]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubCurrentNeeded:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortCurrentAllocation]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortCurrentAllocation:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortFailedRequestedPower]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortFailedRequestedPower:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortNotifyPort]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortNotifyPort:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortNotification]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortNotification:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortService]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortService:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortMatchIterator]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortMatchIterator:]
+  -[USBCameraKitHubMonitor ioUSB30CameraKitHubPortTerminateIterator]
+  -[USBCameraKitHubMonitor setIoUSB30CameraKitHubPortTerminateIterator:]
+  -[USBCameraKitHubMonitor ioUSBCameraKitHubTotalCurrent]
+  -[USBCameraKitHubMonitor setIoUSBCameraKitHubTotalCurrent:]
+  -[USBCameraKitHubMonitor ioUSBCameraKitHubCurrentNeedUpdate]
+  -[USBCameraKitHubMonitor setIoUSBCameraKitHubCurrentNeedUpdate:]
+  -[USBCameraKitHubMonitor ioUSBCameraKitHubOverCurrentDetected]
+  -[USBCameraKitHubMonitor setIoUSBCameraKitHubOverCurrentDetected:]
+  -[USBCameraKitHubMonitor setOnce:]
+
+
+USBCableTypeMonitor : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[USBCableTypeMonitor sharedMonitor]
+  +[USBCableTypeMonitor usbCableType]
+
+  // instance methods
+  -[USBCableTypeMonitor init]
+  -[USBCableTypeMonitor dealloc]
+  -[USBCableTypeMonitor .cxx_destruct]
+  -[USBCableTypeMonitor startCableTypeMonitoringForUUID:]
+  -[USBCableTypeMonitor stopCableTypeMonitoringForUUID:]
+  -[USBCableTypeMonitor initUSB30XHCIRemovablePortNotifications]
+  -[USBCableTypeMonitor cleanupUSB30XHCIRemovablePortNotifications]
+  -[USBCableTypeMonitor sendUSBCableTypeChangedNotification]
+
+
+PowerMonitor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *systemPowerQueue
+ @property  unsigned int systemPowerPort
+ @property  ^{IONotificationPort=} systemPowerNotifyPortRef
+ @property  unsigned int systemPowerIterator
+ @property  BOOL sleepNotificationsEnabled
+ @property  NSMutableArray *sleepNotificationClients
+ @property  NSMutableArray *clientsPreventingSleep
+ @property  NSObject<OS_dispatch_semaphore> *sleepSemaphore
+ @property  BOOL systemIsAsleep
+ @property  NSObject<OS_dispatch_queue> *clientsPreventingSleepLock
+ @property  BOOL isExtChargerConnected
+ @property  int batteryCapacity
+ @property  int batteryCapacityOverride
+ @property  int batteryCapacityMax
+ @property  BOOL isBatteryCharging
+ @property  unsigned char batteryChargeLevelPercent
+ @property  ^{IONotificationPort=} batteryNotifyPortRef
+ @property  unsigned int battery_iter
+ @property  NSMutableArray *batteryNotificationClients
+ @property  int batteryChargingType
+ @property  int batteryChargingTypeExternal
+
+  // class methods
+  +[PowerMonitor sharedMonitor]
+
+  // instance methods
+  -[PowerMonitor setClientsPreventingSleepLock:]
+  -[PowerMonitor batteryCapacity]
+  -[PowerMonitor getBatteryChargingTypeIsInductive]
+  -[PowerMonitor setSleepNotificationClients:]
+  -[PowerMonitor systemPowerQueue]
+  -[PowerMonitor setIsBatteryCharging:]
+  -[PowerMonitor init]
+  -[PowerMonitor setBatteryChargingType:]
+  -[PowerMonitor batteryChargeLevelPercent]
+  -[PowerMonitor setIsExtChargerConnected:]
+  -[PowerMonitor dealloc]
+  -[PowerMonitor systemIsAsleep]
+  -[PowerMonitor createBatteryNotificationClient]
+  -[PowerMonitor systemPowerPort]
+  -[PowerMonitor .cxx_destruct]
+  -[PowerMonitor setClientsPreventingSleep:]
+  -[PowerMonitor getBatteryChargeLevel]
+  -[PowerMonitor isBatteryCharging]
+  -[PowerMonitor setSystemIsAsleep:]
+  -[PowerMonitor batteryChargingType]
+  -[PowerMonitor setBatteryNotificationClients:]
+  -[PowerMonitor clientsPreventingSleepLock]
+  -[PowerMonitor getBatteryChargingState]
+  -[PowerMonitor getExternalBatteryChargingTypeIsInductive]
+  -[PowerMonitor clientsPreventingSleep]
+  -[PowerMonitor isExtChargerConnected]
+  -[PowerMonitor setBattery_iter:]
+  -[PowerMonitor sleepNotificationsEnabled]
+  -[PowerMonitor setBatteryCapacity:]
+  -[PowerMonitor isExternalChargerConnected]
+  -[PowerMonitor battery_iter]
+  -[PowerMonitor getExternalBatteryChargingType]
+  -[PowerMonitor clientHandledSleepNotification:]
+  -[PowerMonitor batteryChargingTypeExternal]
+  -[PowerMonitor setBatteryChargeLevelPercent:]
+  -[PowerMonitor batteryCapacityMax]
+  -[PowerMonitor systemPowerIterator]
+  -[PowerMonitor batteryNotificationClients]
+  -[PowerMonitor _getBatteryChargingTypeIsInductive:]
+  -[PowerMonitor batteryNotifyPortRef]
+  -[PowerMonitor setSleepSemaphore:]
+  -[PowerMonitor setBatteryChargingTypeExternal:]
+  -[PowerMonitor sleepNotificationClients]
+  -[PowerMonitor setBatteryCapacityOverride:]
+  -[PowerMonitor batteryCapacityOverride]
+  -[PowerMonitor setSleepNotificationsEnabled:]
+  -[PowerMonitor setBatteryNotifyPortRef:]
+  -[PowerMonitor _checkAndSendNotificationForOldConnected:oldIsBatteryCharging:oldBatteryChargeLevelPercent:oldBatteryChargingType:oldBatteryChargingTypeExt:overrideChanged:]
+  -[PowerMonitor getBatteryChargingType]
+  -[PowerMonitor setSystemPowerQueue:]
+  -[PowerMonitor setBatteryCapacityMax:]
+  -[PowerMonitor destroySleepNotificationsForClient:]
+  -[PowerMonitor setSystemPowerIterator:]
+  -[PowerMonitor systemPowerNotifyPortRef]
+  -[PowerMonitor sleepSemaphore]
+  -[PowerMonitor setSystemPowerPort:]
+  -[PowerMonitor createSleepNotificationClient]
+  -[PowerMonitor destroyBatteryNotificationsForClient:]
+  -[PowerMonitor setSystemPowerNotifyPortRef:]
+
+
+ACCUserDefaults : NSUserDefaults
+  // class methods
+  +[ACCUserDefaults sharedDefaults]
+  +[ACCUserDefaults sharedDefaultsIapd]
+
+  // instance methods
+  -[ACCUserDefaults init]
+
+
+IAPUIDManager : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[IAPUIDManager sharedIAPUIDManager]
+
+  // instance methods
+  -[IAPUIDManager init]
+  -[IAPUIDManager dealloc]
+  -[IAPUIDManager iapUID:]
+  -[IAPUIDManager removeIAPUID:]
+  -[IAPUIDManager objectForIAPUID:]
+  -[IAPUIDManager isIAPUIDPresent:]
+
+
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

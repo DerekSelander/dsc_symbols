@@ -1,0 +1,178 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FAFamilyNotification
+|| __DATA.__objc_data _OBJC_METACLASS_$_FAFamilyNotification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FAFamilyNotifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FAFamilyNotifier
+|| __TEXT.__text __FALogSystem
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+FAFamilyNotifier : NSObject /usr/lib/libSystem.B.dylib <FAFamilyNotifierRemoteObjectProtocol, NSXPCListenerDelegate>
+ @property  NSString *identifier
+ @property  NSString *serviceName
+ @property  <FAFamilyNotificationDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[FAFamilyNotifier .cxx_destruct]
+  -[FAFamilyNotifier identifier]
+  -[FAFamilyNotifier listener:shouldAcceptNewConnection:]
+  -[FAFamilyNotifier deliverNotification:]
+  -[FAFamilyNotifier setDelegate:]
+  -[FAFamilyNotifier removeAllNotifications]
+  -[FAFamilyNotifier delegate]
+  -[FAFamilyNotifier serviceName]
+  -[FAFamilyNotifier removeNotificationWithIdentifier:]
+  -[FAFamilyNotifier agentConnection]
+  -[FAFamilyNotifier _pendingNotificationsWithClientIdentifier:]
+  -[FAFamilyNotifier _agentConnectionWasInterrupted]
+  -[FAFamilyNotifier _agentConnectionWasInvalidated]
+  -[FAFamilyNotifier _agentConnectionFailedToBootstrap]
+  -[FAFamilyNotifier didActivateNotification:]
+  -[FAFamilyNotifier didDismissNotification:]
+  -[FAFamilyNotifier initWithIdentifier:machServiceName:]
+  -[FAFamilyNotifier pendingNotifications]
+  -[FAFamilyNotifier _pendingNotificationsForAllClients]
+  -[FAFamilyNotifier didClearNotification:]
+
+
+FAFamilyNotification : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *uuid
+ @property  NSString *clientIdentifier
+ @property  NSString *delegateMachServiceName
+ @property  NSString *identifier
+ @property  NSString *title
+ @property  NSString *informativeText
+ @property  NSDate *relevanceDate
+ @property  NSDate *expiryDate
+ @property  NSNumber *familyMemberDSID
+ @property  unsigned long displayStyle
+ @property  BOOL shouldPersistWhenActivated
+ @property  BOOL shouldPersistWhenDismissed
+ @property  NSString *actionButtonLabel
+ @property  NSString *otherButtonLabel
+ @property  BOOL hasActionButton
+ @property  NSString *unlockActionLabel
+ @property  NSURL *activateActionURL
+ @property  NSURL *dismissActionlURL
+ @property  NSURL *launchActionURL
+ @property  NSData *launchActionArguments
+ @property  NSDictionary *userInfo
+
+  // class methods
+  +[FAFamilyNotification supportsSecureCoding]
+
+  // instance methods
+  -[FAFamilyNotification init]
+  -[FAFamilyNotification setUserInfo:]
+  -[FAFamilyNotification expiryDate]
+  -[FAFamilyNotification clientIdentifier]
+  -[FAFamilyNotification unlockActionLabel]
+  -[FAFamilyNotification setExpiryDate:]
+  -[FAFamilyNotification uuid]
+  -[FAFamilyNotification setInformativeText:]
+  -[FAFamilyNotification .cxx_destruct]
+  -[FAFamilyNotification setUuid:]
+  -[FAFamilyNotification setTitle:]
+  -[FAFamilyNotification setIdentifier:]
+  -[FAFamilyNotification encodeWithCoder:]
+  -[FAFamilyNotification identifier]
+  -[FAFamilyNotification title]
+  -[FAFamilyNotification userInfo]
+  -[FAFamilyNotification informativeText]
+  -[FAFamilyNotification displayStyle]
+  -[FAFamilyNotification familyMemberDSID]
+  -[FAFamilyNotification setFamilyMemberDSID:]
+  -[FAFamilyNotification setUnlockActionLabel:]
+  -[FAFamilyNotification setDisplayStyle:]
+  -[FAFamilyNotification setClientIdentifier:]
+  -[FAFamilyNotification relevanceDate]
+  -[FAFamilyNotification initWithCoder:]
+  -[FAFamilyNotification shouldPersistWhenActivated]
+  -[FAFamilyNotification setShouldPersistWhenActivated:]
+  -[FAFamilyNotification shouldPersistWhenDismissed]
+  -[FAFamilyNotification setShouldPersistWhenDismissed:]
+  -[FAFamilyNotification delegateMachServiceName]
+  -[FAFamilyNotification setDelegateMachServiceName:]
+  -[FAFamilyNotification launchActionURL]
+  -[FAFamilyNotification launchActionArguments]
+  -[FAFamilyNotification setLaunchActionURL:]
+  -[FAFamilyNotification setLaunchActionArguments:]
+  -[FAFamilyNotification cacheDictionaryRepresentation]
+  -[FAFamilyNotification initWithCacheDictionaryRepresentation:]
+  -[FAFamilyNotification setRelevanceDate:]
+  -[FAFamilyNotification actionButtonLabel]
+  -[FAFamilyNotification setActionButtonLabel:]
+  -[FAFamilyNotification otherButtonLabel]
+  -[FAFamilyNotification setOtherButtonLabel:]
+  -[FAFamilyNotification hasActionButton]
+  -[FAFamilyNotification setHasActionButton:]
+  -[FAFamilyNotification activateActionURL]
+  -[FAFamilyNotification setActivateActionURL:]
+  -[FAFamilyNotification dismissActionlURL]
+  -[FAFamilyNotification setDismissActionlURL:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

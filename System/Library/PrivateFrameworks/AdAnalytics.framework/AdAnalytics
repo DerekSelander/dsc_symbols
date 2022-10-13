@@ -1,0 +1,117 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_AdAnalyticsCommon
+|| __DATA.__objc_data _OBJC_CLASS_$_AdAnalyzer
+|| __DATA.__objc_data _OBJC_METACLASS_$_AdAnalyticsCommon
+|| __DATA.__objc_data _OBJC_METACLASS_$_AdAnalyzer
+|| __DATA_CONST.__const _AdAnalyticsErrorDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_AdAnalyticsEventInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_AdAnalyticsEventInfo
+|| __TEXT.__const _AdAnalyticsVersionNumber
+|| __TEXT.__const _AdAnalyticsVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNotification
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ iAdServices: _OBJC_CLASS_$_ADDefaults
+__ iAdServices: __ADLog
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+AdAnalyzer : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *adSequences
+
+  // class methods
+  +[AdAnalyzer sharedInstance]
+  +[AdAnalyzer nextSequenceNumberForAd:]
+  +[AdAnalyzer clearSequenceNumbersForAd:]
+  +[AdAnalyzer startAdAnalytics:]
+  +[AdAnalyzer stopAdAnalytics:]
+  +[AdAnalyzer captureAdAnalyticsEvent:event:completion:]
+
+  // instance methods
+  -[AdAnalyzer init]
+  -[AdAnalyzer .cxx_destruct]
+  -[AdAnalyzer captureEvent:event:completion:]
+  -[AdAnalyzer adSequences]
+  -[AdAnalyzer setAdSequences:]
+
+
+AdAnalyticsCommon : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[AdAnalyticsCommon nameForVideoState:]
+
+
+AdAnalyticsEventInfo : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  NSString *bundleID
+ @property  NSString *adID
+ @property  long long videoState
+ @property  double currentPlaybackTime
+ @property  double totalDuration
+ @property  double visiblePercentage
+ @property  float volume
+ @property  double timestamp
+ @property  long long sequenceNumber
+
+  // class methods
+  +[AdAnalyticsEventInfo supportsSecureCoding]
+
+  // instance methods
+  -[AdAnalyticsEventInfo copyWithZone:]
+  -[AdAnalyticsEventInfo currentPlaybackTime]
+  -[AdAnalyticsEventInfo setBundleID:]
+  -[AdAnalyticsEventInfo setSequenceNumber:]
+  -[AdAnalyticsEventInfo volume]
+  -[AdAnalyticsEventInfo init]
+  -[AdAnalyticsEventInfo setVolume:]
+  -[AdAnalyticsEventInfo adID]
+  -[AdAnalyticsEventInfo sequenceNumber]
+  -[AdAnalyticsEventInfo setTotalDuration:]
+  -[AdAnalyticsEventInfo totalDuration]
+  -[AdAnalyticsEventInfo .cxx_destruct]
+  -[AdAnalyticsEventInfo timestamp]
+  -[AdAnalyticsEventInfo setTimestamp:]
+  -[AdAnalyticsEventInfo encodeWithCoder:]
+  -[AdAnalyticsEventInfo setCurrentPlaybackTime:]
+  -[AdAnalyticsEventInfo isEqual:]
+  -[AdAnalyticsEventInfo bundleID]
+  -[AdAnalyticsEventInfo initWithCoder:]
+  -[AdAnalyticsEventInfo setAdID:]
+  -[AdAnalyticsEventInfo visiblePercentage]
+  -[AdAnalyticsEventInfo setVisiblePercentage:]
+  -[AdAnalyticsEventInfo setVideoState:]
+  -[AdAnalyticsEventInfo videoState]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/iAdServices.framework/iAdServices: ADDefaults 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotification 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

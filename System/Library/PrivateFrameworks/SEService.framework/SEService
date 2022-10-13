@@ -1,0 +1,797 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CALogger
+|| __DATA.__objc_data _OBJC_CLASS_$_PTClassicKey
+|| __DATA.__objc_data _OBJC_CLASS_$_SEProxy
+|| __DATA.__objc_data _OBJC_CLASS_$_SESAlarm
+|| __DATA.__objc_data _OBJC_CLASS_$_SESTLV
+|| __DATA.__objc_data _OBJC_METACLASS_$_CALogger
+|| __DATA.__objc_data _OBJC_METACLASS_$_PTClassicKey
+|| __DATA.__objc_data _OBJC_METACLASS_$_SEProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_SESAlarm
+|| __DATA.__objc_data _OBJC_METACLASS_$_SESTLV
+|| __DATA_CONST.__const _ECDSASigValueSpec
+|| __DATA_CONST.__const _PTCommandSpec
+|| __DATA_CONST.__const _PTCreateKeyInputSpec
+|| __DATA_CONST.__const _PTCreateKeyOutputSpec
+|| __DATA_CONST.__const _PTDeleteKeyInputSpec
+|| __DATA_CONST.__const _PTExchangeInputSpec
+|| __DATA_CONST.__const _PTExchangeOutputSpec
+|| __DATA_CONST.__const _PTKeyAttestKeyInputSpec
+|| __DATA_CONST.__const _PTKeyAttestKeyOutputSpec
+|| __DATA_CONST.__const _PTKeyBlobSpec
+|| __DATA_CONST.__const _PTKeyDecryptInputSpec
+|| __DATA_CONST.__const _PTKeyDecryptOutputSpec
+|| __DATA_CONST.__const _PTKeyEncryptInputSpec
+|| __DATA_CONST.__const _PTKeyEncryptOutputSpec
+|| __DATA_CONST.__const _PTKeyInSlotSpec
+|| __DATA_CONST.__const _PTKeyRequestSpec
+|| __DATA_CONST.__const _PTKeyTranscodeInputSpec
+|| __DATA_CONST.__const _PTKeyTranscodeOutputSpec
+|| __DATA_CONST.__const _PTListKeysOutputSpec
+|| __DATA_CONST.__const _PTLoadKeyInputSpec
+|| __DATA_CONST.__const _PTSEAttestKeyInputSpec
+|| __DATA_CONST.__const _PTSEAttestKeyOutputSpec
+|| __DATA_CONST.__const _PTSignInputSpec
+|| __DATA_CONST.__const _PTSignOutputSpec
+|| __DATA_CONST.__const _certificateRequestInfoSpec
+|| __DATA_CONST.__const _certificateRequestSpec
+|| __DATA_CONST.__const _kSEKeyCertOIDAccessControls
+|| __DATA_CONST.__const _kSEKeyCertOIDAppletVersion
+|| __DATA_CONST.__const _kSEKeyCertOIDDeviceIdentifiers
+|| __DATA_CONST.__const _kSEKeyCertOIDDeviceOSInformation
+|| __DATA_CONST.__const _kSEKeyCertOIDHardwareProperties
+|| __DATA_CONST.__const _kSEKeyCertOIDKeyUsageProperties
+|| __DATA_CONST.__const _kSEKeyCertOIDNonce
+|| __DATA_CONST.__const _kSEKeyCertOIDSEID
+|| __DATA_CONST.__const _kSEKeyCertOIDUCRTDeviceIdentifiers
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPoint
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointAuthorizeResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointBindingAttestationRequestItems
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointCA
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointCreateAuthorizationIDResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointPrivacyEncryptResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SEEndPointSignatureResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SESAuthorizationInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SESClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPoint
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointAuthorizeResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointBindingAttestationRequestItems
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointCA
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointCreateAuthorizationIDResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointPrivacyEncryptResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SEEndPointSignatureResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SESAuthorizationInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SESClient
+|| __TEXT.__const _DERAccessDescriptionItemSpecs
+|| __TEXT.__const _DERAlgorithmIdItemSpecs
+|| __TEXT.__const _DERAttributeTypeAndValueItemSpecs
+|| __TEXT.__const _DERAuthorityKeyIdentifierItemSpecs
+|| __TEXT.__const _DERBasicConstraintsItemSpecs
+|| __TEXT.__const _DERDistributionPointItemSpecs
+|| __TEXT.__const _DERExtensionItemSpecs
+|| __TEXT.__const _DERGeneralSubtreeItemSpecs
+|| __TEXT.__const _DERNameConstraintsItemSpecs
+|| __TEXT.__const _DERNoticeReferenceItemSpecs
+|| __TEXT.__const _DERNumAccessDescriptionItemSpecs
+|| __TEXT.__const _DERNumAlgorithmIdItemSpecs
+|| __TEXT.__const _DERNumAttributeTypeAndValueItemSpecs
+|| __TEXT.__const _DERNumAuthorityKeyIdentifierItemSpecs
+|| __TEXT.__const _DERNumBasicConstraintsItemSpecs
+|| __TEXT.__const _DERNumDistributionPointItemSpecs
+|| __TEXT.__const _DERNumExtensionItemSpecs
+|| __TEXT.__const _DERNumGeneralSubtreeItemSpecs
+|| __TEXT.__const _DERNumNameConstraintsItemSpecs
+|| __TEXT.__const _DERNumNoticeReferenceItemSpecs
+|| __TEXT.__const _DERNumOtherNameItemSpecs
+|| __TEXT.__const _DERNumPolicyConstraintsItemSpecs
+|| __TEXT.__const _DERNumPolicyInformationItemSpecs
+|| __TEXT.__const _DERNumPolicyMappingItemSpecs
+|| __TEXT.__const _DERNumPolicyQualifierInfoItemSpecs
+|| __TEXT.__const _DERNumPrivateKeyUsagePeriodItemSpecs
+|| __TEXT.__const _DERNumRSAKeyPairItemSpecs
+|| __TEXT.__const _DERNumRSAPrivKeyCRTItemSpecs
+|| __TEXT.__const _DERNumRSAPubKeyAppleItemSpecs
+|| __TEXT.__const _DERNumRSAPubKeyPKCS1ItemSpecs
+|| __TEXT.__const _DERNumRevokedCertItemSpecs
+|| __TEXT.__const _DERNumSignedCertCrlItemSpecs
+|| __TEXT.__const _DERNumSubjPubKeyInfoItemSpecs
+|| __TEXT.__const _DERNumTBSCertItemSpecs
+|| __TEXT.__const _DERNumTBSCrlItemSpecs
+|| __TEXT.__const _DERNumUserNoticeItemSpecs
+|| __TEXT.__const _DERNumValidityItemSpecs
+|| __TEXT.__const _DEROtherNameItemSpecs
+|| __TEXT.__const _DERPolicyConstraintsItemSpecs
+|| __TEXT.__const _DERPolicyInformationItemSpecs
+|| __TEXT.__const _DERPolicyMappingItemSpecs
+|| __TEXT.__const _DERPolicyQualifierInfoItemSpecs
+|| __TEXT.__const _DERPrivateKeyUsagePeriodItemSpecs
+|| __TEXT.__const _DERRSAKeyPairItemSpecs
+|| __TEXT.__const _DERRSAPrivKeyCRTItemSpecs
+|| __TEXT.__const _DERRSAPubKeyAppleItemSpecs
+|| __TEXT.__const _DERRSAPubKeyPKCS1ItemSpecs
+|| __TEXT.__const _DERRevokedCertItemSpecs
+|| __TEXT.__const _DERSignedCertCrlItemSpecs
+|| __TEXT.__const _DERSubjPubKeyInfoItemSpecs
+|| __TEXT.__const _DERTBSCertItemSpecs
+|| __TEXT.__const _DERTBSCrlItemSpecs
+|| __TEXT.__const _DERUserNoticeItemSpecs
+|| __TEXT.__const _DERValidityItemSpecs
+|| __TEXT.__const _SEServiceVersionNumber
+|| __TEXT.__const _SEServiceVersionString
+|| __TEXT.__text _All
+|| __TEXT.__text _Any
+|| __TEXT.__text _DERDecodeItem
+|| __TEXT.__text _DERDecodeItemPartialBuffer
+|| __TEXT.__text _DERDecodeItemPartialBufferGetLength
+|| __TEXT.__text _DERDecodeSeqContentInit
+|| __TEXT.__text _DERDecodeSeqInit
+|| __TEXT.__text _DERDecodeSeqNext
+|| __TEXT.__text _DERDecodeSequenceContentWithBlock
+|| __TEXT.__text _DERDecodeSequenceWithBlock
+|| __TEXT.__text _DEREncodeItem
+|| __TEXT.__text _DEREncodeLength
+|| __TEXT.__text _DEREncodeSequence
+|| __TEXT.__text _DERLengthOfEncodedSequence
+|| __TEXT.__text _DERLengthOfItem
+|| __TEXT.__text _DERLengthOfLength
+|| __TEXT.__text _DERParseBitString
+|| __TEXT.__text _DERParseBoolean
+|| __TEXT.__text _DERParseBooleanWithDefault
+|| __TEXT.__text _DERParseInteger
+|| __TEXT.__text _DERParseInteger64
+|| __TEXT.__text _DERParseSequence
+|| __TEXT.__text _DERParseSequenceContent
+|| __TEXT.__text _DERParseSequenceSpecContent
+|| __TEXT.__text _ECIES_V1
+|| __TEXT.__text _Filter
+|| __TEXT.__text _Find
+|| __TEXT.__text _SEEndPointCreateAuthorizationID
+|| __TEXT.__text _SEEndPointDeleteAuthorizationID
+|| __TEXT.__text _SEEndPointListAuthorizations
+|| __TEXT.__text _SESClientSetMachServiceName
+|| __TEXT.__text _SESEndPointAddEndpointIdWithUuid
+|| __TEXT.__text _SESEndPointAddInvitationWithId
+|| __TEXT.__text _SESEndPointAuthorizeWithAuth
+|| __TEXT.__text _SESEndPointAuthorizeWithAuthEx
+|| __TEXT.__text _SESEndPointCAList
+|| __TEXT.__text _SESEndPointConfigureMailBoxes
+|| __TEXT.__text _SESEndPointCreate
+|| __TEXT.__text _SESEndPointCreateCA
+|| __TEXT.__text _SESEndPointCreateEncryptionKey
+|| __TEXT.__text _SESEndPointCreateNew
+|| __TEXT.__text _SESEndPointDelete
+|| __TEXT.__text _SESEndPointDeleteCA
+|| __TEXT.__text _SESEndPointDeleteEndpointIdWithUuid
+|| __TEXT.__text _SESEndPointDeleteInvitationWithId
+|| __TEXT.__text _SESEndPointDeleteWithSession
+|| __TEXT.__text _SESEndPointDisablePersistentVisibilityOnContacless
+|| __TEXT.__text _SESEndPointDisablePersistentVisibilityOnWired
+|| __TEXT.__text _SESEndPointDisableVolatileVisibilityOnContacless
+|| __TEXT.__text _SESEndPointDisableVolatileVisibilityOnWired
+|| __TEXT.__text _SESEndPointEnablePersistentVisibilityOnContacless
+|| __TEXT.__text _SESEndPointEnablePersistentVisibilityOnWired
+|| __TEXT.__text _SESEndPointEnableVolatileVisibilityOnContacless
+|| __TEXT.__text _SESEndPointEnableVolatileVisibilityOnWired
+|| __TEXT.__text _SESEndPointGetBindingAttestationRequestItems
+|| __TEXT.__text _SESEndPointGetEndpointIdWithUuid
+|| __TEXT.__text _SESEndPointGetInvitationWithId
+|| __TEXT.__text _SESEndPointGetInvitations
+|| __TEXT.__text _SESEndPointGetPrivateData
+|| __TEXT.__text _SESEndPointGetVehicleOEMRootPKCertificate
+|| __TEXT.__text _SESEndPointList
+|| __TEXT.__text _SESEndPointListWithSession
+|| __TEXT.__text _SESEndPointPreWarm
+|| __TEXT.__text _SESEndPointPreWarmWithReply
+|| __TEXT.__text _SESEndPointPrivacyDecryption
+|| __TEXT.__text _SESEndPointPrivacyEncryption
+|| __TEXT.__text _SESEndPointRemoteTerminationRequest
+|| __TEXT.__text _SESEndPointRevoke
+|| __TEXT.__text _SESEndPointSetConfidentialData
+|| __TEXT.__text _SESEndPointSetConfidentialDataWithOffset
+|| __TEXT.__text _SESEndPointSetPrivateData
+|| __TEXT.__text _SESEndPointSetSharingRecords
+|| __TEXT.__text _SESEndPointSignDataWithAuth
+|| __TEXT.__text _SESEndPointTSMDictionary
+|| __TEXT.__text _SESEndPointUpdate
+|| __TEXT.__text _SESKeyCreate
+|| __TEXT.__text _SESKeyCreateCertificate
+|| __TEXT.__text _SESKeyCreatePTAttestation
+|| __TEXT.__text _SESKeyCreateSEBAASCertificate
+|| __TEXT.__text _SESKeyCreateWithExtractedACLs
+|| __TEXT.__text _SESKeyDecryptData
+|| __TEXT.__text _SESKeyDelete
+|| __TEXT.__text _SESKeyEncryptData
+|| __TEXT.__text _SESKeyExchange
+|| __TEXT.__text _SESKeyPublicKey
+|| __TEXT.__text _SESKeyRewrapData
+|| __TEXT.__text _SESKeySignData
+|| __TEXT.__text _SESKeySignPrecomputedDigest
+|| __TEXT.__text _Transform
+|| __TEXT.__text _TransformIf
+|| __TEXT.__text __Log
+|| __TEXT.__text __Log_NSError
+|| __TEXT.__text __Log_OutError
+|| __TEXT.__text __Log_WrapOutError
+|| __TEXT.__text __Z13DERDecodeDataP6NSData
+|| __TEXT.__text __Z13DERDecodeDataP6NSDataP14DERDecodedInfo
+|| __TEXT.__text __Z13DERDecodeDataP6NSDatay
+|| __TEXT.__text __Z20DERParseSequenceSpecP6NSDataPK15DERSequenceSpecPvm
+|| __TEXT.__text __Z20DERParseSequenceSpecPK7DERItemPK15DERSequenceSpecPvm
+|| __TEXT.__text __Z20DERParseSequenceSpecyPK7DERItemPK15DERSequenceSpecPvm
+|| __TEXT.__text __Z9ReadS32BEPK7DERItem
+|| __TEXT.__text __Z9ReadS32BEPKh
+|| __TEXT.__text __Z9ReadU16BEPK7DERItem
+|| __TEXT.__text __Z9ReadU16BEPKh
+|| __TEXT.__text _encodeDERItem
+|| __TEXT.__text _encodeItem
+|| __TEXT.__text _encodeNSData
+|| __TEXT.__text _encodeSequence
+|| __TEXT.__text _encodeSequenceSpec
+|| __TEXT.__text _framework_os_log
+|| __TEXT.__text _getCertificatePublicKey
+|| __TEXT.__text _getCertificateSubjectCN
+|| __TEXT.__text _getPublicKeyBytes
+|| __TEXT.__text _getSecKeyPublicBytes
+|| __TEXT.__text _libDERErrorString
+|| __TEXT.__text _seserviced_os_log
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Security: _SecAccessControlCopyData
+__ Security: _SecAccessControlCreateWithFlags
+__ Security: _SecAccessControlSetConstraints
+__ Security: _SecCertificateCopyCommonName
+__ Security: _SecCertificateCopyExtensionValue
+__ Security: _SecCertificateCopyIssuerSummary
+__ Security: _SecCertificateCopyKey
+__ Security: _SecCertificateCreateWithData
+__ Security: _SecItemCopyMatching
+__ Security: _SecItemDelete
+__ Security: _SecKeyCopyKeyExchangeResult
+__ Security: _SecKeyCopyPublicBytes
+__ Security: _SecKeyCreateRandomKey
+__ Security: _SecKeyCreateWithData
+__ Security: _SecKeyGetTypeID
+__ Security: _kSecAttrAccessControl
+__ Security: _kSecAttrAccessibleAfterFirstUnlock
+__ Security: _kSecAttrApplicationTag
+__ Security: _kSecAttrIsPermanent
+__ Security: _kSecAttrKeyClass
+__ Security: _kSecAttrKeyClassPublic
+__ Security: _kSecAttrKeySizeInBits
+__ Security: _kSecAttrKeyType
+__ Security: _kSecAttrKeyTypeECSECPrimeRandom
+__ Security: _kSecClass
+__ Security: _kSecClassKey
+__ Security: _kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA256
+__ Security: _kSecKeyKeyExchangeParameterRequestedSize
+__ Security: _kSecKeyKeyExchangeParameterSharedInfo
+__ Security: _kSecPrivateKeyAttrs
+__ Security: _kSecReturnRef
+__ Security: _kSecUseDataProtectionKeychain
+__ libSystem.B.dylib: _CCCryptorGCMOneshotDecrypt
+__ libSystem.B.dylib: _CCCryptorGCMOneshotEncrypt
+__ libSystem.B.dylib: _CC_SHA1
+__ libSystem.B.dylib: _CC_SHA256
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_event_key_name
+__ libSystem.B.dylib: _arc4random_buf
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _strtoul
+__ libSystem.B.dylib: _xpc_copy_event
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_count
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_set_date
+__ libSystem.B.dylib: _xpc_set_event
+__ libSystem.B.dylib: _xpc_set_event_stream_handler
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+SEProxy : NSObject /usr/lib/libSystem.B.dylib <SEProxyInterface>
+ @property  NFSecureElementManagerSession *session
+ @property  NSString *seid
+
+  // instance methods
+  -[SEProxy seid]
+  -[SEProxy setSession:]
+  -[SEProxy setSeid:]
+  -[SEProxy session]
+  -[SEProxy .cxx_destruct]
+  -[SEProxy transceive:callback:]
+  -[SEProxy initWithSession:seid:]
+
+
+SEEndPointConfiguration : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  BOOL enabledOnWire
+ @property  BOOL enabledOnContactless
+ @property  BOOL standardFlowAllowedOnWire
+ @property  BOOL standardFlowAllowedOnContactless
+ @property  BOOL fastFlowAllowedOnWire
+ @property  BOOL fastFlowAllowedOnContactless
+ @property  BOOL exchangeAllowedOnWire
+ @property  BOOL exchangeAllowedInFastFlow
+ @property  BOOL authorizeEndPointAllowed
+ @property  BOOL authorizeEndPointWithAuthorizeAllowed
+ @property  BOOL signAllowed
+ @property  BOOL exportEraseConfidentialMailBox
+ @property  BOOL confidentialDataAllowed
+ @property  unsigned short lengthConfidentialMailBox
+ @property  unsigned short offsetConfidentialMailBox
+ @property  unsigned short lengthPrivateMailBox
+ @property  unsigned short offsetPrivateMailBox
+
+  // class methods
+  +[SEEndPointConfiguration supportsSecureCoding]
+  +[SEEndPointConfiguration configurationWithOpt1:opt2:]
+
+  // instance methods
+  -[SEEndPointConfiguration init]
+  -[SEEndPointConfiguration opt1]
+  -[SEEndPointConfiguration opt2]
+  -[SEEndPointConfiguration encodeWithCoder:]
+  -[SEEndPointConfiguration initWithCoder:]
+  -[SEEndPointConfiguration setEnabledOnWire:]
+  -[SEEndPointConfiguration setEnabledOnContactless:]
+  -[SEEndPointConfiguration setStandardFlowAllowedOnWire:]
+  -[SEEndPointConfiguration setStandardFlowAllowedOnContactless:]
+  -[SEEndPointConfiguration setFastFlowAllowedOnWire:]
+  -[SEEndPointConfiguration setFastFlowAllowedOnContactless:]
+  -[SEEndPointConfiguration setExchangeAllowedOnWire:]
+  -[SEEndPointConfiguration setExchangeAllowedInFastFlow:]
+  -[SEEndPointConfiguration setAuthorizeEndPointAllowed:]
+  -[SEEndPointConfiguration setAuthorizeEndPointWithAuthorizeAllowed:]
+  -[SEEndPointConfiguration setSignAllowed:]
+  -[SEEndPointConfiguration setExportEraseConfidentialMailBox:]
+  -[SEEndPointConfiguration setConfidentialDataAllowed:]
+  -[SEEndPointConfiguration setLengthConfidentialMailBox:]
+  -[SEEndPointConfiguration setOffsetConfidentialMailBox:]
+  -[SEEndPointConfiguration setLengthPrivateMailBox:]
+  -[SEEndPointConfiguration setOffsetPrivateMailBox:]
+  -[SEEndPointConfiguration enabledOnWire]
+  -[SEEndPointConfiguration enabledOnContactless]
+  -[SEEndPointConfiguration standardFlowAllowedOnWire]
+  -[SEEndPointConfiguration standardFlowAllowedOnContactless]
+  -[SEEndPointConfiguration fastFlowAllowedOnWire]
+  -[SEEndPointConfiguration fastFlowAllowedOnContactless]
+  -[SEEndPointConfiguration exchangeAllowedOnWire]
+  -[SEEndPointConfiguration exchangeAllowedInFastFlow]
+  -[SEEndPointConfiguration authorizeEndPointAllowed]
+  -[SEEndPointConfiguration authorizeEndPointWithAuthorizeAllowed]
+  -[SEEndPointConfiguration signAllowed]
+  -[SEEndPointConfiguration exportEraseConfidentialMailBox]
+  -[SEEndPointConfiguration confidentialDataAllowed]
+  -[SEEndPointConfiguration lengthConfidentialMailBox]
+  -[SEEndPointConfiguration offsetConfidentialMailBox]
+  -[SEEndPointConfiguration lengthPrivateMailBox]
+  -[SEEndPointConfiguration offsetPrivateMailBox]
+
+
+SEEndPoint : NSObject /usr/lib/libSystem.B.dylib <SEEndPoint, NSSecureCoding>
+ @property  NSString *issuerIdentifier
+ @property  NSString *privacyKeyIdentifier
+ @property  NSData *keyIdentifier
+ @property  NSData *revocationAttestation
+ @property  SEEndPointPrivacyEncryptResponse *carOEMProprietaryData
+ @property  NSArray *sharingRecords
+ @property  NSString *identifier
+ @property  NSString *subjectIdentifier
+ @property  NSData *publicKey
+ @property  NSData *publicKeyIdentifier
+ @property  NSData *privacyPublicKey
+ @property  NSData *privacyPublicKeyIdentifier
+ @property  SEEndPointConfiguration *configuration
+ @property  NSData *readerIdentifier
+ @property  NSData *readerPublicKey
+ @property  NSData *readerLongTermPublicKeyCertificate
+ @property  NSArray *authorizedKeys
+ @property  NSNumber *confidentialMailBoxSize
+ @property  NSNumber *privateMailBoxSize
+ @property  NSNumber *counter
+ @property  NSArray *certificates
+ @property  NSString *friendlyName
+ @property  NSString *readerInfo
+ @property  NSString *invitationIdentifier
+ @property  NSData *mailboxMapping
+ @property  NSData *trackingRequest
+ @property  NSData *trackingReceipt
+ @property  NSData *deviceConfiguration
+ @property  NSString *environment
+ @property  NSNumber *sharingTokenAvailabilityBitmap
+ @property  NSNumber *bluetoothPSM
+ @property  NSString *bluetoothUUID
+ @property  NSData *sharingAttestationData
+ @property  NSData *ownerEphemeralKey
+ @property  NSData *sharingEncryptedData
+
+  // class methods
+  +[SEEndPoint supportsSecureCoding]
+  +[SEEndPoint revokedEndpointWithPublicKeyIdentifier:revocationAttestation:error:]
+  +[SEEndPoint endPointWithIdentifier:certificateData:error:]
+  +[SEEndPoint decodeWithData:error:]
+
+  // instance methods
+  -[SEEndPoint encodeWithError:]
+  -[SEEndPoint publicKey]
+  -[SEEndPoint setEnvironment:]
+  -[SEEndPoint setFriendlyName:]
+  -[SEEndPoint keyIdentifier]
+  -[SEEndPoint .cxx_destruct]
+  -[SEEndPoint certificates]
+  -[SEEndPoint friendlyName]
+  -[SEEndPoint encodeWithCoder:]
+  -[SEEndPoint identifier]
+  -[SEEndPoint issuerIdentifier]
+  -[SEEndPoint configuration]
+  -[SEEndPoint subjectIdentifier]
+  -[SEEndPoint deviceConfiguration]
+  -[SEEndPoint environment]
+  -[SEEndPoint trackingRequest]
+  -[SEEndPoint setBluetoothUUID:]
+  -[SEEndPoint counter]
+  -[SEEndPoint dumpState]
+  -[SEEndPoint revocationAttestation]
+  -[SEEndPoint trackingReceipt]
+  -[SEEndPoint setInvitationIdentifier:]
+  -[SEEndPoint setTrackingRequest:]
+  -[SEEndPoint bluetoothUUID]
+  -[SEEndPoint initWithCoder:]
+  -[SEEndPoint invitationIdentifier]
+  -[SEEndPoint readerIdentifier]
+  -[SEEndPoint publicKeyIdentifier]
+  -[SEEndPoint readerInfo]
+  -[SEEndPoint generateEndPointPrivacyLongTermPrivacyKey]
+  -[SEEndPoint privateMailBoxSize]
+  -[SEEndPoint confidentialMailBoxSize]
+  -[SEEndPoint privacyKeyIdentifier]
+  -[SEEndPoint privacyPublicKey]
+  -[SEEndPoint privacyPublicKeyIdentifier]
+  -[SEEndPoint readerPublicKey]
+  -[SEEndPoint authorizedKeys]
+  -[SEEndPoint mailboxMapping]
+  -[SEEndPoint sharingAttestationData]
+  -[SEEndPoint ownerEphemeralKey]
+  -[SEEndPoint sharingEncryptedData]
+  -[SEEndPoint carOEMProprietaryData]
+  -[SEEndPoint sharingTokenAvailabilityBitmap]
+  -[SEEndPoint bluetoothPSM]
+  -[SEEndPoint readerLongTermPublicKeyCertificate]
+  -[SEEndPoint sharingRecords]
+  -[SEEndPoint validateAuthorizedEndpointConfig:]
+  -[SEEndPoint prependCertificateChain:]
+  -[SEEndPoint configurePrivateData:confidentialData:contaclessPersistentVisibility:wiredPersistentVisibility:]
+  -[SEEndPoint configurePrivateDataOffset:privateDataLength:confidentialDataOffset:confidentialDataLength:contaclessVisibility:wiredVisibility:]
+  -[SEEndPoint decryptPrivacyData:serverPrivacyPublicKeyData:plainText:]
+  -[SEEndPoint encryptPrivacyData:serverPrivacyPublicKeyData:ephemeralPublicKeyData:cipherText:]
+  -[SEEndPoint deleteEndPointLongTermPrivacyKey]
+  -[SEEndPoint setReaderLongTermPublicKeyCertificate:]
+  -[SEEndPoint setReaderInfo:]
+  -[SEEndPoint setMailboxMapping:]
+  -[SEEndPoint setTrackingReceipt:]
+  -[SEEndPoint setDeviceConfiguration:]
+  -[SEEndPoint setSharingTokenAvailabilityBitmap:]
+  -[SEEndPoint setBluetoothPSM:]
+  -[SEEndPoint setSharingRecords:]
+  -[SEEndPoint setRevocationAttestation:]
+  -[SEEndPoint setCarOEMProprietaryData:]
+  -[SEEndPoint setSharingAttestationData:]
+  -[SEEndPoint setOwnerEphemeralKey:]
+  -[SEEndPoint setSharingEncryptedData:]
+
+
+SEEndPointAuthorizeResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, SESEndPointAuthorizeAttestation>
+ @property  NSData *endPointAttestationData
+ @property  NSData *encryptedData
+ @property  NSData *encryptionPublicKeyData
+
+  // class methods
+  +[SEEndPointAuthorizeResponse supportsSecureCoding]
+  +[SEEndPointAuthorizeResponse responseWithEndPointAttestationData:encryptionPublicKeyData:encryptedData:]
+
+  // instance methods
+  -[SEEndPointAuthorizeResponse .cxx_destruct]
+  -[SEEndPointAuthorizeResponse encryptionPublicKeyData]
+  -[SEEndPointAuthorizeResponse encodeWithCoder:]
+  -[SEEndPointAuthorizeResponse setEncryptedData:]
+  -[SEEndPointAuthorizeResponse setEncryptionPublicKeyData:]
+  -[SEEndPointAuthorizeResponse encryptedData]
+  -[SEEndPointAuthorizeResponse initWithCoder:]
+  -[SEEndPointAuthorizeResponse setEndPointAttestationData:]
+  -[SEEndPointAuthorizeResponse endPointAttestationData]
+
+
+SEEndPointCreateAuthorizationIDResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *authorizationID
+ @property  NSNumber *authorizationInterval
+ @property  NSNumber *authorizationCount
+
+  // class methods
+  +[SEEndPointCreateAuthorizationIDResponse supportsSecureCoding]
+  +[SEEndPointCreateAuthorizationIDResponse withAuthorizationID:authorizationInterval:authorizationCount:]
+
+  // instance methods
+  -[SEEndPointCreateAuthorizationIDResponse .cxx_destruct]
+  -[SEEndPointCreateAuthorizationIDResponse encodeWithCoder:]
+  -[SEEndPointCreateAuthorizationIDResponse authorizationID]
+  -[SEEndPointCreateAuthorizationIDResponse initWithCoder:]
+  -[SEEndPointCreateAuthorizationIDResponse setAuthorizationID:]
+  -[SEEndPointCreateAuthorizationIDResponse setAuthorizationInterval:]
+  -[SEEndPointCreateAuthorizationIDResponse setAuthorizationCount:]
+  -[SEEndPointCreateAuthorizationIDResponse authorizationInterval]
+  -[SEEndPointCreateAuthorizationIDResponse authorizationCount]
+
+
+SEEndPointPrivacyEncryptResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, SEEndPointPrivacyEncryptResponse>
+ @property  NSString *version
+ @property  NSData *cipherText
+ @property  NSData *ephemeralPublicKeydata
+ @property  NSData *receiverPublicKeyHash
+
+  // class methods
+  +[SEEndPointPrivacyEncryptResponse supportsSecureCoding]
+  +[SEEndPointPrivacyEncryptResponse responseWithCipherText:epehemeralPublicKeydata:receiverPublicKeyHash:]
+
+  // instance methods
+  -[SEEndPointPrivacyEncryptResponse .cxx_destruct]
+  -[SEEndPointPrivacyEncryptResponse setVersion:]
+  -[SEEndPointPrivacyEncryptResponse encodeWithCoder:]
+  -[SEEndPointPrivacyEncryptResponse version]
+  -[SEEndPointPrivacyEncryptResponse initWithCoder:]
+  -[SEEndPointPrivacyEncryptResponse cipherText]
+  -[SEEndPointPrivacyEncryptResponse setCipherText:]
+  -[SEEndPointPrivacyEncryptResponse ephemeralPublicKeydata]
+  -[SEEndPointPrivacyEncryptResponse receiverPublicKeyHash]
+  -[SEEndPointPrivacyEncryptResponse setEphemeralPublicKeydata:]
+  -[SEEndPointPrivacyEncryptResponse setReceiverPublicKeyHash:]
+
+
+SEEndPointSignatureResponse : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, SESEndPointSignature>
+ @property  NSData *signedData
+ @property  NSData *signature
+
+  // class methods
+  +[SEEndPointSignatureResponse responseWithSignedData:signature:]
+  +[SEEndPointSignatureResponse supportsSecureCoding]
+
+  // instance methods
+  -[SEEndPointSignatureResponse signature]
+  -[SEEndPointSignatureResponse .cxx_destruct]
+  -[SEEndPointSignatureResponse encodeWithCoder:]
+  -[SEEndPointSignatureResponse signedData]
+  -[SEEndPointSignatureResponse setSignature:]
+  -[SEEndPointSignatureResponse setSignedData:]
+  -[SEEndPointSignatureResponse initWithCoder:]
+
+
+SEEndPointBindingAttestationRequestItems : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *subCAAttestation
+ @property  NSData *casdECDSACertificate
+ @property  NSData *casdRSACertificate
+
+  // class methods
+  +[SEEndPointBindingAttestationRequestItems supportsSecureCoding]
+  +[SEEndPointBindingAttestationRequestItems withSubCAAttestation:casdECDSACertificate:casdRSACertificate:]
+
+  // instance methods
+  -[SEEndPointBindingAttestationRequestItems .cxx_destruct]
+  -[SEEndPointBindingAttestationRequestItems encodeWithCoder:]
+  -[SEEndPointBindingAttestationRequestItems initWithCoder:]
+  -[SEEndPointBindingAttestationRequestItems setSubCAAttestation:]
+  -[SEEndPointBindingAttestationRequestItems setCasdECDSACertificate:]
+  -[SEEndPointBindingAttestationRequestItems setCasdRSACertificate:]
+  -[SEEndPointBindingAttestationRequestItems subCAAttestation]
+  -[SEEndPointBindingAttestationRequestItems casdECDSACertificate]
+  -[SEEndPointBindingAttestationRequestItems casdRSACertificate]
+
+
+SESAuthorizationInfo : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  unsigned char state
+ @property  NSNumber *remainingCount
+ @property  NSNumber *remainingTime
+ @property  NSData *publicKeyIdentifier
+ @property  NSData *authorizationID
+ @property  NSData *anonymizedDSID
+
+  // class methods
+  +[SESAuthorizationInfo supportsSecureCoding]
+  +[SESAuthorizationInfo withState:remaningCount:remainingTime:publicKeyIdentifier:authorizationID:anonymizedDSID:]
+
+  // instance methods
+  -[SESAuthorizationInfo setRemainingTime:]
+  -[SESAuthorizationInfo setState:]
+  -[SESAuthorizationInfo .cxx_destruct]
+  -[SESAuthorizationInfo encodeWithCoder:]
+  -[SESAuthorizationInfo authorizationID]
+  -[SESAuthorizationInfo remainingTime]
+  -[SESAuthorizationInfo state]
+  -[SESAuthorizationInfo initWithCoder:]
+  -[SESAuthorizationInfo publicKeyIdentifier]
+  -[SESAuthorizationInfo setAuthorizationID:]
+  -[SESAuthorizationInfo setRemainingCount:]
+  -[SESAuthorizationInfo setPublicKeyIdentifier:]
+  -[SESAuthorizationInfo setAnonymizedDSID:]
+  -[SESAuthorizationInfo remainingCount]
+  -[SESAuthorizationInfo anonymizedDSID]
+
+
+SESClient : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[SESClient .cxx_destruct]
+
+
+SEEndPointCA : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *identifier
+ @property  NSString *subjectIdentifier
+ @property  NSArray *certificates
+ @property  NSData *secureElementAttestation
+ @property  ^{__SecCertificate=} certificate
+
+  // class methods
+  +[SEEndPointCA supportsSecureCoding]
+  +[SEEndPointCA endPointCAWithIdentifier:subjectIdentifer:secureElementAttestation:error:]
+  +[SEEndPointCA decodeWithData:error:]
+
+  // instance methods
+  -[SEEndPointCA encodeWithError:]
+  -[SEEndPointCA .cxx_destruct]
+  -[SEEndPointCA certificates]
+  -[SEEndPointCA setIdentifier:]
+  -[SEEndPointCA encodeWithCoder:]
+  -[SEEndPointCA identifier]
+  -[SEEndPointCA setCertificates:]
+  -[SEEndPointCA certificate]
+  -[SEEndPointCA subjectIdentifier]
+  -[SEEndPointCA dumpState]
+  -[SEEndPointCA initWithCoder:]
+  -[SEEndPointCA setSubjectIdentifier:]
+  -[SEEndPointCA setSecureElementAttestation:]
+  -[SEEndPointCA secureElementAttestation]
+
+
+PTClassicKey : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSData *keyData
+
+  // class methods
+  +[PTClassicKey withData:error:]
+
+  // instance methods
+  -[PTClassicKey keyData]
+  -[PTClassicKey publicKey]
+  -[PTClassicKey .cxx_destruct]
+  -[PTClassicKey keyNumber]
+  -[PTClassicKey keyBlob]
+  -[PTClassicKey assetACL]
+  -[PTClassicKey assetACLAttestation]
+  -[PTClassicKey keyBlobItem]
+  -[PTClassicKey encryptedWrappedKeyBlob]
+  -[PTClassicKey assetACLItem]
+  -[PTClassicKey assetACLAttestationItem]
+  -[PTClassicKey encryptedWrappedKeyBlobItem]
+
+
+SESTLV : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[SESTLV .cxx_destruct]
+
+
+CALogger : NSObject /usr/lib/libSystem.B.dylib
+
+SESAlarm : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SESAlarm deregisterAlarm:]
+  +[SESAlarm kickoff]
+  +[SESAlarm sharedObject]
+  +[SESAlarm setAlarm:secondsFromNow:]
+  +[SESAlarm clearAlarm:]
+  +[SESAlarm isAlarmSet:]
+  +[SESAlarm registerAlarm:handler:]
+
+  // instance methods
+  -[SESAlarm init]
+  -[SESAlarm .cxx_destruct]
+  -[SESAlarm _handleAlarmFired:]
+
+
+(Digest)
+(Functional)
+(HexString)
+NSMutableData(Append)
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

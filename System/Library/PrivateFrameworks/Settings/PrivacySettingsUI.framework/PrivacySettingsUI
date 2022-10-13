@@ -1,0 +1,964 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PUIAllowLocationRestrictionsController
+|| __DATA.__objc_data _OBJC_CLASS_$_PUIAllowTCCRestrictionsController
+|| __DATA.__objc_data _OBJC_CLASS_$_PUILocationIndicatorExplanationView
+|| __DATA.__objc_data _OBJC_CLASS_$_PUILocationIndicatorSystemExplanationView
+|| __DATA.__objc_data _OBJC_CLASS_$_PUILocationServicesSubDirectoryCell
+|| __DATA.__objc_data _OBJC_CLASS_$_PUILocationSystemServicesListController
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUIAllowLocationRestrictionsController
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUIAllowTCCRestrictionsController
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUILocationIndicatorExplanationView
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUILocationIndicatorSystemExplanationView
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUILocationServicesSubDirectoryCell
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUILocationSystemServicesListController
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUIAllowLocationRestrictionsController._allowedGroup
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUIAllowTCCRestrictionsController._allowedGroup
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._activeIcon
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._activeLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._explanationLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._geofenceIcon
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._geofenceLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._recentIcon
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationIndicatorExplanationView._recentLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._accountStore
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._coalesceAppKeys
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._coalescedHomeKitSystemServices
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._coalescedLocationBasedAlertsSystemServices
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._coalescedRoutingAndTrafficSystemServices
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._coalescedWirelessSystemServices
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._deferredRefreshDueToConfirm
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._ignoredLocationEntities
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._locationEntitiesDetails
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._locationNotificationsEnabled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._primaryAccount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PUILocationServicesListController._twentyFourHoursAgo
+|| __DATA_CONST.__const _PUIBundleIDKey
+|| __DATA_CONST.__const _PUIBundlePathKey
+|| __DATA_CONST.__const _PUIExplanationIdSuffixKey
+|| __DATA_CONST.__const _PUIHomeKitId
+|| __DATA_CONST.__const _PUILocationBasedAlertsId
+|| __DATA_CONST.__const _PUIRoutingAndTrafficId
+|| __DATA_CONST.__const _PUITCCAccessControllerAppTypeKey
+|| __DATA_CONST.__const _PUITCCAccessControllerBundleIDKey
+|| __DATA_CONST.__const _PUITCCAccessControllerCellClassKey
+|| __DATA_CONST.__const _PUITCCAccessControllerCellDelegateKey
+|| __DATA_CONST.__const _PUIWirelessId
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUILocationServicesCell
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUILocationServicesListController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUINetworkController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUIPhotosPrivacyController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUIPrivacyController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PUITCCAccessController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUILocationServicesCell
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUILocationServicesListController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUINetworkController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUIPhotosPrivacyController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUIPrivacyController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PUITCCAccessController
+|| __TEXT.__text _PUICompareLocationSpecifiers
+|| __TEXT.__text _PUIDisplayNameForApp
+|| __TEXT.__text _PUIDisplayNameForWatchApp
+|| __TEXT.__text _PUIGetActivePairedDevice
+|| __TEXT.__text _PUIIsAppClip
+|| __TEXT.__text _PUIResetIDFAIfNeeded
+|| __TEXT.__text _PUIWatchBundleIDForBundleID
+|| __TEXT.__text _PUI_BundleForPrivacySettingsFramework
+|| __TEXT.__text _PUI_LocalizedStringForAdSupport
+|| __TEXT.__text _PUI_LocalizedStringForAlmanac
+|| __TEXT.__text _PUI_LocalizedStringForDimSum
+|| __TEXT.__text _PUI_LocalizedStringForLocationServices
+|| __TEXT.__text _PUI_LocalizedStringForLocationServicesPrivacy
+|| __TEXT.__text _PUI_LocalizedStringForPrivacy
+|| __TEXT.__text _PUI_LocalizedStringForRestrictions
+|| __TEXT.__text __PUILoggingFacility
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ AppConduit: _OBJC_CLASS_$_ACXDeviceConnection
+__ CoreFoundation: _CFBundleCopyBundleURL
+__ CoreFoundation: _CFBundleCreate
+__ CoreFoundation: _CFBundleGetBundleWithIdentifier
+__ CoreFoundation: _CFBundleGetIdentifier
+__ CoreFoundation: _CFBundleGetInfoDictionary
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterGetDistributedCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: __kCFBundleDisplayNameKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFBundleNameKey
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetMaxX
+__ CoreGraphics: _CGRectGetMinX
+__ CoreGraphics: _CGRectGetWidth
+__ CoreGraphics: _CGRectZero
+__ CoreMotion: _OBJC_CLASS_$_CMMotionActivityManager
+__ CoreRoutine: _OBJC_CLASS_$_RTRoutineManager
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CoreServices: _OBJC_CLASS_$_LSEnumerator
+__ FMF: _OBJC_CLASS_$_FMFSession
+__ FMFUI: _OBJC_CLASS_$_FMFLocationSharingViewController
+__ Foundation: _NSClassFromString
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRange
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUserActivity
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ GeoServices: _GEOAddressCorrectionAuthorizationStatusKey
+__ GeoServices: _GEOAddressCorrectionEnabledInternalInstallKey
+__ GeoServices: _GEOAddressCorrectionEnabledKey
+__ GeoServices: _GEOGetDefaultBOOL
+__ GeoServices: _GEOGetDefaultInteger
+__ GeoServices: _GEOSetDefault
+__ GeoServices: _OBJC_CLASS_$_GEOPlatform
+__ ImageCaptureCore: _OBJC_CLASS_$_ICAccessManager
+__ LimitAdTracking: _OBJC_CLASS_$_ADTrackingTransparency
+__ LocalAuthentication: _LAErrorDomain
+__ LocalAuthentication: _OBJC_CLASS_$_LAContext
+__ ManagedConfiguration: _MCFeatureFindMyFriendsModificationAllowed
+__ ManagedConfiguration: _MCFeatureLimitAdTrackingForced
+__ ManagedConfiguration: _MCSetParametersForSettingsByTypeParamSenderPID
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MobileIcons: _LICreateIconForBundle
+__ NanoRegistry: _NRDevicePropertyIsArchived
+__ NanoRegistry: _OBJC_CLASS_$_NRPairedDeviceRegistry
+__ NanoResourceGrabber: _OBJC_CLASS_$_NanoResourceGrabber
+__ NetworkExtension: _OBJC_CLASS_$_NEConfigurationManager
+__ NetworkExtension: _OBJC_CLASS_$_NEPathRule
+__ OnBoardingKit: _OBJC_CLASS_$_OBPrivacyPresenter
+__ Preferences: _LocalizableGTStringKeyForKey
+__ Preferences: _OBJC_CLASS_$_PKIconImageCache
+__ Preferences: _OBJC_CLASS_$_PSFooterHyperlinkView
+__ Preferences: _OBJC_CLASS_$_PSListController
+__ Preferences: _OBJC_CLASS_$_PSListItemsController
+__ Preferences: _OBJC_CLASS_$_PSSpecifier
+__ Preferences: _OBJC_CLASS_$_PSSwitchTableCell
+__ Preferences: _OBJC_CLASS_$_PSSystemConfigurationDynamicStoreWifiWatcher
+__ Preferences: _OBJC_CLASS_$_PSTableCell
+__ Preferences: _OBJC_CLASS_$_PSTrackingWelcomeController
+__ Preferences: _OBJC_IVAR_$_PSControlTableCell._control
+__ Preferences: _OBJC_IVAR_$_PSListController._specifiers
+__ Preferences: _OBJC_IVAR_$_PSSpecifier.cellType
+__ Preferences: _OBJC_IVAR_$_PSTableCell._lazyIconAppID
+__ Preferences: _OBJC_IVAR_$_PSViewController._parentController
+__ Preferences: _OBJC_IVAR_$_PSViewController._specifier
+__ Preferences: _OBJC_METACLASS_$_PSListController
+__ Preferences: _OBJC_METACLASS_$_PSListItemsController
+__ Preferences: _OBJC_METACLASS_$_PSSwitchTableCell
+__ Preferences: _OBJC_METACLASS_$_PSTableCell
+__ Preferences: _PKGeneralIconKey
+__ Preferences: _PKMotionIconKey
+__ Preferences: _PKSensorKitIconKey
+__ Preferences: _PSAllowMultilineTitleKey
+__ Preferences: _PSBlankIconImage
+__ Preferences: _PSBundleIdentifierMaps
+__ Preferences: _PSBundleIsControllerKey
+__ Preferences: _PSBundlePathForPreferenceBundle
+__ Preferences: _PSBundlePathKey
+__ Preferences: _PSCellClassKey
+__ Preferences: _PSControlKey
+__ Preferences: _PSDefaultValueKey
+__ Preferences: _PSEnabledKey
+__ Preferences: _PSFooterCellClassGroupKey
+__ Preferences: _PSFooterHyperlinkViewActionKey
+__ Preferences: _PSFooterHyperlinkViewLinkRangeKey
+__ Preferences: _PSFooterHyperlinkViewTargetKey
+__ Preferences: _PSFooterHyperlinkViewTitleKey
+__ Preferences: _PSFooterTextGroupKey
+__ Preferences: _PSIDKey
+__ Preferences: _PSIconImageKey
+__ Preferences: _PSIsInEDUMode
+__ Preferences: _PSIsInternalInstall
+__ Preferences: _PSIsLocationRestricted
+__ Preferences: _PSIsRadioGroupKey
+__ Preferences: _PSIsiPad
+__ Preferences: _PSLazilyLoadedBundleKey
+__ Preferences: _PSLazyIconAppID
+__ Preferences: _PSLazyIconLoading
+__ Preferences: _PSRadioGroupCheckedSpecifierKey
+__ Preferences: _PSRoundToPixel
+__ Preferences: _PSSiriImage
+__ Preferences: _PSStaticHeaderTextKey
+__ Preferences: _PSTableCellKey
+__ Preferences: _PSTitleKey
+__ Preferences: _PSUsedByManagedAccount
+__ Preferences: _PSValueKey
+__ Preferences: _PreferencesTableViewFooterColor
+__ Preferences: _PreferencesTableViewFooterFont
+__ Preferences: _ScreenScale
+__ Preferences: _kTCCBluetoothSharingID
+__ Preferences: _kTCCCalendarsID
+__ Preferences: _kTCCCameraID
+__ Preferences: _kTCCContactsID
+__ Preferences: _kTCCExposureNotification
+__ Preferences: _kTCCFaceID
+__ Preferences: _kTCCMediaLibraryID
+__ Preferences: _kTCCMicrophoneID
+__ Preferences: _kTCCMotionID
+__ Preferences: _kTCCPhotosID
+__ Preferences: _kTCCRemindersID
+__ Preferences: _kTCCSpeechRecognitionID
+__ Preferences: _kTCCWillowID
+__ SettingsFoundation: _SFIsAppWithBundleIDInstalled
+__ SettingsFoundation: _SFLocalizableWAPIStringKeyForKey
+__ SoftLinking: __sl_dlopen_audited
+__ TCC: _TCCAccessCopyBundleIdentifiersDisabledForService
+__ TCC: _TCCAccessCopyBundleIdentifiersForService
+__ TCC: _TCCAccessCopyInformation
+__ TCC: _TCCAccessGetOverride
+__ TCC: _TCCAccessSetForBundleId
+__ TCC: _TCCAccessSetOverride
+__ TCC: _kTCCInfoBundle
+__ TCC: _kTCCInfoGranted
+__ TCC: _kTCCServiceAddressBook
+__ TCC: _kTCCServiceBluetoothAlways
+__ TCC: _kTCCServiceCalendar
+__ TCC: _kTCCServiceCamera
+__ TCC: _kTCCServiceExposureNotification
+__ TCC: _kTCCServiceFaceID
+__ TCC: _kTCCServiceMediaLibrary
+__ TCC: _kTCCServiceMicrophone
+__ TCC: _kTCCServiceMotion
+__ TCC: _kTCCServicePhotos
+__ TCC: _kTCCServicePhotosAdd
+__ TCC: _kTCCServiceReminders
+__ TCC: _kTCCServiceSpeechRecognition
+__ TCC: _kTCCServiceUserTracking
+__ TCC: _kTCCServiceWillow
+__ TCC: _tcc_authorization_record_get_authorization_right
+__ TCC: _tcc_authorization_record_get_service
+__ TCC: _tcc_authorization_record_get_subject_identity
+__ TCC: _tcc_identity_create
+__ TCC: _tcc_identity_get_identifier
+__ TCC: _tcc_server_message_get_authorization_records_by_identity
+__ TCC: _tcc_server_message_get_authorization_records_by_service
+__ TCC: _tcc_server_message_set_authorization_value
+__ TCC: _tcc_server_singleton_default
+__ TCC: _tcc_service_get_name
+__ TCC: _tcc_service_singleton_for_CF_name
+__ TransparencyDetailsView: _OBJC_CLASS_$_UserTransparencyViewController
+__ UIKit: _NSFontAttributeName
+__ UIKit: _OBJC_CLASS_$_UIAlertAction
+__ UIKit: _OBJC_CLASS_$_UIAlertController
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIImageView
+__ UIKit: _OBJC_CLASS_$_UILabel
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UIStoryboard
+__ UIKit: _OBJC_CLASS_$_UITableViewController
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIWebClip
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _UIApplicationDidBecomeActiveNotification
+__ UIKit: _UIContentSizeCategoryIsAccessibilityCategory
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+PUIFileAccessController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  BOOL isAccess
+ @property  FPAccessControlManager *accessManager
+
+  // instance methods
+  -[PUIFileAccessController specifiers]
+  -[PUIFileAccessController init]
+  -[PUIFileAccessController .cxx_destruct]
+  -[PUIFileAccessController setAccess:forSpecifier:]
+  -[PUIFileAccessController accesssForSpecifier:]
+  -[PUIFileAccessController accessManager]
+  -[PUIFileAccessController applicationProxiesDictionary]
+  -[PUIFileAccessController bundleIdentifiersAccessingFiles]
+  -[PUIFileAccessController setCameraAccess:forSpecifier:]
+  -[PUIFileAccessController cameraAccessForSpecifier:]
+  -[PUIFileAccessController isAccess]
+  -[PUIFileAccessController setIsAccess:]
+  -[PUIFileAccessController setAccessManager:]
+
+
+PUIPrivacyController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC <PSListControllerTestableSpecifiers>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PUIPrivacyController formatSearchEntries:parent:]
+  +[PUIPrivacyController booleanCapabilitiesToTest]
+
+  // instance methods
+  -[PUIPrivacyController specifiers]
+  -[PUIPrivacyController _accountStore]
+  -[PUIPrivacyController .cxx_destruct]
+  -[PUIPrivacyController shouldReloadSpecifiersOnResume]
+  -[PUIPrivacyController locationServicesEnabled:]
+  -[PUIPrivacyController updateLocationServicesVisibility]
+  -[PUIPrivacyController setCapabilityEnabled:specifier:]
+  -[PUIPrivacyController capabilityEnabled:]
+
+
+PUITCCAccessController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  NSString *clipsFooter
+ @property  BOOL supportsClips
+ @property  unsigned long appType
+ @property  NSString *appGroupHeader
+ @property  NSArray *appSpecifiers
+ @property  NSString *footer
+ @property  NSString *header
+ @property  NSString *explanation
+ @property  NSString *serviceKey
+
+  // class methods
+  +[PUITCCAccessController isServiceRestricted:]
+
+  // instance methods
+  -[PUITCCAccessController setSpecifier:]
+  -[PUITCCAccessController header]
+  -[PUITCCAccessController explanation]
+  -[PUITCCAccessController specifiers]
+  -[PUITCCAccessController footer]
+  -[PUITCCAccessController appSpecifiers]
+  -[PUITCCAccessController init]
+  -[PUITCCAccessController setAppSpecifiers:]
+  -[PUITCCAccessController .cxx_destruct]
+  -[PUITCCAccessController setHeader:]
+  -[PUITCCAccessController setAppType:]
+  -[PUITCCAccessController setFooter:]
+  -[PUITCCAccessController viewWillAppear:]
+  -[PUITCCAccessController serviceKey]
+  -[PUITCCAccessController appType]
+  -[PUITCCAccessController setExplanation:]
+  -[PUITCCAccessController setAccess:forSpecifier:]
+  -[PUITCCAccessController accesssForSpecifier:]
+  -[PUITCCAccessController updateSpecifiersForImposedSettings]
+  -[PUITCCAccessController setSupportsClips:]
+  -[PUITCCAccessController setAppGroupHeader:]
+  -[PUITCCAccessController setClipsFooter:]
+  -[PUITCCAccessController supportsClips]
+  -[PUITCCAccessController appGroupHeader]
+  -[PUITCCAccessController clipsFooter]
+
+
+PUITrackersController : PUITCCAccessController
+ @property  NSArray *appSpecifiers
+ @property  ADTrackingTransparency *adTrackingTransparency
+
+  // class methods
+  +[PUITrackersController isServiceRestricted:]
+
+  // instance methods
+  -[PUITrackersController specifiers]
+  -[PUITrackersController appSpecifiers]
+  -[PUITrackersController setAppSpecifiers:]
+  -[PUITrackersController headerLinkWasTapped]
+  -[PUITrackersController .cxx_destruct]
+  -[PUITrackersController viewWillAppear:]
+  -[PUITrackersController adTrackingTransparency]
+  -[PUITrackersController setAdTrackingTransparency:]
+  -[PUITrackersController setAllowAsk:specifier:]
+  -[PUITrackersController allowAsk:]
+  -[PUITrackersController canChangeAllowAsk]
+  -[PUITrackersController disableTCCForAllApps]
+  -[PUITrackersController appsRequested:]
+
+
+PUIContactsPrivacyController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  id controller
+
+  // instance methods
+  -[PUIContactsPrivacyController specifiers]
+  -[PUIContactsPrivacyController .cxx_destruct]
+  -[PUIContactsPrivacyController controller]
+  -[PUIContactsPrivacyController controller:didRefreshInfoForAppsWithBundleIdentifiers:]
+  -[PUIContactsPrivacyController setController:]
+  -[PUIContactsPrivacyController setAuthorizationLevel:forSpecifier:]
+  -[PUIContactsPrivacyController authorizationLevelForSpecifier:]
+  -[PUIContactsPrivacyController createSpecifiers]
+  -[PUIContactsPrivacyController footerSpecifier]
+  -[PUIContactsPrivacyController appsUsingConactsSpecifiers]
+  -[PUIContactsPrivacyController specifierForBundleIdentifier:]
+
+
+PUILocationServicesClipsListController : PUILocationServicesListController
+  // class methods
+  +[PUILocationServicesClipsListController clipsLocationUsage]
+
+  // instance methods
+  -[PUILocationServicesClipsListController specifiers]
+
+
+PUIPhotoServicesAuthorizationLevelController : PSListItemsController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  NSString *serviceKey
+ @property  NSDictionary *details
+ @property  NSString *displayName
+ @property  NSBundle *entityBundle
+
+  // instance methods
+  -[PUIPhotoServicesAuthorizationLevelController setSpecifier:]
+  -[PUIPhotoServicesAuthorizationLevelController details]
+  -[PUIPhotoServicesAuthorizationLevelController specifiers]
+  -[PUIPhotoServicesAuthorizationLevelController footerStringForSpecifiers:]
+  -[PUIPhotoServicesAuthorizationLevelController _modifySelectionSpecifiers]
+  -[PUIPhotoServicesAuthorizationLevelController setEntityBundle:]
+  -[PUIPhotoServicesAuthorizationLevelController entityBundle]
+  -[PUIPhotoServicesAuthorizationLevelController _presentImagePickerForModifyingSelection]
+  -[PUIPhotoServicesAuthorizationLevelController tableView:didSelectRowAtIndexPath:]
+  -[PUIPhotoServicesAuthorizationLevelController .cxx_destruct]
+  -[PUIPhotoServicesAuthorizationLevelController setServiceKey:]
+  -[PUIPhotoServicesAuthorizationLevelController setDisplayName:]
+  -[PUIPhotoServicesAuthorizationLevelController setDetails:]
+  -[PUIPhotoServicesAuthorizationLevelController serviceKey]
+  -[PUIPhotoServicesAuthorizationLevelController displayName]
+
+
+PUIPhotosPrivacyController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  NSArray *appSpecifiers
+
+  // class methods
+  +[PUIPhotosPrivacyController isServiceRestricted:]
+
+  // instance methods
+  -[PUIPhotosPrivacyController specifiers]
+  -[PUIPhotosPrivacyController appSpecifiers]
+  -[PUIPhotosPrivacyController setAppSpecifiers:]
+  -[PUIPhotosPrivacyController appSpecifierWithName:bundleID:showPhotosAccess:showPhotosAddAccess:]
+  -[PUIPhotosPrivacyController _photosStatus:]
+  -[PUIPhotosPrivacyController _setPhotosStatus:specifier:]
+  -[PUIPhotosPrivacyController setTCCForService:appIdentifier:value:]
+  -[PUIPhotosPrivacyController getAuthorizationStatesForService:allowedArray:limitedArray:deniedArray:]
+  -[PUIPhotosPrivacyController .cxx_destruct]
+  -[PUIPhotosPrivacyController updateSpecifiersForImposedSettings]
+  -[PUIPhotosPrivacyController getEnabledAppsForService:]
+
+
+PUILocationIndicatorExplanationView : UIView /System/Library/PrivateFrameworks/Preferences.framework/Preferences <PSHeaderFooterView>
+  // instance methods
+  -[PUILocationIndicatorExplanationView preferredHeightForWidth:inTableView:]
+  -[PUILocationIndicatorExplanationView preferredHeightForWidth:]
+  -[PUILocationIndicatorExplanationView .cxx_destruct]
+  -[PUILocationIndicatorExplanationView layoutForWidth:inTableView:]
+  -[PUILocationIndicatorExplanationView initWithSpecifier:]
+  -[PUILocationIndicatorExplanationView layoutSubviews]
+  -[PUILocationIndicatorExplanationView generalExplanationItemString]
+
+
+PUIClipLocationIndicatorExplanationView : PUILocationIndicatorExplanationView
+  // instance methods
+  -[PUIClipLocationIndicatorExplanationView generalExplanationItemString]
+
+
+PUILocationIndicatorSystemExplanationView : PUILocationIndicatorExplanationView
+  // instance methods
+  -[PUILocationIndicatorSystemExplanationView preferredHeightForWidth:inTableView:]
+  -[PUILocationIndicatorSystemExplanationView .cxx_destruct]
+  -[PUILocationIndicatorSystemExplanationView layoutForWidth:inTableView:]
+  -[PUILocationIndicatorSystemExplanationView initWithSpecifier:]
+
+
+PUILocationUsageMixin : NSObject /usr/lib/libSystem.B.dylib
+ @property  int usage
+ @property  unsigned long authLevel
+ @property  UIImageView *usageIndicator
+ @property  NSString *authLevelString
+
+  // instance methods
+  -[PUILocationUsageMixin init]
+  -[PUILocationUsageMixin usage]
+  -[PUILocationUsageMixin .cxx_destruct]
+  -[PUILocationUsageMixin setUsage:]
+  -[PUILocationUsageMixin usageIndicatorSize]
+  -[PUILocationUsageMixin iconForUsage:]
+  -[PUILocationUsageMixin _authLevelForMask:]
+  -[PUILocationUsageMixin setAuthLevel:]
+  -[PUILocationUsageMixin _authLevelLabelSize:]
+  -[PUILocationUsageMixin authLevel]
+  -[PUILocationUsageMixin usageIndicator]
+  -[PUILocationUsageMixin authLevelString]
+
+
+PUILocationServicesCell : PSSwitchTableCell /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  PUILocationUsageMixin *location
+
+  // instance methods
+  -[PUILocationServicesCell initWithStyle:reuseIdentifier:specifier:]
+  -[PUILocationServicesCell .cxx_destruct]
+  -[PUILocationServicesCell location]
+  -[PUILocationServicesCell layoutSubviews]
+
+
+PUILocationServicesAuthLevelCell : PSTableCell /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  PUILocationUsageMixin *location
+ @property  unsigned long authLevel
+
+  // instance methods
+  -[PUILocationServicesAuthLevelCell refreshCellContentsWithSpecifier:]
+  -[PUILocationServicesAuthLevelCell canReload]
+  -[PUILocationServicesAuthLevelCell initWithStyle:reuseIdentifier:specifier:]
+  -[PUILocationServicesAuthLevelCell .cxx_destruct]
+  -[PUILocationServicesAuthLevelCell getLazyIcon]
+  -[PUILocationServicesAuthLevelCell getLazyIconID]
+  -[PUILocationServicesAuthLevelCell location]
+  -[PUILocationServicesAuthLevelCell layoutSubviews]
+  -[PUILocationServicesAuthLevelCell authLevel]
+
+
+PUILocationServicesSubDirectoryCell : PSTableCell /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  PUILocationUsageMixin *location
+
+  // instance methods
+  -[PUILocationServicesSubDirectoryCell canReload]
+  -[PUILocationServicesSubDirectoryCell initWithStyle:reuseIdentifier:specifier:]
+  -[PUILocationServicesSubDirectoryCell .cxx_destruct]
+  -[PUILocationServicesSubDirectoryCell location]
+  -[PUILocationServicesSubDirectoryCell layoutSubviews]
+
+
+PUILocationServicesListController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC <FMFSessionDelegate>
+ @property  NSOperationQueue *locationSharingOperationQueue
+ @property  FMFSession *locationSharingSession
+ @property  FMFDevice *locationSharingDevice
+ @property  NSNumber *locationSharingEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PUILocationServicesListController isLocationRestricted]
+  +[PUILocationServicesListController isCoreRoutineAuthorized]
+  +[PUILocationServicesListController setCoreRoutineAuthorized:]
+
+  // instance methods
+  -[PUILocationServicesListController tableView:willSelectRowAtIndexPath:]
+  -[PUILocationServicesListController willBecomeActive]
+  -[PUILocationServicesListController specifiers]
+  -[PUILocationServicesListController init]
+  -[PUILocationServicesListController dealloc]
+  -[PUILocationServicesListController .cxx_destruct]
+  -[PUILocationServicesListController didChangeActiveLocationSharingDevice:]
+  -[PUILocationServicesListController tableView:cellForRowAtIndexPath:]
+  -[PUILocationServicesListController primaryAccount]
+  -[PUILocationServicesListController profileNotification:]
+  -[PUILocationServicesListController accountStore]
+  -[PUILocationServicesListController connectionError:]
+  -[PUILocationServicesListController didUpdateHidingStatus:]
+  -[PUILocationServicesListController viewWillAppear:]
+  -[PUILocationServicesListController valueForSpecifier:]
+  -[PUILocationServicesListController updateSpecifiersForImposedSettings]
+  -[PUILocationServicesListController locationUsageForEntity:]
+  -[PUILocationServicesListController setEntityAuthorized:specifier:]
+  -[PUILocationServicesListController isEntityAuthorized:]
+  -[PUILocationServicesListController locationDetailSpecifiersWithDetailsMatching:]
+  -[PUILocationServicesListController updateSpecifiersForImposedSettingsWithReload:]
+  -[PUILocationServicesListController updateRecentlyUsedDate]
+  -[PUILocationServicesListController updateForApplicationDidBecomeActive:]
+  -[PUILocationServicesListController refreshLinkStatusInParent]
+  -[PUILocationServicesListController stopLocationStatusUpdates]
+  -[PUILocationServicesListController setUsage:forCell:]
+  -[PUILocationServicesListController setAuthLevel:forCell:]
+  -[PUILocationServicesListController locationUsageBasedOnDetails:]
+  -[PUILocationServicesListController _cancelConfirmDisableForSpecifier:]
+  -[PUILocationServicesListController _setLocationServicesEnabled:]
+  -[PUILocationServicesListController locationDetailSpecifiersForAppsAndBundles]
+  -[PUILocationServicesListController updateLocationSharingSpecifiersWithReload:]
+  -[PUILocationServicesListController updateFindMyFriendsStateBasedOnRestriction]
+  -[PUILocationServicesListController _isFindMyDeviceSpecifier:]
+  -[PUILocationServicesListController disableAfterLoginConfirmation:]
+  -[PUILocationServicesListController _setEntityAuthorized:specifier:]
+  -[PUILocationServicesListController updateMutableStateBasedOnRestriction]
+  -[PUILocationServicesListController updateMutableStateForLocationSharing]
+  -[PUILocationServicesListController isLocationServicesEnabled:]
+  -[PUILocationServicesListController loadSensorKitSpecifiersProvider]
+  -[PUILocationServicesListController _isBundleBlacklisted:]
+  -[PUILocationServicesListController hiddenBundleIdentifiers]
+  -[PUILocationServicesListController localizedDisplayNameForBundleID:]
+  -[PUILocationServicesListController startLocationStatusUpdates]
+  -[PUILocationServicesListController _shouldEnableLocationSharingSpecifier]
+  -[PUILocationServicesListController _locationSharingSpecifierWasTapped:]
+  -[PUILocationServicesListController isLocationSharingEnabled]
+  -[PUILocationServicesListController locationSharingDevice]
+  -[PUILocationServicesListController locationSharingSpecifiers]
+  -[PUILocationServicesListController isLocationSharingModificationAllowed]
+  -[PUILocationServicesListController setLocationServicesEnabled:specifier:]
+  -[PUILocationServicesListController updateLocationSharing]
+  -[PUILocationServicesListController _pushCoreRoutineViewController]
+  -[PUILocationServicesListController _handleAuthenticationForSpecifier:success:error:]
+  -[PUILocationServicesListController locationSharingOperationQueue]
+  -[PUILocationServicesListController locationSharingSession]
+  -[PUILocationServicesListController mainThreadDidChangeActiveLocationSharingDevice:]
+  -[PUILocationServicesListController mainThreadConnectionError:]
+  -[PUILocationServicesListController mainThreadDidUpdateHidingStatus:]
+  -[PUILocationServicesListController updateLocationUsage]
+  -[PUILocationServicesListController setSOSEntityAuthorized:specifier:]
+  -[PUILocationServicesListController showLocationPrivacyPage]
+  -[PUILocationServicesListController setLocationSharingOperationQueue:]
+  -[PUILocationServicesListController setLocationSharingSession:]
+  -[PUILocationServicesListController setLocationSharingDevice:]
+  -[PUILocationServicesListController locationSharingEnabled]
+  -[PUILocationServicesListController setLocationSharingEnabled:]
+
+
+PUILocationServicesAuthorizationLevelController : PUILocationServicesListController
+ @property  NSString *serviceKey
+ @property  NSDictionary *details
+ @property  NSString *displayName
+ @property  NSBundle *entityBundle
+ @property  NSArray *correctiveCompensationSpecifiersGroup
+
+  // instance methods
+  -[PUILocationServicesAuthorizationLevelController setSpecifier:]
+  -[PUILocationServicesAuthorizationLevelController details]
+  -[PUILocationServicesAuthorizationLevelController specifiers]
+  -[PUILocationServicesAuthorizationLevelController init]
+  -[PUILocationServicesAuthorizationLevelController setEntityBundle:]
+  -[PUILocationServicesAuthorizationLevelController entityBundle]
+  -[PUILocationServicesAuthorizationLevelController tableView:didSelectRowAtIndexPath:]
+  -[PUILocationServicesAuthorizationLevelController dealloc]
+  -[PUILocationServicesAuthorizationLevelController .cxx_destruct]
+  -[PUILocationServicesAuthorizationLevelController setServiceKey:]
+  -[PUILocationServicesAuthorizationLevelController setDisplayName:]
+  -[PUILocationServicesAuthorizationLevelController viewWillAppear:]
+  -[PUILocationServicesAuthorizationLevelController setDetails:]
+  -[PUILocationServicesAuthorizationLevelController serviceKey]
+  -[PUILocationServicesAuthorizationLevelController displayName]
+  -[PUILocationServicesAuthorizationLevelController profileSettingsChanged:]
+  -[PUILocationServicesAuthorizationLevelController _updatePreciseLocationCell]
+  -[PUILocationServicesAuthorizationLevelController correctiveCompensationSpecifiersGroup]
+  -[PUILocationServicesAuthorizationLevelController _synchronizeLocationDetails]
+  -[PUILocationServicesAuthorizationLevelController _constructFooterForAuthorizationLevel:]
+  -[PUILocationServicesAuthorizationLevelController _setPreciseLocationEnabled:specifier:]
+  -[PUILocationServicesAuthorizationLevelController _preciseLocationStatus:]
+  -[PUILocationServicesAuthorizationLevelController _setLocationAuthorizationLevelMaskForAssociatedFramework:withCorrectiveCompensation:]
+  -[PUILocationServicesAuthorizationLevelController _purposeStringForAuthorizationLevel:]
+  -[PUILocationServicesAuthorizationLevelController _setLocationAuthorizationLevelForSpecifier:]
+  -[PUILocationServicesAuthorizationLevelController _usageTextForAuthorizationLevel:]
+  -[PUILocationServicesAuthorizationLevelController setCorrectiveCompensationSpecifiersGroup:]
+
+
+PUILocationServicesPrivacyAlertsLevelController : PUILocationServicesListController
+  // instance methods
+  -[PUILocationServicesPrivacyAlertsLevelController viewDidLoad]
+  -[PUILocationServicesPrivacyAlertsLevelController specifiers]
+  -[PUILocationServicesPrivacyAlertsLevelController .cxx_destruct]
+  -[PUILocationServicesPrivacyAlertsLevelController shouldReloadSpecifiersOnResume]
+  -[PUILocationServicesPrivacyAlertsLevelController setAuthorizationPromptMapDisplayEnabled:specifier:]
+  -[PUILocationServicesPrivacyAlertsLevelController authorizationPromptMapDisplayEnabled:]
+
+
+PUILocationSystemServicesListController : PUILocationServicesListController
+ @property  RTRoutineManager *routineManager
+ @property  PSSpecifier *productImprovementGroup
+ @property  NSString *currentCoreRoutineStatus
+ @property  NSString *coreRoutineAppKey
+ @property  NSString *specifierIDBeforeCoreRoutine
+
+  // class methods
+  +[PUILocationSystemServicesListController systemServicesLocationUsage]
+  +[PUILocationSystemServicesListController wirelessBundles]
+  +[PUILocationSystemServicesListController locationBasedAlertBundles]
+  +[PUILocationSystemServicesListController homeKitBundles]
+  +[PUILocationSystemServicesListController routingAndTrafficBundles]
+
+  // instance methods
+  -[PUILocationSystemServicesListController specifiers]
+  -[PUILocationSystemServicesListController setRoutineManager:]
+  -[PUILocationSystemServicesListController init]
+  -[PUILocationSystemServicesListController dealloc]
+  -[PUILocationSystemServicesListController .cxx_destruct]
+  -[PUILocationSystemServicesListController routineManager]
+  -[PUILocationSystemServicesListController _locationBasedAlertBundles]
+  -[PUILocationSystemServicesListController _homeKitBundles]
+  -[PUILocationSystemServicesListController _routingAndTrafficBundles]
+  -[PUILocationSystemServicesListController updateCoreRoutineSigLocationSpecifier]
+  -[PUILocationSystemServicesListController updateCoreRoutineEnabledStatusAndInsertSpecifier:]
+  -[PUILocationSystemServicesListController setCurrentCoreRoutineStatus:]
+  -[PUILocationSystemServicesListController insertCoreRoutineSpecifier]
+  -[PUILocationSystemServicesListController coreRoutineAppKey]
+  -[PUILocationSystemServicesListController specifierIDBeforeCoreRoutine]
+  -[PUILocationSystemServicesListController coreRoutineEnabledStatus:]
+  -[PUILocationSystemServicesListController _setCoalescedBundlesAuthorized:bundles:]
+  -[PUILocationSystemServicesListController _performLocationBasedAlertsConsistencyCheck]
+  -[PUILocationSystemServicesListController _performHomeKitConsistencyCheck]
+  -[PUILocationSystemServicesListController _performRoutingAndTrafficConsistencyCheck]
+  -[PUILocationSystemServicesListController _performWirelessConsistencyCheck]
+  -[PUILocationSystemServicesListController hasUltraWideBand]
+  -[PUILocationSystemServicesListController _areCoalescedBundlesAuthorized:]
+  -[PUILocationSystemServicesListController _performConsistencyCheckForBundles:name:]
+  -[PUILocationSystemServicesListController productImprovementGroup]
+  -[PUILocationSystemServicesListController setCoreRoutineAppKey:]
+  -[PUILocationSystemServicesListController setSpecifierIDBeforeCoreRoutine:]
+  -[PUILocationSystemServicesListController _productImprovementByBundlePath]
+  -[PUILocationSystemServicesListController _setLocationBasedAlertsAuthorized:]
+  -[PUILocationSystemServicesListController _areLocationBasedAlertsAuthorized]
+  -[PUILocationSystemServicesListController _setHomeKitAuthorized:]
+  -[PUILocationSystemServicesListController _isHomeKitAuthorized]
+  -[PUILocationSystemServicesListController _setWirelessAuthorized:]
+  -[PUILocationSystemServicesListController _isWirelessAuthorized]
+  -[PUILocationSystemServicesListController _setRoutingAndTrafficAuthorized:]
+  -[PUILocationSystemServicesListController _isRoutingAndTrafficAuthorized]
+  -[PUILocationSystemServicesListController setStatusEnabled:specifier:]
+  -[PUILocationSystemServicesListController isStatusEnabled:]
+  -[PUILocationSystemServicesListController updateImproveMapsSpecifierWithCompletion:]
+  -[PUILocationSystemServicesListController _setAddressCorrectionAuthorizationStatus:specifier:]
+  -[PUILocationSystemServicesListController _readAddressCorrectionAuthorizationStatus:]
+  -[PUILocationSystemServicesListController _showAddressCorrectionPage]
+  -[PUILocationSystemServicesListController setProductImprovementGroup:]
+  -[PUILocationSystemServicesListController currentCoreRoutineStatus]
+
+
+PUIAdSupportController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC <UserTransparencyViewControllerDelegate>
+ @property  UserTransparencyViewController *userTransparencyController
+ @property  ADTrackingTransparency *adTrackingTransparency
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PUIAdSupportController specifiers]
+  -[PUIAdSupportController .cxx_destruct]
+  -[PUIAdSupportController personalizedAdsSwitchEnabled]
+  -[PUIAdSupportController adTrackingTransparency]
+  -[PUIAdSupportController setAdTrackingTransparency:]
+  -[PUIAdSupportController userDidTapAdPreferences:]
+  -[PUIAdSupportController setPersonalizedAdsEnabled:specifier:]
+  -[PUIAdSupportController personalizedAdsEnabled:]
+  -[PUIAdSupportController setUserTransparencyController:]
+  -[PUIAdSupportController userTransparencyController]
+  -[PUIAdSupportController userTransparencyViewControllerDidLoad:]
+  -[PUIAdSupportController userTransparencyViewControllerDidDismiss:]
+  -[PUIAdSupportController userTransparencyViewController:didFailWithError:]
+  -[PUIAdSupportController userDidTapDoneButton:]
+  -[PUIAdSupportController userDidTapLearnMoreLink:]
+
+
+PUINetworkController : PSListController /System/Library/PrivateFrameworks/TCC.framework/TCC
+ @property  NEConfiguration *pathControllerConfiguration
+ @property  NSMutableArray *dnsConfigurations
+
+  // instance methods
+  -[PUINetworkController specifiers]
+  -[PUINetworkController init]
+  -[PUINetworkController pathRuleForBundleID:create:]
+  -[PUINetworkController isLocalNetworkEnabled:]
+  -[PUINetworkController setLocalNetworkEnabled:specifier:]
+  -[PUINetworkController .cxx_destruct]
+  -[PUINetworkController viewWillAppear:]
+  -[PUINetworkController loadConfigurationsForceRefresh:completionHandler:]
+  -[PUINetworkController dnsConfigurationChanged:]
+  -[PUINetworkController pathControllerConfiguration]
+  -[PUINetworkController setDnsConfigurations:]
+  -[PUINetworkController setPathControllerConfiguration:]
+  -[PUINetworkController dnsConfigurations]
+  -[PUINetworkController eligibleApplications]
+  -[PUINetworkController saveConfiguration]
+  -[PUINetworkController networkConfigurationEnabled:]
+
+
+PUINetworkApplicationController : PUINetworkController
+ @property  NSString *bundleIdentifier
+ @property  LSApplicationProxy *application
+
+  // instance methods
+  -[PUINetworkApplicationController setSpecifier:]
+  -[PUINetworkApplicationController specifiers]
+  -[PUINetworkApplicationController application]
+  -[PUINetworkApplicationController isLocalNetworkEnabled:]
+  -[PUINetworkApplicationController setLocalNetworkEnabled:specifier:]
+  -[PUINetworkApplicationController .cxx_destruct]
+  -[PUINetworkApplicationController setBundleIdentifier:]
+  -[PUINetworkApplicationController bundleIdentifier]
+  -[PUINetworkApplicationController setApplication:]
+  -[PUINetworkApplicationController pathRuleCreate:]
+
+
+PUIMotionFitnessController : PUITCCAccessController
+  // instance methods
+  -[PUIMotionFitnessController specifiers]
+  -[PUIMotionFitnessController _appSpecifiers]
+  -[PUIMotionFitnessController .cxx_destruct]
+  -[PUIMotionFitnessController valueForSpecifier:]
+  -[PUIMotionFitnessController loadSensorKitSpecifiersProvider]
+  -[PUIMotionFitnessController isFitnessTrackingEnabledFromTCC]
+  -[PUIMotionFitnessController setFitnessTrackingEnabled:forSpecifier:]
+  -[PUIMotionFitnessController isFitnessTrackingEnabled:]
+
+
+PUIAllowLocationRestrictionsController : PUILocationServicesListController
+  // instance methods
+  -[PUIAllowLocationRestrictionsController specifiers]
+  -[PUIAllowLocationRestrictionsController tableView:didSelectRowAtIndexPath:]
+  -[PUIAllowLocationRestrictionsController .cxx_destruct]
+
+
+PUIAllowTCCRestrictionsController : PUITCCAccessController
+  // instance methods
+  -[PUIAllowTCCRestrictionsController specifiers]
+  -[PUIAllowTCCRestrictionsController tableView:didSelectRowAtIndexPath:]
+  -[PUIAllowTCCRestrictionsController .cxx_destruct]
+
+
+(ContainsString)
+	// instance methods
+	-[(ContainsString) containsString:]
+
+01 00 0d00 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 1400 /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit: ACXDeviceConnection 
+01 00 1e00 /System/Library/PrivateFrameworks/LimitAdTracking.framework/LimitAdTracking: ADTrackingTransparency 
+01 00 0e00 /System/Library/Frameworks/CoreMotion.framework/CoreMotion: CMMotionActivityManager 
+01 00 0f00 /System/Library/PrivateFrameworks/FMFUI.framework/FMFUI: FMFLocationSharingViewController 
+01 00 1200 /System/Library/PrivateFrameworks/FMF.framework/FMF: FMFSession 
+01 00 0900 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOPlatform 
+01 00 1900 /System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore: ICAccessManager 
+01 00 0a00 /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication: LAContext 
+01 00 2700 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 2700 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 2700 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 2700 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSEnumerator 
+01 00 0c00 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 1c00 /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension: NEConfigurationManager 
+01 00 1c00 /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension: NEPathRule 
+01 00 1100 /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry: NRPairedDeviceRegistry 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 2400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 2600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUserActivity 
+01 00 2300 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 1f40 /System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber: NanoResourceGrabber 
+01 00 0600 /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit: OBPrivacyPresenter 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PKIconImageCache 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSFooterHyperlinkView 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSListController 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSListItemsController 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSSpecifier 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSSwitchTableCell 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSSystemConfigurationDynamicStoreWifiWatcher 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSTableCell 
+01 00 0200 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSTrackingWelcomeController 
+01 00 0500 /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine: RTRoutineManager 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertAction 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertController 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIImageView 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UILabel 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIStoryboard 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UITableViewController 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIWebClip 
+01 00 0400 /System/Library/PrivateFrameworks/TransparencyDetailsView.framework/TransparencyDetailsView: UserTransparencyViewController 

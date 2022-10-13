@@ -1,0 +1,196 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHAHealthPluginHostFeedGenerator
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHealthAppDaemonExtension
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHealthAppDataObserver
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHealthAppPlugin
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHealthAppProfileExtension
+|| __DATA.__objc_data _OBJC_CLASS_$_HDHealthAppProfileObserver
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHAHealthPluginHostFeedGenerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHealthAppDaemonExtension
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHealthAppDataObserver
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHealthAppPlugin
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHealthAppProfileExtension
+|| __DATA.__objc_data _OBJC_METACLASS_$_HDHealthAppProfileObserver
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ HealthKit: _HKCreateSerialDispatchQueue
+__ HealthKit: _HKLogWellnessDashboard
+__ HealthKit: _OBJC_CLASS_$_HKElectrocardiogramType
+__ HealthKit: _OBJC_CLASS_$_HKObjectType
+__ HealthKit: _OBJC_CLASS_$__HKDelayedOperation
+__ HealthKit: __HKInitializeLogging
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+HDHealthAppPlugin : NSObject /usr/lib/libSystem.B.dylib <HDPlugin>
+ @property  NSString *pluginIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HDHealthAppPlugin extensionForHealthDaemon:]
+  -[HDHealthAppPlugin extensionForProfile:]
+  -[HDHealthAppPlugin pluginIdentifier]
+
+
+HDHealthAppDaemonExtension : NSObject /usr/lib/libSystem.B.dylib <HDHealthDaemonReadyObserver, HDProfileExtension, HDHealthDaemonExtension>
+ @property  HDHealthAppProfileObserver *profileObserver
+ @property  HDPrimaryProfile *profile
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HDHealthAppDaemonExtension initWithProfile:]
+  -[HDHealthAppDaemonExtension daemonReady:]
+  -[HDHealthAppDaemonExtension .cxx_destruct]
+  -[HDHealthAppDaemonExtension profile]
+  -[HDHealthAppDaemonExtension setProfile:]
+  -[HDHealthAppDaemonExtension profileObserver]
+  -[HDHealthAppDaemonExtension setProfileObserver:]
+
+
+HDHealthAppDataObserver : NSObject /usr/lib/libSystem.B.dylib <HDDataObserver>
+ @property  HDDataManager *dataManager
+ @property  NSMutableSet *pendingPluginIdentifiersToRun
+ @property  NSObject<OS_dispatch_queue> *debounceQueue
+ @property  _HKDelayedOperation *delayedOperation
+ @property  HDHAHealthPluginHostFeedGenerator *feedGenerator
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HDHealthAppDataObserver alertSampleTypes]
+  -[HDHealthAppDataObserver targetPluginIdentifiersForSampleType:]
+  -[HDHealthAppDataObserver pendingPluginIdentifiersToRun]
+  -[HDHealthAppDataObserver debounceRunBackgroundGenerationForPluginIdentifiers:]
+  -[HDHealthAppDataObserver dealloc]
+  -[HDHealthAppDataObserver .cxx_destruct]
+  -[HDHealthAppDataObserver setFeedGenerator:]
+  -[HDHealthAppDataObserver setPendingPluginIdentifiersToRun:]
+  -[HDHealthAppDataObserver feedGenerator]
+  -[HDHealthAppDataObserver delayedOperation]
+  -[HDHealthAppDataObserver runBackgroundGenerationWithCurrentPendingPluginIdentifiers]
+  -[HDHealthAppDataObserver debounceQueue]
+  -[HDHealthAppDataObserver initWithDataManager:]
+  -[HDHealthAppDataObserver setDataManager:]
+  -[HDHealthAppDataObserver dataManager]
+  -[HDHealthAppDataObserver setDelayedOperation:]
+  -[HDHealthAppDataObserver setDebounceQueue:]
+  -[HDHealthAppDataObserver samplesAdded:anchor:]
+  -[HDHealthAppDataObserver observeForAlertSampleTypes]
+  -[HDHealthAppDataObserver start]
+
+
+HDHAHealthPluginHostFeedGenerator : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCConnection *connection
+
+  // instance methods
+  -[HDHAHealthPluginHostFeedGenerator init]
+  -[HDHAHealthPluginHostFeedGenerator dealloc]
+  -[HDHAHealthPluginHostFeedGenerator .cxx_destruct]
+  -[HDHAHealthPluginHostFeedGenerator setConnection:]
+  -[HDHAHealthPluginHostFeedGenerator healthAppPluginHost]
+  -[HDHAHealthPluginHostFeedGenerator runBackgroundGenerationForPluginIdentifiers:]
+  -[HDHAHealthPluginHostFeedGenerator connection]
+  -[HDHAHealthPluginHostFeedGenerator runBackgroundGenerationForAllPlugins]
+
+
+HDHealthAppProfileExtension : NSObject /usr/lib/libSystem.B.dylib <HDHealthDaemonReadyObserver, HDProfileExtension>
+ @property  HDHealthAppDataObserver *dataObserver
+ @property  HDProfile *profile
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HDHealthAppProfileExtension initWithProfile:]
+  -[HDHealthAppProfileExtension daemonReady:]
+  -[HDHealthAppProfileExtension .cxx_destruct]
+  -[HDHealthAppProfileExtension profile]
+  -[HDHealthAppProfileExtension dataObserver]
+  -[HDHealthAppProfileExtension setProfile:]
+  -[HDHealthAppProfileExtension setDataObserver:]
+
+
+HDHealthAppProfileObserver : NSObject /usr/lib/libSystem.B.dylib <HDProfileManagerObserver>
+ @property  HDProfileManager *profileManager
+ @property  HDHAHealthPluginHostFeedGenerator *feedGenerator
+ @property  NSObject<OS_dispatch_queue> *debounceQueue
+ @property  _HKDelayedOperation *delayedOperation
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HDHealthAppProfileObserver dealloc]
+  -[HDHealthAppProfileObserver .cxx_destruct]
+  -[HDHealthAppProfileObserver setFeedGenerator:]
+  -[HDHealthAppProfileObserver feedGenerator]
+  -[HDHealthAppProfileObserver delayedOperation]
+  -[HDHealthAppProfileObserver debounceQueue]
+  -[HDHealthAppProfileObserver profileManager]
+  -[HDHealthAppProfileObserver setDelayedOperation:]
+  -[HDHealthAppProfileObserver setDebounceQueue:]
+  -[HDHealthAppProfileObserver start]
+  -[HDHealthAppProfileObserver profileListDidChange]
+  -[HDHealthAppProfileObserver initWithProfileManager:]
+  -[HDHealthAppProfileObserver setProfileManager:]
+
+
+01 00 0200 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKElectrocardiogramType 
+01 00 0200 /System/Library/Frameworks/HealthKit.framework/HealthKit: HKObjectType 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/Frameworks/HealthKit.framework/HealthKit: _HKDelayedOperation 

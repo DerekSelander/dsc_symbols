@@ -1,0 +1,235 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_UARPiCloudAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_UARPiCloudAccessoryRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_UARPiCloudContainer
+|| __DATA.__objc_data _OBJC_CLASS_$_UARPiCloudManager
+|| __DATA.__objc_data _OBJC_CLASS_$_UARPiCloudZone
+|| __DATA.__objc_data _OBJC_METACLASS_$_UARPiCloudAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_UARPiCloudAccessoryRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_UARPiCloudContainer
+|| __DATA.__objc_data _OBJC_METACLASS_$_UARPiCloudManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_UARPiCloudZone
+|| __TEXT.__const _UARPiCloudVersionNumber
+|| __TEXT.__const _UARPiCloudVersionString
+|| __TEXT.__text _getEntryForKey
+|| __TEXT.__text _saveEntryForKey
+__ CloudKit: _CKCurrentUserDefaultName
+__ CloudKit: _OBJC_CLASS_$_CKContainer
+__ CloudKit: _OBJC_CLASS_$_CKFetchDatabaseChangesOperation
+__ CloudKit: _OBJC_CLASS_$_CKFetchRecordZoneChangesConfiguration
+__ CloudKit: _OBJC_CLASS_$_CKFetchRecordZoneChangesOperation
+__ CloudKit: _OBJC_CLASS_$_CKFetchRecordsOperation
+__ CloudKit: _OBJC_CLASS_$_CKRecord
+__ CloudKit: _OBJC_CLASS_$_CKRecordID
+__ CloudKit: _OBJC_CLASS_$_CKRecordZoneID
+__ CloudKit: _OBJC_CLASS_$_CKServerChangeToken
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Security: _SecCertificateCopyKey
+__ Security: _SecCertificateCreateWithData
+__ Security: _SecKeyVerifySignature
+__ Security: _SecPolicyCreateAppleAccessoryUpdateSigning
+__ Security: _SecTrustCreateWithCertificates
+__ Security: _SecTrustEvaluateWithError
+__ Security: _SecTrustGetCertificateAtIndex
+__ Security: _kSecKeyAlgorithmECDSASignatureDigestX962SHA256
+__ libSystem.B.dylib: _CC_SHA256_Final
+__ libSystem.B.dylib: _CC_SHA256_Init
+__ libSystem.B.dylib: _CC_SHA256_Update
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+UARPiCloudAccessory : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *productGroup
+ @property  NSString *productNumber
+ @property  NSString *firmwareVersion
+ @property  NSMutableArray *availableRecords
+ @property  UARPiCloudAccessoryRecord *record
+
+  // instance methods
+  -[UARPiCloudAccessory copyWithZone:]
+  -[UARPiCloudAccessory firmwareVersion]
+  -[UARPiCloudAccessory productNumber]
+  -[UARPiCloudAccessory .cxx_destruct]
+  -[UARPiCloudAccessory setRecord:]
+  -[UARPiCloudAccessory isEqual:]
+  -[UARPiCloudAccessory record]
+  -[UARPiCloudAccessory initWithProductGroup:productNumber:firmwareVersion:]
+  -[UARPiCloudAccessory productGroup]
+  -[UARPiCloudAccessory setAvailableRecords:]
+  -[UARPiCloudAccessory availableRecords]
+
+
+UARPiCloudContainer : NSObject /usr/lib/libSystem.B.dylib
+ @property  CKContainer *container
+ @property  NSString *containerID
+ @property  CKDatabase *database
+ @property  NSData *verificationCertificate
+ @property  id publicKey
+ @property  CKServerChangeToken *databaseChangeToken
+ @property  NSMutableSet *updatedZones
+ @property  NSMutableSet *updatedRecords
+
+  // instance methods
+  -[UARPiCloudContainer publicKey]
+  -[UARPiCloudContainer containerID]
+  -[UARPiCloudContainer .cxx_destruct]
+  -[UARPiCloudContainer container]
+  -[UARPiCloudContainer database]
+  -[UARPiCloudContainer initWithContainerID:]
+  -[UARPiCloudContainer updatedRecords]
+  -[UARPiCloudContainer setPublicKey:]
+  -[UARPiCloudContainer databaseChangeToken]
+  -[UARPiCloudContainer setDatabaseChangeToken:]
+  -[UARPiCloudContainer setUpdatedZones:]
+  -[UARPiCloudContainer updatedZones]
+  -[UARPiCloudContainer setUpdatedRecords:]
+  -[UARPiCloudContainer setVerificationCertificate:]
+  -[UARPiCloudContainer verificationCertificate]
+
+
+UARPiCloudAccessoryRecord : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  CKRecord *ckRecord
+ @property  NSString *recordName
+ @property  NSString *recordStatus
+ @property  NSString *manufacturer
+ @property  NSString *model
+ @property  NSString *firmwareVersion
+ @property  NSString *firmwareURL
+ @property  NSString *releaseType
+ @property  NSString *updateClassification
+ @property  NSString *deploymentStr
+ @property  NSArray *deploymentList
+ @property  NSString *releaseNotesURL
+ @property  NSString *firmwareBinaryHash
+ @property  NSString *releaseNotesHash
+ @property  NSString *signature
+ @property  NSString *releaseDate
+ @property  NSString *releaseNotesFileSize
+ @property  NSString *firmwareFileSize
+
+  // class methods
+  +[UARPiCloudAccessoryRecord supportsSecureCoding]
+
+  // instance methods
+  -[UARPiCloudAccessoryRecord releaseDate]
+  -[UARPiCloudAccessoryRecord copyWithZone:]
+  -[UARPiCloudAccessoryRecord signature]
+  -[UARPiCloudAccessoryRecord releaseType]
+  -[UARPiCloudAccessoryRecord firmwareVersion]
+  -[UARPiCloudAccessoryRecord manufacturer]
+  -[UARPiCloudAccessoryRecord .cxx_destruct]
+  -[UARPiCloudAccessoryRecord encodeWithCoder:]
+  -[UARPiCloudAccessoryRecord initWithCKRecord:]
+  -[UARPiCloudAccessoryRecord recordStatus]
+  -[UARPiCloudAccessoryRecord recordName]
+  -[UARPiCloudAccessoryRecord model]
+  -[UARPiCloudAccessoryRecord initWithCoder:]
+  -[UARPiCloudAccessoryRecord releaseNotesFileSize]
+  -[UARPiCloudAccessoryRecord firmwareFileSize]
+  -[UARPiCloudAccessoryRecord releaseNotesURL]
+  -[UARPiCloudAccessoryRecord firmwareURL]
+  -[UARPiCloudAccessoryRecord updateClassification]
+  -[UARPiCloudAccessoryRecord deploymentStr]
+  -[UARPiCloudAccessoryRecord deploymentList]
+  -[UARPiCloudAccessoryRecord firmwareBinaryHash]
+  -[UARPiCloudAccessoryRecord releaseNotesHash]
+  -[UARPiCloudAccessoryRecord ckRecord]
+
+
+UARPiCloudZone : NSObject /usr/lib/libSystem.B.dylib
+ @property  CKRecordZoneID *zoneID
+ @property  CKServerChangeToken *changeToken
+ @property  NSString *containerID
+
+  // instance methods
+  -[UARPiCloudZone setContainerID:]
+  -[UARPiCloudZone zoneID]
+  -[UARPiCloudZone containerID]
+  -[UARPiCloudZone setZoneID:]
+  -[UARPiCloudZone .cxx_destruct]
+  -[UARPiCloudZone changeToken]
+  -[UARPiCloudZone setChangeToken:]
+  -[UARPiCloudZone initWithZoneID:containerID:]
+
+
+UARPiCloudManager : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[UARPiCloudManager .cxx_destruct]
+  -[UARPiCloudManager handleRemoteFetchRequestForAccessories:]
+  -[UARPiCloudManager fetchVerificationCertificateInContainer:]
+  -[UARPiCloudManager fetchZoneChangesInContainer:forAccessories:]
+  -[UARPiCloudManager fetchRemoteDatabaseChangesInContainer:completion:]
+  -[UARPiCloudManager processUpdatedRecordsInContainer:forAccessories:]
+  -[UARPiCloudManager processVerificationCertificateRecord:forContainer:]
+  -[UARPiCloudManager processRecordsInContainer:forAccessory:]
+  -[UARPiCloudManager processCKRecord:inContainer:forAccessory:]
+  -[UARPiCloudManager validateSignatureForUARPAccessoryRecord:inContainer:]
+  -[UARPiCloudManager calculateDigestFromUARPAccessoryRecord:]
+  -[UARPiCloudManager initWithDelegate:containerID:]
+  -[UARPiCloudManager performRemoteFetchForAccessories:]
+  -[UARPiCloudManager filterInterestedZonesInContainer:forAccessories:]
+
+
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKContainer 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKFetchDatabaseChangesOperation 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKFetchRecordZoneChangesConfiguration 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKFetchRecordZoneChangesOperation 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKFetchRecordsOperation 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKRecord 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKRecordID 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKRecordZoneID 
+01 00 0240 /System/Library/Frameworks/CloudKit.framework/CloudKit: CKServerChangeToken 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

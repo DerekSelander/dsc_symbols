@@ -1,0 +1,147 @@
+|| __DATA.__data _TVRAdaptiveControlsEvent
+|| __DATA.__data _TVRLaunchableApplicationsEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_TVRemoteAction
+|| __DATA.__objc_data _OBJC_CLASS_$_TVRemoteActionGroup
+|| __DATA.__objc_data _OBJC_CLASS_$__TVRXPCProtocolManager
+|| __DATA.__objc_data _OBJC_CLASS_$__TVRemoteItemModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_TVRemoteAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_TVRemoteActionGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$__TVRXPCProtocolManager
+|| __DATA.__objc_data _OBJC_METACLASS_$__TVRemoteItemModel
+|| __DATA_CONST.__const __TVRemoteItemModelGroupKey
+|| __DATA_CONST.__const __TVRemoteItemModelIconKey
+|| __DATA_CONST.__const __TVRemoteItemModelItemTypeKey
+|| __DATA_CONST.__const __TVRemoteItemModelItemsKey
+|| __DATA_CONST.__const __TVRemoteItemModelTitleKey
+|| __DATA_CONST.__const __TVRemoteItemModelUUIDKey
+|| __TEXT.__const _TVRemoteKitVersionNumber
+|| __TEXT.__const _TVRemoteKitVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+_TVRXPCProtocolManager : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_TVRXPCProtocolManager requestInterface]
+  +[_TVRXPCProtocolManager responseInterface]
+
+
+TVRemoteActionGroup : NSObject /usr/lib/libSystem.B.dylib <TVRemoteItem>
+ @property  NSString *remoteItemTitle
+ @property  long long icon
+ @property  NSArray *remoteItems
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TVRemoteActionGroup groupWithTitle:icon:items:]
+
+  // instance methods
+  -[TVRemoteActionGroup .cxx_destruct]
+  -[TVRemoteActionGroup icon]
+  -[TVRemoteActionGroup setIcon:]
+  -[TVRemoteActionGroup _init]
+  -[TVRemoteActionGroup remoteItems]
+  -[TVRemoteActionGroup setRemoteItemTitle:]
+  -[TVRemoteActionGroup setRemoteItems:]
+  -[TVRemoteActionGroup remoteItemTitle]
+  -[TVRemoteActionGroup isRemoteItemCollection]
+  -[TVRemoteActionGroup remoteItemIcon]
+
+
+TVRemoteAction : NSObject /usr/lib/libSystem.B.dylib <TVRemoteItem>
+ @property  NSString *remoteItemTitle
+ @property  @? handler
+ @property  long long icon
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TVRemoteAction actionWithTitle:icon:handler:]
+
+  // instance methods
+  -[TVRemoteAction .cxx_destruct]
+  -[TVRemoteAction icon]
+  -[TVRemoteAction handler]
+  -[TVRemoteAction setIcon:]
+  -[TVRemoteAction _init]
+  -[TVRemoteAction setHandler:]
+  -[TVRemoteAction setRemoteItemTitle:]
+  -[TVRemoteAction remoteItemTitle]
+  -[TVRemoteAction isRemoteItemCollection]
+  -[TVRemoteAction remoteItemIcon]
+  -[TVRemoteAction handleRemoteAction]
+
+
+_TVRemoteItemModel : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  <TVRemoteItem> *item
+ @property  NSString *uuid
+ @property  NSString *title
+ @property  long long icon
+ @property  long long itemType
+ @property  BOOL group
+ @property  NSArray *items
+
+  // class methods
+  +[_TVRemoteItemModel supportsSecureCoding]
+
+  // instance methods
+  -[_TVRemoteItemModel item]
+  -[_TVRemoteItemModel setItems:]
+  -[_TVRemoteItemModel isGroup]
+  -[_TVRemoteItemModel itemType]
+  -[_TVRemoteItemModel setGroup:]
+  -[_TVRemoteItemModel init]
+  -[_TVRemoteItemModel items]
+  -[_TVRemoteItemModel uuid]
+  -[_TVRemoteItemModel .cxx_destruct]
+  -[_TVRemoteItemModel icon]
+  -[_TVRemoteItemModel setUuid:]
+  -[_TVRemoteItemModel setItem:]
+  -[_TVRemoteItemModel setTitle:]
+  -[_TVRemoteItemModel encodeWithCoder:]
+  -[_TVRemoteItemModel setIcon:]
+  -[_TVRemoteItemModel title]
+  -[_TVRemoteItemModel setItemType:]
+  -[_TVRemoteItemModel initWithItem:]
+  -[_TVRemoteItemModel initWithCoder:]
+  -[_TVRemoteItemModel _stringForItemType:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

@@ -1,0 +1,983 @@
+|| __DATA.__data _ClientQueueName
+|| __DATA.__data _ErrorDomainv2
+|| __DATA.__data _kContentPath
+|| __DATA.__data _kContentType
+|| __DATA.__data _kLocale
+|| __DATA.__data _kRegion
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAnalytics
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssertDescriptor
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssertion
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssertionDataHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssertionTracker
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssetDownloadAnalytic
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSAssetPolicy
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSBackgroundActivityScheduler
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSContentItem
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSContentItemMatcher
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSLinguisticAssetQuery
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSManager
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSMobileAssetv1PredicateAdapter
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSRemoteSyncState
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSServer
+|| __DATA.__objc_data _OBJC_CLASS_$_DDSTimedAnalytic
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAnalytics
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssertDescriptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssertion
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssertionDataHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssertionTracker
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssetDownloadAnalytic
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSAssetPolicy
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSBackgroundActivityScheduler
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSContentItem
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSContentItemMatcher
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSLinguisticAssetQuery
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSMobileAssetv1PredicateAdapter
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSRemoteSyncState
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSServer
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDSTimedAnalytic
+|| __DATA_CONST.__const _AggregatedDurationAnalyticKey
+|| __DATA_CONST.__const _AnalyticKeyPrefix
+|| __DATA_CONST.__const _AssetCenterQueueName
+|| __DATA_CONST.__const _AssetDownloadAnalytic
+|| __DATA_CONST.__const _AssetDownloadDurationBuckets
+|| __DATA_CONST.__const _AssetLocaleKey
+|| __DATA_CONST.__const _AssetNameAnalyticKey
+|| __DATA_CONST.__const _AssetUpdatedNotificationSuffix
+|| __DATA_CONST.__const _CompatibilityVersionAnalyticKey
+|| __DATA_CONST.__const _CompatibilityVersionKey
+|| __DATA_CONST.__const _ContentVersionAnalyticKey
+|| __DATA_CONST.__const _ContentVersionKey
+|| __DATA_CONST.__const _DDSAssertionContentFile
+|| __DATA_CONST.__const _DDSAssertionContentFolder
+|| __DATA_CONST.__const _DDSAttributeAssetLocale
+|| __DATA_CONST.__const _DDSAttributeAssetType
+|| __DATA_CONST.__const _DDSAttributeAssetVersion
+|| __DATA_CONST.__const _DDSAttributeCity
+|| __DATA_CONST.__const _DDSAttributeCompatibilityVersion
+|| __DATA_CONST.__const _DDSAttributeContentItemLocale
+|| __DATA_CONST.__const _DDSAttributeContentType
+|| __DATA_CONST.__const _DDSAttributeContentVersion
+|| __DATA_CONST.__const _DDSAttributeCountry
+|| __DATA_CONST.__const _DDSAttributeKeyContentPath
+|| __DATA_CONST.__const _DDSAttributeKeyContentType
+|| __DATA_CONST.__const _DDSAttributeKeyContents
+|| __DATA_CONST.__const _DDSAttributeKeyInputLayout
+|| __DATA_CONST.__const _DDSAttributeKeyLanguage
+|| __DATA_CONST.__const _DDSAttributeKeyLocale
+|| __DATA_CONST.__const _DDSAttributeKeyLocationCity
+|| __DATA_CONST.__const _DDSAttributeKeyLocationCountry
+|| __DATA_CONST.__const _DDSAttributeKeyLocationProvince
+|| __DATA_CONST.__const _DDSAttributeKeyNeedType
+|| __DATA_CONST.__const _DDSAttributeKeyProactiveLocation
+|| __DATA_CONST.__const _DDSAttributeKeyRegion
+|| __DATA_CONST.__const _DDSAttributeKeyScript
+|| __DATA_CONST.__const _DDSAttributeProvince
+|| __DATA_CONST.__const _DDSAttributeRegion
+|| __DATA_CONST.__const _DDSAttributeUnarchivedSizeInBytes
+|| __DATA_CONST.__const _DDSAttributeUnspecified
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeLanguageModel
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeLanguageModelDelta
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeLexicon
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeLexiconDelta
+|| __DATA_CONST.__const _DDSAttributeValueContentTypePhrases
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeSpellChecker
+|| __DATA_CONST.__const _DDSAttributeValueContentTypeSpellCheckerDelta
+|| __DATA_CONST.__const _DDSAttributeValueNeedTypeDelta
+|| __DATA_CONST.__const _DDSAttributeValueNeedTypeOptional
+|| __DATA_CONST.__const _DDSAttributeValueNeedTypeRequired
+|| __DATA_CONST.__const _DDSAttributeValueProactiveLocationHome
+|| __DATA_CONST.__const _DDSAttributeValueProactiveLocationWork
+|| __DATA_CONST.__const _DDSFilterValueUnspecified
+|| __DATA_CONST.__const _DDSMachServiceName
+|| __DATA_CONST.__const _DurationAnalyticKey
+|| __DATA_CONST.__const _InstallDateKey
+|| __DATA_CONST.__const _LanguageAssetType
+|| __DATA_CONST.__const _LinguisticDataAssetType
+|| __DATA_CONST.__const _LinguisticDataMobileAssetType
+|| __DATA_CONST.__const _ProcessAnalyticKey
+|| __DATA_CONST.__const _RetryAnalyticKey
+|| __DATA_CONST.__const _ServerQueueName
+|| __DATA_CONST.__const _SuccessAnalyticKey
+|| __DATA_CONST.__const _UpdateCycleAnalytic
+|| __DATA_CONST.__const _UpdateCycleAnalyticIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAssetCenter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAssetObserver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAssetQueryResultCache
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSAttributeFilter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSLinguisticAttributeFilter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSMobileAssetv2Provider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDSMobileAssetv2QueryAdapter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAssetCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAssetObserver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAssetQuery
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAssetQueryResultCache
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSAttributeFilter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSLinguisticAttributeFilter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSMobileAssetv2Provider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDSMobileAssetv2QueryAdapter
+|| __TEXT.__const _AllowCellularOverride
+|| __TEXT.__const _DataDeliveryServicesVersionNumber
+|| __TEXT.__const _DataDeliveryServicesVersionString
+|| __TEXT.__text _DDSGetPreferenceIntForKey
+|| __TEXT.__text _DDSGetPreferenceObjectForKey
+|| __TEXT.__text _DDSObjectsAreEqualOrNil
+|| __TEXT.__text _DDSSetPreferenceObjectForKey
+|| __TEXT.__text _DDS_BUILD_VERSION_STRING
+|| __TEXT.__text _DDS_IS_INTERNAL_INSTALL
+|| __TEXT.__text _DDS_LOG_REDACTED
+|| __TEXT.__text _DDS_STRING_FROM_DATE
+|| __TEXT.__text _DDS_USE_MA_V2
+|| __TEXT.__text _DefaultLog
+|| __TEXT.__text _QueryLog
+|| __TEXT.__text _UpdateLog
+|| __TEXT.__text __DDSBeginMocking
+|| __TEXT.__text __DDSBeginMockingServices
+|| __TEXT.__text __DDSEndMocking
+|| __TEXT.__text __DDSEndMockingServices
+|| __TEXT.__text __DDSIsMocking
+|| __TEXT.__text __DDSIsMockingServices
+|| __TEXT.__text _assetUpdatedNotificationCallback
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesGetAppIntegerValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBackgroundActivityScheduler
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ MobileAsset: _ASAttributeCompatibilityVersion
+__ MobileAsset: _MACleanV1Repository
+__ MobileAsset: _OBJC_CLASS_$_MAAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAssetQuery
+__ MobileAsset: _OBJC_CLASS_$_MADownloadOptions
+__ libMobileGestalt.dylib: _MGCopyAnswerWithError
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: _XPC_ACTIVITY_DELAY
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+DDSServer : NSObject /usr/lib/libSystem.B.dylib <NSXPCListenerDelegate>
+ @property  <DDSManaging> *manager
+ @property  NSXPCListener *listener
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSMutableSet *clientConnections
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DDSServer sharedInstance]
+  +[DDSServer interface]
+
+  // instance methods
+  -[DDSServer listener]
+  -[DDSServer init]
+  -[DDSServer dealloc]
+  -[DDSServer .cxx_destruct]
+  -[DDSServer handleEndedConnection:]
+  -[DDSServer initWithManager:]
+  -[DDSServer listener:shouldAcceptNewConnection:]
+  -[DDSServer manager]
+  -[DDSServer queue]
+  -[DDSServer clientConnections]
+
+
+DDSLinguisticAttributeFilter : DDSAttributeFilter
+  // instance methods
+  -[DDSLinguisticAttributeFilter addRegionWithCountry:province:city:]
+  -[DDSLinguisticAttributeFilter addContentType:]
+  -[DDSLinguisticAttributeFilter addAssetLocale:]
+  -[DDSLinguisticAttributeFilter addContentItemLocale:]
+
+
+DDSAssetQueryResultCache : NSObject /usr/lib/libSystem.B.dylib <NSCacheDelegate, DDSAssetQueryResultCaching>
+ @property  NSCache *assetsByQueryCache
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DDSAssetQueryResultCache init]
+  -[DDSAssetQueryResultCache setAssetsByQueryCache:]
+  -[DDSAssetQueryResultCache .cxx_destruct]
+  -[DDSAssetQueryResultCache clearCache]
+  -[DDSAssetQueryResultCache cache:willEvictObject:]
+  -[DDSAssetQueryResultCache cachedAssetsForQuery:]
+  -[DDSAssetQueryResultCache cacheAssets:forQuery:]
+  -[DDSAssetQueryResultCache queue]
+  -[DDSAssetQueryResultCache assetsByQueryCache]
+
+
+DDSAssetCenter : NSObject /usr/lib/libSystem.B.dylib <DDSManagingDelegate, DDSAssetObservingDelegate>
+ @property  <DDSAssetProviding> *provider
+ @property  <DDSManaging> *managerInterface
+ @property  NSMutableSet *delegates
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  <DDSAssetObserving> *assetObserver
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DDSAssetCenter sharedInstance]
+
+  // instance methods
+  -[DDSAssetCenter delegates]
+  -[DDSAssetCenter unregisterDelegate:]
+  -[DDSAssetCenter provider]
+  -[DDSAssetCenter init]
+  -[DDSAssetCenter contentItemsFromAssets:matchingFilter:]
+  -[DDSAssetCenter .cxx_destruct]
+  -[DDSAssetCenter triggerDump]
+  -[DDSAssetCenter assertionIDsForClientID:]
+  -[DDSAssetCenter removeAssertionWithIdentifier:]
+  -[DDSAssetCenter addAssertionForAssetsWithQuery:policy:assertionID:clientID:]
+  -[DDSAssetCenter triggerUpdate]
+  -[DDSAssetCenter allContentItemsMatchingQuery:error:]
+  -[DDSAssetCenter queue]
+  -[DDSAssetCenter assetObserver]
+  -[DDSAssetCenter initWithProvider:managerInterface:]
+  -[DDSAssetCenter serverDidUpdateAssetsWithType:]
+  -[DDSAssetCenter managerInterface]
+  -[DDSAssetCenter registerDelegate:]
+  -[DDSAssetCenter assetsForQuery:error:]
+
+
+DDSMobileAssetv2QueryAdapter : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[DDSMobileAssetv2QueryAdapter stringFromInteger:]
+  +[DDSMobileAssetv2QueryAdapter maAssetQueryForddsAssetQuery:compatiblilityVersion:internalInstall:]
+
+
+DDSAttributeFilter : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSMutableDictionary *filters
+
+  // class methods
+  +[DDSAttributeFilter supportsSecureCoding]
+  +[DDSAttributeFilter hashObject:]
+  +[DDSAttributeFilter hashSet:]
+  +[DDSAttributeFilter hashDictionary:]
+  +[DDSAttributeFilter attributeFilter]
+  +[DDSAttributeFilter attributeFilterWithDictionary:]
+
+  // instance methods
+  -[DDSAttributeFilter setFilters:]
+  -[DDSAttributeFilter doesContainAttributes:]
+  -[DDSAttributeFilter addAllowedValue:forKey:]
+  -[DDSAttributeFilter init]
+  -[DDSAttributeFilter addEntriesFromFilter:]
+  -[DDSAttributeFilter .cxx_destruct]
+  -[DDSAttributeFilter addAllowedValues:forKey:]
+  -[DDSAttributeFilter filters]
+  -[DDSAttributeFilter entriesMatchingAttributes:]
+  -[DDSAttributeFilter isEqualToQueryFilter:]
+  -[DDSAttributeFilter removeAllowedValue:forKey:]
+  -[DDSAttributeFilter encodeWithCoder:]
+  -[DDSAttributeFilter initWithDictionary:]
+  -[DDSAttributeFilter removeAllowedValues:forKey:]
+  -[DDSAttributeFilter isEqual:]
+  -[DDSAttributeFilter enumerateAllowedValuesAndKeys:]
+  -[DDSAttributeFilter _setForKey:]
+  -[DDSAttributeFilter allowedValuesForKey:]
+  -[DDSAttributeFilter initWithCoder:]
+
+
+DDSContentItemMatcher : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[DDSContentItemMatcher shouldLenientlyMatchWithContentItemsForRegion:]
+  +[DDSContentItemMatcher _anyStringIn:matches:acceptUnspecifiedValue:]
+  +[DDSContentItemMatcher _anyDictionaryIn:matches:shouldLenientlyMatch:]
+  +[DDSContentItemMatcher _string:matches:acceptUnspecifiedValue:]
+  +[DDSContentItemMatcher _dictionary:matches:acceptUnspecifiedAttribute:lenientMatch:]
+  +[DDSContentItemMatcher assetContentItemsMatching:contentItems:parentAsset:]
+
+
+DDSContentItem : NSObject /usr/lib/libSystem.B.dylib
+ @property  DDSAsset *parentAsset
+ @property  NSDictionary *contents
+ @property  NSURL *path
+ @property  NSDictionary *region
+ @property  NSString *type
+ @property  NSString *fileName
+ @property  NSString *locale
+
+  // instance methods
+  -[DDSContentItem contents]
+  -[DDSContentItem path]
+  -[DDSContentItem init]
+  -[DDSContentItem fileName]
+  -[DDSContentItem locale]
+  -[DDSContentItem setContents:]
+  -[DDSContentItem .cxx_destruct]
+  -[DDSContentItem type]
+  -[DDSContentItem isEqual:]
+  -[DDSContentItem region]
+  -[DDSContentItem initWithParentAsset:contents:]
+  -[DDSContentItem parentAsset]
+  -[DDSContentItem isEqualToContentItem:]
+  -[DDSContentItem setParentAsset:]
+
+
+DDSAsset : NSObject /usr/lib/libSystem.B.dylib
+ @property  MAAsset *maAsset
+ @property  NSString *debuggingID
+ @property  NSString *uniqueIdentifier
+ @property  NSDictionary *attributes
+ @property  unsigned long compatibilityVersion
+ @property  unsigned long contentVersion
+ @property  NSURL *localURL
+ @property  unsigned long assetState
+ @property  NSString *locale
+ @property  NSString *dataType
+ @property  NSString *assetType
+ @property  NSString *installDate
+ @property  NSString *shortName
+ @property  NSString *assetUUID
+
+  // class methods
+  +[DDSAsset asset]
+  +[DDSAsset uniqueIdentifierForMAAsset:]
+  +[DDSAsset assetWithMAAsset:]
+  +[DDSAsset debuggingIDsForAssets:]
+
+  // instance methods
+  -[DDSAsset setUniqueIdentifier:]
+  -[DDSAsset shortName]
+  -[DDSAsset assetType]
+  -[DDSAsset contentVersion]
+  -[DDSAsset init]
+  -[DDSAsset localURL]
+  -[DDSAsset locale]
+  -[DDSAsset .cxx_destruct]
+  -[DDSAsset assetUUID]
+  -[DDSAsset dataType]
+  -[DDSAsset attributes]
+  -[DDSAsset uniqueIdentifier]
+  -[DDSAsset assetState]
+  -[DDSAsset maAsset]
+  -[DDSAsset compatibilityVersion]
+  -[DDSAsset installDate]
+  -[DDSAsset isEqual:]
+  -[DDSAsset setMaAsset:]
+  -[DDSAsset debuggingID]
+  -[DDSAsset isEqualToAsset:]
+  -[DDSAsset _mergeAttributes:]
+  -[DDSAsset setDebuggingID:]
+
+
+DDSBackgroundActivityScheduler : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *schedulerByIdentifier
+ @property  <DDSBackgroundActivitySchedulerDelegate> *delegate
+
+  // instance methods
+  -[DDSBackgroundActivityScheduler init]
+  -[DDSBackgroundActivityScheduler cancelActivityWithIdentifier:]
+  -[DDSBackgroundActivityScheduler .cxx_destruct]
+  -[DDSBackgroundActivityScheduler setDelegate:]
+  -[DDSBackgroundActivityScheduler delegate]
+  -[DDSBackgroundActivityScheduler setSchedulerByIdentifier:]
+  -[DDSBackgroundActivityScheduler schedulerByIdentifier]
+  -[DDSBackgroundActivityScheduler scheduleActivityWithIdentifier:interval:tolerance:]
+
+
+DDSAssertion : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  NSMutableSet *descriptors
+ @property  NSDate *lastUpdated
+ @property  DDSAssetQuery *query
+ @property  DDSAssetPolicy *policy
+ @property  NSSet *assertionIdentifiers
+ @property  NSSet *clientIdentifiers
+
+  // class methods
+  +[DDSAssertion supportsSecureCoding]
+
+  // instance methods
+  -[DDSAssertion copyWithZone:]
+  -[DDSAssertion descriptors]
+  -[DDSAssertion policy]
+  -[DDSAssertion setDescriptors:]
+  -[DDSAssertion invalidateDescription]
+  -[DDSAssertion init]
+  -[DDSAssertion initWithQuery:]
+  -[DDSAssertion assertionIdentifiers]
+  -[DDSAssertion lastUpdated]
+  -[DDSAssertion removeDescriptorWithAssertionID:]
+  -[DDSAssertion .cxx_destruct]
+  -[DDSAssertion query]
+  -[DDSAssertion assertionIDsForClientID:]
+  -[DDSAssertion clientIdentifiers]
+  -[DDSAssertion encodeWithCoder:]
+  -[DDSAssertion addDescriptorWithAssertionID:clientID:policy:]
+  -[DDSAssertion setLastUpdated:]
+  -[DDSAssertion isEqualToAssertion:]
+  -[DDSAssertion isEqual:]
+  -[DDSAssertion removeDescriptorWithClientID:]
+  -[DDSAssertion initWithCoder:]
+
+
+DDSRemoteSyncState : NSObject /usr/lib/libSystem.B.dylib <DDSBackgroundActivitySchedulerDelegate>
+ @property  NSDate *date
+ @property  long long syncStatus
+ @property  unsigned long attemptCount
+ @property  NSString *buildVersion
+ @property  DDSBackgroundActivityScheduler *scheduler
+ @property  <DDSRemoteSyncStateDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DDSRemoteSyncState buildVersionString]
+  +[DDSRemoteSyncState timeIntervalUntilNextRegularUpdate]
+
+  // instance methods
+  -[DDSRemoteSyncState requestUpdate]
+  -[DDSRemoteSyncState loadState]
+  -[DDSRemoteSyncState attemptCount]
+  -[DDSRemoteSyncState scheduler]
+  -[DDSRemoteSyncState setBuildVersion:]
+  -[DDSRemoteSyncState init]
+  -[DDSRemoteSyncState setAttemptCount:]
+  -[DDSRemoteSyncState saveState]
+  -[DDSRemoteSyncState buildVersion]
+  -[DDSRemoteSyncState .cxx_destruct]
+  -[DDSRemoteSyncState date]
+  -[DDSRemoteSyncState setScheduler:]
+  -[DDSRemoteSyncState setDate:]
+  -[DDSRemoteSyncState resetState]
+  -[DDSRemoteSyncState setDelegate:]
+  -[DDSRemoteSyncState syncStatus]
+  -[DDSRemoteSyncState delegate]
+  -[DDSRemoteSyncState performScheduledActivityWithIdentifier:]
+  -[DDSRemoteSyncState shouldInitiateRegularUpdateCycle]
+  -[DDSRemoteSyncState scheduleRegularUpdate]
+  -[DDSRemoteSyncState timeBetweenSyncs]
+  -[DDSRemoteSyncState nextUpdateTimeIntervalForAttemptCount:]
+  -[DDSRemoteSyncState setSyncStatus:]
+  -[DDSRemoteSyncState scheduleRetry]
+  -[DDSRemoteSyncState requestRetry]
+  -[DDSRemoteSyncState beganUpdateCycle]
+  -[DDSRemoteSyncState completedUpdateCycleWithError:]
+
+
+DDSAssetQuery : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSString *assetType
+ @property  DDSAttributeFilter *filter
+ @property  NSString *cacheKey
+ @property  BOOL localOnly
+ @property  BOOL installedOnly
+ @property  BOOL latestOnly
+ @property  BOOL cachedOnly
+
+  // class methods
+  +[DDSAssetQuery supportsSecureCoding]
+
+  // instance methods
+  -[DDSAssetQuery localOnly]
+  -[DDSAssetQuery copyWithZone:]
+  -[DDSAssetQuery setInstalledOnly:]
+  -[DDSAssetQuery setLatestOnly:]
+  -[DDSAssetQuery cacheKey]
+  -[DDSAssetQuery assetType]
+  -[DDSAssetQuery assetType:]
+  -[DDSAssetQuery setCachedOnly:]
+  -[DDSAssetQuery invalidateDescription]
+  -[DDSAssetQuery setLocalOnly:]
+  -[DDSAssetQuery installedOnly]
+  -[DDSAssetQuery initWithAssetType:filter:]
+  -[DDSAssetQuery init]
+  -[DDSAssetQuery cachedOnly]
+  -[DDSAssetQuery filter]
+  -[DDSAssetQuery .cxx_destruct]
+  -[DDSAssetQuery latestOnly]
+  -[DDSAssetQuery encodeWithCoder:]
+  -[DDSAssetQuery isEqualToAssetQuery:]
+  -[DDSAssetQuery initWithAssetType:filter:localOnly:installedOnly:latestOnly:cachedOnly:]
+  -[DDSAssetQuery queue]
+  -[DDSAssetQuery isEqual:]
+  -[DDSAssetQuery initWithCoder:]
+
+
+DDSInterface : NSObject /usr/lib/libSystem.B.dylib <DDSManaging, DDSManagingDelegate>
+ @property  <DDSManaging> *serverOverride
+ @property  NSXPCConnection *remoteServer
+ @property  DDSInterface *sharedInstance
+ @property  <DDSManagingDelegate> *mDelegate
+ @property  NSObject<OS_dispatch_queue> *connectionUsageQueue
+ @property  <DDSManagingDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DDSInterface sharedInstance]
+  +[DDSInterface xpcConnectionOptionsForServer]
+  +[DDSInterface interface]
+
+  // instance methods
+  -[DDSInterface sharedInstance]
+  -[DDSInterface serverOverride]
+  -[DDSInterface createConnectionIfNecessary]
+  -[DDSInterface syncServer]
+  -[DDSInterface init]
+  -[DDSInterface syncServiceObjectProxy]
+  -[DDSInterface serviceObjectProxy]
+  -[DDSInterface dealloc]
+  -[DDSInterface .cxx_destruct]
+  -[DDSInterface triggerDump]
+  -[DDSInterface addAssertionForQuery:policy:assertionID:clientID:]
+  -[DDSInterface server]
+  -[DDSInterface removeAssertionWithID:]
+  -[DDSInterface assertionIDsForClientID:reply:]
+  -[DDSInterface remoteServer]
+  -[DDSInterface triggerUpdate]
+  -[DDSInterface mDelegate]
+  -[DDSInterface setMDelegate:]
+  -[DDSInterface setDelegate:]
+  -[DDSInterface connectionUsageQueue]
+  -[DDSInterface setRemoteServer:]
+  -[DDSInterface delegate]
+  -[DDSInterface setServerOverride:]
+  -[DDSInterface teardownXPCConnection]
+
+
+DDSAnalytics : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *analyticByIdentifier
+ @property  NSObject<OS_dispatch_queue> *analyticQueue
+
+  // class methods
+  +[DDSAnalytics sharedInstance]
+  +[DDSAnalytics roundNumber:toSignificantDigits:]
+  +[DDSAnalytics isInteger:]
+
+  // instance methods
+  -[DDSAnalytics init]
+  -[DDSAnalytics processName]
+  -[DDSAnalytics .cxx_destruct]
+  -[DDSAnalytics analyticQueue]
+  -[DDSAnalytics analyticByIdentifier]
+  -[DDSAnalytics stringForAction:]
+  -[DDSAnalytics reportAssetDownloadAnalytic:]
+  -[DDSAnalytics bucketForValue:fromBuckets:]
+  -[DDSAnalytics cancelRecordingForAsset:]
+  -[DDSAnalytics recordAssetAction:forAsset:]
+  -[DDSAnalytics recordUpdateCycleState:]
+  -[DDSAnalytics reportUpdateCycleAnalytic:]
+  -[DDSAnalytics dumpAssetLogWithInstalledAssets:]
+
+
+DDSAssetObserver : NSObject /usr/lib/libSystem.B.dylib <DDSAssetObserving>
+ @property  <DDSAssetObservingDelegate> *delegate
+ @property  NSSet *typesToObserve
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DDSAssetObserver observeAssetTypes:]
+  -[DDSAssetObserver dealloc]
+  -[DDSAssetObserver .cxx_destruct]
+  -[DDSAssetObserver beginObservingTypes:]
+  -[DDSAssetObserver setTypesToObserve:]
+  -[DDSAssetObserver notifyObserversAssetsUpdatedForType:]
+  -[DDSAssetObserver setDelegate:]
+  -[DDSAssetObserver endObservingTypes:]
+  -[DDSAssetObserver delegate]
+  -[DDSAssetObserver typesToObserve]
+
+
+DDSMobileAssetv1PredicateAdapter : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[DDSMobileAssetv1PredicateAdapter predicateForQuery:compatibilityVersion:internalInstall:]
+  +[DDSMobileAssetv1PredicateAdapter predicateForKey:matchingAnyStringIn:]
+  +[DDSMobileAssetv1PredicateAdapter predicateForKey:matchingAnyDictionaryIn:acceptUnspecifiedValue:acceptUnspecifiedAttribute:lenientMatch:]
+  +[DDSMobileAssetv1PredicateAdapter compatibilityPredicateForCompatabilityVersion:internalInstall:]
+  +[DDSMobileAssetv1PredicateAdapter regionKeys]
+  +[DDSMobileAssetv1PredicateAdapter predicateForKey:matchingString:]
+  +[DDSMobileAssetv1PredicateAdapter predicateForAssetQuery:compatiblilityVersion:]
+  +[DDSMobileAssetv1PredicateAdapter extractRegionDictFromFilter:]
+
+
+DDSLinguisticAssetQuery : DDSAssetQuery
+ @property  DDSLinguisticAttributeFilter *filter
+
+  // instance methods
+  -[DDSLinguisticAssetQuery addRegionWithCountry:province:city:]
+  -[DDSLinguisticAssetQuery initWithLanguageIdentifier:]
+
+
+DDSTimedAnalytic : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long retries
+ @property  BOOL success
+ @property  double startTime
+ @property  double endTime
+ @property  int lastAction
+ @property  NSString *identifier
+ @property  unsigned long durationInSec
+
+  // instance methods
+  -[DDSTimedAnalytic success]
+  -[DDSTimedAnalytic endTime]
+  -[DDSTimedAnalytic setEndTime:]
+  -[DDSTimedAnalytic setStartTime:]
+  -[DDSTimedAnalytic init]
+  -[DDSTimedAnalytic retries]
+  -[DDSTimedAnalytic .cxx_destruct]
+  -[DDSTimedAnalytic initWithIdentifier:]
+  -[DDSTimedAnalytic identifier]
+  -[DDSTimedAnalytic setSuccess:]
+  -[DDSTimedAnalytic setRetries:]
+  -[DDSTimedAnalytic startTime]
+  -[DDSTimedAnalytic updateWithAction:]
+  -[DDSTimedAnalytic durationInSec]
+  -[DDSTimedAnalytic lastAction]
+  -[DDSTimedAnalytic setLastAction:]
+
+
+DDSAssetPolicy : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSDateComponents *idleUsageEvictionPeriod
+ @property  long long preferredDownloadFrequency
+ @property  BOOL downloadOverCellular
+ @property  BOOL downloadWithoutPower
+ @property  NSSet *notificationDownloadTriggers
+ @property  NSString *downloadCompletionNotification
+
+  // class methods
+  +[DDSAssetPolicy supportsSecureCoding]
+  +[DDSAssetPolicy assetPolicy]
+
+  // instance methods
+  -[DDSAssetPolicy downloadOverCellular]
+  -[DDSAssetPolicy init]
+  -[DDSAssetPolicy setDownloadWithoutPower:]
+  -[DDSAssetPolicy setPreferredDownloadFrequency:]
+  -[DDSAssetPolicy isEqualToAssetPolicy:]
+  -[DDSAssetPolicy setDownloadCompletionNotification:]
+  -[DDSAssetPolicy .cxx_destruct]
+  -[DDSAssetPolicy setDownloadOverCellular:]
+  -[DDSAssetPolicy idleUsageEvictionPeriod]
+  -[DDSAssetPolicy downloadWithoutPower]
+  -[DDSAssetPolicy encodeWithCoder:]
+  -[DDSAssetPolicy setNotificationDownloadTriggers:]
+  -[DDSAssetPolicy preferredDownloadFrequency]
+  -[DDSAssetPolicy downloadCompletionNotification]
+  -[DDSAssetPolicy notificationDownloadTriggers]
+  -[DDSAssetPolicy isEqual:]
+  -[DDSAssetPolicy setIdleUsageEvictionPeriod:]
+  -[DDSAssetPolicy initWithCoder:]
+
+
+DDSAssetDownloadAnalytic : DDSTimedAnalytic
+ @property  DDSAsset *asset
+
+  // instance methods
+  -[DDSAssetDownloadAnalytic setAsset:]
+  -[DDSAssetDownloadAnalytic asset]
+  -[DDSAssetDownloadAnalytic init]
+  -[DDSAssetDownloadAnalytic .cxx_destruct]
+  -[DDSAssetDownloadAnalytic initWithAsset:]
+
+
+DDSMobileAssetv2Provider : NSObject /usr/lib/libSystem.B.dylib <DDSAssetProviding>
+ @property  NSMutableDictionary *remainingAssetsByQueryId
+ @property  BOOL encounteredAssertionUpdateError
+ @property  <DDSAssetQueryResultCaching> *assetQueryResultsCache
+ @property  NSMutableDictionary *downloadStateByAssetID
+ @property  <DDSAssetProvidingDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DDSMobileAssetv2Provider supportedCompatibilityVersion]
+  +[DDSMobileAssetv2Provider latestBetweenAssetA:AssetB:]
+  +[DDSMobileAssetv2Provider latestAssetsOnlyFromAssets:]
+
+  // instance methods
+  -[DDSMobileAssetv2Provider init]
+  -[DDSMobileAssetv2Provider updateCatalogForAssetTypes:discretionaryDownload:withCompletion:]
+  -[DDSMobileAssetv2Provider didChangeDownloadState:forAsset:]
+  -[DDSMobileAssetv2Provider performAssetsForQuery:errorPtr:]
+  -[DDSMobileAssetv2Provider encounteredAssertionUpdateError]
+  -[DDSMobileAssetv2Provider contentItemsFromAssets:matchingFilter:]
+  -[DDSMobileAssetv2Provider removeAssets:]
+  -[DDSMobileAssetv2Provider beginDownloadForAssets:withPolicy:discretionaryDownload:error:handler:]
+  -[DDSMobileAssetv2Provider .cxx_destruct]
+  -[DDSMobileAssetv2Provider didUpdateCatalogWithError:]
+  -[DDSMobileAssetv2Provider assetQueryResultsCache]
+  -[DDSMobileAssetv2Provider allContentItemsMatchingQuery:error:]
+  -[DDSMobileAssetv2Provider downloadStateByAssetID]
+  -[DDSMobileAssetv2Provider assetsForQuery:errorPtr:]
+  -[DDSMobileAssetv2Provider setEncounteredAssertionUpdateError:]
+  -[DDSMobileAssetv2Provider didCompleteDownloadForAssertion:error:]
+  -[DDSMobileAssetv2Provider removeOldAssetsForAssertions:]
+  -[DDSMobileAssetv2Provider serverDidUpdateAssetsWithType:]
+  -[DDSMobileAssetv2Provider setDownloadStateByAssetID:]
+  -[DDSMobileAssetv2Provider beginDownloadForAssertion:discretionaryDownload:handler:]
+  -[DDSMobileAssetv2Provider beginDownloadForAssertions:discretionaryDownload:]
+  -[DDSMobileAssetv2Provider setDelegate:]
+  -[DDSMobileAssetv2Provider remainingAssetsByQueryId]
+  -[DDSMobileAssetv2Provider shouldMatchAttributeValue:givenValue:]
+  -[DDSMobileAssetv2Provider setAssetQueryResultsCache:]
+  -[DDSMobileAssetv2Provider delegate]
+  -[DDSMobileAssetv2Provider removeAssetsForAssertions:]
+  -[DDSMobileAssetv2Provider downloadOptionsForPolicy:discretionaryDownload:]
+
+
+DDSAssertDescriptor : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *clientIdentifier
+ @property  NSString *assertionIdentifier
+ @property  DDSAssetPolicy *policy
+
+  // class methods
+  +[DDSAssertDescriptor supportsSecureCoding]
+
+  // instance methods
+  -[DDSAssertDescriptor policy]
+  -[DDSAssertDescriptor setAssertionIdentifier:]
+  -[DDSAssertDescriptor setPolicy:]
+  -[DDSAssertDescriptor init]
+  -[DDSAssertDescriptor initWithPolicy:assertionID:clientID:]
+  -[DDSAssertDescriptor clientIdentifier]
+  -[DDSAssertDescriptor assertionIdentifier]
+  -[DDSAssertDescriptor .cxx_destruct]
+  -[DDSAssertDescriptor encodeWithCoder:]
+  -[DDSAssertDescriptor isEqualToDescriptor:]
+  -[DDSAssertDescriptor isEqual:]
+  -[DDSAssertDescriptor setClientIdentifier:]
+  -[DDSAssertDescriptor initWithCoder:]
+
+
+DDSAssertionDataHandler : NSObject /usr/lib/libSystem.B.dylib <DDSAssertionDataHandling>
+  // instance methods
+  -[DDSAssertionDataHandler assertionContentURL]
+  -[DDSAssertionDataHandler assertionContentDirectory]
+  -[DDSAssertionDataHandler saveAssertionData:]
+  -[DDSAssertionDataHandler loadAssertionData]
+
+
+DDSAssertionTracker : NSObject /usr/lib/libSystem.B.dylib <DDSAssetTracking>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSMutableArray *trackedAssertions
+ @property  NSMutableDictionary *trackedAssertionSets
+ @property  <DDSAssertionDataHandling> *dataHandler
+ @property  <DDSAssetTrackingDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DDSAssertionTracker init]
+  -[DDSAssertionTracker assertionDueForUpdateSinceDate:]
+  -[DDSAssertionTracker trackedAssertionSets]
+  -[DDSAssertionTracker dataHandler]
+  -[DDSAssertionTracker .cxx_destruct]
+  -[DDSAssertionTracker assertionIDsForClientID:]
+  -[DDSAssertionTracker addAssertionForQuery:policy:assertionID:clientID:]
+  -[DDSAssertionTracker removeAssertionWithID:]
+  -[DDSAssertionTracker trackedAssertions]
+  -[DDSAssertionTracker initWithDataHandler:]
+  -[DDSAssertionTracker allAssertions]
+  -[DDSAssertionTracker queue]
+  -[DDSAssertionTracker assertionDueForUpdateFrom:SinceDate:]
+  -[DDSAssertionTracker didUpdateAssertion:atDate:]
+  -[DDSAssertionTracker setDelegate:]
+  -[DDSAssertionTracker trackedAssetTypes]
+  -[DDSAssertionTracker delegate]
+  -[DDSAssertionTracker intervalForDownloadFrequency:]
+
+
+DDSManager : NSObject /usr/lib/libSystem.B.dylib <DDSAssetProvidingDelegate, DDSAssetTrackingDelegate, DDSRemoteSyncStateDelegate, DDSAssetObservingDelegate, DDSManaging>
+ @property  <DDSAssetTracking> *tracker
+ @property  <DDSAssetProviding> *provider
+ @property  <DDSAssetObserving> *assetObserver
+ @property  DDSScheduledTimer *timer
+ @property  DDSRemoteSyncState *remoteSyncState
+ @property  NSMutableSet *pendingAssertionsToUpdate
+ @property  NSObject<OS_dispatch_queue> *pendingAssertionsQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <DDSManagingDelegate> *delegate
+
+  // instance methods
+  -[DDSManager remoteSyncState]
+  -[DDSManager provider]
+  -[DDSManager didStartUpdateCycle]
+  -[DDSManager init]
+  -[DDSManager didChangeDownloadState:forAsset:]
+  -[DDSManager timer]
+  -[DDSManager handleRemovedAssertions:]
+  -[DDSManager initWithProvider:tracker:]
+  -[DDSManager didCompleteDownloadForAssertions:error:]
+  -[DDSManager pendingAssertionsQueue]
+  -[DDSManager didBeginUpdateCatalog]
+  -[DDSManager .cxx_destruct]
+  -[DDSManager didUpdateCatalogWithError:]
+  -[DDSManager triggerDump]
+  -[DDSManager addAssertionForQuery:policy:assertionID:clientID:]
+  -[DDSManager remoteSyncStateRequestsUpdate]
+  -[DDSManager deleteV1AssetsIfNecessary]
+  -[DDSManager removeAssertionWithID:]
+  -[DDSManager tracker]
+  -[DDSManager handleNewAssertions:]
+  -[DDSManager setPendingAssertionsToUpdate:]
+  -[DDSManager pendingAssertionsToUpdate]
+  -[DDSManager assertionIDsForClientID:reply:]
+  -[DDSManager beginUpdateCycleForced:discretionaryDownload:]
+  -[DDSManager triggerUpdate]
+  -[DDSManager willRetryUpdateCycle]
+  -[DDSManager remoteSyncStateRequestsRetry]
+  -[DDSManager assetObserver]
+  -[DDSManager didCompleteDownloadForAssertion:error:]
+  -[DDSManager serverDidUpdateAssetsWithType:]
+  -[DDSManager setDelegate:]
+  -[DDSManager didEndUpdateCycleWithError:]
+  -[DDSManager delegate]
+
+
+01 00 0500 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAsset 
+01 00 0500 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAssetQuery 
+01 00 0500 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MADownloadOptions 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBackgroundActivityScheduler 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

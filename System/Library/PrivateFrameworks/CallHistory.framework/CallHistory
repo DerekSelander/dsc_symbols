@@ -1,0 +1,1946 @@
+|| __DATA.__data _kCallHistoryDatabaseChangedTokenKey
+|| __DATA.__data _kCallUpdatePropertyBytesUsed
+|| __DATA.__data _kCallUpdatePropertyCallStatus
+|| __DATA.__data _kCallUpdatePropertyOutgoingLocalParticipantUUID
+|| __DATA.__data _kCallUpdatePropertyRead
+|| __DATA.__data _kCallUpdatePropertyUniqueId
+|| __DATA.__data _kMobileUser
+|| __DATA.__data _kPluginHelperServiceIdentifier
+|| __DATA.__data _kSyncHelperServiceIdentifier
+|| __DATA.__objc_data _OBJC_CLASS_$_CHMigrator
+|| __DATA.__objc_data _OBJC_CLASS_$_CHPluginHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_DBMigrationResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_CHMigrator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CHPluginHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_DBMigrationResult
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CHLogger._logHandle
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBClientHandle._observerCallRecordRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBClientHandle._observerCallTimersRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBClientHandle.dbStoreHandle
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle._dataStoreAddedRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle._moveCallRecordsFromTempStoreRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle._observerCallDBPropRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle._observerCallRecordRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle.callDBManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle.fCallDBPropertiesContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle.fCallRecordContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CallHistoryDBHandle.objectId
+|| __DATA_CONST.__const _kCHCallOccurrenceCallStatusKey
+|| __DATA_CONST.__const _kCHCallOccurrenceCallTypeKey
+|| __DATA_CONST.__const _kCHCallOccurrenceDataUsageKey
+|| __DATA_CONST.__const _kCHCallOccurrenceDateKey
+|| __DATA_CONST.__const _kCHCallOccurrenceDurationKey
+|| __DATA_CONST.__const _kCHCallOccurrenceMediaTypeKey
+|| __DATA_CONST.__const _kCHCallOccurrenceServiceProviderKey
+|| __DATA_CONST.__const _kCHCallOccurrenceTTYTypeKey
+|| __DATA_CONST.__const _kCHCallOccurrenceUniqueIdKey
+|| __DATA_CONST.__const _kCHCallOccurrenceVerificationStatusKey
+|| __DATA_CONST.__const _kCHCoalescingStrategyCollapseIfEqual
+|| __DATA_CONST.__const _kCHCoalescingStrategyRecents
+|| __DATA_CONST.__const _kCHConfigurationCloudKitEnabled
+|| __DATA_CONST.__const _kCHLimitCallKindsKey
+|| __DATA_CONST.__const _kCHLimitCallTypeKey
+|| __DATA_CONST.__const _kCHLimitEndDateKey
+|| __DATA_CONST.__const _kCHLimitMediaTypeKey
+|| __DATA_CONST.__const _kCHLimitServiceProviderKey
+|| __DATA_CONST.__const _kCHLimitStartDateKey
+|| __DATA_CONST.__const _kCHLimitTTYTypeKey
+|| __DATA_CONST.__const _kCHServiceProviderFaceTime
+|| __DATA_CONST.__const _kCHServiceProviderTelephony
+|| __DATA_CONST.__const _kCHTimerIncomingKey
+|| __DATA_CONST.__const _kCHTimerLifetimeKey
+|| __DATA_CONST.__const _kCHTimerOutgoingKey
+|| __DATA_CONST.__const _kCallDBDirName
+|| __DATA_CONST.__const _kCallDBMLogDomain
+|| __DATA_CONST.__const _kCallDBPropertiesEntity
+|| __DATA_CONST.__const _kCallDBSharedUtilDomain
+|| __DATA_CONST.__const _kCallHistoryDBName
+|| __DATA_CONST.__const _kCallHistoryDataStoreExtension
+|| __DATA_CONST.__const _kCallHistoryDatabaseChangedNotification
+|| __DATA_CONST.__const _kCallHistoryDatabaseInitializedKey
+|| __DATA_CONST.__const _kCallHistoryDatabasePluginUpdateNotification
+|| __DATA_CONST.__const _kCallHistoryDatabaseRemoteUpdateReadNotification
+|| __DATA_CONST.__const _kCallHistoryObjectModelResourceExtension
+|| __DATA_CONST.__const _kCallHistoryTempDBName
+|| __DATA_CONST.__const _kCallHistoryTimersChangedNotification
+|| __DATA_CONST.__const _kCallRecordEntity
+|| __DATA_CONST.__const _kMoveCallRecordsFromTemporaryStoreNotitification
+|| __DATA_CONST.__const _kShowsFaceTimeAudioCallsKey
+|| __DATA_CONST.__const _kShowsFaceTimeVideoCallsKey
+|| __DATA_CONST.__const _kShowsTelephonyCallsKey
+|| __DATA_CONST.__const _kTmpDBLocationKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHConfigurationAggregator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHHandle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHPhoneNumber
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHRecentCall
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHSynchronizable
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHSynchronizedLoggable
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHUserConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CallDBManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CallDBManagerServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CallHistoryDBClientHandle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CallHistoryDBHandle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DBManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DeserializedTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_GateKeeper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHConfigurationAggregator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHHandle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHPhoneNumber
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHRecentCall
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHSynchronizable
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHSynchronizedLoggable
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHUserConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CallDBManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CallDBManagerServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CallHistoryDBClientHandle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CallHistoryDBHandle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DBManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DeserializedTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_GateKeeper
+|| __TEXT.__const _kCHCallCategoryAudio
+|| __TEXT.__const _kCHCallCategoryTTYDirect
+|| __TEXT.__const _kCHCallCategoryTTYRelay
+|| __TEXT.__const _kCHCallCategoryVideo
+|| __TEXT.__const _kCHCallStatusAll
+|| __TEXT.__const _kCHCallStatusAllButMissed
+|| __TEXT.__const _kCHCallStatusAnsweredElsewhere
+|| __TEXT.__const _kCHCallStatusCancelled
+|| __TEXT.__const _kCHCallStatusConnected
+|| __TEXT.__const _kCHCallStatusConnectedIncoming
+|| __TEXT.__const _kCHCallStatusConnectedOutgoing
+|| __TEXT.__const _kCHCallStatusIncoming
+|| __TEXT.__const _kCHCallStatusMissed
+|| __TEXT.__const _kCHCallStatusOutgoing
+|| __TEXT.__const _kCHCallStatusUnknown
+|| __TEXT.__const _kCHCallTypeAll
+|| __TEXT.__const _kCHCallTypeFaceTime
+|| __TEXT.__const _kCHCallTypeFaceTimeAudio
+|| __TEXT.__const _kCHCallTypeFaceTimeVideo
+|| __TEXT.__const _kCHCallTypeNormal
+|| __TEXT.__const _kCHCallTypeTelephony
+|| __TEXT.__const _kCHCallTypeUnknown
+|| __TEXT.__const _kCHCallTypeVOIP
+|| __TEXT.__const _kCHCallTypeVoicemail
+|| __TEXT.__text _CHCallerIdAvailabilityAsString
+|| __TEXT.__text _DeserializeTransactions
+|| __TEXT.__text _HandleInteractionsForDeserializedTransactions
+|| __TEXT.__text _createBackgroundTaskAssertion
+|| __TEXT.__text _createDirectoryAtPath
+|| __TEXT.__text _createLogDirectoryAtPath
+|| __TEXT.__text _dumpLogs
+|| __TEXT.__text _getAppSupportDir
+|| __TEXT.__text _getAppSupportDirSandboxed
+|| __TEXT.__text _getBoolAsString
+|| __TEXT.__text _getCHNotifyDataStoreChangeReasonAsString
+|| __TEXT.__text _getCurrentLocale
+|| __TEXT.__text _getDBDirCreateOptions
+|| __TEXT.__text _getDBLErrorCodeAsString
+|| __TEXT.__text _getDBMErrorCodeAsString
+|| __TEXT.__text _getLoggedInUserName
+|| __TEXT.__text _getMobileUserDirectoryPath
+|| __TEXT.__text _getMobileUserLibraryDirectoryPath
+|| __TEXT.__text _getMobileUserLogDirectoryPath
+|| __TEXT.__text _getOperatingSystemVersion
+|| __TEXT.__text _isCarrierBuild
+|| __TEXT.__text _isInternalBuild
+|| __TEXT.__text _maybeAppendStringWithSeparator
+|| __TEXT.__text _maybeLogVersionInfo
+|| __TEXT.__text _notifyClientsOfEvent
+__ AppSupport: _CFPhoneNumberCreate
+__ AppSupport: _CFPhoneNumberCreateString
+__ AppSupport: _PNCopyBestGuessCountryCodeForNumber
+__ AppSupport: __PNCopyStrippedNumberWithoutPauses
+__ Contacts: _CNContactEmailAddressesKey
+__ Contacts: _CNContactPhoneNumbersKey
+__ Contacts: _CNContactSocialProfilesKey
+__ Contacts: _CNContactStoreDidChangeNotification
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNContactFetchRequest
+__ Contacts: _OBJC_CLASS_$_CNContactFormatter
+__ Contacts: _OBJC_CLASS_$_CNContactStore
+__ Contacts: _OBJC_CLASS_$_CNLabeledValue
+__ Contacts: _OBJC_CLASS_$_CNPhoneNumber
+__ CoreData: _NSAddedPersistentStoresKey
+__ CoreData: _NSDeletedObjectsKey
+__ CoreData: _NSInsertedObjectsKey
+__ CoreData: _NSManagedObjectContextDidSaveNotification
+__ CoreData: _NSMergeByPropertyObjectTrumpMergePolicy
+__ CoreData: _NSPersistentStoreCoordinatorResourceBundlesForMigration
+__ CoreData: _NSPersistentStoreCoordinatorStoresDidChangeNotification
+__ CoreData: _NSPersistentStoreFileProtectionKey
+__ CoreData: _NSPersistentStoreUnlinkDestroyOption
+__ CoreData: _NSSQLitePragmasOption
+__ CoreData: _NSSQLiteStoreType
+__ CoreData: _NSUpdatedObjectsKey
+__ CoreData: _OBJC_CLASS_$_NSBatchDeleteRequest
+__ CoreData: _OBJC_CLASS_$_NSEntityMigrationPolicy
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectContext
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectModel
+__ CoreData: _OBJC_CLASS_$_NSMappingModel
+__ CoreData: _OBJC_CLASS_$_NSMigrationManager
+__ CoreData: _OBJC_CLASS_$_NSPersistentStoreCoordinator
+__ CoreData: _OBJC_METACLASS_$_NSEntityMigrationPolicy
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreFoundation: _CFArrayCreate
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _NSCurrentLocaleDidChangeNotification
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSLocaleCountryCode
+__ CoreFoundation: _NSURLIsDirectoryKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ Foundation: _NSFileProtectionCompleteUntilFirstUserAuthentication
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValueTransformer
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSValueTransformer
+__ GeoServices: _OBJC_CLASS_$_GEOPhoneNumberResolver
+__ GeoServices: _kGEOPhoneNumberCountryKey
+__ GeoServices: _kGEOPhoneNumberKey
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ ProtocolBuffer: _OBJC_CLASS_$_PBCodable
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._bytes
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._error
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._length
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._pos
+__ ProtocolBuffer: _OBJC_METACLASS_$_PBCodable
+__ ProtocolBuffer: _PBDataWriterWriteBOOLField
+__ ProtocolBuffer: _PBDataWriterWriteStringField
+__ ProtocolBuffer: _PBDataWriterWriteUint32Field
+__ ProtocolBuffer: _PBDataWriterWriteUint64Field
+__ ProtocolBuffer: _PBReaderReadString
+__ ProtocolBuffer: _PBReaderSkipValueWithTag
+__ SpringBoardServices: _SBSProcessAssertionCreateForPID
+__ WirelessDiagnostics: _OBJC_CLASS_$_AWDMetricManager
+__ WirelessDiagnostics: _OBJC_CLASS_$_AWDServerConnection
+__ libCTGreenTeaLogger.dylib: _ct_green_tea_logger_create_static
+__ libCTGreenTeaLogger.dylib: _getCTGreenTeaOsLogHandle
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGCopyMultipleAnswers
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _getpwuid_r
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _sysconf
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+AWDCallHistoryCommCenterMigration : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasSuccess
+ @property  BOOL success
+ @property  BOOL hasRecordCount
+ @property  unsigned int recordCount
+ @property  BOOL hasVersion
+ @property  unsigned int version
+
+  // instance methods
+  -[AWDCallHistoryCommCenterMigration success]
+  -[AWDCallHistoryCommCenterMigration copyWithZone:]
+  -[AWDCallHistoryCommCenterMigration setHasVersion:]
+  -[AWDCallHistoryCommCenterMigration timestamp]
+  -[AWDCallHistoryCommCenterMigration setTimestamp:]
+  -[AWDCallHistoryCommCenterMigration hasSuccess]
+  -[AWDCallHistoryCommCenterMigration setHasSuccess:]
+  -[AWDCallHistoryCommCenterMigration setVersion:]
+  -[AWDCallHistoryCommCenterMigration setRecordCount:]
+  -[AWDCallHistoryCommCenterMigration setHasRecordCount:]
+  -[AWDCallHistoryCommCenterMigration hasRecordCount]
+  -[AWDCallHistoryCommCenterMigration setHasTimestamp:]
+  -[AWDCallHistoryCommCenterMigration readFrom:]
+  -[AWDCallHistoryCommCenterMigration recordCount]
+  -[AWDCallHistoryCommCenterMigration writeTo:]
+  -[AWDCallHistoryCommCenterMigration isEqual:]
+  -[AWDCallHistoryCommCenterMigration version]
+  -[AWDCallHistoryCommCenterMigration copyTo:]
+  -[AWDCallHistoryCommCenterMigration dictionaryRepresentation]
+  -[AWDCallHistoryCommCenterMigration hasVersion]
+  -[AWDCallHistoryCommCenterMigration mergeFrom:]
+  -[AWDCallHistoryCommCenterMigration setSuccess:]
+  -[AWDCallHistoryCommCenterMigration hasTimestamp]
+
+
+CHSynchronizable : NSObject /usr/lib/libc++.1.dylib <CHSynchronizable>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CHSynchronizable initWithName:]
+  -[CHSynchronizable .cxx_destruct]
+  -[CHSynchronizable initWithQueue:]
+  -[CHSynchronizable executeSync:]
+  -[CHSynchronizable queue]
+  -[CHSynchronizable executeSyncWithBOOL:]
+  -[CHSynchronizable execute:]
+  -[CHSynchronizable executeSyncWithResult:]
+
+
+CHDatabaseClientHandleManager : CHSynchronizedLoggable
+ @property  CallHistoryDBClientHandle *databaseClientHandle
+
+  // class methods
+  +[CHDatabaseClientHandleManager sharedInstance]
+
+  // instance methods
+  -[CHDatabaseClientHandleManager init]
+  -[CHDatabaseClientHandleManager databaseClientHandle]
+  -[CHDatabaseClientHandleManager .cxx_destruct]
+
+
+NotificationSender : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *name
+ @property  NSDictionary *userInfo
+
+  // instance methods
+  -[NotificationSender initWithName:]
+  -[NotificationSender setUserInfo:]
+  -[NotificationSender dealloc]
+  -[NotificationSender .cxx_destruct]
+  -[NotificationSender name]
+  -[NotificationSender userInfo]
+
+
+CallHistoryDBHandle : CHLogger
+ @property  NSString *objectId
+ @property  CallDBManager *callDBManager
+
+  // class methods
+  +[CallHistoryDBHandle createWithDBManager:]
+  +[CallHistoryDBHandle createForServer]
+  +[CallHistoryDBHandle createForClient]
+
+  // instance methods
+  -[CallHistoryDBHandle save:]
+  -[CallHistoryDBHandle timerIncoming]
+  -[CallHistoryDBHandle fetchAll]
+  -[CallHistoryDBHandle fetchWithPredicate:forEntity:]
+  -[CallHistoryDBHandle fetchWithCallTypes:]
+  -[CallHistoryDBHandle dealloc]
+  -[CallHistoryDBHandle .cxx_destruct]
+  -[CallHistoryDBHandle registerForNotifications:]
+  -[CallHistoryDBHandle mergeCallDBPropChangesFromRemoteAppSave]
+  -[CallHistoryDBHandle handleCallRecordContextDidSaveNotification:]
+  -[CallHistoryDBHandle deleteManagedCalls:]
+  -[CallHistoryDBHandle handlePersistentStoreChangedNotification:]
+  -[CallHistoryDBHandle initWithDBManager:]
+  -[CallHistoryDBHandle deleteObjectWithUniqueId:]
+  -[CallHistoryDBHandle timerLifetime]
+  -[CallHistoryDBHandle fetchManagedCallCountWithPredicate:sortDescriptors:]
+  -[CallHistoryDBHandle performSaveWithBackgroundTaskAssertion:error:]
+  -[CallHistoryDBHandle fetchObjectsWithPredicate:]
+  -[CallHistoryDBHandle postTimersChangedNotification]
+  -[CallHistoryDBHandle handleSaveForCallRecordContext:error:]
+  -[CallHistoryDBHandle deleteObjectsWithUniqueIds:]
+  -[CallHistoryDBHandle fetchManagedCallIdentifiersWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[CallHistoryDBHandle fetchObjectsWithUniqueIds:]
+  -[CallHistoryDBHandle callDBProperties]
+  -[CallHistoryDBHandle saveTimers:]
+  -[CallHistoryDBHandle fetchAllObjectsWithUniqueId:]
+  -[CallHistoryDBHandle fetchManagedCallsWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[CallHistoryDBHandle resetTimers]
+  -[CallHistoryDBHandle unRegisterForNotifications]
+  -[CallHistoryDBHandle objectId]
+  -[CallHistoryDBHandle updateManagedCallsWithPredicate:propertiesToUpdate:]
+  -[CallHistoryDBHandle deleteManagedCallsWithPredicate:]
+  -[CallHistoryDBHandle timerLastReset]
+  -[CallHistoryDBHandle deleteAll]
+  -[CallHistoryDBHandle moveCallRecordsFromDatabaseAtURL:]
+  -[CallHistoryDBHandle resetAllTimers]
+  -[CallHistoryDBHandle handleCallDBPropContextDidSaveNotification:]
+  -[CallHistoryDBHandle mergeCallRecordChangesFromRemoteAppSave]
+  -[CallHistoryDBHandle createCallRecord]
+  -[CallHistoryDBHandle getArrayForCallTypeMask:]
+  -[CallHistoryDBHandle fetchObjectWithUniqueId:]
+  -[CallHistoryDBHandle fetchWithPredicate:forEntity:withLimit:]
+  -[CallHistoryDBHandle callDBManager]
+  -[CallHistoryDBHandle updateCallDBProperties]
+  -[CallHistoryDBHandle timerOutgoing]
+  -[CallHistoryDBHandle callRecordContext]
+  -[CallHistoryDBHandle fetchAllNoLimit]
+
+
+AWDCallHistoryDeviceUnlocked : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasCallCount
+ @property  unsigned int callCount
+
+  // instance methods
+  -[AWDCallHistoryDeviceUnlocked copyWithZone:]
+  -[AWDCallHistoryDeviceUnlocked timestamp]
+  -[AWDCallHistoryDeviceUnlocked setTimestamp:]
+  -[AWDCallHistoryDeviceUnlocked setCallCount:]
+  -[AWDCallHistoryDeviceUnlocked setHasCallCount:]
+  -[AWDCallHistoryDeviceUnlocked hasCallCount]
+  -[AWDCallHistoryDeviceUnlocked setHasTimestamp:]
+  -[AWDCallHistoryDeviceUnlocked callCount]
+  -[AWDCallHistoryDeviceUnlocked readFrom:]
+  -[AWDCallHistoryDeviceUnlocked writeTo:]
+  -[AWDCallHistoryDeviceUnlocked isEqual:]
+  -[AWDCallHistoryDeviceUnlocked copyTo:]
+  -[AWDCallHistoryDeviceUnlocked dictionaryRepresentation]
+  -[AWDCallHistoryDeviceUnlocked mergeFrom:]
+  -[AWDCallHistoryDeviceUnlocked hasTimestamp]
+
+
+CHHandle : NSObject /usr/lib/libc++.1.dylib <NSSecureCoding, NSCopying>
+ @property  NSString *normalizedValue
+ @property  long long type
+ @property  NSString *value
+
+  // class methods
+  +[CHHandle normalizedPhoneNumberHandleForValue:isoCountryCode:]
+  +[CHHandle supportsSecureCoding]
+  +[CHHandle normalizedGenericHandleForValue:]
+  +[CHHandle normalizedEmailAddressHandleForValue:]
+  +[CHHandle handleTypeForValue:]
+
+  // instance methods
+  -[CHHandle copyWithZone:]
+  -[CHHandle .cxx_destruct]
+  -[CHHandle initWithHandle:]
+  -[CHHandle initWithType:value:]
+  -[CHHandle encodeWithCoder:]
+  -[CHHandle type]
+  -[CHHandle initWithType:value:normalizedValue:]
+  -[CHHandle isEqual:]
+  -[CHHandle isEqualToHandle:]
+  -[CHHandle value]
+  -[CHHandle normalizedValue]
+  -[CHHandle initWithCoder:]
+
+
+CHUserConfiguration : CHConfiguration
+  // class methods
+  +[CHUserConfiguration userDefaults]
+  +[CHUserConfiguration registeredDefaults]
+
+  // instance methods
+  -[CHUserConfiguration init]
+  -[CHUserConfiguration dealloc]
+  -[CHUserConfiguration observeValueForKeyPath:ofObject:change:context:]
+
+
+CallDBManagerClient : CallDBManager
+ @property  NSXPCConnection *helperConnection
+ @property  id syncHelperReadyNotificationRef
+
+  // instance methods
+  -[CallDBManagerClient tempDBLocation:]
+  -[CallDBManagerClient pokeSyncHelperToInitDB]
+  -[CallDBManagerClient setSyncHelperReadyNotificationRef:]
+  -[CallDBManagerClient .cxx_destruct]
+  -[CallDBManagerClient willMoveCallsFromTempDatabase]
+  -[CallDBManagerClient createPermanent]
+  -[CallDBManagerClient helperConnection]
+  -[CallDBManagerClient validateTempDatabase]
+  -[CallDBManagerClient validatePermDatabase]
+  -[CallDBManagerClient moveCallsFromTempDatabase]
+  -[CallDBManagerClient createTemporary]
+  -[CallDBManagerClient syncHelperReadyNotificationRef]
+  -[CallDBManagerClient createHelperConnection]
+  -[CallDBManagerClient setHelperConnection:]
+  -[CallDBManagerClient permDBLocation:]
+  -[CallDBManagerClient handlePermanentCreated]
+
+
+CallDBManager : NSObject /usr/lib/libc++.1.dylib
+ @property  id deviceUnlockNotificationRef
+ @property  DBManager *dbManager
+ @property  BOOL deviceUnlocked
+ @property  unsigned char dataStoreType
+ @property  unsigned char notifyDataStoreChangeReason
+
+  // class methods
+  +[CallDBManager dataStoreName]
+  +[CallDBManager modelURL]
+  +[CallDBManager getDBLocationIsSandboxed:isTemporary:error:]
+
+  // instance methods
+  -[CallDBManager registerForNotifications]
+  -[CallDBManager tempDBLocation:]
+  -[CallDBManager init]
+  -[CallDBManager dbManager]
+  -[CallDBManager dealloc]
+  -[CallDBManager createManagedObjectContext]
+  -[CallDBManager .cxx_destruct]
+  -[CallDBManager setDeviceUnlocked:]
+  -[CallDBManager notifyDataStoreChanged]
+  -[CallDBManager createPermanent]
+  -[CallDBManager notifyDataStoreChangeReason]
+  -[CallDBManager dataStoreType]
+  -[CallDBManager setNotifyDataStoreChangeReason:]
+  -[CallDBManager createDataStore]
+  -[CallDBManager handleTemporaryCreated]
+  -[CallDBManager shouldCreatePermanent]
+  -[CallDBManager shouldCreateTemporary]
+  -[CallDBManager setDataStoreType:]
+  -[CallDBManager setDeviceUnlockNotificationRef:]
+  -[CallDBManager deviceUnlockNotificationRef]
+  -[CallDBManager reFetchState]
+  -[CallDBManager setDbManager:]
+  -[CallDBManager deviceUnlocked]
+  -[CallDBManager moveCallsFromTempDatabase]
+  -[CallDBManager createTemporary]
+  -[CallDBManager permDBLocation:]
+  -[CallDBManager handlePermanentCreated]
+
+
+CallDBMetaInfo : NSObject /usr/lib/libc++.1.dylib
+ @property  NSURL *dbInfoPrefFile
+
+  // instance methods
+  -[CallDBMetaInfo validateInfo:]
+  -[CallDBMetaInfo initWithURL:]
+  -[CallDBMetaInfo readDatabaseVersion:]
+  -[CallDBMetaInfo .cxx_destruct]
+  -[CallDBMetaInfo writeDatabaseVersion:isTemp:]
+  -[CallDBMetaInfo setDbInfoPrefFile:]
+  -[CallDBMetaInfo dbInfoPrefFile]
+
+
+AWDCallHistoryDeleteAll : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasRecordCount
+ @property  unsigned int recordCount
+
+  // instance methods
+  -[AWDCallHistoryDeleteAll copyWithZone:]
+  -[AWDCallHistoryDeleteAll timestamp]
+  -[AWDCallHistoryDeleteAll setTimestamp:]
+  -[AWDCallHistoryDeleteAll setRecordCount:]
+  -[AWDCallHistoryDeleteAll setHasRecordCount:]
+  -[AWDCallHistoryDeleteAll hasRecordCount]
+  -[AWDCallHistoryDeleteAll setHasTimestamp:]
+  -[AWDCallHistoryDeleteAll readFrom:]
+  -[AWDCallHistoryDeleteAll recordCount]
+  -[AWDCallHistoryDeleteAll writeTo:]
+  -[AWDCallHistoryDeleteAll isEqual:]
+  -[AWDCallHistoryDeleteAll copyTo:]
+  -[AWDCallHistoryDeleteAll dictionaryRepresentation]
+  -[AWDCallHistoryDeleteAll mergeFrom:]
+  -[AWDCallHistoryDeleteAll hasTimestamp]
+
+
+CHConfiguration : NSObject /usr/lib/libc++.1.dylib <CHConfiguration>
+ @property  <CHKeyValueDataSource> *dataSource
+ @property  <CHConfigurationDelegate> *delegate
+ @property  BOOL cloudKitEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CHConfiguration isCloudKitEnabled]
+  -[CHConfiguration initWithDataSource:]
+  -[CHConfiguration .cxx_destruct]
+  -[CHConfiguration numberForKey:]
+  -[CHConfiguration dataSource]
+  -[CHConfiguration setDelegate:]
+  -[CHConfiguration delegate]
+
+
+GateKeeper : CHLogger
+ @property  BOOL hasDeviceBeenUnlockedSinceBoot
+
+  // class methods
+  +[GateKeeper instance]
+
+  // instance methods
+  -[GateKeeper init]
+  -[GateKeeper hasDeviceBeenUnlockedSinceBoot]
+  -[GateKeeper reFetch]
+  -[GateKeeper cacheUnlockSinceBootState]
+  -[GateKeeper setupMobileKeyBag]
+  -[GateKeeper setHasDeviceBeenUnlockedSinceBoot:]
+
+
+AWDCallHistoryCallAddedBeforeUnlock : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[AWDCallHistoryCallAddedBeforeUnlock copyWithZone:]
+  -[AWDCallHistoryCallAddedBeforeUnlock timestamp]
+  -[AWDCallHistoryCallAddedBeforeUnlock setTimestamp:]
+  -[AWDCallHistoryCallAddedBeforeUnlock setHasTimestamp:]
+  -[AWDCallHistoryCallAddedBeforeUnlock readFrom:]
+  -[AWDCallHistoryCallAddedBeforeUnlock writeTo:]
+  -[AWDCallHistoryCallAddedBeforeUnlock isEqual:]
+  -[AWDCallHistoryCallAddedBeforeUnlock copyTo:]
+  -[AWDCallHistoryCallAddedBeforeUnlock dictionaryRepresentation]
+  -[AWDCallHistoryCallAddedBeforeUnlock mergeFrom:]
+  -[AWDCallHistoryCallAddedBeforeUnlock hasTimestamp]
+
+
+CHPhoneNumber : CHLogger
+ @property  NSString *digits
+ @property  NSString *isoCountryCode
+ @property  BOOL formattedRepresentationAttempted
+ @property  BOOL normalizedRepresentationAttempted
+ @property  NSString *formattedRepresentation
+ @property  NSString *normalizedRepresentation
+
+  // instance methods
+  -[CHPhoneNumber .cxx_destruct]
+  -[CHPhoneNumber normalizedRepresentationAttempted]
+  -[CHPhoneNumber formattedRepresentation]
+  -[CHPhoneNumber setIsoCountryCode:]
+  -[CHPhoneNumber formattedRepresentationAttempted]
+  -[CHPhoneNumber setNormalizedRepresentationAttempted:]
+  -[CHPhoneNumber digits]
+  -[CHPhoneNumber setFormattedRepresentationAttempted:]
+  -[CHPhoneNumber normalizedRepresentation]
+  -[CHPhoneNumber isoCountryCode]
+  -[CHPhoneNumber initWithDigits:isoCountryCode:]
+
+
+CHEntityMigrationPolicy : NSEntityMigrationPolicy /usr/lib/libobjc.A.dylib
+
+CallDBProperties : NSManagedObject /usr/lib/libobjc.A.dylib
+ @property  NSNumber *timer_outgoing
+ @property  NSNumber *timer_incoming
+ @property  NSNumber *timer_all
+ @property  NSNumber *timer_lifetime
+ @property  NSNumber *timer_last
+
+
+CHConfigurationAggregator : NSObject /usr/lib/libc++.1.dylib <CHConfigurationDelegate>
+ @property  NSArray *configurations
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  <CHConfigurationAggregatorDelegate> *delegate
+ @property  BOOL cloudKitEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CHConfigurationAggregator isCloudKitEnabled]
+  -[CHConfigurationAggregator .cxx_destruct]
+  -[CHConfigurationAggregator propertiesDidChangeForConfiguration:]
+  -[CHConfigurationAggregator registerConfigurationDelegate]
+  -[CHConfigurationAggregator initWithConfigurations:queue:]
+  -[CHConfigurationAggregator queue]
+  -[CHConfigurationAggregator configurations]
+  -[CHConfigurationAggregator setDelegate:]
+  -[CHConfigurationAggregator delegate]
+
+
+CHManagedHandleMigrationPolicy : CHEntityMigrationPolicy
+  // instance methods
+  -[CHManagedHandleMigrationPolicy normalizedValueForManagedHandle:]
+
+
+CHManager : CHSynchronizedLoggable
+ @property  NSArray *recentCalls
+ @property  long long numberOfUnseenMissedCalls
+ @property  <SyncManagerProtocol> *syncManager
+ @property  BOOL cacheIsDirty
+ @property  BOOL reCoalesce
+ @property  NSArray *uncoalescedRecentCalls
+ @property  NSArray *uncoalescedUnFilteredRecentCalls
+ @property  BOOL showsFaceTimeVideoCalls
+ @property  BOOL showsFaceTimeAudioCalls
+ @property  BOOL showsTelephonyCalls
+ @property  BOOL generateSyncTransactions
+ @property  unsigned int limitingCallTypes
+ @property  NSDate *limitingStartDate
+ @property  NSDate *limitingEndDate
+ @property  NSArray *limitingCallKinds
+ @property  NSPredicate *postFetchingPredicate
+ @property  NSString *coalescingStrategy
+
+  // class methods
+  +[CHManager CHCallStatusForCallWithDuration:isOriginated:isAnswered:]
+  +[CHManager limitingCallKindsForCallType:]
+
+  // instance methods
+  -[CHManager registerForNotifications]
+  -[CHManager setUncoalescedUnFilteredRecentCalls:]
+  -[CHManager callIdentifiersWithPredicate:limit:offset:batchSize:]
+  -[CHManager setCoalescingStrategy:]
+  -[CHManager setRead:forCallsWithPredicate:]
+  -[CHManager setPostFetchingPredicate:]
+  -[CHManager limitingCallTypes]
+  -[CHManager countCallsWithPredicate:]
+  -[CHManager init]
+  -[CHManager setLimitingEndDate:]
+  -[CHManager coalescedCallCountWithPredicate:]
+  -[CHManager updateBytesOfDataUsedFor:with:]
+  -[CHManager setDefaultInitValues]
+  -[CHManager setShowsFaceTimeVideoCalls:]
+  -[CHManager callTimersReset]
+  -[CHManager callTimersGetLifetime]
+  -[CHManager flush]
+  -[CHManager numberOfUnseenMissedCalls]
+  -[CHManager clearDatabase]
+  -[CHManager handleCallHistoryContactStoreChangedInternalNotification:]
+  -[CHManager dealloc]
+  -[CHManager setLimitingCallKindsSync:]
+  -[CHManager .cxx_destruct]
+  -[CHManager setGenerateSyncTransactions:]
+  -[CHManager recentCalls]
+  -[CHManager deleteCallAtIndex:]
+  -[CHManager coalescingStrategy]
+  -[CHManager setOutgoingLocalParticipantUUID:forRecentCallsMatchingPredicate:]
+  -[CHManager setRecentCalls:]
+  -[CHManager setReCoalesce:]
+  -[CHManager addMultipleCallsToCallHistory:]
+  -[CHManager limitingCallKinds]
+  -[CHManager fetchRecentCallsSyncWithCoalescing:]
+  -[CHManager addToCallHistory:]
+  -[CHManager limitingStartDate]
+  -[CHManager showsFaceTimeAudioCalls]
+  -[CHManager syncManager]
+  -[CHManager callsWithPredicate:limit:offset:batchSize:]
+  -[CHManager latestCallMatchingNormalizedRemoteParticipantHandleValues:]
+  -[CHManager showsFaceTimeVideoCalls]
+  -[CHManager deleteTheseCalls:]
+  -[CHManager unCoalesceCall:]
+  -[CHManager setSyncManager:]
+  -[CHManager uncoalescedRecentCallsSync]
+  -[CHManager setLimitingStartDate:]
+  -[CHManager setLimitingCallTypes:]
+  -[CHManager currentLocaleChanged:]
+  -[CHManager setCacheIsDirty:]
+  -[CHManager deleteAllCalls]
+  -[CHManager callTimersGetOutgoing]
+  -[CHManager initWithFetchingLimitsDictionary:andCoalescingStrategy:andPostFetchingPredicate:withQueue:]
+  -[CHManager setLimitingCallTypesSync:]
+  -[CHManager cacheIsDirty]
+  -[CHManager setNumberOfUnseenMissedCalls:]
+  -[CHManager postFetchingPredicate]
+  -[CHManager setUncoalescedRecentCalls:]
+  -[CHManager deleteCallsWithPredicate:]
+  -[CHManager showsTelephonyCalls]
+  -[CHManager reCoalesce]
+  -[CHManager latestRecentCallMatchingPredicate:]
+  -[CHManager setInitialLimitingCallKinds:]
+  -[CHManager deleteCallsWithPredicate:completion:]
+  -[CHManager uncoalescedUnFilteredRecentCalls]
+  -[CHManager generateSyncTransactions]
+  -[CHManager setLimitingCallKinds:]
+  -[CHManager recentCallsWithPredicate:]
+  -[CHManager callCountWithPredicate:]
+  -[CHManager setShowsTelephonyCalls:]
+  -[CHManager coalescedCallsWithPredicate:limit:offset:batchSize:]
+  -[CHManager deleteTheseCallsSync:]
+  -[CHManager deleteAllCallsSync]
+  -[CHManager markAllCallsAsReadWithPredicate:]
+  -[CHManager handleCallHistoryDatabaseChangedInternalNotification:]
+  -[CHManager coalescedCallsWithCalls:usingStrategy:]
+  -[CHManager setShowsFaceTimeAudioCalls:]
+  -[CHManager deleteCall:]
+  -[CHManager countCallsWithPredicateSync:]
+  -[CHManager getLimitsDictionary]
+  -[CHManager applyPredicate:toCalls:]
+  -[CHManager callTimersGetIncoming]
+  -[CHManager setRead:forCallsWithPredicate:completion:]
+  -[CHManager limitingEndDate]
+
+
+SyncManager : CHLogger <SyncManagerProtocol>
+ @property  CallHistoryDBClientHandle *dbHandle
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SyncManager dbHandle]
+  -[SyncManager timerIncoming]
+  -[SyncManager init]
+  -[SyncManager insertRecordsWithoutTransactions:]
+  -[SyncManager insertWithoutTransaction:]
+  -[SyncManager addUpdateTransactions:]
+  -[SyncManager archiveCallObject:]
+  -[SyncManager .cxx_destruct]
+  -[SyncManager fetchCallIdentifiersWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[SyncManager fetchCallCountWithPredicate:sortDescriptors:]
+  -[SyncManager deleteObjectWithUniqueId:]
+  -[SyncManager timerLifetime]
+  -[SyncManager predicateForCallKind:]
+  -[SyncManager predicateForCallKinds:]
+  -[SyncManager fetchAllObjects]
+  -[SyncManager fetchCoalescedCallsWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[SyncManager deleteObjectsWithUniqueIds:]
+  -[SyncManager initDBHandle]
+  -[SyncManager setRead:forCallsWithPredicate:error:]
+  -[SyncManager resetTimers]
+  -[SyncManager deleteAllObjects]
+  -[SyncManager fetchObjectsWithLimits:]
+  -[SyncManager fetchCallsWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[SyncManager fetchCoalescedCallCountWithPredicate:sortDescriptors:]
+  -[SyncManager deleteCallsWithPredicate:error:]
+  -[SyncManager insert:]
+  -[SyncManager fetchObjectWithUniqueId:]
+  -[SyncManager predicateForLimits:]
+  -[SyncManager updateObjects:]
+  -[SyncManager timerOutgoing]
+  -[SyncManager updateAllObjects:]
+  -[SyncManager deleteObjectsWithLimits:]
+
+
+CHPhoneBookIOSManager : NSObject /usr/lib/libc++.1.dylib <CHPhoneBookManagerProtocol>
+ @property  CNContactStore *fContactsStore
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CHPhoneBookIOSManager get]
+
+  // instance methods
+  -[CHPhoneBookIOSManager getLocalizedCallerIdLabelForContact:forCallerId:withCallerIdIsEmail:]
+  -[CHPhoneBookIOSManager init]
+  -[CHPhoneBookIOSManager fetchContactIdentifiersForHandles:error:]
+  -[CHPhoneBookIOSManager getPersonsNameForContact:]
+  -[CHPhoneBookIOSManager fetchAndCacheContactIdentifiersForCalls:]
+  -[CHPhoneBookIOSManager fContactsStore]
+  -[CHPhoneBookIOSManager .cxx_destruct]
+  -[CHPhoneBookIOSManager setFContactsStore:]
+  -[CHPhoneBookIOSManager fetchCNContactsMatchingPredicate:keysToKetch:error:]
+  -[CHPhoneBookIOSManager getRecordId:countryCode:isEmail:]
+  -[CHPhoneBookIOSManager fetchFullCNContactForContactIdentifier:isEmail:]
+  -[CHPhoneBookIOSManager isABContactASuggestion]
+  -[CHPhoneBookIOSManager fetchCNContact:countryCode:isEmail:]
+
+
+DBMigrationResult : NSObject /usr/lib/libc++.1.dylib
+ @property  long long errorCode
+ @property  long long dbVersion
+
+  // instance methods
+  -[DBMigrationResult setErrorCode:]
+  -[DBMigrationResult errorCode]
+  -[DBMigrationResult dbVersion]
+  -[DBMigrationResult initWithErrorCode:andDBVersion:]
+  -[DBMigrationResult setDbVersion:]
+
+
+DBManager : CHLogger
+ @property  NSPersistentStoreCoordinator *fPersistentStoreCoordinator
+
+  // class methods
+  +[DBManager mangedObjectWithURI:inContext:]
+  +[DBManager versionForManagedObjectModel:]
+  +[DBManager persistentStoreOptions:]
+  +[DBManager destroyDBAtLocation:withModelAtLocation:]
+  +[DBManager getPersistentCoordinator:]
+  +[DBManager instanceWithModelURL:]
+  +[DBManager modelForDBAtLocation:]
+  +[DBManager getPropertyValueForKey:forContext:]
+  +[DBManager isDataStoreAtURLInitialized:withModelAtURL:]
+  +[DBManager entityDescriptionHavingName:forContext:]
+  +[DBManager setPropertyValue:forKey:forContext:]
+  +[DBManager migrateDataStoreAtLocation:withGetDestinationModel:isEncrypted:]
+  +[DBManager makeDatabaseAtURLClassCDataProtected:]
+  +[DBManager getStoreURLforContext:]
+  +[DBManager replacePersistentStore:withURL:]
+  +[DBManager mapToDBMErrorCode:]
+  +[DBManager versionForDBAtLocation:]
+  +[DBManager moveDBAtLocation:toLocation:withModelAtLocation:]
+
+  // instance methods
+  -[DBManager init]
+  -[DBManager addDataStoreAtLocation:isEncrypted:]
+  -[DBManager createManagedObjectContext]
+  -[DBManager .cxx_destruct]
+  -[DBManager setFPersistentStoreCoordinator:]
+  -[DBManager removeDataStoreAtLocation:]
+  -[DBManager fPersistentStoreCoordinator]
+
+
+AWDLogger : CHLogger
+ @property  AWDServerConnection *awdServer
+
+  // class methods
+  +[AWDLogger instance]
+
+  // instance methods
+  -[AWDLogger init]
+  -[AWDLogger deleteAll:]
+  -[AWDLogger syncSuccess:withDownloadRecordCount:]
+  -[AWDLogger uninitializedDatabaseSave]
+  -[AWDLogger entitlementRejection:]
+  -[AWDLogger databaseMigrationResult:oldVersion:newVersion:]
+  -[AWDLogger .cxx_destruct]
+  -[AWDLogger submitMetric:withId:]
+  -[AWDLogger setAwdServer:]
+  -[AWDLogger databaseSaveError:withTableName:]
+  -[AWDLogger syncFailure:]
+  -[AWDLogger gizmoDatabaseMigrationFailure]
+  -[AWDLogger awdServer]
+  -[AWDLogger callAddedWithNilUuid:withCallStatus:]
+  -[AWDLogger bootstrapGizmo:]
+  -[AWDLogger commCenterMigrationResult:withMigratedCallCount:]
+
+
+AWDCallHistoryGizmoBootstrap : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasError
+ @property  unsigned int error
+
+  // instance methods
+  -[AWDCallHistoryGizmoBootstrap hasError]
+  -[AWDCallHistoryGizmoBootstrap copyWithZone:]
+  -[AWDCallHistoryGizmoBootstrap setError:]
+  -[AWDCallHistoryGizmoBootstrap timestamp]
+  -[AWDCallHistoryGizmoBootstrap setTimestamp:]
+  -[AWDCallHistoryGizmoBootstrap setHasTimestamp:]
+  -[AWDCallHistoryGizmoBootstrap error]
+  -[AWDCallHistoryGizmoBootstrap readFrom:]
+  -[AWDCallHistoryGizmoBootstrap writeTo:]
+  -[AWDCallHistoryGizmoBootstrap isEqual:]
+  -[AWDCallHistoryGizmoBootstrap copyTo:]
+  -[AWDCallHistoryGizmoBootstrap dictionaryRepresentation]
+  -[AWDCallHistoryGizmoBootstrap mergeFrom:]
+  -[AWDCallHistoryGizmoBootstrap setHasError:]
+  -[AWDCallHistoryGizmoBootstrap hasTimestamp]
+
+
+CHLogServer : CHSynchronizable
+  // class methods
+  +[CHLogServer instance]
+
+  // instance methods
+  -[CHLogServer createLogHandleForDomainSync:]
+  -[CHLogServer init]
+  -[CHLogServer logHandleForDomain:]
+  -[CHLogServer .cxx_construct]
+  -[CHLogServer .cxx_destruct]
+  -[CHLogServer logHandleForDomainSync:]
+
+
+AWDCallHistoryDatabaseSaveError : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasDomain
+ @property  unsigned int domain
+ @property  BOOL hasError
+ @property  unsigned int error
+ @property  BOOL hasTable
+ @property  NSString *table
+
+  // instance methods
+  -[AWDCallHistoryDatabaseSaveError hasError]
+  -[AWDCallHistoryDatabaseSaveError copyWithZone:]
+  -[AWDCallHistoryDatabaseSaveError table]
+  -[AWDCallHistoryDatabaseSaveError hasTable]
+  -[AWDCallHistoryDatabaseSaveError domain]
+  -[AWDCallHistoryDatabaseSaveError setError:]
+  -[AWDCallHistoryDatabaseSaveError .cxx_destruct]
+  -[AWDCallHistoryDatabaseSaveError setDomain:]
+  -[AWDCallHistoryDatabaseSaveError timestamp]
+  -[AWDCallHistoryDatabaseSaveError setTimestamp:]
+  -[AWDCallHistoryDatabaseSaveError setTable:]
+  -[AWDCallHistoryDatabaseSaveError setHasTimestamp:]
+  -[AWDCallHistoryDatabaseSaveError error]
+  -[AWDCallHistoryDatabaseSaveError readFrom:]
+  -[AWDCallHistoryDatabaseSaveError writeTo:]
+  -[AWDCallHistoryDatabaseSaveError isEqual:]
+  -[AWDCallHistoryDatabaseSaveError hasDomain]
+  -[AWDCallHistoryDatabaseSaveError setHasDomain:]
+  -[AWDCallHistoryDatabaseSaveError copyTo:]
+  -[AWDCallHistoryDatabaseSaveError dictionaryRepresentation]
+  -[AWDCallHistoryDatabaseSaveError mergeFrom:]
+  -[AWDCallHistoryDatabaseSaveError setHasError:]
+  -[AWDCallHistoryDatabaseSaveError hasTimestamp]
+
+
+AWDCallHistoryUninitializedDatabaseSave : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[AWDCallHistoryUninitializedDatabaseSave copyWithZone:]
+  -[AWDCallHistoryUninitializedDatabaseSave timestamp]
+  -[AWDCallHistoryUninitializedDatabaseSave setTimestamp:]
+  -[AWDCallHistoryUninitializedDatabaseSave setHasTimestamp:]
+  -[AWDCallHistoryUninitializedDatabaseSave readFrom:]
+  -[AWDCallHistoryUninitializedDatabaseSave writeTo:]
+  -[AWDCallHistoryUninitializedDatabaseSave isEqual:]
+  -[AWDCallHistoryUninitializedDatabaseSave copyTo:]
+  -[AWDCallHistoryUninitializedDatabaseSave dictionaryRepresentation]
+  -[AWDCallHistoryUninitializedDatabaseSave mergeFrom:]
+  -[AWDCallHistoryUninitializedDatabaseSave hasTimestamp]
+
+
+CHLogger : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CHLogger initWithDomain:]
+  -[CHLogger logHandle]
+
+
+CHTransaction : NSObject /usr/lib/libc++.1.dylib <NSSecureCoding>
+ @property  unsigned long transactionType
+ @property  NSData *record
+
+  // class methods
+  +[CHTransaction supportsSecureCoding]
+  +[CHTransaction unarchivedObjectFromData:error:]
+  +[CHTransaction toString:]
+  +[CHTransaction unarchivedObjectClasses]
+
+  // instance methods
+  -[CHTransaction transactionType]
+  -[CHTransaction init]
+  -[CHTransaction .cxx_destruct]
+  -[CHTransaction encodeWithCoder:]
+  -[CHTransaction initWithType:andRecord:]
+  -[CHTransaction isEqualToTransaction:]
+  -[CHTransaction initWithString:andRecord:]
+  -[CHTransaction isEqual:]
+  -[CHTransaction archivedDataWithError:]
+  -[CHTransaction record]
+  -[CHTransaction initWithCoder:]
+
+
+CallRecord : NSManagedObject /usr/lib/libobjc.A.dylib
+ @property  unsigned int chCallStatus
+ @property  long long chHandleType
+ @property  CHRecentCall *chRecentCall
+ @property  NSSet *chRemoteParticipantHandles
+ @property  BOOL supportsCallCategory
+ @property  BOOL supportsHandleType
+ @property  BOOL supportsLocalParticipantUUID
+ @property  BOOL supportsOutgoingLocalParticipantUUID
+ @property  BOOL supportsRemoteParticipantHandles
+ @property  BOOL supportsServiceProvider
+ @property  BOOL supportsVerificationStatus
+ @property  NSString *address
+ @property  NSNumber *answered
+ @property  NSNumber *call_category
+ @property  NSNumber *calltype
+ @property  NSDate *date
+ @property  NSNumber *disconnected_cause
+ @property  NSNumber *filtered_out_reason
+ @property  NSNumber *duration
+ @property  NSNumber *face_time_data
+ @property  NSNumber *handle_type
+ @property  NSString *iso_country_code
+ @property  NSNumber *junkConfidence
+ @property  NSUUID *localParticipantUUID
+ @property  NSString *location
+ @property  NSString *name
+ @property  NSNumber *number_availability
+ @property  NSNumber *originated
+ @property  NSUUID *outgoingLocalParticipantUUID
+ @property  NSNumber *read
+ @property  NSString *service_provider
+ @property  NSString *unique_id
+ @property  NSNumber *verificationStatus
+ @property  NSSet *remoteParticipantHandles
+
+  // class methods
+  +[CallRecord fetchRequest]
+
+  // instance methods
+  -[CallRecord supportsHandleType]
+  -[CallRecord chRemoteParticipantHandles]
+  -[CallRecord compositeLocalParticipantUUIDForContext:]
+  -[CallRecord setChCallStatus:]
+  -[CallRecord supportsServiceProvider]
+  -[CallRecord compositeJunkConfidenceForContext:]
+  -[CallRecord compositeOutgoingLocalParticipantUUIDForContext:]
+  -[CallRecord supportsVerificationStatus]
+  -[CallRecord compositeServiceProviderForContext:]
+  -[CallRecord supportsLocalParticipantUUID]
+  -[CallRecord supportsCallCategory]
+  -[CallRecord compositeHandleTypeForContext:]
+  -[CallRecord supportsJunkConfidence]
+  -[CallRecord supportsOutgoingLocalParticipantUUID]
+  -[CallRecord compositeCallCategoryForContext:]
+  -[CallRecord chCallStatus]
+  -[CallRecord compositeVerificationStatusForContext:]
+  -[CallRecord compositeRemoteParticipantHandlesForContext:]
+  -[CallRecord chHandleType]
+  -[CallRecord supportsRemoteParticipantHandles]
+  -[CallRecord chRecentCall]
+
+
+CallHistoryDBClientHandle : CHSynchronizedLoggable
+ @property  CallHistoryDBHandle *dbStoreHandle
+
+  // class methods
+  +[CallHistoryDBClientHandle createForServer]
+  +[CallHistoryDBClientHandle createForClient]
+
+  // instance methods
+  -[CallHistoryDBClientHandle registerForNotifications]
+  -[CallHistoryDBClientHandle timerIncoming]
+  -[CallHistoryDBClientHandle fetchAll]
+  -[CallHistoryDBClientHandle updateCallsWithPredicate:propertiesToUpdate:error:]
+  -[CallHistoryDBClientHandle init]
+  -[CallHistoryDBClientHandle createCallRecords:error:]
+  -[CallHistoryDBClientHandle deleteAll:]
+  -[CallHistoryDBClientHandle fetchWithCallTypes:]
+  -[CallHistoryDBClientHandle dealloc]
+  -[CallHistoryDBClientHandle deleteObjectWithUniqueId:error:]
+  -[CallHistoryDBClientHandle .cxx_destruct]
+  -[CallHistoryDBClientHandle setStoreObject_sync:withClientObject:]
+  -[CallHistoryDBClientHandle parseCallStatus_sync:isAnswered:isOriginated:]
+  -[CallHistoryDBClientHandle fetchCallIdentifiersWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[CallHistoryDBClientHandle handleCallTimersSave_sync:]
+  -[CallHistoryDBClientHandle updateAllCallRecords:]
+  -[CallHistoryDBClientHandle fetchCallCountWithPredicate:sortDescriptors:]
+  -[CallHistoryDBClientHandle createCallRecord:error:]
+  -[CallHistoryDBClientHandle init:]
+  -[CallHistoryDBClientHandle deleteObjectWithUniqueId:]
+  -[CallHistoryDBClientHandle createCallRecords:]
+  -[CallHistoryDBClientHandle timerLifetime]
+  -[CallHistoryDBClientHandle updateAllCallRecords:error:]
+  -[CallHistoryDBClientHandle convertToCHRecentCalls_sync:]
+  -[CallHistoryDBClientHandle fetchObjectsWithPredicate:]
+  -[CallHistoryDBClientHandle manager]
+  -[CallHistoryDBClientHandle fetchCoalescedCallsWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[CallHistoryDBClientHandle deleteObjectsWithUniqueIds:]
+  -[CallHistoryDBClientHandle fetchObjectsWithUniqueIds:]
+  -[CallHistoryDBClientHandle fetchAllObjectsWithUniqueId:]
+  -[CallHistoryDBClientHandle resetTimers]
+  -[CallHistoryDBClientHandle unRegisterForNotifications]
+  -[CallHistoryDBClientHandle updateCallRecords_sync:error:save:]
+  -[CallHistoryDBClientHandle getCallStatus_sync:isOriginated:isAnswered:]
+  -[CallHistoryDBClientHandle convertToCHRecentCalls_sync:limit:]
+  -[CallHistoryDBClientHandle timerLastReset]
+  -[CallHistoryDBClientHandle deleteAll]
+  -[CallHistoryDBClientHandle moveCallRecordsFromDatabaseAtURL:]
+  -[CallHistoryDBClientHandle resetAllTimers]
+  -[CallHistoryDBClientHandle dbStoreHandle]
+  -[CallHistoryDBClientHandle updateAllCallRecords_sync:error:]
+  -[CallHistoryDBClientHandle deleteCallsWithPredicate:]
+  -[CallHistoryDBClientHandle createCallRecord:]
+  -[CallHistoryDBClientHandle fetchCallsWithPredicate:sortDescriptors:limit:offset:batchSize:]
+  -[CallHistoryDBClientHandle deleteObjectsWithUniqueIds:error:]
+  -[CallHistoryDBClientHandle updateCallRecords:error:save:]
+  -[CallHistoryDBClientHandle willHandleNotification_sync:]
+  -[CallHistoryDBClientHandle fetchCoalescedCallCountWithPredicate:sortDescriptors:]
+  -[CallHistoryDBClientHandle saveDatabase:]
+  -[CallHistoryDBClientHandle handleCallRecordSave_sync:]
+  -[CallHistoryDBClientHandle updateCallRecords:error:]
+  -[CallHistoryDBClientHandle fetchObjectWithUniqueId:]
+  -[CallHistoryDBClientHandle updateCallRecord_sync:withChangeDict:]
+  -[CallHistoryDBClientHandle updateCallRecords:]
+  -[CallHistoryDBClientHandle createCallRecord:error:save:]
+  -[CallHistoryDBClientHandle timerOutgoing]
+  -[CallHistoryDBClientHandle fetchAllNoLimit]
+  -[CallHistoryDBClientHandle deleteObjectWithUniqueId:error:save:]
+
+
+CallDBManagerServer : CallDBManager
+  // class methods
+  +[CallDBManagerServer getNextVersionToDowngradeTo:]
+  +[CallDBManagerServer getNextVersionToDowngradeTo:withSourceVersion:]
+  +[CallDBManagerServer getDestinationModel:]
+  +[CallDBManagerServer getObjectIdsForAllRecords:]
+  +[CallDBManagerServer downgradeDatabaseAtLocation:toVersion:]
+  +[CallDBManagerServer getNextVersionToMigrateToCurrentVersion:]
+  +[CallDBManagerServer getUniqueIdsForAllRecords:]
+  +[CallDBManagerServer getDestinationModelForVersion:]
+  +[CallDBManagerServer getObjectIdsForDuplicateRecordsWithUniqueIds:andHavingObjectIds:]
+
+  // instance methods
+  -[CallDBManagerServer tempDBLocation:]
+  -[CallDBManagerServer createPermanent]
+  -[CallDBManagerServer bootUpDBAtLocationWithRecovery:isEncrypted:]
+  -[CallDBManagerServer createCallDBProperties]
+  -[CallDBManagerServer bootUpDBAtLocation:isEncrypted:]
+  -[CallDBManagerServer handleBootUpFailure:]
+  -[CallDBManagerServer createMOCForDBAtLocation:dbVersion:isEncrypted:]
+  -[CallDBManagerServer modifyCallRecordForDBAtLocation:dbVersion:isEncrypted:modifyCallRecord:]
+  -[CallDBManagerServer populateServiceProviderAndCallCategory:dbVersion:isEncrypted:]
+  -[CallDBManagerServer populateHandleType:dbVersion:isEncrypted:]
+  -[CallDBManagerServer handleDatabaseMigration:isEncrypted:isRetry:]
+  -[CallDBManagerServer populateRecentCallRemoteParticipantHandles:dbVersion:isEncrypted:]
+  -[CallDBManagerServer prepareDatabaseForNextStepInMigration:dbVersion:isEncrypted:]
+  -[CallDBManagerServer removeDuplicatesFromDBAtLocation:dbVersion:isEncrypted:]
+  -[CallDBManagerServer getUUIDsOfNMostRecentRecords:fromManagedObjectContext:]
+  -[CallDBManagerServer prepareForMigrationDBAtURL:withModelAtURL:andIsEncrypted:]
+  -[CallDBManagerServer moveCallsFromTempDatabase]
+  -[CallDBManagerServer createTemporary]
+  -[CallDBManagerServer permDBLocation:]
+
+
+AWDCallHistoryDatabaseMigration : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasOldSchema
+ @property  unsigned int oldSchema
+ @property  BOOL hasNewSchema
+ @property  unsigned int newSchema
+ @property  BOOL hasDomain
+ @property  unsigned int domain
+ @property  BOOL hasError
+ @property  unsigned int error
+
+  // instance methods
+  -[AWDCallHistoryDatabaseMigration hasError]
+  -[AWDCallHistoryDatabaseMigration copyWithZone:]
+  -[AWDCallHistoryDatabaseMigration domain]
+  -[AWDCallHistoryDatabaseMigration setError:]
+  -[AWDCallHistoryDatabaseMigration setDomain:]
+  -[AWDCallHistoryDatabaseMigration timestamp]
+  -[AWDCallHistoryDatabaseMigration setTimestamp:]
+  -[AWDCallHistoryDatabaseMigration oldSchema]
+  -[AWDCallHistoryDatabaseMigration newSchema]
+  -[AWDCallHistoryDatabaseMigration setOldSchema:]
+  -[AWDCallHistoryDatabaseMigration setNewSchema:]
+  -[AWDCallHistoryDatabaseMigration setHasOldSchema:]
+  -[AWDCallHistoryDatabaseMigration hasOldSchema]
+  -[AWDCallHistoryDatabaseMigration setHasTimestamp:]
+  -[AWDCallHistoryDatabaseMigration setHasNewSchema:]
+  -[AWDCallHistoryDatabaseMigration hasNewSchema]
+  -[AWDCallHistoryDatabaseMigration error]
+  -[AWDCallHistoryDatabaseMigration readFrom:]
+  -[AWDCallHistoryDatabaseMigration writeTo:]
+  -[AWDCallHistoryDatabaseMigration isEqual:]
+  -[AWDCallHistoryDatabaseMigration hasDomain]
+  -[AWDCallHistoryDatabaseMigration setHasDomain:]
+  -[AWDCallHistoryDatabaseMigration copyTo:]
+  -[AWDCallHistoryDatabaseMigration dictionaryRepresentation]
+  -[AWDCallHistoryDatabaseMigration mergeFrom:]
+  -[AWDCallHistoryDatabaseMigration setHasError:]
+  -[AWDCallHistoryDatabaseMigration hasTimestamp]
+
+
+AWDCallHistoryMissingCloudChangeToken : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[AWDCallHistoryMissingCloudChangeToken copyWithZone:]
+  -[AWDCallHistoryMissingCloudChangeToken timestamp]
+  -[AWDCallHistoryMissingCloudChangeToken setTimestamp:]
+  -[AWDCallHistoryMissingCloudChangeToken setHasTimestamp:]
+  -[AWDCallHistoryMissingCloudChangeToken readFrom:]
+  -[AWDCallHistoryMissingCloudChangeToken writeTo:]
+  -[AWDCallHistoryMissingCloudChangeToken isEqual:]
+  -[AWDCallHistoryMissingCloudChangeToken copyTo:]
+  -[AWDCallHistoryMissingCloudChangeToken dictionaryRepresentation]
+  -[AWDCallHistoryMissingCloudChangeToken mergeFrom:]
+  -[AWDCallHistoryMissingCloudChangeToken hasTimestamp]
+
+
+DeserializedTransaction : NSObject /usr/lib/libc++.1.dylib
+ @property  CHRecentCall *call
+ @property  unsigned long type
+
+  // instance methods
+  -[DeserializedTransaction call]
+  -[DeserializedTransaction setType:]
+  -[DeserializedTransaction .cxx_destruct]
+  -[DeserializedTransaction initWithCall:andType:]
+  -[DeserializedTransaction type]
+
+
+CHSynchronizedLoggable : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CHSynchronizedLoggable initWithName:]
+  -[CHSynchronizedLoggable initWithName:queue:]
+  -[CHSynchronizedLoggable logHandle]
+  -[CHSynchronizedLoggable .cxx_destruct]
+  -[CHSynchronizedLoggable executeSync:]
+  -[CHSynchronizedLoggable queue]
+  -[CHSynchronizedLoggable executeSyncWithBOOL:]
+  -[CHSynchronizedLoggable execute:]
+  -[CHSynchronizedLoggable executeSyncWithResult:]
+
+
+CHRecentCall : NSObject /usr/lib/libc++.1.dylib <NSSecureCoding, NSCopying>
+ @property  NSDictionary *dictionaryRepresentation
+ @property  long long junkConfidence
+ @property  long long verificationStatus
+ @property  NSString *callerName
+ @property  BOOL callerIdIsBlocked
+ @property  NSString *callerNetworkFirstName
+ @property  NSString *callerNetworkSecondName
+ @property  unsigned long unreadCount
+ @property  NSArray *callOccurrences
+ @property  NSString *callerIdLabel
+ @property  NSString *callerIdLocation
+ @property  BOOL multiCall
+ @property  CNContact *contactRef
+ @property  NSString *callerIdFormatted
+ @property  <CHPhoneBookManagerProtocol> *phoneBookManager
+ @property  BOOL answered
+ @property  BOOL mobileOriginated
+ @property  CHHandle *localParticipantHandle
+ @property  NSUUID *localParticipantUUID
+ @property  NSUUID *outgoingLocalParticipantUUID
+ @property  NSSet *remoteParticipantHandles
+ @property  NSString *uniqueId
+ @property  NSString *callerNetworkName
+ @property  unsigned int callStatus
+ @property  NSString *serviceProvider
+ @property  NSNumber *bytesOfDataUsed
+ @property  NSDate *date
+ @property  double duration
+ @property  NSString *isoCountryCode
+ @property  BOOL read
+ @property  NSString *mobileCountryCode
+ @property  NSString *mobileNetworkCode
+ @property  NSNumber *disconnectedCause
+ @property  NSNumber *filteredOutReason
+ @property  unsigned int callerIdAvailability
+ @property  BOOL isJunk
+ @property  NSString *clientAddressBookRecordId
+ @property  NSString *contactIdentifier
+ @property  long long mediaType
+ @property  long long ttyType
+ @property  long long handleType
+ @property  NSNumber *timeToEstablish
+ @property  NSValue *addressBookRecordRef
+ @property  NSString *addressBookRecordId
+ @property  NSString *addressBookCallerIDMultiValueId
+ @property  unsigned int callCategory
+ @property  unsigned int callType
+ @property  NSString *devicePhoneId
+ @property  NSString *callerId
+
+  // class methods
+  +[CHRecentCall supportsSecureCoding]
+  +[CHRecentCall callTypeAsString:]
+  +[CHRecentCall unarchivedObjectFromData:error:]
+  +[CHRecentCall categoryForCallType:]
+  +[CHRecentCall serviceProviderForCallType:]
+  +[CHRecentCall predicateForCallsWithMediaType:]
+  +[CHRecentCall predicateForCallsWithTTYType:]
+  +[CHRecentCall predicateForCallsWithServiceProvider:]
+  +[CHRecentCall callStatusAsString:]
+  +[CHRecentCall callMediaTypeAsString:]
+  +[CHRecentCall callTTYTypeAsString:]
+  +[CHRecentCall getLocationForCallerId:andIsoCountryCode:]
+  +[CHRecentCall getCallTypeForCategory:andServiceProvider:]
+  +[CHRecentCall categoryForMediaType:andTTYType:]
+  +[CHRecentCall mediaTypeForCallCategory:]
+  +[CHRecentCall ttyTypeForCallCategory:]
+  +[CHRecentCall callHandleTypeAsString:]
+  +[CHRecentCall callCategoryAsString:]
+  +[CHRecentCall predicateForCallsWithCategory:]
+  +[CHRecentCall predicateForCallsWithRemoteParticipantHandleValue:]
+  +[CHRecentCall predicateForCallsWithRemoteParticipantHandleNormalizedValue:]
+  +[CHRecentCall predicateForCallsWithRemoteParticipantHandleType:]
+  +[CHRecentCall predicateForCallsWithStatus:]
+  +[CHRecentCall predicateForCallsWithAnyRemoteParticipantHandleTypes:]
+  +[CHRecentCall predicateForCallsWithAnyRemoteParticipantHandleValues:]
+  +[CHRecentCall predicateForCallsWithRemoteParticipantHandle:]
+  +[CHRecentCall predicateForCallsWithUniqueID:]
+  +[CHRecentCall predicateForCallsWithAnyMediaTypes:]
+  +[CHRecentCall predicateForCallsBetweenStartDate:endDate:]
+  +[CHRecentCall predicateForCallsWithRemoteParticipantCount:]
+  +[CHRecentCall predicateForCallsWithAnyRemoteParticipantHandles:]
+  +[CHRecentCall predicateForCallsWithAnyServiceProviders:]
+  +[CHRecentCall predicateForCallsWithStatusAnswered:]
+  +[CHRecentCall predicateForCallsWithStatusOriginated:]
+  +[CHRecentCall predicateForCallsWithStatusRead:]
+  +[CHRecentCall predicateForCallsWithStatusJunk:]
+  +[CHRecentCall predicateForCallsWithAnyTTYTypes:]
+  +[CHRecentCall predicateForCallsWithAnyUniqueIDs:]
+  +[CHRecentCall predicateForCallsWithAnyRemoteParticipantHandleNormalizedValues:]
+  +[CHRecentCall unarchivedObjectClasses]
+
+  // instance methods
+  -[CHRecentCall mobileCountryCode]
+  -[CHRecentCall copyWithZone:]
+  -[CHRecentCall setMediaType:]
+  -[CHRecentCall mediaType]
+  -[CHRecentCall handleType]
+  -[CHRecentCall isJunk]
+  -[CHRecentCall init]
+  -[CHRecentCall callerId]
+  -[CHRecentCall multiCall]
+  -[CHRecentCall setServiceProvider:]
+  -[CHRecentCall setUnreadCount:]
+  -[CHRecentCall contactIdentifier]
+  -[CHRecentCall .cxx_destruct]
+  -[CHRecentCall date]
+  -[CHRecentCall setDate:]
+  -[CHRecentCall setTtyType:]
+  -[CHRecentCall ttyType]
+  -[CHRecentCall setMobileCountryCode:]
+  -[CHRecentCall mobileNetworkCode]
+  -[CHRecentCall timeToEstablish]
+  -[CHRecentCall setTimeToEstablish:]
+  -[CHRecentCall encodeWithCoder:]
+  -[CHRecentCall unreadCount]
+  -[CHRecentCall setJunkConfidence:]
+  -[CHRecentCall setLocalParticipantUUID:]
+  -[CHRecentCall setOutgoingLocalParticipantUUID:]
+  -[CHRecentCall setRemoteParticipantHandles:]
+  -[CHRecentCall setIsoCountryCode:]
+  -[CHRecentCall setBytesOfDataUsed:]
+  -[CHRecentCall setCallerIdAvailability:]
+  -[CHRecentCall setCallerIdLocation:]
+  -[CHRecentCall setCallerNetworkName:]
+  -[CHRecentCall setDisconnectedCause:]
+  -[CHRecentCall setFilteredOutReason:]
+  -[CHRecentCall junkConfidence]
+  -[CHRecentCall localParticipantUUID]
+  -[CHRecentCall setCallCategory:]
+  -[CHRecentCall setCallerId:]
+  -[CHRecentCall setCallOccurrences:]
+  -[CHRecentCall remoteParticipantHandles]
+  -[CHRecentCall coalescingHash]
+  -[CHRecentCall setCallerIdFormatted:]
+  -[CHRecentCall coalescedCallWithCall:usingStrategy:]
+  -[CHRecentCall numberOfOccurrences]
+  -[CHRecentCall callOccurrences]
+  -[CHRecentCall setMultiCall:]
+  -[CHRecentCall callCategory]
+  -[CHRecentCall disconnectedCause]
+  -[CHRecentCall filteredOutReason]
+  -[CHRecentCall bytesOfDataUsed]
+  -[CHRecentCall callerNetworkName]
+  -[CHRecentCall callerIdAvailability]
+  -[CHRecentCall setPhoneBookManager:]
+  -[CHRecentCall canCoalesceRemoteParticipantHandlesFromCall:]
+  -[CHRecentCall canCoalesceSyncWithRecentsStrategyWithCall:]
+  -[CHRecentCall canCoalesceWithCall:withStrategy:]
+  -[CHRecentCall callOccurrencesArrayByAddingCallOccurrencesFromArray:]
+  -[CHRecentCall callerIdIsEmailAddress]
+  -[CHRecentCall phoneBookManager]
+  -[CHRecentCall callerIdForDisplay]
+  -[CHRecentCall fetchAndSetContactIdentifier]
+  -[CHRecentCall fetchAndSetFullContact]
+  -[CHRecentCall setCallerIdIsBlocked:]
+  -[CHRecentCall setCallerNetworkFirstName:]
+  -[CHRecentCall setCallerNetworkSecondName:]
+  -[CHRecentCall callerIdIsBlocked]
+  -[CHRecentCall getLocalizedString:]
+  -[CHRecentCall callerIdLabel]
+  -[CHRecentCall callerIdLocation]
+  -[CHRecentCall updateTTYAndMediaType]
+  -[CHRecentCall setHandleType:]
+  -[CHRecentCall fixCallTypeInfo]
+  -[CHRecentCall callerNetworkFirstName]
+  -[CHRecentCall callerNetworkSecondName]
+  -[CHRecentCall callOccurrencesAsString]
+  -[CHRecentCall isEqualToRecentCall:]
+  -[CHRecentCall addressBookRecordId]
+  -[CHRecentCall coalesceWithCall:withStrategy:]
+  -[CHRecentCall callerNameForDisplay]
+  -[CHRecentCall callerIdSubStringForDisplay]
+  -[CHRecentCall localParticipantHandle]
+  -[CHRecentCall setLocalParticipantHandle:]
+  -[CHRecentCall clientAddressBookRecordId]
+  -[CHRecentCall setClientAddressBookRecordId:]
+  -[CHRecentCall addressBookRecordRef]
+  -[CHRecentCall devicePhoneId]
+  -[CHRecentCall setAddressBookRecordRef:]
+  -[CHRecentCall setAddressBookRecordId:]
+  -[CHRecentCall addressBookCallerIDMultiValueId]
+  -[CHRecentCall setAddressBookCallerIDMultiValueId:]
+  -[CHRecentCall setDevicePhoneId:]
+  -[CHRecentCall setCallerName:]
+  -[CHRecentCall setCallerIdLabel:]
+  -[CHRecentCall setContactRef:]
+  -[CHRecentCall mobileOriginated]
+  -[CHRecentCall setMobileOriginated:]
+  -[CHRecentCall answered]
+  -[CHRecentCall verificationStatus]
+  -[CHRecentCall callType]
+  -[CHRecentCall isEqual:]
+  -[CHRecentCall archivedDataWithError:]
+  -[CHRecentCall setDuration:]
+  -[CHRecentCall setVerificationStatus:]
+  -[CHRecentCall setContactIdentifier:]
+  -[CHRecentCall setAnswered:]
+  -[CHRecentCall dictionaryRepresentation]
+  -[CHRecentCall uniqueId]
+  -[CHRecentCall outgoingLocalParticipantUUID]
+  -[CHRecentCall setRead:]
+  -[CHRecentCall read]
+  -[CHRecentCall callStatus]
+  -[CHRecentCall setCallType:]
+  -[CHRecentCall setCallStatus:]
+  -[CHRecentCall isoCountryCode]
+  -[CHRecentCall serviceProvider]
+  -[CHRecentCall initWithCoder:]
+  -[CHRecentCall contactRef]
+  -[CHRecentCall setUniqueId:]
+  -[CHRecentCall duration]
+  -[CHRecentCall setMobileNetworkCode:]
+  -[CHRecentCall callerName]
+
+
+CHSharedAddressBook : CHSynchronizedLoggable
+ @property  NSMutableDictionary *addressBookCache
+
+  // class methods
+  +[CHSharedAddressBook get]
+
+  // instance methods
+  -[CHSharedAddressBook init]
+  -[CHSharedAddressBook dealloc]
+  -[CHSharedAddressBook .cxx_destruct]
+  -[CHSharedAddressBook insertAddressBookInfoDictionaryIntoCache:]
+  -[CHSharedAddressBook fetchAddressBookInfoFromCacheForKey:]
+  -[CHSharedAddressBook insertAddressBookInfoIntoCache:forKey:]
+  -[CHSharedAddressBook registerForContactsNotifications]
+  -[CHSharedAddressBook revertAddressBook:]
+  -[CHSharedAddressBook addressBookCache]
+  -[CHSharedAddressBook cleanUpAddressBookCache_sync]
+  -[CHSharedAddressBook sendABChangedNotificationSyncWithUserInfo:]
+  -[CHSharedAddressBook setAddressBookCache:]
+  -[CHSharedAddressBook cachedCount]
+
+
+AWDCallHistorySyncOverLimit : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasTransactionLogCount
+ @property  unsigned int transactionLogCount
+
+  // instance methods
+  -[AWDCallHistorySyncOverLimit copyWithZone:]
+  -[AWDCallHistorySyncOverLimit timestamp]
+  -[AWDCallHistorySyncOverLimit setTimestamp:]
+  -[AWDCallHistorySyncOverLimit setHasTimestamp:]
+  -[AWDCallHistorySyncOverLimit setTransactionLogCount:]
+  -[AWDCallHistorySyncOverLimit setHasTransactionLogCount:]
+  -[AWDCallHistorySyncOverLimit hasTransactionLogCount]
+  -[AWDCallHistorySyncOverLimit transactionLogCount]
+  -[AWDCallHistorySyncOverLimit readFrom:]
+  -[AWDCallHistorySyncOverLimit writeTo:]
+  -[AWDCallHistorySyncOverLimit isEqual:]
+  -[AWDCallHistorySyncOverLimit copyTo:]
+  -[AWDCallHistorySyncOverLimit dictionaryRepresentation]
+  -[AWDCallHistorySyncOverLimit mergeFrom:]
+  -[AWDCallHistorySyncOverLimit hasTimestamp]
+
+
+AWDCallHistorySync : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasUploadRecordCount
+ @property  unsigned int uploadRecordCount
+ @property  BOOL hasDownloadRecordCount
+ @property  unsigned int downloadRecordCount
+
+  // instance methods
+  -[AWDCallHistorySync copyWithZone:]
+  -[AWDCallHistorySync timestamp]
+  -[AWDCallHistorySync setTimestamp:]
+  -[AWDCallHistorySync setUploadRecordCount:]
+  -[AWDCallHistorySync setDownloadRecordCount:]
+  -[AWDCallHistorySync setHasTimestamp:]
+  -[AWDCallHistorySync setHasUploadRecordCount:]
+  -[AWDCallHistorySync hasUploadRecordCount]
+  -[AWDCallHistorySync setHasDownloadRecordCount:]
+  -[AWDCallHistorySync hasDownloadRecordCount]
+  -[AWDCallHistorySync uploadRecordCount]
+  -[AWDCallHistorySync downloadRecordCount]
+  -[AWDCallHistorySync readFrom:]
+  -[AWDCallHistorySync writeTo:]
+  -[AWDCallHistorySync isEqual:]
+  -[AWDCallHistorySync copyTo:]
+  -[AWDCallHistorySync dictionaryRepresentation]
+  -[AWDCallHistorySync mergeFrom:]
+  -[AWDCallHistorySync hasTimestamp]
+
+
+AWDCallHistoryErrorReport : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasDomain
+ @property  unsigned int domain
+ @property  BOOL hasError
+ @property  unsigned int error
+
+  // instance methods
+  -[AWDCallHistoryErrorReport hasError]
+  -[AWDCallHistoryErrorReport copyWithZone:]
+  -[AWDCallHistoryErrorReport domain]
+  -[AWDCallHistoryErrorReport setError:]
+  -[AWDCallHistoryErrorReport setDomain:]
+  -[AWDCallHistoryErrorReport timestamp]
+  -[AWDCallHistoryErrorReport setTimestamp:]
+  -[AWDCallHistoryErrorReport setHasTimestamp:]
+  -[AWDCallHistoryErrorReport error]
+  -[AWDCallHistoryErrorReport readFrom:]
+  -[AWDCallHistoryErrorReport writeTo:]
+  -[AWDCallHistoryErrorReport isEqual:]
+  -[AWDCallHistoryErrorReport hasDomain]
+  -[AWDCallHistoryErrorReport setHasDomain:]
+  -[AWDCallHistoryErrorReport copyTo:]
+  -[AWDCallHistoryErrorReport dictionaryRepresentation]
+  -[AWDCallHistoryErrorReport mergeFrom:]
+  -[AWDCallHistoryErrorReport setHasError:]
+  -[AWDCallHistoryErrorReport hasTimestamp]
+
+
+AWDCallHistoryEntitlementRejection : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasPid
+ @property  unsigned int pid
+ @property  BOOL hasProcname
+ @property  NSString *procname
+
+  // instance methods
+  -[AWDCallHistoryEntitlementRejection copyWithZone:]
+  -[AWDCallHistoryEntitlementRejection setHasPid:]
+  -[AWDCallHistoryEntitlementRejection hasPid]
+  -[AWDCallHistoryEntitlementRejection procname]
+  -[AWDCallHistoryEntitlementRejection .cxx_destruct]
+  -[AWDCallHistoryEntitlementRejection setPid:]
+  -[AWDCallHistoryEntitlementRejection timestamp]
+  -[AWDCallHistoryEntitlementRejection setTimestamp:]
+  -[AWDCallHistoryEntitlementRejection pid]
+  -[AWDCallHistoryEntitlementRejection setHasTimestamp:]
+  -[AWDCallHistoryEntitlementRejection setProcname:]
+  -[AWDCallHistoryEntitlementRejection hasProcname]
+  -[AWDCallHistoryEntitlementRejection readFrom:]
+  -[AWDCallHistoryEntitlementRejection writeTo:]
+  -[AWDCallHistoryEntitlementRejection isEqual:]
+  -[AWDCallHistoryEntitlementRejection copyTo:]
+  -[AWDCallHistoryEntitlementRejection dictionaryRepresentation]
+  -[AWDCallHistoryEntitlementRejection mergeFrom:]
+  -[AWDCallHistoryEntitlementRejection hasTimestamp]
+
+
+CHMigrator : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CHMigrator init]
+  -[CHMigrator .cxx_destruct]
+  -[CHMigrator migrate:queue:block:]
+
+
+CallDBMigrator : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CallDBMigrator init]
+  -[CallDBMigrator .cxx_destruct]
+  -[CallDBMigrator migrate:queue:block:]
+
+
+AWDCallHistoryGizmoDatabaseMigrationFailure : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure copyWithZone:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure timestamp]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure setTimestamp:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure setHasTimestamp:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure readFrom:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure writeTo:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure isEqual:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure copyTo:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure dictionaryRepresentation]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure mergeFrom:]
+  -[AWDCallHistoryGizmoDatabaseMigrationFailure hasTimestamp]
+
+
+AWDCallHistoryNilUuid : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+ @property  BOOL hasCallType
+ @property  unsigned int callType
+ @property  BOOL hasCallStatus
+ @property  unsigned int callStatus
+
+  // instance methods
+  -[AWDCallHistoryNilUuid copyWithZone:]
+  -[AWDCallHistoryNilUuid hasCallType]
+  -[AWDCallHistoryNilUuid setHasCallType:]
+  -[AWDCallHistoryNilUuid timestamp]
+  -[AWDCallHistoryNilUuid setTimestamp:]
+  -[AWDCallHistoryNilUuid setHasTimestamp:]
+  -[AWDCallHistoryNilUuid setHasCallStatus:]
+  -[AWDCallHistoryNilUuid hasCallStatus]
+  -[AWDCallHistoryNilUuid callType]
+  -[AWDCallHistoryNilUuid readFrom:]
+  -[AWDCallHistoryNilUuid writeTo:]
+  -[AWDCallHistoryNilUuid isEqual:]
+  -[AWDCallHistoryNilUuid copyTo:]
+  -[AWDCallHistoryNilUuid dictionaryRepresentation]
+  -[AWDCallHistoryNilUuid mergeFrom:]
+  -[AWDCallHistoryNilUuid callStatus]
+  -[AWDCallHistoryNilUuid hasTimestamp]
+  -[AWDCallHistoryNilUuid setCallType:]
+  -[AWDCallHistoryNilUuid setCallStatus:]
+
+
+AWDCallHistoryMalformedCloudChangeToken : PBCodable /System/Library/Frameworks/Contacts.framework/Contacts <NSCopying>
+ @property  BOOL hasTimestamp
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[AWDCallHistoryMalformedCloudChangeToken copyWithZone:]
+  -[AWDCallHistoryMalformedCloudChangeToken timestamp]
+  -[AWDCallHistoryMalformedCloudChangeToken setTimestamp:]
+  -[AWDCallHistoryMalformedCloudChangeToken setHasTimestamp:]
+  -[AWDCallHistoryMalformedCloudChangeToken readFrom:]
+  -[AWDCallHistoryMalformedCloudChangeToken writeTo:]
+  -[AWDCallHistoryMalformedCloudChangeToken isEqual:]
+  -[AWDCallHistoryMalformedCloudChangeToken copyTo:]
+  -[AWDCallHistoryMalformedCloudChangeToken dictionaryRepresentation]
+  -[AWDCallHistoryMalformedCloudChangeToken mergeFrom:]
+  -[AWDCallHistoryMalformedCloudChangeToken hasTimestamp]
+
+
+TransactionManager : CHSynchronizedLoggable
+  // class methods
+  +[TransactionManager instance]
+
+  // instance methods
+  -[TransactionManager init]
+  -[TransactionManager dealloc]
+  -[TransactionManager createXpcConnection]
+  -[TransactionManager .cxx_destruct]
+  -[TransactionManager createXpcConnection_sync]
+  -[TransactionManager setupConnectionHandlers_sync]
+  -[TransactionManager appendTransactions_sync:]
+  -[TransactionManager appendTransactions:]
+
+
+WatchDogTimer : CHLogger
+  // instance methods
+  -[WatchDogTimer dealloc]
+  -[WatchDogTimer .cxx_destruct]
+  -[WatchDogTimer cancel]
+  -[WatchDogTimer initWithQueue:withName:withTimeout:withCallback:]
+
+
+CHManagedHandle : NSManagedObject /usr/lib/libobjc.A.dylib
+ @property  CHHandle *chHandle
+ @property  NSString *normalizedValue
+ @property  short type
+ @property  NSString *value
+ @property  NSSet *localParticipantCalls
+ @property  NSSet *remoteParticipantCalls
+
+  // class methods
+  +[CHManagedHandle fetchRequest]
+  +[CHManagedHandle managedHandleForHandle:inManagedObjectContext:]
+  +[CHManagedHandle managedHandlesForHandles:inManagedObjectContext:]
+
+  // instance methods
+  -[CHManagedHandle chHandle]
+  -[CHManagedHandle copyWithContext:]
+
+
+EncryptionTransformer : NSValueTransformer /System/Library/Frameworks/CoreData.framework/CoreData
+  // class methods
+  +[EncryptionTransformer transformedValueClass]
+  +[EncryptionTransformer allowsReverseTransformation]
+
+  // instance methods
+  -[EncryptionTransformer transformedValue:]
+  -[EncryptionTransformer reverseTransformedValue:]
+
+
+CHPluginHelper : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CHPluginHelper init]
+  -[CHPluginHelper .cxx_destruct]
+  -[CHPluginHelper unreadCallCount]
+  -[CHPluginHelper recentCallsWithLimitingTypes:]
+
+
+(CHTransactionAdditions)
+	// class methods
+	+[(CHTransactionAdditions) ch_stringWithCHTransactionType:]
+	+[(CHTransactionAdditions) ch_stringWithCHRecentCallVerificationStatus:]
+	+[(CHTransactionAdditions) ch_stringWithCHRecentCallJunkConfidence:]
+
+(DayComparison)
+	// instance methods
+	-[(DayComparison) isSameDayAsDate:]
+
+01 00 0a00 /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics: AWDMetricManager 
+01 00 0a00 /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics: AWDServerConnection 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactFetchRequest 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactFormatter 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStore 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNLabeledValue 
+01 00 0800 /System/Library/Frameworks/Contacts.framework/Contacts: CNPhoneNumber 
+01 00 0900 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOPhoneNumberResolver 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSBatchDeleteRequest 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSEntityMigrationPolicy 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectContext 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectModel 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSMappingModel 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSMigrationManager 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSOrderedSet 
+01 00 0e00 /System/Library/Frameworks/CoreData.framework/CoreData: NSPersistentStoreCoordinator 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValueTransformer 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0700 /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer: PBCodable 

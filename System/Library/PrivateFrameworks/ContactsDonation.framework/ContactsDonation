@@ -1,0 +1,883 @@
+|| __DATA.__data _CNDSIMCardItemIdentifierTransform
+|| __DATA.__data _CNDSIMCardItemValueTransform
+|| __DATA.__data _CNDonationOriginBundleIdentifierKey
+|| __DATA.__data _CNDonationOriginClusterIdentifierKey
+|| __DATA.__data _CNDonationOriginDonationDateKey
+|| __DATA.__data _CNDonationOriginDonationIdentifierKey
+|| __DATA.__data _CNDonationOriginExpirationDateKey
+|| __DATA.__data _CNDonationOriginPlistEncodingVersionKey
+|| __DATA.__objc_data _OBJC_CLASS_$_CNDDonorExtension
+|| __DATA.__objc_data _OBJC_CLASS_$_CNDInMemoryDonationPreferences
+|| __DATA.__objc_data _OBJC_CLASS_$_CNDonationExtensionRequestHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_CNMutableDonationOrigin
+|| __DATA.__objc_data _OBJC_CLASS_$__CNDExtensionContext
+|| __DATA.__objc_data _OBJC_CLASS_$__CNDHostExtensionContext
+|| __DATA.__objc_data _OBJC_CLASS_$__CNDRemoteExtensionContext
+|| __DATA.__objc_data _OBJC_CLASS_$__CNDonationAgentXPCMethodScope
+|| __DATA.__objc_data _OBJC_CLASS_$__CNImageDataDonationValue
+|| __DATA.__objc_data _OBJC_CLASS_$__CNPostalAddressDonationValue
+|| __DATA.__objc_data _OBJC_METACLASS_$_CNDDonorExtension
+|| __DATA.__objc_data _OBJC_METACLASS_$_CNDInMemoryDonationPreferences
+|| __DATA.__objc_data _OBJC_METACLASS_$_CNDonationExtensionRequestHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_CNMutableDonationOrigin
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNDExtensionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNDHostExtensionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNDRemoteExtensionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNDonationAgentXPCMethodScope
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNImageDataDonationValue
+|| __DATA.__objc_data _OBJC_METACLASS_$__CNPostalAddressDonationValue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CNDonationOrigin._bundleIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CNDonationOrigin._clusterIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CNDonationOrigin._donationDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CNDonationOrigin._donationIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CNDonationOrigin._expirationDate
+|| __DATA_CONST.__const _CNDDonationsEnabledNotificationName
+|| __DATA_CONST.__const _CNDDonationsEnabledPreferencesKey
+|| __DATA_CONST.__const _CNDonationAccountsBundleIdentifier
+|| __DATA_CONST.__const _CNDonationCoreRoutineBundleIdentifier
+|| __DATA_CONST.__const _CNDonationErrorDomain
+|| __DATA_CONST.__const _CNDonationSIMCardBundleIdentifier
+|| __DATA_CONST.__const _CNDonationStoreMeCardIdentifier
+|| __DATA_CONST.__const _CNDonationStoreMeCardValuesDidChangeNotification
+|| __DATA_CONST.__const _CNDonationToolBundleIdentifier
+|| __DATA_CONST.__const _CNDonationValueEmailAddressKey
+|| __DATA_CONST.__const _CNDonationValueLabelKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsFamilyNameKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsGivenNameKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsMiddleNameKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsNamePrefixKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsNameSuffixKey
+|| __DATA_CONST.__const _CNDonationValueNameComponentsNicknameKey
+|| __DATA_CONST.__const _CNDonationValueOriginKey
+|| __DATA_CONST.__const _CNDonationValuePhoneNumberKey
+|| __DATA_CONST.__const _CNDonationValuePlistEncodingVersionKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressCityKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressCountryKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressDonationStyleAddress
+|| __DATA_CONST.__const _CNDonationValuePostalAddressDonationStyleKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressDonationStyleLocation
+|| __DATA_CONST.__const _CNDonationValuePostalAddressISOCountryCodeKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressPostalCodeKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressStateKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressStreetKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressSubAdministrativeAreaKey
+|| __DATA_CONST.__const _CNDonationValuePostalAddressSubLocalityKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDCoreTelephonyServices
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDDonationPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDDonorLoader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDSIMCardItem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDSIMCardMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDonationAgentXPCAdapter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDonationLoggerProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDonationOrigin
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDonationStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CNDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationAccountLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationAgentLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationAnalyticsLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationExtensionLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationPreferencesLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNDonationToolLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNEmailAddressDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNNameComponentsDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CNPhoneNumberDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDCoreTelephonyServices
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDDonationPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDDonorLoader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDSIMCardItem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDSIMCardMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDonationAgentXPCAdapter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDonationLoggerProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDonationOrigin
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDonationStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CNDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationAccountLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationAgentLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationAnalyticsLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationExtensionLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationPreferencesLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNDonationToolLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNEmailAddressDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNNameComponentsDonationValue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CNPhoneNumberDonationValue
+|| __TEXT.__const _ContactsDonationVersionNumber
+|| __TEXT.__const _ContactsDonationVersionString
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNMutableContact
+__ Contacts: _OBJC_CLASS_$_CNMutablePostalAddress
+__ Contacts: _OBJC_CLASS_$_CNPhoneNumber
+__ Contacts: _OBJC_CLASS_$_CNPostalAddress
+__ Contacts: _OBJC_CLASS_$_CNValueOrigin
+__ ContactsFoundation: _CNAbstractMethodException
+__ ContactsFoundation: _CNIsNotNull
+__ ContactsFoundation: _CNIsStringEmpty
+__ ContactsFoundation: _OBJC_CLASS_$_CNCancelationToken
+__ ContactsFoundation: _OBJC_CLASS_$_CNDescriptionBuilder
+__ ContactsFoundation: _OBJC_CLASS_$_CNEither
+__ ContactsFoundation: _OBJC_CLASS_$_CNEqualsBuilder
+__ ContactsFoundation: _OBJC_CLASS_$_CNFuture
+__ ContactsFoundation: _OBJC_CLASS_$_CNHashBuilder
+__ ContactsFoundation: _OBJC_CLASS_$_CNObservable
+__ ContactsFoundation: _OBJC_CLASS_$_CNObserver
+__ ContactsFoundation: _OBJC_CLASS_$_CNPromise
+__ ContactsFoundation: _OBJC_CLASS_$_CNReplaySubject
+__ ContactsFoundation: _OBJC_CLASS_$_CNSchedulerProvider
+__ ContactsFoundation: _OBJC_CLASS_$_CNXPC
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreTelephony: _OBJC_CLASS_$_CoreTelephonyClient
+__ CoreTelephony: __CTServerConnectionCreateOnTargetQueue
+__ CoreTelephony: __CTServerConnectionRegisterBlockForNotification
+__ CoreTelephony: __CTServerConnectionUnregisterForNotification
+__ CoreTelephony: _kCTSettingPhoneNumberChangedNotification
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExtension
+__ Foundation: _OBJC_CLASS_$_NSExtensionContext
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPersonNameComponents
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSExtensionContext
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+CNDonationOrigin : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  NSDictionary *propertyListRepresentation
+ @property  NSString *bundleIdentifier
+ @property  NSString *donationIdentifier
+ @property  NSString *clusterIdentifier
+ @property  NSDate *donationDate
+ @property  NSDate *expirationDate
+
+  // class methods
+  +[CNDonationOrigin supportsSecureCoding]
+  +[CNDonationOrigin originWithUpdatedDonationIdentifier:fromOrigin:]
+
+  // instance methods
+  -[CNDonationOrigin copyWithZone:]
+  -[CNDonationOrigin propertyListRepresentation]
+  -[CNDonationOrigin initWithPropertyListRepresentation:]
+  -[CNDonationOrigin donationIdentifier]
+  -[CNDonationOrigin clusterIdentifier]
+  -[CNDonationOrigin .cxx_destruct]
+  -[CNDonationOrigin encodeWithCoder:]
+  -[CNDonationOrigin isEqual:]
+  -[CNDonationOrigin expirationDate]
+  -[CNDonationOrigin bundleIdentifier]
+  -[CNDonationOrigin mutableCopyWithZone:]
+  -[CNDonationOrigin initWithCoder:]
+  -[CNDonationOrigin donationDate]
+  -[CNDonationOrigin initWithBundleIdentifier:donationIdentifier:clusterIdentifier:donationDate:expirationDate:]
+  -[CNDonationOrigin initWithDonationOrigin:]
+  -[CNDonationOrigin initWithBundleIdentifier:donationIdentifier:donationDate:expirationDate:]
+
+
+CNMutableDonationOrigin : CNDonationOrigin
+ @property  NSString *bundleIdentifier
+ @property  NSString *donationIdentifier
+ @property  NSString *clusterIdentifier
+ @property  NSDate *donationDate
+ @property  NSDate *expirationDate
+
+  // class methods
+  +[CNMutableDonationOrigin new]
+
+  // instance methods
+  -[CNMutableDonationOrigin copyWithZone:]
+  -[CNMutableDonationOrigin init]
+  -[CNMutableDonationOrigin setExpirationDate:]
+  -[CNMutableDonationOrigin setBundleIdentifier:]
+  -[CNMutableDonationOrigin setDonationIdentifier:]
+  -[CNMutableDonationOrigin setClusterIdentifier:]
+  -[CNMutableDonationOrigin setDonationDate:]
+
+
+_CNDHostExtensionContext : _CNDExtensionContext <_CNDHostExtensionContextProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+
+CNDSIMCardMonitor : NSObject /usr/lib/libSystem.B.dylib <CNDSIMCardMonitor>
+ @property  CoreTelephonyClient *coreTelephonyClient
+ @property  <CNDCoreTelephonyServices> *coreTelephonyServices
+ @property  CNReplaySubject *subject
+ @property  <CNCancelable> *subjectToken
+ @property  ^{__CTServerConnection=} serverConnection
+ @property  NSObject<OS_dispatch_queue> *serverConnectionQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CNDSIMCardMonitor os_log]
+  +[CNDSIMCardMonitor continuousPhoneNumberObservableWithCoreTelephonyClient:services:serverConnection:]
+  +[CNDSIMCardMonitor phoneNumberChangedObservableWithCoreTelephonyServices:serverConnection:]
+  +[CNDSIMCardMonitor phoneNumberObservableWithCoreTelephonyClient:]
+  +[CNDSIMCardMonitor infoWithClient:completion:]
+  +[CNDSIMCardMonitor infoWithCompletion:]
+
+  // instance methods
+  -[CNDSIMCardMonitor serverConnection]
+  -[CNDSIMCardMonitor coreTelephonyClient]
+  -[CNDSIMCardMonitor init]
+  -[CNDSIMCardMonitor subjectToken]
+  -[CNDSIMCardMonitor dealloc]
+  -[CNDSIMCardMonitor .cxx_destruct]
+  -[CNDSIMCardMonitor subject]
+  -[CNDSIMCardMonitor setServerConnection:]
+  -[CNDSIMCardMonitor setSubjectToken:]
+  -[CNDSIMCardMonitor initWithCoreTelephonyClient:services:]
+  -[CNDSIMCardMonitor configureStateIfNecessary]
+  -[CNDSIMCardMonitor nts_configureConnectionIfNecessary]
+  -[CNDSIMCardMonitor nts_configureSubjectIfNecessary]
+  -[CNDSIMCardMonitor setServerConnectionQueue:]
+  -[CNDSIMCardMonitor coreTelephonyServices]
+  -[CNDSIMCardMonitor serverConnectionQueue]
+  -[CNDSIMCardMonitor addInfoChangeHandler:]
+
+
+_CNDonationAnalyticsLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationAnalyticsLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationAnalyticsLogger init]
+  -[_CNDonationAnalyticsLogger log_t]
+  -[_CNDonationAnalyticsLogger .cxx_destruct]
+  -[_CNDonationAnalyticsLogger noMeCard]
+  -[_CNDonationAnalyticsLogger willReportAnalytics]
+  -[_CNDonationAnalyticsLogger didReportAnalytics]
+  -[_CNDonationAnalyticsLogger withinReportingInterval:]
+  -[_CNDonationAnalyticsLogger noDonatedMeCard]
+
+
+CNDonationValue : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  CNDonationOrigin *origin
+
+  // class methods
+  +[CNDonationValue supportsSecureCoding]
+  +[CNDonationValue donationValueWithNameComponents:origin:]
+  +[CNDonationValue donationValueWithEmailAddress:label:origin:]
+  +[CNDonationValue donationValueWithPhoneNumber:label:origin:]
+  +[CNDonationValue donationValueWithPostalAddress:style:label:origin:]
+  +[CNDonationValue donationValueWithImageData:origin:]
+
+  // instance methods
+  -[CNDonationValue propertyListRepresentation]
+  -[CNDonationValue initWithPropertyListRepresentation:]
+  -[CNDonationValue origin]
+  -[CNDonationValue .cxx_destruct]
+  -[CNDonationValue encodeWithCoder:]
+  -[CNDonationValue isEqual:]
+  -[CNDonationValue initWithCoder:]
+  -[CNDonationValue initWithOrigin:]
+  -[CNDonationValue updatePropertyListRepresentation:]
+  -[CNDonationValue copyWithNewExpirationDate:]
+  -[CNDonationValue acceptDonationValueVisitor:]
+
+
+_CNNameComponentsDonationValue : CNDonationValue
+ @property  NSPersonNameComponents *nameComponents
+
+  // class methods
+  +[_CNNameComponentsDonationValue supportsSecureCoding]
+
+  // instance methods
+  -[_CNNameComponentsDonationValue .cxx_destruct]
+  -[_CNNameComponentsDonationValue nameComponents]
+  -[_CNNameComponentsDonationValue encodeWithCoder:]
+  -[_CNNameComponentsDonationValue isEqual:]
+  -[_CNNameComponentsDonationValue initWithCoder:]
+  -[_CNNameComponentsDonationValue initWithNameComponents:origin:]
+  -[_CNNameComponentsDonationValue updatePropertyListRepresentation:]
+  -[_CNNameComponentsDonationValue copyWithNewExpirationDate:]
+  -[_CNNameComponentsDonationValue acceptDonationValueVisitor:]
+
+
+_CNEmailAddressDonationValue : CNDonationValue
+ @property  NSString *emailAddress
+ @property  NSString *label
+
+  // class methods
+  +[_CNEmailAddressDonationValue supportsSecureCoding]
+
+  // instance methods
+  -[_CNEmailAddressDonationValue .cxx_destruct]
+  -[_CNEmailAddressDonationValue label]
+  -[_CNEmailAddressDonationValue encodeWithCoder:]
+  -[_CNEmailAddressDonationValue isEqual:]
+  -[_CNEmailAddressDonationValue emailAddress]
+  -[_CNEmailAddressDonationValue initWithCoder:]
+  -[_CNEmailAddressDonationValue initWithEmailAddress:label:origin:]
+  -[_CNEmailAddressDonationValue updatePropertyListRepresentation:]
+  -[_CNEmailAddressDonationValue copyWithNewExpirationDate:]
+  -[_CNEmailAddressDonationValue acceptDonationValueVisitor:]
+
+
+_CNPhoneNumberDonationValue : CNDonationValue
+ @property  CNPhoneNumber *phoneNumber
+ @property  NSString *label
+
+  // class methods
+  +[_CNPhoneNumberDonationValue supportsSecureCoding]
+
+  // instance methods
+  -[_CNPhoneNumberDonationValue phoneNumber]
+  -[_CNPhoneNumberDonationValue .cxx_destruct]
+  -[_CNPhoneNumberDonationValue label]
+  -[_CNPhoneNumberDonationValue encodeWithCoder:]
+  -[_CNPhoneNumberDonationValue isEqual:]
+  -[_CNPhoneNumberDonationValue initWithCoder:]
+  -[_CNPhoneNumberDonationValue initWithPhoneNumber:label:origin:]
+  -[_CNPhoneNumberDonationValue updatePropertyListRepresentation:]
+  -[_CNPhoneNumberDonationValue copyWithNewExpirationDate:]
+  -[_CNPhoneNumberDonationValue acceptDonationValueVisitor:]
+
+
+_CNPostalAddressDonationValue : CNDonationValue
+ @property  CNPostalAddress *postalAddress
+ @property  long long style
+ @property  NSString *label
+
+  // class methods
+  +[_CNPostalAddressDonationValue supportsSecureCoding]
+
+  // instance methods
+  -[_CNPostalAddressDonationValue .cxx_destruct]
+  -[_CNPostalAddressDonationValue postalAddress]
+  -[_CNPostalAddressDonationValue label]
+  -[_CNPostalAddressDonationValue encodeWithCoder:]
+  -[_CNPostalAddressDonationValue isEqual:]
+  -[_CNPostalAddressDonationValue initWithCoder:]
+  -[_CNPostalAddressDonationValue style]
+  -[_CNPostalAddressDonationValue initWithPostalAddress:style:label:origin:]
+  -[_CNPostalAddressDonationValue updatePropertyListRepresentation:]
+  -[_CNPostalAddressDonationValue copyWithNewExpirationDate:]
+  -[_CNPostalAddressDonationValue acceptDonationValueVisitor:]
+
+
+_CNImageDataDonationValue : CNDonationValue
+ @property  NSData *imageData
+
+  // class methods
+  +[_CNImageDataDonationValue supportsSecureCoding]
+
+  // instance methods
+  -[_CNImageDataDonationValue imageData]
+  -[_CNImageDataDonationValue .cxx_destruct]
+  -[_CNImageDataDonationValue encodeWithCoder:]
+  -[_CNImageDataDonationValue isEqual:]
+  -[_CNImageDataDonationValue initWithCoder:]
+  -[_CNImageDataDonationValue initWithImageData:origin:]
+  -[_CNImageDataDonationValue copyWithNewExpirationDate:]
+  -[_CNImageDataDonationValue acceptDonationValueVisitor:]
+
+
+CNDonationStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  <CNDonationAgentAdapter> *adapter
+
+  // instance methods
+  -[CNDonationStore changeFromAccount:toAccount:]
+  -[CNDonationStore init]
+  -[CNDonationStore adapter]
+  -[CNDonationStore .cxx_destruct]
+  -[CNDonationStore meCardDonations]
+  -[CNDonationStore rejectValueWithDonationIdentifier:completionHandler:]
+  -[CNDonationStore donatedMeCardEither]
+  -[CNDonationStore rejectValuesWithClusterIdentifier:completionHandler:]
+  -[CNDonationStore donatedMeCard]
+  -[CNDonationStore initWithAdapter:]
+  -[CNDonationStore fetchDonatedMeCard:]
+  -[CNDonationStore removeDonatedMeCardValuesForIdentifiers:completionHandler:]
+  -[CNDonationStore donateMeCardValues:completionHandler:]
+  -[CNDonationStore removeAllRejectionsWithCompletionHandler:]
+
+
+CNDDonorLoader : NSObject /usr/lib/libSystem.B.dylib
+ @property  <CNDonationLoggerProvider> *loggerProvider
+
+  // class methods
+  +[CNDDonorLoader extensionAttributes]
+  +[CNDDonorLoader currentExtensionsObservable]
+  +[CNDDonorLoader continuousExtensionsObservable]
+
+  // instance methods
+  -[CNDDonorLoader init]
+  -[CNDDonorLoader loggerProvider]
+  -[CNDDonorLoader .cxx_destruct]
+  -[CNDDonorLoader donorWithIdentifier:]
+
+
+CNDonationExtensionRequestHandler : NSObject /usr/lib/libSystem.B.dylib <NSExtensionRequestHandling>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CNDonationExtensionRequestHandler beginRequestWithExtensionContext:]
+  -[CNDonationExtensionRequestHandler renewExpirationDateForDonatedValue:acknowledgementHandler:]
+  -[CNDonationExtensionRequestHandler userDidRejectDonatedValue:]
+  -[CNDonationExtensionRequestHandler donationVersioningNumber]
+  -[CNDonationExtensionRequestHandler redonateAllValuesWithReason:]
+
+
+_CNDonationPreferencesLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationPreferencesLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationPreferencesLogger init]
+  -[_CNDonationPreferencesLogger log_t]
+  -[_CNDonationPreferencesLogger .cxx_destruct]
+  -[_CNDonationPreferencesLogger isDonationsEnabled:]
+  -[_CNDonationPreferencesLogger setDonationsEnabled:]
+
+
+CNDSIMCardItem : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *identifier
+ @property  NSString *value
+
+  // class methods
+  +[CNDSIMCardItem supportsSecureCoding]
+
+  // instance methods
+  -[CNDSIMCardItem copyWithZone:]
+  -[CNDSIMCardItem initWithIdentifier:value:]
+  -[CNDSIMCardItem .cxx_destruct]
+  -[CNDSIMCardItem encodeWithCoder:]
+  -[CNDSIMCardItem identifier]
+  -[CNDSIMCardItem isEqual:]
+  -[CNDSIMCardItem value]
+  -[CNDSIMCardItem initWithCoder:]
+
+
+CNDCoreTelephonyServices : NSObject /usr/lib/libSystem.B.dylib <CNDCoreTelephonyServices>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CNDCoreTelephonyServices _CTServerConnectionCreateOnTargetQueue::::]
+  -[CNDCoreTelephonyServices _CTServerConnectionRegisterBlockForNotification:::]
+  -[CNDCoreTelephonyServices _CTServerConnectionUnregisterForNotification::]
+
+
+_CNDonationAgentLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationAgentLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationAgentLogger init]
+  -[_CNDonationAgentLogger log_t]
+  -[_CNDonationAgentLogger .cxx_destruct]
+  -[_CNDonationAgentLogger agentWillStart]
+  -[_CNDonationAgentLogger agentDidStart]
+  -[_CNDonationAgentLogger agentWillStop]
+  -[_CNDonationAgentLogger donationServiceWillStart]
+  -[_CNDonationAgentLogger donationServiceDidStart]
+  -[_CNDonationAgentLogger donationServiceWillStop]
+  -[_CNDonationAgentLogger maintenanceServiceWillStart]
+  -[_CNDonationAgentLogger maintenanceServiceDidStart]
+  -[_CNDonationAgentLogger maintenanceServiceWillStop]
+  -[_CNDonationAgentLogger beginRestorePersistedState]
+  -[_CNDonationAgentLogger endRestorePersistedState]
+  -[_CNDonationAgentLogger acceptingConnectionFromProcess:]
+  -[_CNDonationAgentLogger denyingRequestFromProcess:]
+  -[_CNDonationAgentLogger acceptingDonations:]
+  -[_CNDonationAgentLogger preExpiredDonations:]
+  -[_CNDonationAgentLogger agentWillHandleRequest:]
+  -[_CNDonationAgentLogger agentDidHandleRequest:]
+  -[_CNDonationAgentLogger featureNotEnabled:]
+  -[_CNDonationAgentLogger featureWillDisable]
+  -[_CNDonationAgentLogger featureDidDisable]
+  -[_CNDonationAgentLogger featureWillEnable]
+  -[_CNDonationAgentLogger featureDidEnable]
+  -[_CNDonationAgentLogger contactsChangedNotificationFoundName:nameChanged:]
+  -[_CNDonationAgentLogger contactsChangedNotificationEmailAddressesChanged:]
+  -[_CNDonationAgentLogger willDiscoverExtensions]
+  -[_CNDonationAgentLogger didDiscoverExtension:]
+  -[_CNDonationAgentLogger didDiscoverUnexpectedExtensionType:]
+  -[_CNDonationAgentLogger didDiscoverExtensions]
+  -[_CNDonationAgentLogger didFailToDiscoverExtensions:]
+  -[_CNDonationAgentLogger willLoadExtensionVersions]
+  -[_CNDonationAgentLogger willSaveExtensionVersions]
+  -[_CNDonationAgentLogger willRejectDonationIdentifier:]
+  -[_CNDonationAgentLogger didRejectDonationIdentifier:]
+  -[_CNDonationAgentLogger couldNotRejectUnknownDonationIdentifier:]
+  -[_CNDonationAgentLogger couldNotRejectDonationIdentifier:error:]
+  -[_CNDonationAgentLogger willRejectClusterIdentifier:]
+  -[_CNDonationAgentLogger didRejectClusterIdentifier:]
+  -[_CNDonationAgentLogger couldNotRejectUnknownClusterIdentifier:]
+  -[_CNDonationAgentLogger couldNotRejectClusterIdentifier:error:]
+  -[_CNDonationAgentLogger willListRejections]
+  -[_CNDonationAgentLogger didListRejections]
+  -[_CNDonationAgentLogger willRemoveAllRejections]
+  -[_CNDonationAgentLogger didRemoveAllRejections]
+  -[_CNDonationAgentLogger foundUnhashableValue:]
+  -[_CNDonationAgentLogger willRenewValues:withDonor:]
+  -[_CNDonationAgentLogger didRenewValue:untilDate:]
+  -[_CNDonationAgentLogger couldNotRenewBecauseNotADonorExtension:]
+  -[_CNDonationAgentLogger couldNotRenewBecauseDonorError:]
+  -[_CNDonationAgentLogger couldNotRenewBecauseLoadingError:]
+
+
+_CNDRemoteExtensionContext : _CNDExtensionContext <_CNDRemoteExtensionContextProtocol>
+ @property  CNDonationExtensionRequestHandler *requestHandler
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDRemoteExtensionContext .cxx_destruct]
+  -[_CNDRemoteExtensionContext setRequestHandler:]
+  -[_CNDRemoteExtensionContext hostContext]
+  -[_CNDRemoteExtensionContext requestHandler]
+  -[_CNDRemoteExtensionContext renewExpirationDateForDonatedValue:acknowledgementHandler:]
+  -[_CNDRemoteExtensionContext redonateAllValuesWithReason:]
+
+
+CNDonationAgentXPCAdapter : NSObject /usr/lib/libSystem.B.dylib <CNDonationAgentAdapter>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CNDonationAgentXPCAdapter newXPCConnection]
+  +[CNDonationAgentXPCAdapter donateMeCardValues:scope:]
+  +[CNDonationAgentXPCAdapter removeDonatedMeCardValuesForIdentifiers:scope:]
+  +[CNDonationAgentXPCAdapter fetchDonatedMeCardWithScope:]
+  +[CNDonationAgentXPCAdapter meCardDonationsWithScope:]
+  +[CNDonationAgentXPCAdapter rejectValueWithDonationIdentifier:scope:]
+  +[CNDonationAgentXPCAdapter changeFromAccount:toAccount:scope:]
+  +[CNDonationAgentXPCAdapter rejectValuesWithClusterIdentifier:scope:]
+  +[CNDonationAgentXPCAdapter removeAllRejectionsWithScope:]
+
+  // instance methods
+  -[CNDonationAgentXPCAdapter changeFromAccount:toAccount:]
+  -[CNDonationAgentXPCAdapter donateMeCardValues:]
+  -[CNDonationAgentXPCAdapter fetchDonatedMeCard]
+  -[CNDonationAgentXPCAdapter meCardDonations]
+  -[CNDonationAgentXPCAdapter removeDonatedMeCardValuesForIdentifiers:]
+  -[CNDonationAgentXPCAdapter donatedMeCardEither]
+  -[CNDonationAgentXPCAdapter rejectValueWithDonationIdentifier:]
+  -[CNDonationAgentXPCAdapter rejectValuesWithClusterIdentifier:]
+  -[CNDonationAgentXPCAdapter removeAllRejections]
+
+
+_CNDonationAgentXPCMethodScope : NSObject /usr/lib/libSystem.B.dylib
+ @property  <DonationAgentProtocol> *proxy
+ @property  CNPromise *promise
+
+  // instance methods
+  -[_CNDonationAgentXPCMethodScope promise]
+  -[_CNDonationAgentXPCMethodScope init]
+  -[_CNDonationAgentXPCMethodScope proxy]
+  -[_CNDonationAgentXPCMethodScope .cxx_destruct]
+  -[_CNDonationAgentXPCMethodScope initWithConnection:promise:proxy:]
+  -[_CNDonationAgentXPCMethodScope initWithPromise:proxy:]
+
+
+_CNDonationExtensionLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationExtensionLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationExtensionLogger init]
+  -[_CNDonationExtensionLogger log_t]
+  -[_CNDonationExtensionLogger .cxx_destruct]
+  -[_CNDonationExtensionLogger loadedDonorExtension:forIdentifier:]
+  -[_CNDonationExtensionLogger couldNotLoadDonorExtensionForIdentifier:error:]
+  -[_CNDonationExtensionLogger willRenewDonation:]
+  -[_CNDonationExtensionLogger didRenewDonation:untilDate:]
+  -[_CNDonationExtensionLogger didExpireDonation:withError:]
+  -[_CNDonationExtensionLogger couldNotRenewDonation:error:]
+  -[_CNDonationExtensionLogger willRedonateValuesWithReason:]
+  -[_CNDonationExtensionLogger didRedonateValuesWithReason:]
+  -[_CNDonationExtensionLogger couldNotRedonateValuesWithReason:error:]
+
+
+CNDDonorExtension : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSExtension *extension
+ @property  <CNDonationExtensionLogger> *logger
+
+  // instance methods
+  -[CNDDonorExtension initWithExtension:]
+  -[CNDDonorExtension extension]
+  -[CNDDonorExtension .cxx_destruct]
+  -[CNDDonorExtension logger]
+  -[CNDDonorExtension renewExpirationDateForDonatedValue:acknowledgementHandler:]
+  -[CNDDonorExtension redonateAllValuesWithReason:]
+  -[CNDDonorExtension initWithExtension:logger:]
+
+
+_CNDExtensionContext : NSExtensionContext /usr/lib/libobjc.A.dylib <_CNDExtensionContextProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[_CNDExtensionContext _extensionAuxiliaryVendorProtocol]
+  +[_CNDExtensionContext _extensionAuxiliaryHostProtocol]
+  +[_CNDExtensionContext makeHostProtocol]
+  +[_CNDExtensionContext makeVendorProtocol]
+
+
+_CNDonationAccountLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationAccountLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationAccountLogger accountChanged:]
+  -[_CNDonationAccountLogger init]
+  -[_CNDonationAccountLogger log_t]
+  -[_CNDonationAccountLogger .cxx_destruct]
+  -[_CNDonationAccountLogger accountRemoved:]
+  -[_CNDonationAccountLogger accountAdded:]
+  -[_CNDonationAccountLogger pluginLoaded]
+  -[_CNDonationAccountLogger pluginUnloaded]
+  -[_CNDonationAccountLogger accountsDidNotChange]
+  -[_CNDonationAccountLogger donating:]
+  -[_CNDonationAccountLogger removing:]
+  -[_CNDonationAccountLogger donationFailedWithError:]
+  -[_CNDonationAccountLogger removalFailedWithError:]
+
+
+CNDonationLoggerProvider : NSObject /usr/lib/libSystem.B.dylib <CNDonationLoggerProvider>
+ @property  <CNDonationAgentLogger> *agentLoggerImpl
+ @property  <CNDonationExtensionLogger> *extensionLoggerImpl
+ @property  <CNDonationToolLogger> *toolLoggerImpl
+ @property  <CNDonationAccountLogger> *accountLoggerImpl
+ @property  <CNDonationPreferencesLogger> *preferencesLoggerImpl
+ @property  <CNDonationAnalyticsLogger> *analyticsLoggerImpl
+ @property  <CNDonationAgentLogger> *agentLogger
+ @property  <CNDonationExtensionLogger> *extensionLogger
+ @property  <CNDonationToolLogger> *toolLogger
+ @property  <CNDonationAccountLogger> *accountLogger
+ @property  <CNDonationPreferencesLogger> *preferencesLogger
+ @property  <CNDonationAnalyticsLogger> *analyticsLogger
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CNDonationLoggerProvider defaultProvider]
+
+  // instance methods
+  -[CNDonationLoggerProvider init]
+  -[CNDonationLoggerProvider .cxx_destruct]
+  -[CNDonationLoggerProvider extensionLogger]
+  -[CNDonationLoggerProvider agentLoggerImpl]
+  -[CNDonationLoggerProvider extensionLoggerImpl]
+  -[CNDonationLoggerProvider toolLoggerImpl]
+  -[CNDonationLoggerProvider accountLoggerImpl]
+  -[CNDonationLoggerProvider preferencesLoggerImpl]
+  -[CNDonationLoggerProvider analyticsLoggerImpl]
+  -[CNDonationLoggerProvider agentLogger]
+  -[CNDonationLoggerProvider toolLogger]
+  -[CNDonationLoggerProvider accountLogger]
+  -[CNDonationLoggerProvider preferencesLogger]
+  -[CNDonationLoggerProvider analyticsLogger]
+
+
+CNDDonationPreferences : NSObject /usr/lib/libSystem.B.dylib <CNDDonationPreferences>
+ @property  NSNotificationCenter *notificationCenter
+ @property  <CNDonationPreferencesLogger> *logger
+ @property  @? donationPreferenceCheckingBlock
+ @property  @? donationPreferenceSettingBlock
+ @property  BOOL donationsEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CNDDonationPreferences observableWithPreferences:notificationCenter:schedulerProvider:]
+
+  // instance methods
+  -[CNDDonationPreferences notificationCenter]
+  -[CNDDonationPreferences init]
+  -[CNDDonationPreferences .cxx_destruct]
+  -[CNDDonationPreferences logger]
+  -[CNDDonationPreferences setDonationsEnabled:]
+  -[CNDDonationPreferences initWithNotificationCenter:logger:donationPreferenceCheckingBlock:donationPreferenceSettingBlock:]
+  -[CNDDonationPreferences isDonationsEnabled]
+  -[CNDDonationPreferences donationPreferenceCheckingBlock]
+  -[CNDDonationPreferences donationPreferenceSettingBlock]
+
+
+CNDInMemoryDonationPreferences : NSObject /usr/lib/libSystem.B.dylib <CNDDonationPreferences>
+ @property  BOOL donationsEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CNDInMemoryDonationPreferences observableWithPreferences:notificationCenter:schedulerProvider:]
+
+  // instance methods
+  -[CNDInMemoryDonationPreferences setDonationsEnabled:]
+  -[CNDInMemoryDonationPreferences isDonationsEnabled]
+
+
+_CNDonationToolLogger : NSObject /usr/lib/libSystem.B.dylib <CNDonationToolLogger>
+ @property  NSObject<OS_os_log> *log_t
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CNDonationToolLogger init]
+  -[_CNDonationToolLogger log_t]
+  -[_CNDonationToolLogger .cxx_destruct]
+  -[_CNDonationToolLogger commandArgs:]
+
+
+NSExtension(ContactsDonation)
+	// instance methods
+	-[NSExtension(ContactsDonation) _cnd_requestWithInputItems:]
+
+CNValueOrigin(ContactsDonation)
+	// class methods
+	+[CNValueOrigin(ContactsDonation) localizedApplicationNameForBundleIdentifier:]
+
+	// instance methods
+	-[CNValueOrigin(ContactsDonation) initWithDonationOrigin:]
+
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNCancelationToken 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNDescriptionBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNEither 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNEqualsBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNFuture 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNHashBuilder 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNMutableContact 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNMutablePostalAddress 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNObservable 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNObserver 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNPhoneNumber 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNPostalAddress 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNPromise 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNReplaySubject 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNSchedulerProvider 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNValueOrigin 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNXPC 
+01 00 0300 /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony: CoreTelephonyClient 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtension 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtensionContext 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSPersonNameComponents 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

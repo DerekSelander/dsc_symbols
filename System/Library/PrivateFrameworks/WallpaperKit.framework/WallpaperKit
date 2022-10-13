@@ -1,0 +1,647 @@
+|| __DATA.__data _WKWallpaperCollectionContentDidChangeNotification
+|| __DATA.__data _WKWallpaperKitErrorDomain
+|| __DATA.__objc_data _OBJC_CLASS_$_WKAbstractWallpaper
+|| __DATA.__objc_data _OBJC_CLASS_$_WKDefaultWallpaperManager
+|| __DATA.__objc_data _OBJC_CLASS_$_WKDynamicWallpaper
+|| __DATA.__objc_data _OBJC_CLASS_$_WKIndicatorView
+|| __DATA.__objc_data _OBJC_CLASS_$_WKLegacyWallpaperBundleLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_WKLiveWallpaper
+|| __DATA.__objc_data _OBJC_CLASS_$_WKStillWallpaper
+|| __DATA.__objc_data _OBJC_CLASS_$_WKWallpaperBundle
+|| __DATA.__objc_data _OBJC_CLASS_$_WKWallpaperBundleCollection
+|| __DATA.__objc_data _OBJC_CLASS_$_WKWallpaperBundleImporter
+|| __DATA.__objc_data _OBJC_CLASS_$_WKWallpaperCollection
+|| __DATA.__objc_data _OBJC_CLASS_$_WKWallpaperCollectionsManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKAbstractWallpaper
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKDefaultWallpaperManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKDynamicWallpaper
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKIndicatorView
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKLegacyWallpaperBundleLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKLiveWallpaper
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKStillWallpaper
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKWallpaperBundle
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKWallpaperBundleCollection
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKWallpaperBundleImporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKWallpaperCollection
+|| __DATA.__objc_data _OBJC_METACLASS_$_WKWallpaperCollectionsManager
+|| __DATA_CONST.__const _WKDefaultWallpapersCollectionIdentifier
+|| __DATA_CONST.__const _WKDefaultWallpapersDefault
+|| __DATA_CONST.__const _WKDefaultWallpapersWallpaperIdentifier
+|| __DATA_CONST.__const _WKDynamicWallpaperCollectionIdentifierString
+|| __DATA_CONST.__const _WKIgnoreLogicalScreenClassForWallpaperBundleKey
+|| __DATA_CONST.__const _WKIgnoreProductTypesForWallpaperBundleKey
+|| __DATA_CONST.__const _WKSolidColorWallpaperCollectionIdentifierString
+|| __DATA_CONST.__const _WKWallpaperAppearanceDark
+|| __DATA_CONST.__const _WKWallpaperAppearanceDefault
+|| __DATA_CONST.__const _WKWallpaperCollectionOptionIdentifier
+|| __DATA_CONST.__const _WKWallpaperCollectionOptionIsLegacyContent
+|| __DATA_CONST.__const _WKWallpaperCollectionOptionName
+|| __DATA_CONST.__const _WKWallpaperCollectionOptionOrder
+|| __DATA_CONST.__const _WKWallpaperCollectionOptionSource
+|| __DATA_CONST.__const _WKWallpaperLocationCoverSheet
+|| __DATA_CONST.__const _WKWallpaperLocationHomeScreen
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAppearanceAwareKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetFullSizeImageFileNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetFullSizeImageFileURLKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetIdentifierKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetStillTimeInVideoKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetThumbnailImageFileNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetThumbnailImageFileURLKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetVideoFileNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetWallpaperTypeKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetsHomeKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetsKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetsLockAndHomeKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionAssetsLockKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionFamilyKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionIdentifierKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionLogicalSceenClassKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionProductTypesKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionThumbnailImageFileNameKey
+|| __DATA_CONST.__const _WKWallpaperMetadataOptionVersionNumberKey
+|| __TEXT.__text _WKAllowCroppingForWallpaperAtLockScreen
+|| __TEXT.__text _WKBundleForWallpaperKitFramework
+|| __TEXT.__text _WKLogForCategory
+|| __TEXT.__text _WKLogicalScreenClassString
+|| __TEXT.__text _WKRectApplyScale
+|| __TEXT.__text _WKSizeApplyScale
+|| __TEXT.__text _WKStandardDisplayModeScreenSize
+|| __TEXT.__text _WKStringFromWallpaperBackingType
+|| __TEXT.__text _WKStringFromWallpaperContentSource
+|| __TEXT.__text _WKStringFromWallpaperType
+|| __TEXT.__text _WKSupportsLiveWallpapers
+|| __TEXT.__text _WKSupportsProceduralWallpapers
+|| __TEXT.__text _WKWallpaperContentSourceFromString
+|| __TEXT.__text _WKWallpaperTypeFromString
+|| __TEXT.__text _WKWallpapersBaseURL
+|| __TEXT.__text _WK_LocalizedString
+__ AppSupport: _CPSharedResourcesDirectory
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreGraphics: _CGContextFillRect
+__ CoreGraphics: _CGContextSetFillColorWithColor
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetWidth
+__ CoreGraphics: _CGRectZero
+__ Foundation: _NSLocalizedFailureErrorKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ NetAppsUtilities: _OBJC_CLASS_$_NADescriptionBuilder
+__ NetAppsUtilities: _OBJC_CLASS_$_NAIdentityBuilder
+__ SettingsFoundation: _SFRuntimeAbsoluteFilePathForPath
+__ SpringBoardFoundation: _OBJC_CLASS_$_SBFWallpaperOptions
+__ SpringBoardFoundation: _SBFMagicWallpaperEnumeration
+__ SpringBoardFoundation: _SBFMagicWallpaperThumbnail
+__ SpringBoardFoundation: _kSBFMagicWallpaperDynamicSectionKey
+__ UIKit: _OBJC_CLASS_$_UIActivityIndicatorView
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UILabel
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UITraitCollection
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$__UIBackdropView
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _UIGraphicsBeginImageContext
+__ UIKit: _UIGraphicsEndImageContext
+__ UIKit: _UIGraphicsGetCurrentContext
+__ UIKit: _UIGraphicsGetImageFromCurrentImageContext
+__ UIKit: _UIImageJPEGRepresentation
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+WKLegacyWallpaperBundleLoader : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *_loadingQueue
+ @property  NSFileManager *_fileManager
+ @property  NSDictionary *_wallpaperBundleLookup
+
+  // class methods
+  +[WKLegacyWallpaperBundleLoader legacyWallpaperDirectories]
+  +[WKLegacyWallpaperBundleLoader defaultWallpaperBundleLoader]
+
+  // instance methods
+  -[WKLegacyWallpaperBundleLoader init]
+  -[WKLegacyWallpaperBundleLoader .cxx_destruct]
+  -[WKLegacyWallpaperBundleLoader _fileManager]
+  -[WKLegacyWallpaperBundleLoader _loadingQueue]
+  -[WKLegacyWallpaperBundleLoader _loadAllValidWallpaperBundlesFromLegacyLocation]
+  -[WKLegacyWallpaperBundleLoader set_wallpaperBundleLookup:]
+  -[WKLegacyWallpaperBundleLoader _wallpaperBundleLookup]
+  -[WKLegacyWallpaperBundleLoader wallpaperBundleForIdentifier:]
+  -[WKLegacyWallpaperBundleLoader set_loadingQueue:]
+  -[WKLegacyWallpaperBundleLoader set_fileManager:]
+
+
+WKWallpaperBundle : NSObject /usr/lib/libSystem.B.dylib <NAIdentifiable, WKWallpaperRepresenting>
+ @property  NSMutableDictionary *_defaultAppearanceWallpapers
+ @property  NSMutableDictionary *_darkAppearanceWallpapers
+ @property  NSURL *_bundleURL
+ @property  long long version
+ @property  long long identifier
+ @property  NSString *name
+ @property  NSString *family
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSURL *thumbnailImageURL
+ @property  BOOL appearanceAware
+ @property  BOOL distinctWallpapersForLocations
+ @property  BOOL dynamicWallpaperBundle
+ @property  NSString *identifierString
+ @property  unsigned long contentSource
+
+  // class methods
+  +[WKWallpaperBundle na_identity]
+  +[WKWallpaperBundle shouldLoadWallpaperBundleAtURL:]
+  +[WKWallpaperBundle createTemporaryWallpaperBundleWithImages:videoAssetURLs:wallpaperOptions:error:]
+
+  // instance methods
+  -[WKWallpaperBundle family]
+  -[WKWallpaperBundle initWithURL:]
+  -[WKWallpaperBundle .cxx_destruct]
+  -[WKWallpaperBundle name]
+  -[WKWallpaperBundle identifierString]
+  -[WKWallpaperBundle identifier]
+  -[WKWallpaperBundle thumbnailImageURL]
+  -[WKWallpaperBundle _bundleURL]
+  -[WKWallpaperBundle isEqual:]
+  -[WKWallpaperBundle version]
+  -[WKWallpaperBundle isAppearanceAware]
+  -[WKWallpaperBundle fileBasedWallpaperForLocation:andAppearance:]
+  -[WKWallpaperBundle contentSource]
+  -[WKWallpaperBundle _loadBundle]
+  -[WKWallpaperBundle initWithDynamicDictionary:identifier:]
+  -[WKWallpaperBundle _loadDynamicWallpaper:]
+  -[WKWallpaperBundle _defaultAppearanceWallpapers]
+  -[WKWallpaperBundle _raiseInvalidMetadataExceptionForMetadataKeypath:]
+  -[WKWallpaperBundle _processAssetDictionary:forLocation:]
+  -[WKWallpaperBundle _stillWallpaperWithMetadataDictionary:wallpaperAppearance:]
+  -[WKWallpaperBundle _liveWallpaperWithMetadataDictionary:wallpaperAppearance:]
+  -[WKWallpaperBundle _darkAppearanceWallpapers]
+  -[WKWallpaperBundle valueBasedWallpaperForLocation:andAppearance:]
+  -[WKWallpaperBundle _processCommonFileBackedWallpaperMetadataWithDictionary:wallpaperAppearance:]
+  -[WKWallpaperBundle hasDistinctWallpapersForLocations]
+  -[WKWallpaperBundle isDynamicWallpaperBundle]
+  -[WKWallpaperBundle wallpaperBackingTypeForLocation:]
+  -[WKWallpaperBundle fileBasedWallpaperForLocation:]
+  -[WKWallpaperBundle valueBasedWallpaperForLocation:]
+  -[WKWallpaperBundle set_defaultAppearanceWallpapers:]
+  -[WKWallpaperBundle set_darkAppearanceWallpapers:]
+  -[WKWallpaperBundle set_bundleURL:]
+
+
+WKLiveWallpaper : WKAbstractWallpaper <WKFileBasedWallpaper>
+ @property  NSURL *thumbnailImageURL
+ @property  NSURL *fullsizeImageURL
+ @property  NSURL *videoAssetURL
+ @property  double stillTimeInVideo
+ @property  long long identifier
+ @property  NSString *name
+ @property  unsigned long type
+ @property  unsigned long backingType
+
+  // class methods
+  +[WKLiveWallpaper na_identity]
+
+  // instance methods
+  -[WKLiveWallpaper copyWithZone:]
+  -[WKLiveWallpaper setStillTimeInVideo:]
+  -[WKLiveWallpaper stillTimeInVideo]
+  -[WKLiveWallpaper backingType]
+  -[WKLiveWallpaper .cxx_destruct]
+  -[WKLiveWallpaper fullsizeImageURL]
+  -[WKLiveWallpaper setThumbnailImageURL:]
+  -[WKLiveWallpaper type]
+  -[WKLiveWallpaper thumbnailImageURL]
+  -[WKLiveWallpaper isEqual:]
+  -[WKLiveWallpaper videoAssetURL]
+  -[WKLiveWallpaper initWithIdentifier:name:thumbnailImageURL:fullsizeImageURL:videoAssetURL:stillTimeInVideo:]
+  -[WKLiveWallpaper setFullsizeImageURL:]
+  -[WKLiveWallpaper setVideoAssetURL:]
+  -[WKLiveWallpaper descriptionBuilderBlock]
+
+
+_WKSystemWallpaperCollection : WKWallpaperCollection
+ @property  BOOL legacyContent
+ @property  NSUUID *_identifier
+ @property  NSBundle *_bundleForLocalizationResources
+ @property  NSString *displayNameKey
+ @property  NSURL *wallpaperCollectionURL
+
+  // class methods
+  +[_WKSystemWallpaperCollection dynamicWallpaperCollection]
+  +[_WKSystemWallpaperCollection _createTemporaryWallpaperCollectionWithImage:videoAssetURL:wallpaperOptions:error:]
+  +[_WKSystemWallpaperCollection shouldLoadWallpaperCollectionAtURL:]
+
+  // instance methods
+  -[_WKSystemWallpaperCollection _identifier]
+  -[_WKSystemWallpaperCollection initWithURL:]
+  -[_WKSystemWallpaperCollection .cxx_destruct]
+  -[_WKSystemWallpaperCollection identifier]
+  -[_WKSystemWallpaperCollection set_identifier:]
+  -[_WKSystemWallpaperCollection displayName]
+  -[_WKSystemWallpaperCollection numberOfWallpapers]
+  -[_WKSystemWallpaperCollection displayNameKey]
+  -[_WKSystemWallpaperCollection _raiseInvalidMetadataExceptionForMetadataKeypath:]
+  -[_WKSystemWallpaperCollection wallpaperCollectionURL]
+  -[_WKSystemWallpaperCollection _loadCollectionContents]
+  -[_WKSystemWallpaperCollection set_bundleForLocalizationResources:]
+  -[_WKSystemWallpaperCollection setDisplayNameKey:]
+  -[_WKSystemWallpaperCollection isLegacyContent]
+  -[_WKSystemWallpaperCollection _loadSystemContentForCollectionWithMetadata:isLegacyContent:]
+  -[_WKSystemWallpaperCollection _bundleForLocalizationResources]
+  -[_WKSystemWallpaperCollection isDynamicCollection]
+  -[_WKSystemWallpaperCollection wallpaperBundleAtIndex:]
+  -[_WKSystemWallpaperCollection containsWallpaperRepresentingWithIdentifier:]
+  -[_WKSystemWallpaperCollection wallpaperRepresentingWithIdentifier:]
+
+
+WKIndicatorView : UIView /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+ @property  BOOL _hasBeenConfigured
+ @property  _UIBackdropView *_backdropView
+ @property  UIActivityIndicatorView *_activityIndicatorView
+ @property  UILabel *_label
+
+  // instance methods
+  -[WKIndicatorView _label]
+  -[WKIndicatorView initWithFrame:]
+  -[WKIndicatorView .cxx_destruct]
+  -[WKIndicatorView _activityIndicatorView]
+  -[WKIndicatorView _backdropView]
+  -[WKIndicatorView _hasBeenConfigured]
+  -[WKIndicatorView set_hasBeenConfigured:]
+  -[WKIndicatorView _configureViewIfNeeded]
+  -[WKIndicatorView showViewWithMessage:inHostingView:]
+  -[WKIndicatorView hideViewAndRemoveFromHostingView]
+  -[WKIndicatorView set_backdropView:]
+  -[WKIndicatorView set_activityIndicatorView:]
+  -[WKIndicatorView set_label:]
+
+
+WKAbstractWallpaper : NSObject /usr/lib/libSystem.B.dylib <WKDescribable, NAIdentifiable, WKWallpaper>
+ @property  unsigned long type
+ @property  unsigned long backingType
+ @property  NADescriptionBuilder *wk_descriptionBuilder
+ @property  NSString *description
+ @property  @? descriptionBuilderBlock
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *debugDescription
+ @property  long long identifier
+ @property  NSString *name
+
+  // class methods
+  +[WKAbstractWallpaper new]
+  +[WKAbstractWallpaper na_identity]
+
+  // instance methods
+  -[WKAbstractWallpaper copyWithZone:]
+  -[WKAbstractWallpaper init]
+  -[WKAbstractWallpaper initWithIdentifier:name:]
+  -[WKAbstractWallpaper backingType]
+  -[WKAbstractWallpaper setType:]
+  -[WKAbstractWallpaper .cxx_destruct]
+  -[WKAbstractWallpaper name]
+  -[WKAbstractWallpaper identifier]
+  -[WKAbstractWallpaper type]
+  -[WKAbstractWallpaper setBackingType:]
+  -[WKAbstractWallpaper isEqual:]
+  -[WKAbstractWallpaper descriptionBuilderBlock]
+  -[WKAbstractWallpaper wk_descriptionBuilder]
+
+
+WKWallpaperCollection : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSBundle *_bundleForLocalizationResources
+ @property  NSMutableArray *_wallpaperBundles
+ @property  NSFileManager *_fileManager
+ @property  NSMapTable *_wallpaperLookupTable
+ @property  NSUUID *identifier
+ @property  NSString *displayName
+ @property  long long numberOfWallpapers
+ @property  unsigned long source
+ @property  BOOL dynamicCollection
+
+  // instance methods
+  -[WKWallpaperCollection initWithSource:]
+  -[WKWallpaperCollection source]
+  -[WKWallpaperCollection .cxx_destruct]
+  -[WKWallpaperCollection identifier]
+  -[WKWallpaperCollection _fileManager]
+  -[WKWallpaperCollection displayName]
+  -[WKWallpaperCollection numberOfWallpapers]
+  -[WKWallpaperCollection set_fileManager:]
+  -[WKWallpaperCollection set_bundleForLocalizationResources:]
+  -[WKWallpaperCollection _wallpaperBundles]
+  -[WKWallpaperCollection _wallpaperLookupTable]
+  -[WKWallpaperCollection _bundleForLocalizationResources]
+  -[WKWallpaperCollection isDynamicCollection]
+  -[WKWallpaperCollection wallpaperBundleAtIndex:]
+  -[WKWallpaperCollection containsWallpaperRepresentingWithIdentifier:]
+  -[WKWallpaperCollection wallpaperRepresentingWithIdentifier:]
+  -[WKWallpaperCollection set_wallpaperBundles:]
+  -[WKWallpaperCollection set_wallpaperLookupTable:]
+
+
+WKWallpaperBundleCollection : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long wallpaperType
+ @property  NSString *displayName
+ @property  WKWallpaperBundle *previewBundle
+ @property  NSMutableArray *_wallpaperBundles
+ @property  NSMutableDictionary *_wallpaperLookup
+ @property  long long numberOfItems
+
+  // instance methods
+  -[WKWallpaperBundleCollection numberOfItems]
+  -[WKWallpaperBundleCollection wallpaperType]
+  -[WKWallpaperBundleCollection .cxx_destruct]
+  -[WKWallpaperBundleCollection setDisplayName:]
+  -[WKWallpaperBundleCollection displayName]
+  -[WKWallpaperBundleCollection _wallpaperBundles]
+  -[WKWallpaperBundleCollection wallpaperBundleAtIndex:]
+  -[WKWallpaperBundleCollection set_wallpaperBundles:]
+  -[WKWallpaperBundleCollection _wallpaperLookup]
+  -[WKWallpaperBundleCollection initWithWallpaperType:previewBundle:]
+  -[WKWallpaperBundleCollection wallpaperBundleWithIdentifier:]
+  -[WKWallpaperBundleCollection appendWallpaperBundle:]
+  -[WKWallpaperBundleCollection setWallpaperType:]
+  -[WKWallpaperBundleCollection previewBundle]
+  -[WKWallpaperBundleCollection setPreviewBundle:]
+  -[WKWallpaperBundleCollection set_wallpaperLookup:]
+
+
+WKWallpaperBundleImporter : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *_bundleImportQueue
+ @property  NSArray *_wallpaperTypesOrdering
+ @property  NSDictionary *_wallpaperTypeToBundleCollection
+ @property  long long numberOfWallpaperBundleCollections
+
+  // class methods
+  +[WKWallpaperBundleImporter wallpapersConfigurationFileURL]
+  +[WKWallpaperBundleImporter defaultWallpaperBundleImporter]
+
+  // instance methods
+  -[WKWallpaperBundleImporter init]
+  -[WKWallpaperBundleImporter .cxx_destruct]
+  -[WKWallpaperBundleImporter _raiseInvalidMetadataExceptionForMetadataKeypath:]
+  -[WKWallpaperBundleImporter wallpaperBundleWithIdentifier:]
+  -[WKWallpaperBundleImporter _bundleImportQueue]
+  -[WKWallpaperBundleImporter _loadWallpapersFromDisk]
+  -[WKWallpaperBundleImporter _wallpaperTypesOrdering]
+  -[WKWallpaperBundleImporter _wallpaperTypeToBundleCollection]
+  -[WKWallpaperBundleImporter numberOfWallpaperBundleCollections]
+  -[WKWallpaperBundleImporter wallpaperTypeAtIndex:]
+  -[WKWallpaperBundleImporter wallpaperBundleCollectionForWallpaperType:]
+  -[WKWallpaperBundleImporter set_bundleImportQueue:]
+  -[WKWallpaperBundleImporter set_wallpaperTypesOrdering:]
+  -[WKWallpaperBundleImporter set_wallpaperTypeToBundleCollection:]
+
+
+WKDefaultWallpaperManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *_defaultWallpaperLookup
+ @property  WKWallpaperCollectionsManager *_collectionsManager
+ @property  WKWallpaperCollection *_defaultWallpaperCollection
+ @property  WKWallpaperBundle *_defaultWallpaperBundle
+
+  // class methods
+  +[WKDefaultWallpaperManager defaultWallpaperManager]
+  +[WKDefaultWallpaperManager defaultWallpaperLookupURL]
+
+  // instance methods
+  -[WKDefaultWallpaperManager deviceColor]
+  -[WKDefaultWallpaperManager deviceEnclosureColor]
+  -[WKDefaultWallpaperManager deviceProductType]
+  -[WKDefaultWallpaperManager .cxx_destruct]
+  -[WKDefaultWallpaperManager defaultWallpaperBundle]
+  -[WKDefaultWallpaperManager _loadDefaultWallpaperFile]
+  -[WKDefaultWallpaperManager _loadDefaultWallpaperInformation]
+  -[WKDefaultWallpaperManager initWithCollectionsManager:]
+  -[WKDefaultWallpaperManager set_defaultWallpaperLookup:]
+  -[WKDefaultWallpaperManager _defaultWallpaperLookup]
+  -[WKDefaultWallpaperManager _collectionsManager]
+  -[WKDefaultWallpaperManager _defaultWallpaperBundle]
+  -[WKDefaultWallpaperManager _defaultWallpaperCollection]
+  -[WKDefaultWallpaperManager defaultWallpaperCollection]
+  -[WKDefaultWallpaperManager deviceLogicalScreenClass]
+  -[WKDefaultWallpaperManager set_collectionsManager:]
+  -[WKDefaultWallpaperManager set_defaultWallpaperCollection:]
+  -[WKDefaultWallpaperManager set_defaultWallpaperBundle:]
+
+
+WKWallpaperCollectionsManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSFileManager *_fileManager
+ @property  NSNotificationCenter *_notificationCenter
+ @property  NSMutableArray *_wallpaperCollections
+ @property  NSMapTable *_wallpaperCollectionLookupTable
+ @property  long long numberOfWallpaperCollections
+
+  // class methods
+  +[WKWallpaperCollectionsManager defaultWallpaperCollectionsManager]
+
+  // instance methods
+  -[WKWallpaperCollectionsManager init]
+  -[WKWallpaperCollectionsManager .cxx_destruct]
+  -[WKWallpaperCollectionsManager _notificationCenter]
+  -[WKWallpaperCollectionsManager _fileManager]
+  -[WKWallpaperCollectionsManager set_notificationCenter:]
+  -[WKWallpaperCollectionsManager set_fileManager:]
+  -[WKWallpaperCollectionsManager wallpaperCollectionWithIdentifier:]
+  -[WKWallpaperCollectionsManager _loadCollections]
+  -[WKWallpaperCollectionsManager _loadSystemWallpaperCollections]
+  -[WKWallpaperCollectionsManager _wallpaperCollections]
+  -[WKWallpaperCollectionsManager _wallpaperCollectionLookupTable]
+  -[WKWallpaperCollectionsManager numberOfWallpaperCollections]
+  -[WKWallpaperCollectionsManager wallpaperCollectionAtIndex:]
+  -[WKWallpaperCollectionsManager set_wallpaperCollections:]
+  -[WKWallpaperCollectionsManager set_wallpaperCollectionLookupTable:]
+
+
+WKStillWallpaper : WKAbstractWallpaper <WKFileBasedWallpaper>
+ @property  NSURL *thumbnailImageURL
+ @property  NSURL *fullsizeImageURL
+ @property  NSURL *renderedImageURL
+ @property  NSURL *videoAssetURL
+ @property  double stillTimeInVideo
+ @property  long long identifier
+ @property  NSString *name
+ @property  unsigned long type
+ @property  unsigned long backingType
+
+  // class methods
+  +[WKStillWallpaper na_identity]
+
+  // instance methods
+  -[WKStillWallpaper copyWithZone:]
+  -[WKStillWallpaper stillTimeInVideo]
+  -[WKStillWallpaper backingType]
+  -[WKStillWallpaper .cxx_destruct]
+  -[WKStillWallpaper fullsizeImageURL]
+  -[WKStillWallpaper setThumbnailImageURL:]
+  -[WKStillWallpaper type]
+  -[WKStillWallpaper thumbnailImageURL]
+  -[WKStillWallpaper isEqual:]
+  -[WKStillWallpaper videoAssetURL]
+  -[WKStillWallpaper initWithIdentifier:name:thumbnailImageURL:fullsizeImageURL:renderedImageURL:]
+  -[WKStillWallpaper setFullsizeImageURL:]
+  -[WKStillWallpaper descriptionBuilderBlock]
+  -[WKStillWallpaper renderedImageURL]
+  -[WKStillWallpaper setRenderedImageURL:]
+  -[WKStillWallpaper renderedVideoAssetURL]
+
+
+WKDynamicWallpaper : WKAbstractWallpaper <WKValueBasedWallpaper>
+ @property  NSDictionary *_dynamicDictionary
+ @property  UIImage *_thumbnailImage
+ @property  long long identifier
+ @property  NSString *name
+ @property  unsigned long type
+ @property  unsigned long backingType
+
+  // class methods
+  +[WKDynamicWallpaper na_identity]
+
+  // instance methods
+  -[WKDynamicWallpaper _thumbnailImage]
+  -[WKDynamicWallpaper copyWithZone:]
+  -[WKDynamicWallpaper initWithIdentifier:name:]
+  -[WKDynamicWallpaper backingType]
+  -[WKDynamicWallpaper .cxx_destruct]
+  -[WKDynamicWallpaper thumbnailImage]
+  -[WKDynamicWallpaper type]
+  -[WKDynamicWallpaper isEqual:]
+  -[WKDynamicWallpaper initWithIdentifier:dictionary:]
+  -[WKDynamicWallpaper wallpaperValue]
+  -[WKDynamicWallpaper _dynamicDictionary]
+  -[WKDynamicWallpaper set_dynamicDictionary:]
+  -[WKDynamicWallpaper set_thumbnailImage:]
+
+
+NSUserDefaults(WKAdditions)
+	// class methods
+	+[NSUserDefaults(WKAdditions) wk_wallpaperKitUserDefaults]
+
+	// instance methods
+	-[NSUserDefaults(WKAdditions) wk_ignoreLogicalScreenClassForWallpaperBundle]
+	-[NSUserDefaults(WKAdditions) wk_ignoreProductTypesForWallpaperBundle]
+	-[NSUserDefaults(WKAdditions) wk_setIgnoreProductTypesForWallpaperBundle:]
+	-[NSUserDefaults(WKAdditions) wk_setIgnoreLogicalScreenClassForWallpaperBundle:]
+
+UIImage(WKAdditions)
+	// class methods
+	+[UIImage(WKAdditions) wk_imageFromColor:]
+	+[UIImage(WKAdditions) wk_imageWithLightAppearanceImage:darkAppearanceImage:]
+
+01 00 0600 /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities: NADescriptionBuilder 
+01 00 0600 /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities: NAIdentityBuilder 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0800 /System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation: SBFWallpaperOptions 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIActivityIndicatorView 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UILabel 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UITraitCollection 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: _UIBackdropView 

@@ -1,0 +1,121 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FLSpring
+|| __DATA.__objc_data _OBJC_METACLASS_$_FLSpring
+|| __TEXT.__const _FLDefaultRubberbandFactor
+|| __TEXT.__const _FLSpringParametersBouncy
+|| __TEXT.__const _FLSpringParametersTight
+|| __TEXT.__const _FluidVersionNumber
+|| __TEXT.__const _FluidVersionString
+|| __TEXT.__text _FLCompoundSpringIsStable
+|| __TEXT.__text _FLCompoundSpringMake
+|| __TEXT.__text _FLCompoundSpringMakeWithDampingRatioResponse
+|| __TEXT.__text _FLCompoundSpringSetAnchorImmediately
+|| __TEXT.__text _FLCompoundSpringSetAnchorWithIntermediatePositionAndResponse
+|| __TEXT.__text _FLCompoundSpringSetAnchorWithResponse
+|| __TEXT.__text _FLCompoundSpringSetDampingImmediately
+|| __TEXT.__text _FLCompoundSpringSetDampingRatioImmediately
+|| __TEXT.__text _FLCompoundSpringSetDampingRatioSmoothly
+|| __TEXT.__text _FLCompoundSpringSetDampingWithResponse
+|| __TEXT.__text _FLCompoundSpringSetResponseImmediately
+|| __TEXT.__text _FLCompoundSpringSetResponseSmoothly
+|| __TEXT.__text _FLCompoundSpringSetStiffnessImmediately
+|| __TEXT.__text _FLCompoundSpringSetStiffnessWithResponse
+|| __TEXT.__text _FLCompoundSpringStep
+|| __TEXT.__text _FLDeceleratedRestPosition
+|| __TEXT.__text _FLInverseRubberbandValue
+|| __TEXT.__text _FLRubberbandValue
+|| __TEXT.__text _FLSimpleSpringIsStable
+|| __TEXT.__text _FLSimpleSpringMake
+|| __TEXT.__text _FLSimpleSpringMakeWithDampingRatioResponse
+|| __TEXT.__text _FLSimpleSpringSetDampingRatioResponse
+|| __TEXT.__text _FLSimpleSpringStep
+|| __TEXT.__text _FLSpringConvertDampingRatioResponseToStiffnessDamping
+|| __TEXT.__text _FLSpringConvertMassStiffnessDampingToDampingRatioResponse
+|| __TEXT.__text _FLSpringConvertMassStiffnessDampingToStiffnessDamping
+|| __TEXT.__text _FLSpringConvertStiffnessDampingToDampingRatioResponse
+|| __TEXT.__text _FLSpringParametersMake
+|| __TEXT.__text __FLSimpleSpringFromCompoundSpring
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: _cosh
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _sinh
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+FLSpring : NSObject /usr/lib/libSystem.B.dylib
+ @property  double retargetResponseFraction
+ @property  double projectionDeceleration
+ @property  double retargetImpulse
+ @property  double value
+ @property  double target
+ @property  double velocity
+ @property  double projectedTarget
+ @property  BOOL stable
+ @property  double stableValueThreshold
+ @property  double stableVelocityThreshold
+ @property  {FLSpringParameters=dddd} parameters
+ @property  {FLSpringParameters=dddd} trackingParameters
+ @property  BOOL tracking
+ @property  double minimumTarget
+ @property  double maximumTarget
+ @property  double rubberbandRange
+ @property  double rubberbandFactor
+ @property  double timeFactor
+
+  // class methods
+  +[FLSpring springWithValue:]
+
+  // instance methods
+  -[FLSpring isStable]
+  -[FLSpring parameters]
+  -[FLSpring setParameters:]
+  -[FLSpring init]
+  -[FLSpring setTracking:]
+  -[FLSpring initWithValue:]
+  -[FLSpring setVelocity:]
+  -[FLSpring target]
+  -[FLSpring velocity]
+  -[FLSpring setTarget:]
+  -[FLSpring retargetImpulse]
+  -[FLSpring step:]
+  -[FLSpring setValue:]
+  -[FLSpring isTracking]
+  -[FLSpring value]
+  -[FLSpring setRetargetImpulse:]
+  -[FLSpring resetImmediatelyToValue:]
+  -[FLSpring _projectedTargetForVelocity:]
+  -[FLSpring _effectiveParameters]
+  -[FLSpring _updateForEffectiveParameters]
+  -[FLSpring projectedTarget]
+  -[FLSpring setTrackingParameters:]
+  -[FLSpring usesDampingRatioResponseForSmoothing]
+  -[FLSpring setUsesDampingRatioResponseForSmoothing:]
+  -[FLSpring trackingParameters]
+  -[FLSpring minimumTarget]
+  -[FLSpring setMinimumTarget:]
+  -[FLSpring maximumTarget]
+  -[FLSpring setMaximumTarget:]
+  -[FLSpring rubberbandRange]
+  -[FLSpring setRubberbandRange:]
+  -[FLSpring rubberbandFactor]
+  -[FLSpring setRubberbandFactor:]
+  -[FLSpring retargetResponseFraction]
+  -[FLSpring setRetargetResponseFraction:]
+  -[FLSpring projectionDeceleration]
+  -[FLSpring setProjectionDeceleration:]
+  -[FLSpring stableValueThreshold]
+  -[FLSpring setStableValueThreshold:]
+  -[FLSpring stableVelocityThreshold]
+  -[FLSpring setStableVelocityThreshold:]
+  -[FLSpring timeFactor]
+  -[FLSpring setTimeFactor:]
+
+
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 

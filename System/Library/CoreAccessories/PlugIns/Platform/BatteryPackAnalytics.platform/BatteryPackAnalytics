@@ -1,0 +1,216 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCPlatformPluginBatteryPackAnalytics
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCPlatformPluginBatteryPackAnalytics
+|| __TEXT.__const _kBatteryPackAnalyticsDictionaryMaxCount
+|| __TEXT.__text _acc_analytics_createBucketizeBatteryPackConnectionDuration
+|| __TEXT.__text _acc_analytics_createBucketizePowerSourceChargingTime
+|| __TEXT.__text _acc_analytics_createBucketizedAnalyticEventDuration
+|| __TEXT.__text _acc_analytics_createBucketizedBatteryChargeDelta
+|| __TEXT.__text _acc_analytics_createBucketizedBatteryChargeLevel
+|| __TEXT.__text _acc_analytics_createBucketizedInductiveAuthDuration
+|| __TEXT.__text _acc_analytics_createBucketizedUnlockDialogAnalyticEventTime
+|| __TEXT.__text _acc_analytics_createBucketizedWiredAuthDuration
+|| __TEXT.__text _init_logging
+|| __TEXT.__text _systemInfo_copyDeviceClass
+|| __TEXT.__text _systemInfo_getCurrentUnixTime
+|| __TEXT.__text _systemInfo_getCurrentUnixTimeMS
+|| __TEXT.__text _systemInfo_isDeveloperBuild
+|| __TEXT.__text _systemInfo_isHomePod
+|| __TEXT.__text _systemInfo_isInternalBuild
+|| __TEXT.__text _systemInfo_systemSupportsPearl
+|| __TEXT.__text _systemInfo_systemSupportsWAPI
+__ CoreAnalytics: _AnalyticsSendEvent
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRunLoopAddSource
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopRemoveSource
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOKit: _IOPSAccCreateLimitedPowerNotification
+__ IOKit: _IOPSAccNotificationCreateRunLoopSource
+__ IOKit: _IOPSCopyExternalPowerAdapterDetails
+__ IOKit: _IOPSCopyPowerSourcesByType
+__ IOKit: _IOPSCopyPowerSourcesList
+__ IOKit: _IOPSGetPowerSourceDescription
+__ IOKit: _IOPSNotificationCreateRunLoopSource
+__ libIOAccessoryManager.dylib: _IOAccesoryManagerGetDigitalIDAccessoryVersionInfo
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerCopyDeviceInfo
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetDigitalID
+__ libIOAccessoryManager.dylib: _IOAccessoryManagerGetServiceWithPrimaryPort
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_walltime
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+ACCPlatformPluginBatteryPackAnalytics : NSObject /usr/lib/libSystem.B.dylib <ACCPlatformBatteryPackAnalyticsPluginProtocol>
+ @property  BOOL isRunning
+ @property  ^{__CFRunLoopSource=} powerSourcesChangedRunLoopSource
+ @property  ^{__CFRunLoopSource=} accessoriesChangedRunLoopSource
+ @property  ^{__CFRunLoopSource=} accessoriesLimitedPowerRunLoopSource
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSNumber *batteryPackCurrentCapacity
+ @property  NSNumber *batteryPackMaxCapacity
+ @property  NSNumber *deviceBatteryCurrentCapacity
+ @property  NSNumber *deviceBatteryMaxCapacity
+ @property  NSString *batteryPackAccessoryName
+ @property  NSString *batteryPackAccessoryManufacturer
+ @property  NSString *batteryPackAccessoryModel
+ @property  NSString *batteryPackAccessoryHardwareVersion
+ @property  NSString *batteryPackAccessorySoftwareVersion
+ @property  NSString *batteryPackPowerSource
+ @property  NSString *oldBatteryPackPowerSource
+ @property  NSNumber *batteryPackPowerSourceVoltage
+ @property  NSNumber *oldBatteryPackPowerSourceVoltage
+ @property  NSString *connectedBatteryPackKey
+ @property  unsigned long batteryPackConnectedTimestamp
+ @property  unsigned long batteryPackChargeSourceConnectedTimestamp
+ @property  int batteryPackConnectionState
+ @property  unsigned long wiredChargeTime
+ @property  unsigned long qiChargeTime
+ @property  unsigned long inductiveChargeTime
+ @property  unsigned long onBatteryTime
+ @property  NSObject<OS_dispatch_source> *batteryPackPendingConnectionTimerSource
+ @property  unsigned int batteryPackIOService
+ @property  NSMutableDictionary *batteryPackAnalyticsDictionary
+ @property  NSNumber *batteryPackChargeAmperage
+ @property  NSDictionary *batteryPackDetails
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *pluginName
+
+  // instance methods
+  -[ACCPlatformPluginBatteryPackAnalytics stopPlugin]
+  -[ACCPlatformPluginBatteryPackAnalytics onBatteryTime]
+  -[ACCPlatformPluginBatteryPackAnalytics startPlugin]
+  -[ACCPlatformPluginBatteryPackAnalytics setIsRunning:]
+  -[ACCPlatformPluginBatteryPackAnalytics initPlugin]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackIOService]
+  -[ACCPlatformPluginBatteryPackAnalytics pluginName]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackCurrentCapacity]
+  -[ACCPlatformPluginBatteryPackAnalytics commitPersistentBatteryPackAnalyticsDictionary]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackChargeAmperage]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackDetails:]
+  -[ACCPlatformPluginBatteryPackAnalytics setOnBatteryTime:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackPendingConnectionTimerSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics setDeviceBatteryCurrentCapacity:]
+  -[ACCPlatformPluginBatteryPackAnalytics setDeviceBatteryMaxCapacity:]
+  -[ACCPlatformPluginBatteryPackAnalytics setWiredChargeTime:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackConnectedTimestamp:]
+  -[ACCPlatformPluginBatteryPackAnalytics powerSourcesChangedRunLoopSource]
+  -[ACCPlatformPluginBatteryPackAnalytics setQiChargeTime:]
+  -[ACCPlatformPluginBatteryPackAnalytics stopBatteryPackAnalytics]
+  -[ACCPlatformPluginBatteryPackAnalytics accessoriesChangedRunLoopSource]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAccessoryModel:]
+  -[ACCPlatformPluginBatteryPackAnalytics .cxx_destruct]
+  -[ACCPlatformPluginBatteryPackAnalytics setOldBatteryPackPowerSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics oldBatteryPackPowerSource]
+  -[ACCPlatformPluginBatteryPackAnalytics handleBatteryPackAttach]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAccessorySoftwareVersion:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackCurrentCapacity:]
+  -[ACCPlatformPluginBatteryPackAnalytics initPersistentBatteryPackAnalyticsDictionary]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackPendingConnectionTimerSource]
+  -[ACCPlatformPluginBatteryPackAnalytics inductiveChargeTime]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAccessoryHardwareVersion:]
+  -[ACCPlatformPluginBatteryPackAnalytics connectedBatteryPackKey]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackMaxCapacity:]
+  -[ACCPlatformPluginBatteryPackAnalytics startBatteryPackAnalytics]
+  -[ACCPlatformPluginBatteryPackAnalytics setQueue:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackChargeAmperage:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAccessoryHardwareVersion]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackConnectedTimestamp]
+  -[ACCPlatformPluginBatteryPackAnalytics handleBatteryPackDetach]
+  -[ACCPlatformPluginBatteryPackAnalytics handlePowerSourceChange]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackPowerSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics setPowerSourcesChangedRunLoopSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics setAccessoriesLimitedPowerRunLoopSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics oldBatteryPackPowerSourceVoltage]
+  -[ACCPlatformPluginBatteryPackAnalytics setInductiveChargeTime:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackChargeSourceConnectedTimestamp]
+  -[ACCPlatformPluginBatteryPackAnalytics queue]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackConnectionState:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAccessoryName]
+  -[ACCPlatformPluginBatteryPackAnalytics wiredChargeTime]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAccessoryManufacturer]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAccessoryModel]
+  -[ACCPlatformPluginBatteryPackAnalytics chargePercentForCurrentCapacity:andMaxCapacity:updateZeroValue:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackMaxCapacity]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackChargeSourceConnectedTimestamp:]
+  -[ACCPlatformPluginBatteryPackAnalytics deviceBatteryMaxCapacity]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAccessoryName:]
+  -[ACCPlatformPluginBatteryPackAnalytics isRunning]
+  -[ACCPlatformPluginBatteryPackAnalytics setAccessoriesChangedRunLoopSource:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackDetails]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackIOService:]
+  -[ACCPlatformPluginBatteryPackAnalytics setConnectedBatteryPackKey:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAnalyticsDictionary:]
+  -[ACCPlatformPluginBatteryPackAnalytics queue_performUpdateWithPowerSourcesBlob:andPowerSourcesList:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAnalyticsDictionary]
+  -[ACCPlatformPluginBatteryPackAnalytics accessoriesLimitedPowerRunLoopSource]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackPowerSource]
+  -[ACCPlatformPluginBatteryPackAnalytics queue_handlePowerSourceChange]
+  -[ACCPlatformPluginBatteryPackAnalytics handleBatteryPackStateChange:]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackPowerSourceVoltage:]
+  -[ACCPlatformPluginBatteryPackAnalytics deviceBatteryCurrentCapacity]
+  -[ACCPlatformPluginBatteryPackAnalytics trimBatteryPackAnalyticsDictionary]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackConnectionState]
+  -[ACCPlatformPluginBatteryPackAnalytics cleanBatteryPackAnalyticsInternals]
+  -[ACCPlatformPluginBatteryPackAnalytics setBatteryPackAccessoryManufacturer:]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackAccessorySoftwareVersion]
+  -[ACCPlatformPluginBatteryPackAnalytics qiChargeTime]
+  -[ACCPlatformPluginBatteryPackAnalytics batteryPackPowerSourceVoltage]
+  -[ACCPlatformPluginBatteryPackAnalytics handleBatteryPackPowerSourceChange]
+  -[ACCPlatformPluginBatteryPackAnalytics setOldBatteryPackPowerSourceVoltage:]
+
+
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

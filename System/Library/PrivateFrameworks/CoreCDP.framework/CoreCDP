@@ -1,0 +1,876 @@
+|| __DATA.__data _CDPManateeAvailabilityNotification
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPAuthProviderProxy
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPKeychainSync
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPLocalDevice
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPLocalDeviceSecretHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPLocalDeviceSecretProxyImpl
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPLocalizedStringBuilder
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPPCSUtilities
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPProtectedCloudStorageProxyImpl
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPRecoveryController
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPRecoveryKeyValidatorProxyImpl
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPRemoteDeviceSecretValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPStateUIProviderProxy
+|| __DATA.__objc_data _OBJC_CLASS_$_CDPToolFakeUIProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPAuthProviderProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPKeychainSync
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPLocalDevice
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPLocalDeviceSecretHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPLocalDeviceSecretProxyImpl
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPLocalizedStringBuilder
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPPCSUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPProtectedCloudStorageProxyImpl
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPRecoveryController
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPRecoveryKeyValidatorProxyImpl
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPRemoteDeviceSecretValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPStateUIProviderProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_CDPToolFakeUIProvider
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._deviceColor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._enclosureColor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._hasNumericSecret
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._hasRandomSecret
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._isCurrentDevice
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._isUsingMultipleiCSC
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._localizedName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._machineID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._model
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._modelClass
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._modelVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._numericSecretLength
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._platform
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._recordDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._recordID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._recordInfo
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._remainingAttempts
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._serialNumber
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CDPDevice._simplePublicKey
+|| __DATA_CONST.__const _CDPCloudDataProtectionEnabledNotification
+|| __DATA_CONST.__const _CDPFMIPRecoveryKey
+|| __DATA_CONST.__const _CDPIDMSPasswordResetKey
+|| __DATA_CONST.__const _CDPIDMSRecordMIDKey
+|| __DATA_CONST.__const _CDPManateeAvailabilityStateKey
+|| __DATA_CONST.__const _CDPStateErrorDomain
+|| __DATA_CONST.__const _CDP_FOLLOWUP_OFFLINE_PASSCODE
+|| __DATA_CONST.__const _CDP_FOLLOWUP_RECOVERY_KEY_REGEN
+|| __DATA_CONST.__const _CDP_FOLLOWUP_SETUP_BIOMETIRCS
+|| __DATA_CONST.__const _CDP_FOLLOWUP_STATE_REPAIR
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPAccount
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPCircleProxyImpl
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPDevice
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPFollowUpContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPFollowUpController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPLocalSecret
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPManateeStateController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPStateController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CDPUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPAccount
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPCircleProxyImpl
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPDevice
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPFollowUpContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPFollowUpController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPLocalSecret
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPManateeStateController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPStateController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CDPUtilities
+|| __TEXT.__const _CoreCDPVersionNumber
+|| __TEXT.__const _CoreCDPVersionString
+|| __TEXT.__text _CDPAuthProviderExportedInterface
+|| __TEXT.__text _CDPDaemonExportedInterface
+|| __TEXT.__text _CDPDeviceClassToLocKey
+|| __TEXT.__text _CDPLocalizedString
+|| __TEXT.__text _CDPUIProviderExportedInterface
+|| __TEXT.__text _CDPUnqualifiedDeviceClassToLocKey
+|| __TEXT.__text __CDPLogSystem
+|| __TEXT.__text __CDPSignpostCreate
+|| __TEXT.__text __CDPSignpostGetNanoseconds
+|| __TEXT.__text __CDPSignpostLogSystem
+|| __TEXT.__text __CDPStateError
+|| __TEXT.__text __CDPStateErrorWithUnderlying
+|| __TEXT.__text __CDPSuffixForDeviceClass
+|| __TEXT.__text __CDPSuffixForSecretType
+|| __TEXT.__text __CDPSuffixForUnqualifiedDeviceClass
+__ Accounts: _ACPasswordResetTokenBackupKey
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ Accounts: _kAccountDataclassKeychainSync
+__ AuthKit: _AKAuthenticationAlternateDSIDKey
+__ AuthKit: _AKAuthenticationAppleIDAuthModeKey
+__ AuthKit: _AKAuthenticationCircleContinuationContextKey
+__ AuthKit: _AKAuthenticationConfigurationInfoKey
+__ AuthKit: _AKAuthenticationDSIDKey
+__ AuthKit: _AKAuthenticationDidShowServerUIKey
+__ AuthKit: _AKAuthenticationDuplexSessionKey
+__ AuthKit: _AKAuthenticationIsHSA2Key
+__ AuthKit: _AKAuthenticationPasswordKey
+__ AuthKit: _AKAuthenticationPasswordResetTokenKey
+__ AuthKit: _AKAuthenticationRawPasswordKey
+__ AuthKit: _AKAuthenticationUsernameKey
+__ AuthKit: _OBJC_CLASS_$_AKAccountManager
+__ AuthKit: _OBJC_CLASS_$_AKCircleRequestContext
+__ CommonUtilities: _OBJC_CLASS_$_CUTReachability
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreUtils: _OBJC_CLASS_$_CUMessageSession
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ KeychainCircle: _OBJC_CLASS_$_KCAESGCMDuplexSession
+__ KeychainCircle: _OBJC_CLASS_$_KCPairingChannelContext
+__ ProtectedCloudStorage: _PCSIdentityMigrateRestoreLocalBackup
+__ ProtectedCloudStorage: _PCSIdentityMigrateToStingray
+__ ProtectedCloudStorage: _PCSIdentityMigrateToiCDP
+__ ProtectedCloudStorage: _PCSIdentitySetCompanionCircleMember
+__ ProtectedCloudStorage: _PCSIdentitySetCreate
+__ ProtectedCloudStorage: _PCSIdentitySetIsICDP
+__ ProtectedCloudStorage: _PCSIdentitySetIsICDPNetworkWithOptions
+__ ProtectedCloudStorage: _PCSIdentitySetup
+__ ProtectedCloudStorage: _PCSIdentitySynchronizeKeys
+__ ProtectedCloudStorage: _kPCSSetupAuthToken
+__ ProtectedCloudStorage: _kPCSSetupDSID
+__ ProtectedCloudStorage: _kPCSSetupEscrowURL
+__ ProtectedCloudStorage: _kPCSSetupPassword
+__ ProtectedCloudStorage: _kPCSSetupUsername
+__ ProtectedCloudStorage: _kPCSSetupiCloudEnvironment
+__ Security: _OBJC_CLASS_$_CKKSControl
+__ Security: _OBJC_CLASS_$_OTClique
+__ Security: _OBJC_CLASS_$_OTConfigurationContext
+__ Security: _OBJC_CLASS_$_OTOperationConfiguration
+__ Security: _OTCliqueCDPContextTypeFinishPasscodeChange
+__ Security: _OTCliqueCDPContextTypeNone
+__ Security: _OTCliqueCDPContextTypeRecoveryKeyGenerate
+__ Security: _OTCliqueCDPContextTypeRecoveryKeyNew
+__ Security: _OTCliqueCDPContextTypeRepair
+__ Security: _OTCliqueCDPContextTypeSignIn
+__ Security: _OTCliqueCDPContextTypeUpdatePasscode
+__ Security: _OTDefaultContext
+__ Security: _SOSCCThisDeviceIsInCircle
+__ Security: _SOSCCThisDeviceIsInCircleNonCached
+__ Security: _SecRKCopyAccountRecoveryVerifier
+__ Security: _SecRKCreateRecoveryKeyString
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateFromSelf
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _mach_continuous_time
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _os_variant_has_internal_ui
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+CDPProtectedCloudStorageProxyImpl : NSObject /usr/lib/libSystem.B.dylib <CDPProtectedCloudStorageProxy>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPProtectedCloudStorageProxyImpl pcsRestoreLocalBackup:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsSynchronizeKeysWithInfo:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentitySetIsInICDPNetwork:options:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentitySetIsInICDPLocal:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentityCreateWithInfo:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentitySetCompanionInCircle:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentitySetupWithInfo:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentityMigrateToiCDPWithInfo:error:]
+  -[CDPProtectedCloudStorageProxyImpl pcsIdentityMigrateToStingrayWithInfo:error:]
+  -[CDPProtectedCloudStorageProxyImpl _performPCSBlock:error:]
+
+
+CDPFollowUpContext : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  unsigned long repairType
+ @property  NSString *followUpType
+ @property  BOOL shouldNotify
+ @property  BOOL force
+
+  // class methods
+  +[CDPFollowUpContext supportsSecureCoding]
+  +[CDPFollowUpContext contextForOfflinePasscodeChange]
+  +[CDPFollowUpContext contextForSettingUpBiometrics]
+  +[CDPFollowUpContext contextForRecoveryKeyRepair]
+  +[CDPFollowUpContext contextWithType:]
+  +[CDPFollowUpContext contextForStateRepair]
+
+  // instance methods
+  -[CDPFollowUpContext force]
+  -[CDPFollowUpContext setForce:]
+  -[CDPFollowUpContext .cxx_destruct]
+  -[CDPFollowUpContext setShouldNotify:]
+  -[CDPFollowUpContext shouldNotify]
+  -[CDPFollowUpContext encodeWithCoder:]
+  -[CDPFollowUpContext initWithCoder:]
+  -[CDPFollowUpContext followUpType]
+  -[CDPFollowUpContext repairType]
+  -[CDPFollowUpContext setRepairType:]
+  -[CDPFollowUpContext setFollowUpType:]
+
+
+CDPContext : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  <CDPAuthProviderInternal> *_authProvider
+ @property  KCAESGCMDuplexSession *duplexSession
+ @property  AKCircleRequestContext *resumeContext
+ @property  CUMessageSession *sharingChannel
+ @property  BOOL _useSecureBackupCachedPassphrase
+ @property  BOOL _alwaysCreateEscrowRecord
+ @property  NSString *_recoveryToken
+ @property  BOOL _ignoreLockAssertErrors
+ @property  BOOL idmsRecovery
+ @property  BOOL idmsMasterKeyRecovery
+ @property  long long type
+ @property  NSDictionary *authenticationResults
+ @property  NSString *appleID
+ @property  NSString *password
+ @property  NSString *passwordEquivToken
+ @property  NSNumber *dsid
+ @property  NSString *altDSID
+ @property  BOOL isHSA2Account
+ @property  BOOL isFederatedAccount
+ @property  BOOL didUseSMSVerification
+ @property  NSString *cachedLocalSecret
+ @property  unsigned long cachedLocalSecretType
+ @property  BOOL guestMode
+ @property  NSString *findMyiPhoneUUID
+ @property  BOOL supportsSkipSignIn
+
+  // class methods
+  +[CDPContext supportsSecureCoding]
+  +[CDPContext preflightContext:]
+
+  // instance methods
+  -[CDPContext dsid]
+  -[CDPContext copyWithZone:]
+  -[CDPContext altDSID]
+  -[CDPContext setAltDSID:]
+  -[CDPContext password]
+  -[CDPContext init]
+  -[CDPContext appleID]
+  -[CDPContext setPassword:]
+  -[CDPContext setAppleID:]
+  -[CDPContext setType:]
+  -[CDPContext .cxx_destruct]
+  -[CDPContext setIdmsRecovery:]
+  -[CDPContext setPasswordEquivToken:]
+  -[CDPContext setIdmsMasterKeyRecovery:]
+  -[CDPContext idmsMasterKeyRecovery]
+  -[CDPContext setGuestMode:]
+  -[CDPContext encodeWithCoder:]
+  -[CDPContext setAuthenticationResults:]
+  -[CDPContext type]
+  -[CDPContext initWithAuthenticationResults:]
+  -[CDPContext setSharingChannel:]
+  -[CDPContext set_ignoreLockAssertErrors:]
+  -[CDPContext idmsRecovery]
+  -[CDPContext _ignoreLockAssertErrors]
+  -[CDPContext resumeContext]
+  -[CDPContext setDsid:]
+  -[CDPContext authenticationResults]
+  -[CDPContext initWithCoder:]
+  -[CDPContext guestMode]
+  -[CDPContext isFederatedAccount]
+  -[CDPContext _authProvider]
+  -[CDPContext passwordEquivToken]
+  -[CDPContext updateWithAuthenticationResults:]
+  -[CDPContext sharingChannel]
+  -[CDPContext setCachedLocalSecret:]
+  -[CDPContext setCachedLocalSecretType:]
+  -[CDPContext set_alwaysCreateEscrowRecord:]
+  -[CDPContext findMyiPhoneUUID]
+  -[CDPContext desiresAllRecords]
+  -[CDPContext cliqueConfiguration]
+  -[CDPContext set_useSecureBackupCachedPassphrase:]
+  -[CDPContext setSupportsSkipSignIn:]
+  -[CDPContext augmentWithCredentialsFromContext:]
+  -[CDPContext set_authProvider:]
+  -[CDPContext isHSA2Account]
+  -[CDPContext _alwaysCreateEscrowRecord]
+  -[CDPContext cachedLocalSecret]
+  -[CDPContext cachedLocalSecretType]
+  -[CDPContext _useSecureBackupCachedPassphrase]
+  -[CDPContext duplexSession]
+  -[CDPContext purgeResumeData]
+  -[CDPContext setIsHSA2Account:]
+  -[CDPContext setIsFederatedAccount:]
+  -[CDPContext didUseSMSVerification]
+  -[CDPContext setDidUseSMSVerification:]
+  -[CDPContext setFindMyiPhoneUUID:]
+  -[CDPContext supportsSkipSignIn]
+  -[CDPContext setDuplexSession:]
+  -[CDPContext setResumeContext:]
+  -[CDPContext _recoveryToken]
+  -[CDPContext set_recoveryToken:]
+
+
+CDPCircleProxyImpl : NSObject /usr/lib/libSystem.B.dylib <CDPDCircleProxy>
+ @property  CDPContext *cdpContext
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPCircleProxyImpl anyPeerHasEnabledViewsInSet:error:]
+  -[CDPCircleProxyImpl cachedCliqueStatus:]
+  -[CDPCircleProxyImpl canAuthenticate]
+  -[CDPCircleProxyImpl cdpContext]
+  -[CDPCircleProxyImpl requestToResetCircle:]
+  -[CDPCircleProxyImpl viewMemberForAutofillPasswords:]
+  -[CDPCircleProxyImpl initWithContext:]
+  -[CDPCircleProxyImpl requestToResetCloudKitDataForReason:error:]
+  -[CDPCircleProxyImpl registerCredentialsIfMissing]
+  -[CDPCircleProxyImpl waitForInitialSync:]
+  -[CDPCircleProxyImpl synchronizeCircleViews]
+  -[CDPCircleProxyImpl .cxx_destruct]
+  -[CDPCircleProxyImpl _registerCredentialsOnlyIfNeeded:]
+  -[CDPCircleProxyImpl requestToResetProtectedData:]
+  -[CDPCircleProxyImpl waitForUpdate]
+  -[CDPCircleProxyImpl reportSuccess]
+  -[CDPCircleProxyImpl didJoinCircleAfterRecovery:]
+  -[CDPCircleProxyImpl generateRecoveryKeyWithInfo:error:]
+  -[CDPCircleProxyImpl _sos_authenticatedCircleStatus:]
+  -[CDPCircleProxyImpl removeNonViewAwarePeers:]
+  -[CDPCircleProxyImpl setViewsWithEnableSet:disableSet:]
+  -[CDPCircleProxyImpl cdpStatusFromSOS:]
+  -[CDPCircleProxyImpl peerId]
+  -[CDPCircleProxyImpl generateVerifierWithRecoveryKey:error:]
+  -[CDPCircleProxyImpl pairingChannelAcceptor:]
+  -[CDPCircleProxyImpl circleStatus:]
+  -[CDPCircleProxyImpl cachedCircleStatus:]
+  -[CDPCircleProxyImpl requestToJoinCircle:]
+  -[CDPCircleProxyImpl removeThisDeviceFromCircle:]
+  -[CDPCircleProxyImpl tryRegisteringCredentials]
+  -[CDPCircleProxyImpl sos_circleStatus:]
+  -[CDPCircleProxyImpl reportFailure:]
+  -[CDPCircleProxyImpl _pairingChannelContext]
+  -[CDPCircleProxyImpl cdpStatusFromOT:]
+  -[CDPCircleProxyImpl hasNonViewAwarePeers]
+  -[CDPCircleProxyImpl contextType]
+  -[CDPCircleProxyImpl _circleStatus:]
+  -[CDPCircleProxyImpl _sos_circleStatus:]
+  -[CDPCircleProxyImpl requestToJoinCircleAfterRestore:]
+  -[CDPCircleProxyImpl peerDeviceNamesByPeerID]
+  -[CDPCircleProxyImpl isLastBackupMakingPeer:]
+  -[CDPCircleProxyImpl pairingChannelInitiator:]
+  -[CDPCircleProxyImpl _authenticatedCircleStatus:]
+  -[CDPCircleProxyImpl registerCredentials]
+
+
+CDPAccount : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPAccount sharedInstance]
+  +[CDPAccount isICDPEnabledForDSID:checkWithServer:]
+  +[CDPAccount isICDPEnabledForDSID:]
+
+  // instance methods
+  -[CDPAccount authToken]
+  -[CDPAccount iCloudEnv]
+  -[CDPAccount sharedAccountStore]
+  -[CDPAccount contextForPrimaryAccount]
+  -[CDPAccount primaryAccountSecurityLevel]
+  -[CDPAccount primaryAccountAltDSID]
+  -[CDPAccount escrowURL]
+  -[CDPAccount primaryAccountUsername]
+  -[CDPAccount primaryAccountStashedPRK]
+  -[CDPAccount primaryAccountDSID]
+  -[CDPAccount primaryAccountFirstName]
+  -[CDPAccount primaryAppleAccount]
+
+
+CDPAuthProviderProxy : NSObject /usr/lib/libSystem.B.dylib <CDPAuthProviderInternal>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CDPAuthProviderProxy proxyWithAuthProvider:]
+
+  // instance methods
+  -[CDPAuthProviderProxy .cxx_destruct]
+  -[CDPAuthProviderProxy cdpContext:performSilentRecoveryTokenRenewal:]
+  -[CDPAuthProviderProxy cdpContext:verifyMasterKey:completion:]
+
+
+CDPStateUIProviderProxy : NSObject /usr/lib/libSystem.B.dylib <CDPStateUIProviderInternal>
+ @property  <CDPStateUIProvider> *uiProvider
+
+  // instance methods
+  -[CDPStateUIProviderProxy uiProvider]
+  -[CDPStateUIProviderProxy setUiProvider:]
+  -[CDPStateUIProviderProxy .cxx_destruct]
+  -[CDPStateUIProviderProxy cdpContext:presentRecoveryKeyWithValidator:completion:]
+  -[CDPStateUIProviderProxy cdpContext:promptForRecoveryKeyWithValidator:completion:]
+  -[CDPStateUIProviderProxy cdpContext:promptForAdoptionOfMultipleICSC:]
+  -[CDPStateUIProviderProxy cdpContext:promptForRemoteSecretWithDevices:offeringRemoteApproval:validator:]
+  -[CDPStateUIProviderProxy cdpContext:promptForICSCWithIsNumeric:numericLength:isRandom:validator:]
+  -[CDPStateUIProviderProxy cdpContext:promptForInteractiveAuthenticationWithCompletion:]
+  -[CDPStateUIProviderProxy cdpContext:promptForLocalSecretWithCompletion:]
+  -[CDPStateUIProviderProxy cdpContext:promptForLocalSecretWithHandler:]
+  -[CDPStateUIProviderProxy cdpContext:showError:withCompletion:]
+  -[CDPStateUIProviderProxy cdpContext:showError:withDefaultIndex:withCompletion:]
+  -[CDPStateUIProviderProxy cdpContext:beginRemoteApprovalWithValidator:completion:]
+  -[CDPStateUIProviderProxy initWithUIProvider:]
+
+
+CDPFollowUpController : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[CDPFollowUpController init]
+  -[CDPFollowUpController postFollowUpWithContext:error:]
+  -[CDPFollowUpController dealloc]
+  -[CDPFollowUpController .cxx_destruct]
+  -[CDPFollowUpController invalidate]
+  -[CDPFollowUpController clearFollowUpWithContext:error:]
+
+
+CDPPCSUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPPCSUtilities setupDictionaryWithContext:]
+  +[CDPPCSUtilities _pcsConfigForPrimaryAccount]
+
+
+CDPLocalizedStringBuilder : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPLocalizedStringBuilder builderForKey:]
+
+  // instance methods
+  -[CDPLocalizedStringBuilder currentKey]
+  -[CDPLocalizedStringBuilder .cxx_destruct]
+  -[CDPLocalizedStringBuilder localizedString]
+  -[CDPLocalizedStringBuilder addSecretType:]
+  -[CDPLocalizedStringBuilder addDeviceClass:]
+  -[CDPLocalizedStringBuilder addUnqualifiedDeviceClass:]
+
+
+CDPDevice : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding, CDPDeviceProtocol>
+ @property  NSString *localizedName
+ @property  NSString *model
+ @property  NSString *modelVersion
+ @property  NSString *modelClass
+ @property  unsigned long platform
+ @property  NSString *recordID
+ @property  NSString *machineID
+ @property  NSDate *recordDate
+ @property  BOOL hasRandomSecret
+ @property  BOOL hasNumericSecret
+ @property  NSNumber *numericSecretLength
+ @property  BOOL isUsingMultipleiCSC
+ @property  unsigned long remainingAttempts
+ @property  NSString *serialNumber
+ @property  BOOL isCurrentDevice
+ @property  unsigned long recoveryStatus
+ @property  NSNumber *coolOffPeriod
+ @property  NSString *deviceColor
+ @property  NSString *enclosureColor
+ @property  NSDictionary *recordInfo
+ @property  NSData *simplePublicKey
+ @property  unsigned long localSecretType
+ @property  NSString *localizedDescription
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CDPDevice supportsSecureCoding]
+
+  // instance methods
+  -[CDPDevice setModelVersion:]
+  -[CDPDevice setMachineID:]
+  -[CDPDevice copyWithZone:]
+  -[CDPDevice deviceColor]
+  -[CDPDevice setLocalizedName:]
+  -[CDPDevice serialNumber]
+  -[CDPDevice modelVersion]
+  -[CDPDevice setDeviceColor:]
+  -[CDPDevice recordDate]
+  -[CDPDevice setRecordDate:]
+  -[CDPDevice setRecordID:]
+  -[CDPDevice .cxx_destruct]
+  -[CDPDevice setModel:]
+  -[CDPDevice setEnclosureColor:]
+  -[CDPDevice localizedName]
+  -[CDPDevice encodeWithCoder:]
+  -[CDPDevice setLocalizedDescription:]
+  -[CDPDevice setModelClass:]
+  -[CDPDevice machineID]
+  -[CDPDevice modelClass]
+  -[CDPDevice enclosureColor]
+  -[CDPDevice platform]
+  -[CDPDevice recordID]
+  -[CDPDevice setRemainingAttempts:]
+  -[CDPDevice recoveryStatus]
+  -[CDPDevice setRecoveryStatus:]
+  -[CDPDevice remainingAttempts]
+  -[CDPDevice localizedDescription]
+  -[CDPDevice model]
+  -[CDPDevice setSerialNumber:]
+  -[CDPDevice setPlatform:]
+  -[CDPDevice isCurrentDevice]
+  -[CDPDevice initWithCoder:]
+  -[CDPDevice hasNumericSecret]
+  -[CDPDevice numericSecretLength]
+  -[CDPDevice hasRandomSecret]
+  -[CDPDevice localSecretType]
+  -[CDPDevice setCoolOffPeriod:]
+  -[CDPDevice setHasRandomSecret:]
+  -[CDPDevice recordInfo]
+  -[CDPDevice isUsingMultipleiCSC]
+  -[CDPDevice simplePublicKey]
+  -[CDPDevice setHasNumericSecret:]
+  -[CDPDevice setNumericSecretLength:]
+  -[CDPDevice setIsUsingMultipleiCSC:]
+  -[CDPDevice setIsCurrentDevice:]
+  -[CDPDevice coolOffPeriod]
+  -[CDPDevice setRecordInfo:]
+  -[CDPDevice setSimplePublicKey:]
+
+
+CDPRemoteDeviceSecretValidator : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[CDPRemoteDeviceSecretValidator .cxx_destruct]
+  -[CDPRemoteDeviceSecretValidator cancelValidationWithError:]
+  -[CDPRemoteDeviceSecretValidator supportedEscapeOfferMask]
+  -[CDPRemoteDeviceSecretValidator resetAccountCDPState]
+  -[CDPRemoteDeviceSecretValidator cancelApproveFromAnotherDevice]
+  -[CDPRemoteDeviceSecretValidator approveFromAnotherDeviceWithCompletion:]
+  -[CDPRemoteDeviceSecretValidator supportedEscapeOfferMaskCompletion:]
+  -[CDPRemoteDeviceSecretValidator validateSecret:devices:type:withCompletion:]
+  -[CDPRemoteDeviceSecretValidator validateRecoveryKey:withCompletion:]
+  -[CDPRemoteDeviceSecretValidator initWithContext:validator:]
+  -[CDPRemoteDeviceSecretValidator _executeSyncOnMainThreadIfNeeded:]
+
+
+CDPLocalDeviceSecretHandler : NSObject /usr/lib/libSystem.B.dylib
+ @property  CDPContext *context
+
+  // instance methods
+  -[CDPLocalDeviceSecretHandler context]
+  -[CDPLocalDeviceSecretHandler .cxx_destruct]
+  -[CDPLocalDeviceSecretHandler userDidEnterValidSecret:type:]
+  -[CDPLocalDeviceSecretHandler userDidCancelWithError:]
+  -[CDPLocalDeviceSecretHandler initWithContext:handler:]
+
+
+CDPRecoveryKeyValidatorProxyImpl : NSObject /usr/lib/libSystem.B.dylib <CDPRecoveryKeyValidator>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPRecoveryKeyValidatorProxyImpl .cxx_destruct]
+  -[CDPRecoveryKeyValidatorProxyImpl initWithRemoteObject:]
+  -[CDPRecoveryKeyValidatorProxyImpl confirmRecoveryKey:completion:]
+  -[CDPRecoveryKeyValidatorProxyImpl generateRecoveryKey:]
+  -[CDPRecoveryKeyValidatorProxyImpl generateRecoveryKeyWithError:]
+  -[CDPRecoveryKeyValidatorProxyImpl confirmRecoveryKey:error:]
+
+
+CDPKeychainSync : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPKeychainSync isUserVisibleKeychainSyncEnabled]
+  +[CDPKeychainSync setUserVisibleKeychainSyncEnabled:withCompletion:]
+  +[CDPKeychainSync removeNonViewAwarePeersFromCircleWithContext:completion:]
+
+
+CDPToolFakeUIProvider : NSObject /usr/lib/libSystem.B.dylib <CDPStateUIProvider>
+ @property  NSString *localSecret
+ @property  NSString *remoteSecret
+ @property  NSString *icsc
+ @property  NSString *recoveryKey
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPToolFakeUIProvider icsc]
+  -[CDPToolFakeUIProvider .cxx_destruct]
+  -[CDPToolFakeUIProvider recoveryKey]
+  -[CDPToolFakeUIProvider setRecoveryKey:]
+  -[CDPToolFakeUIProvider cdpContext:promptForRecoveryKeyWithValidator:completion:]
+  -[CDPToolFakeUIProvider cdpContext:promptForAdoptionOfMultipleICSC:]
+  -[CDPToolFakeUIProvider cdpContext:promptForRemoteSecretWithDevices:offeringRemoteApproval:validator:]
+  -[CDPToolFakeUIProvider cdpContext:promptForICSCWithIsNumeric:numericLength:isRandom:validator:]
+  -[CDPToolFakeUIProvider cdpContext:promptForInteractiveAuthenticationWithCompletion:]
+  -[CDPToolFakeUIProvider cdpContext:promptForLocalSecretWithCompletion:]
+  -[CDPToolFakeUIProvider setLocalSecret:]
+  -[CDPToolFakeUIProvider localSecret]
+  -[CDPToolFakeUIProvider remoteSecret]
+  -[CDPToolFakeUIProvider setRemoteSecret:]
+  -[CDPToolFakeUIProvider setIcsc:]
+
+
+CDPUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPUtilities hasFullCDPSupport]
+  +[CDPUtilities isInternalBuild]
+
+
+CDPManateeStateController : NSObject /usr/lib/libSystem.B.dylib <CDPDAuthListener, CDPDCircleListener>
+ @property  <CDPDCircleProxy> *circleProxy
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPManateeStateController setCircleProxy:]
+  -[CDPManateeStateController securityLevelChanged:]
+  -[CDPManateeStateController isPrimaryAccountHSA2]
+  -[CDPManateeStateController reportManateeAvailable]
+  -[CDPManateeStateController .cxx_destruct]
+  -[CDPManateeStateController isManateeAvailable:]
+  -[CDPManateeStateController circleStatusChanged]
+  -[CDPManateeStateController _didCreateCircleProxy]
+  -[CDPManateeStateController _checkSecurityEligibility:]
+  -[CDPManateeStateController circleProxy]
+  -[CDPManateeStateController _sendNotification:withValue:]
+  -[CDPManateeStateController reportManateeUnavailable]
+  -[CDPManateeStateController circleViewStatusChanged]
+
+
+CDPStateController : CDPController
+  // instance methods
+  -[CDPStateController handleCloudDataProtectionStateWithCompletion:]
+  -[CDPStateController generateRandomRecoveryKey:]
+  -[CDPStateController deleteRecoveryKey:]
+  -[CDPStateController attemptToEscrowPreRecord:preRecordUUID:secretType:completion:]
+  -[CDPStateController isManateeAvailable:]
+  -[CDPStateController startCircleApplicationApprovalServer:]
+  -[CDPStateController recoverWithSquirrel:]
+  -[CDPStateController generateNewRecoveryKey:]
+  -[CDPStateController recoverAndSynchronizeWithSquirrel:]
+  -[CDPStateController handleURLActionWithInfo:completion:]
+  -[CDPStateController attemptToEscrowPreRecord:completion:]
+  -[CDPStateController deleteRecoveryKeyWithError:]
+  -[CDPStateController handleURLActionWithInfo:]
+  -[CDPStateController shouldPerformRepairWithOptionForceFetch:error:]
+  -[CDPStateController repairCloudDataProtectionStateWithCompletion:]
+  -[CDPStateController finishOfflineLocalSecretChangeWithCompletion:]
+  -[CDPStateController localSecretChangedTo:secretType:completion:]
+
+
+CDPRecoveryController : CDPController
+  // instance methods
+  -[CDPRecoveryController performRecovery:]
+  -[CDPRecoveryController _sanitizedRecoveryErrorWithError:]
+
+
+CDPLocalDeviceSecretProxyImpl : NSObject /usr/lib/libSystem.B.dylib <CDPLocalDeviceSecretProxy>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CDPLocalDeviceSecretProxyImpl hasLocalSecret]
+
+
+CDPLocalDevice : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CDPLocalDevice sharedInstance]
+  +[CDPLocalDevice hasLocalSecret]
+
+  // instance methods
+  -[CDPLocalDevice hardwareModel]
+  -[CDPLocalDevice osVersion]
+  -[CDPLocalDevice deviceName]
+  -[CDPLocalDevice serialNumber]
+  -[CDPLocalDevice modelVersion]
+  -[CDPLocalDevice deviceClass]
+  -[CDPLocalDevice init]
+  -[CDPLocalDevice .cxx_destruct]
+  -[CDPLocalDevice hasLocalSecret]
+  -[CDPLocalDevice supportsSecureBackupRecovery]
+  -[CDPLocalDevice marketingModel]
+  -[CDPLocalDevice _currentProcessCreatesDaemonTypeProxy]
+  -[CDPLocalDevice _isHomePod]
+  -[CDPLocalDevice _currentProcessHasEntitlement:]
+
+
+CDPController : NSObject /usr/lib/libSystem.B.dylib
+ @property  CDPDaemonConnection *daemonConn
+ @property  CDPStateUIProviderProxy *uiProviderProxy
+ @property  CDPContext *context
+ @property  <CDPStateUIProvider> *uiProvider
+ @property  <CDPAuthProvider> *authProvider
+
+  // instance methods
+  -[CDPController context]
+  -[CDPController daemonConn]
+  -[CDPController authProvider]
+  -[CDPController uiProvider]
+  -[CDPController setUiProviderProxy:]
+  -[CDPController setUiProvider:]
+  -[CDPController setDaemonConn:]
+  -[CDPController uiProviderProxy]
+  -[CDPController init]
+  -[CDPController initWithContext:]
+  -[CDPController dealloc]
+  -[CDPController .cxx_destruct]
+  -[CDPController initWithXpcEndpoint:context:]
+  -[CDPController setAuthProvider:]
+  -[CDPController invalidate]
+
+
+CDPDaemonConnection : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCListenerEndpoint *daemonXPCEndpoint
+
+  // instance methods
+  -[CDPDaemonConnection daemon]
+  -[CDPDaemonConnection init]
+  -[CDPDaemonConnection synchronousDaemonWithErrorHandler:]
+  -[CDPDaemonConnection .cxx_destruct]
+  -[CDPDaemonConnection setDaemonXPCEndpoint:]
+  -[CDPDaemonConnection daemonWithErrorHandler:]
+  -[CDPDaemonConnection daemonXPCEndpoint]
+  -[CDPDaemonConnection connection]
+
+
+CDPLocalSecret : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *validatedSecret
+ @property  unsigned long secretType
+
+  // class methods
+  +[CDPLocalSecret supportsSecureCoding]
+
+  // instance methods
+  -[CDPLocalSecret secretType]
+  -[CDPLocalSecret .cxx_destruct]
+  -[CDPLocalSecret encodeWithCoder:]
+  -[CDPLocalSecret initWithCoder:]
+  -[CDPLocalSecret validatedSecret]
+  -[CDPLocalSecret initWithValidatedSecret:secretType:]
+
+
+(CDPDeviceProtocol)
+	// instance methods
+	-[(CDPDeviceProtocol) prevailingLocalSecretType]
+	-[(CDPDeviceProtocol) hasMixedSecretType]
+
+(CoreCDP)
+	// class methods
+	+[(CoreCDP) cdp_errorWithCode:userInfo:]
+	+[(CoreCDP) cdp_errorWithCode:]
+	+[(CoreCDP) cdp_errorWithCode:underlyingError:]
+
+	// instance methods
+	-[(CoreCDP) shouldDisplayToUser]
+	-[(CoreCDP) cdp_isCDPErrorWithCode:]
+	-[(CoreCDP) cdp_isLoginHardLimit]
+	-[(CoreCDP) cdp_isLoginSoftLimit]
+
+(CoreCDP)
+	// instance methods
+	-[(CoreCDP) cdp_sanitizedCopy]
+
+01 00 0300 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0600 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAccountManager 
+01 00 0600 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKCircleRequestContext 
+01 00 0d00 /System/Library/Frameworks/Security.framework/Security: CKKSControl 
+01 00 0900 /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils: CUMessageSession 
+01 00 0800 /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities: CUTReachability 
+01 00 0a00 /System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle: KCAESGCMDuplexSession 
+01 00 0a00 /System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle: KCPairingChannelContext 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1000 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1200 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0f00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0d00 /System/Library/Frameworks/Security.framework/Security: OTClique 
+01 00 0d00 /System/Library/Frameworks/Security.framework/Security: OTConfigurationContext 
+01 00 0d00 /System/Library/Frameworks/Security.framework/Security: OTOperationConfiguration 
