@@ -1,0 +1,1566 @@
+|| __DATA.__data _CARAutomaticDNDAutoReplyAudienceChangedNotification
+|| __DATA.__data _CARAutomaticDNDExitConfirmationDisabledNotification
+|| __DATA.__data _CARAutomaticDNDExitConfirmationEnabledNotification
+|| __DATA.__data _CARAutomaticDNDStatusChangedNotification
+|| __DATA.__data _CARAutomaticDNDTriggeringPreferenceChangedNotification
+|| __DATA.__data _CRCarPlayAppBlacklistPreferenceKey
+|| __DATA.__data _CREnhancedIntegrationConsentDidChangeNotification
+|| __DATA.__data _CREnhancedIntegrationConsentDidChangeNotificationVehicleCertificateSerialKey
+|| __DATA.__data _CRPairedVehiclesDidChangeNotification
+|| __DATA.__data _CRPreferencesAutomaticDNDDomain
+|| __DATA.__data _CRPreferencesNotMigratedDomain
+|| __DATA.__objc_data _OBJC_CLASS_$_CARDNDUtility
+|| __DATA.__objc_data _OBJC_CLASS_$_CARInputDevice
+|| __DATA.__objc_data _OBJC_CLASS_$_CARInputDeviceManager
+|| __DATA.__objc_data _OBJC_CLASS_$_CARInputDeviceTouchpad
+|| __DATA.__objc_data _OBJC_CLASS_$_CARObserverHashTable
+|| __DATA.__objc_data _OBJC_CLASS_$_CARPrototypeBoolPref
+|| __DATA.__objc_data _OBJC_CLASS_$_CARPrototypePref
+|| __DATA.__objc_data _OBJC_CLASS_$_CARScreenInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_CARScreenViewArea
+|| __DATA.__objc_data _OBJC_CLASS_$_CARSession
+|| __DATA.__objc_data _OBJC_CLASS_$_CARSessionConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_CRPairedVehicleManager
+|| __DATA.__objc_data _OBJC_CLASS_$_CRUsageInformation
+|| __DATA.__objc_data _OBJC_CLASS_$_CRVehicleAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_CRVehicleInformation
+|| __DATA.__objc_data _OBJC_CLASS_$_CRVehiclePolicyMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARDNDUtility
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARInputDevice
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARInputDeviceManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARInputDeviceTouchpad
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARObserverHashTable
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARPrototypeBoolPref
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARPrototypePref
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARScreenInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARScreenViewArea
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARSession
+|| __DATA.__objc_data _OBJC_METACLASS_$_CARSessionConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRPairedVehicleManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRUsageInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRVehicleAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRVehicleInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRVehiclePolicyMonitor
+|| __DATA_CONST.__const _CARAutomaticDNDEnabledPreference
+|| __DATA_CONST.__const _CARDNDActivateWithCarPlay
+|| __DATA_CONST.__const _CARDNDAutoReplyAudience
+|| __DATA_CONST.__const _CARDNDAutoReplyMessage
+|| __DATA_CONST.__const _CARDNDAutomaticTriggeringMethod
+|| __DATA_CONST.__const _CARDNDDisableTimerTimestamp
+|| __DATA_CONST.__const _CARDNDFirstBuddyDateFirstMoment
+|| __DATA_CONST.__const _CARDNDInternalAutoReplyWhitelist
+|| __DATA_CONST.__const _CARDNDMiniHasCompletedFirstRide
+|| __DATA_CONST.__const _CARDNDMiniHasStartedFirstRide
+|| __DATA_CONST.__const _CARDNDMiniInternalEnabled
+|| __DATA_CONST.__const _CARDNDMiniInternalExitConfirmationOverride
+|| __DATA_CONST.__const _CARDNDMiniInternalForceOverride
+|| __DATA_CONST.__const _CARDNDMiniInternalShowGeofencingAlerts
+|| __DATA_CONST.__const _CARDNDMiniInternalShowInternalAlerts
+|| __DATA_CONST.__const _CARDNDMiniIsFirstBuddyPresentation
+|| __DATA_CONST.__const _CARDNDMiniRecentRideHistory
+|| __DATA_CONST.__const _CARDNDMiniUserOptedOutInBuddy
+|| __DATA_CONST.__const _CARDNDTriggerPreferenceChangedTimestamp
+|| __DATA_CONST.__const _CARDNDUserHasAdjustedTriggerMethod
+|| __DATA_CONST.__const _CARInputDeviceFeedbackTypeKey
+|| __DATA_CONST.__const _CARInputDeviceSupportedFeedbackTypes
+|| __DATA_CONST.__const _CARInputDeviceUUID
+|| __DATA_CONST.__const _CARInputPerformFeedbackCommand
+|| __DATA_CONST.__const _CARNavigationOwnerRequestedNotificationName
+|| __DATA_CONST.__const _CARSessionAccessoryUpdatedNotification
+|| __DATA_CONST.__const _CARSessionCarCapabilitiesUpdatedNotification
+|| __DATA_CONST.__const _CARSessionCarHasMainAudioNotification
+|| __DATA_CONST.__const _CARSessionElectronicTollCollectionStateChangedNotification
+|| __DATA_CONST.__const _CARSessionLimitUserInterfacesChangedNotification
+|| __DATA_CONST.__const _CARSessionNightModeChangedNotification
+|| __DATA_CONST.__const _CARSessionOwnsTurnByTurnNavigationChangedNotification
+|| __DATA_CONST.__const _CARSessionPerformanceReportPostedNotification
+|| __DATA_CONST.__const _CARSessionScreenBecameAvailableNotification
+|| __DATA_CONST.__const _CARSessionScreenBecameUnavailableNotification
+|| __DATA_CONST.__const _CARSessioniOSHasMainAudioNotification
+|| __DATA_CONST.__const _CRAggregateReconnectionEnableWiFiAcceptedKey
+|| __DATA_CONST.__const _CRAggregateReconnectionEnableWiFiDeclinedKey
+|| __DATA_CONST.__const _CRAggregateReconnectionFailureCountKey
+|| __DATA_CONST.__const _CRAggregateReconnectionSuccessCountKey
+|| __DATA_CONST.__const _CRAggregateVehicleCountKey
+|| __DATA_CONST.__const _CRAggregateWiredAcceptedKey
+|| __DATA_CONST.__const _CRAggregateWiredDeclinedKey
+|| __DATA_CONST.__const _CRAggregateWiredToWirelessAcceptedKey
+|| __DATA_CONST.__const _CRAggregateWiredToWirelessDeclinedKey
+|| __DATA_CONST.__const _CRAggregateWirelessAcceptedKey
+|| __DATA_CONST.__const _CRAggregateWirelessDeclinedKey
+|| __DATA_CONST.__const _CRAnalyticsAccessoryConnectedKey
+|| __DATA_CONST.__const _CRCapabilitiesDefaultVersion
+|| __DATA_CONST.__const _CRCarPlayAppPolicyChangedNotification
+|| __DATA_CONST.__const _CRCarPlayCapabilitiesIdentifierKey
+|| __DATA_CONST.__const _kCRCarPlayEntitlementCalling
+|| __DATA_CONST.__const _kCRCarPlayEntitlementMaps
+|| __DATA_CONST.__const _kCRCarPlayEntitlementMessaging
+|| __DATA_CONST.__const _kCRCarPlayEntitlementPlayableContent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CARAutomaticDNDStatus
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CARNavigationOwnershipManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CARRouteGuidanceiAPSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CARSessionStatus
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayAppBlacklist
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayAppDeclaration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayAppPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayAppPolicyEvaluator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayCapabilities
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCarPlayPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRVehicle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRVehicleAccessoryManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CARAutomaticDNDStatus
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CARNavigationOwnershipManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CARRouteGuidanceiAPSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CARSessionStatus
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayAppBlacklist
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayAppDeclaration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayAppPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayAppPolicyEvaluator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayCapabilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCarPlayPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRVehicle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRVehicleAccessoryManager
+|| __TEXT.__const _CARMaximumRidesForReminder
+|| __TEXT.__text _CARGetMinimumScaleForProposedScaleOnDisplay
+|| __TEXT.__text _CRAggregateAddValueForScalarKey
+|| __TEXT.__text _CRAggregateSetValueForScalarKey
+|| __TEXT.__text _CRAllowsConnectionsForCertificateSerialNumber
+|| __TEXT.__text _CRAllowsConnectionsForWiFiUUID
+|| __TEXT.__text _CRAnalyticsSendEvent
+|| __TEXT.__text _CRAutomaticDNDLocationBundle
+|| __TEXT.__text _CRAutomaticDNDLocationServicesEnabled
+|| __TEXT.__text _CRAutomaticDNDLocationServicesStatus
+|| __TEXT.__text _CRBluetoothIndicatesInCar
+|| __TEXT.__text _CRBuildNumberForDevice
+|| __TEXT.__text _CRCollectCarPlayDiagnostics
+|| __TEXT.__text _CRCollectCarPlayDiagnosticsWithAttachments
+|| __TEXT.__text _CRDeviceHardwareIdentifierForDevice
+|| __TEXT.__text _CRDeviceSupportsAutomaticDNDMotionTrigger
+|| __TEXT.__text _CRDeviceSupportsDNDWhileDriving
+|| __TEXT.__text _CREdgeInsetsFromRect
+|| __TEXT.__text _CRFetchInstrumentClusterURLs
+|| __TEXT.__text _CRFetchSessionInstrumentClusterURLs
+|| __TEXT.__text _CRFormattedBuildAndDeviceIdentifier
+|| __TEXT.__text _CRFrameworkBundle
+|| __TEXT.__text _CRHandleCarPlayRestrictionChanged
+|| __TEXT.__text _CRHandleConnectionForBluetoothAddress
+|| __TEXT.__text _CRHandleDisconnectionForBluetoothAddress
+|| __TEXT.__text _CRIsAnyPairedVehicleAttached
+|| __TEXT.__text _CRIsCarPlayAllowed
+|| __TEXT.__text _CRIsEnhancedIntegrationEnabledWithCertificateSerialNumber
+|| __TEXT.__text _CRIsInternalInstall
+|| __TEXT.__text _CRIsPairedWithCertificateSerialNumber
+|| __TEXT.__text _CRIsTestContext
+|| __TEXT.__text _CRLocalizedStringForKey
+|| __TEXT.__text _CRLocalizedWiFiVariantKeyForKey
+|| __TEXT.__text _CRRectFromEdgeInsets
+|| __TEXT.__text _CRRectRHDFlip
+|| __TEXT.__text _CRSaveScreenshotToTemporaryFile
+|| __TEXT.__text _CRSaveStringToTemporaryTextFile
+|| __TEXT.__text _CRSaveWiFiCredentialsForAccessoryConnectionIdentifier
+|| __TEXT.__text _CRSettingsDebugUIEnabled
+|| __TEXT.__text _CRStringForDate
+|| __TEXT.__text _CRURLEncodedString
+|| __TEXT.__text _CRVehicleIdentifierForCertificateSerial
+|| __TEXT.__text _CarGeneralLogging
+|| __TEXT.__text __CARGetMinimumScaleForProposedScaleForScreenInfo
+|| __TEXT.__text __adjacentViewAreaForPayload
+|| __TEXT.__text __transitionControlTypeForViewAreaChange
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMethodSignature
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreGraphics: _CGRectEqualToRect
+__ CoreGraphics: _CGRectMakeWithDictionaryRepresentation
+__ CoreGraphics: _CGSizeMakeWithDictionaryRepresentation
+__ CoreGraphics: _CGSizeZero
+__ CoreMedia: _CMBaseObjectGetVTable
+__ CoreMedia: _CMBaseObjectIsMemberOfClass
+__ CoreMedia: _CMNotificationCenterAddListener
+__ CoreMedia: _CMNotificationCenterGetDefaultLocalCenter
+__ CoreMedia: _CMNotificationCenterRemoveListener
+__ CoreMedia: _FigEndpointCopyActiveCarPlayEndpoint
+__ CoreMedia: _FigEndpointExtendedGetClassID
+__ CoreMedia: _FigEndpointGetCMBaseObject
+__ CoreMedia: _FigNotificationCenterAddWeakListeners
+__ CoreMedia: _FigNotificationCenterRemoveWeakListeners
+__ CoreMedia: _kFigEndpointAuthenticationType_MFiSAP
+__ CoreMedia: _kFigEndpointCarPlayTestKey_AlternateSiriRequest
+__ CoreMedia: _kFigEndpointCentralNotification_CarEntityHasMainAudio
+__ CoreMedia: _kFigEndpointCentralNotification_ScreenBecameAvailable
+__ CoreMedia: _kFigEndpointCentralNotification_ScreenBecameUnavailable
+__ CoreMedia: _kFigEndpointCentralNotification_iOSEntityHasMainAudio
+__ CoreMedia: _kFigEndpointCentralNotification_iOSEntityIsDoingTurnByTurnChanged
+__ CoreMedia: _kFigEndpointHIDKey_UUID
+__ CoreMedia: _kFigEndpointLimitedUIChanged_DisplayUUID
+__ CoreMedia: _kFigEndpointLimitedUIChanged_IsLimitedUI
+__ CoreMedia: _kFigEndpointNightModeChangedKey_DisplayUUID
+__ CoreMedia: _kFigEndpointNightModeChangedKey_IsNightMode
+__ CoreMedia: _kFigEndpointNotification_ActiveCarPlayEndpointChanged
+__ CoreMedia: _kFigEndpointNotification_AuthenticationSucceeded
+__ CoreMedia: _kFigEndpointNotification_CarPlayTest
+__ CoreMedia: _kFigEndpointNotification_LimitedUIChanged
+__ CoreMedia: _kFigEndpointNotification_NightModeChanged
+__ CoreMedia: _kFigEndpointNotification_PerformanceReportPosted
+__ CoreMedia: _kFigEndpointNotification_ServerConnectionDied
+__ CoreMedia: _kFigEndpointNotification_SiriRequested
+__ CoreMedia: _kFigEndpointNotification_UnhandledRemoteEvent
+__ CoreMedia: _kFigEndpointNotification_VehicleInformationChanged
+__ CoreMedia: _kFigEndpointNotification_ViewAreaChanged
+__ CoreMedia: _kFigEndpointNotification_iOSUIRequested
+__ CoreMedia: _kFigEndpointProperty_AlternateSiri
+__ CoreMedia: _kFigEndpointProperty_AuthenticationData
+__ CoreMedia: _kFigEndpointProperty_AuthenticationType
+__ CoreMedia: _kFigEndpointProperty_CarEntityIsDoingTurnByTurn
+__ CoreMedia: _kFigEndpointProperty_CarEntityIsDoingVoiceRecognition
+__ CoreMedia: _kFigEndpointProperty_CarEntityOwnsMainAudio
+__ CoreMedia: _kFigEndpointProperty_CarEntityOwnsScreen
+__ CoreMedia: _kFigEndpointProperty_ExtendedFeatures
+__ CoreMedia: _kFigEndpointProperty_HIDs
+__ CoreMedia: _kFigEndpointProperty_ID
+__ CoreMedia: _kFigEndpointProperty_LimitedUI
+__ CoreMedia: _kFigEndpointProperty_LimitedUIElements
+__ CoreMedia: _kFigEndpointProperty_Manufacturer
+__ CoreMedia: _kFigEndpointProperty_Model
+__ CoreMedia: _kFigEndpointProperty_Name
+__ CoreMedia: _kFigEndpointProperty_NightMode
+__ CoreMedia: _kFigEndpointProperty_OEMIconLabel
+__ CoreMedia: _kFigEndpointProperty_OEMIconVisible
+__ CoreMedia: _kFigEndpointProperty_RightHandDrive
+__ CoreMedia: _kFigEndpointProperty_ScreenInfo
+__ CoreMedia: _kFigEndpointProperty_SupportsMixableSiriAudio
+__ CoreMedia: _kFigEndpointProperty_TransportType
+__ CoreMedia: _kFigEndpointProperty_VehicleInformation
+__ CoreMedia: _kFigEndpointProperty_VoiceActivationType
+__ CoreMedia: _kFigEndpointProperty_iOSEntityIsDoingTurnByTurn
+__ CoreMedia: _kFigEndpointScreenInfoKey_ID
+__ CoreMedia: _kFigEndpointScreenInfoKey_InitialApplicationURL
+__ CoreMedia: _kFigEndpointScreenInfoKey_InputCapabilities
+__ CoreMedia: _kFigEndpointScreenInfoKey_IsLimitedUI
+__ CoreMedia: _kFigEndpointScreenInfoKey_IsNightMode
+__ CoreMedia: _kFigEndpointScreenInfoKey_LimitedUIElements
+__ CoreMedia: _kFigEndpointScreenInfoKey_MaxFPS
+__ CoreMedia: _kFigEndpointScreenInfoKey_PhysicalSize
+__ CoreMedia: _kFigEndpointScreenInfoKey_PixelSize
+__ CoreMedia: _kFigEndpointScreenInfoKey_PrimaryInputDevice
+__ CoreMedia: _kFigEndpointScreenInfoKey_ViewAreas
+__ CoreMedia: _kFigEndpointScreenInfoViewAreaKey_SafeArea
+__ CoreMedia: _kFigEndpointScreenInfoViewAreaKey_ViewArea
+__ CoreMedia: _kFigEndpointScreenInfoViewAreaKey_ViewAreaTransitionControl
+__ CoreMedia: _kFigEndpointScreenInputCapability_HighFidelityTouch
+__ CoreMedia: _kFigEndpointScreenInputCapability_Knobs
+__ CoreMedia: _kFigEndpointScreenInputCapability_LowFidelityTouch
+__ CoreMedia: _kFigEndpointScreenInputCapability_Touchpad
+__ CoreMedia: _kFigEndpointSiriRequestedAction_ButtonDown
+__ CoreMedia: _kFigEndpointSiriRequestedAction_ButtonUp
+__ CoreMedia: _kFigEndpointSiriRequestedAction_Prewarm
+__ CoreMedia: _kFigEndpointSiriRequestedAction_VoiceActivityStart
+__ CoreMedia: _kFigEndpointSiriRequestedKey_Action
+__ CoreMedia: _kFigEndpointSupportedFeature_EnhancedRequestCarUI
+__ CoreMedia: _kFigEndpointSupportedFeature_EnhancedSiriButton
+__ CoreMedia: _kFigEndpointSupportedFeature_EnhancedSiriVoice
+__ CoreMedia: _kFigEndpointTransportType_AWDL
+__ CoreMedia: _kFigEndpointTransportType_Ethernet
+__ CoreMedia: _kFigEndpointTransportType_USB
+__ CoreMedia: _kFigEndpointTransportType_WiFi
+__ CoreMedia: _kFigEndpointUnhandledRemoteEventKey_CommandParams
+__ CoreMedia: _kFigEndpointUnhandledRemoteEventKey_CommandType
+__ CoreMedia: _kFigEndpointVehicleInformationChangedKey_NewVehicleInformation
+__ CoreMedia: _kFigEndpointVehicleInformationEntry_ETC
+__ CoreMedia: _kFigEndpointiOSUIRequestedKey_ApplicationURL
+__ CoreMotion: _OBJC_CLASS_$_CMVehicleState
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSBundleInfoCachedValues
+__ CoreServices: _OBJC_CLASS_$_LSBundleProxy
+__ CoreServices: _OBJC_CLASS_$_LSPlugInKitProxy
+__ ExternalAccessory: _EAAccessoryDidConnectNotification
+__ ExternalAccessory: _EAAccessoryDidDisconnectNotification
+__ ExternalAccessory: _EAAccessoryKey
+__ ExternalAccessory: _EAAccessoryVehicleDataUpdateNotification
+__ ExternalAccessory: _EAVehicleInfoDisplayNameKey
+__ ExternalAccessory: _EAVehicleInfoEngineTypeBitmaskKey
+__ ExternalAccessory: _OBJC_CLASS_$_EAAccessory
+__ ExternalAccessory: _OBJC_CLASS_$_EAAccessoryManager
+__ FindMyDevice: _OBJC_CLASS_$_FMDFMIPManager
+__ FindMyDevice: _kLostModeChangedNotification
+__ Foundation: _NSClassFromString
+__ Foundation: _NSEdgeInsetsEqual
+__ Foundation: _NSEdgeInsetsZero
+__ Foundation: _NSExtensionContainingAppName
+__ Foundation: _NSGlobalDomain
+__ Foundation: _NSRectFromString
+__ Foundation: _NSStringFromBOOL
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRect
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSExtension
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ IAP: _OBJC_CLASS_$_IAPNavigation
+__ IAP: _kIAPNavigation_RouteGuidanceUpdate_SourceName_ParamID
+__ IAP: _kIAPNavigation_RouteGuidanceUpdate_SourceSupportsRouteGuidance_ParamID
+__ IOKit: _IOHIDEventSystemClientCopyServices
+__ IOKit: _IOHIDEventSystemClientCreateWithType
+__ IOKit: _IOHIDEventSystemClientSetMatching
+__ IOKit: _IOHIDServiceClientCopyProperty
+__ IOKit: _IOHIDServiceClientGetRegistryID
+__ Intents: _INSaveProfileInCarIntentIdentifier
+__ Intents: _INSearchCallHistoryIntentIdentifier
+__ Intents: _INSearchForMessagesIntentIdentifier
+__ Intents: _INSendMessageIntentIdentifier
+__ Intents: _INSetAudioSourceInCarIntentIdentifier
+__ Intents: _INSetClimateSettingsInCarIntentIdentifier
+__ Intents: _INSetDefrosterSettingsInCarIntentIdentifier
+__ Intents: _INSetProfileInCarIntentIdentifier
+__ Intents: _INSetRadioStationIntentIdentifier
+__ Intents: _INSetSeatSettingsInCarIntentIdentifier
+__ Intents: _INStartAudioCallIntentIdentifier
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libMobileGestalt.dylib: _MGIsDeviceOfType
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___exp10f
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _mktemp
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_assert_not_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _protocol_getMethodDescription
+CARRouteGuidanceiAPSession : NSObject /usr/lib/libSystem.B.dylib <IAPNavigationDelegate>
+ @property  IAPNavigation *iapNavigation
+ @property  NSMapTable *navigationAccessories
+ @property  NSString *currentNavigationOwnerIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CARRouteGuidanceiAPSession localizedNameForIdentifier:]
+
+  // instance methods
+  -[CARRouteGuidanceiAPSession init]
+  -[CARRouteGuidanceiAPSession .cxx_destruct]
+  -[CARRouteGuidanceiAPSession _setupiAPNavigation]
+  -[CARRouteGuidanceiAPSession updateNavigationGuidanceInfo]
+  -[CARRouteGuidanceiAPSession setIapNavigation:]
+  -[CARRouteGuidanceiAPSession setNavigationAccessories:]
+  -[CARRouteGuidanceiAPSession currentNavigationOwnerIdentifier]
+  -[CARRouteGuidanceiAPSession _updateAccessoryComponentsWithGuidanceInfo:]
+  -[CARRouteGuidanceiAPSession navigationAccessories]
+  -[CARRouteGuidanceiAPSession iapNavigation]
+  -[CARRouteGuidanceiAPSession IAPNavigationAccessoryDidBecomeAvailable:]
+  -[CARRouteGuidanceiAPSession IAPNavigationAccessoryDidBecomeUnavailable:]
+  -[CARRouteGuidanceiAPSession IAPNavigationAccessory:didEnableNavigationUpdatesForComponent:]
+  -[CARRouteGuidanceiAPSession IAPNavigationAccessory:didDisableNavigationUpdatesForComponent:]
+  -[CARRouteGuidanceiAPSession setCurrentNavigationOwnerIdentifier:]
+
+
+CRCarKitServiceClient : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCConnection *connection
+
+  // class methods
+  +[CRCarKitServiceClient serviceQueue]
+
+  // instance methods
+  -[CRCarKitServiceClient init]
+  -[CRCarKitServiceClient dealloc]
+  -[CRCarKitServiceClient .cxx_destruct]
+  -[CRCarKitServiceClient connection]
+  -[CRCarKitServiceClient setConnection:]
+  -[CRCarKitServiceClient _setupConnection]
+  -[CRCarKitServiceClient _serviceQueuePerformBlock:errorHandler:]
+  -[CRCarKitServiceClient performSynchronousServiceBlock:errorHandler:]
+  -[CRCarKitServiceClient performServiceBlock:errorHandler:]
+
+
+CARDNDUtility : NSObject /usr/lib/libSystem.B.dylib
+ @property  CARAutomaticDNDStatus *DNDStatus
+
+  // class methods
+  +[CARDNDUtility sharedInstance]
+
+  // instance methods
+  -[CARDNDUtility .cxx_destruct]
+  -[CARDNDUtility DNDStatus]
+  -[CARDNDUtility outputFromRhodesUtility]
+  -[CARDNDUtility setDNDStatus:]
+
+
+CRCarPlayAppBlacklist : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCConnection *connection
+ @property  NSSet *blacklistedBundleIDs
+
+  // instance methods
+  -[CRCarPlayAppBlacklist init]
+  -[CRCarPlayAppBlacklist dealloc]
+  -[CRCarPlayAppBlacklist .cxx_destruct]
+  -[CRCarPlayAppBlacklist connection]
+  -[CRCarPlayAppBlacklist setConnection:]
+  -[CRCarPlayAppBlacklist setBlacklistedBundleIDs:]
+  -[CRCarPlayAppBlacklist blacklistedBundleIDs]
+  -[CRCarPlayAppBlacklist _setupConnection]
+  -[CRCarPlayAppBlacklist _blacklistPreference]
+  -[CRCarPlayAppBlacklist _requestBlacklistUpdate]
+  -[CRCarPlayAppBlacklist containsBundleIdentifier:]
+
+
+CRPairedVehicleManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  CRCarKitServiceClient *serviceClient
+
+  // instance methods
+  -[CRPairedVehicleManager init]
+  -[CRPairedVehicleManager .cxx_destruct]
+  -[CRPairedVehicleManager setServiceClient:]
+  -[CRPairedVehicleManager serviceClient]
+  -[CRPairedVehicleManager fetchAllVehiclesWithCompletion:]
+  -[CRPairedVehicleManager syncFetchAllVehiclesWithCompletion:]
+  -[CRPairedVehicleManager _firstVehicleMatchingTest:]
+  -[CRPairedVehicleManager saveVehicle:completion:]
+  -[CRPairedVehicleManager removeVehicle:completion:]
+  -[CRPairedVehicleManager fetchPairedVehiclesWithCompletion:]
+  -[CRPairedVehicleManager vehicleForBluetoothAddress:]
+  -[CRPairedVehicleManager vehicleNameForWiFiUUID:]
+  -[CRPairedVehicleManager vehicleForCertificateSerial:]
+  -[CRPairedVehicleManager saveVehicle:]
+  -[CRPairedVehicleManager removeVehicle:]
+  -[CRPairedVehicleManager allVehicles]
+  -[CRPairedVehicleManager pairedVehicles]
+
+
+CRVehicleInformation : NSObject /usr/lib/libSystem.B.dylib
+ @property  CARSessionStatus *currentSessionStatus
+ @property  unsigned long driverPosition
+ @property  unsigned long vehicleAmbientBrightness
+
+  // instance methods
+  -[CRVehicleInformation init]
+  -[CRVehicleInformation .cxx_destruct]
+  -[CRVehicleInformation currentSessionStatus]
+  -[CRVehicleInformation driverPosition]
+  -[CRVehicleInformation vehicleAmbientBrightness]
+  -[CRVehicleInformation setCurrentSessionStatus:]
+
+
+CARPrototypePref : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *domain
+ @property  NSString *key
+ @property  NSString *title
+ @property  id defaultValue
+ @property  @? valueChangedBlock
+ @property  id value
+ @property  id valueOrDefault
+ @property  BOOL state
+ @property  id cachedValue
+ @property  id cachedValueOrDefault
+ @property  BOOL cachedState
+ @property  id internalSettingsValue
+ @property  BOOL internalSettingsState
+
+  // class methods
+  +[CARPrototypePref contentSize]
+  +[CARPrototypePref interfaceStyle]
+  +[CARPrototypePref showPrototypeApps]
+  +[CARPrototypePref setConfirmedSafe:]
+  +[CARPrototypePref _qaModeLockout]
+  +[CARPrototypePref prototypePrefs]
+  +[CARPrototypePref prefWithDomain:key:title:defaultValue:valueChangedBlock:]
+  +[CARPrototypePref _confirmedSafe]
+  +[CARPrototypePref setPrototypePrefCache:]
+  +[CARPrototypePref prototypePrefCache]
+  +[CARPrototypePref confirmedSafe]
+  +[CARPrototypePref showTrustedLockout]
+  +[CARPrototypePref qaModeLockout]
+  +[CARPrototypePref setQaModeLockout:]
+  +[CARPrototypePref showInternalApps]
+  +[CARPrototypePref nowPlayingAlbumArt]
+  +[CARPrototypePref showInternalSettings]
+  +[CARPrototypePref smartWidgetDebugShowScore]
+  +[CARPrototypePref smartWidgetDebugGestures]
+  +[CARPrototypePref smartWidgetRelaxHomeInRangeCheck]
+
+  // instance methods
+  -[CARPrototypePref key]
+  -[CARPrototypePref domain]
+  -[CARPrototypePref .cxx_destruct]
+  -[CARPrototypePref value]
+  -[CARPrototypePref setValue:]
+  -[CARPrototypePref state]
+  -[CARPrototypePref setKey:]
+  -[CARPrototypePref title]
+  -[CARPrototypePref setTitle:]
+  -[CARPrototypePref setState:]
+  -[CARPrototypePref setDomain:]
+  -[CARPrototypePref defaultValue]
+  -[CARPrototypePref setDefaultValue:]
+  -[CARPrototypePref valueOrDefault]
+  -[CARPrototypePref setCachedValue:]
+  -[CARPrototypePref cachedValue]
+  -[CARPrototypePref setValueChangedBlock:]
+  -[CARPrototypePref valueChangedBlock]
+  -[CARPrototypePref cachedState]
+  -[CARPrototypePref setCachedState:]
+  -[CARPrototypePref cachedValueOrDefault]
+  -[CARPrototypePref internalSettingsValue]
+  -[CARPrototypePref setInternalSettingsValue:]
+  -[CARPrototypePref internalSettingsState]
+  -[CARPrototypePref setInternalSettingsState:]
+
+
+CARPrototypeBoolPref : CARPrototypePref
+ @property  BOOL invertValueForState
+ @property  BOOL valueBool
+ @property  BOOL cachedValueBool
+
+  // class methods
+  +[CARPrototypeBoolPref prefWithDomain:key:title:invertValueForState:valueChangedBlock:]
+
+  // instance methods
+  -[CARPrototypeBoolPref state]
+  -[CARPrototypeBoolPref setState:]
+  -[CARPrototypeBoolPref cachedState]
+  -[CARPrototypeBoolPref setCachedState:]
+  -[CARPrototypeBoolPref valueBool]
+  -[CARPrototypeBoolPref invertValueForState]
+  -[CARPrototypeBoolPref cachedValueBool]
+
+
+CRVehicle : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSUUID *identifier
+ @property  NSData *certificateSerialNumber
+ @property  NSString *vehicleName
+ @property  unsigned long pairingStatus
+ @property  NSString *bluetoothAddress
+ @property  NSString *carplayWiFiUUID
+ @property  NSSet *accessoryProtocols
+ @property  NSDate *lastConnectedDate
+ @property  NSString *vehicleModelName
+ @property  NSString *PPID
+ @property  NSString *internalNotes
+ @property  BOOL supportsEnhancedIntegration
+ @property  unsigned long enhancedIntegrationStatus
+ @property  long long albumArtUserPreference
+ @property  BOOL isPaired
+ @property  BOOL isEnhancedIntegrationEnabled
+
+  // class methods
+  +[CRVehicle supportsSecureCoding]
+  +[CRVehicle vehicleForVehicleAccessory:]
+
+  // instance methods
+  -[CRVehicle init]
+  -[CRVehicle isEqual:]
+  -[CRVehicle encodeWithCoder:]
+  -[CRVehicle initWithCoder:]
+  -[CRVehicle .cxx_destruct]
+  -[CRVehicle identifier]
+  -[CRVehicle setIdentifier:]
+  -[CRVehicle displayName]
+  -[CRVehicle bluetoothAddress]
+  -[CRVehicle setBluetoothAddress:]
+  -[CRVehicle isPaired]
+  -[CRVehicle carplayWiFiUUID]
+  -[CRVehicle vehicleName]
+  -[CRVehicle certificateSerialNumber]
+  -[CRVehicle initWithIdentifier:certificateSerial:]
+  -[CRVehicle setCertificateSerialNumber:]
+  -[CRVehicle setPairingStatus:]
+  -[CRVehicle setEnhancedIntegrationStatus:]
+  -[CRVehicle setAlbumArtUserPreference:]
+  -[CRVehicle setVehicleName:]
+  -[CRVehicle setSupportsEnhancedIntegration:]
+  -[CRVehicle setCarplayWiFiUUID:]
+  -[CRVehicle setAccessoryProtocols:]
+  -[CRVehicle setLastConnectedDate:]
+  -[CRVehicle setVehicleModelName:]
+  -[CRVehicle setPPID:]
+  -[CRVehicle setInternalNotes:]
+  -[CRVehicle pairingStatus]
+  -[CRVehicle enhancedIntegrationStatus]
+  -[CRVehicle supportsEnhancedIntegration]
+  -[CRVehicle albumArtUserPreference]
+  -[CRVehicle accessoryProtocols]
+  -[CRVehicle lastConnectedDate]
+  -[CRVehicle vehicleModelName]
+  -[CRVehicle PPID]
+  -[CRVehicle internalNotes]
+  -[CRVehicle _pairingDebugDescription]
+  -[CRVehicle _enhancedIntegrationDebugDescription]
+  -[CRVehicle isEnhancedIntegrationEnabled]
+  -[CRVehicle mergeAttributesFromVehicle:]
+
+
+CRCarPlayPreferences : NSObject /usr/lib/libSystem.B.dylib <MCProfileConnectionObserver>
+ @property  BOOL cachedCarPlayAllowed
+ @property  <CRCarPlayPreferencesDelegate> *preferencesDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CRCarPlayPreferences init]
+  -[CRCarPlayPreferences dealloc]
+  -[CRCarPlayPreferences .cxx_destruct]
+  -[CRCarPlayPreferences profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:]
+  -[CRCarPlayPreferences isWirelessCarPlayEnabled]
+  -[CRCarPlayPreferences handleAssistantLanguageChanged:]
+  -[CRCarPlayPreferences handleAssistantPreferencesChanged:]
+  -[CRCarPlayPreferences _isCarPlayAllowed]
+  -[CRCarPlayPreferences setCachedCarPlayAllowed:]
+  -[CRCarPlayPreferences cachedCarPlayAllowed]
+  -[CRCarPlayPreferences preferencesDelegate]
+  -[CRCarPlayPreferences _updateCarPlayAllowed]
+  -[CRCarPlayPreferences isCarPlayCapable]
+  -[CRCarPlayPreferences isCarPlayAllowed]
+  -[CRCarPlayPreferences setPreferencesDelegate:]
+
+
+CARAutomaticDNDStatus : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCConnection *connection
+ @property  unsigned long cachedAutomaticDNDActiveState
+ @property  @? statusChangeObserver
+ @property  @? exitConfirmationChangeObserver
+
+  // class methods
+  +[CARAutomaticDNDStatus automaticDNDQueue]
+
+  // instance methods
+  -[CARAutomaticDNDStatus init]
+  -[CARAutomaticDNDStatus dealloc]
+  -[CARAutomaticDNDStatus .cxx_destruct]
+  -[CARAutomaticDNDStatus connection]
+  -[CARAutomaticDNDStatus setConnection:]
+  -[CARAutomaticDNDStatus _setupConnection]
+  -[CARAutomaticDNDStatus _detachObservers]
+  -[CARAutomaticDNDStatus automaticDNDTriggeringMethod]
+  -[CARAutomaticDNDStatus hasStartedFirstRidePreference]
+  -[CARAutomaticDNDStatus hasCompletedFirstRidePreference]
+  -[CARAutomaticDNDStatus hasOptedOutOfAutomaticDND]
+  -[CARAutomaticDNDStatus hasAdjustedTriggerMethod]
+  -[CARAutomaticDNDStatus shouldActivateWithCarPlay]
+  -[CARAutomaticDNDStatus firstBuddyPresentationFirstMoment]
+  -[CARAutomaticDNDStatus disableTimerTimestamp]
+  -[CARAutomaticDNDStatus isAutomaticDNDInternalForceOverrideEnabledPreference]
+  -[CARAutomaticDNDStatus isAutomaticDNDInternalExitConfirmationOverrideEnabledPreference]
+  -[CARAutomaticDNDStatus isAutomaticDNDInternalShowGeofencingAlertsEnabledPreference]
+  -[CARAutomaticDNDStatus isAutomaticDNDInternalShowUserAlertsEnabledPreference]
+  -[CARAutomaticDNDStatus automaticDNDInternalAutoReplyWhitelist]
+  -[CARAutomaticDNDStatus fetchAutomaticDNDAssertionWithReply:]
+  -[CARAutomaticDNDStatus fetchAutomaticDNDExitConfirmationWithReply:]
+  -[CARAutomaticDNDStatus setAllowedAutoReplyAudience:reply:]
+  -[CARAutomaticDNDStatus autoReplyMessageWithReply:]
+  -[CARAutomaticDNDStatus setAutoReplyMessage:reply:]
+  -[CARAutomaticDNDStatus disableDNDUntilEndOfDriveWithContext:reply:]
+  -[CARAutomaticDNDStatus _xpcFetchWithServiceBlock:errorHandler:]
+  -[CARAutomaticDNDStatus setMostRecentTriggerMethodChange:]
+  -[CARAutomaticDNDStatus setHasAdjustedTriggerMethod:]
+  -[CARAutomaticDNDStatus statusChangeObserver]
+  -[CARAutomaticDNDStatus exitConfirmationChangeObserver]
+  -[CARAutomaticDNDStatus _completeDNDBuddyWithOption:withReply:]
+  -[CARAutomaticDNDStatus _resetUserDNDSettingsWithReply:]
+  -[CARAutomaticDNDStatus setAutomaticDNDActive:withReply:]
+  -[CARAutomaticDNDStatus allowedAutoReplyAudience:]
+  -[CARAutomaticDNDStatus outputOfDiagnosticUtilityWithReply:]
+  -[CARAutomaticDNDStatus platformSupportsSendingAutoReplies]
+  -[CARAutomaticDNDStatus platformSupportsUrgentMessages]
+  -[CARAutomaticDNDStatus shouldEnforceInternalWhitelist]
+  -[CARAutomaticDNDStatus setAutomaticDNDInternalAutoReplyWhitelist:]
+  -[CARAutomaticDNDStatus fetchAutomaticDNDTriggerPreferenceWithReply:]
+  -[CARAutomaticDNDStatus setAutomaticDNDTriggerPreference:withReply:]
+  -[CARAutomaticDNDStatus disableDNDUntilEndOfDriveWithReply:]
+  -[CARAutomaticDNDStatus setAutomaticDNDInternalExitConfirmationOverrideEnabledPreference:]
+  -[CARAutomaticDNDStatus setAutomaticDNDInternalForceOverrideEnabledPreference:]
+  -[CARAutomaticDNDStatus setCompletedFirstRidePreference:]
+  -[CARAutomaticDNDStatus setStartedFirstRidePreference:]
+  -[CARAutomaticDNDStatus setAutomaticDNDTriggeringMethod:]
+  -[CARAutomaticDNDStatus setAutomaticDNDInternalShowGeofencingAlertsEnabledPreference:]
+  -[CARAutomaticDNDStatus setAutomaticDNDInternalShowUserAlertsEnabledPreference:]
+  -[CARAutomaticDNDStatus setOptedOutOfAutomaticDND:]
+  -[CARAutomaticDNDStatus setActivateWithCarPlay:]
+  -[CARAutomaticDNDStatus mostRecentTriggerMethodChange]
+  -[CARAutomaticDNDStatus setFirstBuddyPresentationFirstMoment:]
+  -[CARAutomaticDNDStatus setDisableTimerTimestamp:]
+  -[CARAutomaticDNDStatus _performCARPreferencesBlock:forReading:]
+  -[CARAutomaticDNDStatus _fetchStatusForObserver]
+  -[CARAutomaticDNDStatus _notifyExitConfirmationActive:]
+  -[CARAutomaticDNDStatus cachedAutomaticDNDActiveState]
+  -[CARAutomaticDNDStatus setStatusChangeObserver:]
+  -[CARAutomaticDNDStatus setExitConfirmationChangeObserver:]
+
+
+CARInputDevice : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *UUID
+ @property  unsigned long senderID
+
+  // instance methods
+  -[CARInputDevice .cxx_destruct]
+  -[CARInputDevice UUID]
+  -[CARInputDevice _setUUID:]
+  -[CARInputDevice senderID]
+  -[CARInputDevice _setSenderID:]
+  -[CARInputDevice initWithServiceClient:UUID:]
+
+
+CARScreenViewArea : NSObject /usr/lib/libSystem.B.dylib
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} visibleFrame
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} safeFrame
+ @property  BOOL displaysTransitionControl
+
+  // instance methods
+  -[CARScreenViewArea isEqual:]
+  -[CARScreenViewArea visibleFrame]
+  -[CARScreenViewArea initWithPropertySupplier:additionalInsets:]
+  -[CARScreenViewArea safeFrame]
+  -[CARScreenViewArea displaysTransitionControl]
+  -[CARScreenViewArea isEqualToViewArea:]
+  -[CARScreenViewArea initWithPropertySupplier:]
+
+
+CARScreenInfo : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long systemAvailableInteractionModels
+ @property  unsigned long systemPrimaryInteractionModel
+ @property  unsigned long currentViewAreaTransitionControlType
+ @property  NSString *identifier
+ @property  unsigned long screenType
+ @property  BOOL limitedUI
+ @property  unsigned long limitedUIElements
+ @property  BOOL nightMode
+ @property  unsigned long availableInteractionModels
+ @property  unsigned long primaryInteractionModel
+ @property  BOOL supportsHighFidelityTouch
+ @property  unsigned long maxFramesPerSecond
+ @property  {CGSize=dd} physicalSize
+ @property  {CGSize=dd} pixelSize
+ @property  NSArray *viewAreas
+ @property  CARScreenViewArea *currentViewArea
+ @property  CARScreenViewArea *adjacentViewArea
+ @property  NSURL *initialURL
+
+  // instance methods
+  -[CARScreenInfo .cxx_destruct]
+  -[CARScreenInfo identifier]
+  -[CARScreenInfo primaryInteractionModel]
+  -[CARScreenInfo physicalSize]
+  -[CARScreenInfo pixelSize]
+  -[CARScreenInfo availableInteractionModels]
+  -[CARScreenInfo supportsHighFidelityTouch]
+  -[CARScreenInfo screenType]
+  -[CARScreenInfo initialURL]
+  -[CARScreenInfo limitedUIElements]
+  -[CARScreenInfo initWithPropertySupplier:screenType:additionalInsets:]
+  -[CARScreenInfo systemAvailableInteractionModels]
+  -[CARScreenInfo _descriptionForInteractionModel:]
+  -[CARScreenInfo systemPrimaryInteractionModel]
+  -[CARScreenInfo _currentProcessHasEntitlement]
+  -[CARScreenInfo descriptionForAvailableInteractionModels]
+  -[CARScreenInfo descriptionForPrimaryInteractionModel]
+  -[CARScreenInfo isLimitedUI]
+  -[CARScreenInfo isNightMode]
+  -[CARScreenInfo maxFramesPerSecond]
+  -[CARScreenInfo viewAreas]
+  -[CARScreenInfo initWithPropertySupplier:screenType:]
+  -[CARScreenInfo nightModeChanged:]
+  -[CARScreenInfo limitedUIChanged:]
+  -[CARScreenInfo currentViewArea]
+  -[CARScreenInfo setCurrentViewArea:]
+  -[CARScreenInfo adjacentViewArea]
+  -[CARScreenInfo setAdjacentViewArea:]
+  -[CARScreenInfo currentViewAreaTransitionControlType]
+  -[CARScreenInfo setCurrentViewAreaTransitionControlType:]
+  -[CARScreenInfo setSystemAvailableInteractionModels:]
+  -[CARScreenInfo setSystemPrimaryInteractionModel:]
+
+
+CARSessionConfiguration : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL hasAccessory
+ @property  NSString *name
+ @property  NSString *modelName
+ @property  NSString *manufacturerName
+ @property  NSString *vehicleName
+ @property  NSString *vehicleModelName
+ @property  NSString *vehicleSerialNumber
+ @property  NSString *vehicleManufacturer
+ @property  NSString *vehicleFirmwareVersion
+ @property  NSString *vehicleHardwareVersion
+ @property  BOOL vehicleSupportsDestinationSharing
+ @property  BOOL vehicleSupportsGasoline
+ @property  BOOL vehicleSupportsDiesel
+ @property  BOOL vehicleSupportsElectric
+ @property  BOOL vehicleSupportsCNG
+ @property  NSString *PPID
+ @property  unsigned long transportType
+ @property  NSArray *screens
+ @property  NSArray *screenIDs
+ @property  BOOL rightHandDrive
+ @property  unsigned long limitableUserInterfaces
+ @property  BOOL nightModeSupported
+ @property  BOOL supportsElectronicTollCollection
+ @property  NSString *endpointIdentifier
+ @property  unsigned long voiceTriggerMode
+ @property  long long nowPlayingAlbumArtMode
+ @property  {NSEdgeInsets=dddd} viewAreaInsets
+ @property  {NSEdgeInsets=dddd} dashboardRoundedCorners
+ @property  long long userInterfaceStyle
+ @property  BOOL supportsACBack
+ @property  BOOL supportsSiriZLL
+ @property  BOOL supportsSiriZLLButton
+ @property  BOOL supportsSiriMixable
+ @property  NSString *manufacturerIconLabel
+ @property  BOOL manufacturerIconVisible
+
+  // class methods
+  +[CARSessionConfiguration _limitableUserInterfacesFromLimitedUIValues:]
+  +[CARSessionConfiguration _descriptionForTransportType:]
+  +[CARSessionConfiguration descriptionForCapability:]
+  +[CARSessionConfiguration descriptionForUserInterfaceStyle:]
+  +[CARSessionConfiguration descriptionForEdgeInsets:]
+
+  // instance methods
+  -[CARSessionConfiguration name]
+  -[CARSessionConfiguration .cxx_destruct]
+  -[CARSessionConfiguration valueForUndefinedKey:]
+  -[CARSessionConfiguration transportType]
+  -[CARSessionConfiguration userInterfaceStyle]
+  -[CARSessionConfiguration screens]
+  -[CARSessionConfiguration rightHandDrive]
+  -[CARSessionConfiguration limitableUserInterfaces]
+  -[CARSessionConfiguration modelName]
+  -[CARSessionConfiguration manufacturerName]
+  -[CARSessionConfiguration screenIDs]
+  -[CARSessionConfiguration nightModeSupported]
+  -[CARSessionConfiguration hasAccessory]
+  -[CARSessionConfiguration endpointIdentifier]
+  -[CARSessionConfiguration vehicleName]
+  -[CARSessionConfiguration vehicleModelName]
+  -[CARSessionConfiguration PPID]
+  -[CARSessionConfiguration initWithPropertySupplier:]
+  -[CARSessionConfiguration voiceTriggerMode]
+  -[CARSessionConfiguration updateCarCapabilities]
+  -[CARSessionConfiguration nowPlayingAlbumArtMode]
+  -[CARSessionConfiguration viewAreaInsets]
+  -[CARSessionConfiguration dashboardRoundedCorners]
+  -[CARSessionConfiguration vehicleManufacturer]
+  -[CARSessionConfiguration vehicleSerialNumber]
+  -[CARSessionConfiguration descriptionForTransportType]
+  -[CARSessionConfiguration supportsElectronicTollCollection]
+  -[CARSessionConfiguration descriptionForLimitableUserInterfaces]
+  -[CARSessionConfiguration manufacturerIconLabel]
+  -[CARSessionConfiguration manufacturerIconVisible]
+  -[CARSessionConfiguration supportsACBack]
+  -[CARSessionConfiguration descriptionForVoiceTriggerMode]
+  -[CARSessionConfiguration screenInfoForScreenID:]
+  -[CARSessionConfiguration vehicleFirmwareVersion]
+  -[CARSessionConfiguration vehicleHardwareVersion]
+  -[CARSessionConfiguration vehicleSupportsDestinationSharing]
+  -[CARSessionConfiguration vehicleSupportsGasoline]
+  -[CARSessionConfiguration vehicleSupportsDiesel]
+  -[CARSessionConfiguration vehicleSupportsElectric]
+  -[CARSessionConfiguration vehicleSupportsCNG]
+  -[CARSessionConfiguration supportsSiriZLL]
+  -[CARSessionConfiguration supportsSiriZLLButton]
+  -[CARSessionConfiguration supportsSiriMixable]
+  -[CARSessionConfiguration setHasAccessory:]
+
+
+CRVehiclePolicyMonitor : NSObject /usr/lib/libSystem.B.dylib <CRCarKitMonitoringClientService>
+ @property  NSData *vehicleCertificateSerial
+ @property  NSXPCConnection *serviceConnection
+ @property  BOOL monitoring
+ @property  <CRVehiclePolicyMonitoring> *delegate
+
+  // instance methods
+  -[CRVehiclePolicyMonitor dealloc]
+  -[CRVehiclePolicyMonitor delegate]
+  -[CRVehiclePolicyMonitor setDelegate:]
+  -[CRVehiclePolicyMonitor .cxx_destruct]
+  -[CRVehiclePolicyMonitor startMonitoring]
+  -[CRVehiclePolicyMonitor stopMonitoring]
+  -[CRVehiclePolicyMonitor isMonitoring]
+  -[CRVehiclePolicyMonitor setMonitoring:]
+  -[CRVehiclePolicyMonitor serviceConnection]
+  -[CRVehiclePolicyMonitor setVehicleCertificateSerial:]
+  -[CRVehiclePolicyMonitor monitoringConnection]
+  -[CRVehiclePolicyMonitor setServiceConnection:]
+  -[CRVehiclePolicyMonitor willEnableCertificateSerial:reply:]
+  -[CRVehiclePolicyMonitor willDisableCertificateSerial:reply:]
+  -[CRVehiclePolicyMonitor vehicleCertificateSerial]
+  -[CRVehiclePolicyMonitor initWithVehicleCertificateSerial:]
+
+
+CRCarPlayAppDeclaration : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *bundleIdentifier
+ @property  BOOL systemApp
+ @property  BOOL requiresGeoSupport
+ @property  BOOL launchUsingSiri
+ @property  BOOL launchNotificationsUsingSiri
+ @property  BOOL supportsPlayableContent
+ @property  BOOL supportsMessaging
+ @property  BOOL supportsCalling
+ @property  BOOL supportsMaps
+ @property  NSSet *autoMakerProtocols
+ @property  unsigned long _applicationCategory
+
+  // class methods
+  +[CRCarPlayAppDeclaration requiredInfoKeys]
+  +[CRCarPlayAppDeclaration requiredEntitlementKeys]
+  +[CRCarPlayAppDeclaration declarationForBundleIdentifier:info:entitlements:]
+  +[CRCarPlayAppDeclaration declarationForAppProxy:]
+  +[CRCarPlayAppDeclaration declarationForBundleIdentifier:entitlements:infoPlist:]
+
+  // instance methods
+  -[CRCarPlayAppDeclaration .cxx_destruct]
+  -[CRCarPlayAppDeclaration bundleIdentifier]
+  -[CRCarPlayAppDeclaration setBundleIdentifier:]
+  -[CRCarPlayAppDeclaration setSystemApp:]
+  -[CRCarPlayAppDeclaration setLaunchUsingSiri:]
+  -[CRCarPlayAppDeclaration setRequiresGeoSupport:]
+  -[CRCarPlayAppDeclaration setSupportsPlayableContent:]
+  -[CRCarPlayAppDeclaration setSupportsMessaging:]
+  -[CRCarPlayAppDeclaration setSupportsCalling:]
+  -[CRCarPlayAppDeclaration setSupportsMaps:]
+  -[CRCarPlayAppDeclaration setAutoMakerProtocols:]
+  -[CRCarPlayAppDeclaration set_applicationCategory:]
+  -[CRCarPlayAppDeclaration isSystemApp]
+  -[CRCarPlayAppDeclaration requiresGeoSupport]
+  -[CRCarPlayAppDeclaration launchUsingSiri]
+  -[CRCarPlayAppDeclaration launchNotificationsUsingSiri]
+  -[CRCarPlayAppDeclaration setLaunchNotificationsUsingSiri:]
+  -[CRCarPlayAppDeclaration supportsPlayableContent]
+  -[CRCarPlayAppDeclaration supportsMessaging]
+  -[CRCarPlayAppDeclaration supportsCalling]
+  -[CRCarPlayAppDeclaration supportsMaps]
+  -[CRCarPlayAppDeclaration autoMakerProtocols]
+  -[CRCarPlayAppDeclaration _applicationCategory]
+
+
+CRCarPlayAppPolicy : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL carPlaySupported
+ @property  BOOL canDisplayOnCarScreen
+ @property  BOOL launchUsingSiri
+ @property  BOOL launchNotificationsUsingSiri
+ @property  NSDictionary *siriActivationOptions
+ @property  BOOL launchUsingMusicUIService
+ @property  BOOL badgesAppIcon
+ @property  BOOL showsNotifications
+ @property  BOOL handlesCarIntents
+ @property  BOOL launchUsingMapsTemplateUI
+ @property  unsigned long applicationCategory
+
+  // instance methods
+  -[CRCarPlayAppPolicy init]
+  -[CRCarPlayAppPolicy .cxx_destruct]
+  -[CRCarPlayAppPolicy showsNotifications]
+  -[CRCarPlayAppPolicy setShowsNotifications:]
+  -[CRCarPlayAppPolicy setLaunchUsingSiri:]
+  -[CRCarPlayAppPolicy launchUsingSiri]
+  -[CRCarPlayAppPolicy launchNotificationsUsingSiri]
+  -[CRCarPlayAppPolicy setLaunchNotificationsUsingSiri:]
+  -[CRCarPlayAppPolicy setCarPlaySupported:]
+  -[CRCarPlayAppPolicy setCanDisplayOnCarScreen:]
+  -[CRCarPlayAppPolicy setSiriActivationOptions:]
+  -[CRCarPlayAppPolicy setLaunchUsingMusicUIService:]
+  -[CRCarPlayAppPolicy setBadgesAppIcon:]
+  -[CRCarPlayAppPolicy setHandlesCarIntents:]
+  -[CRCarPlayAppPolicy setLaunchUsingMapsTemplateUI:]
+  -[CRCarPlayAppPolicy setApplicationCategory:]
+  -[CRCarPlayAppPolicy isCarPlaySupported]
+  -[CRCarPlayAppPolicy canDisplayOnCarScreen]
+  -[CRCarPlayAppPolicy siriActivationOptions]
+  -[CRCarPlayAppPolicy launchUsingMusicUIService]
+  -[CRCarPlayAppPolicy badgesAppIcon]
+  -[CRCarPlayAppPolicy handlesCarIntents]
+  -[CRCarPlayAppPolicy launchUsingMapsTemplateUI]
+  -[CRCarPlayAppPolicy applicationCategory]
+
+
+CRCarPlayAppPolicyEvaluator : NSObject /usr/lib/libSystem.B.dylib
+ @property  CRCarPlayAppBlacklist *blacklist
+ @property  BOOL geoSupported
+
+  // class methods
+  +[CRCarPlayAppPolicyEvaluator _carIntentIdentifiers]
+
+  // instance methods
+  -[CRCarPlayAppPolicyEvaluator init]
+  -[CRCarPlayAppPolicyEvaluator .cxx_destruct]
+  -[CRCarPlayAppPolicyEvaluator _sessionStatus]
+  -[CRCarPlayAppPolicyEvaluator isGeoSupported]
+  -[CRCarPlayAppPolicyEvaluator setGeoSupported:]
+  -[CRCarPlayAppPolicyEvaluator setBlacklist:]
+  -[CRCarPlayAppPolicyEvaluator _vehicleProtocolsForCertificateSerial:]
+  -[CRCarPlayAppPolicyEvaluator effectivePolicyForAppDeclaration:inVehicleWithCertificateSerial:]
+  -[CRCarPlayAppPolicyEvaluator blacklist]
+  -[CRCarPlayAppPolicyEvaluator _appWithDeclaration:supportsAllIntents:]
+  -[CRCarPlayAppPolicyEvaluator _vehicleProtocolsIntersectAppProtocols:certificateSerial:]
+  -[CRCarPlayAppPolicyEvaluator _appWithDeclaration:supportsAnyIntents:]
+  -[CRCarPlayAppPolicyEvaluator _applicationCategoryForAppDeclaration:policy:]
+  -[CRCarPlayAppPolicyEvaluator effectivePolicyForAppDeclaration:]
+  -[CRCarPlayAppPolicyEvaluator fetchApplicationBundleIdentifiersForCarIntents:]
+
+
+CRVehicleAccessory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *vehicleName
+ @property  NSString *vehicleModelName
+ @property  NSData *certificateSerialNumber
+ @property  NSArray *accessoryProtocols
+ @property  NSString *bluetoothAddress
+ @property  NSNumber *connectionID
+ @property  BOOL supportsUSBCarPlay
+ @property  BOOL supportsWirelessCarPlay
+ @property  BOOL supportsWiredBluetoothPairing
+ @property  BOOL supportsEnhancedIntegration
+ @property  EAAccessory *accessory
+ @property  NSString *PPID
+
+  // instance methods
+  -[CRVehicleAccessory .cxx_destruct]
+  -[CRVehicleAccessory displayName]
+  -[CRVehicleAccessory accessory]
+  -[CRVehicleAccessory setAccessory:]
+  -[CRVehicleAccessory connectionID]
+  -[CRVehicleAccessory bluetoothAddress]
+  -[CRVehicleAccessory setBluetoothAddress:]
+  -[CRVehicleAccessory setConnectionID:]
+  -[CRVehicleAccessory vehicleName]
+  -[CRVehicleAccessory certificateSerialNumber]
+  -[CRVehicleAccessory setCertificateSerialNumber:]
+  -[CRVehicleAccessory setVehicleName:]
+  -[CRVehicleAccessory setSupportsEnhancedIntegration:]
+  -[CRVehicleAccessory setAccessoryProtocols:]
+  -[CRVehicleAccessory setVehicleModelName:]
+  -[CRVehicleAccessory setPPID:]
+  -[CRVehicleAccessory supportsEnhancedIntegration]
+  -[CRVehicleAccessory accessoryProtocols]
+  -[CRVehicleAccessory vehicleModelName]
+  -[CRVehicleAccessory PPID]
+  -[CRVehicleAccessory vehicleAccessoryInfoKeys]
+  -[CRVehicleAccessory supportsWirelessCarPlay]
+  -[CRVehicleAccessory isBluetoothConnected]
+  -[CRVehicleAccessory radarDescription]
+  -[CRVehicleAccessory analyticsDescription]
+  -[CRVehicleAccessory _updateName]
+  -[CRVehicleAccessory beginWiredBluetoothPairing:]
+  -[CRVehicleAccessory requestWiFiCredentials]
+  -[CRVehicleAccessory sendDeviceTransportIdentifiers]
+  -[CRVehicleAccessory supportsUSBCarPlay]
+  -[CRVehicleAccessory setSupportsUSBCarPlay:]
+  -[CRVehicleAccessory setSupportsWirelessCarPlay:]
+  -[CRVehicleAccessory supportsWiredBluetoothPairing]
+  -[CRVehicleAccessory setSupportsWiredBluetoothPairing:]
+
+
+CRVehicleAccessoryManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  EAAccessoryManager *accessoryManager
+ @property  NSMutableDictionary *vehiclesBySerialNumber
+ @property  <CRVehicleAccessoryManagerDelegate> *vehicleAccessoryDelegate
+
+  // class methods
+  +[CRVehicleAccessoryManager _isValidAccessoryMacAddress:]
+  +[CRVehicleAccessoryManager _isVehicleAccessory:]
+  +[CRVehicleAccessoryManager _certificateSerialNumberForAccessory:]
+  +[CRVehicleAccessoryManager vehicleAccessQueue]
+
+  // instance methods
+  -[CRVehicleAccessoryManager init]
+  -[CRVehicleAccessoryManager dealloc]
+  -[CRVehicleAccessoryManager .cxx_destruct]
+  -[CRVehicleAccessoryManager accessoryManager]
+  -[CRVehicleAccessoryManager setAccessoryManager:]
+  -[CRVehicleAccessoryManager connectedAccessories]
+  -[CRVehicleAccessoryManager connectedVehicleAccessories]
+  -[CRVehicleAccessoryManager vehicleAccessoryForCertificateSerial:]
+  -[CRVehicleAccessoryManager setVehiclesBySerialNumber:]
+  -[CRVehicleAccessoryManager handleAccessoryConnect:]
+  -[CRVehicleAccessoryManager handleAccessoryDisconnect:]
+  -[CRVehicleAccessoryManager handleAccessoryInformationUpdate:]
+  -[CRVehicleAccessoryManager _primeConnectedVehicleAccessories]
+  -[CRVehicleAccessoryManager _vehicleForAccessory:]
+  -[CRVehicleAccessoryManager vehiclesBySerialNumber]
+  -[CRVehicleAccessoryManager _updateVehicle:usingAccessory:]
+  -[CRVehicleAccessoryManager vehicleAccessoryDelegate]
+  -[CRVehicleAccessoryManager vehicleAccessoryForiAPConnectionIdentifier:]
+  -[CRVehicleAccessoryManager setVehicleAccessoryDelegate:]
+
+
+CRUsageInformation : NSObject /usr/lib/libSystem.B.dylib
+ @property  CRCarKitServiceClient *serviceClient
+ @property  BOOL shouldSuggestCarPlayTips
+
+  // instance methods
+  -[CRUsageInformation init]
+  -[CRUsageInformation .cxx_destruct]
+  -[CRUsageInformation setServiceClient:]
+  -[CRUsageInformation serviceClient]
+  -[CRUsageInformation shouldSuggestCarPlayTips]
+
+
+CRCarPlayCapabilities : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *version
+ @property  BOOL persisted
+ @property  unsigned long disabledFeature
+ @property  long long nowPlayingAlbumArtMode
+ @property  NSValue *viewAreaInsets
+ @property  NSValue *dashboardRoundedCorners
+ @property  long long userInterfaceStyle
+
+  // class methods
+  +[CRCarPlayCapabilities fetchCarCapabilities]
+  +[CRCarPlayCapabilities capabilitiesIdentifier]
+  +[CRCarPlayCapabilities newCapabilitiesFromGlobalDomain]
+  +[CRCarPlayCapabilities setCapabilitiesIdentifier:]
+  +[CRCarPlayCapabilities setCapabilitiesVersion:]
+  +[CRCarPlayCapabilities capabilitiesVersion]
+  +[CRCarPlayCapabilities _resetCapabilitiesGlobalDomain]
+  +[CRCarPlayCapabilities waitForCarCapabilitiesValues]
+
+  // instance methods
+  -[CRCarPlayCapabilities init]
+  -[CRCarPlayCapabilities isEqual:]
+  -[CRCarPlayCapabilities copyWithZone:]
+  -[CRCarPlayCapabilities .cxx_destruct]
+  -[CRCarPlayCapabilities version]
+  -[CRCarPlayCapabilities dictionaryRepresentation]
+  -[CRCarPlayCapabilities setVersion:]
+  -[CRCarPlayCapabilities userInterfaceStyle]
+  -[CRCarPlayCapabilities initWithDictionaryRepresentation:]
+  -[CRCarPlayCapabilities setUserInterfaceStyle:]
+  -[CRCarPlayCapabilities informativeText]
+  -[CRCarPlayCapabilities isEqualToCapabilities:]
+  -[CRCarPlayCapabilities nowPlayingAlbumArtMode]
+  -[CRCarPlayCapabilities viewAreaInsets]
+  -[CRCarPlayCapabilities dashboardRoundedCorners]
+  -[CRCarPlayCapabilities disabledFeature]
+  -[CRCarPlayCapabilities setPersisted:]
+  -[CRCarPlayCapabilities persistCapabilitiesToGlobalDomain]
+  -[CRCarPlayCapabilities setDisabledFeature:]
+  -[CRCarPlayCapabilities setNowPlayingAlbumArtMode:]
+  -[CRCarPlayCapabilities setViewAreaInsets:]
+  -[CRCarPlayCapabilities setDashboardRoundedCorners:]
+  -[CRCarPlayCapabilities persisted]
+
+
+CARObserverHashTable : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *callbackQueue
+ @property  BOOL hasObservers
+
+  // instance methods
+  -[CARObserverHashTable methodSignatureForSelector:]
+  -[CARObserverHashTable forwardInvocation:]
+  -[CARObserverHashTable hasObservers]
+  -[CARObserverHashTable .cxx_destruct]
+  -[CARObserverHashTable addObserver:]
+  -[CARObserverHashTable removeObserver:]
+  -[CARObserverHashTable callbackQueue]
+  -[CARObserverHashTable initWithProtocol:]
+  -[CARObserverHashTable initWithProtocol:callbackQueue:]
+
+
+CARSessionScreenBorrowToken : NSObject /usr/lib/libSystem.B.dylib
+ @property  CARSession *session
+ @property  NSString *client
+ @property  NSString *reason
+
+  // instance methods
+  -[CARSessionScreenBorrowToken dealloc]
+  -[CARSessionScreenBorrowToken reason]
+  -[CARSessionScreenBorrowToken .cxx_destruct]
+  -[CARSessionScreenBorrowToken client]
+  -[CARSessionScreenBorrowToken session]
+  -[CARSessionScreenBorrowToken unborrowToken]
+  -[CARSessionScreenBorrowToken initWithSession:client:reason:]
+
+
+CARSession : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL authenticated
+ @property  <CARSessionDelegate> *sessionDelegate
+ @property  NSData *MFiCertificateSerialNumber
+ @property  CARInputDeviceManager *inputDeviceManager
+ @property  NSNumber *fallbackNightMode
+ @property  int nightFallbackNotifyToken
+ @property  CARObserverHashTable *observers
+ @property  BOOL requiresCarCapabilitiesValues
+ @property  CARSessionConfiguration *configuration
+ @property  BOOL isPaired
+ @property  NSNumber *electronicTollCollectionAvailable
+ @property  NSNumber *nightMode
+ @property  NSNumber *limitUserInterfaces
+ @property  NSDictionary *APEndPointInfo
+ @property  NSString *sourceVersion
+
+  // class methods
+  +[CARSession _siriRequestEventForEndpointAction:]
+
+  // instance methods
+  -[CARSession dealloc]
+  -[CARSession .cxx_destruct]
+  -[CARSession endpoint]
+  -[CARSession addObserver:]
+  -[CARSession removeObserver:]
+  -[CARSession configuration]
+  -[CARSession isAuthenticated]
+  -[CARSession setObservers:]
+  -[CARSession observers]
+  -[CARSession inputDeviceManager]
+  -[CARSession nightMode]
+  -[CARSession setInputMode:forInputDevice:]
+  -[CARSession limitUserInterfaces]
+  -[CARSession setSessionDelegate:]
+  -[CARSession sourceVersion]
+  -[CARSession isPaired]
+  -[CARSession recognizingSpeech]
+  -[CARSession MFiCertificateSerialNumber]
+  -[CARSession requestCarUI]
+  -[CARSession requestCarUIForURL:]
+  -[CARSession borrowScreenForClient:reason:]
+  -[CARSession takeScreenForClient:reason:]
+  -[CARSession takeScreenForConnection]
+  -[CARSession sendCommand:withParameters:]
+  -[CARSession _performExtendedEndpointAction:]
+  -[CARSession _newObserverAdded:]
+  -[CARSession _fetchAuthenticationStatus]
+  -[CARSession _updateConfiguration]
+  -[CARSession _handleViewAreaChangeWithPayload:]
+  -[CARSession _updateScreenInfo:currentViewAreaToViewArea:duration:transitionControlType:]
+  -[CARSession _fetchFallbackIsNightWithToken:]
+  -[CARSession electronicTollCollectionAvailable]
+  -[CARSession _capabilitiesIdentifier]
+  -[CARSession requiresCarCapabilitiesValues]
+  -[CARSession setRequiresCarCapabilitiesValues:]
+  -[CARSession _endpointValueForKey:]
+  -[CARSession systemNightMode]
+  -[CARSession fallbackNightMode]
+  -[CARSession setFallbackNightMode:]
+  -[CARSession _setEndpointValue:forKey:]
+  -[CARSession lastNavigatingBundleIdentifier]
+  -[CARSession initWithFigEndpoint:requiresCarCapabilities:]
+  -[CARSession _fig_safe_description]
+  -[CARSession APEndPointInfo]
+  -[CARSession _handleOpenURL:]
+  -[CARSession _handleSiriRequestEvent:withPayload:]
+  -[CARSession requestAdjacentViewAreaForScreenID:]
+  -[CARSession _handleShowUIWithParameters:]
+  -[CARSession _handleStopUIWithParameters:]
+  -[CARSession setSiriForwardingEnabled:]
+  -[CARSession carOwnsScreen]
+  -[CARSession carOwnsMainAudio]
+  -[CARSession navigationOwner]
+  -[CARSession requestTurnByTurnOwnership]
+  -[CARSession releaseTurnByTurnOwnership]
+  -[CARSession unborrowScreenForToken:]
+  -[CARSession suggestUI:]
+  -[CARSession sessionDelegate]
+  -[CARSession setInputDeviceManager:]
+  -[CARSession nightFallbackNotifyToken]
+  -[CARSession setNightFallbackNotifyToken:]
+
+
+CARSessionChangedNotificationConverter : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CARSessionChangedNotificationConverter sharedInstance]
+
+  // instance methods
+  -[CARSessionChangedNotificationConverter init]
+  -[CARSessionChangedNotificationConverter dealloc]
+
+
+CARSessionStatus : NSObject /usr/lib/libSystem.B.dylib
+ @property  CARSession *session
+ @property  CARSessionChangedNotificationConverter *notificationConverter
+ @property  NSObject<OS_dispatch_source> *connectingTimer
+ @property  unsigned long timeoutInterval
+ @property  BOOL requiresCarCapabilitiesValues
+ @property  CARSession *currentSession
+ @property  <CARSessionObserving> *sessionObserver
+
+  // class methods
+  +[CARSessionStatus sessionUpdatesQueue]
+
+  // instance methods
+  -[CARSessionStatus init]
+  -[CARSessionStatus dealloc]
+  -[CARSessionStatus .cxx_destruct]
+  -[CARSessionStatus session]
+  -[CARSessionStatus setSession:]
+  -[CARSessionStatus setTimeoutInterval:]
+  -[CARSessionStatus timeoutInterval]
+  -[CARSessionStatus currentSession]
+  -[CARSessionStatus waitForSessionInitialization]
+  -[CARSessionStatus initAndWaitUntilSessionUpdated]
+  -[CARSessionStatus setSessionObserver:]
+  -[CARSessionStatus requiresCarCapabilitiesValues]
+  -[CARSessionStatus setRequiresCarCapabilitiesValues:]
+  -[CARSessionStatus _handleConnectingTimeout]
+  -[CARSessionStatus setConnectingTimer:]
+  -[CARSessionStatus setNotificationConverter:]
+  -[CARSessionStatus _handleAuthenticationSucceeded:]
+  -[CARSessionStatus _handleSessionChanged]
+  -[CARSessionStatus _handleConfigurationUpdated:]
+  -[CARSessionStatus _handleCarCapabilitiesUpdated:]
+  -[CARSessionStatus _updateSession]
+  -[CARSessionStatus _notifyStartedConnectionAttemptOnTransport:]
+  -[CARSessionStatus _startConnectingTimer]
+  -[CARSessionStatus _notifyDidUpdateSession:]
+  -[CARSessionStatus _stopConnectingTimer]
+  -[CARSessionStatus _notifyDidDisconnectSession:]
+  -[CARSessionStatus _notifyDidConnectSession:]
+  -[CARSessionStatus connectingTimer]
+  -[CARSessionStatus _notifyCancelledConnectionAttemptOnTransport:]
+  -[CARSessionStatus sessionObserver]
+  -[CARSessionStatus initAndWaitUntilCarCapabilitiesUpdate]
+  -[CARSessionStatus _handleInCarNotification]
+  -[CARSessionStatus notificationConverter]
+
+
+CARNavigationOwnershipManager : NSObject /usr/lib/libSystem.B.dylib <CRCarPlayNavigationOwnerClient>
+ @property  NSXPCConnection *connection
+ @property  BOOL ownershipRequested
+ @property  NSString *identifier
+ @property  <CARNavigationOwnershipManagerDelegate> *delegate
+ @property  unsigned long owner
+ @property  NSString *lastNavigatingBundleIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CARNavigationOwnershipManager dealloc]
+  -[CARNavigationOwnershipManager delegate]
+  -[CARNavigationOwnershipManager setDelegate:]
+  -[CARNavigationOwnershipManager .cxx_destruct]
+  -[CARNavigationOwnershipManager identifier]
+  -[CARNavigationOwnershipManager setIdentifier:]
+  -[CARNavigationOwnershipManager connection]
+  -[CARNavigationOwnershipManager owner]
+  -[CARNavigationOwnershipManager setConnection:]
+  -[CARNavigationOwnershipManager initWithIdentifier:delegate:]
+  -[CARNavigationOwnershipManager _setupConnection]
+  -[CARNavigationOwnershipManager lastNavigatingBundleIdentifier]
+  -[CARNavigationOwnershipManager setOwnershipRequested:]
+  -[CARNavigationOwnershipManager navigationOwnershipChangedTo:]
+  -[CARNavigationOwnershipManager _handleConnectionReset]
+  -[CARNavigationOwnershipManager ownershipRequested]
+  -[CARNavigationOwnershipManager requestNavigationOwnership]
+  -[CARNavigationOwnershipManager releaseNavigationOwnership]
+
+
+CARInputDeviceTouchpad : CARInputDevice
+ @property  double sensitivity
+ @property  <CARInputDeviceTouchpadDelegate> *delegate
+ @property  {CGSize=dd} physicalSize
+ @property  BOOL characterRecognitionSupported
+ @property  BOOL feedbackSupported
+ @property  unsigned long supportedFeedbackTypes
+
+  // class methods
+  +[CARInputDeviceTouchpad physicalSizeForTouchpadWithDigitizerProperties:]
+
+  // instance methods
+  -[CARInputDeviceTouchpad delegate]
+  -[CARInputDeviceTouchpad setDelegate:]
+  -[CARInputDeviceTouchpad .cxx_destruct]
+  -[CARInputDeviceTouchpad _setDelegate:]
+  -[CARInputDeviceTouchpad sensitivity]
+  -[CARInputDeviceTouchpad physicalSize]
+  -[CARInputDeviceTouchpad supportedFeedbackTypes]
+  -[CARInputDeviceTouchpad feedbackSupported]
+  -[CARInputDeviceTouchpad performFeedbackOfType:]
+  -[CARInputDeviceTouchpad _physicalSizeForTouchpadServiceClient:]
+  -[CARInputDeviceTouchpad _characterRecognitionSupportedForServiceClient:]
+  -[CARInputDeviceTouchpad characterRecognitionSupported]
+  -[CARInputDeviceTouchpad setSensitivity:]
+  -[CARInputDeviceTouchpad initWithServiceClient:UUID:settings:delegate:]
+  -[CARInputDeviceTouchpad updateSettingsWithSettings:]
+  -[CARInputDeviceTouchpad _initWithSupportedHapticTypes:physicalSize:characterRecognitionSupported:senderID:UUID:]
+
+
+CARInputDeviceManager : NSObject /usr/lib/libSystem.B.dylib <CARInputDeviceTouchpadDelegate>
+ @property  CARSession *session
+ @property  NSArray *inputDevices
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CARInputDeviceManager .cxx_destruct]
+  -[CARInputDeviceManager session]
+  -[CARInputDeviceManager touchpadWithSenderID:]
+  -[CARInputDeviceManager inputDevices]
+  -[CARInputDeviceManager initWithEndpointInputDevices:screenIDs:vehicleInformation:session:]
+  -[CARInputDeviceManager vehicleInformationChanged:]
+  -[CARInputDeviceManager performHapticType:deviceUUID:]
+  -[CARInputDeviceManager _generateInputDevicesWithEndpointInputDevices:screenIDs:vehicleInformation:]
+  -[CARInputDeviceManager _touchpadSettingsFromVehicleInformation:]
+  -[CARInputDeviceManager _updateTouchpadSettings:]
+  -[CARInputDeviceManager _enumerateTouchpadsUsingBlock:]
+  -[CARInputDeviceManager _inputDeviceWithSenderID:]
+  -[CARInputDeviceManager touchpadCharacterRecognitionSupported]
+  -[CARInputDeviceManager _initWithInputDevices:session:]
+
+
+NSDictionary(CARMutableDeepCopy)
+	// instance methods
+	-[NSDictionary(CARMutableDeepCopy) carMutableDeepCopy]
+
+NSArray(CARMutableDeepCopy)
+	// instance methods
+	-[NSArray(CARMutableDeepCopy) carMutableDeepCopy]
+
+EAAccessory(CARDescribing)
+	// instance methods
+	-[EAAccessory(CARDescribing) CARVehicleAccessoryInfoKeys]
+	-[EAAccessory(CARDescribing) CARAnalyticsDescription]
+
+01 00 0600 /System/Library/Frameworks/CoreMotion.framework/CoreMotion: CMVehicleState 
+01 00 0c00 /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory: EAAccessory 
+01 00 0c00 /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory: EAAccessoryManager 
+01 00 0300 /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice: FMDFMIPManager 
+01 00 0400 /System/Library/PrivateFrameworks/IAP.framework/IAP: IAPNavigation 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSBundleInfoCachedValues 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSBundleProxy 
+01 00 1200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSPlugInKitProxy 
+01 00 0d00 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtension 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMethodSignature 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

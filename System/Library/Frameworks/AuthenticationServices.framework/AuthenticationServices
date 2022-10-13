@@ -1,0 +1,767 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ASAuthorizationProviderExtensionAuthorizationRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_ASAuthorizationProviderExtensionAuthorizationRequest
+|| __DATA_CONST.__const _ASAuthorizationAppleIDProviderCredentialRevokedNotification
+|| __DATA_CONST.__const _ASAuthorizationErrorDomain
+|| __DATA_CONST.__const _ASAuthorizationOperationImplicit
+|| __DATA_CONST.__const _ASAuthorizationOperationLogin
+|| __DATA_CONST.__const _ASAuthorizationOperationLogout
+|| __DATA_CONST.__const _ASAuthorizationOperationRefresh
+|| __DATA_CONST.__const _ASAuthorizationScopeEmail
+|| __DATA_CONST.__const _ASAuthorizationScopeFullName
+|| __DATA_CONST.__const _ASCredentialIdentityStoreErrorDomain
+|| __DATA_CONST.__const _ASExtensionErrorDomain
+|| __DATA_CONST.__const _ASWebAuthenticationSessionErrorDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorization
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationAppleIDButton
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationAppleIDCredential
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationAppleIDProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationAppleIDRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationOpenIDRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationPasswordProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationPasswordRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationSingleSignOnCredential
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationSingleSignOnProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASAuthorizationSingleSignOnRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASCredentialIdentityStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASCredentialIdentityStoreState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASCredentialProviderExtensionContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASCredentialProviderViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASCredentialServiceIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASPasswordCredential
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASPasswordCredentialIdentity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ASWebAuthenticationSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__ASCredentialListViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__ASCredentialProviderExtensionConfigurationViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__ASCredentialProviderExtensionHostContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__ASExtensionViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__ASPasswordCredentialAuthenticationViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorization
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationAppleIDButton
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationAppleIDCredential
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationAppleIDProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationAppleIDRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationOpenIDRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationPasswordProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationPasswordRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationSingleSignOnCredential
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationSingleSignOnProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASAuthorizationSingleSignOnRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASCredentialIdentityStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASCredentialIdentityStoreState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASCredentialProviderExtensionContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASCredentialProviderViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASCredentialServiceIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASPasswordCredential
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASPasswordCredentialIdentity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ASWebAuthenticationSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__ASCredentialListViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__ASCredentialProviderExtensionConfigurationViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__ASCredentialProviderExtensionHostContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__ASExtensionViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__ASPasswordCredentialAuthenticationViewController
+__ AppSSO: _OBJC_CLASS_$_SOAuthorization
+__ AppSSO: _OBJC_CLASS_$_SOAuthorizationParameters
+__ AuthKit: _AKAppleIDAuthenticationErrorDomain
+__ AuthKit: _AKAuthorizationScopeEmail
+__ AuthKit: _AKAuthorizationScopeFullName
+__ AuthKit: _OBJC_CLASS_$_AKAuthorizationController
+__ AuthKit: _OBJC_CLASS_$_AKAuthorizationCredential
+__ AuthKit: _OBJC_CLASS_$_AKAuthorizationCredentialStateRequest
+__ AuthKit: _OBJC_CLASS_$_AKAuthorizationNotificationService
+__ AuthKit: _OBJC_CLASS_$_AKAuthorizationRequest
+__ AuthKit: _OBJC_CLASS_$_AKCredentialRequestContext
+__ AuthKit: _OBJC_CLASS_$_AKPasswordCredential
+__ AuthKit: _OBJC_CLASS_$_AKPasswordRequest
+__ AuthKitUI: _AKCreateAppleIDButtonImageWithCornerRadius
+__ CoreFoundation: _NSRunLoopCommonModes
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreGraphics: _CGContextDrawImage
+__ CoreGraphics: _CGImageRelease
+__ CoreGraphics: _CGPointZero
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSDebugDescriptionErrorKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExtensionContext
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPersonNameComponents
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSExtensionContext
+__ QuartzCore: _OBJC_CLASS_$_CABasicAnimation
+__ QuartzCore: _OBJC_CLASS_$_CAFilter
+__ QuartzCore: _OBJC_CLASS_$_CAShapeLayer
+__ QuartzCore: _kCAFillModeForwards
+__ QuartzCore: _kCAFilterMultiplyColor
+__ SafariCore: __WBSLocalizedString
+__ SafariFoundation: _OBJC_CLASS_$_SFCredentialProviderExtensionHelperProxy
+__ SafariFoundation: _OBJC_CLASS_$_SFCredentialProviderExtensionManager
+__ SafariFoundation: _OBJC_CLASS_$_SFPasswordCredentialIdentity
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIControl
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_METACLASS_$_UIControl
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ UIKit: _UIAccessibilityTraitButton
+__ UIKit: _UIGraphicsGetCurrentContext
+__ UIKit: _UISceneDidEnterBackgroundNotification
+__ UIKit: __UIApplicationIsExtension
+__ UIKit: ___UIApplicationLinkedOnOrAfter
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dyld_get_program_min_os_version
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_getMethodImplementation
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _object_getClassName
+ASAuthorizationAppleIDProvider : NSObject /usr/lib/libSystem.B.dylib <AKAuthorizationNotificationHandler, ASAuthorizationProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASAuthorizationAppleIDProvider initialize]
+
+  // instance methods
+  -[ASAuthorizationAppleIDProvider credentialStateDidChange:completion:]
+  -[ASAuthorizationAppleIDProvider createRequest]
+  -[ASAuthorizationAppleIDProvider getCredentialStateForUserID:completion:]
+
+
+ASCredentialIdentityStoreState : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL enabled
+ @property  BOOL supportsIncrementalUpdates
+
+  // instance methods
+  -[ASCredentialIdentityStoreState isEnabled]
+  -[ASCredentialIdentityStoreState initWithEnabledState:supportsIncrementalUpdates:]
+  -[ASCredentialIdentityStoreState supportsIncrementalUpdates]
+
+
+ASCredentialProviderViewController : UIViewController /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
+ @property  ASCredentialProviderExtensionContext *extensionContext
+
+  // instance methods
+  -[ASCredentialProviderViewController extensionContext]
+  -[ASCredentialProviderViewController prepareCredentialListForServiceIdentifiers:]
+  -[ASCredentialProviderViewController provideCredentialWithoutUserInteractionForIdentity:]
+  -[ASCredentialProviderViewController prepareInterfaceToProvideCredentialForIdentity:]
+  -[ASCredentialProviderViewController prepareInterfaceForExtensionConfiguration]
+
+
+ASCredentialIdentityStore : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[ASCredentialIdentityStore sharedStore]
+
+  // instance methods
+  -[ASCredentialIdentityStore .cxx_destruct]
+  -[ASCredentialIdentityStore saveCredentialIdentities:completion:]
+  -[ASCredentialIdentityStore removeCredentialIdentities:completion:]
+  -[ASCredentialIdentityStore removeAllCredentialIdentitiesWithCompletion:]
+  -[ASCredentialIdentityStore replaceCredentialIdentitiesWithIdentities:completion:]
+  -[ASCredentialIdentityStore _initCredentialIdentityStore]
+  -[ASCredentialIdentityStore getCredentialIdentityStoreStateWithCompletion:]
+
+
+ASAuthorizationSingleSignOnCredential : NSObject /usr/lib/libSystem.B.dylib <ASAuthorizationCredential>
+ @property  NSString *state
+ @property  NSData *accessToken
+ @property  NSData *identityToken
+ @property  NSArray *authorizedScopes
+ @property  NSHTTPURLResponse *authenticatedResponse
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASAuthorizationSingleSignOnCredential new]
+  +[ASAuthorizationSingleSignOnCredential supportsSecureCoding]
+  +[ASAuthorizationSingleSignOnCredential emptyCredential]
+
+  // instance methods
+  -[ASAuthorizationSingleSignOnCredential init]
+  -[ASAuthorizationSingleSignOnCredential copyWithZone:]
+  -[ASAuthorizationSingleSignOnCredential encodeWithCoder:]
+  -[ASAuthorizationSingleSignOnCredential initWithCoder:]
+  -[ASAuthorizationSingleSignOnCredential .cxx_destruct]
+  -[ASAuthorizationSingleSignOnCredential state]
+  -[ASAuthorizationSingleSignOnCredential identityToken]
+  -[ASAuthorizationSingleSignOnCredential accessToken]
+  -[ASAuthorizationSingleSignOnCredential authorizedScopes]
+  -[ASAuthorizationSingleSignOnCredential initWithAuthenticatedResponse:]
+  -[ASAuthorizationSingleSignOnCredential authenticatedResponse]
+
+
+ASAuthorization : NSObject /usr/lib/libSystem.B.dylib
+ @property  <ASAuthorizationProvider> *provider
+ @property  <ASAuthorizationCredential> *credential
+
+  // class methods
+  +[ASAuthorization new]
+
+  // instance methods
+  -[ASAuthorization init]
+  -[ASAuthorization .cxx_destruct]
+  -[ASAuthorization provider]
+  -[ASAuthorization credential]
+  -[ASAuthorization initWithProvider:credential:]
+
+
+ASAuthorizationAppleIDCredential : NSObject /usr/lib/libSystem.B.dylib <ASAuthorizationCredential>
+ @property  NSData *accessToken
+ @property  NSData *refreshToken
+ @property  NSData *identityToken
+ @property  NSData *authorizationCode
+ @property  NSString *state
+ @property  NSString *email
+ @property  NSPersonNameComponents *fullName
+ @property  long long realUserStatus
+ @property  NSString *user
+ @property  NSArray *authorizedScopes
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASAuthorizationAppleIDCredential new]
+  +[ASAuthorizationAppleIDCredential supportsSecureCoding]
+
+  // instance methods
+  -[ASAuthorizationAppleIDCredential init]
+  -[ASAuthorizationAppleIDCredential copyWithZone:]
+  -[ASAuthorizationAppleIDCredential user]
+  -[ASAuthorizationAppleIDCredential encodeWithCoder:]
+  -[ASAuthorizationAppleIDCredential initWithCoder:]
+  -[ASAuthorizationAppleIDCredential .cxx_destruct]
+  -[ASAuthorizationAppleIDCredential state]
+  -[ASAuthorizationAppleIDCredential setState:]
+  -[ASAuthorizationAppleIDCredential fullName]
+  -[ASAuthorizationAppleIDCredential identityToken]
+  -[ASAuthorizationAppleIDCredential email]
+  -[ASAuthorizationAppleIDCredential setEmail:]
+  -[ASAuthorizationAppleIDCredential setAccessToken:]
+  -[ASAuthorizationAppleIDCredential accessToken]
+  -[ASAuthorizationAppleIDCredential setFullName:]
+  -[ASAuthorizationAppleIDCredential setIdentityToken:]
+  -[ASAuthorizationAppleIDCredential authorizedScopes]
+  -[ASAuthorizationAppleIDCredential authorizationCode]
+  -[ASAuthorizationAppleIDCredential refreshToken]
+  -[ASAuthorizationAppleIDCredential setRefreshToken:]
+  -[ASAuthorizationAppleIDCredential initWithUser:authorizedScopes:]
+  -[ASAuthorizationAppleIDCredential setAuthorizationCode:]
+  -[ASAuthorizationAppleIDCredential setRealUserStatus:]
+  -[ASAuthorizationAppleIDCredential realUserStatus]
+
+
+ASAuthorizationRequest : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  <ASAuthorizationProvider> *provider
+
+  // class methods
+  +[ASAuthorizationRequest new]
+  +[ASAuthorizationRequest supportsSecureCoding]
+
+  // instance methods
+  -[ASAuthorizationRequest init]
+  -[ASAuthorizationRequest copyWithZone:]
+  -[ASAuthorizationRequest encodeWithCoder:]
+  -[ASAuthorizationRequest initWithCoder:]
+  -[ASAuthorizationRequest .cxx_destruct]
+  -[ASAuthorizationRequest provider]
+  -[ASAuthorizationRequest initWithProvider:]
+
+
+ASAuthorizationSingleSignOnProvider : NSObject /usr/lib/libSystem.B.dylib <ASAuthorizationProvider>
+ @property  NSURL *url
+ @property  BOOL canPerformAuthorization
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASAuthorizationSingleSignOnProvider new]
+  +[ASAuthorizationSingleSignOnProvider authorizationProviderWithIdentityProviderURL:]
+
+  // instance methods
+  -[ASAuthorizationSingleSignOnProvider init]
+  -[ASAuthorizationSingleSignOnProvider initWithURL:]
+  -[ASAuthorizationSingleSignOnProvider .cxx_destruct]
+  -[ASAuthorizationSingleSignOnProvider url]
+  -[ASAuthorizationSingleSignOnProvider canPerformAuthorization]
+  -[ASAuthorizationSingleSignOnProvider createRequest]
+
+
+ASWebAuthenticationSession : NSObject /usr/lib/libSystem.B.dylib
+ @property  <ASWebAuthenticationPresentationContextProviding> *presentationContextProvider
+ @property  BOOL prefersEphemeralWebBrowserSession
+
+  // instance methods
+  -[ASWebAuthenticationSession _invalidate]
+  -[ASWebAuthenticationSession .cxx_destruct]
+  -[ASWebAuthenticationSession cancel]
+  -[ASWebAuthenticationSession start]
+  -[ASWebAuthenticationSession initWithURL:callbackURLScheme:usingEphemeralSession:completionHandler:]
+  -[ASWebAuthenticationSession initWithURL:callbackURLScheme:completionHandler:]
+  -[ASWebAuthenticationSession prefersEphemeralWebBrowserSession]
+  -[ASWebAuthenticationSession setPrefersEphemeralWebBrowserSession:]
+  -[ASWebAuthenticationSession setPresentationContextProvider:]
+  -[ASWebAuthenticationSession presentationContextProvider]
+
+
+ASAuthorizationAppleIDRequest : ASAuthorizationOpenIDRequest
+ @property  NSString *user
+
+  // instance methods
+  -[ASAuthorizationAppleIDRequest user]
+  -[ASAuthorizationAppleIDRequest .cxx_destruct]
+  -[ASAuthorizationAppleIDRequest setUser:]
+
+
+_ASCredentialProviderExtensionHostContext : NSExtensionContext /usr/lib/libobjc.A.dylib <_ASCredentialProviderExtensionHostContextProtocol>
+ @property  <_ASCredentialProviderExtensionHostContextDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[_ASCredentialProviderExtensionHostContext _extensionAuxiliaryHostProtocol]
+  +[_ASCredentialProviderExtensionHostContext _extensionAuxiliaryVendorProtocol]
+
+  // instance methods
+  -[_ASCredentialProviderExtensionHostContext delegate]
+  -[_ASCredentialProviderExtensionHostContext setDelegate:]
+  -[_ASCredentialProviderExtensionHostContext .cxx_destruct]
+  -[_ASCredentialProviderExtensionHostContext prepareToCompleteRequestWithSelectedCredential:completion:]
+  -[_ASCredentialProviderExtensionHostContext prepareToCompleteExtensionConfigurationRequestWithCompletion:]
+  -[_ASCredentialProviderExtensionHostContext prepareToCancelRequestWithError:completion:]
+
+
+ASPasswordCredential : NSObject /usr/lib/libSystem.B.dylib <ASAuthorizationCredential>
+ @property  NSString *user
+ @property  NSString *password
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASPasswordCredential supportsSecureCoding]
+  +[ASPasswordCredential credentialWithUser:password:]
+
+  // instance methods
+  -[ASPasswordCredential copyWithZone:]
+  -[ASPasswordCredential user]
+  -[ASPasswordCredential encodeWithCoder:]
+  -[ASPasswordCredential initWithCoder:]
+  -[ASPasswordCredential password]
+  -[ASPasswordCredential .cxx_destruct]
+  -[ASPasswordCredential initWithUser:password:]
+
+
+_ASCredentialProviderExtensionConfigurationViewController : _ASExtensionViewController
+ @property  <_ASCredentialProviderExtensionConfigurationViewControllerDelegate> *delegate
+
+  // instance methods
+  -[_ASCredentialProviderExtensionConfigurationViewController delegate]
+  -[_ASCredentialProviderExtensionConfigurationViewController setDelegate:]
+  -[_ASCredentialProviderExtensionConfigurationViewController .cxx_destruct]
+  -[_ASCredentialProviderExtensionConfigurationViewController prepareToCompleteExtensionConfigurationRequestWithHost:completion:]
+  -[_ASCredentialProviderExtensionConfigurationViewController _finishWithSuccess:completion:]
+  -[_ASCredentialProviderExtensionConfigurationViewController beginConfiguringExtension]
+  -[_ASCredentialProviderExtensionConfigurationViewController _requestDidFailWithError:completion:]
+
+
+_ASExtensionViewController : UIViewController /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore <_ASCredentialProviderExtensionHostContextDelegate>
+ @property  NSExtension *extension
+ @property  BOOL dismissOnBackground
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_ASExtensionViewController .cxx_destruct]
+  -[_ASExtensionViewController childViewControllerForStatusBarStyle]
+  -[_ASExtensionViewController childViewControllerForStatusBarHidden]
+  -[_ASExtensionViewController childViewControllerForWhitePointAdaptivityStyle]
+  -[_ASExtensionViewController childViewControllerForScreenEdgesDeferringSystemGestures]
+  -[_ASExtensionViewController childViewControllerForHomeIndicatorAutoHidden]
+  -[_ASExtensionViewController extension]
+  -[_ASExtensionViewController initWithExtension:]
+  -[_ASExtensionViewController setDismissOnBackground:]
+  -[_ASExtensionViewController _setRemoteViewController:]
+  -[_ASExtensionViewController prepareToCancelRequestWithHostContext:error:completion:]
+  -[_ASExtensionViewController _beginRequestWithConnectionHandler:]
+  -[_ASExtensionViewController _requestDidFailWithError:completion:]
+  -[_ASExtensionViewController _invalidateNonUIRequestTimerIfNeeded]
+  -[_ASExtensionViewController _nonUIRequestTimedOut]
+  -[_ASExtensionViewController _nonUIRequestDidRequireUserInteraction]
+  -[_ASExtensionViewController _beginNonUIRequest:connectionHandler:]
+  -[_ASExtensionViewController dismissOnBackground]
+
+
+ASAuthorizationController : NSObject /usr/lib/libSystem.B.dylib <SOAuthorizationDelegate>
+ @property  NSArray *authorizationRequests
+ @property  <ASAuthorizationControllerDelegate> *delegate
+ @property  <ASAuthorizationControllerPresentationContextProviding> *presentationContextProvider
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASAuthorizationController new]
+
+  // instance methods
+  -[ASAuthorizationController init]
+  -[ASAuthorizationController delegate]
+  -[ASAuthorizationController setDelegate:]
+  -[ASAuthorizationController .cxx_destruct]
+  -[ASAuthorizationController authorizationDidNotHandle:]
+  -[ASAuthorizationController authorizationDidCancel:]
+  -[ASAuthorizationController authorizationDidComplete:]
+  -[ASAuthorizationController authorization:didCompleteWithHTTPAuthorizationHeaders:]
+  -[ASAuthorizationController authorization:didCompleteWithHTTPResponse:httpBody:]
+  -[ASAuthorizationController authorization:didCompleteWithError:]
+  -[ASAuthorizationController setPresentationContextProvider:]
+  -[ASAuthorizationController presentationContextProvider]
+  -[ASAuthorizationController _authKitRequests]
+  -[ASAuthorizationController _authorizationFromAuthKitResult:]
+  -[ASAuthorizationController _finishAppSSO]
+  -[ASAuthorizationController initWithAuthorizationRequests:]
+  -[ASAuthorizationController performRequests]
+  -[ASAuthorizationController authorizationRequests]
+
+
+ASCredentialServiceIdentifier : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *identifier
+ @property  long long type
+
+  // class methods
+  +[ASCredentialServiceIdentifier supportsSecureCoding]
+
+  // instance methods
+  -[ASCredentialServiceIdentifier copyWithZone:]
+  -[ASCredentialServiceIdentifier type]
+  -[ASCredentialServiceIdentifier encodeWithCoder:]
+  -[ASCredentialServiceIdentifier initWithCoder:]
+  -[ASCredentialServiceIdentifier .cxx_destruct]
+  -[ASCredentialServiceIdentifier identifier]
+  -[ASCredentialServiceIdentifier initWithIdentifier:type:]
+
+
+ASEmpty : NSObject /usr/lib/libSystem.B.dylib
+
+ASBackgroundObserver : NSObject /usr/lib/libSystem.B.dylib
+ @property  UIViewController *viewController
+ @property  @? block
+
+  // instance methods
+  -[ASBackgroundObserver dealloc]
+  -[ASBackgroundObserver .cxx_destruct]
+  -[ASBackgroundObserver block]
+  -[ASBackgroundObserver viewController]
+  -[ASBackgroundObserver _hostDidEnterBackground:]
+  -[ASBackgroundObserver _sceneDidEnterBackground:]
+  -[ASBackgroundObserver initWithViewController:block:]
+
+
+ASAuthorizationProviderExtensionAuthorizationRequest : NSObject /usr/lib/libSystem.B.dylib
+ @property  SOAuthorizationRequest *authorizationRequest
+ @property  NSURL *url
+ @property  NSString *requestedOperation
+ @property  NSDictionary *httpHeaders
+ @property  NSData *httpBody
+ @property  NSString *realm
+ @property  NSDictionary *extensionData
+ @property  NSString *callerBundleIdentifier
+ @property  NSDictionary *authorizationOptions
+
+  // instance methods
+  -[ASAuthorizationProviderExtensionAuthorizationRequest .cxx_destruct]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest cancel]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest url]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest complete]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest realm]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest completeWithError:]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest authorizationRequest]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest httpBody]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest httpHeaders]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest authorizationOptions]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest requestedOperation]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest doNotHandle]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest completeWithHTTPAuthorizationHeaders:]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest completeWithHTTPResponse:httpBody:]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest presentAuthorizationViewControllerWithCompletion:]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest extensionData]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest callerBundleIdentifier]
+  -[ASAuthorizationProviderExtensionAuthorizationRequest initWithAuthorizationRequest:]
+
+
+ASAuthorizationAppleIDButton : UIControl /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
+ @property  double cornerRadius
+
+  // class methods
+  +[ASAuthorizationAppleIDButton layerClass]
+  +[ASAuthorizationAppleIDButton buttonWithType:style:]
+  +[ASAuthorizationAppleIDButton defaultCornerRadius]
+
+  // instance methods
+  -[ASAuthorizationAppleIDButton encodeWithCoder:]
+  -[ASAuthorizationAppleIDButton initWithCoder:]
+  -[ASAuthorizationAppleIDButton .cxx_destruct]
+  -[ASAuthorizationAppleIDButton intrinsicContentSize]
+  -[ASAuthorizationAppleIDButton initWithFrame:]
+  -[ASAuthorizationAppleIDButton setCornerRadius:]
+  -[ASAuthorizationAppleIDButton accessibilityLabel]
+  -[ASAuthorizationAppleIDButton accessibilityTraits]
+  -[ASAuthorizationAppleIDButton isAccessibilityElement]
+  -[ASAuthorizationAppleIDButton layoutSubviews]
+  -[ASAuthorizationAppleIDButton setHighlighted:]
+  -[ASAuthorizationAppleIDButton cornerRadius]
+  -[ASAuthorizationAppleIDButton drawRect:]
+  -[ASAuthorizationAppleIDButton _createHighlightFilterIfNecessary]
+  -[ASAuthorizationAppleIDButton initWithAuthorizationButtonType:authorizationButtonStyle:]
+  -[ASAuthorizationAppleIDButton _drawRect:inView:]
+  -[ASAuthorizationAppleIDButton _ak_buttonType]
+  -[ASAuthorizationAppleIDButton _ak_buttonStyle]
+  -[ASAuthorizationAppleIDButton _performAnimationToSetHighlighted:]
+
+
+ASAuthorizationPasswordRequest : ASAuthorizationRequest
+
+_ASPasswordCredentialAuthenticationViewController : _ASExtensionViewController
+ @property  <_ASPasswordCredentialAuthenticationViewControllerDelegate> *delegate
+
+  // instance methods
+  -[_ASPasswordCredentialAuthenticationViewController delegate]
+  -[_ASPasswordCredentialAuthenticationViewController setDelegate:]
+  -[_ASPasswordCredentialAuthenticationViewController .cxx_destruct]
+  -[_ASPasswordCredentialAuthenticationViewController initWithExtension:credentialIdentity:]
+  -[_ASPasswordCredentialAuthenticationViewController prepareToCompleteRequestWithHostContext:credential:completion:]
+  -[_ASPasswordCredentialAuthenticationViewController _requestDidFailWithError:completion:]
+  -[_ASPasswordCredentialAuthenticationViewController _nonUIRequestDidRequireUserInteraction]
+  -[_ASPasswordCredentialAuthenticationViewController _finishWithCredential:error:completion:]
+
+
+ASCredentialProviderExtensionContext : NSExtensionContext /usr/lib/libobjc.A.dylib <_ASCredentialProviderExtensionContextProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ASCredentialProviderExtensionContext _extensionAuxiliaryHostProtocol]
+  +[ASCredentialProviderExtensionContext _extensionAuxiliaryVendorProtocol]
+
+  // instance methods
+  -[ASCredentialProviderExtensionContext cancelRequestWithError:]
+  -[ASCredentialProviderExtensionContext prepareCredentialListForServiceIdentifiers:]
+  -[ASCredentialProviderExtensionContext provideCredentialWithoutUserInteractionForIdentity:]
+  -[ASCredentialProviderExtensionContext prepareInterfaceToProvideCredentialForIdentity:]
+  -[ASCredentialProviderExtensionContext prepareInterfaceForExtensionConfiguration]
+  -[ASCredentialProviderExtensionContext completeRequestWithSelectedCredential:completionHandler:]
+  -[ASCredentialProviderExtensionContext completeExtensionConfigurationRequest]
+
+
+ASAuthorizationPasswordProvider : NSObject /usr/lib/libSystem.B.dylib <ASAuthorizationProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[ASAuthorizationPasswordProvider createRequest]
+
+
+ASPasswordCredentialIdentity : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  ASCredentialServiceIdentifier *serviceIdentifier
+ @property  NSString *user
+ @property  NSString *recordIdentifier
+ @property  long long rank
+
+  // class methods
+  +[ASPasswordCredentialIdentity supportsSecureCoding]
+  +[ASPasswordCredentialIdentity identityWithServiceIdentifier:user:recordIdentifier:]
+
+  // instance methods
+  -[ASPasswordCredentialIdentity copyWithZone:]
+  -[ASPasswordCredentialIdentity user]
+  -[ASPasswordCredentialIdentity encodeWithCoder:]
+  -[ASPasswordCredentialIdentity initWithCoder:]
+  -[ASPasswordCredentialIdentity .cxx_destruct]
+  -[ASPasswordCredentialIdentity setRank:]
+  -[ASPasswordCredentialIdentity rank]
+  -[ASPasswordCredentialIdentity recordIdentifier]
+  -[ASPasswordCredentialIdentity serviceIdentifier]
+  -[ASPasswordCredentialIdentity _initWithFoundationCredentialIdentity:]
+  -[ASPasswordCredentialIdentity initWithServiceIdentifier:user:recordIdentifier:]
+
+
+_ASCredentialListViewController : _ASExtensionViewController
+ @property  <_ASCredentialListViewControllerDelegate> *delegate
+
+  // instance methods
+  -[_ASCredentialListViewController delegate]
+  -[_ASCredentialListViewController setDelegate:]
+  -[_ASCredentialListViewController .cxx_destruct]
+  -[_ASCredentialListViewController initWithExtension:serviceIdentifiers:]
+  -[_ASCredentialListViewController prepareToCompleteRequestWithHostContext:credential:completion:]
+  -[_ASCredentialListViewController _requestDidFailWithError:completion:]
+  -[_ASCredentialListViewController _finishWithCredential:completion:]
+
+
+ASAuthorizationOpenIDRequest : ASAuthorizationRequest
+ @property  NSArray *requestedScopes
+ @property  NSString *state
+ @property  NSString *nonce
+ @property  NSString *requestedOperation
+
+  // instance methods
+  -[ASAuthorizationOpenIDRequest .cxx_destruct]
+  -[ASAuthorizationOpenIDRequest state]
+  -[ASAuthorizationOpenIDRequest setState:]
+  -[ASAuthorizationOpenIDRequest nonce]
+  -[ASAuthorizationOpenIDRequest setNonce:]
+  -[ASAuthorizationOpenIDRequest setRequestedScopes:]
+  -[ASAuthorizationOpenIDRequest requestedScopes]
+  -[ASAuthorizationOpenIDRequest requestedOperation]
+  -[ASAuthorizationOpenIDRequest setRequestedOperation:]
+
+
+ASAuthorizationSingleSignOnRequest : ASAuthorizationOpenIDRequest
+ @property  NSArray *authorizationOptions
+
+  // instance methods
+  -[ASAuthorizationSingleSignOnRequest .cxx_destruct]
+  -[ASAuthorizationSingleSignOnRequest setAuthorizationOptions:]
+  -[ASAuthorizationSingleSignOnRequest authorizationOptions]
+
+
+SFCredentialProviderExtensionManager(AuthenticationServicesExtras)
+	// instance methods
+	-[SFCredentialProviderExtensionManager(AuthenticationServicesExtras) instantiateViewControllerForExtension:connectionHandler:]
+	-[SFCredentialProviderExtensionManager(AuthenticationServicesExtras) auxiliaryRemoteObjectForExtension:withRequestID:]
+
+AKAuthorizationCredential(AuthenticationServicesExtras)
+	// instance methods
+	-[AKAuthorizationCredential(AuthenticationServicesExtras) _credentialScopes]
+	-[AKAuthorizationCredential(AuthenticationServicesExtras) authenticationServicesCredential]
+
+UIViewController(AuthenticationServicesExtras)
+	// instance methods
+	-[UIViewController(AuthenticationServicesExtras) _as_setApplicationBackgroundBlock:]
+	-[UIViewController(AuthenticationServicesExtras) _as_applicationBackgroundBlock]
+
+NSXPCInterface(AuthenticationServicesExtras)
+	// class methods
+	+[NSXPCInterface(AuthenticationServicesExtras) _as_credentialProviderHostInterface]
+	+[NSXPCInterface(AuthenticationServicesExtras) _as_credentialProviderExtensionInterface]
+
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAuthorizationController 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAuthorizationCredential 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAuthorizationCredentialStateRequest 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAuthorizationNotificationService 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAuthorizationRequest 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKCredentialRequestContext 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKPasswordCredential 
+01 00 0800 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKPasswordRequest 
+01 00 0700 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CABasicAnimation 
+01 00 0700 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAFilter 
+01 00 0700 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAShapeLayer 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSExtensionContext 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0a00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSPersonNameComponents 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0400 /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation: SFCredentialProviderExtensionHelperProxy 
+01 00 0400 /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation: SFCredentialProviderExtensionManager 
+01 00 0400 /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation: SFPasswordCredentialIdentity 
+01 00 0500 /System/Library/PrivateFrameworks/AppSSO.framework/AppSSO: SOAuthorization 
+01 00 0500 /System/Library/PrivateFrameworks/AppSSO.framework/AppSSO: SOAuthorizationParameters 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIControl 
+01 00 0100 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 

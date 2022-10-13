@@ -1,0 +1,1408 @@
+|| __DATA.__common _biometric_kit_ui_log
+|| __DATA.__data _RAW_ORIENTATION_LOCK_TOKEN_NAME
+|| __DATA.__data _RAW_ORIENTATION_TOKEN_NAME
+|| __DATA.__data _kalphaOffset
+|| __DATA.__data _kdampingOffset
+|| __DATA.__data _kinitialDamping
+|| __DATA.__data _kinitialResponse
+|| __DATA.__data _kinstancePerAxisCount
+|| __DATA.__data _kresponseOffset
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIDevice
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIOrientationStateHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlAudioSession
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlCoachingController
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlCoachingDeviceView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlCrossHairsManager
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlCrossHairsRenderingView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlCrossHairsView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollController
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollControllerPreloadedState
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollManager
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollTransitionAnimator
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlEnrollViewController
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlInstructionView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlMovieLoopView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlPillContainerView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlPillView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlPositioningGuideView
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlSpringInstance
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIPearlVideoCaptureSession
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIRotationArrowAnimationLayer
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUIStyle
+|| __DATA.__objc_data _OBJC_CLASS_$_BKUITypeSafeCopier
+|| __DATA.__objc_data _OBJC_CLASS_$_BiometricKitUI
+|| __DATA.__objc_data _OBJC_CLASS_$_BiometricKitUIEnrollViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIDevice
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIOrientationStateHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlAudioSession
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlCoachingController
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlCoachingDeviceView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlCrossHairsManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlCrossHairsRenderingView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlCrossHairsView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollController
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollControllerPreloadedState
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollTransitionAnimator
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlEnrollViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlInstructionView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlMovieLoopView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlPillContainerView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlPillView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlPositioningGuideView
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlSpringInstance
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIPearlVideoCaptureSession
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIRotationArrowAnimationLayer
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUIStyle
+|| __DATA.__objc_data _OBJC_METACLASS_$_BKUITypeSafeCopier
+|| __DATA.__objc_data _OBJC_METACLASS_$_BiometricKitUI
+|| __DATA.__objc_data _OBJC_METACLASS_$_BiometricKitUIEnrollViewController
+|| __DATA_CONST.__const _BKUIPearlEnrollErrorDomain
+|| __DATA_CONST.__const _PSBioKitErrorWrapperDomain
+|| __TEXT.__const _ARROW_LAYER_SIZE
+|| __TEXT.__const _ARROW_LAYER_STROKE_SIZE
+|| __TEXT.__const _kAccessibilityOptionsAfterNudgesDelay
+|| __TEXT.__const _kFadeDuration
+|| __TEXT.__const _kFadeInDelay
+|| __TEXT.__const _kFadeOutDelay
+|| __TEXT.__const _kMinimumSubstateDisplayDuration
+|| __TEXT.__const _kMinimumSubstateDuration
+|| __TEXT.__const _kPearlMaxNudgesPerMode
+|| __TEXT.__const _kRotationDelay
+|| __TEXT.__const _kRotationDuration
+|| __TEXT.__const _kUpsideDownRotationDuration
+|| __TEXT.__text __BKUILoggingFacility
+|| __TEXT.__text __UIRotationRadiansForDeviceOrientation
+|| __TEXT.__text __arrowContainerCenter
+|| __TEXT.__text __degreesToRadians
+|| __TEXT.__text __deviceOrientationToString
+|| __TEXT.__text __initalInterfaceOrientationFor
+|| __TEXT.__text __landscapeRightRadiansForOrientations
+|| __TEXT.__text __layoutNavigationBarCopy
+|| __TEXT.__text __notificationRegistrationDebugErrorString
+|| __TEXT.__text __radiansForOrientations
+|| __TEXT.__text __setStatusbarBackButtonForCurrentOrientation
+__ AVFoundation: _AVAudioSessionCategoryAmbient
+__ AVFoundation: _AVCaptureDeviceTypeBuiltInWideAngleCamera
+__ AVFoundation: _AVCaptureSessionDidStartRunningNotification
+__ AVFoundation: _AVCaptureSessionDidStopRunningNotification
+__ AVFoundation: _AVCaptureSessionPresetHigh
+__ AVFoundation: _AVCaptureSessionWasInterruptedNotification
+__ AVFoundation: _AVLayerVideoGravityResizeAspectFill
+__ AVFoundation: _AVMediaTypeVideo
+__ AVFoundation: _OBJC_CLASS_$_AVAssetImageGenerator
+__ AVFoundation: _OBJC_CLASS_$_AVAudioEngine
+__ AVFoundation: _OBJC_CLASS_$_AVAudioFile
+__ AVFoundation: _OBJC_CLASS_$_AVAudioPCMBuffer
+__ AVFoundation: _OBJC_CLASS_$_AVAudioPlayerNode
+__ AVFoundation: _OBJC_CLASS_$_AVAudioSession
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureDeviceDiscoverySession
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureDeviceInput
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureSession
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureVideoPreviewLayer
+__ AVFoundation: _OBJC_CLASS_$_AVPlayer
+__ AVFoundation: _OBJC_CLASS_$_AVPlayerItem
+__ AVFoundation: _OBJC_CLASS_$_AVPlayerLayer
+__ AVFoundation: _OBJC_CLASS_$_AVURLAsset
+__ AudioToolbox: _OBJC_CLASS_$_AVHapticPlayer
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _NSRunLoopCommonModes
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFPreferencesCurrentHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreGraphics: _CGAffineTransformConcat
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformInvert
+__ CoreGraphics: _CGAffineTransformMakeRotation
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGPathEqualToPath
+__ CoreGraphics: _CGRectEqualToRect
+__ CoreGraphics: _CGRectGetMaxY
+__ CoreGraphics: _CGRectGetMidX
+__ CoreGraphics: _CGRectGetMidY
+__ CoreGraphics: _CGRectZero
+__ CoreMedia: _CMFormatDescriptionGetMediaSubType
+__ CoreMedia: _CMFormatDescriptionGetMediaType
+__ CoreMedia: _CMTimeMake
+__ CoreMedia: _CMVideoFormatDescriptionGetDimensions
+__ CoreMedia: _kCMTimeZero
+__ Fluid: _FLSpringParametersBouncy
+__ Fluid: _OBJC_CLASS_$_FLSpring
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLog
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ MTLSpline: _OBJC_CLASS_$_MTLSAnimatablePathCollection
+__ MTLSpline: _OBJC_CLASS_$_MTLSPath
+__ MTLSpline: _OBJC_CLASS_$_MTLSPathBufferData
+__ MTLSpline: _OBJC_CLASS_$_MTLSSemiCircle
+__ MTLSpline: _OBJC_CLASS_$_MTLSplineRenderer
+__ MTLSpline: _matrix_look_at
+__ MTLSpline: _matrix_ortho
+__ MetalKit: _OBJC_CLASS_$_MTKView
+__ MetalKit: _OBJC_METACLASS_$_MTKView
+__ Preferences: _OBJC_CLASS_$_PKBiometrics
+__ Preferences: _OBJC_CLASS_$_PSViewController
+__ Preferences: _OBJC_METACLASS_$_PSViewController
+__ QuartzCore: _CACurrentMediaTime
+__ QuartzCore: _CATransform3DConcat
+__ QuartzCore: _CATransform3DIdentity
+__ QuartzCore: _CATransform3DMakeRotation
+__ QuartzCore: _CATransform3DMakeScale
+__ QuartzCore: _CATransform3DMakeTranslation
+__ QuartzCore: _OBJC_CLASS_$_CABasicAnimation
+__ QuartzCore: _OBJC_CLASS_$_CADisplayLink
+__ QuartzCore: _OBJC_CLASS_$_CAFilter
+__ QuartzCore: _OBJC_CLASS_$_CALayer
+__ QuartzCore: _OBJC_CLASS_$_CAMediaTimingFunction
+__ QuartzCore: _OBJC_CLASS_$_CAShapeLayer
+__ QuartzCore: _OBJC_CLASS_$_CATransaction
+__ QuartzCore: _OBJC_METACLASS_$_CALayer
+__ QuartzCore: _kCAFillModeForwards
+__ QuartzCore: _kCAFillRuleEvenOdd
+__ QuartzCore: _kCAFilterGaussianBlur
+__ QuartzCore: _kCAFilterPlusL
+__ QuartzCore: _kCALineCapRound
+__ QuartzCore: _kCALineJoinRound
+__ QuartzCore: _kCAMediaTimingFunctionEaseIn
+__ QuartzCore: _kCAMediaTimingFunctionEaseInEaseOut
+__ QuartzCore: _kCAMediaTimingFunctionEaseOut
+__ QuartzCore: _kCAMediaTimingFunctionLinear
+__ SetupAssistantUI: _OBJC_CLASS_$_BFFStyle
+__ SetupAssistantUI: _OBJC_METACLASS_$_BFFStyle
+__ UIKit: _NSForegroundColorAttributeName
+__ UIKit: _OBJC_CLASS_$_UIAlertAction
+__ UIKit: _OBJC_CLASS_$_UIAlertController
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIBarButtonItem
+__ UIKit: _OBJC_CLASS_$_UIBezierPath
+__ UIKit: _OBJC_CLASS_$_UIButton
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIImageView
+__ UIKit: _OBJC_CLASS_$_UILabel
+__ UIKit: _OBJC_CLASS_$_UILayoutGuide
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UIScrollView
+__ UIKit: _OBJC_CLASS_$_UITapGestureRecognizer
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_CLASS_$__UIBackdropView
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ UIKit: _UIAccessibilityIsReduceMotionEnabled
+__ UIKit: _UIAccessibilityIsVoiceOverRunning
+__ UIKit: _UIApplicationDidBecomeActiveNotification
+__ UIKit: _UIApplicationDidEnterBackgroundNotification
+__ UIKit: _UIApplicationWillResignActiveNotification
+__ UIKit: _UIFontTextStyleBody
+__ UIKit: _UIFontTextStyleTitle2
+__ UIKit: _UIFontWeightBold
+__ UIKit: _UITransitionContextFromViewControllerKey
+__ UIKit: _UITransitionContextToViewControllerKey
+__ libAccessibility.dylib: __AXSVoiceOverTouchEnabled
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___sincosf_stret
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _atan2f
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_check
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_is_valid_token
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+BKUIOrientationStateHandler : NSObject /usr/lib/libc++.1.dylib
+ @property  int rawOrientationToken
+ @property  int orientationLockToken
+ @property  int rotationLockNotificationToken
+ @property  int orientationNotificationToken
+ @property  long long lastKownOrientation
+
+  // class methods
+  +[BKUIOrientationStateHandler bkui_getState:]
+
+  // instance methods
+  -[BKUIOrientationStateHandler init]
+  -[BKUIOrientationStateHandler dealloc]
+  -[BKUIOrientationStateHandler _invalidateTokenIfNeeded:]
+  -[BKUIOrientationStateHandler rawDeviceOrientationIgnoringOrientationLocks]
+  -[BKUIOrientationStateHandler rotationLockStatusIsLocked]
+  -[BKUIOrientationStateHandler registerRotationObserver:]
+  -[BKUIOrientationStateHandler registerRotationLockObserver:]
+  -[BKUIOrientationStateHandler rawOrientationToken]
+  -[BKUIOrientationStateHandler setRawOrientationToken:]
+  -[BKUIOrientationStateHandler orientationLockToken]
+  -[BKUIOrientationStateHandler setOrientationLockToken:]
+  -[BKUIOrientationStateHandler rotationLockNotificationToken]
+  -[BKUIOrientationStateHandler setRotationLockNotificationToken:]
+  -[BKUIOrientationStateHandler orientationNotificationToken]
+  -[BKUIOrientationStateHandler setOrientationNotificationToken:]
+  -[BKUIOrientationStateHandler lastKownOrientation]
+  -[BKUIOrientationStateHandler setLastKownOrientation:]
+
+
+BKUIPearlPillContainerView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  int state
+ @property  {CGPoint=dd} enrollViewCenter
+ @property  double radius
+
+  // instance methods
+  -[BKUIPearlPillContainerView init]
+  -[BKUIPearlPillContainerView .cxx_destruct]
+  -[BKUIPearlPillContainerView state]
+  -[BKUIPearlPillContainerView setState:]
+  -[BKUIPearlPillContainerView radius]
+  -[BKUIPearlPillContainerView traitCollectionDidChange:]
+  -[BKUIPearlPillContainerView layoutSubviews]
+  -[BKUIPearlPillContainerView resetPillsAnimated:]
+  -[BKUIPearlPillContainerView _numberOfVisiblePillViews]
+  -[BKUIPearlPillContainerView enrollViewCenter]
+  -[BKUIPearlPillContainerView setAllPillState:animated:completion:]
+  -[BKUIPearlPillContainerView unstashPillStatesAnimated:]
+  -[BKUIPearlPillContainerView _indexForPillAtAngle:]
+  -[BKUIPearlPillContainerView fillPillsAroundAngle:forTutorial:]
+  -[BKUIPearlPillContainerView setEnrollViewCenter:]
+  -[BKUIPearlPillContainerView _animateToFirstEnrollFinishedCompletion:]
+  -[BKUIPearlPillContainerView _animateToSecondEnrollInProgressCompletion:]
+  -[BKUIPearlPillContainerView _animateToSecondEnrollFinishedCompletion:]
+  -[BKUIPearlPillContainerView _animateToFinishedCompletion:]
+  -[BKUIPearlPillContainerView percentOfPillsCompleted]
+  -[BKUIPearlPillContainerView stashPillStates]
+  -[BKUIPearlPillContainerView unstashPillStatesIfNeededAnimated:]
+  -[BKUIPearlPillContainerView fillPillsAroundAngle:]
+  -[BKUIPearlPillContainerView unfilledDirections]
+  -[BKUIPearlPillContainerView setRadius:center:animated:completion:]
+  -[BKUIPearlPillContainerView animateToState:completion:]
+
+
+BKUIStyle : BFFStyle /usr/lib/libMobileGestalt.dylib
+  // class methods
+  +[BKUIStyle sharedStyle]
+
+
+BKUIPearlEnrollViewController : UIViewController /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit <BKEnrollOperationDelegate, BKEnrollPearlOperationDelegate, BKUIPearlEnrollViewDelegate, LAUIDelegate>
+ @property  int state
+ @property  NSString *credential
+ @property  BKIdentity *identity
+ @property  BOOL darkBackground
+ @property  NSLayoutConstraint *enrollViewTopConstraint
+ @property  NSLayoutConstraint *nextStateButtonContainerBottomConstraintTall
+ @property  NSLayoutConstraint *nextStateButtonContainerBottomConstraintShort
+ @property  NSLayoutConstraint *instructionViewTopConstraint
+ @property  UILayoutGuide *instructionBaselineLayoutGuide
+ @property  <BKUIPearlEnrollViewControllerDelegate> *delegate
+ @property  BOOL inBuddy
+ @property  BOOL inDemo
+ @property  BOOL isDisplayZoomEnabled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKUIPearlEnrollViewController preloadWithCompletion:]
+  +[BKUIPearlEnrollViewController _entryAnimationImages]
+  +[BKUIPearlEnrollViewController _shouldShowEscapeHatchForState:inBuddy:inDemo:]
+  +[BKUIPearlEnrollViewController _shouldShowAccessibilityOptionForState:poseStatus:]
+
+  // instance methods
+  -[BKUIPearlEnrollViewController dealloc]
+  -[BKUIPearlEnrollViewController delegate]
+  -[BKUIPearlEnrollViewController setDelegate:]
+  -[BKUIPearlEnrollViewController .cxx_destruct]
+  -[BKUIPearlEnrollViewController state]
+  -[BKUIPearlEnrollViewController identity]
+  -[BKUIPearlEnrollViewController setStatus:]
+  -[BKUIPearlEnrollViewController setIdentity:]
+  -[BKUIPearlEnrollViewController credential]
+  -[BKUIPearlEnrollViewController setCredential:]
+  -[BKUIPearlEnrollViewController viewWillAppear:]
+  -[BKUIPearlEnrollViewController viewWillDisappear:]
+  -[BKUIPearlEnrollViewController viewDidLoad]
+  -[BKUIPearlEnrollViewController viewDidLayoutSubviews]
+  -[BKUIPearlEnrollViewController viewDidAppear:]
+  -[BKUIPearlEnrollViewController preferredStatusBarStyle]
+  -[BKUIPearlEnrollViewController _setSuspended:]
+  -[BKUIPearlEnrollViewController didEnterBackground:]
+  -[BKUIPearlEnrollViewController willResignActive:]
+  -[BKUIPearlEnrollViewController didBecomeActive:]
+  -[BKUIPearlEnrollViewController setState:animated:]
+  -[BKUIPearlEnrollViewController event:params:reply:]
+  -[BKUIPearlEnrollViewController enrollOperation:finishedWithIdentity:]
+  -[BKUIPearlEnrollViewController enrollOperation:percentCompleted:]
+  -[BKUIPearlEnrollViewController enrollOperation:failedWithReason:]
+  -[BKUIPearlEnrollViewController operation:faceDetectStateChanged:]
+  -[BKUIPearlEnrollViewController enrollOperation:progressedWithInfo:]
+  -[BKUIPearlEnrollViewController inDemo]
+  -[BKUIPearlEnrollViewController initWithPreloadedState:]
+  -[BKUIPearlEnrollViewController setInDemo:]
+  -[BKUIPearlEnrollViewController primeWithPasscode:]
+  -[BKUIPearlEnrollViewController setInBuddy:]
+  -[BKUIPearlEnrollViewController setSplashImageView:]
+  -[BKUIPearlEnrollViewController restartEnroll]
+  -[BKUIPearlEnrollViewController _removeIdentity]
+  -[BKUIPearlEnrollViewController endEnrollFlowWithError:]
+  -[BKUIPearlEnrollViewController _cleanupEnroll]
+  -[BKUIPearlEnrollViewController _cleanupSound]
+  -[BKUIPearlEnrollViewController _cleanUpHaptics]
+  -[BKUIPearlEnrollViewController inBuddy]
+  -[BKUIPearlEnrollViewController _endEnrollFlowWithError:]
+  -[BKUIPearlEnrollViewController _setupSound]
+  -[BKUIPearlEnrollViewController _setUpHaptics]
+  -[BKUIPearlEnrollViewController _checkForCompletion]
+  -[BKUIPearlEnrollViewController forceDarkBackground:animated:]
+  -[BKUIPearlEnrollViewController setEnrollViewTopConstraint:]
+  -[BKUIPearlEnrollViewController setInstructionBaselineLayoutGuide:]
+  -[BKUIPearlEnrollViewController instructionBaselineLayoutGuide]
+  -[BKUIPearlEnrollViewController isDisplayZoomEnabled]
+  -[BKUIPearlEnrollViewController enrollViewTopConstraint]
+  -[BKUIPearlEnrollViewController toggleDebugAndSave]
+  -[BKUIPearlEnrollViewController escapeHatchButtonPressed]
+  -[BKUIPearlEnrollViewController nextStateButtonPressed:]
+  -[BKUIPearlEnrollViewController _configureInstructionView:forState:substate:]
+  -[BKUIPearlEnrollViewController _constraintsForInstructionView:state:position:]
+  -[BKUIPearlEnrollViewController toggleDebug]
+  -[BKUIPearlEnrollViewController _updateLeftBarButtonItem]
+  -[BKUIPearlEnrollViewController returnToEnroll]
+  -[BKUIPearlEnrollViewController cancelEnroll]
+  -[BKUIPearlEnrollViewController setInstructionViewTopConstraint:]
+  -[BKUIPearlEnrollViewController _nextStateButtonTitleForState:]
+  -[BKUIPearlEnrollViewController _escapeHatchTitleForState:]
+  -[BKUIPearlEnrollViewController prepareForAnimationToState:fromState:]
+  -[BKUIPearlEnrollViewController _triggerSoundHapticForTransitionToState:fromState:]
+  -[BKUIPearlEnrollViewController animateInstruction]
+  -[BKUIPearlEnrollViewController finalizeInstructionAnimation]
+  -[BKUIPearlEnrollViewController animateToSuccessCompletionLayout:]
+  -[BKUIPearlEnrollViewController _triggerSoundHapticForTransitionToSubstate:fromSubstate:]
+  -[BKUIPearlEnrollViewController _setSubstate:animated:]
+  -[BKUIPearlEnrollViewController _setState:animated:completion:]
+  -[BKUIPearlEnrollViewController setState:animated:afterDelay:]
+  -[BKUIPearlEnrollViewController startEnroll]
+  -[BKUIPearlEnrollViewController _updateDebugLabel]
+  -[BKUIPearlEnrollViewController fadeCurrentSound:completion:]
+  -[BKUIPearlEnrollViewController playHaptic:withDelay:gain:]
+  -[BKUIPearlEnrollViewController _cleanupEnroll:]
+  -[BKUIPearlEnrollViewController _getAuthContextForCredentialError:]
+  -[BKUIPearlEnrollViewController getEnrollview]
+  -[BKUIPearlEnrollViewController _enableEnrollUI]
+  -[BKUIPearlEnrollViewController _instructionTextForState:substate:]
+  -[BKUIPearlEnrollViewController _detailTextForState:substate:]
+  -[BKUIPearlEnrollViewController _locStateNameForState:]
+  -[BKUIPearlEnrollViewController setSubstate:animated:afterDelay:]
+  -[BKUIPearlEnrollViewController _validateEnrolledPoses:]
+  -[BKUIPearlEnrollViewController _cancelEnroll]
+  -[BKUIPearlEnrollViewController cancelEnrollForRotationIfNeeded:]
+  -[BKUIPearlEnrollViewController nextStateButtonContainerBottomConstraintTall]
+  -[BKUIPearlEnrollViewController nextStateButtonContainerBottomConstraintShort]
+  -[BKUIPearlEnrollViewController instructionViewTopConstraint]
+  -[BKUIPearlEnrollViewController enrollView:willNudgeInDirection:nudgeCount:]
+  -[BKUIPearlEnrollViewController enrollView:didNudgeInDirection:nudgeCount:]
+  -[BKUIPearlEnrollViewController didReachSmallNudgePeakForEnrollView:]
+  -[BKUIPearlEnrollViewController didReachLargeNudgePeakForEnrollView:]
+  -[BKUIPearlEnrollViewController setUseNextButton:]
+  -[BKUIPearlEnrollViewController useNextButton]
+  -[BKUIPearlEnrollViewController _firstVisibleState]
+  -[BKUIPearlEnrollViewController setCustomInstructionString:forState:]
+  -[BKUIPearlEnrollViewController setCustomDetailString:forState:]
+  -[BKUIPearlEnrollViewController setEnrollMovieViewHidden:]
+  -[BKUIPearlEnrollViewController animateWithOrientation:]
+  -[BKUIPearlEnrollViewController setIsDisplayZoomEnabled:]
+  -[BKUIPearlEnrollViewController darkBackground]
+  -[BKUIPearlEnrollViewController setDarkBackground:]
+  -[BKUIPearlEnrollViewController setNextStateButtonContainerBottomConstraintTall:]
+  -[BKUIPearlEnrollViewController setNextStateButtonContainerBottomConstraintShort:]
+
+
+BKUITypeSafeCopier : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[BKUITypeSafeCopier copy:]
+
+  // instance methods
+  -[BKUITypeSafeCopier init]
+
+
+BKUIPearlCrossHairsManager : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableArray *springInstances
+ @property  ^{InstanceInfo={?=[4]}} instanceData
+ @property  BOOL grayscale
+
+  // instance methods
+  -[BKUIPearlCrossHairsManager init]
+  -[BKUIPearlCrossHairsManager .cxx_destruct]
+  -[BKUIPearlCrossHairsManager setTarget:]
+  -[BKUIPearlCrossHairsManager setValue:]
+  -[BKUIPearlCrossHairsManager .cxx_construct]
+  -[BKUIPearlCrossHairsManager update:]
+  -[BKUIPearlCrossHairsManager grayscale]
+  -[BKUIPearlCrossHairsManager setGrayscale:]
+  -[BKUIPearlCrossHairsManager addInstance:]
+  -[BKUIPearlCrossHairsManager springInstances]
+  -[BKUIPearlCrossHairsManager setSpringsStates:]
+  -[BKUIPearlCrossHairsManager instanceData]
+
+
+BKUIPearlPositioningGuideView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  CAShapeLayer *roundedRectMaskLayer
+ @property  double lineWidth
+ @property  double edgeDistance
+ @property  double cornerRadius
+ @property  double postCornerLength
+ @property  double lineAlpha
+ @property  double ringRadius
+ @property  {CGPoint=dd} portalCenter
+ @property  NSDate *animationStart
+ @property  double animationDuration
+ @property  long long animationCurve
+ @property  @? animationCompletion
+ @property  double minimumMaskLayerDistanceFromCenter
+ @property  double maximumMaskLayerDistanceFromCenter
+
+  // instance methods
+  -[BKUIPearlPositioningGuideView .cxx_destruct]
+  -[BKUIPearlPositioningGuideView setHidden:]
+  -[BKUIPearlPositioningGuideView setLineWidth:]
+  -[BKUIPearlPositioningGuideView lineWidth]
+  -[BKUIPearlPositioningGuideView initWithFrame:]
+  -[BKUIPearlPositioningGuideView setCornerRadius:]
+  -[BKUIPearlPositioningGuideView setAnimationCurve:]
+  -[BKUIPearlPositioningGuideView animationCurve]
+  -[BKUIPearlPositioningGuideView cornerRadius]
+  -[BKUIPearlPositioningGuideView animationDuration]
+  -[BKUIPearlPositioningGuideView setAnimationDuration:]
+  -[BKUIPearlPositioningGuideView drawRect:]
+  -[BKUIPearlPositioningGuideView setRingRadius:]
+  -[BKUIPearlPositioningGuideView ringRadius]
+  -[BKUIPearlPositioningGuideView lineAlpha]
+  -[BKUIPearlPositioningGuideView setLineAlpha:]
+  -[BKUIPearlPositioningGuideView setPortalCenter:]
+  -[BKUIPearlPositioningGuideView _stopDisplay]
+  -[BKUIPearlPositioningGuideView _startDisplay]
+  -[BKUIPearlPositioningGuideView _displayTick]
+  -[BKUIPearlPositioningGuideView setAnimationCompletion:]
+  -[BKUIPearlPositioningGuideView setEdgeDistance:]
+  -[BKUIPearlPositioningGuideView setPostCornerLength:]
+  -[BKUIPearlPositioningGuideView animationCompletion]
+  -[BKUIPearlPositioningGuideView useRegularPadLayout]
+  -[BKUIPearlPositioningGuideView _startAnimationWithDuration:completion:]
+  -[BKUIPearlPositioningGuideView breathe]
+  -[BKUIPearlPositioningGuideView animateToOpenValuesOverDuration:curve:completion:]
+  -[BKUIPearlPositioningGuideView animateToBreatheOutValuesOverDuration:completion:]
+  -[BKUIPearlPositioningGuideView roundedRectMaskLayer]
+  -[BKUIPearlPositioningGuideView portalCenter]
+  -[BKUIPearlPositioningGuideView _roundedRectMaskForMaskDistance:portalCenter:cornerRadius:]
+  -[BKUIPearlPositioningGuideView _updatedFloatWithTarget:current:start:progress:]
+  -[BKUIPearlPositioningGuideView edgeDistance]
+  -[BKUIPearlPositioningGuideView postCornerLength]
+  -[BKUIPearlPositioningGuideView resetValuesToStart]
+  -[BKUIPearlPositioningGuideView animateToPopOutValuesOverDuration:completion:]
+  -[BKUIPearlPositioningGuideView minimumMaskLayerDistanceFromCenter]
+  -[BKUIPearlPositioningGuideView maximumMaskLayerDistanceFromCenter]
+  -[BKUIPearlPositioningGuideView animateToFinishedValuesOverDuration:center:completion:]
+  -[BKUIPearlPositioningGuideView prepareMaskLayerForStartToOpenTransition]
+  -[BKUIPearlPositioningGuideView prepareMaskLayerForReducedMotionOpenTransition]
+  -[BKUIPearlPositioningGuideView setRoundedRectMaskLayer:]
+  -[BKUIPearlPositioningGuideView animationStart]
+  -[BKUIPearlPositioningGuideView setAnimationStart:]
+
+
+BKUIPearlEnrollController : PSViewController /System/Library/Frameworks/UIKit.framework/UIKit <BKUIPearlCoachingControllerDelegate, BKUIPearlEnrollViewControllerDelegate, BKUIViewControllerAnimatedTransitioning>
+ @property  BKUIPearlEnrollViewController *enrollViewController
+ @property  BKUIPearlCoachingController *coachingController
+ @property  BOOL hasBeenPortrait
+ @property  <NSObject> *rotationChangeToken
+ @property  <NSObject> *rotationLockToken
+ @property  UINavigationBar *navbarCopy
+ @property  BKUIOrientationStateHandler *orientationStateHandler
+ @property  <BKUIPearlEnrollControllerDelegate> *delegate
+ @property  BOOL inBuddy
+ @property  BOOL inDemo
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKUIPearlEnrollController preloadWithCompletion:]
+  +[BKUIPearlEnrollController isDisplayZoomEnabled]
+  +[BKUIPearlEnrollController isPearlAvailable]
+  +[BKUIPearlEnrollController isPearlInterlocked]
+
+  // instance methods
+  -[BKUIPearlEnrollController init]
+  -[BKUIPearlEnrollController dealloc]
+  -[BKUIPearlEnrollController delegate]
+  -[BKUIPearlEnrollController setDelegate:]
+  -[BKUIPearlEnrollController .cxx_destruct]
+  -[BKUIPearlEnrollController isCompact]
+  -[BKUIPearlEnrollController viewWillAppear:]
+  -[BKUIPearlEnrollController viewWillDisappear:]
+  -[BKUIPearlEnrollController viewDidLoad]
+  -[BKUIPearlEnrollController viewWillLayoutSubviews]
+  -[BKUIPearlEnrollController viewWillTransitionToSize:withTransitionCoordinator:]
+  -[BKUIPearlEnrollController viewDidDisappear:]
+  -[BKUIPearlEnrollController navigationItem]
+  -[BKUIPearlEnrollController preferredStatusBarStyle]
+  -[BKUIPearlEnrollController prefersHomeIndicatorAutoHidden]
+  -[BKUIPearlEnrollController resetLayout]
+  -[BKUIPearlEnrollController _startObserving]
+  -[BKUIPearlEnrollController canBeShownFromSuspendedState]
+  -[BKUIPearlEnrollController deviceOrientationDidChange:]
+  -[BKUIPearlEnrollController inDemo]
+  -[BKUIPearlEnrollController initWithPreloadedState:]
+  -[BKUIPearlEnrollController setInDemo:]
+  -[BKUIPearlEnrollController primeWithPasscode:]
+  -[BKUIPearlEnrollController setInBuddy:]
+  -[BKUIPearlEnrollController setSplashImageView:]
+  -[BKUIPearlEnrollController transitionAnimator:]
+  -[BKUIPearlEnrollController pearlEnrollViewController:finishedEnrollWithError:]
+  -[BKUIPearlEnrollController inBuddy]
+  -[BKUIPearlEnrollController pearlEnrollControllerCompleted:]
+  -[BKUIPearlEnrollController setCustomInstructionString:forState:]
+  -[BKUIPearlEnrollController setCustomDetailString:forState:]
+  -[BKUIPearlEnrollController orientationStateHandler]
+  -[BKUIPearlEnrollController coachingController]
+  -[BKUIPearlEnrollController setHasBeenPortrait:]
+  -[BKUIPearlEnrollController enrollViewController]
+  -[BKUIPearlEnrollController navbarCopy]
+  -[BKUIPearlEnrollController _copyAndShowInternalNavBar]
+  -[BKUIPearlEnrollController setCoachingHidden:animated:]
+  -[BKUIPearlEnrollController diffSystemAndForcedRotationOrientations]
+  -[BKUIPearlEnrollController hasBeenPortrait]
+  -[BKUIPearlEnrollController deviceOrientationChanged:duration:]
+  -[BKUIPearlEnrollController deviceOrientationChanged:]
+  -[BKUIPearlEnrollController setRotationLockToken:]
+  -[BKUIPearlEnrollController setRotationChangeToken:]
+  -[BKUIPearlEnrollController coachingSkipped]
+  -[BKUIPearlEnrollController setEnrollViewController:]
+  -[BKUIPearlEnrollController setCoachingController:]
+  -[BKUIPearlEnrollController rotationChangeToken]
+  -[BKUIPearlEnrollController rotationLockToken]
+  -[BKUIPearlEnrollController setOrientationStateHandler:]
+
+
+BKUIPearlCoachingController : UIViewController /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  BKUIPearlCoachingDeviceView *deviceView
+ @property  BKUIPearlInstructionView *instructionView
+ @property  UIButton *escapeHatchButton
+ @property  BOOL deviceFlat
+ @property  long long orientation
+ @property  BOOL inBuddy
+ @property  BOOL isDisplayZoomEnabled
+ @property  <BKUIPearlCoachingControllerDelegate> *delegate
+
+  // instance methods
+  -[BKUIPearlCoachingController delegate]
+  -[BKUIPearlCoachingController setDelegate:]
+  -[BKUIPearlCoachingController .cxx_destruct]
+  -[BKUIPearlCoachingController orientation]
+  -[BKUIPearlCoachingController setOrientation:]
+  -[BKUIPearlCoachingController viewWillAppear:]
+  -[BKUIPearlCoachingController viewDidLoad]
+  -[BKUIPearlCoachingController viewWillTransitionToSize:withTransitionCoordinator:]
+  -[BKUIPearlCoachingController deviceOrientationChanged]
+  -[BKUIPearlCoachingController setInBuddy:]
+  -[BKUIPearlCoachingController instructionView]
+  -[BKUIPearlCoachingController inBuddy]
+  -[BKUIPearlCoachingController isDisplayZoomEnabled]
+  -[BKUIPearlCoachingController setIsDisplayZoomEnabled:]
+  -[BKUIPearlCoachingController needsToShow]
+  -[BKUIPearlCoachingController stopCoachingAnimation]
+  -[BKUIPearlCoachingController setDeviceView:]
+  -[BKUIPearlCoachingController deviceView]
+  -[BKUIPearlCoachingController setInstructionView:]
+  -[BKUIPearlCoachingController updateInstructionText]
+  -[BKUIPearlCoachingController setEscapeHatchButton:]
+  -[BKUIPearlCoachingController escapeHatchButton]
+  -[BKUIPearlCoachingController escapeHatchButtonPressed:]
+  -[BKUIPearlCoachingController resetDeviceView]
+  -[BKUIPearlCoachingController didOrientationChange]
+  -[BKUIPearlCoachingController isDeviceFlat]
+  -[BKUIPearlCoachingController handleRotation]
+
+
+BKUIRotationArrowAnimationLayer : CALayer /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+ @property  double radius
+ @property  double arrowAngle
+ @property  double arrowlength
+ @property  {CGSize=dd} containerSize
+ @property  {CGPoint=dd} hostCenter
+ @property  UIColor *color
+ @property  CALayer *arrowContainer
+ @property  @? getOrientation
+ @property  CAShapeLayer *arrowLayerLeft
+ @property  CAShapeLayer *arrowLayerRight
+ @property  CAShapeLayer *circleLayer
+ @property  CAShapeLayer *rotationLayer
+ @property  long long orientation
+
+  // class methods
+  +[BKUIRotationArrowAnimationLayer animatorWith:color:radiusForOrientation:]
+  +[BKUIRotationArrowAnimationLayer animatorByEmbedding:color:radiusForOrientation:]
+
+  // instance methods
+  -[BKUIRotationArrowAnimationLayer init]
+  -[BKUIRotationArrowAnimationLayer .cxx_destruct]
+  -[BKUIRotationArrowAnimationLayer orientation]
+  -[BKUIRotationArrowAnimationLayer color]
+  -[BKUIRotationArrowAnimationLayer setOrientation:]
+  -[BKUIRotationArrowAnimationLayer setColor:]
+  -[BKUIRotationArrowAnimationLayer radius]
+  -[BKUIRotationArrowAnimationLayer setRadius:]
+  -[BKUIRotationArrowAnimationLayer setContainerSize:]
+  -[BKUIRotationArrowAnimationLayer containerSize]
+  -[BKUIRotationArrowAnimationLayer layoutSublayers]
+  -[BKUIRotationArrowAnimationLayer resetLayout]
+  -[BKUIRotationArrowAnimationLayer arrowContainer]
+  -[BKUIRotationArrowAnimationLayer setArrowContainer:]
+  -[BKUIRotationArrowAnimationLayer circleLayer]
+  -[BKUIRotationArrowAnimationLayer setCircleLayer:]
+  -[BKUIRotationArrowAnimationLayer initWith:radiusForOrientation:arrowAngle:arrowLength:color:]
+  -[BKUIRotationArrowAnimationLayer _extendedInit:]
+  -[BKUIRotationArrowAnimationLayer setHostCenter:]
+  -[BKUIRotationArrowAnimationLayer hostCenter]
+  -[BKUIRotationArrowAnimationLayer rotationLayer]
+  -[BKUIRotationArrowAnimationLayer setArrowLayerLeft:]
+  -[BKUIRotationArrowAnimationLayer setArrowLayerRight:]
+  -[BKUIRotationArrowAnimationLayer _resetHideCircleLayerStrokeTo:]
+  -[BKUIRotationArrowAnimationLayer _layoutArrowSubLayers]
+  -[BKUIRotationArrowAnimationLayer enableDebug:]
+  -[BKUIRotationArrowAnimationLayer _updateCircleLayerLayout:]
+  -[BKUIRotationArrowAnimationLayer arrowLayerLeft]
+  -[BKUIRotationArrowAnimationLayer arrowLayerRight]
+  -[BKUIRotationArrowAnimationLayer _layoutArrowContainer:]
+  -[BKUIRotationArrowAnimationLayer _animateArrowClockwise:duration:animationDelay:]
+  -[BKUIRotationArrowAnimationLayer _animateArrowCounterClockwise:duration:animationDelay:]
+  -[BKUIRotationArrowAnimationLayer _animateArrowUpsideDown:duration:animationDelay:]
+  -[BKUIRotationArrowAnimationLayer _zeroOutArrowStroke]
+  -[BKUIRotationArrowAnimationLayer getOrientation]
+  -[BKUIRotationArrowAnimationLayer _animateArrowPaths:delay:duration:]
+  -[BKUIRotationArrowAnimationLayer _rotateRotationLayerBy:startTime:fromDegree:toDegree:]
+  -[BKUIRotationArrowAnimationLayer _landscapeAnimationImpl:duration:animationDelay:]
+  -[BKUIRotationArrowAnimationLayer stopAnimationRemoveStroke]
+  -[BKUIRotationArrowAnimationLayer _recreateArrow]
+  -[BKUIRotationArrowAnimationLayer animateDirectionPath:orientation:duration:animationDelay:]
+  -[BKUIRotationArrowAnimationLayer arrowAngle]
+  -[BKUIRotationArrowAnimationLayer setArrowAngle:]
+  -[BKUIRotationArrowAnimationLayer arrowlength]
+  -[BKUIRotationArrowAnimationLayer setArrowlength:]
+  -[BKUIRotationArrowAnimationLayer setGetOrientation:]
+  -[BKUIRotationArrowAnimationLayer setRotationLayer:]
+
+
+BKUIPearlEnrollTransitionAnimator : NSObject /usr/lib/libc++.1.dylib <UIViewControllerAnimatedTransitioning>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BKUIPearlEnrollTransitionAnimator transitionDuration:]
+  -[BKUIPearlEnrollTransitionAnimator animateTransition:]
+  -[BKUIPearlEnrollTransitionAnimator rtl]
+
+
+BKUIPearlPillView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  CADisplayLink *displayLink
+ @property  CAShapeLayer *shapeLayer
+ @property  NSTimer *stateDelayTimer
+ @property  NSDate *stateAnimationStart
+ @property  double stateAnimationDuration
+ @property  @? stateAnimationCompletion
+ @property  double arc
+ @property  double startArc
+ @property  double targetArc
+ @property  double height
+ @property  double startHeight
+ @property  double targetHeight
+ @property  double cornerRadius
+ @property  double startCornerRadius
+ @property  double targetCornerRadius
+ @property  NSDate *radiusAnimationStart
+ @property  double radiusAnimationDuration
+ @property  @? radiusAnimationCompletion
+ @property  double startRadius
+ @property  double targetRadius
+ @property  double radius
+ @property  unsigned long state
+ @property  BOOL completed
+ @property  double ringHeight
+ @property  double numberOfPills
+ @property  double pillInitialHeight
+ @property  double pillCompletedHeight
+ @property  double pillCornerRadius
+
+  // instance methods
+  -[BKUIPearlPillView init]
+  -[BKUIPearlPillView .cxx_destruct]
+  -[BKUIPearlPillView state]
+  -[BKUIPearlPillView setState:]
+  -[BKUIPearlPillView height]
+  -[BKUIPearlPillView setHeight:]
+  -[BKUIPearlPillView radius]
+  -[BKUIPearlPillView setRadius:]
+  -[BKUIPearlPillView setCornerRadius:]
+  -[BKUIPearlPillView layoutSubviews]
+  -[BKUIPearlPillView cornerRadius]
+  -[BKUIPearlPillView shapeLayer]
+  -[BKUIPearlPillView setShapeLayer:]
+  -[BKUIPearlPillView displayLink]
+  -[BKUIPearlPillView setDisplayLink:]
+  -[BKUIPearlPillView pillCornerRadius]
+  -[BKUIPearlPillView startHeight]
+  -[BKUIPearlPillView isCompleted]
+  -[BKUIPearlPillView setState:animated:]
+  -[BKUIPearlPillView setPillCornerRadius:]
+  -[BKUIPearlPillView setNumberOfPills:]
+  -[BKUIPearlPillView setPillInitialHeight:]
+  -[BKUIPearlPillView setPillCompletedHeight:]
+  -[BKUIPearlPillView setRingHeight:]
+  -[BKUIPearlPillView setRadius:animationDuration:completion:]
+  -[BKUIPearlPillView setState:animated:animationDelay:completion:failure:]
+  -[BKUIPearlPillView displayTick]
+  -[BKUIPearlPillView stateAnimationStart]
+  -[BKUIPearlPillView radiusAnimationStart]
+  -[BKUIPearlPillView stateAnimationDuration]
+  -[BKUIPearlPillView setStateAnimationStart:]
+  -[BKUIPearlPillView startArc]
+  -[BKUIPearlPillView targetArc]
+  -[BKUIPearlPillView setArc:]
+  -[BKUIPearlPillView targetHeight]
+  -[BKUIPearlPillView startCornerRadius]
+  -[BKUIPearlPillView targetCornerRadius]
+  -[BKUIPearlPillView stateAnimationCompletion]
+  -[BKUIPearlPillView setStateAnimationCompletion:]
+  -[BKUIPearlPillView radiusAnimationDuration]
+  -[BKUIPearlPillView setRadiusAnimationStart:]
+  -[BKUIPearlPillView startRadius]
+  -[BKUIPearlPillView targetRadius]
+  -[BKUIPearlPillView radiusAnimationCompletion]
+  -[BKUIPearlPillView setRadiusAnimationCompletion:]
+  -[BKUIPearlPillView pillPath]
+  -[BKUIPearlPillView arc]
+  -[BKUIPearlPillView setState:animated:completion:failure:]
+  -[BKUIPearlPillView pillInitialHeight]
+  -[BKUIPearlPillView pillCompletedHeight]
+  -[BKUIPearlPillView ringHeight]
+  -[BKUIPearlPillView ringArcLength]
+  -[BKUIPearlPillView setTargetHeight:]
+  -[BKUIPearlPillView setTargetArc:]
+  -[BKUIPearlPillView setTargetCornerRadius:]
+  -[BKUIPearlPillView startAnimationWithDuration:completion:]
+  -[BKUIPearlPillView stateDelayTimer]
+  -[BKUIPearlPillView setStateDelayTimer:]
+  -[BKUIPearlPillView setStartRadius:]
+  -[BKUIPearlPillView setTargetRadius:]
+  -[BKUIPearlPillView setRadiusAnimationDuration:]
+  -[BKUIPearlPillView setStartHeight:]
+  -[BKUIPearlPillView setStartArc:]
+  -[BKUIPearlPillView setStartCornerRadius:]
+  -[BKUIPearlPillView setStateAnimationDuration:]
+  -[BKUIPearlPillView numberOfPills]
+  -[BKUIPearlPillView pillMaxLength]
+
+
+BKUIPearlEnrollControllerPreloadedState : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[BKUIPearlEnrollControllerPreloadedState .cxx_destruct]
+  -[BKUIPearlEnrollControllerPreloadedState cacheEntryAnimationImages:]
+  -[BKUIPearlEnrollControllerPreloadedState cacheAudioSession:]
+  -[BKUIPearlEnrollControllerPreloadedState cacheVideoCaptureSession:]
+  -[BKUIPearlEnrollControllerPreloadedState acquireCachedVideoCaptureSession]
+  -[BKUIPearlEnrollControllerPreloadedState acquireCachedEntryAnimationImages]
+  -[BKUIPearlEnrollControllerPreloadedState acquireCachedAudioSession]
+
+
+BKUIPearlVideoCaptureSession : NSObject /usr/lib/libc++.1.dylib
+ @property  <BKUIVideoCaptureSesssionDelegate> *delegate
+ @property  AVCaptureVideoPreviewLayer *previewLayer
+ @property  double additionalPreviewScalingAllowedByCameraFormat
+
+  // instance methods
+  -[BKUIPearlVideoCaptureSession init]
+  -[BKUIPearlVideoCaptureSession dealloc]
+  -[BKUIPearlVideoCaptureSession delegate]
+  -[BKUIPearlVideoCaptureSession setDelegate:]
+  -[BKUIPearlVideoCaptureSession .cxx_destruct]
+  -[BKUIPearlVideoCaptureSession observeValueForKeyPath:ofObject:change:context:]
+  -[BKUIPearlVideoCaptureSession startCapture]
+  -[BKUIPearlVideoCaptureSession _frontCamera]
+  -[BKUIPearlVideoCaptureSession previewLayer]
+  -[BKUIPearlVideoCaptureSession setPreviewLayer:]
+  -[BKUIPearlVideoCaptureSession endCapture]
+  -[BKUIPearlVideoCaptureSession _captureSessionStarted:]
+  -[BKUIPearlVideoCaptureSession _captureSessionStopped:]
+  -[BKUIPearlVideoCaptureSession _captureSessionInterrupted:]
+  -[BKUIPearlVideoCaptureSession additionalPreviewScalingAllowedByCameraFormat]
+
+
+BKUIPearlMovieLoopView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  AVPlayer *player
+ @property  AVAsset *assets
+ @property  UIImage *selfPortraite
+ @property  UIImageView *imageView
+
+  // class methods
+  +[BKUIPearlMovieLoopView layerClass]
+
+  // instance methods
+  -[BKUIPearlMovieLoopView .cxx_destruct]
+  -[BKUIPearlMovieLoopView imageView]
+  -[BKUIPearlMovieLoopView setImageView:]
+  -[BKUIPearlMovieLoopView assets]
+  -[BKUIPearlMovieLoopView setAssets:]
+  -[BKUIPearlMovieLoopView player]
+  -[BKUIPearlMovieLoopView setPlayer:]
+  -[BKUIPearlMovieLoopView playerLayer]
+  -[BKUIPearlMovieLoopView portrait]
+  -[BKUIPearlMovieLoopView selfPortrait]
+  -[BKUIPearlMovieLoopView initWithFrame:player:asset:]
+  -[BKUIPearlMovieLoopView unhideAVPlayerRemoveSnapshot]
+  -[BKUIPearlMovieLoopView hideAVPlayerReplaceWithSnapshot]
+  -[BKUIPearlMovieLoopView setAlphaHideOnZero:]
+  -[BKUIPearlMovieLoopView selfPortraite]
+  -[BKUIPearlMovieLoopView setSelfPortraite:]
+
+
+BiometricKitUI : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[BiometricKitUI sharedInstance]
+
+  // instance methods
+  -[BiometricKitUI getEnrollUIViewController:bundleName:]
+  -[BiometricKitUI getEnrollUIBundlesNames:]
+  -[BiometricKitUI _getDefaultEnrollUIViewController:bundleNames:]
+  -[BiometricKitUI _createEnrollUIViewController:]
+  -[BiometricKitUI systemDefaultEnrollUIBundleName:]
+
+
+BKUIPearlSpringInstance : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long axisOrientation
+ @property  unsigned long springState
+ @property  void target
+ @property  void value
+ @property  BOOL grayscale
+
+  // instance methods
+  -[BKUIPearlSpringInstance .cxx_destruct]
+  -[BKUIPearlSpringInstance setTarget:]
+  -[BKUIPearlSpringInstance target]
+  -[BKUIPearlSpringInstance value]
+  -[BKUIPearlSpringInstance setValue:]
+  -[BKUIPearlSpringInstance color]
+  -[BKUIPearlSpringInstance setParameters:]
+  -[BKUIPearlSpringInstance velocity]
+  -[BKUIPearlSpringInstance matrix]
+  -[BKUIPearlSpringInstance grayscale]
+  -[BKUIPearlSpringInstance setGrayscale:]
+  -[BKUIPearlSpringInstance step:]
+  -[BKUIPearlSpringInstance initWithInitialRotation:color:]
+  -[BKUIPearlSpringInstance setAxisOrientation:]
+  -[BKUIPearlSpringInstance setSpringState:]
+  -[BKUIPearlSpringInstance createAxisRotationMatrix:]
+  -[BKUIPearlSpringInstance axisOrientation]
+  -[BKUIPearlSpringInstance springState]
+
+
+BKUIPearlCrossHairsView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+  // instance methods
+  -[BKUIPearlCrossHairsView .cxx_destruct]
+  -[BKUIPearlCrossHairsView initWithFrame:]
+  -[BKUIPearlCrossHairsView _setPitch:yaw:animated:]
+  -[BKUIPearlCrossHairsView angleFromDirection:]
+  -[BKUIPearlCrossHairsView nudgeCrossHairsAtAngle:completion:]
+  -[BKUIPearlCrossHairsView setPitch:yaw:]
+  -[BKUIPearlCrossHairsView nudgeInDirection:smallNudgePeak:largeNudgePeak:completion:]
+
+
+BKUIDevice : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[BKUIDevice sharedInstance]
+
+  // instance methods
+  -[BKUIDevice init]
+  -[BKUIDevice isN84]
+
+
+BKUIPearlInstructionView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  UIScrollView *scrollView
+ @property  UILabel *instructionLabel
+ @property  UILabel *detailLabel
+ @property  double labelsHorizontalMargin
+ @property  NSLayoutConstraint *labelsWidthConstraint
+ @property  NSString *instruction
+ @property  NSString *detail
+ @property  BOOL darkMode
+ @property  NSLayoutYAxisAnchor *instructionTextTopAnchor
+
+  // instance methods
+  -[BKUIPearlInstructionView init]
+  -[BKUIPearlInstructionView .cxx_destruct]
+  -[BKUIPearlInstructionView traitCollectionDidChange:]
+  -[BKUIPearlInstructionView layoutSubviews]
+  -[BKUIPearlInstructionView viewForFirstBaselineLayout]
+  -[BKUIPearlInstructionView viewForLastBaselineLayout]
+  -[BKUIPearlInstructionView scrollView]
+  -[BKUIPearlInstructionView setScrollView:]
+  -[BKUIPearlInstructionView setDetail:]
+  -[BKUIPearlInstructionView detail]
+  -[BKUIPearlInstructionView instruction]
+  -[BKUIPearlInstructionView setInstruction:]
+  -[BKUIPearlInstructionView setDarkMode:]
+  -[BKUIPearlInstructionView darkMode]
+  -[BKUIPearlInstructionView setDetailLabel:]
+  -[BKUIPearlInstructionView detailLabel]
+  -[BKUIPearlInstructionView instructionLabel]
+  -[BKUIPearlInstructionView instructionTextTopAnchor]
+  -[BKUIPearlInstructionView _configureConstraints]
+  -[BKUIPearlInstructionView setLabelsHorizontalMargin:]
+  -[BKUIPearlInstructionView setLabelsWidthConstraint:]
+  -[BKUIPearlInstructionView labelsWidthConstraint]
+  -[BKUIPearlInstructionView labelsHorizontalMargin]
+  -[BKUIPearlInstructionView setInstructionLabel:]
+
+
+BKUIPearlAudioSession : NSObject /usr/lib/libc++.1.dylib
+ @property  AVAudioEngine *audioEngine
+ @property  AVAudioPCMBuffer *lockSoundBuffer
+ @property  AVAudioPCMBuffer *scanSoundBuffer
+ @property  AVAudioPCMBuffer *completeSoundBuffer
+ @property  AVAudioPCMBuffer *endSoundBuffer
+ @property  AVAudioPCMBuffer *failSoundBuffer
+
+  // class methods
+  +[BKUIPearlAudioSession _loadSound:]
+
+  // instance methods
+  -[BKUIPearlAudioSession init]
+  -[BKUIPearlAudioSession .cxx_destruct]
+  -[BKUIPearlAudioSession stop]
+  -[BKUIPearlAudioSession play]
+  -[BKUIPearlAudioSession scheduleBuffer:atTime:options:completionHandler:]
+  -[BKUIPearlAudioSession scheduleBuffer:completionHandler:]
+  -[BKUIPearlAudioSession audioEngine]
+  -[BKUIPearlAudioSession lockSoundBuffer]
+  -[BKUIPearlAudioSession scanSoundBuffer]
+  -[BKUIPearlAudioSession endSoundBuffer]
+  -[BKUIPearlAudioSession completeSoundBuffer]
+  -[BKUIPearlAudioSession failSoundBuffer]
+
+
+BiometricKitUIEnrollViewController : UIViewController /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit <BiometricKitDelegate>
+ @property  BiometricKit *biometricKit
+ @property  <BiometricKitUIEnrollResultDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BiometricKitUIEnrollViewController delegate]
+  -[BiometricKitUIEnrollViewController setDelegate:]
+  -[BiometricKitUIEnrollViewController propertyForKey:]
+  -[BiometricKitUIEnrollViewController setProperty:forKey:]
+  -[BiometricKitUIEnrollViewController .cxx_destruct]
+  -[BiometricKitUIEnrollViewController setBiometricKit:]
+  -[BiometricKitUIEnrollViewController restartEnroll]
+  -[BiometricKitUIEnrollViewController cancelEnroll]
+  -[BiometricKitUIEnrollViewController biometricKit]
+
+
+BKUIPearlEnrollView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit <BKUIVideoCaptureSesssionDelegate>
+ @property  UIImageView *entryAnimationView
+ @property  BKUIPearlMovieLoopView *tutorialMovieView
+ @property  int state
+ @property  BKUIPearlPillContainerView *pillContainer
+ @property  NSArray *portalLayoutGuideConstraints
+ @property  BOOL active
+ @property  <BKUIPearlEnrollViewDelegate> *delegate
+ @property  BOOL debugOverlayVisible
+ @property  UILayoutGuide *portalLayoutGuide
+
+  // instance methods
+  -[BKUIPearlEnrollView dealloc]
+  -[BKUIPearlEnrollView delegate]
+  -[BKUIPearlEnrollView setDelegate:]
+  -[BKUIPearlEnrollView .cxx_destruct]
+  -[BKUIPearlEnrollView setSuspended:]
+  -[BKUIPearlEnrollView state]
+  -[BKUIPearlEnrollView setActive:]
+  -[BKUIPearlEnrollView setState:]
+  -[BKUIPearlEnrollView active]
+  -[BKUIPearlEnrollView setBackgroundColor:]
+  -[BKUIPearlEnrollView traitCollectionDidChange:]
+  -[BKUIPearlEnrollView layoutSubviews]
+  -[BKUIPearlEnrollView updateWithProgress:]
+  -[BKUIPearlEnrollView startCapture]
+  -[BKUIPearlEnrollView _updateDebugOverlay]
+  -[BKUIPearlEnrollView previewLayer]
+  -[BKUIPearlEnrollView willDisappear]
+  -[BKUIPearlEnrollView setSplashImageView:]
+  -[BKUIPearlEnrollView percentOfPillsCompleted]
+  -[BKUIPearlEnrollView postEnrollDeActivate]
+  -[BKUIPearlEnrollView setState:completion:]
+  -[BKUIPearlEnrollView initWithVideoCaptureSession:]
+  -[BKUIPearlEnrollView setEntryAnimationImages:]
+  -[BKUIPearlEnrollView preEnrollActivate]
+  -[BKUIPearlEnrollView portalLayoutGuide]
+  -[BKUIPearlEnrollView setNudgesPaused:]
+  -[BKUIPearlEnrollView debugOverlayVisible]
+  -[BKUIPearlEnrollView setDebugOverlayVisible:]
+  -[BKUIPearlEnrollView updateWithFaceState:]
+  -[BKUIPearlEnrollView setFailed]
+  -[BKUIPearlEnrollView setMovieViewHidden:]
+  -[BKUIPearlEnrollView updateEntryAnimationViewForOrientationChange]
+  -[BKUIPearlEnrollView useRegularPadLayout]
+  -[BKUIPearlEnrollView portalCenter]
+  -[BKUIPearlEnrollView entryAnimationView]
+  -[BKUIPearlEnrollView expectsRunningVideoCaptureSession:]
+  -[BKUIPearlEnrollView setPitch:yaw:]
+  -[BKUIPearlEnrollView pillRingRadius]
+  -[BKUIPearlEnrollView _endAndCleanupEnrollSessionIfNeeded]
+  -[BKUIPearlEnrollView _stopNudgeTimer]
+  -[BKUIPearlEnrollView setCameraBlurred:]
+  -[BKUIPearlEnrollView _startNudgeTimer]
+  -[BKUIPearlEnrollView _cleanupUIState]
+  -[BKUIPearlEnrollView _animateToEntryAnimationWithCompletion:]
+  -[BKUIPearlEnrollView _animateToTutorialWithCompletion:]
+  -[BKUIPearlEnrollView _animateToNeedsPositioningFromState:withCompletion:]
+  -[BKUIPearlEnrollView _animateToNeedsCenterBinWithCompletion:]
+  -[BKUIPearlEnrollView _animateToFirstScanWithCompletion:]
+  -[BKUIPearlEnrollView _animateToFirstScanCompleteWithCompletion:]
+  -[BKUIPearlEnrollView _animateToSecondScanWithCompletion:]
+  -[BKUIPearlEnrollView _animateToSecondScanCompleteWithCompletion:]
+  -[BKUIPearlEnrollView _animateToFinishedWithCompletion:]
+  -[BKUIPearlEnrollView _animateToPartialCaptureWithCompletion:]
+  -[BKUIPearlEnrollView updatePortalLayoutGuide]
+  -[BKUIPearlEnrollView _animateToState:fromState:completion:]
+  -[BKUIPearlEnrollView _setState:completion:]
+  -[BKUIPearlEnrollView _updateCorrectionEstimates:yaw:]
+  -[BKUIPearlEnrollView _updateRaiseLowerGuidanceLabelIfNeededForPitch:]
+  -[BKUIPearlEnrollView _progressiveBlurAmountForPitch:]
+  -[BKUIPearlEnrollView setCameraBlurAmount:useShade:duration:completion:]
+  -[BKUIPearlEnrollView _recordDataFrameWithFaceState:]
+  -[BKUIPearlEnrollView pillContainer]
+  -[BKUIPearlEnrollView _setRaiseLowerGuidanceLabelState:]
+  -[BKUIPearlEnrollView tutorialRingRadius]
+  -[BKUIPearlEnrollView portalRadius]
+  -[BKUIPearlEnrollView tutorialMovieSize]
+  -[BKUIPearlEnrollView portalOffset]
+  -[BKUIPearlEnrollView portalLayoutGuideConstraints]
+  -[BKUIPearlEnrollView setPortalLayoutGuideConstraints:]
+  -[BKUIPearlEnrollView _maskPathWithRadius:inFrame:]
+  -[BKUIPearlEnrollView _nudgeIfNecessary]
+  -[BKUIPearlEnrollView _runTutorialLoopWithDuration:delay:loopDelay:]
+  -[BKUIPearlEnrollView _nonOccludingCircleMaskRadius]
+  -[BKUIPearlEnrollView _enrollMaskPathWithRadius:]
+  -[BKUIPearlEnrollView _needsPositioningPreviewTransform]
+  -[BKUIPearlEnrollView _animateCircleMaskWithPositioningGuide]
+  -[BKUIPearlEnrollView _scanningAndPartialCapturePreviewTransform]
+  -[BKUIPearlEnrollView _animateToScanningStateWithCompletion:]
+  -[BKUIPearlEnrollView completedRingRadius]
+  -[BKUIPearlEnrollView _previewZoomLevel]
+  -[BKUIPearlEnrollView setEntryAnimationView:]
+  -[BKUIPearlEnrollView tutorialMovieView]
+  -[BKUIPearlEnrollView setTutorialMovieView:]
+  -[BKUIPearlEnrollView setPillContainer:]
+
+
+BKUIPearlCrossHairsRenderingView : MTKView /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+ @property  unsigned long state
+ @property  void axis
+ @property  MTLSAnimatablePathCollection *crosshairsPathCollection
+ @property  BKUIPearlCrossHairsManager *crosshairsInstanceManager
+ @property  MTLSPathBufferData *crosshairsData
+ @property  MTLSAnimatablePathCollection *checkMarkPathCollection
+ @property  MTLSPathBufferData *checkMarkData
+ @property  MTLSplineRenderer *renderer
+ @property  BOOL grayscale
+
+  // instance methods
+  -[BKUIPearlCrossHairsRenderingView .cxx_destruct]
+  -[BKUIPearlCrossHairsRenderingView state]
+  -[BKUIPearlCrossHairsRenderingView setState:]
+  -[BKUIPearlCrossHairsRenderingView setSampleCount:]
+  -[BKUIPearlCrossHairsRenderingView axis]
+  -[BKUIPearlCrossHairsRenderingView setAxis:]
+  -[BKUIPearlCrossHairsRenderingView drawRect:]
+  -[BKUIPearlCrossHairsRenderingView grayscale]
+  -[BKUIPearlCrossHairsRenderingView setGrayscale:]
+  -[BKUIPearlCrossHairsRenderingView renderer]
+  -[BKUIPearlCrossHairsRenderingView setRenderer:]
+  -[BKUIPearlCrossHairsRenderingView getState]
+  -[BKUIPearlCrossHairsRenderingView initWithFrame:device:]
+  -[BKUIPearlCrossHairsRenderingView setAxis:animated:]
+  -[BKUIPearlCrossHairsRenderingView setCrosshairsPathCollection:]
+  -[BKUIPearlCrossHairsRenderingView crosshairsPathCollection]
+  -[BKUIPearlCrossHairsRenderingView setCrosshairsInstanceManager:]
+  -[BKUIPearlCrossHairsRenderingView crosshairsInstanceManager]
+  -[BKUIPearlCrossHairsRenderingView setCrosshairsData:]
+  -[BKUIPearlCrossHairsRenderingView setCheckMarkPathCollection:]
+  -[BKUIPearlCrossHairsRenderingView checkMarkPathCollection]
+  -[BKUIPearlCrossHairsRenderingView setCheckMarkData:]
+  -[BKUIPearlCrossHairsRenderingView checkMarkData]
+  -[BKUIPearlCrossHairsRenderingView crosshairsData]
+
+
+BKUIPearlCoachingDeviceView : UIView /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+ @property  UIImage *deviceImage
+ @property  UIImageView *deviceView
+ @property  BKUIRotationArrowAnimationLayer *animationLayer
+ @property  BOOL animationRunning
+ @property  long long orientation
+ @property  BOOL isDisplayZoomEnabled
+
+  // instance methods
+  -[BKUIPearlCoachingDeviceView .cxx_destruct]
+  -[BKUIPearlCoachingDeviceView orientation]
+  -[BKUIPearlCoachingDeviceView setOrientation:]
+  -[BKUIPearlCoachingDeviceView layoutSubviews]
+  -[BKUIPearlCoachingDeviceView startAnimation]
+  -[BKUIPearlCoachingDeviceView stopAnimation]
+  -[BKUIPearlCoachingDeviceView animationLayer]
+  -[BKUIPearlCoachingDeviceView setAnimationLayer:]
+  -[BKUIPearlCoachingDeviceView isDisplayZoomEnabled]
+  -[BKUIPearlCoachingDeviceView setIsDisplayZoomEnabled:]
+  -[BKUIPearlCoachingDeviceView initWithCompactLayout:]
+  -[BKUIPearlCoachingDeviceView setDeviceView:]
+  -[BKUIPearlCoachingDeviceView deviceView]
+  -[BKUIPearlCoachingDeviceView setDeviceImage:]
+  -[BKUIPearlCoachingDeviceView deviceImage]
+  -[BKUIPearlCoachingDeviceView animationRunning]
+  -[BKUIPearlCoachingDeviceView setAnimationRunning:]
+  -[BKUIPearlCoachingDeviceView resetDevice]
+  -[BKUIPearlCoachingDeviceView setDeviceHidden:animated:completion:]
+  -[BKUIPearlCoachingDeviceView rotateDeviceToAngle:animated:completion:]
+  -[BKUIPearlCoachingDeviceView _colorForStroke]
+
+
+BKUIPearlEnrollManager : NSObject /usr/lib/libc++.1.dylib <CAAnimationDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BKUIPearlEnrollManager sharedManager]
+
+  // instance methods
+  -[BKUIPearlEnrollManager animationDidStop:finished:]
+  -[BKUIPearlEnrollManager gaussianBlurWithRadius:]
+  -[BKUIPearlEnrollManager runBasicAnimationOnLayer:withDuration:keyPath:fromValue:toValue:removedOnCompletion:timingFunction:completion:]
+  -[BKUIPearlEnrollManager gaussianBlurWithRadius:normalizeEdges:hardEdges:quality:intermediateBitDepth:]
+
+
+UIBezierPath(RoundedCorner)
+	// instance methods
+	-[UIBezierPath(RoundedCorner) bkui_bezierPathAddRoundedCorner:withRadius:followingAngle:]
+	-[UIBezierPath(RoundedCorner) bkui_bezierPathAddRoundedCorner:withRadius:followingAngle:]
+
+UIViewController(ForcedRotation)
+	// class methods
+	+[UIViewController(ForcedRotation) bkui_reverseLeftRight:]
+
+	// instance methods
+	-[UIViewController(ForcedRotation) bkui_reverseLeftRight:]
+	-[UIViewController(ForcedRotation) bkui_uiforDeviceOrientation:]
+	-[UIViewController(ForcedRotation) bkui_rotateView:fromOrientation:toOrientation:animatedDuration:alongSide:completion:]
+	-[UIViewController(ForcedRotation) bkui_deviceOrientationForIterfaceOrientation:]
+
+UIView(Debug)
+	// instance methods
+	-[UIView(Debug) bkui_debugBorder:withWidth:]
+
+UIDevice(sfHelpers)
+	// instance methods
+	-[UIDevice(sfHelpers) bkui_IsInternalInstall]
+
+AVPlayer(SnapShot)
+	// instance methods
+	-[AVPlayer(SnapShot) bkui_snapshotImageAt:asset:error:]
+
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetImageGenerator 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioEngine 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioFile 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioPCMBuffer 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioPlayerNode 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioSession 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureDeviceDiscoverySession 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureDeviceInput 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureSession 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureVideoPreviewLayer 
+01 00 0800 /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox: AVHapticPlayer 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVPlayer 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVPlayerItem 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVPlayerLayer 
+01 00 0b00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVURLAsset 
+01 00 0400 /System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI: BFFStyle 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CABasicAnimation 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CADisplayLink 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAFilter 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CALayer 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAMediaTimingFunction 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAShapeLayer 
+01 00 0900 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CATransaction 
+01 00 0200 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/Fluid.framework/Fluid: FLSpring 
+01 00 0700 /System/Library/Frameworks/MetalKit.framework/MetalKit: MTKView 
+01 00 0100 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/MTLSpline.framework/MTLSpline: MTLSAnimatablePathCollection 
+01 00 0100 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/MTLSpline.framework/MTLSpline: MTLSPath 
+01 00 0100 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/MTLSpline.framework/MTLSpline: MTLSPathBufferData 
+01 00 0100 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/MTLSpline.framework/MTLSpline: MTLSSemiCircle 
+01 00 0100 /System/Library/PrivateFrameworks/BiometricKitUI.framework/Frameworks/MTLSpline.framework/MTLSpline: MTLSplineRenderer 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1100 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 1000 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0d00 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PKBiometrics 
+01 00 0d00 /System/Library/PrivateFrameworks/Preferences.framework/Preferences: PSViewController 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertAction 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertController 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIBarButtonItem 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIBezierPath 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIButton 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImageView 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UILabel 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UILayoutGuide 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIScrollView 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UITapGestureRecognizer 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 
+01 00 0e00 /System/Library/Frameworks/UIKit.framework/UIKit: _UIBackdropView 

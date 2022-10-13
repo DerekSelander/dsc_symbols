@@ -1,0 +1,1782 @@
+|| __DATA.__data _OSLogConstructHighVolumeAgeLimit
+|| __DATA.__data _OSLogConstructHighVolumeSizeLimit
+|| __DATA.__data _OSLogConstructPersistAgeLimit
+|| __DATA.__data _OSLogConstructPersistSizeLimit
+|| __DATA.__data _OSLogConstructSignpostAgeLimit
+|| __DATA.__data _OSLogConstructSignpostSizeLimit
+|| __DATA.__data _OSLogConstructSpecialAgeLimit
+|| __DATA.__data _OSLogConstructSpecialSizeLimit
+|| __DATA.__data __OSLogConstructHighVolumeStart
+|| __DATA.__data __OSLogConstructPersistStart
+|| __DATA.__data __OSLogConstructSignpostStart
+|| __DATA.__data __OSLogConstructSpecialStart
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OSLogEventProxy._eint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OSLogTermDumper._ob
+|| __DATA_CONST.__const _OSLogErrorDomain
+|| __DATA_CONST.__const __OSLogErrorInternalCode
+|| __DATA_CONST.__const __OSLogErrorInternalError
+|| __DATA_CONST.__const __OSLogErrorPOSIXErrno
+|| __DATA_CONST.__const _kOSLogPersistenceKeyActivityCreationCount
+|| __DATA_CONST.__const _kOSLogPersistenceKeyLogMessageCount
+|| __DATA_CONST.__const _kOSLogPersistenceKeyLogPrivateSize
+|| __DATA_CONST.__const _kOSLogPersistenceKeyLogPublicSize
+|| __DATA_CONST.__const _kOSLogPersistenceKeyPath
+|| __DATA_CONST.__const _kOSLogPersistenceKeyPerProcessStatistics
+|| __DATA_CONST.__const _kOSLogPersistenceKeyPerSenderStatistics
+|| __DATA_CONST.__const _kOSLogPersistenceKeyTotalProcessPrivateSize
+|| __DATA_CONST.__const _kOSLogPersistenceKeyTotalProcessPublicSize
+|| __DATA_CONST.__const _kOSLogPersistenceKeyTraceMessageCount
+|| __DATA_CONST.__const _kOSLogPersistenceKeyTracePublicSize
+|| __DATA_CONST.__const _kOSLogPersistenceKeyUUID
+|| __DATA_CONST.__const _kOSLogPersistenceKeyUserActionCount
+|| __DATA_CONST.__const _logarchive_key_base_size
+|| __DATA_CONST.__const _logarchive_key_base_time
+|| __DATA_CONST.__const _logarchive_key_eventlog
+|| __DATA_CONST.__const _logarchive_key_fe_size
+|| __DATA_CONST.__const _logarchive_key_fe_time
+|| __DATA_CONST.__const _logarchive_key_hv_size
+|| __DATA_CONST.__const _logarchive_key_hv_time
+|| __DATA_CONST.__const _logarchive_key_livedata
+|| __DATA_CONST.__const _logarchive_key_path
+|| __DATA_CONST.__const _logarchive_key_sp_size
+|| __DATA_CONST.__const _logarchive_key_sp_time
+|| __DATA_CONST.__const _logarchive_key_ttl_size
+|| __DATA_CONST.__const _logarchive_key_ttl_time
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityCreateEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityEventMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityLogMessageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityLossEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivitySignpostEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityStatedumpEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityStream
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityTimesyncEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityTraceMessageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityTransitionEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSActivityUserActionEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventLiveSource
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventLiveStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventLiveStream
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventProxy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventSource
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventStream
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventStreamBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogEventStreamPosition
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogPersistence
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogPreferencesCategory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogPreferencesManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogPreferencesProcess
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogPreferencesSubsystem
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSLogTermDumper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSLogVersioning
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityCreateEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityEventMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityLogMessageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityLossEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivitySignpostEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityStatedumpEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityStream
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityTimesyncEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityTraceMessageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityTransitionEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSActivityUserActionEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventLiveSource
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventLiveStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventLiveStream
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventProxy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventSource
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventStream
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventStreamBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogEventStreamPosition
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogPersistence
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogPreferencesCategory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogPreferencesManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogPreferencesProcess
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogPreferencesSubsystem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSLogTermDumper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSLogVersioning
+|| __TEXT.__text _OSLogClearOptions
+|| __TEXT.__text _OSLogConstructArchive
+|| __TEXT.__text _OSLogCreateArchive
+|| __TEXT.__text _OSLogCreateArchiveWithDictionary
+|| __TEXT.__text _OSLogInstallProfilePayload
+|| __TEXT.__text _OSLogLogdAdminConnection
+|| __TEXT.__text _OSLogLookupPathWithUUID
+|| __TEXT.__text _OSLogRemoveProfilePayload
+|| __TEXT.__text _OSLogSetOptions
+|| __TEXT.__text _OSLogStateCaptureForAllPIDs
+|| __TEXT.__text _OSLogValidateProfilePayload
+|| __TEXT.__text __OSLogGetSimplePredicate
+|| __TEXT.__text __catalog_create
+|| __TEXT.__text __catalog_create_with_chunk
+|| __TEXT.__text __catalog_destroy
+|| __TEXT.__text __catalog_for_each_uuid
+|| __TEXT.__text __catalog_lookup_procinfo_by_procid
+|| __TEXT.__text __catalog_lookup_procinfo_by_procinfo_key
+|| __TEXT.__text __catalog_procinfo_create
+|| __TEXT.__text __catalog_procinfo_for_each_uuidinfo
+|| __TEXT.__text __catalog_procinfo_lookup_pc
+|| __TEXT.__text __catalog_procinfo_lookup_subsystem
+|| __TEXT.__text __catalog_procinfo_uuidinfo_add
+|| __TEXT.__text __catalog_procinfo_uuidinfo_remove
+|| __TEXT.__text __catalog_subchunk_procinfo_add
+|| __TEXT.__text __catalog_update_earliest_fhbuf_ts
+|| __TEXT.__text __catalog_uuid_add
+|| __TEXT.__text __chunk_support_convert_tracepoint
+|| __TEXT.__text __os_activity_stream_entry_decode
+|| __TEXT.__text __os_log_resolve_format
+|| __TEXT.__text __os_log_set_nscf_formatter
+|| __TEXT.__text __os_trace_device_formatted_for_content_protection
+|| __TEXT.__text __os_trace_device_unlocked_since_boot
+|| __TEXT.__text __os_trace_peer_is_admin
+|| __TEXT.__text __os_trace_persistdir_path
+|| __TEXT.__text __os_trace_timesyncdir_path
+|| __TEXT.__text __os_trace_uuiddb_dsc_map_resolve
+|| __TEXT.__text __os_trace_uuiddb_dsc_validate_hdr
+|| __TEXT.__text __os_trace_uuiddb_get_dsc_map_fd
+|| __TEXT.__text __os_trace_uuiddb_make_kernel_cache_uuid
+|| __TEXT.__text __os_trace_uuiddb_path
+|| __TEXT.__text __os_trace_uuiddb_path_exists
+|| __TEXT.__text __state_support_decode_data
+|| __TEXT.__text __state_support_validate_chunk
+|| __TEXT.__text __state_support_validate_payload
+|| __TEXT.__text __timesync_continuous_to_wall_time
+|| __TEXT.__text __timesync_db_dup
+|| __TEXT.__text __timesync_db_open
+|| __TEXT.__text __timesync_db_openat
+|| __TEXT.__text __timesync_mach_timebase
+|| __TEXT.__text __timesync_range_count
+|| __TEXT.__text __timesync_range_create
+|| __TEXT.__text __timesync_range_destroy
+|| __TEXT.__text __timesync_repair
+|| __TEXT.__text __timesync_validate
+|| __TEXT.__text __timesync_wall_time_to_continuous
+|| __TEXT.__text _logging_support_test_oslog
+|| __TEXT.__text _os_activity_stream_add_pid
+|| __TEXT.__text _os_activity_stream_cancel
+|| __TEXT.__text _os_activity_stream_for_pid
+|| __TEXT.__text _os_activity_stream_for_simulator
+|| __TEXT.__text _os_activity_stream_resume
+|| __TEXT.__text _os_activity_stream_set_event_handler
+|| __TEXT.__text _os_activity_stream_set_filter
+|| __TEXT.__text _os_log_copy_formatted_message
+|| __TEXT.__text _os_log_fmt_compose
+|| __TEXT.__text _os_log_fmt_convert_trace
+|| __TEXT.__text _os_log_fmt_extract_pubdata
+|| __TEXT.__text _os_log_fmt_get_plugin
+|| __TEXT.__text _os_trace_copy_formatted_message
+|| __TEXT.__text _uuidpath_lookup_fd
+|| __TEXT.__text _uuidpath_map_header
+|| __TEXT.__text _uuidpath_map_header_fd
+|| __TEXT.__text _uuidpath_resolve
+|| __TEXT.__text _uuidpath_resolve_fd
+|| __TEXT.__text _uuidpath_sharedcache_resolve_fd
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetTypeID
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSAllocateObject
+__ Foundation: _NSDeallocateObject
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _NSUnionRange
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSComparisonPredicate
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExpression
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProgress
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ MobileKeyBag: _MKBDeviceFormattedForContentProtection
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ libSystem.B.dylib: _OBJC_CLASS_$_OS_xpc_object
+__ libSystem.B.dylib: _SANDBOX_CHECK_NO_REPORT
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___memset_chk
+__ libSystem.B.dylib: ___snprintf_chk
+__ libSystem.B.dylib: ___sprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: ___strlcpy_chk
+__ libSystem.B.dylib: ___tolower
+__ libSystem.B.dylib: ___vsnprintf_chk
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __dispatch_source_type_read
+__ libSystem.B.dylib: __dispatch_source_type_signal
+__ libSystem.B.dylib: __dyld_get_shared_cache_uuid
+__ libSystem.B.dylib: __os_assert_log
+__ libSystem.B.dylib: __os_assumes_log
+__ libSystem.B.dylib: __os_crash
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_disabled
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __os_state_request_for_pidlist
+__ libSystem.B.dylib: __os_trace_calloc
+__ libSystem.B.dylib: __os_trace_fdscandir_b
+__ libSystem.B.dylib: __os_trace_get_boot_uuid
+__ libSystem.B.dylib: __os_trace_intprefsdir_path
+__ libSystem.B.dylib: __os_trace_is_development_build
+__ libSystem.B.dylib: __os_trace_malloc
+__ libSystem.B.dylib: __os_trace_memdup
+__ libSystem.B.dylib: __os_trace_mmap
+__ libSystem.B.dylib: __os_trace_mmap_at
+__ libSystem.B.dylib: __os_trace_prefsdir_path
+__ libSystem.B.dylib: __os_trace_read_file_at
+__ libSystem.B.dylib: __os_trace_realloc
+__ libSystem.B.dylib: __os_trace_scandir_free_namelist
+__ libSystem.B.dylib: __os_trace_sysprefsdir_path
+__ libSystem.B.dylib: __os_trace_write
+__ libSystem.B.dylib: __os_trace_writev
+__ libSystem.B.dylib: __os_trace_zalloc
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_uint64
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _access
+__ libSystem.B.dylib: _alphasort
+__ libSystem.B.dylib: _asprintf
+__ libSystem.B.dylib: _atexit_b
+__ libSystem.B.dylib: _bootstrap_strerror
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _closedir
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_once_f
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_set_target_queue
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_data
+__ libSystem.B.dylib: _dispatch_source_set_cancel_handler
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _dup
+__ libSystem.B.dylib: _dup2
+__ libSystem.B.dylib: _dyld_shared_cache_iterate_text
+__ libSystem.B.dylib: _execlp
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fchmod
+__ libSystem.B.dylib: _fchown
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _fcopyfile
+__ libSystem.B.dylib: _fdopen
+__ libSystem.B.dylib: _fdopendir
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fgetxattr
+__ libSystem.B.dylib: _fileno
+__ libSystem.B.dylib: _fork
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fsetxattr
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _fstatat
+__ libSystem.B.dylib: _fts_close
+__ libSystem.B.dylib: _fts_open
+__ libSystem.B.dylib: _fts_read
+__ libSystem.B.dylib: _fts_set
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _geteuid
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _gmtime_r
+__ libSystem.B.dylib: _ioctl
+__ libSystem.B.dylib: _isatty
+__ libSystem.B.dylib: _issetugid
+__ libSystem.B.dylib: _localtime_r
+__ libSystem.B.dylib: _lseek
+__ libSystem.B.dylib: _mach_continuous_time
+__ libSystem.B.dylib: _mach_error_string
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _mergesort_b
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _mkdirat
+__ libSystem.B.dylib: _mkdtemp
+__ libSystem.B.dylib: _mkstemps
+__ libSystem.B.dylib: _mktime
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _openat
+__ libSystem.B.dylib: _opendir
+__ libSystem.B.dylib: _os_flagset_copy_string
+__ libSystem.B.dylib: _os_log_backtrace_create_from_buffer
+__ libSystem.B.dylib: _os_log_backtrace_destroy
+__ libSystem.B.dylib: _os_log_backtrace_get_frames
+__ libSystem.B.dylib: _os_log_backtrace_get_length
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _perror
+__ libSystem.B.dylib: _pipe
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_getspecific
+__ libSystem.B.dylib: _pthread_key_create
+__ libSystem.B.dylib: _pthread_setspecific
+__ libSystem.B.dylib: _putchar
+__ libSystem.B.dylib: _putenv
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: _qsort_b
+__ libSystem.B.dylib: _rb_tree_count
+__ libSystem.B.dylib: _rb_tree_find_node
+__ libSystem.B.dylib: _rb_tree_init
+__ libSystem.B.dylib: _rb_tree_insert_node
+__ libSystem.B.dylib: _rb_tree_iterate
+__ libSystem.B.dylib: _rb_tree_remove_node
+__ libSystem.B.dylib: _readdir
+__ libSystem.B.dylib: _rmdir
+__ libSystem.B.dylib: _sandbox_check
+__ libSystem.B.dylib: _sandbox_extension_consume
+__ libSystem.B.dylib: _sandbox_extension_release
+__ libSystem.B.dylib: _signal
+__ libSystem.B.dylib: _strcasecmp
+__ libSystem.B.dylib: _strcasestr
+__ libSystem.B.dylib: _strchr
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strcspn
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strftime
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncasecmp
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: _strncpy
+__ libSystem.B.dylib: _strndup
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _strptime
+__ libSystem.B.dylib: _strrchr
+__ libSystem.B.dylib: _strspn
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _strtoul
+__ libSystem.B.dylib: _strtoull
+__ libSystem.B.dylib: _sys_siglist
+__ libSystem.B.dylib: _sys_signame
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _tmpfile
+__ libSystem.B.dylib: _unlink
+__ libSystem.B.dylib: _unlinkat
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _uuid_clear
+__ libSystem.B.dylib: _uuid_compare
+__ libSystem.B.dylib: _uuid_copy
+__ libSystem.B.dylib: _uuid_is_null
+__ libSystem.B.dylib: _uuid_parse
+__ libSystem.B.dylib: _uuid_unparse
+__ libSystem.B.dylib: _uuid_unparse_lower
+__ libSystem.B.dylib: _uuid_unparse_upper
+__ libSystem.B.dylib: _vasprintf
+__ libSystem.B.dylib: _waitpid
+__ libSystem.B.dylib: _xpc_array_apply
+__ libSystem.B.dylib: _xpc_array_create
+__ libSystem.B.dylib: _xpc_array_get_count
+__ libSystem.B.dylib: _xpc_array_set_int64
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_euid
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_set_context
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_finalizer_f
+__ libSystem.B.dylib: _xpc_copy_short_description
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_dup_fd
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_uuid
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_fd
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_int64_get_value
+__ libSystem.B.dylib: _xpc_release
+__ libSystem.B.dylib: _xpc_retain
+__ libSystem.B.dylib: _xpc_uint64_get_value
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libcompression.dylib: _compression_decode_buffer
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_copyPropertyList
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _property_copyAttributeList
+__ libobjc.A.dylib: _property_getName
+__ libobjc.A.dylib: _protocol_copyPropertyList
+OSLogEventProxy : NSObject /usr/lib/libSystem.B.dylib <OSLogEventProvider>
+ @property  unsigned int _oversizeIdentifier
+ @property  unsigned long _timesyncRangeUUIDIndex
+ @property  NSString *composedMessage
+ @property  unsigned long type
+ @property  unsigned long logType
+ @property  unsigned long size
+ @property  unsigned long timeToLive
+ @property  unsigned long traceIdentifier
+ @property  unsigned long threadIdentifier
+ @property  NSDate *date
+ @property  NSTimeZone *timeZone
+ @property  ^{timeval=qi} unixDate
+ @property  ^{timezone=ii} unixTimeZone
+ @property  int processIdentifier
+ @property  unsigned long activityIdentifier
+ @property  unsigned long parentActivityIdentifier
+ @property  unsigned long transitionActivityIdentifier
+ @property  NSUUID *bootUUID
+ @property  unsigned long continuousNanosecondsSinceBoot
+ @property  unsigned long machContinuousTimestamp
+ @property  NSUUID *processImageUUID
+ @property  r* processImageUUIDBytes
+ @property  NSString *processImagePath
+ @property  NSString *process
+ @property  NSUUID *senderImageUUID
+ @property  r* senderImageUUIDBytes
+ @property  NSString *senderImagePath
+ @property  NSString *sender
+ @property  unsigned long senderImageOffset
+ @property  OSLogEventBacktrace *backtrace
+ @property  NSString *subsystem
+ @property  NSString *category
+ @property  NSString *formatString
+ @property  OSLogEventDecomposedMessage *decomposedMessage
+ @property  unsigned long signpostIdentifier
+ @property  unsigned long signpostType
+ @property  unsigned long signpostScope
+ @property  NSString *signpostName
+ @property  unsigned long creatorActivityIdentifier
+ @property  unsigned long creatorProcessUniqueIdentifier
+ @property  unsigned long lossStartMachContinuousTimestamp
+ @property  ^{timeval=qi} lossStartUnixDate
+ @property  ^{timezone=ii} lossStartUnixTimeZone
+ @property  unsigned long lossEndMachContinuousTimestamp
+ @property  ^{timeval=qi} lossEndUnixDate
+ @property  ^{timezone=ii} lossEndUnixTimeZone
+ @property  {?=IB} lossCount
+
+  // class methods
+  +[OSLogEventProxy _make]
+
+  // instance methods
+  -[OSLogEventProxy init]
+  -[OSLogEventProxy respondsToSelector:]
+  -[OSLogEventProxy retain]
+  -[OSLogEventProxy release]
+  -[OSLogEventProxy methodSignatureForSelector:]
+  -[OSLogEventProxy type]
+  -[OSLogEventProxy date]
+  -[OSLogEventProxy timeZone]
+  -[OSLogEventProxy size]
+  -[OSLogEventProxy category]
+  -[OSLogEventProxy processIdentifier]
+  -[OSLogEventProxy timeToLive]
+  -[OSLogEventProxy sender]
+  -[OSLogEventProxy process]
+  -[OSLogEventProxy formatString]
+  -[OSLogEventProxy backtrace]
+  -[OSLogEventProxy signpostType]
+  -[OSLogEventProxy formatArguments]
+  -[OSLogEventProxy threadIdentifier]
+  -[OSLogEventProxy subsystem]
+  -[OSLogEventProxy logType]
+  -[OSLogEventProxy activityIdentifier]
+  -[OSLogEventProxy composedMessage]
+  -[OSLogEventProxy decomposedMessage]
+  -[OSLogEventProxy traceIdentifier]
+  -[OSLogEventProxy unixDate]
+  -[OSLogEventProxy unixTimeZone]
+  -[OSLogEventProxy parentActivityIdentifier]
+  -[OSLogEventProxy transitionActivityIdentifier]
+  -[OSLogEventProxy bootUUID]
+  -[OSLogEventProxy continuousNanosecondsSinceBoot]
+  -[OSLogEventProxy machContinuousTimestamp]
+  -[OSLogEventProxy processImageUUID]
+  -[OSLogEventProxy processImageUUIDBytes]
+  -[OSLogEventProxy processImagePath]
+  -[OSLogEventProxy senderImageUUID]
+  -[OSLogEventProxy senderImageUUIDBytes]
+  -[OSLogEventProxy senderImagePath]
+  -[OSLogEventProxy senderImageOffset]
+  -[OSLogEventProxy signpostIdentifier]
+  -[OSLogEventProxy signpostScope]
+  -[OSLogEventProxy signpostName]
+  -[OSLogEventProxy creatorActivityIdentifier]
+  -[OSLogEventProxy creatorProcessUniqueIdentifier]
+  -[OSLogEventProxy lossStartMachContinuousTimestamp]
+  -[OSLogEventProxy lossStartUnixDate]
+  -[OSLogEventProxy lossStartUnixTimeZone]
+  -[OSLogEventProxy lossEndMachContinuousTimestamp]
+  -[OSLogEventProxy lossEndUnixDate]
+  -[OSLogEventProxy lossEndUnixTimeZone]
+  -[OSLogEventProxy lossCount]
+  -[OSLogEventProxy _unmake]
+  -[OSLogEventProxy _assertBalanced]
+  -[OSLogEventProxy _setThreadCrumb]
+  -[OSLogEventProxy _setIncludeSensitive:]
+  -[OSLogEventProxy _shouldIncludeSensitive]
+  -[OSLogEventProxy _setTimesyncDatabase:]
+  -[OSLogEventProxy _setUUIDDBFileDescriptor:]
+  -[OSLogEventProxy _setFallbackTimezone]
+  -[OSLogEventProxy _setDoNotTrackActivites:]
+  -[OSLogEventProxy _setBuffer:size:privateBuffer:privateSize:]
+  -[OSLogEventProxy _setLogEvent:rangeUUIDIndex:machTimebase:]
+  -[OSLogEventProxy _fillFromXPCEventObject:]
+  -[OSLogEventProxy _oversizeIdentifier]
+  -[OSLogEventProxy processIdentifierVersion]
+  -[OSLogEventProxy processUniqueIdentifier]
+  -[OSLogEventProxy _timesyncRangeUUIDIndex]
+  -[OSLogEventProxy set_timesyncRangeUUIDIndex:]
+
+
+OSLogEventDecomposedMessage : NSObject /usr/lib/libSystem.B.dylib
+ @property  OSLogEventProxy *proxy
+ @property  unsigned long sizeOfLong
+ @property  unsigned long placeholderCount
+ @property  unsigned long state
+
+  // instance methods
+  -[OSLogEventDecomposedMessage dealloc]
+  -[OSLogEventDecomposedMessage state]
+  -[OSLogEventDecomposedMessage proxy]
+  -[OSLogEventDecomposedMessage argumentAtIndex:]
+  -[OSLogEventDecomposedMessage placeholderAtIndex:]
+  -[OSLogEventDecomposedMessage literalPrefixAtIndex:]
+  -[OSLogEventDecomposedMessage placeholderCount]
+  -[OSLogEventDecomposedMessage _unmake]
+  -[OSLogEventDecomposedMessage _populateFields]
+  -[OSLogEventDecomposedMessage initWithEventProxy:]
+  -[OSLogEventDecomposedMessage _rawPlaceholderForIndex:]
+  -[OSLogEventDecomposedMessage _initializePlaceholders]
+  -[OSLogEventDecomposedMessage sizeOfLong]
+
+
+OSLogMessagePlaceholder : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *rawString
+ @property  NSArray *tokens
+ @property  NSString *typeNamespace
+ @property  NSString *type
+ @property  int width
+ @property  int precision
+
+  // instance methods
+  -[OSLogMessagePlaceholder dealloc]
+  -[OSLogMessagePlaceholder type]
+  -[OSLogMessagePlaceholder width]
+  -[OSLogMessagePlaceholder precision]
+  -[OSLogMessagePlaceholder tokens]
+  -[OSLogMessagePlaceholder rawString]
+  -[OSLogMessagePlaceholder initWithPlaceholderStruct:]
+  -[OSLogMessagePlaceholder typeNamespace]
+
+
+OSLogEventMessageArgument : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long availability
+ @property  unsigned long privacy
+ @property  unsigned long category
+ @property  unsigned long scalarCategory
+ @property  unsigned long scalarType
+ @property  NSObject *objectRepresentation
+ @property  r^v rawBytes
+ @property  unsigned short rawBytesLength
+ @property  unsigned long unsignedInt64Value
+ @property  long long int64Value
+ @property  double doubleValue
+ @property 	bug here! ->  D longDoubleValue
+
+  // instance methods
+  -[OSLogEventMessageArgument doubleValue]
+  -[OSLogEventMessageArgument category]
+  -[OSLogEventMessageArgument int64Value]
+  -[OSLogEventMessageArgument rawBytes]
+  -[OSLogEventMessageArgument availability]
+  -[OSLogEventMessageArgument objectRepresentation]
+  -[OSLogEventMessageArgument initWithProxy:index:]
+  -[OSLogEventMessageArgument privacy]
+  -[OSLogEventMessageArgument rawBytesLength]
+  -[OSLogEventMessageArgument scalarCategory]
+  -[OSLogEventMessageArgument scalarType]
+  -[OSLogEventMessageArgument unsignedInt64Value]
+  -[OSLogEventMessageArgument longDoubleValue]
+
+
+OSLogEventBacktraceFrame : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSUUID *imageUUID
+ @property  r* imageUUIDBytes
+ @property  unsigned long imageOffset
+
+  // instance methods
+  -[OSLogEventBacktraceFrame dealloc]
+  -[OSLogEventBacktraceFrame imageOffset]
+  -[OSLogEventBacktraceFrame initWithUUIDBytes:andOffset:]
+  -[OSLogEventBacktraceFrame imageUUID]
+  -[OSLogEventBacktraceFrame imageUUIDBytes]
+
+
+OSLogEventBacktrace : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSArray *frames
+
+  // instance methods
+  -[OSLogEventBacktrace dealloc]
+  -[OSLogEventBacktrace frames]
+  -[OSLogEventBacktrace initWithBacktrace:]
+  -[OSLogEventBacktrace initWithSingleFrame:]
+
+
+OSLogDevice : NSObject /usr/lib/libSystem.B.dylib
+ @property  long long devType
+ @property  ^v mobDev
+ @property  SimDevice *simDev
+ @property  NSString *uid
+
+  // instance methods
+  -[OSLogDevice init]
+  -[OSLogDevice .cxx_destruct]
+  -[OSLogDevice uid]
+  -[OSLogDevice setUid:]
+  -[OSLogDevice initWithMobileDevice:andID:]
+  -[OSLogDevice initWithSimualatedDevice:]
+  -[OSLogDevice devType]
+  -[OSLogDevice setDevType:]
+  -[OSLogDevice mobDev]
+  -[OSLogDevice setMobDev:]
+  -[OSLogDevice simDev]
+  -[OSLogDevice setSimDev:]
+
+
+OSActivityStream : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long options
+ @property  unsigned long eventFilter
+ @property  unsigned long events
+ @property  <OSActivityStreamDelegate> *delegate
+ @property  NSCompoundPredicate *predicate
+ @property  <OSDeviceDelegate> *deviceDelegate
+ @property  OSLogDevice *device
+
+  // instance methods
+  -[OSActivityStream init]
+  -[OSActivityStream dealloc]
+  -[OSActivityStream options]
+  -[OSActivityStream delegate]
+  -[OSActivityStream setDelegate:]
+  -[OSActivityStream .cxx_destruct]
+  -[OSActivityStream setPredicate:]
+  -[OSActivityStream predicate]
+  -[OSActivityStream stop]
+  -[OSActivityStream start]
+  -[OSActivityStream setOptions:]
+  -[OSActivityStream device]
+  -[OSActivityStream initWithDevice:]
+  -[OSActivityStream events]
+  -[OSActivityStream setEvents:]
+  -[OSActivityStream setDevice:]
+  -[OSActivityStream addProcessID:]
+  -[OSActivityStream streamEvent:error:]
+  -[OSActivityStream startRemote]
+  -[OSActivityStream startLocal]
+  -[OSActivityStream stopLocal]
+  -[OSActivityStream stopRemote]
+  -[OSActivityStream setDeviceDelegate:]
+  -[OSActivityStream getInfoForDevice:andKey:]
+  -[OSActivityStream establishTrust:]
+  -[OSActivityStream deviceDelegate]
+  -[OSActivityStream eventFilter]
+  -[OSActivityStream setEventFilter:]
+
+
+OSActivityCreateEvent : OSActivityEvent
+ @property  unsigned long creatorActivityID
+ @property  unsigned long creatorProcessUniqueID
+ @property  unsigned long senderProgramCounter
+
+  // instance methods
+  -[OSActivityCreateEvent initWithEntry:]
+  -[OSActivityCreateEvent _addProperties:]
+  -[OSActivityCreateEvent creatorActivityID]
+  -[OSActivityCreateEvent creatorProcessUniqueID]
+  -[OSActivityCreateEvent senderProgramCounter]
+
+
+OSActivityTraceMessageEvent : OSActivityEventMessage
+ @property  NSObject<OS_xpc_object> *payload
+ @property  unsigned long senderProgramCounter
+ @property  unsigned char messageType
+
+  // instance methods
+  -[OSActivityTraceMessageEvent .cxx_destruct]
+  -[OSActivityTraceMessageEvent payload]
+  -[OSActivityTraceMessageEvent messageType]
+  -[OSActivityTraceMessageEvent initWithEntry:]
+  -[OSActivityTraceMessageEvent _addProperties:]
+  -[OSActivityTraceMessageEvent senderProgramCounter]
+
+
+OSActivityLogMessageEvent : OSActivityEventMessage
+ @property  NSString *subsystem
+ @property  NSString *category
+ @property  unsigned long senderProgramCounter
+ @property  unsigned char messageType
+
+  // instance methods
+  -[OSActivityLogMessageEvent .cxx_destruct]
+  -[OSActivityLogMessageEvent category]
+  -[OSActivityLogMessageEvent messageType]
+  -[OSActivityLogMessageEvent subsystem]
+  -[OSActivityLogMessageEvent initWithEntry:]
+  -[OSActivityLogMessageEvent _addProperties:]
+  -[OSActivityLogMessageEvent senderProgramCounter]
+
+
+OSActivitySignpostEvent : OSActivityLogMessageEvent
+ @property  unsigned long signpostID
+
+  // instance methods
+  -[OSActivitySignpostEvent signpostID]
+  -[OSActivitySignpostEvent initWithEntry:]
+
+
+OSActivityUserActionEvent : OSActivityEvent
+ @property  unsigned long senderProgramCounter
+
+  // instance methods
+  -[OSActivityUserActionEvent initWithEntry:]
+  -[OSActivityUserActionEvent _addProperties:]
+  -[OSActivityUserActionEvent senderProgramCounter]
+
+
+OSActivityTransitionEvent : OSActivityEvent
+ @property  unsigned long transitionToActivityID
+
+  // instance methods
+  -[OSActivityTransitionEvent initWithEntry:]
+  -[OSActivityTransitionEvent _addProperties:]
+  -[OSActivityTransitionEvent transitionToActivityID]
+
+
+OSActivityStatedumpEvent : OSActivityEvent
+  // instance methods
+  -[OSActivityStatedumpEvent initWithEntry:]
+  -[OSActivityStatedumpEvent _addProperties:]
+
+
+OSActivityTimesyncEvent : OSActivityEvent
+  // instance methods
+  -[OSActivityTimesyncEvent initWithEntry:]
+
+
+OSActivityLossEvent : OSActivityEvent
+ @property  unsigned long startMachTimestamp
+ @property  unsigned long endMachTimestamp
+ @property  unsigned int count
+ @property  BOOL saturated
+
+  // instance methods
+  -[OSActivityLossEvent count]
+  -[OSActivityLossEvent initWithEntry:]
+  -[OSActivityLossEvent _addProperties:]
+  -[OSActivityLossEvent startMachTimestamp]
+  -[OSActivityLossEvent endMachTimestamp]
+  -[OSActivityLossEvent saturated]
+
+
+OSActivityEvent : NSObject /usr/lib/libSystem.B.dylib
+ @property  {timeval=qi} timeGMT
+ @property  {timezone=ii} tz
+ @property  NSString *timezoneName
+ @property  int processID
+ @property  unsigned long processUniqueID
+ @property  NSUUID *processImageUUID
+ @property  NSString *processImagePath
+ @property  NSString *process
+ @property  unsigned long eventType
+ @property  unsigned long parentActivityID
+ @property  unsigned long activityID
+ @property  unsigned long traceID
+ @property  unsigned long threadID
+ @property  unsigned long machTimestamp
+ @property  NSDate *timestamp
+ @property  NSTimeZone *timezone
+ @property  NSUUID *senderImageUUID
+ @property  NSString *senderImagePath
+ @property  NSString *sender
+ @property  NSString *eventMessage
+ @property  BOOL persisted
+
+  // class methods
+  +[OSActivityEvent activityEventFromStreamEntry:]
+
+  // instance methods
+  -[OSActivityEvent .cxx_destruct]
+  -[OSActivityEvent timestamp]
+  -[OSActivityEvent properties]
+  -[OSActivityEvent sender]
+  -[OSActivityEvent eventType]
+  -[OSActivityEvent process]
+  -[OSActivityEvent timezone]
+  -[OSActivityEvent processID]
+  -[OSActivityEvent machTimestamp]
+  -[OSActivityEvent threadID]
+  -[OSActivityEvent _initWithProperties:]
+  -[OSActivityEvent persisted]
+  -[OSActivityEvent processImageUUID]
+  -[OSActivityEvent processImagePath]
+  -[OSActivityEvent senderImageUUID]
+  -[OSActivityEvent senderImagePath]
+  -[OSActivityEvent _addProperties:]
+  -[OSActivityEvent fillFromStreamEntry:eventMessage:persisted:]
+  -[OSActivityEvent processUniqueID]
+  -[OSActivityEvent parentActivityID]
+  -[OSActivityEvent activityID]
+  -[OSActivityEvent traceID]
+  -[OSActivityEvent eventMessage]
+  -[OSActivityEvent setEventMessage:]
+  -[OSActivityEvent timeGMT]
+  -[OSActivityEvent tz]
+  -[OSActivityEvent timezoneName]
+  -[OSActivityEvent setTimezoneName:]
+
+
+OSActivityEventMessage : OSActivityEvent
+ @property  NSMutableArray *arguments
+ @property  NSString *format
+
+  // instance methods
+  -[OSActivityEventMessage .cxx_destruct]
+  -[OSActivityEventMessage arguments]
+  -[OSActivityEventMessage format]
+  -[OSActivityEventMessage fillEventData:length:privateBuffer:length:]
+
+
+OSLogEventLiveSource : NSObject /usr/lib/libSystem.B.dylib
+
+_OSLogChunkStore : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[_OSLogChunkStore initWithBytes:size:]
+  -[_OSLogChunkStore enumerateChunksInRange:usingBlock:]
+  -[_OSLogChunkStore enumerateChunksUsingBlock:]
+
+
+_OSLogChunkMemory : _OSLogChunkStore
+  // instance methods
+  -[_OSLogChunkMemory dealloc]
+  -[_OSLogChunkMemory .cxx_destruct]
+  -[_OSLogChunkMemory initWithBytes:size:deallocator:]
+
+
+_OSLogChunkFile : _OSLogChunkStore
+  // instance methods
+  -[_OSLogChunkFile dealloc]
+  -[_OSLogChunkFile initWithFileDescriptor:error:]
+
+
+_OSLogChunkFileReference : NSObject /usr/lib/libSystem.B.dylib
+ @property  char * path
+ @property  unsigned long xattrOldestTime
+ @property  unsigned long xattrEndTime
+
+  // instance methods
+  -[_OSLogChunkFileReference dealloc]
+  -[_OSLogChunkFileReference .cxx_destruct]
+  -[_OSLogChunkFileReference path]
+  -[_OSLogChunkFileReference initWithCollection:subpath:]
+  -[_OSLogChunkFileReference readXattrForTimespan:]
+  -[_OSLogChunkFileReference copyMappedChunkFile:]
+  -[_OSLogChunkFileReference xattrOldestTime]
+  -[_OSLogChunkFileReference xattrEndTime]
+
+
+_OSLogIndexFile : NSObject /usr/lib/libSystem.B.dylib <_OSLogIndexTimeRangable>
+ @property  r* bootUUID
+ @property  unsigned long oldestTime
+ @property  unsigned long endTime
+ @property  char * path
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_OSLogIndexFile dealloc]
+  -[_OSLogIndexFile .cxx_destruct]
+  -[_OSLogIndexFile path]
+  -[_OSLogIndexFile endTime]
+  -[_OSLogIndexFile bootUUID]
+  -[_OSLogIndexFile oldestTime]
+  -[_OSLogIndexFile initWithTraceFile:error:]
+  -[_OSLogIndexFile initWithChunkStore:error:]
+  -[_OSLogIndexFile _loadHeaderMetadata:]
+  -[_OSLogIndexFile _loadCatalogMetadataForTimespan]
+  -[_OSLogIndexFile _determineTimespan]
+  -[_OSLogIndexFile copyMappedChunkStore:]
+
+
+_OSLogEnumeratorOversizeChunk : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long timestamp
+
+  // instance methods
+  -[_OSLogEnumeratorOversizeChunk compare:]
+  -[_OSLogEnumeratorOversizeChunk .cxx_destruct]
+  -[_OSLogEnumeratorOversizeChunk timestamp]
+  -[_OSLogEnumeratorOversizeChunk initWithSubchunk:chunk:]
+  -[_OSLogEnumeratorOversizeChunk matches:procinfo:]
+  -[_OSLogEnumeratorOversizeChunk fillMessage:]
+  -[_OSLogEnumeratorOversizeChunk fillProxy:]
+
+
+_OSLogChunkBuffer : NSObject /usr/lib/libSystem.B.dylib
+ @property  r* data
+ @property  unsigned long size
+
+  // instance methods
+  -[_OSLogChunkBuffer dealloc]
+  -[_OSLogChunkBuffer data]
+  -[_OSLogChunkBuffer size]
+  -[_OSLogChunkBuffer initWithChunk:subchunk:]
+
+
+_OSLogEnumeratorCatalogSubchunk : NSObject /usr/lib/libSystem.B.dylib <_OSLogIndexTimeRangable>
+ @property  _OSLogEnumeratorCatalog *catalog
+ @property  unsigned long oldestTime
+ @property  unsigned long endTime
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_OSLogEnumeratorCatalogSubchunk .cxx_destruct]
+  -[_OSLogEnumeratorCatalogSubchunk endTime]
+  -[_OSLogEnumeratorCatalogSubchunk catalog]
+  -[_OSLogEnumeratorCatalogSubchunk enumerateChunksUsingBlock:]
+  -[_OSLogEnumeratorCatalogSubchunk oldestTime]
+  -[_OSLogEnumeratorCatalogSubchunk initWithCatalog:subchunk:range:]
+  -[_OSLogEnumeratorCatalogSubchunk initWithCatalog:subchunk:range:oldestTime:endTime:]
+  -[_OSLogEnumeratorCatalogSubchunk oldestTimeCompare:]
+  -[_OSLogEnumeratorCatalogSubchunk endTimeCompare:]
+  -[_OSLogEnumeratorCatalogSubchunk _decompressedBufferForChunk:subchunk:]
+
+
+_OSLogEnumeratorCatalog : NSObject /usr/lib/libSystem.B.dylib <_OSLogIndexTimeRangable>
+ @property  r* bootUUID
+ @property  ^{catalog_s={catalog_hdr_s=SQ}^{os_trace_uuid_map_s}^{os_trace_str_map_s}Q^{os_procinfo_map_s}QQ{subchunk_queue_t=^{catalog_subchunk_s}^^{catalog_subchunk_s}}Q} catalog
+ @property  ^{tracev3_chunk_s={tracev3_chunk_preamble_s=IIQ}(?={tracev3_chunk_header_s={mach_timebase_info=II}QqiiiI{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_continuous_s=Q}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_systeminfo_s=ii[16c][32c]}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_generation_s=[16C]ii}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_timezone_s=[48c]}}{tracev3_chunk_catalog_s=SSSS[0C]}{tracev3_chunk_catalog_v2_s=SSSSS[3S]Q[0C]}{tracev3_chunk_log_preamble_s=QIC[3C]}{tracev3_chunk_firehose_s=QICC[2C][0C]}{tracev3_chunk_firehose_old_s=QiCC[0C]}{tracev3_chunk_oversize_s=QIC[3C]QISS[0C]}{tracev3_chunk_oversize_old_s=QISS[0C]}{tracev3_chunk_statedump_s=QIC[3C]QQ[16C][0C]}[0C])} fileHeader
+ @property  ^{tracev3_chunk_s={tracev3_chunk_preamble_s=IIQ}(?={tracev3_chunk_header_s={mach_timebase_info=II}QqiiiI{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_continuous_s=Q}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_systeminfo_s=ii[16c][32c]}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_generation_s=[16C]ii}{tracev3_subchunk_preamble_s=II}{tracev3_subchunk_timezone_s=[48c]}}{tracev3_chunk_catalog_s=SSSS[0C]}{tracev3_chunk_catalog_v2_s=SSSSS[3S]Q[0C]}{tracev3_chunk_log_preamble_s=QIC[3C]}{tracev3_chunk_firehose_s=QICC[2C][0C]}{tracev3_chunk_firehose_old_s=QiCC[0C]}{tracev3_chunk_oversize_s=QIC[3C]QISS[0C]}{tracev3_chunk_oversize_old_s=QISS[0C]}{tracev3_chunk_statedump_s=QIC[3C]QQ[16C][0C]}[0C])} chunk
+ @property  _OSLogIndex *index
+ @property  unsigned long oldestTime
+ @property  unsigned long endTime
+ @property  _OSLogChunkStore *store
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_OSLogEnumeratorCatalog dealloc]
+  -[_OSLogEnumeratorCatalog .cxx_destruct]
+  -[_OSLogEnumeratorCatalog index]
+  -[_OSLogEnumeratorCatalog store]
+  -[_OSLogEnumeratorCatalog endTime]
+  -[_OSLogEnumeratorCatalog catalog]
+  -[_OSLogEnumeratorCatalog unionWithRange:]
+  -[_OSLogEnumeratorCatalog chunk]
+  -[_OSLogEnumeratorCatalog bootUUID]
+  -[_OSLogEnumeratorCatalog oldestTime]
+  -[_OSLogEnumeratorCatalog initWithStore:index:fileHeader:range:chunk:]
+  -[_OSLogEnumeratorCatalog enumerateSubchunksUsingBlock:]
+  -[_OSLogEnumeratorCatalog fileHeader]
+
+
+_OSLogTracepointBuffer : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[_OSLogTracepointBuffer init]
+  -[_OSLogTracepointBuffer dealloc]
+  -[_OSLogTracepointBuffer _isEmpty]
+  -[_OSLogTracepointBuffer beginInsertingTracepointsClippingFromTime:]
+  -[_OSLogTracepointBuffer insertTimesyncPoints:forBoot:oldestContinuousTime:]
+  -[_OSLogTracepointBuffer insertNonsparsePoint:uuid:ttl:inMemory:]
+  -[_OSLogTracepointBuffer insertStatedumpChunk:subchunk:]
+  -[_OSLogTracepointBuffer insertTracepoints:subchunk:options:]
+  -[_OSLogTracepointBuffer finishedInsertingTracepointsWithNextMajorTime:options:]
+  -[_OSLogTracepointBuffer enumerateEventsFromTime:to:options:usingBlock:]
+
+
+_OSLogIndexEnumerator : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *oversizeChunks
+
+  // instance methods
+  -[_OSLogIndexEnumerator dealloc]
+  -[_OSLogIndexEnumerator .cxx_destruct]
+  -[_OSLogIndexEnumerator initWithIndex:metadata:fileBootList:catalogFilter:]
+  -[_OSLogIndexEnumerator _initTimesyncBounds:]
+  -[_OSLogIndexEnumerator enumerateTracepointsInRange:timesync:options:usingBlock:]
+  -[_OSLogIndexEnumerator oversizeChunks]
+
+
+_OSLogIndex : NSObject /usr/lib/libSystem.B.dylib
+ @property  ^{_os_timesync_db_s=} timesync
+ @property  unsigned long persistStartWalltime
+ @property  unsigned long specialStartWalltime
+ @property  unsigned long endWalltime
+
+  // instance methods
+  -[_OSLogIndex init]
+  -[_OSLogIndex dealloc]
+  -[_OSLogIndex .cxx_destruct]
+  -[_OSLogIndex enumerateEntriesUsingBlock:]
+  -[_OSLogIndex timesync]
+  -[_OSLogIndex initWithCollection:buildLocalIndex:]
+  -[_OSLogIndex initWithCollection:timesync:metadata:]
+  -[_OSLogIndex _readArchiveMetadata:]
+  -[_OSLogIndex _openTimesyncDatabase]
+  -[_OSLogIndex addReferenceToIndex:error:]
+  -[_OSLogIndex _addFileToIndex:error:]
+  -[_OSLogIndex _foreachIndexFile:]
+  -[_OSLogIndex insertChunkStore:]
+  -[_OSLogIndex insertIndexFile:]
+  -[_OSLogIndex _buildFileIndex]
+  -[_OSLogIndex _buildSingleFileIndex:]
+  -[_OSLogIndex persistStartWalltime]
+  -[_OSLogIndex specialStartWalltime]
+  -[_OSLogIndex endWalltime]
+  -[_OSLogIndex enumerateEntriesFrom:to:options:usingBlock:]
+  -[_OSLogIndex enumerateEntriesFromLastBootWithOptions:usingBlock:]
+  -[_OSLogIndex _enumerateEntriesInRange:options:usingBlock:]
+  -[_OSLogIndex enumerateEntriesInRange:options:usingCatalogFilter:usingBlock:]
+  -[_OSLogIndex enumerateFilesUsingBlock:]
+
+
+_OSLogPredicateMapper : NSObject /usr/lib/libSystem.B.dylib <NSPredicateVisitor>
+ @property  NSMutableArray *stack
+ @property  NSMutableSet *validKeyPaths
+ @property  unsigned long flags
+ @property  NSPredicate *mappedPredicate
+ @property  NSArray *validationErrors
+
+  // instance methods
+  -[_OSLogPredicateMapper .cxx_destruct]
+  -[_OSLogPredicateMapper flags]
+  -[_OSLogPredicateMapper visitPredicate:]
+  -[_OSLogPredicateMapper visitPredicateExpression:]
+  -[_OSLogPredicateMapper visitPredicateOperator:]
+  -[_OSLogPredicateMapper initWithPredicate:]
+  -[_OSLogPredicateMapper setStack:]
+  -[_OSLogPredicateMapper stack]
+  -[_OSLogPredicateMapper validationErrors]
+  -[_OSLogPredicateMapper mappedPredicate]
+  -[_OSLogPredicateMapper initWithPredicate:andValidate:]
+  -[_OSLogPredicateMapper validKeyPaths]
+  -[_OSLogPredicateMapper mapKeywordToConstantExpression:keywordMap:]
+  -[_OSLogPredicateMapper mapEventTypeExpression:]
+  -[_OSLogPredicateMapper mapMessageTypeExpression:]
+  -[_OSLogPredicateMapper mapSignpostScopeExpression:]
+  -[_OSLogPredicateMapper mapSignpostTypeExpression:]
+  -[_OSLogPredicateMapper mapLeftExpression:andRightExpression:]
+  -[_OSLogPredicateMapper processComparisonPredicate:]
+  -[_OSLogPredicateMapper processCompoundPredicate:]
+  -[_OSLogPredicateMapper validateExpression:]
+
+
+_OSLogLegacyPredicateMapper : _OSLogPredicateMapper
+  // instance methods
+  -[_OSLogLegacyPredicateMapper validKeyPaths]
+  -[_OSLogLegacyPredicateMapper mapLeftExpression:andRightExpression:]
+
+
+OSLogPersistence : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *statistics
+ @property  ^{_os_timesync_db_s=} timesync
+ @property  NSURL *logFile
+ @property  NSURL *logArchive
+ @property  <OSLogPersistenceDelegate> *delegate
+ @property  NSCompoundPredicate *predicate
+ @property  unsigned long batchSize
+ @property  unsigned long options
+ @property  long long archiveState
+ @property  long long archiveVersion
+ @property  NSString *currentFile
+ @property  NSDate *startDate
+ @property  NSDate *sparseDataStart
+ @property  NSDate *endDate
+ @property  unsigned long decodeFailures
+ @property  unsigned long messagesFiltered
+ @property  unsigned long logMessageCount
+ @property  BOOL verbose
+
+  // instance methods
+  -[OSLogPersistence init]
+  -[OSLogPersistence dealloc]
+  -[OSLogPersistence options]
+  -[OSLogPersistence delegate]
+  -[OSLogPersistence setDelegate:]
+  -[OSLogPersistence .cxx_destruct]
+  -[OSLogPersistence setPredicate:]
+  -[OSLogPersistence predicate]
+  -[OSLogPersistence startDate]
+  -[OSLogPersistence endDate]
+  -[OSLogPersistence setOptions:]
+  -[OSLogPersistence statistics]
+  -[OSLogPersistence batchSize]
+  -[OSLogPersistence setBatchSize:]
+  -[OSLogPersistence verbose]
+  -[OSLogPersistence setVerbose:]
+  -[OSLogPersistence archiveVersion]
+  -[OSLogPersistence timesync]
+  -[OSLogPersistence _openLocalPersistenceDir]
+  -[OSLogPersistence _openPath:]
+  -[OSLogPersistence _openFiles]
+  -[OSLogPersistence setLogFile:]
+  -[OSLogPersistence setLogArchive:]
+  -[OSLogPersistence allowSensitive]
+  -[OSLogPersistence archiveState]
+  -[OSLogPersistence resetWorkingState]
+  -[OSLogPersistence streamChunks:andEntries:flags:]
+  -[OSLogPersistence enumerateFromStartDate:toEndDate:withBlock:]
+  -[OSLogPersistence enumerateFromLastBootWithBlock:]
+  -[OSLogPersistence fetchFromStartDate:toEndDate:]
+  -[OSLogPersistence logFile]
+  -[OSLogPersistence logArchive]
+  -[OSLogPersistence currentFile]
+  -[OSLogPersistence sparseDataStart]
+  -[OSLogPersistence decodeFailures]
+  -[OSLogPersistence messagesFiltered]
+  -[OSLogPersistence logMessageCount]
+
+
+OSLogEventLiveStream : OSLogEventStreamBase
+ @property  NSObject<OS_xpc_object> *diagdconn
+ @property  @? dropnoteHandler
+ @property  OSLogEventLiveSource *source
+
+  // instance methods
+  -[OSLogEventLiveStream invalidate]
+  -[OSLogEventLiveStream .cxx_destruct]
+  -[OSLogEventLiveStream source]
+  -[OSLogEventLiveStream activate]
+  -[OSLogEventLiveStream setFilterPredicate:]
+  -[OSLogEventLiveStream initWithLiveSource:]
+  -[OSLogEventLiveStream setDroppedEventHandler:]
+  -[OSLogEventLiveStream _handleStreamedObject:usingProxy:]
+  -[OSLogEventLiveStream _activateLiveStream]
+  -[OSLogEventLiveStream diagdconn]
+  -[OSLogEventLiveStream setDiagdconn:]
+  -[OSLogEventLiveStream dropnoteHandler]
+  -[OSLogEventLiveStream setDropnoteHandler:]
+
+
+OSLogTermDumper : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned char colorMode
+ @property  BOOL isFancy
+ @property  unsigned short style
+ @property  BOOL bold
+ @property  BOOL oblique
+ @property  BOOL underline
+ @property  unsigned char bgColor
+ @property  unsigned char fgColor
+
+  // instance methods
+  -[OSLogTermDumper init]
+  -[OSLogTermDumper dealloc]
+  -[OSLogTermDumper beginEditing]
+  -[OSLogTermDumper endEditing]
+  -[OSLogTermDumper close]
+  -[OSLogTermDumper style]
+  -[OSLogTermDumper setStyle:]
+  -[OSLogTermDumper isBold]
+  -[OSLogTermDumper isUnderlined]
+  -[OSLogTermDumper colorMode]
+  -[OSLogTermDumper bgColor]
+  -[OSLogTermDumper setBgColor:]
+  -[OSLogTermDumper fgColor]
+  -[OSLogTermDumper setFgColor:]
+  -[OSLogTermDumper format:]
+  -[OSLogTermDumper puts:]
+  -[OSLogTermDumper startPager]
+  -[OSLogTermDumper flush:]
+  -[OSLogTermDumper isOblique]
+  -[OSLogTermDumper setBold:]
+  -[OSLogTermDumper setOblique:]
+  -[OSLogTermDumper setUnderline:]
+  -[OSLogTermDumper resetStyle]
+  -[OSLogTermDumper initWithFd:colorMode:]
+  -[OSLogTermDumper _flushAttrs]
+  -[OSLogTermDumper _resetAttrsForNewline]
+  -[OSLogTermDumper write:size:]
+  -[OSLogTermDumper putc:]
+  -[OSLogTermDumper vformat:args:]
+  -[OSLogTermDumper hexdump:length:]
+  -[OSLogTermDumper writeln]
+  -[OSLogTermDumper pad:count:]
+  -[OSLogTermDumper putUUID:]
+  -[OSLogTermDumper isFancy]
+
+
+OSLogEventStreamBase : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long flags
+ @property  NSPredicate *filterPredicate
+ @property  NSObject<OS_dispatch_queue> *target
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  @? streamHandler
+ @property  unsigned int invalidated
+ @property  @? invalidationHandler
+
+  // instance methods
+  -[OSLogEventStreamBase init]
+  -[OSLogEventStreamBase setQueue:]
+  -[OSLogEventStreamBase invalidate]
+  -[OSLogEventStreamBase queue]
+  -[OSLogEventStreamBase .cxx_destruct]
+  -[OSLogEventStreamBase setTarget:]
+  -[OSLogEventStreamBase target]
+  -[OSLogEventStreamBase flags]
+  -[OSLogEventStreamBase setInvalidationHandler:]
+  -[OSLogEventStreamBase invalidationHandler]
+  -[OSLogEventStreamBase setFlags:]
+  -[OSLogEventStreamBase setEventHandler:]
+  -[OSLogEventStreamBase invalidated]
+  -[OSLogEventStreamBase setInvalidated:]
+  -[OSLogEventStreamBase filterPredicate]
+  -[OSLogEventStreamBase setFilterPredicate:]
+  -[OSLogEventStreamBase streamHandler]
+  -[OSLogEventStreamBase setStreamHandler:]
+
+
+_OSLogCatalogFilter : NSObject /usr/lib/libSystem.B.dylib <NSPredicateVisitor>
+  // instance methods
+  -[_OSLogCatalogFilter dealloc]
+  -[_OSLogCatalogFilter .cxx_destruct]
+  -[_OSLogCatalogFilter visitPredicate:]
+  -[_OSLogCatalogFilter visitPredicateExpression:]
+  -[_OSLogCatalogFilter visitPredicateOperator:]
+  -[_OSLogCatalogFilter addProcessID:]
+  -[_OSLogCatalogFilter isKeptCatalog:]
+  -[_OSLogCatalogFilter processComparisonPredicate:]
+  -[_OSLogCatalogFilter initWithPredicate:collection:]
+  -[_OSLogCatalogFilter containsProcessID:]
+  -[_OSLogCatalogFilter addSubsystem:]
+  -[_OSLogCatalogFilter containsSubsystemSubstr:]
+  -[_OSLogCatalogFilter addUUID:]
+  -[_OSLogCatalogFilter containsUUID:]
+  -[_OSLogCatalogFilter addProcessLookupSubstr:]
+  -[_OSLogCatalogFilter addSenderLookupSubstr:]
+  -[_OSLogCatalogFilter containsProcessLookupSubstr:]
+  -[_OSLogCatalogFilter containsSenderLookupSubstr:]
+  -[_OSLogCatalogFilter generateUUIDSet]
+  -[_OSLogCatalogFilter readDSOUUIDs]
+  -[_OSLogCatalogFilter handleDSOFile:]
+  -[_OSLogCatalogFilter readDSCUUIDs]
+  -[_OSLogCatalogFilter getDSCMap]
+  -[_OSLogCatalogFilter handleDSCContents:]
+  -[_OSLogCatalogFilter processLeftExpression:andRightExpression:]
+
+
+_OSLogDirectoryReference : NSObject /usr/lib/libSystem.B.dylib
+ @property  int fileDescriptor
+
+  // instance methods
+  -[_OSLogDirectoryReference dealloc]
+  -[_OSLogDirectoryReference close]
+  -[_OSLogDirectoryReference fileDescriptor]
+  -[_OSLogDirectoryReference initWithDescriptor:]
+  -[_OSLogDirectoryReference initWithDescriptor:sandboxExtensionToken:]
+
+
+_OSLogCollectionReference : NSObject /usr/lib/libSystem.B.dylib
+ @property  _OSLogDirectoryReference *diagnosticsDirectoryReference
+ @property  _OSLogDirectoryReference *timesyncReference
+ @property  _OSLogDirectoryReference *UUIDTextReference
+
+  // class methods
+  +[_OSLogCollectionReference referenceWithURL:error:]
+  +[_OSLogCollectionReference localDBRefWithError:]
+
+  // instance methods
+  -[_OSLogCollectionReference close]
+  -[_OSLogCollectionReference .cxx_destruct]
+  -[_OSLogCollectionReference diagnosticsDirectoryReference]
+  -[_OSLogCollectionReference UUIDTextReference]
+  -[_OSLogCollectionReference timesyncReference]
+  -[_OSLogCollectionReference initWithDiagnosticsDirectory:timesyncDirectory:UUIDTextDirectory:]
+
+
+OSLogEventLiveStore : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[OSLogEventLiveStore liveLocalStore]
+
+  // instance methods
+  -[OSLogEventLiveStore prepareWithCompletionHandler:]
+
+
+OSLogEventStream : OSLogEventStreamBase
+ @property  _OSLogIndex *index
+ @property  ^{_os_timesync_db_s=} tsdb
+ @property  _OSLogCatalogFilter *catalogFilter
+ @property  OSLogEventSource *source
+ @property  unsigned long flags
+ @property  NSPredicate *filterPredicate
+ @property  NSObject<OS_dispatch_queue> *target
+
+  // instance methods
+  -[OSLogEventStream dealloc]
+  -[OSLogEventStream .cxx_destruct]
+  -[OSLogEventStream source]
+  -[OSLogEventStream index]
+  -[OSLogEventStream setIndex:]
+  -[OSLogEventStream initWithSource:]
+  -[OSLogEventStream setFilterPredicate:]
+  -[OSLogEventStream activateStreamFromDate:]
+  -[OSLogEventStream _foreachIndexFile:]
+  -[OSLogEventStream _initWithSource:flags:]
+  -[OSLogEventStream initWithSource:skipNonSignpostFiles:]
+  -[OSLogEventStream _activateStreamInRange:]
+  -[OSLogEventStream _activateStreamFromTimeIntervalSinceLastBoot:]
+  -[OSLogEventStream activateStreamFromLastBoot]
+  -[OSLogEventStream activateStreamFromPosition:]
+  -[OSLogEventStream catalogFilter]
+  -[OSLogEventStream setCatalogFilter:]
+  -[OSLogEventStream tsdb]
+  -[OSLogEventStream setTsdb:]
+
+
+OSLogEventStreamPosition : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  r* sourceUUID
+ @property  r* UUID
+ @property  unsigned long continuousTime
+
+  // class methods
+  +[OSLogEventStreamPosition supportsSecureCoding]
+
+  // instance methods
+  -[OSLogEventStreamPosition encodeWithCoder:]
+  -[OSLogEventStreamPosition initWithCoder:]
+  -[OSLogEventStreamPosition UUID]
+  -[OSLogEventStreamPosition sourceUUID]
+  -[OSLogEventStreamPosition continuousTime]
+  -[OSLogEventStreamPosition initWithSource:bootUUID:time:]
+
+
+_OSLogVersioning : NSObject /usr/lib/libSystem.B.dylib
+ @property  long long state
+ @property  BOOL hasEndTimeRef
+ @property  long long version
+
+  // instance methods
+  -[_OSLogVersioning dealloc]
+  -[_OSLogVersioning .cxx_destruct]
+  -[_OSLogVersioning version]
+  -[_OSLogVersioning state]
+  -[_OSLogVersioning initWithURL:error:]
+  -[_OSLogVersioning performDestructiveUpdates:]
+  -[_OSLogVersioning initWithCollection:error:]
+  -[_OSLogVersioning initWithCollection:closeOnRelease:error:]
+  -[_OSLogVersioning checkTimesyncDB:error:]
+  -[_OSLogVersioning repairTimesyncDB:]
+  -[_OSLogVersioning hasEndTimeRef]
+
+
+LoggingSupport_OSLogCoder : NSObject /usr/lib/libSystem.B.dylib <OSLogCoder>
+  // instance methods
+  -[LoggingSupport_OSLogCoder setTruncated]
+  -[LoggingSupport_OSLogCoder setPublic]
+  -[LoggingSupport_OSLogCoder appendBytes:length:]
+  -[LoggingSupport_OSLogCoder _initBlob]
+
+
+_OSLogSimplePredicate : NSObject /usr/lib/libSystem.B.dylib <NSPredicateVisitor>
+ @property  NSPredicate *predicate
+
+  // instance methods
+  -[_OSLogSimplePredicate .cxx_destruct]
+  -[_OSLogSimplePredicate predicate]
+  -[_OSLogSimplePredicate visitPredicate:]
+  -[_OSLogSimplePredicate visitPredicateExpression:]
+  -[_OSLogSimplePredicate visitPredicateOperator:]
+  -[_OSLogSimplePredicate processComparisonPredicate:]
+  -[_OSLogSimplePredicate processCompoundPredicate:]
+  -[_OSLogSimplePredicate initWithPredicate:supportedKeys:supportedOperators:]
+  -[_OSLogSimplePredicate isSupportedExpression:]
+
+
+_OSLogStreamFilter : NSObject /usr/lib/libSystem.B.dylib <NSPredicateVisitor>
+ @property  NSData *data
+
+  // instance methods
+  -[_OSLogStreamFilter .cxx_destruct]
+  -[_OSLogStreamFilter data]
+  -[_OSLogStreamFilter visitPredicate:]
+  -[_OSLogStreamFilter visitPredicateExpression:]
+  -[_OSLogStreamFilter visitPredicateOperator:]
+  -[_OSLogStreamFilter initWithPredicate:]
+  -[_OSLogStreamFilter processComparisonPredicate:]
+  -[_OSLogStreamFilter addProcessID:flags:]
+  -[_OSLogStreamFilter addProcess:flags:]
+  -[_OSLogStreamFilter addProcessImagePath:flags:]
+  -[_OSLogStreamFilter addSubsystem:flags:]
+  -[_OSLogStreamFilter addCategory:flags:]
+  -[_OSLogStreamFilter processLeftExpression:andRightExpression:flags:]
+  -[_OSLogStreamFilter flagsForPredicate:]
+
+
+OSLogEventSource : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *_fileRefs
+ @property  ^{_os_timesync_db_s=} tsdb
+ @property  _OSLogCollectionReference *lcr
+ @property  _OSLogEventStoreMetadata *lesm
+ @property  _OSLogEventStoreTimeRef *oldestTimeRef
+ @property  _OSLogEventStoreTimeRef *newestTimeRef
+ @property  NSUUID *uniqueIdentifier
+ @property  NSDate *oldestDate
+ @property  NSDate *newestDate
+
+  // instance methods
+  -[OSLogEventSource dealloc]
+  -[OSLogEventSource .cxx_destruct]
+  -[OSLogEventSource uniqueIdentifier]
+  -[OSLogEventSource tsdb]
+  -[OSLogEventSource newestDate]
+  -[OSLogEventSource lcr]
+  -[OSLogEventSource _enumerateIndexFiles:]
+  -[OSLogEventSource lesm]
+  -[OSLogEventSource _fileRefs]
+  -[OSLogEventSource initWithCollection:metadata:timesync:]
+  -[OSLogEventSource _insertIndexFile:]
+  -[OSLogEventSource newestTimeRef]
+  -[OSLogEventSource oldestDate]
+  -[OSLogEventSource set_fileRefs:]
+  -[OSLogEventSource oldestTimeRef]
+
+
+OSLogPreferencesManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSArray *processes
+ @property  NSArray *subsystems
+ @property  long long enabledLevel
+ @property  long long persistedLevel
+
+  // class methods
+  +[OSLogPreferencesManager sharedManager]
+
+  // instance methods
+  -[OSLogPreferencesManager init]
+  -[OSLogPreferencesManager .cxx_destruct]
+  -[OSLogPreferencesManager reset]
+  -[OSLogPreferencesManager persistedLevel]
+  -[OSLogPreferencesManager enabledLevel]
+  -[OSLogPreferencesManager setPersistedLevel:]
+  -[OSLogPreferencesManager setEnabledLevel:]
+  -[OSLogPreferencesManager subsystems]
+  -[OSLogPreferencesManager resetAll]
+  -[OSLogPreferencesManager processes]
+  -[OSLogPreferencesManager _levelPrefs]
+  -[OSLogPreferencesManager resetAllProcesses]
+  -[OSLogPreferencesManager resetAllSubsystems]
+
+
+OSLogPreferencesProcess : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *bundleID
+ @property  BOOL isLocked
+ @property  long long effectiveEnabledLevel
+ @property  long long effectivePersistedLevel
+ @property  long long enabledLevel
+ @property  long long persistedLevel
+
+  // instance methods
+  -[OSLogPreferencesProcess .cxx_destruct]
+  -[OSLogPreferencesProcess reset]
+  -[OSLogPreferencesProcess bundleID]
+  -[OSLogPreferencesProcess isLocked]
+  -[OSLogPreferencesProcess persistedLevel]
+  -[OSLogPreferencesProcess enabledLevel]
+  -[OSLogPreferencesProcess setPersistedLevel:]
+  -[OSLogPreferencesProcess setEnabledLevel:]
+  -[OSLogPreferencesProcess initWithBundleID:]
+  -[OSLogPreferencesProcess _levelPrefs]
+  -[OSLogPreferencesProcess effectiveEnabledLevel]
+  -[OSLogPreferencesProcess effectivePersistedLevel]
+  -[OSLogPreferencesProcess defaultEnabledLevel]
+  -[OSLogPreferencesProcess defaultPersistedLevel]
+
+
+OSLogPreferencesSubsystem : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  NSArray *categories
+ @property  BOOL isLocked
+ @property  long long effectiveEnabledLevel
+ @property  long long effectivePersistedLevel
+ @property  long long enabledLevel
+ @property  long long persistedLevel
+
+  // instance methods
+  -[OSLogPreferencesSubsystem name]
+  -[OSLogPreferencesSubsystem .cxx_destruct]
+  -[OSLogPreferencesSubsystem initWithName:]
+  -[OSLogPreferencesSubsystem reset]
+  -[OSLogPreferencesSubsystem isLocked]
+  -[OSLogPreferencesSubsystem categories]
+  -[OSLogPreferencesSubsystem persistedLevel]
+  -[OSLogPreferencesSubsystem enabledLevel]
+  -[OSLogPreferencesSubsystem setPersistedLevel:]
+  -[OSLogPreferencesSubsystem setEnabledLevel:]
+  -[OSLogPreferencesSubsystem resetAll]
+  -[OSLogPreferencesSubsystem effectiveEnabledLevel]
+  -[OSLogPreferencesSubsystem effectivePersistedLevel]
+  -[OSLogPreferencesSubsystem defaultEnabledLevel]
+  -[OSLogPreferencesSubsystem defaultPersistedLevel]
+  -[OSLogPreferencesSubsystem _defaultEnabledLevelForCategory:]
+  -[OSLogPreferencesSubsystem _defaultPersistedLevelForCategory:]
+  -[OSLogPreferencesSubsystem _enabledLevelForCategory:]
+  -[OSLogPreferencesSubsystem _persistedLevelForCategory:]
+  -[OSLogPreferencesSubsystem _signpostEnabledForCategory:]
+  -[OSLogPreferencesSubsystem _signpostPersistedForCategory:]
+  -[OSLogPreferencesSubsystem _prefsForCategory:]
+  -[OSLogPreferencesSubsystem _levelPrefsForCategory:]
+  -[OSLogPreferencesSubsystem _setEnabledLevel:forCategory:]
+  -[OSLogPreferencesSubsystem _setPersistedLevel:forCategory:]
+  -[OSLogPreferencesSubsystem _setSignpostEnabled:forCategory:]
+  -[OSLogPreferencesSubsystem _setSignpostPersisted:forCategory:]
+  -[OSLogPreferencesSubsystem _resetCategory:]
+
+
+OSLogPreferencesCategory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  OSLogPreferencesSubsystem *subsystem
+ @property  BOOL isLocked
+ @property  long long effectiveEnabledLevel
+ @property  long long effectivePersistedLevel
+ @property  long long enabledLevel
+ @property  long long persistedLevel
+ @property  BOOL signpostEnabled
+ @property  BOOL signpostPersisted
+
+  // instance methods
+  -[OSLogPreferencesCategory name]
+  -[OSLogPreferencesCategory .cxx_destruct]
+  -[OSLogPreferencesCategory reset]
+  -[OSLogPreferencesCategory isLocked]
+  -[OSLogPreferencesCategory persistedLevel]
+  -[OSLogPreferencesCategory enabledLevel]
+  -[OSLogPreferencesCategory setPersistedLevel:]
+  -[OSLogPreferencesCategory setEnabledLevel:]
+  -[OSLogPreferencesCategory subsystem]
+  -[OSLogPreferencesCategory effectiveEnabledLevel]
+  -[OSLogPreferencesCategory effectivePersistedLevel]
+  -[OSLogPreferencesCategory defaultEnabledLevel]
+  -[OSLogPreferencesCategory defaultPersistedLevel]
+  -[OSLogPreferencesCategory initWithName:subsystem:]
+  -[OSLogPreferencesCategory signpostEnabled]
+  -[OSLogPreferencesCategory signpostPersisted]
+  -[OSLogPreferencesCategory setSignpostEnabled:]
+  -[OSLogPreferencesCategory setSignpostPersisted:]
+
+
+_OSLogEventStoreTimeRef : NSObject /usr/lib/libSystem.B.dylib
+ @property  r* UUID
+ @property  unsigned long continuousTime
+
+  // class methods
+  +[_OSLogEventStoreTimeRef timeRef]
+
+  // instance methods
+  -[_OSLogEventStoreTimeRef initWithDictionary:]
+  -[_OSLogEventStoreTimeRef UUID]
+  -[_OSLogEventStoreTimeRef continuousTime]
+  -[_OSLogEventStoreTimeRef initWithUUID:continuous:]
+
+
+_OSLogEventStoreMetadata : NSObject /usr/lib/libSystem.B.dylib
+ @property  _OSLogEventStoreTimeRef *oldestPersist
+ @property  _OSLogEventStoreTimeRef *oldestSpecial
+ @property  _OSLogEventStoreTimeRef *oldestSignpost
+ @property  _OSLogEventStoreTimeRef *oldestHighVolume
+ @property  _OSLogEventStoreTimeRef *oldestLive
+ @property  _OSLogEventStoreTimeRef *end
+ @property  NSUUID *archiveUUID
+ @property  NSUUID *sourceUUID
+
+  // instance methods
+  -[_OSLogEventStoreMetadata .cxx_destruct]
+  -[_OSLogEventStoreMetadata initWithDictionary:]
+  -[_OSLogEventStoreMetadata end]
+  -[_OSLogEventStoreMetadata sourceUUID]
+  -[_OSLogEventStoreMetadata timeRefForTTLClass:]
+  -[_OSLogEventStoreMetadata oldestHighVolume]
+  -[_OSLogEventStoreMetadata oldestSignpost]
+  -[_OSLogEventStoreMetadata oldestSpecial]
+  -[_OSLogEventStoreMetadata oldestPersist]
+  -[_OSLogEventStoreMetadata oldestLive]
+  -[_OSLogEventStoreMetadata archiveUUID]
+  -[_OSLogEventStoreMetadata initWithCollection:localStorePlist:liveDataDescriptor:]
+
+
+OSLogEventStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSURL *_archiveURL
+ @property  NSArray *_relativeFilePaths
+ @property  @? _progressHandler
+ @property  @? _upgradeHandler
+
+  // class methods
+  +[OSLogEventStore localStore]
+  +[OSLogEventStore storeWithArchiveURL:]
+  +[OSLogEventStore storeWithFileURL:]
+  +[OSLogEventStore storeWithArchiveURL:relativePaths:]
+
+  // instance methods
+  -[OSLogEventStore .cxx_destruct]
+  -[OSLogEventStore _progressHandler]
+  -[OSLogEventStore setProgressHandler:]
+  -[OSLogEventStore prepareWithCompletionHandler:]
+  -[OSLogEventStore _archiveURL]
+  -[OSLogEventStore _relativeFilePaths]
+  -[OSLogEventStore _upgradeHandler]
+  -[OSLogEventStore initWithArchiveURL:]
+  -[OSLogEventStore initWithArchiveURL:relativePaths:]
+  -[OSLogEventStore setUpgradeConfirmationHandler:]
+  -[OSLogEventStore set_archiveURL:]
+  -[OSLogEventStore set_relativeFilePaths:]
+  -[OSLogEventStore set_progressHandler:]
+  -[OSLogEventStore set_upgradeHandler:]
+
+
+OSLogEventLocalStore : OSLogEventStore
+  // instance methods
+  -[OSLogEventLocalStore prepareWithCompletionHandler:]
+
+
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSComparisonPredicate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSExpression 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSProgress 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0800 /usr/lib/libSystem.B.dylib: OS_xpc_object 

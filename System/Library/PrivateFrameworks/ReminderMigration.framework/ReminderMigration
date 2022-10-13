@@ -1,0 +1,387 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CalCalendarDatabaseReminderMigrator
+|| __DATA.__objc_data _OBJC_CLASS_$_CalInProcessReminderMigrator
+|| __DATA.__objc_data _OBJC_CLASS_$_CalReminderMigrationFailure
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalCalendarDatabaseReminderMigrator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalInProcessReminderMigrator
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalReminderMigrationFailure
+|| __DATA_CONST.__const _kCalAccountIdentifierDictionaryKey
+|| __DATA_CONST.__const _kCalAccountTypeDictionaryKey
+|| __DATA_CONST.__const _kCalBackupFileName
+|| __DATA_CONST.__const _kCalDefaultListName
+|| __DATA_CONST.__const _kCalLastReminderMigrationCleanupSystemVersionDefaultsKey
+|| __DATA_CONST.__const _kCalLocalAccountName
+|| __DATA_CONST.__const _kCalReminderMigrationErrorDomain
+|| __DATA_CONST.__const _kCalShouldBackupBeforeReminderMigrationDefaultsKey
+|| __DATA_CONST.__const _kCalendarDatabaseCalendarDirectoryRelativeToHome
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CalDefaultReminderKitDatabaseMigrationContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CalDefaultReminderKitProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CalDefaultReminderMigrationDefaultsProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CalReminderMigrationLog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CalDefaultReminderKitDatabaseMigrationContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CalDefaultReminderKitProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CalDefaultReminderMigrationDefaultsProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CalReminderMigrationLog
+|| __TEXT.__const _kCalMaximumCalendarDirectorySizeAllowedForBackupInBytes
+__ CalendarDatabase: _CalCalendarCanContainEntityType
+__ CalendarDatabase: _CalCalendarCopyExternalID
+__ CalendarDatabase: _CalCalendarCopyExternalModificationTag
+__ CalendarDatabase: _CalCalendarCopyPushKey
+__ CalendarDatabase: _CalCalendarCopyStore
+__ CalendarDatabase: _CalCalendarCopySymbolicColorName
+__ CalendarDatabase: _CalCalendarCopyTasks
+__ CalendarDatabase: _CalCalendarCopyTitle
+__ CalendarDatabase: _CalCalendarCopyUUID
+__ CalendarDatabase: _CalCalendarGetColorStringForDisplay
+__ CalendarDatabase: _CalCalendarGetDisplayOrder
+__ CalendarDatabase: _CalCalendarIsHidden
+__ CalendarDatabase: _CalCalendarIsInbox
+__ CalendarDatabase: _CalCalendarIsNotificationsCollection
+__ CalendarDatabase: _CalCalendarIsSharingInvitation
+__ CalendarDatabase: _CalCalendarIsSubscribed
+__ CalendarDatabase: _CalCalendarItemCopyUUID
+__ CalendarDatabase: _CalCalendarSetCanContainEntityType
+__ CalendarDatabase: _CalCalendarSetSyncToken
+__ CalendarDatabase: _CalCreateiCalendarDataFromCalEntities
+__ CalendarDatabase: _CalDatabaseClearAllChangeHistoryForAllClients
+__ CalendarDatabase: _CalDatabaseCopyDefaultCalendarForNewTasksForReminderMigration
+__ CalendarDatabase: _CalDatabaseCopyDirectoryPathForDatabase
+__ CalendarDatabase: _CalDatabaseCopyOfAllStores
+__ CalendarDatabase: _CalDatabaseCreateWithOptionsAndDatabaseDirectory
+__ CalendarDatabase: _CalDatabaseRemoveAllCalendarItemsWithCalendarAndEntityType
+__ CalendarDatabase: _CalDatabaseSave
+__ CalendarDatabase: _CalRemoveCalendar
+__ CalendarDatabase: _CalRemoveStore
+__ CalendarDatabase: _CalStoreAllowsEvents
+__ CalendarDatabase: _CalStoreAllowsTasksPrivate
+__ CalendarDatabase: _CalStoreCopyAccountPersistentID
+__ CalendarDatabase: _CalStoreCopyCalendars
+__ CalendarDatabase: _CalStoreCopyName
+__ CalendarDatabase: _CalStoreGetType
+__ CalendarDatabase: _CalStoreIsEnabled
+__ CalendarDatabase: _CalStoreSetAllowsTasksPrivate
+__ CalendarDatabase: _CalStoreSetWasMigrated
+__ CalendarFoundation: _EKSymbolicColorToRGBMapping
+__ CalendarFoundation: _OBJC_CLASS_$_CalDefaults
+__ CalendarFoundation: _OBJC_CLASS_$_CalSystemInformation
+__ CalendarFoundation: _kCalReminderMigrationAuthor
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSURLFileSizeKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_EHTYPE_id
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_terminate
+CalDefaultReminderMigrationDefaultsProvider : NSObject /usr/lib/libSystem.B.dylib <CalReminderMigrationDefaultsProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  BOOL shouldBackupBeforeMigration
+ @property  BOOL havePerformedReminderMigrationCleanup
+
+  // class methods
+  +[CalDefaultReminderMigrationDefaultsProvider sharedInstance]
+
+  // instance methods
+  -[CalDefaultReminderMigrationDefaultsProvider havePerformedReminderMigrationCleanup]
+  -[CalDefaultReminderMigrationDefaultsProvider shouldBackupBeforeMigration]
+  -[CalDefaultReminderMigrationDefaultsProvider setHavePerformedReminderMigrationCleanup:]
+
+
+CalDefaultReminderKitDatabaseMigrationContext : NSObject /usr/lib/libSystem.B.dylib <CalReminderKitDatabaseMigrationContext>
+ @property  REMDatabaseMigrationContext *remDatabaseMigrationContext
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  REMStore *reminderStore
+ @property  BOOL shouldPerformMigration
+ @property  BOOL shouldDeleteMigratedData
+
+  // instance methods
+  -[CalDefaultReminderKitDatabaseMigrationContext init]
+  -[CalDefaultReminderKitDatabaseMigrationContext .cxx_destruct]
+  -[CalDefaultReminderKitDatabaseMigrationContext shouldDeleteMigratedData]
+  -[CalDefaultReminderKitDatabaseMigrationContext ensureAccountsExist:error:]
+  -[CalDefaultReminderKitDatabaseMigrationContext reminderStore]
+  -[CalDefaultReminderKitDatabaseMigrationContext shouldPerformMigration]
+  -[CalDefaultReminderKitDatabaseMigrationContext remDatabaseMigrationContext]
+  -[CalDefaultReminderKitDatabaseMigrationContext willBeginMigration]
+  -[CalDefaultReminderKitDatabaseMigrationContext didEndMigrationWithSuccess:]
+  -[CalDefaultReminderKitDatabaseMigrationContext recordMigrationFailure:]
+
+
+CalReminderMigrationLog : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CalReminderMigrationLog logHandle]
+
+
+CalReminderMigrationFailure : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *failureDescription
+ @property  unsigned long stage
+ @property  NSError *underlyingError
+ @property  NSString *relatedPath
+
+  // class methods
+  +[CalReminderMigrationFailure _labelForStage:]
+
+  // instance methods
+  -[CalReminderMigrationFailure .cxx_destruct]
+  -[CalReminderMigrationFailure stage]
+  -[CalReminderMigrationFailure underlyingError]
+  -[CalReminderMigrationFailure failureDescription]
+  -[CalReminderMigrationFailure relatedPath]
+  -[CalReminderMigrationFailure initWithDescription:stage:underlyingError:relatedPath:]
+
+
+CalReminderMigrationErrorUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CalReminderMigrationErrorUtils errorFromException:]
+
+
+CalDefaultReminderKitProvider : NSObject /usr/lib/libSystem.B.dylib <CalReminderKitProvider>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CalDefaultReminderKitProvider sharedInstance]
+
+  // instance methods
+  -[CalDefaultReminderKitProvider newDatabaseMigrationContext]
+  -[CalDefaultReminderKitProvider newSaveRequestWithStore:]
+  -[CalDefaultReminderKitProvider setDefaultReminderListIdentifier:]
+
+
+CalReminderMigrationBackup : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CalReminderMigrationBackup removeExistingBackupInCalendarDirectory:error:]
+  +[CalReminderMigrationBackup _backupFileInCalendarDirectory:]
+  +[CalReminderMigrationBackup backupCalendarDirectory:error:]
+  +[CalReminderMigrationBackup shouldBackupCalendarDirectory:withPrivacySafePathProvider:reminderMigrationDefaultsProvider:]
+
+
+CalReminderMigrationReminderKitUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[CalReminderMigrationReminderKitUtils hexColorStringByRemovingAlphaFromHexString:]
+
+
+CalInProcessReminderMigrator : NSObject /usr/lib/libSystem.B.dylib <CalReminderMigrator>
+ @property  <CalReminderKitProvider> *reminderKitProvider
+ @property  <CalReminderMigrationDefaultsProvider> *defaultsProvider
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CalInProcessReminderMigrator .cxx_destruct]
+  -[CalInProcessReminderMigrator initWithReminderKitProvider:defaultsProvider:]
+  -[CalInProcessReminderMigrator defaultsProvider]
+  -[CalInProcessReminderMigrator reminderKitProvider]
+  -[CalInProcessReminderMigrator attemptMigrationWithHomeDirectory:]
+
+
+CalOrderedListChangeItem : NSObject /usr/lib/libSystem.B.dylib
+ @property  REMListChangeItem *listChangeItem
+ @property  long long order
+
+  // instance methods
+  -[CalOrderedListChangeItem .cxx_destruct]
+  -[CalOrderedListChangeItem order]
+  -[CalOrderedListChangeItem setOrder:]
+  -[CalOrderedListChangeItem listChangeItem]
+  -[CalOrderedListChangeItem setListChangeItem:]
+
+
+CalReminderMigrationContext : NSObject /usr/lib/libSystem.B.dylib
+ @property  <CalReminderKitProvider> *reminderKitProvider
+ @property  BOOL shouldPerformMigration
+ @property  BOOL shouldDeleteMigratedData
+ @property  REMSaveRequest *saveRequest
+ @property  REMAccountChangeItem *localAccountChangeItem
+ @property  NSString *defaultListOriginalIdentifier
+ @property  REMObjectID *defaultListMigratedIdentifier
+ @property  BOOL isCurrentOrderedListItemsContextEmpty
+
+  // instance methods
+  -[CalReminderMigrationContext .cxx_destruct]
+  -[CalReminderMigrationContext _setup]
+  -[CalReminderMigrationContext saveRequest]
+  -[CalReminderMigrationContext shouldDeleteMigratedData]
+  -[CalReminderMigrationContext ensureAccountsExist:]
+  -[CalReminderMigrationContext reminderStore]
+  -[CalReminderMigrationContext _loadAccountsIfNeeded]
+  -[CalReminderMigrationContext shouldPerformMigration]
+  -[CalReminderMigrationContext reminderKitProvider]
+  -[CalReminderMigrationContext finishMigrationWithSave:]
+  -[CalReminderMigrationContext _willBeginMigration]
+  -[CalReminderMigrationContext recordMigrationFailureWithDescription:inStage:underlyingError:]
+  -[CalReminderMigrationContext accountsForAccountIdentifiers]
+  -[CalReminderMigrationContext _verifyAccountHasNoLists:withAccountIdentifier:]
+  -[CalReminderMigrationContext recordMigrationFailureWithDescription:inStage:underlyingError:relatedTo:]
+  -[CalReminderMigrationContext defaultListOriginalIdentifier]
+  -[CalReminderMigrationContext _sortAddedReminderListsInAccountChangeItem:]
+  -[CalReminderMigrationContext _sortedAddedListChangeItems]
+  -[CalReminderMigrationContext recordMigrationFailureWithDescription:inStage:underlyingError:relatedTo:isFatal:]
+  -[CalReminderMigrationContext defaultListMigratedIdentifier]
+  -[CalReminderMigrationContext _didEndMigrationWithSuccess:]
+  -[CalReminderMigrationContext _tryBeginMigration]
+  -[CalReminderMigrationContext _initWithReminderKitProvider:]
+  -[CalReminderMigrationContext localAccountChangeItem]
+  -[CalReminderMigrationContext existingAccountChangeItemWithAccountIdentifier:]
+  -[CalReminderMigrationContext recordAddedListChangeItem:withOriginalIdentifier:order:]
+  -[CalReminderMigrationContext pushOrderedListItemsContext]
+  -[CalReminderMigrationContext popOrderedListItemsContextAndSortListsInAccountChangeItem:]
+  -[CalReminderMigrationContext isCurrentOrderedListItemsContextEmpty]
+  -[CalReminderMigrationContext setDefaultListOriginalIdentifier:]
+
+
+CalCalendarDatabaseReminderMigrationContext : CalReminderMigrationContext <CalPrivacySafePathProvider>
+ @property  NSArray *storesToDisableReminders
+ @property  NSArray *storesToDelete
+ @property  NSArray *storesToSetWasMigrated
+ @property  NSArray *calendarsToDisableReminders
+ @property  NSArray *calendarsToClearSyncToken
+ @property  NSArray *calendarsToDelete
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CalCalendarDatabaseReminderMigrationContext reminderMigrationContextWithReminderKitProvider:]
+
+  // instance methods
+  -[CalCalendarDatabaseReminderMigrationContext .cxx_destruct]
+  -[CalCalendarDatabaseReminderMigrationContext privacySafePathForURLInCalendarDirectory:]
+  -[CalCalendarDatabaseReminderMigrationContext _removeCalendarsToDeleteInStore:]
+  -[CalCalendarDatabaseReminderMigrationContext _isCalendarOwnedByExistingStoreToDelete:]
+  -[CalCalendarDatabaseReminderMigrationContext storesToDisableReminders]
+  -[CalCalendarDatabaseReminderMigrationContext addStoreToDisableReminders:]
+  -[CalCalendarDatabaseReminderMigrationContext storesToDelete]
+  -[CalCalendarDatabaseReminderMigrationContext addStoreToDelete:]
+  -[CalCalendarDatabaseReminderMigrationContext storesToSetWasMigrated]
+  -[CalCalendarDatabaseReminderMigrationContext addStoreToSetWasMigrated:]
+  -[CalCalendarDatabaseReminderMigrationContext calendarsToDisableReminders]
+  -[CalCalendarDatabaseReminderMigrationContext addCalendarToDisableReminders:]
+  -[CalCalendarDatabaseReminderMigrationContext calendarsToClearSyncToken]
+  -[CalCalendarDatabaseReminderMigrationContext addCalendarToClearSyncToken:]
+  -[CalCalendarDatabaseReminderMigrationContext calendarsToDelete]
+  -[CalCalendarDatabaseReminderMigrationContext addCalendarToDelete:]
+
+
+CalCalendarDatabaseReminderMigrator : NSObject /usr/lib/libSystem.B.dylib <CalReminderMigrator>
+ @property  <CalReminderKitProvider> *reminderKitProvider
+ @property  <CalReminderMigrationDefaultsProvider> *defaultsProvider
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CalCalendarDatabaseReminderMigrator _preCheckStoreForPossibleMigrationDisablingRemindersIfNeeded:withContext:accountType:identifier:]
+  +[CalCalendarDatabaseReminderMigrator _attemptMigrationForStore:withContext:]
+  +[CalCalendarDatabaseReminderMigrator _removeRemindersDataAfterSuccessfulMigrationFromDatabase:withContext:]
+  +[CalCalendarDatabaseReminderMigrator _identifierForStore:]
+  +[CalCalendarDatabaseReminderMigrator _accountTypeForStore:]
+  +[CalCalendarDatabaseReminderMigrator _setWasMigratedAndClearSyncTokenInAllCalendarsForStore:withContext:]
+  +[CalCalendarDatabaseReminderMigrator _attemptAccountMigrationForStore:withContext:accountType:]
+  +[CalCalendarDatabaseReminderMigrator _migrateReminderListsInStore:withContext:accountChangeItem:accountType:]
+  +[CalCalendarDatabaseReminderMigrator _shouldMigrateCalendarAsReminderList:]
+  +[CalCalendarDatabaseReminderMigrator _visitCalendarForMigrationAsReminderList:withContext:accountChangeItem:accountType:]
+  +[CalCalendarDatabaseReminderMigrator _identifierForCalendar:]
+  +[CalCalendarDatabaseReminderMigrator _migrateCalendarAsReminderList:withContext:accountChangeItem:accountType:]
+  +[CalCalendarDatabaseReminderMigrator _colorStringForCalendar:]
+  +[CalCalendarDatabaseReminderMigrator _migrateRemindersInCalendar:withContext:listChangeItem:]
+  +[CalCalendarDatabaseReminderMigrator _migrateReminder:withContext:listChangeItem:]
+  +[CalCalendarDatabaseReminderMigrator _identifierForReminder:]
+
+  // instance methods
+  -[CalCalendarDatabaseReminderMigrator .cxx_destruct]
+  -[CalCalendarDatabaseReminderMigrator initWithReminderKitProvider:defaultsProvider:]
+  -[CalCalendarDatabaseReminderMigrator attemptMigrationWithCalendarDatabase:]
+  -[CalCalendarDatabaseReminderMigrator defaultsProvider]
+  -[CalCalendarDatabaseReminderMigrator reminderKitProvider]
+  -[CalCalendarDatabaseReminderMigrator attemptMigrationWithHomeDirectory:]
+  -[CalCalendarDatabaseReminderMigrator _attemptMigrationWithHomeDirectory:]
+  -[CalCalendarDatabaseReminderMigrator _attemptMigrationWithCalendarDatabase:]
+  -[CalCalendarDatabaseReminderMigrator _attemptMigrationForDatabase:inCalendarDirectory:withContext:]
+  -[CalCalendarDatabaseReminderMigrator _performPreMigrationTasksInCalendarDirectory:withContext:]
+  -[CalCalendarDatabaseReminderMigrator _performMigrationForCalendarDatabase:inCalendarDirectory:withContext:]
+
+
+NSArray(CalCalendarDatabaseReminderMigrationUtils)
+	// instance methods
+	-[NSArray(CalCalendarDatabaseReminderMigrationUtils) enumerateCalTaskRefsUsingBlock:]
+	-[NSArray(CalCalendarDatabaseReminderMigrationUtils) enumerateCalCalendarRefsUsingBlock:]
+	-[NSArray(CalCalendarDatabaseReminderMigrationUtils) enumerateCalStoreRefsUsingBlock:]
+
+01 00 0200 /System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation: CalDefaults 
+01 00 0200 /System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation: CalSystemInformation 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

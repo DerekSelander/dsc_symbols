@@ -1,0 +1,844 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SOADSiteDiscovery
+|| __DATA.__objc_data _OBJC_CLASS_$_SOAsynchronousLDAPOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_SOAsynchronousOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_SOAuthorizationWrapper
+|| __DATA.__objc_data _OBJC_CLASS_$_SODNSSRVQuery
+|| __DATA.__objc_data _OBJC_CLASS_$_SODNSSRVResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosAuthentication
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosContext
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosCredential
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosExtensionData
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosExtensionUserData
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosFileManager
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosRealmSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKerberosSharedSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_SOKeychainHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_SOLDAPHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_SONetLogonParser
+|| __DATA.__objc_data _OBJC_CLASS_$_SONetworkIdentity
+|| __DATA.__objc_data _OBJC_CLASS_$_SORealmSettingManager
+|| __DATA.__objc_data _OBJC_CLASS_$_SOSiteCode
+|| __DATA.__objc_data _OBJC_CLASS_$_SOSmartcard
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOADSiteDiscovery
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOAsynchronousLDAPOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOAsynchronousOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOAuthorizationWrapper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SODNSSRVQuery
+|| __DATA.__objc_data _OBJC_METACLASS_$_SODNSSRVResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosAuthentication
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosCredential
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosExtensionData
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosExtensionUserData
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosFileManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosRealmSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKerberosSharedSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOKeychainHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOLDAPHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_SONetLogonParser
+|| __DATA.__objc_data _OBJC_METACLASS_$_SONetworkIdentity
+|| __DATA.__objc_data _OBJC_METACLASS_$_SORealmSettingManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOSiteCode
+|| __DATA.__objc_data _OBJC_METACLASS_$_SOSmartcard
+|| __DATA_CONST.__const _kSOKerberosAttributeValueNoSiteCode
+|| __DATA_CONST.__const _kSOKerberosNotificationADPasswordChanged
+|| __DATA_CONST.__const _kSOKerberosNotificationConnectionCompleted
+|| __DATA_CONST.__const _kSOKerberosNotificationGotNewCredential
+|| __DATA_CONST.__const _kSOKerberosNotificationInternalNetworkAvailable
+|| __DATA_CONST.__const _kSOKerberosNotificationInternalNetworkNotAvailable
+|| __DATA_CONST.__const _kSOKerberosNotificationLocalPasswordSynced
+|| __DATA_CONST.__const _kSOKerberosNotificationPasswordChangedWithPasswordSync
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeForce
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeGSSCredUUID
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeHomeDirectory
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeHostName
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeHostSuffixLength
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeIsDefaultRealm
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeLastLoginDate
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeLocalPasswordChangedDate
+|| __DATA_CONST.__const _kSOKerberosOperationAttributePasswordChangedDate
+|| __DATA_CONST.__const _kSOKerberosOperationAttributePasswordExpiresDate
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeRealm
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeSiteCode
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeSiteCodeCache
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeUPN
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeUserName
+|| __DATA_CONST.__const _kSOKerberosOperationAttributeVerbose
+|| __DATA_CONST.__const _kSOKerberosOperationChangePassword
+|| __DATA_CONST.__const _kSOKerberosOperationGetCredentialUUID
+|| __DATA_CONST.__const _kSOKerberosOperationGetDefaultRealm
+|| __DATA_CONST.__const _kSOKerberosOperationGetRealmForHost
+|| __DATA_CONST.__const _kSOKerberosOperationGetRealmInfo
+|| __DATA_CONST.__const _kSOKerberosOperationGetSiteCode
+|| __DATA_CONST.__const _kSOKerberosOperationLogin
+|| __DATA_CONST.__const _kSOKerberosOperationLogout
+|| __DATA_CONST.__const _kSOKerberosOperationResetKeychainChoice
+|| __DATA_CONST.__const _kSOKerberosOperationResetRealm
+|| __DATA_CONST.__const _kSOKerberosOperationSaveAttributes
+|| __TEXT.__const _kSiteCodeCacheLazyRefreshAge
+|| __TEXT.__const _kSiteCodeCacheMaxAge
+__ AppSSO: _OBJC_CLASS_$_SOAuthorization
+__ AppSSO: _OBJC_CLASS_$_SOConfigurationHost
+__ AppSSO: _OBJC_CLASS_$_SOExtensionManager
+__ AppleLDAP: _LDAP_CRED_MECHANISM_DIGEST_MD5
+__ AppleLDAP: _LDAP_CRED_MECHANISM_GSSAPI
+__ AppleLDAP: _LDAP_MECHANISM_OPTION_GSSAPI_INITIATOR_CREDENTIAL
+__ AppleLDAP: _LDAP_MECHANISM_OPTION_GSSAPI_TARGET_NAME
+__ AppleLDAP: _LDAP_MECHANISM_OPTION_PASSWORD
+__ AppleLDAP: _LDAP_MECHANISM_OPTION_RECORD_DN
+__ AppleLDAP: _ldap_connection_add_credential
+__ AppleLDAP: _ldap_connection_create_with_hostname
+__ AppleLDAP: _ldap_connection_disconnect
+__ AppleLDAP: _ldap_connection_query_create
+__ AppleLDAP: _ldap_connection_set_disconnect_handler
+__ AppleLDAP: _ldap_connection_set_source_application_by_bundle
+__ AppleLDAP: _ldap_connection_start
+__ AppleLDAP: _ldap_operation_copy_error_string
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFUUIDCreateFromString
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreFoundation: _kCFBooleanTrue
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSISO8601DateFormatter
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperation
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_METACLASS_$_NSOperation
+__ GSS: _GSSCreateCredentialFromUUID
+__ GSS: _GSSCreateError
+__ GSS: _GSSCreateName
+__ GSS: _GSSCredentialCopyName
+__ GSS: _GSSCredentialCopyUUID
+__ GSS: _GSSCredentialGetLifetime
+__ GSS: _GSSNameCreateDisplayString
+__ GSS: ___gss_c_nt_hostbased_service_oid_desc
+__ GSS: ___gss_c_nt_user_name_oid_desc
+__ GSS: ___gss_krb5_mechanism_oid_desc
+__ GSS: ___gss_krb5_nt_principal_oid_desc
+__ GSS: ___gss_spnego_mechanism_oid_desc
+__ GSS: _gss_aapl_change_password
+__ GSS: _gss_aapl_initial_cred
+__ GSS: _gss_acquire_cred
+__ GSS: _gss_add_oid_set_member
+__ GSS: _gss_create_empty_oid_set
+__ GSS: _gss_destroy_cred
+__ GSS: _gss_import_name
+__ GSS: _gss_init_sec_context
+__ GSS: _gss_inquire_cred
+__ GSS: _gss_iter_creds
+__ GSS: _gss_release_buffer
+__ GSS: _gss_release_cred
+__ GSS: _gss_release_name
+__ Heimdal: _HeimCredSetImpersonateBundle
+__ Heimdal: _krb5_free_context
+__ Heimdal: _krb5_free_cred_contents
+__ Heimdal: _krb5_free_principal
+__ Heimdal: _krb5_get_error_message
+__ Heimdal: _krb5_get_init_creds_opt_alloc
+__ Heimdal: _krb5_get_init_creds_opt_free
+__ Heimdal: _krb5_get_init_creds_opt_set_default_flags
+__ Heimdal: _krb5_get_init_creds_opt_set_forwardable
+__ Heimdal: _krb5_get_init_creds_opt_set_pac_request
+__ Heimdal: _krb5_get_init_creds_opt_set_win2k
+__ Heimdal: _krb5_get_init_creds_password
+__ Heimdal: _krb5_init_context
+__ Heimdal: _krb5_parse_name
+__ Heimdal: _krb5_parse_name_flags
+__ Heimdal: _krb5_principal_get_realm
+__ LocalAuthentication: _OBJC_CLASS_$_LAContext
+__ Security: _SecAccessControlCreateWithFlags
+__ Security: _SecItemAdd
+__ Security: _SecItemCopyMatching
+__ Security: _SecItemDelete
+__ Security: _kSecAttrAccessControl
+__ Security: _kSecAttrAccessGroup
+__ Security: _kSecAttrAccessGroupToken
+__ Security: _kSecAttrAccessibleAfterFirstUnlock
+__ Security: _kSecAttrAccount
+__ Security: _kSecAttrIssuer
+__ Security: _kSecAttrLabel
+__ Security: _kSecAttrSerialNumber
+__ Security: _kSecAttrService
+__ Security: _kSecClass
+__ Security: _kSecClassGenericPassword
+__ Security: _kSecClassIdentity
+__ Security: _kSecMatchLimit
+__ Security: _kSecMatchLimitOne
+__ Security: _kSecReturnAttributes
+__ Security: _kSecReturnData
+__ Security: _kSecReturnPersistentRef
+__ Security: _kSecReturnRef
+__ Security: _kSecUseAuthenticationContext
+__ Security: _kSecValueData
+__ Security: _kSecValuePersistentRef
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _inet_ntoa
+__ libSystem.B.dylib: _nwi_ifstate_get_signature
+__ libSystem.B.dylib: _nwi_ifstate_get_vpn_server
+__ libSystem.B.dylib: _nwi_state_copy
+__ libSystem.B.dylib: _nwi_state_get_ifstate
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _uuid_unparse_upper
+__ libSystem.B.dylib: _xpc_array_create
+__ libSystem.B.dylib: _xpc_array_set_string
+__ libSystem.B.dylib: dyld_stub_binder
+__ libnetwork.dylib: _nw_array_apply
+__ libnetwork.dylib: _nw_endpoint_create_srv
+__ libnetwork.dylib: _nw_endpoint_get_hostname
+__ libnetwork.dylib: _nw_endpoint_get_port
+__ libnetwork.dylib: _nw_interface_get_name
+__ libnetwork.dylib: _nw_interface_get_type
+__ libnetwork.dylib: _nw_parameters_create
+__ libnetwork.dylib: _nw_parameters_set_required_netagent_classes
+__ libnetwork.dylib: _nw_parameters_set_source_application_by_bundle_id
+__ libnetwork.dylib: _nw_path_copy_interface
+__ libnetwork.dylib: _nw_path_create_evaluator_for_endpoint
+__ libnetwork.dylib: _nw_path_evaluator_copy_path
+__ libnetwork.dylib: _nw_path_get_status
+__ libnetwork.dylib: _nw_path_get_vpn_config_id
+__ libnetwork.dylib: _nw_path_is_equal
+__ libnetwork.dylib: _nw_path_is_per_app_vpn
+__ libnetwork.dylib: _nw_resolver_create_with_path
+__ libnetwork.dylib: _nw_resolver_set_update_handler
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+SOSmartcard : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SOSmartcard searchForCachedIdentityWithSerial:withIssuer:withTokenID:]
+  +[SOSmartcard getLocalAuthIdentityForCert:withLAContext:]
+  +[SOSmartcard getIdentityForPersistentRef:identityToReturn:]
+  +[SOSmartcard pollSmartcardForIdentityWithSerialNumber:withIssuer:withTokenID:]
+
+
+SOLDAPHelper : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_ldap_connection> *ldap
+ @property  BOOL isConnected
+
+  // instance methods
+  -[SOLDAPHelper init]
+  -[SOLDAPHelper dealloc]
+  -[SOLDAPHelper .cxx_destruct]
+  -[SOLDAPHelper disconnect]
+  -[SOLDAPHelper isConnected]
+  -[SOLDAPHelper setIsConnected:]
+  -[SOLDAPHelper ldap]
+  -[SOLDAPHelper setLdap:]
+  -[SOLDAPHelper setupLDAPconnection:andPort:andBundleIdentifier:]
+  -[SOLDAPHelper connectToLDAPWithCompletion:]
+  -[SOLDAPHelper connectToLDAPServer:andPort:andBundleIdentifier:completion:]
+  -[SOLDAPHelper queryforBaseDN:andScope:andAttributes:withFilter:completion:]
+  -[SOLDAPHelper useDigestMD5Auth:andPassword:]
+  -[SOLDAPHelper useKerberosAuth:forSPN:]
+
+
+SORealmSettingManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *realmSettings
+ @property  NSObject<OS_dispatch_queue> *settingsQueue
+
+  // instance methods
+  -[SORealmSettingManager init]
+  -[SORealmSettingManager dealloc]
+  -[SORealmSettingManager .cxx_destruct]
+  -[SORealmSettingManager settingsQueue]
+  -[SORealmSettingManager setSettingsQueue:]
+  -[SORealmSettingManager setRealmSettings:]
+  -[SORealmSettingManager loadRealmSettings]
+  -[SORealmSettingManager saveRealmSettings]
+  -[SORealmSettingManager realmSettings]
+  -[SORealmSettingManager settingsForRealm:]
+  -[SORealmSettingManager removeRealm:]
+
+
+SODNSSRVResponse : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *host
+ @property  unsigned short port
+
+  // instance methods
+  -[SODNSSRVResponse init]
+  -[SODNSSRVResponse host]
+  -[SODNSSRVResponse port]
+  -[SODNSSRVResponse .cxx_destruct]
+  -[SODNSSRVResponse setPort:]
+  -[SODNSSRVResponse setHost:]
+
+
+SOKerberosExtensionUserData : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL useKeychain
+ @property  BOOL userSetKeychainChoice
+
+  // instance methods
+  -[SOKerberosExtensionUserData useKeychain]
+  -[SOKerberosExtensionUserData setUseKeychain:]
+  -[SOKerberosExtensionUserData userSetKeychainChoice]
+  -[SOKerberosExtensionUserData setUserSetKeychainChoice:]
+
+
+SOADSiteDiscovery : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *realm
+ @property  NSOperationQueue *queue
+
+  // instance methods
+  -[SOADSiteDiscovery setQueue:]
+  -[SOADSiteDiscovery queue]
+  -[SOADSiteDiscovery .cxx_destruct]
+  -[SOADSiteDiscovery realm]
+  -[SOADSiteDiscovery setRealm:]
+  -[SOADSiteDiscovery initWithRealm:]
+  -[SOADSiteDiscovery discoverADInfoUsingSourceAppBundleIdentifier:withCompletion:]
+
+
+SOKerberosSharedSettings : NSObject /usr/lib/libSystem.B.dylib
+ @property  SOKerberosRealmSettings *currentSettings
+ @property  NSString *currentRealm
+ @property  BOOL isDefaultRealm
+ @property  NSDictionary *domainRealmMapping
+ @property  SOSiteCode *siteCode
+
+  // class methods
+  +[SOKerberosSharedSettings sharedInstance]
+
+  // instance methods
+  -[SOKerberosSharedSettings .cxx_destruct]
+  -[SOKerberosSharedSettings currentSettings]
+  -[SOKerberosSharedSettings setCurrentSettings:]
+  -[SOKerberosSharedSettings currentRealm]
+  -[SOKerberosSharedSettings setCurrentRealm:]
+  -[SOKerberosSharedSettings isDefaultRealm]
+  -[SOKerberosSharedSettings setIsDefaultRealm:]
+  -[SOKerberosSharedSettings domainRealmMapping]
+  -[SOKerberosSharedSettings setDomainRealmMapping:]
+  -[SOKerberosSharedSettings siteCode]
+  -[SOKerberosSharedSettings setSiteCode:]
+
+
+SOSiteCode : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *code
+ @property  NSDate *timeStamp
+ @property  NSString *networkFingerprint
+
+  // class methods
+  +[SOSiteCode supportsSecureCoding]
+
+  // instance methods
+  -[SOSiteCode code]
+  -[SOSiteCode encodeWithCoder:]
+  -[SOSiteCode initWithCoder:]
+  -[SOSiteCode .cxx_destruct]
+  -[SOSiteCode timeStamp]
+  -[SOSiteCode age]
+  -[SOSiteCode networkFingerprint]
+  -[SOSiteCode initWithSiteCode:forNetworkFingerprint:]
+
+
+SOKerberosRealmSettings : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSMutableArray *siteCodeCache
+ @property  NSString *userPrincipalName
+ @property  NSString *userName
+ @property  NSUUID *credentialUUID
+ @property  NSString *cacheName
+ @property  NSData *smartCardIssuer
+ @property  NSData *smartCardSerialNumber
+ @property  NSString *smartCardTokenID
+ @property  NSDate *dateLastLogin
+ @property  NSString *datePasswordLastChanged
+ @property  NSString *dateLocalPasswordLastChanged
+ @property  NSString *datePasswordExpires
+ @property  NSString *networkHomeDirectory
+
+  // class methods
+  +[SOKerberosRealmSettings supportsSecureCoding]
+
+  // instance methods
+  -[SOKerberosRealmSettings init]
+  -[SOKerberosRealmSettings userName]
+  -[SOKerberosRealmSettings encodeWithCoder:]
+  -[SOKerberosRealmSettings initWithCoder:]
+  -[SOKerberosRealmSettings .cxx_destruct]
+  -[SOKerberosRealmSettings credentialUUID]
+  -[SOKerberosRealmSettings setCredentialUUID:]
+  -[SOKerberosRealmSettings cacheName]
+  -[SOKerberosRealmSettings setUserName:]
+  -[SOKerberosRealmSettings setCacheName:]
+  -[SOKerberosRealmSettings siteCodeCache]
+  -[SOKerberosRealmSettings userPrincipalName]
+  -[SOKerberosRealmSettings smartCardIssuer]
+  -[SOKerberosRealmSettings smartCardSerialNumber]
+  -[SOKerberosRealmSettings smartCardTokenID]
+  -[SOKerberosRealmSettings dateLastLogin]
+  -[SOKerberosRealmSettings datePasswordLastChanged]
+  -[SOKerberosRealmSettings dateLocalPasswordLastChanged]
+  -[SOKerberosRealmSettings datePasswordExpires]
+  -[SOKerberosRealmSettings networkHomeDirectory]
+  -[SOKerberosRealmSettings dumpSiteCodeCache]
+  -[SOKerberosRealmSettings cacheSiteCode:]
+  -[SOKerberosRealmSettings siteCodeForNetworkFingerprint:]
+  -[SOKerberosRealmSettings setUserPrincipalName:]
+  -[SOKerberosRealmSettings setSmartCardIssuer:]
+  -[SOKerberosRealmSettings setSmartCardSerialNumber:]
+  -[SOKerberosRealmSettings setSmartCardTokenID:]
+  -[SOKerberosRealmSettings setDateLastLogin:]
+  -[SOKerberosRealmSettings setDatePasswordLastChanged:]
+  -[SOKerberosRealmSettings setDateLocalPasswordLastChanged:]
+  -[SOKerberosRealmSettings setDatePasswordExpires:]
+  -[SOKerberosRealmSettings setNetworkHomeDirectory:]
+  -[SOKerberosRealmSettings setSiteCodeCache:]
+
+
+SOKeychainHelper : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SOKeychainHelper identityForUUIDString:]
+  +[SOKeychainHelper addCredentialsToKeychainWithService:withUsername:withPassword:requireUserPresence:]
+  +[SOKeychainHelper retrieveCredentialsFromKeychainWithService:returnedUsername:returnedPassword:]
+  +[SOKeychainHelper removeCredentialsFromKeychainWithService:]
+
+
+SOKerberosExtensionData : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *cacheName
+ @property  NSString *principalName
+ @property  NSString *siteCode
+ @property  NSString *certificateUUID
+ @property  BOOL useSiteAutoDiscovery
+ @property  NSArray *credentialBundleIdACL
+ @property  NSDictionary *domainRealmMapping
+ @property  BOOL isDefaultRealm
+ @property  BOOL allowPasswordChange
+ @property  BOOL allowAutomaticLogin
+ @property  BOOL requireUserPresence
+ @property  NSString *pwChangeURL
+ @property  NSNumber *pwExpireOverride
+ @property  NSNumber *pwNotificationDays
+ @property  BOOL pwReqComplexity
+ @property  NSNumber *pwReqLength
+ @property  NSNumber *pwReqMinAge
+ @property  NSNumber *pwReqHistory
+ @property  NSString *pwReqText
+ @property  NSNumber *replicationTime
+ @property  BOOL syncLocalPassword
+
+  // instance methods
+  -[SOKerberosExtensionData .cxx_destruct]
+  -[SOKerberosExtensionData initWithDictionary:]
+  -[SOKerberosExtensionData certificateUUID]
+  -[SOKerberosExtensionData setCertificateUUID:]
+  -[SOKerberosExtensionData principalName]
+  -[SOKerberosExtensionData setPrincipalName:]
+  -[SOKerberosExtensionData cacheName]
+  -[SOKerberosExtensionData setCacheName:]
+  -[SOKerberosExtensionData isDefaultRealm]
+  -[SOKerberosExtensionData setIsDefaultRealm:]
+  -[SOKerberosExtensionData domainRealmMapping]
+  -[SOKerberosExtensionData setDomainRealmMapping:]
+  -[SOKerberosExtensionData siteCode]
+  -[SOKerberosExtensionData setSiteCode:]
+  -[SOKerberosExtensionData pwReqComplexity]
+  -[SOKerberosExtensionData syncLocalPassword]
+  -[SOKerberosExtensionData pwNotificationDays]
+  -[SOKerberosExtensionData pwExpireOverride]
+  -[SOKerberosExtensionData pwChangeURL]
+  -[SOKerberosExtensionData pwReqLength]
+  -[SOKerberosExtensionData pwReqMinAge]
+  -[SOKerberosExtensionData pwReqHistory]
+  -[SOKerberosExtensionData pwReqText]
+  -[SOKerberosExtensionData useSiteAutoDiscovery]
+  -[SOKerberosExtensionData allowAutomaticLogin]
+  -[SOKerberosExtensionData requireUserPresence]
+  -[SOKerberosExtensionData replicationTime]
+  -[SOKerberosExtensionData credentialBundleIdACL]
+  -[SOKerberosExtensionData allowPasswordChange]
+  -[SOKerberosExtensionData initAndPopulateExtensionData]
+  -[SOKerberosExtensionData setUseSiteAutoDiscovery:]
+  -[SOKerberosExtensionData setCredentialBundleIdACL:]
+  -[SOKerberosExtensionData setAllowPasswordChange:]
+  -[SOKerberosExtensionData setAllowAutomaticLogin:]
+  -[SOKerberosExtensionData setRequireUserPresence:]
+  -[SOKerberosExtensionData setPwChangeURL:]
+  -[SOKerberosExtensionData setPwExpireOverride:]
+  -[SOKerberosExtensionData setPwNotificationDays:]
+  -[SOKerberosExtensionData setPwReqComplexity:]
+  -[SOKerberosExtensionData setPwReqLength:]
+  -[SOKerberosExtensionData setPwReqMinAge:]
+  -[SOKerberosExtensionData setPwReqHistory:]
+  -[SOKerberosExtensionData setPwReqText:]
+  -[SOKerberosExtensionData setReplicationTime:]
+  -[SOKerberosExtensionData setSyncLocalPassword:]
+
+
+SOKerberosContext : NSObject /usr/lib/libSystem.B.dylib
+ @property  ASAuthorizationProviderExtensionAuthorizationRequest *authorizationRequest
+ @property  NSObject<OS_dispatch_group> *dispatchGroup
+ @property  SORealmSettingManager *settingsManager
+ @property  BOOL requestStarted
+ @property  BOOL requestCancelled
+ @property  NSString *realm
+ @property  SOKerberosExtensionData *extensionData
+ @property  SOKerberosExtensionUserData *extensionUserData
+ @property  NSString *hostName
+ @property  NSString *servicePrincipalName
+ @property  NSString *serviceName
+ @property  NSString *password
+ @property  NSString *changedPassword
+ @property  BOOL userNameIsReadOnly
+ @property  NSString *userPrincipalName
+ @property  NSString *userName
+ @property  NSUUID *credentialUUID
+ @property  NSData *certificateSerialNumber
+ @property  NSData *certificateIssuer
+ @property  NSString *certificateTokenID
+ @property  SOSiteCode *siteCode
+ @property  NSString *cacheName
+ @property  BOOL returnCredentialOnly
+ @property  SOKerberosRealmSettings *currentSettings
+ @property  NSString *callerBundleIdentifier
+ @property  BOOL credsCameFromKeychain
+ @property  BOOL attemptedToGetCredsFromKeychain
+ @property  BOOL forceLoginViewController
+ @property  NSDate *loginTimeStamp
+ @property  NSObject<OS_dispatch_group> *siteCodeGroup
+ @property  SONetworkIdentity *networkIdentity
+
+  // instance methods
+  -[SOKerberosContext userName]
+  -[SOKerberosContext password]
+  -[SOKerberosContext .cxx_destruct]
+  -[SOKerberosContext hostName]
+  -[SOKerberosContext setPassword:]
+  -[SOKerberosContext serviceName]
+  -[SOKerberosContext credentialUUID]
+  -[SOKerberosContext setCredentialUUID:]
+  -[SOKerberosContext setServiceName:]
+  -[SOKerberosContext realm]
+  -[SOKerberosContext setRealm:]
+  -[SOKerberosContext dispatchGroup]
+  -[SOKerberosContext setDispatchGroup:]
+  -[SOKerberosContext cacheName]
+  -[SOKerberosContext cancelRequest]
+  -[SOKerberosContext cancelRequest:]
+  -[SOKerberosContext waitForCompletion]
+  -[SOKerberosContext startRequest]
+  -[SOKerberosContext setUserName:]
+  -[SOKerberosContext authorizationRequest]
+  -[SOKerberosContext setAuthorizationRequest:]
+  -[SOKerberosContext setCertificateIssuer:]
+  -[SOKerberosContext certificateIssuer]
+  -[SOKerberosContext setHostName:]
+  -[SOKerberosContext currentSettings]
+  -[SOKerberosContext certificateSerialNumber]
+  -[SOKerberosContext setCertificateSerialNumber:]
+  -[SOKerberosContext setCacheName:]
+  -[SOKerberosContext setSettingsManager:]
+  -[SOKerberosContext settingsManager]
+  -[SOKerberosContext completeRequestWithError:]
+  -[SOKerberosContext presentAuthorizationViewControllerWithCompletion:]
+  -[SOKerberosContext extensionData]
+  -[SOKerberosContext callerBundleIdentifier]
+  -[SOKerberosContext completeRequest]
+  -[SOKerberosContext siteCode]
+  -[SOKerberosContext setSiteCode:]
+  -[SOKerberosContext userPrincipalName]
+  -[SOKerberosContext setUserPrincipalName:]
+  -[SOKerberosContext requestStarted]
+  -[SOKerberosContext setRequestStarted:]
+  -[SOKerberosContext setRequestCancelled:]
+  -[SOKerberosContext completeRequestWithHTTPResponse:httpBody:]
+  -[SOKerberosContext initWithRequest:extensionData:settingsManager:]
+  -[SOKerberosContext setUserPrincipalNameAfterAuth:]
+  -[SOKerberosContext completeRequestWithHeaders:]
+  -[SOKerberosContext completeRequestWithHTTPResponseHeaders:]
+  -[SOKerberosContext completeRequestWithDoNotHandle]
+  -[SOKerberosContext setExtensionData:]
+  -[SOKerberosContext extensionUserData]
+  -[SOKerberosContext setExtensionUserData:]
+  -[SOKerberosContext servicePrincipalName]
+  -[SOKerberosContext setServicePrincipalName:]
+  -[SOKerberosContext changedPassword]
+  -[SOKerberosContext setChangedPassword:]
+  -[SOKerberosContext userNameIsReadOnly]
+  -[SOKerberosContext setUserNameIsReadOnly:]
+  -[SOKerberosContext certificateTokenID]
+  -[SOKerberosContext setCertificateTokenID:]
+  -[SOKerberosContext returnCredentialOnly]
+  -[SOKerberosContext setReturnCredentialOnly:]
+  -[SOKerberosContext setCallerBundleIdentifier:]
+  -[SOKerberosContext credsCameFromKeychain]
+  -[SOKerberosContext setCredsCameFromKeychain:]
+  -[SOKerberosContext requestCancelled]
+  -[SOKerberosContext attemptedToGetCredsFromKeychain]
+  -[SOKerberosContext setAttemptedToGetCredsFromKeychain:]
+  -[SOKerberosContext forceLoginViewController]
+  -[SOKerberosContext setForceLoginViewController:]
+  -[SOKerberosContext loginTimeStamp]
+  -[SOKerberosContext setLoginTimeStamp:]
+  -[SOKerberosContext siteCodeGroup]
+  -[SOKerberosContext setSiteCodeGroup:]
+  -[SOKerberosContext networkIdentity]
+  -[SOKerberosContext setNetworkIdentity:]
+
+
+SOAsynchronousLDAPOperation : SOAsynchronousOperation
+ @property  @? completion
+ @property  NSString *realm
+ @property  NSString *host
+ @property  unsigned short port
+ @property  NSString *bundleIdentifier
+
+  // instance methods
+  -[SOAsynchronousLDAPOperation host]
+  -[SOAsynchronousLDAPOperation port]
+  -[SOAsynchronousLDAPOperation .cxx_destruct]
+  -[SOAsynchronousLDAPOperation bundleIdentifier]
+  -[SOAsynchronousLDAPOperation setPort:]
+  -[SOAsynchronousLDAPOperation main]
+  -[SOAsynchronousLDAPOperation setHost:]
+  -[SOAsynchronousLDAPOperation setBundleIdentifier:]
+  -[SOAsynchronousLDAPOperation setCompletion:]
+  -[SOAsynchronousLDAPOperation completion]
+  -[SOAsynchronousLDAPOperation realm]
+  -[SOAsynchronousLDAPOperation setRealm:]
+  -[SOAsynchronousLDAPOperation initWithRealm:andHost:andPort:andBundleIdentifier:andCompetion:]
+
+
+SONetLogonParser : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SONetLogonParser parseNetLoginUsingData:]
+
+
+SOKerberosCredential : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  unsigned int lifetime
+ @property  NSString *uuid
+
+  // instance methods
+  -[SOKerberosCredential init]
+  -[SOKerberosCredential name]
+  -[SOKerberosCredential .cxx_destruct]
+  -[SOKerberosCredential setName:]
+  -[SOKerberosCredential uuid]
+  -[SOKerberosCredential setUuid:]
+  -[SOKerberosCredential lifetime]
+  -[SOKerberosCredential setLifetime:]
+
+
+SOKerberosAuthentication : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *realm
+ @property  SORealmSettingManager *settingsManager
+ @property  BOOL siteDiscoveryInProgress
+ @property  LAContext *myLAContext
+
+  // instance methods
+  -[SOKerberosAuthentication .cxx_destruct]
+  -[SOKerberosAuthentication realm]
+  -[SOKerberosAuthentication setRealm:]
+  -[SOKerberosAuthentication setSettingsManager:]
+  -[SOKerberosAuthentication settingsManager]
+  -[SOKerberosAuthentication retrieveCachedSiteCodeFromCacheForBundleIdentifier:networkFingerprint:]
+  -[SOKerberosAuthentication determineSiteCodeUsingDispatchGroup:andBundleIdentifier:networkFingerprint:]
+  -[SOKerberosAuthentication findExistingCredentialUsingContext:returningCredential:orError:]
+  -[SOKerberosAuthentication setSiteCodeUsingContext:]
+  -[SOKerberosAuthentication createNewCredentialUsingContext:returningCredential:orError:]
+  -[SOKerberosAuthentication mapErrorToKnownError:]
+  -[SOKerberosAuthentication siteDiscoveryInProgress]
+  -[SOKerberosAuthentication setSiteDiscoveryInProgress:]
+  -[SOKerberosAuthentication initWithRealm:andSettingsManager:]
+  -[SOKerberosAuthentication attemptKerberosWithContext:returningToken:orError:]
+  -[SOKerberosAuthentication myLAContext]
+  -[SOKerberosAuthentication setMyLAContext:]
+
+
+SONetworkIdentity : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *realm
+ @property  NSString *bundleIdentifier
+ @property  NSString *networkFingerprint
+ @property  NSObject<OS_nw_path> *lastpath
+
+  // instance methods
+  -[SONetworkIdentity .cxx_destruct]
+  -[SONetworkIdentity bundleIdentifier]
+  -[SONetworkIdentity setBundleIdentifier:]
+  -[SONetworkIdentity realm]
+  -[SONetworkIdentity setRealm:]
+  -[SONetworkIdentity networkFingerprint]
+  -[SONetworkIdentity determineNetworkFingerprint]
+  -[SONetworkIdentity lastpath]
+  -[SONetworkIdentity setLastpath:]
+  -[SONetworkIdentity setNetworkFingerprint:]
+  -[SONetworkIdentity getVPNServerSignature:]
+  -[SONetworkIdentity getInterfaceSignature:]
+  -[SONetworkIdentity initForRealm:andBundleIdentifier:]
+
+
+SOKerberosFileManager : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SOKerberosFileManager loadDictionaryFromFile:]
+  +[SOKerberosFileManager archiveDictionary:toFile:]
+  +[SOKerberosFileManager documentsDirectoryURLForFileName:]
+
+
+SOKerberosHelper : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SOKerberosHelper acquireCredentialForUUID:]
+  +[SOKerberosHelper authenticate:toServer:returningToken:andError:]
+  +[SOKerberosHelper createCredential:withOptions:andError:]
+  +[SOKerberosHelper acquireCredentialForUPN:]
+  +[SOKerberosHelper _testForUPNForUser:]
+  +[SOKerberosHelper changePasswordForUPN:withOldPassword:withNewPassword:withError:]
+  +[SOKerberosHelper validatePassword:forUser:]
+  +[SOKerberosHelper destroyAllCredentials]
+  +[SOKerberosHelper destroyCredential:]
+  +[SOKerberosHelper destroyCredentialForUPN:]
+  +[SOKerberosHelper listCredentials]
+
+
+SOAuthorizationWrapper : NSObject /usr/lib/libSystem.B.dylib <SOAuthorizationDelegate>
+ @property  @? authorizationCompletion
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SOAuthorizationWrapper init]
+  -[SOAuthorizationWrapper .cxx_destruct]
+  -[SOAuthorizationWrapper authorizationDidNotHandle:]
+  -[SOAuthorizationWrapper authorizationDidCancel:]
+  -[SOAuthorizationWrapper authorizationDidComplete:]
+  -[SOAuthorizationWrapper authorization:didCompleteWithHTTPAuthorizationHeaders:]
+  -[SOAuthorizationWrapper authorization:didCompleteWithHTTPResponse:httpBody:]
+  -[SOAuthorizationWrapper authorization:didCompleteWithError:]
+  -[SOAuthorizationWrapper beginAuthorizationWithOperation:url:httpHeaders:httpBody:andCompletion:]
+  -[SOAuthorizationWrapper authorizationCompletion]
+  -[SOAuthorizationWrapper setAuthorizationCompletion:]
+
+
+SODNSSRVQuery : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[SODNSSRVQuery init]
+  -[SODNSSRVQuery lookupSRVWithQuery:andBundleIdentifier:]
+
+
+SOAsynchronousOperation : NSOperation /usr/lib/libobjc.A.dylib
+ @property  unsigned long state
+
+  // instance methods
+  -[SOAsynchronousOperation init]
+  -[SOAsynchronousOperation start]
+  -[SOAsynchronousOperation main]
+  -[SOAsynchronousOperation isFinished]
+  -[SOAsynchronousOperation isExecuting]
+  -[SOAsynchronousOperation isReady]
+  -[SOAsynchronousOperation isAsynchronous]
+  -[SOAsynchronousOperation state]
+  -[SOAsynchronousOperation finish]
+  -[SOAsynchronousOperation setState:]
+
+
+NSError(AppSSOKerberos)
+	// class methods
+	+[NSError(AppSSOKerberos) kerberosErrorWithCode:withDescription:]
+	+[NSError(AppSSOKerberos) credentialMissing]
+	+[NSError(AppSSOKerberos) passwordChangeNotEnabled]
+	+[NSError(AppSSOKerberos) servicePrincipalNameMissing]
+	+[NSError(AppSSOKerberos) invalidKerberosOperation]
+	+[NSError(AppSSOKerberos) hostNameMissing]
+	+[NSError(AppSSOKerberos) unhandledKerberosResult]
+	+[NSError(AppSSOKerberos) sourceAppNotAllowed]
+
+01 00 0200 /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication: LAContext 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSISO8601DateFormatter 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0b00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperation 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0300 /System/Library/PrivateFrameworks/AppSSO.framework/AppSSO: SOAuthorization 
+01 00 0300 /System/Library/PrivateFrameworks/AppSSO.framework/AppSSO: SOConfigurationHost 
+01 00 0300 /System/Library/PrivateFrameworks/AppSSO.framework/AppSSO: SOExtensionManager 

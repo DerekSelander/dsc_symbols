@@ -1,0 +1,899 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPNotificationInterpreter
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPService
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceAccount
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceActivityController
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceBodyLoadContext
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceBodyLoadMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceConnection
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceGreetingLibrary
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceGreetingStore
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceLibrary
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceLibraryMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_IMAPServiceStore
+|| __DATA.__objc_data _OBJC_CLASS_$__VVMFLogInterceptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPNotificationInterpreter
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPService
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceAccount
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceActivityController
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceBodyLoadContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceBodyLoadMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceConnection
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceGreetingLibrary
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceGreetingStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceLibrary
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceLibraryMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMAPServiceStore
+|| __DATA.__objc_data _OBJC_METACLASS_$__VVMFLogInterceptor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._activityController
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._addedRecords
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._attachmentManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._bodyLoadMonitor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._greetingDuration
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._greetingLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._greetingType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._imapParameters
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._imapServiceFlags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._messageChangeQueue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._nextBeaconTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._pendingDeletes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPService._pendingDeletesLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._cachedStores
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._checkInForcefully
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._hasBeenInvalidated
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._idleLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._idleTimeout
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._idleTimer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._nextIdleFire
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._offlineCachePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._serviceAccountLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceAccount._storeCacheLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceActivityController._activeActivities
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceActivityController._activityToTaskType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceActivityController._inProcessRecords
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceActivityController._service
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._base64
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._expectedLength
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._fd
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._headersDict
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._lastOffset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._lengthWritten
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._notificationDict
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._parser
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._recordLibraryId
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadContext._service
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadMonitor._loadContextsByLibraryId
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceBodyLoadMonitor._service
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceConnection._checkedOutThreads
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceConnection._checkedOutThreadsLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceGreetingLibrary._messages
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceLibraryMessage._messageIDHeader
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMAPServiceStore._imapServiceStoreFlags
+|| __DATA_CONST.__const _H_X_APPLEVM_DELETION_DATE
+|| __DATA_CONST.__const _H_X_APPLEVM_DURATION
+|| __DATA_CONST.__const _H_X_APPLEVM_MESSAGE_VERSION
+|| __DATA_CONST.__const _kAppleVMActiveGreetingFlag
+|| __DATA_CONST.__const _kCurrentAppleVMMessageVersion
+|| __DATA_CONST.__const _kGreetingsMailboxName
+|| __DATA_CONST.__const _kIMAPServiceAccountDataClass
+|| __DATA_CONST.__const _kIMAPServiceAccountInfoTask
+|| __DATA_CONST.__const _kIMAPServiceAllowedFQDNServers
+|| __DATA_CONST.__const _kIMAPServiceAllowedIPv4Servers
+|| __DATA_CONST.__const _kIMAPServiceAllowedIPv6Servers
+|| __DATA_CONST.__const _kIMAPServiceBeaconAddress
+|| __DATA_CONST.__const _kIMAPServiceBeaconServiceCenterAddress
+|| __DATA_CONST.__const _kIMAPServiceBeaconTimeout
+|| __DATA_CONST.__const _kIMAPServiceBodyCachingTaskName
+|| __DATA_CONST.__const _kIMAPServiceBodyRetrievingTaskName
+|| __DATA_CONST.__const _kIMAPServiceBypassSMSCAvailabilityCheck
+|| __DATA_CONST.__const _kIMAPServiceChangePINTaskName
+|| __DATA_CONST.__const _kIMAPServiceClientManagesTrash
+|| __DATA_CONST.__const _kIMAPServiceDeliverLegacyNotificationsBeforeSetup
+|| __DATA_CONST.__const _kIMAPServiceFlagPushTaskName
+|| __DATA_CONST.__const _kIMAPServiceIdleConnectionTimeout
+|| __DATA_CONST.__const _kIMAPServiceLibraryRecordsAddedNotification
+|| __DATA_CONST.__const _kIMAPServiceMaxGreetingDuration
+|| __DATA_CONST.__const _kIMAPServiceMaxPINLength
+|| __DATA_CONST.__const _kIMAPServiceMaximumBeaconCount
+|| __DATA_CONST.__const _kIMAPServiceMinPINLength
+|| __DATA_CONST.__const _kIMAPServicePreferredAuthenticationScheme
+|| __DATA_CONST.__const _kIMAPServiceRetrieveGreetingTaskName
+|| __DATA_CONST.__const _kIMAPServiceSendBeaconOnLoginFailure
+|| __DATA_CONST.__const _kIMAPServiceSetCustomGreetingTaskName
+|| __DATA_CONST.__const _kIMAPServiceSetDefaultGreetingTaskName
+|| __DATA_CONST.__const _kIMAPServiceSupportsGreetingNotification
+|| __DATA_CONST.__const _kIMAPServiceSyncTaskName
+|| __DATA_CONST.__const _kIMAPServiceUsesMWI
+|| __DATA_CONST.__const _kIMAPServiceUsesSSL
+|| __DATA_CONST.__const _kInboxMailboxName
+|| __DATA_CONST.__const _kTrashMailboxName
+|| __TEXT.__text _IMAPSetupLogging
+|| __TEXT.__text _getAddressFamilyName
+|| __TEXT.__text _isSameSubnet
+|| __TEXT.__text _isValidAddressFamily
+__ AppSupport: _CPIsInternalDevice
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayCreate
+__ CoreFoundation: _CFArrayCreateCopy
+__ CoreFoundation: _CFArrayCreateMutableCopy
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArrayRemoveValueAtIndex
+__ CoreFoundation: _CFArraySortValues
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFMakeCollectable
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterGetLocalCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringHasSuffix
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreTelephony: _VMCopyDictionaryForNotificationString
+__ CoreTelephony: __CTServerConnectionCopyServiceCenterAddressValue
+__ CoreTelephony: _kCTIndicatorsVoiceMailURL
+__ CoreTelephony: _kVMGreetingChangedNotificationName
+__ CoreTelephony: _kVMMailboxChangedNotificationName
+__ CoreTelephony: _kVMNotificationHostKey
+__ CoreTelephony: _kVMNotificationLoginKey
+__ CoreTelephony: _kVMNotificationMWIKey
+__ CoreTelephony: _kVMNotificationNameKey
+__ CoreTelephony: _kVMNotificationPasswordKey
+__ CoreTelephony: _kVMNotificationPortKey
+__ CoreTelephony: _kVMNotificationStateKey
+__ CoreTelephony: _kVMNotificationTimestampKey
+__ CoreTelephony: _kVMServerChangedNotificationName
+__ CoreTelephony: _kVMStateNotificationName
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromBOOL
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSAutoreleasePool
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSDateComponentsFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSRecursiveLock
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ IMAP: _IMAPAccountOfflineOperationQueuedNotification
+__ IMAP: _IMAPServerPathPrefix
+__ IMAP: _MFCreateArrayForMessageFlags
+__ IMAP: _OBJC_CLASS_$_IMAPAccount
+__ IMAP: _OBJC_CLASS_$_MFIMAPConnection
+__ IMAP: _OBJC_CLASS_$_MFIMAPMessage
+__ IMAP: _OBJC_CLASS_$_MFLibraryIMAPStore
+__ IMAP: _OBJC_IVAR_$_IMAPAccount._cachedConnections
+__ IMAP: _OBJC_IVAR_$_IMAPAccount._connectionLock
+__ IMAP: _OBJC_IVAR_$_IMAPAccount._flagChangesLock
+__ IMAP: _OBJC_IVAR_$_MFLibraryIMAPStore._serverUidNext
+__ IMAP: _OBJC_METACLASS_$_IMAPAccount
+__ IMAP: _OBJC_METACLASS_$_MFIMAPConnection
+__ IMAP: _OBJC_METACLASS_$_MFLibraryIMAPStore
+__ MIME: _H_CONTENT_TRANSFER_ENCODING
+__ MIME: _H_CONTENT_TYPE
+__ MIME: _H_DATE
+__ MIME: _H_MESSAGE_ID
+__ MIME: _H_MIME_VERSION
+__ MIME: _H_SUBJECT
+__ MIME: _MFMimeHeaderFromKey
+__ MIME: _MFMimeHeaderReplyToKey
+__ MIME: _OBJC_CLASS_$_MFData
+__ MIME: _OBJC_CLASS_$_MFMessageFileWrapper
+__ MIME: _OBJC_CLASS_$_MFMessageHeaders
+__ MIME: _OBJC_CLASS_$_MFMutableMessageHeaders
+__ MIME: ___mfEnableCallStackLogging
+__ MessageLegacy: _MFMailAccountUsername
+__ MessageLegacy: _MFMessageErrorDomain
+__ MessageLegacy: _MFMessageFlagsByApplyingDictionary
+__ MessageLegacy: _MFReloadNetworkLoggingNotification
+__ MessageLegacy: _MailAccountHostname
+__ MessageLegacy: _MailAccountPortNumber
+__ MessageLegacy: _MailMessageStoreMessagesAdded
+__ MessageLegacy: _MessageIsDeleted
+__ MessageLegacy: _MessageIsRead
+__ MessageLegacy: _MonitoredActivityDidAddActivityTarget
+__ MessageLegacy: _MonitoredActivityEnded
+__ MessageLegacy: _MonitoredActivityNewPrimaryTarget
+__ MessageLegacy: _MonitoredActivityOldPrimaryTarget
+__ MessageLegacy: _MonitoredActivityPrimaryTargetChanged
+__ MessageLegacy: _MonitoredActivityStarted
+__ MessageLegacy: _OBJC_CLASS_$_MFActivityMonitor
+__ MessageLegacy: _OBJC_CLASS_$_MFAttachmentLibraryManager
+__ MessageLegacy: _OBJC_CLASS_$_MFAttachmentManager
+__ MessageLegacy: _OBJC_CLASS_$_MFAuthScheme
+__ MessageLegacy: _OBJC_CLASS_$_MFConnection
+__ MessageLegacy: _OBJC_CLASS_$_MFError
+__ MessageLegacy: _OBJC_CLASS_$_MFInvocationQueue
+__ MessageLegacy: _OBJC_CLASS_$_MFLibraryMessage
+__ MessageLegacy: _OBJC_CLASS_$_MFLibraryStore
+__ MessageLegacy: _OBJC_CLASS_$_MFMailMessageStore
+__ MessageLegacy: _OBJC_CLASS_$_MFMessageDetails
+__ MessageLegacy: _OBJC_CLASS_$_MFMessageLibrary
+__ MessageLegacy: _OBJC_CLASS_$_MFMessageWriter
+__ MessageLegacy: _OBJC_CLASS_$_MFMonitoredInvocation
+__ MessageLegacy: _OBJC_CLASS_$_MFProgressiveMimeParser
+__ MessageLegacy: _OBJC_IVAR_$_MFLibraryStore._library
+__ MessageLegacy: _OBJC_IVAR_$_MFMailMessageStore._account
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.dateReceived
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.library
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.libraryID
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.mailboxID
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.messageFlags
+__ MessageLegacy: _OBJC_IVAR_$_MFMessageDetails.uid
+__ MessageLegacy: _OBJC_IVAR_$_MailAccount._library
+__ MessageLegacy: _OBJC_METACLASS_$_MFLibraryMessage
+__ MessageLegacy: _OBJC_METACLASS_$_MFMessageLibrary
+__ TelephonyUtilities: _OBJC_CLASS_$_TUPhoneNumber
+__ TelephonyUtilities: _OBJC_CLASS_$_TUPrivacyManager
+__ TelephonyUtilities: _TUGuaranteeExecutionOnMainThreadAsync
+__ TelephonyUtilities: _TURemoveEveryTelephonyCenterObserver
+__ TelephonyUtilities: __TUAssertShouldCrashApplication
+__ VisualVoicemail: _OBJC_CLASS_$_VMAWDReporter
+__ VisualVoicemail: _OBJC_CLASS_$_VMCarrierStateRequest
+__ VisualVoicemail: _OBJC_CLASS_$_VVCarrierParameters
+__ VisualVoicemail: _OBJC_CLASS_$_VVNotificationInterpreter
+__ VisualVoicemail: _OBJC_CLASS_$_VVService
+__ VisualVoicemail: _OBJC_IVAR_$_VVService._serviceFlags
+__ VisualVoicemail: _OBJC_METACLASS_$_VVNotificationInterpreter
+__ VisualVoicemail: _OBJC_METACLASS_$_VVService
+__ VisualVoicemail: _VMCarrierIMAPParametersChangedNotification
+__ VisualVoicemail: _VMCarrierNotificationUserInfoAccountUUID
+__ VisualVoicemail: _VMCarrierNotificationUserInfoIMAPParameters
+__ VisualVoicemail: _VMCarrierStateResponseErrorCodeTemporaryFailure
+__ VisualVoicemail: _VMPhoneNumberNormalizedPhoneNumberString
+__ VisualVoicemail: _VVServiceDataAvailableNotification
+__ VisualVoicemail: _VVServiceDataReceiveBeganNotification
+__ VisualVoicemail: _VVServiceDataReceiveContinuedNotification
+__ VisualVoicemail: _VVServiceFinishedAddingRecordsNotification
+__ VisualVoicemail: _VVServiceRecordsAddedNotification
+__ VisualVoicemail: _VVServiceSyncStatusChangedNotification
+__ VisualVoicemail: _VVServiceTaskCancelledNotification
+__ VisualVoicemail: _VVServiceTaskEndedNotification
+__ VisualVoicemail: _VVServiceTaskStartedNotification
+__ VisualVoicemail: _VVVerifierChangedNotification
+__ VisualVoicemail: _kVVErrorDomain
+__ VisualVoicemail: _kVVLastWarnedUsageDefault
+__ VisualVoicemail: _kVVServiceAccountUUIDKey
+__ VisualVoicemail: _kVVServiceAddedRecordsKey
+__ VisualVoicemail: _kVVServiceCurrentDataLengthKey
+__ VisualVoicemail: _kVVServiceErrorKey
+__ VisualVoicemail: _kVVServiceExpectedDataLengthKey
+__ VisualVoicemail: _kVVServiceRecordKey
+__ VisualVoicemail: _kVVServiceSuppressErrorKey
+__ VisualVoicemail: _kVVServiceTaskTypeKey
+__ VisualVoicemail: _kVVServiceTaskWillBeRetriedKey
+__ VisualVoicemail: _kVVVerifierBeaconResponseReceivedCheckpointKey
+__ VisualVoicemail: _kVVVerifierBeaconSentCheckpointKey
+__ VisualVoicemail: _kVVVerifierSMSCAvailableCheckpointKey
+__ VisualVoicemail: _kVVVerifierServerLoginCheckpointKey
+__ VisualVoicemail: _kVVVerifierValidCarrierBundleCheckpointKey
+__ VisualVoicemail: _vm_imap_log
+__ VoicemailStore: _VMStoreAddRecord
+__ VoicemailStore: _VMStoreCopyFirstRecordWithToken
+__ VoicemailStore: _VMStoreCopyFirstRecordWithTokenInMailbox
+__ VoicemailStore: _VMStoreCopyGreetingPath
+__ VoicemailStore: _VMStoreCopyOfAllRecordsWithFlags
+__ VoicemailStore: _VMStoreCopyOfAllRecordsWithFlagsInRemoteUIDRange
+__ VoicemailStore: _VMStoreCopyOfAllRemoteUIDsWithTrashState
+__ VoicemailStore: _VMStoreCopyRecordWithIdentifier
+__ VoicemailStore: _VMStoreCopyRecordWithRemoteUID
+__ VoicemailStore: _VMStoreCopyRecordsWithTokenInMailbox
+__ VoicemailStore: _VMStoreCountOfRecordsWithFlags
+__ VoicemailStore: _VMStoreGetReceiverMigration
+__ VoicemailStore: _VMStoreGetTimestampForTokenWithKey
+__ VoicemailStore: _VMStoreGetUIDValidity
+__ VoicemailStore: _VMStoreRecordChangedFlagsFromServerKey
+__ VoicemailStore: _VMStoreRecordChangedFlagsKey
+__ VoicemailStore: _VMStoreRecordChangedFlagsReceiverKey
+__ VoicemailStore: _VMStoreRecordCopyCallbackNumber
+__ VoicemailStore: _VMStoreRecordCopyDataPath
+__ VoicemailStore: _VMStoreRecordCopyDescription
+__ VoicemailStore: _VMStoreRecordCopyFlagsDescription
+__ VoicemailStore: _VMStoreRecordCopyReceiver
+__ VoicemailStore: _VMStoreRecordCopySender
+__ VoicemailStore: _VMStoreRecordCopyToken
+__ VoicemailStore: _VMStoreRecordFlagsChangedNotification
+__ VoicemailStore: _VMStoreRecordFlagsDidChangeNotification
+__ VoicemailStore: _VMStoreRecordFlagsWillChangeNotification
+__ VoicemailStore: _VMStoreRecordGetDate
+__ VoicemailStore: _VMStoreRecordGetFlags
+__ VoicemailStore: _VMStoreRecordGetIdentifier
+__ VoicemailStore: _VMStoreRecordGetRemoteUID
+__ VoicemailStore: _VMStoreRecordSetCallbackNumber
+__ VoicemailStore: _VMStoreRecordSetDuration
+__ VoicemailStore: _VMStoreRecordSetFlag
+__ VoicemailStore: _VMStoreRecordSetFlags
+__ VoicemailStore: _VMStoreRecordSetFlagsFromServer
+__ VoicemailStore: _VMStoreRecordSetReceiver
+__ VoicemailStore: _VMStoreRecordSetRemoteUID
+__ VoicemailStore: _VMStoreRecordSetSender
+__ VoicemailStore: _VMStoreRemoveRecord
+__ VoicemailStore: _VMStoreRemovedRecordsNotification
+__ VoicemailStore: _VMStoreSave
+__ VoicemailStore: _VMStoreSetReceiverMigration
+__ VoicemailStore: _VMStoreSetTimestampForTokenWithKey
+__ VoicemailStore: _VMStoreSetUIDValidity
+__ VoicemailStore: __VMStoreCopyTokenForKey
+__ libSystem.B.dylib: _XPC_ACTIVITY_DELAY
+__ libSystem.B.dylib: _XPC_ACTIVITY_GRACE_PERIOD
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL
+__ libSystem.B.dylib: _XPC_ACTIVITY_INTERVAL_1_MIN
+__ libSystem.B.dylib: _XPC_ACTIVITY_PRIORITY
+__ libSystem.B.dylib: _XPC_ACTIVITY_PRIORITY_UTILITY
+__ libSystem.B.dylib: _XPC_ACTIVITY_REPEATING
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _inet_pton
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _unlink
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: _xpc_activity_get_state
+__ libSystem.B.dylib: _xpc_activity_register
+__ libSystem.B.dylib: _xpc_activity_set_state
+__ libSystem.B.dylib: _xpc_activity_unregister
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_release
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_terminate
+IMAPService : VVService /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony <VMTelephonyRequestControllerDelegate>
+ @property  IMAPServiceAccount *serviceAccount
+ @property  BOOL beaconActive
+ @property  BOOL beaconRetryRegistered
+ @property  r* beaconRetryActivityIdentifier
+ @property  @? changePasswordReplyBlock
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[IMAPService initialize]
+  +[IMAPService homeDirectory]
+
+  // instance methods
+  -[IMAPService dealloc]
+  -[IMAPService _parameters]
+  -[IMAPService synchronize:]
+  -[IMAPService setSubscribed:]
+  -[IMAPService mailboxName]
+  -[IMAPService messageWriter:willEncodeHeaders:forMimePart:]
+  -[IMAPService _carrierBundleChanged]
+  -[IMAPService initWithServiceIdentifier:destinationID:isoCountryCode:subscription:stateRequestController:]
+  -[IMAPService sharedSubscriptionRequiresSetup]
+  -[IMAPService setOnline:]
+  -[IMAPService doesClientManageTrashCompaction]
+  -[IMAPService isInSync]
+  -[IMAPService handleNotification:isMWI:]
+  -[IMAPService handleDataContextDeactivated]
+  -[IMAPService kill]
+  -[IMAPService setMailboxRequiresSetup:]
+  -[IMAPService setSMSReady:]
+  -[IMAPService _handleSMSCAvailable]
+  -[IMAPService respectsMWINotifications]
+  -[IMAPService minimumPasswordLength]
+  -[IMAPService maximumPasswordLength]
+  -[IMAPService passwordChangeRequiresEnteringOldPassword]
+  -[IMAPService mailboxGreetingType]
+  -[IMAPService taskOfTypeExists:]
+  -[IMAPService progressiveDataLengthsForRecord:expected:current:]
+  -[IMAPService dataForRecordPending:progressiveLoadInProgress:]
+  -[IMAPService greetingFetchExistsProgressiveLoadInProgress:]
+  -[IMAPService isSyncInProgress]
+  -[IMAPService retrieveDataForRecord:]
+  -[IMAPService setPasscode:completion:]
+  -[IMAPService retrieveGreetingForAccountUUID:]
+  -[IMAPService greetingAvailable]
+  -[IMAPService setGreetingType:data:duration:forAccountUUID:]
+  -[IMAPService movePendingMessagesToTrashTask:]
+  -[IMAPService movePendingMessagesToInboxTask:]
+  -[IMAPService moveRecordsWithIdentifiersToTrash:]
+  -[IMAPService moveRecordsWithIdentifiersToInbox:]
+  -[IMAPService requestController:didReceiveResponse:forRequest:]
+  -[IMAPService _handleVoicemailPasswordChangeTaskNotification:]
+  -[IMAPService _setServerInfoFromInterpretedNotification:]
+  -[IMAPService _setAccountState:]
+  -[IMAPService _checkForQueuedNotifications]
+  -[IMAPService _resetLegacyMessageWaiting]
+  -[IMAPService beaconRetryActivityIdentifier]
+  -[IMAPService currentTaskType]
+  -[IMAPService serviceAccount]
+  -[IMAPService handleIMAPAccountOfflineOperationQueuedNotification:]
+  -[IMAPService synchronizeRecordFlags]
+  -[IMAPService populateReceiverInformationForServiceAccount:]
+  -[IMAPService setServiceAccount:]
+  -[IMAPService isIMAPServerTrustedFQDN:key:whitelistExist:]
+  -[IMAPService isIMAPServerTrustedIP:af:key:whitelistExist:]
+  -[IMAPService isIMAPServerTrusted:]
+  -[IMAPService _cancelBeacon]
+  -[IMAPService _setBeaconCount:]
+  -[IMAPService _setAccountValue:forKey:inDictionary:ifDifferentInDictionary:]
+  -[IMAPService _saveParameters]
+  -[IMAPService _startBeacon]
+  -[IMAPService _beaconCount]
+  -[IMAPService isBeaconActive]
+  -[IMAPService _scheduleBeaconRetry:]
+  -[IMAPService setBeaconActive:]
+  -[IMAPService _setActiveGreetingType:]
+  -[IMAPService _setGreetingCached:]
+  -[IMAPService _inferActiveState]
+  -[IMAPService _setMessageWaitingFromNotification:]
+  -[IMAPService _mailboxUsageUpdateCompletedWithError:]
+  -[IMAPService _sanitizeDuplicateRecordsFromArray:]
+  -[IMAPService _sanitizeLocalVoicemailDatabaseForServiceAccount:]
+  -[IMAPService _synchronizeMailboxWithRelativePath:serviceAccount:]
+  -[IMAPService _messagesAddedCompleted]
+  -[IMAPService _candidateGreetingMessageForServiceAccount:]
+  -[IMAPService _syncCompletedWithError:]
+  -[IMAPService _cacheBodies:]
+  -[IMAPService _updateMailboxUsage]
+  -[IMAPService handleIMAPServiceLibraryRecordsAddedNotification:]
+  -[IMAPService _synchronizeMailboxesForServiceAccount:]
+  -[IMAPService _synchronouslyRetrieveBody:]
+  -[IMAPService _synchronouslyRetrieveBodyForRecord:]
+  -[IMAPService _retrieveSingleRecordBody:]
+  -[IMAPService _retrieveSingleTransferredRecordBody:]
+  -[IMAPService _messageChangeQueue]
+  -[IMAPService _synchronouslySetDefaultGreeting]
+  -[IMAPService _synchronouslySetCustomGreetingWithData:duration:]
+  -[IMAPService retrieveGreetingWorkerForAccountUUID:serviceAccount:]
+  -[IMAPService _parametersFilePath]
+  -[IMAPService setChangePasswordReplyBlock:]
+  -[IMAPService _onQueue_setPasscode:completion:]
+  -[IMAPService changePasswordReplyBlock]
+  -[IMAPService _incrementBeaconCount]
+  -[IMAPService requestController:didSendRequest:]
+  -[IMAPService _authenticationFailed]
+  -[IMAPService _bodyLoadMonitor]
+  -[IMAPService _bodyRetrievalCompleted:]
+  -[IMAPService _removeRecordsNotPendingDelete:]
+  -[IMAPService _addPendingDeleteForRecord:]
+  -[IMAPService _removePendingDeleteForRecord:]
+  -[IMAPService _synchronouslyPushFlags:]
+  -[IMAPService beaconRetryRegistered]
+  -[IMAPService setBeaconRetryRegistered:]
+
+
+IMAPServiceAccount : IMAPAccount /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+ @property  NSObject<OS_dispatch_semaphore> *moveMessagesSemaphore
+ @property  NSString *serviceIdentifier
+ @property  NSString *networkIdentifier
+ @property  IMAPServiceLibrary *library
+ @property  NSString *isoCountryCode
+ @property  IMAPService *service
+ @property  NSString *servicePhoneNumber
+
+  // class methods
+  +[IMAPServiceAccount supportedDataclasses]
+  +[IMAPServiceAccount accountTypeIdentifier]
+
+  // instance methods
+  -[IMAPServiceAccount dealloc]
+  -[IMAPServiceAccount password]
+  -[IMAPServiceAccount .cxx_destruct]
+  -[IMAPServiceAccount path]
+  -[IMAPServiceAccount setPassword:]
+  -[IMAPServiceAccount isoCountryCode]
+  -[IMAPServiceAccount service]
+  -[IMAPServiceAccount enabledDataclasses]
+  -[IMAPServiceAccount isEnabledForDataclass:]
+  -[IMAPServiceAccount library]
+  -[IMAPServiceAccount setService:]
+  -[IMAPServiceAccount serviceIdentifier]
+  -[IMAPServiceAccount setServiceIdentifier:]
+  -[IMAPServiceAccount setConnectionIdleTimeout:]
+  -[IMAPServiceAccount _startIdleTimer]
+  -[IMAPServiceAccount releaseAllConnections]
+  -[IMAPServiceAccount connectionClass]
+  -[IMAPServiceAccount connectionServiceType]
+  -[IMAPServiceAccount networkAccountIdentifier]
+  -[IMAPServiceAccount credentialAccessibility]
+  -[IMAPServiceAccount mailboxUidForRelativePath:create:]
+  -[IMAPServiceAccount storeForMailboxUid:]
+  -[IMAPServiceAccount storeClass]
+  -[IMAPServiceAccount setupLibrary]
+  -[IMAPServiceAccount storeClassForMailbox:]
+  -[IMAPServiceAccount shouldExpungeMessagesOnDelete]
+  -[IMAPServiceAccount connectionForStore:delegate:options:]
+  -[IMAPServiceAccount checkInConnection:]
+  -[IMAPServiceAccount offlineCacheDirectoryPath]
+  -[IMAPServiceAccount readBufferSize]
+  -[IMAPServiceAccount allowsPartialDownloads]
+  -[IMAPServiceAccount checkInConnectionsForStore:]
+  -[IMAPServiceAccount acquireNetworkAssertion]
+  -[IMAPServiceAccount getMailboxListWithConnection:]
+  -[IMAPServiceAccount requiresDataForOfflineTransfersFromStore:]
+  -[IMAPServiceAccount libraryIMAPStore:bodyDownloadBeganForUid:data:section:]
+  -[IMAPServiceAccount libraryIMAPStore:bodyDownloadReceivedMoreDataForUid:data:section:]
+  -[IMAPServiceAccount libraryIMAPStore:bodyDownloadCompletedForUid:data:section:]
+  -[IMAPServiceAccount mailboxUsage]
+  -[IMAPServiceAccount invalidateServiceAccount]
+  -[IMAPServiceAccount initWithProperties:serviceIdentifier:isoCountryCode:networkIdentifier:servicePhoneNumber:]
+  -[IMAPServiceAccount checkInConnectionsPolitelyForStore:]
+  -[IMAPServiceAccount servicePhoneNumber]
+  -[IMAPServiceAccount mimeBodyForRecord:]
+  -[IMAPServiceAccount movePendingMessagesToTrash:]
+  -[IMAPServiceAccount movePendingMessagesToInbox:]
+  -[IMAPServiceAccount moveMessagesWithIdentifiersToTrash:]
+  -[IMAPServiceAccount moveMessagesWithIdentifiersToInbox:]
+  -[IMAPServiceAccount storeFlagsWithMask:forRecordsWithIdentifiers:]
+  -[IMAPServiceAccount storeFlags:forRecord:]
+  -[IMAPServiceAccount changePIN:]
+  -[IMAPServiceAccount willSetFlags:state:forRecord:needToBeStored:]
+  -[IMAPServiceAccount completeFlagChange]
+  -[IMAPServiceAccount prepareForFlagChange]
+  -[IMAPServiceAccount _clearConnectionCheckOuts]
+  -[IMAPServiceAccount storeFlags:forRecord:usingMessage:]
+  -[IMAPServiceAccount movePendingMessages:isGoingToTrash:]
+  -[IMAPServiceAccount moveMessagesSemaphore]
+  -[IMAPServiceAccount _moveMessages:isGoingToTrash:]
+  -[IMAPServiceAccount uidValidityForMailbox:]
+  -[IMAPServiceAccount _performDisconnectIdleConnections]
+  -[IMAPServiceAccount _addMonitoredInvocationForIdleConnectionDisconnection]
+  -[IMAPServiceAccount setUidValidity:forMailbox:]
+  -[IMAPServiceAccount setMoveMessagesSemaphore:]
+  -[IMAPServiceAccount networkIdentifier]
+  -[IMAPServiceAccount setNetworkIdentifier:]
+
+
+IMAPServiceLibrary : MFMessageLibrary /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+ @property  IMAPServiceAccount *account
+ @property  MFLibraryStore *sharedGenericStore
+
+  // instance methods
+  -[IMAPServiceLibrary dealloc]
+  -[IMAPServiceLibrary .cxx_destruct]
+  -[IMAPServiceLibrary account]
+  -[IMAPServiceLibrary mailboxUidForMessage:]
+  -[IMAPServiceLibrary setFlags:forMessage:]
+  -[IMAPServiceLibrary setFlagsFromDictionary:forMessages:]
+  -[IMAPServiceLibrary messageWithLibraryID:options:inMailbox:]
+  -[IMAPServiceLibrary messagesWithSummariesForMailbox:range:]
+  -[IMAPServiceLibrary messagesForMailbox:olderThanNumberOfDays:]
+  -[IMAPServiceLibrary compactMailbox:]
+  -[IMAPServiceLibrary nonDeletedCountForMailbox:]
+  -[IMAPServiceLibrary unreadCountForMailbox:]
+  -[IMAPServiceLibrary getDetailsForMessagesWithRemoteIDInRange:fromMailbox:]
+  -[IMAPServiceLibrary getDetailsForAllMessagesFromMailbox:]
+  -[IMAPServiceLibrary sendMessagesMatchingCriterion:to:options:range:]
+  -[IMAPServiceLibrary deletedCountForMailbox:]
+  -[IMAPServiceLibrary totalCountForMailbox:]
+  -[IMAPServiceLibrary oldestMessageInMailbox:]
+  -[IMAPServiceLibrary messageWithRemoteID:inRemoteMailbox:]
+  -[IMAPServiceLibrary maximumRemoteIDForMailbox:]
+  -[IMAPServiceLibrary minimumRemoteIDForMailbox:]
+  -[IMAPServiceLibrary getDetailsForMessages:absoluteBottom:topOfDesiredRange:range:fromMailbox:]
+  -[IMAPServiceLibrary messagesWithMessageIDHeader:]
+  -[IMAPServiceLibrary compactMessages:permanently:]
+  -[IMAPServiceLibrary isMessageContentsLocallyAvailable:]
+  -[IMAPServiceLibrary addMessages:withMailbox:fetchBodies:newMessagesByOldMessage:remoteIDs:setFlags:clearFlags:messageFlagsForMessages:copyFiles:addPOPUIDs:dataSectionsByMessage:]
+  -[IMAPServiceLibrary setFlagsForMessages:mask:]
+  -[IMAPServiceLibrary invalidateServiceLibrary]
+  -[IMAPServiceLibrary initWithServiceAccount:]
+  -[IMAPServiceLibrary messageWithStoreRecord:]
+  -[IMAPServiceLibrary sharedGenericStore]
+  -[IMAPServiceLibrary _mailboxUidForStoreRecord:]
+  -[IMAPServiceLibrary _messageWithStoreRecord:localStore:]
+  -[IMAPServiceLibrary _getDetailsForMailbox:useRemoteIDRange:]
+  -[IMAPServiceLibrary _resetCountsForCompaction]
+  -[IMAPServiceLibrary _postMessagesAdded:]
+  -[IMAPServiceLibrary _setFlags:forMessage:postAndCommit:]
+  -[IMAPServiceLibrary copyStoreRecordForMessage:]
+  -[IMAPServiceLibrary removeAllMessagesFromMailbox:andNotify:]
+
+
+IMAPServiceStore : MFLibraryIMAPStore /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+  // instance methods
+  -[IMAPServiceStore initWithMailboxUid:readOnly:]
+  -[IMAPServiceStore doCompact]
+  -[IMAPServiceStore newObjectCache]
+  -[IMAPServiceStore messagesAdded:]
+  -[IMAPServiceStore connectionBodyDataReadChunkSize:]
+  -[IMAPServiceStore shouldRetryEmptyBodyDownloadForMessage:]
+  -[IMAPServiceStore setMailboxUidValidity:]
+  -[IMAPServiceStore updateDeletedCount]
+
+
+IMAPServiceActivityController : NSObject /System/Library/Frameworks/Security.framework/Security
+  // class methods
+  +[IMAPServiceActivityController setRemainingBodyRetries:]
+  +[IMAPServiceActivityController remainingBodyRetries]
+
+  // instance methods
+  -[IMAPServiceActivityController dealloc]
+  -[IMAPServiceActivityController invalidate]
+  -[IMAPServiceActivityController _postNotificationName:userInfo:]
+  -[IMAPServiceActivityController initForService:]
+  -[IMAPServiceActivityController taskOfTypeExists:]
+  -[IMAPServiceActivityController currentTaskType]
+  -[IMAPServiceActivityController bodyFetchActivityForRecord:]
+  -[IMAPServiceActivityController bodyFetchPendingForRecord:]
+  -[IMAPServiceActivityController _activityStarted:]
+  -[IMAPServiceActivityController _activityEnded:]
+  -[IMAPServiceActivityController _primaryTargetChanged:]
+  -[IMAPServiceActivityController _targetsAdded:]
+
+
+IMAPServiceBodyLoadMonitor : NSObject /System/Library/Frameworks/Security.framework/Security
+ @property  NSMutableData *headerData
+
+  // class methods
+  +[IMAPServiceBodyLoadMonitor _headersToPreserve]
+
+  // instance methods
+  -[IMAPServiceBodyLoadMonitor dealloc]
+  -[IMAPServiceBodyLoadMonitor initForService:]
+  -[IMAPServiceBodyLoadMonitor progressiveMimeParser:finishedMimePart:]
+  -[IMAPServiceBodyLoadMonitor progressiveMimeParser:beganDataForMimePart:]
+  -[IMAPServiceBodyLoadMonitor progressiveMimeParser:failedWithError:]
+  -[IMAPServiceBodyLoadMonitor headerData]
+  -[IMAPServiceBodyLoadMonitor progressiveBodyLoadHasStartedForRecord:]
+  -[IMAPServiceBodyLoadMonitor lengthsOfBodyLoadForRecord:expected:current:]
+  -[IMAPServiceBodyLoadMonitor bodyLoadStartedForRemoteUid:inStore:data:section:]
+  -[IMAPServiceBodyLoadMonitor bodyLoadContinuedForRemoteUid:inStore:data:section:]
+  -[IMAPServiceBodyLoadMonitor bodyLoadEndedForRemoteUid:inStore:data:section:]
+  -[IMAPServiceBodyLoadMonitor _activityCompleted:]
+  -[IMAPServiceBodyLoadMonitor contextForLibraryId:create:]
+  -[IMAPServiceBodyLoadMonitor _libraryIdForRemoteUid:inStore:]
+  -[IMAPServiceBodyLoadMonitor setHeaderData:]
+  -[IMAPServiceBodyLoadMonitor _createHeaderDictionaryForData:]
+  -[IMAPServiceBodyLoadMonitor _postDataAvailableWithUserInfo:]
+
+
+IMAPServiceBodyLoadContext : NSObject /System/Library/Frameworks/Security.framework/Security
+ @property  NSMutableData *bodyData
+ @property  BOOL mimePartFinishedLoading
+
+  // instance methods
+  -[IMAPServiceBodyLoadContext dealloc]
+  -[IMAPServiceBodyLoadContext bodyData]
+  -[IMAPServiceBodyLoadContext setBodyData:]
+  -[IMAPServiceBodyLoadContext currentOffset]
+  -[IMAPServiceBodyLoadContext setExpectedLength:]
+  -[IMAPServiceBodyLoadContext expectedLength]
+  -[IMAPServiceBodyLoadContext cleanUpErroredFile]
+  -[IMAPServiceBodyLoadContext parseWithDelegate:]
+  -[IMAPServiceBodyLoadContext writeDataIfNeeded]
+  -[IMAPServiceBodyLoadContext mimePartFinishedLoading]
+  -[IMAPServiceBodyLoadContext loadHasStarted]
+  -[IMAPServiceBodyLoadContext setMimePartFinishedLoading:]
+  -[IMAPServiceBodyLoadContext _postNotification:withLengthNumber:]
+
+
+IMAPServiceConnection : MFIMAPConnection /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+  // class methods
+  +[IMAPServiceConnection heldConnectionsForCheckingIn]
+
+  // instance methods
+  -[IMAPServiceConnection init]
+  -[IMAPServiceConnection dealloc]
+  -[IMAPServiceConnection setDelegate:]
+  -[IMAPServiceConnection checkIn]
+  -[IMAPServiceConnection _headersToFetchIncludingThoseRequiredForRouting:withRecipients:]
+  -[IMAPServiceConnection searchUIDs:withFlagRequests:]
+  -[IMAPServiceConnection checkInToAccount:]
+  -[IMAPServiceConnection changePassword:]
+  -[IMAPServiceConnection checkInForcefully]
+
+
+IMAPServiceLibraryMessage : MFLibraryMessage /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+  // instance methods
+  -[IMAPServiceLibraryMessage dealloc]
+  -[IMAPServiceLibraryMessage messageIDHeader]
+  -[IMAPServiceLibraryMessage setMessageIDHeader:]
+
+
+IMAPServiceGreetingStore : IMAPServiceStore
+  // instance methods
+  -[IMAPServiceGreetingStore setLibrary:]
+  -[IMAPServiceGreetingStore initWithMailboxUid:readOnly:]
+  -[IMAPServiceGreetingStore canPerformOfflineAppend]
+  -[IMAPServiceGreetingStore removeActiveGreetingFlagFromAllUids]
+  -[IMAPServiceGreetingStore candidateGreetingMessage]
+  -[IMAPServiceGreetingStore makeGreetingActive:]
+  -[IMAPServiceGreetingStore appendActiveGreeting:]
+  -[IMAPServiceGreetingStore removeActiveGreetingFlagFromAllUidsExceptLast:]
+  -[IMAPServiceGreetingStore _applyFlags:state:toUidRange:except:closeWhenFinished:usingConnection:]
+  -[IMAPServiceGreetingStore _removeActiveGreetingFlagFromAllUidsExcept:isLast:usingConnection:]
+
+
+IMAPServiceGreetingLibrary : MFMessageLibrary /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+  // instance methods
+  -[IMAPServiceGreetingLibrary dealloc]
+  -[IMAPServiceGreetingLibrary messages]
+  -[IMAPServiceGreetingLibrary resetMessages]
+  -[IMAPServiceGreetingLibrary addMessages:withMailbox:fetchBodies:newMessagesByOldMessage:remoteIDs:setFlags:clearFlags:messageFlagsForMessages:copyFiles:addPOPUIDs:dataSectionsByMessage:]
+
+
+IMAPNotificationInterpreter : VVNotificationInterpreter /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+  // class methods
+  +[IMAPNotificationInterpreter interpretedDictionaryForNotificationUserInfo:]
+
+
+_VVMFLogInterceptor : NSObject /System/Library/Frameworks/Security.framework/Security <MFLogClass>
+ @property  NSMutableData *data
+ @property  NSObject<OS_dispatch_queue> *serialQueue
+
+  // class methods
+  +[_VVMFLogInterceptor sharedInstance]
+  +[_VVMFLogInterceptor logConnection:type:data:]
+  +[_VVMFLogInterceptor flushLog]
+
+  // instance methods
+  -[_VVMFLogInterceptor init]
+  -[_VVMFLogInterceptor dealloc]
+  -[_VVMFLogInterceptor data]
+  -[_VVMFLogInterceptor setData:]
+  -[_VVMFLogInterceptor serialQueue]
+  -[_VVMFLogInterceptor configureLoggingClass]
+  -[_VVMFLogInterceptor handleMFReloadNetworkLoggingNotification:]
+
+
+NSString(RFC2303Utils)
+	// instance methods
+	-[NSString(RFC2303Utils) pstnAddress]
+
+MFActivityMonitor(VoicemailActivityMappings)
+	// class methods
+	+[MFActivityMonitor(VoicemailActivityMappings) voicemailTaskTypeForTaskName:]
+
+	// instance methods
+	-[MFActivityMonitor(VoicemailActivityMappings) voicemailTaskType:]
+
+MFError(VoicemailErrorMappings)
+	// instance methods
+	-[MFError(VoicemailErrorMappings) vvError]
+
+MFInvocationQueue(VVM)
+	// instance methods
+	-[MFInvocationQueue(VVM) _invokeBlock:]
+	-[MFInvocationQueue(VVM) addBlockInvocation:withPriority:]
+
+NSDictionary(WritingOptionAdditions)
+	// instance methods
+	-[NSDictionary(WritingOptionAdditions) writeToFile:options:error:]
+
+01 00 0c00 /System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP: IMAPAccount 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFActivityMonitor 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFAttachmentLibraryManager 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFAttachmentManager 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFAuthScheme 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFConnection 
+01 00 0b00 /System/Library/PrivateFrameworks/MIME.framework/MIME: MFData 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFError 
+01 00 0c00 /System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP: MFIMAPConnection 
+01 00 0c00 /System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP: MFIMAPMessage 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFInvocationQueue 
+01 00 0c00 /System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP: MFLibraryIMAPStore 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFLibraryMessage 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFLibraryStore 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFMailMessageStore 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFMessageDetails 
+01 00 0b00 /System/Library/PrivateFrameworks/MIME.framework/MIME: MFMessageFileWrapper 
+01 00 0b00 /System/Library/PrivateFrameworks/MIME.framework/MIME: MFMessageHeaders 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFMessageLibrary 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFMessageWriter 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFMonitoredInvocation 
+01 00 0b00 /System/Library/PrivateFrameworks/MIME.framework/MIME: MFMutableMessageHeaders 
+01 00 0500 /System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy: MFProgressiveMimeParser 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAutoreleasePool 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateComponentsFormatter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSRecursiveLock 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0e00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0d00 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUPhoneNumber 
+01 00 0d00 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUPrivacyManager 
+01 00 0700 /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail: VMAWDReporter 
+01 00 0700 /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail: VMCarrierStateRequest 
+01 00 0700 /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail: VVCarrierParameters 
+01 00 0700 /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail: VVNotificationInterpreter 
+01 00 0700 /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail: VVService 

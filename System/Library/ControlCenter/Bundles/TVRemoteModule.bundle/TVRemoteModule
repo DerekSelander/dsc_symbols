@@ -1,0 +1,162 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_TVRMContentViewController
+|| __DATA.__objc_data _OBJC_CLASS_$_TVRMDeviceInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_TVRemoteModule
+|| __DATA.__objc_data _OBJC_METACLASS_$_TVRMContentViewController
+|| __DATA.__objc_data _OBJC_METACLASS_$_TVRMDeviceInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_TVRemoteModule
+|| __TEXT.__const _TVRemoteModuleVersionNumber
+|| __TEXT.__const _TVRemoteModuleVersionString
+|| __TEXT.__text __TVRUIModuleLog
+__ ControlCenterUIKit: _CCUICompactModuleContinuousCornerRadius
+__ ControlCenterUIKit: _CCUIExpandedModuleContinuousCornerRadius
+__ ControlCenterUIKit: _CCUILayoutShouldBePortrait
+__ ControlCenterUIKit: _CCUIScreenBounds
+__ ControlCenterUIKit: _OBJC_CLASS_$_CCUIButtonModuleViewController
+__ ControlCenterUIKit: _OBJC_METACLASS_$_CCUIButtonModuleViewController
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetWidth
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ TVRemoteUI: _OBJC_CLASS_$_TVRUIRemoteViewController
+__ TVRemoteUI: _OBJC_CLASS_$_TVRViewServiceConfigContext
+__ TVRemoteUI: _OBJC_CLASS_$_TVRViewServiceManager
+__ TVRemoteUI: _OBJC_CLASS_$__TVRUICubicSpringAnimator
+__ TVRemoteUI: _TVRViewServiceDeviceIdentifierTypeNone
+__ UIKit: _NSStringFromCGSize
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UISpringTimingParameters
+__ UIKit: _OBJC_CLASS_$_UIViewPropertyAnimator
+__ UIKit: _UIEdgeInsetsZero
+__ libAccessibility.dylib: __AXSReduceMotionEnabled
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+TVRemoteModule : NSObject /usr/lib/libSystem.B.dylib <CCUIContentModule>
+ @property  TVRMContentViewController *contentViewController
+ @property  CCUIContentModuleContext *moduleContext
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  UIViewController<CCUIContentModuleBackgroundViewController> *backgroundViewController
+
+  // instance methods
+  -[TVRemoteModule .cxx_destruct]
+  -[TVRemoteModule setContentViewController:]
+  -[TVRemoteModule contentViewController]
+  -[TVRemoteModule setContentModuleContext:]
+  -[TVRemoteModule contentViewControllerForContext:]
+  -[TVRemoteModule setModuleContext:]
+  -[TVRemoteModule moduleContext]
+
+
+TVRMContentViewController : CCUIButtonModuleViewController /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics <CCUIContentModuleContentViewController>
+ @property  BOOL showButtonGlyph
+ @property  TVRUIRemoteViewController *remoteControlViewController
+ @property  NSString *lastActiveEndpointIdentifier
+ @property  {CGSize=dd} transitionSize
+ @property  _TVRUICubicSpringAnimator *remoteShowAnimator
+ @property  UIViewPropertyAnimator *remoteDismissAnimator
+ @property  BOOL systemInitiatedDismissal
+ @property  CCUIContentModuleContext *contentModuleContext
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  double preferredExpandedContentHeight
+ @property  double preferredExpandedContentWidth
+ @property  double preferredExpandedContinuousCornerRadius
+ @property  BOOL providesOwnPlatter
+ @property  UIViewPropertyAnimator *customAnimator
+
+  // instance methods
+  -[TVRMContentViewController .cxx_destruct]
+  -[TVRMContentViewController viewWillAppear:]
+  -[TVRMContentViewController viewWillLayoutSubviews]
+  -[TVRMContentViewController viewWillTransitionToSize:withTransitionCoordinator:]
+  -[TVRMContentViewController supportedInterfaceOrientations]
+  -[TVRMContentViewController _canShowWhileLocked]
+  -[TVRMContentViewController customAnimator]
+  -[TVRMContentViewController buttonTapped:forEvent:]
+  -[TVRMContentViewController preferredExpandedContentHeight]
+  -[TVRMContentViewController shouldFinishTransitionToExpandedContentModule]
+  -[TVRMContentViewController willTransitionToExpandedContentMode:]
+  -[TVRMContentViewController canDismissPresentedContent]
+  -[TVRMContentViewController dismissPresentedContentAnimated:completion:]
+  -[TVRMContentViewController displayWillTurnOff]
+  -[TVRMContentViewController preferredExpandedContentWidth]
+  -[TVRMContentViewController preferredExpandedContinuousCornerRadius]
+  -[TVRMContentViewController contentModuleContext]
+  -[TVRMContentViewController setContentModuleContext:]
+  -[TVRMContentViewController _prewarm]
+  -[TVRMContentViewController lastActiveEndpointIdentifier]
+  -[TVRMContentViewController setLastActiveEndpointIdentifier:]
+  -[TVRMContentViewController remoteControlViewController]
+  -[TVRMContentViewController setTransitionSize:]
+  -[TVRMContentViewController transitionSize]
+  -[TVRMContentViewController _defaultScaledTransformForSize:]
+  -[TVRMContentViewController setSystemInitiatedDismissal:]
+  -[TVRMContentViewController systemInitiatedDismissal]
+  -[TVRMContentViewController _shouldLaunchAsViewService]
+  -[TVRMContentViewController _requestLaunchAsViewService]
+  -[TVRMContentViewController _createRemoteControlViewControllerIfNeeded]
+  -[TVRMContentViewController _startRemoteControlViewController]
+  -[TVRMContentViewController _stopRemoteControlViewController]
+  -[TVRMContentViewController isShowingButtonGlyph]
+  -[TVRMContentViewController setRemoteControlViewController:]
+  -[TVRMContentViewController remoteShowAnimator]
+  -[TVRMContentViewController setRemoteShowAnimator:]
+  -[TVRMContentViewController remoteDismissAnimator]
+  -[TVRMContentViewController setRemoteDismissAnimator:]
+
+
+TVRMDeviceInfo : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TVRMDeviceInfo contentEdgeInsets]
+  +[TVRMDeviceInfo compactRoundedCornerRadius]
+  +[TVRMDeviceInfo needsLandscapeOrientationForCurrentDevice]
+  +[TVRMDeviceInfo expandedRoundedCornerRadius]
+  +[TVRMDeviceInfo needsCompactLayoutForCurrentDevice]
+  +[TVRMDeviceInfo deviceHasRoundedCorners]
+  +[TVRMDeviceInfo heightForCurrentDevice]
+  +[TVRMDeviceInfo widthForCurrentDevice]
+
+
+01 00 0300 /System/Library/PrivateFrameworks/ControlCenterUIKit.framework/ControlCenterUIKit: CCUIButtonModuleViewController 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI: TVRUIRemoteViewController 
+01 00 0c00 /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI: TVRViewServiceConfigContext 
+01 00 0c00 /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI: TVRViewServiceManager 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UISpringTimingParameters 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewPropertyAnimator 
+01 00 0c00 /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI: _TVRUICubicSpringAnimator 

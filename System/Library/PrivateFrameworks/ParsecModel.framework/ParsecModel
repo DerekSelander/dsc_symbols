@@ -1,0 +1,132 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARCategory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARCollectionStartEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PAREvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARImagesSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSafariSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARSpotlightSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PARUsageEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARCategory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARCollectionStartEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PAREvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARFlushEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARImagesSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARSafariSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARSpotlightSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PARUsageEvent
+|| __TEXT.__const _ParsecModelVersionNumber
+|| __TEXT.__const _ParsecModelVersionString
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_storeStrong
+PAREvent : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  NSDate *timestamp
+
+  // class methods
+  +[PAREvent fetchRequest]
+
+
+PARFlushEvent : PAREvent
+ @property  int type
+
+  // class methods
+  +[PARFlushEvent fetchRequest]
+
+  // instance methods
+  -[PARFlushEvent type]
+  -[PARFlushEvent setType:]
+
+
+PARUsageEvent : PAREvent
+ @property  PARCategory *usageCategory
+
+  // class methods
+  +[PARUsageEvent fetchRequest]
+
+  // instance methods
+  -[PARUsageEvent .cxx_destruct]
+  -[PARUsageEvent usageCategory]
+  -[PARUsageEvent setUsageCategory:]
+
+
+PARCollectionStartEvent : PAREvent
+  // class methods
+  +[PARCollectionStartEvent fetchRequest]
+
+
+PARSpotlightSession : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short appLaunch
+ @property  short onDeviceAddressBookData
+ @property  short onDeviceOtherPersonalData
+ @property  short other
+ @property  short parsec
+ @property  short punchout
+ @property  short querySuggestion
+ @property  short thirdPartyInAppContent
+ @property  NSDate *timestamp
+ @property  short siriSuggestions
+
+  // class methods
+  +[PARSpotlightSession fetchRequest]
+
+
+PARImagesSession : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short other
+ @property  short recentResult
+ @property  NSDate *timestamp
+ @property  short zkw
+ @property  short image
+ @property  short querySuggestion
+
+  // class methods
+  +[PARImagesSession fetchRequest]
+
+
+PARCategory : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  int clientIntVal
+ @property  BOOL isGoTo
+ @property  BOOL isPunchout
+ @property  BOOL isTop
+ @property  int resultTypeIntVal
+ @property  PARUsageEvent *usageEvent
+
+  // class methods
+  +[PARCategory fetchRequest]
+
+  // instance methods
+  -[PARCategory isTop]
+  -[PARCategory clientIntVal]
+  -[PARCategory setClientIntVal:]
+  -[PARCategory isGoTo]
+  -[PARCategory setIsGoTo:]
+  -[PARCategory isPunchout]
+  -[PARCategory setIsPunchout:]
+  -[PARCategory setIsTop:]
+  -[PARCategory resultTypeIntVal]
+  -[PARCategory setResultTypeIntVal:]
+
+
+PARSafariSession : NSManagedObject /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  short thirdPartyCompletionOrRecentSearch
+ @property  short thirdPartyGoto
+ @property  short thirdPartyTap
+ @property  short goToSite
+ @property  short localGoto
+ @property  short localTap
+ @property  short other
+ @property  short parsecGoto
+ @property  short parsecTap
+ @property  NSDate *timestamp
+
+  // class methods
+  +[PARSafariSession fetchRequest]
+
+
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0100 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 

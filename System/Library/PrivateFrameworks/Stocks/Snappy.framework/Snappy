@@ -1,0 +1,220 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SNTestFailure
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNTestFailure
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNAssembly
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestAssembly
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestChain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestCoordinator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestRun
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestRunner
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SNTestSuite
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNAssembly
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestAssembly
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestChain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestCoordinator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestRun
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestRunner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SNTestSuite
+|| __TEXT.__const _SnappyVersionNumber
+|| __TEXT.__const _SnappyVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+SNTestContext : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *objects
+ @property  UIApplication *application
+
+  // instance methods
+  -[SNTestContext objectForKey:]
+  -[SNTestContext setObject:forKey:]
+  -[SNTestContext .cxx_destruct]
+  -[SNTestContext objects]
+  -[SNTestContext initWithApplication:]
+  -[SNTestContext application]
+
+
+SNTestRunner : NSObject /usr/lib/libSystem.B.dylib <SNTestRunner>
+ @property  UIApplication *application
+ @property  <SNTestCoordinating> *testCoordinator
+ @property  SNTestStore *testStore
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SNTestRunner .cxx_destruct]
+  -[SNTestRunner application]
+  -[SNTestRunner runTest:options:]
+  -[SNTestRunner testStore]
+  -[SNTestRunner testCoordinator]
+  -[SNTestRunner initWithApplication:testCoordinator:testStore:]
+
+
+SNTestStore : NSObject /usr/lib/libSystem.B.dylib <SNTestRunFactory>
+ @property  NSMutableArray *testSuites
+ @property  NSMutableDictionary *testCases
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SNTestStore init]
+  -[SNTestStore .cxx_destruct]
+  -[SNTestStore addTestCase:]
+  -[SNTestStore addTestSuite:]
+  -[SNTestStore testRunForTestName:]
+  -[SNTestStore testSuites]
+  -[SNTestStore testCases]
+
+
+SNTestCoordinator : NSObject /usr/lib/libSystem.B.dylib <SNTestCoordinating>
+ @property  UIApplication *application
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SNTestCoordinator .cxx_destruct]
+  -[SNTestCoordinator initWithApplication:]
+  -[SNTestCoordinator application]
+  -[SNTestCoordinator requiresRotationForOrientation:]
+  -[SNTestCoordinator rotateToOrientation:beforeRotation:afterRotation:]
+  -[SNTestCoordinator failedTestWithTestName:failureMessage:]
+  -[SNTestCoordinator axisForDirection:]
+  -[SNTestCoordinator lengthForNumberOfScreens:direction:size:]
+  -[SNTestCoordinator startedTestWithTestName:]
+  -[SNTestCoordinator finishedTestWithTestName:waitForCommit:]
+  -[SNTestCoordinator scrollTestWithTestName:scrollView:iterations:offset:direction:]
+  -[SNTestCoordinator scrollTestWithTestName:scrollView:iterations:offset:numberOfScreens:direction:]
+
+
+SNAssembly : NSObject /usr/lib/libSystem.B.dylib <NFFrameworkAssembly>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *assemblies
+
+  // instance methods
+  -[SNAssembly init]
+  -[SNAssembly .cxx_destruct]
+  -[SNAssembly assemblies]
+
+
+SNTestSuite : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *testCases
+ @property  NSMutableArray *subTestSuites
+ @property  SNTestSuite *parentTestSuite
+
+  // instance methods
+  -[SNTestSuite init]
+  -[SNTestSuite .cxx_destruct]
+  -[SNTestSuite addTestCase:]
+  -[SNTestSuite addSubTestSuite:]
+  -[SNTestSuite testRunForTestName:]
+  -[SNTestSuite testCases]
+  -[SNTestSuite setParentTestSuite:]
+  -[SNTestSuite subTestSuites]
+  -[SNTestSuite parentTestSuite]
+  -[SNTestSuite testSetupList]
+
+
+SNTestRun : NSObject /usr/lib/libSystem.B.dylib <SNTestRunOptions>
+ @property  <SNTestCase> *testCase
+ @property  SNTestSuite *testSuite
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  long long orientation
+ @property  BOOL waitForCommitToFinish
+
+  // instance methods
+  -[SNTestRun .cxx_destruct]
+  -[SNTestRun orientation]
+  -[SNTestRun testSuite]
+  -[SNTestRun waitForCommitToFinish]
+  -[SNTestRun setupWithContext:completion:]
+  -[SNTestRun runTestWithContext:testCoordinator:completion:]
+  -[SNTestRun initWithTestCase:testSuite:]
+  -[SNTestRun testCase]
+
+
+SNTestFailure : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *message
+
+  // instance methods
+  -[SNTestFailure .cxx_destruct]
+  -[SNTestFailure message]
+  -[SNTestFailure initWithMessage:]
+  -[SNTestFailure initWithMissingClass:]
+
+
+SNTestAssembly : NSObject /usr/lib/libSystem.B.dylib <NFAssembly>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SNTestAssembly loadInRegistry:]
+
+
+SNTestChain : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableArray *linkBlocks
+
+  // instance methods
+  -[SNTestChain init]
+  -[SNTestChain .cxx_destruct]
+  -[SNTestChain addLink:]
+  -[SNTestChain runWithCompletion:]
+  -[SNTestChain linkBlocks]
+  -[SNTestChain popAndRunWithCompletion:testFailure:]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0600 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 

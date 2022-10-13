@@ -1,0 +1,598 @@
+|| __DATA.__data _libsvm_cpu_count
+|| __DATA.__data _libsvm_version
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CPMLModel._mData
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CPMLModel._realBase
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CPMLModel._totalBytesIntSection
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CPMLModel._totalBytesRealSection
+|| __DATA_CONST.__const _kCPML_clearTrainingValueTrainingPhase
+|| __DATA_CONST.__const _kCPML_clearTrainingValueUpdatePhase
+|| __DATA_CONST.__const _kCPML_commitCountMax
+|| __DATA_CONST.__const _kCPML_csvType
+|| __DATA_CONST.__const _kCPML_defaultsDomain
+|| __DATA_CONST.__const _kCPML_fileprotection
+|| __DATA_CONST.__const _kCPML_loggingMode
+|| __DATA_CONST.__const _kCPML_machineLearningAlgorithm
+|| __DATA_CONST.__const _kCPML_mapFunction
+|| __DATA_CONST.__const _kCPML_modelOpenFileFlagOptions
+|| __DATA_CONST.__const _kCPML_schema
+|| __DATA_CONST.__const _kCPML_schema_categoricalData
+|| __DATA_CONST.__const _kCPML_schema_header
+|| __DATA_CONST.__const _kCPML_schema_headerDef
+|| __DATA_CONST.__const _kCPML_schema_predictedValue
+|| __DATA_CONST.__const _kCPML_schema_reMapTable
+|| __DATA_CONST.__const _kCPML_schema_shouldIndexDiscreteValue
+|| __DATA_CONST.__const _kCPML_schema_substituteValue
+|| __DATA_CONST.__const _kCPML_schema_substitutionMatch
+|| __DATA_CONST.__const _kCPML_schema_vectorType
+|| __DATA_CONST.__const _kCPML_seralizeFunction
+|| __DATA_CONST.__const _kCPML_tunable
+|| __DATA_CONST.__const _kCPML_versionMD
+|| __DATA_CONST.__const _kCPML_versionTD
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLDB
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLEvalutionResult
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLKMeansModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLModelEvaluate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLNaiveBayesStorageManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLStorageManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CPMLTrainer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLDB
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLEvalutionResult
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLKMeansModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLModelEvaluate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLNaiveBayesStorageManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLStorageManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CPMLTrainer
+|| __TEXT.__text _CPMLAnalysisClassify
+|| __TEXT.__text _CPMLAnalysisRegressionPrediction
+|| __TEXT.__text _CPMLBetweenssKMeansAnalysis
+|| __TEXT.__text _CPMLCentersKMeansAnalysis
+|| __TEXT.__text _CPMLClusterKMeansAnalysis
+|| __TEXT.__text _CPMLCreateGMMAnalysis
+|| __TEXT.__text _CPMLCreateKMEANSAnalysis
+|| __TEXT.__text _CPMLCreateLIBSVMAnalysis
+|| __TEXT.__text _CPMLCreateLINEARSVMAnalysis
+|| __TEXT.__text _CPMLDestroyGMMAnalysis
+|| __TEXT.__text _CPMLDestroyKMEANSAnalysis
+|| __TEXT.__text _CPMLDestroyLIBSVMAnalysis
+|| __TEXT.__text _CPMLDestroyLINEARSVMAnalysis
+|| __TEXT.__text _CPMLIterKMeansAnalysis
+|| __TEXT.__text _CPMLSizeKMeansAnalysis
+|| __TEXT.__text _CPMLTotalWithinssKMeansAnalysis
+|| __TEXT.__text _CPMLTotssKMeansAnalysis
+|| __TEXT.__text _CPMLTrainAndSaveDataFrom
+|| __TEXT.__text _CPMLTrainAndSaveDataFromDict
+|| __TEXT.__text _CPMLTrainAndSaveDataWith
+|| __TEXT.__text _CPMLTrainAndSaveDataWithDict
+|| __TEXT.__text _CPMLTrainDataFrom
+|| __TEXT.__text _CPMLTrainDataFromDict
+|| __TEXT.__text _CPMLTrainDataWith
+|| __TEXT.__text _CPMLTrainDataWithDict
+|| __TEXT.__text _CPMLWithinssKMeansAnalysis
+|| __TEXT.__text __ZN15CPMLTunableData11tDataGetIntEPKcPi
+|| __TEXT.__text __ZN15CPMLTunableData12getNSNumFromEPKc
+|| __TEXT.__text __ZN15CPMLTunableData12tDataGetBoolEPKcPb
+|| __TEXT.__text __ZN15CPMLTunableData12tDataGetUIntEPKcPj
+|| __TEXT.__text __ZN15CPMLTunableData14tDataGetDoubleEPKcPd
+|| __TEXT.__text __ZN15CPMLTunableData14tDataGetStringEPKcPcm
+|| __TEXT.__text __ZN15CPMLTunableData14tDataGetUInt64EPKcPy
+|| __TEXT.__text __ZN15CPMLTunableData17isOptionAvailableEi
+|| __TEXT.__text __ZN15CPMLTunableDataC1EPvS0_
+|| __TEXT.__text __ZN15CPMLTunableDataC2EPvS0_
+|| __TEXT.__text __ZNK15CPMLTunableData16getNumberOfItemsEv
+|| __TEXT.__text _check_parameter
+|| __TEXT.__text _check_probability_model
+|| __TEXT.__text _check_regression_model
+|| __TEXT.__text _cross_validation
+|| __TEXT.__text _destroy_param
+|| __TEXT.__text _free_and_destroy_model
+|| __TEXT.__text _free_model_content
+|| __TEXT.__text _get_decfun_bias
+|| __TEXT.__text _get_decfun_coef
+|| __TEXT.__text _get_labels
+|| __TEXT.__text _get_nr_class
+|| __TEXT.__text _get_nr_feature
+|| __TEXT.__text _load_model
+|| __TEXT.__text _predict
+|| __TEXT.__text _predict_probability
+|| __TEXT.__text _predict_values
+|| __TEXT.__text _predict_values_vn
+|| __TEXT.__text _predict_vn
+|| __TEXT.__text _save_model
+|| __TEXT.__text _set_print_string_function
+|| __TEXT.__text _svm_check_parameter
+|| __TEXT.__text _svm_check_probability_model
+|| __TEXT.__text _svm_cross_validation
+|| __TEXT.__text _svm_destroy_param
+|| __TEXT.__text _svm_free_and_destroy_model
+|| __TEXT.__text _svm_free_model_content
+|| __TEXT.__text _svm_get_labels
+|| __TEXT.__text _svm_get_nr_class
+|| __TEXT.__text _svm_get_nr_sv
+|| __TEXT.__text _svm_get_sv_indices
+|| __TEXT.__text _svm_get_svm_type
+|| __TEXT.__text _svm_get_svr_probability
+|| __TEXT.__text _svm_load_model
+|| __TEXT.__text _svm_predict
+|| __TEXT.__text _svm_predict_probability
+|| __TEXT.__text _svm_predict_values
+|| __TEXT.__text _svm_save_model
+|| __TEXT.__text _svm_set_print_string_function
+|| __TEXT.__text _svm_train
+|| __TEXT.__text _train
+__ Accelerate: _daxpy_
+__ Accelerate: _ddot_
+__ Accelerate: _dgetrf_
+__ Accelerate: _dgetri_
+__ Accelerate: _dnrm2_
+__ Accelerate: _dppsv_
+__ Accelerate: _dscal_
+__ Accelerate: _dsyev_
+__ Accelerate: _vDSP_dotprD
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreOptimization: __ZN16CoreOptimization4BFGS11GetSolutionEv
+__ CoreOptimization: __ZN16CoreOptimization4BFGS8OptimizeEv
+__ CoreOptimization: __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKN16CoreOptimization10gradient_tE
+__ CoreOptimization: __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKN16CoreOptimization9hessian_tE
+__ CoreOptimization: __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKNS_8valarrayIdEE
+__ Foundation: _NSFileProtectionComplete
+__ Foundation: _NSFileProtectionCompleteUnlessOpen
+__ Foundation: _NSFileProtectionCompleteUntilFirstUserAuthentication
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___cxa_atexit
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_apply
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _ferror
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fgets
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fputc
+__ libSystem.B.dylib: _fputs
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fscanf
+__ libSystem.B.dylib: _fseek
+__ libSystem.B.dylib: _fseeko
+__ libSystem.B.dylib: _ftell
+__ libSystem.B.dylib: _ftello
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getc
+__ libSystem.B.dylib: _lgamma
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _memset_pattern16
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _nan
+__ libSystem.B.dylib: _nanf
+__ libSystem.B.dylib: _nanl
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_mutexattr_destroy
+__ libSystem.B.dylib: _pthread_mutexattr_init
+__ libSystem.B.dylib: _pthread_mutexattr_settype
+__ libSystem.B.dylib: _qos_class_self
+__ libSystem.B.dylib: _qsort
+__ libSystem.B.dylib: _rand
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _setlocale
+__ libSystem.B.dylib: _sprintf
+__ libSystem.B.dylib: _srand
+__ libSystem.B.dylib: _strcat
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strlcpy
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strrchr
+__ libSystem.B.dylib: _strtod
+__ libSystem.B.dylib: _strtok
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _tanh
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _vsnprintf
+__ libSystem.B.dylib: _vsprintf
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__16locale9has_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__16locale9use_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__18ios_base6getlocEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERi
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERm
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5writeEPKcl
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEd
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEl
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEm
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEEC2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__14cerrE
+__ libc++.1.dylib: __ZNSt3__14coutE
+__ libc++.1.dylib: __ZNSt3__15ctypeIcE2idE
+__ libc++.1.dylib: __ZNSt3__16localeC1ERKS0_
+__ libc++.1.dylib: __ZNSt3__16localeD1Ev
+__ libc++.1.dylib: __ZNSt3__17codecvtIcc11__mbstate_tE2idE
+__ libc++.1.dylib: __ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv
+__ libc++.1.dylib: __ZNSt3__18ios_base4initEPv
+__ libc++.1.dylib: __ZNSt3__18ios_base5clearEj
+__ libc++.1.dylib: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt8bad_castC1Ev
+__ libc++.1.dylib: __ZNSt8bad_castD1Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTINSt3__115basic_streambufIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt8bad_cast
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_guard_abort
+__ libc++.1.dylib: ___cxa_guard_acquire
+__ libc++.1.dylib: ___cxa_guard_release
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libsqlite3.dylib: _sqlite3_bind_blob
+__ libsqlite3.dylib: _sqlite3_bind_double
+__ libsqlite3.dylib: _sqlite3_bind_int
+__ libsqlite3.dylib: _sqlite3_bind_text
+__ libsqlite3.dylib: _sqlite3_close
+__ libsqlite3.dylib: _sqlite3_column_blob
+__ libsqlite3.dylib: _sqlite3_column_bytes
+__ libsqlite3.dylib: _sqlite3_column_double
+__ libsqlite3.dylib: _sqlite3_column_int
+__ libsqlite3.dylib: _sqlite3_column_int64
+__ libsqlite3.dylib: _sqlite3_column_text
+__ libsqlite3.dylib: _sqlite3_column_type
+__ libsqlite3.dylib: _sqlite3_exec
+__ libsqlite3.dylib: _sqlite3_finalize
+__ libsqlite3.dylib: _sqlite3_free
+__ libsqlite3.dylib: _sqlite3_mprintf
+__ libsqlite3.dylib: _sqlite3_open
+__ libsqlite3.dylib: _sqlite3_prepare_v2
+__ libsqlite3.dylib: _sqlite3_reset
+__ libsqlite3.dylib: _sqlite3_step
+CPMLTrainer : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CPMLTrainer dealloc]
+  -[CPMLTrainer .cxx_destruct]
+  -[CPMLTrainer init:withModelDBPath:withPropertyList:]
+  -[CPMLTrainer train:]
+  -[CPMLTrainer buildTrainingMachineLearningAlgorithm:]
+  -[CPMLTrainer fileProtectionClassRequest:]
+  -[CPMLTrainer getSolution]
+
+
+CPMLModel : NSObject /usr/lib/libc++.1.dylib
+ @property  CPMLModelEvaluate *cpModelEvaluate
+
+  // class methods
+  +[CPMLModel initCPModelPath:withConfiguration:]
+
+  // instance methods
+  -[CPMLModel .cxx_destruct]
+  -[CPMLModel reset]
+  -[CPMLModel setDispatchQueue:]
+  -[CPMLModel setCpModelEvaluate:]
+  -[CPMLModel initWithModelPath:withPropertyListPath:]
+  -[CPMLModel initializeModel:withConfiguration:]
+  -[CPMLModel getPropertyList]
+  -[CPMLModel initWithModelPath:withConfiguration:]
+  -[CPMLModel evalString:]
+  -[CPMLModel evalNSObjectV:]
+  -[CPMLModel evalArray:]
+  -[CPMLModel evalDict:]
+  -[CPMLModel boundResult:]
+  -[CPMLModel setCPMLAlgorithm:]
+  -[CPMLModel setCPMLAlgorithmEngine:]
+  -[CPMLModel updateModelWithDB:]
+  -[CPMLModel updateModelWithCPDB:]
+  -[CPMLModel cpModelEvaluate]
+
+
+CPMLDB : NSObject /usr/lib/libc++.1.dylib
+ @property  CPMLSchema *cpSchema
+ @property  ^{sqlite3=} db
+ @property  NSString *dbFileName
+
+  // class methods
+  +[CPMLDB getConfigurationFromPlist:]
+
+  // instance methods
+  -[CPMLDB dealloc]
+  -[CPMLDB .cxx_destruct]
+  -[CPMLDB reset]
+  -[CPMLDB db]
+  -[CPMLDB setDispatchQueue:]
+  -[CPMLDB addValues:]
+  -[CPMLDB restart]
+  -[CPMLDB dbFileName]
+  -[CPMLDB updateStatistics]
+  -[CPMLDB initWithDBName:withPlistPath:withWriteOptions:]
+  -[CPMLDB initWithDBName:withConfiguration:withWriteOptions:]
+  -[CPMLDB getDelegate]
+  -[CPMLDB flushDB]
+  -[CPMLDB fileProtectionClassRequest:]
+  -[CPMLDB getDispatchQueue]
+  -[CPMLDB removeTrainingRowData:]
+  -[CPMLDB getColumnCount]
+  -[CPMLDB getYColumnPosition]
+  -[CPMLDB getCombinedRemapTableCardinality:]
+  -[CPMLDB getRowCount]
+  -[CPMLDB isColumnContinousData:]
+  -[CPMLDB getCardinality:]
+  -[CPMLDB getSchemaType:]
+  -[CPMLDB getMeanFor:]
+  -[CPMLDB getStdDevFor:]
+  -[CPMLDB getMinFor:]
+  -[CPMLDB getMaxFor:]
+  -[CPMLDB getRemapTable]
+  -[CPMLDB setCPMLAlgorithm:]
+  -[CPMLDB getColumnName:]
+  -[CPMLDB getVectorContent:]
+  -[CPMLDB logNSDictionary:]
+  -[CPMLDB initWithDBName:dataFromFile:withPlistPath:withWriteOptions:]
+  -[CPMLDB doInitialize:withConfiguration:withWriteOptions:]
+  -[CPMLDB createTable:withSchema:withExistingTable:]
+  -[CPMLDB insertIntoTable:withTuple:]
+  -[CPMLDB initMaxSizeStatistics:]
+  -[CPMLDB loadStatisticTable]
+  -[CPMLDB initStatisticsTable]
+  -[CPMLDB indexTable:withColumn:]
+  -[CPMLDB loadTables]
+  -[CPMLDB doInitCommon:withDict:withFileExists:withWriteOptions:]
+  -[CPMLDB doInitializeWithDataFile:dataFromFile:withConfiguration:withWriteOptions:]
+  -[CPMLDB prepInsertStatementForMainTable]
+  -[CPMLDB updateStatisticsString:colPosition:]
+  -[CPMLDB logNSArray:]
+  -[CPMLDB updateStatisticsReal:colPosition:]
+  -[CPMLDB execSQLCommand:]
+  -[CPMLDB columnQueryFor:withQuery:]
+  -[CPMLDB dropCommands:]
+  -[CPMLDB removeTrainingRow:]
+  -[CPMLDB initWithDBName:dataFromFile:withConfiguration:withWriteOptions:]
+  -[CPMLDB logCTypesV:]
+  -[CPMLDB logNSObjectV:]
+  -[CPMLDB logBatchNSArray:]
+  -[CPMLDB logBatchNSDictionary:]
+  -[CPMLDB logNSDataFloat:]
+  -[CPMLDB logNSDataDouble:]
+  -[CPMLDB addColumnToTable:withNewColumn:]
+  -[CPMLDB queryDatabase:whereMatch:]
+  -[CPMLDB updateTable:withAttribute:whereMatch:]
+  -[CPMLDB deleteRow:whereMatch:]
+  -[CPMLDB deleteAllRows:]
+  -[CPMLDB printFormat:]
+  -[CPMLDB extractRow:]
+  -[CPMLDB cpSchema]
+
+
+CPMLKMeansModel : CPMLModel
+  // instance methods
+  -[CPMLKMeansModel size]
+  -[CPMLKMeansModel iter]
+  -[CPMLKMeansModel cluster]
+  -[CPMLKMeansModel withinss]
+  -[CPMLKMeansModel totss]
+  -[CPMLKMeansModel totalWithinss]
+  -[CPMLKMeansModel centers]
+  -[CPMLKMeansModel betweenss]
+
+
+CPMLModelEvaluate : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CPMLModelEvaluate dealloc]
+  -[CPMLModelEvaluate .cxx_destruct]
+  -[CPMLModelEvaluate .cxx_construct]
+  -[CPMLModelEvaluate updateModel:]
+  -[CPMLModelEvaluate initWithModel:withPropertyList:]
+  -[CPMLModelEvaluate fileProtectionClassRequest:]
+  -[CPMLModelEvaluate getModelData]
+  -[CPMLModelEvaluate evalString:]
+  -[CPMLModelEvaluate evalNSObjectV:]
+  -[CPMLModelEvaluate evalArray:]
+  -[CPMLModelEvaluate evalDict:]
+  -[CPMLModelEvaluate boundResult:]
+  -[CPMLModelEvaluate setCPMLAlgorithm:]
+  -[CPMLModelEvaluate setCPMLAlgorithmEngine:]
+  -[CPMLModelEvaluate buildEvaluateMachineLearningAlgorithm]
+  -[CPMLModelEvaluate doRemapToFeatureVector:withPositionID:withMaxCol:withValue:]
+  -[CPMLModelEvaluate doEvaluate:withBoundedList:]
+  -[CPMLModelEvaluate getAttributeType:]
+  -[CPMLModelEvaluate constructVector:withColumnPosition:maxColNumber:withValue:]
+  -[CPMLModelEvaluate evalCTypesV:]
+
+
+CPMLSchema : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableArray *attribute
+ @property  NSMutableArray *indexColumnList
+ @property  NSMutableString *schemaHeader
+ @property  NSMutableString *schemaHeaderWithType
+ @property  NSMutableArray *nsRemapTable
+ @property  NSMutableArray *availableOptions
+
+  // instance methods
+  -[CPMLSchema .cxx_destruct]
+  -[CPMLSchema attribute]
+  -[CPMLSchema init:]
+  -[CPMLSchema initWithPlist:]
+  -[CPMLSchema availableOptions]
+  -[CPMLSchema getTotalAttributes]
+  -[CPMLSchema getUserDefinedCategoricalData:]
+  -[CPMLSchema getYColumnPosition]
+  -[CPMLSchema getSchemaType:]
+  -[CPMLSchema getColumnName:]
+  -[CPMLSchema getVectorContent:]
+  -[CPMLSchema schemaHeaderWithType]
+  -[CPMLSchema indexColumnList]
+  -[CPMLSchema matchSubstituteValue:theValue:]
+  -[CPMLSchema getSubstituteValue:]
+  -[CPMLSchema isStringType:]
+  -[CPMLSchema isVectorType:]
+  -[CPMLSchema getColumnPosition:]
+  -[CPMLSchema isRealType:]
+  -[CPMLSchema isIntType:]
+  -[CPMLSchema nsRemapTable]
+  -[CPMLSchema getUserDefinedCategoricalDataCount:]
+  -[CPMLSchema isColumnContinous:]
+  -[CPMLSchema isNumType:]
+  -[CPMLSchema hasOptions:]
+  -[CPMLSchema schemaHeader]
+
+
+CPMLNaiveBayesStorageManager : CPMLStorageManager
+  // instance methods
+  -[CPMLNaiveBayesStorageManager getCountAndSetYCardinality:]
+  -[CPMLNaiveBayesStorageManager getCountY:]
+  -[CPMLNaiveBayesStorageManager getCountXGivenYAndSetXCardinality:withX:withY:withCardinalityX:]
+  -[CPMLNaiveBayesStorageManager setCountY:]
+  -[CPMLNaiveBayesStorageManager setCountY:withCount:]
+  -[CPMLNaiveBayesStorageManager setCountXGivenY:withX:withY:withValue:]
+  -[CPMLNaiveBayesStorageManager setCardinalityXGivenY:withY:cardinalityValue:]
+
+
+CPMLStorageManager : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CPMLStorageManager writeValue:withUIntPtr:withItemCount:]
+  -[CPMLStorageManager writeValue:withIntPtr:withItemCount:]
+  -[CPMLStorageManager writeValue:withDoublePtr:withItemCount:]
+  -[CPMLStorageManager readValue:withUIntPtr:withItemCount:]
+  -[CPMLStorageManager readValue:withIntPtr:withItemCount:]
+  -[CPMLStorageManager readValue:withDoublePtr:withItemCount:]
+
+
+CPMLEvalutionResult : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[CPMLEvalutionResult .cxx_destruct]
+  -[CPMLEvalutionResult getDouble]
+  -[CPMLEvalutionResult getString]
+  -[CPMLEvalutionResult init:withConfigurationList:]
+  -[CPMLEvalutionResult getStringList]
+  -[CPMLEvalutionResult getInt]
+  -[CPMLEvalutionResult getList]
+  -[CPMLEvalutionResult getListDict]
+
+
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

@@ -1,0 +1,4426 @@
+|| __DATA.__data _kTransparencyRequestHeaderApplication
+|| __DATA.__data _kTransparencyRequestHeaderUUID
+|| __DATA.__data _kTransparencyRequestHeaderUserAgent
+|| __DATA.__objc_data _OBJC_CLASS_$_ChangeLogNode
+|| __DATA.__objc_data _OBJC_CLASS_$_ChangeRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_ConsistencyProofRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_ConsistencyProofRequest_LogConsistencyRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_ConsistencyProofResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_ConsistencyProofResponse_LogConsistencyResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_InclusionProof
+|| __DATA.__objc_data _OBJC_CLASS_$_InsertRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_InsertResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_KTAccount
+|| __DATA.__objc_data _OBJC_CLASS_$_KTApplicationPublicKeyStore
+|| __DATA.__objc_data _OBJC_CLASS_$_KTClientDataRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_KTContext
+|| __DATA.__objc_data _OBJC_CLASS_$_KTContextVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_KTDevice
+|| __DATA.__objc_data _OBJC_CLASS_$_KTInclusionProofVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_KTLogRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_KTLoggableData
+|| __DATA.__objc_data _OBJC_CLASS_$_KTPatConfigInclusionProofVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_KTTransparentData
+|| __DATA.__objc_data _OBJC_CLASS_$_LeavesRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_LeavesResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_LeavesResponse_Leaf
+|| __DATA.__objc_data _OBJC_CLASS_$_LogEntry
+|| __DATA.__objc_data _OBJC_CLASS_$_LogHead
+|| __DATA.__objc_data _OBJC_CLASS_$_MapEntry
+|| __DATA.__objc_data _OBJC_CLASS_$_MapHead
+|| __DATA.__objc_data _OBJC_CLASS_$_MapLeaf
+|| __DATA.__objc_data _OBJC_CLASS_$_MapLeaf_Account
+|| __DATA.__objc_data _OBJC_CLASS_$_MapLeaf_Device
+|| __DATA.__objc_data _OBJC_CLASS_$_MarkForDeletionRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_MarkForDeletionResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_Mutation
+|| __DATA.__objc_data _OBJC_CLASS_$_PatConfigInclusionProof
+|| __DATA.__objc_data _OBJC_CLASS_$_PerApplicationTreeConfigNode
+|| __DATA.__objc_data _OBJC_CLASS_$_PerApplicationTreeNode
+|| __DATA.__objc_data _OBJC_CLASS_$_PublicKeysResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_QueryRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_QueryRequest_Device
+|| __DATA.__objc_data _OBJC_CLASS_$_QueryResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_QueryResponse_DeviceWitness
+|| __DATA.__objc_data _OBJC_CLASS_$_Signature
+|| __DATA.__objc_data _OBJC_CLASS_$_SignedLogHead
+|| __DATA.__objc_data _OBJC_CLASS_$_SignedMapHead
+|| __DATA.__objc_data _OBJC_CLASS_$_SignedMutationTimestamp
+|| __DATA.__objc_data _OBJC_CLASS_$_SingleDataRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_TopLeveTreeNode
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyCertificateHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyECVRFVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyLogEntryVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyMapEntryVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyQueryCache
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencySignatureVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyTranscript
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyTrustedKeyStore
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyVRFVerifier
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyXPCConnection
+|| __DATA.__objc_data _OBJC_CLASS_$_TransparencyXPCInterface
+|| __DATA.__objc_data _OBJC_CLASS_$_VRFPublicKey
+|| __DATA.__objc_data _OBJC_CLASS_$_VRFWitness
+|| __DATA.__objc_data _OBJC_METACLASS_$_ChangeLogNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_ChangeRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_ConsistencyProofRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_ConsistencyProofRequest_LogConsistencyRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_ConsistencyProofResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_ConsistencyProofResponse_LogConsistencyResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_InclusionProof
+|| __DATA.__objc_data _OBJC_METACLASS_$_InsertRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_InsertResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTAccount
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTClientDataRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTContextVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTDevice
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTInclusionProofVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTLogRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTPatConfigInclusionProofVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_KTTransparentData
+|| __DATA.__objc_data _OBJC_METACLASS_$_LeavesRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_LeavesResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_LeavesResponse_Leaf
+|| __DATA.__objc_data _OBJC_METACLASS_$_LogEntry
+|| __DATA.__objc_data _OBJC_METACLASS_$_LogHead
+|| __DATA.__objc_data _OBJC_METACLASS_$_MapEntry
+|| __DATA.__objc_data _OBJC_METACLASS_$_MapHead
+|| __DATA.__objc_data _OBJC_METACLASS_$_MapLeaf
+|| __DATA.__objc_data _OBJC_METACLASS_$_MapLeaf_Account
+|| __DATA.__objc_data _OBJC_METACLASS_$_MapLeaf_Device
+|| __DATA.__objc_data _OBJC_METACLASS_$_MarkForDeletionRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_MarkForDeletionResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_Mutation
+|| __DATA.__objc_data _OBJC_METACLASS_$_PatConfigInclusionProof
+|| __DATA.__objc_data _OBJC_METACLASS_$_PerApplicationTreeConfigNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_PerApplicationTreeNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_PublicKeysResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_QueryRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_QueryRequest_Device
+|| __DATA.__objc_data _OBJC_METACLASS_$_QueryResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_QueryResponse_DeviceWitness
+|| __DATA.__objc_data _OBJC_METACLASS_$_Signature
+|| __DATA.__objc_data _OBJC_METACLASS_$_SignedLogHead
+|| __DATA.__objc_data _OBJC_METACLASS_$_SignedMapHead
+|| __DATA.__objc_data _OBJC_METACLASS_$_SignedMutationTimestamp
+|| __DATA.__objc_data _OBJC_METACLASS_$_SingleDataRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_TopLeveTreeNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyCertificateHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyECVRFVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyLogEntryVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyMapEntryVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyQueryCache
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencySignatureVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyTranscript
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyTrustedKeyStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyVRFVerifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyXPCConnection
+|| __DATA.__objc_data _OBJC_METACLASS_$_TransparencyXPCInterface
+|| __DATA.__objc_data _OBJC_METACLASS_$_VRFPublicKey
+|| __DATA.__objc_data _OBJC_METACLASS_$_VRFWitness
+|| __DATA_CONST.__const _kConfigStorageFileName
+|| __DATA_CONST.__const _kKTApplicationIdentifierIDS
+|| __DATA_CONST.__const _kKTApplicationIdentifierTLT
+|| __DATA_CONST.__const _kKTConsistencyProofRequestURI
+|| __DATA_CONST.__const _kKTLogDefaultServerConfigURL
+|| __DATA_CONST.__const _kKTLogQAServerConfigURL
+|| __DATA_CONST.__const _kKTPublicKeysRequestURI
+|| __DATA_CONST.__const _kKTQueryRequestURI
+|| __DATA_CONST.__const _kTransparencyAnalyticsEventError
+|| __DATA_CONST.__const _kTransparencyAnalyticsFailedEntry
+|| __DATA_CONST.__const _kTransparencyAnalyticsFailedLogLeaf
+|| __DATA_CONST.__const _kTransparencyErrorAccount
+|| __DATA_CONST.__const _kTransparencyErrorAlloc
+|| __DATA_CONST.__const _kTransparencyErrorDatabase
+|| __DATA_CONST.__const _kTransparencyErrorDecode
+|| __DATA_CONST.__const _kTransparencyErrorFile
+|| __DATA_CONST.__const _kTransparencyErrorInterface
+|| __DATA_CONST.__const _kTransparencyErrorInternal
+|| __DATA_CONST.__const _kTransparencyErrorNetwork
+|| __DATA_CONST.__const _kTransparencyErrorServer
+|| __DATA_CONST.__const _kTransparencyErrorUnknown
+|| __DATA_CONST.__const _kTransparencyErrorVerify
+|| __DATA_CONST.__const _kTransparencyErrorXPC
+|| __DATA_CONST.__const _kTransparencyFlagDisableAsyncValidation
+|| __DATA_CONST.__const _kTransparencyFlagDisableVerifyBagCertificate
+|| __DATA_CONST.__const _kTransparencyFlagDisableVerifyBagSignature
+|| __DATA_CONST.__const _kTransparencyFlagDisableVerifyKeyStoreCertificates
+|| __DATA_CONST.__const _kTransparencyFlagUseQAConfig
+|| __DATA_CONST.__const _kTransparencyFlagUseTestConfig
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTRequest
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTRequestFailure
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTSMTFailure
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTSTHFailure
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTSignedMutationTimestamp
+|| __DATA_CONST.__const _kTransparencyManagedDataStoreEntityKTTreeHead
+|| __DATA_CONST.__const _kTransparencyResponseMetadataKeyServerHint
+|| __DATA_CONST.__const _kTransparencySPIFlagForceValidateUUID
+|| __DATA_CONST.__const _kTransparencyUserAgent
+|| __DATA_DIRTY.__common _kApplicationEnumMap
+|| __DATA_DIRTY.__common _kApplicationIdentifierMap
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_KTContextStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_KTLogClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_KTPublicKeyStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_KTVerifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PublicKeysRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyAccount
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyApplication
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyError
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyFileSupport
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyLogClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyLogSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyManagedDataStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyMessagesRoot
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencyRequestBuilder
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencySFAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TransparencySettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTApplicationPublicKeyStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTContextStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTLogClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTLoggableData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTPublicKeyStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_KTVerifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PublicKeysRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyAccount
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyApplication
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyError
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyFileSupport
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyLogClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyLogSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyManagedDataStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyMessagesRoot
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencyRequestBuilder
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencySFAnalytics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TransparencySettings
+|| __TEXT.__const _kKTMaximumMergeDelayMs
+|| __TEXT.__const _kKTMaximumRequestLifetime
+|| __TEXT.__const _kKTMaximumResetFailureWindowMs
+|| __TEXT.__const _kTransparencyDefaultNetworkTimeout
+|| __TEXT.__const _kTransparencyDefaultQueryCacheTimeout
+|| __TEXT.__text _Application_EnumDescriptor
+|| __TEXT.__text _Application_IsValidValue
+|| __TEXT.__text _ChangeRecord_MutationType_RawValue
+|| __TEXT.__text _ConsistencyProofRequest_LogConsistencyRequest_Application_RawValue
+|| __TEXT.__text _ConsistencyProofRequest_LogConsistencyRequest_LogType_RawValue
+|| __TEXT.__text _ConsistencyProofRequest_Version_RawValue
+|| __TEXT.__text _ConsistencyProofResponse_LogConsistencyResponse_Application_RawValue
+|| __TEXT.__text _ConsistencyProofResponse_LogConsistencyResponse_LogType_RawValue
+|| __TEXT.__text _ConsistencyProofResponse_Status_RawValue
+|| __TEXT.__text _InsertRequest_Application_RawValue
+|| __TEXT.__text _InsertRequest_Version_RawValue
+|| __TEXT.__text _InsertResponse_Status_RawValue
+|| __TEXT.__text _LeavesRequest_Application_RawValue
+|| __TEXT.__text _LeavesRequest_LogType_RawValue
+|| __TEXT.__text _LeavesRequest_Version_RawValue
+|| __TEXT.__text _LeavesResponse_LogType_RawValue
+|| __TEXT.__text _LeavesResponse_Status_RawValue
+|| __TEXT.__text _LogEntry_LogType_RawValue
+|| __TEXT.__text _LogHead_Application_RawValue
+|| __TEXT.__text _LogHead_LogType_RawValue
+|| __TEXT.__text _LogType_EnumDescriptor
+|| __TEXT.__text _LogType_IsValidValue
+|| __TEXT.__text _MapHead_Application_RawValue
+|| __TEXT.__text _MapHead_MapType_RawValue
+|| __TEXT.__text _MapType_EnumDescriptor
+|| __TEXT.__text _MapType_IsValidValue
+|| __TEXT.__text _MarkForDeletionRequest_Application_RawValue
+|| __TEXT.__text _MarkForDeletionRequest_Version_RawValue
+|| __TEXT.__text _MarkForDeletionResponse_Status_RawValue
+|| __TEXT.__text _MutationType_EnumDescriptor
+|| __TEXT.__text _MutationType_IsValidValue
+|| __TEXT.__text _Mutation_MutationType_RawValue
+|| __TEXT.__text _Mutation_MutationVersion_EnumDescriptor
+|| __TEXT.__text _Mutation_MutationVersion_IsValidValue
+|| __TEXT.__text _Mutation_Version_RawValue
+|| __TEXT.__text _ProtocolVersion_EnumDescriptor
+|| __TEXT.__text _ProtocolVersion_IsValidValue
+|| __TEXT.__text _PublicKeysRequest_Application_RawValue
+|| __TEXT.__text _PublicKeysRequest_Version_RawValue
+|| __TEXT.__text _PublicKeysResponse_Status_RawValue
+|| __TEXT.__text _QueryRequest_Application_RawValue
+|| __TEXT.__text _QueryRequest_Version_RawValue
+|| __TEXT.__text _QueryResponse_Status_RawValue
+|| __TEXT.__text _SetChangeRecord_MutationType_RawValue
+|| __TEXT.__text _SetConsistencyProofRequest_LogConsistencyRequest_Application_RawValue
+|| __TEXT.__text _SetConsistencyProofRequest_LogConsistencyRequest_LogType_RawValue
+|| __TEXT.__text _SetConsistencyProofRequest_Version_RawValue
+|| __TEXT.__text _SetConsistencyProofResponse_LogConsistencyResponse_Application_RawValue
+|| __TEXT.__text _SetConsistencyProofResponse_LogConsistencyResponse_LogType_RawValue
+|| __TEXT.__text _SetConsistencyProofResponse_Status_RawValue
+|| __TEXT.__text _SetInsertRequest_Application_RawValue
+|| __TEXT.__text _SetInsertRequest_Version_RawValue
+|| __TEXT.__text _SetInsertResponse_Status_RawValue
+|| __TEXT.__text _SetLeavesRequest_Application_RawValue
+|| __TEXT.__text _SetLeavesRequest_LogType_RawValue
+|| __TEXT.__text _SetLeavesRequest_Version_RawValue
+|| __TEXT.__text _SetLeavesResponse_LogType_RawValue
+|| __TEXT.__text _SetLeavesResponse_Status_RawValue
+|| __TEXT.__text _SetLogEntry_LogType_RawValue
+|| __TEXT.__text _SetLogHead_Application_RawValue
+|| __TEXT.__text _SetLogHead_LogType_RawValue
+|| __TEXT.__text _SetMapHead_Application_RawValue
+|| __TEXT.__text _SetMapHead_MapType_RawValue
+|| __TEXT.__text _SetMarkForDeletionRequest_Application_RawValue
+|| __TEXT.__text _SetMarkForDeletionRequest_Version_RawValue
+|| __TEXT.__text _SetMarkForDeletionResponse_Status_RawValue
+|| __TEXT.__text _SetMutation_MutationType_RawValue
+|| __TEXT.__text _SetMutation_Version_RawValue
+|| __TEXT.__text _SetPublicKeysRequest_Application_RawValue
+|| __TEXT.__text _SetPublicKeysRequest_Version_RawValue
+|| __TEXT.__text _SetPublicKeysResponse_Status_RawValue
+|| __TEXT.__text _SetQueryRequest_Application_RawValue
+|| __TEXT.__text _SetQueryRequest_Version_RawValue
+|| __TEXT.__text _SetQueryResponse_Status_RawValue
+|| __TEXT.__text _SetSignature_Algorithm_RawValue
+|| __TEXT.__text _SetVRFPublicKey_Type_RawValue
+|| __TEXT.__text _SetVRFWitness_Type_RawValue
+|| __TEXT.__text _Signature_Algorithm_RawValue
+|| __TEXT.__text _Signature_SignatureAlgorithm_EnumDescriptor
+|| __TEXT.__text _Signature_SignatureAlgorithm_IsValidValue
+|| __TEXT.__text _Status_EnumDescriptor
+|| __TEXT.__text _Status_IsValidValue
+|| __TEXT.__text _VRFPublicKey_Type_RawValue
+|| __TEXT.__text _VRFType_EnumDescriptor
+|| __TEXT.__text _VRFType_IsValidValue
+|| __TEXT.__text _VRFWitness_Type_RawValue
+__ Accounts: _ACKeyTransparencyTokenKey
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ Accounts: _kACRenewCredentialsShouldAvoidUIKey
+__ Accounts: _kACRenewCredentialsShouldForceKey
+__ AuthKit: _OBJC_CLASS_$_AKAccountManager
+__ AuthKit: _OBJC_CLASS_$_AKAppleIDSession
+__ CoreData: _OBJC_CLASS_$_NSEntityDescription
+__ CoreData: _OBJC_CLASS_$_NSFetchRequest
+__ CoreData: _OBJC_CLASS_$_NSManagedObject
+__ CoreData: _OBJC_CLASS_$_NSManagedObjectModel
+__ CoreData: _OBJC_CLASS_$_NSPersistentContainer
+__ CoreData: _OBJC_CLASS_$_NSPersistentStoreDescription
+__ CoreData: _OBJC_METACLASS_$_NSManagedObject
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFDictionaryApplyFunction
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetKeysAndValues
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFHash
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSMallocException
+__ CoreFoundation: _NSRangeException
+__ CoreFoundation: _NSURLFileSizeKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: _OBJC_METACLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_METACLASS_$_NSMutableDictionary
+__ CoreFoundation: __CFCopySystemVersionDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: __kCFSystemVersionBuildVersionKey
+__ CoreFoundation: __kCFSystemVersionProductNameKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSAllocateObject
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSParseErrorException
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _NSZoneFromPointer
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSMutableURLRequest
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSURLResponse
+__ Foundation: _OBJC_CLASS_$_NSURLSession
+__ Foundation: _OBJC_CLASS_$_NSURLSessionConfiguration
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSError
+__ Security: _OBJC_CLASS_$_SFAnalytics
+__ Security: _OBJC_METACLASS_$_SFAnalytics
+__ Security: _SFAnalyticsSamplerIntervalOncePerReport
+__ Security: _SecCertificateCopyKey
+__ Security: _SecCertificateCopySubjectPublicKeyInfoSHA256Digest
+__ Security: _SecCertificateCreateWithData
+__ Security: _SecCertificateCreateWithPEM
+__ Security: _SecKeyVerifySignature
+__ Security: _SecPolicyCreateAppleIDSServiceContext
+__ Security: _SecPolicyCreateAppleKeyTransparency
+__ Security: _SecRandomCopyBytes
+__ Security: _SecSHA256DigestCreateFromData
+__ Security: _SecTrustCreateWithCertificates
+__ Security: _SecTrustEvaluateWithError
+__ Security: _kSecKeyAlgorithmECDSASignatureMessageX962SHA256
+__ Security: _kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA256
+__ Security: _kSecPolicyNameAppleIDSService
+__ Security: _kSecRandomDefault
+__ libSystem.B.dylib: _CC_SHA256
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___tolower
+__ libSystem.B.dylib: ___toupper
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _ccvrf_factory_irtfdraft03_default
+__ libSystem.B.dylib: _ccvrf_sizeof_public_key
+__ libSystem.B.dylib: _ccvrf_verify
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _modf
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_variant_allows_internal_security_policies
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _qsort_b
+__ libSystem.B.dylib: _reallocf
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _vm_page_size
+__ libSystem.B.dylib: _xpc_activity_set_state
+__ libSystem.B.dylib: _xpc_activity_should_defer
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_addMethod
+__ libobjc.A.dylib: _class_copyMethodList
+__ libobjc.A.dylib: _class_getInstanceSize
+__ libobjc.A.dylib: _class_getName
+__ libobjc.A.dylib: _imp_implementationWithBlock
+__ libobjc.A.dylib: _method_getName
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getMetaClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_getProtocol
+__ libobjc.A.dylib: _objc_lookUpClass
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _protocol_getMethodDescription
+__ libobjc.A.dylib: _sel_getName
+__ libobjc.A.dylib: _sel_getUid
+GPBWrappersRoot : GPBRootObject
+
+GPBDoubleValue : GPBMessage
+ @property  double value
+
+  // class methods
+  +[GPBDoubleValue descriptor]
+
+
+GPBFloatValue : GPBMessage
+ @property  float value
+
+  // class methods
+  +[GPBFloatValue descriptor]
+
+
+GPBInt64Value : GPBMessage
+ @property  long long value
+
+  // class methods
+  +[GPBInt64Value descriptor]
+
+
+GPBUInt64Value : GPBMessage
+ @property  unsigned long value
+
+  // class methods
+  +[GPBUInt64Value descriptor]
+
+
+GPBInt32Value : GPBMessage
+ @property  int value
+
+  // class methods
+  +[GPBInt32Value descriptor]
+
+
+GPBUInt32Value : GPBMessage
+ @property  unsigned int value
+
+  // class methods
+  +[GPBUInt32Value descriptor]
+
+
+GPBBoolValue : GPBMessage
+ @property  BOOL value
+
+  // class methods
+  +[GPBBoolValue descriptor]
+
+
+GPBStringValue : GPBMessage
+ @property  NSString *value
+
+  // class methods
+  +[GPBStringValue descriptor]
+
+
+GPBBytesValue : GPBMessage
+ @property  NSData *value
+
+  // class methods
+  +[GPBBytesValue descriptor]
+
+
+KTContextStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  KTPublicKeyStore *keyStore
+ @property  KTLogClient *configClient
+ @property  TransparencyManagedDataStore *dataStore
+ @property  NSMutableDictionary *contexts
+
+  // instance methods
+  -[KTContextStore .cxx_destruct]
+  -[KTContextStore configure:]
+  -[KTContextStore contexts]
+  -[KTContextStore setContexts:]
+  -[KTContextStore dataStore]
+  -[KTContextStore setDataStore:]
+  -[KTContextStore keyStore]
+  -[KTContextStore setKeyStore:]
+  -[KTContextStore setConfigClient:]
+  -[KTContextStore configClient]
+  -[KTContextStore forcedConfigure:logClient:completionHandler:]
+  -[KTContextStore createContextForApplication:dataStore:logClient:completionHandler:]
+  -[KTContextStore contextForApplication:logClient:fetchState:completionHandler:]
+  -[KTContextStore configureWithClient:force:completionHandler:]
+  -[KTContextStore logSharedMetrics]
+  -[KTContextStore runDutyCycleProcessingStepForActivity:context:logClient:]
+  -[KTContextStore runDutyCycleConfigurationStepForActivity:logClient:resumptionWorkloop:]
+  -[KTContextStore initWithDataStore:keyStore:configClient:]
+  -[KTContextStore configureWithClient:completionHandler:]
+  -[KTContextStore validatePeer:application:logClient:completionHandler:]
+  -[KTContextStore validateSelf:application:logClient:completionHandler:]
+  -[KTContextStore validateEnrollment:application:logClient:completionHandler:]
+  -[KTContextStore updateRequest:serverDatas:syncedDatas:queryRequest:queryResponse:error:]
+  -[KTContextStore clearApplicationState:logClient:completionBlock:]
+  -[KTContextStore runDutyCycleForActivity:logClient:resumptionWorkloop:]
+  -[KTContextStore serializeTranscripts]
+
+
+KTAccount : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *accountID
+ @property  NSMutableArray *devices
+
+  // class methods
+  +[KTAccount supportsSecureCoding]
+
+  // instance methods
+  -[KTAccount isEqual:]
+  -[KTAccount encodeWithCoder:]
+  -[KTAccount initWithCoder:]
+  -[KTAccount .cxx_destruct]
+  -[KTAccount devices]
+  -[KTAccount setDevices:]
+  -[KTAccount accountID]
+  -[KTAccount setAccountID:]
+  -[KTAccount initWithMutation:]
+  -[KTAccount deviceForDeviceIdVRFOutput:]
+  -[KTAccount addDevicesObject:]
+  -[KTAccount updateWithMutation:error:]
+  -[KTAccount removeDevicesObject:]
+  -[KTAccount initWithAccountId:]
+
+
+TransparencyTranscriptEvent : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *timestamp
+ @property  NSString *name
+ @property  BOOL success
+
+  // instance methods
+  -[TransparencyTranscriptEvent name]
+  -[TransparencyTranscriptEvent .cxx_destruct]
+  -[TransparencyTranscriptEvent setName:]
+  -[TransparencyTranscriptEvent initWithName:]
+  -[TransparencyTranscriptEvent timestamp]
+  -[TransparencyTranscriptEvent setTimestamp:]
+  -[TransparencyTranscriptEvent serialize]
+  -[TransparencyTranscriptEvent success]
+  -[TransparencyTranscriptEvent setSuccess:]
+
+
+TransparencyTranscript : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *context
+ @property  NSMutableArray *events
+
+  // instance methods
+  -[TransparencyTranscript .cxx_destruct]
+  -[TransparencyTranscript context]
+  -[TransparencyTranscript setContext:]
+  -[TransparencyTranscript initWithContext:]
+  -[TransparencyTranscript serialize]
+  -[TransparencyTranscript events]
+  -[TransparencyTranscript setEvents:]
+  -[TransparencyTranscript addEvent:]
+  -[TransparencyTranscript startEvent:]
+  -[TransparencyTranscript stopEventWithSuccess:]
+  -[TransparencyTranscript stopEventWithFailure:error:]
+
+
+TransparencyRequest : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSURL *url
+ @property  NSData *data
+ @property  double timeout
+ @property  BOOL isGET
+ @property  BOOL authenticated
+
+  // instance methods
+  -[TransparencyRequest .cxx_destruct]
+  -[TransparencyRequest data]
+  -[TransparencyRequest setData:]
+  -[TransparencyRequest url]
+  -[TransparencyRequest timeout]
+  -[TransparencyRequest setTimeout:]
+  -[TransparencyRequest setUrl:]
+  -[TransparencyRequest setAuthenticated:]
+  -[TransparencyRequest authenticated]
+  -[TransparencyRequest initWithURL:data:timeout:isGET:]
+  -[TransparencyRequest setIsGET:]
+  -[TransparencyRequest isGET]
+  -[TransparencyRequest createGETRequestForURL:timeout:error:]
+  -[TransparencyRequest createPOSTRequestForURL:timeout:contents:error:]
+  -[TransparencyRequest initGETWithURL:]
+  -[TransparencyRequest initPOSTWithURL:data:]
+  -[TransparencyRequest copyRequest:]
+
+
+TransparencyXPCConnection : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSXPCConnection *connection
+
+  // class methods
+  +[TransparencyXPCConnection instance]
+  +[TransparencyXPCConnection invokeXPCWithBlock:synchronous:]
+  +[TransparencyXPCConnection removeInstance]
+  +[TransparencyXPCConnection invokeXPCAsynchronousCallWithBlock:]
+  +[TransparencyXPCConnection invokeXPCSynchronousCallWithBlock:]
+
+  // instance methods
+  -[TransparencyXPCConnection dealloc]
+  -[TransparencyXPCConnection .cxx_destruct]
+  -[TransparencyXPCConnection connection]
+  -[TransparencyXPCConnection setConnection:]
+  -[TransparencyXPCConnection createConnection]
+
+
+GPBUInt32UInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32UInt32Dictionary init]
+  -[GPBUInt32UInt32Dictionary dealloc]
+  -[GPBUInt32UInt32Dictionary isEqual:]
+  -[GPBUInt32UInt32Dictionary copyWithZone:]
+  -[GPBUInt32UInt32Dictionary initWithCapacity:]
+  -[GPBUInt32UInt32Dictionary count]
+  -[GPBUInt32UInt32Dictionary initWithDictionary:]
+  -[GPBUInt32UInt32Dictionary addEntriesFromDictionary:]
+  -[GPBUInt32UInt32Dictionary removeAll]
+  -[GPBUInt32UInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32UInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBUInt32UInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBUInt32UInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt32UInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32UInt32Dictionary enumerateForTextFormat:]
+  -[GPBUInt32UInt32Dictionary getUInt32:forKey:]
+  -[GPBUInt32UInt32Dictionary setUInt32:forKey:]
+  -[GPBUInt32UInt32Dictionary removeUInt32ForKey:]
+
+
+GPBUInt32Int32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32Int32Dictionary init]
+  -[GPBUInt32Int32Dictionary dealloc]
+  -[GPBUInt32Int32Dictionary isEqual:]
+  -[GPBUInt32Int32Dictionary copyWithZone:]
+  -[GPBUInt32Int32Dictionary initWithCapacity:]
+  -[GPBUInt32Int32Dictionary count]
+  -[GPBUInt32Int32Dictionary initWithDictionary:]
+  -[GPBUInt32Int32Dictionary addEntriesFromDictionary:]
+  -[GPBUInt32Int32Dictionary removeAll]
+  -[GPBUInt32Int32Dictionary setInt32:forKey:]
+  -[GPBUInt32Int32Dictionary getInt32:forKey:]
+  -[GPBUInt32Int32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32Int32Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt32Int32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32Int32Dictionary enumerateForTextFormat:]
+  -[GPBUInt32Int32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBUInt32Int32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBUInt32Int32Dictionary removeInt32ForKey:]
+
+
+GPBUInt32UInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32UInt64Dictionary init]
+  -[GPBUInt32UInt64Dictionary dealloc]
+  -[GPBUInt32UInt64Dictionary isEqual:]
+  -[GPBUInt32UInt64Dictionary copyWithZone:]
+  -[GPBUInt32UInt64Dictionary initWithCapacity:]
+  -[GPBUInt32UInt64Dictionary count]
+  -[GPBUInt32UInt64Dictionary initWithDictionary:]
+  -[GPBUInt32UInt64Dictionary addEntriesFromDictionary:]
+  -[GPBUInt32UInt64Dictionary removeAll]
+  -[GPBUInt32UInt64Dictionary setUInt64:forKey:]
+  -[GPBUInt32UInt64Dictionary getUInt64:forKey:]
+  -[GPBUInt32UInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32UInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt32UInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32UInt64Dictionary enumerateForTextFormat:]
+  -[GPBUInt32UInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBUInt32UInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBUInt32UInt64Dictionary removeUInt64ForKey:]
+
+
+GPBUInt32Int64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32Int64Dictionary init]
+  -[GPBUInt32Int64Dictionary dealloc]
+  -[GPBUInt32Int64Dictionary isEqual:]
+  -[GPBUInt32Int64Dictionary copyWithZone:]
+  -[GPBUInt32Int64Dictionary initWithCapacity:]
+  -[GPBUInt32Int64Dictionary count]
+  -[GPBUInt32Int64Dictionary initWithDictionary:]
+  -[GPBUInt32Int64Dictionary addEntriesFromDictionary:]
+  -[GPBUInt32Int64Dictionary removeAll]
+  -[GPBUInt32Int64Dictionary setInt64:forKey:]
+  -[GPBUInt32Int64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32Int64Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt32Int64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32Int64Dictionary enumerateForTextFormat:]
+  -[GPBUInt32Int64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBUInt32Int64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBUInt32Int64Dictionary getInt64:forKey:]
+  -[GPBUInt32Int64Dictionary removeInt64ForKey:]
+
+
+GPBUInt32BoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32BoolDictionary init]
+  -[GPBUInt32BoolDictionary dealloc]
+  -[GPBUInt32BoolDictionary isEqual:]
+  -[GPBUInt32BoolDictionary copyWithZone:]
+  -[GPBUInt32BoolDictionary initWithCapacity:]
+  -[GPBUInt32BoolDictionary count]
+  -[GPBUInt32BoolDictionary initWithDictionary:]
+  -[GPBUInt32BoolDictionary addEntriesFromDictionary:]
+  -[GPBUInt32BoolDictionary setBool:forKey:]
+  -[GPBUInt32BoolDictionary removeAll]
+  -[GPBUInt32BoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32BoolDictionary computeSerializedSizeAsField:]
+  -[GPBUInt32BoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32BoolDictionary enumerateForTextFormat:]
+  -[GPBUInt32BoolDictionary initWithBools:forKeys:count:]
+  -[GPBUInt32BoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBUInt32BoolDictionary getBool:forKey:]
+  -[GPBUInt32BoolDictionary removeBoolForKey:]
+
+
+GPBUInt32FloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32FloatDictionary init]
+  -[GPBUInt32FloatDictionary dealloc]
+  -[GPBUInt32FloatDictionary isEqual:]
+  -[GPBUInt32FloatDictionary copyWithZone:]
+  -[GPBUInt32FloatDictionary initWithCapacity:]
+  -[GPBUInt32FloatDictionary count]
+  -[GPBUInt32FloatDictionary initWithDictionary:]
+  -[GPBUInt32FloatDictionary addEntriesFromDictionary:]
+  -[GPBUInt32FloatDictionary setFloat:forKey:]
+  -[GPBUInt32FloatDictionary removeAll]
+  -[GPBUInt32FloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32FloatDictionary computeSerializedSizeAsField:]
+  -[GPBUInt32FloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32FloatDictionary enumerateForTextFormat:]
+  -[GPBUInt32FloatDictionary initWithFloats:forKeys:count:]
+  -[GPBUInt32FloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBUInt32FloatDictionary getFloat:forKey:]
+  -[GPBUInt32FloatDictionary removeFloatForKey:]
+
+
+GPBUInt32DoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32DoubleDictionary init]
+  -[GPBUInt32DoubleDictionary dealloc]
+  -[GPBUInt32DoubleDictionary isEqual:]
+  -[GPBUInt32DoubleDictionary copyWithZone:]
+  -[GPBUInt32DoubleDictionary initWithCapacity:]
+  -[GPBUInt32DoubleDictionary count]
+  -[GPBUInt32DoubleDictionary initWithDictionary:]
+  -[GPBUInt32DoubleDictionary addEntriesFromDictionary:]
+  -[GPBUInt32DoubleDictionary setDouble:forKey:]
+  -[GPBUInt32DoubleDictionary removeAll]
+  -[GPBUInt32DoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32DoubleDictionary computeSerializedSizeAsField:]
+  -[GPBUInt32DoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32DoubleDictionary enumerateForTextFormat:]
+  -[GPBUInt32DoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBUInt32DoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBUInt32DoubleDictionary getDouble:forKey:]
+  -[GPBUInt32DoubleDictionary removeDoubleForKey:]
+
+
+GPBUInt32EnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBUInt32EnumDictionary init]
+  -[GPBUInt32EnumDictionary dealloc]
+  -[GPBUInt32EnumDictionary isEqual:]
+  -[GPBUInt32EnumDictionary copyWithZone:]
+  -[GPBUInt32EnumDictionary count]
+  -[GPBUInt32EnumDictionary initWithDictionary:]
+  -[GPBUInt32EnumDictionary removeAll]
+  -[GPBUInt32EnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32EnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBUInt32EnumDictionary computeSerializedSizeAsField:]
+  -[GPBUInt32EnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32EnumDictionary enumerateForTextFormat:]
+  -[GPBUInt32EnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBUInt32EnumDictionary validationFunc]
+  -[GPBUInt32EnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBUInt32EnumDictionary initWithValidationFunction:]
+  -[GPBUInt32EnumDictionary initWithValidationFunction:capacity:]
+  -[GPBUInt32EnumDictionary getEnum:forKey:]
+  -[GPBUInt32EnumDictionary getRawValue:forKey:]
+  -[GPBUInt32EnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBUInt32EnumDictionary addRawEntriesFromDictionary:]
+  -[GPBUInt32EnumDictionary setRawValue:forKey:]
+  -[GPBUInt32EnumDictionary removeEnumForKey:]
+  -[GPBUInt32EnumDictionary setEnum:forKey:]
+
+
+GPBUInt32ObjectDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt32ObjectDictionary init]
+  -[GPBUInt32ObjectDictionary dealloc]
+  -[GPBUInt32ObjectDictionary isEqual:]
+  -[GPBUInt32ObjectDictionary copyWithZone:]
+  -[GPBUInt32ObjectDictionary initWithCapacity:]
+  -[GPBUInt32ObjectDictionary count]
+  -[GPBUInt32ObjectDictionary objectForKey:]
+  -[GPBUInt32ObjectDictionary removeObjectForKey:]
+  -[GPBUInt32ObjectDictionary initWithObjects:forKeys:count:]
+  -[GPBUInt32ObjectDictionary setObject:forKey:]
+  -[GPBUInt32ObjectDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBUInt32ObjectDictionary initWithDictionary:]
+  -[GPBUInt32ObjectDictionary addEntriesFromDictionary:]
+  -[GPBUInt32ObjectDictionary removeAll]
+  -[GPBUInt32ObjectDictionary isInitialized]
+  -[GPBUInt32ObjectDictionary deepCopyWithZone:]
+  -[GPBUInt32ObjectDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt32ObjectDictionary computeSerializedSizeAsField:]
+  -[GPBUInt32ObjectDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt32ObjectDictionary enumerateForTextFormat:]
+
+
+GPBInt32UInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32UInt32Dictionary init]
+  -[GPBInt32UInt32Dictionary dealloc]
+  -[GPBInt32UInt32Dictionary isEqual:]
+  -[GPBInt32UInt32Dictionary copyWithZone:]
+  -[GPBInt32UInt32Dictionary initWithCapacity:]
+  -[GPBInt32UInt32Dictionary count]
+  -[GPBInt32UInt32Dictionary initWithDictionary:]
+  -[GPBInt32UInt32Dictionary addEntriesFromDictionary:]
+  -[GPBInt32UInt32Dictionary removeAll]
+  -[GPBInt32UInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32UInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBInt32UInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBInt32UInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBInt32UInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32UInt32Dictionary enumerateForTextFormat:]
+  -[GPBInt32UInt32Dictionary getUInt32:forKey:]
+  -[GPBInt32UInt32Dictionary setUInt32:forKey:]
+  -[GPBInt32UInt32Dictionary removeUInt32ForKey:]
+
+
+GPBInt32Int32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32Int32Dictionary init]
+  -[GPBInt32Int32Dictionary dealloc]
+  -[GPBInt32Int32Dictionary isEqual:]
+  -[GPBInt32Int32Dictionary copyWithZone:]
+  -[GPBInt32Int32Dictionary initWithCapacity:]
+  -[GPBInt32Int32Dictionary count]
+  -[GPBInt32Int32Dictionary initWithDictionary:]
+  -[GPBInt32Int32Dictionary addEntriesFromDictionary:]
+  -[GPBInt32Int32Dictionary removeAll]
+  -[GPBInt32Int32Dictionary setInt32:forKey:]
+  -[GPBInt32Int32Dictionary getInt32:forKey:]
+  -[GPBInt32Int32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32Int32Dictionary computeSerializedSizeAsField:]
+  -[GPBInt32Int32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32Int32Dictionary enumerateForTextFormat:]
+  -[GPBInt32Int32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBInt32Int32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBInt32Int32Dictionary removeInt32ForKey:]
+
+
+GPBInt32UInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32UInt64Dictionary init]
+  -[GPBInt32UInt64Dictionary dealloc]
+  -[GPBInt32UInt64Dictionary isEqual:]
+  -[GPBInt32UInt64Dictionary copyWithZone:]
+  -[GPBInt32UInt64Dictionary initWithCapacity:]
+  -[GPBInt32UInt64Dictionary count]
+  -[GPBInt32UInt64Dictionary initWithDictionary:]
+  -[GPBInt32UInt64Dictionary addEntriesFromDictionary:]
+  -[GPBInt32UInt64Dictionary removeAll]
+  -[GPBInt32UInt64Dictionary setUInt64:forKey:]
+  -[GPBInt32UInt64Dictionary getUInt64:forKey:]
+  -[GPBInt32UInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32UInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBInt32UInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32UInt64Dictionary enumerateForTextFormat:]
+  -[GPBInt32UInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBInt32UInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBInt32UInt64Dictionary removeUInt64ForKey:]
+
+
+GPBInt32Int64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32Int64Dictionary init]
+  -[GPBInt32Int64Dictionary dealloc]
+  -[GPBInt32Int64Dictionary isEqual:]
+  -[GPBInt32Int64Dictionary copyWithZone:]
+  -[GPBInt32Int64Dictionary initWithCapacity:]
+  -[GPBInt32Int64Dictionary count]
+  -[GPBInt32Int64Dictionary initWithDictionary:]
+  -[GPBInt32Int64Dictionary addEntriesFromDictionary:]
+  -[GPBInt32Int64Dictionary removeAll]
+  -[GPBInt32Int64Dictionary setInt64:forKey:]
+  -[GPBInt32Int64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32Int64Dictionary computeSerializedSizeAsField:]
+  -[GPBInt32Int64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32Int64Dictionary enumerateForTextFormat:]
+  -[GPBInt32Int64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBInt32Int64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBInt32Int64Dictionary getInt64:forKey:]
+  -[GPBInt32Int64Dictionary removeInt64ForKey:]
+
+
+GPBInt32BoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32BoolDictionary init]
+  -[GPBInt32BoolDictionary dealloc]
+  -[GPBInt32BoolDictionary isEqual:]
+  -[GPBInt32BoolDictionary copyWithZone:]
+  -[GPBInt32BoolDictionary initWithCapacity:]
+  -[GPBInt32BoolDictionary count]
+  -[GPBInt32BoolDictionary initWithDictionary:]
+  -[GPBInt32BoolDictionary addEntriesFromDictionary:]
+  -[GPBInt32BoolDictionary setBool:forKey:]
+  -[GPBInt32BoolDictionary removeAll]
+  -[GPBInt32BoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32BoolDictionary computeSerializedSizeAsField:]
+  -[GPBInt32BoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32BoolDictionary enumerateForTextFormat:]
+  -[GPBInt32BoolDictionary initWithBools:forKeys:count:]
+  -[GPBInt32BoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBInt32BoolDictionary getBool:forKey:]
+  -[GPBInt32BoolDictionary removeBoolForKey:]
+
+
+GPBInt32FloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32FloatDictionary init]
+  -[GPBInt32FloatDictionary dealloc]
+  -[GPBInt32FloatDictionary isEqual:]
+  -[GPBInt32FloatDictionary copyWithZone:]
+  -[GPBInt32FloatDictionary initWithCapacity:]
+  -[GPBInt32FloatDictionary count]
+  -[GPBInt32FloatDictionary initWithDictionary:]
+  -[GPBInt32FloatDictionary addEntriesFromDictionary:]
+  -[GPBInt32FloatDictionary setFloat:forKey:]
+  -[GPBInt32FloatDictionary removeAll]
+  -[GPBInt32FloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32FloatDictionary computeSerializedSizeAsField:]
+  -[GPBInt32FloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32FloatDictionary enumerateForTextFormat:]
+  -[GPBInt32FloatDictionary initWithFloats:forKeys:count:]
+  -[GPBInt32FloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBInt32FloatDictionary getFloat:forKey:]
+  -[GPBInt32FloatDictionary removeFloatForKey:]
+
+
+GPBInt32DoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32DoubleDictionary init]
+  -[GPBInt32DoubleDictionary dealloc]
+  -[GPBInt32DoubleDictionary isEqual:]
+  -[GPBInt32DoubleDictionary copyWithZone:]
+  -[GPBInt32DoubleDictionary initWithCapacity:]
+  -[GPBInt32DoubleDictionary count]
+  -[GPBInt32DoubleDictionary initWithDictionary:]
+  -[GPBInt32DoubleDictionary addEntriesFromDictionary:]
+  -[GPBInt32DoubleDictionary setDouble:forKey:]
+  -[GPBInt32DoubleDictionary removeAll]
+  -[GPBInt32DoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32DoubleDictionary computeSerializedSizeAsField:]
+  -[GPBInt32DoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32DoubleDictionary enumerateForTextFormat:]
+  -[GPBInt32DoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBInt32DoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBInt32DoubleDictionary getDouble:forKey:]
+  -[GPBInt32DoubleDictionary removeDoubleForKey:]
+
+
+GPBInt32EnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBInt32EnumDictionary init]
+  -[GPBInt32EnumDictionary dealloc]
+  -[GPBInt32EnumDictionary isEqual:]
+  -[GPBInt32EnumDictionary copyWithZone:]
+  -[GPBInt32EnumDictionary count]
+  -[GPBInt32EnumDictionary initWithDictionary:]
+  -[GPBInt32EnumDictionary removeAll]
+  -[GPBInt32EnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32EnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBInt32EnumDictionary computeSerializedSizeAsField:]
+  -[GPBInt32EnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32EnumDictionary enumerateForTextFormat:]
+  -[GPBInt32EnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBInt32EnumDictionary validationFunc]
+  -[GPBInt32EnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBInt32EnumDictionary initWithValidationFunction:]
+  -[GPBInt32EnumDictionary initWithValidationFunction:capacity:]
+  -[GPBInt32EnumDictionary getEnum:forKey:]
+  -[GPBInt32EnumDictionary getRawValue:forKey:]
+  -[GPBInt32EnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBInt32EnumDictionary addRawEntriesFromDictionary:]
+  -[GPBInt32EnumDictionary setRawValue:forKey:]
+  -[GPBInt32EnumDictionary removeEnumForKey:]
+  -[GPBInt32EnumDictionary setEnum:forKey:]
+
+
+GPBInt32ObjectDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt32ObjectDictionary init]
+  -[GPBInt32ObjectDictionary dealloc]
+  -[GPBInt32ObjectDictionary isEqual:]
+  -[GPBInt32ObjectDictionary copyWithZone:]
+  -[GPBInt32ObjectDictionary initWithCapacity:]
+  -[GPBInt32ObjectDictionary count]
+  -[GPBInt32ObjectDictionary objectForKey:]
+  -[GPBInt32ObjectDictionary removeObjectForKey:]
+  -[GPBInt32ObjectDictionary initWithObjects:forKeys:count:]
+  -[GPBInt32ObjectDictionary setObject:forKey:]
+  -[GPBInt32ObjectDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBInt32ObjectDictionary initWithDictionary:]
+  -[GPBInt32ObjectDictionary addEntriesFromDictionary:]
+  -[GPBInt32ObjectDictionary removeAll]
+  -[GPBInt32ObjectDictionary isInitialized]
+  -[GPBInt32ObjectDictionary deepCopyWithZone:]
+  -[GPBInt32ObjectDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt32ObjectDictionary computeSerializedSizeAsField:]
+  -[GPBInt32ObjectDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt32ObjectDictionary enumerateForTextFormat:]
+
+
+GPBUInt64UInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64UInt32Dictionary init]
+  -[GPBUInt64UInt32Dictionary dealloc]
+  -[GPBUInt64UInt32Dictionary isEqual:]
+  -[GPBUInt64UInt32Dictionary copyWithZone:]
+  -[GPBUInt64UInt32Dictionary initWithCapacity:]
+  -[GPBUInt64UInt32Dictionary count]
+  -[GPBUInt64UInt32Dictionary initWithDictionary:]
+  -[GPBUInt64UInt32Dictionary addEntriesFromDictionary:]
+  -[GPBUInt64UInt32Dictionary removeAll]
+  -[GPBUInt64UInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64UInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBUInt64UInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBUInt64UInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt64UInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64UInt32Dictionary enumerateForTextFormat:]
+  -[GPBUInt64UInt32Dictionary getUInt32:forKey:]
+  -[GPBUInt64UInt32Dictionary setUInt32:forKey:]
+  -[GPBUInt64UInt32Dictionary removeUInt32ForKey:]
+
+
+GPBUInt64Int32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64Int32Dictionary init]
+  -[GPBUInt64Int32Dictionary dealloc]
+  -[GPBUInt64Int32Dictionary isEqual:]
+  -[GPBUInt64Int32Dictionary copyWithZone:]
+  -[GPBUInt64Int32Dictionary initWithCapacity:]
+  -[GPBUInt64Int32Dictionary count]
+  -[GPBUInt64Int32Dictionary initWithDictionary:]
+  -[GPBUInt64Int32Dictionary addEntriesFromDictionary:]
+  -[GPBUInt64Int32Dictionary removeAll]
+  -[GPBUInt64Int32Dictionary setInt32:forKey:]
+  -[GPBUInt64Int32Dictionary getInt32:forKey:]
+  -[GPBUInt64Int32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64Int32Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt64Int32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64Int32Dictionary enumerateForTextFormat:]
+  -[GPBUInt64Int32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBUInt64Int32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBUInt64Int32Dictionary removeInt32ForKey:]
+
+
+GPBUInt64UInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64UInt64Dictionary init]
+  -[GPBUInt64UInt64Dictionary dealloc]
+  -[GPBUInt64UInt64Dictionary isEqual:]
+  -[GPBUInt64UInt64Dictionary copyWithZone:]
+  -[GPBUInt64UInt64Dictionary initWithCapacity:]
+  -[GPBUInt64UInt64Dictionary count]
+  -[GPBUInt64UInt64Dictionary initWithDictionary:]
+  -[GPBUInt64UInt64Dictionary addEntriesFromDictionary:]
+  -[GPBUInt64UInt64Dictionary removeAll]
+  -[GPBUInt64UInt64Dictionary setUInt64:forKey:]
+  -[GPBUInt64UInt64Dictionary getUInt64:forKey:]
+  -[GPBUInt64UInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64UInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt64UInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64UInt64Dictionary enumerateForTextFormat:]
+  -[GPBUInt64UInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBUInt64UInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBUInt64UInt64Dictionary removeUInt64ForKey:]
+
+
+GPBUInt64Int64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64Int64Dictionary init]
+  -[GPBUInt64Int64Dictionary dealloc]
+  -[GPBUInt64Int64Dictionary isEqual:]
+  -[GPBUInt64Int64Dictionary copyWithZone:]
+  -[GPBUInt64Int64Dictionary initWithCapacity:]
+  -[GPBUInt64Int64Dictionary count]
+  -[GPBUInt64Int64Dictionary initWithDictionary:]
+  -[GPBUInt64Int64Dictionary addEntriesFromDictionary:]
+  -[GPBUInt64Int64Dictionary removeAll]
+  -[GPBUInt64Int64Dictionary setInt64:forKey:]
+  -[GPBUInt64Int64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64Int64Dictionary computeSerializedSizeAsField:]
+  -[GPBUInt64Int64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64Int64Dictionary enumerateForTextFormat:]
+  -[GPBUInt64Int64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBUInt64Int64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBUInt64Int64Dictionary getInt64:forKey:]
+  -[GPBUInt64Int64Dictionary removeInt64ForKey:]
+
+
+GPBUInt64BoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64BoolDictionary init]
+  -[GPBUInt64BoolDictionary dealloc]
+  -[GPBUInt64BoolDictionary isEqual:]
+  -[GPBUInt64BoolDictionary copyWithZone:]
+  -[GPBUInt64BoolDictionary initWithCapacity:]
+  -[GPBUInt64BoolDictionary count]
+  -[GPBUInt64BoolDictionary initWithDictionary:]
+  -[GPBUInt64BoolDictionary addEntriesFromDictionary:]
+  -[GPBUInt64BoolDictionary setBool:forKey:]
+  -[GPBUInt64BoolDictionary removeAll]
+  -[GPBUInt64BoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64BoolDictionary computeSerializedSizeAsField:]
+  -[GPBUInt64BoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64BoolDictionary enumerateForTextFormat:]
+  -[GPBUInt64BoolDictionary initWithBools:forKeys:count:]
+  -[GPBUInt64BoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBUInt64BoolDictionary getBool:forKey:]
+  -[GPBUInt64BoolDictionary removeBoolForKey:]
+
+
+GPBUInt64FloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64FloatDictionary init]
+  -[GPBUInt64FloatDictionary dealloc]
+  -[GPBUInt64FloatDictionary isEqual:]
+  -[GPBUInt64FloatDictionary copyWithZone:]
+  -[GPBUInt64FloatDictionary initWithCapacity:]
+  -[GPBUInt64FloatDictionary count]
+  -[GPBUInt64FloatDictionary initWithDictionary:]
+  -[GPBUInt64FloatDictionary addEntriesFromDictionary:]
+  -[GPBUInt64FloatDictionary setFloat:forKey:]
+  -[GPBUInt64FloatDictionary removeAll]
+  -[GPBUInt64FloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64FloatDictionary computeSerializedSizeAsField:]
+  -[GPBUInt64FloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64FloatDictionary enumerateForTextFormat:]
+  -[GPBUInt64FloatDictionary initWithFloats:forKeys:count:]
+  -[GPBUInt64FloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBUInt64FloatDictionary getFloat:forKey:]
+  -[GPBUInt64FloatDictionary removeFloatForKey:]
+
+
+GPBUInt64DoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64DoubleDictionary init]
+  -[GPBUInt64DoubleDictionary dealloc]
+  -[GPBUInt64DoubleDictionary isEqual:]
+  -[GPBUInt64DoubleDictionary copyWithZone:]
+  -[GPBUInt64DoubleDictionary initWithCapacity:]
+  -[GPBUInt64DoubleDictionary count]
+  -[GPBUInt64DoubleDictionary initWithDictionary:]
+  -[GPBUInt64DoubleDictionary addEntriesFromDictionary:]
+  -[GPBUInt64DoubleDictionary setDouble:forKey:]
+  -[GPBUInt64DoubleDictionary removeAll]
+  -[GPBUInt64DoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64DoubleDictionary computeSerializedSizeAsField:]
+  -[GPBUInt64DoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64DoubleDictionary enumerateForTextFormat:]
+  -[GPBUInt64DoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBUInt64DoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBUInt64DoubleDictionary getDouble:forKey:]
+  -[GPBUInt64DoubleDictionary removeDoubleForKey:]
+
+
+GPBUInt64EnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBUInt64EnumDictionary init]
+  -[GPBUInt64EnumDictionary dealloc]
+  -[GPBUInt64EnumDictionary isEqual:]
+  -[GPBUInt64EnumDictionary copyWithZone:]
+  -[GPBUInt64EnumDictionary count]
+  -[GPBUInt64EnumDictionary initWithDictionary:]
+  -[GPBUInt64EnumDictionary removeAll]
+  -[GPBUInt64EnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64EnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBUInt64EnumDictionary computeSerializedSizeAsField:]
+  -[GPBUInt64EnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64EnumDictionary enumerateForTextFormat:]
+  -[GPBUInt64EnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBUInt64EnumDictionary validationFunc]
+  -[GPBUInt64EnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBUInt64EnumDictionary initWithValidationFunction:]
+  -[GPBUInt64EnumDictionary initWithValidationFunction:capacity:]
+  -[GPBUInt64EnumDictionary getEnum:forKey:]
+  -[GPBUInt64EnumDictionary getRawValue:forKey:]
+  -[GPBUInt64EnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBUInt64EnumDictionary addRawEntriesFromDictionary:]
+  -[GPBUInt64EnumDictionary setRawValue:forKey:]
+  -[GPBUInt64EnumDictionary removeEnumForKey:]
+  -[GPBUInt64EnumDictionary setEnum:forKey:]
+
+
+GPBUInt64ObjectDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBUInt64ObjectDictionary init]
+  -[GPBUInt64ObjectDictionary dealloc]
+  -[GPBUInt64ObjectDictionary isEqual:]
+  -[GPBUInt64ObjectDictionary copyWithZone:]
+  -[GPBUInt64ObjectDictionary initWithCapacity:]
+  -[GPBUInt64ObjectDictionary count]
+  -[GPBUInt64ObjectDictionary objectForKey:]
+  -[GPBUInt64ObjectDictionary removeObjectForKey:]
+  -[GPBUInt64ObjectDictionary initWithObjects:forKeys:count:]
+  -[GPBUInt64ObjectDictionary setObject:forKey:]
+  -[GPBUInt64ObjectDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBUInt64ObjectDictionary initWithDictionary:]
+  -[GPBUInt64ObjectDictionary addEntriesFromDictionary:]
+  -[GPBUInt64ObjectDictionary removeAll]
+  -[GPBUInt64ObjectDictionary isInitialized]
+  -[GPBUInt64ObjectDictionary deepCopyWithZone:]
+  -[GPBUInt64ObjectDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBUInt64ObjectDictionary computeSerializedSizeAsField:]
+  -[GPBUInt64ObjectDictionary writeToCodedOutputStream:asField:]
+  -[GPBUInt64ObjectDictionary enumerateForTextFormat:]
+
+
+GPBInt64UInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64UInt32Dictionary init]
+  -[GPBInt64UInt32Dictionary dealloc]
+  -[GPBInt64UInt32Dictionary isEqual:]
+  -[GPBInt64UInt32Dictionary copyWithZone:]
+  -[GPBInt64UInt32Dictionary initWithCapacity:]
+  -[GPBInt64UInt32Dictionary count]
+  -[GPBInt64UInt32Dictionary initWithDictionary:]
+  -[GPBInt64UInt32Dictionary addEntriesFromDictionary:]
+  -[GPBInt64UInt32Dictionary removeAll]
+  -[GPBInt64UInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64UInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBInt64UInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBInt64UInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBInt64UInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64UInt32Dictionary enumerateForTextFormat:]
+  -[GPBInt64UInt32Dictionary getUInt32:forKey:]
+  -[GPBInt64UInt32Dictionary setUInt32:forKey:]
+  -[GPBInt64UInt32Dictionary removeUInt32ForKey:]
+
+
+GPBInt64Int32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64Int32Dictionary init]
+  -[GPBInt64Int32Dictionary dealloc]
+  -[GPBInt64Int32Dictionary isEqual:]
+  -[GPBInt64Int32Dictionary copyWithZone:]
+  -[GPBInt64Int32Dictionary initWithCapacity:]
+  -[GPBInt64Int32Dictionary count]
+  -[GPBInt64Int32Dictionary initWithDictionary:]
+  -[GPBInt64Int32Dictionary addEntriesFromDictionary:]
+  -[GPBInt64Int32Dictionary removeAll]
+  -[GPBInt64Int32Dictionary setInt32:forKey:]
+  -[GPBInt64Int32Dictionary getInt32:forKey:]
+  -[GPBInt64Int32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64Int32Dictionary computeSerializedSizeAsField:]
+  -[GPBInt64Int32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64Int32Dictionary enumerateForTextFormat:]
+  -[GPBInt64Int32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBInt64Int32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBInt64Int32Dictionary removeInt32ForKey:]
+
+
+GPBInt64UInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64UInt64Dictionary init]
+  -[GPBInt64UInt64Dictionary dealloc]
+  -[GPBInt64UInt64Dictionary isEqual:]
+  -[GPBInt64UInt64Dictionary copyWithZone:]
+  -[GPBInt64UInt64Dictionary initWithCapacity:]
+  -[GPBInt64UInt64Dictionary count]
+  -[GPBInt64UInt64Dictionary initWithDictionary:]
+  -[GPBInt64UInt64Dictionary addEntriesFromDictionary:]
+  -[GPBInt64UInt64Dictionary removeAll]
+  -[GPBInt64UInt64Dictionary setUInt64:forKey:]
+  -[GPBInt64UInt64Dictionary getUInt64:forKey:]
+  -[GPBInt64UInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64UInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBInt64UInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64UInt64Dictionary enumerateForTextFormat:]
+  -[GPBInt64UInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBInt64UInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBInt64UInt64Dictionary removeUInt64ForKey:]
+
+
+GPBInt64Int64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64Int64Dictionary init]
+  -[GPBInt64Int64Dictionary dealloc]
+  -[GPBInt64Int64Dictionary isEqual:]
+  -[GPBInt64Int64Dictionary copyWithZone:]
+  -[GPBInt64Int64Dictionary initWithCapacity:]
+  -[GPBInt64Int64Dictionary count]
+  -[GPBInt64Int64Dictionary initWithDictionary:]
+  -[GPBInt64Int64Dictionary addEntriesFromDictionary:]
+  -[GPBInt64Int64Dictionary removeAll]
+  -[GPBInt64Int64Dictionary setInt64:forKey:]
+  -[GPBInt64Int64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64Int64Dictionary computeSerializedSizeAsField:]
+  -[GPBInt64Int64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64Int64Dictionary enumerateForTextFormat:]
+  -[GPBInt64Int64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBInt64Int64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBInt64Int64Dictionary getInt64:forKey:]
+  -[GPBInt64Int64Dictionary removeInt64ForKey:]
+
+
+GPBInt64BoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64BoolDictionary init]
+  -[GPBInt64BoolDictionary dealloc]
+  -[GPBInt64BoolDictionary isEqual:]
+  -[GPBInt64BoolDictionary copyWithZone:]
+  -[GPBInt64BoolDictionary initWithCapacity:]
+  -[GPBInt64BoolDictionary count]
+  -[GPBInt64BoolDictionary initWithDictionary:]
+  -[GPBInt64BoolDictionary addEntriesFromDictionary:]
+  -[GPBInt64BoolDictionary setBool:forKey:]
+  -[GPBInt64BoolDictionary removeAll]
+  -[GPBInt64BoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64BoolDictionary computeSerializedSizeAsField:]
+  -[GPBInt64BoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64BoolDictionary enumerateForTextFormat:]
+  -[GPBInt64BoolDictionary initWithBools:forKeys:count:]
+  -[GPBInt64BoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBInt64BoolDictionary getBool:forKey:]
+  -[GPBInt64BoolDictionary removeBoolForKey:]
+
+
+GPBInt64FloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64FloatDictionary init]
+  -[GPBInt64FloatDictionary dealloc]
+  -[GPBInt64FloatDictionary isEqual:]
+  -[GPBInt64FloatDictionary copyWithZone:]
+  -[GPBInt64FloatDictionary initWithCapacity:]
+  -[GPBInt64FloatDictionary count]
+  -[GPBInt64FloatDictionary initWithDictionary:]
+  -[GPBInt64FloatDictionary addEntriesFromDictionary:]
+  -[GPBInt64FloatDictionary setFloat:forKey:]
+  -[GPBInt64FloatDictionary removeAll]
+  -[GPBInt64FloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64FloatDictionary computeSerializedSizeAsField:]
+  -[GPBInt64FloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64FloatDictionary enumerateForTextFormat:]
+  -[GPBInt64FloatDictionary initWithFloats:forKeys:count:]
+  -[GPBInt64FloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBInt64FloatDictionary getFloat:forKey:]
+  -[GPBInt64FloatDictionary removeFloatForKey:]
+
+
+GPBInt64DoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64DoubleDictionary init]
+  -[GPBInt64DoubleDictionary dealloc]
+  -[GPBInt64DoubleDictionary isEqual:]
+  -[GPBInt64DoubleDictionary copyWithZone:]
+  -[GPBInt64DoubleDictionary initWithCapacity:]
+  -[GPBInt64DoubleDictionary count]
+  -[GPBInt64DoubleDictionary initWithDictionary:]
+  -[GPBInt64DoubleDictionary addEntriesFromDictionary:]
+  -[GPBInt64DoubleDictionary setDouble:forKey:]
+  -[GPBInt64DoubleDictionary removeAll]
+  -[GPBInt64DoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64DoubleDictionary computeSerializedSizeAsField:]
+  -[GPBInt64DoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64DoubleDictionary enumerateForTextFormat:]
+  -[GPBInt64DoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBInt64DoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBInt64DoubleDictionary getDouble:forKey:]
+  -[GPBInt64DoubleDictionary removeDoubleForKey:]
+
+
+GPBInt64EnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBInt64EnumDictionary init]
+  -[GPBInt64EnumDictionary dealloc]
+  -[GPBInt64EnumDictionary isEqual:]
+  -[GPBInt64EnumDictionary copyWithZone:]
+  -[GPBInt64EnumDictionary count]
+  -[GPBInt64EnumDictionary initWithDictionary:]
+  -[GPBInt64EnumDictionary removeAll]
+  -[GPBInt64EnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64EnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBInt64EnumDictionary computeSerializedSizeAsField:]
+  -[GPBInt64EnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64EnumDictionary enumerateForTextFormat:]
+  -[GPBInt64EnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBInt64EnumDictionary validationFunc]
+  -[GPBInt64EnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBInt64EnumDictionary initWithValidationFunction:]
+  -[GPBInt64EnumDictionary initWithValidationFunction:capacity:]
+  -[GPBInt64EnumDictionary getEnum:forKey:]
+  -[GPBInt64EnumDictionary getRawValue:forKey:]
+  -[GPBInt64EnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBInt64EnumDictionary addRawEntriesFromDictionary:]
+  -[GPBInt64EnumDictionary setRawValue:forKey:]
+  -[GPBInt64EnumDictionary removeEnumForKey:]
+  -[GPBInt64EnumDictionary setEnum:forKey:]
+
+
+GPBInt64ObjectDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBInt64ObjectDictionary init]
+  -[GPBInt64ObjectDictionary dealloc]
+  -[GPBInt64ObjectDictionary isEqual:]
+  -[GPBInt64ObjectDictionary copyWithZone:]
+  -[GPBInt64ObjectDictionary initWithCapacity:]
+  -[GPBInt64ObjectDictionary count]
+  -[GPBInt64ObjectDictionary objectForKey:]
+  -[GPBInt64ObjectDictionary removeObjectForKey:]
+  -[GPBInt64ObjectDictionary initWithObjects:forKeys:count:]
+  -[GPBInt64ObjectDictionary setObject:forKey:]
+  -[GPBInt64ObjectDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBInt64ObjectDictionary initWithDictionary:]
+  -[GPBInt64ObjectDictionary addEntriesFromDictionary:]
+  -[GPBInt64ObjectDictionary removeAll]
+  -[GPBInt64ObjectDictionary isInitialized]
+  -[GPBInt64ObjectDictionary deepCopyWithZone:]
+  -[GPBInt64ObjectDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBInt64ObjectDictionary computeSerializedSizeAsField:]
+  -[GPBInt64ObjectDictionary writeToCodedOutputStream:asField:]
+  -[GPBInt64ObjectDictionary enumerateForTextFormat:]
+
+
+GPBStringUInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringUInt32Dictionary init]
+  -[GPBStringUInt32Dictionary dealloc]
+  -[GPBStringUInt32Dictionary isEqual:]
+  -[GPBStringUInt32Dictionary copyWithZone:]
+  -[GPBStringUInt32Dictionary initWithCapacity:]
+  -[GPBStringUInt32Dictionary count]
+  -[GPBStringUInt32Dictionary initWithDictionary:]
+  -[GPBStringUInt32Dictionary addEntriesFromDictionary:]
+  -[GPBStringUInt32Dictionary removeAll]
+  -[GPBStringUInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringUInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBStringUInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBStringUInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBStringUInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBStringUInt32Dictionary enumerateForTextFormat:]
+  -[GPBStringUInt32Dictionary getUInt32:forKey:]
+  -[GPBStringUInt32Dictionary setUInt32:forKey:]
+  -[GPBStringUInt32Dictionary removeUInt32ForKey:]
+
+
+GPBStringInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringInt32Dictionary init]
+  -[GPBStringInt32Dictionary dealloc]
+  -[GPBStringInt32Dictionary isEqual:]
+  -[GPBStringInt32Dictionary copyWithZone:]
+  -[GPBStringInt32Dictionary initWithCapacity:]
+  -[GPBStringInt32Dictionary count]
+  -[GPBStringInt32Dictionary initWithDictionary:]
+  -[GPBStringInt32Dictionary addEntriesFromDictionary:]
+  -[GPBStringInt32Dictionary removeAll]
+  -[GPBStringInt32Dictionary setInt32:forKey:]
+  -[GPBStringInt32Dictionary getInt32:forKey:]
+  -[GPBStringInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBStringInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBStringInt32Dictionary enumerateForTextFormat:]
+  -[GPBStringInt32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBStringInt32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBStringInt32Dictionary removeInt32ForKey:]
+
+
+GPBStringUInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringUInt64Dictionary init]
+  -[GPBStringUInt64Dictionary dealloc]
+  -[GPBStringUInt64Dictionary isEqual:]
+  -[GPBStringUInt64Dictionary copyWithZone:]
+  -[GPBStringUInt64Dictionary initWithCapacity:]
+  -[GPBStringUInt64Dictionary count]
+  -[GPBStringUInt64Dictionary initWithDictionary:]
+  -[GPBStringUInt64Dictionary addEntriesFromDictionary:]
+  -[GPBStringUInt64Dictionary removeAll]
+  -[GPBStringUInt64Dictionary setUInt64:forKey:]
+  -[GPBStringUInt64Dictionary getUInt64:forKey:]
+  -[GPBStringUInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringUInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBStringUInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBStringUInt64Dictionary enumerateForTextFormat:]
+  -[GPBStringUInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBStringUInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBStringUInt64Dictionary removeUInt64ForKey:]
+
+
+GPBStringInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringInt64Dictionary init]
+  -[GPBStringInt64Dictionary dealloc]
+  -[GPBStringInt64Dictionary isEqual:]
+  -[GPBStringInt64Dictionary copyWithZone:]
+  -[GPBStringInt64Dictionary initWithCapacity:]
+  -[GPBStringInt64Dictionary count]
+  -[GPBStringInt64Dictionary initWithDictionary:]
+  -[GPBStringInt64Dictionary addEntriesFromDictionary:]
+  -[GPBStringInt64Dictionary removeAll]
+  -[GPBStringInt64Dictionary setInt64:forKey:]
+  -[GPBStringInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBStringInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBStringInt64Dictionary enumerateForTextFormat:]
+  -[GPBStringInt64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBStringInt64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBStringInt64Dictionary getInt64:forKey:]
+  -[GPBStringInt64Dictionary removeInt64ForKey:]
+
+
+GPBStringBoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringBoolDictionary init]
+  -[GPBStringBoolDictionary dealloc]
+  -[GPBStringBoolDictionary isEqual:]
+  -[GPBStringBoolDictionary copyWithZone:]
+  -[GPBStringBoolDictionary initWithCapacity:]
+  -[GPBStringBoolDictionary count]
+  -[GPBStringBoolDictionary initWithDictionary:]
+  -[GPBStringBoolDictionary addEntriesFromDictionary:]
+  -[GPBStringBoolDictionary setBool:forKey:]
+  -[GPBStringBoolDictionary removeAll]
+  -[GPBStringBoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringBoolDictionary computeSerializedSizeAsField:]
+  -[GPBStringBoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBStringBoolDictionary enumerateForTextFormat:]
+  -[GPBStringBoolDictionary initWithBools:forKeys:count:]
+  -[GPBStringBoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBStringBoolDictionary getBool:forKey:]
+  -[GPBStringBoolDictionary removeBoolForKey:]
+
+
+GPBStringFloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringFloatDictionary init]
+  -[GPBStringFloatDictionary dealloc]
+  -[GPBStringFloatDictionary isEqual:]
+  -[GPBStringFloatDictionary copyWithZone:]
+  -[GPBStringFloatDictionary initWithCapacity:]
+  -[GPBStringFloatDictionary count]
+  -[GPBStringFloatDictionary initWithDictionary:]
+  -[GPBStringFloatDictionary addEntriesFromDictionary:]
+  -[GPBStringFloatDictionary setFloat:forKey:]
+  -[GPBStringFloatDictionary removeAll]
+  -[GPBStringFloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringFloatDictionary computeSerializedSizeAsField:]
+  -[GPBStringFloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBStringFloatDictionary enumerateForTextFormat:]
+  -[GPBStringFloatDictionary initWithFloats:forKeys:count:]
+  -[GPBStringFloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBStringFloatDictionary getFloat:forKey:]
+  -[GPBStringFloatDictionary removeFloatForKey:]
+
+
+GPBStringDoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBStringDoubleDictionary init]
+  -[GPBStringDoubleDictionary dealloc]
+  -[GPBStringDoubleDictionary isEqual:]
+  -[GPBStringDoubleDictionary copyWithZone:]
+  -[GPBStringDoubleDictionary initWithCapacity:]
+  -[GPBStringDoubleDictionary count]
+  -[GPBStringDoubleDictionary initWithDictionary:]
+  -[GPBStringDoubleDictionary addEntriesFromDictionary:]
+  -[GPBStringDoubleDictionary setDouble:forKey:]
+  -[GPBStringDoubleDictionary removeAll]
+  -[GPBStringDoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringDoubleDictionary computeSerializedSizeAsField:]
+  -[GPBStringDoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBStringDoubleDictionary enumerateForTextFormat:]
+  -[GPBStringDoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBStringDoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBStringDoubleDictionary getDouble:forKey:]
+  -[GPBStringDoubleDictionary removeDoubleForKey:]
+
+
+GPBStringEnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBStringEnumDictionary init]
+  -[GPBStringEnumDictionary dealloc]
+  -[GPBStringEnumDictionary isEqual:]
+  -[GPBStringEnumDictionary copyWithZone:]
+  -[GPBStringEnumDictionary count]
+  -[GPBStringEnumDictionary initWithDictionary:]
+  -[GPBStringEnumDictionary removeAll]
+  -[GPBStringEnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBStringEnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBStringEnumDictionary computeSerializedSizeAsField:]
+  -[GPBStringEnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBStringEnumDictionary enumerateForTextFormat:]
+  -[GPBStringEnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBStringEnumDictionary validationFunc]
+  -[GPBStringEnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBStringEnumDictionary initWithValidationFunction:]
+  -[GPBStringEnumDictionary initWithValidationFunction:capacity:]
+  -[GPBStringEnumDictionary getEnum:forKey:]
+  -[GPBStringEnumDictionary getRawValue:forKey:]
+  -[GPBStringEnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBStringEnumDictionary addRawEntriesFromDictionary:]
+  -[GPBStringEnumDictionary setRawValue:forKey:]
+  -[GPBStringEnumDictionary removeEnumForKey:]
+  -[GPBStringEnumDictionary setEnum:forKey:]
+
+
+GPBBoolUInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolUInt32Dictionary init]
+  -[GPBBoolUInt32Dictionary isEqual:]
+  -[GPBBoolUInt32Dictionary copyWithZone:]
+  -[GPBBoolUInt32Dictionary initWithCapacity:]
+  -[GPBBoolUInt32Dictionary count]
+  -[GPBBoolUInt32Dictionary initWithDictionary:]
+  -[GPBBoolUInt32Dictionary addEntriesFromDictionary:]
+  -[GPBBoolUInt32Dictionary removeAll]
+  -[GPBBoolUInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolUInt32Dictionary initWithUInt32s:forKeys:count:]
+  -[GPBBoolUInt32Dictionary enumerateKeysAndUInt32sUsingBlock:]
+  -[GPBBoolUInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBBoolUInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolUInt32Dictionary enumerateForTextFormat:]
+  -[GPBBoolUInt32Dictionary getUInt32:forKey:]
+  -[GPBBoolUInt32Dictionary setUInt32:forKey:]
+  -[GPBBoolUInt32Dictionary removeUInt32ForKey:]
+
+
+GPBBoolInt32Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolInt32Dictionary init]
+  -[GPBBoolInt32Dictionary isEqual:]
+  -[GPBBoolInt32Dictionary copyWithZone:]
+  -[GPBBoolInt32Dictionary initWithCapacity:]
+  -[GPBBoolInt32Dictionary count]
+  -[GPBBoolInt32Dictionary initWithDictionary:]
+  -[GPBBoolInt32Dictionary addEntriesFromDictionary:]
+  -[GPBBoolInt32Dictionary removeAll]
+  -[GPBBoolInt32Dictionary setInt32:forKey:]
+  -[GPBBoolInt32Dictionary getInt32:forKey:]
+  -[GPBBoolInt32Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolInt32Dictionary computeSerializedSizeAsField:]
+  -[GPBBoolInt32Dictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolInt32Dictionary enumerateForTextFormat:]
+  -[GPBBoolInt32Dictionary initWithInt32s:forKeys:count:]
+  -[GPBBoolInt32Dictionary enumerateKeysAndInt32sUsingBlock:]
+  -[GPBBoolInt32Dictionary removeInt32ForKey:]
+
+
+GPBBoolUInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolUInt64Dictionary init]
+  -[GPBBoolUInt64Dictionary isEqual:]
+  -[GPBBoolUInt64Dictionary copyWithZone:]
+  -[GPBBoolUInt64Dictionary initWithCapacity:]
+  -[GPBBoolUInt64Dictionary count]
+  -[GPBBoolUInt64Dictionary initWithDictionary:]
+  -[GPBBoolUInt64Dictionary addEntriesFromDictionary:]
+  -[GPBBoolUInt64Dictionary removeAll]
+  -[GPBBoolUInt64Dictionary setUInt64:forKey:]
+  -[GPBBoolUInt64Dictionary getUInt64:forKey:]
+  -[GPBBoolUInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolUInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBBoolUInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolUInt64Dictionary enumerateForTextFormat:]
+  -[GPBBoolUInt64Dictionary initWithUInt64s:forKeys:count:]
+  -[GPBBoolUInt64Dictionary enumerateKeysAndUInt64sUsingBlock:]
+  -[GPBBoolUInt64Dictionary removeUInt64ForKey:]
+
+
+GPBBoolInt64Dictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolInt64Dictionary init]
+  -[GPBBoolInt64Dictionary isEqual:]
+  -[GPBBoolInt64Dictionary copyWithZone:]
+  -[GPBBoolInt64Dictionary initWithCapacity:]
+  -[GPBBoolInt64Dictionary count]
+  -[GPBBoolInt64Dictionary initWithDictionary:]
+  -[GPBBoolInt64Dictionary addEntriesFromDictionary:]
+  -[GPBBoolInt64Dictionary removeAll]
+  -[GPBBoolInt64Dictionary setInt64:forKey:]
+  -[GPBBoolInt64Dictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolInt64Dictionary computeSerializedSizeAsField:]
+  -[GPBBoolInt64Dictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolInt64Dictionary enumerateForTextFormat:]
+  -[GPBBoolInt64Dictionary initWithInt64s:forKeys:count:]
+  -[GPBBoolInt64Dictionary enumerateKeysAndInt64sUsingBlock:]
+  -[GPBBoolInt64Dictionary getInt64:forKey:]
+  -[GPBBoolInt64Dictionary removeInt64ForKey:]
+
+
+GPBBoolBoolDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolBoolDictionary init]
+  -[GPBBoolBoolDictionary isEqual:]
+  -[GPBBoolBoolDictionary copyWithZone:]
+  -[GPBBoolBoolDictionary initWithCapacity:]
+  -[GPBBoolBoolDictionary count]
+  -[GPBBoolBoolDictionary initWithDictionary:]
+  -[GPBBoolBoolDictionary addEntriesFromDictionary:]
+  -[GPBBoolBoolDictionary setBool:forKey:]
+  -[GPBBoolBoolDictionary removeAll]
+  -[GPBBoolBoolDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolBoolDictionary computeSerializedSizeAsField:]
+  -[GPBBoolBoolDictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolBoolDictionary enumerateForTextFormat:]
+  -[GPBBoolBoolDictionary initWithBools:forKeys:count:]
+  -[GPBBoolBoolDictionary enumerateKeysAndBoolsUsingBlock:]
+  -[GPBBoolBoolDictionary getBool:forKey:]
+  -[GPBBoolBoolDictionary removeBoolForKey:]
+
+
+GPBBoolFloatDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolFloatDictionary init]
+  -[GPBBoolFloatDictionary isEqual:]
+  -[GPBBoolFloatDictionary copyWithZone:]
+  -[GPBBoolFloatDictionary initWithCapacity:]
+  -[GPBBoolFloatDictionary count]
+  -[GPBBoolFloatDictionary initWithDictionary:]
+  -[GPBBoolFloatDictionary addEntriesFromDictionary:]
+  -[GPBBoolFloatDictionary setFloat:forKey:]
+  -[GPBBoolFloatDictionary removeAll]
+  -[GPBBoolFloatDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolFloatDictionary computeSerializedSizeAsField:]
+  -[GPBBoolFloatDictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolFloatDictionary enumerateForTextFormat:]
+  -[GPBBoolFloatDictionary initWithFloats:forKeys:count:]
+  -[GPBBoolFloatDictionary enumerateKeysAndFloatsUsingBlock:]
+  -[GPBBoolFloatDictionary getFloat:forKey:]
+  -[GPBBoolFloatDictionary removeFloatForKey:]
+
+
+GPBBoolDoubleDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolDoubleDictionary init]
+  -[GPBBoolDoubleDictionary isEqual:]
+  -[GPBBoolDoubleDictionary copyWithZone:]
+  -[GPBBoolDoubleDictionary initWithCapacity:]
+  -[GPBBoolDoubleDictionary count]
+  -[GPBBoolDoubleDictionary initWithDictionary:]
+  -[GPBBoolDoubleDictionary addEntriesFromDictionary:]
+  -[GPBBoolDoubleDictionary setDouble:forKey:]
+  -[GPBBoolDoubleDictionary removeAll]
+  -[GPBBoolDoubleDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolDoubleDictionary computeSerializedSizeAsField:]
+  -[GPBBoolDoubleDictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolDoubleDictionary enumerateForTextFormat:]
+  -[GPBBoolDoubleDictionary initWithDoubles:forKeys:count:]
+  -[GPBBoolDoubleDictionary enumerateKeysAndDoublesUsingBlock:]
+  -[GPBBoolDoubleDictionary getDouble:forKey:]
+  -[GPBBoolDoubleDictionary removeDoubleForKey:]
+
+
+GPBBoolObjectDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+
+  // instance methods
+  -[GPBBoolObjectDictionary init]
+  -[GPBBoolObjectDictionary dealloc]
+  -[GPBBoolObjectDictionary isEqual:]
+  -[GPBBoolObjectDictionary copyWithZone:]
+  -[GPBBoolObjectDictionary initWithCapacity:]
+  -[GPBBoolObjectDictionary count]
+  -[GPBBoolObjectDictionary objectForKey:]
+  -[GPBBoolObjectDictionary removeObjectForKey:]
+  -[GPBBoolObjectDictionary initWithObjects:forKeys:count:]
+  -[GPBBoolObjectDictionary setObject:forKey:]
+  -[GPBBoolObjectDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBBoolObjectDictionary initWithDictionary:]
+  -[GPBBoolObjectDictionary addEntriesFromDictionary:]
+  -[GPBBoolObjectDictionary removeAll]
+  -[GPBBoolObjectDictionary isInitialized]
+  -[GPBBoolObjectDictionary deepCopyWithZone:]
+  -[GPBBoolObjectDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolObjectDictionary computeSerializedSizeAsField:]
+  -[GPBBoolObjectDictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolObjectDictionary enumerateForTextFormat:]
+
+
+GPBBoolEnumDictionary : NSObject /usr/lib/libSystem.B.dylib <GPBDictionaryInternalsProtocol, NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // instance methods
+  -[GPBBoolEnumDictionary init]
+  -[GPBBoolEnumDictionary isEqual:]
+  -[GPBBoolEnumDictionary copyWithZone:]
+  -[GPBBoolEnumDictionary count]
+  -[GPBBoolEnumDictionary initWithDictionary:]
+  -[GPBBoolEnumDictionary removeAll]
+  -[GPBBoolEnumDictionary setGPBGenericValue:forGPBGenericValueKey:]
+  -[GPBBoolEnumDictionary serializedDataForUnknownValue:forKey:keyDataType:]
+  -[GPBBoolEnumDictionary computeSerializedSizeAsField:]
+  -[GPBBoolEnumDictionary writeToCodedOutputStream:asField:]
+  -[GPBBoolEnumDictionary enumerateForTextFormat:]
+  -[GPBBoolEnumDictionary initWithValidationFunction:rawValues:forKeys:count:]
+  -[GPBBoolEnumDictionary validationFunc]
+  -[GPBBoolEnumDictionary enumerateKeysAndRawValuesUsingBlock:]
+  -[GPBBoolEnumDictionary initWithValidationFunction:]
+  -[GPBBoolEnumDictionary initWithValidationFunction:capacity:]
+  -[GPBBoolEnumDictionary getEnum:forKey:]
+  -[GPBBoolEnumDictionary getRawValue:forKey:]
+  -[GPBBoolEnumDictionary enumerateKeysAndEnumsUsingBlock:]
+  -[GPBBoolEnumDictionary addRawEntriesFromDictionary:]
+  -[GPBBoolEnumDictionary setRawValue:forKey:]
+  -[GPBBoolEnumDictionary removeEnumForKey:]
+  -[GPBBoolEnumDictionary setEnum:forKey:]
+
+
+GPBAutocreatedDictionary : NSMutableDictionary
+  // instance methods
+  -[GPBAutocreatedDictionary dealloc]
+  -[GPBAutocreatedDictionary copyWithZone:]
+  -[GPBAutocreatedDictionary mutableCopyWithZone:]
+  -[GPBAutocreatedDictionary count]
+  -[GPBAutocreatedDictionary objectForKey:]
+  -[GPBAutocreatedDictionary enumerateKeysAndObjectsWithOptions:usingBlock:]
+  -[GPBAutocreatedDictionary removeObjectForKey:]
+  -[GPBAutocreatedDictionary keyEnumerator]
+  -[GPBAutocreatedDictionary initWithObjects:forKeys:count:]
+  -[GPBAutocreatedDictionary objectForKeyedSubscript:]
+  -[GPBAutocreatedDictionary setObject:forKey:]
+  -[GPBAutocreatedDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[GPBAutocreatedDictionary setObject:forKeyedSubscript:]
+
+
+GPBCodedOutputStream : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[GPBCodedOutputStream streamWithOutputStream:]
+  +[GPBCodedOutputStream streamWithData:]
+
+  // instance methods
+  -[GPBCodedOutputStream dealloc]
+  -[GPBCodedOutputStream initWithData:]
+  -[GPBCodedOutputStream initWithOutputStream:]
+  -[GPBCodedOutputStream flush]
+  -[GPBCodedOutputStream writeInt32NoTag:]
+  -[GPBCodedOutputStream writeString:value:]
+  -[GPBCodedOutputStream writeMessage:value:]
+  -[GPBCodedOutputStream writeBytes:value:]
+  -[GPBCodedOutputStream writeUInt32:value:]
+  -[GPBCodedOutputStream writeFixed32:value:]
+  -[GPBCodedOutputStream writeInt32:value:]
+  -[GPBCodedOutputStream writeSInt32:value:]
+  -[GPBCodedOutputStream writeSFixed32:value:]
+  -[GPBCodedOutputStream writeUInt64:value:]
+  -[GPBCodedOutputStream writeFixed64:value:]
+  -[GPBCodedOutputStream writeInt64:value:]
+  -[GPBCodedOutputStream writeSInt64:value:]
+  -[GPBCodedOutputStream writeSFixed64:value:]
+  -[GPBCodedOutputStream writeBool:value:]
+  -[GPBCodedOutputStream writeFloat:value:]
+  -[GPBCodedOutputStream writeDouble:value:]
+  -[GPBCodedOutputStream writeEnum:value:]
+  -[GPBCodedOutputStream initWithOutputStream:data:]
+  -[GPBCodedOutputStream writeRawPtr:offset:length:]
+  -[GPBCodedOutputStream writeRawData:]
+  -[GPBCodedOutputStream writeStringNoTag:]
+  -[GPBCodedOutputStream writeGroupNoTag:value:]
+  -[GPBCodedOutputStream writeUnknownGroupNoTag:value:]
+  -[GPBCodedOutputStream writeMessageNoTag:]
+  -[GPBCodedOutputStream writeBytesNoTag:]
+  -[GPBCodedOutputStream writeDoubleNoTag:]
+  -[GPBCodedOutputStream writeFloatNoTag:]
+  -[GPBCodedOutputStream writeUInt64NoTag:]
+  -[GPBCodedOutputStream writeInt64NoTag:]
+  -[GPBCodedOutputStream writeUInt32NoTag:]
+  -[GPBCodedOutputStream writeFixed64NoTag:]
+  -[GPBCodedOutputStream writeFixed32NoTag:]
+  -[GPBCodedOutputStream writeSInt32NoTag:]
+  -[GPBCodedOutputStream writeSInt64NoTag:]
+  -[GPBCodedOutputStream writeSFixed64NoTag:]
+  -[GPBCodedOutputStream writeSFixed32NoTag:]
+  -[GPBCodedOutputStream writeBoolNoTag:]
+  -[GPBCodedOutputStream writeEnumNoTag:]
+  -[GPBCodedOutputStream writeGroup:value:]
+  -[GPBCodedOutputStream writeUnknownGroup:value:]
+  -[GPBCodedOutputStream writeDoubleArray:values:tag:]
+  -[GPBCodedOutputStream writeFloatArray:values:tag:]
+  -[GPBCodedOutputStream writeUInt64Array:values:tag:]
+  -[GPBCodedOutputStream writeInt64Array:values:tag:]
+  -[GPBCodedOutputStream writeInt32Array:values:tag:]
+  -[GPBCodedOutputStream writeUInt32Array:values:tag:]
+  -[GPBCodedOutputStream writeFixed64Array:values:tag:]
+  -[GPBCodedOutputStream writeFixed32Array:values:tag:]
+  -[GPBCodedOutputStream writeSInt32Array:values:tag:]
+  -[GPBCodedOutputStream writeSInt64Array:values:tag:]
+  -[GPBCodedOutputStream writeSFixed64Array:values:tag:]
+  -[GPBCodedOutputStream writeSFixed32Array:values:tag:]
+  -[GPBCodedOutputStream writeBoolArray:values:tag:]
+  -[GPBCodedOutputStream writeEnumArray:values:tag:]
+  -[GPBCodedOutputStream writeStringArray:values:]
+  -[GPBCodedOutputStream writeMessageArray:values:]
+  -[GPBCodedOutputStream writeBytesArray:values:]
+  -[GPBCodedOutputStream writeGroupArray:values:]
+  -[GPBCodedOutputStream writeUnknownGroupArray:values:]
+  -[GPBCodedOutputStream writeMessageSetExtension:value:]
+  -[GPBCodedOutputStream writeRawMessageSetExtension:value:]
+  -[GPBCodedOutputStream writeRawByte:]
+  -[GPBCodedOutputStream writeTag:format:]
+  -[GPBCodedOutputStream writeRawVarint32:]
+  -[GPBCodedOutputStream writeRawVarintSizeTAs32:]
+  -[GPBCodedOutputStream writeRawVarint64:]
+  -[GPBCodedOutputStream writeRawLittleEndian32:]
+  -[GPBCodedOutputStream writeRawLittleEndian64:]
+
+
+GPBSourceContextRoot : GPBRootObject
+
+GPBSourceContext : GPBMessage
+ @property  NSString *fileName
+
+  // class methods
+  +[GPBSourceContext descriptor]
+
+
+TransparencyQueryCache : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyQueryCache lookupValidateRequest:application:uri:accountID:loggableDatas:error:]
+  +[TransparencyQueryCache lookupValidateEnrollmentRequest:application:uri:accountID:loggableData:error:]
+  +[TransparencyQueryCache lookupValidatePeerRequest:application:uri:accountID:loggableDatas:error:]
+
+
+TransparencyResponse : NSObject /usr/lib/libSystem.B.dylib
+ @property  TransparencyRequest *request
+ @property  NSData *data
+ @property  NSDictionary *metadata
+
+  // instance methods
+  -[TransparencyResponse .cxx_destruct]
+  -[TransparencyResponse data]
+  -[TransparencyResponse setData:]
+  -[TransparencyResponse setMetadata:]
+  -[TransparencyResponse metadata]
+  -[TransparencyResponse setRequest:]
+  -[TransparencyResponse request]
+  -[TransparencyResponse initWithRequest:responseData:metadata:]
+  -[TransparencyResponse serverHint]
+
+
+KTPatConfigInclusionProofVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  KTApplicationPublicKeyStore *keyStore
+ @property  NSString *application
+
+  // instance methods
+  -[KTPatConfigInclusionProofVerifier .cxx_destruct]
+  -[KTPatConfigInclusionProofVerifier application]
+  -[KTPatConfigInclusionProofVerifier setApplication:]
+  -[KTPatConfigInclusionProofVerifier keyStore]
+  -[KTPatConfigInclusionProofVerifier initWithKeyStore:application:]
+  -[KTPatConfigInclusionProofVerifier verifyPatConfigInclusionProofWithPerAppLogEntry:topLevelTreeEntry:error:]
+
+
+GPBFieldMaskRoot : GPBRootObject
+
+GPBFieldMask : GPBMessage
+ @property  NSMutableArray *pathsArray
+ @property  unsigned long pathsArray_Count
+
+  // class methods
+  +[GPBFieldMask descriptor]
+
+
+TransparencyApplication : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *applicationIdentifier
+
+  // class methods
+  +[TransparencyApplication applicationValueForIdentifier:]
+  +[TransparencyApplication applicationIdentifierForValue:]
+
+  // instance methods
+  -[TransparencyApplication .cxx_destruct]
+  -[TransparencyApplication initWithIdentifier:]
+  -[TransparencyApplication applicationIdentifier]
+  -[TransparencyApplication setApplicationIdentifier:]
+
+
+GPBRootObject : NSObject /usr/lib/libSystem.B.dylib <GPBMessageSignatureProtocol>
+  // class methods
+  +[GPBRootObject initialize]
+  +[GPBRootObject resolveClassMethod:]
+  +[GPBRootObject extensionRegistry]
+  +[GPBRootObject globallyRegisterExtension:]
+
+
+TransparencyAccount : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyAccount sharedAccountStore]
+  +[TransparencyAccount primaryAccount:]
+  +[TransparencyAccount accountLevel:]
+  +[TransparencyAccount accountLevelErrorCodeForLevel:]
+  +[TransparencyAccount createAuthToken:authToken:]
+  +[TransparencyAccount createAuthkitSession]
+  +[TransparencyAccount authToken:]
+  +[TransparencyAccount eligibleForSelfVerify]
+  +[TransparencyAccount eligibleForPeerVerify]
+  +[TransparencyAccount eligibleForEnrollmentVerify]
+  +[TransparencyAccount initiateCredentialRenewal:completionHandler:]
+
+
+GPBAnyRoot : GPBRootObject
+
+GPBAny : GPBMessage
+ @property  NSString *typeURL
+ @property  NSData *value
+
+  // class methods
+  +[GPBAny descriptor]
+  +[GPBAny anyWithMessage:typeURLPrefix:error:]
+  +[GPBAny anyWithMessage:error:]
+
+  // instance methods
+  -[GPBAny initWithMessage:typeURLPrefix:error:]
+  -[GPBAny packWithMessage:typeURLPrefix:error:]
+  -[GPBAny initWithMessage:error:]
+  -[GPBAny packWithMessage:error:]
+  -[GPBAny unpackMessageClass:error:]
+
+
+GPBDescriptor : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *name
+ @property  NSArray *fields
+ @property  NSArray *oneofs
+ @property  r^{GPBExtensionRange=II} extensionRanges
+ @property  unsigned int extensionRangesCount
+ @property  GPBFileDescriptor *file
+ @property  BOOL wireFormat
+ @property  Class messageClass
+ @property  GPBDescriptor *containingType
+ @property  NSString *fullName
+
+  // class methods
+  +[GPBDescriptor allocDescriptorForClass:rootClass:file:fields:fieldCount:storageSize:flags:]
+
+  // instance methods
+  -[GPBDescriptor dealloc]
+  -[GPBDescriptor name]
+  -[GPBDescriptor copyWithZone:]
+  -[GPBDescriptor fields]
+  -[GPBDescriptor file]
+  -[GPBDescriptor fullName]
+  -[GPBDescriptor messageClass]
+  -[GPBDescriptor setupExtraTextInfo:]
+  -[GPBDescriptor initWithClass:file:fields:storageSize:wireFormat:]
+  -[GPBDescriptor containingType]
+  -[GPBDescriptor setupOneofs:count:firstHasIndex:]
+  -[GPBDescriptor setupExtensionRanges:count:]
+  -[GPBDescriptor setupContainingMessageClassName:]
+  -[GPBDescriptor setupMessageClassNameSuffix:]
+  -[GPBDescriptor fieldWithNumber:]
+  -[GPBDescriptor fieldWithName:]
+  -[GPBDescriptor oneofWithName:]
+  -[GPBDescriptor oneofs]
+  -[GPBDescriptor extensionRanges]
+  -[GPBDescriptor extensionRangesCount]
+  -[GPBDescriptor isWireFormat]
+
+
+GPBFileDescriptor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *package
+ @property  NSString *objcPrefix
+ @property  unsigned char syntax
+
+  // instance methods
+  -[GPBFileDescriptor dealloc]
+  -[GPBFileDescriptor package]
+  -[GPBFileDescriptor initWithPackage:objcPrefix:syntax:]
+  -[GPBFileDescriptor syntax]
+  -[GPBFileDescriptor objcPrefix]
+  -[GPBFileDescriptor initWithPackage:syntax:]
+
+
+GPBOneofDescriptor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  NSArray *fields
+
+  // instance methods
+  -[GPBOneofDescriptor dealloc]
+  -[GPBOneofDescriptor name]
+  -[GPBOneofDescriptor fields]
+  -[GPBOneofDescriptor initWithName:fields:]
+  -[GPBOneofDescriptor fieldWithNumber:]
+  -[GPBOneofDescriptor fieldWithName:]
+
+
+GPBFieldDescriptor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  unsigned int number
+ @property  unsigned char dataType
+ @property  BOOL hasDefaultValue
+ @property  (?=BiqIQfd@@@i) defaultValue
+ @property  BOOL required
+ @property  BOOL optional
+ @property  unsigned char fieldType
+ @property  unsigned char mapKeyDataType
+ @property  BOOL packable
+ @property  GPBOneofDescriptor *containingOneof
+ @property  Class msgClass
+ @property  GPBEnumDescriptor *enumDescriptor
+
+  // instance methods
+  -[GPBFieldDescriptor init]
+  -[GPBFieldDescriptor dealloc]
+  -[GPBFieldDescriptor name]
+  -[GPBFieldDescriptor dataType]
+  -[GPBFieldDescriptor number]
+  -[GPBFieldDescriptor defaultValue]
+  -[GPBFieldDescriptor isOptional]
+  -[GPBFieldDescriptor isRequired]
+  -[GPBFieldDescriptor fieldType]
+  -[GPBFieldDescriptor mapKeyDataType]
+  -[GPBFieldDescriptor msgClass]
+  -[GPBFieldDescriptor isValidEnumValue:]
+  -[GPBFieldDescriptor initWithFieldDescription:includesDefault:syntax:]
+  -[GPBFieldDescriptor hasDefaultValue]
+  -[GPBFieldDescriptor isPackable]
+  -[GPBFieldDescriptor enumDescriptor]
+  -[GPBFieldDescriptor textFormatName]
+  -[GPBFieldDescriptor containingOneof]
+
+
+GPBEnumDescriptor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *name
+ @property  ^? enumVerifier
+ @property  unsigned int enumNameCount
+
+  // class methods
+  +[GPBEnumDescriptor allocDescriptorForName:valueNames:values:count:enumVerifier:]
+  +[GPBEnumDescriptor allocDescriptorForName:valueNames:values:count:enumVerifier:extraTextFormatInfo:]
+
+  // instance methods
+  -[GPBEnumDescriptor dealloc]
+  -[GPBEnumDescriptor name]
+  -[GPBEnumDescriptor enumVerifier]
+  -[GPBEnumDescriptor initWithName:valueNames:values:count:enumVerifier:]
+  -[GPBEnumDescriptor getEnumNameForIndex:]
+  -[GPBEnumDescriptor calcValueNameOffsets]
+  -[GPBEnumDescriptor textFormatNameForValue:]
+  -[GPBEnumDescriptor getEnumTextFormatNameForIndex:]
+  -[GPBEnumDescriptor enumNameForValue:]
+  -[GPBEnumDescriptor getValue:forEnumName:]
+  -[GPBEnumDescriptor getValue:forEnumTextFormatName:]
+  -[GPBEnumDescriptor enumNameCount]
+
+
+GPBExtensionDescriptor : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  int wireType
+ @property  int alternateWireType
+ @property  unsigned int fieldNumber
+ @property  Class containingMessageClass
+ @property  unsigned char dataType
+ @property  BOOL repeated
+ @property  BOOL packable
+ @property  Class msgClass
+ @property  NSString *singletonName
+ @property  GPBEnumDescriptor *enumDescriptor
+ @property  id defaultValue
+
+  // instance methods
+  -[GPBExtensionDescriptor dealloc]
+  -[GPBExtensionDescriptor copyWithZone:]
+  -[GPBExtensionDescriptor dataType]
+  -[GPBExtensionDescriptor defaultValue]
+  -[GPBExtensionDescriptor wireType]
+  -[GPBExtensionDescriptor msgClass]
+  -[GPBExtensionDescriptor singletonNameC]
+  -[GPBExtensionDescriptor isPackable]
+  -[GPBExtensionDescriptor enumDescriptor]
+  -[GPBExtensionDescriptor initWithExtensionDescription:]
+  -[GPBExtensionDescriptor singletonName]
+  -[GPBExtensionDescriptor fieldNumber]
+  -[GPBExtensionDescriptor alternateWireType]
+  -[GPBExtensionDescriptor isRepeated]
+  -[GPBExtensionDescriptor compareByFieldNumber:]
+  -[GPBExtensionDescriptor containingMessageClass]
+
+
+TransparencyVRFVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  VRFPublicKey *key
+ @property  int vrfType
+
+  // class methods
+  +[TransparencyVRFVerifier verifyMessage:salt:output:proof:key:error:]
+  +[TransparencyVRFVerifier verifierOfType:key:]
+  +[TransparencyVRFVerifier verifyMessage:output:proof:key:error:]
+  +[TransparencyVRFVerifier saltMessage:salt:]
+
+  // instance methods
+  -[TransparencyVRFVerifier key]
+  -[TransparencyVRFVerifier .cxx_destruct]
+  -[TransparencyVRFVerifier initWithKey:]
+  -[TransparencyVRFVerifier setKey:]
+  -[TransparencyVRFVerifier vrfType]
+  -[TransparencyVRFVerifier verifyMessage:salt:output:proof:error:]
+  -[TransparencyVRFVerifier verifyMessage:output:proof:error:]
+
+
+TransparencyECVRFVerifier : TransparencyVRFVerifier
+  // class methods
+  +[TransparencyECVRFVerifier verifyMessage:salt:output:proof:key:error:]
+  +[TransparencyECVRFVerifier verifyMessage:output:proof:key:error:]
+
+  // instance methods
+  -[TransparencyECVRFVerifier initWithKey:]
+  -[TransparencyECVRFVerifier vrfType]
+  -[TransparencyECVRFVerifier verifyMessage:salt:output:proof:error:]
+  -[TransparencyECVRFVerifier verifyMessage:output:proof:error:]
+
+
+KTClientDataRecord : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *clientData
+ @property  unsigned long applicationVersion
+ @property  NSData *clientDataVRFOutput
+ @property  NSDate *markedForDeletion
+ @property  NSDate *deletionEscrowExpiry
+ @property  NSDate *addedDate
+ @property  BOOL verified
+
+  // class methods
+  +[KTClientDataRecord supportsSecureCoding]
+
+  // instance methods
+  -[KTClientDataRecord isEqual:]
+  -[KTClientDataRecord encodeWithCoder:]
+  -[KTClientDataRecord initWithCoder:]
+  -[KTClientDataRecord .cxx_destruct]
+  -[KTClientDataRecord setApplicationVersion:]
+  -[KTClientDataRecord applicationVersion]
+  -[KTClientDataRecord addedDate]
+  -[KTClientDataRecord setAddedDate:]
+  -[KTClientDataRecord setVerified:]
+  -[KTClientDataRecord verified]
+  -[KTClientDataRecord clientData]
+  -[KTClientDataRecord setMarkedForDeletion:]
+  -[KTClientDataRecord markedForDeletion]
+  -[KTClientDataRecord setClientData:]
+  -[KTClientDataRecord clientDataVRFOutput]
+  -[KTClientDataRecord deletionEscrowExpiry]
+  -[KTClientDataRecord initWithMutation:]
+  -[KTClientDataRecord setClientDataVRFOutput:]
+  -[KTClientDataRecord setDeletionEscrowExpiry:]
+  -[KTClientDataRecord initWithSingleDataRecord:]
+
+
+KTDevice : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *deviceID
+ @property  NSData *deviceIDVRFOutput
+ @property  NSMutableArray *clientDatas
+
+  // class methods
+  +[KTDevice supportsSecureCoding]
+
+  // instance methods
+  -[KTDevice isEqual:]
+  -[KTDevice encodeWithCoder:]
+  -[KTDevice initWithCoder:]
+  -[KTDevice .cxx_destruct]
+  -[KTDevice deviceID]
+  -[KTDevice setDeviceID:]
+  -[KTDevice deviceIDVRFOutput]
+  -[KTDevice clientDatas]
+  -[KTDevice initWithMutation:]
+  -[KTDevice updateWithMutation:error:]
+  -[KTDevice setDeviceIDVRFOutput:]
+  -[KTDevice setClientDatas:]
+  -[KTDevice clientRecordForAppVersion:clientDataVRFOutput:]
+  -[KTDevice markClientDatasForAppVersion:mutationMs:]
+  -[KTDevice addClientDatasObject:]
+  -[KTDevice removeClientDatasObject:]
+  -[KTDevice clientRecordsForVRFOutput:]
+
+
+GPBTimestampRoot : GPBRootObject
+
+GPBTimestamp : GPBMessage
+ @property  NSDate *date
+ @property  double timeIntervalSince1970
+ @property  long long seconds
+ @property  int nanos
+
+  // class methods
+  +[GPBTimestamp descriptor]
+
+  // instance methods
+  -[GPBTimestamp timeIntervalSince1970]
+  -[GPBTimestamp date]
+  -[GPBTimestamp initWithTimeIntervalSince1970:]
+  -[GPBTimestamp initWithDate:]
+  -[GPBTimestamp setDate:]
+  -[GPBTimestamp setTimeIntervalSince1970:]
+
+
+TransparencyLogClient : NSObject /usr/lib/libSystem.B.dylib
+ @property  TransparencyLogSession *session
+
+  // instance methods
+  -[TransparencyLogClient .cxx_destruct]
+  -[TransparencyLogClient session]
+  -[TransparencyLogClient setSession:]
+  -[TransparencyLogClient needsRetry:]
+  -[TransparencyLogClient fetch:shouldRetry:completionHandler:]
+  -[TransparencyLogClient fetch:completionHandler:]
+  -[TransparencyLogClient download:shouldRetry:completionHandler:]
+  -[TransparencyLogClient download:completionHandler:]
+  -[TransparencyLogClient initWithBackgroundSession:]
+  -[TransparencyLogClient fetchRequest:completionHandler:]
+  -[TransparencyLogClient downloadRequest:completionHandler:]
+
+
+KTLogClient : TransparencyLogClient
+ @property  NSURL *queryURI
+ @property  NSURL *consistencyProofURI
+ @property  NSURL *publicKeysURI
+ @property  BOOL configured
+ @property  double expirationTime
+
+  // class methods
+  +[KTLogClient configBagURL]
+  +[KTLogClient configBagRequest]
+  +[KTLogClient formatEventName:state:]
+  +[KTLogClient formatEventName:application:state:]
+
+  // instance methods
+  -[KTLogClient .cxx_destruct]
+  -[KTLogClient configure:]
+  -[KTLogClient expirationTime]
+  -[KTLogClient setExpirationTime:]
+  -[KTLogClient configured]
+  -[KTLogClient setConfigured:]
+  -[KTLogClient validateConfigEntries:error:]
+  -[KTLogClient setQueryURI:]
+  -[KTLogClient setConsistencyProofURI:]
+  -[KTLogClient setPublicKeysURI:]
+  -[KTLogClient validateConfigBagCertificates:error:]
+  -[KTLogClient validateConfigBagSignature:error:]
+  -[KTLogClient readConfigFromDisk:]
+  -[KTLogClient validateConfigBagEntries:error:]
+  -[KTLogClient processConfigBagData:error:]
+  -[KTLogClient writeConfigToDisk:error:]
+  -[KTLogClient configurationExpired]
+  -[KTLogClient configureWithDisk:]
+  -[KTLogClient configureFromNetworkBag:error:]
+  -[KTLogClient publicKeysURI]
+  -[KTLogClient queryURI]
+  -[KTLogClient handleQueryResponse:fetchError:application:error:completionHandler:]
+  -[KTLogClient consistencyProofURI]
+  -[KTLogClient copyConfigurationBag:]
+  -[KTLogClient clearState:]
+  -[KTLogClient fetchPublicKeys:completionHandler:]
+  -[KTLogClient fetchQuery:uuid:completionHandler:]
+  -[KTLogClient downloadPublicKeys:completionHandler:]
+  -[KTLogClient downloadQuery:uuid:completionHandler:]
+  -[KTLogClient downloadConsistencyProof:uuid:completionHandler:]
+
+
+TransparencyMessagesRoot : GPBRootObject
+
+InsertRequest : GPBMessage
+ @property  int version
+ @property  int application
+ @property  unsigned long appVersion
+ @property  NSString *requestUuid
+ @property  NSString *uri
+ @property  NSData *deviceId
+ @property  NSData *clientData
+ @property  NSData *accountId
+
+  // class methods
+  +[InsertRequest descriptor]
+
+
+InsertResponse : GPBMessage
+ @property  int status
+ @property  SignedMutationTimestamp *smt
+ @property  BOOL hasSmt
+ @property  VRFWitness *uriWitness
+ @property  BOOL hasUriWitness
+ @property  NSData *accountId
+ @property  VRFWitness *deviceIdWitness
+ @property  BOOL hasDeviceIdWitness
+ @property  VRFWitness *clientDataWitness
+ @property  BOOL hasClientDataWitness
+ @property  NSString *serverEventInfo
+
+  // class methods
+  +[InsertResponse descriptor]
+
+
+MarkForDeletionRequest : GPBMessage
+ @property  int version
+ @property  int application
+ @property  unsigned long appVersion
+ @property  NSString *requestUuid
+ @property  NSString *uri
+ @property  NSData *accountId
+ @property  NSData *deviceId
+ @property  NSData *clientData
+
+  // class methods
+  +[MarkForDeletionRequest descriptor]
+
+
+MarkForDeletionResponse : GPBMessage
+ @property  int status
+ @property  SignedMutationTimestamp *smt
+ @property  BOOL hasSmt
+ @property  VRFWitness *uriWitness
+ @property  BOOL hasUriWitness
+ @property  NSData *accountId
+ @property  NSString *serverEventInfo
+
+  // class methods
+  +[MarkForDeletionResponse descriptor]
+
+
+QueryRequest : GPBMessage
+ @property  int version
+ @property  int application
+ @property  NSString *uri
+ @property  NSMutableArray *devicesArray
+ @property  unsigned long devicesArray_Count
+ @property  NSData *accountId
+
+  // class methods
+  +[QueryRequest descriptor]
+
+
+QueryRequest_Device : GPBMessage
+ @property  NSData *deviceId
+ @property  NSMutableArray *clientDataArray
+ @property  unsigned long clientDataArray_Count
+
+  // class methods
+  +[QueryRequest_Device descriptor]
+
+
+QueryResponse : GPBMessage
+ @property  NSDictionary *metadata
+ @property  int status
+ @property  InclusionProof *inclusionProof
+ @property  BOOL hasInclusionProof
+ @property  NSMutableArray *pendingSmtsArray
+ @property  unsigned long pendingSmtsArray_Count
+ @property  VRFWitness *uriWitness
+ @property  BOOL hasUriWitness
+ @property  NSData *accountId
+ @property  NSMutableArray *deviceWitnessesArray
+ @property  unsigned long deviceWitnessesArray_Count
+
+  // class methods
+  +[QueryResponse descriptor]
+
+  // instance methods
+  -[QueryResponse setMetadata:]
+  -[QueryResponse metadata]
+  -[QueryResponse setMetadataValue:key:]
+
+
+QueryResponse_DeviceWitness : GPBMessage
+ @property  VRFWitness *deviceIdWitness
+ @property  BOOL hasDeviceIdWitness
+ @property  NSMutableArray *clientDataWitnessArray
+ @property  unsigned long clientDataWitnessArray_Count
+
+  // class methods
+  +[QueryResponse_DeviceWitness descriptor]
+
+
+ConsistencyProofRequest : GPBMessage
+ @property  int version
+ @property  NSMutableArray *requestsArray
+ @property  unsigned long requestsArray_Count
+
+  // class methods
+  +[ConsistencyProofRequest descriptor]
+
+
+ConsistencyProofRequest_LogConsistencyRequest : GPBMessage
+ @property  int logType
+ @property  int application
+ @property  unsigned long startRevision
+ @property  unsigned long endRevision
+
+  // class methods
+  +[ConsistencyProofRequest_LogConsistencyRequest descriptor]
+
+
+ConsistencyProofResponse : GPBMessage
+ @property  int status
+ @property  NSMutableArray *responsesArray
+ @property  unsigned long responsesArray_Count
+
+  // class methods
+  +[ConsistencyProofResponse descriptor]
+
+
+ConsistencyProofResponse_LogConsistencyResponse : GPBMessage
+ @property  int logType
+ @property  int application
+ @property  SignedLogHead *startSlh
+ @property  BOOL hasStartSlh
+ @property  SignedLogHead *endSlh
+ @property  BOOL hasEndSlh
+ @property  NSMutableArray *proofHashesArray
+ @property  unsigned long proofHashesArray_Count
+
+  // class methods
+  +[ConsistencyProofResponse_LogConsistencyResponse descriptor]
+
+
+PublicKeysRequest : GPBMessage
+ @property  int version
+ @property  int application
+
+  // class methods
+  +[PublicKeysRequest descriptor]
+
+
+PublicKeysResponse : GPBMessage
+ @property  int status
+ @property  NSMutableArray *appLeafsArray
+ @property  unsigned long appLeafsArray_Count
+ @property  NSMutableArray *tltLeafsArray
+ @property  unsigned long tltLeafsArray_Count
+ @property  NSMutableArray *intermediatesArray
+ @property  unsigned long intermediatesArray_Count
+ @property  NSData *vrfKey
+ @property  Signature *vrfSignature
+ @property  BOOL hasVrfSignature
+ @property  NSData *vrfPublicKey
+ @property  unsigned long tltBeginningMs
+ @property  PatConfigInclusionProof *patConfigProof
+ @property  BOOL hasPatConfigProof
+
+  // class methods
+  +[PublicKeysResponse descriptor]
+
+
+LeavesRequest : GPBMessage
+ @property  int version
+ @property  int logType
+ @property  int application
+ @property  unsigned long startNodePosition
+ @property  unsigned long endNodePosition
+
+  // class methods
+  +[LeavesRequest descriptor]
+
+
+LeavesResponse : GPBMessage
+ @property  int status
+ @property  int logType
+ @property  NSMutableArray *leavesArray
+ @property  unsigned long leavesArray_Count
+
+  // class methods
+  +[LeavesResponse descriptor]
+
+
+LeavesResponse_Leaf : GPBMessage
+ @property  NSData *nodeBytes
+ @property  unsigned long nodePosition
+
+  // class methods
+  +[LeavesResponse_Leaf descriptor]
+
+
+VRFWitness : GPBMessage <TransparencyVerifiable>
+ @property  TransparencyVRFVerifier *verifier
+ @property  NSData *message
+ @property  NSData *salt
+ @property  int type
+ @property  NSData *output
+ @property  NSData *proof
+
+  // class methods
+  +[VRFWitness descriptor]
+
+  // instance methods
+  -[VRFWitness message]
+  -[VRFWitness setMessage:]
+  -[VRFWitness salt]
+  -[VRFWitness verifyWithError:]
+  -[VRFWitness setSalt:]
+  -[VRFWitness verifier]
+  -[VRFWitness setVerifier:]
+
+
+VRFPublicKey : GPBMessage
+ @property  BOOL needsRefresh
+ @property  NSData *vrfKey
+ @property  int type
+
+  // class methods
+  +[VRFPublicKey descriptor]
+
+  // instance methods
+  -[VRFPublicKey needsRefresh]
+  -[VRFPublicKey setNeedsRefresh:]
+
+
+Mutation : GPBMessage
+ @property  int version
+ @property  int mutationType
+ @property  unsigned long mutationMs
+ @property  NSData *uriVrfoutput
+ @property  NSData *accountId
+ @property  NSData *deviceIdVrfoutput
+ @property  NSData *clientDataVrfoutput
+ @property  unsigned long appVersion
+
+  // class methods
+  +[Mutation descriptor]
+
+
+Signature : GPBMessage
+ @property  NSData *signature
+ @property  NSData *signingKeySpkihash
+ @property  int algorithm
+
+  // class methods
+  +[Signature descriptor]
+
+
+SignedMutationTimestamp : GPBMessage <TransparencyVerifiable>
+ @property  TransparencySignatureVerifier *verifier
+ @property  TransparencyManagedDataStore *dataStore
+ @property  NSString *application
+ @property  NSData *mutation
+ @property  Signature *signature
+ @property  BOOL hasSignature
+
+  // class methods
+  +[SignedMutationTimestamp descriptor]
+
+  // instance methods
+  -[SignedMutationTimestamp application]
+  -[SignedMutationTimestamp setApplication:]
+  -[SignedMutationTimestamp dataStore]
+  -[SignedMutationTimestamp setDataStore:]
+  -[SignedMutationTimestamp verifyWithError:]
+  -[SignedMutationTimestamp verifier]
+  -[SignedMutationTimestamp setVerifier:]
+  -[SignedMutationTimestamp parsedMutationWithError:]
+  -[SignedMutationTimestamp copyManagedObjectWithError:]
+
+
+SignedMapHead : GPBMessage <TransparencyVerifiable>
+ @property  TransparencySignatureVerifier *verifier
+ @property  MapHead *parsedMapHead
+ @property  NSData *mapHead
+ @property  Signature *signature
+ @property  BOOL hasSignature
+
+  // class methods
+  +[SignedMapHead descriptor]
+
+  // instance methods
+  -[SignedMapHead verifyWithError:]
+  -[SignedMapHead verifier]
+  -[SignedMapHead setVerifier:]
+  -[SignedMapHead parsedMapHead]
+
+
+MapHead : GPBMessage
+ @property  unsigned long logBeginningMs
+ @property  NSData *mapHeadHash
+ @property  int application
+ @property  LogHead *changeLogHead
+ @property  BOOL hasChangeLogHead
+ @property  unsigned long revision
+ @property  int mapType
+ @property  unsigned long treeId
+
+  // class methods
+  +[MapHead descriptor]
+
+
+InclusionProof : GPBMessage <TransparencyVerifiable>
+ @property  KTInclusionProofVerifier *verifier
+ @property  TransparencyManagedDataStore *dataStore
+ @property  NSData *uriVrfoutput
+ @property  MapEntry *mapEntry
+ @property  BOOL hasMapEntry
+ @property  LogEntry *perApplicationTreeEntry
+ @property  BOOL hasPerApplicationTreeEntry
+ @property  LogEntry *topLevelTreeEntry
+ @property  BOOL hasTopLevelTreeEntry
+
+  // class methods
+  +[InclusionProof descriptor]
+
+  // instance methods
+  -[InclusionProof dataStore]
+  -[InclusionProof setDataStore:]
+  -[InclusionProof verifyWithError:]
+  -[InclusionProof verifier]
+  -[InclusionProof setVerifier:]
+  -[InclusionProof mapLeafWithError:]
+
+
+PatConfigInclusionProof : GPBMessage <TransparencyVerifiable>
+ @property  KTPatConfigInclusionProofVerifier *verifier
+ @property  TransparencyManagedDataStore *dataStore
+ @property  unsigned long patLogBeginningMs
+ @property  unsigned long tltLogBeginningMs
+ @property  LogEntry *perApplicationTreeEntry
+ @property  BOOL hasPerApplicationTreeEntry
+ @property  LogEntry *topLevelTreeEntry
+ @property  BOOL hasTopLevelTreeEntry
+
+  // class methods
+  +[PatConfigInclusionProof descriptor]
+
+  // instance methods
+  -[PatConfigInclusionProof dataStore]
+  -[PatConfigInclusionProof setDataStore:]
+  -[PatConfigInclusionProof verifyWithError:]
+  -[PatConfigInclusionProof verifier]
+  -[PatConfigInclusionProof setVerifier:]
+  -[PatConfigInclusionProof vrfPublicKeyWithError:]
+  -[PatConfigInclusionProof tltLogBeginningMs]
+  -[PatConfigInclusionProof patLogBeginningMs]
+
+
+LogEntry : GPBMessage <TransparencyVerifiable>
+ @property  TransparencyLogEntryVerifier *verifier
+ @property  TransparencyManagedDataStore *dataStore
+ @property  int logType
+ @property  SignedLogHead *slh
+ @property  BOOL hasSlh
+ @property  NSMutableArray *hashesOfPeersInPathToRootArray
+ @property  unsigned long hashesOfPeersInPathToRootArray_Count
+ @property  NSData *nodeBytes
+ @property  unsigned long nodePosition
+
+  // class methods
+  +[LogEntry descriptor]
+
+  // instance methods
+  -[LogEntry dataStore]
+  -[LogEntry setDataStore:]
+  -[LogEntry verifyWithError:]
+  -[LogEntry verifier]
+  -[LogEntry setVerifier:]
+  -[LogEntry verifyTLTEntryForPerApplicationLogHead:error:]
+
+
+ChangeLogNode : GPBMessage
+ @property  NSMutableArray *changesArray
+ @property  unsigned long changesArray_Count
+
+  // class methods
+  +[ChangeLogNode descriptor]
+
+
+ChangeRecord : GPBMessage
+ @property  unsigned long mutationMs
+ @property  int mutationType
+ @property  NSData *uriVrfoutput
+ @property  NSData *accountId
+ @property  NSData *deviceIdVrfoutput
+ @property  NSData *clientDataVrfoutput
+ @property  unsigned long appVersion
+
+  // class methods
+  +[ChangeRecord descriptor]
+
+
+PerApplicationTreeNode : GPBMessage
+ @property  SignedMapHead *objectMapHead
+ @property  BOOL hasObjectMapHead
+ @property  SignedMapHead *revocationMapHead
+ @property  BOOL hasRevocationMapHead
+
+  // class methods
+  +[PerApplicationTreeNode descriptor]
+
+
+PerApplicationTreeConfigNode : GPBMessage
+ @property  VRFPublicKey *vrfPublicKey
+ @property  BOOL hasVrfPublicKey
+
+  // class methods
+  +[PerApplicationTreeConfigNode descriptor]
+
+
+TopLeveTreeNode : GPBMessage
+ @property  SignedLogHead *patHead
+ @property  BOOL hasPatHead
+
+  // class methods
+  +[TopLeveTreeNode descriptor]
+
+
+SignedLogHead : GPBMessage <TransparencyVerifiable>
+ @property  TransparencySignatureVerifier *verifier
+ @property  TransparencyManagedDataStore *dataStore
+ @property  LogHead *parsedLogHead
+ @property  NSData *logHead
+ @property  Signature *signature
+ @property  BOOL hasSignature
+
+  // class methods
+  +[SignedLogHead descriptor]
+
+  // instance methods
+  -[SignedLogHead dataStore]
+  -[SignedLogHead setDataStore:]
+  -[SignedLogHead verifyWithError:]
+  -[SignedLogHead verifier]
+  -[SignedLogHead setVerifier:]
+  -[SignedLogHead copyManagedObjectWithError:]
+  -[SignedLogHead parsedLogHead]
+
+
+LogHead : GPBMessage
+ @property  unsigned long logBeginningMs
+ @property  unsigned long logSize
+ @property  NSData *logHeadHash
+ @property  unsigned long revision
+ @property  int logType
+ @property  int application
+ @property  unsigned long treeId
+
+  // class methods
+  +[LogHead descriptor]
+
+
+MapEntry : GPBMessage <TransparencyVerifiable>
+ @property  TransparencyMapEntryVerifier *verifier
+ @property  SignedMapHead *smh
+ @property  BOOL hasSmh
+ @property  NSMutableArray *hashesOfPeersInPathToRootArray
+ @property  unsigned long hashesOfPeersInPathToRootArray_Count
+ @property  NSData *mapLeaf
+
+  // class methods
+  +[MapEntry descriptor]
+
+  // instance methods
+  -[MapEntry verifyWithError:]
+  -[MapEntry verifier]
+  -[MapEntry setVerifier:]
+
+
+MapLeaf : GPBMessage <TransparencyVerifiable>
+ @property  NSMutableArray *accountsArray
+ @property  unsigned long accountsArray_Count
+
+  // class methods
+  +[MapLeaf descriptor]
+
+  // instance methods
+  -[MapLeaf verifyWithError:]
+  -[MapLeaf recordForAccountId:deviceIdVRFOutput:appVersion:clientDataVRFoutput:]
+
+
+MapLeaf_Account : GPBMessage
+ @property  NSData *accountId
+ @property  NSMutableArray *devicesArray
+ @property  unsigned long devicesArray_Count
+
+  // class methods
+  +[MapLeaf_Account descriptor]
+
+
+MapLeaf_Device : GPBMessage
+ @property  NSData *deviceIdVrfoutput
+ @property  NSMutableArray *clientDataArray
+ @property  unsigned long clientDataArray_Count
+
+  // class methods
+  +[MapLeaf_Device descriptor]
+
+
+SingleDataRecord : GPBMessage
+ @property  unsigned long appVersion
+ @property  NSData *clientDataVrfoutput
+ @property  unsigned long markedForDeletionMs
+ @property  unsigned long deletionEscrowExpiryMs
+ @property  unsigned long addedMs
+
+  // class methods
+  +[SingleDataRecord descriptor]
+
+
+TransparencyTrustedKeyStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *trustedKeys
+ @property  TransparencySignatureVerifier *signatureVerifier
+
+  // instance methods
+  -[TransparencyTrustedKeyStore .cxx_destruct]
+  -[TransparencyTrustedKeyStore signatureVerifier]
+  -[TransparencyTrustedKeyStore setTrustedKeys:]
+  -[TransparencyTrustedKeyStore initWithTrustedKeys:]
+  -[TransparencyTrustedKeyStore setSignatureVerifier:]
+  -[TransparencyTrustedKeyStore trustedKeys]
+
+
+GPBCodedInputStream : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[GPBCodedInputStream streamWithData:]
+
+  // instance methods
+  -[GPBCodedInputStream dealloc]
+  -[GPBCodedInputStream initWithData:]
+  -[GPBCodedInputStream isAtEnd]
+  -[GPBCodedInputStream position]
+  -[GPBCodedInputStream readDouble]
+  -[GPBCodedInputStream readFloat]
+  -[GPBCodedInputStream readInt32]
+  -[GPBCodedInputStream readInt64]
+  -[GPBCodedInputStream readFixed32]
+  -[GPBCodedInputStream readFixed64]
+  -[GPBCodedInputStream readString]
+  -[GPBCodedInputStream skipField:]
+  -[GPBCodedInputStream readMessage:extensionRegistry:]
+  -[GPBCodedInputStream skipMessage]
+  -[GPBCodedInputStream readTag]
+  -[GPBCodedInputStream checkLastTagWas:]
+  -[GPBCodedInputStream pushLimit:]
+  -[GPBCodedInputStream popLimit:]
+  -[GPBCodedInputStream readUInt64]
+  -[GPBCodedInputStream readBool]
+  -[GPBCodedInputStream readGroup:message:extensionRegistry:]
+  -[GPBCodedInputStream readUnknownGroup:message:]
+  -[GPBCodedInputStream readMapEntry:extensionRegistry:field:parentMessage:]
+  -[GPBCodedInputStream readBytes]
+  -[GPBCodedInputStream readUInt32]
+  -[GPBCodedInputStream readEnum]
+  -[GPBCodedInputStream readSFixed32]
+  -[GPBCodedInputStream readSFixed64]
+  -[GPBCodedInputStream readSInt32]
+  -[GPBCodedInputStream readSInt64]
+
+
+TransparencyError : NSError /usr/lib/libobjc.A.dylib
+  // class methods
+  +[TransparencyError errorWithDomain:code:description:]
+  +[TransparencyError errorWithDomain:code:underlyingError:description:]
+  +[TransparencyError errorWithDomain:code:errorLevel:underlyingError:description:arguments:]
+  +[TransparencyError errorWithDomain:code:errorLevel:underlyingError:description:]
+
+
+GPBDurationRoot : GPBRootObject
+
+GPBDuration : GPBMessage
+ @property  double timeInterval
+ @property  double timeIntervalSince1970
+ @property  long long seconds
+ @property  int nanos
+
+  // class methods
+  +[GPBDuration descriptor]
+
+  // instance methods
+  -[GPBDuration timeIntervalSince1970]
+  -[GPBDuration timeInterval]
+  -[GPBDuration initWithTimeIntervalSince1970:]
+  -[GPBDuration setTimeInterval:]
+  -[GPBDuration initWithTimeInterval:]
+  -[GPBDuration setTimeIntervalSince1970:]
+
+
+GPBStructRoot : GPBRootObject
+
+GPBStruct : GPBMessage
+ @property  NSMutableDictionary *fields
+ @property  unsigned long fields_Count
+
+  // class methods
+  +[GPBStruct descriptor]
+
+
+GPBValue : GPBMessage
+ @property  int kindOneOfCase
+ @property  int nullValue
+ @property  double numberValue
+ @property  NSString *stringValue
+ @property  BOOL boolValue
+ @property  GPBStruct *structValue
+ @property  GPBListValue *listValue
+
+  // class methods
+  +[GPBValue descriptor]
+
+
+GPBListValue : GPBMessage
+ @property  NSMutableArray *valuesArray
+ @property  unsigned long valuesArray_Count
+
+  // class methods
+  +[GPBListValue descriptor]
+
+
+GPBEmptyRoot : GPBRootObject
+
+GPBEmpty : GPBMessage
+  // class methods
+  +[GPBEmpty descriptor]
+
+
+KTLoggableData : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSData *deviceVRFOutput
+ @property  NSData *clientDataVRFOutput
+ @property  NSData *clientData
+ @property  NSData *deviceID
+ @property  BOOL successfulSync
+ @property  BOOL marked
+
+  // class methods
+  +[KTLoggableData supportsSecureCoding]
+
+  // instance methods
+  -[KTLoggableData isEqual:]
+  -[KTLoggableData encodeWithCoder:]
+  -[KTLoggableData initWithCoder:]
+  -[KTLoggableData .cxx_destruct]
+  -[KTLoggableData deviceID]
+  -[KTLoggableData setDeviceID:]
+  -[KTLoggableData clientData]
+  -[KTLoggableData setClientData:]
+  -[KTLoggableData clientDataVRFOutput]
+  -[KTLoggableData setClientDataVRFOutput:]
+  -[KTLoggableData successfulSync]
+  -[KTLoggableData marked]
+  -[KTLoggableData initWithClientData:]
+  -[KTLoggableData setSuccessfulSync:]
+  -[KTLoggableData setMarked:]
+  -[KTLoggableData deviceVRFOutput]
+  -[KTLoggableData setDeviceVRFOutput:]
+
+
+GPBTypeRoot : GPBRootObject
+
+GPBType : GPBMessage
+ @property  NSString *name
+ @property  NSMutableArray *fieldsArray
+ @property  unsigned long fieldsArray_Count
+ @property  NSMutableArray *oneofsArray
+ @property  unsigned long oneofsArray_Count
+ @property  NSMutableArray *optionsArray
+ @property  unsigned long optionsArray_Count
+ @property  GPBSourceContext *sourceContext
+ @property  BOOL hasSourceContext
+ @property  int syntax
+
+  // class methods
+  +[GPBType descriptor]
+
+
+GPBField : GPBMessage
+ @property  int kind
+ @property  int cardinality
+ @property  int number
+ @property  NSString *name
+ @property  NSString *typeURL
+ @property  int oneofIndex
+ @property  BOOL packed
+ @property  NSMutableArray *optionsArray
+ @property  unsigned long optionsArray_Count
+ @property  NSString *jsonName
+ @property  NSString *defaultValue
+
+  // class methods
+  +[GPBField descriptor]
+
+
+GPBEnum : GPBMessage
+ @property  NSString *name
+ @property  NSMutableArray *enumvalueArray
+ @property  unsigned long enumvalueArray_Count
+ @property  NSMutableArray *optionsArray
+ @property  unsigned long optionsArray_Count
+ @property  GPBSourceContext *sourceContext
+ @property  BOOL hasSourceContext
+ @property  int syntax
+
+  // class methods
+  +[GPBEnum descriptor]
+
+
+GPBEnumValue : GPBMessage
+ @property  NSString *name
+ @property  int number
+ @property  NSMutableArray *optionsArray
+ @property  unsigned long optionsArray_Count
+
+  // class methods
+  +[GPBEnumValue descriptor]
+
+
+GPBOption : GPBMessage
+ @property  NSString *name
+ @property  GPBAny *value
+ @property  BOOL hasValue
+
+  // class methods
+  +[GPBOption descriptor]
+
+
+TransparencySignatureVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *trustedKeys
+ @property  BOOL needsRefresh
+
+  // class methods
+  +[TransparencySignatureVerifier verifyMessage:signature:spkiHash:trustedKeys:algorithm:error:]
+  +[TransparencySignatureVerifier secKeyAlgorithmForProtoAlgorithm:]
+  +[TransparencySignatureVerifier protoAlgorithmForSecKeyAlgorithm:]
+
+  // instance methods
+  -[TransparencySignatureVerifier .cxx_destruct]
+  -[TransparencySignatureVerifier needsRefresh]
+  -[TransparencySignatureVerifier setNeedsRefresh:]
+  -[TransparencySignatureVerifier setTrustedKeys:]
+  -[TransparencySignatureVerifier initWithTrustedKeys:]
+  -[TransparencySignatureVerifier trustedKeys]
+  -[TransparencySignatureVerifier verifyMessage:signature:spkiHash:algorithm:error:]
+
+
+GPBUnknownFieldSet : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+  // class methods
+  +[GPBUnknownFieldSet isFieldTag:]
+
+  // instance methods
+  -[GPBUnknownFieldSet dealloc]
+  -[GPBUnknownFieldSet isEqual:]
+  -[GPBUnknownFieldSet copyWithZone:]
+  -[GPBUnknownFieldSet data]
+  -[GPBUnknownFieldSet addField:]
+  -[GPBUnknownFieldSet serializedSize]
+  -[GPBUnknownFieldSet addUnknownMapEntry:value:]
+  -[GPBUnknownFieldSet writeToCodedOutputStream:]
+  -[GPBUnknownFieldSet mergeFromCodedInputStream:]
+  -[GPBUnknownFieldSet mutableFieldForNumber:create:]
+  -[GPBUnknownFieldSet mergeFieldFrom:input:]
+  -[GPBUnknownFieldSet hasField:]
+  -[GPBUnknownFieldSet getField:]
+  -[GPBUnknownFieldSet countOfFields]
+  -[GPBUnknownFieldSet sortedFields]
+  -[GPBUnknownFieldSet writeAsMessageSetTo:]
+  -[GPBUnknownFieldSet serializedSizeAsMessageSet]
+  -[GPBUnknownFieldSet mergeUnknownFields:]
+  -[GPBUnknownFieldSet mergeFromData:]
+  -[GPBUnknownFieldSet mergeVarintField:value:]
+  -[GPBUnknownFieldSet mergeMessageSetMessage:data:]
+  -[GPBUnknownFieldSet getTags:]
+
+
+GPBUnknownField : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  int number
+ @property  GPBUInt64Array *varintList
+ @property  GPBUInt32Array *fixed32List
+ @property  GPBUInt64Array *fixed64List
+ @property  NSArray *lengthDelimitedList
+ @property  NSArray *groupList
+
+  // instance methods
+  -[GPBUnknownField dealloc]
+  -[GPBUnknownField isEqual:]
+  -[GPBUnknownField copyWithZone:]
+  -[GPBUnknownField number]
+  -[GPBUnknownField initWithNumber:]
+  -[GPBUnknownField groupList]
+  -[GPBUnknownField addGroup:]
+  -[GPBUnknownField serializedSize]
+  -[GPBUnknownField writeToOutput:]
+  -[GPBUnknownField addVarint:]
+  -[GPBUnknownField addFixed64:]
+  -[GPBUnknownField addLengthDelimited:]
+  -[GPBUnknownField addFixed32:]
+  -[GPBUnknownField writeAsMessageSetExtensionToOutput:]
+  -[GPBUnknownField serializedSizeAsMessageSetExtension]
+  -[GPBUnknownField mergeFromField:]
+  -[GPBUnknownField varintList]
+  -[GPBUnknownField fixed32List]
+  -[GPBUnknownField fixed64List]
+  -[GPBUnknownField lengthDelimitedList]
+
+
+KTApplicationPublicKeyStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *application
+ @property  TransparencyManagedDataStore *dataStore
+ @property  NSData *patConfigProof
+ @property  VRFPublicKey *vrfKey
+ @property  int vrfType
+ @property  NSDictionary *trustedAppSigningKeys
+ @property  NSArray *trustedAppLeafs
+ @property  NSDictionary *trustedTltSigningKeys
+ @property  NSArray *trustedTltLeafs
+ @property  NSArray *trustedIntermediates
+ @property  TransparencyTrustedKeyStore *appKeyStore
+ @property  TransparencyTrustedKeyStore *tltKeyStore
+ @property  unsigned long tltLogBeginningMs
+ @property  unsigned long patLogBeginningMs
+ @property  BOOL ready
+
+  // instance methods
+  -[KTApplicationPublicKeyStore .cxx_destruct]
+  -[KTApplicationPublicKeyStore ready]
+  -[KTApplicationPublicKeyStore application]
+  -[KTApplicationPublicKeyStore setApplication:]
+  -[KTApplicationPublicKeyStore dataStore]
+  -[KTApplicationPublicKeyStore setDataStore:]
+  -[KTApplicationPublicKeyStore vrfType]
+  -[KTApplicationPublicKeyStore vrfKey]
+  -[KTApplicationPublicKeyStore appKeyStore]
+  -[KTApplicationPublicKeyStore tltKeyStore]
+  -[KTApplicationPublicKeyStore clearState:]
+  -[KTApplicationPublicKeyStore trustedAppSigningKeys]
+  -[KTApplicationPublicKeyStore trustedTltSigningKeys]
+  -[KTApplicationPublicKeyStore setVrfKey:]
+  -[KTApplicationPublicKeyStore setPatConfigProof:]
+  -[KTApplicationPublicKeyStore setTrustedAppSigningKeys:]
+  -[KTApplicationPublicKeyStore setTrustedTltSigningKeys:]
+  -[KTApplicationPublicKeyStore setTrustedIntermediates:]
+  -[KTApplicationPublicKeyStore setTltLogBeginningMs:]
+  -[KTApplicationPublicKeyStore setPatLogBeginningMs:]
+  -[KTApplicationPublicKeyStore tltLogBeginningMs]
+  -[KTApplicationPublicKeyStore patLogBeginningMs]
+  -[KTApplicationPublicKeyStore verifyCertificates:intermediates:application:error:]
+  -[KTApplicationPublicKeyStore copyVRFKeyFromConfigProof:error:]
+  -[KTApplicationPublicKeyStore detectEpochChangeAndResetData:patLogBeginningMs:error:]
+  -[KTApplicationPublicKeyStore patConfigProof]
+  -[KTApplicationPublicKeyStore processKeyData:tltLeafs:intermediates:patConfigProof:error:]
+  -[KTApplicationPublicKeyStore processPublicKeysResponse:error:]
+  -[KTApplicationPublicKeyStore startLogBeginTimesSampler]
+  -[KTApplicationPublicKeyStore processDiskState:error:]
+  -[KTApplicationPublicKeyStore copyKeyStoreState]
+  -[KTApplicationPublicKeyStore initWithApplication:dataStore:response:error:]
+  -[KTApplicationPublicKeyStore initWithApplication:dataStore:diskState:error:]
+  -[KTApplicationPublicKeyStore setAppKeyStore:]
+  -[KTApplicationPublicKeyStore setTltKeyStore:]
+  -[KTApplicationPublicKeyStore setVrfType:]
+  -[KTApplicationPublicKeyStore trustedAppLeafs]
+  -[KTApplicationPublicKeyStore setTrustedAppLeafs:]
+  -[KTApplicationPublicKeyStore trustedTltLeafs]
+  -[KTApplicationPublicKeyStore setTrustedTltLeafs:]
+  -[KTApplicationPublicKeyStore trustedIntermediates]
+
+
+KTPublicKeyStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *applicationKeyStores
+ @property  NSArray *applications
+ @property  BOOL forceRefresh
+ @property  TransparencyManagedDataStore *dataStore
+ @property  BOOL ready
+
+  // instance methods
+  -[KTPublicKeyStore .cxx_destruct]
+  -[KTPublicKeyStore applications]
+  -[KTPublicKeyStore setApplications:]
+  -[KTPublicKeyStore ready]
+  -[KTPublicKeyStore dataStore]
+  -[KTPublicKeyStore initWithDataStore:]
+  -[KTPublicKeyStore setDataStore:]
+  -[KTPublicKeyStore forceRefresh]
+  -[KTPublicKeyStore configureWithClient:ignoreCachedKeys:completionHandler:]
+  -[KTPublicKeyStore applicationKeyStores]
+  -[KTPublicKeyStore clearApplicationState:error:]
+  -[KTPublicKeyStore configureWithClient:completionHandler:]
+  -[KTPublicKeyStore configureWithDisk:]
+  -[KTPublicKeyStore copyKeyStoreState]
+  -[KTPublicKeyStore copyMetadata]
+  -[KTPublicKeyStore readPublicKeyStoreFromDisk:]
+  -[KTPublicKeyStore writePublicKeyStoreToDisk:error:]
+  -[KTPublicKeyStore createApplicationKeyStore:keyStoreResponse:error:]
+  -[KTPublicKeyStore setForceRefresh:]
+  -[KTPublicKeyStore saveDiskApplicationKeyStore:error:]
+  -[KTPublicKeyStore fetchKeyStore:application:completionHandler:]
+  -[KTPublicKeyStore createApplicationKeyStore:keyStoreData:error:]
+  -[KTPublicKeyStore clearDiskApplicationKeyStore:error:]
+  -[KTPublicKeyStore hasApplicationPublicKeyStoreOnDisk:error:]
+  -[KTPublicKeyStore setApplicationKeyStores:]
+
+
+TransparencyXPCInterface : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyXPCInterface interface]
+
+
+TransparencyLogSession : NSObject /usr/lib/libSystem.B.dylib <NSURLSessionDelegate>
+ @property  NSURLSession *backgroundSession
+ @property  NSURLSession *foregroundSession
+ @property  NSObject<OS_dispatch_workloop> *workloop
+ @property  unsigned long fetchCount
+ @property  unsigned long downloadCount
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TransparencyLogSession requestIdentifier:]
+  +[TransparencyLogSession requestDownloadFilename:]
+  +[TransparencyLogSession requestDownloadLocation:error:]
+
+  // instance methods
+  -[TransparencyLogSession .cxx_destruct]
+  -[TransparencyLogSession URLSession:task:didCompleteWithError:]
+  -[TransparencyLogSession URLSession:downloadTask:didFinishDownloadingToURL:]
+  -[TransparencyLogSession URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:]
+  -[TransparencyLogSession workloop]
+  -[TransparencyLogSession URLSession:task:_willSendRequestForEstablishedConnection:completionHandler:]
+  -[TransparencyLogSession setBackgroundSession:]
+  -[TransparencyLogSession backgroundSession]
+  -[TransparencyLogSession fetch:completionHandler:]
+  -[TransparencyLogSession download:completionHandler:]
+  -[TransparencyLogSession setWorkloop:]
+  -[TransparencyLogSession createAuthenticatedForegroundSession]
+  -[TransparencyLogSession fetchCount]
+  -[TransparencyLogSession setFetchCount:]
+  -[TransparencyLogSession createErrorFromURLResonse:data:error:]
+  -[TransparencyLogSession downloadCount]
+  -[TransparencyLogSession setDownloadCount:]
+  -[TransparencyLogSession initWithWorkloop:]
+  -[TransparencyLogSession foregroundSession]
+  -[TransparencyLogSession setForegroundSession:]
+
+
+TransparencyLogEntryVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  TransparencyTrustedKeyStore *trustedKeyStore
+
+  // instance methods
+  -[TransparencyLogEntryVerifier .cxx_destruct]
+  -[TransparencyLogEntryVerifier trustedKeyStore]
+  -[TransparencyLogEntryVerifier initWithTrustedKeyStore:]
+  -[TransparencyLogEntryVerifier verifyLogEntryWithLogLeaf:position:hashesToRoot:signedLogHead:error:]
+  -[TransparencyLogEntryVerifier verifyInclusionOfLogLeaf:position:treeSize:treeHead:hashPath:error:]
+  -[TransparencyLogEntryVerifier setTrustedKeyStore:]
+
+
+KTTransparentData : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSMutableArray *accounts
+ @property  NSData *uriVRFOutput
+ @property  NSData *inclusionProof
+
+  // class methods
+  +[KTTransparentData supportsSecureCoding]
+  +[KTTransparentData filterLoggableDatas:deviceIdVRFOutput:]
+  +[KTTransparentData filterLoggableDatas:clientDataVRFOutput:]
+
+  // instance methods
+  -[KTTransparentData isEqual:]
+  -[KTTransparentData copy]
+  -[KTTransparentData encodeWithCoder:]
+  -[KTTransparentData initWithCoder:]
+  -[KTTransparentData .cxx_destruct]
+  -[KTTransparentData serialize]
+  -[KTTransparentData accounts]
+  -[KTTransparentData setAccounts:]
+  -[KTTransparentData accountForAccountId:]
+  -[KTTransparentData updateWithMutation:error:]
+  -[KTTransparentData inclusionProof]
+  -[KTTransparentData uriVRFOutput]
+  -[KTTransparentData setInclusionProof:]
+  -[KTTransparentData setUriVRFOutput:]
+  -[KTTransparentData updateWithMapLeaf:error:]
+  -[KTTransparentData updateWithSMTs:error:]
+  -[KTTransparentData initWithUriVRFOutput:mapLeaf:pendingSMTs:error:]
+  -[KTTransparentData markAccountsWithMutationMs:]
+  -[KTTransparentData addAccountsObject:]
+  -[KTTransparentData removeAccountsObject:]
+  -[KTTransparentData mutationsFromSMTs:error:]
+  -[KTTransparentData sortMutationsByTimestamp:]
+  -[KTTransparentData initWithUriVRFOutput:]
+  -[KTTransparentData validateAndUpdateWithSyncedLoggableDatas:accountId:error:]
+  -[KTTransparentData validateOtherAccountIDsInactiveForAccountId:error:]
+  -[KTTransparentData validateActiveClientDatasForAccountId:error:]
+  -[KTTransparentData validateAndUpdateWithServerLoggableDatas:accountId:error:]
+
+
+GPBInt32Array : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBInt32Array array]
+  +[GPBInt32Array arrayWithCapacity:]
+  +[GPBInt32Array arrayWithValue:]
+  +[GPBInt32Array arrayWithValueArray:]
+
+  // instance methods
+  -[GPBInt32Array init]
+  -[GPBInt32Array dealloc]
+  -[GPBInt32Array isEqual:]
+  -[GPBInt32Array copyWithZone:]
+  -[GPBInt32Array initWithCapacity:]
+  -[GPBInt32Array count]
+  -[GPBInt32Array valueAtIndex:]
+  -[GPBInt32Array initWithValues:count:]
+  -[GPBInt32Array addValue:]
+  -[GPBInt32Array removeAll]
+  -[GPBInt32Array removeValueAtIndex:]
+  -[GPBInt32Array enumerateValuesWithBlock:]
+  -[GPBInt32Array addValuesFromArray:]
+  -[GPBInt32Array initWithValueArray:]
+  -[GPBInt32Array internalResizeToCapacity:]
+  -[GPBInt32Array enumerateValuesWithOptions:usingBlock:]
+  -[GPBInt32Array addValues:count:]
+  -[GPBInt32Array insertValue:atIndex:]
+  -[GPBInt32Array replaceValueAtIndex:withValue:]
+  -[GPBInt32Array exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBUInt32Array : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBUInt32Array array]
+  +[GPBUInt32Array arrayWithCapacity:]
+  +[GPBUInt32Array arrayWithValue:]
+  +[GPBUInt32Array arrayWithValueArray:]
+
+  // instance methods
+  -[GPBUInt32Array init]
+  -[GPBUInt32Array dealloc]
+  -[GPBUInt32Array isEqual:]
+  -[GPBUInt32Array copyWithZone:]
+  -[GPBUInt32Array initWithCapacity:]
+  -[GPBUInt32Array count]
+  -[GPBUInt32Array valueAtIndex:]
+  -[GPBUInt32Array initWithValues:count:]
+  -[GPBUInt32Array addValue:]
+  -[GPBUInt32Array removeAll]
+  -[GPBUInt32Array removeValueAtIndex:]
+  -[GPBUInt32Array enumerateValuesWithBlock:]
+  -[GPBUInt32Array addValuesFromArray:]
+  -[GPBUInt32Array initWithValueArray:]
+  -[GPBUInt32Array internalResizeToCapacity:]
+  -[GPBUInt32Array enumerateValuesWithOptions:usingBlock:]
+  -[GPBUInt32Array addValues:count:]
+  -[GPBUInt32Array insertValue:atIndex:]
+  -[GPBUInt32Array replaceValueAtIndex:withValue:]
+  -[GPBUInt32Array exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBInt64Array : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBInt64Array array]
+  +[GPBInt64Array arrayWithCapacity:]
+  +[GPBInt64Array arrayWithValue:]
+  +[GPBInt64Array arrayWithValueArray:]
+
+  // instance methods
+  -[GPBInt64Array init]
+  -[GPBInt64Array dealloc]
+  -[GPBInt64Array isEqual:]
+  -[GPBInt64Array copyWithZone:]
+  -[GPBInt64Array initWithCapacity:]
+  -[GPBInt64Array count]
+  -[GPBInt64Array valueAtIndex:]
+  -[GPBInt64Array initWithValues:count:]
+  -[GPBInt64Array addValue:]
+  -[GPBInt64Array removeAll]
+  -[GPBInt64Array removeValueAtIndex:]
+  -[GPBInt64Array enumerateValuesWithBlock:]
+  -[GPBInt64Array addValuesFromArray:]
+  -[GPBInt64Array initWithValueArray:]
+  -[GPBInt64Array internalResizeToCapacity:]
+  -[GPBInt64Array enumerateValuesWithOptions:usingBlock:]
+  -[GPBInt64Array addValues:count:]
+  -[GPBInt64Array insertValue:atIndex:]
+  -[GPBInt64Array replaceValueAtIndex:withValue:]
+  -[GPBInt64Array exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBUInt64Array : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBUInt64Array array]
+  +[GPBUInt64Array arrayWithCapacity:]
+  +[GPBUInt64Array arrayWithValue:]
+  +[GPBUInt64Array arrayWithValueArray:]
+
+  // instance methods
+  -[GPBUInt64Array init]
+  -[GPBUInt64Array dealloc]
+  -[GPBUInt64Array isEqual:]
+  -[GPBUInt64Array copyWithZone:]
+  -[GPBUInt64Array initWithCapacity:]
+  -[GPBUInt64Array count]
+  -[GPBUInt64Array valueAtIndex:]
+  -[GPBUInt64Array initWithValues:count:]
+  -[GPBUInt64Array addValue:]
+  -[GPBUInt64Array removeAll]
+  -[GPBUInt64Array removeValueAtIndex:]
+  -[GPBUInt64Array enumerateValuesWithBlock:]
+  -[GPBUInt64Array addValuesFromArray:]
+  -[GPBUInt64Array initWithValueArray:]
+  -[GPBUInt64Array internalResizeToCapacity:]
+  -[GPBUInt64Array enumerateValuesWithOptions:usingBlock:]
+  -[GPBUInt64Array addValues:count:]
+  -[GPBUInt64Array insertValue:atIndex:]
+  -[GPBUInt64Array replaceValueAtIndex:withValue:]
+  -[GPBUInt64Array exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBFloatArray : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBFloatArray array]
+  +[GPBFloatArray arrayWithCapacity:]
+  +[GPBFloatArray arrayWithValue:]
+  +[GPBFloatArray arrayWithValueArray:]
+
+  // instance methods
+  -[GPBFloatArray init]
+  -[GPBFloatArray dealloc]
+  -[GPBFloatArray isEqual:]
+  -[GPBFloatArray copyWithZone:]
+  -[GPBFloatArray initWithCapacity:]
+  -[GPBFloatArray count]
+  -[GPBFloatArray valueAtIndex:]
+  -[GPBFloatArray initWithValues:count:]
+  -[GPBFloatArray addValue:]
+  -[GPBFloatArray removeAll]
+  -[GPBFloatArray removeValueAtIndex:]
+  -[GPBFloatArray enumerateValuesWithBlock:]
+  -[GPBFloatArray addValuesFromArray:]
+  -[GPBFloatArray initWithValueArray:]
+  -[GPBFloatArray internalResizeToCapacity:]
+  -[GPBFloatArray enumerateValuesWithOptions:usingBlock:]
+  -[GPBFloatArray addValues:count:]
+  -[GPBFloatArray insertValue:atIndex:]
+  -[GPBFloatArray replaceValueAtIndex:withValue:]
+  -[GPBFloatArray exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBDoubleArray : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBDoubleArray array]
+  +[GPBDoubleArray arrayWithCapacity:]
+  +[GPBDoubleArray arrayWithValue:]
+  +[GPBDoubleArray arrayWithValueArray:]
+
+  // instance methods
+  -[GPBDoubleArray init]
+  -[GPBDoubleArray dealloc]
+  -[GPBDoubleArray isEqual:]
+  -[GPBDoubleArray copyWithZone:]
+  -[GPBDoubleArray initWithCapacity:]
+  -[GPBDoubleArray count]
+  -[GPBDoubleArray valueAtIndex:]
+  -[GPBDoubleArray initWithValues:count:]
+  -[GPBDoubleArray addValue:]
+  -[GPBDoubleArray removeAll]
+  -[GPBDoubleArray removeValueAtIndex:]
+  -[GPBDoubleArray enumerateValuesWithBlock:]
+  -[GPBDoubleArray addValuesFromArray:]
+  -[GPBDoubleArray initWithValueArray:]
+  -[GPBDoubleArray internalResizeToCapacity:]
+  -[GPBDoubleArray enumerateValuesWithOptions:usingBlock:]
+  -[GPBDoubleArray addValues:count:]
+  -[GPBDoubleArray insertValue:atIndex:]
+  -[GPBDoubleArray replaceValueAtIndex:withValue:]
+  -[GPBDoubleArray exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBBoolArray : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[GPBBoolArray array]
+  +[GPBBoolArray arrayWithCapacity:]
+  +[GPBBoolArray arrayWithValue:]
+  +[GPBBoolArray arrayWithValueArray:]
+
+  // instance methods
+  -[GPBBoolArray init]
+  -[GPBBoolArray dealloc]
+  -[GPBBoolArray isEqual:]
+  -[GPBBoolArray copyWithZone:]
+  -[GPBBoolArray initWithCapacity:]
+  -[GPBBoolArray count]
+  -[GPBBoolArray valueAtIndex:]
+  -[GPBBoolArray initWithValues:count:]
+  -[GPBBoolArray addValue:]
+  -[GPBBoolArray removeAll]
+  -[GPBBoolArray removeValueAtIndex:]
+  -[GPBBoolArray enumerateValuesWithBlock:]
+  -[GPBBoolArray addValuesFromArray:]
+  -[GPBBoolArray initWithValueArray:]
+  -[GPBBoolArray internalResizeToCapacity:]
+  -[GPBBoolArray enumerateValuesWithOptions:usingBlock:]
+  -[GPBBoolArray addValues:count:]
+  -[GPBBoolArray insertValue:atIndex:]
+  -[GPBBoolArray replaceValueAtIndex:withValue:]
+  -[GPBBoolArray exchangeValueAtIndex:withValueAtIndex:]
+
+
+GPBEnumArray : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long count
+ @property  ^? validationFunc
+
+  // class methods
+  +[GPBEnumArray array]
+  +[GPBEnumArray arrayWithValueArray:]
+  +[GPBEnumArray arrayWithValidationFunction:]
+  +[GPBEnumArray arrayWithValidationFunction:rawValue:]
+  +[GPBEnumArray arrayWithValidationFunction:capacity:]
+
+  // instance methods
+  -[GPBEnumArray init]
+  -[GPBEnumArray dealloc]
+  -[GPBEnumArray isEqual:]
+  -[GPBEnumArray copyWithZone:]
+  -[GPBEnumArray count]
+  -[GPBEnumArray valueAtIndex:]
+  -[GPBEnumArray addValue:]
+  -[GPBEnumArray removeAll]
+  -[GPBEnumArray removeValueAtIndex:]
+  -[GPBEnumArray validationFunc]
+  -[GPBEnumArray initWithValidationFunction:]
+  -[GPBEnumArray initWithValidationFunction:capacity:]
+  -[GPBEnumArray enumerateValuesWithBlock:]
+  -[GPBEnumArray enumerateRawValuesWithBlock:]
+  -[GPBEnumArray initWithValueArray:]
+  -[GPBEnumArray internalResizeToCapacity:]
+  -[GPBEnumArray enumerateValuesWithOptions:usingBlock:]
+  -[GPBEnumArray addValues:count:]
+  -[GPBEnumArray insertValue:atIndex:]
+  -[GPBEnumArray replaceValueAtIndex:withValue:]
+  -[GPBEnumArray exchangeValueAtIndex:withValueAtIndex:]
+  -[GPBEnumArray initWithValidationFunction:rawValues:count:]
+  -[GPBEnumArray enumerateRawValuesWithOptions:usingBlock:]
+  -[GPBEnumArray addRawValues:count:]
+  -[GPBEnumArray rawValueAtIndex:]
+  -[GPBEnumArray addRawValue:]
+  -[GPBEnumArray insertRawValue:atIndex:]
+  -[GPBEnumArray replaceValueAtIndex:withRawValue:]
+  -[GPBEnumArray addRawValuesFromArray:]
+
+
+GPBAutocreatedArray : NSMutableArray
+  // instance methods
+  -[GPBAutocreatedArray dealloc]
+  -[GPBAutocreatedArray copyWithZone:]
+  -[GPBAutocreatedArray mutableCopyWithZone:]
+  -[GPBAutocreatedArray count]
+  -[GPBAutocreatedArray addObject:]
+  -[GPBAutocreatedArray removeObject:]
+  -[GPBAutocreatedArray countByEnumeratingWithState:objects:count:]
+  -[GPBAutocreatedArray objectAtIndex:]
+  -[GPBAutocreatedArray insertObject:atIndex:]
+  -[GPBAutocreatedArray removeObjectAtIndex:]
+  -[GPBAutocreatedArray replaceObjectAtIndex:withObject:]
+  -[GPBAutocreatedArray enumerateObjectsWithOptions:usingBlock:]
+  -[GPBAutocreatedArray removeLastObject]
+  -[GPBAutocreatedArray enumerateObjectsUsingBlock:]
+
+
+KTLogRequest : TransparencyRequest
+ @property  NSString *application
+ @property  BOOL isGET
+ @property  NSURL *url
+ @property  NSData *data
+ @property  NSUUID *uuid
+ @property  double timeout
+
+  // instance methods
+  -[KTLogRequest .cxx_destruct]
+  -[KTLogRequest data]
+  -[KTLogRequest setData:]
+  -[KTLogRequest url]
+  -[KTLogRequest uuid]
+  -[KTLogRequest setUuid:]
+  -[KTLogRequest timeout]
+  -[KTLogRequest setTimeout:]
+  -[KTLogRequest setUrl:]
+  -[KTLogRequest application]
+  -[KTLogRequest setApplication:]
+  -[KTLogRequest setIsGET:]
+  -[KTLogRequest isGET]
+  -[KTLogRequest createGETRequestForURL:timeout:error:]
+  -[KTLogRequest createPOSTRequestForURL:timeout:contents:error:]
+  -[KTLogRequest copyRequest:]
+  -[KTLogRequest initGETWithURL:application:]
+  -[KTLogRequest initPOSTWithURL:data:uuid:application:]
+
+
+TransparencySFAnalytics : SFAnalytics /System/Library/Frameworks/Foundation.framework/Foundation
+  // class methods
+  +[TransparencySFAnalytics databasePath]
+  +[TransparencySFAnalytics logger]
+
+
+TransparencyAnalytics : NSObject /usr/lib/libSystem.B.dylib
+ @property  TransparencySFAnalytics *sfanalytics
+
+  // class methods
+  +[TransparencyAnalytics logger]
+  +[TransparencyAnalytics hasInternalDiagnostics]
+  +[TransparencyAnalytics formatEventName:application:]
+  +[TransparencyAnalytics doWithAnalyticsForEventName:error:block:]
+  +[TransparencyAnalytics doKTResultWithAnalyticsForEventName:error:block:]
+
+  // instance methods
+  -[TransparencyAnalytics .cxx_destruct]
+  -[TransparencyAnalytics logResultForEvent:hardFailure:result:]
+  -[TransparencyAnalytics logResultForEvent:hardFailure:result:withAttributes:]
+  -[TransparencyAnalytics logSuccessForEventNamed:]
+  -[TransparencyAnalytics logHardFailureForEventNamed:withAttributes:]
+  -[TransparencyAnalytics logSoftFailureForEventNamed:withAttributes:]
+  -[TransparencyAnalytics noteEventNamed:]
+  -[TransparencyAnalytics removeMultiSamplerForName:]
+  -[TransparencyAnalytics logMetric:withName:]
+  -[TransparencyAnalytics addMultiSamplerForName:withTimeInterval:block:]
+  -[TransparencyAnalytics setSfanalytics:]
+  -[TransparencyAnalytics sfanalytics]
+
+
+KTContext : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *applicationID
+ @property  KTApplicationPublicKeyStore *applicationKeyStore
+ @property  TransparencyManagedDataStore *dataStore
+ @property  KTLogClient *logClient
+ @property  KTContextVerifier *verifier
+ @property  TransparencyTranscript *transcript
+
+  // instance methods
+  -[KTContext .cxx_destruct]
+  -[KTContext dataStore]
+  -[KTContext setDataStore:]
+  -[KTContext applicationID]
+  -[KTContext setApplicationID:]
+  -[KTContext verifier]
+  -[KTContext setVerifier:]
+  -[KTContext setTranscript:]
+  -[KTContext transcript]
+  -[KTContext initWithApplicationKeyStore:dataStore:logClient:applicationID:]
+  -[KTContext validatePeerWithAnalytics:transparentData:error:]
+  -[KTContext validateSelfWithAnalytics:transparentData:error:]
+  -[KTContext validateEnrollmentWithAnalytics:transparentData:error:]
+  -[KTContext runDutyCycleForActivity:]
+  -[KTContext clearState:]
+  -[KTContext setApplicationKeyStore:]
+  -[KTContext setLogClient:]
+  -[KTContext writeFailureForRequest:proof:error:]
+  -[KTContext ready:]
+  -[KTContext verifyDeviceWitnesses:request:loggableDatas:uriVRFOutput:error:]
+  -[KTContext handleVerifyPeerResponse:request:transparentData:error:]
+  -[KTContext analyticsForRequestValidation:initialResult:result:]
+  -[KTContext validatePeer:queryResponse:transparentData:error:]
+  -[KTContext fetchQueryForKTRequest:completionHandler:]
+  -[KTContext validatePeer:transparentData:error:]
+  -[KTContext handleVerifySelfResponse:request:transparentData:error:]
+  -[KTContext validateSelf:queryResponse:transparentData:error:]
+  -[KTContext validateSelf:transparentData:error:]
+  -[KTContext applicationKeyStore]
+  -[KTContext validateEnrollment:queryResponse:transparentData:error:]
+  -[KTContext handleVerifyInsertResponse:request:transparentData:error:]
+  -[KTContext validateEnrollment:transparentData:error:]
+  -[KTContext logStartEvent:]
+  -[KTContext logFinishSuccessEvent:]
+  -[KTContext checkDeferActivity:]
+  -[KTContext handleKTRequest:queryResponse:error:]
+  -[KTContext validateKTSMTsMerged:uri:uuid:accountId:]
+  -[KTContext handleGarbageCollection:error:]
+  -[KTContext logFinishFailureEvent:error:]
+  -[KTContext handleSMTsWithUnverifiedSignature:]
+  -[KTContext handlePendingQueryRequests:error:]
+  -[KTContext handleURIsWithPendingSMTs:error:]
+  -[KTContext copyState]
+  -[KTContext logClient]
+
+
+KTInclusionProofVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  KTApplicationPublicKeyStore *keyStore
+ @property  NSString *application
+
+  // instance methods
+  -[KTInclusionProofVerifier .cxx_destruct]
+  -[KTInclusionProofVerifier application]
+  -[KTInclusionProofVerifier setApplication:]
+  -[KTInclusionProofVerifier keyStore]
+  -[KTInclusionProofVerifier initWithKeyStore:application:]
+  -[KTInclusionProofVerifier verifyInclusionProofWithMapEntry:perAppLogEntry:topLevelTreeEntry:error:]
+
+
+TransparencyManagedDataStore : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSPersistentContainer *persistentContainer
+ @property  NSManagedObjectContext *context
+ @property  Aq sequenceId
+
+  // class methods
+  +[TransparencyManagedDataStore serializeLoggableDatas:]
+  +[TransparencyManagedDataStore deserializeLoggableDatas:error:]
+  +[TransparencyManagedDataStore reportCoreDataEventForEntity:write:code:underlyingError:]
+
+  // instance methods
+  -[TransparencyManagedDataStore init]
+  -[TransparencyManagedDataStore .cxx_destruct]
+  -[TransparencyManagedDataStore bundleURL]
+  -[TransparencyManagedDataStore performBlock:]
+  -[TransparencyManagedDataStore context]
+  -[TransparencyManagedDataStore performBlockAndWait:]
+  -[TransparencyManagedDataStore deleteObject:]
+  -[TransparencyManagedDataStore persistentContainer]
+  -[TransparencyManagedDataStore setPersistentContainer:]
+  -[TransparencyManagedDataStore persistWithError:]
+  -[TransparencyManagedDataStore clearStateForApplication:error:]
+  -[TransparencyManagedDataStore logSTHMetricsForApplication:error:]
+  -[TransparencyManagedDataStore fetchRequestWithUri:application:accountID:loggableDatas:youngerThan:error:]
+  -[TransparencyManagedDataStore clearState:]
+  -[TransparencyManagedDataStore createSignedMutationTimestamp:mutationMs:receiptTime:]
+  -[TransparencyManagedDataStore deleteSTHs:logBeginMsLessThan:error:]
+  -[TransparencyManagedDataStore resetRequestsToPending:error:]
+  -[TransparencyManagedDataStore deleteSMTs:mutationTimeLessThan:error:]
+  -[TransparencyManagedDataStore persistAndRefaultObject:error:]
+  -[TransparencyManagedDataStore performAndWaitForRequestId:error:block:]
+  -[TransparencyManagedDataStore refaultObject:]
+  -[TransparencyManagedDataStore createRequestFailure]
+  -[TransparencyManagedDataStore fetchRequestsWithPendingResponses:error:]
+  -[TransparencyManagedDataStore fetchRequestsWithPendingSMTs:error:]
+  -[TransparencyManagedDataStore fetchPendingSMTsForUri:uri:accountId:error:]
+  -[TransparencyManagedDataStore fetchSMTsWithUnverifiedSignature:error:]
+  -[TransparencyManagedDataStore garbageCollectRequests:olderThan:error:]
+  -[TransparencyManagedDataStore logMetricsForApplication:error:]
+  -[TransparencyManagedDataStore sequenceId]
+  -[TransparencyManagedDataStore currentSequenceId:]
+  -[TransparencyManagedDataStore createRequest]
+  -[TransparencyManagedDataStore setSequenceId:]
+  -[TransparencyManagedDataStore signedTreeHeadFailures:]
+  -[TransparencyManagedDataStore deleteObjectSet:]
+  -[TransparencyManagedDataStore signedMutationTimestampsFailures:]
+  -[TransparencyManagedDataStore requestFailures:]
+  -[TransparencyManagedDataStore treeHeads:]
+  -[TransparencyManagedDataStore signedMutationTimestamps:]
+  -[TransparencyManagedDataStore requests:]
+  -[TransparencyManagedDataStore performOnRequestsForPredicate:error:block:]
+  -[TransparencyManagedDataStore performOnBatchesOfEntity:predicate:error:block:]
+  -[TransparencyManagedDataStore countOutstandingRequestsForApplication:error:]
+  -[TransparencyManagedDataStore countTotalRequestsForApplication:error:]
+  -[TransparencyManagedDataStore countOutstandingSMTsForApplication:error:]
+  -[TransparencyManagedDataStore countTotalSMTsForApplication:error:]
+  -[TransparencyManagedDataStore countOutstandingSTHsForApplication:error:]
+  -[TransparencyManagedDataStore countTotalSTHsForApplication:error:]
+  -[TransparencyManagedDataStore logRequestMetricsForApplication:error:]
+  -[TransparencyManagedDataStore logSMTMetricsForApplication:error:]
+  -[TransparencyManagedDataStore treeHeadsForApplication:error:]
+  -[TransparencyManagedDataStore requestCount:]
+  -[TransparencyManagedDataStore requestFailureCount:]
+  -[TransparencyManagedDataStore signedMutationTimestampCount:]
+  -[TransparencyManagedDataStore signedMutationTimestampsFailureCount:]
+  -[TransparencyManagedDataStore treeHeadCount:]
+  -[TransparencyManagedDataStore signedTreeHeadFailureCount:]
+  -[TransparencyManagedDataStore fetchRequestForUUID:error:]
+  -[TransparencyManagedDataStore createRequestWithUri:application:accountID:serverData:syncedData:queryRequest:queryResponse:type:error:]
+  -[TransparencyManagedDataStore fetchRequestsForURI:error:]
+  -[TransparencyManagedDataStore fetchCompletedRequests:olderThan:error:]
+  -[TransparencyManagedDataStore createSignedMutationTimestampsFailure]
+  -[TransparencyManagedDataStore createTreeHead]
+  -[TransparencyManagedDataStore createSignedTreeHeadFailure]
+  -[TransparencyManagedDataStore deleteCompletedRequest:]
+  -[TransparencyManagedDataStore copyStatistics:]
+
+
+GPBExtensionRegistry : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+  // instance methods
+  -[GPBExtensionRegistry init]
+  -[GPBExtensionRegistry dealloc]
+  -[GPBExtensionRegistry copyWithZone:]
+  -[GPBExtensionRegistry addExtensions:]
+  -[GPBExtensionRegistry addExtension:]
+  -[GPBExtensionRegistry extensionForDescriptor:fieldNumber:]
+
+
+TransparencyMapEntryVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSData *entryPosition
+ @property  TransparencyTrustedKeyStore *trustedKeyStore
+
+  // class methods
+  +[TransparencyMapEntryVerifier peerIndexAtDepth:leafIndex:]
+  +[TransparencyMapEntryVerifier leafHash:index:treeId:]
+  +[TransparencyMapEntryVerifier emptyAtDepth:leafIndex:treeId:]
+  +[TransparencyMapEntryVerifier interiorNodeForLeftData:rightData:]
+
+  // instance methods
+  -[TransparencyMapEntryVerifier .cxx_destruct]
+  -[TransparencyMapEntryVerifier trustedKeyStore]
+  -[TransparencyMapEntryVerifier verifyMapEntryWithMapLeaf:hashesToRoot:signedMapHead:error:]
+  -[TransparencyMapEntryVerifier initWithPositon:trustedKeyStore:]
+  -[TransparencyMapEntryVerifier setTrustedKeyStore:]
+  -[TransparencyMapEntryVerifier verifyInclusionOfMapLeaf:position:treeHead:treeId:hashPath:error:]
+  -[TransparencyMapEntryVerifier entryPosition]
+  -[TransparencyMapEntryVerifier setEntryPosition:]
+
+
+KTContextVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  KTApplicationPublicKeyStore *applicationKeyStore
+ @property  TransparencyManagedDataStore *dataStore
+ @property  NSString *applicationID
+ @property  KTLogClient *logClient
+
+  // class methods
+  +[KTContextVerifier verifyServerLoggableDatas:againstSyncedLoggableDatas:error:]
+  +[KTContextVerifier addDeviceIdVRFOutput:toLoggableDatas:forDeviceId:]
+  +[KTContextVerifier addClientDataVRFOutput:toLoggableDatas:forClientData:]
+  +[KTContextVerifier verifyReceivedWitnessesForLoggableDatas:error:]
+
+  // instance methods
+  -[KTContextVerifier .cxx_destruct]
+  -[KTContextVerifier dataStore]
+  -[KTContextVerifier setDataStore:]
+  -[KTContextVerifier applicationID]
+  -[KTContextVerifier setApplicationID:]
+  -[KTContextVerifier setApplicationKeyStore:]
+  -[KTContextVerifier setLogClient:]
+  -[KTContextVerifier initWithApplicationKeyStore:dataStore:applicationID:]
+  -[KTContextVerifier verifyDeviceWitnesses:requestDevices:loggableDatas:uriVRFOutput:error:]
+  -[KTContextVerifier verifyUriWitness:uri:error:]
+  -[KTContextVerifier verifyResponseAccountId:requestAccountId:error:]
+  -[KTContextVerifier verifySMTs:request:error:]
+  -[KTContextVerifier verifyInclusionProof:mapLeaf:error:]
+  -[KTContextVerifier verifyDeviceWitness:deviceId:uriVRFOutput:error:]
+  -[KTContextVerifier verifyClientDataWitness:clientData:uriVRFOutput:error:]
+  -[KTContextVerifier applicationKeyStore]
+  -[KTContextVerifier failSMTsIfOverMMD:proof:underlyingError:errorCode:]
+  -[KTContextVerifier verifyKTSMTsMerged:queryResponse:uri:accountId:]
+  -[KTContextVerifier verifyKTSMTs:]
+  -[KTContextVerifier logClient]
+  -[KTContextVerifier reportVerifySMTFailure:error:]
+  -[KTContextVerifier deleteSMT:error:]
+  -[KTContextVerifier verifyClientDataWitnesses:clientDatas:loggableDatas:uriVRFOutput:error:]
+
+
+TransparencyRequestBuilder : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyRequestBuilder buildPublicKeysRequest:error:]
+  +[TransparencyRequestBuilder buildQueryRequest:accountID:loggableDatas:application:error:]
+
+
+KTVerifier : NSObject /usr/lib/libSystem.B.dylib
+ @property  TransparencyApplication *application
+ @property  NSString *applicationIdentifier
+ @property  NSXPCConnection *connection
+
+  // instance methods
+  -[KTVerifier .cxx_destruct]
+  -[KTVerifier connection]
+  -[KTVerifier applicationIdentifier]
+  -[KTVerifier initWithApplication:]
+  -[KTVerifier application]
+  -[KTVerifier setApplication:]
+  -[KTVerifier clearState:]
+  -[KTVerifier validatePeerUriResult:uuid:completionBlock:]
+  -[KTVerifier validateSelfUriResult:uuid:syncedDatas:completionBlock:]
+  -[KTVerifier validateEnrollmentUriResult:uuid:completionBlock:]
+  -[KTVerifier convertToSelfRequest:serverDatas:syncedDatas:queryRequest:queryResponse:updateCompletionBlock:]
+  -[KTVerifier forceValidateUUID:uri:block:]
+  -[KTVerifier forceConfigUpdate:]
+  -[KTVerifier copyLogClientConfiguration:]
+  -[KTVerifier copyKeyStoreState:]
+  -[KTVerifier copyKeyStoreStateFromDisk:]
+  -[KTVerifier clearLogClientConfiguration:]
+  -[KTVerifier copyDataStoreStatistics:]
+  -[KTVerifier copyDaemonState:]
+  -[KTVerifier validatePeerUri:accountID:loggableDatas:queryRequest:queryResponse:error:]
+  -[KTVerifier invokeXPCSynchronousCallWithBlock:failureBlock:]
+  -[KTVerifier validateEnrollmentUri:accountID:loggableData:queryRequest:insertResponse:error:]
+  -[KTVerifier invokeXPCAsynchronousCallWithBlock:failureBlock:]
+  -[KTVerifier validatePeerUri:accountID:loggableDatas:queryResponse:error:]
+  -[KTVerifier validateEnrollmentUri:accountID:loggableData:insertResponse:error:]
+  -[KTVerifier validatePeerUri:accountID:loggableDatas:queryResponse:promiseCompletionBlock:]
+  -[KTVerifier validateEnrollmentUri:accountID:loggableData:insertResponse:promiseCompletionBlock:]
+  -[KTVerifier convertToSelfRequest:serverDatas:syncedDatas:queryResponse:updateCompletionBlock:]
+  -[KTVerifier forceApplicationKeysDownload:]
+  -[KTVerifier forceApplicationKeysFetch:]
+  -[KTVerifier forceApplicationConfig:]
+  -[KTVerifier copyApplicationState:]
+  -[KTVerifier forceDutyCycle:]
+  -[KTVerifier clearPublicKeyStoreState:]
+  -[KTVerifier copyApplicationTranscript:]
+
+
+TransparencyFileSupport : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyFileSupport directorySizeInKB:]
+  +[TransparencyFileSupport deleteFile:error:]
+  +[TransparencyFileSupport readDictionaryFromFile:error:]
+  +[TransparencyFileSupport writeDictionaryToFile:fileName:error:]
+  +[TransparencyFileSupport appSupportPath:]
+  +[TransparencyFileSupport setProtectionToClassDForURL:error:]
+  +[TransparencyFileSupport readDataFromFile:error:]
+
+
+TransparencySettings : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDictionary *settings
+
+  // class methods
+  +[TransparencySettings allowsInternalSecurityPolicies]
+  +[TransparencySettings defaultNetworkTimeout]
+  +[TransparencySettings defaultQueryCacheTimeout]
+  +[TransparencySettings getBool:]
+  +[TransparencySettings deviceUserAgent]
+
+  // instance methods
+  -[TransparencySettings .cxx_destruct]
+  -[TransparencySettings settings]
+  -[TransparencySettings setSettings:]
+
+
+GPBMessage : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  GPBUnknownFieldSet *unknownFields
+ @property  BOOL initialized
+
+  // class methods
+  +[GPBMessage alloc]
+  +[GPBMessage allocWithZone:]
+  +[GPBMessage initialize]
+  +[GPBMessage resolveInstanceMethod:]
+  +[GPBMessage resolveClassMethod:]
+  +[GPBMessage supportsSecureCoding]
+  +[GPBMessage accessInstanceVariablesDirectly]
+  +[GPBMessage message]
+  +[GPBMessage descriptor]
+  +[GPBMessage parseFromData:error:]
+  +[GPBMessage parseFromData:extensionRegistry:error:]
+  +[GPBMessage parseFromCodedInputStream:extensionRegistry:error:]
+  +[GPBMessage parseDelimitedFromCodedInputStream:extensionRegistry:error:]
+
+  // instance methods
+  -[GPBMessage init]
+  -[GPBMessage dealloc]
+  -[GPBMessage isEqual:]
+  -[GPBMessage copyWithZone:]
+  -[GPBMessage clear]
+  -[GPBMessage encodeWithCoder:]
+  -[GPBMessage initWithCoder:]
+  -[GPBMessage data]
+  -[GPBMessage initWithData:error:]
+  -[GPBMessage mergeFrom:]
+  -[GPBMessage descriptor]
+  -[GPBMessage isInitialized]
+  -[GPBMessage unknownFields]
+  -[GPBMessage serializedSize]
+  -[GPBMessage addUnknownMapEntry:value:]
+  -[GPBMessage writeToCodedOutputStream:]
+  -[GPBMessage mergeFromCodedInputStream:extensionRegistry:]
+  -[GPBMessage addExtension:value:]
+  -[GPBMessage getExistingExtension:]
+  -[GPBMessage setExtension:value:]
+  -[GPBMessage setUnknownFields:]
+  -[GPBMessage extensionsCurrentlySet]
+  -[GPBMessage getExtension:]
+  -[GPBMessage initWithData:extensionRegistry:error:]
+  -[GPBMessage mergeFromData:extensionRegistry:]
+  -[GPBMessage internalClear:]
+  -[GPBMessage copyFieldsInto:zone:descriptor:]
+  -[GPBMessage writeDelimitedToCodedOutputStream:]
+  -[GPBMessage writeExtensionsToCodedOutputStream:range:]
+  -[GPBMessage writeField:toCodedOutputStream:]
+  -[GPBMessage clearExtension:]
+  -[GPBMessage initWithCodedInputStream:extensionRegistry:error:]
+  -[GPBMessage mergeDelimitedFromCodedInputStream:extensionRegistry:]
+  -[GPBMessage parseMessageSet:extensionRegistry:]
+  -[GPBMessage parseUnknownField:extensionRegistry:tag:]
+  -[GPBMessage delimitedData]
+  -[GPBMessage writeToOutputStream:]
+  -[GPBMessage writeDelimitedToOutputStream:]
+  -[GPBMessage hasExtension:]
+  -[GPBMessage setExtension:index:value:]
+
+
+TransparencyCertificateHelper : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TransparencyCertificateHelper verifyCertificates:intermediates:policy:error:]
+  +[TransparencyCertificateHelper certificateFromData:error:]
+  +[TransparencyCertificateHelper copyTrustedKeysFromDataArray:error:]
+  +[TransparencyCertificateHelper addTrustedCertificate:trustedKeys:error:]
+  +[TransparencyCertificateHelper createCACertificatesArray:error:]
+  +[TransparencyCertificateHelper verifyLeaf:intermediates:policy:error:]
+
+
+KTRequest : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  NSData *accountId
+ @property  NSString *application
+ @property  NSData *clientLoggableDatas
+ @property  NSData *queryRequest
+ @property  NSData *queryResponse
+ @property  NSUUID *requestId
+ @property  double requestTime
+ @property  long long sequenceId
+ @property  NSString *serverHint
+ @property  NSData *serverLoggableDatas
+ @property  long long type
+ @property  NSString *uri
+ @property  long long verificationResult
+ @property  NSSet *failures
+ @property  NSSet *smts
+
+  // class methods
+  +[KTRequest fetchRequest]
+
+
+KTRequestFailure : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  long long errorCode
+ @property  NSData *proofOfFailure
+ @property  KTRequest *request
+
+  // class methods
+  +[KTRequestFailure fetchRequest]
+
+
+KTSignedMutationTimestamp : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  long long mutationTime
+ @property  double receiptTime
+ @property  BOOL signatureVerified
+ @property  NSData *smt
+ @property  long long verificationResult
+ @property  NSSet *failures
+ @property  KTRequest *request
+
+  // class methods
+  +[KTSignedMutationTimestamp fetchRequest]
+
+
+KTSMTFailure : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  long long errorCode
+ @property  NSData *proofOfFailure
+ @property  KTSignedMutationTimestamp *smt
+
+  // class methods
+  +[KTSMTFailure fetchRequest]
+
+
+KTSTHFailure : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  long long errorCode
+ @property  NSData *proofOfFailure
+ @property  KTTreeHead *sth
+
+  // class methods
+  +[KTSTHFailure fetchRequest]
+
+
+KTTreeHead : NSManagedObject /System/Library/Frameworks/Security.framework/Security
+ @property  NSString *application
+ @property  long long logBeginTime
+ @property  long long logType
+ @property  double receiptTime
+ @property  long long revision
+ @property  BOOL signatureVerified
+ @property  NSData *sth
+ @property  long long verificationResult
+ @property  NSSet *failures
+
+  // class methods
+  +[KTTreeHead fetchRequest]
+
+
+NSDate(TransparencyDate)
+	// class methods
+	+[NSDate(TransparencyDate) currentTimeMs]
+
+	// instance methods
+	-[NSDate(TransparencyDate) isEqualWithinEpsilon:]
+
+NSURLResponse(ResponseSuccessCategory)
+	// instance methods
+	-[NSURLResponse(ResponseSuccessCategory) metadata]
+	-[NSURLResponse(ResponseSuccessCategory) responseCode]
+	-[NSURLResponse(ResponseSuccessCategory) requiresAuthorization]
+	-[NSURLResponse(ResponseSuccessCategory) successful]
+	-[NSURLResponse(ResponseSuccessCategory) hasStatusCode:]
+	-[NSURLResponse(ResponseSuccessCategory) responseValueForHeader:]
+
+NSData(TransparencyData)
+	// class methods
+	+[NSData(TransparencyData) random]
+	+[NSData(TransparencyData) dataWithHexString:]
+	+[NSData(TransparencyData) dataWithUint64:length:]
+
+	// instance methods
+	-[NSData(TransparencyData) hexString]
+	-[NSData(TransparencyData) sha256]
+
+01 00 0300 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0100 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAccountManager 
+01 00 0100 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAppleIDSession 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSEntityDescription 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSFetchRequest 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObject 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSManagedObjectModel 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableURLRequest 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSPersistentContainer 
+01 00 0400 /System/Library/Frameworks/CoreData.framework/CoreData: NSPersistentStoreDescription 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLResponse 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSession 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSessionConfiguration 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0500 /System/Library/Frameworks/Security.framework/Security: SFAnalytics 

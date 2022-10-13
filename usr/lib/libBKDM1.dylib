@@ -1,0 +1,955 @@
+|| __DATA.__data _logQueueLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._chargerConnected
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._compact
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._compactOSLogOnly
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._fileAttributes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._fileAttributesProtected
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._fileNameFormatter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._fingerStateCaptureCounter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._imageCommentString
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._lastLogMessage
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._lastLogMessageRepeated
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._lastLogWriteException
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._lastMatchedIdentity
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._lastStatusESDRecovery
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._logDetails
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._logFile
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._logFilePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._logPath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._logStartDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._loggingType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._mesaScanningStateNotification
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._milisecondsFormatter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._mode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._notificationPort
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._osLog
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._powerSourceNotification
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._radarPromptLock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._rootPath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._server
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._templateList
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._timeBox
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._timeZoneFormatter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BioLogBase._timestampFormatter
+|| __DATA_CONST.__const _kCatacombCurrentDateKey
+|| __DATA_CONST.__const _kCatacombEnrollmentCountKey
+|| __DATA_CONST.__const _kCatacombIdentityListKey
+|| __DATA_CONST.__const _kCatacombTemplateListKey
+|| __DATA_CONST.__const _kCatacombVersionKey
+|| __DATA_CONST.__const _kCoreauthdBundleIdentifier
+|| __DATA_CONST.__const _kPurpleBuddyBundleIdentifier
+|| __DATA_CONST.__const _kSpringBoardBundleIdentifier
+|| __DATA_DIRTY.__common ___osLog
+|| __DATA_DIRTY.__common ___osLogTrace
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADStorage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BLHelper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BLTemplateList
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BLTimeBox
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BioLog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BioLogBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BiometricKitDStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BiometricKitXPCServerMesa
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BiometricMatchOperationMesa
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TemplateInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADStorage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BLHelper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BLTemplateList
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BLTimeBox
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BioLog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BioLogBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BiometricKitDStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BiometricKitXPCServerMesa
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BiometricMatchOperationMesa
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TemplateInfo
+|| __TEXT.__text _BKDMInitialize
+|| __TEXT.__text _BKDMTerminate
+|| __TEXT.__text _CatacombPathForFile
+|| __TEXT.__text _ComponentSetInit
+|| __TEXT.__text _ComponentSetRelease
+|| __TEXT.__text _ComponentSetUpdate
+|| __TEXT.__text _ConvertTransToNodeArea
+|| __TEXT.__text _ConvertVectorForGUI
+|| __TEXT.__text _FindRectangleForComponent
+|| __TEXT.__text _GenerateMatchTemplateTopology
+|| __TEXT.__text _GenerateTemplateTopology
+|| __TEXT.__text _LoadDataFromCatacomb
+|| __TEXT.__text _RemoveFileFromCatacomb
+|| __TEXT.__text _SBDisplayEvent
+|| __TEXT.__text _SBDisplayEventBioLogInfo
+|| __TEXT.__text _SBFingerTouchEvent
+|| __TEXT.__text _SBFingerTouchEventBioLogInfo
+|| __TEXT.__text _SBFreeEventList
+|| __TEXT.__text _SBInitialize
+|| __TEXT.__text _SBInitializeBioLogInfo
+|| __TEXT.__text _SBLockEvent
+|| __TEXT.__text _SBLockEventBioLogInfo
+|| __TEXT.__text _SBPowerEvent
+|| __TEXT.__text _SBPowerEventBioLogInfo
+|| __TEXT.__text _SBRemoveTemplateEvent
+|| __TEXT.__text _SBRemoveTemplateEventBioLogInfo
+|| __TEXT.__text _SBSetLogVerbosity
+|| __TEXT.__text _SBSetLogVerbosityBioLogInfo
+|| __TEXT.__text _SBStartBioOperation
+|| __TEXT.__text _SBStartBioOperationBioLogInfo
+|| __TEXT.__text _SBStatus
+|| __TEXT.__text _SBStatusBioLogInfo
+|| __TEXT.__text _SBStopBioOperation
+|| __TEXT.__text _SBStopBioOperationBioLogInfo
+|| __TEXT.__text _SBTemplateUpdateEvent
+|| __TEXT.__text _SBTemplateUpdateEventBioLogInfo
+|| __TEXT.__text _SBTerminate
+|| __TEXT.__text _SBTerminateBioLogInfo
+|| __TEXT.__text _SBTimeZoneChangeEvent
+|| __TEXT.__text _SBTimeZoneChangeEventBioLogInfo
+|| __TEXT.__text _SaveDataToCatacomb
+|| __TEXT.__text ___BuildFullPath
+|| __TEXT.__text ___DeblockedFileIO
+|| __TEXT.__text ___FileIsProtectionClassD
+|| __TEXT.__text ___GetCatacombDirectoryPath
+|| __TEXT.__text ___GetUUIDFileName
+|| __TEXT.__text _check_finger_touch_structure
+|| __TEXT.__text _check_memory_manager
+|| __TEXT.__text _check_template_update_structure
+|| __TEXT.__text _check_timestamp
+|| __TEXT.__text _closeConnection
+|| __TEXT.__text _crc32ansi
+|| __TEXT.__text _deviceExists
+|| __TEXT.__text _diffTimeStamps
+|| __TEXT.__text _getLocalEEPROMCalibrationData
+|| __TEXT.__text _memdump
+|| __TEXT.__text _mesaScanningStateNotificationCallback
+|| __TEXT.__text _mobileKeyBagLockStatusNotificationCallback
+|| __TEXT.__text _openConnection
+|| __TEXT.__text _powerSourceInterestNotificationCallback
+|| __TEXT.__text _readData
+|| __TEXT.__text _serialize
+|| __TEXT.__text _writeData
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AggregateDictionary: _ADClientClearDistributionKey
+__ AggregateDictionary: _ADClientClearScalarKey
+__ AggregateDictionary: _ADClientPushValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ AudioToolbox: _AudioServicesPlaySystemSoundWithVibration
+__ BiometricSupport: _OBJC_CLASS_$_BiometricKitIdentity
+__ BiometricSupport: _OBJC_CLASS_$_BiometricKitXPCServer
+__ BiometricSupport: _OBJC_CLASS_$_BiometricMatchOperation
+__ BiometricSupport: _OBJC_CLASS_$_BiometricSupportUserNotification
+__ BiometricSupport: _OBJC_CLASS_$_SystemProtectedConfig
+__ BiometricSupport: _OBJC_CLASS_$_UserProtectedConfig
+__ BiometricSupport: _OBJC_METACLASS_$_BiometricKitXPCServer
+__ BiometricSupport: _OBJC_METACLASS_$_BiometricMatchOperation
+__ BiometricSupport: _RIESUpdate
+__ BiometricSupport: _absoluteToMiliseconds
+__ BiometricSupport: _absoluteToNanoseconds
+__ BiometricSupport: _dictionaryGetBool
+__ BiometricSupport: _getBootArgs
+__ BiometricSupport: _getSensorPatchVersion
+__ BiometricSupport: _isEphemeralMultiUser
+__ BiometricSupport: _isInternalBuild
+__ BiometricSupport: _nanosecondsToAbsolute
+__ BiometricSupport: _rotateBitmap90Data16
+__ BiometricSupport: _rotateBitmap90Data8
+__ BiometricSupport: _roundMostSignificant
+__ CoreFoundation: _CFAllocatorGetDefault
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFCopyHomeDirectoryURLForUser
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFURLCopyFileSystemPath
+__ CoreFoundation: _CFURLCreateCopyAppendingPathComponent
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _CFUserNotificationDisplayAlert
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSSystemClockDidChangeNotification
+__ CoreFoundation: _NSSystemTimeZoneDidChangeNotification
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreMotion: _OBJC_CLASS_$_CMWakeGestureManager
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CrashReporterSupport: _WriteStackshotReport
+__ Foundation: _NSFileOwnerAccountName
+__ Foundation: _NSFileProtectionCompleteUntilFirstUserAuthentication
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSInvalidUnarchiveOperationException
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ IOKit: _IOConnectCallMethod
+__ IOKit: _IOConnectCallStructMethod
+__ IOKit: _IOHIDEventGetIntegerValue
+__ IOKit: _IOHIDEventGetType
+__ IOKit: _IOHIDEventSystemClientCreate
+__ IOKit: _IOHIDEventSystemClientRegisterEventFilterCallback
+__ IOKit: _IOHIDEventSystemClientScheduleWithDispatchQueue
+__ IOKit: _IOHIDEventSystemClientSetMatchingMultiple
+__ IOKit: _IOHIDEventSystemClientUnregisterEventFilterCallback
+__ IOKit: _IOHIDEventSystemClientUnscheduleFromDispatchQueue
+__ IOKit: _IOIteratorNext
+__ IOKit: _IONotificationPortCreate
+__ IOKit: _IONotificationPortDestroy
+__ IOKit: _IONotificationPortSetDispatchQueue
+__ IOKit: _IOObjectRelease
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IORegistryEntrySetCFProperty
+__ IOKit: _IOServiceAddInterestNotification
+__ IOKit: _IOServiceAddMatchingNotification
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceNameMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ MobileKeyBag: _MKBDeviceSetGracePeriod
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ libFDR.dylib: _AMFDRCreateWithOptions
+__ libFDR.dylib: _AMFDRDataCopy
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: _OSThermalNotificationCurrentLevel
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___snprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_signal
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _access
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _closedir
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _environ
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _fdopen
+__ libSystem.B.dylib: _fileno
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _gettimeofday
+__ libSystem.B.dylib: _kOSThermalNotificationName
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _open_dprotected_np
+__ libSystem.B.dylib: _opendir
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _posix_spawn
+__ libSystem.B.dylib: _readdir
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _rename
+__ libSystem.B.dylib: _signal
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _uname
+__ libSystem.B.dylib: _unlink
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _waitpid
+__ libSystem.B.dylib: _xpc_set_event_stream_handler
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libtailspin.dylib: _TSPDumpOptions_ReasonString
+__ libtailspin.dylib: _tailspin_dump_output_with_options
+BiometricMatchOperationMesa : BiometricMatchOperation /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  BOOL forExtendEnrollment
+ @property  ^{?=I[16C]} extendEnrollmentIdentity
+ @property  ^{?=II[32C]} extendEnrollmentAuthData
+ @property  BOOL forMesaPay
+ @property  BOOL forMultiCatacombs
+ @property  BOOL captureOnly
+ @property  BOOL filterHomeButtonEvents
+ @property  BOOL suppressHapticFeedback
+ @property  BOOL requireFingerOff
+
+  // instance methods
+  -[BiometricMatchOperationMesa captureOnly]
+  -[BiometricMatchOperationMesa setCaptureOnly:]
+  -[BiometricMatchOperationMesa requireFingerOff]
+  -[BiometricMatchOperationMesa setRequireFingerOff:]
+  -[BiometricMatchOperationMesa extendEnrollmentIdentity]
+  -[BiometricMatchOperationMesa extendEnrollmentAuthData]
+  -[BiometricMatchOperationMesa forExtendEnrollment]
+  -[BiometricMatchOperationMesa setForExtendEnrollment:]
+  -[BiometricMatchOperationMesa forMesaPay]
+  -[BiometricMatchOperationMesa setForMesaPay:]
+  -[BiometricMatchOperationMesa forMultiCatacombs]
+  -[BiometricMatchOperationMesa setForMultiCatacombs:]
+  -[BiometricMatchOperationMesa filterHomeButtonEvents]
+  -[BiometricMatchOperationMesa setFilterHomeButtonEvents:]
+  -[BiometricMatchOperationMesa suppressHapticFeedback]
+  -[BiometricMatchOperationMesa setSuppressHapticFeedback:]
+
+
+BiometricKitXPCServerMesa : BiometricKitXPCServer /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <CMWakeGestureDelegate, NSXPCListenerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BiometricKitXPCServerMesa getSysCfgCalibrationData]
+
+  // instance methods
+  -[BiometricKitXPCServerMesa init]
+  -[BiometricKitXPCServerMesa dealloc]
+  -[BiometricKitXPCServerMesa .cxx_destruct]
+  -[BiometricKitXPCServerMesa wakeGestureManager:didUpdateWakeGesture:]
+  -[BiometricKitXPCServerMesa enrollContinue]
+  -[BiometricKitXPCServerMesa pullAlignmentData]
+  -[BiometricKitXPCServerMesa pullMatchPolicyInfoData]
+  -[BiometricKitXPCServerMesa timestampEvent:absoluteTime:]
+  -[BiometricKitXPCServerMesa getLogs:withDetails:]
+  -[BiometricKitXPCServerMesa fileRadarWithLogs:withDescription:]
+  -[BiometricKitXPCServerMesa homeButtonPressed]
+  -[BiometricKitXPCServerMesa touchIDButtonPressed:]
+  -[BiometricKitXPCServerMesa getCalBlobVersion]
+  -[BiometricKitXPCServerMesa getCalibrationDataState]
+  -[BiometricKitXPCServerMesa getModulationRatio]
+  -[BiometricKitXPCServerMesa cancelWithClient:]
+  -[BiometricKitXPCServerMesa registerDelegate:withClient:]
+  -[BiometricKitXPCServerMesa notifyAppIsInactive:withClient:]
+  -[BiometricKitXPCServerMesa enroll:forUser:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa match:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa detectPresenceWithOptions:withClient:]
+  -[BiometricKitXPCServerMesa updateIdentity:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa removeIdentity:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa removeAllIdentitiesForUser:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa getIdentityFromUUID:withClient:]
+  -[BiometricKitXPCServerMesa identities:withClient:]
+  -[BiometricKitXPCServerMesa getMaxIdentityCount:withClient:]
+  -[BiometricKitXPCServerMesa getFreeIdentityCount:forUser:withClient:]
+  -[BiometricKitXPCServerMesa registerDSID:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa registerStoreToken:withClient:]
+  -[BiometricKitXPCServerMesa getCountersignedStoreToken:withClient:]
+  -[BiometricKitXPCServerMesa diagnostics:withOptions:passed:withDetails:withClient:]
+  -[BiometricKitXPCServerMesa setUserDSID:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa resetAppleConnectCounterWithClient:]
+  -[BiometricKitXPCServerMesa getIdentitiesDatabaseUUIDForUser:withClient:]
+  -[BiometricKitXPCServerMesa getIdentitiesDatabaseHashForUser:withClient:]
+  -[BiometricKitXPCServerMesa dropUnlockTokenWithClient:]
+  -[BiometricKitXPCServerMesa forceBioLockoutForUser:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa getNodeTopologyForIdentity:withClient:]
+  -[BiometricKitXPCServerMesa getProtectedConfigurationForUser:withClient:]
+  -[BiometricKitXPCServerMesa getSystemProtectedConfigurationWithClient:]
+  -[BiometricKitXPCServerMesa setProtectedConfiguration:forUser:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa setSystemProtectedConfiguration:withOptions:withClient:]
+  -[BiometricKitXPCServerMesa getProvisioningStateWithClient:]
+  -[BiometricKitXPCServerMesa getBioLockoutState:forUser:withClient:]
+  -[BiometricKitXPCServerMesa getSensorCalibrationStatusWithClient:]
+  -[BiometricKitXPCServerMesa getCalibrationDataInfoWithClient:]
+  -[BiometricKitXPCServerMesa getSensorInfoWithClient:]
+  -[BiometricKitXPCServerMesa setDebugImages:withClient:]
+  -[BiometricKitXPCServerMesa pullCalibrationDataWithClient:]
+  -[BiometricKitXPCServerMesa pullCaptureBufferWithClient:]
+  -[BiometricKitXPCServerMesa pullDebugImageData:rotated:hasWidth:hasHeight:withClient:]
+  -[BiometricKitXPCServerMesa isFingerOnWithClient:]
+  -[BiometricKitXPCServerMesa enableBackgroundFdet:withClient:]
+  -[BiometricKitXPCServerMesa isXARTAvailableWithClient:]
+  -[BiometricKitXPCServerMesa getBiometryAvailability:forUser:withClient:]
+  -[BiometricKitXPCServerMesa getLastMatchEvent:withClient:]
+  -[BiometricKitXPCServerMesa initAutoBugCapture]
+  -[BiometricKitXPCServerMesa disconnectingClient:]
+  -[BiometricKitXPCServerMesa initEnrollOperation:biometricType:userID:options:client:]
+  -[BiometricKitXPCServerMesa performEnrollCommand:]
+  -[BiometricKitXPCServerMesa createMatchOperation]
+  -[BiometricKitXPCServerMesa initMatchOperation:filter:options:client:]
+  -[BiometricKitXPCServerMesa performMatchCommand:]
+  -[BiometricKitXPCServerMesa performPresenceDetectCommand:]
+  -[BiometricKitXPCServerMesa performCancelCommand]
+  -[BiometricKitXPCServerMesa sendStatusMessage:toClient:]
+  -[BiometricKitXPCServerMesa performDisplayStatusChangedCommand:]
+  -[BiometricKitXPCServerMesa loadCatacomb]
+  -[BiometricKitXPCServerMesa restoreAndSyncTemplates]
+  -[BiometricKitXPCServerMesa performGetTemplatesValidityCommand:isValid:]
+  -[BiometricKitXPCServerMesa saveCatacomb]
+  -[BiometricKitXPCServerMesa performRemoveUserDataCommand:]
+  -[BiometricKitXPCServerMesa performGetIdentitiesListCommand:outBuffer:]
+  -[BiometricKitXPCServerMesa performRemoveIdentityCommand:]
+  -[BiometricKitXPCServerMesa removeIdentityObject:]
+  -[BiometricKitXPCServerMesa performGetBiometrickitdInfoCommand:]
+  -[BiometricKitXPCServerMesa performGetCatacombStateCommand:]
+  -[BiometricKitXPCServerMesa performPrepareSaveCatacombCommand:outDataSize:]
+  -[BiometricKitXPCServerMesa performCompleteSaveCatacombCommand:outBuffer:]
+  -[BiometricKitXPCServerMesa getCatacombSaveListForUsers:list:]
+  -[BiometricKitXPCServerMesa archiveCatacombDataForUser:toArchiver:]
+  -[BiometricKitXPCServerMesa performConfirmSaveCatacombCommand:]
+  -[BiometricKitXPCServerMesa clearTemplateList]
+  -[BiometricKitXPCServerMesa performNoCatacombCommand:]
+  -[BiometricKitXPCServerMesa deleteUnusedCatacombFiles]
+  -[BiometricKitXPCServerMesa clearTemplateListForUser:]
+  -[BiometricKitXPCServerMesa unarchiveCatacombDataForUser:fromUnarchiver:secureData:identities:]
+  -[BiometricKitXPCServerMesa performLoadCatacombCommand:inData:]
+  -[BiometricKitXPCServerMesa addIdentityObjects:]
+  -[BiometricKitXPCServerMesa saveCatacombForIdentity:]
+  -[BiometricKitXPCServerMesa performRequestMaxIdentityCountCommand:]
+  -[BiometricKitXPCServerMesa performGetFreeIdentityCountCommand:outCount:]
+  -[BiometricKitXPCServerMesa performGetCatacombUUIDCommand:outUUID:]
+  -[BiometricKitXPCServerMesa performGetCatacombHashCommand:outHash:]
+  -[BiometricKitXPCServerMesa performDropUnlockTokenCommand]
+  -[BiometricKitXPCServerMesa performGetSKSLockStateCommand:outState:]
+  -[BiometricKitXPCServerMesa performForceBioLockoutCommand:]
+  -[BiometricKitXPCServerMesa performGetLastMatchEventCommand:]
+  -[BiometricKitXPCServerMesa performGetProtectedConfigCommand:outSetCfg:outEffectiveCfg:]
+  -[BiometricKitXPCServerMesa performGetSystemProtectedConfigCommand:]
+  -[BiometricKitXPCServerMesa performSetProtectedConfigCommand:cfg:authData:]
+  -[BiometricKitXPCServerMesa performSetSystemProtectedConfigCommand:authData:]
+  -[BiometricKitXPCServerMesa performRequestMessageDataCommand:size:outData:]
+  -[BiometricKitXPCServerMesa serviceStatus:version:ordinal:data:timestamp:]
+  -[BiometricKitXPCServerMesa statusMessage:withData:timestamp:]
+  -[BiometricKitXPCServerMesa templatesExistAtBoot]
+  -[BiometricKitXPCServerMesa performSaveBioLockoutRecordCommand:]
+  -[BiometricKitXPCServerMesa performLoadBioLockoutRecordCommand:]
+  -[BiometricKitXPCServerMesa getEnabledForUnlock]
+  -[BiometricKitXPCServerMesa setAppleMesaSEPLoggingLevel]
+  -[BiometricKitXPCServerMesa enrollResult:withTimestamp:]
+  -[BiometricKitXPCServerMesa matchResult:timestamp:]
+  -[BiometricKitXPCServerMesa performCommand:inValue:inData:inSize:outData:outSize:]
+  -[BiometricKitXPCServerMesa registerForLiftToWakeNotifications:]
+  -[BiometricKitXPCServerMesa disableHomeButton:]
+  -[BiometricKitXPCServerMesa saveCatacombMap]
+  -[BiometricKitXPCServerMesa setIORegistryProperty:toValue:onService:]
+  -[BiometricKitXPCServerMesa getModuleSerialNumber]
+  -[BiometricKitXPCServerMesa getDataFromDriverCommand:value:data:size:]
+  -[BiometricKitXPCServerMesa cacheImageDB:]
+  -[BiometricKitXPCServerMesa vibrate:]
+  -[BiometricKitXPCServerMesa statisticsMessage:]
+  -[BiometricKitXPCServerMesa templateUpdateMessage:]
+  -[BiometricKitXPCServerMesa shouldFilterStatusForSB:]
+  -[BiometricKitXPCServerMesa updateImageDB:templateUpdateInfo:]
+  -[BiometricKitXPCServerMesa setCalibrationData:source:]
+  -[BiometricKitXPCServerMesa getFDRCalibrationData]
+  -[BiometricKitXPCServerMesa getEEPROMCalibrationData]
+  -[BiometricKitXPCServerMesa matchEventMessage:]
+  -[BiometricKitXPCServerMesa performCommand:version:inValue:inData:inSize:outData:outSize:]
+  -[BiometricKitXPCServerMesa restoreCatacombMap]
+  -[BiometricKitXPCServerMesa dumpSyslog]
+  -[BiometricKitXPCServerMesa decodeCatacombDataV1:withSize:]
+  -[BiometricKitXPCServerMesa saveTemplateListSU:]
+  -[BiometricKitXPCServerMesa restoreTemplateListSU]
+  -[BiometricKitXPCServerMesa dumpSyslogWithDelay:]
+  -[BiometricKitXPCServerMesa getSyslog]
+  -[BiometricKitXPCServerMesa getSyslogArray]
+  -[BiometricKitXPCServerMesa updateBioLogState]
+  -[BiometricKitXPCServerMesa resetSensor]
+  -[BiometricKitXPCServerMesa cachePatch]
+  -[BiometricKitXPCServerMesa getRemoteFDRCalibrationData]
+  -[BiometricKitXPCServerMesa getLoggingType]
+  -[BiometricKitXPCServerMesa getEnrollmentCount]
+  -[BiometricKitXPCServerMesa getTimestampCollection:]
+  -[BiometricKitXPCServerMesa getCommProtocolVersion]
+  -[BiometricKitXPCServerMesa getSerialisedTemplatesForUser:]
+  -[BiometricKitXPCServerMesa getTemplateListCRCForUser:]
+  -[BiometricKitXPCServerMesa loadCalibrationData]
+  -[BiometricKitXPCServerMesa getSyslogForQuery:withFilter:]
+
+
+TemplateInfo : NSObject /usr/lib/libSystem.B.dylib
+ @property  short totalNodeCount
+ @property  double totalArea
+ @property  short largestComponentNodeCount
+ @property  double largestComponentArea
+ @property  short clusterCount
+ @property  NSDate *creationTime
+ @property  long long matchCount
+ @property  long long updateCount
+ @property  NSNumber *userID
+
+  // instance methods
+  -[TemplateInfo userID]
+  -[TemplateInfo .cxx_destruct]
+  -[TemplateInfo setUserID:]
+  -[TemplateInfo creationTime]
+  -[TemplateInfo setCreationTime:]
+  -[TemplateInfo updateCount]
+  -[TemplateInfo setUpdateCount:]
+  -[TemplateInfo matchCount]
+  -[TemplateInfo clusterCount]
+  -[TemplateInfo setMatchCount:]
+  -[TemplateInfo totalNodeCount]
+  -[TemplateInfo setTotalNodeCount:]
+  -[TemplateInfo totalArea]
+  -[TemplateInfo setTotalArea:]
+  -[TemplateInfo largestComponentNodeCount]
+  -[TemplateInfo setLargestComponentNodeCount:]
+  -[TemplateInfo largestComponentArea]
+  -[TemplateInfo setLargestComponentArea:]
+  -[TemplateInfo setClusterCount:]
+
+
+ADEvent : NSObject /usr/lib/libSystem.B.dylib
+ @property  long long operation
+ @property  long long storage
+ @property  long long key
+ @property  NSString *stringKey
+ @property  NSNumber *value
+
+  // class methods
+  +[ADEvent eventWithOperation:Storage:Key:Value:]
+  +[ADEvent eventWithOperation:Storage:StringKey:Value:]
+
+  // instance methods
+  -[ADEvent key]
+  -[ADEvent storage]
+  -[ADEvent .cxx_destruct]
+  -[ADEvent value]
+  -[ADEvent operation]
+  -[ADEvent setOperation:]
+  -[ADEvent setValue:]
+  -[ADEvent setKey:]
+  -[ADEvent setStorage:]
+  -[ADEvent setStringKey:]
+  -[ADEvent initWithOperation:Storage:Key:StringKey:Value:]
+  -[ADEvent stringKey]
+  -[ADEvent stringKey:useCase:prearmedApplePay:]
+  -[ADEvent pushToAggregateDictionary:useCase:prearmedApplePay:]
+
+
+ADStorage : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[ADStorage storage]
+
+  // instance methods
+  -[ADStorage init]
+  -[ADStorage clear]
+  -[ADStorage .cxx_destruct]
+  -[ADStorage addEvent:]
+  -[ADStorage pushToAggregateDictionary:useCase:prearmedApplePay:]
+
+
+BiometricKitDStatistics : NSObject /usr/lib/libSystem.B.dylib
+ @property  BiometricKitXPCServerMesa *server
+
+  // class methods
+  +[BiometricKitDStatistics statistics]
+  +[BiometricKitDStatistics clusterCount:]
+
+  // instance methods
+  -[BiometricKitDStatistics init]
+  -[BiometricKitDStatistics .cxx_destruct]
+  -[BiometricKitDStatistics cancel]
+  -[BiometricKitDStatistics setServer:]
+  -[BiometricKitDStatistics server]
+  -[BiometricKitDStatistics removeIdentity:]
+  -[BiometricKitDStatistics timestampEvent:absoluteTime:]
+  -[BiometricKitDStatistics statusMessage:]
+  -[BiometricKitDStatistics startMatchOperation:]
+  -[BiometricKitDStatistics startBioOperation:]
+  -[BiometricKitDStatistics logSensorSelfTestInfo]
+  -[BiometricKitDStatistics displayStatusChanged:]
+  -[BiometricKitDStatistics matchResult:withDictionary:]
+  -[BiometricKitDStatistics resetMatchCounts]
+  -[BiometricKitDStatistics statisticsMessage:]
+  -[BiometricKitDStatistics templateUpdate:withDictionary:]
+  -[BiometricKitDStatistics addIdentitity:]
+  -[BiometricKitDStatistics homeButtonStateChanged:]
+  -[BiometricKitDStatistics lockStateUpdated:]
+  -[BiometricKitDStatistics removeAllIdentities]
+  -[BiometricKitDStatistics catacombCorrupted:]
+  -[BiometricKitDStatistics wakeGestureUpdate:]
+  -[BiometricKitDStatistics serviceMatch]
+  -[BiometricKitDStatistics totalNodeCount]
+  -[BiometricKitDStatistics totalArea]
+  -[BiometricKitDStatistics unlockAttemptStarted:]
+  -[BiometricKitDStatistics matchOperationStarted]
+  -[BiometricKitDStatistics postEvent:]
+  -[BiometricKitDStatistics matchAttemptFinished:]
+  -[BiometricKitDStatistics matchOperationFinished:]
+  -[BiometricKitDStatistics wasDeviceHibernated:]
+  -[BiometricKitDStatistics updateDailyValues]
+  -[BiometricKitDStatistics lastImageIsProcessed]
+  -[BiometricKitDStatistics isPasscodeNeeded]
+  -[BiometricKitDStatistics logFingerOff]
+  -[BiometricKitDStatistics handleSensorOperationStatusMessage:]
+  -[BiometricKitDStatistics isMesaEnabled]
+  -[BiometricKitDStatistics totalClusterCount]
+  -[BiometricKitDStatistics totalPrimaryClusterNodeCount]
+  -[BiometricKitDStatistics totalPrimaryClusterArea]
+  -[BiometricKitDStatistics logTemplateAttributes:]
+  -[BiometricKitDStatistics logTemplateCountPerUser:]
+  -[BiometricKitDStatistics unlockedByPasscode]
+  -[BiometricKitDStatistics unlockedByMesa]
+  -[BiometricKitDStatistics logTemplateMatchCounts]
+  -[BiometricKitDStatistics unlockAttemptFinished]
+  -[BiometricKitDStatistics wasPasscodeNeeded]
+  -[BiometricKitDStatistics unlockAttemptCanceled]
+  -[BiometricKitDStatistics passcodeNedded:]
+  -[BiometricKitDStatistics getSensorSelfTestResult]
+
+
+BioLogBase : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long absoluteTimeOverride
+
+  // class methods
+  +[BioLogBase updateLogger:withServerObject:identities:]
+  +[BioLogBase enableSensorStatusMessages:withServerObject:]
+  +[BioLogBase runInShell:]
+
+  // instance methods
+  -[BioLogBase dealloc]
+  -[BioLogBase .cxx_destruct]
+  -[BioLogBase updateIdentity:]
+  -[BioLogBase fileRadarWithLogs:withDescription:]
+  -[BioLogBase logDisconnectingClient:]
+  -[BioLogBase logStatusMessage:withData:timestamp:forClients:]
+  -[BioLogBase logEnrollStartForUser:fromClient:]
+  -[BioLogBase logEnrollStartError:]
+  -[BioLogBase logMatchStart:withOptions:fromClient:]
+  -[BioLogBase logMatchStartError:]
+  -[BioLogBase logFingerDetectStartWithOptions:fromClient:]
+  -[BioLogBase logFingerDetectStartError:]
+  -[BioLogBase logCancelFromClient:]
+  -[BioLogBase logCancelError:]
+  -[BioLogBase logUpdateIdentity:withOptions:fromClient:]
+  -[BioLogBase logUpdateIdentity:withError:]
+  -[BioLogBase logRemoveIdentity:withOptions:fromClient:withTimestamp:]
+  -[BioLogBase logRemoveIdentity:withError:]
+  -[BioLogBase logRemoveAllIdentitiesForUser:withOptions:fromClient:]
+  -[BioLogBase logGetIdentityFromUUID:fromClient:]
+  -[BioLogBase logGetIdentities:fromClient:]
+  -[BioLogBase logGetMaxIdentityCount:fromClient:]
+  -[BioLogBase logCall:withParameters:fromClient:]
+  -[BioLogBase logHomeButtonState:fromKernel:withTimestamp:]
+  -[BioLogBase logCall:withError:]
+  -[BioLogBase logProtectedConfiguration:forUser:fromClient:]
+  -[BioLogBase logProtectedConfigurationError:]
+  -[BioLogBase logDisplayState:withTimestamp:]
+  -[BioLogBase logDelegateRegistered:fromClient:]
+  -[BioLogBase packAllLogs]
+  -[BioLogBase attachmentsFromAllLogs]
+  -[BioLogBase packCurrentLog]
+  -[BioLogBase attachmentsFromCurrentLog]
+  -[BioLogBase logEnrollResultIdentity:withTimestamp:forClients:]
+  -[BioLogBase logMatchResultIdentity:withDetails:timestamp:forClients:]
+  -[BioLogBase logSensorStatus:]
+  -[BioLogBase logKernelMessage:]
+  -[BioLogBase logSensorRecoveryReason:withTimestamp:]
+  -[BioLogBase logSKSLockState:forUser:withTimestamp:]
+  -[BioLogBase logUnlockedStateWithIdentities:]
+  -[BioLogBase logSaveTemplateListWithDetails:]
+  -[BioLogBase logSaveTemplateListError:]
+  -[BioLogBase logWakeGestureState:]
+  -[BioLogBase logThermalLevel:]
+  -[BioLogBase initToPath:withServerObject:identities:mode:]
+  -[BioLogBase uninitializeEventSystem]
+  -[BioLogBase log:withDetails:timestamp:fromClient:endingWithToken:osLogMsgType:]
+  -[BioLogBase closeLogFile]
+  -[BioLogBase logQueue]
+  -[BioLogBase compactLog]
+  -[BioLogBase logNameFromDate:]
+  -[BioLogBase logLogStartSync]
+  -[BioLogBase logUnlockedStateSyncWithIdentities:]
+  -[BioLogBase logProtectedConfigurationSync:forUser:fromClient:]
+  -[BioLogBase logCalibrationData:]
+  -[BioLogBase logTemplateLists:fromIdentities:]
+  -[BioLogBase createNewLog]
+  -[BioLogBase initializeEventSystem]
+  -[BioLogBase fileRadarWithLogs:withDescription:andKeywordIDs:]
+  -[BioLogBase synchronizeLogFile]
+  -[BioLogBase synchronizeLogFileSync]
+  -[BioLogBase _log:withDetails:timestamp:fromClient:forClients:endingWithToken:checkingLogEnd:osLogMsgType:]
+  -[BioLogBase checkLogEndWithAbsoluteTime:]
+  -[BioLogBase logPowerSourceStateAsync:initial:]
+  -[BioLogBase stringFromTemplateByIdentity:]
+  -[BioLogBase logTemplateList:withIdentity:listingAllIdentitiesForUser:imageMetadata:]
+  -[BioLogBase stringFromTemplateListForUser:]
+  -[BioLogBase imageFileNameWithTimestamp:captureCounter:]
+  -[BioLogBase logTopology:]
+  -[BioLogBase noteAssertionFailureWithResultCode:]
+  -[BioLogBase logASLDelayedWithRadarPromptOnError:]
+  -[BioLogBase log:withDetails:timestamp:forClients:endingWithToken:osLogMsgType:]
+  -[BioLogBase logTemplateUpdate:]
+  -[BioLogBase logTemplateUpdateResult:]
+  -[BioLogBase addImageComment:]
+  -[BioLogBase logTemplateGraphState:]
+  -[BioLogBase logError:withDetails:status:]
+  -[BioLogBase promptFileRadar:withAlternateButton:andAlternateAction:withOtherButton:andOtherAction:andKeywordIDs:]
+  -[BioLogBase logASLWithRadarPromptOnError:]
+  -[BioLogBase logCapture:withTimestamp:captureCounter:]
+  -[BioLogBase logImage:withWidth:height:timestamp:captureCounter:]
+  -[BioLogBase logStackshotWithErrorCode:]
+  -[BioLogBase logTemplateListWithIdentity:listingAllIdentitiesForUser:]
+  -[BioLogBase logAsync:withDetails:timestamp:endingWithToken:]
+  -[BioLogBase logMobileKeyBagLockStatus:]
+  -[BioLogBase chargerConnected:]
+  -[BioLogBase logPowerSource:withAbsoluteTime:async:]
+  -[BioLogBase logPowerStateSync:withTimestamp:]
+  -[BioLogBase logTailspinWithErrorCode:]
+  -[BioLogBase logMatchStartFromClient:]
+  -[BioLogBase timeBox]
+  -[BioLogBase absoluteTimeOverride]
+  -[BioLogBase setAbsoluteTimeOverride:]
+
+
+BioLog : BioLogBase
+  // instance methods
+  -[BioLog init]
+  -[BioLog .cxx_destruct]
+  -[BioLog details]
+  -[BioLog logDisconnectingClient:]
+  -[BioLog logStatusMessage:withData:timestamp:forClients:]
+  -[BioLog logEnrollStartForUser:fromClient:]
+  -[BioLog logEnrollStartError:]
+  -[BioLog logMatchStart:withOptions:fromClient:]
+  -[BioLog logMatchStartError:]
+  -[BioLog logFingerDetectStartWithOptions:fromClient:]
+  -[BioLog logFingerDetectStartError:]
+  -[BioLog logCancelFromClient:]
+  -[BioLog logCancelError:]
+  -[BioLog logUpdateIdentity:withOptions:fromClient:]
+  -[BioLog logUpdateIdentity:withError:]
+  -[BioLog logRemoveIdentity:withOptions:fromClient:withTimestamp:]
+  -[BioLog logRemoveIdentity:withError:]
+  -[BioLog logRemoveAllIdentitiesForUser:withOptions:fromClient:]
+  -[BioLog logGetIdentityFromUUID:fromClient:]
+  -[BioLog logGetIdentities:fromClient:]
+  -[BioLog logGetMaxIdentityCount:fromClient:]
+  -[BioLog logCall:withParameters:fromClient:]
+  -[BioLog logHomeButtonState:fromKernel:withTimestamp:]
+  -[BioLog logCall:withError:]
+  -[BioLog logProtectedConfiguration:forUser:fromClient:]
+  -[BioLog logProtectedConfigurationError:]
+  -[BioLog logDisplayState:withTimestamp:]
+  -[BioLog logDelegateRegistered:fromClient:]
+  -[BioLog packAllLogs]
+  -[BioLog attachmentsFromAllLogs]
+  -[BioLog packCurrentLog]
+  -[BioLog attachmentsFromCurrentLog]
+  -[BioLog logEnrollResultIdentity:withTimestamp:forClients:]
+  -[BioLog logMatchResultIdentity:withDetails:timestamp:forClients:]
+  -[BioLog logSensorStatus:]
+  -[BioLog logKernelMessage:]
+  -[BioLog logSensorRecoveryReason:withTimestamp:]
+  -[BioLog logSKSLockState:forUser:withTimestamp:]
+  -[BioLog logUnlockedStateWithIdentities:]
+  -[BioLog logSaveTemplateListWithDetails:]
+  -[BioLog logSaveTemplateListError:]
+  -[BioLog logWakeGestureState:]
+  -[BioLog logThermalLevel:]
+  -[BioLog closeLogFile]
+  -[BioLog logQueue]
+  -[BioLog logAsync:withDetails:timestamp:endingWithToken:]
+  -[BioLog logMatchStartFromClient:]
+  -[BioLog dispatchLogEventAsync:withCurrentTimestamp:]
+  -[BioLog logLogStart]
+  -[BioLog logTemplateListFromIdentities:]
+  -[BioLog logPowerState:withTimestamp:]
+
+
+BLHelper : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[BLHelper initialize]
+  +[BLHelper systemVersion]
+  +[BLHelper stringFromDictionary:]
+  +[BLHelper stringFromArray:]
+  +[BLHelper stringFromStatus:]
+  +[BLHelper stringFromClientObject:]
+  +[BLHelper stringFromClientObjectArray:]
+  +[BLHelper stringFromLoggingType:]
+  +[BLHelper stringFromProvisioningState:]
+  +[BLHelper stringFromIQAssessment:]
+  +[BLHelper stringFromIQFeedback:]
+  +[BLHelper stringFromIQProblemClass:]
+  +[BLHelper writeImageAsPGM:withWidth:height:toFile:withComment:attributes:]
+  +[BLHelper stringFromWakeGestureState:]
+  +[BLHelper stringFromSensorStatusLog:maskUnstableFields:]
+  +[BLHelper stringFromResetReason:]
+  +[BLHelper stringFromSKSLockState:]
+  +[BLHelper stringFromMobileKeyBagState:]
+  +[BLHelper stringFromScanningState:]
+  +[BLHelper stringFromSensorProvisionCommandStatus:]
+  +[BLHelper stringFromSensorSecurityAssurance:]
+  +[BLHelper stringFromSensorIndicator:]
+  +[BLHelper stringFromSensorAdditionalData:]
+  +[BLHelper writeASLToFile:withAttributes:filter:history:errorKeywords:containsErrors:]
+
+
+BLTemplateList : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[BLTemplateList .cxx_destruct]
+  -[BLTemplateList setIdentity:]
+  -[BLTemplateList removeAll]
+  -[BLTemplateList removeIdentity:]
+  -[BLTemplateList setIdentities:]
+  -[BLTemplateList allIdentities]
+  -[BLTemplateList initWithIdentities:]
+  -[BLTemplateList identitiesForUser:]
+  -[BLTemplateList countForUser:]
+  -[BLTemplateList templateNameForIdentity:]
+  -[BLTemplateList setIdentity:withTemplateName:]
+  -[BLTemplateList setIdentitiesForUser:withTemplateListName:]
+  -[BLTemplateList identityByUUID:]
+
+
+BLTimeBox : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *systemStartDate
+ @property  BOOL clockChanged
+ @property  double lastMachCorrection
+ @property  NSDate *idleStartDate
+
+  // instance methods
+  -[BLTimeBox init]
+  -[BLTimeBox dealloc]
+  -[BLTimeBox .cxx_destruct]
+  -[BLTimeBox date]
+  -[BLTimeBox clockChanged]
+  -[BLTimeBox dateFromAbsoluteTime:hasNanoseconds:]
+  -[BLTimeBox clockOffset]
+  -[BLTimeBox idleTimeAtDate:]
+  -[BLTimeBox synchronizeToClock]
+  -[BLTimeBox setIdleStartDate:]
+  -[BLTimeBox machCorrectionWithCheck]
+  -[BLTimeBox setLastMachCorrection:]
+  -[BLTimeBox getSystemStartDate]
+  -[BLTimeBox systemClockChanged:]
+  -[BLTimeBox systemStartDate]
+  -[BLTimeBox lastMachCorrection]
+  -[BLTimeBox idleStartDate]
+
+
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: BiometricKitIdentity 
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: BiometricKitXPCServer 
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: BiometricMatchOperation 
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: BiometricSupportUserNotification 
+01 00 0b00 /System/Library/Frameworks/CoreMotion.framework/CoreMotion: CMWakeGestureManager 
+01 00 1100 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0f00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: SystemProtectedConfig 
+01 00 0500 /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport: UserProtectedConfig 

@@ -1,0 +1,154 @@
+|| __DATA.__data _CMFAgentName
+|| __DATA.__data _CMFBlockListUpdatedNotification
+|| __DATA.__data _CMFDictionaryResultKey
+|| __DATA.__data _CMFSyncAgentBlockListUpdated
+|| __DATA.__data _CMFXPCEventCode
+|| __DATA.__data _CMFXPCParameterKeyItem
+|| __DATA.__data _CMFXPCResponseKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CommunicationFilterItem
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CommunicationFilterItem
+|| __TEXT.__text _CMFBlockListAddItemForAllServices
+|| __TEXT.__text _CMFBlockListCopyItemsForAllServicesService
+|| __TEXT.__text _CMFBlockListIsItemBlocked
+|| __TEXT.__text _CMFBlockListRemoveItemFromAllServices
+|| __TEXT.__text _CMFItemCopyEmailAddress
+|| __TEXT.__text _CMFItemCopyPhoneNumber
+|| __TEXT.__text _CMFItemCreateWithEmailAddress
+|| __TEXT.__text _CMFItemCreateWithPhoneNumber
+|| __TEXT.__text _CMFItemGetType
+|| __TEXT.__text _CreateCMFItemFromString
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ IMFoundation: _IMCountryCodeCFPhoneNumberRef
+__ IMFoundation: _IMGetXPCCodableFromDictionaryWithStandardWhitelist
+__ IMFoundation: _IMGetXPCDictionaryFromDictionary
+__ IMFoundation: _IMInsertDictionariesToXPCDictionary
+__ IMFoundation: _IMPhoneNumberRefCopyForPhoneNumber
+__ IMFoundation: _IMRemoteURLConnectionErrorDomain
+__ IMFoundation: _IMUnformattedPhoneNumberForCFPhoneNumberRef
+__ IMFoundation: _IMXPCConfigureConnection
+__ IMFoundation: _IMXPCCreateConnectionForServiceWithQueue
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_release
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+CommunicationsFilterBlockList : NSObject
+  // class methods
+  +[CommunicationsFilterBlockList sharedInstance]
+
+  // instance methods
+  -[CommunicationsFilterBlockList init]
+  -[CommunicationsFilterBlockList dealloc]
+  -[CommunicationsFilterBlockList _disconnected]
+  -[CommunicationsFilterBlockList _disconnect]
+  -[CommunicationsFilterBlockList _connect]
+  -[CommunicationsFilterBlockList _sendSynchronousXPCRequest:]
+  -[CommunicationsFilterBlockList _sendXPCRequest:completionBlock:]
+  -[CommunicationsFilterBlockList addItemForAllServices:]
+  -[CommunicationsFilterBlockList removeItemForAllServices:]
+  -[CommunicationsFilterBlockList copyAllItems]
+  -[CommunicationsFilterBlockList isItemInList:]
+
+
+CommunicationFilterItem : NSObject
+ @property  ^{__CFPhoneNumber=} phoneNumber
+ @property  NSString *emailAddress
+ @property  NSString *unformattedID
+
+  // instance methods
+  -[CommunicationFilterItem dealloc]
+  -[CommunicationFilterItem dictionaryRepresentation]
+  -[CommunicationFilterItem phoneNumber]
+  -[CommunicationFilterItem emailAddress]
+  -[CommunicationFilterItem initWithDictionaryRepresentation:]
+  -[CommunicationFilterItem initWithEmailAddress:]
+  -[CommunicationFilterItem initWithPhoneNumber:]
+  -[CommunicationFilterItem unformattedID]
+  -[CommunicationFilterItem isPhoneNumber]
+  -[CommunicationFilterItem _dictionaryRepresentationWithRedaction]
+  -[CommunicationFilterItem _acceptItemType:]
+  -[CommunicationFilterItem _acceptVersion:]
+  -[CommunicationFilterItem matchesFilterItem:]
+
+
+CommunicationFilterItemCache : NSObject
+ @property  long long isInList
+
+  // instance methods
+  -[CommunicationFilterItemCache dealloc]
+  -[CommunicationFilterItemCache initWithFilterItem:isInList:]
+  -[CommunicationFilterItemCache matchesItem:]
+  -[CommunicationFilterItemCache isInList]
+  -[CommunicationFilterItemCache setIsInList:]
+
+
+CommunicationsFilterBlockListCache : NSObject
+  // instance methods
+  -[CommunicationsFilterBlockListCache init]
+  -[CommunicationsFilterBlockListCache removeItemFromCache:]
+  -[CommunicationsFilterBlockListCache cachedResponseForItem:]
+  -[CommunicationsFilterBlockListCache setResponse:forItem:]
+  -[CommunicationsFilterBlockListCache _blockListChanged:]
+  -[CommunicationsFilterBlockListCache syncListEmptyState]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 

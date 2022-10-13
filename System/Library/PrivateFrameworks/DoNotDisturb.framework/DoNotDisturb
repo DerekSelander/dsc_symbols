@@ -1,0 +1,957 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DNDModeAssertionInvalidationDetails
+|| __DATA.__objc_data _OBJC_CLASS_$_DNDMutableModeAssertionInvalidationDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_DNDModeAssertionInvalidationDetails
+|| __DATA.__objc_data _OBJC_METACLASS_$_DNDMutableModeAssertionInvalidationDetails
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDBehaviorSettings._interruptionBehaviorSetting
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDBypassSettings._immediateBypassCNGroupIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDBypassSettings._immediateBypassEventSourceType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDBypassSettings._repeatEventSourceBehaviorEnabledSetting
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDClientEventDetails._identifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDClientEventDetails._shouldAlwaysInterrupt
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDClientEventDetails._source
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDModeAssertionDetails._identifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDModeAssertionDetails._lifetime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDModeAssertionDetails._modeIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDModeAssertionDetails._userVisibleEndDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDModeAssertionInvalidationDetails._identifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleSettings._bedtimeBehaviorEnabledSetting
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleSettings._scheduleEnabledSetting
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleSettings._timePeriod
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleTime._hour
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleTime._minute
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleTimePeriod._endTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DNDScheduleTimePeriod._startTime
+|| __DATA_CONST.__const _DNDDefaultModeIdentifier
+|| __DATA_CONST.__const _DNDDefaultScheduleIdentifier
+|| __DATA_CONST.__const _DNDSystemClientIdentifier
+|| __DATA_DIRTY.__common _DNDLogBehaviorResolution
+|| __DATA_DIRTY.__common _DNDLogModeAssertion
+|| __DATA_DIRTY.__common _DNDLogRemoteConnection
+|| __DATA_DIRTY.__common _DNDLogSettings
+|| __DATA_DIRTY.__common _DNDLogState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDBehaviorSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDBypassSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDClientEventBehavior
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDClientEventDetails
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDClientEventSource
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDDevice
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDEventBehaviorResolutionService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionCalendarEventLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionDateIntervalLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionDetails
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionInvalidation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionLocationLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionScheduleLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionSource
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDModeAssertionUserRequestedLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableBehaviorSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableBypassSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableClientEventDetails
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableModeAssertionDetails
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableScheduleSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableScheduleTime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDMutableScheduleTimePeriod
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDRemoteServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDRequestDetails
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDScheduleSettings
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDScheduleTime
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDScheduleTimePeriod
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDSettingsService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDStateModeAssertionMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDStateService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DNDStateUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDBehaviorSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDBypassSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDClientEventBehavior
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDClientEventDetails
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDClientEventSource
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDDevice
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDEventBehaviorResolutionService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionCalendarEventLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionDateIntervalLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionDetails
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionInvalidation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionLocationLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionScheduleLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionSource
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDModeAssertionUserRequestedLifetime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableBehaviorSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableBypassSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableClientEventDetails
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableModeAssertionDetails
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableScheduleSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableScheduleTime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDMutableScheduleTimePeriod
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDRemoteServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDRequestDetails
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDScheduleSettings
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDScheduleTime
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDScheduleTimePeriod
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDSettingsService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDStateModeAssertionMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDStateService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DNDStateUpdate
+|| __TEXT.__const _DoNotDisturbVersionNumber
+|| __TEXT.__const _DoNotDisturbVersionString
+|| __TEXT.__const _kDefaultBedtimeBehaviorEnabledSetting
+|| __TEXT.__const _kDefaultImmediateBypassEventSourceType
+|| __TEXT.__const _kDefaultImmediateBypassEventSourceTypePhone
+|| __TEXT.__const _kDefaultResolvedRepeatEventSourceBehaviorEnabledSetting
+|| __TEXT.__const _kDefaultScheduleEnabledSetting
+|| __TEXT.__const _kDefaultSetting
+|| __TEXT.__const _kDefaultSettingCanUILock
+|| __TEXT.__const _kMaximumLifetimeDuration
+|| __TEXT.__text _DNDDeviceClassFromMGDeviceClass
+|| __TEXT.__text _DNDEnabledSettingToString
+|| __TEXT.__text _DNDEventSourceTypeToString
+|| __TEXT.__text _DNDInterruptionBehaviorToString
+|| __TEXT.__text _DNDInterruptionSuppressionToString
+|| __TEXT.__text _DNDModeAssertionInvalidationReasonOverrideToString
+|| __TEXT.__text _DNDModeAssertionInvalidationReasonToString
+|| __TEXT.__text _DNDMostRestrictiveInterruptionSuppression
+|| __TEXT.__text _DNDRegisterLogging
+|| __TEXT.__text _DNDResolvedBedtimeBehaviorEnabledSetting
+|| __TEXT.__text _DNDResolvedImmediateBypassEventSourceType
+|| __TEXT.__text _DNDResolvedImmediateBypassEventSourceTypeForDevice
+|| __TEXT.__text _DNDResolvedInterruptionBehavior
+|| __TEXT.__text _DNDResolvedInterruptionBehaviorSetting
+|| __TEXT.__text _DNDResolvedInterruptionBehaviorSettingForDevice
+|| __TEXT.__text _DNDResolvedModeAssertionInvalidationReason
+|| __TEXT.__text _DNDResolvedRepeatEventSourceBehaviorEnabledSetting
+|| __TEXT.__text _DNDResolvedRepeatEventSourceBehaviorEnabledSettingForDevice
+|| __TEXT.__text _DNDResolvedScheduleEnabledSetting
+|| __TEXT.__text _DNDStateUpdateReasonToString
+|| __TEXT.__text _DNDStringFromDeviceCapabilities
+|| __TEXT.__text _DNDStringFromDeviceClass
+|| __TEXT.__text _DNDStringFromInterruptionBehaviorSetting
+|| __TEXT.__text _DNDStringFromInterruptionSuppressionState
+|| __TEXT.__text _DNDStringFromModeAssertionLifetimeType
+|| __TEXT.__text _DNDStringFromModeAssertionScheduleLifetimeBehavior
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSDateInterval
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+DNDScheduleTime : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  unsigned long hour
+ @property  unsigned long minute
+
+  // class methods
+  +[DNDScheduleTime supportsSecureCoding]
+  +[DNDScheduleTime defaultStartTime]
+  +[DNDScheduleTime defaultEndTime]
+
+  // instance methods
+  -[DNDScheduleTime init]
+  -[DNDScheduleTime isEqual:]
+  -[DNDScheduleTime copyWithZone:]
+  -[DNDScheduleTime mutableCopyWithZone:]
+  -[DNDScheduleTime encodeWithCoder:]
+  -[DNDScheduleTime initWithCoder:]
+  -[DNDScheduleTime hour]
+  -[DNDScheduleTime minute]
+  -[DNDScheduleTime dateComponents]
+  -[DNDScheduleTime _initWithHour:minute:]
+  -[DNDScheduleTime _initWithTime:]
+
+
+DNDMutableScheduleTime : DNDScheduleTime
+ @property  unsigned long hour
+ @property  unsigned long minute
+
+  // instance methods
+  -[DNDMutableScheduleTime copyWithZone:]
+  -[DNDMutableScheduleTime setHour:]
+  -[DNDMutableScheduleTime setMinute:]
+
+
+DNDModeAssertion : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSUUID *UUID
+ @property  NSDate *startDate
+ @property  DNDModeAssertionDetails *details
+ @property  DNDModeAssertionSource *source
+
+  // class methods
+  +[DNDModeAssertion supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertion isEqual:]
+  -[DNDModeAssertion copyWithZone:]
+  -[DNDModeAssertion encodeWithCoder:]
+  -[DNDModeAssertion initWithCoder:]
+  -[DNDModeAssertion .cxx_destruct]
+  -[DNDModeAssertion source]
+  -[DNDModeAssertion startDate]
+  -[DNDModeAssertion UUID]
+  -[DNDModeAssertion details]
+  -[DNDModeAssertion initWithUUID:startDate:details:source:]
+
+
+DNDBehaviorSettings : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  unsigned long interruptionBehavior
+ @property  unsigned long interruptionBehaviorSetting
+
+  // class methods
+  +[DNDBehaviorSettings supportsSecureCoding]
+
+  // instance methods
+  -[DNDBehaviorSettings init]
+  -[DNDBehaviorSettings isEqual:]
+  -[DNDBehaviorSettings copyWithZone:]
+  -[DNDBehaviorSettings mutableCopyWithZone:]
+  -[DNDBehaviorSettings encodeWithCoder:]
+  -[DNDBehaviorSettings initWithCoder:]
+  -[DNDBehaviorSettings _initWithSettings:]
+  -[DNDBehaviorSettings interruptionBehaviorSetting]
+  -[DNDBehaviorSettings _initWithInterruptionBehaviorSetting:]
+  -[DNDBehaviorSettings interruptionBehavior]
+
+
+DNDMutableBehaviorSettings : DNDBehaviorSettings
+ @property  unsigned long interruptionBehavior
+ @property  unsigned long interruptionBehaviorSetting
+
+  // instance methods
+  -[DNDMutableBehaviorSettings copyWithZone:]
+  -[DNDMutableBehaviorSettings setInterruptionBehaviorSetting:]
+  -[DNDMutableBehaviorSettings setInterruptionBehavior:]
+
+
+DNDModeAssertionDateIntervalLifetime : DNDModeAssertionLifetime
+ @property  NSDateInterval *dateInterval
+
+  // class methods
+  +[DNDModeAssertionDateIntervalLifetime supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionDateIntervalLifetime isEqual:]
+  -[DNDModeAssertionDateIntervalLifetime encodeWithCoder:]
+  -[DNDModeAssertionDateIntervalLifetime initWithCoder:]
+  -[DNDModeAssertionDateIntervalLifetime .cxx_destruct]
+  -[DNDModeAssertionDateIntervalLifetime dateInterval]
+  -[DNDModeAssertionDateIntervalLifetime initWithDateInterval:]
+  -[DNDModeAssertionDateIntervalLifetime isActiveForDate:]
+  -[DNDModeAssertionDateIntervalLifetime lifetimeType]
+
+
+DNDScheduleTimePeriod : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  DNDScheduleTime *startTime
+ @property  DNDScheduleTime *endTime
+
+  // class methods
+  +[DNDScheduleTimePeriod supportsSecureCoding]
+
+  // instance methods
+  -[DNDScheduleTimePeriod init]
+  -[DNDScheduleTimePeriod isEqual:]
+  -[DNDScheduleTimePeriod copyWithZone:]
+  -[DNDScheduleTimePeriod mutableCopyWithZone:]
+  -[DNDScheduleTimePeriod encodeWithCoder:]
+  -[DNDScheduleTimePeriod initWithCoder:]
+  -[DNDScheduleTimePeriod .cxx_destruct]
+  -[DNDScheduleTimePeriod startTime]
+  -[DNDScheduleTimePeriod endTime]
+  -[DNDScheduleTimePeriod _initWithPeriod:]
+  -[DNDScheduleTimePeriod _initWithStartTime:endTime:]
+
+
+DNDMutableScheduleTimePeriod : DNDScheduleTimePeriod
+ @property  DNDScheduleTime *startTime
+ @property  DNDScheduleTime *endTime
+
+  // instance methods
+  -[DNDMutableScheduleTimePeriod copyWithZone:]
+  -[DNDMutableScheduleTimePeriod setEndTime:]
+  -[DNDMutableScheduleTimePeriod setStartTime:]
+
+
+DNDModeAssertionInvalidation : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  DNDModeAssertionSource *source
+ @property  DNDModeAssertionInvalidationDetails *details
+ @property  unsigned long reasonOverride
+ @property  DNDModeAssertion *assertion
+ @property  NSDate *invalidationDate
+ @property  unsigned long reason
+
+  // class methods
+  +[DNDModeAssertionInvalidation supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionInvalidation isEqual:]
+  -[DNDModeAssertionInvalidation copyWithZone:]
+  -[DNDModeAssertionInvalidation encodeWithCoder:]
+  -[DNDModeAssertionInvalidation initWithCoder:]
+  -[DNDModeAssertionInvalidation reason]
+  -[DNDModeAssertionInvalidation .cxx_destruct]
+  -[DNDModeAssertionInvalidation source]
+  -[DNDModeAssertionInvalidation assertion]
+  -[DNDModeAssertionInvalidation details]
+  -[DNDModeAssertionInvalidation invalidationDate]
+  -[DNDModeAssertionInvalidation reasonOverride]
+  -[DNDModeAssertionInvalidation initWithAssertion:invalidationDate:details:source:reason:reasonOverride:]
+
+
+DNDStateUpdate : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  DNDState *previousState
+ @property  DNDState *state
+ @property  unsigned long reason
+
+  // class methods
+  +[DNDStateUpdate supportsSecureCoding]
+
+  // instance methods
+  -[DNDStateUpdate isEqual:]
+  -[DNDStateUpdate copyWithZone:]
+  -[DNDStateUpdate encodeWithCoder:]
+  -[DNDStateUpdate initWithCoder:]
+  -[DNDStateUpdate reason]
+  -[DNDStateUpdate .cxx_destruct]
+  -[DNDStateUpdate state]
+  -[DNDStateUpdate previousState]
+  -[DNDStateUpdate initWithPreviousState:state:reason:]
+
+
+DNDDevice : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  unsigned long deviceClass
+ @property  unsigned long deviceCapabilities
+
+  // class methods
+  +[DNDDevice currentDevice]
+  +[DNDDevice deviceWithClass:deviceCapabilities:]
+
+  // instance methods
+  -[DNDDevice isEqual:]
+  -[DNDDevice copyWithZone:]
+  -[DNDDevice deviceClass]
+  -[DNDDevice deviceCapabilities]
+  -[DNDDevice _initWithClass:deviceCapabilities:]
+
+
+DNDModeAssertionLifetime : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  unsigned long lifetimeType
+
+  // class methods
+  +[DNDModeAssertionLifetime supportsSecureCoding]
+  +[DNDModeAssertionLifetime lifetimeWithDateInterval:]
+  +[DNDModeAssertionLifetime lifetimeWithDuration:]
+  +[DNDModeAssertionLifetime lifetimeWithCurrentLocation]
+  +[DNDModeAssertionLifetime lifetimeUntilEndOfCalendarEventWithUniqueID:occurrenceDate:]
+  +[DNDModeAssertionLifetime lifetimeWithCalendarEventUniqueID:occurrenceDate:]
+  +[DNDModeAssertionLifetime lifetimeMatchingScheduleWithIdentifier:]
+  +[DNDModeAssertionLifetime lifetimeUntilEndOfScheduleWithIdentifier:]
+  +[DNDModeAssertionLifetime lifetimeForUserRequest]
+  +[DNDModeAssertionLifetime _secureCodingLifetimeClasses]
+
+  // instance methods
+  -[DNDModeAssertionLifetime copyWithZone:]
+  -[DNDModeAssertionLifetime encodeWithCoder:]
+  -[DNDModeAssertionLifetime initWithCoder:]
+  -[DNDModeAssertionLifetime _init]
+  -[DNDModeAssertionLifetime lifetimeType]
+
+
+DNDRequestDetails : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *clientIdentifier
+ @property  NSUUID *auditUUID
+ @property  unsigned long timestamp
+
+  // class methods
+  +[DNDRequestDetails supportsSecureCoding]
+  +[DNDRequestDetails detailsRepresentingNowWithClientIdentifier:]
+
+  // instance methods
+  -[DNDRequestDetails isEqual:]
+  -[DNDRequestDetails copyWithZone:]
+  -[DNDRequestDetails encodeWithCoder:]
+  -[DNDRequestDetails initWithCoder:]
+  -[DNDRequestDetails .cxx_destruct]
+  -[DNDRequestDetails timestamp]
+  -[DNDRequestDetails clientIdentifier]
+  -[DNDRequestDetails initWithClientIdentifier:auditUUID:timestamp:]
+  -[DNDRequestDetails auditUUID]
+
+
+DNDModeAssertionCalendarEventLifetime : DNDModeAssertionLifetime
+ @property  NSString *eventUniqueID
+ @property  NSDate *occurrenceDate
+ @property  BOOL onlyDuringEvent
+
+  // class methods
+  +[DNDModeAssertionCalendarEventLifetime supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionCalendarEventLifetime isEqual:]
+  -[DNDModeAssertionCalendarEventLifetime encodeWithCoder:]
+  -[DNDModeAssertionCalendarEventLifetime initWithCoder:]
+  -[DNDModeAssertionCalendarEventLifetime .cxx_destruct]
+  -[DNDModeAssertionCalendarEventLifetime occurrenceDate]
+  -[DNDModeAssertionCalendarEventLifetime lifetimeType]
+  -[DNDModeAssertionCalendarEventLifetime initWithEventUniqueID:occurrenceDate:onlyDuringEvent:]
+  -[DNDModeAssertionCalendarEventLifetime eventUniqueID]
+  -[DNDModeAssertionCalendarEventLifetime isOnlyDuringEvent]
+
+
+DNDEventBehaviorResolutionService : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[DNDEventBehaviorResolutionService initialize]
+  +[DNDEventBehaviorResolutionService serviceForClientIdentifier:]
+
+  // instance methods
+  -[DNDEventBehaviorResolutionService .cxx_destruct]
+  -[DNDEventBehaviorResolutionService _initWithClientIdentifier:]
+  -[DNDEventBehaviorResolutionService resolveBehaviorForEventDetails:error:]
+
+
+DNDClientEventBehavior : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  DNDClientEventDetails *eventDetails
+ @property  unsigned long interruptionSuppression
+
+  // class methods
+  +[DNDClientEventBehavior supportsSecureCoding]
+
+  // instance methods
+  -[DNDClientEventBehavior isEqual:]
+  -[DNDClientEventBehavior copyWithZone:]
+  -[DNDClientEventBehavior encodeWithCoder:]
+  -[DNDClientEventBehavior initWithCoder:]
+  -[DNDClientEventBehavior .cxx_destruct]
+  -[DNDClientEventBehavior interruptionSuppression]
+  -[DNDClientEventBehavior eventDetails]
+  -[DNDClientEventBehavior initWithEventDetails:interruptionSuppression:]
+
+
+DNDState : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  BOOL willSuppressInterruptions
+ @property  NSArray *activeModeIdentifiers
+ @property  unsigned long suppressionState
+ @property  NSArray *activeModeAssertionMetadata
+ @property  BOOL active
+
+  // class methods
+  +[DNDState supportsSecureCoding]
+
+  // instance methods
+  -[DNDState isEqual:]
+  -[DNDState copyWithZone:]
+  -[DNDState encodeWithCoder:]
+  -[DNDState initWithCoder:]
+  -[DNDState .cxx_destruct]
+  -[DNDState isActive]
+  -[DNDState suppressionState]
+  -[DNDState activeModeAssertionMetadata]
+  -[DNDState initWithSuppressionState:activeModeAssertionMetadata:]
+  -[DNDState willSuppressInterruptions]
+  -[DNDState activeModeIdentifiers]
+
+
+DNDBypassSettings : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  unsigned long immediateBypassEventSourceType
+ @property  NSString *immediateBypassCNGroupIdentifier
+ @property  unsigned long repeatEventSourceBehaviorEnabledSetting
+
+  // class methods
+  +[DNDBypassSettings supportsSecureCoding]
+
+  // instance methods
+  -[DNDBypassSettings init]
+  -[DNDBypassSettings isEqual:]
+  -[DNDBypassSettings copyWithZone:]
+  -[DNDBypassSettings mutableCopyWithZone:]
+  -[DNDBypassSettings encodeWithCoder:]
+  -[DNDBypassSettings initWithCoder:]
+  -[DNDBypassSettings .cxx_destruct]
+  -[DNDBypassSettings _initWithSettings:]
+  -[DNDBypassSettings immediateBypassEventSourceType]
+  -[DNDBypassSettings immediateBypassCNGroupIdentifier]
+  -[DNDBypassSettings repeatEventSourceBehaviorEnabledSetting]
+  -[DNDBypassSettings _initWithImmediateBypassEventSourceType:immediateBypassCNGroupIdentifier:repeatEventSourceBehaviorEnabledSetting:]
+
+
+DNDMutableBypassSettings : DNDBypassSettings
+ @property  unsigned long immediateBypassEventSourceType
+ @property  NSString *immediateBypassCNGroupIdentifier
+ @property  unsigned long repeatEventSourceBehaviorEnabledSetting
+
+  // instance methods
+  -[DNDMutableBypassSettings copyWithZone:]
+  -[DNDMutableBypassSettings setImmediateBypassEventSourceType:]
+  -[DNDMutableBypassSettings setImmediateBypassCNGroupIdentifier:]
+  -[DNDMutableBypassSettings setRepeatEventSourceBehaviorEnabledSetting:]
+
+
+DNDModeAssertionInvalidationDetails : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  NSString *identifier
+
+  // class methods
+  +[DNDModeAssertionInvalidationDetails supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionInvalidationDetails init]
+  -[DNDModeAssertionInvalidationDetails isEqual:]
+  -[DNDModeAssertionInvalidationDetails copyWithZone:]
+  -[DNDModeAssertionInvalidationDetails mutableCopyWithZone:]
+  -[DNDModeAssertionInvalidationDetails encodeWithCoder:]
+  -[DNDModeAssertionInvalidationDetails initWithCoder:]
+  -[DNDModeAssertionInvalidationDetails .cxx_destruct]
+  -[DNDModeAssertionInvalidationDetails identifier]
+  -[DNDModeAssertionInvalidationDetails _initWithIdentifier:]
+  -[DNDModeAssertionInvalidationDetails _initWithDetails:]
+
+
+DNDMutableModeAssertionInvalidationDetails : DNDModeAssertionInvalidationDetails
+ @property  NSString *identifier
+
+  // instance methods
+  -[DNDMutableModeAssertionInvalidationDetails copyWithZone:]
+  -[DNDMutableModeAssertionInvalidationDetails setIdentifier:]
+
+
+DNDStateService : NSObject /usr/lib/libSystem.B.dylib <DNDRemoteServiceConnectionEventListener>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *clientIdentifier
+
+  // class methods
+  +[DNDStateService initialize]
+  +[DNDStateService serviceForClientIdentifier:]
+
+  // instance methods
+  -[DNDStateService .cxx_destruct]
+  -[DNDStateService clientIdentifier]
+  -[DNDStateService _initWithClientIdentifier:]
+  -[DNDStateService _queue_registerForStateUpdatesIfRequired]
+  -[DNDStateService _handleLostXPCConnection]
+  -[DNDStateService didReceiveConnectionInterruptedEventForRemoteService:]
+  -[DNDStateService didReceiveConnectionInvalidatedEventForRemoteService:]
+  -[DNDStateService remoteService:didReceiveDoNotDisturbStateUpdate:]
+  -[DNDStateService queryCurrentStateWithError:]
+  -[DNDStateService addStateUpdateListener:withCompletionHandler:]
+  -[DNDStateService removeStateUpdateListener:]
+  -[DNDStateService addStateUpdateListener:error:]
+  -[DNDStateService removeStateUpdateListener:error:]
+
+
+DNDClientEventDetails : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  NSString *identifier
+ @property  DNDClientEventSource *source
+ @property  BOOL shouldAlwaysInterrupt
+
+  // class methods
+  +[DNDClientEventDetails supportsSecureCoding]
+
+  // instance methods
+  -[DNDClientEventDetails init]
+  -[DNDClientEventDetails isEqual:]
+  -[DNDClientEventDetails copyWithZone:]
+  -[DNDClientEventDetails mutableCopyWithZone:]
+  -[DNDClientEventDetails encodeWithCoder:]
+  -[DNDClientEventDetails initWithCoder:]
+  -[DNDClientEventDetails .cxx_destruct]
+  -[DNDClientEventDetails identifier]
+  -[DNDClientEventDetails source]
+  -[DNDClientEventDetails _initWithDetails:]
+  -[DNDClientEventDetails shouldAlwaysInterrupt]
+  -[DNDClientEventDetails _initWithIdentifier:source:shouldAlwaysInterrupt:]
+
+
+DNDMutableClientEventDetails : DNDClientEventDetails
+ @property  NSString *identifier
+ @property  DNDClientEventSource *source
+ @property  BOOL shouldAlwaysInterrupt
+
+  // instance methods
+  -[DNDMutableClientEventDetails copyWithZone:]
+  -[DNDMutableClientEventDetails setSource:]
+  -[DNDMutableClientEventDetails setIdentifier:]
+  -[DNDMutableClientEventDetails setShouldAlwaysInterrupt:]
+
+
+DNDModeAssertionLocationLifetime : DNDModeAssertionLifetime
+  // class methods
+  +[DNDModeAssertionLocationLifetime sharedInstance]
+  +[DNDModeAssertionLocationLifetime supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionLocationLifetime isEqual:]
+  -[DNDModeAssertionLocationLifetime encodeWithCoder:]
+  -[DNDModeAssertionLocationLifetime initWithCoder:]
+  -[DNDModeAssertionLocationLifetime awakeAfterUsingCoder:]
+  -[DNDModeAssertionLocationLifetime lifetimeType]
+
+
+DNDModeAssertionSource : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *clientIdentifier
+ @property  NSString *deviceIdentifier
+
+  // class methods
+  +[DNDModeAssertionSource supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionSource isEqual:]
+  -[DNDModeAssertionSource copyWithZone:]
+  -[DNDModeAssertionSource encodeWithCoder:]
+  -[DNDModeAssertionSource initWithCoder:]
+  -[DNDModeAssertionSource .cxx_destruct]
+  -[DNDModeAssertionSource deviceIdentifier]
+  -[DNDModeAssertionSource clientIdentifier]
+  -[DNDModeAssertionSource initWithClientIdentifier:deviceIdentifier:]
+
+
+DNDModeAssertionUserRequestedLifetime : DNDModeAssertionLifetime
+  // class methods
+  +[DNDModeAssertionUserRequestedLifetime supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionUserRequestedLifetime isEqual:]
+  -[DNDModeAssertionUserRequestedLifetime encodeWithCoder:]
+  -[DNDModeAssertionUserRequestedLifetime initWithCoder:]
+  -[DNDModeAssertionUserRequestedLifetime lifetimeType]
+
+
+DNDScheduleSettings : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  unsigned long scheduleEnabledSetting
+ @property  DNDScheduleTimePeriod *timePeriod
+ @property  unsigned long bedtimeBehaviorEnabledSetting
+
+  // class methods
+  +[DNDScheduleSettings supportsSecureCoding]
+
+  // instance methods
+  -[DNDScheduleSettings init]
+  -[DNDScheduleSettings isEqual:]
+  -[DNDScheduleSettings copyWithZone:]
+  -[DNDScheduleSettings mutableCopyWithZone:]
+  -[DNDScheduleSettings encodeWithCoder:]
+  -[DNDScheduleSettings initWithCoder:]
+  -[DNDScheduleSettings .cxx_destruct]
+  -[DNDScheduleSettings _initWithSettings:]
+  -[DNDScheduleSettings timePeriod]
+  -[DNDScheduleSettings scheduleEnabledSetting]
+  -[DNDScheduleSettings bedtimeBehaviorEnabledSetting]
+  -[DNDScheduleSettings initWithScheduleEnabledSetting:timePeriod:bedtimeBehaviorEnabledSetting:]
+
+
+DNDMutableScheduleSettings : DNDScheduleSettings
+ @property  unsigned long scheduleEnabledSetting
+ @property  DNDScheduleTimePeriod *timePeriod
+ @property  unsigned long bedtimeBehaviorEnabledSetting
+
+  // instance methods
+  -[DNDMutableScheduleSettings copyWithZone:]
+  -[DNDMutableScheduleSettings setTimePeriod:]
+  -[DNDMutableScheduleSettings setScheduleEnabledSetting:]
+  -[DNDMutableScheduleSettings setBedtimeBehaviorEnabledSetting:]
+
+
+DNDModeAssertionDetails : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+ @property  BOOL userRequested
+ @property  NSDate *userVisibleEndDate
+ @property  NSString *identifier
+ @property  NSString *modeIdentifier
+ @property  DNDModeAssertionLifetime *lifetime
+
+  // class methods
+  +[DNDModeAssertionDetails supportsSecureCoding]
+  +[DNDModeAssertionDetails detailsWithIdentifier:modeIdentifier:lifetime:]
+  +[DNDModeAssertionDetails userRequestedAssertionDetailsWithIdentifier:modeIdentifier:lifetime:]
+
+  // instance methods
+  -[DNDModeAssertionDetails init]
+  -[DNDModeAssertionDetails isEqual:]
+  -[DNDModeAssertionDetails copyWithZone:]
+  -[DNDModeAssertionDetails mutableCopyWithZone:]
+  -[DNDModeAssertionDetails encodeWithCoder:]
+  -[DNDModeAssertionDetails initWithCoder:]
+  -[DNDModeAssertionDetails .cxx_destruct]
+  -[DNDModeAssertionDetails identifier]
+  -[DNDModeAssertionDetails lifetime]
+  -[DNDModeAssertionDetails modeIdentifier]
+  -[DNDModeAssertionDetails isUserRequested]
+  -[DNDModeAssertionDetails _initWithDetails:]
+  -[DNDModeAssertionDetails _initWithIdentifier:modeIdentifier:lifetime:userVisibleEndDate:]
+  -[DNDModeAssertionDetails userVisibleEndDate]
+
+
+DNDMutableModeAssertionDetails : DNDModeAssertionDetails
+ @property  NSDate *userVisibleEndDate
+ @property  NSString *identifier
+ @property  NSString *modeIdentifier
+ @property  DNDModeAssertionLifetime *lifetime
+
+  // instance methods
+  -[DNDMutableModeAssertionDetails copyWithZone:]
+  -[DNDMutableModeAssertionDetails setIdentifier:]
+  -[DNDMutableModeAssertionDetails setLifetime:]
+  -[DNDMutableModeAssertionDetails setModeIdentifier:]
+  -[DNDMutableModeAssertionDetails setUserVisibleEndDate:]
+
+
+DNDModeAssertionScheduleLifetime : DNDModeAssertionLifetime
+ @property  NSString *scheduleIdentifier
+ @property  unsigned long behavior
+
+  // class methods
+  +[DNDModeAssertionScheduleLifetime supportsSecureCoding]
+
+  // instance methods
+  -[DNDModeAssertionScheduleLifetime isEqual:]
+  -[DNDModeAssertionScheduleLifetime encodeWithCoder:]
+  -[DNDModeAssertionScheduleLifetime initWithCoder:]
+  -[DNDModeAssertionScheduleLifetime .cxx_destruct]
+  -[DNDModeAssertionScheduleLifetime behavior]
+  -[DNDModeAssertionScheduleLifetime lifetimeType]
+  -[DNDModeAssertionScheduleLifetime initWithScheduleIdentifier:behavior:]
+  -[DNDModeAssertionScheduleLifetime scheduleIdentifier]
+
+
+DNDClientEventSource : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  unsigned long type
+ @property  NSString *value
+
+  // class methods
+  +[DNDClientEventSource supportsSecureCoding]
+  +[DNDClientEventSource sourceWithDestinationIdentifier:]
+  +[DNDClientEventSource sourceWithCNContactIdentifier:]
+  +[DNDClientEventSource sourceWithPhoneNumber:]
+
+  // instance methods
+  -[DNDClientEventSource isEqual:]
+  -[DNDClientEventSource copyWithZone:]
+  -[DNDClientEventSource type]
+  -[DNDClientEventSource encodeWithCoder:]
+  -[DNDClientEventSource initWithCoder:]
+  -[DNDClientEventSource .cxx_destruct]
+  -[DNDClientEventSource value]
+  -[DNDClientEventSource _initWithValue:type:]
+
+
+DNDModeAssertionService : NSObject /usr/lib/libSystem.B.dylib <DNDRemoteServiceConnectionEventListener>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *clientIdentifier
+
+  // class methods
+  +[DNDModeAssertionService initialize]
+  +[DNDModeAssertionService serviceForClientIdentifier:]
+
+  // instance methods
+  -[DNDModeAssertionService .cxx_destruct]
+  -[DNDModeAssertionService clientIdentifier]
+  -[DNDModeAssertionService _initWithClientIdentifier:]
+  -[DNDModeAssertionService didReceiveConnectionInterruptedEventForRemoteService:]
+  -[DNDModeAssertionService didReceiveConnectionInvalidatedEventForRemoteService:]
+  -[DNDModeAssertionService remoteService:didChangeActiveModeAssertion:invalidation:]
+  -[DNDModeAssertionService invalidateActiveModeAssertionWithInvalidationDetails:reasonOverride:error:]
+  -[DNDModeAssertionService _registerForAssertionUpdatesIfRequiredWithCompletionHandler:]
+  -[DNDModeAssertionService _handleXPCInterruption]
+  -[DNDModeAssertionService _handleChangeActiveModeAssertion:invalidation:]
+  -[DNDModeAssertionService activeModeAssertionWithError:]
+  -[DNDModeAssertionService takeModeAssertionWithDetails:error:]
+  -[DNDModeAssertionService invalidateActiveModeAssertionWithError:]
+  -[DNDModeAssertionService latestModeAssertionInvalidationWithError:]
+  -[DNDModeAssertionService invalidateAllActiveModeAssertionsWithError:]
+  -[DNDModeAssertionService addAssertionUpdateListener:withCompletionHandler:]
+  -[DNDModeAssertionService removeAssertionUpdateListener:]
+  -[DNDModeAssertionService addAssertionUpdateListener:error:]
+  -[DNDModeAssertionService removeAssertionUpdateListener:error:]
+
+
+DNDStateModeAssertionMetadata : NSObject /usr/lib/libSystem.B.dylib <NSCopying, NSSecureCoding>
+ @property  NSString *clientIdentifier
+ @property  NSDate *userVisibleEndDate
+ @property  NSString *modeIdentifier
+ @property  unsigned long lifetimeType
+ @property  NSDateInterval *activeDateInterval
+
+  // class methods
+  +[DNDStateModeAssertionMetadata supportsSecureCoding]
+
+  // instance methods
+  -[DNDStateModeAssertionMetadata isEqual:]
+  -[DNDStateModeAssertionMetadata copyWithZone:]
+  -[DNDStateModeAssertionMetadata encodeWithCoder:]
+  -[DNDStateModeAssertionMetadata initWithCoder:]
+  -[DNDStateModeAssertionMetadata .cxx_destruct]
+  -[DNDStateModeAssertionMetadata clientIdentifier]
+  -[DNDStateModeAssertionMetadata modeIdentifier]
+  -[DNDStateModeAssertionMetadata activeDateInterval]
+  -[DNDStateModeAssertionMetadata lifetimeType]
+  -[DNDStateModeAssertionMetadata userVisibleEndDate]
+  -[DNDStateModeAssertionMetadata initWithClientIdentifier:modeIdentifier:lifetimeType:activeDateInterval:userVisibleEndDate:]
+
+
+DNDRemoteServiceConnection : NSObject /usr/lib/libSystem.B.dylib <DNDRemoteServiceClientProtocol, DNDRemoteServiceServerProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[DNDRemoteServiceConnection initialize]
+  +[DNDRemoteServiceConnection sharedInstance]
+
+  // instance methods
+  -[DNDRemoteServiceConnection init]
+  -[DNDRemoteServiceConnection .cxx_destruct]
+  -[DNDRemoteServiceConnection resolveBehaviorForEventDetails:requestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection addEventListener:]
+  -[DNDRemoteServiceConnection queryStateWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection registerForStateUpdatesWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection takeModeAssertionWithDetails:requestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection invalidateActiveModeAssertionWithDetails:reasonOverride:requestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection getActiveModeAssertionWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection getLatestModeAssertionInvalidationWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection invalidateAllActiveModeAssertionsWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection registerForAssertionUpdatesWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection _handleRemoteConnectionInterrupted]
+  -[DNDRemoteServiceConnection _handleRemoteConnectionInvalidated]
+  -[DNDRemoteServiceConnection getBehaviorSettingsWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection setBehaviorSettings:withRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection getPhoneCallBypassSettingsWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection setPhoneCallBypassSettings:withRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection getScheduleSettingsWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection setScheduleSettings:withRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection registerForSettingsUpdatesWithRequestDetails:completionHandler:]
+  -[DNDRemoteServiceConnection deliverActiveModeAssertionUpdate:invalidation:clientIdentifiers:]
+  -[DNDRemoteServiceConnection deliverStateUpdate:]
+  -[DNDRemoteServiceConnection deliverUpdatedBehaviorSettings:]
+  -[DNDRemoteServiceConnection deliverUpdatedPhoneCallBypassSettings:]
+  -[DNDRemoteServiceConnection deliverUpdatedScheduleSettings:]
+  -[DNDRemoteServiceConnection removeEventListener:]
+
+
+DNDSettingsService : NSObject /usr/lib/libSystem.B.dylib <DNDRemoteServiceConnectionEventListener>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *clientIdentifier
+
+  // class methods
+  +[DNDSettingsService initialize]
+  +[DNDSettingsService serviceForClientIdentifier:]
+
+  // instance methods
+  -[DNDSettingsService .cxx_destruct]
+  -[DNDSettingsService clientIdentifier]
+  -[DNDSettingsService _initWithClientIdentifier:]
+  -[DNDSettingsService didReceiveConnectionInterruptedEventForRemoteService:]
+  -[DNDSettingsService didReceiveConnectionInvalidatedEventForRemoteService:]
+  -[DNDSettingsService remoteService:didReceiveUpdatedBehaviorSettings:]
+  -[DNDSettingsService remoteService:didReceiveUpdatedPhoneCallBypassSettings:]
+  -[DNDSettingsService remoteService:didReceiveUpdatedScheduleSettings:]
+  -[DNDSettingsService _queue_registerForSettingsUpdatesIfRequired]
+  -[DNDSettingsService _handleLostXPCConnectionWithRetry:]
+  -[DNDSettingsService behaviorSettingsReturningError:]
+  -[DNDSettingsService setBehaviorSettings:error:]
+  -[DNDSettingsService phoneCallBypassSettingsReturningError:]
+  -[DNDSettingsService setPhoneCallBypassSettings:error:]
+  -[DNDSettingsService scheduleSettingsReturningError:]
+  -[DNDSettingsService setScheduleSettings:error:]
+  -[DNDSettingsService addSettingsUpdateListener:withCompletionHandler:]
+  -[DNDSettingsService removeSettingsUpdateListener:]
+  -[DNDSettingsService setBehaviorSettings:returningError:]
+  -[DNDSettingsService setPhoneCallBypassSettings:returningError:]
+  -[DNDSettingsService setScheduleSettings:returningError:]
+  -[DNDSettingsService addSettingsUpdateListener:error:]
+  -[DNDSettingsService removeSettingsUpdateListener:error:]
+
+
+NSString(DoNotDisturb)
+	// instance methods
+	-[NSString(DoNotDisturb) dnds_privacyObfuscatedString]
+
+NSBundle(DoNotDisturb)
+	// class methods
+	+[NSBundle(DoNotDisturb) dnd_locationBundle]
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateInterval 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

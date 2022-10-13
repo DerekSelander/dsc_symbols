@@ -1,0 +1,905 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DDScanServer
+|| __DATA.__objc_data _OBJC_CLASS_$_DDURLMatch
+|| __DATA.__objc_data _OBJC_CLASS_$_DDURLifier
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDScanServer
+|| __DATA.__objc_data _OBJC_METACLASS_$_DDURLifier
+|| __DATA_CONST.__const _DDBinderAIMOrEmailKey
+|| __DATA_CONST.__const _DDBinderAddressBookContactNameKey
+|| __DATA_CONST.__const _DDBinderAirlineCodeKey
+|| __DATA_CONST.__const _DDBinderApproxTimeKey
+|| __DATA_CONST.__const _DDBinderAuthCodeKey
+|| __DATA_CONST.__const _DDBinderBonjourAddressKey
+|| __DATA_CONST.__const _DDBinderCityKey
+|| __DATA_CONST.__const _DDBinderClientSourceKey
+|| __DATA_CONST.__const _DDBinderCompanyNameKey
+|| __DATA_CONST.__const _DDBinderContactFirstNameKey
+|| __DATA_CONST.__const _DDBinderContactKey
+|| __DATA_CONST.__const _DDBinderContactLastNameKey
+|| __DATA_CONST.__const _DDBinderContactMiddleNameKey
+|| __DATA_CONST.__const _DDBinderContactNameKey
+|| __DATA_CONST.__const _DDBinderContactNameSuffixKey
+|| __DATA_CONST.__const _DDBinderContactTitleKey
+|| __DATA_CONST.__const _DDBinderCountryKey
+|| __DATA_CONST.__const _DDBinderDateDurationKey
+|| __DATA_CONST.__const _DDBinderDateKey
+|| __DATA_CONST.__const _DDBinderDateTimeKey
+|| __DATA_CONST.__const _DDBinderDurationKey
+|| __DATA_CONST.__const _DDBinderEmailKey
+|| __DATA_CONST.__const _DDBinderExtensionKey
+|| __DATA_CONST.__const _DDBinderFileURLKey
+|| __DATA_CONST.__const _DDBinderFlightInformationKey
+|| __DATA_CONST.__const _DDBinderFlightNumberKey
+|| __DATA_CONST.__const _DDBinderFullAddressKey
+|| __DATA_CONST.__const _DDBinderGameCenterSourceKey
+|| __DATA_CONST.__const _DDBinderGenericURLKey
+|| __DATA_CONST.__const _DDBinderHttpURLKey
+|| __DATA_CONST.__const _DDBinderIMScreenNameKey
+|| __DATA_CONST.__const _DDBinderItemNumberKey
+|| __DATA_CONST.__const _DDBinderJabberOrEmailKey
+|| __DATA_CONST.__const _DDBinderJobTitleKey
+|| __DATA_CONST.__const _DDBinderLabelKey
+|| __DATA_CONST.__const _DDBinderLocationKey
+|| __DATA_CONST.__const _DDBinderMailURLKey
+|| __DATA_CONST.__const _DDBinderMapsURLKey
+|| __DATA_CONST.__const _DDBinderMoneyKey
+|| __DATA_CONST.__const _DDBinderNoResultKey
+|| __DATA_CONST.__const _DDBinderPOBoxKey
+|| __DATA_CONST.__const _DDBinderParsecSourceKey
+|| __DATA_CONST.__const _DDBinderPhoneNumberKey
+|| __DATA_CONST.__const _DDBinderQuotedShortPhoneNumberKey
+|| __DATA_CONST.__const _DDBinderSignatureBlockKey
+|| __DATA_CONST.__const _DDBinderSpecialDateTimeKey
+|| __DATA_CONST.__const _DDBinderStateKey
+|| __DATA_CONST.__const _DDBinderStreetKey
+|| __DATA_CONST.__const _DDBinderStreetNameKey
+|| __DATA_CONST.__const _DDBinderStreetNumberKey
+|| __DATA_CONST.__const _DDBinderSubAdministrativeAreaKey
+|| __DATA_CONST.__const _DDBinderSubLocalityKey
+|| __DATA_CONST.__const _DDBinderTimeDurationKey
+|| __DATA_CONST.__const _DDBinderTimeKey
+|| __DATA_CONST.__const _DDBinderTimeOffsetKey
+|| __DATA_CONST.__const _DDBinderTimestampKey
+|| __DATA_CONST.__const _DDBinderTrackingNumberKey
+|| __DATA_CONST.__const _DDBinderUnquotedShortPhoneNumberKey
+|| __DATA_CONST.__const _DDBinderValueKey
+|| __DATA_CONST.__const _DDBinderWebURLKey
+|| __DATA_CONST.__const _DDBinderZipCodeKey
+|| __DATA_CONST.__const _DDResultAttributeName
+|| __DATA_CONST.__const _DDURLScheme
+|| __DATA_CONST.__const _kDDHomeFAXLabel
+|| __DATA_CONST.__const _kDDHomeLabel
+|| __DATA_CONST.__const _kDDInstantMessageServiceAIM
+|| __DATA_CONST.__const _kDDInstantMessageServiceFacebook
+|| __DATA_CONST.__const _kDDInstantMessageServiceGaduGadu
+|| __DATA_CONST.__const _kDDInstantMessageServiceGoogleTalk
+|| __DATA_CONST.__const _kDDInstantMessageServiceICQ
+|| __DATA_CONST.__const _kDDInstantMessageServiceJabber
+|| __DATA_CONST.__const _kDDInstantMessageServiceMSN
+|| __DATA_CONST.__const _kDDInstantMessageServiceQQ
+|| __DATA_CONST.__const _kDDInstantMessageServiceSkype
+|| __DATA_CONST.__const _kDDInstantMessageServiceYahoo
+|| __DATA_CONST.__const _kDDMainLabel
+|| __DATA_CONST.__const _kDDMobileLabel
+|| __DATA_CONST.__const _kDDOtherLabel
+|| __DATA_CONST.__const _kDDPagerLabel
+|| __DATA_CONST.__const _kDDWorkFAXLabel
+|| __DATA_CONST.__const _kDDWorkLabel
+|| __DATA_CONST.__const _kDDiPhoneLabel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDScannerResult
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDScannerService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DDScannerServiceConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_DataDetectorsSourceAccess
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDScannerResult
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDScannerService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDScannerServiceConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DDURLMatch
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_DataDetectorsSourceAccess
+|| __TEXT.__const _DDScannerCopyResultsOptionsForActiveUse
+|| __TEXT.__const _DDScannerCopyResultsOptionsForPassiveUse
+|| __TEXT.__const _DDScannerDefaultTimeout
+|| __TEXT.__const _DDScannerLargeTimeout
+|| __TEXT.__const _DDScannerNoTimeout
+|| __TEXT.__const _DDScannerSmallTimeout
+|| __TEXT.__text _DDAddressResultCanBeMergedWith
+|| __TEXT.__text _DDApplyOptions
+|| __TEXT.__text _DDCopyPunycodedWebURLString
+|| __TEXT.__text _DDCrash
+|| __TEXT.__text _DDCreateDataFromFileAtPath
+|| __TEXT.__text _DDCreateDataFromFileAtUrl
+|| __TEXT.__text _DDCreateRelatedResultsArray
+|| __TEXT.__text _DDCreateTimeZoneValuesFromResultValue
+|| __TEXT.__text _DDDFACacheCreateFromBundle
+|| __TEXT.__text _DDDFACacheCreateFromFramework
+|| __TEXT.__text _DDDFAScannerCopyResults
+|| __TEXT.__text _DDDFAScannerCreateFromCache
+|| __TEXT.__text _DDDFAScannerEmitResult
+|| __TEXT.__text _DDDFAScannerFirstResultInUnicharArray
+|| __TEXT.__text _DDDFAScannerGetCFTypeID
+|| __TEXT.__text _DDDFAScannerReset
+|| __TEXT.__text _DDDFAScannerScanQuery
+|| __TEXT.__text _DDDFAScannerScanString
+|| __TEXT.__text _DDDFAScannerScanStringWithRange
+|| __TEXT.__text _DDDFAScannerScanUnicharArray
+|| __TEXT.__text _DDDFAScannerScanUnicharArrayFragment
+|| __TEXT.__text _DDDFAScannerSimulateState
+|| __TEXT.__text _DDDataDetectorSetUsesDebugSource
+|| __TEXT.__text _DDError
+|| __TEXT.__text _DDFastIntegerExtraction
+|| __TEXT.__text _DDForce24HrsFormatProcessWideForExtraction
+|| __TEXT.__text _DDInitialSetup
+|| __TEXT.__text _DDInternalURLStringForResultIdentifier
+|| __TEXT.__text _DDLog
+|| __TEXT.__text _DDLogAssertionFailure
+|| __TEXT.__text _DDLogErrD
+|| __TEXT.__text _DDLogHandle
+|| __TEXT.__text _DDLogv
+|| __TEXT.__text _DDPushUserDebugData
+|| __TEXT.__text _DDResultAddSubresult
+|| __TEXT.__text _DDResultAddSubresultSorted
+|| __TEXT.__text _DDResultCopyAuthCode
+|| __TEXT.__text _DDResultCopyExtractedDateFromReferenceDate
+|| __TEXT.__text _DDResultCopyExtractedDateFromReferenceDateWithLocale
+|| __TEXT.__text _DDResultCopyExtractedStartDateEndDate
+|| __TEXT.__text _DDResultCopyExtractedStartDateEndDateWithLocale
+|| __TEXT.__text _DDResultCopyExtractedURL
+|| __TEXT.__text _DDResultCopyExtractedURLWithOptions
+|| __TEXT.__text _DDResultCopyFullAddressComponents
+|| __TEXT.__text _DDResultCopyIMScreenNameValue
+|| __TEXT.__text _DDResultCopyMailValue
+|| __TEXT.__text _DDResultCopyPhoneValue
+|| __TEXT.__text _DDResultCreate
+|| __TEXT.__text _DDResultCreateCopy
+|| __TEXT.__text _DDResultCreateEmpty
+|| __TEXT.__text _DDResultCreateFromDateTimeResults
+|| __TEXT.__text _DDResultCreateFromXMLNode
+|| __TEXT.__text _DDResultCreateVerboseXMLDescription
+|| __TEXT.__text _DDResultCreateVerboseXMLDescriptionFromResults
+|| __TEXT.__text _DDResultCreateVerboseXMLRepresentation
+|| __TEXT.__text _DDResultCreateXMLRepresentation
+|| __TEXT.__text _DDResultCurrencyExtraction
+|| __TEXT.__text _DDResultDateExtractionDependsOnContextTense
+|| __TEXT.__text _DDResultExtractDayAndMonthWithSpecialDayIdentifierInYear
+|| __TEXT.__text _DDResultGetCFTypeID
+|| __TEXT.__text _DDResultGetCategory
+|| __TEXT.__text _DDResultGetContextualData
+|| __TEXT.__text _DDResultGetContextualDataForKey
+|| __TEXT.__text _DDResultGetContextualFloat
+|| __TEXT.__text _DDResultGetCountryCode
+|| __TEXT.__text _DDResultGetMatchedString
+|| __TEXT.__text _DDResultGetOptionalSourceTableIndex
+|| __TEXT.__text _DDResultGetParsecDomain
+|| __TEXT.__text _DDResultGetParsecRawDomain
+|| __TEXT.__text _DDResultGetParsecUUID
+|| __TEXT.__text _DDResultGetQueryRange
+|| __TEXT.__text _DDResultGetQueryRangeForURLification
+|| __TEXT.__text _DDResultGetRange
+|| __TEXT.__text _DDResultGetRangeForURLification
+|| __TEXT.__text _DDResultGetSignatureContainingResult
+|| __TEXT.__text _DDResultGetSubResults
+|| __TEXT.__text _DDResultGetSubresultWithType
+|| __TEXT.__text _DDResultGetSubresultWithTypePath
+|| __TEXT.__text _DDResultGetTestUrlificationRange
+|| __TEXT.__text _DDResultGetType
+|| __TEXT.__text _DDResultGetValue
+|| __TEXT.__text _DDResultHasContextualFloat
+|| __TEXT.__text _DDResultHasProperties
+|| __TEXT.__text _DDResultHasType
+|| __TEXT.__text _DDResultIsDateRangeOrTimeRange
+|| __TEXT.__text _DDResultIsEqualToUnitTestResult
+|| __TEXT.__text _DDResultIsPartialDateRangeOrTimeRange
+|| __TEXT.__text _DDResultIsPastDate
+|| __TEXT.__text _DDResultIsPastDateWithLocale
+|| __TEXT.__text _DDResultNeedsMeridianGuess
+|| __TEXT.__text _DDResultOffsetAbsoluteRange
+|| __TEXT.__text _DDResultProximitySort
+|| __TEXT.__text _DDResultSelectBest
+|| __TEXT.__text _DDResultSetAbsoluteRange
+|| __TEXT.__text _DDResultSetContent
+|| __TEXT.__text _DDResultSetLocaleForExtraction
+|| __TEXT.__text _DDResultSetMatchedString
+|| __TEXT.__text _DDResultSetProperties
+|| __TEXT.__text _DDResultSetSubResults
+|| __TEXT.__text _DDResultSetTestUrlificationRange
+|| __TEXT.__text _DDResultSetType
+|| __TEXT.__text _DDResultTimeIsApprox
+|| __TEXT.__text _DDResultTypesAreEqual
+|| __TEXT.__text _DDScanQueryAddLineBreak
+|| __TEXT.__text _DDScanQueryAddSeparator
+|| __TEXT.__text _DDScanQueryAddTextFragment
+|| __TEXT.__text _DDScanQueryCopyRange
+|| __TEXT.__text _DDScanQueryCreate
+|| __TEXT.__text _DDScanQueryCreateFromString
+|| __TEXT.__text _DDScanQueryGetFragmentMetaData
+|| __TEXT.__text _DDScanQueryGetFragmentRange
+|| __TEXT.__text _DDScanQueryGetNumberOfFragments
+|| __TEXT.__text _DDScanQuerySetMetadataReleaseCallback
+|| __TEXT.__text _DDScannerCancelScanning
+|| __TEXT.__text _DDScannerCopyResults
+|| __TEXT.__text _DDScannerCopyResultsCheckOverlap
+|| __TEXT.__text _DDScannerCopyResultsWithOptions
+|| __TEXT.__text _DDScannerCreate
+|| __TEXT.__text _DDScannerCreateFromCache
+|| __TEXT.__text _DDScannerCreateWithCacheFile
+|| __TEXT.__text _DDScannerCreateWithLocale
+|| __TEXT.__text _DDScannerCreateWithType
+|| __TEXT.__text _DDScannerEnableDPReporting
+|| __TEXT.__text _DDScannerEnableOptionalSource
+|| __TEXT.__text _DDScannerGetMemoryUsed
+|| __TEXT.__text _DDScannerGetOptions
+|| __TEXT.__text _DDScannerHasCapabilities
+|| __TEXT.__text _DDScannerLoaderGetIdentifierStringForScannerType
+|| __TEXT.__text _DDScannerLoaderScannerGetTypeWithIdentifierString
+|| __TEXT.__text _DDScannerPurgeCaches
+|| __TEXT.__text _DDScannerReset
+|| __TEXT.__text _DDScannerScanQuery
+|| __TEXT.__text _DDScannerScanString
+|| __TEXT.__text _DDScannerScanStringFromConversation
+|| __TEXT.__text _DDScannerScanStringWithContextOffset
+|| __TEXT.__text _DDScannerScanStringWithRange
+|| __TEXT.__text _DDScannerServiceCancelJob
+|| __TEXT.__text _DDScannerServiceScanQuerySyncWithOptions
+|| __TEXT.__text _DDScannerServiceScanStringAsync
+|| __TEXT.__text _DDScannerServiceScanStringAsyncWithOptions
+|| __TEXT.__text _DDScannerServiceScanStringSync
+|| __TEXT.__text _DDScannerServiceScanStringSyncWithOptions
+|| __TEXT.__text _DDScannerSetClientTables
+|| __TEXT.__text _DDScannerSetLoadDebugInformation
+|| __TEXT.__text _DDScannerSetLocale
+|| __TEXT.__text _DDScannerSetOptions
+|| __TEXT.__text _DDScannerSetProgressReportingBlock
+|| __TEXT.__text _DDScannerSetScannerTimeout
+|| __TEXT.__text _DDScannerShouldKeepParsecScoresBelowThreshold
+|| __TEXT.__text _DDScannerThreadDebug
+|| __TEXT.__text _DDShouldImmediatelyShowActionSheetForResult
+|| __TEXT.__text _DDShouldImmediatelyShowActionSheetForURL
+|| __TEXT.__text _DDShouldUseDebugHighlightForResult
+|| __TEXT.__text _DDShouldUseLightLinksForResult
+|| __TEXT.__text _DDSourceClear
+|| __TEXT.__text _DDSourceGetClientSignature
+|| __TEXT.__text _DDSourceGetLexiconData
+|| __TEXT.__text _DDSourcePushFile
+|| __TEXT.__text _DDSourcePushSharedData
+|| __TEXT.__text _DDSourcePushSharedDataWithSignature
+|| __TEXT.__text _DDSourceSetStoragePath
+|| __TEXT.__text _DDURLStringForResult
+|| __TEXT.__text _DDURLTapAndHoldSchemes
+|| __TEXT.__text _DDURLWithPotentiallyInvalidURLString
+|| __TEXT.__text _DataDetectorsProximitySort
+__ AppSupport: _CPPhoneNumberCopyHomeCountryCode
+__ AppleFSCompression: _CloseStreamCompressor
+__ AppleFSCompression: _CreateStreamCompressor
+__ AppleFSCompression: _CreateStreamCompressorQueueWithOptions
+__ AppleFSCompression: _FinishStreamCompressorQueue
+__ AppleFSCompression: _VolumeSupportsCompression
+__ AppleFSCompression: _WriteToStreamCompressor
+__ AppleFSCompression: _kAFSCCompressionSystemRulesKey
+__ AppleFSCompression: _kAFSCSynchronous
+__ AppleFSCompression: _kAFSCThrottledIO
+__ CoreFoundation: _CFAbsoluteTimeAddGregorianUnits
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFAbsoluteTimeGetDayOfWeek
+__ CoreFoundation: _CFAbsoluteTimeGetGregorianDate
+__ CoreFoundation: _CFArrayAppendArray
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayApplyFunction
+__ CoreFoundation: _CFArrayContainsValue
+__ CoreFoundation: _CFArrayCreate
+__ CoreFoundation: _CFArrayCreateCopy
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayCreateMutableCopy
+__ CoreFoundation: _CFArrayExchangeValuesAtIndices
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArrayGetValues
+__ CoreFoundation: _CFArrayInsertValueAtIndex
+__ CoreFoundation: _CFArrayRemoveAllValues
+__ CoreFoundation: _CFArrayRemoveValueAtIndex
+__ CoreFoundation: _CFArrayReplaceValues
+__ CoreFoundation: _CFArraySetValueAtIndex
+__ CoreFoundation: _CFArraySortValues
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFBundleCopyBuiltInPlugInsURL
+__ CoreFoundation: _CFBundleCopyResourceURL
+__ CoreFoundation: _CFBundleCopyResourceURLForLocalization
+__ CoreFoundation: _CFBundleCreate
+__ CoreFoundation: _CFBundleGetBundleWithIdentifier
+__ CoreFoundation: _CFBundleGetFunctionPointerForName
+__ CoreFoundation: _CFBundleGetMainBundle
+__ CoreFoundation: _CFCalendarAddComponents
+__ CoreFoundation: _CFCalendarComposeAbsoluteTime
+__ CoreFoundation: _CFCalendarCopyCurrent
+__ CoreFoundation: _CFCalendarCreateWithIdentifier
+__ CoreFoundation: _CFCalendarDecomposeAbsoluteTime
+__ CoreFoundation: _CFCalendarGetFirstWeekday
+__ CoreFoundation: _CFCalendarGetRangeOfUnit
+__ CoreFoundation: _CFCalendarSetLocale
+__ CoreFoundation: _CFCalendarSetTimeZone
+__ CoreFoundation: _CFCharacterSetCreateWithCharactersInString
+__ CoreFoundation: _CFCharacterSetGetPredefined
+__ CoreFoundation: _CFCopyTypeIDDescription
+__ CoreFoundation: _CFDataAppendBytes
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataCreateMutable
+__ CoreFoundation: _CFDataCreateWithBytesNoCopy
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDataGetMutableBytePtr
+__ CoreFoundation: _CFDataIncreaseLength
+__ CoreFoundation: _CFDataReplaceBytes
+__ CoreFoundation: _CFDateCompare
+__ CoreFoundation: _CFDateCreate
+__ CoreFoundation: _CFDateFormatterCreateDateFormatFromTemplate
+__ CoreFoundation: _CFDateGetAbsoluteTime
+__ CoreFoundation: _CFDictionaryApplyFunction
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetTypeID
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryGetValueIfPresent
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFErrorCreate
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFGregorianDateGetAbsoluteTime
+__ CoreFoundation: _CFHash
+__ CoreFoundation: _CFLocaleCopyCurrent
+__ CoreFoundation: _CFLocaleCopyPreferredLanguages
+__ CoreFoundation: _CFLocaleGetIdentifier
+__ CoreFoundation: _CFLocaleGetSystem
+__ CoreFoundation: _CFLocaleGetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberFormatterCreate
+__ CoreFoundation: _CFNumberFormatterGetValueFromString
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPropertyListCreateWithData
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopGetCurrent
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFSetContainsValue
+__ CoreFoundation: _CFSetCreate
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringAppendFormat
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCompareWithOptionsAndLocale
+__ CoreFoundation: _CFStringCreateArrayBySeparatingStrings
+__ CoreFoundation: _CFStringCreateCopy
+__ CoreFoundation: _CFStringCreateMutable
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateMutableWithExternalCharactersNoCopy
+__ CoreFoundation: _CFStringCreateWithBytes
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringCreateWithCharacters
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringCreateWithFormatAndArguments
+__ CoreFoundation: _CFStringCreateWithPascalString
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringFind
+__ CoreFoundation: _CFStringFindAndReplace
+__ CoreFoundation: _CFStringFindCharacterFromSet
+__ CoreFoundation: _CFStringFindWithOptions
+__ CoreFoundation: _CFStringFold
+__ CoreFoundation: _CFStringGetBytes
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacterAtIndex
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetFileSystemRepresentation
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetMaximumSizeForEncoding
+__ CoreFoundation: _CFStringGetMaximumSizeOfFileSystemRepresentation
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _CFStringHasPrefix
+__ CoreFoundation: _CFStringHasSuffix
+__ CoreFoundation: _CFStringNormalize
+__ CoreFoundation: _CFStringOpenUText
+__ CoreFoundation: _CFStringReplace
+__ CoreFoundation: _CFStringSetExternalCharactersNoCopy
+__ CoreFoundation: _CFStringTrimWhitespace
+__ CoreFoundation: _CFStringUppercase
+__ CoreFoundation: _CFTimeZoneCopyDefault
+__ CoreFoundation: _CFTimeZoneCreateWithName
+__ CoreFoundation: _CFTimeZoneCreateWithTimeIntervalFromGMT
+__ CoreFoundation: _CFURLCopyAbsoluteURL
+__ CoreFoundation: _CFURLCopyFileSystemPath
+__ CoreFoundation: _CFURLCreateCopyAppendingPathComponent
+__ CoreFoundation: _CFURLCreateStringByAddingPercentEscapes
+__ CoreFoundation: _CFURLCreateStringByReplacingPercentEscapes
+__ CoreFoundation: _CFURLGetFileSystemRepresentation
+__ CoreFoundation: _NSRangeException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFRuntimeCreateInstance
+__ CoreFoundation: __CFRuntimeRegisterClass
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFAllocatorMalloc
+__ CoreFoundation: _kCFAllocatorNull
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFErrorDomainPOSIX
+__ CoreFoundation: _kCFGregorianCalendar
+__ CoreFoundation: _kCFLocaleCountryCode
+__ CoreFoundation: _kCFLocaleCurrencyCode
+__ CoreFoundation: _kCFLocaleLanguageCode
+__ CoreFoundation: _kCFNull
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ CoreNLP: _NLStringTokenizerAdvanceToNextToken
+__ CoreNLP: _NLStringTokenizerCreate
+__ CoreNLP: _NLStringTokenizerGetCurrentSubTokens
+__ CoreNLP: _NLStringTokenizerGetCurrentTokenRange
+__ CoreNLP: _NLStringTokenizerSetStringWithOptions
+__ CoreServices: _LSURLTypesChangedNotificationName
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateFromSelf
+__ Security: _SecTaskCreateWithAuditToken
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___snprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __dispatch_source_type_memorypressure
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _chmod
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _csr_check
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_data
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _fchmod
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fileno
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _fstatfs
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getpwuid
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _lroundf
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _madvise
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _malloc_create_zone
+__ libSystem.B.dylib: _malloc_default_purgeable_zone
+__ libSystem.B.dylib: _malloc_destroy_zone
+__ libSystem.B.dylib: _malloc_make_nonpurgeable
+__ libSystem.B.dylib: _malloc_make_purgeable
+__ libSystem.B.dylib: _malloc_set_zone_name
+__ libSystem.B.dylib: _malloc_zone_calloc
+__ libSystem.B.dylib: _malloc_zone_free
+__ libSystem.B.dylib: _malloc_zone_malloc
+__ libSystem.B.dylib: _malloc_zone_realloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _mkstemp
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _qos_class_main
+__ libSystem.B.dylib: _qos_class_self
+__ libSystem.B.dylib: _qsort
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _rename
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _stpcpy
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strndup
+__ libSystem.B.dylib: _unlink
+__ libSystem.B.dylib: _vm_allocate
+__ libSystem.B.dylib: _vm_deallocate
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libicucore.A.dylib: _u_charType
+__ libicucore.A.dylib: _u_getIntPropertyValue
+__ libicucore.A.dylib: _u_strFoldCase
+__ libicucore.A.dylib: _uidna_close
+__ libicucore.A.dylib: _uidna_nameToASCII_UTF8
+__ libicucore.A.dylib: _uidna_openUTS46
+__ libicucore.A.dylib: _uiter_next32
+__ libicucore.A.dylib: _uiter_setString
+__ libicucore.A.dylib: _unorm2_getInstance
+__ libicucore.A.dylib: _unorm2_quickCheck
+__ libicucore.A.dylib: _unorm_next
+__ libicucore.A.dylib: _utext_close
+__ libicucore.A.dylib: _utext_current32
+__ libicucore.A.dylib: _utext_moveIndex32
+__ libicucore.A.dylib: _utext_next32
+__ libicucore.A.dylib: _utext_setNativeIndex
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libxml2.2.dylib: _xmlAddChild
+__ libxml2.2.dylib: _xmlBufferContent
+__ libxml2.2.dylib: _xmlBufferCreate
+__ libxml2.2.dylib: _xmlBufferFree
+__ libxml2.2.dylib: _xmlFree
+__ libxml2.2.dylib: _xmlFreeNode
+__ libxml2.2.dylib: _xmlGetProp
+__ libxml2.2.dylib: _xmlHasProp
+__ libxml2.2.dylib: _xmlNewNode
+__ libxml2.2.dylib: _xmlNewProp
+__ libxml2.2.dylib: _xmlNewText
+__ libxml2.2.dylib: _xmlNodeDump
+DDScannerServiceConfiguration : NSObject
+ @property  BOOL noObjC
+ @property  BOOL spotlightSuggestionsEnabled
+ @property  double timeout
+ @property  long long resultsOptions
+ @property  long long scannerOptions
+ @property  NSObject<OS_dispatch_queue> *completionQueue
+
+  // instance methods
+  -[DDScannerServiceConfiguration init]
+  -[DDScannerServiceConfiguration copy]
+  -[DDScannerServiceConfiguration supportsSecureCoding]
+  -[DDScannerServiceConfiguration encodeWithCoder:]
+  -[DDScannerServiceConfiguration initWithCoder:]
+  -[DDScannerServiceConfiguration .cxx_destruct]
+  -[DDScannerServiceConfiguration timeout]
+  -[DDScannerServiceConfiguration setTimeout:]
+  -[DDScannerServiceConfiguration setCompletionQueue:]
+  -[DDScannerServiceConfiguration initWithScannerType:passiveIntent:]
+  -[DDScannerServiceConfiguration setSpotlightSuggestionsEnabled:]
+  -[DDScannerServiceConfiguration completionQueue]
+  -[DDScannerServiceConfiguration initEmpty]
+  -[DDScannerServiceConfiguration updateRecyclingIdentifier]
+  -[DDScannerServiceConfiguration recyclingIdentifier]
+  -[DDScannerServiceConfiguration spotlightSuggestionsEnabled]
+  -[DDScannerServiceConfiguration scannerType]
+  -[DDScannerServiceConfiguration scannerOptions]
+  -[DDScannerServiceConfiguration setScannerOptions:]
+  -[DDScannerServiceConfiguration resultsOptions]
+  -[DDScannerServiceConfiguration setResultsOptions:]
+  -[DDScannerServiceConfiguration noObjC]
+  -[DDScannerServiceConfiguration setNoObjC:]
+
+
+DDScannerObject : NSObject
+ @property  long long jobIdentifier
+
+  // instance methods
+  -[DDScannerObject dealloc]
+  -[DDScannerObject type]
+  -[DDScannerObject cancel]
+  -[DDScannerObject initWithType:enableParsec:]
+  -[DDScannerObject hasBasicType]
+  -[DDScannerObject scanString:range:query:configuration:]
+  -[DDScannerObject jobIdentifier]
+  -[DDScannerObject setJobIdentifier:]
+
+
+DDScanStepBlockContainer : NSObject
+ @property  @? block
+ @property  long long identifier
+
+  // instance methods
+  -[DDScanStepBlockContainer .cxx_destruct]
+  -[DDScanStepBlockContainer identifier]
+  -[DDScanStepBlockContainer block]
+  -[DDScanStepBlockContainer initWithBlock:identifier:]
+
+
+DDScannerList : NSObject
+  // instance methods
+  -[DDScannerList .cxx_destruct]
+  -[DDScannerList totalCount]
+  -[DDScannerList initWithConfiguration:]
+  -[DDScannerList busyCount]
+  -[DDScannerList cancelJob:]
+  -[DDScannerList getCachedScanner]
+  -[DDScannerList activateScanner:]
+  -[DDScannerList scannerCreate]
+  -[DDScannerList pushBackScanner:]
+  -[DDScannerList enqueueJob:withIdentifier:]
+  -[DDScannerList dequeueJob]
+
+
+DDScanServerDispatcher : NSObject
+  // instance methods
+  -[DDScanServerDispatcher init]
+  -[DDScanServerDispatcher dealloc]
+  -[DDScanServerDispatcher .cxx_destruct]
+  -[DDScanServerDispatcher cancelJob:]
+  -[DDScanServerDispatcher reportQueue]
+  -[DDScanServerDispatcher scannerListForConfiguration:]
+  -[DDScanServerDispatcher reachedMaxSimultaneousTask]
+  -[DDScanServerDispatcher emptyIdentifier]
+  -[DDScanServerDispatcher scannerConf:sync:shortTask:runTask:]
+  -[DDScanServerDispatcher recycleScanner:fromList:sameQueue:]
+
+
+DDScannerService : NSObject
+  // class methods
+  +[DDScannerService scanString:]
+  +[DDScannerService scanString:completionBlock:]
+  +[DDScannerService cancelJob:]
+  +[DDScannerService scanString:range:configuration:]
+  +[DDScannerService appendWatchOSLinksToString:]
+  +[DDScannerService scanQuery:configuration:]
+  +[DDScannerService scanString:range:configuration:completionBlock:]
+  +[DDScannerService scanQuery:configuration:completionBlock:]
+
+
+DDScanServer : DDScannerService
+ @property  long long options
+ @property  double timeout
+
+  // instance methods
+  -[DDScanServer init]
+  -[DDScanServer options]
+  -[DDScanServer setOptions:]
+  -[DDScanServer timeout]
+  -[DDScanServer setTimeout:]
+  -[DDScanServer scanString:]
+  -[DDScanServer scanString:resultsBlock:]
+
+
+DDURLifier : NSObject
+  // class methods
+  +[DDURLifier urlMatchesForString:]
+  +[DDURLifier urlMatchesForString:includingTel:]
+  +[DDURLifier urlMatchesForString:phoneNumberTypes:]
+  +[DDURLifier urlMatchesForString:usingScanner:withPhoneNumberTypes:referenceDate:timeZone:storingResultsIn:]
+  +[DDURLifier urlIfyTextNode:inNode:forMatches:]
+  +[DDURLifier urlIfyNode:phoneNumberTypes:]
+  +[DDURLifier urlIfyNode:]
+  +[DDURLifier urlIfyNode:usingScanner:phoneNumberTypes:]
+  +[DDURLifier urlIfyNode:usingScanner:phoneNumberTypes:withReferenceDate:andTimeZone:]
+
+
+DDURLMatch : NSObject
+  // instance methods
+  -[DDURLMatch dealloc]
+  -[DDURLMatch compare:]
+  -[DDURLMatch url]
+  -[DDURLMatch range]
+  -[DDURLMatch initWithRange:url:]
+
+
+DataDetectorsSourceAccess : NSObject <DataDetectorsSourceAccessProtocol>
+ @property  {?=[8I]} auditToken
+ @property  int processIdentifier
+ @property  unsigned int userIdentifier
+
+  // instance methods
+  -[DataDetectorsSourceAccess setUserIdentifier:]
+  -[DataDetectorsSourceAccess userIdentifier]
+  -[DataDetectorsSourceAccess processIdentifier]
+  -[DataDetectorsSourceAccess auditToken]
+  -[DataDetectorsSourceAccess setProcessIdentifier:]
+  -[DataDetectorsSourceAccess setAuditToken:]
+  -[DataDetectorsSourceAccess fileForSourceRead:resourceType:withReply:]
+  -[DataDetectorsSourceAccess filesForSourceRead:resourceType:withReply:]
+  -[DataDetectorsSourceAccess writeSourceFromJSONFile:source:withReply:]
+  -[DataDetectorsSourceAccess writeSourceFromRawData:source:signature:withReply:]
+  -[DataDetectorsSourceAccess privacyUserReadEntitled]
+  -[DataDetectorsSourceAccess privacyUserWriteEntitled]
+  -[DataDetectorsSourceAccess privacySystemWriteEntitled]
+  -[DataDetectorsSourceAccess fileHandleForSourceRead:resourceType:]
+  -[DataDetectorsSourceAccess clientCanWriteSource:]
+  -[DataDetectorsSourceAccess pushSourcesContent:forSource:signature:]
+
+
+DDMessageCacheElement : NSObject
+ @property  NSString *text
+ @property  NSDate *date
+
+  // instance methods
+  -[DDMessageCacheElement .cxx_destruct]
+  -[DDMessageCacheElement date]
+  -[DDMessageCacheElement text]
+  -[DDMessageCacheElement setText:]
+  -[DDMessageCacheElement setDate:]
+
+
+DDMessageCache : NSObject
+  // instance methods
+  -[DDMessageCache init]
+  -[DDMessageCache .cxx_destruct]
+  -[DDMessageCache removeConversation:]
+  -[DDMessageCache _pruneIgnoringFirst:]
+  -[DDMessageCache stringWithElement:conversationID:range:]
+
+
+DDScannerResult : NSObject <NSSecureCoding>
+ @property  NSString *value
+ @property  NSString *matchedString
+ @property  {_NSRange=QQ} urlificationRange
+ @property  NSString *type
+ @property  int category
+ @property  NSURL *url
+ @property  {_NSRange=QQ} range
+
+  // class methods
+  +[DDScannerResult supportsSecureCoding]
+  +[DDScannerResult resultFromCoreResult:]
+  +[DDScannerResult resultsFromCoreResults:]
+
+  // instance methods
+  -[DDScannerResult init]
+  -[DDScannerResult dealloc]
+  -[DDScannerResult isEqual:]
+  -[DDScannerResult copyWithZone:]
+  -[DDScannerResult type]
+  -[DDScannerResult setType:]
+  -[DDScannerResult encodeWithCoder:]
+  -[DDScannerResult initWithCoder:]
+  -[DDScannerResult .cxx_destruct]
+  -[DDScannerResult category]
+  -[DDScannerResult value]
+  -[DDScannerResult valueForUndefinedKey:]
+  -[DDScannerResult url]
+  -[DDScannerResult range]
+  -[DDScannerResult score]
+  -[DDScannerResult location]
+  -[DDScannerResult rawValue]
+  -[DDScannerResult setRange:]
+  -[DDScannerResult coreResult]
+  -[DDScannerResult matchedString]
+  -[DDScannerResult subResults]
+  -[DDScannerResult urlificationRange]
+  -[DDScannerResult offsetRangeBy:]
+  -[DDScannerResult initWithCoreResult:]
+  -[DDScannerResult cfRange]
+  -[DDScannerResult typeIs:]
+  -[DDScannerResult contextualData]
+  -[DDScannerResult setSubResults:]
+  -[DDScannerResult getDuration]
+  -[DDScannerResult dateFromReferenceDate:referenceTimezone:timezoneRef:allDayRef:]
+  -[DDScannerResult extractStartDate:startTimezone:endDate:endTimezone:allDayRef:referenceDate:referenceTimezone:]
+  -[DDScannerResult getPhoneValue:label:]
+  -[DDScannerResult getMailValue:label:]
+  -[DDScannerResult getIMScreenNameValue:type:]
+  -[DDScannerResult getStreet:city:state:zip:country:]
+
+
+NSMutableAttributedString(DataDetectorsSupport)
+	// instance methods
+	-[NSMutableAttributedString(DataDetectorsSupport) dd_offsetResultsBy:]
+	-[NSMutableAttributedString(DataDetectorsSupport) dd_chopResults]
+	-[NSMutableAttributedString(DataDetectorsSupport) dd_appendAttributedString:]
+
+NSAttributedString(DataDetectorsSupport)
+	// instance methods
+	-[NSAttributedString(DataDetectorsSupport) dd_attributedStringByAppendingAttributedString:]
+	-[NSAttributedString(DataDetectorsSupport) dd_attributedSubstringFromRange:]
+
+NSMutableString(DDCategories)
+	// instance methods
+	-[NSMutableString(DDCategories) dd_appendSpaces:]
+
+01 00 0d00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

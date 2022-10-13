@@ -1,0 +1,1960 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PASNeuralNetwork
+|| __DATA.__objc_data _OBJC_CLASS_$_PASNeuralNetworkBuilder
+|| __DATA.__objc_data _OBJC_CLASS_$_PASScoreDict
+|| __DATA.__objc_data _OBJC_CLASS_$_PASScoreInterpreter
+|| __DATA.__objc_data _OBJC_CLASS_$_PASScoreInterpreterCtx
+|| __DATA.__objc_data _OBJC_CLASS_$__PASArgOption
+|| __DATA.__objc_data _OBJC_CLASS_$__PASArgParser
+|| __DATA.__objc_data _OBJC_CLASS_$__PASArgSubcommand
+|| __DATA.__objc_data _OBJC_CLASS_$__PASArgSubcommandHandlerParams
+|| __DATA.__objc_data _OBJC_CLASS_$__PASArgToplevelHandlerParams
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBloomFilter
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBloomFilterDummy
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBloomFilterForWriting
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBloomFilterHashArray
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBundleIdResolver
+|| __DATA.__objc_data _OBJC_CLASS_$__PASBundleIdResolverGuardedData
+|| __DATA.__objc_data _OBJC_CLASS_$__PASChangeUser
+|| __DATA.__objc_data _OBJC_CLASS_$__PASCoalescingTimer
+|| __DATA.__objc_data _OBJC_CLASS_$__PASCoalescingTimerGuardedData
+|| __DATA.__objc_data _OBJC_CLASS_$__PASCrashHelper
+|| __DATA.__objc_data _OBJC_CLASS_$__PASDatabaseJournal
+|| __DATA.__objc_data _OBJC_CLASS_$__PASDatabaseJournalFile
+|| __DATA.__objc_data _OBJC_CLASS_$__PASDomainSelection
+|| __DATA.__objc_data _OBJC_CLASS_$__PASFileBackedMallocZone
+|| __DATA.__objc_data _OBJC_CLASS_$__PASFileUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__PASImmutableDomainSelection
+|| __DATA.__objc_data _OBJC_CLASS_$__PASKVOHandler
+|| __DATA.__objc_data _OBJC_CLASS_$__PASKVOHandlerTask
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLPArray
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLPDictionary
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLPDictionaryEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLazyPlist
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLazyPlistCorruptException
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLazyPlistWriting
+|| __DATA.__objc_data _OBJC_CLASS_$__PASLevenshtein
+|| __DATA.__objc_data _OBJC_CLASS_$__PASMutableDomainSelection
+|| __DATA.__objc_data _OBJC_CLASS_$__PASPosixDataCollector
+|| __DATA.__objc_data _OBJC_CLASS_$__PASPosixPipeContext
+|| __DATA.__objc_data _OBJC_CLASS_$__PASPosixUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__PASQueueLock
+|| __DATA.__objc_data _OBJC_CLASS_$__PASRng
+|| __DATA.__objc_data _OBJC_CLASS_$__PASSimpleCoalescingTimer
+|| __DATA.__objc_data _OBJC_CLASS_$__PASStringPairs
+|| __DATA.__objc_data _OBJC_CLASS_$__PASTempfileDescr
+|| __DATA.__objc_data _OBJC_CLASS_$__PASXPCClientHelper
+|| __DATA.__objc_data _OBJC_CLASS_$__PASXPCListener
+|| __DATA.__objc_data _OBJC_CLASS_$__PASXPCServer
+|| __DATA.__objc_data _OBJC_CLASS_$__PASXPCServerHelper
+|| __DATA.__objc_data _OBJC_CLASS_$__PASZoneSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_PASNeuralNetwork
+|| __DATA.__objc_data _OBJC_METACLASS_$_PASNeuralNetworkBuilder
+|| __DATA.__objc_data _OBJC_METACLASS_$_PASScoreDict
+|| __DATA.__objc_data _OBJC_METACLASS_$_PASScoreInterpreterCtx
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASArgOption
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASArgParser
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASArgSubcommand
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASArgSubcommandHandlerParams
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASArgToplevelHandlerParams
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASBloomFilterDummy
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASBloomFilterForWriting
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASBloomFilterHashArray
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASBundleIdResolver
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASBundleIdResolverGuardedData
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASChangeUser
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASCoalescingTimer
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASCoalescingTimerGuardedData
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASCrashHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASDatabaseJournal
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASDatabaseJournalFile
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASDomainSelection
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASFileBackedMallocZone
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASFileUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASImmutableDomainSelection
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASKVOHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASKVOHandlerTask
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLPArray
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLPDictionary
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLPDictionaryEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLazyPlist
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLazyPlistCorruptException
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLazyPlistWriting
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASLevenshtein
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASMutableDomainSelection
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASPosixDataCollector
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASPosixPipeContext
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASPosixUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASQueueLock
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASRng
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASSimpleCoalescingTimer
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASStringPairs
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASTempfileDescr
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASXPCClientHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASXPCListener
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASXPCServer
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASXPCServerHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$__PASZoneSupport
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PASScoreInterpreterCtx.inputScores
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PASScoreInterpreterCtx.intentType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PASScoreInterpreterCtx.stack
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PASScoreInterpreterCtx.stackLen
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PASScoreInterpreterCtx.subscores
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASArgOption._longOptionFlag
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._bestAssetVersionObserved
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._bestAvailableAsset
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._bestAvailableVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._defaultBundlePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._defaultBundleVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._overrides
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAsset2GuardedData._purgeObsoleteInstalledAssets
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._bestAssetVersionObserved
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._bestAvailableAsset
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._bestAvailableVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._defaultBundlePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._defaultBundleVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASAssetGuardedData._overrides
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBloomFilter._data
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBloomFilter._hashArrayLength
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBloomFilter._numBits
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBloomFilter._numHashFunctions
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBundleIdResolverGuardedData.bundleIdOrProcName
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASBundleIdResolverGuardedData.isProcessName
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.acc
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.coalescingSource
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.currentCoalescingTimerId
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.currentNonCoalescingTimerGeneration
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.nextCoalescedEventTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASCoalescingTimerGuardedData.nonCoalescingSources
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASDatabaseMigrationContext.db
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASDatabaseMigrationContext.migrations
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASDatabaseMigrationContext.object
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASDatabaseMigrationContext.version
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASNotificationDescriptor.isCanceled
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASPosixPipeContext._queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASPosixPipeContext._readChannel
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASPosixPipeContext._stop
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASPosixPipeContext._writeHandle
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._currentExclusivity
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._explainedQueriesLogFile
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._explainedQueriesLogged
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._explainedQueryForPlan
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._filename
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._lock
+|| __DATA.__objc_ivar _OBJC_IVAR_$__PASSqliteDatabase._statementsToFinalizeAsync
+|| __DATA_CONST.__const __PASDomainSelectionErrorDomain
+|| __DATA_CONST.__const __PASLazyPlistErrorDomain
+|| __DATA_CONST.__const __PASSqliteDatabaseErrorDomain
+|| __DATA_CONST.__const __PASSqliteDatabaseErrorKeyCode
+|| __DATA_CONST.__const __PASSqliteDatabaseErrorKeyQuery
+|| __DATA_CONST.__const __PASSqliteDatabaseErrorKeyReason
+|| __DATA_CONST.__objc_const _OBJC_EHTYPE_$__PASLazyPlistCorruptException
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASAsset2
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASAsset2GuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASAssetGuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASCFBurstTrie
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASCompression
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDatabaseMigrationContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDatabaseMigrator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDeviceIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDeviceInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDeviceState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASDispatch
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASEntitlement
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASInternPool
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASLRUCache
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASLock
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASNotificationDescriptor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASNotificationToken
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASNotificationTracker
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASSQLColumnMapping
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASSqliteDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASSqliteDefaultErrorHandler
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASSqliteStatement
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASTuple2
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PASZonedObject
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PASScoreInterpreter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASAsset2
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASAsset2GuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASAssetGuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASBloomFilter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASCFBurstTrie
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASCompression
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDatabaseMigrationContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDatabaseMigrator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDeviceIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDeviceInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDeviceState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASDispatch
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASEntitlement
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASInternPool
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASLRUCache
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASLock
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASNotificationDescriptor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASNotificationToken
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASNotificationTracker
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASSQLColumnMapping
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASSqliteDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASSqliteDefaultErrorHandler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASSqliteStatement
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASTuple2
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PASZonedObject
+|| __TEXT.__const _PASScoreNotSet
+|| __TEXT.__const _ProactiveSupportVersionNumber
+|| __TEXT.__const _ProactiveSupportVersionString
+|| __TEXT.__const __PASSqliteDatabaseKeepGoing
+|| __TEXT.__const __PASSqliteDatabaseStop
+|| __TEXT.__const _kPASDatabaseMigratorLatestVersion
+|| __TEXT.__text __PASBuddyAllocatorAlloc
+|| __TEXT.__text __PASBuddyAllocatorAllocZeros
+|| __TEXT.__text __PASBuddyAllocatorBufferSizeForHeapOfSize
+|| __TEXT.__text __PASBuddyAllocatorCreateWithAlignedBuffer
+|| __TEXT.__text __PASBuddyAllocatorDestroy
+|| __TEXT.__text __PASBuddyAllocatorFree
+|| __TEXT.__text __PASBuddyAllocatorIntegrityCheck
+|| __TEXT.__text __PASBuddyAllocatorPodHeap
+|| __TEXT.__text __PASBuddyAllocatorRealloc
+|| __TEXT.__text __PASBuddyAllocatorSizeOfBuffer
+|| __TEXT.__text __PASBuddyAllocatorUsage
+|| __TEXT.__text __PASCompactStringArrayAppendString
+|| __TEXT.__text __PASCompactStringArrayCreate
+|| __TEXT.__text __PASCompactStringArrayDestroy
+|| __TEXT.__text __PASCompactStringArrayFindString
+|| __TEXT.__text __PASCompactStringArrayFindStringWithSize
+|| __TEXT.__text __PASCompactStringArrayMinimizeSpace
+|| __TEXT.__text __PASCompactStringArrayResetSearchHint
+|| __TEXT.__text __PASFileBackedMallocZoneEnumerator
+|| __TEXT.__text __PASIsInternalDevice
+|| __TEXT.__text __PASQMarksSeparatedByCommas
+|| __TEXT.__text __PASRngSeed64
+|| __TEXT.__text __PASSharedKeySetCount
+|| __TEXT.__text __PASSharedKeySetIndexForKey
+|| __TEXT.__text __PASSharedKeySetKeyAtIndex
+|| __TEXT.__text __PASSharedKeySetSupportLoadOnce
+|| __TEXT.__text __PAS_MurmurHash3_x64_128
+|| __TEXT.__text __PAS_MurmurHash3_x86_128
+|| __TEXT.__text __PAS_MurmurHash3_x86_32
+|| __TEXT.__text __PAS_sqlite3_bind_nsdata
+|| __TEXT.__text __PAS_sqlite3_bind_nssecurecoding
+|| __TEXT.__text __PAS_sqlite3_bind_nsstring
+|| __TEXT.__text __PAS_sqlite3_column_nsdata
+|| __TEXT.__text __PAS_sqlite3_column_nssecurecoding
+|| __TEXT.__text __PAS_sqlite3_column_nsstring
+__ Accelerate: _cblas_sgemv
+__ Accelerate: _cblas_sscal
+__ Accelerate: _vvexpf
+__ AppSupport: _CPIsInternalDevice
+__ CoreFoundation: _CFAllocatorAllocate
+__ CoreFoundation: _CFAllocatorCreate
+__ CoreFoundation: _CFAllocatorDeallocate
+__ CoreFoundation: _CFArrayCreateCopy
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayCreateMutableCopy
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFBundleCreate
+__ CoreFoundation: _CFBundleGetIdentifier
+__ CoreFoundation: _CFBurstTrieContains
+__ CoreFoundation: _CFBurstTrieContainsUTF8String
+__ CoreFoundation: _CFBurstTrieCreateFromFile
+__ CoreFoundation: _CFBurstTrieRelease
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataCreateCopy
+__ CoreFoundation: _CFDataCreateMutable
+__ CoreFoundation: _CFDataCreateMutableCopy
+__ CoreFoundation: _CFDataSetLength
+__ CoreFoundation: _CFDateCreate
+__ CoreFoundation: _CFDateGetAbsoluteTime
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreateCopy
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetByteSize
+__ CoreFoundation: _CFNumberGetType
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFNumberIsFloatType
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFSetAddValue
+__ CoreFoundation: _CFSetCreateCopy
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFSetCreateMutableCopy
+__ CoreFoundation: _CFSetGetCount
+__ CoreFoundation: _CFSetGetValue
+__ CoreFoundation: _CFStringCreateCopy
+__ CoreFoundation: _CFStringCreateMutable
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringCreateWithCStringNoCopy
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _CFUUIDCreateFromUUIDBytes
+__ CoreFoundation: _CFUUIDGetUUIDBytes
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSMallocException
+__ CoreFoundation: _NSRangeException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSEnumerator
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: _OBJC_METACLASS_$_NSArray
+__ CoreFoundation: _OBJC_METACLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_METACLASS_$_NSEnumerator
+__ CoreFoundation: _OBJC_METACLASS_$_NSException
+__ CoreFoundation: __CFBundleCopyBundleURLForExecutableURL
+__ CoreFoundation: __CFCopyServerVersionDictionary
+__ CoreFoundation: __CFCopySystemVersionDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreFoundation: __kCFSystemVersionBuildVersionKey
+__ CoreFoundation: _kCFBundleIdentifierKey
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ CrashReporterSupport: _DiagnosticLogSubmissionEnabled
+__ CrashReporterSupport: _SimulateCrash
+__ Foundation: _NSClassFromString
+__ Foundation: _NSDefaultMallocZone
+__ Foundation: _NSFilePathErrorKey
+__ Foundation: _NSFileSystemFreeSize
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSKeyValueChangeNewKey
+__ Foundation: _NSKeyValueChangeNotificationIsPriorKey
+__ Foundation: _NSKeyValueChangeOldKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _NSZoneCalloc
+__ Foundation: _NSZoneFree
+__ Foundation: _NSZoneFromPointer
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSIndexPath
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ InternationalTextSearch: _ITSCollationContextFreeContextForDatabaseHandle
+__ InternationalTextSearch: _ITSRegisterSQLiteICUTokenizer
+__ MobileAsset: _ASAttributeCompatibilityVersion
+__ MobileAsset: _ASAttributeContentVersion
+__ MobileAsset: _OBJC_CLASS_$_ASAssetQuery
+__ MobileAsset: _OBJC_CLASS_$_MAAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAssetQuery
+__ MobileKeyBag: _MKBDeviceFormattedForContentProtection
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateFromSelf
+__ Security: _SecTaskCreateWithAuditToken
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: __dispatch_data_destructor_munmap
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _alphasort
+__ libSystem.B.dylib: _arc4random_buf
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _chmod
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _closedir
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_barrier
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_block_wait
+__ libSystem.B.dylib: _dispatch_data_create
+__ libSystem.B.dylib: _dispatch_data_get_size
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_io_close
+__ libSystem.B.dylib: _dispatch_io_create
+__ libSystem.B.dylib: _dispatch_io_read
+__ libSystem.B.dylib: _dispatch_io_set_high_water
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _ftruncate
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _getopt_long
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _getpwnam
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _lseek
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _malloc_printf
+__ libSystem.B.dylib: _malloc_set_zone_name
+__ libSystem.B.dylib: _malloc_zone_register
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _mkstemp
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _mprotect
+__ libSystem.B.dylib: _msync
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _open_dprotected_np
+__ libSystem.B.dylib: _opendir
+__ libSystem.B.dylib: _optarg
+__ libSystem.B.dylib: _opterr
+__ libSystem.B.dylib: _optind
+__ libSystem.B.dylib: _optopt
+__ libSystem.B.dylib: _optreset
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _pipe
+__ libSystem.B.dylib: _posix_memalign
+__ libSystem.B.dylib: _posix_spawn
+__ libSystem.B.dylib: _posix_spawn_file_actions_addclose
+__ libSystem.B.dylib: _posix_spawn_file_actions_adddup2
+__ libSystem.B.dylib: _posix_spawn_file_actions_init
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _pread
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _proc_name
+__ libSystem.B.dylib: _proc_pidpath
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_trylock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_mutexattr_destroy
+__ libSystem.B.dylib: _pthread_mutexattr_init
+__ libSystem.B.dylib: _pthread_mutexattr_settype
+__ libSystem.B.dylib: _pthread_self
+__ libSystem.B.dylib: _putchar
+__ libSystem.B.dylib: _qsort_b
+__ libSystem.B.dylib: _read
+__ libSystem.B.dylib: _readdir
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _reallocf
+__ libSystem.B.dylib: _rename
+__ libSystem.B.dylib: _scandir
+__ libSystem.B.dylib: _setlinebuf
+__ libSystem.B.dylib: _setuid
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strstr
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _strtoul
+__ libSystem.B.dylib: _tanhf
+__ libSystem.B.dylib: _unlink
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _vm_page_size
+__ libSystem.B.dylib: _waitpid
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: _writev
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libcompression.dylib: _compression_decode_buffer
+__ libcompression.dylib: _compression_encode_buffer
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_getInstanceSize
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_constructInstance
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_debug_taggedpointer_mask
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_destructInstance
+__ libobjc.A.dylib: _objc_ehtype_vtable
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _sel_getName
+__ libsqlite3.dylib: _sqlite3_backup_finish
+__ libsqlite3.dylib: _sqlite3_backup_init
+__ libsqlite3.dylib: _sqlite3_backup_step
+__ libsqlite3.dylib: _sqlite3_bind_blob
+__ libsqlite3.dylib: _sqlite3_bind_blob64
+__ libsqlite3.dylib: _sqlite3_bind_double
+__ libsqlite3.dylib: _sqlite3_bind_int64
+__ libsqlite3.dylib: _sqlite3_bind_null
+__ libsqlite3.dylib: _sqlite3_bind_parameter_index
+__ libsqlite3.dylib: _sqlite3_bind_text
+__ libsqlite3.dylib: _sqlite3_busy_timeout
+__ libsqlite3.dylib: _sqlite3_clear_bindings
+__ libsqlite3.dylib: _sqlite3_close
+__ libsqlite3.dylib: _sqlite3_column_blob
+__ libsqlite3.dylib: _sqlite3_column_bytes
+__ libsqlite3.dylib: _sqlite3_column_count
+__ libsqlite3.dylib: _sqlite3_column_double
+__ libsqlite3.dylib: _sqlite3_column_int
+__ libsqlite3.dylib: _sqlite3_column_int64
+__ libsqlite3.dylib: _sqlite3_column_name
+__ libsqlite3.dylib: _sqlite3_column_origin_name
+__ libsqlite3.dylib: _sqlite3_column_table_name
+__ libsqlite3.dylib: _sqlite3_column_text
+__ libsqlite3.dylib: _sqlite3_column_type
+__ libsqlite3.dylib: _sqlite3_db_config
+__ libsqlite3.dylib: _sqlite3_db_release_memory
+__ libsqlite3.dylib: _sqlite3_errmsg
+__ libsqlite3.dylib: _sqlite3_exec
+__ libsqlite3.dylib: _sqlite3_extended_errcode
+__ libsqlite3.dylib: _sqlite3_extended_result_codes
+__ libsqlite3.dylib: _sqlite3_file_control
+__ libsqlite3.dylib: _sqlite3_finalize
+__ libsqlite3.dylib: _sqlite3_last_insert_rowid
+__ libsqlite3.dylib: _sqlite3_open_v2
+__ libsqlite3.dylib: _sqlite3_prepare_v2
+__ libsqlite3.dylib: _sqlite3_reset
+__ libsqlite3.dylib: _sqlite3_sql
+__ libsqlite3.dylib: _sqlite3_step
+__ libz.1.dylib: _adler32
+_PASNotificationToken : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long token
+
+  // instance methods
+  -[_PASNotificationToken token]
+  -[_PASNotificationToken setToken:]
+
+
+_PASNotificationDescriptor : NSObject /usr/lib/libc++.1.dylib
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSObject<OS_dispatch_group> *group
+ @property  @? handler
+
+  // instance methods
+  -[_PASNotificationDescriptor setQueue:]
+  -[_PASNotificationDescriptor queue]
+  -[_PASNotificationDescriptor handler]
+  -[_PASNotificationDescriptor .cxx_destruct]
+  -[_PASNotificationDescriptor setGroup:]
+  -[_PASNotificationDescriptor setHandler:]
+  -[_PASNotificationDescriptor group]
+
+
+_PASNotificationTracker : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASNotificationTracker init]
+  -[_PASNotificationTracker dealloc]
+  -[_PASNotificationTracker .cxx_destruct]
+  -[_PASNotificationTracker registerWithQueue:handler:]
+  -[_PASNotificationTracker _deregisterHandlerWithToken:waitOnPending:]
+  -[_PASNotificationTracker deregisterHandlerWithToken:]
+  -[_PASNotificationTracker deregisterHandlerAsyncWithToken:]
+  -[_PASNotificationTracker issueNotificationAsyncWithContext:callback:]
+  -[_PASNotificationTracker issueNotificationAsyncWithContext:]
+
+
+_PASTuple2 : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+ @property  NSObject *first
+ @property  NSObject *second
+
+  // class methods
+  +[_PASTuple2 tupleWithFirst:second:]
+
+  // instance methods
+  -[_PASTuple2 init]
+  -[_PASTuple2 isEqual:]
+  -[_PASTuple2 copyWithZone:]
+  -[_PASTuple2 .cxx_destruct]
+  -[_PASTuple2 second]
+  -[_PASTuple2 first]
+  -[_PASTuple2 initWithFirst:second:]
+  -[_PASTuple2 isEqualToTuple2:]
+
+
+_PASChangeUser : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASChangeUser becomeCurrentUser]
+
+
+_PASLazyPlistCorruptException : NSException
+
+_PASLazyPlist : NSObject /usr/lib/libc++.1.dylib
+ @property  r^{?=^vQ} mappedRegion
+ @property  r^{__CFAllocator=} stringContentsDeallocator
+
+  // class methods
+  +[_PASLazyPlist deserializationStatsHandler]
+  +[_PASLazyPlist propertyListWithData:error:]
+  +[_PASLazyPlist propertyListWithPath:error:]
+  +[_PASLazyPlist propertyListWithPath:fileRange:error:]
+  +[_PASLazyPlist dictionaryWithPath:error:]
+  +[_PASLazyPlist dictionaryWithData:error:]
+  +[_PASLazyPlist arrayWithPath:error:]
+  +[_PASLazyPlist arrayWithData:error:]
+  +[_PASLazyPlist dataWithPropertyList:error:]
+  +[_PASLazyPlist fileBackedDataWithPropertyList:writtenToPath:error:]
+  +[_PASLazyPlist fileBackedDataWithPropertyList:appendedToFd:startOfs:error:]
+  +[_PASLazyPlist isLazyPlistLikelyContainedInData:version:]
+  +[_PASLazyPlist isLazyPlistLikelyContainedInFileAtPath:version:]
+  +[_PASLazyPlist serializationStatsHandler]
+  +[_PASLazyPlist setSerializationStatsHandler:]
+  +[_PASLazyPlist setDeserializationStatsHandler:]
+
+  // instance methods
+  -[_PASLazyPlist init]
+  -[_PASLazyPlist dealloc]
+  -[_PASLazyPlist .cxx_destruct]
+  -[_PASLazyPlist _retainForStringAllocation]
+  -[_PASLazyPlist mappedRegion]
+  -[_PASLazyPlist _initWithData:sourcedFromPath:error:]
+  -[_PASLazyPlist _validateHeader:filename:error:]
+  -[_PASLazyPlist _validateStringTableWithFilename:stats:error:]
+  -[_PASLazyPlist _validateObjectGraphWithFilename:stats:error:]
+  -[_PASLazyPlist _validateObjectGraphWithFilename:rootValue:recursionDepth:stats:error:]
+  -[_PASLazyPlist _rootObjectWithErrMsg:]
+  -[_PASLazyPlist _objectForValue:]
+  -[_PASLazyPlist _decodeValue:handleBoolean:handleTaggedInt:handleBoxedInt:handleTaggedFloat:handleBoxedFloat:handleDate:handleData:handleString:handleDict:handleArray:errMsg:]
+  -[_PASLazyPlist _decodeDictionaryKeyValue:handleString:errMsg:]
+  -[_PASLazyPlist _objectForValue:errMsg:]
+  -[_PASLazyPlist stringContentsDeallocator]
+
+
+_PASLPDictionary : NSDictionary <NSFastEnumeration>
+  // instance methods
+  -[_PASLPDictionary init]
+  -[_PASLPDictionary copyWithZone:]
+  -[_PASLPDictionary count]
+  -[_PASLPDictionary countByEnumeratingWithState:objects:count:]
+  -[_PASLPDictionary objectForKey:]
+  -[_PASLPDictionary enumerateKeysAndObjectsWithOptions:usingBlock:]
+  -[_PASLPDictionary keyEnumerator]
+  -[_PASLPDictionary initWithCoder:]
+  -[_PASLPDictionary initWithObjects:forKeys:count:]
+  -[_PASLPDictionary .cxx_destruct]
+  -[_PASLPDictionary enumerateKeysAndObjectsUsingBlock:]
+  -[_PASLPDictionary initWithLazyPlist:storage:count:]
+  -[_PASLPDictionary _keyAtIndex:]
+
+
+_PASLPDictionaryEnumerator : NSEnumerator
+  // instance methods
+  -[_PASLPDictionaryEnumerator nextObject]
+  -[_PASLPDictionaryEnumerator .cxx_destruct]
+  -[_PASLPDictionaryEnumerator initWithLPDictionary:]
+
+
+_PASLPArray : NSArray <NSFastEnumeration>
+  // instance methods
+  -[_PASLPArray init]
+  -[_PASLPArray copyWithZone:]
+  -[_PASLPArray initWithObjects:count:]
+  -[_PASLPArray count]
+  -[_PASLPArray countByEnumeratingWithState:objects:count:]
+  -[_PASLPArray objectAtIndex:]
+  -[_PASLPArray initWithCoder:]
+  -[_PASLPArray enumerateObjectsUsingBlock:]
+  -[_PASLPArray .cxx_destruct]
+  -[_PASLPArray initWithLazyPlist:storage:count:]
+
+
+_PASDeviceIdentifier : NSObject /usr/lib/libc++.1.dylib
+ @property  NSUUID *UUID
+
+  // instance methods
+  -[_PASDeviceIdentifier init]
+  -[_PASDeviceIdentifier .cxx_destruct]
+  -[_PASDeviceIdentifier UUID]
+  -[_PASDeviceIdentifier reset]
+  -[_PASDeviceIdentifier initWithBasePath:]
+
+
+_PASCompression : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASCompression compress:fast:]
+  +[_PASCompression compress:lowMemory:]
+  +[_PASCompression fastCompress:]
+  +[_PASCompression _compress:fast:lowMemory:]
+  +[_PASCompression decompress:]
+  +[_PASCompression decompress:maxLength:]
+
+
+PASScoreDict : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long count
+
+  // class methods
+  +[PASScoreDict scoreDictFromDictionary:]
+
+  // instance methods
+  -[PASScoreDict init]
+  -[PASScoreDict dealloc]
+  -[PASScoreDict count]
+  -[PASScoreDict .cxx_destruct]
+  -[PASScoreDict initWithDefaultValueForSharedKeySet:]
+  -[PASScoreDict initWithDefaultValueForKeys:]
+  -[PASScoreDict initWithDefaultValueForScoreInputSetKeys:]
+  -[PASScoreDict setScore:forKey:]
+  -[PASScoreDict scoreForKey:found:]
+  -[PASScoreDict setScore:forSharedKeySetIndex:]
+  -[PASScoreDict scoreForSharedKeySetIndex:]
+  -[PASScoreDict toDictionary]
+
+
+_PASStringPairs : NSObject /usr/lib/libc++.1.dylib
+ @property  NSArray *keys
+ @property  NSArray *values
+ @property  unsigned long count
+
+  // instance methods
+  -[_PASStringPairs init]
+  -[_PASStringPairs count]
+  -[_PASStringPairs keyAtIndex:]
+  -[_PASStringPairs values]
+  -[_PASStringPairs .cxx_destruct]
+  -[_PASStringPairs keys]
+  -[_PASStringPairs valueAtIndex:]
+  -[_PASStringPairs initWithKeys:values:]
+
+
+_PASXPCServerHelper : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASXPCServerHelper shouldAcceptConnection:serviceName:whitelistedServerInterface:whitelistedClientInterface:requestHandler:validateConnection:setupClientProxy:interruptionHandler:invalidationHandler:logHandle:]
+  +[_PASXPCServerHelper hasTrueBooleanEntitlement:connection:logHandle:]
+  +[_PASXPCServerHelper checkForAndLogTrueBooleanEntitlement:connection:serviceName:logHandle:]
+  +[_PASXPCServerHelper checkForAndLogTrueBooleanEntitlement:connection:serviceName:logHandle:shouldGenerateCrashReport:]
+
+
+_PASDatabaseMigrationContext : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASDatabaseMigrationContext .cxx_destruct]
+
+
+_PASDatabaseMigrator : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASDatabaseMigrator init]
+  -[_PASDatabaseMigrator .cxx_destruct]
+  -[_PASDatabaseMigrator initWithMigrationObjects:]
+  -[_PASDatabaseMigrator migrateDatabases]
+  -[_PASDatabaseMigrator migrateDatabasesToVersion:]
+  -[_PASDatabaseMigrator unmigrateDatabases]
+  -[_PASDatabaseMigrator migrationNeeded]
+  -[_PASDatabaseMigrator _contextForMigrationObject:]
+  -[_PASDatabaseMigrator _migrateDatabasesWithContexts:toVersion:]
+  -[_PASDatabaseMigrator _unmigrateDatabasesWithContexts:]
+  -[_PASDatabaseMigrator _migrationNeededWithContexts:toVersion:]
+  -[_PASDatabaseMigrator _canContinueMigratingWithContexts:]
+  -[_PASDatabaseMigrator _skipFromZeroSchemaWithContexts:]
+  -[_PASDatabaseMigrator _anyContextHasFutureVersionWithContexts:]
+  -[_PASDatabaseMigrator _anyContextHasMismatchedVersionWithContexts:]
+  -[_PASDatabaseMigrator _allContextsAtVersionZeroWithContexts:]
+  -[_PASDatabaseMigrator _migrateOneStepToVersion:contexts:]
+  -[_PASDatabaseMigrator _runQueries:nextVersion:context:]
+  -[_PASDatabaseMigrator _runQuery:context:database:]
+  -[_PASDatabaseMigrator _prepareContexts:]
+  -[_PASDatabaseMigrator _clearDatabase:]
+
+
+_PASZoneSupport : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASZoneSupport newMutableArrayInZone:]
+  +[_PASZoneSupport newMutableArrayInZone:capacity:]
+  +[_PASZoneSupport copyArray:toZone:]
+  +[_PASZoneSupport mutableCopyArray:toZone:]
+  +[_PASZoneSupport newMutableDictionaryInZone:]
+  +[_PASZoneSupport newMutableDictionaryInZone:capacity:]
+  +[_PASZoneSupport copyDictionary:toZone:]
+  +[_PASZoneSupport mutableCopyDictionary:toZone:]
+  +[_PASZoneSupport newMutableSetInZone:]
+  +[_PASZoneSupport newMutableSetInZone:capacity:]
+  +[_PASZoneSupport copySet:toZone:]
+  +[_PASZoneSupport mutableCopySet:toZone:]
+  +[_PASZoneSupport newMutableStringInZone:]
+  +[_PASZoneSupport newMutableStringInZone:capacity:]
+  +[_PASZoneSupport copyString:toZone:]
+  +[_PASZoneSupport mutableCopyString:toZone:]
+  +[_PASZoneSupport newMutableDataInZone:]
+  +[_PASZoneSupport newMutableDataInZone:capacity:]
+  +[_PASZoneSupport newMutableDataInZone:length:]
+  +[_PASZoneSupport copyData:toZone:]
+  +[_PASZoneSupport mutableCopyData:toZone:]
+  +[_PASZoneSupport copyNumber:toZone:]
+  +[_PASZoneSupport copyDate:toZone:]
+  +[_PASZoneSupport copyUUID:toZone:]
+  +[_PASZoneSupport deepCopyObject:toZone:strategy:]
+
+
+_PASBundleIdResolverGuardedData : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASBundleIdResolverGuardedData .cxx_destruct]
+
+
+_PASBundleIdResolver : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASBundleIdResolver .cxx_destruct]
+  -[_PASBundleIdResolver initWithProcessIdentifier:]
+  -[_PASBundleIdResolver _populateResultWithLockWitness:]
+  -[_PASBundleIdResolver bundleIdentifierOrProcessName:]
+
+
+_PASFileBackedMallocZone : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASFileBackedMallocZone _allocatorForFileBackedMappingWithHeapSize:context:error:]
+  +[_PASFileBackedMallocZone mallocZoneWithFixedSize:error:]
+
+
+PASScoreInterpreterCtx : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PASScoreInterpreterCtx .cxx_destruct]
+  -[PASScoreInterpreterCtx initWithInputScores:]
+
+
+PASScoreInterpreter : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PASScoreInterpreter scoreInterpreterParseRootFromAsset:]
+
+  // instance methods
+  -[PASScoreInterpreter init]
+  -[PASScoreInterpreter .cxx_destruct]
+  -[PASScoreInterpreter evaluateWithInputScores:]
+  -[PASScoreInterpreter evaluateWithInputScoreDict:]
+  -[PASScoreInterpreter initWithParseRoot:]
+  -[PASScoreInterpreter initWithParseRoot:scoreInputSharedKeySet:]
+  -[PASScoreInterpreter _compileRoot:]
+  -[PASScoreInterpreter _evalVariable:withCtx:]
+
+
+_PASRng : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASRng init]
+  -[_PASRng next]
+  -[_PASRng initWithSeed:]
+  -[_PASRng nextFloat]
+  -[_PASRng nextDouble]
+
+
+_PASZonedObject : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASZonedObject allocWithZone:]
+
+  // instance methods
+  -[_PASZonedObject dealloc]
+  -[_PASZonedObject allocationZone]
+
+
+_PASSqliteDefaultErrorHandler : NSObject /usr/lib/libc++.1.dylib <_PASSqliteErrorHandlerProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_PASSqliteDefaultErrorHandler handleSqliteError:error:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _abortDueToSqliteError:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_UNKNOWN_ERROR:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_FULL:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CORRUPT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOTADB:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SHORT_READ:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CANTOPEN:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CANTOPEN_NOTEMPDIR:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CANTOPEN_ISDIR:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CANTOPEN_FULLPATH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CANTOPEN_CONVPATH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SHMSIZE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_READ:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_WRITE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_FSYNC:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_DIR_FSYNC:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_TRUNCATE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_FSTAT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_UNLOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_RDLOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_DELETE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_BLOCKED:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_NOMEM:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_ACCESS:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_CHECKRESERVEDLOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_LOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_CLOSE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_DIR_CLOSE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SHMOPEN:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SHMLOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SHMMAP:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_SEEK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_DELETE_NOENT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_MMAP:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_GETTEMPPATH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_CONVPATH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_VNODE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_IOERR_AUTH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_ERROR:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_INTERNAL:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_PERM:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_ABORT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_BUSY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_LOCKED:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOMEM:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_READONLY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_INTERRUPT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOTFOUND:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_PROTOCOL:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_EMPTY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_SCHEMA:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_TOOBIG:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_MISMATCH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_MISUSE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOLFS:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_AUTH:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_FORMAT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_RANGE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOTICE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_WARNING:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_LOCKED_SHAREDCACHE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_BUSY_RECOVERY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_BUSY_SNAPSHOT:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CORRUPT_VTAB:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_READONLY_RECOVERY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_READONLY_CANTLOCK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_READONLY_ROLLBACK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_READONLY_DBMOVED:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_ABORT_ROLLBACK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_CHECK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_COMMITHOOK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_FOREIGNKEY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_FUNCTION:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_NOTNULL:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_PRIMARYKEY:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_TRIGGER:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_UNIQUE:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_VTAB:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_CONSTRAINT_ROWID:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOTICE_RECOVER_WAL:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_NOTICE_RECOVER_ROLLBACK:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_WARNING_AUTOINDEX:onError:db:]
+  -[_PASSqliteDefaultErrorHandler _handle_SQLITE_AUTH_USER:onError:db:]
+
+
+_PASXPCClientHelper : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASXPCClientHelper dealloc]
+  -[_PASXPCClientHelper .cxx_destruct]
+  -[_PASXPCClientHelper remoteObjectProxyWithErrorHandler:]
+  -[_PASXPCClientHelper synchronousRemoteObjectProxyWithErrorHandler:]
+  -[_PASXPCClientHelper remoteObjectProxy]
+  -[_PASXPCClientHelper initWithServiceName:whitelistedServerInterface:whitelistedClientInterface:serverInitiatedRequestHandler:interruptionHandler:invalidationHandler:logHandle:]
+  -[_PASXPCClientHelper _locked_establishConnection]
+
+
+_PASArgSubcommandHandlerParams : NSObject /usr/lib/libc++.1.dylib
+ @property  _PASArgSubcommand *subcommand
+ @property  NSDictionary *options
+ @property  NSArray *positionalArguments
+
+  // instance methods
+  -[_PASArgSubcommandHandlerParams options]
+  -[_PASArgSubcommandHandlerParams .cxx_destruct]
+  -[_PASArgSubcommandHandlerParams initWithSubcommand:options:positionalArguments:]
+  -[_PASArgSubcommandHandlerParams subcommand]
+  -[_PASArgSubcommandHandlerParams positionalArguments]
+
+
+_PASArgToplevelHandlerParams : NSObject /usr/lib/libc++.1.dylib
+ @property  _PASArgParser *parser
+ @property  NSDictionary *options
+ @property  NSArray *positionalArguments
+
+  // instance methods
+  -[_PASArgToplevelHandlerParams options]
+  -[_PASArgToplevelHandlerParams .cxx_destruct]
+  -[_PASArgToplevelHandlerParams parser]
+  -[_PASArgToplevelHandlerParams positionalArguments]
+  -[_PASArgToplevelHandlerParams initWithParser:options:positionalArguments:]
+
+
+_PASArgOption : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *name
+ @property  NSString *shortName
+ @property  NSString *helpDescription
+ @property  NSString *argMetavar
+ @property  BOOL required
+
+  // class methods
+  +[_PASArgOption optionWithName:shortName:help:]
+  +[_PASArgOption optionWithName:shortName:argMetavar:help:]
+  +[_PASArgOption optionWithName:shortName:argMetavar:help:required:]
+
+  // instance methods
+  -[_PASArgOption name]
+  -[_PASArgOption .cxx_destruct]
+  -[_PASArgOption required]
+  -[_PASArgOption shortName]
+  -[_PASArgOption initWithName:shortName:argMetavar:help:required:]
+  -[_PASArgOption helpDescription]
+  -[_PASArgOption argMetavar]
+
+
+_PASArgSubcommand : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableArray *registeredOptions
+ @property  NSMutableSet *requiredOptions
+ @property  NSString *name
+ @property  NSString *helpDescription
+ @property  @? handler
+
+  // class methods
+  +[_PASArgSubcommand subcommandWithName:help:handler:]
+  +[_PASArgSubcommand simpleSubcommandWithHelpGenerator:name:help:handler:]
+
+  // instance methods
+  -[_PASArgSubcommand name]
+  -[_PASArgSubcommand handler]
+  -[_PASArgSubcommand .cxx_destruct]
+  -[_PASArgSubcommand helpDescription]
+  -[_PASArgSubcommand initWithName:help:handler:]
+  -[_PASArgSubcommand registerOption:]
+  -[_PASArgSubcommand optionShortHelp]
+  -[_PASArgSubcommand optionLongHelp]
+  -[_PASArgSubcommand naiveUsageHelpWithPositionalArgString:]
+  -[_PASArgSubcommand customUsageHelpWithUsageOverride:positionalArgString:optionHelpOverride:additionalHelpText:]
+  -[_PASArgSubcommand registeredOptions]
+  -[_PASArgSubcommand setRegisteredOptions:]
+  -[_PASArgSubcommand requiredOptions]
+  -[_PASArgSubcommand setRequiredOptions:]
+
+
+_PASArgParser : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableArray *registeredSubcommands
+ @property  NSMutableArray *registeredOptions
+ @property  NSMutableSet *requiredOptions
+ @property  @? handler
+
+  // class methods
+  +[_PASArgParser boolValueForArgument:error:]
+  +[_PASArgParser numberValueForArgument:error:]
+  +[_PASArgParser enumValueForArgument:withMapping:error:]
+  +[_PASArgParser parserWithHandler:]
+  +[_PASArgParser simpleParserWithHelpGenerator:version:handler:]
+
+  // instance methods
+  -[_PASArgParser handler]
+  -[_PASArgParser .cxx_destruct]
+  -[_PASArgParser initWithHandler:]
+  -[_PASArgParser registerOption:]
+  -[_PASArgParser optionShortHelp]
+  -[_PASArgParser optionLongHelp]
+  -[_PASArgParser naiveUsageHelpWithPositionalArgString:]
+  -[_PASArgParser registeredOptions]
+  -[_PASArgParser requiredOptions]
+  -[_PASArgParser setRequiredOptions:]
+  -[_PASArgParser registerSubcommand:]
+  -[_PASArgParser subcommandLongHelp]
+  -[_PASArgParser invokeHandlerWithArguments:count:parseErrorCode:error:]
+  -[_PASArgParser _argumentParseTemplate:longArgs:]
+  -[_PASArgParser registeredSubcommands]
+
+
+_PASCrashHelper : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASCrashHelper simulateCrashWithDescription:]
+
+
+_PASAssetGuardedData : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASAssetGuardedData .cxx_destruct]
+
+
+_PASAsset : NSObject /usr/lib/libc++.1.dylib <_PASAssetProtocol>
+ @property  unsigned long assetVersion
+ @property  NSString *assetType
+ @property  unsigned long compatibilityVersion
+ @property  unsigned long bestAssetVersionObserved
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_PASAsset init]
+  -[_PASAsset dealloc]
+  -[_PASAsset .cxx_destruct]
+  -[_PASAsset bundlePath]
+  -[_PASAsset compatibilityVersion]
+  -[_PASAsset assetVersion]
+  -[_PASAsset setBundlePath:]
+  -[_PASAsset assetType]
+  -[_PASAsset _assetDescription]
+  -[_PASAsset clearOverrides]
+  -[_PASAsset registerUpdateHandler:]
+  -[_PASAsset deregisterUpdateHandlerAsyncWithToken:]
+  -[_PASAsset pathForResourceWithName:extension:]
+  -[_PASAsset bestAssetVersionObserved]
+  -[_PASAsset initWithAssetTypeDescriptorPath:defaultBundlePath:matchingKeysAndValues:notificationQueue:]
+  -[_PASAsset initWithAssetTypeDescriptorPath:defaultBundlePath:matchingKeysAndValues:notificationQueue:enableAssetUpdates:]
+  -[_PASAsset _initWithBundleIdentifier:defaultBundlePath:compatibilityVersion:matchingKeysAndValues:notificationQueue:enableAssetUpdates:]
+  -[_PASAsset _loadDefaultBundleVersionWithGuardedData:]
+  -[_PASAsset deregisterUpdateHandlerWithToken:]
+  -[_PASAsset pathForResourceWithName:extension:assetVersion:]
+  -[_PASAsset pathForResourceWithNameAndExtension:assetVersion:]
+  -[_PASAsset pathForResourceWithNameAndExtension:]
+  -[_PASAsset pathsForResourcesWithNames:assetVersion:]
+  -[_PASAsset pathsForResourcesWithNames:]
+  -[_PASAsset _updateAssetMetadata]
+  -[_PASAsset _updateAssetMetadataUsingQueryResults:]
+  -[_PASAsset _issueUpdateNotificationsWithCallback:]
+  -[_PASAsset invokeWithBundleOverride:block:]
+  -[_PASAsset addOverridePath:forResource:ofType:]
+  -[_PASAsset callAssetUpdateHandlers]
+
+
+PASNeuralNetwork : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long inputSize
+ @property  unsigned long outputSize
+
+  // instance methods
+  -[PASNeuralNetwork init]
+  -[PASNeuralNetwork initWithData:]
+  -[PASNeuralNetwork .cxx_destruct]
+  -[PASNeuralNetwork inputSize]
+  -[PASNeuralNetwork outputSize]
+  -[PASNeuralNetwork predict:]
+  -[PASNeuralNetwork predict32:]
+  -[PASNeuralNetwork _runOnInputs:freeInputsAfterUse:]
+  -[PASNeuralNetwork _predict:freeInputsAfterUse:]
+  -[PASNeuralNetwork forInputs:computeOutputLayer:]
+
+
+PASNeuralNetworkBuilder : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PASNeuralNetworkBuilder init]
+  -[PASNeuralNetworkBuilder .cxx_destruct]
+  -[PASNeuralNetworkBuilder serialize]
+  -[PASNeuralNetworkBuilder initWithInputSize:]
+  -[PASNeuralNetworkBuilder addHiddenLayer:weights:bias:activation:skip:]
+  -[PASNeuralNetworkBuilder addOutputLayer:weights:bias:activation:softmax:]
+
+
+_PASDatabaseJournalFile : NSObject /usr/lib/libc++.1.dylib
+ @property  BOOL isFullyRead
+ @property  BOOL isAlive
+ @property  unsigned long length
+
+  // instance methods
+  -[_PASDatabaseJournalFile init]
+  -[_PASDatabaseJournalFile dealloc]
+  -[_PASDatabaseJournalFile length]
+  -[_PASDatabaseJournalFile clear]
+  -[_PASDatabaseJournalFile .cxx_destruct]
+  -[_PASDatabaseJournalFile initWithPath:]
+  -[_PASDatabaseJournalFile destroy]
+  -[_PASDatabaseJournalFile write:]
+  -[_PASDatabaseJournalFile destroyAndUnlinkIfEmpty]
+  -[_PASDatabaseJournalFile isFullyRead]
+  -[_PASDatabaseJournalFile isAlive]
+  -[_PASDatabaseJournalFile read]
+  -[_PASDatabaseJournalFile unlink]
+
+
+_PASDatabaseJournal : NSObject /usr/lib/libc++.1.dylib
+ @property  BOOL journaling
+
+  // class methods
+  +[_PASDatabaseJournal _binderForDictionary:]
+  +[_PASDatabaseJournal _journalPathForDbPath:]
+  +[_PASDatabaseJournal journalWithDbPath:]
+  +[_PASDatabaseJournal journalForInMemoryDb]
+
+  // instance methods
+  -[_PASDatabaseJournal .cxx_destruct]
+  -[_PASDatabaseJournal _getCurrentFile]
+  -[_PASDatabaseJournal _clearCurrentFile]
+  -[_PASDatabaseJournal _addCurrentFileToLog]
+  -[_PASDatabaseJournal _closeCurrentFile]
+  -[_PASDatabaseJournal runQuery:values:onDb:]
+  -[_PASDatabaseJournal _executeNextRecordFromFile:onDb:becameLocked:deleteFile:]
+  -[_PASDatabaseJournal _executeFile:onDb:becameLocked:]
+  -[_PASDatabaseJournal executeQueriesOnDatabase:]
+  -[_PASDatabaseJournal deleteAllJournaledQueries]
+  -[_PASDatabaseJournal startJournaling]
+  -[_PASDatabaseJournal stopJournaling]
+  -[_PASDatabaseJournal directoryPath]
+  -[_PASDatabaseJournal journaling]
+
+
+_PASDeviceInfo : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASDeviceInfo sharedInstance]
+  +[_PASDeviceInfo deviceUUID]
+  +[_PASDeviceInfo isInternalBuild]
+  +[_PASDeviceInfo isAudioAccessory]
+  +[_PASDeviceInfo isLowEndHardware]
+  +[_PASDeviceInfo isBatterySaverEnabled]
+  +[_PASDeviceInfo isDemoModeEnabled]
+  +[_PASDeviceInfo isBetaBuild]
+  +[_PASDeviceInfo isDNUEnabled]
+  +[_PASDeviceInfo shouldIncludePredictionLogs]
+
+  // instance methods
+  -[_PASDeviceInfo init]
+  -[_PASDeviceInfo dealloc]
+
+
+_PASInternPool : _PASZonedObject
+  // instance methods
+  -[_PASInternPool init]
+  -[_PASInternPool clear]
+  -[_PASInternPool .cxx_destruct]
+  -[_PASInternPool initWithBehavior:copyWithZone:]
+  -[_PASInternPool intern:]
+  -[_PASInternPool internNoCopy:]
+  -[_PASInternPool _intern:copyInput:]
+  -[_PASInternPool isInterned:]
+
+
+_PASKVOHandlerTask : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *keyPath
+ @property  NSObject *object
+ @property  @? afterBlock
+ @property  @? beforeAndAfterBlock
+
+  // instance methods
+  -[_PASKVOHandlerTask object]
+  -[_PASKVOHandlerTask setObject:]
+  -[_PASKVOHandlerTask .cxx_destruct]
+  -[_PASKVOHandlerTask keyPath]
+  -[_PASKVOHandlerTask setKeyPath:]
+  -[_PASKVOHandlerTask afterBlock]
+  -[_PASKVOHandlerTask setAfterBlock:]
+  -[_PASKVOHandlerTask beforeAndAfterBlock]
+  -[_PASKVOHandlerTask setBeforeAndAfterBlock:]
+
+
+_PASKVOHandler : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASKVOHandler init]
+  -[_PASKVOHandler dealloc]
+  -[_PASKVOHandler .cxx_destruct]
+  -[_PASKVOHandler observeValueForKeyPath:ofObject:change:context:]
+  -[_PASKVOHandler reactAfterChangesToKeyPath:ofObject:usingBlock:]
+  -[_PASKVOHandler reactAsynchronouslyAfterChangesToKeyPath:ofObject:usingBlock:onQueue:]
+  -[_PASKVOHandler reactBeforeAndAfterChangesToKeyPath:ofObject:usingBlock:]
+  -[_PASKVOHandler _watchKeyPath:ofObject:options:usingTask:]
+
+
+_PASBloomFilterHashArray : NSObject /usr/lib/libc++.1.dylib
+ @property  ^i hashes
+
+  // instance methods
+  -[_PASBloomFilterHashArray dealloc]
+  -[_PASBloomFilterHashArray copyWithZone:]
+  -[_PASBloomFilterHashArray initWithCapacity:]
+  -[_PASBloomFilterHashArray initInternal]
+  -[_PASBloomFilterHashArray hashes]
+
+
+_PASBloomFilterDummy : _PASBloomFilter
+  // class methods
+  +[_PASBloomFilterDummy instanceThatAlwaysReturns:]
+
+  // instance methods
+  -[_PASBloomFilterDummy initWithResult:]
+  -[_PASBloomFilterDummy getWithHashes:]
+
+
+_PASBloomFilter : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASBloomFilter bloomFilterWithPathToFile:]
+
+  // instance methods
+  -[_PASBloomFilter init]
+  -[_PASBloomFilter .cxx_destruct]
+  -[_PASBloomFilter getWithHashes:]
+  -[_PASBloomFilter initDummy]
+  -[_PASBloomFilter initWithData:numBits:hashFunctionCode:numHashFunctions:]
+  -[_PASBloomFilter newHashesArray]
+  -[_PASBloomFilter numHashes]
+  -[_PASBloomFilter computeHashesForString:reuse:]
+  -[_PASBloomFilter computeHashesWithSeed:forData:reuse:]
+  -[_PASBloomFilter _computeHashesWithSeed:bytes:length:reuse:]
+  -[_PASBloomFilter combineHashesWithSeed:hashA:hashB:reuse:]
+
+
+_PASBloomFilterForWriting : _PASBloomFilter
+  // class methods
+  +[_PASBloomFilterForWriting bloomFilterInMemoryWithNumberOfValuesN:errorRateP:]
+
+  // instance methods
+  -[_PASBloomFilterForWriting saveToFile:]
+  -[_PASBloomFilterForWriting setWithHashes:]
+
+
+_PASLevenshtein : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASLevenshtein distanceBetweenStrings:and:]
+
+
+_PASCoalescingTimerGuardedData : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASCoalescingTimerGuardedData .cxx_destruct]
+
+
+_PASCoalescingTimer : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASCoalescingTimer .cxx_destruct]
+  -[_PASCoalescingTimer initWithQueue:leewaySeconds:coalesceData:operation:]
+  -[_PASCoalescingTimer initWithQueue:coalesceData:operation:]
+  -[_PASCoalescingTimer processData:afterDelaySeconds:coalescingBehavior:]
+  -[_PASCoalescingTimer immediatelyProcessData:]
+  -[_PASCoalescingTimer processData:afterStrictDelaySeconds:]
+  -[_PASCoalescingTimer _replaceCoalescingTimerUsingLockWitness:]
+  -[_PASCoalescingTimer cancelPendingOperations]
+
+
+_PASSimpleCoalescingTimer : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASSimpleCoalescingTimer .cxx_destruct]
+  -[_PASSimpleCoalescingTimer cancelPendingOperations]
+  -[_PASSimpleCoalescingTimer initWithQueue:leewaySeconds:operation:]
+  -[_PASSimpleCoalescingTimer initWithQueue:operation:]
+  -[_PASSimpleCoalescingTimer runAfterDelaySeconds:coalescingBehavior:]
+  -[_PASSimpleCoalescingTimer runImmediately]
+  -[_PASSimpleCoalescingTimer runAfterStrictDelaySeconds:]
+
+
+_PASLRUCache : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASLRUCache removeAllObjects]
+  -[_PASLRUCache objectForKey:]
+  -[_PASLRUCache removeObjectForKey:]
+  -[_PASLRUCache setObject:forKey:]
+  -[_PASLRUCache .cxx_destruct]
+  -[_PASLRUCache enumerateKeysAndObjectsUsingBlock:]
+  -[_PASLRUCache initWithCountLimit:]
+
+
+_PASDomainSelection : NSObject /usr/lib/libc++.1.dylib <NSCopying, NSMutableCopying, NSSecureCoding>
+  // class methods
+  +[_PASDomainSelection supportsSecureCoding]
+
+  // instance methods
+  -[_PASDomainSelection init]
+  -[_PASDomainSelection isEqual:]
+  -[_PASDomainSelection copyWithZone:]
+  -[_PASDomainSelection mutableCopyWithZone:]
+  -[_PASDomainSelection count]
+  -[_PASDomainSelection isEmpty]
+  -[_PASDomainSelection encodeWithCoder:]
+  -[_PASDomainSelection initWithCoder:]
+  -[_PASDomainSelection initWithDomain:]
+  -[_PASDomainSelection _initWithNonOverlappingDomainSet:]
+  -[_PASDomainSelection initWithDomainsFromArray:]
+  -[_PASDomainSelection initWithDomainsFromSet:]
+  -[_PASDomainSelection containsDomain:]
+  -[_PASDomainSelection allDomains]
+  -[_PASDomainSelection globPatterns]
+  -[_PASDomainSelection isEqualToDomainSelection:]
+
+
+_PASImmutableDomainSelection : _PASDomainSelection
+  // instance methods
+  -[_PASImmutableDomainSelection isEmpty]
+  -[_PASImmutableDomainSelection .cxx_destruct]
+  -[_PASImmutableDomainSelection _initWithNonOverlappingDomainSet:]
+  -[_PASImmutableDomainSelection containsDomain:]
+  -[_PASImmutableDomainSelection allDomains]
+  -[_PASImmutableDomainSelection isEqualToDomainSelection:]
+
+
+_PASMutableDomainSelection : _PASDomainSelection
+  // instance methods
+  -[_PASMutableDomainSelection init]
+  -[_PASMutableDomainSelection dealloc]
+  -[_PASMutableDomainSelection copyWithZone:]
+  -[_PASMutableDomainSelection count]
+  -[_PASMutableDomainSelection isEmpty]
+  -[_PASMutableDomainSelection .cxx_destruct]
+  -[_PASMutableDomainSelection _initWithNonOverlappingDomainSet:]
+  -[_PASMutableDomainSelection containsDomain:]
+  -[_PASMutableDomainSelection allDomains]
+  -[_PASMutableDomainSelection isEqualToDomainSelection:]
+  -[_PASMutableDomainSelection addDomainsFromSelection:]
+  -[_PASMutableDomainSelection addDomain:]
+  -[_PASMutableDomainSelection addDomainsFromArray:]
+  -[_PASMutableDomainSelection addDomainsFromSet:]
+  -[_PASMutableDomainSelection _addDomainsFrom:]
+  -[_PASMutableDomainSelection _addDomainsFromOtherDictionary:toOwnDictionary:ownDictionaryIsPlaceholder:]
+  -[_PASMutableDomainSelection _decrementCountAndMaybePruneItems:]
+
+
+_PASFileUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASFileUtils mkstempWithPrefix:error:]
+  +[_PASFileUtils iterSortedEntriesInDirectory:selectDirent:onSortedDirent:error:]
+
+
+_PASTempfileDescr : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+ @property  int fd
+ @property  NSString *path
+
+  // class methods
+  +[_PASTempfileDescr tempfileDescrWithFd:path:]
+
+  // instance methods
+  -[_PASTempfileDescr init]
+  -[_PASTempfileDescr isEqual:]
+  -[_PASTempfileDescr copyWithZone:]
+  -[_PASTempfileDescr .cxx_destruct]
+  -[_PASTempfileDescr path]
+  -[_PASTempfileDescr fd]
+  -[_PASTempfileDescr initWithFd:path:]
+  -[_PASTempfileDescr isEqualToTempfileDescr:]
+
+
+_PASPosixPipeContext : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASPosixPipeContext .cxx_destruct]
+  -[_PASPosixPipeContext setupWithSubprocessFd:fileActions:queue:group:readErrno:]
+  -[_PASPosixPipeContext startReadWithHandler:]
+
+
+_PASPosixDataCollector : NSObject /usr/lib/libc++.1.dylib
+ @property  @? handleData
+
+  // instance methods
+  -[_PASPosixDataCollector .cxx_destruct]
+  -[_PASPosixDataCollector allData]
+  -[_PASPosixDataCollector handleData]
+
+
+_PASPosixUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASPosixUtils runCommandWithPath:argv:envp:handleStdout:handleStderr:]
+  +[_PASPosixUtils runCommandWithPath:argv:envp:stdoutData:stderrData:]
+
+
+_PASCFBurstTrie : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASCFBurstTrie init]
+  -[_PASCFBurstTrie dealloc]
+  -[_PASCFBurstTrie initWithPath:]
+  -[_PASCFBurstTrie payloadForString:]
+  -[_PASCFBurstTrie payloadForString:range:]
+  -[_PASCFBurstTrie payloadForUTF8String:length:]
+  -[_PASCFBurstTrie runBlockWithTrie:]
+
+
+_PASLock : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASLock dealloc]
+  -[_PASLock .cxx_destruct]
+  -[_PASLock runWithLockAcquired:]
+  -[_PASLock initWithGuardedData:]
+  -[_PASLock guardedDataAssertingLockContext]
+  -[_PASLock unsafeGuardedData]
+
+
+_PASQueueLock : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASQueueLock .cxx_destruct]
+  -[_PASQueueLock runWithLockAcquired:]
+  -[_PASQueueLock guardedDataAssertingLockContext]
+  -[_PASQueueLock unsafeGuardedData]
+  -[_PASQueueLock initWithGuardedData:serialQueue:]
+  -[_PASQueueLock runAsyncWithLockAcquired:]
+
+
+_PASDeviceState : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASDeviceState isClassCLocked]
+  +[_PASDeviceState lockState]
+  +[_PASDeviceState isUnlocked]
+  +[_PASDeviceState setSystemCallbacks:]
+  +[_PASDeviceState setDefaultSystemCallbacks]
+  +[_PASDeviceState runBlockWhenDeviceIsClassCUnlocked:]
+  +[_PASDeviceState registerForLockStateChangeNotifications:]
+  +[_PASDeviceState unregisterForLockStateChangeNotifications:]
+  +[_PASDeviceState isDeviceFormattedForProtection]
+  +[_PASDeviceState blockUntilFirstUnlock]
+  +[_PASDeviceState currentOsBuild]
+
+
+_PASDispatch : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASDispatch dispatchTimeWithSecondsFromNow:]
+  +[_PASDispatch waitForSemaphore:]
+  +[_PASDispatch waitForSemaphore:timeoutSeconds:]
+  +[_PASDispatch waitForSemaphore:timeoutSeconds:onAcquire:onTimeout:]
+  +[_PASDispatch waitForGroup:]
+  +[_PASDispatch waitForGroup:timeoutSeconds:]
+  +[_PASDispatch waitForGroup:timeoutSeconds:onGroupComplete:onTimeout:]
+  +[_PASDispatch waitForBlock:]
+  +[_PASDispatch waitForBlock:timeoutSeconds:]
+  +[_PASDispatch waitForBlock:timeoutSeconds:onBlockComplete:onTimeout:]
+  +[_PASDispatch runAsyncOnQueue:afterDelaySeconds:block:]
+  +[_PASDispatch runSyncOnMainThreadWithBlock:]
+  +[_PASDispatch autoreleasingSerialQueueWithLabel:]
+  +[_PASDispatch autoreleasingSerialQueueWithLabel:qosClass:]
+
+
+_PASSqliteDatabase : NSObject /usr/lib/libc++.1.dylib
+ @property  ^{sqlite3=} handle
+ @property  long long contentProtectionType
+ @property  NSString *filename
+ @property  BOOL isInMemory
+
+  // class methods
+  +[_PASSqliteDatabase contentProtectionTypeRequiresDeviceToHaveBeenUnlockedOnce:]
+  +[_PASSqliteDatabase contentProtectionTypeRequiresDeviceToBeUnlocked:]
+  +[_PASSqliteDatabase corruptionMarkerPathForPath:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:contentProtection:errorHandler:error:]
+  +[_PASSqliteDatabase isInMemoryPath:]
+  +[_PASSqliteDatabase initializeDatabase:withContentProtection:newDatabaseCreated:errorHandler:]
+  +[_PASSqliteDatabase initializeDatabase:withContentProtection:newDatabaseCreated:]
+  +[_PASSqliteDatabase initializeDatabase:withProtection:newDatabaseCreated:]
+  +[_PASSqliteDatabase recreateCorruptDatabase:withContentProtection:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:flags:error:errorHandler:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:flags:error:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:error:errorHandler:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:error:]
+  +[_PASSqliteDatabase sqliteDatabaseWithFilename:contentProtection:error:]
+  +[_PASSqliteDatabase sqliteDatabaseInMemoryWithError:errorHandler:]
+  +[_PASSqliteDatabase sqliteDatabaseInMemoryWithError:]
+  +[_PASSqliteDatabase protectedDatabaseWithFilename:error:errorHandler:]
+  +[_PASSqliteDatabase protectedDatabaseWithFilename:error:]
+  +[_PASSqliteDatabase inMemoryPath]
+  +[_PASSqliteDatabase randomlyNamedInMemoryPathWithBaseName:]
+  +[_PASSqliteDatabase truncateDatabaseAtPath:]
+  +[_PASSqliteDatabase runDebugCommand:onDbWithHandle:]
+
+  // instance methods
+  -[_PASSqliteDatabase init]
+  -[_PASSqliteDatabase dealloc]
+  -[_PASSqliteDatabase .cxx_destruct]
+  -[_PASSqliteDatabase handle]
+  -[_PASSqliteDatabase filename]
+  -[_PASSqliteDatabase clearCaches]
+  -[_PASSqliteDatabase userVersion]
+  -[_PASSqliteDatabase setUserVersion:]
+  -[_PASSqliteDatabase isInMemory]
+  -[_PASSqliteDatabase writeTransaction:]
+  -[_PASSqliteDatabase prepAndRunQuery:onPrep:onRow:onError:]
+  -[_PASSqliteDatabase frailWriteTransaction:]
+  -[_PASSqliteDatabase contentProtectionType]
+  -[_PASSqliteDatabase placeCorruptionMarker]
+  -[_PASSqliteDatabase freeSpace]
+  -[_PASSqliteDatabase dbErrorWithCode:sqliteReturnValue:lastErrno:query:]
+  -[_PASSqliteDatabase handleError:sqliteError:forQuery:onError:]
+  -[_PASSqliteDatabase closePermanently]
+  -[_PASSqliteDatabase prepAndRunNonDataQueries:onError:]
+  -[_PASSqliteDatabase initWithFilename:flags:error:errorHandler:]
+  -[_PASSqliteDatabase initWithFilename:flags:error:]
+  -[_PASSqliteDatabase simulateOnDiskDatabase]
+  -[_PASSqliteDatabase lastInsertRowId]
+  -[_PASSqliteDatabase runQuery:onRow:onError:]
+  -[_PASSqliteDatabase runQuery:onRow:]
+  -[_PASSqliteDatabase _logQueryPlanForQuery:]
+  -[_PASSqliteDatabase prepQuery:onPrep:onError:]
+  -[_PASSqliteDatabase _prepAndRunQuery:columns:dictionary:onError:]
+  -[_PASSqliteDatabase updateTable:dictionary:whereClause:onError:]
+  -[_PASSqliteDatabase insertOrReplaceIntoTable:dictionary:onError:]
+  -[_PASSqliteDatabase insertIntoTable:dictionary:]
+  -[_PASSqliteDatabase selectColumns:fromTable:whereClause:onPrep:onError:]
+  -[_PASSqliteDatabase readTransaction:]
+  -[_PASSqliteDatabase frailReadTransaction:]
+  -[_PASSqliteDatabase _txnBegin]
+  -[_PASSqliteDatabase _txnBeginExclusive]
+  -[_PASSqliteDatabase _txnRollback]
+  -[_PASSqliteDatabase _txnEnd]
+  -[_PASSqliteDatabase _transactionWithExclusivity:transaction:]
+  -[_PASSqliteDatabase createSnapshot:]
+  -[_PASSqliteDatabase hasTableNamed:]
+  -[_PASSqliteDatabase tablesWithColumnNamed:]
+  -[_PASSqliteDatabase hasColumnOnTable:named:]
+  -[_PASSqliteDatabase hasIndexNamed:]
+  -[_PASSqliteDatabase numberOfRowsInTable:]
+  -[_PASSqliteDatabase withDbLockExecuteBlock:]
+  -[_PASSqliteDatabase finalizeLater:]
+  -[_PASSqliteDatabase languageForFTSTable:]
+  -[_PASSqliteDatabase enableQueryPlanLoggingWithPath:]
+  -[_PASSqliteDatabase disableQueryPlanLogging]
+
+
+_PASEntitlement : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASEntitlement taskWithAuditToken:hasTrueBooleanEntitlement:logHandle:]
+  +[_PASEntitlement hasTrueBooleanEntitlement:logHandle:]
+  +[_PASEntitlement _trueBooleanEntitlementCheckWithSecTask:entitlement:logHandle:]
+
+
+_PASSQLColumnMapping : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASSQLColumnMapping dealloc]
+  -[_PASSQLColumnMapping initWithStatementPtr:]
+  -[_PASSQLColumnMapping resetSearchHint]
+  -[_PASSQLColumnMapping _ensureColumnMappingExists]
+  -[_PASSQLColumnMapping indexForColumnName:table:]
+  -[_PASSQLColumnMapping indexForColumnAlias:]
+
+
+_PASSqliteStatement : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+ @property  ^{sqlite3_stmt=} stmt
+
+  // instance methods
+  -[_PASSqliteStatement init]
+  -[_PASSqliteStatement dealloc]
+  -[_PASSqliteStatement copyWithZone:]
+  -[_PASSqliteStatement finalize]
+  -[_PASSqliteStatement .cxx_destruct]
+  -[_PASSqliteStatement stmt]
+  -[_PASSqliteStatement getNSStringForColumn:]
+  -[_PASSqliteStatement bindNamedParam:toNSString:]
+  -[_PASSqliteStatement bindNamedParam:toInteger:]
+  -[_PASSqliteStatement bindNamedParamToNull:]
+  -[_PASSqliteStatement getNSDataForColumn:]
+  -[_PASSqliteStatement bindNamedParam:toNSData:]
+  -[_PASSqliteStatement initWithStatementPointer:owner:]
+  -[_PASSqliteStatement prepareForRowDeserialization]
+  -[_PASSqliteStatement bindNamedParam:toInt64:]
+  -[_PASSqliteStatement bindNamedParam:toInt64AsNSNumber:]
+  -[_PASSqliteStatement bindNamedParam:toDouble:]
+  -[_PASSqliteStatement bindNamedParam:toDoubleAsNSNumber:]
+  -[_PASSqliteStatement bindParamToNull:]
+  -[_PASSqliteStatement bindParam:toNSString:]
+  -[_PASSqliteStatement bindParam:toNSData:]
+  -[_PASSqliteStatement bindParam:toInteger:]
+  -[_PASSqliteStatement bindParam:toInt64:]
+  -[_PASSqliteStatement bindParam:toInt64AsNSNumber:]
+  -[_PASSqliteStatement bindParam:toDouble:]
+  -[_PASSqliteStatement bindParam:toDoubleAsNSNumber:]
+  -[_PASSqliteStatement getIntegerForColumn:]
+  -[_PASSqliteStatement getInt64ForColumn:]
+  -[_PASSqliteStatement getInt64AsNSNumberForColumn:]
+  -[_PASSqliteStatement getDoubleForColumn:]
+  -[_PASSqliteStatement getDoubleAsNSNumberForColumn:]
+  -[_PASSqliteStatement getNSStringForColumnName:table:]
+  -[_PASSqliteStatement getNSDataForColumnName:table:]
+  -[_PASSqliteStatement getIntegerForColumnName:table:]
+  -[_PASSqliteStatement getInt64ForColumnName:table:]
+  -[_PASSqliteStatement getInt64AsNSNumberForColumnName:table:]
+  -[_PASSqliteStatement getDoubleForColumnName:table:]
+  -[_PASSqliteStatement getDoubleAsNSNumberForColumnName:table:]
+  -[_PASSqliteStatement isNullForColumnName:table:]
+  -[_PASSqliteStatement getNSStringForColumnAlias:]
+  -[_PASSqliteStatement getNSDataForColumnAlias:]
+  -[_PASSqliteStatement getIntegerForColumnAlias:]
+  -[_PASSqliteStatement getInt64ForColumnAlias:]
+  -[_PASSqliteStatement getInt64AsNSNumberForColumnAlias:]
+  -[_PASSqliteStatement getDoubleForColumnAlias:]
+  -[_PASSqliteStatement getDoubleAsNSNumberForColumnAlias:]
+  -[_PASSqliteStatement isNullForColumnAlias:]
+  -[_PASSqliteStatement isColumnNull:]
+
+
+_PASLazyPlistWriting : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASLazyPlistWriting dataWithPropertyList:error:]
+  +[_PASLazyPlistWriting fileBackedDataWithPropertyList:writtenToPath:error:]
+  +[_PASLazyPlistWriting fileBackedDataWithPropertyList:appendedToFd:startOfs:error:]
+  +[_PASLazyPlistWriting _visitObject:handleBoolean:handleInt64:handleFloat64:handleTimeInterval:handleData:handleString:handleDict:handleArray:handleOther:]
+  +[_PASLazyPlistWriting _scanPlist:recursionDepth:sizeUpperBound:allDictionaryKeys:error:]
+  +[_PASLazyPlistWriting _valueWordForObjectGraph:allocContext:recursionDepth:]
+  +[_PASLazyPlistWriting _writePlist:allDictionaryKeys:toBuffer:size:actSize:]
+  +[_PASLazyPlistWriting _mappedDataWithPlist:fd:ofs:error:]
+
+
+_PASAsset2GuardedData : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[_PASAsset2GuardedData .cxx_destruct]
+
+
+_PASAsset2 : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *bundlePath
+ @property  unsigned long assetVersion
+ @property  NSString *assetType
+ @property  unsigned long compatibilityVersion
+ @property  unsigned long bestAssetVersionObserved
+
+  // instance methods
+  -[_PASAsset2 init]
+  -[_PASAsset2 dealloc]
+  -[_PASAsset2 .cxx_destruct]
+  -[_PASAsset2 bundlePath]
+  -[_PASAsset2 compatibilityVersion]
+  -[_PASAsset2 assetVersion]
+  -[_PASAsset2 assetType]
+  -[_PASAsset2 _assetDescription]
+  -[_PASAsset2 clearOverrides]
+  -[_PASAsset2 registerUpdateHandler:]
+  -[_PASAsset2 deregisterUpdateHandlerAsyncWithToken:]
+  -[_PASAsset2 bestAssetVersionObserved]
+  -[_PASAsset2 _loadDefaultBundleVersionWithGuardedData:]
+  -[_PASAsset2 deregisterUpdateHandlerWithToken:]
+  -[_PASAsset2 _updateAssetMetadata]
+  -[_PASAsset2 _issueUpdateNotificationsWithCallback:]
+  -[_PASAsset2 invokeWithBundleOverride:block:]
+  -[_PASAsset2 callAssetUpdateHandlers]
+  -[_PASAsset2 initWithAssetTypeDescriptorPath:defaultBundlePath:matchingKeysAndValues:notificationQueue:logHandle:]
+  -[_PASAsset2 initWithAssetTypeDescriptorPath:defaultBundlePath:matchingKeysAndValues:notificationQueue:logHandle:enableAssetUpdates:]
+  -[_PASAsset2 initWithAssetTypeDescriptorPath:defaultBundlePath:matchingKeysAndValues:notificationQueue:logHandle:enableAssetUpdates:purgeObsoleteInstalledAssets:]
+  -[_PASAsset2 _initWithAssetTypeIdentifier:defaultBundlePath:compatibilityVersion:matchingKeysAndValues:notificationQueue:logHandle:enableAssetUpdates:purgeObsoleteInstalledAssets:]
+  -[_PASAsset2 downloadMetadataWithCompletion:]
+  -[_PASAsset2 _maFilesystemPathsForAssetDataRelativePaths:guardedData:isMissingData:assetVersion:]
+  -[_PASAsset2 _defaultBundleFilesystemPathsForAssetDataRelativePaths:guardedData:assetVersion:]
+  -[_PASAsset2 filesystemPathsForAssetDataRelativePaths:assetVersion:]
+  -[_PASAsset2 filesystemPathsForAssetDataRelativePaths:]
+  -[_PASAsset2 filesystemPathForAssetDataRelativePath:assetVersion:]
+  -[_PASAsset2 filesystemPathForAssetDataRelativePath:]
+  -[_PASAsset2 updateAssetMetadataUsingQueryResults:]
+  -[_PASAsset2 _purgeObsoleteInstalledAssetsFromCandidates:guardedData:]
+  -[_PASAsset2 overrideDefaultBundleWithBundleAtPath:]
+  -[_PASAsset2 addOverridePath:forResourceWithRelativePath:]
+
+
+_PASXPCServer : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[_PASXPCServer registerForService:delegate:]
+
+  // instance methods
+  -[_PASXPCServer init]
+  -[_PASXPCServer .cxx_destruct]
+  -[_PASXPCServer initWithXPCListeners:logHandle:]
+  -[_PASXPCServer registerXPCListeners]
+
+
+_PASXPCListener : NSObject /usr/lib/libc++.1.dylib
+ @property  <NSXPCListenerDelegate> *delegate
+ @property  NSString *serviceName
+ @property  NSString *displayName
+
+  // instance methods
+  -[_PASXPCListener init]
+  -[_PASXPCListener delegate]
+  -[_PASXPCListener .cxx_destruct]
+  -[_PASXPCListener displayName]
+  -[_PASXPCListener serviceName]
+  -[_PASXPCListener initWithDelegate:serviceName:displayName:]
+
+
+NSIndexPath(_PASAdditions)
+	// class methods
+	+[NSIndexPath(_PASAdditions) _pas_fromVersionString:withExceptions:]
+	+[NSIndexPath(_PASAdditions) _pas_fromVersionString:]
+	+[NSIndexPath(_PASAdditions) _pas_fromVersionStringIfPossible:]
+
+	// instance methods
+	-[NSIndexPath(_PASAdditions) _pas_asVersionString]
+	-[NSIndexPath(_PASAdditions) _pas_isLessThanVersionString:]
+	-[NSIndexPath(_PASAdditions) _pas_isLessThanOrEqualToVersionString:]
+	-[NSIndexPath(_PASAdditions) _pas_isEqualToVersionString:]
+	-[NSIndexPath(_PASAdditions) _pas_isGreaterThanOrEqualToVersionString:]
+	-[NSIndexPath(_PASAdditions) _pas_isGreaterThanVersionString:]
+	-[NSIndexPath(_PASAdditions) _pas_revivedString]
+
+NSArray(_PASAdditions)
+	// instance methods
+	-[NSArray(_PASAdditions) _pas_mappedArrayWithIndexedTransform:]
+	-[NSArray(_PASAdditions) _pas_filteredArrayWithIndexedTest:]
+	-[NSArray(_PASAdditions) _pas_leftFoldWithInitialObject:indexedAccumulate:]
+	-[NSArray(_PASAdditions) _pas_rightFoldWithInitialObject:indexedAccumulate:]
+	-[NSArray(_PASAdditions) _pas_mappedArrayWithTransform:]
+	-[NSArray(_PASAdditions) _pas_filteredArrayWithTest:]
+	-[NSArray(_PASAdditions) _pas_leftFoldWithInitialObject:accumulate:]
+	-[NSArray(_PASAdditions) _pas_rightFoldWithInitialObject:accumulate:]
+	-[NSArray(_PASAdditions) _pas_shuffledArrayUsingRng:]
+	-[NSArray(_PASAdditions) _pas_enumerateChunksOfSize:usingBlock:]
+
+NSMutableDictionary(_PASZoneSupport)
+	// instance methods
+	-[NSMutableDictionary(_PASZoneSupport) _pas_setObject:forNonCopiedKey:]
+
+NSString(_PASDistilledString)
+	// class methods
+	+[NSString(_PASDistilledString) _pas_distilledStringClasses]
+
+	// instance methods
+	-[NSString(_PASDistilledString) _pas_revivedString]
+	-[NSString(_PASDistilledString) _pas_distilledString]
+
+NSNumber(_PASDistilledString)
+	// instance methods
+	-[NSNumber(_PASDistilledString) _pas_revivedString]
+
+NSUUID(_PASDistilledString)
+	// instance methods
+	-[NSUUID(_PASDistilledString) _pas_revivedString]
+
+NSData(_PASDistilledString)
+	// instance methods
+	-[NSData(_PASDistilledString) _pas_revivedString]
+
+01 00 0c00 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: ASAssetQuery 
+01 00 0c00 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAsset 
+01 00 0c00 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAssetQuery 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSEnumerator 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexPath 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0d00 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

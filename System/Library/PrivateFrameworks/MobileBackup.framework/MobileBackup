@@ -1,0 +1,2241 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MBDeviceTransferKeychain
+|| __DATA.__objc_data _OBJC_METACLASS_$_MBDeviceTransferKeychain
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBAggregateDictionary._scalars
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBAppManager._containersByID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBAppManager._settingsContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBAppManager._systemDataContainersByID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBAppManager._systemSharedContainersByID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackgroundRestoreInfo.bytesRemaining
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackgroundRestoreInfo.dataClassesRemaining
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackgroundRestoreInfo.failedDomains
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._backupUDID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._deviceClass
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._hardwareModel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._isMBSBackup
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._marketingName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._productType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._restoreSystemFiles
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBBackup._snapshots
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBContainer._plist
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBDebugContext._dictionary
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBDigestSHA1._context
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBDigestSHA256._context
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._appManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._debugContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._domainManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._preflightProperties
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._properties
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBEngine._settingsContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBManager._delegate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBProperties._protect
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBRestoreInfo._backupBuildVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBRestoreInfo._date
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBRestoreInfo._deviceBuildVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBRestoreInfo._wasCloudRestore
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._created
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._date
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._deviceName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._isCompatible
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._modified
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._quotaReserved
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._snapshotID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._snapshotUUID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._state
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MBSnapshot._systemVersion
+|| __DATA_CONST.__const _BehaviorOptionsAppID
+|| __DATA_CONST.__const _BehaviorOptionsKey
+|| __DATA_CONST.__const _LoggingSubsystem
+|| __DATA_CONST.__const _kBehaviorOptionsDidChangeNotification
+|| __DATA_CONST.__const _kMBBehaviorOptionBackupFromLocalSnapshot
+|| __DATA_CONST.__const _kMBBehaviorOptionBackupUseABC
+|| __DATA_CONST.__const _kMBBehaviorOptionBackupUsePowerLog
+|| __DATA_CONST.__const _kMBBehaviorOptionCloudKitContainerKey
+|| __DATA_CONST.__const _kMBBehaviorOptionEnableSQLiteArchiving
+|| __DATA_CONST.__const _kMBBehaviorOptionFixOwnershipOnFileScan
+|| __DATA_CONST.__const _kMBBehaviorOptionKeepDailyLocalSnapshots
+|| __DATA_CONST.__const _kMBBehaviorOptionManifestPageSizeKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchCountKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchDeleteConcurrentModifyRecordsOperationsKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchFetchAssetSizeKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchFetchConcurrentFetchRecordsOperationsKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchSaveAssetSizeKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchSaveConcurrentModifyRecordsOperationsKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxBatchSizeKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMaxDomainsToBackupKey
+|| __DATA_CONST.__const _kMBBehaviorOptionMinimumBuildVersionForFullBackupKey
+|| __DATA_CONST.__const _kMBBehaviorOptionRecordSaveAttempts
+|| __DATA_CONST.__const _kMBBehaviorOptionSQLBatchCountKey
+|| __DATA_CONST.__const _kMBBehaviorOptionSQLBatchTimeKey
+|| __DATA_CONST.__const _kMBBehaviorOptionSQLTraceKey
+|| __DATA_CONST.__const _kMBBehaviorOptionSQLiteSSpaceSavingsThreshold
+|| __DATA_CONST.__const _kMBBehaviorOptionSnapshotAfterForegroundRestore
+|| __DATA_CONST.__const _kMBBehaviorOptionUseBackgroundOperationsForBackupKey
+|| __DATA_CONST.__const _kMBBehaviorOptionValidateFileEncoding
+|| __DATA_CONST.__const _kMBBehaviorOptionValidateSignatureOnRestore
+|| __DATA_CONST.__const _kMBBehaviorOptionsChangedKeysKey
+|| __DATA_CONST.__const _kMBBehaviorOptionsChangedKeysNotification
+|| __DATA_CONST.__const _kMBDownloadFileExtension
+|| __DATA_CONST.__const _kMBManagerBackupStateChangedNotification
+|| __DATA_CONST.__const _kMBManagerRestoreCompleteAlertStateChangedNotification
+|| __DATA_CONST.__const _kMBManagerRestoreStateChangedNotification
+|| __DATA_CONST.__const _kMBMobileUserName
+|| __DATA_CONST.__const _kMBSafeHarborDataDirName
+|| __DATA_CONST.__const _kMBSafeHarborDir
+|| __DATA_CONST.__const _kMBSafeHarborInfoDirName
+|| __DATA_CONST.__const _kMBSafeHarborInfoPlistFilename
+|| __DATA_CONST.__const _kMBUploadFileExtension
+|| __DATA_CONST.__objc_const _OBJC_EHTYPE_$_MBException
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBAggregateDictionary
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBApp
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBAppGroup
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBAppManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBAppPlugin
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBBackgroundRestoreInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBBackup
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBBehaviorOptions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBContainer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDebugContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDeviceTransferConnectionInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDeviceTransferPreflight
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDeviceTransferProgress
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDeviceTransferSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDeviceTransferTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDigest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDigestSHA1
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDigestSHA256
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBDomainInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBEngine
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBError
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBException
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBFileInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBFileManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBFileManagerDelegate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBFileSystemManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBManagerClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBProperties
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBRestoreFailure
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBRestoreInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBSizeInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBSnapshot
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBSourceDeviceTransferTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBStateInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBSystemContainer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MBTargetDeviceTransferTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBAggregateDictionary
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBApp
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBAppGroup
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBAppManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBAppPlugin
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBBackgroundRestoreInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBBackup
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBBehaviorOptions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBContainer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDebugContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDeviceTransferConnectionInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDeviceTransferPreflight
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDeviceTransferProgress
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDeviceTransferSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDeviceTransferTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDigest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDigestSHA1
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDigestSHA256
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBDomainInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBEngine
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBError
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBException
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBFileInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBFileManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBFileManagerDelegate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBFileSystemManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBManagerClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBRestoreFailure
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBRestoreInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBSizeInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBSnapshot
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBSourceDeviceTransferTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBStateInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBSystemContainer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MBTargetDeviceTransferTask
+|| __TEXT.__const _MobileBackupVersionNumber
+|| __TEXT.__const _MobileBackupVersionString
+|| __TEXT.__text _CryptoAcceleratorConnect
+|| __TEXT.__text _CryptoAcceleratorDisconnect
+|| __TEXT.__text _CryptoAcceleratorEncrypt
+|| __TEXT.__text _CryptoBufferAllocate
+|| __TEXT.__text _CryptoBufferDuplicate
+|| __TEXT.__text _MBAbsolutePathFromRootPathWithSnapshot
+|| __TEXT.__text _MBAbsolutePathFromiCloudSnapshotPath
+|| __TEXT.__text _MBAbsolutePathFromiTunesSnapshotPath
+|| __TEXT.__text _MBAcquireRestoreLock
+|| __TEXT.__text _MBAssert
+|| __TEXT.__text _MBAssertErr
+|| __TEXT.__text _MBAssertErrV
+|| __TEXT.__text _MBAssertV
+|| __TEXT.__text _MBAssertionFailure
+|| __TEXT.__text _MBAssertionFailureV
+|| __TEXT.__text _MBBackgroundRestoreSignpostHandle
+|| __TEXT.__text _MBBackupMetadataFilenames
+|| __TEXT.__text _MBBackupReasonIsManual
+|| __TEXT.__text _MBBackupReasonIsScheduled
+|| __TEXT.__text _MBBackupTypeIsFull
+|| __TEXT.__text _MBBuildIsSeed
+|| __TEXT.__text _MBBuildVersion
+|| __TEXT.__text _MBBytesWithString
+|| __TEXT.__text _MBCompareVersionStrings
+|| __TEXT.__text _MBContainerTypeForMCMContainerContentClass
+|| __TEXT.__text _MBContainerTypeForString
+|| __TEXT.__text _MBCreateRestoreDirectory
+|| __TEXT.__text _MBDataWithString
+|| __TEXT.__text _MBDefaultDebugContext
+|| __TEXT.__text _MBDefaultOptions
+|| __TEXT.__text _MBDeviceBackingColor
+|| __TEXT.__text _MBDeviceClass
+|| __TEXT.__text _MBDeviceColor
+|| __TEXT.__text _MBDeviceCoverGlassColor
+|| __TEXT.__text _MBDeviceEnclosureColor
+|| __TEXT.__text _MBDeviceHousingColor
+|| __TEXT.__text _MBDeviceName
+|| __TEXT.__text _MBDeviceSpecificLocalizedStringFromTable
+|| __TEXT.__text _MBDeviceUDID_Legacy
+|| __TEXT.__text _MBDeviceUDID_Legacy_client
+|| __TEXT.__text _MBDeviceUUID
+|| __TEXT.__text _MBEmptyArray
+|| __TEXT.__text _MBEmptyDictionary
+|| __TEXT.__text _MBExit
+|| __TEXT.__text _MBFreeDiskSpace
+|| __TEXT.__text _MBGetBackupDir
+|| __TEXT.__text _MBGetCacheDir
+|| __TEXT.__text _MBGetCleanupDir
+|| __TEXT.__text _MBGetDefaultLog
+|| __TEXT.__text _MBGetFileIDBytes
+|| __TEXT.__text _MBGetFileIDData
+|| __TEXT.__text _MBGetGestaltValueForKey
+|| __TEXT.__text _MBGetHomeDir
+|| __TEXT.__text _MBGetIncompleteRestoreDir
+|| __TEXT.__text _MBGetLogDateFormatter
+|| __TEXT.__text _MBGetLogDir
+|| __TEXT.__text _MBGetRestoreDir
+|| __TEXT.__text _MBGetSQLLog
+|| __TEXT.__text _MBGetTraceLog
+|| __TEXT.__text _MBGroupWaitForever
+|| __TEXT.__text _MBHTTPDateFormatter
+|| __TEXT.__text _MBHardwareModel
+|| __TEXT.__text _MBIsAbsolutePath
+|| __TEXT.__text _MBIsFatalErrorCode
+|| __TEXT.__text _MBIsInternalInstall
+|| __TEXT.__text _MBIsRunningInDaemon
+|| __TEXT.__text _MBIsTransientErrorCode
+|| __TEXT.__text _MBIsValidRelativePath
+|| __TEXT.__text _MBIsValidRelativePathIgnoreTilde
+|| __TEXT.__text _MBIsiCloudSnapshotPath
+|| __TEXT.__text _MBLocale
+|| __TEXT.__text _MBLocalizations
+|| __TEXT.__text _MBLocalizedStringFromTable
+|| __TEXT.__text _MBLogDeviceProperties
+|| __TEXT.__text _MBLogStashLogs
+|| __TEXT.__text _MBLogStringForNSQualityOfService
+|| __TEXT.__text _MBMarketingName
+|| __TEXT.__text _MBMobileFileAttributes
+|| __TEXT.__text _MBMobileUID
+|| __TEXT.__text _MBNameWithAction
+|| __TEXT.__text _MBNobodyUID
+|| __TEXT.__text _MBProductType
+|| __TEXT.__text _MBProductVersion
+|| __TEXT.__text _MBRandomDataWithLength
+|| __TEXT.__text _MBRandomUUID
+|| __TEXT.__text _MBReleaseRestoreLock
+|| __TEXT.__text _MBRemoveTemporaryPathDirectory
+|| __TEXT.__text _MBRunLoopPerformBlockAndWait
+|| __TEXT.__text _MBSQLiteJournalSuffixes
+|| __TEXT.__text _MBSQLitePathExtensions
+|| __TEXT.__text _MBSemaphoreWaitForever
+|| __TEXT.__text _MBSerialNumber
+|| __TEXT.__text _MBSetBackupDir
+|| __TEXT.__text _MBSetBuildIsSeed
+|| __TEXT.__text _MBSetBuildVersion
+|| __TEXT.__text _MBSetDeviceClass
+|| __TEXT.__text _MBSetProductVersion
+|| __TEXT.__text _MBStandardizePath
+|| __TEXT.__text _MBStringForBackupReason
+|| __TEXT.__text _MBStringForBackupType
+|| __TEXT.__text _MBStringForContainerType
+|| __TEXT.__text _MBStringWithArray
+|| __TEXT.__text _MBStringWithBytes
+|| __TEXT.__text _MBStringWithData
+|| __TEXT.__text _MBStringWithDate
+|| __TEXT.__text _MBStringWithDictionary
+|| __TEXT.__text _MBStringWithLimitedArray
+|| __TEXT.__text _MBStringWithNibbles
+|| __TEXT.__text _MBStringWithObject
+|| __TEXT.__text _MBStringWithSet
+|| __TEXT.__text _MBStringWithSizeInBytes
+|| __TEXT.__text _MBStringWithXPCObject
+|| __TEXT.__text _MBStripLogFormatString
+|| __TEXT.__text _MBSupportedProtocolVersions
+|| __TEXT.__text _MBTemporaryPath
+|| __TEXT.__text _MBUniqueIntegerFilenameWithDirectory
+|| __TEXT.__text _MBWeakLinkClass
+|| __TEXT.__text _MBWeakLinkSymbol
+|| __TEXT.__text _MCMContainerContentClassForMBContainerType
+|| __TEXT.__text __MBGetBooleanPreference
+|| __TEXT.__text __MBLog
+|| __TEXT.__text __MBLogFlushDeprecated
+|| __TEXT.__text __MBSetIsRunningInDaemon
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AggregateDictionary: _ADClientBatchKeys
+__ AggregateDictionary: _ADClientPushValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ CoreFoundation: _CFBundleCopyLocalizedStringForLocalization
+__ CoreFoundation: _CFBundleCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFMakeCollectable
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopPerformBlock
+__ CoreFoundation: _CFRunLoopWakeUp
+__ CoreFoundation: _CFURLCopyResourcePropertyForKey
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _NSGenericException
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSURLIsExcludedFromBackupKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_METACLASS_$_NSException
+__ CoreFoundation: __CFBundleCreateUnique
+__ CoreFoundation: __CFBundleFlushBundleCaches
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: __kCFURLIsExcludedFromCloudBackupKey
+__ CoreFoundation: __kCFURLIsExcludedFromUnencryptedBackupKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFBundleIdentifierKey
+__ CoreFoundation: _kCFBundleVersionKey
+__ CoreFoundation: _kCFPreferencesAnyApplication
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CrashReporterSupport: _SimulateCrash
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSFileCreationDate
+__ Foundation: _NSFileGroupOwnerAccountID
+__ Foundation: _NSFileGroupOwnerAccountName
+__ Foundation: _NSFileOwnerAccountID
+__ Foundation: _NSFileOwnerAccountName
+__ Foundation: _NSFilePathErrorKey
+__ Foundation: _NSFileSize
+__ Foundation: _NSFileSystemSize
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSURLErrorDomain
+__ Foundation: _NSURLErrorKey
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ IOKit: _IOConnectCallStructMethod
+__ IOKit: _IOObjectRelease
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ ImageIO: _CGImageDestinationAddImage
+__ ImageIO: _CGImageDestinationCreateWithURL
+__ ImageIO: _CGImageDestinationFinalize
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MobileIcons: _LICopyIconPathsFromBundle
+__ MobileIcons: _LICreateDeviceAppropriateHomeScreenIconImageFromBundle
+__ Rapport: _OBJC_CLASS_$_RPFileTransferSession
+__ StreamingZip: _OBJC_CLASS_$_SZExtractor
+__ StreamingZip: _SZArchiverCreateStreamableZip
+__ StreamingZip: _SZExtractorOptionsDenyInvalidSymlinks
+__ StreamingZip: _kSZArchiverCompressionOptionTryRecompress
+__ StreamingZip: _kSZArchiverOptionCompressionOptions
+__ StreamingZip: _kSZArchiverOptionNoCache
+__ StreamingZip: _kSZArchiverOptionSkipPrescan
+__ StreamingZip: _kSZArchiverOptionUncompressBloatedFiles
+__ StreamingZip: _kSZArchiverOptionZlibCompressionLevel
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGCopyAnswerWithError
+__ libSystem.B.dylib: _CCHmacOneShot
+__ libSystem.B.dylib: _CC_SHA1_Final
+__ libSystem.B.dylib: _CC_SHA1_Init
+__ libSystem.B.dylib: _CC_SHA1_Update
+__ libSystem.B.dylib: _CC_SHA256_Final
+__ libSystem.B.dylib: _CC_SHA256_Init
+__ libSystem.B.dylib: _CC_SHA256_Update
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___snprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _copyfile
+__ libSystem.B.dylib: _copyfile_state_alloc
+__ libSystem.B.dylib: _copyfile_state_free
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_retain
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fchown
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fgetattrlist
+__ libSystem.B.dylib: _fileno
+__ libSystem.B.dylib: _flock
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fputs
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fs_snapshot_create
+__ libSystem.B.dylib: _fs_snapshot_delete
+__ libSystem.B.dylib: _fs_snapshot_list
+__ libSystem.B.dylib: _fs_snapshot_mount
+__ libSystem.B.dylib: _fs_snapshot_rename
+__ libSystem.B.dylib: _fsctl
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _fstatat
+__ libSystem.B.dylib: _ftello
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _geteuid
+__ libSystem.B.dylib: _getpagesize
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _getpwnam
+__ libSystem.B.dylib: _lchmod
+__ libSystem.B.dylib: _lchown
+__ libSystem.B.dylib: _lstat
+__ libSystem.B.dylib: _mach_port_deallocate
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _madvise
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _mkdtemp
+__ libSystem.B.dylib: _mktemp
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _posix_memalign
+__ libSystem.B.dylib: _proc_pidpath
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_threadid_np
+__ libSystem.B.dylib: _read
+__ libSystem.B.dylib: _realpath$DARWIN_EXTSN
+__ libSystem.B.dylib: _rename
+__ libSystem.B.dylib: _sleep
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _statfs
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strstr
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _unmount
+__ libSystem.B.dylib: _utimes
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_pid
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_barrier
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_connection_suspend
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_data_create
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: dyld_stub_binder
+__ liblockdown.dylib: _kLockdownBuildVersionKey
+__ liblockdown.dylib: _kLockdownDeviceNameKey
+__ liblockdown.dylib: _kLockdownProductTypeKey
+__ liblockdown.dylib: _kLockdownSerialNumberKey
+__ liblockdown.dylib: _kLockdownUniqueDeviceIDKey
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_getName
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_ehtype_vtable
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+MBSizeInfo : NSObject <NSCopying, NSSecureCoding>
+ @property  unsigned long size
+ @property  unsigned long state
+
+  // class methods
+  +[MBSizeInfo supportsSecureCoding]
+
+  // instance methods
+  -[MBSizeInfo copyWithZone:]
+  -[MBSizeInfo encodeWithCoder:]
+  -[MBSizeInfo initWithCoder:]
+  -[MBSizeInfo size]
+  -[MBSizeInfo state]
+  -[MBSizeInfo setState:]
+  -[MBSizeInfo setSize:]
+
+
+MBProperties : NSObject
+ @property  double minSupportedVersion
+ @property  double maxSupportedVersion
+ @property  id propertyList
+ @property  BOOL protected
+ @property  double systemDomainsVersion
+ @property  NSData *keybagData
+ @property  NSDate *date
+ @property  double version
+ @property  BOOL passcodeSet
+ @property  BOOL encrypted
+ @property  NSDictionary *containers
+ @property  NSDictionary *appleIDs
+ @property  NSString *activeAppleID
+ @property  NSDictionary *lockdownKeys
+ @property  NSString *deviceID
+ @property  NSString *serialNumber
+ @property  NSString *deviceName
+ @property  NSString *productType
+ @property  NSString *buildVersion
+ @property  NSData *buddyStashData
+ @property  BOOL hasCorruptSQLiteDBs
+ @property  BOOL hasManifestDB
+ @property  BOOL hasEncryptedManifestDB
+ @property  NSData *manifestEncryptionKey
+
+  // class methods
+  +[MBProperties properties]
+  +[MBProperties propertiesWithFile:error:]
+
+  // instance methods
+  -[MBProperties init]
+  -[MBProperties dealloc]
+  -[MBProperties objectForKey:]
+  -[MBProperties removeObjectForKey:]
+  -[MBProperties setObject:forKey:]
+  -[MBProperties date]
+  -[MBProperties propertyList]
+  -[MBProperties version]
+  -[MBProperties setVersion:]
+  -[MBProperties initWithData:error:]
+  -[MBProperties deviceID]
+  -[MBProperties setDate:]
+  -[MBProperties containerWithIdentifier:]
+  -[MBProperties deviceName]
+  -[MBProperties serialNumber]
+  -[MBProperties setEncrypted:]
+  -[MBProperties encrypted]
+  -[MBProperties productType]
+  -[MBProperties buildVersion]
+  -[MBProperties _boolForKey:]
+  -[MBProperties writeToFile:error:]
+  -[MBProperties _dictionaryForKey:]
+  -[MBProperties _dataForKey:]
+  -[MBProperties containers]
+  -[MBProperties _setBool:forKey:]
+  -[MBProperties appleIDs]
+  -[MBProperties keybagData]
+  -[MBProperties initWithFile:error:]
+  -[MBProperties initWithVersion:minVersion:maxVersion:]
+  -[MBProperties setMinSupportedVersion:]
+  -[MBProperties setMaxSupportedVersion:]
+  -[MBProperties systemDomainsVersion]
+  -[MBProperties setSystemDomainsVersion:]
+  -[MBProperties minSupportedVersion]
+  -[MBProperties maxSupportedVersion]
+  -[MBProperties _setData:forKey:]
+  -[MBProperties _setDictionary:forKey:]
+  -[MBProperties lockdownKeys]
+  -[MBProperties _stringForLockdownKey:]
+  -[MBProperties manifestEncryptionKey]
+  -[MBProperties addContainer:]
+  -[MBProperties wasPasscodeSet]
+  -[MBProperties setKeybagData:]
+  -[MBProperties buddyStashData]
+  -[MBProperties setBuddyStashData:]
+  -[MBProperties setPasscodeSet:]
+  -[MBProperties setManifestEncryptionKey:]
+  -[MBProperties setLockdownKeys:]
+  -[MBProperties hasCorruptSQLiteDBs]
+  -[MBProperties hasManifestDB]
+  -[MBProperties hasEncryptedManifestDB]
+  -[MBProperties addAppleIDsFromSet:dataClass:]
+  -[MBProperties addAppleID:DSID:altDSID:dataClass:]
+  -[MBProperties addAssetDescriptionForAppleID:assetDescription:]
+  -[MBProperties activeAppleID]
+  -[MBProperties setActiveAppleID:]
+  -[MBProperties addContainersFromArray:]
+  -[MBProperties removeAllContainers]
+  -[MBProperties dataWithError:]
+  -[MBProperties isProtected]
+  -[MBProperties setProtected:]
+
+
+MBAppManager : NSObject
+  // class methods
+  +[MBAppManager _allPersistedDisabledDomainNames]
+  +[MBAppManager _persistDisabledDomainNames:]
+  +[MBAppManager appManager]
+  +[MBAppManager appManagerWithSettingsContext:]
+
+  // instance methods
+  -[MBAppManager dealloc]
+  -[MBAppManager containerWithIdentifier:]
+  -[MBAppManager allContainers]
+  -[MBAppManager allPlugins]
+  -[MBAppManager initWithSettingsContext:]
+  -[MBAppManager allApps]
+  -[MBAppManager _subdomainNamesForAppDomainNames:]
+  -[MBAppManager _allDisabledDomainNames]
+  -[MBAppManager allDisabledDomainNames]
+  -[MBAppManager _copyUserAppsWithError:]
+  -[MBAppManager _copySystemContainersWithError:]
+  -[MBAppManager _copySafeHarborsWithError:]
+  -[MBAppManager _copySystemPluginsWithError:]
+  -[MBAppManager _copyAppsWithPlists:safeHarbor:error:]
+  -[MBAppManager _copySystemPluginsWithPlists:error:]
+  -[MBAppManager _copySystemContainersWithPlists:error:]
+  -[MBAppManager createSafeHarborForContainer:usingIntermediateRestoreDir:error:]
+  -[MBAppManager moveAppDataToSafeHarborForContainer:usingIntermediateRestoreDir:withError:]
+  -[MBAppManager removeAllDisabledDomainNames]
+  -[MBAppManager isDomainNameEnabled:]
+  -[MBAppManager setEnabled:forDomainName:]
+  -[MBAppManager allRestrictedDomainNames]
+  -[MBAppManager loadAppsWithSafeHarbors:error:]
+  -[MBAppManager allSystemContainers]
+  -[MBAppManager systemDataContainerWithIdentifier:]
+  -[MBAppManager systemSharedContainerWithIdentifier:]
+  -[MBAppManager appWithIdentifier:]
+  -[MBAppManager removeOldSafeHarbors]
+  -[MBAppManager removeOldAppPlaceholderDomainZip]
+  -[MBAppManager createSafeHarborForContainer:error:]
+  -[MBAppManager moveAppDataToSafeHarborForContainer:withError:]
+
+
+MBException : NSException /usr/lib/libobjc.A.dylib
+  // instance methods
+  -[MBException error]
+  -[MBException errorCode]
+  -[MBException initWithCode:format:]
+  -[MBException initWithCode:format:args:]
+
+
+MBDomain : NSObject
+ @property  NSString *name
+ @property  NSString *rootPath
+ @property  NSString *containerID
+ @property  int containerType
+ @property  NSSet *relativePathsToBackup
+ @property  NSSet *relativePathsToBackupAndRestore
+ @property  NSSet *relativePathsNotToBackup
+ @property  NSSet *relativePathsNotToBackupToDrive
+ @property  NSSet *relativePathsNotToBackupToService
+ @property  NSSet *relativePathsToOnlyBackupEncrypted
+ @property  NSSet *relativePathsNotToCheckIfModifiedDuringBackup
+ @property  NSSet *relativePathsToRestore
+ @property  NSSet *relativePathsToRestoreOnly
+ @property  NSSet *relativePathsToRestoreOnlyFromService
+ @property  NSSet *relativePathsToRemoveOnRestore
+ @property  NSSet *relativePathsOfSystemFilesToAlwaysRestore
+ @property  NSSet *relativePathsOfSystemFilesToAlwaysRemoveOnRestore
+ @property  NSSet *relativePathsNotToRestore
+ @property  NSSet *relativePathsNotToMigrate
+ @property  NSSet *relativePathsNotToRestoreToIPods
+ @property  NSSet *relativePathsNotToBackupAndRestoreToAppleTVs
+ @property  NSSet *relativePathsToBackgroundRestore
+ @property  NSSet *relativePathsNotToRemoveIfNotRestored
+ @property  NSSet *relativePathsToIgnoreExclusionsForDrive
+ @property  NSSet *relativePathsToBackupToDriveAndStandardAccount
+ @property  NSSet *relativePathsToBackupIgnoringProtectionClass
+ @property  NSDictionary *relativePathAggregateDictionaryGroups
+ @property  NSDictionary *relativePathDomainRedirects
+ @property  BOOL shouldDigest
+ @property  BOOL hasExternalConfig
+ @property  BOOL isExternalConfig
+ @property  BOOL shouldRestoreRelativeSymlinks
+ @property  BOOL appDomain
+ @property  BOOL placeholderAppDomain
+ @property  BOOL pluginAppDomain
+ @property  BOOL groupAppDomain
+ @property  BOOL installedAppDomain
+ @property  BOOL systemContainerDomain
+ @property  BOOL systemSharedContainerDomain
+ @property  BOOL cameraRollDomain
+ @property  BOOL hasRootPath
+
+  // class methods
+  +[MBDomain systemDomainsVersion]
+  +[MBDomain systemDomainsMinSupportedVersion]
+  +[MBDomain systemDomainsMaxSupportedVersion]
+  +[MBDomain nameWithAppID:]
+  +[MBDomain _stringByRemovingCommentsFromValue:forKey:]
+  +[MBDomain _doubleFromStringValueForKey:plist:]
+  +[MBDomain _loadSystemDomains]
+  +[MBDomain isAppPluginName:]
+  +[MBDomain isAppGroupName:]
+  +[MBDomain isSystemContainerName:]
+  +[MBDomain isSystemSharedContainerName:]
+  +[MBDomain domainWithName:rootPath:]
+  +[MBDomain shouldRestoreRelativeSymlinksForDomainName:]
+  +[MBDomain _boolFromValue:forKey:]
+  +[MBDomain _setOfStringsFromValue:forKey:]
+  +[MBDomain _relativePathsByAddingSQLiteJournals:]
+  +[MBDomain _dictionaryOfStringsToStringFromValue:forKey:]
+  +[MBDomain isContainerName:]
+  +[MBDomain isAppPlaceholderName:]
+  +[MBDomain containerIDWithName:]
+  +[MBDomain resetSystemDomains]
+  +[MBDomain systemDomains]
+  +[MBDomain systemDomainsByName]
+  +[MBDomain isSystemName:]
+  +[MBDomain containerTypeWithName:]
+  +[MBDomain placeholderNameWithAppID:]
+  +[MBDomain appDomainWithIdentifier:rootPath:]
+  +[MBDomain appPlaceholderDomainWithIdentifier:rootPath:]
+  +[MBDomain appPluginDomainWithIdentifier:rootPath:]
+  +[MBDomain appGroupDomainWithIdentifier:rootPath:]
+  +[MBDomain systemContainerDomainWithIdentifier:rootPath:]
+  +[MBDomain systemSharedContainerDomainWithIdentifier:rootPath:]
+
+  // instance methods
+  -[MBDomain dealloc]
+  -[MBDomain isEqual:]
+  -[MBDomain name]
+  -[MBDomain compare:]
+  -[MBDomain containerID]
+  -[MBDomain containerType]
+  -[MBDomain rootPath]
+  -[MBDomain initWithName:plist:]
+  -[MBDomain initWithName:rootPath:]
+  -[MBDomain loadSystemDomainFromPlist:]
+  -[MBDomain loadDomainFromExternalPlist:]
+  -[MBDomain releaseCachedFileDescriptors]
+  -[MBDomain isEqualToDomain:]
+  -[MBDomain isPluginAppDomain]
+  -[MBDomain isGroupAppDomain]
+  -[MBDomain isSystemContainerDomain]
+  -[MBDomain isSystemSharedContainerDomain]
+  -[MBDomain isAppDomain]
+  -[MBDomain _cachedFileDescriptorWithSnapshotPath:error:]
+  -[MBDomain _cachedFileDescriptorWithError:]
+  -[MBDomain relativePathsToBackup]
+  -[MBDomain relativePathsToRestore]
+  -[MBDomain isPlaceholderAppDomain]
+  -[MBDomain isUninstalledAppDomain]
+  -[MBDomain isCameraRollDomain]
+  -[MBDomain hasRootPath]
+  -[MBDomain cachedFileDescriptorWithSnapshotPath:error:]
+  -[MBDomain relativePathsToBackupAndRestore]
+  -[MBDomain setRelativePathsToBackupAndRestore:]
+  -[MBDomain relativePathsNotToBackup]
+  -[MBDomain setRelativePathsNotToBackup:]
+  -[MBDomain relativePathsNotToBackupToDrive]
+  -[MBDomain setRelativePathsNotToBackupToDrive:]
+  -[MBDomain relativePathsNotToBackupToService]
+  -[MBDomain setRelativePathsNotToBackupToService:]
+  -[MBDomain relativePathsToOnlyBackupEncrypted]
+  -[MBDomain setRelativePathsToOnlyBackupEncrypted:]
+  -[MBDomain relativePathsNotToCheckIfModifiedDuringBackup]
+  -[MBDomain setRelativePathsNotToCheckIfModifiedDuringBackup:]
+  -[MBDomain relativePathsToRestoreOnly]
+  -[MBDomain setRelativePathsToRestoreOnly:]
+  -[MBDomain relativePathsToRestoreOnlyFromService]
+  -[MBDomain setRelativePathsToRestoreOnlyFromService:]
+  -[MBDomain relativePathsToRemoveOnRestore]
+  -[MBDomain setRelativePathsToRemoveOnRestore:]
+  -[MBDomain relativePathsOfSystemFilesToAlwaysRestore]
+  -[MBDomain setRelativePathsOfSystemFilesToAlwaysRestore:]
+  -[MBDomain relativePathsOfSystemFilesToAlwaysRemoveOnRestore]
+  -[MBDomain setRelativePathsOfSystemFilesToAlwaysRemoveOnRestore:]
+  -[MBDomain relativePathsNotToRestore]
+  -[MBDomain setRelativePathsNotToRestore:]
+  -[MBDomain relativePathsNotToMigrate]
+  -[MBDomain setRelativePathsNotToMigrate:]
+  -[MBDomain relativePathsNotToRestoreToIPods]
+  -[MBDomain setRelativePathsNotToRestoreToIPods:]
+  -[MBDomain relativePathsNotToBackupAndRestoreToAppleTVs]
+  -[MBDomain setRelativePathsNotToBackupAndRestoreToAppleTVs:]
+  -[MBDomain relativePathsToBackgroundRestore]
+  -[MBDomain setRelativePathsToBackgroundRestore:]
+  -[MBDomain relativePathsNotToRemoveIfNotRestored]
+  -[MBDomain setRelativePathsNotToRemoveIfNotRestored:]
+  -[MBDomain relativePathsToIgnoreExclusionsForDrive]
+  -[MBDomain setRelativePathsToIgnoreExclusionsForDrive:]
+  -[MBDomain relativePathsToBackupToDriveAndStandardAccount]
+  -[MBDomain setRelativePathsToBackupToDriveAndStandardAccount:]
+  -[MBDomain relativePathsToBackupIgnoringProtectionClass]
+  -[MBDomain setRelativePathsToBackupIgnoringProtectionClass:]
+  -[MBDomain relativePathAggregateDictionaryGroups]
+  -[MBDomain setRelativePathAggregateDictionaryGroups:]
+  -[MBDomain relativePathDomainRedirects]
+  -[MBDomain setRelativePathDomainRedirects:]
+  -[MBDomain shouldDigest]
+  -[MBDomain setShouldDigest:]
+  -[MBDomain hasExternalConfig]
+  -[MBDomain setHasExternalConfig:]
+  -[MBDomain isExternalConfig]
+  -[MBDomain setIsExternalConfig:]
+  -[MBDomain shouldRestoreRelativeSymlinks]
+  -[MBDomain setShouldRestoreRelativeSymlinks:]
+
+
+MBContainer : NSObject <NSCopying>
+ @property  NSString *identifier
+ @property  int containerType
+ @property  NSString *containerTypeString
+ @property  NSString *containerDir
+ @property  NSString *safeHarborDir
+ @property  NSDate *datePlacedInSafeHarbor
+ @property  BOOL isSystemContainer
+ @property  BOOL isSystemSharedContainer
+ @property  BOOL safeHarbor
+
+  // class methods
+  +[MBContainer containerWithPropertyList:]
+  +[MBContainer containerWithDomainName:]
+
+  // instance methods
+  -[MBContainer dealloc]
+  -[MBContainer isEqual:]
+  -[MBContainer copyWithZone:]
+  -[MBContainer domain]
+  -[MBContainer identifier]
+  -[MBContainer initWithPropertyList:]
+  -[MBContainer containerType]
+  -[MBContainer isSystemContainer]
+  -[MBContainer isSystemSharedContainer]
+  -[MBContainer propertyListForBackupProperties]
+  -[MBContainer containerDir]
+  -[MBContainer isSafeHarbor]
+  -[MBContainer datePlacedInSafeHarbor]
+  -[MBContainer safeHarborDir]
+  -[MBContainer containerTypeString]
+  -[MBContainer setContainerDir:]
+  -[MBContainer setDatePlacedInSafeHarbor:]
+  -[MBContainer propertyListForSafeHarborInfo]
+
+
+MBSystemContainer : MBContainer
+  // class methods
+  +[MBSystemContainer systemContainerWithPropertyList:]
+  +[MBSystemContainer systemContainerWithDomainName:containerDir:isShared:]
+
+  // instance methods
+  -[MBSystemContainer domain]
+
+
+MBApp : MBContainer
+ @property  NSString *bundleID
+ @property  NSString *bundleVersion
+ @property  NSString *bundleDir
+ @property  NSDictionary *entitlements
+ @property  NSString *entitlementsRelativePath
+ @property  NSArray *groups
+ @property  NSArray *plugins
+ @property  NSArray *containers
+ @property  BOOL isPlaceholder
+ @property  BOOL isSystemApp
+ @property  BOOL isAppUpdating
+
+  // class methods
+  +[MBApp appWithPropertyList:]
+  +[MBApp appWithBundleID:]
+  +[MBApp safeHarborWithPath:]
+  +[MBApp unzipPlaceholderDomainZipFile:atDirectory:]
+
+  // instance methods
+  -[MBApp domain]
+  -[MBApp bundleID]
+  -[MBApp isPlaceholder]
+  -[MBApp plugins]
+  -[MBApp bundleVersion]
+  -[MBApp entitlements]
+  -[MBApp groups]
+  -[MBApp containers]
+  -[MBApp isSystemApp]
+  -[MBApp bundleDir]
+  -[MBApp _resourceRelativePathsToBackupAndRestoreForRootDir:relativePath:]
+  -[MBApp _placeholderRelativePathsToBackupAndRestoreWithCache:]
+  -[MBApp isAppUpdating]
+  -[MBApp _writeDeviceAppropriateIconToPath:fromBundlePath:]
+  -[MBApp placeholderDomainWithCache:]
+  -[MBApp setBundleDir:]
+  -[MBApp entitlementsRelativePath]
+  -[MBApp placeholderDomainZip]
+
+
+MBAppPlugin : MBContainer
+ @property  NSString *bundleDir
+ @property  NSString *ownerBundleID
+ @property  NSDictionary *entitlements
+ @property  NSString *entitlementsRelativePath
+ @property  NSArray *groups
+ @property  NSArray *allAppGroupContainers
+
+  // class methods
+  +[MBAppPlugin appPluginWithPropertyList:]
+
+  // instance methods
+  -[MBAppPlugin domain]
+  -[MBAppPlugin entitlements]
+  -[MBAppPlugin groups]
+  -[MBAppPlugin allAppGroupContainers]
+  -[MBAppPlugin bundleDir]
+  -[MBAppPlugin entitlementsRelativePath]
+  -[MBAppPlugin ownerBundleID]
+
+
+MBAppGroup : MBContainer
+  // class methods
+  +[MBAppGroup appGroupWithPropertyList:]
+
+  // instance methods
+  -[MBAppGroup domain]
+
+
+MBError : NSObject
+  // class methods
+  +[MBError errorWithCode:description:]
+  +[MBError isTransientError:]
+  +[MBError errorWithCode:format:]
+  +[MBError errorWithCode:error:URL:format:]
+  +[MBError errorWithCode:error:format:]
+  +[MBError errorWithCode:path:format:]
+  +[MBError errorWithDomain:code:format:]
+  +[MBError dictionaryRepresentationForError:]
+  +[MBError errorWithDictionaryRepresentation:]
+  +[MBError descriptionForError:paths:]
+  +[MBError descriptionForError:]
+  +[MBError isError:withCode:]
+  +[MBError isError:withCodes:]
+  +[MBError sanitizedError:]
+  +[MBError errorWithCode:URL:format:]
+  +[MBError errorWithCode:error:path:format:]
+  +[MBError errorWithDomain:code:path:format:]
+  +[MBError posixErrorWithCode:path:format:]
+  +[MBError posixErrorWithCode:format:]
+  +[MBError posixErrorWithPath:format:]
+  +[MBError codeForNSError:]
+  +[MBError codeForErrno:]
+  +[MBError errorWithErrno:code:path:format:arguments:]
+  +[MBError loggableDescriptionForError:]
+  +[MBError formatErrors:descriptionSelector:]
+  +[MBError isUnexpectedErrorCode:]
+  +[MBError isCancelledError:]
+  +[MBError errnoForError:]
+  +[MBError isNSError:withCode:]
+  +[MBError isRetryAfterError:retryAfterDate:]
+  +[MBError errorWithErrors:]
+  +[MBError errorWithErrno:format:]
+  +[MBError errorWithErrno:path:format:]
+  +[MBError posixErrorWithFormat:]
+  +[MBError errorForNSError:path:format:]
+  +[MBError errorForHTTPURLResponse:error:]
+
+
+MBSourceDeviceTransferTask : MBDeviceTransferTask <MBManagerDelegate>
+  // instance methods
+  -[MBSourceDeviceTransferTask cancel]
+  -[MBSourceDeviceTransferTask resume]
+  -[MBSourceDeviceTransferTask start]
+  -[MBSourceDeviceTransferTask _start]
+  -[MBSourceDeviceTransferTask _cancel]
+  -[MBSourceDeviceTransferTask _finishWithError:]
+  -[MBSourceDeviceTransferTask taskType]
+  -[MBSourceDeviceTransferTask initWithFileTransferSession:]
+  -[MBSourceDeviceTransferTask manager:didFinishDeviceTransferWithError:]
+  -[MBSourceDeviceTransferTask manager:didFinishDeviceTransferKeychainTransfer:]
+  -[MBSourceDeviceTransferTask manager:didFinishDeviceTransferPreflight:error:]
+  -[MBSourceDeviceTransferTask manager:didUpdateDeviceTransferProgress:]
+
+
+MBFileManagerDelegate : NSObject <NSFileManagerDelegate>
+ @property  @? shouldCopyItemAtPathToPath
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[MBFileManagerDelegate .cxx_destruct]
+  -[MBFileManagerDelegate fileManager:shouldCopyItemAtPath:toPath:]
+  -[MBFileManagerDelegate shouldCopyItemAtPathToPath]
+  -[MBFileManagerDelegate setShouldCopyItemAtPathToPath:]
+
+
+MBDebugContext : NSObject
+ @property  long long time
+ @property  NSDate *simulatedDate
+
+  // class methods
+  +[MBDebugContext defaultDebugContext]
+
+  // instance methods
+  -[MBDebugContext init]
+  -[MBDebugContext dealloc]
+  -[MBDebugContext time]
+  -[MBDebugContext setFlag:]
+  -[MBDebugContext simulatedDate]
+  -[MBDebugContext valueForName:]
+  -[MBDebugContext setValue:forName:]
+  -[MBDebugContext removeValueForName:]
+  -[MBDebugContext setSimulatedDate:]
+  -[MBDebugContext isFlagSet:]
+  -[MBDebugContext setBool:forName:]
+  -[MBDebugContext boolForName:]
+  -[MBDebugContext setInt:forName:]
+  -[MBDebugContext intForName:]
+  -[MBDebugContext setDelegate:andSelector:forName:]
+  -[MBDebugContext performSelectorForName:]
+  -[MBDebugContext performSelectorForName:withObject:]
+  -[MBDebugContext eval:]
+
+
+MBManager : NSObject
+ @property  NSObject<MBManagerDelegate> *delegate
+
+  // instance methods
+  -[MBManager init]
+  -[MBManager delegate]
+  -[MBManager setDelegate:]
+  -[MBManager _init]
+  -[MBManager cancel]
+  -[MBManager initWithDelegate:]
+  -[MBManager rebootDevice]
+  -[MBManager discountCameraRollQuota]
+  -[MBManager countCameraRollQuota]
+  -[MBManager domainInfoForName:]
+  -[MBManager restoreState]
+  -[MBManager getBuddyDataStashForBackupUDID:snapshotID:error:]
+  -[MBManager setupBackupWithPasscode:error:]
+  -[MBManager startDeviceTransferWithTaskType:sessionInfo:error:]
+  -[MBManager cancelDeviceTransferWithTaskType:error:]
+  -[MBManager initWithDelegate:eventQueue:]
+  -[MBManager restoreFilesForDomain:relativePath:pendingOnly:range:error:]
+  -[MBManager setSupportsiTunes:]
+  -[MBManager isBackupEnabled]
+  -[MBManager setBackupEnabled:]
+  -[MBManager syncBackupEnabled]
+  -[MBManager isLocalBackupPasswordSetWithError:]
+  -[MBManager unsetLocalBackupPasswordWithError:]
+  -[MBManager backupState]
+  -[MBManager backupDeviceUUID]
+  -[MBManager backupDeviceUDID]
+  -[MBManager backupList]
+  -[MBManager getBackupListWithError:]
+  -[MBManager getBackupListWithFiltering:error:]
+  -[MBManager inheritSnapshot:fromDevice:error:]
+  -[MBManager recordRestoreFailure:error:]
+  -[MBManager restoreFailuresForDataclass:assetType:range:]
+  -[MBManager countOfRestoreFailuresForDataclass:assetType:]
+  -[MBManager startBackup]
+  -[MBManager startBackupWithError:]
+  -[MBManager filesForSnapshotID:backupUDID:error:]
+  -[MBManager mergeSnapshots:backupUUID:error:]
+  -[MBManager journalLastModifiedForBackupUUID:error:]
+  -[MBManager journalForBackupUUID:error:]
+  -[MBManager fetchiCloudRestoreIsCompleteWithCompletion:]
+  -[MBManager backgroundRestoreInfo]
+  -[MBManager restoreFileExistsWithPath:]
+  -[MBManager restoreDataExistsForApplicationWithBundleID:size:]
+  -[MBManager restoreFilesForDomain:error:]
+  -[MBManager restoreFilesForDomain:relativePath:pendingOnly:error:]
+  -[MBManager prioritizeRestoreFileWithPath:]
+  -[MBManager dateOfLastBackup]
+  -[MBManager dateOfNextScheduledBackup]
+  -[MBManager restoreSupportsBatching]
+  -[MBManager setRestoreQualityOfService:]
+  -[MBManager startRestoreForBackupUDID:snapshotID:]
+  -[MBManager startRestoreForBackupUDID:snapshotID:error:]
+  -[MBManager restoreFileWithPath:error:]
+  -[MBManager restoreFileWithPath:context:error:]
+  -[MBManager restoreFileWithPath:]
+  -[MBManager restoreFilesWithPaths:error:]
+  -[MBManager restoreFilesWithPaths:context:error:]
+  -[MBManager restoreBookWithPath:error:]
+  -[MBManager restoreBookWithPath:context:error:]
+  -[MBManager restoreApplicationWithBundleID:failed:error:]
+  -[MBManager restoreApplicationWithBundleID:failed:context:error:]
+  -[MBManager restoreApplicationWithBundleID:failed:withQOS:context:error:]
+  -[MBManager cancelApplicationRestoreWithBundleID:error:]
+  -[MBManager saveKeybagsForBackupUDID:withError:]
+  -[MBManager finishRestore]
+  -[MBManager insufficientFreeSpaceToRestore]
+  -[MBManager cancelRestore]
+  -[MBManager deleteBackupUDID:error:]
+  -[MBManager startScanWithError:]
+  -[MBManager startScanForBundleIDs:error:]
+  -[MBManager nextBackupSize]
+  -[MBManager nextBackupSizeInfo]
+  -[MBManager domainInfoList]
+  -[MBManager disabledDomainInfos]
+  -[MBManager removeDomainName:error:]
+  -[MBManager reservedBackupSizeListWithError:]
+  -[MBManager isBackupEnabledForDomainName:]
+  -[MBManager setBackupEnabled:forDomainName:]
+  -[MBManager extractItemFromBackupUDID:snapshotID:domainName:relativePath:toPath:error:]
+  -[MBManager addFileToBackupUDID:snapshotID:domainName:relativePath:fromPath:error:]
+  -[MBManager deleteItemFromBackupUDID:snapshotID:domainName:relativePath:error:]
+  -[MBManager getAppleIDsForBackupUDID:snapshotID:error:]
+  -[MBManager getAppleIDsForBackupUDID:snapshotID:activeAppleID:error:]
+  -[MBManager getAppleIDsMapForBackupUDID:snapshotID:activeAppleID:error:]
+  -[MBManager restoreInfo]
+  -[MBManager setRestoreSessionWithBackupUDID:snapshotUUID:]
+  -[MBManager clearRestoreSession]
+  -[MBManager setAllowiTunesBackup:]
+  -[MBManager allowiTunesBackup]
+  -[MBManager airTrafficShouldCreateAppPlaceholdersWithError:]
+  -[MBManager countCameraRollQuotaForBackupUDID:error:]
+  -[MBManager discountCameraRollQuotaForBackupUDID:error:]
+  -[MBManager prepareForBackgroundRestoreWithError:]
+  -[MBManager archiveLogsTo:error:]
+  -[MBManager pinSnapshotID:backupUDID:error:]
+  -[MBManager unpinSnapshotID:backupUDID:error:]
+  -[MBManager resumeDeviceTransferWithTaskType:error:]
+  -[MBManager startPreflightWithCompletionHandler:]
+  -[MBManager startKeychainTransferWithCompletionHandler:]
+  -[MBManager startKeychainDataTransferWithCompletionHandler:]
+  -[MBManager startKeychainDataImportWithKeychainInfo:completionHandler:]
+  -[MBManager startDataTransferWithPreflightInfo:completionHandler:]
+
+
+MBFileSystemManager : NSObject
+ @property  NSString *fileSystemType
+ @property  BOOL supportsLocalSnapshots
+ @property  BOOL supportsSparseFiles
+ @property  NSString *currentSnapshotPath
+ @property  NSString *currentSnapshotName
+
+  // class methods
+  +[MBFileSystemManager sharedManager]
+  +[MBFileSystemManager fileSystemCapacity]
+  +[MBFileSystemManager startFilesystemKeyRollingWithError:]
+  +[MBFileSystemManager stopFilesystemKeyRollingWithError:]
+  +[MBFileSystemManager removeDeviceTransferDirectoryWithEarliestCreationDate:]
+
+  // instance methods
+  -[MBFileSystemManager init]
+  -[MBFileSystemManager .cxx_destruct]
+  -[MBFileSystemManager _fileSystemSupportsSnapshots]
+  -[MBFileSystemManager _fileSystemSupportsSparseFiles]
+  -[MBFileSystemManager _snapshotName:]
+  -[MBFileSystemManager snapshotFilesystemWithSnapshotName:withError:]
+  -[MBFileSystemManager supportsLocalSnapshots]
+  -[MBFileSystemManager listAllSnapshotsWithError:]
+  -[MBFileSystemManager removeSnapshot:withError:]
+  -[MBFileSystemManager removeRestorePrefetchCacheWithEarliestDate:]
+  -[MBFileSystemManager snapshotFilesystem:withError:]
+  -[MBFileSystemManager removeAllMobileBackupSnapshots:]
+  -[MBFileSystemManager removeAllMobileBackupInternalSnapshots:]
+  -[MBFileSystemManager removeRestorePrefetchCache]
+  -[MBFileSystemManager mountSnapshot:atMountPoint:withError:]
+  -[MBFileSystemManager unmountCurrentSnapshotFromMountPoint:andRemoveIt:withError:]
+  -[MBFileSystemManager unmountCurrentSnapshotAndRenameToInternalArchive:]
+  -[MBFileSystemManager supportsSparseFiles]
+  -[MBFileSystemManager currentSnapshotPath]
+  -[MBFileSystemManager currentSnapshotName]
+  -[MBFileSystemManager fileSystemType]
+  -[MBFileSystemManager setFileSystemType:]
+
+
+MBManagerClient : MBManager <MBConnectionHandler>
+ @property  NSObject<MBManagerDelegate> *privateDelegate
+ @property  BOOL shouldSupportiTunes
+
+  // instance methods
+  -[MBManagerClient dealloc]
+  -[MBManagerClient setDelegate:]
+  -[MBManagerClient cancel]
+  -[MBManagerClient privateDelegate]
+  -[MBManagerClient setPrivateDelegate:]
+  -[MBManagerClient rebootDevice]
+  -[MBManagerClient discountCameraRollQuota]
+  -[MBManagerClient countCameraRollQuota]
+  -[MBManagerClient domainInfoForName:]
+  -[MBManagerClient restoreState]
+  -[MBManagerClient getBuddyDataStashForBackupUDID:snapshotID:error:]
+  -[MBManagerClient setupBackupWithPasscode:error:]
+  -[MBManagerClient wakeUp]
+  -[MBManagerClient connectionWasInterrupted:]
+  -[MBManagerClient connectionWasInvalidated:]
+  -[MBManagerClient accountChanged]
+  -[MBManagerClient startDeviceTransferWithTaskType:sessionInfo:error:]
+  -[MBManagerClient cancelDeviceTransferWithTaskType:error:]
+  -[MBManagerClient initWithDelegate:eventQueue:]
+  -[MBManagerClient restoreFilesForDomain:relativePath:pendingOnly:range:error:]
+  -[MBManagerClient setSupportsiTunes:]
+  -[MBManagerClient isBackupEnabled]
+  -[MBManagerClient setBackupEnabled:]
+  -[MBManagerClient syncBackupEnabled]
+  -[MBManagerClient isLocalBackupPasswordSetWithError:]
+  -[MBManagerClient unsetLocalBackupPasswordWithError:]
+  -[MBManagerClient backupState]
+  -[MBManagerClient backupDeviceUUID]
+  -[MBManagerClient getBackupListWithError:]
+  -[MBManagerClient getBackupListWithFiltering:error:]
+  -[MBManagerClient inheritSnapshot:fromDevice:error:]
+  -[MBManagerClient recordRestoreFailure:error:]
+  -[MBManagerClient restoreFailuresForDataclass:assetType:range:]
+  -[MBManagerClient countOfRestoreFailuresForDataclass:assetType:]
+  -[MBManagerClient startBackupWithError:]
+  -[MBManagerClient filesForSnapshotID:backupUDID:error:]
+  -[MBManagerClient mergeSnapshots:backupUUID:error:]
+  -[MBManagerClient journalLastModifiedForBackupUUID:error:]
+  -[MBManagerClient journalForBackupUUID:error:]
+  -[MBManagerClient fetchiCloudRestoreIsCompleteWithCompletion:]
+  -[MBManagerClient backgroundRestoreInfo]
+  -[MBManagerClient restoreFileExistsWithPath:]
+  -[MBManagerClient restoreDataExistsForApplicationWithBundleID:size:]
+  -[MBManagerClient prioritizeRestoreFileWithPath:]
+  -[MBManagerClient dateOfLastBackup]
+  -[MBManagerClient dateOfNextScheduledBackup]
+  -[MBManagerClient restoreSupportsBatching]
+  -[MBManagerClient setRestoreQualityOfService:]
+  -[MBManagerClient startRestoreForBackupUDID:snapshotID:error:]
+  -[MBManagerClient restoreFileWithPath:error:]
+  -[MBManagerClient restoreFileWithPath:context:error:]
+  -[MBManagerClient restoreFilesWithPaths:error:]
+  -[MBManagerClient restoreFilesWithPaths:context:error:]
+  -[MBManagerClient restoreBookWithPath:error:]
+  -[MBManagerClient restoreBookWithPath:context:error:]
+  -[MBManagerClient restoreApplicationWithBundleID:failed:error:]
+  -[MBManagerClient restoreApplicationWithBundleID:failed:context:error:]
+  -[MBManagerClient restoreApplicationWithBundleID:failed:withQOS:context:error:]
+  -[MBManagerClient cancelApplicationRestoreWithBundleID:error:]
+  -[MBManagerClient saveKeybagsForBackupUDID:withError:]
+  -[MBManagerClient finishRestore]
+  -[MBManagerClient insufficientFreeSpaceToRestore]
+  -[MBManagerClient cancelRestore]
+  -[MBManagerClient deleteBackupUDID:error:]
+  -[MBManagerClient startScanWithError:]
+  -[MBManagerClient startScanForBundleIDs:error:]
+  -[MBManagerClient nextBackupSize]
+  -[MBManagerClient nextBackupSizeInfo]
+  -[MBManagerClient domainInfoList]
+  -[MBManagerClient disabledDomainInfos]
+  -[MBManagerClient removeDomainName:error:]
+  -[MBManagerClient reservedBackupSizeListWithError:]
+  -[MBManagerClient isBackupEnabledForDomainName:]
+  -[MBManagerClient setBackupEnabled:forDomainName:]
+  -[MBManagerClient extractItemFromBackupUDID:snapshotID:domainName:relativePath:toPath:error:]
+  -[MBManagerClient addFileToBackupUDID:snapshotID:domainName:relativePath:fromPath:error:]
+  -[MBManagerClient deleteItemFromBackupUDID:snapshotID:domainName:relativePath:error:]
+  -[MBManagerClient getAppleIDsForBackupUDID:snapshotID:error:]
+  -[MBManagerClient getAppleIDsForBackupUDID:snapshotID:activeAppleID:error:]
+  -[MBManagerClient getAppleIDsMapForBackupUDID:snapshotID:activeAppleID:error:]
+  -[MBManagerClient restoreInfo]
+  -[MBManagerClient setRestoreSessionWithBackupUDID:snapshotUUID:]
+  -[MBManagerClient clearRestoreSession]
+  -[MBManagerClient setAllowiTunesBackup:]
+  -[MBManagerClient allowiTunesBackup]
+  -[MBManagerClient airTrafficShouldCreateAppPlaceholdersWithError:]
+  -[MBManagerClient countCameraRollQuotaForBackupUDID:error:]
+  -[MBManagerClient discountCameraRollQuotaForBackupUDID:error:]
+  -[MBManagerClient prepareForBackgroundRestoreWithError:]
+  -[MBManagerClient archiveLogsTo:error:]
+  -[MBManagerClient pinSnapshotID:backupUDID:error:]
+  -[MBManagerClient unpinSnapshotID:backupUDID:error:]
+  -[MBManagerClient resumeDeviceTransferWithTaskType:error:]
+  -[MBManagerClient startPreflightWithCompletionHandler:]
+  -[MBManagerClient startKeychainTransferWithCompletionHandler:]
+  -[MBManagerClient startKeychainDataTransferWithCompletionHandler:]
+  -[MBManagerClient startKeychainDataImportWithKeychainInfo:completionHandler:]
+  -[MBManagerClient startDataTransferWithPreflightInfo:completionHandler:]
+  -[MBManagerClient _backupDidBeginNotification]
+  -[MBManagerClient _isBackupAgent2Running]
+  -[MBManagerClient startWatchingBackupAgent2]
+  -[MBManagerClient setShouldSupportiTunes:]
+  -[MBManagerClient _sendRequest:arguments:error:]
+  -[MBManagerClient _sendRequest:arguments:]
+  -[MBManagerClient shouldSupportiTunes]
+  -[MBManagerClient _restoreApplicationWithBundleID:failed:qos:context:error:]
+  -[MBManagerClient _makeConnection]
+  -[MBManagerClient connection:didReceiveMessage:]
+  -[MBManagerClient keyBagIsLocking]
+  -[MBManagerClient keyBagIsUnlocked]
+  -[MBManagerClient deleteAccountWithError:]
+  -[MBManagerClient deleteSnapshotID:fromBackupUDID:error:]
+  -[MBManagerClient acquireLockWithBackupUDID:owner:timeout:error:]
+  -[MBManagerClient releaseLockWithBackupUDID:owner:error:]
+  -[MBManagerClient repair]
+
+
+MBBehaviorOptions : NSObject
+ @property  MBConnection *conn
+ @property  NSMutableDictionary *cachedPrefs
+ @property  NSObject<OS_dispatch_queue> *cachedPrefsQueue
+ @property  NSString *cloudKitContainerName
+ @property  long long maxBatchCount
+ @property  long long maxBatchSize
+ @property  long long manifestPageSize
+ @property  long long recordSaveAttempts
+ @property  BOOL sqlTrace
+ @property  long long maxDomainsToBackup
+ @property  BOOL warnForLateiTunesBackups
+ @property  int sqlBatchCount
+ @property  double sqlBatchTime
+ @property  BOOL useBackgroundOperationsForBackup
+ @property  NSString *minimumBuildVersionForFullBackup
+ @property  BOOL backupFromLocalSnapshot
+ @property  BOOL useABC
+ @property  BOOL keepDailySnapshots
+ @property  BOOL snapshotAfterForegroundRestore
+ @property  BOOL flushLogMessages
+ @property  long long maxBatchSaveAssetSize
+ @property  long long maxBatchFetchAssetSize
+ @property  BOOL usePowerLog
+
+  // class methods
+  +[MBBehaviorOptions sharedOptions]
+
+  // instance methods
+  -[MBBehaviorOptions init]
+  -[MBBehaviorOptions .cxx_destruct]
+  -[MBBehaviorOptions cachedPrefsQueue]
+  -[MBBehaviorOptions cachedPrefs]
+  -[MBBehaviorOptions _behaviorOptionForKey:]
+  -[MBBehaviorOptions _startListeningForNotifications]
+  -[MBBehaviorOptions _getStringOptionLockedForKey:defaultValue:]
+  -[MBBehaviorOptions _behaviorContainerOptionForKey:]
+  -[MBBehaviorOptions _getIntOptionForKey:defaultValue:]
+  -[MBBehaviorOptions _setPref:forKey:]
+  -[MBBehaviorOptions _getBoolOptionForKey:defaultValue:]
+  -[MBBehaviorOptions _getDoubleOptionForKey:defaultValue:]
+  -[MBBehaviorOptions _getStringOptionForKey:defaultValue:]
+  -[MBBehaviorOptions _getArrayOptionForKey:defaultValue:]
+  -[MBBehaviorOptions maxBatchSize]
+  -[MBBehaviorOptions sqlBatchCount]
+  -[MBBehaviorOptions setSqlBatchCount:]
+  -[MBBehaviorOptions sqlBatchTime]
+  -[MBBehaviorOptions setSqlBatchTime:]
+  -[MBBehaviorOptions setCachedPrefs:]
+  -[MBBehaviorOptions setCachedPrefsQueue:]
+  -[MBBehaviorOptions setMaxBatchSize:]
+  -[MBBehaviorOptions conn]
+  -[MBBehaviorOptions cloudKitContainerName]
+  -[MBBehaviorOptions setCloudKitContainerName:]
+  -[MBBehaviorOptions maxBatchCount]
+  -[MBBehaviorOptions setMaxBatchCount:]
+  -[MBBehaviorOptions maxBatchSaveAssetSize]
+  -[MBBehaviorOptions setmaxBatchSaveAssetSize:]
+  -[MBBehaviorOptions maxBatchSaveConcurrentModifyRecordsOperationsWithDefaultValue:]
+  -[MBBehaviorOptions maxBatchDeleteConcurrentModifyRecordsOperationsWithDefaultValue:]
+  -[MBBehaviorOptions maxBatchFetchConcurrentFetchRecordsOperationsWithDefaultValue:]
+  -[MBBehaviorOptions maxBatchFetchAssetSize]
+  -[MBBehaviorOptions setmaxBatchFetchAssetSize:]
+  -[MBBehaviorOptions recordSaveAttempts]
+  -[MBBehaviorOptions setRecordSaveAttempts:]
+  -[MBBehaviorOptions sqlTrace]
+  -[MBBehaviorOptions setSQLTrace:]
+  -[MBBehaviorOptions manifestPageSize]
+  -[MBBehaviorOptions setManifestPageSize:]
+  -[MBBehaviorOptions maxDomainsToBackup]
+  -[MBBehaviorOptions setMaxDomainsToBackup:]
+  -[MBBehaviorOptions useBackgroundOperationsForBackup]
+  -[MBBehaviorOptions setUseBackgroundOperationsForBackup:]
+  -[MBBehaviorOptions minimumBuildVersionForFullBackup]
+  -[MBBehaviorOptions setMinimumBuildVersionForFullBackup:]
+  -[MBBehaviorOptions backupFromLocalSnapshot]
+  -[MBBehaviorOptions setBackupFromLocalSnapshot:]
+  -[MBBehaviorOptions keepDailySnapshots]
+  -[MBBehaviorOptions setKeepDailySnapshots:]
+  -[MBBehaviorOptions snapshotAfterForegroundRestore]
+  -[MBBehaviorOptions setSnapshotAfterForegroundRestore:]
+  -[MBBehaviorOptions usePowerLog]
+  -[MBBehaviorOptions setUsePowerLog:]
+  -[MBBehaviorOptions useABC]
+  -[MBBehaviorOptions setUseABC:]
+  -[MBBehaviorOptions SQLiteSpaceSavingsThresholdWithDefaultValue:]
+  -[MBBehaviorOptions validateSignatureOnRestoreWithDefaultValue:]
+  -[MBBehaviorOptions validateFileEncodingWithDefaultValue:]
+  -[MBBehaviorOptions enableSQLiteArchivingWithDefaultValue:]
+  -[MBBehaviorOptions fixOwnershipOnFileScanWithDefaultValue:]
+  -[MBBehaviorOptions warnForLateiTunesBackups]
+  -[MBBehaviorOptions setWarnForLateiTunesBackups:]
+  -[MBBehaviorOptions setConn:]
+  -[MBBehaviorOptions flushLogMessages]
+  -[MBBehaviorOptions setFlushLogMessages:]
+
+
+MBFileManager : NSObject
+  // class methods
+  +[MBFileManager defaultManager]
+
+  // instance methods
+  -[MBFileManager fileExistsAtPath:]
+  -[MBFileManager fileAttributesAtPath:traverseLink:]
+  -[MBFileManager directoryContentsAtPath:]
+  -[MBFileManager createDirectoryAtPath:attributes:]
+  -[MBFileManager removeFileAtPath:]
+  -[MBFileManager copyPath:toPath:]
+  -[MBFileManager movePath:toPath:]
+
+
+MBDeviceTransferSession : NSObject <NSSecureCoding>
+ @property  RPFileTransferSession *fileTransferSession
+
+  // class methods
+  +[MBDeviceTransferSession supportsSecureCoding]
+
+  // instance methods
+  -[MBDeviceTransferSession encodeWithCoder:]
+  -[MBDeviceTransferSession initWithCoder:]
+  -[MBDeviceTransferSession .cxx_destruct]
+  -[MBDeviceTransferSession setFileTransferSession:]
+  -[MBDeviceTransferSession fileTransferSession]
+
+
+MBDeviceTransferKeychain : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *uuid
+
+  // class methods
+  +[MBDeviceTransferKeychain supportsSecureCoding]
+
+  // instance methods
+  -[MBDeviceTransferKeychain init]
+  -[MBDeviceTransferKeychain copyWithZone:]
+  -[MBDeviceTransferKeychain encodeWithCoder:]
+  -[MBDeviceTransferKeychain initWithCoder:]
+  -[MBDeviceTransferKeychain .cxx_destruct]
+  -[MBDeviceTransferKeychain uuid]
+  -[MBDeviceTransferKeychain setUuid:]
+
+
+MBDeviceTransferPreflight : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *uuid
+ @property  unsigned long sourceDeviceDataSize
+ @property  unsigned long targetDeviceFreeSpaceSize
+ @property  NSString *activeAppleID
+ @property  NSDictionary *appleIDs
+
+  // class methods
+  +[MBDeviceTransferPreflight supportsSecureCoding]
+
+  // instance methods
+  -[MBDeviceTransferPreflight init]
+  -[MBDeviceTransferPreflight copyWithZone:]
+  -[MBDeviceTransferPreflight encodeWithCoder:]
+  -[MBDeviceTransferPreflight initWithCoder:]
+  -[MBDeviceTransferPreflight .cxx_destruct]
+  -[MBDeviceTransferPreflight uuid]
+  -[MBDeviceTransferPreflight setUuid:]
+  -[MBDeviceTransferPreflight appleIDs]
+  -[MBDeviceTransferPreflight setAppleIDs:]
+  -[MBDeviceTransferPreflight activeAppleID]
+  -[MBDeviceTransferPreflight setActiveAppleID:]
+  -[MBDeviceTransferPreflight setSourceDeviceDataSize:]
+  -[MBDeviceTransferPreflight setTargetDeviceFreeSpaceSize:]
+  -[MBDeviceTransferPreflight sourceDeviceDataSize]
+  -[MBDeviceTransferPreflight targetDeviceFreeSpaceSize]
+
+
+MBDeviceTransferProgress : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *phaseDescription
+ @property  double progress
+ @property  long long minutesRemaining
+ @property  NSDate *fileTransferStartDate
+ @property  NSDate *restoreStartDate
+ @property  unsigned long filesTransferred
+ @property  unsigned long bytesTransferred
+
+  // class methods
+  +[MBDeviceTransferProgress supportsSecureCoding]
+
+  // instance methods
+  -[MBDeviceTransferProgress init]
+  -[MBDeviceTransferProgress copyWithZone:]
+  -[MBDeviceTransferProgress encodeWithCoder:]
+  -[MBDeviceTransferProgress initWithCoder:]
+  -[MBDeviceTransferProgress .cxx_destruct]
+  -[MBDeviceTransferProgress progress]
+  -[MBDeviceTransferProgress setProgress:]
+  -[MBDeviceTransferProgress bytesTransferred]
+  -[MBDeviceTransferProgress setBytesTransferred:]
+  -[MBDeviceTransferProgress filesTransferred]
+  -[MBDeviceTransferProgress setFilesTransferred:]
+  -[MBDeviceTransferProgress fileTransferStartDate]
+  -[MBDeviceTransferProgress restoreStartDate]
+  -[MBDeviceTransferProgress minutesRemaining]
+  -[MBDeviceTransferProgress phaseDescription]
+  -[MBDeviceTransferProgress setMinutesRemaining:]
+  -[MBDeviceTransferProgress setPhaseDescription:]
+  -[MBDeviceTransferProgress setFileTransferStartDate:]
+  -[MBDeviceTransferProgress setRestoreStartDate:]
+
+
+MBDeviceTransferConnectionInfo : NSObject <NSCopying, NSSecureCoding>
+ @property  long long connectionState
+ @property  long long connectionType
+
+  // class methods
+  +[MBDeviceTransferConnectionInfo supportsSecureCoding]
+  +[MBDeviceTransferConnectionInfo connectionTypeFromLinkType:]
+
+  // instance methods
+  -[MBDeviceTransferConnectionInfo init]
+  -[MBDeviceTransferConnectionInfo copyWithZone:]
+  -[MBDeviceTransferConnectionInfo encodeWithCoder:]
+  -[MBDeviceTransferConnectionInfo initWithCoder:]
+  -[MBDeviceTransferConnectionInfo connectionType]
+  -[MBDeviceTransferConnectionInfo connectionState]
+  -[MBDeviceTransferConnectionInfo setConnectionType:]
+  -[MBDeviceTransferConnectionInfo setConnectionState:]
+
+
+MBDeviceTransferTask : NSObject <MBManagerDelegate>
+ @property  MBManager *manager
+ @property  RPFileTransferSession *fileTransferSession
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSError *completionError
+ @property  @? progressHandler
+ @property  @? connectionStateHandler
+ @property  @? connectionInfoHandler
+ @property  @? completionHandler
+
+  // instance methods
+  -[MBDeviceTransferTask dealloc]
+  -[MBDeviceTransferTask _suspend]
+  -[MBDeviceTransferTask _resume]
+  -[MBDeviceTransferTask setQueue:]
+  -[MBDeviceTransferTask queue]
+  -[MBDeviceTransferTask .cxx_destruct]
+  -[MBDeviceTransferTask cancel]
+  -[MBDeviceTransferTask start]
+  -[MBDeviceTransferTask finished]
+  -[MBDeviceTransferTask manager]
+  -[MBDeviceTransferTask canceled]
+  -[MBDeviceTransferTask _start]
+  -[MBDeviceTransferTask started]
+  -[MBDeviceTransferTask progressHandler]
+  -[MBDeviceTransferTask setProgressHandler:]
+  -[MBDeviceTransferTask completionHandler]
+  -[MBDeviceTransferTask setCompletionHandler:]
+  -[MBDeviceTransferTask setManager:]
+  -[MBDeviceTransferTask completionError]
+  -[MBDeviceTransferTask setCompletionError:]
+  -[MBDeviceTransferTask _cancel]
+  -[MBDeviceTransferTask _finishWithError:]
+  -[MBDeviceTransferTask taskType]
+  -[MBDeviceTransferTask setFileTransferSession:]
+  -[MBDeviceTransferTask initWithFileTransferSession:]
+  -[MBDeviceTransferTask fileTransferSession]
+  -[MBDeviceTransferTask setConnectionInfoHandler:]
+  -[MBDeviceTransferTask managerDidLoseConnectionToService:]
+  -[MBDeviceTransferTask manager:didUpdateDeviceTransferConnectionInfo:]
+  -[MBDeviceTransferTask setConnectionStateHandler:]
+  -[MBDeviceTransferTask connectionStateHandler]
+  -[MBDeviceTransferTask connectionInfoHandler]
+  -[MBDeviceTransferTask _handleCompletionWithError:]
+
+
+MBAggregateDictionary : NSObject
+ @property  NSDictionary *scalars
+
+  // class methods
+  +[MBAggregateDictionary addValue:forScalarKey:]
+  +[MBAggregateDictionary setValue:forScalarKey:]
+  +[MBAggregateDictionary pushValue:forDistributionKey:]
+  +[MBAggregateDictionary incrementScalarKey:]
+
+  // instance methods
+  -[MBAggregateDictionary init]
+  -[MBAggregateDictionary dealloc]
+  -[MBAggregateDictionary save]
+  -[MBAggregateDictionary _addScalarValue:forKey:]
+  -[MBAggregateDictionary scalars]
+  -[MBAggregateDictionary addCountAndSizeOfFile:]
+  -[MBAggregateDictionary addFileSize:containerID:aggregateDictionaryGroup:]
+
+
+MBDigest : NSObject
+  // class methods
+  +[MBDigest sha1ForString:]
+  +[MBDigest sha1ForData:]
+  +[MBDigest sha1]
+  +[MBDigest sha256]
+  +[MBDigest sha1ForFileAtPath:error:]
+  +[MBDigest sha1HmacForString:key:]
+  +[MBDigest simpleChecksumForString:]
+
+  // instance methods
+  -[MBDigest updateWithData:]
+  -[MBDigest updateWithBytes:length:]
+  -[MBDigest updateWithString:]
+  -[MBDigest finalWithBytes:length:]
+  -[MBDigest digestForData:]
+  -[MBDigest digestForFileAtPath:error:]
+  -[MBDigest digestForString:]
+  -[MBDigest final]
+  -[MBDigest updateWithFile:error:]
+  -[MBDigest updateWithInt64:]
+  -[MBDigest updateWithInt32:]
+  -[MBDigest updateWithDate:]
+
+
+MBDigestSHA1 : MBDigest
+  // instance methods
+  -[MBDigestSHA1 init]
+  -[MBDigestSHA1 updateWithBytes:length:]
+  -[MBDigestSHA1 finalWithBytes:length:]
+  -[MBDigestSHA1 final]
+
+
+MBDigestSHA256 : MBDigest
+  // instance methods
+  -[MBDigestSHA256 init]
+  -[MBDigestSHA256 updateWithBytes:length:]
+  -[MBDigestSHA256 finalWithBytes:length:]
+  -[MBDigestSHA256 final]
+
+
+MBConnection : NSObject
+ @property  NSObject<OS_xpc_object> *xpcConnection
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSString *processName
+ @property  <MBConnectionHandler> *messageHandler
+
+  // instance methods
+  -[MBConnection setQueue:]
+  -[MBConnection queue]
+  -[MBConnection .cxx_destruct]
+  -[MBConnection cancel]
+  -[MBConnection resume]
+  -[MBConnection processName]
+  -[MBConnection setProcessName:]
+  -[MBConnection initWithServiceName:]
+  -[MBConnection suspend]
+  -[MBConnection xpcConnection]
+  -[MBConnection initWithXPCConnection:queue:]
+  -[MBConnection sendMessage:]
+  -[MBConnection setXpcConnection:]
+  -[MBConnection setMessageHandler:]
+  -[MBConnection messageHandler]
+  -[MBConnection sendMessageWithReplyAndSync:error:]
+  -[MBConnection _setEventHandlerForXPCConnection:]
+  -[MBConnection _refreshProcessInfoWithXPCConnection:]
+  -[MBConnection _handleXPCEvent:]
+  -[MBConnection _handleXPCError:]
+  -[MBConnection sendMessage:barrierBlock:]
+
+
+MBMessage : NSObject <NSKeyedArchiverDelegate>
+ @property  NSObject<OS_xpc_object> *xpcObject
+ @property  NSMutableDictionary *messageInfo
+ @property  NSMutableDictionary *replyInfo
+ @property  NSString *name
+ @property  NSArray *arguments
+ @property  NSError *error
+ @property  NSObject<NSSecureCoding><NSCopying> *reply
+ @property  NSError *replyError
+ @property  MBConnection *connection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[MBMessage _allowedClasses]
+  +[MBMessage messageWithName:arguments:]
+
+  // instance methods
+  -[MBMessage name]
+  -[MBMessage .cxx_destruct]
+  -[MBMessage error]
+  -[MBMessage arguments]
+  -[MBMessage setError:]
+  -[MBMessage archiver:didEncodeObject:]
+  -[MBMessage connection]
+  -[MBMessage setConnection:]
+  -[MBMessage reply]
+  -[MBMessage setReply:]
+  -[MBMessage xpcObject]
+  -[MBMessage _xpcObject]
+  -[MBMessage initWithName:arguments:]
+  -[MBMessage replyError]
+  -[MBMessage _initWithXPCObject:]
+  -[MBMessage sendReply]
+  -[MBMessage setReplyError:]
+  -[MBMessage setXpcObject:]
+  -[MBMessage messageInfo]
+  -[MBMessage setMessageInfo:]
+  -[MBMessage replyInfo]
+  -[MBMessage setReplyInfo:]
+
+
+MBBackup : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *backupUDID
+ @property  NSString *backupUUID
+ @property  NSString *backupUUIDSansPrefix
+ @property  NSString *deviceClass
+ @property  NSString *productType
+ @property  NSString *hardwareModel
+ @property  NSString *marketingName
+ @property  NSArray *snapshots
+ @property  BOOL restoreSystemFiles
+ @property  BOOL isMBSBackup
+ @property  BOOL isBackupEnabled
+ @property  BOOL hasBackupEnabledState
+
+  // class methods
+  +[MBBackup supportsSecureCoding]
+
+  // instance methods
+  -[MBBackup dealloc]
+  -[MBBackup isEqual:]
+  -[MBBackup copyWithZone:]
+  -[MBBackup encodeWithCoder:]
+  -[MBBackup initWithCoder:]
+  -[MBBackup hardwareModel]
+  -[MBBackup productType]
+  -[MBBackup deviceClass]
+  -[MBBackup snapshots]
+  -[MBBackup backupUUID]
+  -[MBBackup marketingName]
+  -[MBBackup isBackupEnabled]
+  -[MBBackup initWithBackupUDID:backupUUID:deviceClass:productType:hardwareModel:marketingName:snapshots:restoreSystemFiles:isMBSBackup:isBackupEnabled:hasBackupEnabledState:]
+  -[MBBackup backupUDID]
+  -[MBBackup backupUUIDSansPrefix]
+  -[MBBackup canRestoreSystemFiles]
+  -[MBBackup isMBSBackup]
+  -[MBBackup hasBackupEnabledState]
+
+
+MBSnapshot : NSObject <NSCopying, NSSecureCoding>
+ @property  long long backupType
+ @property  unsigned long snapshotID
+ @property  NSString *snapshotUUID
+ @property  NSString *deviceName
+ @property  NSDate *date
+ @property  NSDate *created
+ @property  NSDate *modified
+ @property  int state
+ @property  BOOL isCompatible
+ @property  NSString *systemVersion
+ @property  unsigned long quotaReserved
+
+  // class methods
+  +[MBSnapshot supportsSecureCoding]
+
+  // instance methods
+  -[MBSnapshot dealloc]
+  -[MBSnapshot copyWithZone:]
+  -[MBSnapshot encodeWithCoder:]
+  -[MBSnapshot initWithCoder:]
+  -[MBSnapshot date]
+  -[MBSnapshot systemVersion]
+  -[MBSnapshot state]
+  -[MBSnapshot deviceName]
+  -[MBSnapshot created]
+  -[MBSnapshot modified]
+  -[MBSnapshot initWithSnapshotID:snapshotUUID:deviceName:date:created:modified:state:isCompatible:systemVersion:quotaReserved:backupType:]
+  -[MBSnapshot initWithSnapshotID:deviceName:date:created:modified:state:isCompatible:systemVersion:quotaReserved:backupType:]
+  -[MBSnapshot initWithSnapshotUUID:snapshotID:deviceName:date:created:modified:state:isCompatible:systemVersion:quotaReserved:backupType:]
+  -[MBSnapshot snapshotID]
+  -[MBSnapshot snapshotUUID]
+  -[MBSnapshot isCompatible]
+  -[MBSnapshot quotaReserved]
+  -[MBSnapshot backupType]
+  -[MBSnapshot setBackupType:]
+
+
+MBEngine : NSObject
+ @property  NSMutableDictionary *domainRestoreBehaviors
+ @property  int engineType
+ @property  NSString *engineTypeString
+ @property  BOOL driveEngine
+ @property  BOOL serviceEngine
+ @property  BOOL cloudKitEngine
+ @property  BOOL deviceTransferEngine
+ @property  int engineMode
+ @property  NSString *engineModeString
+ @property  BOOL backupEngine
+ @property  BOOL restoreEngine
+ @property  int restoreType
+ @property  NSString *restoreTypeString
+ @property  BOOL foregroundRestore
+ @property  BOOL backgroundRestore
+ @property  MBSettingsContext *settingsContext
+ @property  MBDebugContext *debugContext
+ @property  MBProperties *properties
+ @property  MBProperties *preflightProperties
+ @property  BOOL encrypted
+ @property  BOOL migrate
+ @property  MBDomainManager *domainManager
+ @property  MBAppManager *appManager
+ @property  BOOL commitIfPossible
+ @property  BOOL isInternetReachableViaWiFi
+ @property  MBWatchdog *watchdog
+
+  // class methods
+  +[MBEngine stringForEngineType:]
+  +[MBEngine stringForEngineMode:]
+  +[MBEngine stringForRestoreType:]
+  +[MBEngine aggregateDictionaryKey:forEngineType:restoreType:]
+  +[MBEngine aggregateDictionaryKey:forEngineType:engineMode:]
+  +[MBEngine aggregateDictionaryForFullRestoreWithKey:engineType:]
+
+  // instance methods
+  -[MBEngine dealloc]
+  -[MBEngine properties]
+  -[MBEngine setEncrypted:]
+  -[MBEngine encrypted]
+  -[MBEngine restoreType]
+  -[MBEngine isInternetReachableViaWiFi]
+  -[MBEngine engineType]
+  -[MBEngine appManager]
+  -[MBEngine engineMode]
+  -[MBEngine isRestoreEngine]
+  -[MBEngine isServiceEngine]
+  -[MBEngine isDriveEngine]
+  -[MBEngine settingsContext]
+  -[MBEngine shouldAlwaysRestoreSystemSharedContainerDomain:]
+  -[MBEngine domainRestoreBehaviors]
+  -[MBEngine localRootPathForDomain:]
+  -[MBEngine isCloudKitEngine]
+  -[MBEngine restoreBehaviorForFile:withValidation:error:]
+  -[MBEngine restoreBehaviorForDomain:error:]
+  -[MBEngine aggregateDictionaryKey:]
+  -[MBEngine initWithSettingsContext:debugContext:domainManager:]
+  -[MBEngine engineTypeString]
+  -[MBEngine engineModeString]
+  -[MBEngine isBackupEngine]
+  -[MBEngine restoreTypeString]
+  -[MBEngine isForegroundRestore]
+  -[MBEngine isBackgroundRestore]
+  -[MBEngine isMigrate]
+  -[MBEngine shouldCommitIfPossible]
+  -[MBEngine validateFile:]
+  -[MBEngine validateRestoreDomain:relativePath:]
+  -[MBEngine restoreBehaviorForFile:error:]
+  -[MBEngine pushAggregateDictionaryTotalFileCount:totalFileSize:duration:]
+  -[MBEngine restoringBundleID]
+  -[MBEngine fetchHSA2Enabled:error:]
+  -[MBEngine debugContext]
+  -[MBEngine preflightProperties]
+  -[MBEngine domainManager]
+  -[MBEngine isDeviceTransferEngine]
+  -[MBEngine watchdog]
+  -[MBEngine setWatchdog:]
+  -[MBEngine setDomainRestoreBehaviors:]
+
+
+MBDomainInfo : NSObject <NSCopying, NSSecureCoding>
+ @property  BOOL appDomain
+ @property  BOOL systemApp
+ @property  BOOL cameraRollDomain
+ @property  NSString *domainName
+ @property  NSString *bundleID
+ @property  unsigned long size
+ @property  unsigned long remoteSize
+ @property  unsigned long localSize
+ @property  BOOL enabled
+ @property  BOOL restricted
+
+  // class methods
+  +[MBDomainInfo supportsSecureCoding]
+  +[MBDomainInfo domainNameForBundleID:]
+  +[MBDomainInfo domainInfoWithName:systemApp:remoteSize:localSize:enabled:restricted:]
+
+  // instance methods
+  -[MBDomainInfo dealloc]
+  -[MBDomainInfo copyWithZone:]
+  -[MBDomainInfo setEnabled:]
+  -[MBDomainInfo encodeWithCoder:]
+  -[MBDomainInfo initWithCoder:]
+  -[MBDomainInfo size]
+  -[MBDomainInfo isEnabled]
+  -[MBDomainInfo isRestricted]
+  -[MBDomainInfo bundleID]
+  -[MBDomainInfo domainName]
+  -[MBDomainInfo setDomainName:]
+  -[MBDomainInfo remoteSize]
+  -[MBDomainInfo setRestricted:]
+  -[MBDomainInfo setSystemApp:]
+  -[MBDomainInfo isSystemApp]
+  -[MBDomainInfo isAppDomain]
+  -[MBDomainInfo isCameraRollDomain]
+  -[MBDomainInfo initWithDomainName:systemApp:remoteSize:localSize:enabled:restricted:]
+  -[MBDomainInfo setRemoteSize:]
+  -[MBDomainInfo localSize]
+  -[MBDomainInfo setLocalSize:]
+
+
+MBFileInfo : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *path
+ @property  BOOL isDirectory
+ @property  long long priority
+ @property  NSDictionary *extendedAttributes
+
+  // class methods
+  +[MBFileInfo supportsSecureCoding]
+  +[MBFileInfo fileInfoWithPath:extendedAttributes:]
+
+  // instance methods
+  -[MBFileInfo dealloc]
+  -[MBFileInfo copyWithZone:]
+  -[MBFileInfo encodeWithCoder:]
+  -[MBFileInfo initWithCoder:]
+  -[MBFileInfo path]
+  -[MBFileInfo isDirectory]
+  -[MBFileInfo setPath:]
+  -[MBFileInfo priority]
+  -[MBFileInfo setPriority:]
+  -[MBFileInfo extendedAttributes]
+  -[MBFileInfo setIsDirectory:]
+  -[MBFileInfo setExtendedAttributes:]
+  -[MBFileInfo initWithPath:extendedAttributes:]
+
+
+MBStateInfo : NSObject <NSSecureCoding, NSCopying>
+ @property  int state
+ @property  BOOL isBackground
+ @property  BOOL isCloud
+ @property  float progress
+ @property  unsigned long estimatedTimeRemaining
+ @property  NSDate *date
+ @property  NSError *error
+ @property  NSMutableArray *errors
+
+  // class methods
+  +[MBStateInfo supportsSecureCoding]
+
+  // instance methods
+  -[MBStateInfo copyWithZone:]
+  -[MBStateInfo encodeWithCoder:]
+  -[MBStateInfo initWithCoder:]
+  -[MBStateInfo .cxx_destruct]
+  -[MBStateInfo date]
+  -[MBStateInfo error]
+  -[MBStateInfo setError:]
+  -[MBStateInfo dictionaryRepresentation]
+  -[MBStateInfo progress]
+  -[MBStateInfo state]
+  -[MBStateInfo estimatedTimeRemaining]
+  -[MBStateInfo setEstimatedTimeRemaining:]
+  -[MBStateInfo setState:]
+  -[MBStateInfo errors]
+  -[MBStateInfo setDate:]
+  -[MBStateInfo setIsBackground:]
+  -[MBStateInfo setProgress:]
+  -[MBStateInfo initWithDictionaryRepresentation:]
+  -[MBStateInfo isBackground]
+  -[MBStateInfo setErrors:]
+  -[MBStateInfo initWithState:progress:estimatedTimeRemaining:isCloud:isBackground:error:errors:]
+  -[MBStateInfo initWithState:progress:estimatedTimeRemaining:error:errors:]
+  -[MBStateInfo isCloud]
+  -[MBStateInfo setIsCloud:]
+
+
+MBRestoreFailure : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *identifier
+ @property  NSString *displayName
+ @property  NSString *dataclass
+ @property  NSString *assetType
+ @property  NSData *icon
+ @property  NSError *error
+
+  // class methods
+  +[MBRestoreFailure supportsSecureCoding]
+
+  // instance methods
+  -[MBRestoreFailure dealloc]
+  -[MBRestoreFailure copyWithZone:]
+  -[MBRestoreFailure encodeWithCoder:]
+  -[MBRestoreFailure initWithCoder:]
+  -[MBRestoreFailure identifier]
+  -[MBRestoreFailure error]
+  -[MBRestoreFailure setError:]
+  -[MBRestoreFailure setIdentifier:]
+  -[MBRestoreFailure displayName]
+  -[MBRestoreFailure setDisplayName:]
+  -[MBRestoreFailure icon]
+  -[MBRestoreFailure setIcon:]
+  -[MBRestoreFailure assetType]
+  -[MBRestoreFailure setAssetType:]
+  -[MBRestoreFailure dataclass]
+  -[MBRestoreFailure setDataclass:]
+  -[MBRestoreFailure initWithIdentifier:dataclass:assetType:displayName:error:]
+
+
+MBRestoreInfo : NSObject <NSSecureCoding, NSCopying>
+ @property  NSDate *date
+ @property  BOOL wasCloudRestore
+ @property  NSString *deviceBuildVersion
+ @property  NSString *backupBuildVersion
+
+  // class methods
+  +[MBRestoreInfo supportsSecureCoding]
+
+  // instance methods
+  -[MBRestoreInfo dealloc]
+  -[MBRestoreInfo copyWithZone:]
+  -[MBRestoreInfo encodeWithCoder:]
+  -[MBRestoreInfo initWithCoder:]
+  -[MBRestoreInfo date]
+  -[MBRestoreInfo dictionaryRepresentation]
+  -[MBRestoreInfo setDate:]
+  -[MBRestoreInfo initWithDictionaryRepresentation:]
+  -[MBRestoreInfo setWasCloudRestore:]
+  -[MBRestoreInfo setDeviceBuildVersion:]
+  -[MBRestoreInfo setBackupBuildVersion:]
+  -[MBRestoreInfo wasCloudRestore]
+  -[MBRestoreInfo deviceBuildVersion]
+  -[MBRestoreInfo backupBuildVersion]
+
+
+MBBackgroundRestoreInfo : NSObject <NSSecureCoding, NSCopying>
+ @property  int dataClassesRemaining
+ @property  unsigned long bytesRemaining
+ @property  NSArray *failedDomains
+
+  // class methods
+  +[MBBackgroundRestoreInfo supportsSecureCoding]
+
+  // instance methods
+  -[MBBackgroundRestoreInfo dealloc]
+  -[MBBackgroundRestoreInfo copyWithZone:]
+  -[MBBackgroundRestoreInfo encodeWithCoder:]
+  -[MBBackgroundRestoreInfo initWithCoder:]
+  -[MBBackgroundRestoreInfo setBytesRemaining:]
+  -[MBBackgroundRestoreInfo setDataClassesRemaining:]
+  -[MBBackgroundRestoreInfo setFailedDomains:]
+  -[MBBackgroundRestoreInfo bytesRemaining]
+  -[MBBackgroundRestoreInfo dataClassesRemaining]
+  -[MBBackgroundRestoreInfo failedDomains]
+
+
+MBTargetDeviceTransferTask : MBDeviceTransferTask <MBManagerDelegate>
+ @property  @? preflightCompletionHandler
+ @property  @? keychainTransferCompletionHandler
+
+  // instance methods
+  -[MBTargetDeviceTransferTask .cxx_destruct]
+  -[MBTargetDeviceTransferTask cancel]
+  -[MBTargetDeviceTransferTask resume]
+  -[MBTargetDeviceTransferTask start]
+  -[MBTargetDeviceTransferTask _start]
+  -[MBTargetDeviceTransferTask _cancel]
+  -[MBTargetDeviceTransferTask _finishWithError:]
+  -[MBTargetDeviceTransferTask taskType]
+  -[MBTargetDeviceTransferTask initWithFileTransferSession:]
+  -[MBTargetDeviceTransferTask manager:didFinishDeviceTransferWithError:]
+  -[MBTargetDeviceTransferTask manager:didFinishDeviceTransferPreflight:error:]
+  -[MBTargetDeviceTransferTask manager:didUpdateDeviceTransferProgress:]
+  -[MBTargetDeviceTransferTask startPreflightWithCompletionHandler:]
+  -[MBTargetDeviceTransferTask startKeychainTransferWithCompletionHandler:]
+  -[MBTargetDeviceTransferTask startKeychainDataTransferWithCompletionHandler:]
+  -[MBTargetDeviceTransferTask startKeychainDataImportWithKeychainInfo:completionHandler:]
+  -[MBTargetDeviceTransferTask startDataTransferWithPreflightInfo:completionHandler:]
+  -[MBTargetDeviceTransferTask setKeychainTransferCompletionHandler:]
+  -[MBTargetDeviceTransferTask _finishKeychainTransferWithError:completionHandler:]
+  -[MBTargetDeviceTransferTask manager:didFinishDeviceTransferKeychainTransferWithError:]
+  -[MBTargetDeviceTransferTask preflightCompletionHandler]
+  -[MBTargetDeviceTransferTask setPreflightCompletionHandler:]
+  -[MBTargetDeviceTransferTask keychainTransferCompletionHandler]
+
+
+NSString(MBSplitPath)
+	// class methods
+	+[NSString(MBSplitPath) mb_stringWithFileSystemRepresentation:]
+
+	// instance methods
+	-[NSString(MBSplitPath) mb_splitIntoBase:andRelativePath:]
+	-[NSString(MBSplitPath) mb_stringByAppendingSlash]
+	-[NSString(MBSplitPath) mb_pathComponentExistsInSet:]
+	-[NSString(MBSplitPath) mb_stringByAppendingGreenteaSuffix]
+	-[NSString(MBSplitPath) mb_backupIDByAddingCKPrefix]
+	-[NSString(MBSplitPath) mb_backupIDByRemovingCKPrefix]
+
+NSData(Hexadecimal)
+	// class methods
+	+[NSData(Hexadecimal) mb_dataFromHexadecimalString:]
+
+	// instance methods
+	-[NSData(Hexadecimal) mb_hexadecimalString]
+
+01 00 0d00 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1100 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0b00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/PrivateFrameworks/Rapport.framework/Rapport: RPFileTransferSession 
+01 00 0700 /System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip: SZExtractor 

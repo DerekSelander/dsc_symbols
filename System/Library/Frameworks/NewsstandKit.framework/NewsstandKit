@@ -1,0 +1,256 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_NKAssetDownload
+|| __DATA.__objc_data _OBJC_CLASS_$_NKIssue
+|| __DATA.__objc_data _OBJC_CLASS_$_NKLibrary
+|| __DATA.__objc_data _OBJC_METACLASS_$_NKAssetDownload
+|| __DATA.__objc_data _OBJC_METACLASS_$_NKIssue
+|| __DATA.__objc_data _OBJC_METACLASS_$_NKLibrary
+|| __DATA_CONST.__const _NKIssueDownloadCompletedNotification
+__ CacheDelete: _CacheDeleteAllowAutoPurge
+__ CacheDelete: _CacheDeleteDoNotAutoPurge
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _NSGenericException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSRunLoopCommonModes
+__ CoreFoundation: _NSURLIsDirectoryKey
+__ CoreFoundation: _NSURLNameKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSInvocation
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _NSLog
+__ Foundation: _NSLogv
+__ Foundation: _NSURLConnectionBackgroundDownloadCompletedInvocation
+__ Foundation: _NSURLConnectionBackgroundDownloadIdentifier
+__ Foundation: _NSURLConnectionBackgroundDownloadMediaKind
+__ Foundation: _NSURLConnectionBackgroundDownloadPreCompletedInvocation
+__ Foundation: _NSURLConnectionIsBackgroundDownload
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSURLConnection
+__ Foundation: _OBJC_CLASS_$_NSURLRequest
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _UIApplicationDidEnterBackgroundNotification
+__ UIKit: _UIApplicationDidFinishLaunchingNotification
+__ UIKit: _UIApplicationWillTerminateNotification
+__ UIKit: _UIBackgroundTaskInvalid
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _sel_getName
+NKLibrary : NSObject
+ @property  NSArray *issues
+ @property  NSArray *downloadingAssets
+ @property  NKIssue *currentlyReadingIssue
+
+  // class methods
+  +[NKLibrary allocWithZone:]
+  +[NKLibrary sharedLibrary]
+  +[NKLibrary _isNewsstandApp]
+
+  // instance methods
+  -[NKLibrary init]
+  -[NKLibrary retainCount]
+  -[NKLibrary retain]
+  -[NKLibrary release]
+  -[NKLibrary autorelease]
+  -[NKLibrary copyWithZone:]
+  -[NKLibrary _contentURL]
+  -[NKLibrary _load]
+  -[NKLibrary downloadingAssets]
+  -[NKLibrary issues]
+  -[NKLibrary _applicationDidEnterBackground:]
+  -[NKLibrary _fileManager]
+  -[NKLibrary _libraryURL]
+  -[NKLibrary _saveIfNeeded]
+  -[NKLibrary _applicationWillTerminate:]
+  -[NKLibrary _didFinishLaunchingWasCalled]
+  -[NKLibrary _markIssuesAndSave]
+  -[NKLibrary issueWithName:]
+  -[NKLibrary _setIssues:]
+  -[NKLibrary currentlyReadingIssue]
+  -[NKLibrary setCurrentlyReadingIssue:]
+  -[NKLibrary _performBackgroundTask:withDescription:]
+  -[NKLibrary _markAsDirtyAndSave]
+  -[NKLibrary _appSupportURL]
+  -[NKLibrary __actuallySave]
+  -[NKLibrary _saveIfNeededAfterDelay:]
+  -[NKLibrary _saveNowIfNeeded]
+  -[NKLibrary addIssueWithName:date:]
+  -[NKLibrary removeIssue:]
+  -[NKLibrary _issueForDirectory:]
+  -[NKLibrary _canPerformBackgroundDownloads]
+  -[NKLibrary _issueChanged:]
+
+
+NKIssue : NSObject <NSSecureCoding>
+ @property  NSString *name
+ @property  NSDate *date
+ @property  NSString *directory
+ @property  NKLibrary *_library
+ @property  NSArray *downloadingAssets
+ @property  NSURL *contentURL
+ @property  long long status
+
+  // class methods
+  +[NKIssue supportsSecureCoding]
+
+  // instance methods
+  -[NKIssue init]
+  -[NKIssue dealloc]
+  -[NKIssue name]
+  -[NKIssue encodeWithCoder:]
+  -[NKIssue initWithCoder:]
+  -[NKIssue date]
+  -[NKIssue setName:]
+  -[NKIssue directory]
+  -[NKIssue status]
+  -[NKIssue _library]
+  -[NKIssue setDate:]
+  -[NKIssue contentURL]
+  -[NKIssue _directory]
+  -[NKIssue _commonInit]
+  -[NKIssue downloadingAssets]
+  -[NKIssue setDirectory:]
+  -[NKIssue _initWithName:date:directory:]
+  -[NKIssue _isDecodingValid]
+  -[NKIssue _setLibrary:]
+  -[NKIssue addAssetWithRequest:]
+  -[NKIssue _assetsForRequest:]
+  -[NKIssue _markAssetAsResolved:]
+  -[NKIssue _cleanupAsset:]
+  -[NKIssue _assetChanged:]
+
+
+NKAssetDownload : NSObject <NSSecureCoding>
+ @property  NSString *identifier
+ @property  NSURLRequest *URLRequest
+ @property  NSData *userInfoData
+ @property  NSURLConnection *connection
+ @property  BOOL attemptedConnection
+ @property  NKIssue *issue
+ @property  NSDictionary *userInfo
+
+  // class methods
+  +[NKAssetDownload supportsSecureCoding]
+
+  // instance methods
+  -[NKAssetDownload init]
+  -[NKAssetDownload dealloc]
+  -[NKAssetDownload _connection]
+  -[NKAssetDownload userInfo]
+  -[NKAssetDownload encodeWithCoder:]
+  -[NKAssetDownload initWithCoder:]
+  -[NKAssetDownload identifier]
+  -[NKAssetDownload setIdentifier:]
+  -[NKAssetDownload setUserInfo:]
+  -[NKAssetDownload connection]
+  -[NKAssetDownload setConnection:]
+  -[NKAssetDownload userInfoData]
+  -[NKAssetDownload setUserInfoData:]
+  -[NKAssetDownload _cancel]
+  -[NKAssetDownload URLRequest]
+  -[NKAssetDownload setURLRequest:]
+  -[NKAssetDownload issue]
+  -[NKAssetDownload _attemptedConnection]
+  -[NKAssetDownload _isDecodingValid]
+  -[NKAssetDownload _issueWasRemovedFromLibrary]
+  -[NKAssetDownload _setIssue:]
+  -[NKAssetDownload _initWithURLRequest:issue:]
+  -[NKAssetDownload setIssue:]
+  -[NKAssetDownload attemptedConnection]
+  -[NKAssetDownload _connectionBackgroundDownloadPreCompleted:]
+  -[NKAssetDownload _connectionBackgroundDownloadPostCompleted:]
+  -[NKAssetDownload setAttemptedConnection:]
+  -[NKAssetDownload downloadWithDelegate:]
+
+
+NSString(NKAssetDownload)
+	// instance methods
+	-[NSString(NKAssetDownload) _issueDirectory]
+
+NSURLConnection(NKAssetDownloadAdditions)
+	// instance methods
+	-[NSURLConnection(NKAssetDownloadAdditions) newsstandAssetDownload]
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSInvocation 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLRequest 
+01 00 0200 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 

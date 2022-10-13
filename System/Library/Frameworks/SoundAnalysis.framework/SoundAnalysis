@@ -1,0 +1,1912 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SNAudioFileAnalyzer
+|| __DATA.__objc_data _OBJC_CLASS_$_SNAudioOffsetResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNAudioStreamAnalyzer
+|| __DATA.__objc_data _OBJC_CLASS_$_SNClassification
+|| __DATA.__objc_data _OBJC_CLASS_$_SNClassificationResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNClassifySoundRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNCreateFeaturePrintRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNDetectSignalThresholdRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNDetectSoundRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNDetectSpeechUtteranceRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNDetectionResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNDirectionOfArrivalResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNEstimateAudioOffsetRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNEstimateDirectionOfArrivalRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNFeaturePrint
+|| __DATA.__objc_data _OBJC_CLASS_$_SNLKFSResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNMeasureLKFSRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNNullRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SNNullResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNResultsCollector
+|| __DATA.__objc_data _OBJC_CLASS_$_SNSignalThresholdResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SNSpeechUtteranceResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNAudioFileAnalyzer
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNAudioOffsetResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNAudioStreamAnalyzer
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNClassification
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNClassificationResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNClassifySoundRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNCreateFeaturePrintRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNDetectSignalThresholdRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNDetectSoundRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNDetectSpeechUtteranceRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNDetectionResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNDirectionOfArrivalResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNEstimateAudioOffsetRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNEstimateDirectionOfArrivalRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNFeaturePrint
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNLKFSResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNMeasureLKFSRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNNullRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNNullResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNResultsCollector
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNSignalThresholdResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_SNSpeechUtteranceResult
+|| __DATA_CONST.__const _SNErrorDomain
+|| __DATA_CONST.__const _SNSoundIdentifierApplause
+|| __DATA_CONST.__const _SNSoundIdentifierBabble
+|| __DATA_CONST.__const _SNSoundIdentifierCheering
+|| __DATA_CONST.__const _SNSoundIdentifierDistressedBaby
+|| __DATA_CONST.__const _SNSoundIdentifierLaughter
+|| __DATA_CONST.__const _SNSoundIdentifierMusic
+|| __DATA_CONST.__const _SNSoundIdentifierSpeech
+|| __DATA_CONST.__const _SNVGGishFeatureEmbeddingCustomModelName
+|| __DATA_CONST.__const _SNVGGishFrontEndProcessingCustomModelName
+__ AVFoundation: _OBJC_CLASS_$_AVAudioFile
+__ AVFoundation: _OBJC_CLASS_$_AVAudioPCMBuffer
+__ Accelerate: _vDSP_DFT_DestroySetup
+__ Accelerate: _vDSP_DFT_Execute
+__ Accelerate: _vDSP_DFT_zrop_CreateSetup
+__ Accelerate: _vDSP_ctoz
+__ Accelerate: _vDSP_dotpr
+__ Accelerate: _vDSP_hann_window
+__ Accelerate: _vDSP_maxmgv
+__ Accelerate: _vDSP_sve
+__ Accelerate: _vDSP_vadd
+__ Accelerate: _vDSP_vclipc
+__ Accelerate: _vDSP_vdbcon
+__ Accelerate: _vDSP_vdpsp
+__ Accelerate: _vDSP_vfill
+__ Accelerate: _vDSP_vmin
+__ Accelerate: _vDSP_vmul
+__ Accelerate: _vDSP_vrampmul
+__ Accelerate: _vDSP_vrampmuladd
+__ Accelerate: _vDSP_vsadd
+__ Accelerate: _vDSP_vsma
+__ Accelerate: _vDSP_vsmul
+__ Accelerate: _vDSP_vsub
+__ Accelerate: _vDSP_zrvadd
+__ Accelerate: _vDSP_zrvmul
+__ Accelerate: _vDSP_zrvsub
+__ Accelerate: _vDSP_ztoc
+__ Accelerate: _vDSP_zvadd
+__ Accelerate: _vDSP_zvmags
+__ Accelerate: _vDSP_zvmul
+__ Accelerate: _vDSP_zvneg
+__ Accelerate: _vDSP_zvsub
+__ Accelerate: _vvsqrtf
+__ AudioToolbox: _AUEventListenerNotify
+__ AudioToolbox: _AudioComponentCopyName
+__ AudioToolbox: _AudioComponentFindNext
+__ AudioToolbox: _AudioComponentInstanceCanDo
+__ AudioToolbox: _AudioComponentInstanceDispose
+__ AudioToolbox: _AudioComponentInstanceGetComponent
+__ AudioToolbox: _AudioComponentInstanceNew
+__ AudioToolbox: _AudioConverterConvertComplexBuffer
+__ AudioToolbox: _AudioConverterDispose
+__ AudioToolbox: _AudioConverterNew
+__ AudioToolbox: _AudioUnitGetParameter
+__ AudioToolbox: _AudioUnitGetProperty
+__ AudioToolbox: _AudioUnitGetPropertyInfo
+__ AudioToolbox: _AudioUnitInitialize
+__ AudioToolbox: _AudioUnitProcess
+__ AudioToolbox: _AudioUnitProcessMultiple
+__ AudioToolbox: _AudioUnitReset
+__ AudioToolbox: _AudioUnitSetParameter
+__ AudioToolbox: _AudioUnitSetProperty
+__ AudioToolbox: _AudioUnitUninitialize
+__ AudioToolbox: _ExtAudioFileDispose
+__ AudioToolbox: _ExtAudioFileGetProperty
+__ AudioToolbox: _ExtAudioFileOpenURL
+__ AudioToolbox: _ExtAudioFileRead
+__ AudioToolbox: _ExtAudioFileSetProperty
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDataAppendBytes
+__ CoreFoundation: _CFDataCreateMutable
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDataGetTypeID
+__ CoreFoundation: _CFDictionaryContainsKey
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetTypeID
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFPropertyListCreateWithStream
+__ CoreFoundation: _CFReadStreamClose
+__ CoreFoundation: _CFReadStreamCreateWithFile
+__ CoreFoundation: _CFReadStreamOpen
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFSetAddValue
+__ CoreFoundation: _CFSetApplyFunction
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringGetBytes
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetMaximumSizeForEncoding
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _CFURLCreateFromFileSystemRepresentation
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _CFURLCreateWithFileSystemPathRelativeToBase
+__ CoreFoundation: _CFURLGetBaseURL
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFPreferencesCurrentHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ CoreML: _OBJC_CLASS_$_MLArrayBatchProvider
+__ CoreML: _OBJC_CLASS_$_MLDictionaryFeatureProvider
+__ CoreML: _OBJC_CLASS_$_MLFeatureDescription
+__ CoreML: _OBJC_CLASS_$_MLFeatureValue
+__ CoreML: _OBJC_CLASS_$_MLModel
+__ CoreML: _OBJC_CLASS_$_MLModelDescription
+__ CoreML: _OBJC_CLASS_$_MLMultiArray
+__ CoreML: _OBJC_CLASS_$_MLMultiArrayConstraint
+__ CoreML: _OBJC_CLASS_$_MLPredictionOptions
+__ CoreMedia: _CMTimeMake
+__ CoreMedia: _CMTimeRangeGetEnd
+__ CoreMedia: _CMTimeRangeMake
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___cxa_atexit
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___isfinitef
+__ libSystem.B.dylib: ___isinff
+__ libSystem.B.dylib: ___isnanf
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: ___udivti3
+__ libSystem.B.dylib: __dispatch_source_type_signal
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _backtrace
+__ libSystem.B.dylib: _backtrace_symbols
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _cos
+__ libSystem.B.dylib: _cosf
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dladdr
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseeko
+__ libSystem.B.dylib: _ftello
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _gettimeofday
+__ libSystem.B.dylib: _hypot
+__ libSystem.B.dylib: _localtime
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _log10f
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _memset_pattern16
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _pthread_rwlock_rdlock
+__ libSystem.B.dylib: _pthread_rwlock_unlock
+__ libSystem.B.dylib: _pthread_rwlock_wrlock
+__ libSystem.B.dylib: _sin
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _sprintf
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: _strchr
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strcpy
+__ libSystem.B.dylib: _strftime
+__ libSystem.B.dylib: _strlcpy
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: _strtod
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _strtoll
+__ libSystem.B.dylib: _syslog
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _usleep
+__ libSystem.B.dylib: _vsnprintf
+__ libSystem.B.dylib: _vsyslog
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKcm
+__ libc++.1.dylib: __ZNKSt3__119__shared_weak_count13__get_deleterERKSt9type_info
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__16locale9has_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__16locale9use_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__18ios_base6getlocEv
+__ libc++.1.dylib: __ZNKSt9exception4whatEv
+__ libc++.1.dylib: __ZNSt11logic_errorC1EPKc
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt11logic_errorD1Ev
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorC1EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorD1Ev
+__ libc++.1.dylib: __ZNSt3__111__call_onceERVmPvPFvS2_E
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmmc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_mmRKS4_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE3getEv
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5writeEPKcl
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEf
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEx
+__ libc++.1.dylib: __ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4syncEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6setbufEPcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEEC2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_count14__release_weakEv
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_countD2Ev
+__ libc++.1.dylib: __ZNSt3__15ctypeIcE2idE
+__ libc++.1.dylib: __ZNSt3__15mutex4lockEv
+__ libc++.1.dylib: __ZNSt3__15mutex6unlockEv
+__ libc++.1.dylib: __ZNSt3__15mutexD1Ev
+__ libc++.1.dylib: __ZNSt3__16locale7classicEv
+__ libc++.1.dylib: __ZNSt3__16localeC1ERKS0_
+__ libc++.1.dylib: __ZNSt3__16localeD1Ev
+__ libc++.1.dylib: __ZNSt3__16localeaSERKS0_
+__ libc++.1.dylib: __ZNSt3__17codecvtIcc11__mbstate_tE2idE
+__ libc++.1.dylib: __ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv
+__ libc++.1.dylib: __ZNSt3__18ios_base4initEPv
+__ libc++.1.dylib: __ZNSt3__18ios_base5clearEj
+__ libc++.1.dylib: __ZNSt3__18ios_base5imbueERKNS_6localeE
+__ libc++.1.dylib: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__19to_stringEf
+__ libc++.1.dylib: __ZNSt3__19to_stringEi
+__ libc++.1.dylib: __ZNSt3__19to_stringEj
+__ libc++.1.dylib: __ZNSt3__19to_stringEl
+__ libc++.1.dylib: __ZNSt3__19to_stringEx
+__ libc++.1.dylib: __ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_
+__ libc++.1.dylib: __ZNSt8bad_castC1Ev
+__ libc++.1.dylib: __ZNSt8bad_castD1Ev
+__ libc++.1.dylib: __ZNSt9bad_allocC1Ev
+__ libc++.1.dylib: __ZNSt9bad_allocD1Ev
+__ libc++.1.dylib: __ZNSt9exceptionD2Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTIi
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZTVSt18bad_variant_access
+__ libc++.1.dylib: __ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev
+__ libc++.1.dylib: __ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __ZdlPvSt11align_val_t
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: __ZnwmSt11align_val_t
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_demangle
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_guard_abort
+__ libc++.1.dylib: ___cxa_guard_acquire
+__ libc++.1.dylib: ___cxa_guard_release
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_rethrow
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+SNCreateFeaturePrintRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  long long featurePrintType
+ @property  float overlapFactor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNCreateFeaturePrintRequest init]
+  -[SNCreateFeaturePrintRequest .cxx_destruct]
+  -[SNCreateFeaturePrintRequest analyzer]
+  -[SNCreateFeaturePrintRequest setFeaturePrintType:]
+  -[SNCreateFeaturePrintRequest featurePrintType]
+  -[SNCreateFeaturePrintRequest overlapFactor]
+  -[SNCreateFeaturePrintRequest setOverlapFactor:]
+
+
+SNFeaturePrintExtractor : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  long long featurePrintType
+ @property  float overlapFactor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNFeaturePrintExtractor init]
+  -[SNFeaturePrintExtractor .cxx_destruct]
+  -[SNFeaturePrintExtractor .cxx_construct]
+  -[SNFeaturePrintExtractor graph]
+  -[SNFeaturePrintExtractor embeddingModel]
+  -[SNFeaturePrintExtractor setFeaturePrintType:]
+  -[SNFeaturePrintExtractor featurePrintType]
+  -[SNFeaturePrintExtractor overlapFactor]
+  -[SNFeaturePrintExtractor setOverlapFactor:]
+  -[SNFeaturePrintExtractor updateGraph]
+  -[SNFeaturePrintExtractor logMelSpectrogramModel]
+  -[SNFeaturePrintExtractor logMelSpectrogramModelDescription]
+  -[SNFeaturePrintExtractor adaptToSystemConfiguration:error:]
+  -[SNFeaturePrintExtractor resultsFromBox:renderedWithFrameCount:]
+  -[SNFeaturePrintExtractor sharedProcessorConfiguration]
+  -[SNFeaturePrintExtractor resultsBox]
+  -[SNFeaturePrintExtractor primeGraph]
+
+
+SNSpeechUtteranceResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNConfidenceProvidingWritable, SNTimeRangeProviding, SNConfidenceProviding>
+ @property  BOOL detected
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+ @property  double confidence
+
+  // instance methods
+  -[SNSpeechUtteranceResult confidence]
+  -[SNSpeechUtteranceResult setConfidence:]
+  -[SNSpeechUtteranceResult setTimeRange:]
+  -[SNSpeechUtteranceResult timeRange]
+  -[SNSpeechUtteranceResult detected]
+  -[SNSpeechUtteranceResult setDetected:]
+
+
+SNClassificationResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNResult>
+ @property  NSArray *classifications
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SNClassificationResult new]
+
+  // instance methods
+  -[SNClassificationResult init]
+  -[SNClassificationResult .cxx_destruct]
+  -[SNClassificationResult _init]
+  -[SNClassificationResult setTimeRange:]
+  -[SNClassificationResult timeRange]
+  -[SNClassificationResult classifications]
+  -[SNClassificationResult setClassifications:]
+
+
+SNClassification : NSObject /usr/lib/libc++.1.dylib <SNConfidenceProvidingWritable>
+ @property  NSString *identifier
+ @property  double confidence
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SNClassification new]
+
+  // instance methods
+  -[SNClassification init]
+  -[SNClassification .cxx_destruct]
+  -[SNClassification _init]
+  -[SNClassification identifier]
+  -[SNClassification setIdentifier:]
+  -[SNClassification confidence]
+  -[SNClassification setConfidence:]
+
+
+SNLKFSResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNTimeRangeProviding>
+ @property  float decibelLevel
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+
+  // instance methods
+  -[SNLKFSResult setTimeRange:]
+  -[SNLKFSResult timeRange]
+  -[SNLKFSResult decibelLevel]
+  -[SNLKFSResult setDecibelLevel:]
+
+
+SNSoundClassifier : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  double overlapFactor
+ @property  int primeFrameCount
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // class methods
+  +[SNSoundClassifier new]
+  +[SNSoundClassifier completeTimingInfoInResult:usingBox:modelBlockSize:]
+
+  // instance methods
+  -[SNSoundClassifier init]
+  -[SNSoundClassifier .cxx_destruct]
+  -[SNSoundClassifier .cxx_construct]
+  -[SNSoundClassifier graph]
+  -[SNSoundClassifier initWithMLModel:error:]
+  -[SNSoundClassifier overlapFactor]
+  -[SNSoundClassifier setOverlapFactor:]
+  -[SNSoundClassifier adaptToSystemConfiguration:error:]
+  -[SNSoundClassifier resultsFromBox:renderedWithFrameCount:]
+  -[SNSoundClassifier sharedProcessorConfiguration]
+  -[SNSoundClassifier resultsBox]
+  -[SNSoundClassifier primeGraph]
+  -[SNSoundClassifier primeFrameCount]
+
+
+SNClassifySoundRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  double overlapFactor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNClassifySoundRequest .cxx_destruct]
+  -[SNClassifySoundRequest initWithMLModel:error:]
+  -[SNClassifySoundRequest analyzer]
+  -[SNClassifySoundRequest overlapFactor]
+  -[SNClassifySoundRequest setOverlapFactor:]
+
+
+SNDetectSignalThresholdRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  double sampleRate
+ @property  unsigned int blockSize
+ @property  double magnitudeThreshold
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNDetectSignalThresholdRequest init]
+  -[SNDetectSignalThresholdRequest .cxx_destruct]
+  -[SNDetectSignalThresholdRequest setSampleRate:]
+  -[SNDetectSignalThresholdRequest sampleRate]
+  -[SNDetectSignalThresholdRequest analyzer]
+  -[SNDetectSignalThresholdRequest blockSize]
+  -[SNDetectSignalThresholdRequest setBlockSize:]
+  -[SNDetectSignalThresholdRequest magnitudeThreshold]
+  -[SNDetectSignalThresholdRequest setMagnitudeThreshold:]
+
+
+SNDetectSignalThresholdRequestImpl : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  double sampleRate
+ @property  unsigned int blockSize
+ @property  double magnitudeThreshold
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNDetectSignalThresholdRequestImpl init]
+  -[SNDetectSignalThresholdRequestImpl .cxx_destruct]
+  -[SNDetectSignalThresholdRequestImpl .cxx_construct]
+  -[SNDetectSignalThresholdRequestImpl graph]
+  -[SNDetectSignalThresholdRequestImpl setSampleRate:]
+  -[SNDetectSignalThresholdRequestImpl sampleRate]
+  -[SNDetectSignalThresholdRequestImpl blockSize]
+  -[SNDetectSignalThresholdRequestImpl updateGraph]
+  -[SNDetectSignalThresholdRequestImpl adaptToSystemConfiguration:error:]
+  -[SNDetectSignalThresholdRequestImpl resultsFromBox:renderedWithFrameCount:]
+  -[SNDetectSignalThresholdRequestImpl sharedProcessorConfiguration]
+  -[SNDetectSignalThresholdRequestImpl resultsBox]
+  -[SNDetectSignalThresholdRequestImpl setBlockSize:]
+  -[SNDetectSignalThresholdRequestImpl magnitudeThreshold]
+  -[SNDetectSignalThresholdRequestImpl setMagnitudeThreshold:]
+
+
+SNDetectionResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNConfidenceProvidingWritable, SNTimeRangeProviding, SNConfidenceProviding>
+ @property  NSString *identifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+ @property  double confidence
+
+  // instance methods
+  -[SNDetectionResult .cxx_destruct]
+  -[SNDetectionResult identifier]
+  -[SNDetectionResult initWithIdentifier:]
+  -[SNDetectionResult confidence]
+  -[SNDetectionResult setConfidence:]
+  -[SNDetectionResult setTimeRange:]
+  -[SNDetectionResult timeRange]
+
+
+SNDefaultInfo : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *explanation
+ @property  NSString *key
+ @property  id initialValue
+
+  // instance methods
+  -[SNDefaultInfo key]
+  -[SNDefaultInfo .cxx_destruct]
+  -[SNDefaultInfo setKey:]
+  -[SNDefaultInfo explanation]
+  -[SNDefaultInfo setExplanation:]
+  -[SNDefaultInfo initialValue]
+  -[SNDefaultInfo setInitialValue:]
+
+
+SNUserDefaults : NSObject /usr/lib/libc++.1.dylib
+ @property  NSUserDefaults *userDefaults
+
+  // class methods
+  +[SNUserDefaults userDefaults]
+  +[SNUserDefaults instance]
+  +[SNUserDefaults allDefaultsInfo]
+
+  // instance methods
+  -[SNUserDefaults init]
+  -[SNUserDefaults .cxx_destruct]
+  -[SNUserDefaults userDefaults]
+  -[SNUserDefaults setUserDefaults:]
+
+
+SNAudioOffsetResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNConfidenceProvidingWritable, SNTimeRangeProviding, SNConfidenceProviding>
+ @property  double offset
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+ @property  double confidence
+
+  // instance methods
+  -[SNAudioOffsetResult confidence]
+  -[SNAudioOffsetResult setOffset:]
+  -[SNAudioOffsetResult setConfidence:]
+  -[SNAudioOffsetResult offset]
+  -[SNAudioOffsetResult setTimeRange:]
+  -[SNAudioOffsetResult timeRange]
+
+
+SNAudioUnitRegistration : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNAudioUnitRegistration registerAudioUnits]
+
+
+SNVGGBasedDetector : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // class methods
+  +[SNVGGBasedDetector completeTimingInfoInResult:usingBox:]
+
+  // instance methods
+  -[SNVGGBasedDetector .cxx_destruct]
+  -[SNVGGBasedDetector .cxx_construct]
+  -[SNVGGBasedDetector graph]
+  -[SNVGGBasedDetector initWithConfiguration:]
+  -[SNVGGBasedDetector updateGraph]
+  -[SNVGGBasedDetector adaptToSystemConfiguration:error:]
+  -[SNVGGBasedDetector resultsFromBox:renderedWithFrameCount:]
+  -[SNVGGBasedDetector sharedProcessorConfiguration]
+  -[SNVGGBasedDetector resultsBox]
+  -[SNVGGBasedDetector primeGraph]
+  -[SNVGGBasedDetector detectionResultsFromBox:coreMLInfo:features:]
+  -[SNVGGBasedDetector classificationResultsFromBox:coreMLInfo:features:]
+
+
+SNDSPItemInfo : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[SNDSPItemInfo initWithDictionary:resourcePath:]
+
+
+SNDSPGraphInfo : SNDSPItemInfo
+ @property  NSString *path
+ @property  NSString *text
+ @property  NSArray *includePaths
+ @property  NSDictionary *substitutions
+
+  // instance methods
+  -[SNDSPGraphInfo isEqual:]
+  -[SNDSPGraphInfo .cxx_destruct]
+  -[SNDSPGraphInfo path]
+  -[SNDSPGraphInfo setPath:]
+  -[SNDSPGraphInfo text]
+  -[SNDSPGraphInfo setText:]
+  -[SNDSPGraphInfo substitutions]
+  -[SNDSPGraphInfo setSubstitutions:]
+  -[SNDSPGraphInfo includePaths]
+  -[SNDSPGraphInfo initWithDictionary:resourcePath:]
+  -[SNDSPGraphInfo setIncludePaths:]
+
+
+SNAUStripInfo : SNDSPItemInfo
+ @property  NSString *path
+ @property  NSDictionary *value
+
+  // class methods
+  +[SNAUStripInfo containsOnlyAUStrips:]
+
+  // instance methods
+  -[SNAUStripInfo isEqual:]
+  -[SNAUStripInfo .cxx_destruct]
+  -[SNAUStripInfo value]
+  -[SNAUStripInfo path]
+  -[SNAUStripInfo initWithDictionary:resourcePath:]
+
+
+SNPropertyStripInfo : SNDSPItemInfo
+ @property  NSString *path
+ @property  NSString *resourcePath
+ @property  NSDictionary *value
+
+  // instance methods
+  -[SNPropertyStripInfo isEqual:]
+  -[SNPropertyStripInfo .cxx_destruct]
+  -[SNPropertyStripInfo value]
+  -[SNPropertyStripInfo path]
+  -[SNPropertyStripInfo resourcePath]
+  -[SNPropertyStripInfo initWithDictionary:resourcePath:]
+
+
+SNDSPConfiguration : NSObject /usr/lib/libc++.1.dylib
+ @property  NSArray *dspItems
+
+  // instance methods
+  -[SNDSPConfiguration .cxx_destruct]
+  -[SNDSPConfiguration dspItems]
+  -[SNDSPConfiguration initWithArray:resourcePath:]
+  -[SNDSPConfiguration setDspItems:]
+
+
+SNDSPGraphLoader : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNDSPGraphLoader graphWithGraphInfo:]
+  +[SNDSPGraphLoader applyAUStrip:toGraph:]
+  +[SNDSPGraphLoader applyPropertyStrip:toGraph:]
+  +[SNDSPGraphLoader graphWithConfiguration:]
+
+
+SNSystemConfiguration : NSObject /usr/lib/libc++.1.dylib
+ @property  double sampleRate
+ @property  unsigned int channelCount
+
+  // instance methods
+  -[SNSystemConfiguration isEqual:]
+  -[SNSystemConfiguration copyWithZone:]
+  -[SNSystemConfiguration setSampleRate:]
+  -[SNSystemConfiguration sampleRate]
+  -[SNSystemConfiguration channelCount]
+  -[SNSystemConfiguration setChannelCount:]
+  -[SNSystemConfiguration initWithSampleRate:channelCount:]
+
+
+SNDirectionOfArrivalResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNTimeRangeProviding>
+ @property  float azimuth
+ @property  NSArray *spatialSpectrum
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+
+  // instance methods
+  -[SNDirectionOfArrivalResult .cxx_destruct]
+  -[SNDirectionOfArrivalResult azimuth]
+  -[SNDirectionOfArrivalResult setTimeRange:]
+  -[SNDirectionOfArrivalResult timeRange]
+  -[SNDirectionOfArrivalResult setAzimuth:]
+  -[SNDirectionOfArrivalResult spatialSpectrum]
+  -[SNDirectionOfArrivalResult setSpatialSpectrum:]
+
+
+SNAudioFileAnalyzer : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[SNAudioFileAnalyzer .cxx_destruct]
+  -[SNAudioFileAnalyzer analyze]
+  -[SNAudioFileAnalyzer initWithURL:error:]
+  -[SNAudioFileAnalyzer detailedDescription]
+  -[SNAudioFileAnalyzer analyzeWithCompletionHandler:]
+  -[SNAudioFileAnalyzer removeRequest:]
+  -[SNAudioFileAnalyzer removeAllRequests]
+  -[SNAudioFileAnalyzer addRequest:withObserver:error:]
+  -[SNAudioFileAnalyzer cancelAnalysis]
+
+
+SNAnalyzerHost : NSObject /usr/lib/libc++.1.dylib <SNProcessing>
+ @property  id sharedProcessorConfiguration
+ @property  long long requestState
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+
+  // instance methods
+  -[SNAnalyzerHost .cxx_destruct]
+  -[SNAnalyzerHost graph]
+  -[SNAnalyzerHost requestState]
+  -[SNAnalyzerHost setRequestState:]
+  -[SNAnalyzerHost adaptToSystemConfiguration:error:]
+  -[SNAnalyzerHost sharedProcessorConfiguration]
+  -[SNAnalyzerHost initWithRequest:resultsObserver:timeConverter:resultsGater:]
+  -[SNAnalyzerHost handleAnalyzerCompletion]
+  -[SNAnalyzerHost handleAnalyzerError:]
+  -[SNAnalyzerHost clientResultsFromProcessorResults:]
+  -[SNAnalyzerHost requestDidReturnError:]
+  -[SNAnalyzerHost primeAnalyzerGraph]
+
+
+SNDetectSoundRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  NSString *soundIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNDetectSoundRequest .cxx_destruct]
+  -[SNDetectSoundRequest analyzer]
+  -[SNDetectSoundRequest initWithVGGishBasedMLModel:soundIdentifier:]
+  -[SNDetectSoundRequest initWithSoundIdentifier:]
+  -[SNDetectSoundRequest soundIdentifier]
+
+
+SNSoundDetector : SNVGGBasedDetector <SNAnalyzing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=} graph
+ @property  ^{Box=} resultsBox
+
+  // class methods
+  +[SNSoundDetector modelForSoundIdentifier:]
+
+  // instance methods
+  -[SNSoundDetector initWithVGGishBasedMLModel:soundIdentifier:]
+  -[SNSoundDetector initWithSoundIdentifier:]
+
+
+SNDSPGraphCustomModel : NSObject /usr/lib/libc++.1.dylib
+ @property  @? preProcessCallback
+
+  // instance methods
+  -[SNDSPGraphCustomModel .cxx_destruct]
+  -[SNDSPGraphCustomModel .cxx_construct]
+  -[SNDSPGraphCustomModel predictionFromFeatures:options:error:]
+  -[SNDSPGraphCustomModel preProcessCallback]
+  -[SNDSPGraphCustomModel initWithModelDescription:expectedInputShape:expectedOutputShape:graph:error:]
+  -[SNDSPGraphCustomModel setPreProcessCallback:]
+
+
+_SNVGGishFrontEndProcessingCustomModel : NSObject /usr/lib/libc++.1.dylib <MLCustomModel>
+  // instance methods
+  -[_SNVGGishFrontEndProcessingCustomModel .cxx_destruct]
+  -[_SNVGGishFrontEndProcessingCustomModel predictionFromFeatures:options:error:]
+  -[_SNVGGishFrontEndProcessingCustomModel initWithModelDescription:parameterDictionary:error:]
+
+
+SNMeasureLKFSRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNMeasureLKFSRequest init]
+  -[SNMeasureLKFSRequest .cxx_destruct]
+  -[SNMeasureLKFSRequest analyzer]
+
+
+SNAudioLevelMeasurer : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  float inputSensitivity
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNAudioLevelMeasurer .cxx_destruct]
+  -[SNAudioLevelMeasurer .cxx_construct]
+  -[SNAudioLevelMeasurer graph]
+  -[SNAudioLevelMeasurer updateGraph]
+  -[SNAudioLevelMeasurer adaptToSystemConfiguration:error:]
+  -[SNAudioLevelMeasurer resultsFromBox:renderedWithFrameCount:]
+  -[SNAudioLevelMeasurer sharedProcessorConfiguration]
+  -[SNAudioLevelMeasurer resultsBox]
+  -[SNAudioLevelMeasurer initWithInputSensitivity:]
+  -[SNAudioLevelMeasurer inputSensitivity]
+
+
+SNDSPGraphBox : NSObject /usr/lib/libc++.1.dylib
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char box
+ @property  long long numInputs
+ @property  long long numOutputs
+ @property  NSString *name
+
+  // instance methods
+  -[SNDSPGraphBox init]
+  -[SNDSPGraphBox name]
+  -[SNDSPGraphBox .cxx_destruct]
+  -[SNDSPGraphBox .cxx_construct]
+  -[SNDSPGraphBox numInputs]
+  -[SNDSPGraphBox numOutputs]
+  -[SNDSPGraphBox box]
+  -[SNDSPGraphBox initWithBox:fromGraph:]
+  -[SNDSPGraphBox startRecordingPort:toFile:]
+  -[SNDSPGraphBox stopRecordingPort:]
+  -[SNDSPGraphBox startInjectingPort:toFile:shouldLoop:]
+  -[SNDSPGraphBox stopInjectingPort:]
+  -[SNDSPGraphBox getParameterList:numParameterIDs:inScope:]
+  -[SNDSPGraphBox getParameterInfo:forID:inScope:]
+  -[SNDSPGraphBox getParameter:forID:scope:element:]
+  -[SNDSPGraphBox hasParameter:scope:element:]
+  -[SNDSPGraphBox setParameter:forID:scope:element:bufferOffset:]
+
+
+SNDetectSpeechUtteranceRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  double decisionDelay
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNDetectSpeechUtteranceRequest init]
+  -[SNDetectSpeechUtteranceRequest .cxx_destruct]
+  -[SNDetectSpeechUtteranceRequest analyzer]
+  -[SNDetectSpeechUtteranceRequest initWithRequestType:]
+  -[SNDetectSpeechUtteranceRequest detected]
+  -[SNDetectSpeechUtteranceRequest decisionDelay]
+
+
+SNSpeechUtteranceDetector : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  BOOL hardVAD
+ @property  double decisionDelay
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNSpeechUtteranceDetector init]
+  -[SNSpeechUtteranceDetector .cxx_destruct]
+  -[SNSpeechUtteranceDetector .cxx_construct]
+  -[SNSpeechUtteranceDetector graph]
+  -[SNSpeechUtteranceDetector initWithRequestType:]
+  -[SNSpeechUtteranceDetector decisionDelay]
+  -[SNSpeechUtteranceDetector adaptToSystemConfiguration:error:]
+  -[SNSpeechUtteranceDetector resultsFromBox:renderedWithFrameCount:]
+  -[SNSpeechUtteranceDetector sharedProcessorConfiguration]
+  -[SNSpeechUtteranceDetector resultsBox]
+  -[SNSpeechUtteranceDetector hardVAD]
+  -[SNSpeechUtteranceDetector createGraph]
+  -[SNSpeechUtteranceDetector softVAD]
+
+
+SNEstimateAudioOffsetRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  double minimumObservableOffset
+ @property  double maximumObservableOffset
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNEstimateAudioOffsetRequest init]
+  -[SNEstimateAudioOffsetRequest .cxx_destruct]
+  -[SNEstimateAudioOffsetRequest offset]
+  -[SNEstimateAudioOffsetRequest analyzer]
+  -[SNEstimateAudioOffsetRequest minimumObservableOffset]
+  -[SNEstimateAudioOffsetRequest maximumObservableOffset]
+
+
+SNAudioOffsetEstimator : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  double offset
+ @property  double minimumObservableOffset
+ @property  double maximumObservableOffset
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNAudioOffsetEstimator init]
+  -[SNAudioOffsetEstimator .cxx_destruct]
+  -[SNAudioOffsetEstimator .cxx_construct]
+  -[SNAudioOffsetEstimator graph]
+  -[SNAudioOffsetEstimator offset]
+  -[SNAudioOffsetEstimator adaptToSystemConfiguration:error:]
+  -[SNAudioOffsetEstimator resultsFromBox:renderedWithFrameCount:]
+  -[SNAudioOffsetEstimator sharedProcessorConfiguration]
+  -[SNAudioOffsetEstimator resultsBox]
+  -[SNAudioOffsetEstimator createGraph]
+  -[SNAudioOffsetEstimator minimumObservableOffset]
+  -[SNAudioOffsetEstimator maximumObservableOffset]
+  -[SNAudioOffsetEstimator updateMinMaxDelayWithSampleRate:micDelay:refDelay:eclen:]
+  -[SNAudioOffsetEstimator setMinimumObservableOffset:]
+  -[SNAudioOffsetEstimator setMaximumObservableOffset:]
+
+
+SNVGGFeatureExtractorConfiguration : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[SNVGGFeatureExtractorConfiguration isEqual:]
+  -[SNVGGFeatureExtractorConfiguration copyWithZone:]
+
+
+SNFeaturePrint : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNTimeRangeProviding>
+ @property  long long featurePrintType
+ @property  MLMultiArray *featureVector
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+
+  // instance methods
+  -[SNFeaturePrint .cxx_destruct]
+  -[SNFeaturePrint setTimeRange:]
+  -[SNFeaturePrint timeRange]
+  -[SNFeaturePrint featurePrintType]
+  -[SNFeaturePrint initWithFeaturePrintType:featureVector:]
+  -[SNFeaturePrint featureVector]
+
+
+SNAnalyzerInfo : NSObject /usr/lib/libc++.1.dylib
+ @property  <SNAnalyzerProviding> *request
+ @property  <SNResultsObserving> *resultsObserver
+ @property  SNAnalyzerHost *analyzerHost
+ @property  <SNProcessing> *sharedProcessor
+ @property  BOOL configured
+ @property  NSError *configurationError
+
+  // instance methods
+  -[SNAnalyzerInfo .cxx_destruct]
+  -[SNAnalyzerInfo setRequest:]
+  -[SNAnalyzerInfo request]
+  -[SNAnalyzerInfo configured]
+  -[SNAnalyzerInfo setConfigured:]
+  -[SNAnalyzerInfo resultsObserver]
+  -[SNAnalyzerInfo setResultsObserver:]
+  -[SNAnalyzerInfo analyzerHost]
+  -[SNAnalyzerInfo setAnalyzerHost:]
+  -[SNAnalyzerInfo sharedProcessor]
+  -[SNAnalyzerInfo setSharedProcessor:]
+  -[SNAnalyzerInfo configurationError]
+  -[SNAnalyzerInfo setConfigurationError:]
+
+
+SNAudioStreamAnalyzer : NSObject /usr/lib/libc++.1.dylib <SNTimeConverting, SNResultsGating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  double clientSampleRate
+ @property  BOOL shouldProduceResults
+
+  // class methods
+  +[SNAudioStreamAnalyzer validateFormatIsPCM:]
+
+  // instance methods
+  -[SNAudioStreamAnalyzer .cxx_destruct]
+  -[SNAudioStreamAnalyzer initWithFormat:]
+  -[SNAudioStreamAnalyzer .cxx_construct]
+  -[SNAudioStreamAnalyzer detailedDescription]
+  -[SNAudioStreamAnalyzer removeRequest:]
+  -[SNAudioStreamAnalyzer removeAllRequests]
+  -[SNAudioStreamAnalyzer addRequest:withObserver:error:]
+  -[SNAudioStreamAnalyzer analyzeAudioBuffer:atAudioFramePosition:]
+  -[SNAudioStreamAnalyzer _removeRequest:]
+  -[SNAudioStreamAnalyzer sendErrorToAllRequests:]
+  -[SNAudioStreamAnalyzer completeAnalysis]
+  -[SNAudioStreamAnalyzer clientSampleTimeFromSampleTime:fromBox:]
+  -[SNAudioStreamAnalyzer clientSampleRate]
+  -[SNAudioStreamAnalyzer shouldProduceResults]
+  -[SNAudioStreamAnalyzer updateProcessingTreeFormat:]
+  -[SNAudioStreamAnalyzer _addRequest:withObserver:error:]
+  -[SNAudioStreamAnalyzer createAnalyzerInfoForRequest:resultsObserver:]
+  -[SNAudioStreamAnalyzer configureAnalyzer:withFormat:]
+  -[SNAudioStreamAnalyzer removeAnalyzerInfoForRequest:]
+  -[SNAudioStreamAnalyzer configureAnalysisTreeWithFormat:]
+  -[SNAudioStreamAnalyzer updateTreeProcessingContexts]
+  -[SNAudioStreamAnalyzer _analyzeAudioBuffer:atAudioFramePosition:]
+  -[SNAudioStreamAnalyzer enterErrorState:]
+  -[SNAudioStreamAnalyzer handleAnalyzeAudioBufferError]
+  -[SNAudioStreamAnalyzer analyzerInfoForRequest:]
+  -[SNAudioStreamAnalyzer analyzeAudioBufferList:withAudioFrameCount:atAudioFramePosition:]
+  -[SNAudioStreamAnalyzer writeDSPGraphDotFilesToDirectory:]
+
+
+SNUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNUtils modelSampleRate:orDefaultRate:]
+  +[SNUtils modelBlockSize:]
+  +[SNUtils vggishFeatureEmbeddingInputShape]
+  +[SNUtils numberOfElements:]
+  +[SNUtils vggishFeatureEmbeddingOutputShape]
+  +[SNUtils vggishFrontEndProcessingModelDescription]
+  +[SNUtils splitBuffer:intoBuffersWithFrameCount:]
+  +[SNUtils vggishFrontEndProcessingInputShape]
+  +[SNUtils vggishFrontEndProcessingOutputShape]
+  +[SNUtils silenceUnfilledFramesInBuffer:]
+  +[SNUtils copyAudioBufferList:to:frameCount:bytesPerFrame:]
+  +[SNUtils modelInputBlockSize:]
+  +[SNUtils modelOutputBlockSize:]
+
+
+SNResultsCollector : NSObject /usr/lib/libc++.1.dylib <SNResultsObserving>
+ @property  NSArray *results
+ @property  NSArray *errors
+ @property  long long completeCount
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SNResultsCollector init]
+  -[SNResultsCollector .cxx_destruct]
+  -[SNResultsCollector results]
+  -[SNResultsCollector errors]
+  -[SNResultsCollector clearErrors]
+  -[SNResultsCollector clearResults]
+  -[SNResultsCollector request:didFailWithError:]
+  -[SNResultsCollector request:didProduceResult:]
+  -[SNResultsCollector requestDidComplete:]
+  -[SNResultsCollector completeCount]
+  -[SNResultsCollector clearCompleteCount]
+
+
+SNDSPGraph : NSObject /usr/lib/libc++.1.dylib
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  NSString *name
+ @property  long long numberOfInputs
+ @property  long long numberOfOutputs
+ @property  long long sliceDurationInSamples
+ @property  BOOL configured
+ @property  BOOL initialized
+ @property  NSSet *boxes
+
+  // instance methods
+  -[SNDSPGraph init]
+  -[SNDSPGraph initialize]
+  -[SNDSPGraph name]
+  -[SNDSPGraph initialized]
+  -[SNDSPGraph .cxx_destruct]
+  -[SNDSPGraph setName:]
+  -[SNDSPGraph reset]
+  -[SNDSPGraph .cxx_construct]
+  -[SNDSPGraph graph]
+  -[SNDSPGraph configure]
+  -[SNDSPGraph numberOfInputs]
+  -[SNDSPGraph numberOfOutputs]
+  -[SNDSPGraph configured]
+  -[SNDSPGraph unconfigure]
+  -[SNDSPGraph setAUStrip:]
+  -[SNDSPGraph initWithDSPGraph:]
+  -[SNDSPGraph setVariableSliceDuration:forSampleRate:]
+  -[SNDSPGraph sliceDurationInSamples]
+  -[SNDSPGraph uninitialize]
+  -[SNDSPGraph getParameter:forID:]
+  -[SNDSPGraph hasParameter:]
+  -[SNDSPGraph setParameter:forID:]
+  -[SNDSPGraph getPropertySize:isWritable:forID:]
+  -[SNDSPGraph getProperty:withSize:forID:]
+  -[SNDSPGraph setProperty:withSize:forID:]
+  -[SNDSPGraph boxWithName:]
+  -[SNDSPGraph boxes]
+  -[SNDSPGraph setPropertyStrip:withResourcePath:]
+  -[SNDSPGraph writeDotFileToPath:]
+
+
+DSPGMLInputProvider : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[DSPGMLInputProvider .cxx_destruct]
+  -[DSPGMLInputProvider input]
+  -[DSPGMLInputProvider featureValueForName:]
+  -[DSPGMLInputProvider featureNames]
+  -[DSPGMLInputProvider setInput:]
+  -[DSPGMLInputProvider initWithFeatureDescription:]
+
+
+DSPGCoreMLInfo : NSObject /usr/lib/libc++.1.dylib
+ @property  <DSPGMLModel> *model
+ @property  MLModelDescription *modelDescription
+ @property  DSPGMLInputProvider *inputProvider
+ @property  <MLFeatureProvider> *outputProvider
+ @property  NSArray *outputs
+ @property  NSArray *outputLabels
+
+  // instance methods
+  -[DSPGCoreMLInfo .cxx_destruct]
+  -[DSPGCoreMLInfo model]
+  -[DSPGCoreMLInfo modelDescription]
+  -[DSPGCoreMLInfo setModel:]
+  -[DSPGCoreMLInfo outputs]
+  -[DSPGCoreMLInfo setOutputs:]
+  -[DSPGCoreMLInfo setModelDescription:]
+  -[DSPGCoreMLInfo setOutputProvider:]
+  -[DSPGCoreMLInfo outputProvider]
+  -[DSPGCoreMLInfo inputProvider]
+  -[DSPGCoreMLInfo setInputProvider:]
+  -[DSPGCoreMLInfo outputLabels]
+  -[DSPGCoreMLInfo setOutputLabels:]
+
+
+SNError : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNError populateClientError:withCode:underlyingError:message:]
+  +[SNError errorWithCode:underlyingError:message:]
+
+
+SNVGGFeatureExtractor : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  long long featurePrintType
+ @property  float overlapFactor
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNVGGFeatureExtractor init]
+  -[SNVGGFeatureExtractor .cxx_destruct]
+  -[SNVGGFeatureExtractor .cxx_construct]
+  -[SNVGGFeatureExtractor graph]
+  -[SNVGGFeatureExtractor mlModel]
+  -[SNVGGFeatureExtractor setFeaturePrintType:]
+  -[SNVGGFeatureExtractor featurePrintType]
+  -[SNVGGFeatureExtractor overlapFactor]
+  -[SNVGGFeatureExtractor setOverlapFactor:]
+  -[SNVGGFeatureExtractor updateGraph]
+  -[SNVGGFeatureExtractor adaptToSystemConfiguration:error:]
+  -[SNVGGFeatureExtractor resultsFromBox:renderedWithFrameCount:]
+  -[SNVGGFeatureExtractor sharedProcessorConfiguration]
+  -[SNVGGFeatureExtractor resultsBox]
+
+
+_SNVGGishFeatureEmbeddingCustomModel : NSObject /usr/lib/libc++.1.dylib <MLCustomModel>
+  // instance methods
+  -[_SNVGGishFeatureEmbeddingCustomModel .cxx_destruct]
+  -[_SNVGGishFeatureEmbeddingCustomModel predictionFromFeatures:options:error:]
+  -[_SNVGGishFeatureEmbeddingCustomModel initWithModelDescription:parameterDictionary:error:]
+
+
+SNDSPGraphUtilities : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNDSPGraphUtilities stopRecordingBoxesInGraph:]
+  +[SNDSPGraphUtilities startRecordingBoxes:inGraph:toDirectory:error:]
+  +[SNDSPGraphUtilities startInjectingBoxes:inGraph:error:]
+  +[SNDSPGraphUtilities stopInjectingBoxesInGraph:]
+
+
+SNNullRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  double sampleRate
+ @property  unsigned int blockSize
+ @property  double computationalDutyCycle
+ @property  BOOL graphIsDeadEnded
+ @property  BOOL shouldThrowException
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNNullRequest init]
+  -[SNNullRequest .cxx_destruct]
+  -[SNNullRequest setSampleRate:]
+  -[SNNullRequest sampleRate]
+  -[SNNullRequest analyzer]
+  -[SNNullRequest blockSize]
+  -[SNNullRequest setBlockSize:]
+  -[SNNullRequest computationalDutyCycle]
+  -[SNNullRequest setComputationalDutyCycle:]
+  -[SNNullRequest graphIsDeadEnded]
+  -[SNNullRequest setGraphIsDeadEnded:]
+  -[SNNullRequest shouldThrowException]
+  -[SNNullRequest setShouldThrowException:]
+
+
+SNNullDetector : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  double sampleRate
+ @property  unsigned int blockSize
+ @property  double computationalDutyCycle
+ @property  BOOL graphIsDeadEnded
+ @property  BOOL shouldThrowException
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNNullDetector init]
+  -[SNNullDetector .cxx_destruct]
+  -[SNNullDetector .cxx_construct]
+  -[SNNullDetector graph]
+  -[SNNullDetector setSampleRate:]
+  -[SNNullDetector sampleRate]
+  -[SNNullDetector blockSize]
+  -[SNNullDetector updateGraph]
+  -[SNNullDetector adaptToSystemConfiguration:error:]
+  -[SNNullDetector resultsFromBox:renderedWithFrameCount:]
+  -[SNNullDetector sharedProcessorConfiguration]
+  -[SNNullDetector resultsBox]
+  -[SNNullDetector setBlockSize:]
+  -[SNNullDetector computationalDutyCycle]
+  -[SNNullDetector setComputationalDutyCycle:]
+  -[SNNullDetector graphIsDeadEnded]
+  -[SNNullDetector setGraphIsDeadEnded:]
+  -[SNNullDetector shouldThrowException]
+  -[SNNullDetector setShouldThrowException:]
+
+
+SNDSPGraphInterpreter : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[SNDSPGraphInterpreter compileText:withSubstitutions:includingPaths:]
+  +[SNDSPGraphInterpreter compileFile:withSubstitutions:includingPaths:]
+  +[SNDSPGraphInterpreter stringMapFromStringDictionary:]
+  +[SNDSPGraphInterpreter stringVectorFromStringArray:]
+
+  // instance methods
+  -[SNDSPGraphInterpreter init]
+  -[SNDSPGraphInterpreter .cxx_destruct]
+  -[SNDSPGraphInterpreter .cxx_construct]
+  -[SNDSPGraphInterpreter compileText:withSubstitutions:includingPaths:]
+  -[SNDSPGraphInterpreter compileFile:withSubstitutions:includingPaths:]
+
+
+SNSignalThresholdResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNTimeRangeProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+
+  // instance methods
+  -[SNSignalThresholdResult setTimeRange:]
+  -[SNSignalThresholdResult timeRange]
+
+
+SNVGGBasedDetectorConfiguration : NSObject /usr/lib/libc++.1.dylib
+ @property  SNVGGFeatureExtractorConfiguration *featureExtractorConfiguration
+ @property  MLModel *model
+ @property  Class observationClass
+ @property  NSArray *outputLabels
+
+  // instance methods
+  -[SNVGGBasedDetectorConfiguration .cxx_destruct]
+  -[SNVGGBasedDetectorConfiguration model]
+  -[SNVGGBasedDetectorConfiguration outputLabels]
+  -[SNVGGBasedDetectorConfiguration featureExtractorConfiguration]
+  -[SNVGGBasedDetectorConfiguration initWithMLModel:observationClass:outputLabels:]
+  -[SNVGGBasedDetectorConfiguration observationClass]
+
+
+SNAudioProcessorCache : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[SNAudioProcessorCache init]
+  -[SNAudioProcessorCache .cxx_destruct]
+  -[SNAudioProcessorCache sharedProcessorWithConfiguration:]
+  -[SNAudioProcessorCache audioProcessorWithConfiguration:]
+  -[SNAudioProcessorCache createAudioProcessorWithConfiguration:]
+
+
+SNNullResult : NSObject /usr/lib/libc++.1.dylib <SNTimeRangeProvidingWritable, SNTimeRangeProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?={?=qiIq}{?=qiIq}} timeRange
+
+  // instance methods
+  -[SNNullResult setTimeRange:]
+  -[SNNullResult timeRange]
+
+
+SNEstimateDirectionOfArrivalRequest : NSObject /usr/lib/libc++.1.dylib <SNAnalyzerProviding, SNRequest>
+ @property  float azimuth
+ @property  NSArray *spatialSpectrum
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <SNAnalyzing> *analyzer
+
+  // instance methods
+  -[SNEstimateDirectionOfArrivalRequest init]
+  -[SNEstimateDirectionOfArrivalRequest .cxx_destruct]
+  -[SNEstimateDirectionOfArrivalRequest azimuth]
+  -[SNEstimateDirectionOfArrivalRequest analyzer]
+  -[SNEstimateDirectionOfArrivalRequest spatialSpectrum]
+
+
+SNDirectionOfArrivalEstimator : NSObject /usr/lib/libc++.1.dylib <SNAnalyzing>
+ @property  float azimuth
+ @property  NSArray *spatialSpectrum
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {shared_ptr<DSPGraph::Graph>=^{Graph}^{__shared_weak_count}} graph
+ @property  ^{Box=^^?^{Graph}^{IsoGroup}^{Subset}{basic_string<char resultsBox
+
+  // instance methods
+  -[SNDirectionOfArrivalEstimator .cxx_destruct]
+  -[SNDirectionOfArrivalEstimator .cxx_construct]
+  -[SNDirectionOfArrivalEstimator graph]
+  -[SNDirectionOfArrivalEstimator azimuth]
+  -[SNDirectionOfArrivalEstimator spatialSpectrum]
+  -[SNDirectionOfArrivalEstimator updateGraph]
+  -[SNDirectionOfArrivalEstimator adaptToSystemConfiguration:error:]
+  -[SNDirectionOfArrivalEstimator resultsFromBox:renderedWithFrameCount:]
+  -[SNDirectionOfArrivalEstimator sharedProcessorConfiguration]
+  -[SNDirectionOfArrivalEstimator resultsBox]
+
+
+SNVGGEmbeddingExtractor8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGEmbeddingExtractor8Input .cxx_destruct]
+  -[SNVGGEmbeddingExtractor8Input featureValueForName:]
+  -[SNVGGEmbeddingExtractor8Input featureNames]
+  -[SNVGGEmbeddingExtractor8Input initWithInput1:]
+  -[SNVGGEmbeddingExtractor8Input input1]
+  -[SNVGGEmbeddingExtractor8Input setInput1:]
+
+
+SNVGGEmbeddingExtractor8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGEmbeddingExtractor8Output .cxx_destruct]
+  -[SNVGGEmbeddingExtractor8Output featureValueForName:]
+  -[SNVGGEmbeddingExtractor8Output featureNames]
+  -[SNVGGEmbeddingExtractor8Output output1]
+  -[SNVGGEmbeddingExtractor8Output setOutput1:]
+  -[SNVGGEmbeddingExtractor8Output initWithOutput1:]
+
+
+SNVGGEmbeddingExtractor8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGEmbeddingExtractor8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGEmbeddingExtractor8 init]
+  -[SNVGGEmbeddingExtractor8 .cxx_destruct]
+  -[SNVGGEmbeddingExtractor8 initWithContentsOfURL:error:]
+  -[SNVGGEmbeddingExtractor8 model]
+  -[SNVGGEmbeddingExtractor8 predictionFromFeatures:error:]
+  -[SNVGGEmbeddingExtractor8 predictionFromFeatures:options:error:]
+  -[SNVGGEmbeddingExtractor8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGEmbeddingExtractor8 initWithConfiguration:error:]
+  -[SNVGGEmbeddingExtractor8 predictionsFromInputs:options:error:]
+  -[SNVGGEmbeddingExtractor8 predictionFromInput1:error:]
+
+
+SNVGGSpeechModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGSpeechModel8Input .cxx_destruct]
+  -[SNVGGSpeechModel8Input featureValueForName:]
+  -[SNVGGSpeechModel8Input featureNames]
+  -[SNVGGSpeechModel8Input initWithInput1:]
+  -[SNVGGSpeechModel8Input input1]
+  -[SNVGGSpeechModel8Input setInput1:]
+
+
+SNVGGSpeechModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGSpeechModel8Output .cxx_destruct]
+  -[SNVGGSpeechModel8Output featureValueForName:]
+  -[SNVGGSpeechModel8Output featureNames]
+  -[SNVGGSpeechModel8Output output1]
+  -[SNVGGSpeechModel8Output setOutput1:]
+  -[SNVGGSpeechModel8Output initWithOutput1:]
+
+
+SNVGGSpeechModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGSpeechModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGSpeechModel8 init]
+  -[SNVGGSpeechModel8 .cxx_destruct]
+  -[SNVGGSpeechModel8 initWithContentsOfURL:error:]
+  -[SNVGGSpeechModel8 model]
+  -[SNVGGSpeechModel8 predictionFromFeatures:error:]
+  -[SNVGGSpeechModel8 predictionFromFeatures:options:error:]
+  -[SNVGGSpeechModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGSpeechModel8 initWithConfiguration:error:]
+  -[SNVGGSpeechModel8 predictionsFromInputs:options:error:]
+  -[SNVGGSpeechModel8 predictionFromInput1:error:]
+
+
+SNVGGBabbleModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGBabbleModel8Input .cxx_destruct]
+  -[SNVGGBabbleModel8Input featureValueForName:]
+  -[SNVGGBabbleModel8Input featureNames]
+  -[SNVGGBabbleModel8Input initWithInput1:]
+  -[SNVGGBabbleModel8Input input1]
+  -[SNVGGBabbleModel8Input setInput1:]
+
+
+SNVGGBabbleModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGBabbleModel8Output .cxx_destruct]
+  -[SNVGGBabbleModel8Output featureValueForName:]
+  -[SNVGGBabbleModel8Output featureNames]
+  -[SNVGGBabbleModel8Output output1]
+  -[SNVGGBabbleModel8Output setOutput1:]
+  -[SNVGGBabbleModel8Output initWithOutput1:]
+
+
+SNVGGBabbleModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGBabbleModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGBabbleModel8 init]
+  -[SNVGGBabbleModel8 .cxx_destruct]
+  -[SNVGGBabbleModel8 initWithContentsOfURL:error:]
+  -[SNVGGBabbleModel8 model]
+  -[SNVGGBabbleModel8 predictionFromFeatures:error:]
+  -[SNVGGBabbleModel8 predictionFromFeatures:options:error:]
+  -[SNVGGBabbleModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGBabbleModel8 initWithConfiguration:error:]
+  -[SNVGGBabbleModel8 predictionsFromInputs:options:error:]
+  -[SNVGGBabbleModel8 predictionFromInput1:error:]
+
+
+SNVGGCheeringModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGCheeringModel8Input .cxx_destruct]
+  -[SNVGGCheeringModel8Input featureValueForName:]
+  -[SNVGGCheeringModel8Input featureNames]
+  -[SNVGGCheeringModel8Input initWithInput1:]
+  -[SNVGGCheeringModel8Input input1]
+  -[SNVGGCheeringModel8Input setInput1:]
+
+
+SNVGGCheeringModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGCheeringModel8Output .cxx_destruct]
+  -[SNVGGCheeringModel8Output featureValueForName:]
+  -[SNVGGCheeringModel8Output featureNames]
+  -[SNVGGCheeringModel8Output output1]
+  -[SNVGGCheeringModel8Output setOutput1:]
+  -[SNVGGCheeringModel8Output initWithOutput1:]
+
+
+SNVGGCheeringModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGCheeringModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGCheeringModel8 init]
+  -[SNVGGCheeringModel8 .cxx_destruct]
+  -[SNVGGCheeringModel8 initWithContentsOfURL:error:]
+  -[SNVGGCheeringModel8 model]
+  -[SNVGGCheeringModel8 predictionFromFeatures:error:]
+  -[SNVGGCheeringModel8 predictionFromFeatures:options:error:]
+  -[SNVGGCheeringModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGCheeringModel8 initWithConfiguration:error:]
+  -[SNVGGCheeringModel8 predictionsFromInputs:options:error:]
+  -[SNVGGCheeringModel8 predictionFromInput1:error:]
+
+
+SNVGGLaughterModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGLaughterModel8Input .cxx_destruct]
+  -[SNVGGLaughterModel8Input featureValueForName:]
+  -[SNVGGLaughterModel8Input featureNames]
+  -[SNVGGLaughterModel8Input initWithInput1:]
+  -[SNVGGLaughterModel8Input input1]
+  -[SNVGGLaughterModel8Input setInput1:]
+
+
+SNVGGLaughterModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGLaughterModel8Output .cxx_destruct]
+  -[SNVGGLaughterModel8Output featureValueForName:]
+  -[SNVGGLaughterModel8Output featureNames]
+  -[SNVGGLaughterModel8Output output1]
+  -[SNVGGLaughterModel8Output setOutput1:]
+  -[SNVGGLaughterModel8Output initWithOutput1:]
+
+
+SNVGGLaughterModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGLaughterModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGLaughterModel8 init]
+  -[SNVGGLaughterModel8 .cxx_destruct]
+  -[SNVGGLaughterModel8 initWithContentsOfURL:error:]
+  -[SNVGGLaughterModel8 model]
+  -[SNVGGLaughterModel8 predictionFromFeatures:error:]
+  -[SNVGGLaughterModel8 predictionFromFeatures:options:error:]
+  -[SNVGGLaughterModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGLaughterModel8 initWithConfiguration:error:]
+  -[SNVGGLaughterModel8 predictionsFromInputs:options:error:]
+  -[SNVGGLaughterModel8 predictionFromInput1:error:]
+
+
+SNVGGApplauseModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGApplauseModel8Input .cxx_destruct]
+  -[SNVGGApplauseModel8Input featureValueForName:]
+  -[SNVGGApplauseModel8Input featureNames]
+  -[SNVGGApplauseModel8Input initWithInput1:]
+  -[SNVGGApplauseModel8Input input1]
+  -[SNVGGApplauseModel8Input setInput1:]
+
+
+SNVGGApplauseModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGApplauseModel8Output .cxx_destruct]
+  -[SNVGGApplauseModel8Output featureValueForName:]
+  -[SNVGGApplauseModel8Output featureNames]
+  -[SNVGGApplauseModel8Output output1]
+  -[SNVGGApplauseModel8Output setOutput1:]
+  -[SNVGGApplauseModel8Output initWithOutput1:]
+
+
+SNVGGApplauseModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGApplauseModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGApplauseModel8 init]
+  -[SNVGGApplauseModel8 .cxx_destruct]
+  -[SNVGGApplauseModel8 initWithContentsOfURL:error:]
+  -[SNVGGApplauseModel8 model]
+  -[SNVGGApplauseModel8 predictionFromFeatures:error:]
+  -[SNVGGApplauseModel8 predictionFromFeatures:options:error:]
+  -[SNVGGApplauseModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGApplauseModel8 initWithConfiguration:error:]
+  -[SNVGGApplauseModel8 predictionsFromInputs:options:error:]
+  -[SNVGGApplauseModel8 predictionFromInput1:error:]
+
+
+SNVGGMusicModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGMusicModel8Input .cxx_destruct]
+  -[SNVGGMusicModel8Input featureValueForName:]
+  -[SNVGGMusicModel8Input featureNames]
+  -[SNVGGMusicModel8Input initWithInput1:]
+  -[SNVGGMusicModel8Input input1]
+  -[SNVGGMusicModel8Input setInput1:]
+
+
+SNVGGMusicModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGMusicModel8Output .cxx_destruct]
+  -[SNVGGMusicModel8Output featureValueForName:]
+  -[SNVGGMusicModel8Output featureNames]
+  -[SNVGGMusicModel8Output output1]
+  -[SNVGGMusicModel8Output setOutput1:]
+  -[SNVGGMusicModel8Output initWithOutput1:]
+
+
+SNVGGMusicModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGMusicModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGMusicModel8 init]
+  -[SNVGGMusicModel8 .cxx_destruct]
+  -[SNVGGMusicModel8 initWithContentsOfURL:error:]
+  -[SNVGGMusicModel8 model]
+  -[SNVGGMusicModel8 predictionFromFeatures:error:]
+  -[SNVGGMusicModel8 predictionFromFeatures:options:error:]
+  -[SNVGGMusicModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGMusicModel8 initWithConfiguration:error:]
+  -[SNVGGMusicModel8 predictionsFromInputs:options:error:]
+  -[SNVGGMusicModel8 predictionFromInput1:error:]
+
+
+SNVGGDistressedBabyModel8Input : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *input1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGDistressedBabyModel8Input .cxx_destruct]
+  -[SNVGGDistressedBabyModel8Input featureValueForName:]
+  -[SNVGGDistressedBabyModel8Input featureNames]
+  -[SNVGGDistressedBabyModel8Input initWithInput1:]
+  -[SNVGGDistressedBabyModel8Input input1]
+  -[SNVGGDistressedBabyModel8Input setInput1:]
+
+
+SNVGGDistressedBabyModel8Output : NSObject /usr/lib/libc++.1.dylib <MLFeatureProvider>
+ @property  MLMultiArray *output1
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[SNVGGDistressedBabyModel8Output .cxx_destruct]
+  -[SNVGGDistressedBabyModel8Output featureValueForName:]
+  -[SNVGGDistressedBabyModel8Output featureNames]
+  -[SNVGGDistressedBabyModel8Output output1]
+  -[SNVGGDistressedBabyModel8Output setOutput1:]
+  -[SNVGGDistressedBabyModel8Output initWithOutput1:]
+
+
+SNVGGDistressedBabyModel8 : NSObject /usr/lib/libc++.1.dylib
+ @property  MLModel *model
+
+  // class methods
+  +[SNVGGDistressedBabyModel8 urlOfModelInThisBundle]
+
+  // instance methods
+  -[SNVGGDistressedBabyModel8 init]
+  -[SNVGGDistressedBabyModel8 .cxx_destruct]
+  -[SNVGGDistressedBabyModel8 initWithContentsOfURL:error:]
+  -[SNVGGDistressedBabyModel8 model]
+  -[SNVGGDistressedBabyModel8 predictionFromFeatures:error:]
+  -[SNVGGDistressedBabyModel8 predictionFromFeatures:options:error:]
+  -[SNVGGDistressedBabyModel8 initWithContentsOfURL:configuration:error:]
+  -[SNVGGDistressedBabyModel8 initWithConfiguration:error:]
+  -[SNVGGDistressedBabyModel8 predictionsFromInputs:options:error:]
+  -[SNVGGDistressedBabyModel8 predictionFromInput1:error:]
+
+
+01 00 0300 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioFile 
+01 00 0300 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioPCMBuffer 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLArrayBatchProvider 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLDictionaryFeatureProvider 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLFeatureDescription 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLFeatureValue 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLModel 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLModelDescription 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLMultiArray 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLMultiArrayConstraint 
+01 00 0200 /System/Library/Frameworks/CoreML.framework/CoreML: MLPredictionOptions 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

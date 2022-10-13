@@ -1,0 +1,155 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_GPURawCounterSelect
+|| __DATA.__objc_data _OBJC_CLASS_$__GPURawCounter
+|| __DATA.__objc_data _OBJC_CLASS_$__GPURawCounterSource
+|| __DATA.__objc_data _OBJC_CLASS_$__GPURawCounterSourceGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_GPURawCounterSelect
+|| __DATA.__objc_data _OBJC_METACLASS_$__GPURawCounter
+|| __DATA.__objc_data _OBJC_METACLASS_$__GPURawCounterSource
+|| __DATA.__objc_data _OBJC_METACLASS_$__GPURawCounterSourceGroup
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounter._counterValueType
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounter._description
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounter._name
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSource._name
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSource._sourceGroup
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._acceleratorPort
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._deviceRef
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._name
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._samplingPeriodInMicroseconds
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._samplingTriggers
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._sourceList
+|| __DATA.__objc_ivar _OBJC_IVAR_$__GPURawCounterSourceGroup._vendorOptions
+|| __TEXT.__const _GPURawCounterVersionNumber
+|| __TEXT.__const _GPURawCounterVersionString
+|| __TEXT.__text _CTRCopyAllCounterSourceGroup
+|| __TEXT.__text _CTRReleaseAllCounterSourceGroup
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOAccelerator: _IOAccelDeviceCreate
+__ IOAccelerator: _IOAccelDeviceGetName
+__ IOAccelerator: _IOAccelDeviceRelease
+__ IOKit: _IOIteratorNext
+__ IOKit: _IOMasterPort
+__ IOKit: _IOObjectRelease
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IOServiceGetMatchingServices
+__ IOKit: _IOServiceMatching
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _bootstrap_port
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+_GPURawCounter : NSObject <GPURawCounter>
+ @property  NSString *name
+ @property  NSString *description
+ @property  unsigned long counterValueType
+
+  // instance methods
+  -[_GPURawCounter dealloc]
+  -[_GPURawCounter name]
+  -[_GPURawCounter counterValueType]
+  -[_GPURawCounter initWithName:description:valueType:]
+
+
+GPURawCounterSelect : NSObject
+ @property  NSString *name
+ @property  unsigned int width
+
+  // class methods
+  +[GPURawCounterSelect selectWithName:width:]
+  +[GPURawCounterSelect selectWithName:]
+
+  // instance methods
+  -[GPURawCounterSelect dealloc]
+  -[GPURawCounterSelect name]
+  -[GPURawCounterSelect initWithName:]
+  -[GPURawCounterSelect width]
+  -[GPURawCounterSelect setWidth:]
+  -[GPURawCounterSelect initWithName:width:]
+
+
+_GPURawCounterSource : NSObject <GPURawCounterSource>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *name
+
+  // instance methods
+  -[_GPURawCounterSource dealloc]
+  -[_GPURawCounterSource name]
+  -[_GPURawCounterSource setEnabled:]
+  -[_GPURawCounterSource availableCounters]
+  -[_GPURawCounterSource setPeriod:]
+  -[_GPURawCounterSource requestCounters:firstErrorIndex:]
+  -[_GPURawCounterSource ringBufferNum]
+  -[_GPURawCounterSource ringBufferInfoAtIndex:base:size:dataOffset:dataSize:]
+  -[_GPURawCounterSource drainRingBufferAtIndex:dataSize:]
+  -[_GPURawCounterSource resetRawDataPostProcessor]
+  -[_GPURawCounterSource postProcessRawDataWithSource:sourceSize:sourceRead:output:outputSize:outputWritten:isLast:]
+  -[_GPURawCounterSource pollCountersAtBufferIndex:withBlock:]
+  -[_GPURawCounterSource initWithSourceGroup:name:]
+  -[_GPURawCounterSource availableCounterTriggers]
+
+
+_GPURawCounterSourceGroup : NSObject <GPURawCounterSourceGroup>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *name
+ @property  NSArray *sourceList
+ @property  unsigned long samplingPeriodInMicroseconds
+ @property  unsigned long samplingTriggers
+ @property  NSDictionary *vendorOptions
+ @property  unsigned long sampleMarker
+ @property  unsigned long availableCounterTriggers
+
+  // instance methods
+  -[_GPURawCounterSourceGroup dealloc]
+  -[_GPURawCounterSourceGroup name]
+  -[_GPURawCounterSourceGroup initWithAcceleratorPort:]
+  -[_GPURawCounterSourceGroup stopSampling]
+  -[_GPURawCounterSourceGroup availableCounterTriggers]
+  -[_GPURawCounterSourceGroup startSampling]
+  -[_GPURawCounterSourceGroup sourceList]
+  -[_GPURawCounterSourceGroup samplingPeriodInMicroseconds]
+  -[_GPURawCounterSourceGroup setSamplingPeriodInMicroseconds:]
+  -[_GPURawCounterSourceGroup samplingTriggers]
+  -[_GPURawCounterSourceGroup setSamplingTriggers:]
+  -[_GPURawCounterSourceGroup vendorOptions]
+  -[_GPURawCounterSourceGroup setVendorOptions:]
+  -[_GPURawCounterSourceGroup sampleMarker]
+
+
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

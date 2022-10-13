@@ -1,0 +1,921 @@
+|| __DATA.__common _piston_log_level
+|| __DATA.__data _DIFF1970TO1601
+|| __DATA.__data _smb2_dialectb
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBDirEntry
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBDirEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBFileAllInformation
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBNode
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBPiston
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBPistonEvents
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBShare
+|| __DATA.__objc_data _OBJC_CLASS_$_SMBSocket
+|| __DATA.__objc_data _OBJC_CLASS_$_SMB_rq
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBDirEntry
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBDirEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBFileAllInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBPiston
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBPistonEvents
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBShare
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMBSocket
+|| __DATA.__objc_data _OBJC_METACLASS_$_SMB_rq
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBShare.statfs_lock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.endpoint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.event_handler_callback
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.event_semaphore
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.io_rqlist
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.io_rqlock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.ipv4v6DotName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.is_NetBIOS
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.nw_conn_queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.nw_conn_state
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.pd
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.remote_endpoint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.send_queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.server_addr
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.skt_lock
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.state
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.timer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.timer_queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.timer_running
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SMBSocket.timer_semaphore
+|| __DATA_CONST.__const _asn1_ContextFlags
+|| __DATA_CONST.__const _asn1_ContextFlags_tag__2
+|| __DATA_CONST.__const _asn1_MechType
+|| __DATA_CONST.__const _asn1_MechTypeList
+|| __DATA_CONST.__const _asn1_MechTypeList_tag__1
+|| __DATA_CONST.__const _asn1_MechType_seofTstruct_0
+|| __DATA_CONST.__const _asn1_NegHints
+|| __DATA_CONST.__const _asn1_NegHints_tag__3
+|| __DATA_CONST.__const _asn1_NegHints_tag_hintAddress_6
+|| __DATA_CONST.__const _asn1_NegHints_tag_hintName_4
+|| __DATA_CONST.__const _asn1_NegResultEnum
+|| __DATA_CONST.__const _asn1_NegTokenInit
+|| __DATA_CONST.__const _asn1_NegTokenInitWin
+|| __DATA_CONST.__const _asn1_NegTokenInitWin_tag__31
+|| __DATA_CONST.__const _asn1_NegTokenInitWin_tag__8
+|| __DATA_CONST.__const _asn1_NegTokenInitWin_tag_mechTypes_9
+|| __DATA_CONST.__const _asn1_NegTokenInitWin_tag_negHints_13
+|| __DATA_CONST.__const _asn1_NegTokenInitWin_tag_reqFlags_10
+|| __DATA_CONST.__const _asn1_NegTokenInit_tag__14
+|| __DATA_CONST.__const _asn1_NegTokenInit_tag__29
+|| __DATA_CONST.__const _asn1_NegTokenResp
+|| __DATA_CONST.__const _asn1_NegTokenResp_tag__22
+|| __DATA_CONST.__const _asn1_NegTokenResp_tag__30
+|| __DATA_CONST.__const _asn1_NegTokenResp_tag_negResult_23
+|| __DATA_CONST.__const _asn1_NegotiationToken
+|| __DATA_CONST.__const _asn1_NegotiationTokenWin
+|| __DATA_CONST.__const _asn1_NegotiationTokenWin_choice_negTokenInit
+|| __DATA_CONST.__const _asn1_NegotiationToken_choice_negTokenInit
+|| __DATA_CONST.__const _asn1_NegotiationToken_choice_negTokenResp
+|| __TEXT.__const _SMBClientEngineVersionNumber
+|| __TEXT.__const _SMBClientEngineVersionString
+|| __TEXT.__const _asn1_MechType_tag__0
+|| __TEXT.__const _asn1_NegResultEnum_tag__21
+|| __TEXT.__const _asn1_heim_general_string_tag_hintName_5
+|| __TEXT.__const _asn1_heim_octet_string_tag_hintAddress_7
+|| __TEXT.__text _ContextFlags2int
+|| __TEXT.__text _copy_ContextFlags
+|| __TEXT.__text _copy_MechType
+|| __TEXT.__text _copy_MechTypeList
+|| __TEXT.__text _copy_NegHints
+|| __TEXT.__text _copy_NegResultEnum
+|| __TEXT.__text _copy_NegTokenInit
+|| __TEXT.__text _copy_NegTokenInitWin
+|| __TEXT.__text _copy_NegTokenResp
+|| __TEXT.__text _copy_NegotiationToken
+|| __TEXT.__text _copy_NegotiationTokenWin
+|| __TEXT.__text _decode_ContextFlags
+|| __TEXT.__text _decode_MechType
+|| __TEXT.__text _decode_MechTypeList
+|| __TEXT.__text _decode_NegHints
+|| __TEXT.__text _decode_NegResultEnum
+|| __TEXT.__text _decode_NegTokenInit
+|| __TEXT.__text _decode_NegTokenInitWin
+|| __TEXT.__text _decode_NegTokenResp
+|| __TEXT.__text _decode_NegotiationToken
+|| __TEXT.__text _decode_NegotiationTokenWin
+|| __TEXT.__text _encode_ContextFlags
+|| __TEXT.__text _encode_MechType
+|| __TEXT.__text _encode_MechTypeList
+|| __TEXT.__text _encode_NegHints
+|| __TEXT.__text _encode_NegResultEnum
+|| __TEXT.__text _encode_NegTokenInit
+|| __TEXT.__text _encode_NegTokenInitWin
+|| __TEXT.__text _encode_NegTokenResp
+|| __TEXT.__text _encode_NegotiationToken
+|| __TEXT.__text _encode_NegotiationTokenWin
+|| __TEXT.__text _free_ContextFlags
+|| __TEXT.__text _free_MechType
+|| __TEXT.__text _free_MechTypeList
+|| __TEXT.__text _free_NegHints
+|| __TEXT.__text _free_NegResultEnum
+|| __TEXT.__text _free_NegTokenInit
+|| __TEXT.__text _free_NegTokenInitWin
+|| __TEXT.__text _free_NegTokenResp
+|| __TEXT.__text _free_NegotiationToken
+|| __TEXT.__text _free_NegotiationTokenWin
+|| __TEXT.__text _int2ContextFlags
+|| __TEXT.__text _length_ContextFlags
+|| __TEXT.__text _length_MechType
+|| __TEXT.__text _length_MechTypeList
+|| __TEXT.__text _length_NegHints
+|| __TEXT.__text _length_NegResultEnum
+|| __TEXT.__text _length_NegTokenInit
+|| __TEXT.__text _length_NegTokenInitWin
+|| __TEXT.__text _length_NegTokenResp
+|| __TEXT.__text _length_NegotiationToken
+|| __TEXT.__text _length_NegotiationTokenWin
+|| __TEXT.__text _m_fixhdr
+|| __TEXT.__text _mb_consume
+|| __TEXT.__text _mb_detach
+|| __TEXT.__text _mb_done
+|| __TEXT.__text _mb_fixhdr
+|| __TEXT.__text _mb_getbuffer
+|| __TEXT.__text _mb_init
+|| __TEXT.__text _mb_initm
+|| __TEXT.__text _mb_pullup
+|| __TEXT.__text _mb_put_mbuf
+|| __TEXT.__text _mb_put_mem
+|| __TEXT.__text _mb_put_padbyte
+|| __TEXT.__text _mb_put_uint16be
+|| __TEXT.__text _mb_put_uint16le
+|| __TEXT.__text _mb_put_uint32be
+|| __TEXT.__text _mb_put_uint32le
+|| __TEXT.__text _mb_put_uint64be
+|| __TEXT.__text _mb_put_uint64le
+|| __TEXT.__text _mb_put_uint8
+|| __TEXT.__text _mb_reserve
+|| __TEXT.__text _mbuf_attachcluster
+|| __TEXT.__text _mbuf_concatenate
+|| __TEXT.__text _mbuf_copydata
+|| __TEXT.__text _mbuf_data
+|| __TEXT.__text _mbuf_free
+|| __TEXT.__text _mbuf_freem
+|| __TEXT.__text _mbuf_get
+|| __TEXT.__text _mbuf_get_chain_len
+|| __TEXT.__text _mbuf_getcluster
+|| __TEXT.__text _mbuf_gethdr
+|| __TEXT.__text _mbuf_is_write
+|| __TEXT.__text _mbuf_len
+|| __TEXT.__text _mbuf_maxlen
+|| __TEXT.__text _mbuf_next
+|| __TEXT.__text _mbuf_pkthdr_adjustlen
+|| __TEXT.__text _mbuf_pkthdr_len
+|| __TEXT.__text _mbuf_pkthdr_setlen
+|| __TEXT.__text _mbuf_set_write
+|| __TEXT.__text _mbuf_setlen
+|| __TEXT.__text _mbuf_setnext
+|| __TEXT.__text _mbuf_split
+|| __TEXT.__text _mbuf_trailingspace
+|| __TEXT.__text _md_done
+|| __TEXT.__text _md_get_mem
+|| __TEXT.__text _md_get_size
+|| __TEXT.__text _md_get_uint16
+|| __TEXT.__text _md_get_uint16be
+|| __TEXT.__text _md_get_uint16le
+|| __TEXT.__text _md_get_uint32
+|| __TEXT.__text _md_get_uint32be
+|| __TEXT.__text _md_get_uint32le
+|| __TEXT.__text _md_get_uint64
+|| __TEXT.__text _md_get_uint64be
+|| __TEXT.__text _md_get_uint64le
+|| __TEXT.__text _md_get_uint8
+|| __TEXT.__text _md_get_utf16_strlen
+|| __TEXT.__text _md_init
+|| __TEXT.__text _md_initm
+|| __TEXT.__text _md_shadow_copy
+|| __TEXT.__text _piston_change_notify
+|| __TEXT.__text _piston_close_file
+|| __TEXT.__text _piston_create_file
+|| __TEXT.__text _piston_flush
+|| __TEXT.__text _piston_get_create_options
+|| __TEXT.__text _piston_gss_parse_server_mechs
+|| __TEXT.__text _piston_gss_reset
+|| __TEXT.__text _piston_gss_transact
+|| __TEXT.__text _piston_hexdump
+|| __TEXT.__text _piston_ioctl
+|| __TEXT.__text _piston_lease_break_ack
+|| __TEXT.__text _piston_lock
+|| __TEXT.__text _piston_logoff
+|| __TEXT.__text _piston_negotiate
+|| __TEXT.__text _piston_ntstatus_to_errno
+|| __TEXT.__text _piston_query_dir
+|| __TEXT.__text _piston_query_info
+|| __TEXT.__text _piston_query_share_info
+|| __TEXT.__text _piston_read
+|| __TEXT.__text _piston_resolveID
+|| __TEXT.__text _piston_server_copy_file
+|| __TEXT.__text _piston_session_setup
+|| __TEXT.__text _piston_set_info
+|| __TEXT.__text _piston_set_session_key
+|| __TEXT.__text _piston_smb3_derive_keys
+|| __TEXT.__text _piston_tree_connect
+|| __TEXT.__text _piston_tree_disconnect
+|| __TEXT.__text _piston_validate_negotiate
+|| __TEXT.__text _piston_write
+|| __TEXT.__text _smb2_rq_align8
+|| __TEXT.__text _smb2_rq_alloc
+|| __TEXT.__text _smb2_rq_bstart
+|| __TEXT.__text _smb2_rq_bstart32
+|| __TEXT.__text _smb2_rq_credit_start
+|| __TEXT.__text _smb2_rq_message_id_increment
+|| __TEXT.__text _smb2_rq_next_command
+|| __TEXT.__text _smb2_rq_parse_header
+|| __TEXT.__text _smb2_rq_sign
+|| __TEXT.__text _smb2_rq_verify
+|| __TEXT.__text _smb2_smb_close
+|| __TEXT.__text _smb2_smb_close_fid
+|| __TEXT.__text _smb2_smb_create
+|| __TEXT.__text _smb2_smb_create_fid
+|| __TEXT.__text _smb2_smb_echo
+|| __TEXT.__text _smb2_smb_get_alloc_size
+|| __TEXT.__text _smb2_smb_get_client_capabilities
+|| __TEXT.__text _smb2_smb_get_client_dialects
+|| __TEXT.__text _smb2_smb_get_client_security_mode
+|| __TEXT.__text _smb2_smb_ioctl
+|| __TEXT.__text _smb2_smb_lease_break_ack
+|| __TEXT.__text _smb2_smb_parse_close
+|| __TEXT.__text _smb2_smb_parse_create
+|| __TEXT.__text _smb2_smb_parse_ioctl
+|| __TEXT.__text _smb2_smb_parse_lease_break
+|| __TEXT.__text _smb2_smb_parse_query_dir
+|| __TEXT.__text _smb2_smb_parse_query_info
+|| __TEXT.__text _smb2_smb_parse_read_one
+|| __TEXT.__text _smb2_smb_parse_write_one
+|| __TEXT.__text _smb2_smb_query_dir
+|| __TEXT.__text _smb2_smb_query_info
+|| __TEXT.__text _smb2_smb_read_one
+|| __TEXT.__text _smb2_smb_set_info
+|| __TEXT.__text _smb2_smb_write_one
+|| __TEXT.__text _smb2fs_fullpath
+|| __TEXT.__text _smb2fs_smb_check_copyfile
+|| __TEXT.__text _smb2fs_smb_file_id_check
+|| __TEXT.__text _smb2fs_smb_listxattrs
+|| __TEXT.__text _smb2fs_smb_set_delete
+|| __TEXT.__text _smb2fs_smb_set_eof
+|| __TEXT.__text _smb2fs_smb_setfattrNT
+|| __TEXT.__text _smb3_msg_decrypt
+|| __TEXT.__text _smb3_rq_encrypt
+|| __TEXT.__text _smb_convert_network_to_path
+|| __TEXT.__text _smb_convert_path_to_network
+|| __TEXT.__text _smb_get_cstring_len
+|| __TEXT.__text _smb_mbuf_get
+|| __TEXT.__text _smb_put_dmem
+|| __TEXT.__text _smb_reset_sig
+|| __TEXT.__text _smb_rq_bend
+|| __TEXT.__text _smb_rq_bend32
+|| __TEXT.__text _smb_rq_bstart
+|| __TEXT.__text _smb_rq_cancel_all_requests
+|| __TEXT.__text _smb_rq_dequeue
+|| __TEXT.__text _smb_rq_empty_queue
+|| __TEXT.__text _smb_rq_enqueue
+|| __TEXT.__text _smb_rq_find
+|| __TEXT.__text _smb_rq_find_cmpd
+|| __TEXT.__text _smb_rq_handle_async_pending
+|| __TEXT.__text _smb_rq_set_time_sent
+|| __TEXT.__text _smb_rq_simple
+|| __TEXT.__text _smb_rq_simple_block
+|| __TEXT.__text _smb_rq_simple_timed
+|| __TEXT.__text _smb_strndup
+|| __TEXT.__text _smb_time_NT2local
+|| __TEXT.__text _smb_time_local2NT
+|| __TEXT.__text _smbfs_ntwrkname_tolocal
+|| __TEXT.__text _smbfs_ntwrkname_tolocal_buffer
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateMutableCopy
+__ CoreFoundation: _CFStringCreateWithBytes
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringFindAndReplace
+__ CoreFoundation: _CFStringGetBytes
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringNormalize
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ GSS: _GSSCreateName
+__ GSS: _GSSCredentialCopyUUID
+__ GSS: ___ApplePrivate_gss_acquire_cred_ex_f
+__ GSS: ___gss_c_nt_hostbased_service_oid_desc
+__ GSS: ___gss_c_nt_user_name_oid_desc
+__ GSS: ___gss_c_ntlm_guest_oid_desc
+__ GSS: ___gss_iakerb_mechanism_oid_desc
+__ GSS: ___gss_krb5_mechanism_oid_desc
+__ GSS: ___gss_krb5_nt_principal_name_oid_desc
+__ GSS: ___gss_ntlm_get_session_key_x_oid_desc
+__ GSS: ___gss_ntlm_mechanism_oid_desc
+__ GSS: ___gss_spnego_mechanism_oid_desc
+__ GSS: _gss_aapl_initial_cred
+__ GSS: _gss_decapsulate_token
+__ GSS: _gss_delete_sec_context
+__ GSS: _gss_display_status
+__ GSS: _gss_import_name
+__ GSS: _gss_init_sec_context
+__ GSS: _gss_inquire_sec_context_by_oid
+__ GSS: _gss_krb5_export_lucid_sec_context
+__ GSS: _gss_krb5_free_lucid_sec_context
+__ GSS: _gss_oid_equal
+__ GSS: _gss_release_buffer
+__ GSS: _gss_release_buffer_set
+__ GSS: _gss_release_cred
+__ GSS: _gss_release_name
+__ GSS: _gss_release_oid_set
+__ Heimdal: _krb5_free_context
+__ Heimdal: _krb5_free_error_message
+__ Heimdal: _krb5_get_default_realm
+__ Heimdal: _krb5_get_error_message
+__ Heimdal: _krb5_init_context
+__ libSystem.B.dylib: _CCAESCmacCreate
+__ libSystem.B.dylib: _CCAESCmacDestroy
+__ libSystem.B.dylib: _CCAESCmacFinal
+__ libSystem.B.dylib: _CCAESCmacUpdate
+__ libSystem.B.dylib: _CCCryptorAddParameter
+__ libSystem.B.dylib: _CCCryptorCreateWithMode
+__ libSystem.B.dylib: _CCCryptorFinal
+__ libSystem.B.dylib: _CCCryptorGetParameter
+__ libSystem.B.dylib: _CCCryptorRelease
+__ libSystem.B.dylib: _CCCryptorUpdate
+__ libSystem.B.dylib: _CCDeriveKey
+__ libSystem.B.dylib: _CCHmacFinal
+__ libSystem.B.dylib: _CCHmacInit
+__ libSystem.B.dylib: _CCHmacUpdate
+__ libSystem.B.dylib: _CCKDFParametersCreateCtrHmac
+__ libSystem.B.dylib: _CCKDFParametersDestroy
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___snprintf_chk
+__ libSystem.B.dylib: ___sprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _arc4random_buf
+__ libSystem.B.dylib: _asprintf
+__ libSystem.B.dylib: _bcmp
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _cc_cmp_safe
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_data_apply
+__ libSystem.B.dylib: _dispatch_data_create
+__ libSystem.B.dylib: _dispatch_data_create_concat
+__ libSystem.B.dylib: _dispatch_data_get_size
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_cancel_handler
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dispatch_walltime
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _gethostuuid
+__ libSystem.B.dylib: _getpagesize
+__ libSystem.B.dylib: _gettimeofday
+__ libSystem.B.dylib: _inet_ntop
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_cond_destroy
+__ libSystem.B.dylib: _pthread_cond_init
+__ libSystem.B.dylib: _pthread_cond_signal
+__ libSystem.B.dylib: _pthread_cond_timedwait
+__ libSystem.B.dylib: _pthread_cond_wait
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: _random
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncasecmp
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: _strncpy
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _timingsafe_bcmp
+__ libSystem.B.dylib: dyld_stub_binder
+__ libheimdal-asn1.dylib: __asn1_copy_top
+__ libheimdal-asn1.dylib: __asn1_decode_top
+__ libheimdal-asn1.dylib: __asn1_encode
+__ libheimdal-asn1.dylib: __asn1_free_top
+__ libheimdal-asn1.dylib: __asn1_length
+__ libheimdal-asn1.dylib: _der_print_heim_oid
+__ libnetwork.dylib: __nw_content_context_final_send
+__ libnetwork.dylib: _nw_connection_cancel
+__ libnetwork.dylib: _nw_connection_copy_connected_remote_endpoint
+__ libnetwork.dylib: _nw_connection_copy_current_path
+__ libnetwork.dylib: _nw_connection_create
+__ libnetwork.dylib: _nw_connection_force_cancel
+__ libnetwork.dylib: _nw_connection_read_buffer
+__ libnetwork.dylib: _nw_connection_receive
+__ libnetwork.dylib: _nw_connection_send
+__ libnetwork.dylib: _nw_connection_set_better_path_available_handler
+__ libnetwork.dylib: _nw_connection_set_cancel_handler
+__ libnetwork.dylib: _nw_connection_set_event_handler
+__ libnetwork.dylib: _nw_connection_set_queue
+__ libnetwork.dylib: _nw_connection_set_read_close_handler
+__ libnetwork.dylib: _nw_connection_set_viability_changed_handler
+__ libnetwork.dylib: _nw_connection_set_write_close_handler
+__ libnetwork.dylib: _nw_connection_start
+__ libnetwork.dylib: _nw_endpoint_create_host
+__ libnetwork.dylib: _nw_endpoint_get_address
+__ libnetwork.dylib: _nw_error_get_error_code
+__ libnetwork.dylib: _nw_parameters_create
+__ libnetwork.dylib: _nw_parameters_set_data_mode
+__ libnetwork.dylib: _nw_parameters_set_keepalive_enabled
+__ libnetwork.dylib: _nw_parameters_set_no_delay
+__ libnetwork.dylib: _nw_path_is_per_app_vpn
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+SMBFileAllInformation : NSObject /usr/lib/libSystem.B.dylib
+ @property  {smbfattr=QIQQ{timespec=qq}{timespec=qq}{timespec=qq}{timespec=qq}Q{timespec=qq}iQQQQIIISIQQ[32C]I} attributes
+ @property  NSString *name
+
+  // instance methods
+  -[SMBFileAllInformation name]
+  -[SMBFileAllInformation .cxx_destruct]
+  -[SMBFileAllInformation setName:]
+  -[SMBFileAllInformation attributes]
+  -[SMBFileAllInformation setAttributes:]
+
+
+SMBDirEntry : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned int ntstatus
+ @property  NSString *name
+ @property  {smbfattr=QIQQ{timespec=qq}{timespec=qq}{timespec=qq}{timespec=qq}Q{timespec=qq}iQQQQIIISIQQ[32C]I} attributes
+
+  // instance methods
+  -[SMBDirEntry name]
+  -[SMBDirEntry .cxx_destruct]
+  -[SMBDirEntry setName:]
+  -[SMBDirEntry attributes]
+  -[SMBDirEntry setAttributes:]
+  -[SMBDirEntry ntstatus]
+  -[SMBDirEntry setNtstatus:]
+
+
+SMBDirEnumerator : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[SMBDirEnumerator enumeratorWithParameters:onShareID:dirName:lookUpName:searchFlags:outParameters:callBack:]
+
+  // instance methods
+  -[SMBDirEnumerator dealloc]
+  -[SMBDirEnumerator .cxx_destruct]
+  -[SMBDirEnumerator cleanup]
+  -[SMBDirEnumerator commonInit:onShareID:dirName:lookUpName:searchFlags:outParameters:]
+  -[SMBDirEnumerator smb2fs_smb_findnext:]
+  -[SMBDirEnumerator smb2_smb_query_dir:]
+  -[SMBDirEnumerator smb2_smb_parse_query_dir_both_dir_info:]
+  -[SMBDirEnumerator close:callBack:]
+  -[SMBDirEnumerator init:onShareID:dirName:lookUpName:searchFlags:outParameters:callBack:]
+  -[SMBDirEnumerator nextEntry:outParameters:callBack:]
+
+
+SMBShare : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned int tree_id
+ @property  unsigned int share_type
+ @property  unsigned int share_capabilities
+ @property  unsigned int share_flags
+ @property  unsigned int share_max_access
+ @property  NSString *sharename
+ @property  unsigned long total_alloc_units
+ @property  unsigned long avail_alloc_units
+ @property  unsigned int sectors_per_alloc_unit
+ @property  unsigned int bytes_per_sector
+ @property  unsigned int fs_block_size
+ @property  unsigned long fs_iosize
+ @property  unsigned long fs_blocks
+ @property  unsigned long fs_blocks_free
+ @property  unsigned long fs_blocks_avail
+ @property  unsigned long fs_files
+ @property  unsigned long fs_files_free
+ @property  unsigned int file_system_attrs
+ @property  unsigned int max_component_name_len
+ @property  NSString *file_system_name
+ @property  unsigned int fstype
+ @property  unsigned int isEncrypted
+
+  // instance methods
+  -[SMBShare init]
+  -[SMBShare dealloc]
+  -[SMBShare .cxx_destruct]
+  -[SMBShare isEncrypted]
+  -[SMBShare setIsEncrypted:]
+  -[SMBShare fstype]
+  -[SMBShare file_system_name]
+  -[SMBShare file_system_attrs]
+  -[SMBShare max_component_name_len]
+  -[SMBShare statfs_lock]
+  -[SMBShare fs_block_size]
+  -[SMBShare fs_iosize]
+  -[SMBShare fs_blocks]
+  -[SMBShare fs_blocks_free]
+  -[SMBShare fs_blocks_avail]
+  -[SMBShare fs_files]
+  -[SMBShare fs_files_free]
+  -[SMBShare statfs_unlock]
+  -[SMBShare setFstype:]
+  -[SMBShare setFile_system_attrs:]
+  -[SMBShare setMax_component_name_len:]
+  -[SMBShare setFile_system_name:]
+  -[SMBShare sharename]
+  -[SMBShare setTotal_alloc_units:]
+  -[SMBShare setAvail_alloc_units:]
+  -[SMBShare setSectors_per_alloc_unit:]
+  -[SMBShare setBytes_per_sector:]
+  -[SMBShare total_alloc_units]
+  -[SMBShare avail_alloc_units]
+  -[SMBShare bytes_per_sector]
+  -[SMBShare sectors_per_alloc_unit]
+  -[SMBShare setFs_block_size:]
+  -[SMBShare setFs_blocks:]
+  -[SMBShare setFs_blocks_free:]
+  -[SMBShare setFs_blocks_avail:]
+  -[SMBShare setFs_files:]
+  -[SMBShare setFs_files_free:]
+  -[SMBShare setFs_iosize:]
+  -[SMBShare setSharename:]
+  -[SMBShare setTree_id:]
+  -[SMBShare setShare_type:]
+  -[SMBShare setShare_flags:]
+  -[SMBShare share_flags]
+  -[SMBShare setShare_capabilities:]
+  -[SMBShare setShare_max_access:]
+  -[SMBShare share_type]
+  -[SMBShare share_capabilities]
+  -[SMBShare share_max_access]
+  -[SMBShare tree_id]
+
+
+SMBPiston : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *shareList
+ @property  SMBSocket *sock
+ @property  NSString *userName
+ @property  NSString *password
+ @property  NSString *realm
+
+  // instance methods
+  -[SMBPiston init]
+  -[SMBPiston dealloc]
+  -[SMBPiston userName]
+  -[SMBPiston password]
+  -[SMBPiston .cxx_destruct]
+  -[SMBPiston setPassword:]
+  -[SMBPiston disconnect]
+  -[SMBPiston realm]
+  -[SMBPiston setRealm:]
+  -[SMBPiston setEventHandler:]
+  -[SMBPiston setUserName:]
+  -[SMBPiston sock]
+  -[SMBPiston getShare:]
+  -[SMBPiston getSessionPtr]
+  -[SMBPiston share_list_lock]
+  -[SMBPiston shareList]
+  -[SMBPiston share_list_unlock]
+  -[SMBPiston negotiateTo:netBIOSname:withVPNCookie:outParameters:callBack:]
+  -[SMBPiston negotiateTo:netBIOSname:outParameters:callBack:]
+  -[SMBPiston negotiateTo:netBIOSname:port:outParameters:callBack:]
+  -[SMBPiston negotiateTo:netBIOSname:port:withTimeOut:outParameters:callBack:]
+  -[SMBPiston login:asUser:withPassword:inRealm:callBack:]
+  -[SMBPiston logoff]
+  -[SMBPiston logoff:callBack:]
+  -[SMBPiston treeConnect:toShare:callBack:]
+  -[SMBPiston treeDisconnect:fromShareID:callBack:]
+  -[SMBPiston queryShareInformation:forShareID:forModelInfo:forFileSystemName:callBack:]
+  -[SMBPiston leaseBreakAcknowledge:callBack:]
+  -[SMBPiston ioctl:onShareID:getDFSRefFor:withRecvData:callBack:]
+  -[SMBPiston ioctl:onShareID:pipeWaitOnName:withTimeOut:callBack:]
+  -[SMBPiston validateNegotiate:callBack:]
+  -[SMBPiston validateNegotiate:onShareID:callBack:]
+  -[SMBPiston serverCopyFile:onShareID:from:to:withOptions:callBack:]
+  -[SMBPiston resolveID:forShareID:returnPath:callBack:]
+  -[SMBPiston getCreateOptions:parentName:streamName:vnodeType:fileAttributes:checkForReparsePoint:]
+  -[SMBPiston getCreateOptions:onShareID:parentName:streamName:vnodeType:fileAttributes:checkForReparsePoint:]
+  -[SMBPiston getPeerAddress:withLength:]
+  -[SMBPiston setOption:toValue:]
+  -[SMBPiston setShareList:]
+  -[SMBPiston setSock:]
+
+
+SMBNode : NSObject /usr/lib/libSystem.B.dylib
+ @property  int isCmpd
+ @property  unsigned int marshallPos
+ @property  unsigned int parsePos
+ @property  unsigned long cmpdNextCmdOffset
+ @property  unsigned int treeID
+ @property  unsigned int onEncryptedShare
+ @property  SMBPiston *pd
+ @property  unsigned int shareID
+ @property  NSString *name
+ @property  NSString *streamName
+ @property  {?=QQ} fid
+ @property  unsigned int isOpen
+
+  // class methods
+  +[SMBNode nodeForCmpd:onShareID:callBack:]
+  +[SMBNode nodeWithParameters:onPiston:onShareID:withName:withStreamName:callBack:]
+
+  // instance methods
+  -[SMBNode dealloc]
+  -[SMBNode name]
+  -[SMBNode .cxx_destruct]
+  -[SMBNode setName:]
+  -[SMBNode isOpen]
+  -[SMBNode streamName]
+  -[SMBNode setStreamName:]
+  -[SMBNode shareID]
+  -[SMBNode setShareID:]
+  -[SMBNode setIsOpen:]
+  -[SMBNode init:]
+  -[SMBNode pd]
+  -[SMBNode treeID]
+  -[SMBNode onEncryptedShare]
+  -[SMBNode fid]
+  -[SMBNode commonInit:onShareID:]
+  -[SMBNode setPd:]
+  -[SMBNode setTreeID:]
+  -[SMBNode setOnEncryptedShare:]
+  -[SMBNode setIsCmpd:]
+  -[SMBNode commonInit:onShareID:name:streamName:]
+  -[SMBNode updateCmpdHdr]
+  -[SMBNode parseNextHeader:retNTStatus:retMdpp:]
+  -[SMBNode setFid:]
+  -[SMBNode close:withFlags:callBack:]
+  -[SMBNode initForCmpd:onShareID:]
+  -[SMBNode init:onPiston:onShareID:withName:withStreamName:callBack:]
+  -[SMBNode cmpdAddCreate:withName:withStreamName:]
+  -[SMBNode cmpdParseCreate:]
+  -[SMBNode cmpdAddClose:withFlags:]
+  -[SMBNode cmpdParseClose:withFlags:]
+  -[SMBNode flush:callBack:]
+  -[SMBNode read:intoBuffer:callBack:]
+  -[SMBNode cmpdAddRead:intoBuffer:]
+  -[SMBNode cmpdParseRead:intoBuffer:]
+  -[SMBNode write:fromBuffer:callBack:]
+  -[SMBNode cmpdAddWrite:fromBuffer:]
+  -[SMBNode cmpdParseWrite:]
+  -[SMBNode lockUnlock:callBack:]
+  -[SMBNode ioctl:getReparsePoint:callBack:]
+  -[SMBNode ioctl:setReparsePoint:callBack:]
+  -[SMBNode ioctl:pipeTransceive:withRecvData:callBack:]
+  -[SMBNode cmpdAddIoctl:getReparsePoint:]
+  -[SMBNode cmpdAddIoctl:setReparsePoint:]
+  -[SMBNode cmpdAddIoctl:pipeTransceive:withRecvData:]
+  -[SMBNode cmpdParseIoctl:reparsePoint:sendInputBuffer:rcvOutputBuffer:]
+  -[SMBNode queryDirectory:onDir:returnDataIn:callBack:]
+  -[SMBNode cmpdAddQueryDirectory:onDir:returnDataIn:]
+  -[SMBNode cmpdParseQueryDirectory:returnDataIn:]
+  -[SMBNode changeNotify:withFlags:withFilter:returnDataIn:callBack:]
+  -[SMBNode queryInformation:withStreamName:forFileAllInfo:withInputBuffer:withOutputBuffer:callBack:]
+  -[SMBNode cmpdAddQueryInformation:withStreamName:forFileAllInfo:withInputBuffer:withOutputBuffer:]
+  -[SMBNode cmpdParseQueryInformation:withStreamName:forFileAllInfo:withOutputBuffer:]
+  -[SMBNode setInformation:withInputBuffer:withRenameTarget:callBack:]
+  -[SMBNode cmpdAddSetInformation:withInputBuffer:withRenameTarget:]
+  -[SMBNode cmpdParseSetInformation:]
+  -[SMBNode sendCmpdRequest:]
+  -[SMBNode resetCmpdRequest]
+  -[SMBNode isCmpd]
+  -[SMBNode marshallPos]
+  -[SMBNode setMarshallPos:]
+  -[SMBNode parsePos]
+  -[SMBNode setParsePos:]
+  -[SMBNode cmpdNextCmdOffset]
+  -[SMBNode setCmpdNextCmdOffset:]
+
+
+SMBPistonEvents : NSObject /usr/lib/libSystem.B.dylib
+ @property  {smb_lease_break=SIQQII} leaseBreak
+
+  // instance methods
+  -[SMBPistonEvents leaseBreak]
+  -[SMBPistonEvents setLeaseBreak:]
+
+
+SMB_rq : NSObject /usr/lib/libSystem.B.dylib
+ @property  SMBPiston *sr_pd
+ @property  unsigned short sr_command
+ @property  unsigned int sr_extflags
+ @property  unsigned short sr_creditcharge
+ @property  unsigned short sr_creditsrequested
+ @property  unsigned int sr_rqflags
+ @property  unsigned int sr_nextcmd
+ @property  unsigned long sr_messageid
+ @property  ^Q sr_messageidp
+ @property  unsigned int sr_rqtreeid
+ @property  unsigned long sr_rqsessionid
+ @property  ^S sr_bcount
+ @property  ^I sr_lcount
+ @property  ^S sr_creditchargep
+ @property  ^S sr_creditreqp
+ @property  ^I sr_flagsp
+ @property  ^I sr_nextcmdp
+ @property  unsigned int sr_flags
+ @property  char * sr_rqsigp
+ @property  unsigned int sr_timeout
+ @property  {timespec=qq} sr_credit_timesent
+ @property  {timespec=qq} sr_timesent
+ @property  unsigned short sr_rspcreditsgranted
+ @property  unsigned int sr_rspflags
+ @property  unsigned int sr_rspnextcmd
+ @property  unsigned int sr_rsppid
+ @property  unsigned int sr_rsptreeid
+ @property  unsigned long sr_rspasyncid
+ @property  unsigned long sr_rspsessionid
+ @property  int replyError
+ @property  ^{smb_session={_opaque_pthread_mutex_t=q[56c]}ISSSIIII[16C]SI^{gss_ctx_id_t_desc_struct}^{gss_cred_id_t_desc_struct}{gss_buffer_desc_struct=Q^v}{gss_buffer_desc_struct=Q^v}II[16C]SS[8S]*I*I[16C]I[16C]IQQQQQQQQ*{_opaque_pthread_mutex_t=q[56c]}AQAIAIAIAi{_opaque_pthread_cond_t=q[40c]}IQ} sr_sessionp
+ @property  unsigned int sr_ntstatus
+ @property  SMB_rq *sr_next_rqp
+ @property  @? sr_callback
+ @property  unsigned int onEncryptedShare
+ @property  NSData *writeData
+ @property  unsigned int writeLen
+
+  // instance methods
+  -[SMB_rq dealloc]
+  -[SMB_rq .cxx_destruct]
+  -[SMB_rq replyError]
+  -[SMB_rq setReplyError:]
+  -[SMB_rq onEncryptedShare]
+  -[SMB_rq smb_rq_done]
+  -[SMB_rq smb_rq_getrequest]
+  -[SMB_rq smb_rq_set_extflag:]
+  -[SMB_rq smb_rq_set_srflags:]
+  -[SMB_rq sr_ntstatus]
+  -[SMB_rq smb_rq_getreply]
+  -[SMB_rq setWriteData:]
+  -[SMB_rq setWriteLen:]
+  -[SMB_rq sr_extflags]
+  -[SMB_rq sr_rsptreeid]
+  -[SMB_rq sr_sessionp]
+  -[SMB_rq setOnEncryptedShare:]
+  -[SMB_rq writeLen]
+  -[SMB_rq smb_rq_set_sr_nextcmdp:]
+  -[SMB_rq setSr_next_rqp:]
+  -[SMB_rq smb_rq_set_srflagsp:]
+  -[SMB_rq sr_command]
+  -[SMB_rq sr_messageid]
+  -[SMB_rq sr_flags]
+  -[SMB_rq sr_rspsessionid]
+  -[SMB_rq sr_flagsp]
+  -[SMB_rq setSr_callback:]
+  -[SMB_rq smb_rq_callback:]
+  -[SMB_rq sr_pd]
+  -[SMB_rq setSr_pd:]
+  -[SMB_rq setSr_command:]
+  -[SMB_rq setSr_extflags:]
+  -[SMB_rq sr_creditcharge]
+  -[SMB_rq setSr_creditcharge:]
+  -[SMB_rq sr_creditsrequested]
+  -[SMB_rq setSr_creditsrequested:]
+  -[SMB_rq sr_rqflags]
+  -[SMB_rq setSr_rqflags:]
+  -[SMB_rq sr_nextcmd]
+  -[SMB_rq setSr_nextcmd:]
+  -[SMB_rq setSr_messageid:]
+  -[SMB_rq sr_messageidp]
+  -[SMB_rq setSr_messageidp:]
+  -[SMB_rq sr_rqtreeid]
+  -[SMB_rq setSr_rqtreeid:]
+  -[SMB_rq sr_rqsessionid]
+  -[SMB_rq setSr_rqsessionid:]
+  -[SMB_rq sr_bcount]
+  -[SMB_rq setSr_bcount:]
+  -[SMB_rq sr_lcount]
+  -[SMB_rq setSr_lcount:]
+  -[SMB_rq sr_creditchargep]
+  -[SMB_rq setSr_creditchargep:]
+  -[SMB_rq sr_creditreqp]
+  -[SMB_rq setSr_creditreqp:]
+  -[SMB_rq setSr_flagsp:]
+  -[SMB_rq sr_nextcmdp]
+  -[SMB_rq setSr_nextcmdp:]
+  -[SMB_rq setSr_flags:]
+  -[SMB_rq sr_rqsigp]
+  -[SMB_rq setSr_rqsigp:]
+  -[SMB_rq sr_timeout]
+  -[SMB_rq setSr_timeout:]
+  -[SMB_rq sr_credit_timesent]
+  -[SMB_rq setSr_credit_timesent:]
+  -[SMB_rq sr_timesent]
+  -[SMB_rq setSr_timesent:]
+  -[SMB_rq sr_rspcreditsgranted]
+  -[SMB_rq setSr_rspcreditsgranted:]
+  -[SMB_rq sr_rspflags]
+  -[SMB_rq setSr_rspflags:]
+  -[SMB_rq sr_rspnextcmd]
+  -[SMB_rq setSr_rspnextcmd:]
+  -[SMB_rq sr_rsppid]
+  -[SMB_rq setSr_rsppid:]
+  -[SMB_rq setSr_rsptreeid:]
+  -[SMB_rq sr_rspasyncid]
+  -[SMB_rq setSr_rspasyncid:]
+  -[SMB_rq setSr_rspsessionid:]
+  -[SMB_rq setSr_sessionp:]
+  -[SMB_rq setSr_ntstatus:]
+  -[SMB_rq sr_next_rqp]
+  -[SMB_rq sr_callback]
+  -[SMB_rq writeData]
+
+
+SMBSocket : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_nw_connection> *connection
+ @property  NSObject<OS_dispatch_queue> *recv_queue
+ @property  NSObject<OS_dispatch_queue> *signing_queue
+ @property  NSString *netBiosName
+ @property  NSString *serverName
+ @property  unsigned short port
+ @property  unsigned int connectTimeOut
+ @property  {timespec=qq} last_recv
+ @property  {timespec=qq} last_echo
+
+  // instance methods
+  -[SMBSocket port]
+  -[SMBSocket .cxx_destruct]
+  -[SMBSocket setPort:]
+  -[SMBSocket connection]
+  -[SMBSocket setConnection:]
+  -[SMBSocket setEventHandler:]
+  -[SMBSocket send:]
+  -[SMBSocket isPerAppVPN]
+  -[SMBSocket readData:]
+  -[SMBSocket sendRequest:]
+  -[SMBSocket serverName]
+  -[SMBSocket setServerName:]
+  -[SMBSocket writeEnabled]
+  -[SMBSocket signing_queue]
+  -[SMBSocket getIPv4IPv6DotName]
+  -[SMBSocket getServerAddress]
+  -[SMBSocket getIPv4IPv6DotNameMaxLength]
+  -[SMBSocket closeSocket]
+  -[SMBSocket getEventHandler]
+  -[SMBSocket recv_queue]
+  -[SMBSocket callEventHandler:contextPtr:returnValue:]
+  -[SMBSocket setLast_echo:]
+  -[SMBSocket timeOutCheck]
+  -[SMBSocket connectTimeOut]
+  -[SMBSocket readNBHeader]
+  -[SMBSocket processReply:]
+  -[SMBSocket setNetBIOSHeader:nbType:length:]
+  -[SMBSocket openSocket:]
+  -[SMBSocket connectSocket]
+  -[SMBSocket setRecv_queue:]
+  -[SMBSocket setSigning_queue:]
+  -[SMBSocket netBiosName]
+  -[SMBSocket setNetBiosName:]
+  -[SMBSocket setConnectTimeOut:]
+  -[SMBSocket last_recv]
+  -[SMBSocket setLast_recv:]
+  -[SMBSocket last_echo]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

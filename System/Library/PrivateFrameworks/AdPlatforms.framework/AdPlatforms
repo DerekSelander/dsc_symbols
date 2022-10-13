@@ -1,0 +1,81 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ADStatusConditions
+|| __DATA.__objc_data _OBJC_CLASS_$_ADStatusConditionsImpl
+|| __DATA.__objc_data _OBJC_METACLASS_$_ADStatusConditions
+|| __DATA.__objc_data _OBJC_METACLASS_$_ADStatusConditionsImpl
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADAttribution
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADAttribution
+|| __TEXT.__const _AdPlatformsVersionNumber
+|| __TEXT.__const _AdPlatformsVersionString
+__ AdCore: _ADXPCConnectionOptions
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ StoreKit: _OBJC_CLASS_$_SKAdNetwork
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+ADStatusConditionsImpl : NSObject /usr/lib/libSystem.B.dylib <ADStatusConditions_XPC>
+  // instance methods
+  -[ADStatusConditionsImpl setupXPCConnection]
+  -[ADStatusConditionsImpl setStatusCondition:completionHandler:]
+  -[ADStatusConditionsImpl clearStatusCondition:completionHandler:]
+  -[ADStatusConditionsImpl isStatusConditionRegistered:bundleIdentifier:completionHandler:]
+
+
+ADStatusConditions : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[ADStatusConditions setStatusCondition:completionHandler:]
+  +[ADStatusConditions clearStatusCondition:completionHandler:]
+  +[ADStatusConditions isStatusConditionRegistered:bundleIdentifier:completionHandler:]
+
+
+ADAttribution : NSObject /usr/lib/libSystem.B.dylib <ADAttribution_XPC>
+ @property  BOOL hasCompletedResponse
+ @property  int numRetries
+
+  // class methods
+  +[ADAttribution sharedInstance]
+
+  // instance methods
+  -[ADAttribution init]
+  -[ADAttribution numRetries]
+  -[ADAttribution requestAttributionDetailsWithBlock:]
+  -[ADAttribution setNumRetries:]
+  -[ADAttribution setStocksAdEnabled:]
+  -[ADAttribution initiateRequestOnConnection:withBlock:]
+  -[ADAttribution hasCompletedResponse]
+  -[ADAttribution setHasCompletedResponse:]
+
+
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/Frameworks/StoreKit.framework/StoreKit: SKAdNetwork 

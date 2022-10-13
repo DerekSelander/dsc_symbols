@@ -1,0 +1,995 @@
+|| __DATA.__objc_data _OBJC_CLASS_$__PSContactResolver
+|| __DATA.__objc_data _OBJC_CLASS_$__PSFeedbackUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__PSInteractionAndContactMonitor
+|| __DATA.__objc_data _OBJC_CLASS_$__PSKNNeighbor
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMailUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMapsFeedback
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMapsFeedbackAction
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMapsPredictionContext
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMapsSuggester
+|| __DATA.__objc_data _OBJC_CLASS_$__PSMessagesZkwFeedback
+|| __DATA.__objc_data _OBJC_CLASS_$__PSProximityBooster
+|| __DATA.__objc_data _OBJC_CLASS_$__PSRuleOverlapFeedback
+|| __DATA.__objc_data _OBJC_CLASS_$__PSSuggestionProxy
+|| __DATA.__objc_data _OBJC_CLASS_$__PSSuggestionTemplate
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSAutocompleteSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSContactResolver
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSFeedbackUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSInteractionAndContactMonitor
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSKNNeighbor
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMailUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMapsFeedback
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMapsFeedbackAction
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMapsPredictionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMapsSuggester
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSMessagesZkwFeedback
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSProximityBooster
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSRuleOverlapFeedback
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSSuggestionProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$__PSSuggestionTemplate
+|| __DATA_CONST.__const __PSMapsShareEtaAnalyticsEventName
+|| __DATA_CONST.__const __PSMessagesZkwAnalyticsEventName
+|| __DATA_CONST.__const __PSRuleOverlapAnalyticsEventName
+|| __DATA_CONST.__const __PSShareSheetAnalyticsEventName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSAppUsageUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSAttachment
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSAutocompleteSuggestion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSConstants
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSEnsembleModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSFeedback
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSFeedbackAction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSHeuristics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSIMCoreUtils
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSInteractionStoreUtils
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSKNNModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSLogging
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSPhotoSuggestions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSPhotoUtils
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSPredictionContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSRecipient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSRuleMiningModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSSuggester
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSSuggesterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__PSSuggestion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSAppUsageUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSAttachment
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSConstants
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSEnsembleModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSFeedback
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSFeedbackAction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSHeuristics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSIMCoreUtils
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSInteractionStoreUtils
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSKNNModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSLogging
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSPhotoSuggestions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSPhotoUtils
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSPredictionContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSRecipient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSRuleMiningModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSSuggester
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSSuggesterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__PSSuggestion
+|| __TEXT.__const _PeopleSuggesterVersionNumber
+|| __TEXT.__const _PeopleSuggesterVersionString
+|| __TEXT.__const __PSRuleMiningModelDaysToPromoteRecentlyInstalledAppExtensions
+|| __TEXT.__const __PSRuleMiningModelMinRuleConfidenceForSuggestion
+|| __TEXT.__const __PSRuleMiningModelRegularizingContextOverlapConstraint
+|| __TEXT.__const __PSRuleOverlapFeedbackEventMatchingTimeWindow
+|| __TEXT.__const __PSRuleOverlapFeedbackMinRuleConfidenceForSuggestion
+|| __TEXT.__const __PSRuleOverlapFeedbackRegularizingContextOverlapConstraint
+|| __TEXT.__const _errRet
+|| __TEXT.__const _fetchLimit
+|| __TEXT.__const _kForAutocomplete
+|| __TEXT.__const _kForBackup
+|| __TEXT.__const _kForZkw
+|| __TEXT.__text __PSDefaultContactKeysToFetch
+|| __TEXT.__text __PSIntentForSelectedSuggestionWithContextExtensionUUID
+|| __TEXT.__text __PSMapsContactKeysToFetch
+|| __TEXT.__text __PSResolveContactWithPredicate
+|| __TEXT.__text __PSShareSheetSuggestionBundleIDs
+|| __TEXT.__text __PSSuggestionKey
+|| __TEXT.__text _comparisonResult
+|| __TEXT.__text _distanceOfNeighborFromReference
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreDuet: _OBJC_CLASS_$__CDInteraction
+__ CoreDuet: _OBJC_CLASS_$__CDInteractionCache
+__ CoreDuet: _OBJC_CLASS_$__CDInteractionStore
+__ CoreDuet: _OBJC_CLASS_$__DKEvent
+__ CoreDuet: _OBJC_CLASS_$__DKEventQuery
+__ CoreDuet: _OBJC_CLASS_$__DKIntentMetadataKey
+__ CoreDuet: _OBJC_CLASS_$__DKKnowledgeStore
+__ CoreDuet: _OBJC_CLASS_$__DKMapsShareEtaFeedbackMetadataKey
+__ CoreDuet: _OBJC_CLASS_$__DKQuery
+__ CoreDuet: _OBJC_CLASS_$__DKShareSheetFeedbackMetadataKey
+__ CoreDuet: _OBJC_CLASS_$__DKSource
+__ CoreDuet: _OBJC_CLASS_$__DKSystemEventStreams
+__ CoreDuet: __CDInteractionMachServiceName
+__ CoreDuet: __CDInteractionNSXPCInterface
+__ CoreDuet: __CDInteractionStoreRecordedInteractionsNotification
+__ CoreDuet: __CDInteractionsKey
+__ CoreDuetContext: _OBJC_CLASS_$__CDClientContext
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextQueries
+__ CoreDuetContext: _OBJC_CLASS_$__CDContextualKeyPath
+__ CoreFoundation: _CFStringTransform
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreFoundation: _kCFStringTransformStripCombiningMarks
+__ CoreFoundation: _kCFStringTransformToLatin
+__ CoreServices: _OBJC_CLASS_$_LSEnumerator
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Intents: _OBJC_CLASS_$_INImage
+__ Intents: _OBJC_CLASS_$_INSendMessageIntent
+__ Rapport: _OBJC_CLASS_$_RPPeopleDiscovery
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _os_activity_scope_enter
+__ libSystem.B.dylib: _os_activity_scope_leave
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+_PSAutocompleteSuggestion : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSArray *recipients
+ @property  NSString *chatGuid
+ @property  NSArray *chatHandles
+ @property  NSString *displayName
+ @property  NSString *handle
+ @property  NSString *contactIdentifier
+ @property  unsigned long resultSourceType
+
+  // class methods
+  +[_PSAutocompleteSuggestion supportsSecureCoding]
+
+  // instance methods
+  -[_PSAutocompleteSuggestion isEqual:]
+  -[_PSAutocompleteSuggestion encodeWithCoder:]
+  -[_PSAutocompleteSuggestion initWithCoder:]
+  -[_PSAutocompleteSuggestion .cxx_destruct]
+  -[_PSAutocompleteSuggestion handle]
+  -[_PSAutocompleteSuggestion displayName]
+  -[_PSAutocompleteSuggestion recipients]
+  -[_PSAutocompleteSuggestion setRecipients:]
+  -[_PSAutocompleteSuggestion contactIdentifier]
+  -[_PSAutocompleteSuggestion initWithChatGuid:chatHandles:displayName:handle:contactIdentifier:resultSourceType:autocompleteResult:recipients:]
+  -[_PSAutocompleteSuggestion chatGuid]
+  -[_PSAutocompleteSuggestion chatHandles]
+  -[_PSAutocompleteSuggestion initWithChatGuid:displayName:handle:contactIdentifier:resultSourceType:autocompleteResult:]
+  -[_PSAutocompleteSuggestion initWithChatGuid:chatHandles:displayName:handle:contactIdentifier:resultSourceType:autocompleteResult:]
+  -[_PSAutocompleteSuggestion resultSourceType]
+  -[_PSAutocompleteSuggestion setResultSourceType:]
+
+
+_PSLogging : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSLogging generalChannel]
+  +[_PSLogging heuristicsChannel]
+  +[_PSLogging coreBehaviorChannel]
+  +[_PSLogging knnChannel]
+  +[_PSLogging feedbackChannel]
+  +[_PSLogging shareExtensionChannel]
+  +[_PSLogging suggestionSignpost]
+
+
+_PSEnsembleModel : NSObject /usr/lib/libSystem.B.dylib
+ @property  _PSRuleMiningModel *ruleMiningModel
+ @property  _PSKNNModel *knnModel
+ @property  _PSKNNModel *knnMapsModel
+ @property  _PSKNNModel *knnZkwModel
+ @property  _PSKNNModel *knnNameOrContactRankerModel
+ @property  _PSHeuristics *heuristics
+ @property  _PSInteractionAndContactMonitor *contactMonitor
+ @property  NSSet *cachedSupportedBundleIDs
+ @property  <_DKKnowledgeQuerying><_DKKnowledgeSaving> *knowledgeStore
+ @property  _CDInteractionStore *interactionStore
+ @property  _CDInteractionCache *messageInteractionCache
+ @property  _CDInteractionCache *shareInteractionCache
+ @property  NSUserDefaults *peopleSuggesterDefaults
+ @property  CNContactStore *contactStore
+ @property  NSArray *defaultContactKeysToFetch
+
+  // instance methods
+  -[_PSEnsembleModel init]
+  -[_PSEnsembleModel .cxx_destruct]
+  -[_PSEnsembleModel interactionStore]
+  -[_PSEnsembleModel knowledgeStore]
+  -[_PSEnsembleModel setKnowledgeStore:]
+  -[_PSEnsembleModel setHeuristics:]
+  -[_PSEnsembleModel heuristics]
+  -[_PSEnsembleModel contactStore]
+  -[_PSEnsembleModel setContactStore:]
+  -[_PSEnsembleModel peopleSuggesterDefaults]
+  -[_PSEnsembleModel fetchShareSheetSupportedBundleIDs]
+  -[_PSEnsembleModel populateCachesWithSupportedBundleIDs:]
+  -[_PSEnsembleModel defaultContactKeysToFetch]
+  -[_PSEnsembleModel cachedSupportedBundleIDs]
+  -[_PSEnsembleModel setMessageInteractionCache:]
+  -[_PSEnsembleModel setShareInteractionCache:]
+  -[_PSEnsembleModel setCachedSupportedBundleIDs:]
+  -[_PSEnsembleModel messageInteractionCache]
+  -[_PSEnsembleModel shareInteractionCache]
+  -[_PSEnsembleModel contactMonitor]
+  -[_PSEnsembleModel setContactMonitor:]
+  -[_PSEnsembleModel ruleMiningModel]
+  -[_PSEnsembleModel setRuleMiningModel:]
+  -[_PSEnsembleModel knnModel]
+  -[_PSEnsembleModel setKnnModel:]
+  -[_PSEnsembleModel knnZkwModel]
+  -[_PSEnsembleModel setKnnZkwModel:]
+  -[_PSEnsembleModel knnNameOrContactRankerModel]
+  -[_PSEnsembleModel setKnnNameOrContactRankerModel:]
+  -[_PSEnsembleModel predictWithPredictionContext:maxSuggestions:contactKeysToFetch:]
+  -[_PSEnsembleModel suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:]
+  -[_PSEnsembleModel knnMapsModel]
+  -[_PSEnsembleModel setKnnMapsModel:]
+  -[_PSEnsembleModel mapsSuggestionArrayWithArray:appendingUniqueElementsFromArray:contactResolver:meContactId:]
+  -[_PSEnsembleModel populateCaches]
+  -[_PSEnsembleModel predictWithPredictionContext:maxSuggestions:]
+  -[_PSEnsembleModel predictWithMapsPredictionContext:maxSuggestions:]
+  -[_PSEnsembleModel suggestZKWMessagesSuggestionsWithPredictionContext:maxSuggestions:]
+  -[_PSEnsembleModel rankedContactSuggestionsWithPredictionContext:contactsOnly:maxSuggestions:]
+  -[_PSEnsembleModel rankedNameSuggestionsWithPredictionContext:name:]
+  -[_PSEnsembleModel rankedAutocompleteSuggestionsFromContext:candidates:]
+  -[_PSEnsembleModel appExtensionSuggestionsFromContext:]
+  -[_PSEnsembleModel setInteractionStore:]
+  -[_PSEnsembleModel setPeopleSuggesterDefaults:]
+  -[_PSEnsembleModel setDefaultContactKeysToFetch:]
+
+
+_PSConstants : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSConstants mobileMailBundleId]
+  +[_PSConstants mobileMessagesBundleId]
+  +[_PSConstants shareSheetTargetBundleIdMessages]
+  +[_PSConstants shareSheetTargetBundleIdMail]
+  +[_PSConstants mobilePhotosBundleId]
+  +[_PSConstants macMessagesBundleId]
+  +[_PSConstants macMailBundleId]
+  +[_PSConstants mobileCalendarBundleId]
+  +[_PSConstants macCalendarBundleId]
+  +[_PSConstants mobilePhoneOrFacetimeBundleId]
+  +[_PSConstants mobileMessagesComposeBundleId]
+  +[_PSConstants eligibleShareSheetTargets]
+  +[_PSConstants photoAssetPresenceHeuristicReason]
+  +[_PSConstants inCallHeuristicReason]
+
+
+_PSKNNeighbor : NSObject /usr/lib/libSystem.B.dylib
+ @property  double distance
+ @property  NSArray *nodeData
+
+  // instance methods
+  -[_PSKNNeighbor .cxx_destruct]
+  -[_PSKNNeighbor setDistance:]
+  -[_PSKNNeighbor distance]
+  -[_PSKNNeighbor initWithNodeData:distance:]
+  -[_PSKNNeighbor nodeData]
+  -[_PSKNNeighbor setNodeData:]
+
+
+_PSFeedbackUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSFeedbackUtils feedbackPayloadWithIndex:reasonType:reason:sourceBundleId:transportBundleId:numberOfVisibleSuggestions:sessionId:delay:testEvent:engagementType:]
+
+
+_PSMailUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSMailUtils recipientsForMailLabel:contactResolver:]
+  +[_PSMailUtils recipientsForRecipientString:contactResolver:]
+
+
+_PSSuggester : NSObject /usr/lib/libSystem.B.dylib
+ @property  _PSSuggesterConfiguration *configuration
+
+  // class methods
+  +[_PSSuggester suggesterWithDaemon]
+
+  // instance methods
+  -[_PSSuggester init]
+  -[_PSSuggester dealloc]
+  -[_PSSuggester .cxx_destruct]
+  -[_PSSuggester configuration]
+  -[_PSSuggester initWithConfiguration:]
+  -[_PSSuggester initWithDaemonUsingConfiguration:]
+  -[_PSSuggester shareExtensionSuggestionsFromContext:]
+  -[_PSSuggester rankedZKWSuggestionsFromContext:]
+  -[_PSSuggester provideFeedbackForMessagesZkwSuggestions:]
+  -[_PSSuggester rankedAutocompleteSuggestionsFromContext:candidates:]
+  -[_PSSuggester shareSheetInteractionsFromContext:]
+  -[_PSSuggester hourOfDayProbabilitiesToInteractWithContacts:]
+  -[_PSSuggester suggestInteractionsFromContext:]
+  -[_PSSuggester rankedNameSuggestionsFromContext:name:]
+  -[_PSSuggester rankedGlobalSuggestionsFromContext:contactsOnly:]
+  -[_PSSuggester hourOfDayProbabilitiesToInteractWithContact:]
+  -[_PSSuggester relativeAppUsageProbabilitiesForCandidateBundleIds:daysAgo:]
+  -[_PSSuggester provideFeedbackForSuggestions:]
+
+
+_PSAttachment : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSDate *creationDate
+ @property  NSString *UTI
+ @property  NSString *photoLocalIdentifier
+ @property  NSUUID *identifier
+ @property  NSUUID *cloudIdentifier
+ @property  NSURL *contentURL
+ @property  NSString *contentText
+
+  // class methods
+  +[_PSAttachment supportsSecureCoding]
+
+  // instance methods
+  -[_PSAttachment encodeWithCoder:]
+  -[_PSAttachment initWithCoder:]
+  -[_PSAttachment .cxx_destruct]
+  -[_PSAttachment identifier]
+  -[_PSAttachment creationDate]
+  -[_PSAttachment contentURL]
+  -[_PSAttachment cloudIdentifier]
+  -[_PSAttachment photoLocalIdentifier]
+  -[_PSAttachment contentText]
+  -[_PSAttachment UTI]
+  -[_PSAttachment initWithCreationDate:UTI:photoLocalIdentifier:identifier:cloudIdentifier:contentURL:contentText:]
+
+
+_PSProximityBooster : NSObject /usr/lib/libSystem.B.dylib
+ @property  RPPeopleDiscovery *peopleDiscovery
+
+  // instance methods
+  -[_PSProximityBooster init]
+  -[_PSProximityBooster .cxx_destruct]
+  -[_PSProximityBooster peopleDiscovery]
+  -[_PSProximityBooster startMonitoringProximity]
+  -[_PSProximityBooster stopMonitoringProximity]
+  -[_PSProximityBooster suggestionsByBoostingNearbySuggestions:]
+  -[_PSProximityBooster setPeopleDiscovery:]
+
+
+_PSMapsSuggester : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[_PSMapsSuggester init]
+  -[_PSMapsSuggester dealloc]
+  -[_PSMapsSuggester .cxx_destruct]
+  -[_PSMapsSuggester suggestionsFromContext:maxSuggestions:]
+  -[_PSMapsSuggester provideMapsFeedback:]
+  -[_PSMapsSuggester deleteMapsFeedbackEventsMatchingHandle:contactId:startLocationId:endLocationId:]
+
+
+_PSInteractionAndContactMonitor : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableSet *mutableContactIdsSeen
+ @property  NSMutableSet *mutableContactIdsInContactStore
+ @property  NSSet *contactIdsSeen
+ @property  NSSet *contactIdsInContactStore
+ @property  _CDInteractionStore *interactionStore
+ @property  CNContactStore *contactStore
+
+  // instance methods
+  -[_PSInteractionAndContactMonitor .cxx_destruct]
+  -[_PSInteractionAndContactMonitor interactionStore]
+  -[_PSInteractionAndContactMonitor contactStore]
+  -[_PSInteractionAndContactMonitor initWithInteractionStore:contactStore:]
+  -[_PSInteractionAndContactMonitor populateContactIdCachesWithMessageCache:shareCache:]
+  -[_PSInteractionAndContactMonitor contactIdsInContactStore]
+  -[_PSInteractionAndContactMonitor contactIdsSeen]
+  -[_PSInteractionAndContactMonitor mutableContactIdsSeen]
+  -[_PSInteractionAndContactMonitor setMutableContactIdsSeen:]
+  -[_PSInteractionAndContactMonitor notifyWhenContactAddedToInteractionStore:]
+  -[_PSInteractionAndContactMonitor mutableContactIdsInContactStore]
+  -[_PSInteractionAndContactMonitor fetchAllContactIdsFromContactStore]
+  -[_PSInteractionAndContactMonitor notifyWhenContactStoreChanged]
+  -[_PSInteractionAndContactMonitor setMutableContactIdsInContactStore:]
+
+
+_PSContactResolver : NSObject /usr/lib/libSystem.B.dylib
+ @property  CNContactStore *contactStore
+ @property  NSArray *keysToFetch
+
+  // instance methods
+  -[_PSContactResolver .cxx_destruct]
+  -[_PSContactResolver resolveContactIfPossibleFromContactIdentifierString:]
+  -[_PSContactResolver contactStore]
+  -[_PSContactResolver keysToFetch]
+  -[_PSContactResolver contactWithIdentifier:]
+  -[_PSContactResolver initWithContactStore:keysToFetch:]
+  -[_PSContactResolver resolveContactIfPossibleFromContactIdentifierString:pickFirstOfMultiple:]
+  -[_PSContactResolver allEmailAndPhoneNumberHandlesForContact:]
+  -[_PSContactResolver resolveContact:]
+  -[_PSContactResolver resolveContactFromINPerson:]
+  -[_PSContactResolver resolveContactIdentifier:]
+
+
+_PSHeuristics : NSObject /usr/lib/libSystem.B.dylib
+ @property  _CDInteractionCache *recencyCache
+ @property  <_DKKnowledgeQuerying> *knowledgeStore
+ @property  _CDInteractionStore *interactionStore
+ @property  _PSContactResolver *contactResolver
+
+  // class methods
+  +[_PSHeuristics templateForInPhoneCallHeuristicWithContactId:handle:]
+
+  // instance methods
+  -[_PSHeuristics .cxx_destruct]
+  -[_PSHeuristics interactionStore]
+  -[_PSHeuristics knowledgeStore]
+  -[_PSHeuristics initWithKnowledgeStore:interactionStore:contactResolver:]
+  -[_PSHeuristics recentNonSystemSuggestionsForBundleIDs:numberOfSuggestion:]
+  -[_PSHeuristics hyperRecentHeuristicSuggestionProxiesWithReferenceDate:predictionContextBundleId:]
+  -[_PSHeuristics inPhoneCallHeuristicSuggestionProxies]
+  -[_PSHeuristics photoSuggestionProxiesPartitionedByPresenceInAttachments:photoSuggestedPeople:contactIDsInAssets:]
+  -[_PSHeuristics maximalIntersectionGroupChatSuggestionProxyWithSeedContactIdentifiers:bundleIds:meContactIdentifier:]
+  -[_PSHeuristics backFillProxiesByRecencyUsingMessagesCache:startIndex:]
+  -[_PSHeuristics seedSuggestionsForChatGuidsAndEmails:]
+  -[_PSHeuristics hourOfDayProbabilitiesToInteractWithContacts:]
+  -[_PSHeuristics prepareRecencyCache]
+  -[_PSHeuristics setRecencyCache:]
+  -[_PSHeuristics contactResolver]
+  -[_PSHeuristics recencyCache]
+  -[_PSHeuristics proximityBoostingHeuristicWithProximityBooster:existingSuggestions:]
+
+
+_PSPredictionContext : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSDate *suggestionDate
+ @property  NSUUID *locationUUID
+ @property  NSArray *locationUUIDs
+ @property  long long locationType
+ @property  NSString *bundleID
+ @property  NSString *accountIdentifier
+ @property  NSArray *seedRecipients
+ @property  NSArray *candidateShareExtensionBundleIds
+ @property  NSDictionary *appBundleIdsToShareExtensionBundleIdsMapping
+ @property  NSArray *attachments
+ @property  NSArray *photoSuggestedPeople
+
+  // class methods
+  +[_PSPredictionContext supportsSecureCoding]
+
+  // instance methods
+  -[_PSPredictionContext init]
+  -[_PSPredictionContext encodeWithCoder:]
+  -[_PSPredictionContext initWithCoder:]
+  -[_PSPredictionContext .cxx_destruct]
+  -[_PSPredictionContext attachments]
+  -[_PSPredictionContext setAttachments:]
+  -[_PSPredictionContext bundleID]
+  -[_PSPredictionContext setBundleID:]
+  -[_PSPredictionContext locationUUID]
+  -[_PSPredictionContext setLocationUUID:]
+  -[_PSPredictionContext locationUUIDs]
+  -[_PSPredictionContext accountIdentifier]
+  -[_PSPredictionContext setAccountIdentifier:]
+  -[_PSPredictionContext locationType]
+  -[_PSPredictionContext setAppBundleIdsToShareExtensionBundleIdsMapping:]
+  -[_PSPredictionContext setLocationType:]
+  -[_PSPredictionContext suggestionDate]
+  -[_PSPredictionContext photoSuggestedPeople]
+  -[_PSPredictionContext setSuggestionDate:]
+  -[_PSPredictionContext setPhotoSuggestedPeople:]
+  -[_PSPredictionContext setLocationUUIDs:]
+  -[_PSPredictionContext seedRecipients]
+  -[_PSPredictionContext setSeedRecipients:]
+  -[_PSPredictionContext candidateShareExtensionBundleIds]
+  -[_PSPredictionContext setCandidateShareExtensionBundleIds:]
+  -[_PSPredictionContext appBundleIdsToShareExtensionBundleIdsMapping]
+
+
+_PSMapsFeedbackAction : _PSFeedbackAction
+ @property  NSString *contactId
+ @property  NSString *handle
+
+  // class methods
+  +[_PSMapsFeedbackAction engagementWithSuggestionWithContactIdentifier:handle:]
+  +[_PSMapsFeedbackAction engagementWithNonSuggestionWithContactIdentifier:handle:]
+
+  // instance methods
+  -[_PSMapsFeedbackAction .cxx_destruct]
+  -[_PSMapsFeedbackAction handle]
+  -[_PSMapsFeedbackAction contactId]
+  -[_PSMapsFeedbackAction initWithContactIdentifier:handle:type:]
+
+
+_PSMapsFeedback : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL dryRun
+ @property  _PSMapsFeedbackAction *action
+ @property  _PSMapsPredictionContext *context
+ @property  NSArray *suggestions
+ @property  unsigned long indexOfEngagedSuggestion
+
+  // instance methods
+  -[_PSMapsFeedback .cxx_destruct]
+  -[_PSMapsFeedback context]
+  -[_PSMapsFeedback action]
+  -[_PSMapsFeedback suggestions]
+  -[_PSMapsFeedback dryRun]
+  -[_PSMapsFeedback setDryRun:]
+  -[_PSMapsFeedback indexOfEngagedSuggestion]
+  -[_PSMapsFeedback knowledgeEvent]
+  -[_PSMapsFeedback feedbackPayload]
+  -[_PSMapsFeedback initWithFeedbackAction:predictionContext:suggestions:]
+
+
+_PSMapsPredictionContext : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSDate *suggestionDate
+ @property  NSString *bundleID
+ @property  NSString *navigationStartLocationId
+ @property  NSString *navigationEndLocationId
+
+  // class methods
+  +[_PSMapsPredictionContext supportsSecureCoding]
+
+  // instance methods
+  -[_PSMapsPredictionContext init]
+  -[_PSMapsPredictionContext encodeWithCoder:]
+  -[_PSMapsPredictionContext initWithCoder:]
+  -[_PSMapsPredictionContext .cxx_destruct]
+  -[_PSMapsPredictionContext bundleID]
+  -[_PSMapsPredictionContext setBundleID:]
+  -[_PSMapsPredictionContext suggestionDate]
+  -[_PSMapsPredictionContext setSuggestionDate:]
+  -[_PSMapsPredictionContext navigationStartLocationId]
+  -[_PSMapsPredictionContext navigationEndLocationId]
+  -[_PSMapsPredictionContext setNavigationStartLocationId:]
+  -[_PSMapsPredictionContext setNavigationEndLocationId:]
+
+
+_PSAppUsageUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSAppUsageUtilities relativeAppUsageProbabilitiesForCandidateBundleIds:daysAgo:knowledgeStore:]
+  +[_PSAppUsageUtilities mostUsedAppBundleIdsUsingPredicate:knowledgeStore:]
+  +[_PSAppUsageUtilities shareExtensionsUsedAndInstalledDaysAgo:appBundleIdsToShareExtensionBundleIdsMapping:knowledgeStore:]
+  +[_PSAppUsageUtilities mostUsedAppShareExtensionsWithAppBundleIdsToShareExtensionBundleIdsMapping:knowledgeStore:]
+
+
+_PSMessagesZkwFeedback : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL dryRun
+ @property  NSString *chatGuidEngaged
+ @property  NSArray *suggestions
+
+  // instance methods
+  -[_PSMessagesZkwFeedback .cxx_destruct]
+  -[_PSMessagesZkwFeedback suggestions]
+  -[_PSMessagesZkwFeedback dryRun]
+  -[_PSMessagesZkwFeedback setDryRun:]
+  -[_PSMessagesZkwFeedback initWithChatGuidEngagaged:suggestions:]
+  -[_PSMessagesZkwFeedback feedbackPayload]
+  -[_PSMessagesZkwFeedback indexOfEngagedSuggestionForChatGuidEngaged]
+  -[_PSMessagesZkwFeedback reasonTypeForSuggestionIndex:]
+  -[_PSMessagesZkwFeedback reasonForSuggestionIndex:]
+  -[_PSMessagesZkwFeedback feedbackActionTypeForSuggestionIndex:]
+  -[_PSMessagesZkwFeedback chatGuidEngaged]
+
+
+_PSSuggesterConfiguration : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  long long maximumNumberOfSuggestions
+ @property  _PSEnsembleModel *suggestionModel
+
+  // class methods
+  +[_PSSuggesterConfiguration supportsSecureCoding]
+  +[_PSSuggesterConfiguration defaultConfiguration]
+
+  // instance methods
+  -[_PSSuggesterConfiguration encodeWithCoder:]
+  -[_PSSuggesterConfiguration initWithCoder:]
+  -[_PSSuggesterConfiguration .cxx_destruct]
+  -[_PSSuggesterConfiguration setMaximumNumberOfSuggestions:]
+  -[_PSSuggesterConfiguration suggestionModel]
+  -[_PSSuggesterConfiguration maximumNumberOfSuggestions]
+  -[_PSSuggesterConfiguration setSuggestionModel:]
+
+
+_PSPhotoUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSPhotoUtils assetsWithIdentifiers:]
+  +[_PSPhotoUtils sceneAnalysisFromAssets:]
+  +[_PSPhotoUtils candidateContactsIdentifiersFromPhotoSuggestedPeople:]
+  +[_PSPhotoUtils candidateLocalIdentifiersFromPhotoSuggestedPeople:]
+
+
+_PSKNNModel : NSObject /usr/lib/libSystem.B.dylib
+ @property  unsigned long k
+ @property  <_DKKnowledgeQuerying> *knowledgeStore
+ @property  _CDInteractionStore *interactionStore
+ @property  _PSContactResolver *contactResolver
+ @property  NSArray *filterBundleIds
+ @property  _CDInteractionCache *messageInteractionCache
+ @property  _CDInteractionCache *shareInteractionCache
+
+  // instance methods
+  -[_PSKNNModel .cxx_destruct]
+  -[_PSKNNModel interactionStore]
+  -[_PSKNNModel knowledgeStore]
+  -[_PSKNNModel k]
+  -[_PSKNNModel setMessageInteractionCache:]
+  -[_PSKNNModel setShareInteractionCache:]
+  -[_PSKNNModel messageInteractionCache]
+  -[_PSKNNModel shareInteractionCache]
+  -[_PSKNNModel filterBundleIds]
+  -[_PSKNNModel initWithK:interactionStore:filterByBundleIds:knowledgeStore:contactResolver:messageInteractionCache:shareInteractionCache:]
+  -[_PSKNNModel suggestionProxiesWithPredictionContext:]
+  -[_PSKNNModel rankedMapsShareEtaSuggestions:maxSuggestions:]
+  -[_PSKNNModel mapsShareEtaDefaultKnnSuggestions:maxSuggestions:]
+  -[_PSKNNModel rankedGlobalSuggestionsWithPredictionContext:maxSuggestions:contactsOnly:interactions:contactIdsCurrentlyInStore:]
+  -[_PSKNNModel rankedZkwSuggestionsWithPredictionContext:maxSuggestions:]
+  -[_PSKNNModel rankedNameSuggestionsWithPredictionContext:forName:]
+  -[_PSKNNModel rankedAutocompleteSuggestionsWithPredictionContext:candidates:]
+  -[_PSKNNModel contactResolver]
+  -[_PSKNNModel rankedMessagesAutocompleteSuggestionsWithPredictionContext:bundleId:candidates:]
+  -[_PSKNNModel featureVectorFromPredictionDate:bundleId:]
+  -[_PSKNNModel candidatePropertyFromCandidates:]
+  -[_PSKNNModel featuresFromInteractionsSplitRecipients:]
+  -[_PSKNNModel interactionLabelsForQueryResult:queryPoint:rankerType:frequencyOnly:contactsOnly:]
+  -[_PSKNNModel suggestionExists:withValue:inArray:]
+  -[_PSKNNModel filterSuggestionsFrom:byFilteringOutSeedRecipients:]
+  -[_PSKNNModel rankedMessagesZkwSuggestionsWithPredictionContext:bundleId:maxSuggestions:frequencyOnly:interactions:]
+  -[_PSKNNModel indexesOfObjectsWithKey:withValues:inArray:]
+  -[_PSKNNModel featuresFromInteractions:]
+  -[_PSKNNModel normalizedStringFromString:]
+  -[_PSKNNModel filterShareInteractions:minimumOccurences:]
+  -[_PSKNNModel neighborsFromTrainingData:k:queryPoint:]
+  -[_PSKNNModel extractNearestNeighborLabelsForQueryResult:andNeighbors:frequencyOnly:rankerType:contactsOnly:]
+  -[_PSKNNModel splitShareLabels:suggestionDate:contextBundleId:]
+  -[_PSKNNModel sliceStart:end:ofArray:]
+  -[_PSKNNModel mergedSuggestionsFromShares:andInteractions:]
+  -[_PSKNNModel rankedLabelsFromInteractionsSingleRecipientArray:andDistances:freqOnly:contactsOnly:]
+  -[_PSKNNModel rankedLabelsFromInteractionsMaintainRecipientsArray:andDistances:freqOnly:]
+  -[_PSKNNModel indexToInsertNeighbor:array:]
+  -[_PSKNNModel featuresFromMapsFeedbackEvents:]
+  -[_PSKNNModel extractNearestNeighborsForMapsQueryResult:andNeighbors:frequencyOnly:]
+  -[_PSKNNModel targetBundleIdsForFilterBundlesIds:]
+
+
+_PSFeedback : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL dryRun
+ @property  _PSFeedbackAction *action
+ @property  unsigned long indexOfEngagedSuggestion
+ @property  double delay
+ @property  _PSPredictionContext *context
+ @property  NSArray *suggestions
+ @property  float numberOfVisibleSuggestions
+ @property  NSString *sessionIdentifier
+
+  // class methods
+  +[_PSFeedback feedbackForAction:delay:context:suggestions:numberOfVisibleSuggestions:sessionIdentifier:]
+
+  // instance methods
+  -[_PSFeedback .cxx_destruct]
+  -[_PSFeedback delay]
+  -[_PSFeedback context]
+  -[_PSFeedback action]
+  -[_PSFeedback suggestions]
+  -[_PSFeedback dryRun]
+  -[_PSFeedback setDryRun:]
+  -[_PSFeedback sessionIdentifier]
+  -[_PSFeedback indexOfEngagedSuggestion]
+  -[_PSFeedback knowledgeEvent]
+  -[_PSFeedback feedbackPayload]
+  -[_PSFeedback initWithAction:delay:context:suggestions:numberOfVisibleSuggestions:sessionIdentifier:]
+  -[_PSFeedback numberOfVisibleSuggestions]
+
+
+_PSRuleOverlapFeedback : NSObject /usr/lib/libSystem.B.dylib
+ @property  BMBehaviorRetriever *behaviorRetriever
+ @property  _CDInteractionStore *interactionStore
+ @property  <_DKKnowledgeQuerying> *knowledgeStore
+
+  // instance methods
+  -[_PSRuleOverlapFeedback init]
+  -[_PSRuleOverlapFeedback .cxx_destruct]
+  -[_PSRuleOverlapFeedback interactionStore]
+  -[_PSRuleOverlapFeedback knowledgeStore]
+  -[_PSRuleOverlapFeedback setKnowledgeStore:]
+  -[_PSRuleOverlapFeedback setInteractionStore:]
+  -[_PSRuleOverlapFeedback sharesheetFeedbackEventsSinceDate:]
+  -[_PSRuleOverlapFeedback interactionStoreEventsSinceDate:]
+  -[_PSRuleOverlapFeedback matchFeedbackEvent:WithInteractions:]
+  -[_PSRuleOverlapFeedback loggingForKnowledgeStoreEvent:WithMatchingInteraction:]
+  -[_PSRuleOverlapFeedback contextItemsFromEvent:]
+  -[_PSRuleOverlapFeedback subsetOfLoiItems:]
+  -[_PSRuleOverlapFeedback behaviorRetriever]
+  -[_PSRuleOverlapFeedback constantFeaturesFromContextItems:]
+  -[_PSRuleOverlapFeedback feedbackPayloadForRule:ForInteraction:ForContextItems:WithConstantFeatures:]
+  -[_PSRuleOverlapFeedback recipientPredictedCorrectlyByRule:interaction:bundleId:]
+  -[_PSRuleOverlapFeedback targetAppPredictedCorrectlyByRule:bundleId:]
+  -[_PSRuleOverlapFeedback bucketedValue:]
+  -[_PSRuleOverlapFeedback reviewLastDayOfShares]
+
+
+_PSRecipient : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *senderHandle
+ @property  NSString *identifier
+ @property  NSString *handle
+ @property  NSString *displayName
+ @property  CNContact *contact
+
+  // class methods
+  +[_PSRecipient supportsSecureCoding]
+  +[_PSRecipient recipientForINPerson:contactResolver:]
+
+  // instance methods
+  -[_PSRecipient encodeWithCoder:]
+  -[_PSRecipient initWithCoder:]
+  -[_PSRecipient .cxx_destruct]
+  -[_PSRecipient identifier]
+  -[_PSRecipient handle]
+  -[_PSRecipient setIdentifier:]
+  -[_PSRecipient displayName]
+  -[_PSRecipient contact]
+  -[_PSRecipient setContact:]
+  -[_PSRecipient initWithIdentifier:handle:contact:]
+  -[_PSRecipient initWithIdentifier:senderHandle:handle:displayName:contact:]
+  -[_PSRecipient initWithIdentifier:handle:displayName:contact:]
+  -[_PSRecipient senderHandle]
+
+
+_PSSuggestionProxy : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *bundleID
+ @property  NSString *interactionRecipients
+ @property  NSString *contactID
+ @property  NSString *handle
+ @property  NSString *reason
+ @property  NSString *reasonType
+ @property  BOOL useGroupsWhenFindingRecipient
+ @property  NSString *suggestionKey
+
+  // instance methods
+  -[_PSSuggestionProxy isEqual:]
+  -[_PSSuggestionProxy reason]
+  -[_PSSuggestionProxy .cxx_destruct]
+  -[_PSSuggestionProxy handle]
+  -[_PSSuggestionProxy bundleID]
+  -[_PSSuggestionProxy contactID]
+  -[_PSSuggestionProxy reasonType]
+  -[_PSSuggestionProxy suggestionKey]
+  -[_PSSuggestionProxy interactionRecipients]
+  -[_PSSuggestionProxy useGroupsWhenFindingRecipient]
+  -[_PSSuggestionProxy initWithBundleID:interactionRecipients:contactID:handle:reason:reasonType:]
+  -[_PSSuggestionProxy initWithBundleID:interactionRecipients:contactID:reason:reasonType:]
+  -[_PSSuggestionProxy initWithBundleID:interactionRecipients:contactID:handle:reason:reasonType:useGroupsWhenFindingRecipient:]
+
+
+_PSSuggestionTemplate : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *bundleID
+ @property  NSString *interactionRecipients
+ @property  INImage *image
+ @property  NSString *groupName
+ @property  NSArray *recipientContactIDs
+ @property  NSArray *recipientEmailAddresses
+ @property  NSArray *recipientPhoneNumbers
+ @property  NSDictionary *contactIdToHandleMapping
+ @property  NSString *reason
+ @property  NSString *reasonType
+
+  // instance methods
+  -[_PSSuggestionTemplate reason]
+  -[_PSSuggestionTemplate .cxx_destruct]
+  -[_PSSuggestionTemplate bundleID]
+  -[_PSSuggestionTemplate image]
+  -[_PSSuggestionTemplate groupName]
+  -[_PSSuggestionTemplate recipientEmailAddresses]
+  -[_PSSuggestionTemplate reasonType]
+  -[_PSSuggestionTemplate interactionRecipients]
+  -[_PSSuggestionTemplate initWithBundleID:interactionRecipients:image:groupName:recipientContactIDs:recipientEmailAddresses:recipientPhoneNumbers:contactIdToHandleMapping:reason:reasonType:]
+  -[_PSSuggestionTemplate recipientContactIDs]
+  -[_PSSuggestionTemplate recipientPhoneNumbers]
+  -[_PSSuggestionTemplate suggestionWithContactIDMapping:phoneMapping:emailMapping:contactStore:contactKeysToFetch:]
+  -[_PSSuggestionTemplate contactIdToHandleMapping]
+
+
+_PSSuggestion : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *derivedIntentIdentifier
+ @property  NSString *reason
+ @property  NSString *reasonType
+ @property  NSString *conversationIdentifier
+ @property  NSString *groupName
+ @property  NSArray *recipients
+ @property  NSString *bundleID
+ @property  INImage *image
+
+  // class methods
+  +[_PSSuggestion supportsSecureCoding]
+  +[_PSSuggestion suggestionForBundleID:derivedIntentIdentifier:knowledgeStore:contactResolver:reason:reasonType:]
+
+  // instance methods
+  -[_PSSuggestion encodeWithCoder:]
+  -[_PSSuggestion initWithCoder:]
+  -[_PSSuggestion reason]
+  -[_PSSuggestion .cxx_destruct]
+  -[_PSSuggestion bundleID]
+  -[_PSSuggestion image]
+  -[_PSSuggestion derivedIntentIdentifier]
+  -[_PSSuggestion groupName]
+  -[_PSSuggestion recipients]
+  -[_PSSuggestion setRecipients:]
+  -[_PSSuggestion conversationIdentifier]
+  -[_PSSuggestion setReason:]
+  -[_PSSuggestion setReasonType:]
+  -[_PSSuggestion reasonType]
+  -[_PSSuggestion initWithBundleID:conversationIdentifier:groupName:recipients:reason:reasonType:]
+  -[_PSSuggestion initWithBundleID:conversationIdentifier:groupName:recipients:]
+  -[_PSSuggestion initWithBundleID:conversationIdentifier:groupName:recipients:derivedIntentIdentifier:image:reason:reasonType:]
+
+
+_PSRuleMiningModel : NSObject /usr/lib/libSystem.B.dylib
+ @property  BMBehaviorRetriever *behaviorRetriever
+ @property  <_DKKnowledgeQuerying> *knowledgeStore
+ @property  _PSContactResolver *contactResolver
+
+  // instance methods
+  -[_PSRuleMiningModel .cxx_destruct]
+  -[_PSRuleMiningModel knowledgeStore]
+  -[_PSRuleMiningModel shareExtensionSuggestionsFromContext:]
+  -[_PSRuleMiningModel initWithKnowledgeStore:contactresolver:]
+  -[_PSRuleMiningModel suggestionProxiesWithPredictionContext:photoSuggestedPeople:supportedBundleIDs:]
+  -[_PSRuleMiningModel contactResolver]
+  -[_PSRuleMiningModel behaviorRetriever]
+  -[_PSRuleMiningModel filterByRegularizingRules:invalidatedByAnyConflictingItems:containingItemTypes:]
+  -[_PSRuleMiningModel filterByRegularizingRulesByContextOverlap:regulularizeItems:queryItems:regularizationConstraint:]
+  -[_PSRuleMiningModel suggestionArrayWithArray:appendingUniqueElementsByBundleIdFromArray:]
+
+
+_PSIMCoreUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSIMCoreUtils contactKeysToFetch]
+  +[_PSIMCoreUtils chatWithGUID:]
+  +[_PSIMCoreUtils recipientsForChat:usingStore:]
+  +[_PSIMCoreUtils filterNamedGroupsOrIndividualChatsFromInteractions:registry:]
+  +[_PSIMCoreUtils contactIsMe:usingStore:]
+
+
+_PSPhotoSuggestions : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSPhotoSuggestions contactIDsByAssetPresenceInAttachments:]
+  +[_PSPhotoSuggestions suggestionTemplateForPhotoContactIdWithMessages:cdInteraction:reason:reasonType:]
+  +[_PSPhotoSuggestions photoSuggestedPeopleFromAttachments:]
+  +[_PSPhotoSuggestions partitionPeopleSuggestionProxiesFromPhotosByAssetPresenceInAttachments:photoSuggestedPeople:contactIDsInAssets:]
+
+
+_PSFeedbackAction : NSObject /usr/lib/libSystem.B.dylib
+ @property  long long type
+ @property  _PSSuggestion *suggestion
+ @property  NSString *transportBundleID
+
+  // class methods
+  +[_PSFeedbackAction engagementWithNonSuggestionWithEngagementIdentifier:]
+  +[_PSFeedbackAction engagementWithSuggestion:transportBundleID:]
+  +[_PSFeedbackAction abandonment]
+
+  // instance methods
+  -[_PSFeedbackAction type]
+  -[_PSFeedbackAction .cxx_destruct]
+  -[_PSFeedbackAction transportBundleID]
+  -[_PSFeedbackAction suggestion]
+  -[_PSFeedbackAction initWithType:suggestion:transportBundleID:]
+
+
+_PSInteractionStoreUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[_PSInteractionStoreUtils mostRecentInteractionWithSenderOrRecipientMatchingContactIdentifier:bundleIds:store:singleRecipient:]
+  +[_PSInteractionStoreUtils recentInteractionsFromStore:bundleIDs:]
+  +[_PSInteractionStoreUtils conversationIdWithMaximalIntersectionWithContactIdentifiers:store:bundleIds:meContactIdentifier:]
+  +[_PSInteractionStoreUtils interactionsMatchingAnyHandlesOrDomainIds:account:directions:bundleIds:store:fetchLimit:]
+  +[_PSInteractionStoreUtils interactionsMostRecentForBundleId:store:resultLimit:]
+  +[_PSInteractionStoreUtils interactionsContainingSearchStringInDisplayName:account:directions:bundleIds:store:fetchLimit:]
+  +[_PSInteractionStoreUtils interactionsFromStore:referenceDate:withMechanisms:withAccount:withBundleIds:withTargetBundleIds:withDirections:fetchLimit:]
+  +[_PSInteractionStoreUtils interactionsHyperRecentFromReferenceDate:bundleIds:recencyMargin:store:]
+  +[_PSInteractionStoreUtils mostRecentInteractionWithSingleRecipientMatchingContactIdentifier:store:]
+  +[_PSInteractionStoreUtils mostRecentInteractionWithSingleRecipientMatchingHandle:store:]
+
+
+01 00 0300 /System/Library/Frameworks/Intents.framework/Intents: INImage 
+01 00 0300 /System/Library/Frameworks/Intents.framework/Intents: INSendMessageIntent 
+01 00 0200 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSEnumerator 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0500 /System/Library/PrivateFrameworks/Rapport.framework/Rapport: RPPeopleDiscovery 
+01 00 0100 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDClientContext 
+01 00 0100 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextQueries 
+01 00 0100 /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext: _CDContextualKeyPath 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _CDInteraction 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _CDInteractionCache 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _CDInteractionStore 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEvent 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEventQuery 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKIntentMetadataKey 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKKnowledgeStore 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKMapsShareEtaFeedbackMetadataKey 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKQuery 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKShareSheetFeedbackMetadataKey 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSource 
+01 00 0600 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSystemEventStreams 

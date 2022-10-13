@@ -1,0 +1,398 @@
+|| __DATA.__data _bump_fragment_shader_source
+|| __DATA.__data _default_vertex_shader_source
+|| __DATA.__data _luma_lookup_fragment_shader_source
+|| __DATA.__objc_data _OBJC_CLASS_$_PBContext
+|| __DATA.__objc_data _OBJC_CLASS_$_PBCoreImageContext
+|| __DATA.__objc_data _OBJC_CLASS_$_PBFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBFilterClassDescription
+|| __DATA.__objc_data _OBJC_CLASS_$_PBKaleidoscopeFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBLightTunnelFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBMirrorFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBNormalFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBSqueezeFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBStretchFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBThermalFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBTwirlFilter
+|| __DATA.__objc_data _OBJC_CLASS_$_PBXRayFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBCoreImageContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBFilterClassDescription
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBKaleidoscopeFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBLightTunnelFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBMirrorFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBNormalFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBSqueezeFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBStretchFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBThermalFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBTwirlFilter
+|| __DATA.__objc_data _OBJC_METACLASS_$_PBXRayFilter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBFilter._ciFilter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBFilter._wrapMirrorFilter
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBFilterClassDescription._attributes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBFilterClassDescription._inputKeys
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter._inputAmount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.lastInputDecay
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.lastInputRotation
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.lastInputSize
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBKaleidoscopeFilter.lastInputY
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter._inputAmount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter.lastInputRadius
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter.lastInputRotation
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBLightTunnelFilter.lastInputY
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBMirrorFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBMirrorFilter.lastInputAngle
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBMirrorFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBMirrorFilter.lastInputY
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter._inputAmount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter.lastInputRadius
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter.lastInputScale
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBSqueezeFilter.lastInputY
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBStretchFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBStretchFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBStretchFilter.lastInputY
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter._inputAmount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter.firstTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter.lastInputAngle
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter.lastInputRadius
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter.lastInputX
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PBTwirlFilter.lastInputY
+|| __TEXT.__text _clamp
+|| __TEXT.__text _image_queue_release_callback
+|| __TEXT.__text _interpolate
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValueIfPresent
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreGraphics: _CGAffineTransformConcat
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformMakeRotation
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGPointZero
+__ CoreImage: _OBJC_CLASS_$_CIContext
+__ CoreImage: _OBJC_CLASS_$_CIFilter
+__ CoreImage: _OBJC_CLASS_$_CIImage
+__ CoreImage: _OBJC_CLASS_$_CIVector
+__ CoreImage: _kCIContextUseSoftwareRenderer
+__ CoreImage: _kCIContextWorkingColorSpace
+__ CoreVideo: _CVOpenGLESTextureCacheCreate
+__ CoreVideo: _CVOpenGLESTextureCacheCreateTextureFromImage
+__ CoreVideo: _CVOpenGLESTextureCacheFlush
+__ CoreVideo: _CVOpenGLESTextureGetName
+__ CoreVideo: _CVPixelBufferCreateWithIOSurface
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetIOSurface
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferPoolCreatePixelBuffer
+__ CoreVideo: _CVPixelBufferPoolGetPixelBufferAttributes
+__ CoreVideo: _CVPixelBufferPoolRelease
+__ CoreVideo: _CVPixelBufferPoolRetain
+__ CoreVideo: _CVPixelBufferRelease
+__ CoreVideo: _CVPixelBufferRetain
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ OpenGLES: _OBJC_CLASS_$_EAGLContext
+__ OpenGLES: _glBindTexture
+__ OpenGLES: _glFlush
+__ OpenGLES: _glTexParameteri
+__ QuartzCore: _CAImageQueueCollect
+__ QuartzCore: _CAImageQueueConsumeUnconsumedInRange
+__ QuartzCore: _CAImageQueueDeleteBuffer
+__ QuartzCore: _CAImageQueueGetHeight
+__ QuartzCore: _CAImageQueueGetWidth
+__ QuartzCore: _CAImageQueueInsertImage
+__ QuartzCore: _CAImageQueueRegisterIOSurfaceBuffer
+__ VideoToolbox: _FigCreateIOSurfaceBackedCVPixelBuffer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _hypot
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_copyIvarList
+__ libobjc.A.dylib: _class_copyPropertyList
+__ libobjc.A.dylib: _ivar_getName
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _property_getName
+PBFilter : NSObject
+  // class methods
+  +[PBFilter filterWithName:]
+  +[PBFilter needsDisplayForKey:]
+  +[PBFilter defaultValueForKey:]
+
+  // instance methods
+  -[PBFilter init]
+  -[PBFilter dealloc]
+  -[PBFilter name]
+  -[PBFilter localizedName]
+  -[PBFilter setDefaults]
+  -[PBFilter inputKeys]
+  -[PBFilter ciFilterName]
+  -[PBFilter needsWrapMirror]
+  -[PBFilter applyParametersToCIFilter:extent:]
+  -[PBFilter createOutputImage:mirrored:size:]
+  -[PBFilter resetInputImage]
+  -[PBFilter ciFilter]
+  -[PBFilter allowAbsoluteGestures]
+  -[PBFilter _presentationName]
+  -[PBFilter renderWithContext:inputSize:outputRect:mirrored:]
+  -[PBFilter pointValueForKeyIfSupported:]
+  -[PBFilter floatValueForKeyIfSupported:]
+  -[PBFilter setPointValue:forKeyIfSupported:]
+  -[PBFilter setFloatValue:forKeyIfSupported:]
+  -[PBFilter handleTapGesture:viewSize:mirror:]
+  -[PBFilter handleGestureAtLocations:count:translation:viewSize:stateBegan:mirror:]
+  -[PBFilter handlePanGesture:viewSize:stateBegan:mirror:]
+  -[PBFilter handlePinchGesture:stateBegan:]
+  -[PBFilter handleRotateGesture:stateBegan:mirror:]
+
+
+PBFilterClassDescription : NSObject
+  // class methods
+  +[PBFilterClassDescription classDescriptionForClass:]
+
+  // instance methods
+  -[PBFilterClassDescription attributes]
+  -[PBFilterClassDescription inputKeys]
+  -[PBFilterClassDescription initWithClass:]
+
+
+PBContext : NSObject
+ @property  ^{_CAImageQueue=} outputImageQueue
+ @property  ^{__CVPixelBufferPool=} smallPool
+ @property  ^{__CVPixelBufferPool=} largePool
+
+  // class methods
+  +[PBContext openGLContext]
+  +[PBContext openGLContext:]
+  +[PBContext openCLContext]
+
+  // instance methods
+  -[PBContext init]
+  -[PBContext createCVPixelBufferForFilter:inputPixelBuffer:mirrored:]
+  -[PBContext applyFilter:toSurface:mirrored:resultHandler:]
+  -[PBContext applyFilter:toSurface:mirrored:surfaceResultHandler:]
+  -[PBContext renderFilter:inputPixelBuffer:]
+  -[PBContext renderFilter:inputPixelBuffer:mirrored:]
+  -[PBContext renderNineUp:inputPixelBuffer:]
+  -[PBContext renderNineUp:inputPixelBuffer:mirrored:]
+  -[PBContext createCVPixelBufferForFilter:inputPixelBuffer:]
+  -[PBContext outputImageQueue]
+  -[PBContext setOutputImageQueue:]
+  -[PBContext largePool]
+  -[PBContext setLargePool:]
+  -[PBContext smallPool]
+  -[PBContext setSmallPool:]
+  -[PBContext preloadFilter:]
+
+
+PBNormalFilter : PBFilter
+
+PBXRayFilter : PBFilter
+  // instance methods
+  -[PBXRayFilter ciFilterName]
+
+
+PBTwirlFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+ @property  float inputAmount
+ @property  float inputRotation
+
+  // instance methods
+  -[PBTwirlFilter setDefaults]
+  -[PBTwirlFilter inputAmount]
+  -[PBTwirlFilter setInputAmount:]
+  -[PBTwirlFilter inputRotation]
+  -[PBTwirlFilter setInputRotation:]
+  -[PBTwirlFilter inputPoint]
+  -[PBTwirlFilter setInputPoint:]
+  -[PBTwirlFilter ciFilterName]
+  -[PBTwirlFilter needsWrapMirror]
+  -[PBTwirlFilter applyParametersToCIFilter:extent:]
+
+
+PBThermalFilter : PBFilter
+  // instance methods
+  -[PBThermalFilter ciFilterName]
+
+
+PBStretchFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+
+  // instance methods
+  -[PBStretchFilter setDefaults]
+  -[PBStretchFilter inputPoint]
+  -[PBStretchFilter setInputPoint:]
+  -[PBStretchFilter ciFilterName]
+  -[PBStretchFilter needsWrapMirror]
+  -[PBStretchFilter applyParametersToCIFilter:extent:]
+
+
+PBSqueezeFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+ @property  float inputAmount
+
+  // instance methods
+  -[PBSqueezeFilter setDefaults]
+  -[PBSqueezeFilter inputAmount]
+  -[PBSqueezeFilter setInputAmount:]
+  -[PBSqueezeFilter inputPoint]
+  -[PBSqueezeFilter setInputPoint:]
+  -[PBSqueezeFilter ciFilterName]
+  -[PBSqueezeFilter needsWrapMirror]
+  -[PBSqueezeFilter applyParametersToCIFilter:extent:]
+
+
+PBMirrorFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+ @property  float inputOrientation
+
+  // instance methods
+  -[PBMirrorFilter setDefaults]
+  -[PBMirrorFilter inputOrientation]
+  -[PBMirrorFilter setInputOrientation:]
+  -[PBMirrorFilter inputPoint]
+  -[PBMirrorFilter setInputPoint:]
+  -[PBMirrorFilter ciFilterName]
+  -[PBMirrorFilter needsWrapMirror]
+  -[PBMirrorFilter applyParametersToCIFilter:extent:]
+
+
+PBLightTunnelFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+ @property  float inputAmount
+ @property  float inputRotation
+
+  // instance methods
+  -[PBLightTunnelFilter setDefaults]
+  -[PBLightTunnelFilter inputAmount]
+  -[PBLightTunnelFilter setInputAmount:]
+  -[PBLightTunnelFilter inputRotation]
+  -[PBLightTunnelFilter setInputRotation:]
+  -[PBLightTunnelFilter inputPoint]
+  -[PBLightTunnelFilter setInputPoint:]
+  -[PBLightTunnelFilter ciFilterName]
+  -[PBLightTunnelFilter needsWrapMirror]
+  -[PBLightTunnelFilter applyParametersToCIFilter:extent:]
+
+
+PBCoreImageContext : PBContext
+  // instance methods
+  -[PBCoreImageContext dealloc]
+  -[PBCoreImageContext initWithOptions:]
+  -[PBCoreImageContext outputTexture]
+  -[PBCoreImageContext inputTexture]
+  -[PBCoreImageContext setOutputSize:]
+  -[PBCoreImageContext outputSize]
+  -[PBCoreImageContext setOutputPixelBuffer:]
+  -[PBCoreImageContext setInputPixelBuffer:]
+  -[PBCoreImageContext inputPixelBuffer]
+  -[PBCoreImageContext renderForSave]
+  -[PBCoreImageContext ciContext]
+  -[PBCoreImageContext outputPixelBuffer]
+  -[PBCoreImageContext render9Up]
+  -[PBCoreImageContext createCVPixelBufferForFilter:inputPixelBuffer:mirrored:]
+  -[PBCoreImageContext renderFilter:inputPixelBuffer:]
+  -[PBCoreImageContext renderFilter:inputPixelBuffer:mirrored:]
+  -[PBCoreImageContext renderNineUp:inputPixelBuffer:]
+  -[PBCoreImageContext renderNineUp:inputPixelBuffer:mirrored:]
+  -[PBCoreImageContext outputImageQueue]
+  -[PBCoreImageContext setOutputImageQueue:]
+  -[PBCoreImageContext largePool]
+  -[PBCoreImageContext setLargePool:]
+  -[PBCoreImageContext smallPool]
+  -[PBCoreImageContext setSmallPool:]
+  -[PBCoreImageContext setInputPixelBuffer:mapTexture:]
+  -[PBCoreImageContext setOutputPixelBuffer:mapTexture:]
+  -[PBCoreImageContext setRender9Up:]
+  -[PBCoreImageContext setRenderForSave:]
+  -[PBCoreImageContext _createPixelBuffer:withSize:]
+
+
+PBKaleidoscopeFilter : PBFilter
+ @property  {CGPoint=dd} inputPoint
+ @property  float inputAmount
+ @property  float inputRotation
+
+  // instance methods
+  -[PBKaleidoscopeFilter setDefaults]
+  -[PBKaleidoscopeFilter inputAmount]
+  -[PBKaleidoscopeFilter setInputAmount:]
+  -[PBKaleidoscopeFilter inputRotation]
+  -[PBKaleidoscopeFilter setInputRotation:]
+  -[PBKaleidoscopeFilter inputPoint]
+  -[PBKaleidoscopeFilter setInputPoint:]
+  -[PBKaleidoscopeFilter ciFilterName]
+  -[PBKaleidoscopeFilter needsWrapMirror]
+  -[PBKaleidoscopeFilter applyParametersToCIFilter:extent:]
+  -[PBKaleidoscopeFilter allowAbsoluteGestures]
+
+
+01 00 0200 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIContext 
+01 00 0200 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIFilter 
+01 00 0200 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIImage 
+01 00 0200 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIVector 
+01 00 0600 /System/Library/Frameworks/OpenGLES.framework/OpenGLES: EAGLContext 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 

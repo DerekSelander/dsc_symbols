@@ -1,0 +1,455 @@
+|| __DATA.__data _EPL_STATE_CHANGED_NOTIFICATION
+|| __DATA.__data _HANGTRACER_PREF_CHANGED_NOTIFICATION
+|| __DATA.__data _HANGTRACER_PROFILE_LIST_CHANGED_NOTIFICATION
+|| __DATA.__data _HANGTRACER_SENTRY_ENABLEMENT_SETTING_CHANGED_NOTIFICATION_TMP
+|| __DATA.__data _HANGTRACER_TASKING_CHANGED_NOTIFICATION
+|| __DATA.__data _HTSE_ADDAILY_DATE_CHANGED_NOTIFICATION
+|| __DATA.__data _HTSE_SELF_ENABLE_STATE_CHANGED_NOTIFICATION
+|| __DATA.__data _TEST_RESET_LOG_LIMITS_NOTIFICATION
+|| __DATA.__data _kSTYEndTimeKey
+|| __DATA.__data _kSTYErrorKey
+|| __DATA.__data _kSTYFileNameKey
+|| __DATA.__data _kSTYFilePathKey
+|| __DATA.__data _kSTYPerfProblemDetectedNotification
+|| __DATA.__data _kSTYScenarioReportRefKey
+|| __DATA.__data _kSTYStartTimeKey
+|| __DATA.__data _kSTYTailspinSaveOperationCompletedNotification
+|| __DATA.__objc_data _OBJC_METACLASS_$_HTFenceAssertion
+|| __DATA_CONST.__const _HANGTRACER_DOMAIN
+|| __DATA_CONST.__const _HANGTRACER_OTA_TASKING_DOMAIN
+|| __DATA_CONST.__const _HTEnabledStateChangedNotification
+|| __DATA_CONST.__const _HTEnabledUserInfoKey
+|| __DATA_CONST.__const _HT_MOBILE_DIAGNOSTIC_LOGS_DIRECTORY
+|| __DATA_CONST.__const _HT_ROOT_DIAGNOSTIC_LOGS_DIRECTORY
+|| __DATA_CONST.__const _RMEPrefExpirationDateKey
+|| __DATA_CONST.__const _RMEPrefFullDiagLimitKey
+|| __DATA_CONST.__const _RMEPrefLiteDiagLimitKey
+|| __DATA_CONST.__const _RMEPrefPerProcessLimitKey
+|| __DATA_CONST.__const _kCATailspinEnabled
+|| __DATA_CONST.__const _kEPLEnabled
+|| __DATA_CONST.__const _kEPLEnabledProfile
+|| __DATA_CONST.__const _kEPLTimeoutTimestampSec
+|| __DATA_CONST.__const _kHTAppActivationKeyBundleID
+|| __DATA_CONST.__const _kHTAppActivationKeyEventToken
+|| __DATA_CONST.__const _kHTAppActivationKeyFailureReason
+|| __DATA_CONST.__const _kHTAppActivationKeyPID
+|| __DATA_CONST.__const _kHTAppActivationKeyState
+|| __DATA_CONST.__const _kHTEventTypeFence
+|| __DATA_CONST.__const _kHTEventTypeRunLoop
+|| __DATA_CONST.__const _kHTEventTypeSentry
+|| __DATA_CONST.__const _kHTEventTypeSlowActLaunch
+|| __DATA_CONST.__const _kHTEventTypeSlowActResume
+|| __DATA_CONST.__const _kHTKeepTailspinFormatCompressed
+|| __DATA_CONST.__const _kHTKeepTailspinFormatNone
+|| __DATA_CONST.__const _kHTKeepTailspinFormatUncompressed
+|| __DATA_CONST.__const _kHTOverlapTypeNestedStr
+|| __DATA_CONST.__const _kHTOverlapTypeNoOverlapStr
+|| __DATA_CONST.__const _kHTOverlapTypeOutOfOrderStr
+|| __DATA_CONST.__const _kHTOverlapTypePartialOverlapStr
+|| __DATA_CONST.__const _kHTOverlapTypeUnknownStr
+|| __DATA_CONST.__const _kHTPrefsAppActivationLoggingCPUUtilizationThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsAppActivationLoggingEnabled
+|| __DATA_CONST.__const _kHTPrefsAppActivationLoggingMaxActivationLimit
+|| __DATA_CONST.__const _kHTPrefsAppActivationLoggingTaskOff
+|| __DATA_CONST.__const _kHTPrefsCollectOSSignposts
+|| __DATA_CONST.__const _kHTPrefsCollectOSSignpostsDeferred
+|| __DATA_CONST.__const _kHTPrefsCustomerModeEnabled
+|| __DATA_CONST.__const _kHTPrefsFenceTrackingEnabled
+|| __DATA_CONST.__const _kHTPrefsHUDEnabled
+|| __DATA_CONST.__const _kHTPrefsHUDThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsHangTracerEnabled
+|| __DATA_CONST.__const _kHTPrefsIncludeDiskInfo
+|| __DATA_CONST.__const _kHTPrefsIncludeDisplayData
+|| __DATA_CONST.__const _kHTPrefsIncludeNetworkState
+|| __DATA_CONST.__const _kHTPrefsInternalSettingsCreated
+|| __DATA_CONST.__const _kHTPrefsInternalSettingsVersion
+|| __DATA_CONST.__const _kHTPrefsMemoryLoggingEnabled
+|| __DATA_CONST.__const _kHTPrefsMemoryLoggingIntervalSec
+|| __DATA_CONST.__const _kHTPrefsPercentFullSpinReports
+|| __DATA_CONST.__const _kHTPrefsPrefixCATailspinEnablement
+|| __DATA_CONST.__const _kHTPrefsPrefixEPL
+|| __DATA_CONST.__const _kHTPrefsPrefixHTRateOnlyEnablement
+|| __DATA_CONST.__const _kHTPrefsPrefixHangTracerEnablement
+|| __DATA_CONST.__const _kHTPrefsPrefixPowerLog
+|| __DATA_CONST.__const _kHTPrefsPrefixProfile
+|| __DATA_CONST.__const _kHTPrefsPrefixSentryEnablement
+|| __DATA_CONST.__const _kHTPrefsRefreshedNotification
+|| __DATA_CONST.__const _kHTPrefsReportPeriodSec
+|| __DATA_CONST.__const _kHTPrefsRunLoopHangDailyLogLimit
+|| __DATA_CONST.__const _kHTPrefsRunLoopHangDurationThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsRunLoopHangPerPeriodLogLimit
+|| __DATA_CONST.__const _kHTPrefsRunLoopHangThirdPartyDailyLogLimit
+|| __DATA_CONST.__const _kHTPrefsRunLoopHangTimeoutDurationMSec
+|| __DATA_CONST.__const _kHTPrefsRunLoopLongHangDailyLogLimit
+|| __DATA_CONST.__const _kHTPrefsRunLoopLongHangDurationThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsRunLoopThirdPartyHangDurationThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsSavedTailspinMaxMB
+|| __DATA_CONST.__const _kHTPrefsSignpostMonitoringDailyLimit
+|| __DATA_CONST.__const _kHTPrefsSignpostMonitoringEnabled
+|| __DATA_CONST.__const _kHTPrefsSignpostMonitoringPerPeriodLogLimit
+|| __DATA_CONST.__const _kHTPrefsSlowActivationsDailyLogLimit
+|| __DATA_CONST.__const _kHTPrefsSlowActivationsPerAppMax
+|| __DATA_CONST.__const _kHTPrefsSlowActivationsTailspinThresholdMSec
+|| __DATA_CONST.__const _kHTPrefsSlowActivationsTailspinsEnabled
+|| __DATA_CONST.__const _kHTPrefsTailspinEnabled
+|| __DATA_CONST.__const _kHTPrefsTailspinSaveFormat
+|| __DATA_CONST.__const _kHTPrefsThirdPartyRunLoopLogsEnabled
+|| __DATA_CONST.__const _kHTPrefsUserMobile
+|| __DATA_CONST.__const _kHTPrefs_DEPRECATED_KeepTailspins
+|| __DATA_CONST.__const _kHTTailspinFileExtension
+|| __DATA_CONST.__const _kHTTailspinProcessingFileExtension
+|| __DATA_CONST.__const _kPDSEAllowEnableTailspin
+|| __DATA_CONST.__const _kPDSECATailspinKillSwitch
+|| __DATA_CONST.__const _kPDSECATailspinPeriodDays
+|| __DATA_CONST.__const _kPDSECATailspinTimeoutTimestampSec
+|| __DATA_CONST.__const _kPDSEHTPeriodDays
+|| __DATA_CONST.__const _kPDSEHTRateOnlyKillSwitch
+|| __DATA_CONST.__const _kPDSEHTRateOnlyPeriodDays
+|| __DATA_CONST.__const _kPDSEHTRateOnlyTimeoutTimestampSec
+|| __DATA_CONST.__const _kPDSEHTTimeoutTimestampSec
+|| __DATA_CONST.__const _kPDSEHangTracerKillSwitch
+|| __DATA_CONST.__const _kPDSESentryKillSwitch
+|| __DATA_CONST.__const _kPDSESentryPeriodDays
+|| __DATA_CONST.__const _kPDSESentryTimeoutTimestampSec
+|| __DATA_CONST.__const _kTailspinTaskedEnabledKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HTFenceAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HTPrefs
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HTPrefs
+|| __TEXT.__const _HangTracerVersionNumber
+|| __TEXT.__const _HangTracerVersionString
+|| __TEXT.__const _kHTAppActivationFailureReasonWatchdog
+|| __TEXT.__text _HTAllowAnyThread
+|| __TEXT.__text _HTAppActivationEvent
+|| __TEXT.__text _HTAppActivationGenerateAppIdentifier
+|| __TEXT.__text _HTHangEventCreate
+|| __TEXT.__text _HTHangEventCreateWithBundleID
+|| __TEXT.__text _HTResumeHangTracing
+|| __TEXT.__text _HTStartHangTracing
+|| __TEXT.__text _HTSuspendHangTracing
+|| __TEXT.__text _HTUpdateHangTracing
+|| __TEXT.__text _MATU_TO_MS
+|| __TEXT.__text _MS_TO_MATU
+|| __TEXT.__text _STYErrorWithCode
+|| __TEXT.__text __hangtracerSignpost
+|| __TEXT.__text _applyTailspinConfig
+|| __TEXT.__text _arrayOfCFPrefsWithPrefix
+|| __TEXT.__text _bundleIDFromPath
+|| __TEXT.__text _cleanupDiagnosticLogsDirectory
+|| __TEXT.__text _collectTailspinTelemetryAsync
+|| __TEXT.__text _configureTailspinForEPL
+|| __TEXT.__text _configureTailspinForSelfEnableConfig
+|| __TEXT.__text _generateMetadataString
+|| __TEXT.__text _getPrefWithOverrideProfile
+|| __TEXT.__text _getStringForOverlapType
+|| __TEXT.__text _getStringForRequestType
+|| __TEXT.__text _getTimeBetweenAbsoluteAndContinuousTime
+|| __TEXT.__text _keyWithPrefix
+|| __TEXT.__text _matuTimeDifferenceMsec
+|| __TEXT.__text _overrideOverlapStatsAggdPrefix
+|| __TEXT.__text _pathForPid
+|| __TEXT.__text _persistAndUnredactLogs
+|| __TEXT.__text _reportTailspinRequestStats
+|| __TEXT.__text _resetOverlapStatsAggdPrefix
+|| __TEXT.__text _shared_ht_log_handle
+|| __TEXT.__text _signpostHangInterval
+|| __TEXT.__text _timebaseConversionFactor
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AggregateDictionary: _ADClientPushValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ CoreFoundation: _CFBundleGetIdentifier
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyKeyList
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesSetValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __CFBundleCreateWithExecutableURLIfLooksLikeBundle
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___strlcpy_chk
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_block_create_with_qos_class
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_create_with_target$V2
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_get_times
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _proc_pidpath
+__ libSystem.B.dylib: _pthread_self
+__ libSystem.B.dylib: _pthread_threadid_np
+__ libSystem.B.dylib: _xpc_bool_create
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_int64_create
+__ libSystem.B.dylib: _xpc_shmem_create
+__ libSystem.B.dylib: _xpc_string_create
+__ libSystem.B.dylib: _xpc_uint64_create
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+HTPrefs : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *_prefsQueue
+ @property  NSString *tailspinSaveFormat
+ @property  BOOL keepTailspinsLegacy
+ @property  NSDictionary *_installedHTProfileDict
+ @property  NSString *_profilePath
+ @property  ^{__CFString=} _htTaskingDomain
+ @property  ^{__CFString=} _htDomain
+ @property  BOOL shouldPostHTPrefsChangedNotification
+ @property  BOOL shouldAllowSentryEnablement
+ @property  BOOL _isInternalNoOverride
+ @property  ^{HTPrefInit=^{__CFString}^v(HTPrefDefaultVal=BiIQd^{__CFString})(HTPrefDefaultVal=BiIQd^{__CFString})Q:} prefInitList
+ @property  unsigned int memoryLoggingIntervalSec
+ @property  BOOL isInternal
+ @property  BOOL customerModeEnabled
+ @property  BOOL hangtracerEnabled
+ @property  BOOL htTailspinEnabled
+ @property  BOOL hudEnabled
+ @property  BOOL shouldCollectOSSignposts
+ @property  BOOL shouldCollectOSSignpostsDeferred
+ @property  BOOL shouldSaveTailspins
+ @property  BOOL shouldCompressSavedTailspins
+ @property  unsigned long savedTailspinMaxMB
+ @property  BOOL thirdPartyRunLoopHangLogsEnabled
+ @property  double runloopHangPercentHeavyLogs
+ @property  int runLoopHangDailyLogLimit
+ @property  int runLoopHangPerPeriodLogLimit
+ @property  int runLoopLongHangDailyLogLimit
+ @property  int runloopHangThirdPartyDailyLogLimit
+ @property  unsigned long runloopHangTimeoutDurationMSec
+ @property  unsigned long runloopHangDurationThresholdMSec
+ @property  unsigned long runloopLongHangDurationThresholdMSec
+ @property  unsigned long runloopHangThirdPartyDurationThresholdMSec
+ @property  BOOL shouldIncludeDiskInfo
+ @property  BOOL shouldIncludeDisplayData
+ @property  BOOL shouldIncludeNetworkState
+ @property  BOOL fenceTrackingEnabled
+ @property  BOOL slowAppActivationTailspinEnabled
+ @property  unsigned long slowAppActivationThresholdMSec
+ @property  int slowAppActivationPerAppMaxLogLimit
+ @property  int slowAppActivationDailyLogLimit
+ @property  BOOL signpostMonitoringEnabled
+ @property  int signpostMonitoringDailyLogLimit
+ @property  int signpostMonitoringPerPeriodLogLimit
+ @property  BOOL appActivationLoggingEnabled
+ @property  double appActivationLoggingCPUUtilizationThresholdMSec
+ @property  unsigned int appActivationLoggingMaxActivationLimit
+ @property  BOOL memoryLoggingEnabled
+ @property  BOOL pdseHangTracerKillSwitch
+ @property  BOOL pdseHTRateOnlyKillSwitch
+ @property  BOOL pdseSentryKillSwitch
+ @property  BOOL pdseCATailspinKillSwitch
+ @property  BOOL pdseAllowEnableTailspin
+ @property  int pdseHTPeriodDays
+ @property  int pdseHTRateOnlyPeriodDays
+ @property  int pdseSentryPeriodDays
+ @property  int pdseCATailspinPeriodDays
+ @property  BOOL eplEnabledProfile
+ @property  BOOL eplEnabled
+ @property  double eplTimeoutTimestampSec
+ @property  unsigned long reportPeriodMATU
+ @property  BOOL hasInternalSettings
+ @property  unsigned int hudThresholdMSec
+
+  // class methods
+  +[HTPrefs sharedPrefs]
+
+  // instance methods
+  -[HTPrefs dealloc]
+  -[HTPrefs .cxx_destruct]
+  -[HTPrefs isInternal]
+  -[HTPrefs hudEnabled]
+  -[HTPrefs stringProperty:]
+  -[HTPrefs prefNamed:domain:profile:matchingSelector:]
+  -[HTPrefs boolProperty:]
+  -[HTPrefs setShouldPostHTPrefsChangedNotification:]
+  -[HTPrefs intProperty:]
+  -[HTPrefs unsignedIntProperty:]
+  -[HTPrefs unsignedLongProperty:]
+  -[HTPrefs doubleProperty:]
+  -[HTPrefs setMemoryLoggingIntervalSec:]
+  -[HTPrefs initBoolProperty:]
+  -[HTPrefs initUnsignedIntProperty:]
+  -[HTPrefs initNSStringProperty:]
+  -[HTPrefs initPropertyShouldSaveAndCompressTailspins:]
+  -[HTPrefs initDoubleProperty:]
+  -[HTPrefs initIntProperty:]
+  -[HTPrefs initUnsignedLongProperty:]
+  -[HTPrefs initPropertyAppActivationLogging:]
+  -[HTPrefs initPropertyMemoryLoggingIntervalSec:]
+  -[HTPrefs initPropertyReportPeriod:]
+  -[HTPrefs initPropertyHaveInternalSettings:]
+  -[HTPrefs earlyInitNecessaryPrefs]
+  -[HTPrefs prefInitList]
+  -[HTPrefs shouldPostHTPrefsChangedNotification]
+  -[HTPrefs initPropertyIsInternal:]
+  -[HTPrefs setupPrefsWithQueue:profilePath:taskingDomainName:hangtracerDomain:setupInternalPrefs:]
+  -[HTPrefs __createInternalSettings]
+  -[HTPrefs hangtracerEnabled]
+  -[HTPrefs refreshHTPrefs]
+  -[HTPrefs setupPrefsWithQueue:]
+  -[HTPrefs _removeAllPrefs]
+  -[HTPrefs customerModeEnabled]
+  -[HTPrefs htTailspinEnabled]
+  -[HTPrefs shouldCollectOSSignposts]
+  -[HTPrefs shouldCollectOSSignpostsDeferred]
+  -[HTPrefs shouldSaveTailspins]
+  -[HTPrefs shouldCompressSavedTailspins]
+  -[HTPrefs savedTailspinMaxMB]
+  -[HTPrefs thirdPartyRunLoopHangLogsEnabled]
+  -[HTPrefs runloopHangPercentHeavyLogs]
+  -[HTPrefs runLoopHangDailyLogLimit]
+  -[HTPrefs runLoopHangPerPeriodLogLimit]
+  -[HTPrefs runLoopLongHangDailyLogLimit]
+  -[HTPrefs runloopHangThirdPartyDailyLogLimit]
+  -[HTPrefs runloopHangTimeoutDurationMSec]
+  -[HTPrefs runloopHangDurationThresholdMSec]
+  -[HTPrefs runloopLongHangDurationThresholdMSec]
+  -[HTPrefs runloopHangThirdPartyDurationThresholdMSec]
+  -[HTPrefs shouldIncludeDiskInfo]
+  -[HTPrefs shouldIncludeDisplayData]
+  -[HTPrefs shouldIncludeNetworkState]
+  -[HTPrefs fenceTrackingEnabled]
+  -[HTPrefs slowAppActivationTailspinEnabled]
+  -[HTPrefs slowAppActivationThresholdMSec]
+  -[HTPrefs slowAppActivationPerAppMaxLogLimit]
+  -[HTPrefs slowAppActivationDailyLogLimit]
+  -[HTPrefs signpostMonitoringEnabled]
+  -[HTPrefs signpostMonitoringDailyLogLimit]
+  -[HTPrefs signpostMonitoringPerPeriodLogLimit]
+  -[HTPrefs appActivationLoggingEnabled]
+  -[HTPrefs appActivationLoggingCPUUtilizationThresholdMSec]
+  -[HTPrefs appActivationLoggingMaxActivationLimit]
+  -[HTPrefs memoryLoggingEnabled]
+  -[HTPrefs memoryLoggingIntervalSec]
+  -[HTPrefs pdseHangTracerKillSwitch]
+  -[HTPrefs pdseHTRateOnlyKillSwitch]
+  -[HTPrefs pdseSentryKillSwitch]
+  -[HTPrefs pdseCATailspinKillSwitch]
+  -[HTPrefs pdseAllowEnableTailspin]
+  -[HTPrefs pdseHTPeriodDays]
+  -[HTPrefs pdseHTRateOnlyPeriodDays]
+  -[HTPrefs pdseSentryPeriodDays]
+  -[HTPrefs pdseCATailspinPeriodDays]
+  -[HTPrefs eplEnabledProfile]
+  -[HTPrefs eplEnabled]
+  -[HTPrefs eplTimeoutTimestampSec]
+  -[HTPrefs reportPeriodMATU]
+  -[HTPrefs hasInternalSettings]
+  -[HTPrefs hudThresholdMSec]
+  -[HTPrefs _prefsQueue]
+  -[HTPrefs set_prefsQueue:]
+  -[HTPrefs tailspinSaveFormat]
+  -[HTPrefs setTailspinSaveFormat:]
+  -[HTPrefs keepTailspinsLegacy]
+  -[HTPrefs setKeepTailspinsLegacy:]
+  -[HTPrefs _installedHTProfileDict]
+  -[HTPrefs set_installedHTProfileDict:]
+  -[HTPrefs _profilePath]
+  -[HTPrefs set_profilePath:]
+  -[HTPrefs _htTaskingDomain]
+  -[HTPrefs set_htTaskingDomain:]
+  -[HTPrefs _htDomain]
+  -[HTPrefs set_htDomain:]
+  -[HTPrefs shouldAllowSentryEnablement]
+  -[HTPrefs setShouldAllowSentryEnablement:]
+  -[HTPrefs _isInternalNoOverride]
+  -[HTPrefs set_isInternalNoOverride:]
+
+
+HTFenceAssertion : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[HTFenceAssertion invalidate]
+  -[HTFenceAssertion initWithFenceName:]
+  -[HTFenceAssertion blown]
+
+
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

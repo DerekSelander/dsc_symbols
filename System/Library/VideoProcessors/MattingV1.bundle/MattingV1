@@ -1,0 +1,376 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FigMatting
+|| __DATA.__objc_data _OBJC_METACLASS_$_FigMatting
+__ Celestial: _OBJC_CLASS_$_FigMetalContext
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreGraphics: _CGRectIsNull
+__ CoreGraphics: _CGRectNull
+__ CoreMedia: _FigSignalErrorAt
+__ CoreMedia: _kFigCaptureSampleBufferProcessorOption_TuningParameters
+__ CoreVideo: _CVPixelBufferGetBaseAddress
+__ CoreVideo: _CVPixelBufferGetBaseAddressOfPlane
+__ CoreVideo: _CVPixelBufferGetBytesPerRow
+__ CoreVideo: _CVPixelBufferGetBytesPerRowOfPlane
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetHeightOfPlane
+__ CoreVideo: _CVPixelBufferGetPixelFormatType
+__ CoreVideo: _CVPixelBufferGetPlaneCount
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferGetWidthOfPlane
+__ CoreVideo: _CVPixelBufferIsPlanar
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ CoreVideo: _CVPixelFormatDescriptionCreateWithPixelFormatType
+__ CoreVideo: _kCVPixelFormatBitsPerBlock
+__ CoreVideo: _kCVPixelFormatBlockWidth
+__ CoreVideo: _kCVPixelFormatPlanes
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ MetalPerformanceShaders: _MPSSetHeapCacheDuration
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageAreaMin
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageBilinearScale
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageBox
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageDescriptor
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageThresholdBinary
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageThresholdBinaryInverse
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSTemporaryImage
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fputc
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+MattingSolver : NSObject /usr/lib/libSystem.B.dylib
+ @property  {?=IIIIfIBffII} config
+
+  // instance methods
+  -[MattingSolver .cxx_destruct]
+  -[MattingSolver config]
+  -[MattingSolver initWithDevice:library:]
+  -[MattingSolver setConfig:]
+  -[MattingSolver allocateResources:]
+  -[MattingSolver enqueueSolveOn:constraints:colorGuide:extraGuide:inputTexture:outputTexture:]
+  -[MattingSolver releaseResources]
+  -[MattingSolver _compileShadersWithLibrary:]
+  -[MattingSolver encodeConstraintsOn:segmentation:constraints:]
+  -[MattingSolver encodeApplySolverConstraintsOn:constraints:filteredSegmentation:segmentation:]
+
+
+MattingRGBFilter : NSObject /usr/lib/libSystem.B.dylib <MattingFilter>
+ @property  {?=IIIIIfB} config
+ @property  MattingBoxTensorFilter *boxTensorFilter
+ @property  BOOL stateComputed
+ @property  BOOL coefficientsComputed
+
+  // instance methods
+  -[MattingRGBFilter dealloc]
+  -[MattingRGBFilter .cxx_destruct]
+  -[MattingRGBFilter config]
+  -[MattingRGBFilter initWithDevice:library:]
+  -[MattingRGBFilter setConfig:]
+  -[MattingRGBFilter allocateResources:]
+  -[MattingRGBFilter releaseResources]
+  -[MattingRGBFilter _compileShadersWithLibrary:]
+  -[MattingRGBFilter encodeNearestNeighborDownSamplingOn:inputTexture:outputTexture:]
+  -[MattingRGBFilter encodeCoefficientsOn:guideStack:alphaStack:mean_I:var_I:coefficients:]
+  -[MattingRGBFilter encodeApplyCoefficientsOn:colorGuide:disparityGuide:constraints:destinationAlphaTexture:]
+  -[MattingRGBFilter encodeStateOn:colorGuide:disparityGuide:initialSegmentation:constraints:]
+  -[MattingRGBFilter encodeStepOn:]
+  -[MattingRGBFilter encodeUpsampleOn:segmentation:colorGuide:disparityGuide:outputMatte:]
+  -[MattingRGBFilter boxTensorFilter]
+  -[MattingRGBFilter setBoxTensorFilter:]
+  -[MattingRGBFilter stateComputed]
+  -[MattingRGBFilter coefficientsComputed]
+  -[MattingRGBFilter initWithMetalContext:]
+
+
+FocalPlane : NSObject /usr/lib/libSystem.B.dylib
+ @property  {?=fffff} config
+ @property  <MTLBuffer> *minMaxAtomic_buf
+ @property  <MTLBuffer> *minMaxResult_buf
+ @property  <MTLBuffer> *zeroShiftResult_buf
+
+  // instance methods
+  -[FocalPlane dealloc]
+  -[FocalPlane .cxx_destruct]
+  -[FocalPlane config]
+  -[FocalPlane initWithDevice:library:]
+  -[FocalPlane setConfig:]
+  -[FocalPlane allocateResources]
+  -[FocalPlane encodeDisparityRefinementPreprocessingOn:alphaTexture:inputDisparityTexture:outputDisparityTexture:configuration:]
+  -[FocalPlane releaseResources]
+  -[FocalPlane _compileShadersWithLibrary:]
+  -[FocalPlane encodeFocalPlaneCalcOn:disparityTexture:]
+  -[FocalPlane encodeMinMaxOn:inputTexture:]
+  -[FocalPlane minMaxAtomic_buf]
+  -[FocalPlane minMaxResult_buf]
+  -[FocalPlane zeroShiftResult_buf]
+
+
+MattingDebugUtils : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[MattingDebugUtils createPathIfNeeded:]
+  +[MattingDebugUtils saveTextureArray:AsBinaryFile:]
+
+
+disparityDebugUtils : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[disparityDebugUtils .cxx_destruct]
+  -[disparityDebugUtils initWithMetalContext:]
+  -[disparityDebugUtils createPathIfNeeded:]
+  -[disparityDebugUtils ApplyColorWheelAndWrite:height:data:fileFullPath:]
+  -[disparityDebugUtils makeTextureCoherent:]
+  -[disparityDebugUtils convertVUYA444:rbs:ToRGBA:ofSize:]
+  -[disparityDebugUtils WriteBinDataToFile:length:fileFullPath:]
+  -[disparityDebugUtils saveVUYA4444PixelBuffer:out_width:out_height:AsBinaryFile:]
+  -[disparityDebugUtils saveVUYA4444PixelBuffer:out_width:out_height:AsPPMFile:]
+  -[disparityDebugUtils saveF32DisparityBuffer:AsPPMFile:]
+  -[disparityDebugUtils saveF32FPBuffer:AsPPMFile:scale:]
+  -[disparityDebugUtils saveF16Buffer:AsPPMFile:scale:]
+  -[disparityDebugUtils saveF16Texture:AsPPMFile:]
+  -[disparityDebugUtils saveF32Buffer:AsPPMFile:]
+  -[disparityDebugUtils saveU8Buffer:AsPPMFile:]
+  -[disparityDebugUtils saveVUYA4444Texture:AsPPMFile:]
+  -[disparityDebugUtils saveVUYA4444Texture:AsBinaryFile:]
+  -[disparityDebugUtils saveVUYA4444PixelBuffer:AsBinaryFile:]
+  -[disparityDebugUtils saveVUYA4444PixelBuffer:AsPPMFile:]
+  -[disparityDebugUtils save420CVPixelBuffer:to:]
+  -[disparityDebugUtils saveLumaTexture:to:]
+  -[disparityDebugUtils saveRGBATexture:AsPPMFile:]
+  -[disparityDebugUtils saveF16DisparityBuffer:AsPPMFile:]
+  -[disparityDebugUtils saveF16DisparityBuffer:AsGrayScalePPMFile:range:]
+  -[disparityDebugUtils saveF16DisparityTexture:AsBinaryFile:]
+  -[disparityDebugUtils saveF16Texture:AsGrayScalePPMFile:range:]
+  -[disparityDebugUtils saveF16DisparityBuffer:AsBinaryFile:]
+  -[disparityDebugUtils saveU8Texture:AsPGMFile:]
+  -[disparityDebugUtils saveU16Texture:AsPGMFile:]
+  -[disparityDebugUtils saveF16DisparityTexture:AsPPMFile:]
+  -[disparityDebugUtils saveRGF16ShiftmapTexture:AsPPMFileSx:AsPPMFileSy:]
+  -[disparityDebugUtils saveRGBA8Texture:AsPPMFile:]
+  -[disparityDebugUtils saveRgbaF32PixelBuffer:AsPPMFile:]
+  -[disparityDebugUtils save32BGRAPixelBuffer:AsPPMFile:]
+  -[disparityDebugUtils saveF16Texture:AsF32BinaryFile:]
+  -[disparityDebugUtils saveNCCOutputFrom:asBinaryFiles:]
+  -[disparityDebugUtils savePixelBuffer:AsBinaryFile:]
+
+
+MattingBoxTensorFilter : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[MattingBoxTensorFilter supportedPixelFormats]
+
+  // instance methods
+  -[MattingBoxTensorFilter .cxx_destruct]
+  -[MattingBoxTensorFilter initWithDevice:library:]
+  -[MattingBoxTensorFilter allocateResources:]
+  -[MattingBoxTensorFilter releaseResources]
+  -[MattingBoxTensorFilter _compileShadersWithLibrary:]
+  -[MattingBoxTensorFilter encodeSeparableSlidingStackOnCommandBuffer:sourceTexture:destinationTexture:]
+  -[MattingBoxTensorFilter encodeOnCommandBuffer:sourceTexture:destinationTexture:]
+
+
+MattingTuningParameters : NSObject /usr/lib/libSystem.B.dylib
+ @property  {?=IIIIIfB} mattingFilterConfig1
+ @property  {?=IIffIfBf} focalPlaneRestrictionConfig
+ @property  {?=IIIIfIBffII} mattingSolverConfig
+ @property  {?=IIIIIfB} mattingFilterConfig2
+
+  // instance methods
+  -[MattingTuningParameters initWithDefaults]
+  -[MattingTuningParameters initWithTuningDictionary:]
+  -[MattingTuningParameters readMattingFilterConfigDict:mattingFilterConfig:]
+  -[MattingTuningParameters readFocalPlaneRestrictionConfig:]
+  -[MattingTuningParameters readMattingConfig:]
+  -[MattingTuningParameters mattingFilterConfig1]
+  -[MattingTuningParameters setMattingFilterConfig1:]
+  -[MattingTuningParameters focalPlaneRestrictionConfig]
+  -[MattingTuningParameters setFocalPlaneRestrictionConfig:]
+  -[MattingTuningParameters mattingSolverConfig]
+  -[MattingTuningParameters setMattingSolverConfig:]
+  -[MattingTuningParameters mattingFilterConfig2]
+  -[MattingTuningParameters setMattingFilterConfig2:]
+
+
+MattingRGBDFilter : NSObject /usr/lib/libSystem.B.dylib <MattingFilter>
+ @property  {?=IIIIIfB} config
+ @property  MattingBoxTensorFilter *boxTensorFilter
+ @property  BOOL stateComputed
+ @property  BOOL coefficientsComputed
+
+  // instance methods
+  -[MattingRGBDFilter dealloc]
+  -[MattingRGBDFilter .cxx_destruct]
+  -[MattingRGBDFilter config]
+  -[MattingRGBDFilter initWithDevice:library:]
+  -[MattingRGBDFilter setConfig:]
+  -[MattingRGBDFilter allocateResources:]
+  -[MattingRGBDFilter releaseResources]
+  -[MattingRGBDFilter _compileShadersWithLibrary:]
+  -[MattingRGBDFilter encodeNearestNeighborDownSamplingOn:inputTexture:outputTexture:]
+  -[MattingRGBDFilter encodeDisparityToAlphaOn:disparityTexture:destinationTexture:]
+  -[MattingRGBDFilter encodeCoefficientsOn:guideStack:alphaStack:mean_I:var_I:coefficients:]
+  -[MattingRGBDFilter encodeApplyCoefficientsOn:colorGuide:disparityGuide:constraints:destinationAlphaTexture:]
+  -[MattingRGBDFilter encodeStateOn:colorGuide:disparityGuide:initialSegmentation:constraints:]
+  -[MattingRGBDFilter encodeStepOn:]
+  -[MattingRGBDFilter encodeUpsampleOn:segmentation:colorGuide:disparityGuide:outputMatte:]
+  -[MattingRGBDFilter boxTensorFilter]
+  -[MattingRGBDFilter setBoxTensorFilter:]
+  -[MattingRGBDFilter stateComputed]
+  -[MattingRGBDFilter coefficientsComputed]
+  -[MattingRGBDFilter encodePushOn:textureArray:texture:]
+  -[MattingRGBDFilter initWithMetalContext:]
+
+
+FocalPlaneRestriction : NSObject /usr/lib/libSystem.B.dylib
+ @property  {?=IIffIfBf} config
+
+  // instance methods
+  -[FocalPlaneRestriction .cxx_destruct]
+  -[FocalPlaneRestriction config]
+  -[FocalPlaneRestriction initWithDevice:library:]
+  -[FocalPlaneRestriction setConfig:]
+  -[FocalPlaneRestriction allocateResources:]
+  -[FocalPlaneRestriction releaseResources]
+  -[FocalPlaneRestriction _compileShadersWithLibrary:]
+  -[FocalPlaneRestriction encodeApplyFocalPlaneRestrictionOn:inputDisparity:segmentation:focalPlane:]
+
+
+FigMatting : NSObject /usr/lib/libSystem.B.dylib <ImageBufferProcessor>
+ @property  ^{__CVBuffer=} imagePixelBuffer
+ @property  ^{__CVBuffer=} inputSegmentationPixelBuffer
+ @property  ^{__CVBuffer=} inputDisparityPixelBuffer
+ @property  ^{__CVBuffer=} inputDepthPixelBuffer
+ @property  ^{__CVBuffer=} inputSemanticsHairPixelBuffer
+ @property  ^{__CVBuffer=} inputSemanticsSkinPixelBuffer
+ @property  ^{__CVBuffer=} inputSemanticsTeethPixelBuffer
+ @property  ^{__CVBuffer=} outputRefinedDisparityPixelBuffer
+ @property  ^{__CVBuffer=} outputMattePixelBuffer
+ @property  ^{__CVBuffer=} outputSemanticsHairPixelBuffer
+ @property  ^{__CVBuffer=} outputSemanticsSkinPixelBuffer
+ @property  ^{__CVBuffer=} outputSemanticsTeethPixelBuffer
+ @property  NSDictionary *options
+ @property  {?=IIIIIIIi} config
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} syntheticFocusRectangle
+ @property  NSArray *faceLandmarks
+ @property  NSArray *faceSegments
+ @property  int exifOrientation
+
+  // class methods
+  +[FigMatting FigMattingOutputToShortString:]
+
+  // instance methods
+  -[FigMatting init]
+  -[FigMatting dealloc]
+  -[FigMatting options]
+  -[FigMatting .cxx_destruct]
+  -[FigMatting finishProcessing]
+  -[FigMatting config]
+  -[FigMatting setOptions:]
+  -[FigMatting faceSegments]
+  -[FigMatting setConfig:]
+  -[FigMatting _compileShadersWithLibrary:]
+  -[FigMatting process]
+  -[FigMatting exifOrientation]
+  -[FigMatting setExifOrientation:]
+  -[FigMatting setFaceSegments:]
+  -[FigMatting imagePixelBuffer]
+  -[FigMatting setImagePixelBuffer:]
+  -[FigMatting initWithCommandQueue:]
+  -[FigMatting setInputSegmentationPixelBuffer:]
+  -[FigMatting setInputDepthPixelBuffer:]
+  -[FigMatting setInputDisparityPixelBuffer:]
+  -[FigMatting setSyntheticFocusRectangle:]
+  -[FigMatting setFaceLandmarks:]
+  -[FigMatting setOutputMattePixelBuffer:]
+  -[FigMatting setOutputRefinedDisparityPixelBuffer:]
+  -[FigMatting finishScheduling]
+  -[FigMatting prewarmWithTuningParameters:]
+  -[FigMatting prepareToProcess:]
+  -[FigMatting resetState]
+  -[FigMatting setInputSemanticsHairPixelBuffer:]
+  -[FigMatting setInputSemanticsSkinPixelBuffer:]
+  -[FigMatting setInputSemanticsTeethPixelBuffer:]
+  -[FigMatting setOutputSemanticsHairPixelBuffer:]
+  -[FigMatting setOutputSemanticsSkinPixelBuffer:]
+  -[FigMatting setOutputSemanticsTeethPixelBuffer:]
+  -[FigMatting purgeResources]
+  -[FigMatting _allocateResources:]
+  -[FigMatting _prewarmMPSKernels]
+  -[FigMatting _createTextureOfSize:withFormat:]
+  -[FigMatting _encodeCopyTextureOn:sourceTexture:destinationTexture:]
+  -[FigMatting processFocalPlaneAndSolverOnly]
+  -[FigMatting inputSegmentationPixelBuffer]
+  -[FigMatting inputDisparityPixelBuffer]
+  -[FigMatting inputDepthPixelBuffer]
+  -[FigMatting inputSemanticsHairPixelBuffer]
+  -[FigMatting inputSemanticsSkinPixelBuffer]
+  -[FigMatting inputSemanticsTeethPixelBuffer]
+  -[FigMatting outputRefinedDisparityPixelBuffer]
+  -[FigMatting outputMattePixelBuffer]
+  -[FigMatting outputSemanticsHairPixelBuffer]
+  -[FigMatting outputSemanticsSkinPixelBuffer]
+  -[FigMatting outputSemanticsTeethPixelBuffer]
+  -[FigMatting syntheticFocusRectangle]
+  -[FigMatting faceLandmarks]
+
+
+01 00 0400 /System/Library/PrivateFrameworks/Celestial.framework/Celestial: FigMetalContext 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageAreaMin 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageBilinearScale 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageBox 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageDescriptor 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageThresholdBinary 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageThresholdBinaryInverse 
+01 00 0100 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSTemporaryImage 
+01 00 0700 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

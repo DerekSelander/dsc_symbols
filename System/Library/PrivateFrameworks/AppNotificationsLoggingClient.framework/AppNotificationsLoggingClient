@@ -1,0 +1,152 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ATXNotificationsAggregateLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ATXNotificationsInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ATXNotificationsLoggingClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ATXNotificationsAggregateLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ATXNotificationsInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ATXNotificationsLoggingClient
+|| __TEXT.__const _AppNotificationsLoggingClientVersionNumber
+|| __TEXT.__const _AppNotificationsLoggingClientVersionString
+|| __TEXT.__text _ATXNEventTypeToString
+|| __TEXT.__text _ATXNRTOutcomeToSettingResponse
+|| __TEXT.__text _ATXNSettingResponseToNEvent
+|| __TEXT.__text _ATXNSettingResponseToString
+|| __TEXT.__text _ATXSuggestionTypeToString
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ ProactiveEventTracker: _OBJC_CLASS_$_PETEventProperty
+__ ProactiveEventTracker: _OBJC_CLASS_$_PETScalarEventTracker
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+ATXNotificationsLoggingClient : NSObject /usr/lib/libSystem.B.dylib <ATXNotificationsLoggingProtocol>
+  // class methods
+  +[ATXNotificationsLoggingClient sharedInstance]
+
+  // instance methods
+  -[ATXNotificationsLoggingClient init]
+  -[ATXNotificationsLoggingClient dealloc]
+  -[ATXNotificationsLoggingClient .cxx_destruct]
+  -[ATXNotificationsLoggingClient logNotification:withNotificationId:timestamp:]
+  -[ATXNotificationsLoggingClient logEvent:forNotificationId:timestamp:withReply:]
+  -[ATXNotificationsLoggingClient logEvent:forNotificationId:supplementaryAction:timestamp:]
+  -[ATXNotificationsLoggingClient logTapCoalesceForNotificationId:andBundleId:timestamp:]
+  -[ATXNotificationsLoggingClient shouldMakeQuietingSuggestionForBundleId:withReply:]
+  -[ATXNotificationsLoggingClient quietingSuggestionResponse:topic:response:]
+  -[ATXNotificationsLoggingClient shouldMakePromotingSuggestionForBundleId:withReply:]
+  -[ATXNotificationsLoggingClient promotingSuggestionResponse:topic:response:]
+  -[ATXNotificationsLoggingClient makeQuietingSuggestionForNextNotification]
+  -[ATXNotificationsLoggingClient makePromotingSuggestionForNextNotification]
+  -[ATXNotificationsLoggingClient makeSuggestionForNextNotification]
+  -[ATXNotificationsLoggingClient logSuggestionShown:forType:timestamp:]
+  -[ATXNotificationsLoggingClient logSuggestionDeduped:timestamp:]
+  -[ATXNotificationsLoggingClient logRealTimeTuningOutcome:withBundleId:]
+  -[ATXNotificationsLoggingClient submitGrading:rating:category:userId:]
+  -[ATXNotificationsLoggingClient logEvent:forNotificationId:timestamp:]
+  -[ATXNotificationsLoggingClient logRealTimeTuningCountFrom:]
+
+
+ATXNotificationsAggregateLogger : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[ATXNotificationsAggregateLogger sharedInstance]
+  +[ATXNotificationsAggregateLogger rtFromMapping]
+  +[ATXNotificationsAggregateLogger rtOutcomesMapping]
+  +[ATXNotificationsAggregateLogger stringForRTOutcome:]
+  +[ATXNotificationsAggregateLogger stringForRTFrom:]
+
+  // instance methods
+  -[ATXNotificationsAggregateLogger init]
+  -[ATXNotificationsAggregateLogger .cxx_destruct]
+  -[ATXNotificationsAggregateLogger logRealTimeTuningCountFrom:]
+  -[ATXNotificationsAggregateLogger logRealTimeTuningOutcome:]
+
+
+ATXNotificationsInterface : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *sectionID
+ @property  NSString *topic
+ @property  NSString *title
+ @property  NSString *subtitle
+ @property  NSString *message
+ @property  NSDate *publicationDate
+ @property  unsigned long numSuppActions
+ @property  unsigned long feed
+
+  // class methods
+  +[ATXNotificationsInterface supportsSecureCoding]
+  +[ATXNotificationsInterface createArchivedMetadata:categoryId:title:subtitle:message:numSuppActions:feed:]
+  +[ATXNotificationsInterface stripContentInMetadata:]
+  +[ATXNotificationsInterface getBundleIdFromMetadata:]
+  +[ATXNotificationsInterface getTopicFromMetadata:]
+  +[ATXNotificationsInterface getTitleFromMetadata:]
+  +[ATXNotificationsInterface getSubtitleFromMetadata:]
+  +[ATXNotificationsInterface getMessageFromMetadata:]
+  +[ATXNotificationsInterface getNumSuppActionsFromMetadata:]
+  +[ATXNotificationsInterface getTimezoneFromMetadata:]
+  +[ATXNotificationsInterface getFeedFromMetadata:]
+
+  // instance methods
+  -[ATXNotificationsInterface encodeWithCoder:]
+  -[ATXNotificationsInterface initWithCoder:]
+  -[ATXNotificationsInterface .cxx_destruct]
+  -[ATXNotificationsInterface title]
+  -[ATXNotificationsInterface setTitle:]
+  -[ATXNotificationsInterface message]
+  -[ATXNotificationsInterface setMessage:]
+  -[ATXNotificationsInterface subtitle]
+  -[ATXNotificationsInterface feed]
+  -[ATXNotificationsInterface topic]
+  -[ATXNotificationsInterface setTopic:]
+  -[ATXNotificationsInterface setSubtitle:]
+  -[ATXNotificationsInterface sectionID]
+  -[ATXNotificationsInterface setSectionID:]
+  -[ATXNotificationsInterface publicationDate]
+  -[ATXNotificationsInterface setPublicationDate:]
+  -[ATXNotificationsInterface setFeed:]
+  -[ATXNotificationsInterface extractMetadata]
+  -[ATXNotificationsInterface numSuppActions]
+  -[ATXNotificationsInterface setNumSuppActions:]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker: PETEventProperty 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker: PETScalarEventTracker 

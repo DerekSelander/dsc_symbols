@@ -1,0 +1,1380 @@
+|| __DATA.__data _TRIXPCServiceName
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIActivateTreatmentTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIAssetCleanupTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIClientTreatmentArtifact
+|| __DATA.__objc_data _OBJC_CLASS_$_TRICloudKitRequestBuilder
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIConfigurationTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIControlClient
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIControlCommandGetExperiments
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIControlCommandMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIControlCommandSubmitTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIDeactivateTreatmentTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIExperimentBaseTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIExperimentRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIFetchExperimentTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIFetchRollbacksTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIFetchTreatmentTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRILogTreatmentProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIMakeDefaultTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRINamespaceRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIPostUpgradeCleanupTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRISequenceTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRITargetingTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRITreatmentBaseTask
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIXPCActivityDescriptor
+|| __DATA.__objc_data _OBJC_CLASS_$_TRIXPCActivitySupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIActivateTreatmentTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIAssetCleanupTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIClientTreatmentArtifact
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRICloudKitRequestBuilder
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIConfigurationTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIControlClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIControlCommandGetExperiments
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIControlCommandMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIControlCommandSubmitTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIExperimentBaseTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIExperimentRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIFetchExperimentTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIFetchRollbacksTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIFetchTreatmentTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIMakeDefaultTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRINamespaceRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIPostUpgradeCleanupTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRISequenceTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRITargetingTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRITreatmentBaseTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIXPCActivityDescriptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_TRIXPCActivitySupport
+|| __DATA_CONST.__const _TRICloudKitComparator_Equals
+|| __DATA_CONST.__const _TRICloudKitComparator_GreaterThan
+|| __DATA_CONST.__const _TRICloudKitComparator_In
+|| __DATA_CONST.__const _TRICloudKitComparator_ListContains
+|| __DATA_CONST.__const _TRICloudKitComparator_NotEquals
+|| __DATA_CONST.__const _TRICloudKitContainer
+|| __DATA_CONST.__const _TRICloudKitDatabase
+|| __DATA_CONST.__const _TRICloudKitDefaultZone
+|| __DATA_CONST.__const _TRICloudKitDispatchQueueName
+|| __DATA_CONST.__const _TRICloudKitDomain
+|| __DATA_CONST.__const _TRICloudKitEnvironment_Development
+|| __DATA_CONST.__const _TRICloudKitEnvironment_Production
+|| __DATA_CONST.__const _TRICloudKitFieldType_AssetIdList
+|| __DATA_CONST.__const _TRICloudKitFieldType_Bytes
+|| __DATA_CONST.__const _TRICloudKitFieldType_Int64List
+|| __DATA_CONST.__const _TRICloudKitFieldType_NumberInt64
+|| __DATA_CONST.__const _TRICloudKitFieldType_String
+|| __DATA_CONST.__const _TRICloudKitLastFetchExperimentDateKey
+|| __DATA_CONST.__const _TRICloudKitQueryAction
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_DeploymentPopulation
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentDefinition
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentDefinitionSignature
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentId
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentPriority
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentState
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_ExperimentType
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_InternalBuildOnly
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_NamespaceCompatibilityVersions
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_Namespaces
+|| __DATA_CONST.__const _TRICloudKitRecordExperimentNotification_PublicCertificate
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_AssetSignatures
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_Assets
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_PublicCertificate
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_TreatmentDefinition
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_TreatmentDefinitionSignature
+|| __DATA_CONST.__const _TRICloudKitRecordTreatment_TreatmentId
+|| __DATA_CONST.__const _TRICloudKitRecord_ModificationDate
+|| __DATA_CONST.__const _TRICloudKitServerEnvironmentKey
+|| __DATA_CONST.__const _TRICloudKitVersion
+|| __DATA_CONST.__const _TRIDNotificationTokenKey
+|| __DATA_CONST.__const _TRIRequestAppleCacheHeader
+|| __DATA_CONST.__const _TRIRequestAppleEdgeCacheKey
+|| __DATA_CONST.__const _TRIRequestApplicationJSON
+|| __DATA_CONST.__const _TRIRequestCacheControlKey
+|| __DATA_CONST.__const _TRIRequestContentType
+|| __DATA_CONST.__const _TRIRequestHTTPMethodPost
+|| __DATA_CONST.__const _TRISystemFactor_AllowFetchTasks
+|| __DATA_CONST.__const _TRISystemFactor_AllowTrialTelemetry
+|| __DATA_CONST.__const _TRISystemFactor_CloudKitAssetDownloadTimeoutSeconds
+|| __DATA_CONST.__const _TRISystemFactor_CloudKitCacheControlMaxAge
+|| __DATA_CONST.__const _TRISystemFactor_CloudKitUseNativeAPI
+|| __DATA_CONST.__const _TRISystemFactor_FetchExperimentsJitter
+|| __DATA_CONST.__const _TRISystemFactor_TaskQueueScheduledTaskDefaultGracePeriod
+|| __DATA_CONST.__const _kTRIControlMessageClass
+|| __DATA_CONST.__const _kTRIControlMessageData
+|| __DATA_CONST.__const _kTRIControlMessageReplyCode
+|| __DATA_CONST.__const _kTRITaskQueueEmpty
+|| __DATA_CONST.__const _kTRIUserDefaultsTaskQueueDeferralSequenceKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIArtifactManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIBaseArtifact
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIBaseDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIBaseTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIClientExperimentArtifact
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIControlManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIDServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIExperimentDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIFetchExperimentsTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIRotateSubjectIdTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRISignatureKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRITaskDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRITaskQueue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRITaskRecord
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TRIXPCService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIArtifactManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIBaseArtifact
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIBaseDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIBaseTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIClientExperimentArtifact
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIControlManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIDServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIDeactivateTreatmentTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIExperimentDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIFetchExperimentsTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRILogTreatmentProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIRotateSubjectIdTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRISignatureKey
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRITaskDatabase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRITaskQueue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRITaskRecord
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TRIXPCService
+|| __TEXT.__const _TRITaskQueueScheduledTaskDefaultGracePeriod
+|| __TEXT.__const _TrialServerVersionNumber
+|| __TEXT.__const _TrialServerVersionString
+|| __TEXT.__text _LogCategory_Daemon
+|| __TEXT.__text _LogCategory_Server
+|| __TEXT.__text _TRIDServerRun
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSDefaultRunLoopMode
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSRunLoop
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ Foundation: _NSClassFromString
+__ Foundation: _NSFileSize
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBlockOperation
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSCondition
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExpression
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableURLRequest
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSScanner
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSURLRequest
+__ Foundation: _OBJC_CLASS_$_NSURLSession
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ ProactiveSupport: _OBJC_CLASS_$__PASDatabaseMigrator
+__ ProactiveSupport: _OBJC_CLASS_$__PASDeviceState
+__ ProactiveSupport: _OBJC_CLASS_$__PASDispatch
+__ ProactiveSupport: _OBJC_CLASS_$__PASSqliteDatabase
+__ ProactiveSupport: __PASSqliteDatabaseKeepGoing
+__ ProactiveSupport: __PASSqliteDatabaseStop
+__ Security: _SecCertificateCopyKey
+__ Security: _SecCertificateCreateWithData
+__ Security: _SecCopyErrorMessageString
+__ Security: _SecKeyIsAlgorithmSupported
+__ Security: _SecKeyVerifySignature
+__ Security: _SecPolicyCreateApplePinned
+__ Security: _SecTrustCreateWithCertificates
+__ Security: _SecTrustEvaluateWithError
+__ Security: _kSecKeyAlgorithmECDSASignatureMessageX962SHA256
+__ Trial: _LogCategory_ClientFramework
+__ Trial: _OBJC_CLASS_$_TRIClient
+__ Trial: _OBJC_CLASS_$_TRILogTreatmentReader
+__ Trial: _OBJC_CLASS_$_TRINamespaceDescriptor
+__ Trial: _OBJC_CLASS_$_TRINamespaceFactorProvider
+__ Trial: _OBJC_CLASS_$_TRINamespaceUpdateNotification
+__ Trial: _OBJC_CLASS_$_TRIStopwatch
+__ Trial: _OBJC_CLASS_$_TRISubjectProvider
+__ Trial: _OBJC_CLASS_$_TRISystemConfiguration
+__ Trial: _OBJC_CLASS_$_TRISystemInfo
+__ Trial: _OBJC_CLASS_$_TRITreatmentInfo
+__ Trial: _OBJC_METACLASS_$_TRILogTreatmentReader
+__ Trial: _TRINamespaceDescriptorDirectoryDefault
+__ Trial: _TRINamespaceDescriptorDirectoryExperiment
+__ Trial: _TRINamespaceDescriptorDirectoryRollout
+__ TrialProto: _OBJC_CLASS_$_TRIClientExperiment
+__ TrialProto: _OBJC_CLASS_$_TRIClientTreatment
+__ TrialProto: _OBJC_CLASS_$_TRILogTreatment
+__ TrialProto: _OBJC_CLASS_$_TRIMetric
+__ TrialProto: _OBJC_CLASS_$_TRIUserDimension
+__ TrialProto: _TRIClientExperiment_Type_IsValidValue
+__ TrialProto: _TRIExperiment_Status_IsValidValue
+__ TrialProto: _TRIProject_ProjectId_IsValidValue
+__ libSystem.B.dylib: _CC_SHA256
+__ libSystem.B.dylib: _XPC_ACTIVITY_CHECK_IN
+__ libSystem.B.dylib: _XPC_ACTIVITY_DELAY
+__ libSystem.B.dylib: _XPC_ACTIVITY_GRACE_PERIOD
+__ libSystem.B.dylib: _XPC_ACTIVITY_RANDOM_INITIAL_DELAY
+__ libSystem.B.dylib: _XPC_ACTIVITY_REPEATING
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_event_key_name
+__ libSystem.B.dylib: __xpc_type_array
+__ libSystem.B.dylib: __xpc_type_data
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_int64
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: __xpc_type_uint64
+__ libSystem.B.dylib: __xpc_type_uuid
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_transaction_needs_more_time
+__ libSystem.B.dylib: _rootless_check_datavault_flag
+__ libSystem.B.dylib: _rootless_convert_to_datavault
+__ libSystem.B.dylib: _rootless_mkdir_datavault
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _xpc_activity_copy_criteria
+__ libSystem.B.dylib: _xpc_activity_get_state
+__ libSystem.B.dylib: _xpc_activity_register
+__ libSystem.B.dylib: _xpc_activity_set_criteria
+__ libSystem.B.dylib: _xpc_activity_set_state
+__ libSystem.B.dylib: _xpc_activity_should_defer
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_data_get_bytes
+__ libSystem.B.dylib: _xpc_data_get_length
+__ libSystem.B.dylib: _xpc_dictionary_apply
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_int64_get_value
+__ libSystem.B.dylib: _xpc_set_event_stream_handler
+__ libSystem.B.dylib: _xpc_string_get_length
+__ libSystem.B.dylib: _xpc_string_get_string_ptr
+__ libSystem.B.dylib: _xpc_transaction_exit_clean
+__ libSystem.B.dylib: _xpc_uint64_get_value
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+TRILogTreatmentProvider : TRILogTreatmentReader /System/Library/Frameworks/Foundation.framework/Foundation
+  // class methods
+  +[TRILogTreatmentProvider projectIdFromExperimentId:]
+  +[TRILogTreatmentProvider providerWithProjectId:]
+  +[TRILogTreatmentProvider deleteFileAtPath:]
+  +[TRILogTreatmentProvider upgrade]
+
+  // instance methods
+  -[TRILogTreatmentProvider initWithPath:]
+  -[TRILogTreatmentProvider initWithProjectId:]
+  -[TRILogTreatmentProvider addTreatment:]
+  -[TRILogTreatmentProvider saveTreatments:]
+  -[TRILogTreatmentProvider removeTreatment:]
+
+
+TRIXPCService : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL isRunning
+ @property  <TRIXPCMessageHandling> *messageHandler
+
+  // class methods
+  +[TRIXPCService classStringForKeyedArchiver:]
+  +[TRIXPCService classesForKeyedArchiver:]
+  +[TRIXPCService encodeClassesFromObject:error:]
+  +[TRIXPCService decodeClassesFromData:error:]
+  +[TRIXPCService encodeResult:error:]
+  +[TRIXPCService decodeResult:success:error:]
+  +[TRIXPCService sendMessage:success:error:]
+
+  // instance methods
+  -[TRIXPCService init]
+  -[TRIXPCService .cxx_destruct]
+  -[TRIXPCService start]
+  -[TRIXPCService isRunning]
+  -[TRIXPCService setMessageHandler:]
+  -[TRIXPCService messageHandler]
+  -[TRIXPCService startXpcService]
+  -[TRIXPCService keepAlive:time:]
+  -[TRIXPCService replyRequested:]
+
+
+TRIExperimentBaseTask : TRIBaseTask
+ @property  NSString *experimentId
+
+  // class methods
+  +[TRIExperimentBaseTask supportsSecureCoding]
+
+  // instance methods
+  -[TRIExperimentBaseTask encodeWithCoder:]
+  -[TRIExperimentBaseTask initWithCoder:]
+  -[TRIExperimentBaseTask .cxx_destruct]
+  -[TRIExperimentBaseTask tags]
+  -[TRIExperimentBaseTask experimentId]
+  -[TRIExperimentBaseTask initWithExperimentId:]
+  -[TRIExperimentBaseTask nextTasksForRunStatus:]
+  -[TRIExperimentBaseTask projectIdForExperiment]
+
+
+TRITargetingTask : TRIExperimentBaseTask
+ @property  NSString *treatmentId
+ @property  int experimentType
+
+  // class methods
+  +[TRITargetingTask taskWithExperimentId:]
+
+  // instance methods
+  -[TRITargetingTask .cxx_destruct]
+  -[TRITargetingTask dependencies]
+  -[TRITargetingTask setTreatmentId:]
+  -[TRITargetingTask treatmentId]
+  -[TRITargetingTask experimentType]
+  -[TRITargetingTask nextTasksForRunStatus:]
+  -[TRITargetingTask systemCovariates]
+  -[TRITargetingTask getTreatmentIdForExperiment:]
+  -[TRITargetingTask setExperimentType:]
+  -[TRITargetingTask runTask]
+
+
+TRIControlManager : NSObject /usr/lib/libSystem.B.dylib <TRIXPCMessageHandling>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TRIControlManager instance]
+
+  // instance methods
+  -[TRIControlManager init]
+  -[TRIControlManager .cxx_destruct]
+  -[TRIControlManager start]
+  -[TRIControlManager handleMessage:error:]
+
+
+TRIClientExperimentArtifact : TRIBaseArtifact
+ @property  NSString *experimentId
+ @property  NSData *encodedExperimentDefinition
+ @property  NSString *encodedExperimentDefinitionSignature
+ @property  NSData *publicCertificate
+ @property  TRIClientExperiment *experiment
+ @property  int experimentState
+ @property  int experimentType
+ @property  int experimentPriority
+ @property  int projectId
+ @property  BOOL internalBuildOnly
+ @property  NSDate *modifiedDate
+ @property  NSArray *namespaces
+ @property  NSArray *namespaceCompatibilityVersions
+
+  // class methods
+  +[TRIClientExperimentArtifact loadArtifactWithExperimentId:]
+  +[TRIClientExperimentArtifact artifactWithExperimentId:]
+  +[TRIClientExperimentArtifact urlForExperimentWithId:]
+  +[TRIClientExperimentArtifact artifactFromCloudKitResult:]
+
+  // instance methods
+  -[TRIClientExperimentArtifact init]
+  -[TRIClientExperimentArtifact isValid]
+  -[TRIClientExperimentArtifact .cxx_destruct]
+  -[TRIClientExperimentArtifact url]
+  -[TRIClientExperimentArtifact experimentId]
+  -[TRIClientExperimentArtifact setExperimentId:]
+  -[TRIClientExperimentArtifact modifiedDate]
+  -[TRIClientExperimentArtifact setModifiedDate:]
+  -[TRIClientExperimentArtifact isCompatible]
+  -[TRIClientExperimentArtifact experiment]
+  -[TRIClientExperimentArtifact projectId]
+  -[TRIClientExperimentArtifact namespaces]
+  -[TRIClientExperimentArtifact setNamespaces:]
+  -[TRIClientExperimentArtifact experimentType]
+  -[TRIClientExperimentArtifact setProjectId:]
+  -[TRIClientExperimentArtifact initWithExperimentId:]
+  -[TRIClientExperimentArtifact setExperimentType:]
+  -[TRIClientExperimentArtifact encodedExperimentDefinition]
+  -[TRIClientExperimentArtifact setExperimentState:]
+  -[TRIClientExperimentArtifact setExperimentPriority:]
+  -[TRIClientExperimentArtifact setEncodedExperimentDefinitionSignature:]
+  -[TRIClientExperimentArtifact setInternalBuildOnly:]
+  -[TRIClientExperimentArtifact setNamespaceCompatibilityVersions:]
+  -[TRIClientExperimentArtifact experimentState]
+  -[TRIClientExperimentArtifact experimentPriority]
+  -[TRIClientExperimentArtifact encodedExperimentDefinitionSignature]
+  -[TRIClientExperimentArtifact internalBuildOnly]
+  -[TRIClientExperimentArtifact namespaceCompatibilityVersions]
+  -[TRIClientExperimentArtifact publicCertificate]
+  -[TRIClientExperimentArtifact setEncodedExperimentDefinition:]
+  -[TRIClientExperimentArtifact loadPropertiesFromDictionary:]
+  -[TRIClientExperimentArtifact savePropertiesToDictionary]
+  -[TRIClientExperimentArtifact setPublicCertificate:]
+  -[TRIClientExperimentArtifact saveWithDatabase:]
+
+
+TRIControlCommandMessage : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TRIControlCommandMessage commandFromMessage:]
+  +[TRIControlCommandMessage objectFromMessage:]
+  +[TRIControlCommandMessage messageFromObject:]
+  +[TRIControlCommandMessage messageFromCommand:]
+
+
+TRIControlCommandSubmitTask : NSObject /usr/lib/libSystem.B.dylib <TRIControlCommand>
+ @property  <TRITask> *task
+ @property  NSNumber *result
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TRIControlCommandSubmitTask supportsSecureCoding]
+  +[TRIControlCommandSubmitTask commandWithTask:]
+
+  // instance methods
+  -[TRIControlCommandSubmitTask run]
+  -[TRIControlCommandSubmitTask encodeWithCoder:]
+  -[TRIControlCommandSubmitTask initWithCoder:]
+  -[TRIControlCommandSubmitTask .cxx_destruct]
+  -[TRIControlCommandSubmitTask result]
+  -[TRIControlCommandSubmitTask setResult:]
+  -[TRIControlCommandSubmitTask task]
+  -[TRIControlCommandSubmitTask initWithTask:]
+
+
+TRIPostUpgradeCleanupTask : TRIBaseTask
+  // class methods
+  +[TRIPostUpgradeCleanupTask task]
+
+  // instance methods
+  -[TRIPostUpgradeCleanupTask run]
+  -[TRIPostUpgradeCleanupTask .cxx_destruct]
+  -[TRIPostUpgradeCleanupTask nextTasksForRunStatus:]
+  -[TRIPostUpgradeCleanupTask validateRolloutDescriptorsWithNamespaceCompatibilityVersions:]
+  -[TRIPostUpgradeCleanupTask validateExperimentDescriptorsWithNamespaceCompatibilityVersions:]
+
+
+TRIMakeDefaultTask : TRITreatmentBaseTask
+  // class methods
+  +[TRIMakeDefaultTask taskWithExperimentId:treatmentId:]
+
+  // instance methods
+  -[TRIMakeDefaultTask dependencies]
+  -[TRIMakeDefaultTask nextTasksForRunStatus:]
+  -[TRIMakeDefaultTask runTask]
+
+
+TRIBaseArtifact : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSData *encodedDefinition
+ @property  NSURL *url
+
+  // class methods
+  +[TRIBaseArtifact fileExists:]
+  +[TRIBaseArtifact createDirectoryForUrl:isDirectory:]
+  +[TRIBaseArtifact saveEncodedDefinition:toUrl:]
+
+  // instance methods
+  -[TRIBaseArtifact isValid]
+  -[TRIBaseArtifact .cxx_destruct]
+  -[TRIBaseArtifact url]
+  -[TRIBaseArtifact remove]
+  -[TRIBaseArtifact save]
+  -[TRIBaseArtifact removeItemAtPath:]
+  -[TRIBaseArtifact loadFromUrl:]
+  -[TRIBaseArtifact saveToUrl:]
+  -[TRIBaseArtifact encodedDefinition]
+  -[TRIBaseArtifact setEncodedDefinition:]
+  -[TRIBaseArtifact loadPropertiesFromDictionary:]
+  -[TRIBaseArtifact savePropertiesToDictionary]
+  -[TRIBaseArtifact artifactWithBaseUrl:]
+  -[TRIBaseArtifact removeFromUrl:]
+  -[TRIBaseArtifact copyFileFromUrl:to:targetIsDirectory:]
+
+
+TRINamespaceRecord : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  unsigned int namespaceId
+ @property  NSString *experimentId
+ @property  NSString *treatmentId
+ @property  NSString *treatmentPath
+ @property  unsigned int namespaceCompatibilityVersion
+
+  // class methods
+  +[TRINamespaceRecord supportsSecureCoding]
+
+  // instance methods
+  -[TRINamespaceRecord encodeWithCoder:]
+  -[TRINamespaceRecord initWithCoder:]
+  -[TRINamespaceRecord .cxx_destruct]
+  -[TRINamespaceRecord initWithDatabase:]
+  -[TRINamespaceRecord experimentId]
+  -[TRINamespaceRecord setExperimentId:]
+  -[TRINamespaceRecord setTreatmentId:]
+  -[TRINamespaceRecord treatmentId]
+  -[TRINamespaceRecord namespaceId]
+  -[TRINamespaceRecord namespaceCompatibilityVersion]
+  -[TRINamespaceRecord setNamespaceId:]
+  -[TRINamespaceRecord treatmentPath]
+  -[TRINamespaceRecord setNamespaceCompatibilityVersion:]
+  -[TRINamespaceRecord setTreatmentPath:]
+
+
+TRIActivateTreatmentTask : TRITreatmentBaseTask
+ @property  NSDate *startTime
+
+  // class methods
+  +[TRIActivateTreatmentTask taskWithExperimentId:treatmentId:]
+
+  // instance methods
+  -[TRIActivateTreatmentTask .cxx_destruct]
+  -[TRIActivateTreatmentTask dependencies]
+  -[TRIActivateTreatmentTask startTime]
+  -[TRIActivateTreatmentTask endTime]
+  -[TRIActivateTreatmentTask setStartTime:]
+  -[TRIActivateTreatmentTask setup]
+  -[TRIActivateTreatmentTask nextTasksForRunStatus:]
+  -[TRIActivateTreatmentTask runTask]
+  -[TRIActivateTreatmentTask hasConflictWithOtherExperiments:]
+  -[TRIActivateTreatmentTask writeNamespaceDescriptorsInDirectory:forExperiment:]
+
+
+TRIFetchTreatmentTask : TRITreatmentBaseTask
+  // class methods
+  +[TRIFetchTreatmentTask taskWithExperimentId:treatmentId:]
+
+  // instance methods
+  -[TRIFetchTreatmentTask dependencies]
+  -[TRIFetchTreatmentTask runTask]
+  -[TRIFetchTreatmentTask processTreatment:]
+
+
+TRIDatabase : NSObject /usr/lib/libSystem.B.dylib
+ @property  TRIExperimentDatabase *experiments
+ @property  <TRITaskPersisting> *tasks
+
+  // class methods
+  +[TRIDatabase sharedDatabase]
+
+  // instance methods
+  -[TRIDatabase init]
+  -[TRIDatabase .cxx_destruct]
+  -[TRIDatabase tasks]
+  -[TRIDatabase experiments]
+
+
+TRIClientTreatmentArtifact : TRIBaseArtifact
+ @property  NSString *treatmentId
+ @property  NSData *encodedTreatmentDefinition
+ @property  NSArray *assetUrls
+ @property  TRIClientTreatment *treatment
+ @property  NSString *encodedTreatmentDefinitionSignature
+ @property  NSData *publicCertificate
+ @property  NSArray *assetSignatures
+ @property  NSDictionary *treatmentUrls
+
+  // class methods
+  +[TRIClientTreatmentArtifact baseUrlForTreatment:namespaceId:]
+  +[TRIClientTreatmentArtifact artifactWithTreatmentId:]
+  +[TRIClientTreatmentArtifact artifactFromCloudKitResult:assetUrls:]
+  +[TRIClientTreatmentArtifact loadArtifactWithTreatmentId:]
+  +[TRIClientTreatmentArtifact urlForDefaultTreatmentWithNamespaceId:]
+  +[TRIClientTreatmentArtifact urlForTreatment:namespaceId:]
+
+  // instance methods
+  -[TRIClientTreatmentArtifact init]
+  -[TRIClientTreatmentArtifact isValid]
+  -[TRIClientTreatmentArtifact .cxx_destruct]
+  -[TRIClientTreatmentArtifact url]
+  -[TRIClientTreatmentArtifact _assetMap]
+  -[TRIClientTreatmentArtifact treatment]
+  -[TRIClientTreatmentArtifact setTreatmentId:]
+  -[TRIClientTreatmentArtifact treatmentId]
+  -[TRIClientTreatmentArtifact publicCertificate]
+  -[TRIClientTreatmentArtifact loadPropertiesFromDictionary:]
+  -[TRIClientTreatmentArtifact savePropertiesToDictionary]
+  -[TRIClientTreatmentArtifact setPublicCertificate:]
+  -[TRIClientTreatmentArtifact setEncodedTreatmentDefinition:]
+  -[TRIClientTreatmentArtifact setEncodedTreatmentDefinitionSignature:]
+  -[TRIClientTreatmentArtifact setAssetSignatures:]
+  -[TRIClientTreatmentArtifact setAssetUrls:]
+  -[TRIClientTreatmentArtifact removeFromUrl:]
+  -[TRIClientTreatmentArtifact encodedTreatmentDefinition]
+  -[TRIClientTreatmentArtifact saveToNamespaceTreatments]
+  -[TRIClientTreatmentArtifact treatmentUrls]
+  -[TRIClientTreatmentArtifact initWithTreatmentId:]
+  -[TRIClientTreatmentArtifact assetUrls]
+  -[TRIClientTreatmentArtifact updateFileValue:]
+  -[TRIClientTreatmentArtifact copyAssets]
+  -[TRIClientTreatmentArtifact setTreatmentUrls:]
+  -[TRIClientTreatmentArtifact assetUrlForFactor:treatmentId:]
+  -[TRIClientTreatmentArtifact urlsFromStrings:]
+  -[TRIClientTreatmentArtifact stringsFromUrls:]
+  -[TRIClientTreatmentArtifact assetSignatures]
+  -[TRIClientTreatmentArtifact encodedTreatmentDefinitionSignature]
+  -[TRIClientTreatmentArtifact updateAssetsInTreatment]
+
+
+TRIDeactivateTreatmentTask : TRIExperimentBaseTask
+ @property  NSDate *startTime
+
+  // class methods
+  +[TRIDeactivateTreatmentTask taskWithExperimentId:]
+
+  // instance methods
+  -[TRIDeactivateTreatmentTask .cxx_destruct]
+  -[TRIDeactivateTreatmentTask setStatus:]
+  -[TRIDeactivateTreatmentTask startTime]
+  -[TRIDeactivateTreatmentTask setStartTime:]
+  -[TRIDeactivateTreatmentTask nextTasksForRunStatus:]
+  -[TRIDeactivateTreatmentTask runTask]
+
+
+TRIFetchExperimentsTask : TRIBaseTask
+ @property  NSDate *earliestDate
+
+  // class methods
+  +[TRIFetchExperimentsTask supportsSecureCoding]
+  +[TRIFetchExperimentsTask taskWithQueue:earliestDate:]
+  +[TRIFetchExperimentsTask taskWithQueue:]
+
+  // instance methods
+  -[TRIFetchExperimentsTask encodeWithCoder:]
+  -[TRIFetchExperimentsTask initWithCoder:]
+  -[TRIFetchExperimentsTask .cxx_destruct]
+  -[TRIFetchExperimentsTask earliestDate]
+  -[TRIFetchExperimentsTask setEarliestDate:]
+  -[TRIFetchExperimentsTask nextTasksForRunStatus:]
+  -[TRIFetchExperimentsTask runTask]
+  -[TRIFetchExperimentsTask initWithQueue:earliestDate:]
+  -[TRIFetchExperimentsTask saveExperiment:]
+  -[TRIFetchExperimentsTask getNextTaskForExperiment:]
+  -[TRIFetchExperimentsTask addNextTask:]
+  -[TRIFetchExperimentsTask processExperiment:]
+  -[TRIFetchExperimentsTask nextTaskCount]
+
+
+TRITreatmentBaseTask : TRIExperimentBaseTask
+ @property  NSString *treatmentId
+
+  // class methods
+  +[TRITreatmentBaseTask supportsSecureCoding]
+
+  // instance methods
+  -[TRITreatmentBaseTask encodeWithCoder:]
+  -[TRITreatmentBaseTask initWithCoder:]
+  -[TRITreatmentBaseTask .cxx_destruct]
+  -[TRITreatmentBaseTask treatmentId]
+  -[TRITreatmentBaseTask initWithExperimentId:treatmentId:]
+
+
+TRIArtifactManager : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSDate *lastFetchExperimentDate
+
+  // class methods
+  +[TRIArtifactManager instance]
+
+  // instance methods
+  -[TRIArtifactManager init]
+  -[TRIArtifactManager dealloc]
+  -[TRIArtifactManager .cxx_destruct]
+  -[TRIArtifactManager dispatchQueue]
+  -[TRIArtifactManager isInternalBuild]
+  -[TRIArtifactManager downloadAsset:completionHandler:]
+  -[TRIArtifactManager downloadWithRequest:completionHandler:]
+  -[TRIArtifactManager isBetaUser]
+  -[TRIArtifactManager fetchTreatmentWithId:completionHandler:]
+  -[TRIArtifactManager fetchExperimentsSinceDate:completionHandler:]
+  -[TRIArtifactManager lastFetchExperimentDate]
+  -[TRIArtifactManager cloudKitAssetDownloadTimeoutSeconds]
+  -[TRIArtifactManager assetDownloadDir]
+  -[TRIArtifactManager moveFileToCache:error:]
+  -[TRIArtifactManager checkResponse:location:error:request:]
+  -[TRIArtifactManager setLastFetchExperimentDate:]
+  -[TRIArtifactManager runCloudKitQueryWithRequest:completionHandler:]
+  -[TRIArtifactManager cloudKitCacheControlMaxAge]
+  -[TRIArtifactManager isFetchAllowed]
+  -[TRIArtifactManager allowedDeploymentPopulations]
+  -[TRIArtifactManager fetchExperimentsWithRequest:completionHandler:]
+  -[TRIArtifactManager sortedResultsByModifiedDate:]
+  -[TRIArtifactManager downloadAssetsFromCloudKitResult:error:]
+  -[TRIArtifactManager fetchExperimentsWithCompletionHandler:]
+  -[TRIArtifactManager fetchRollbacksSinceDate:completionHandler:]
+  -[TRIArtifactManager fetchExperimentWithId:sinceLastFetchOnly:completionHandler:]
+
+
+TRISignatureKey : NSObject /usr/lib/libSystem.B.dylib
+ @property  ^{__SecKey=} key
+
+  // class methods
+  +[TRISignatureKey keyFromData:]
+  +[TRISignatureKey keyFromCertificateChain:]
+  +[TRISignatureKey releaseCertificates:]
+
+  // instance methods
+  -[TRISignatureKey dealloc]
+  -[TRISignatureKey key]
+  -[TRISignatureKey initWithKey:]
+  -[TRISignatureKey setKey:]
+  -[TRISignatureKey validateBase64Signature:data:]
+  -[TRISignatureKey validateBase64Signature:data:algorithm:]
+  -[TRISignatureKey validateSignature:data:algorithm:]
+
+
+TRITaskRecord : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSNumber *taskId
+ @property  <TRITask> *task
+ @property  NSDate *startTime
+ @property  NSArray *dependencies
+ @property  NSArray *tags
+
+  // instance methods
+  -[TRITaskRecord .cxx_destruct]
+  -[TRITaskRecord dependencies]
+  -[TRITaskRecord tags]
+  -[TRITaskRecord task]
+  -[TRITaskRecord setTask:]
+  -[TRITaskRecord setTags:]
+  -[TRITaskRecord startTime]
+  -[TRITaskRecord setStartTime:]
+  -[TRITaskRecord taskId]
+  -[TRITaskRecord setTaskId:]
+  -[TRITaskRecord setDependencies:]
+
+
+TRITaskQueue : NSObject /usr/lib/libSystem.B.dylib <TRITaskQueuing>
+ @property  TRIClient *client
+
+  // class methods
+  +[TRITaskQueue sharedInstance]
+  +[TRITaskQueue instanceWithClient:]
+
+  // instance methods
+  -[TRITaskQueue dealloc]
+  -[TRITaskQueue count]
+  -[TRITaskQueue .cxx_destruct]
+  -[TRITaskQueue stop]
+  -[TRITaskQueue shouldContinue]
+  -[TRITaskQueue observeValueForKeyPath:ofObject:change:context:]
+  -[TRITaskQueue client]
+  -[TRITaskQueue addTask:]
+  -[TRITaskQueue cancelTask:]
+  -[TRITaskQueue stopRequested]
+  -[TRITaskQueue cancelTasksWithTag:]
+  -[TRITaskQueue initWithTaskStore:queue:client:]
+  -[TRITaskQueue topoSortedTasks:]
+  -[TRITaskQueue queueTasks:]
+  -[TRITaskQueue queueScheduledTasks:]
+  -[TRITaskQueue removeTaskWithId:]
+  -[TRITaskQueue finishedTask:withId:status:]
+  -[TRITaskQueue createOperationWithTask:withId:dependencies:taskMap:]
+  -[TRITaskQueue _addTask:taskIds:]
+  -[TRITaskQueue _addTask:withDependencies:]
+  -[TRITaskQueue _queueScheduledTasks:nextTaskStartTime:]
+  -[TRITaskQueue registerXPCActivityForDate:]
+  -[TRITaskQueue immediateExecutionTasksForDate:nextStartTime:tasks:]
+  -[TRITaskQueue resumeWithXPCActivityDescriptor:executeWhenSuspended:]
+  -[TRITaskQueue updateActivity:withStartDate:]
+  -[TRITaskQueue runActivity:]
+  -[TRITaskQueue containsTaskId:]
+  -[TRITaskQueue queueAllScheduledTasks]
+
+
+TRIControlCommandGetExperiments : NSObject /usr/lib/libSystem.B.dylib <TRIControlCommand>
+ @property  NSArray *result
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[TRIControlCommandGetExperiments supportsSecureCoding]
+  +[TRIControlCommandGetExperiments command]
+
+  // instance methods
+  -[TRIControlCommandGetExperiments run]
+  -[TRIControlCommandGetExperiments encodeWithCoder:]
+  -[TRIControlCommandGetExperiments initWithCoder:]
+  -[TRIControlCommandGetExperiments .cxx_destruct]
+  -[TRIControlCommandGetExperiments result]
+  -[TRIControlCommandGetExperiments setResult:]
+
+
+TRIAssetCleanupTask : TRIExperimentBaseTask
+  // class methods
+  +[TRIAssetCleanupTask task]
+  +[TRIAssetCleanupTask taskWithExperimentId:]
+
+  // instance methods
+  -[TRIAssetCleanupTask nextTasksForRunStatus:]
+  -[TRIAssetCleanupTask runTask]
+  -[TRIAssetCleanupTask removeExperimentArtifact:]
+  -[TRIAssetCleanupTask removeTreatmentPathsWithExperiment:]
+  -[TRIAssetCleanupTask removeExperiment:]
+  -[TRIAssetCleanupTask cleanupWithExperiment:]
+  -[TRIAssetCleanupTask cleanupWithExperimentId:]
+
+
+TRIFetchRollbacksTask : TRIBaseTask
+ @property  NSDate *earliestDate
+
+  // class methods
+  +[TRIFetchRollbacksTask taskWithQueue:earliestDate:]
+  +[TRIFetchRollbacksTask taskWithQueue:]
+
+  // instance methods
+  -[TRIFetchRollbacksTask .cxx_destruct]
+  -[TRIFetchRollbacksTask earliestDate]
+  -[TRIFetchRollbacksTask nextTasksForRunStatus:]
+  -[TRIFetchRollbacksTask runTask]
+  -[TRIFetchRollbacksTask initWithQueue:earliestDate:]
+  -[TRIFetchRollbacksTask getNextTaskForExperiment:]
+  -[TRIFetchRollbacksTask addNextTask:]
+  -[TRIFetchRollbacksTask processRollback:]
+
+
+TRIBaseTask : NSObject /usr/lib/libSystem.B.dylib <TRITask>
+ @property  TRIExperimentDatabase *database
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *tags
+ @property  NSDate *startTime
+ @property  NSArray *dependencies
+
+  // class methods
+  +[TRIBaseTask supportsSecureCoding]
+
+  // instance methods
+  -[TRIBaseTask init]
+  -[TRIBaseTask run]
+  -[TRIBaseTask encodeWithCoder:]
+  -[TRIBaseTask initWithCoder:]
+  -[TRIBaseTask .cxx_destruct]
+  -[TRIBaseTask dependencies]
+  -[TRIBaseTask tags]
+  -[TRIBaseTask setDatabase:]
+  -[TRIBaseTask database]
+  -[TRIBaseTask startTime]
+  -[TRIBaseTask setup]
+  -[TRIBaseTask nextTasksForRunStatus:]
+  -[TRIBaseTask runTask]
+  -[TRIBaseTask logMetrics:]
+
+
+TRIBaseDatabase : NSObject /usr/lib/libSystem.B.dylib <_PASDatabaseMigrationProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[TRIBaseDatabase .cxx_destruct]
+  -[TRIBaseDatabase initWithPath:]
+  -[TRIBaseDatabase performMigration]
+  -[TRIBaseDatabase migrations]
+  -[TRIBaseDatabase queriesToSkipFromEmptyToVersion:]
+  -[TRIBaseDatabase databaseHandle]
+  -[TRIBaseDatabase prepAndRunTransactionQuery:onPrep:onRow:onError:]
+
+
+TRIDServer : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSObject<OS_dispatch_queue> *dispatchQueue
+ @property  TRITaskQueue *taskQueue
+ @property  TRIControlManager *controlManager
+ @property  TRIClient *client
+ @property  BOOL isRunning
+
+  // class methods
+  +[TRIDServer sharedServer]
+
+  // instance methods
+  -[TRIDServer init]
+  -[TRIDServer .cxx_destruct]
+  -[TRIDServer shouldContinue]
+  -[TRIDServer start]
+  -[TRIDServer isRunning]
+  -[TRIDServer client]
+  -[TRIDServer dispatchQueue]
+  -[TRIDServer taskQueue]
+  -[TRIDServer makeDataVaultAtPath:]
+  -[TRIDServer updateSystemInfo]
+  -[TRIDServer dispatchIfUnlocked:]
+  -[TRIDServer controlManager]
+  -[TRIDServer asyncStartWithMetrics:]
+  -[TRIDServer _registerXpcStreamEventHandler]
+  -[TRIDServer _registerFetchExperimentsActivity]
+  -[TRIDServer _registerPostUpgradeActivity]
+  -[TRIDServer _registerPlaceholderTaskQueueActivity]
+  -[TRIDServer logMetrics:stopwatch:]
+  -[TRIDServer _scheduleDaemonExitWithDelaySeconds:]
+  -[TRIDServer getDiskUsageInBytes]
+
+
+TRIFetchExperimentTask : TRIExperimentBaseTask
+  // class methods
+  +[TRIFetchExperimentTask taskWithExperimentId:]
+
+  // instance methods
+  -[TRIFetchExperimentTask runTask]
+  -[TRIFetchExperimentTask saveExperiment:]
+
+
+TRIExperimentRecord : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *experimentId
+ @property  NSString *treatmentId
+ @property  int type
+ @property  long long status
+ @property  double startTimestamp
+ @property  double endTimestamp
+ @property  NSString *namespaceDescriptorDirectory
+ @property  NSArray *namespaces
+
+  // class methods
+  +[TRIExperimentRecord supportsSecureCoding]
+
+  // instance methods
+  -[TRIExperimentRecord clearCache]
+  -[TRIExperimentRecord type]
+  -[TRIExperimentRecord setType:]
+  -[TRIExperimentRecord encodeWithCoder:]
+  -[TRIExperimentRecord initWithCoder:]
+  -[TRIExperimentRecord .cxx_destruct]
+  -[TRIExperimentRecord status]
+  -[TRIExperimentRecord remove]
+  -[TRIExperimentRecord setStatus:]
+  -[TRIExperimentRecord startTime]
+  -[TRIExperimentRecord endTime]
+  -[TRIExperimentRecord setStartTimestamp:]
+  -[TRIExperimentRecord startTimestamp]
+  -[TRIExperimentRecord initWithDatabase:]
+  -[TRIExperimentRecord endTimestamp]
+  -[TRIExperimentRecord experimentId]
+  -[TRIExperimentRecord setExperimentId:]
+  -[TRIExperimentRecord setEndTimestamp:]
+  -[TRIExperimentRecord setTreatmentId:]
+  -[TRIExperimentRecord treatmentId]
+  -[TRIExperimentRecord namespaces]
+  -[TRIExperimentRecord updateTreatmentId:]
+  -[TRIExperimentRecord namespaceDescriptorDirectory]
+  -[TRIExperimentRecord _loadNamespaces]
+  -[TRIExperimentRecord setNamespaceDescriptorDirectory:]
+  -[TRIExperimentRecord namespaceWithId:]
+
+
+TRICloudKitRequestBuilder : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *appleEdgeCacheValue
+ @property  NSString *recordType
+ @property  NSMutableArray *filterBy
+ @property  NSMutableArray *sortBy
+ @property  NSString *zoneName
+ @property  double bundleFetchTimeout
+ @property  unsigned int cacheControlMaxAge
+ @property  unsigned long cachePolicy
+ @property  NSArray *fieldNames
+
+  // class methods
+  +[TRICloudKitRequestBuilder requestForExperiment]
+  +[TRICloudKitRequestBuilder requestForTreatment]
+  +[TRICloudKitRequestBuilder requestWithRecordType:]
+
+  // instance methods
+  -[TRICloudKitRequestBuilder init]
+  -[TRICloudKitRequestBuilder query]
+  -[TRICloudKitRequestBuilder .cxx_destruct]
+  -[TRICloudKitRequestBuilder recordType]
+  -[TRICloudKitRequestBuilder zoneName]
+  -[TRICloudKitRequestBuilder request]
+  -[TRICloudKitRequestBuilder setZoneName:]
+  -[TRICloudKitRequestBuilder setCachePolicy:]
+  -[TRICloudKitRequestBuilder cachePolicy]
+  -[TRICloudKitRequestBuilder body]
+  -[TRICloudKitRequestBuilder setRecordType:]
+  -[TRICloudKitRequestBuilder sortBy]
+  -[TRICloudKitRequestBuilder setSortBy:]
+  -[TRICloudKitRequestBuilder fieldNames]
+  -[TRICloudKitRequestBuilder cacheControlMaxAge]
+  -[TRICloudKitRequestBuilder baseUrl]
+  -[TRICloudKitRequestBuilder setCacheControlMaxAge:]
+  -[TRICloudKitRequestBuilder sortByModifiedDate]
+  -[TRICloudKitRequestBuilder filterByModificationDateNewerThan:]
+  -[TRICloudKitRequestBuilder filterByFieldName:comparator:value:type:]
+  -[TRICloudKitRequestBuilder filterByExperimentId:]
+  -[TRICloudKitRequestBuilder filterByTreatmentId:]
+  -[TRICloudKitRequestBuilder filterBy]
+  -[TRICloudKitRequestBuilder setFilterBy:]
+  -[TRICloudKitRequestBuilder filterByFieldName:equalsStringValue:]
+  -[TRICloudKitRequestBuilder sortBy:ascending:]
+  -[TRICloudKitRequestBuilder setAppleEdgeCacheValue:]
+  -[TRICloudKitRequestBuilder _cloudKitEnvironment]
+  -[TRICloudKitRequestBuilder _cloudKitApiToken]
+  -[TRICloudKitRequestBuilder bundleFetchTimeout]
+  -[TRICloudKitRequestBuilder appleEdgeCacheValue]
+  -[TRICloudKitRequestBuilder cacheControlValue]
+  -[TRICloudKitRequestBuilder setBundleFetchTimeout:]
+  -[TRICloudKitRequestBuilder setFieldNames:]
+
+
+TRISequenceTask : NSObject /usr/lib/libSystem.B.dylib <TRITask>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *tags
+ @property  NSDate *startTime
+ @property  NSArray *dependencies
+
+  // class methods
+  +[TRISequenceTask supportsSecureCoding]
+
+  // instance methods
+  -[TRISequenceTask run]
+  -[TRISequenceTask encodeWithCoder:]
+  -[TRISequenceTask initWithCoder:]
+  -[TRISequenceTask .cxx_destruct]
+  -[TRISequenceTask dependencies]
+  -[TRISequenceTask initWithTags:]
+  -[TRISequenceTask tags]
+  -[TRISequenceTask addTask:]
+  -[TRISequenceTask startTime]
+  -[TRISequenceTask nextTasksForRunStatus:]
+  -[TRISequenceTask initWithTasks:index:tags:]
+
+
+TRIControlClient : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[TRIControlClient experiments]
+  -[TRIControlClient runCommand:]
+  -[TRIControlClient submitTask:]
+
+
+TRIRotateSubjectIdTask : NSObject /usr/lib/libSystem.B.dylib <TRITask>
+ @property  BOOL forceUpdate
+ @property  NSString *deviceId
+ @property  NSDate *nextRotationDate
+ @property  NSDate *startTime
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *tags
+ @property  NSArray *dependencies
+
+  // class methods
+  +[TRIRotateSubjectIdTask supportsSecureCoding]
+  +[TRIRotateSubjectIdTask task]
+  +[TRIRotateSubjectIdTask taskWithDeviceId:nextRotationDate:forceUpdate:]
+
+  // instance methods
+  -[TRIRotateSubjectIdTask run]
+  -[TRIRotateSubjectIdTask encodeWithCoder:]
+  -[TRIRotateSubjectIdTask initWithCoder:]
+  -[TRIRotateSubjectIdTask .cxx_destruct]
+  -[TRIRotateSubjectIdTask dependencies]
+  -[TRIRotateSubjectIdTask tags]
+  -[TRIRotateSubjectIdTask startTime]
+  -[TRIRotateSubjectIdTask setStartTime:]
+  -[TRIRotateSubjectIdTask forceUpdate]
+  -[TRIRotateSubjectIdTask deviceId]
+  -[TRIRotateSubjectIdTask setDeviceId:]
+  -[TRIRotateSubjectIdTask nextRotationDate]
+  -[TRIRotateSubjectIdTask setNextRotationDate:]
+  -[TRIRotateSubjectIdTask nextTasksForRunStatus:]
+  -[TRIRotateSubjectIdTask setForceUpdate:]
+  -[TRIRotateSubjectIdTask isTelemetryAllowed:]
+
+
+TRIXPCActivityDescriptor : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *name
+ @property  @? shouldDefer
+ @property  @? completion
+ @property  NSObject<OS_xpc_object> *activity
+
+  // instance methods
+  -[TRIXPCActivityDescriptor init]
+  -[TRIXPCActivityDescriptor name]
+  -[TRIXPCActivityDescriptor copyWithZone:]
+  -[TRIXPCActivityDescriptor .cxx_destruct]
+  -[TRIXPCActivityDescriptor activity]
+  -[TRIXPCActivityDescriptor shouldDefer]
+  -[TRIXPCActivityDescriptor completion]
+  -[TRIXPCActivityDescriptor initWithActivity:name:]
+
+
+TRIXPCActivitySupport : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TRIXPCActivitySupport registerActivityWithName:checkInBlock:asyncHandler:]
+  +[TRIXPCActivitySupport nameForActivityState:]
+
+
+TRITaskDatabase : TRIBaseDatabase <TRITaskPersisting>
+  // instance methods
+  -[TRITaskDatabase dependencies]
+  -[TRITaskDatabase tags]
+  -[TRITaskDatabase removeTask:]
+  -[TRITaskDatabase tasks]
+  -[TRITaskDatabase migrations]
+  -[TRITaskDatabase tasksDependentOnTask:]
+  -[TRITaskDatabase addTask:startTime:tags:dependencies:error:]
+  -[TRITaskDatabase taskIdsWithTag:]
+  -[TRITaskDatabase clearStartTimeForTaskId:]
+  -[TRITaskDatabase addTask:startTime:error:]
+  -[TRITaskDatabase addTags:toTaskId:]
+  -[TRITaskDatabase addTask:startTime:tags:error:]
+  -[TRITaskDatabase addDependencies:toTask:]
+  -[TRITaskDatabase encodeTask:error:]
+  -[TRITaskDatabase removeDependenciesWithTaskId:]
+  -[TRITaskDatabase removeTagsWithTaskId:]
+  -[TRITaskDatabase decodeTaskWithClassName:data:]
+  -[TRITaskDatabase addTask:error:]
+
+
+TRIExperimentDatabase : TRIBaseDatabase
+  // instance methods
+  -[TRIExperimentDatabase initWithPath:]
+  -[TRIExperimentDatabase migrations]
+  -[TRIExperimentDatabase queriesToSkipFromEmptyToVersion:]
+  -[TRIExperimentDatabase setStatus:forExperimentId:]
+  -[TRIExperimentDatabase setTreatmentId:forExperimentId:]
+  -[TRIExperimentDatabase setDurationForExperimentId:startTime:endTime:]
+  -[TRIExperimentDatabase addExperimentWithId:definitionPath:]
+  -[TRIExperimentDatabase updateExperiment:]
+  -[TRIExperimentDatabase setCompatibilityVersion:forNamespaceId:withExperimentId:]
+  -[TRIExperimentDatabase allExperimentRecords]
+  -[TRIExperimentDatabase recordWithExperimentId:]
+  -[TRIExperimentDatabase namespaceIdsWithExperimentStatus:block:]
+  -[TRIExperimentDatabase treatmentPathsForExperimentId:]
+  -[TRIExperimentDatabase setNamespaceDescriptorDirectory:experimentId:]
+  -[TRIExperimentDatabase namespacesAreAvailableForExperiment:startDate:endDate:namespaces:]
+  -[TRIExperimentDatabase setTreatmentPath:withExperimentId:namespaceId:]
+  -[TRIExperimentDatabase treatmentIdForExperimentId:]
+  -[TRIExperimentDatabase namespacesAreAvailableForExperiment:namespaces:]
+  -[TRIExperimentDatabase experimentRecordsWithStatus:block:]
+  -[TRIExperimentDatabase namespaceRecordsWithExperimentId:block:]
+  -[TRIExperimentDatabase removeRecordWithExperimentId:]
+  -[TRIExperimentDatabase addNamespace:forExperimentId:]
+  -[TRIExperimentDatabase namespaceIdsInExperimentsWithStartTime:endTime:block:]
+  -[TRIExperimentDatabase namespacesAreAvailableForExperiment:startTimestamp:endTimestamp:namespaces:]
+
+
+TRIConfigurationTask : TRIBaseTask
+  // instance methods
+  -[TRIConfigurationTask runTask]
+
+
+NSDictionary(TRIContext)
+	// class methods
+	+[NSDictionary(TRIContext) dictionaryFromXPCObject:]
+	+[NSDictionary(TRIContext) dictionaryWithKeys:values:]
+	+[NSDictionary(TRIContext) keys:values:fromDictionary:]
+
+	// instance methods
+	-[NSDictionary(TRIContext) addToXPCObject:]
+	-[NSDictionary(TRIContext) toXPCObject]
+	-[NSDictionary(TRIContext) getContextValueWithName:]
+	-[NSDictionary(TRIContext) keys:values:]
+	-[NSDictionary(TRIContext) triStringValueForField:]
+	-[NSDictionary(TRIContext) triDataValueForField:]
+	-[NSDictionary(TRIContext) triArrayValueForField:]
+	-[NSDictionary(TRIContext) triNumberValueForField:]
+	-[NSDictionary(TRIContext) triItemsInDagWithSource:]
+	-[NSDictionary(TRIContext) triReversedDag]
+	-[NSDictionary(TRIContext) triItemsInDagWithSink:]
+	-[NSDictionary(TRIContext) triTransformValuesWithBlock:]
+	-[NSDictionary(TRIContext) triValueForField:]
+
+NSMutableDictionary(TRI)
+	// class methods
+	+[NSMutableDictionary(TRI) dictionaryFromXPCObject:]
+	+[NSMutableDictionary(TRI) dictionaryWithKeys:values:]
+
+	// instance methods
+	-[NSMutableDictionary(TRI) getContextValueWithName:]
+	-[NSMutableDictionary(TRI) keys:values:]
+	-[NSMutableDictionary(TRI) tri_setContextValueWithName:value:]
+	-[NSMutableDictionary(TRI) tri_contextValueWithName:]
+	-[NSMutableDictionary(TRI) setContextValueWithName:value:]
+
+NSObject(XPC)
+	// class methods
+	+[NSObject(XPC) objectFromXPCObject:]
+
+NSString(TRITreatmentId)
+	// class methods
+	+[NSString(TRITreatmentId) stringFromXPCObject:]
+
+	// instance methods
+	-[NSString(TRITreatmentId) triIsValidTreatmentId]
+	-[NSString(TRITreatmentId) tri_assignmentProbabilityWithSeed:]
+	-[NSString(TRITreatmentId) assignmentProbabilityWithSeed:]
+
+NSData(TRI)
+	// instance methods
+	-[NSData(TRI) triSha256]
+	-[NSData(TRI) triSha256Base64String]
+
+NSDate(CloudKit)
+	// class methods
+	+[NSDate(CloudKit) triModifiedDateFromCloudKitResult:]
+	+[NSDate(CloudKit) triDateFromCloudKitTimestamp:]
+
+	// instance methods
+	-[NSDate(CloudKit) triCloudKitTimestamp]
+
+NSURLRequest(TRI)
+	// instance methods
+	-[NSURLRequest(TRI) triJSONString]
+	-[NSURLRequest(TRI) triJSONStringWithOptions:error:]
+	-[NSURLRequest(TRI) triHTTPBodyAsJsonObj]
+
+NSArray(Utils)
+	// instance methods
+	-[NSArray(Utils) transformWithBlock:]
+
+NSError(CloudKit)
+	// class methods
+	+[NSError(CloudKit) triCloudKitErrorWithMessage:]
+	+[NSError(CloudKit) triCloudKitErrorWithMessage:code:]
+
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSBlockOperation 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSCondition 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSExpression 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableURLRequest 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSRunLoop 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSScanner 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLRequest 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSession 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRIClient 
+01 00 0600 /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto: TRIClientExperiment 
+01 00 0600 /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto: TRIClientTreatment 
+01 00 0600 /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto: TRILogTreatment 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRILogTreatmentReader 
+01 00 0600 /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto: TRIMetric 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRINamespaceDescriptor 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRINamespaceFactorProvider 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRINamespaceUpdateNotification 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRIStopwatch 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRISubjectProvider 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRISystemConfiguration 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRISystemInfo 
+01 00 0700 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRITreatmentInfo 
+01 00 0600 /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto: TRIUserDimension 
+01 00 0500 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASDatabaseMigrator 
+01 00 0500 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASDeviceState 
+01 00 0500 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASDispatch 
+01 00 0500 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASSqliteDatabase 

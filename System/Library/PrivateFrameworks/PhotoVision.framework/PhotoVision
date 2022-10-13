@@ -1,0 +1,1824 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_PVAggregate
+|| __DATA.__objc_data _OBJC_CLASS_$_PVDataAccessor
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFace
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceCrop
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceCropAnalyzer
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceCropGenerator
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceCropSourceDescriptor
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceCropUtils
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceGroup
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFacePair
+|| __DATA.__objc_data _OBJC_CLASS_$_PVFaceprint
+|| __DATA.__objc_data _OBJC_CLASS_$_PVGeometryUtils
+|| __DATA.__objc_data _OBJC_CLASS_$_PVImageLoader
+|| __DATA.__objc_data _OBJC_CLASS_$_PVObject
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPerson
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonCluster
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperLocationStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperMarkovClusteringStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperSocialGroupComplementStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperSocialGroupOverlaps
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperSocialGroupTimeWarpingStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVPersonDeduperTimeStep
+|| __DATA.__objc_data _OBJC_CLASS_$_PVSuggestionRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_PVUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVAggregate
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFace
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceCrop
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceCropAnalyzer
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceCropGenerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceCropSourceDescriptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceCropUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFacePair
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVFaceprint
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVGeometryUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVImageLoader
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVObject
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPerson
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonCluster
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperLocationStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperMarkovClusteringStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperSocialGroupComplementStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperSocialGroupOverlaps
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperSocialGroupTimeWarpingStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVPersonDeduperTimeStep
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVSuggestionRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_PVUtils
+|| __DATA_CONST.__const _MethodConstructionHintKey_FieldString
+|| __DATA_CONST.__const _MethodConstructionHintKey_IsNoOpKey
+|| __DATA_CONST.__const _MethodConstructionHintKey_IsSummarized
+|| __DATA_CONST.__const _MethodConstructionHintKey_KeyNeedsParsing
+|| __DATA_CONST.__const _MethodConstructionHintKey_MessageString
+|| __DATA_CONST.__const _MethodConstructionHintKey_PrimaryDomain
+|| __DATA_CONST.__const _MethodConstructionHintKey_RegisteredKey
+|| __DATA_CONST.__const _MethodConstructionHintKey_SubDomain
+|| __DATA_CONST.__const _MethodConstructionHintKey_ValueDataTypeString
+|| __DATA_CONST.__const _MethodConstructionHintKey_methodType
+|| __DATA_CONST.__const _MethodConstructionHint_DefaultSubdomainPrefix
+|| __DATA_CONST.__const _MethodConstructionHint_LibrarySubdomainPrefix
+|| __DATA_CONST.__const _MethodConstructionHint_MessageStringForSummarized
+|| __DATA_CONST.__const _MethodConstructionHint_MessageStringPrefix
+|| __DATA_CONST.__const _PVAnalysisResultFacesKey
+|| __DATA_CONST.__const _PVAnalysisResultWarningImageTooSmallKey
+|| __DATA_CONST.__const _PVClusteringStatusClusterRebuildRequiredKey
+|| __DATA_CONST.__const _PVClusteringStatusEligibleFacesCountKey
+|| __DATA_CONST.__const _PVClusteringStatusIsClusteringKey
+|| __DATA_CONST.__const _PVClusteringStatusPendingFacesCountKey
+|| __DATA_CONST.__const _PVDefaultAdvancedStatusMergeCandidateLimit
+|| __DATA_CONST.__const _PVDefaultAdvancedStatusVerifiedPersonLimit
+|| __DATA_CONST.__const _PVDefaultFaceAlgorithmUmbrellaVersion
+|| __DATA_CONST.__const _PVDefaultFaceClusteringAgeThreshold
+|| __DATA_CONST.__const _PVDefaultFaceClusteringDisabled
+|| __DATA_CONST.__const _PVDefaultFaceClusteringJunkThreshold
+|| __DATA_CONST.__const _PVDefaultFaceClusteringThreshold
+|| __DATA_CONST.__const _PVDefaultFaceIDModelAlwaysRebuild
+|| __DATA_CONST.__const _PVDefaultFaceIDModelRebuildPeriod
+|| __DATA_CONST.__const _PVDefaultFaceMergeFaceprintDistanceThreshold
+|| __DATA_CONST.__const _PVDefaultFacePrimarySuggestionsThreshold
+|| __DATA_CONST.__const _PVDefaultMaxFaceCountForClustering
+|| __DATA_CONST.__const _PVDefaultMinFaceCountToTriggerClustering
+|| __DATA_CONST.__const _PVDefaultMinimumFaceGroupSizeForCreatingMergeCandidates
+|| __DATA_CONST.__const _PVDefaultMinimumSuggestionSize
+|| __DATA_CONST.__const _PVDefaultPersonBuilderMergeCandidatesDisabled
+|| __DATA_CONST.__const _PVDefaultPersonBuildingDisabled
+|| __DATA_CONST.__const _PVDefaultQuarantineTwinsOnAssetEnabled
+|| __DATA_CONST.__const _PVDefaultSceneAlgorithmUmbrellaVersion
+|| __DATA_CONST.__const _PVDefaultSceneTaxonomyIsBlacklistDisabled
+|| __DATA_CONST.__const _PVDefaultSuggestionsLogEnabled
+|| __DATA_CONST.__const _PVErrorDomainPhotoVision
+|| __DATA_CONST.__const _PVErrorDomainVisionKit
+|| __DATA_CONST.__const _PVEventClustererReady
+|| __DATA_CONST.__const _PVEventClusteringFinished
+|| __DATA_CONST.__const _PVEventClusteringStarted
+|| __DATA_CONST.__const _PVFaceModelAggdFullKey
+|| __DATA_CONST.__const _PVFacesToDelete
+|| __DATA_CONST.__const _PVFacesToPersist
+|| __DATA_CONST.__const _PVLibraryClustersMinusVisionClusters
+|| __DATA_CONST.__const _PVNotificationClustererNeedsToBeSyncedWithPhotoLibrary
+|| __DATA_CONST.__const _PVNotificationClustererReady
+|| __DATA_CONST.__const _PVNotificationClusteringFinished
+|| __DATA_CONST.__const _PVNotificationClusteringStarted
+|| __DATA_CONST.__const _PVSuggestionUpdateCancelled
+|| __DATA_CONST.__const _PVSuggestionUpdateFinished
+|| __DATA_CONST.__const _PVSuggestionUpdateProgress
+|| __DATA_CONST.__const _PVSuggestionUpdateStarted
+|| __DATA_CONST.__const _PVVisionClustersMinusLibraryClusters
+|| __DATA_CONST.__const _PV_AGGREGATE_IOS_PHOTOS_DEFAULT_PRIMARY_DOMAIN
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonBuilder_NumberOfClusterConfirmedFaceCrops
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonBuilder_NumberOfClusterRejectedFaceCrops
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonBuilder_NumberOfGraphVerifiedPersons
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonBuilder_NumberOfUserVerifiedPersons
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfAssetsAvailableInPeopleHome
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfFacesAvailableInPeopleHome
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAdded
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAddedByLocationStep
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupComplementStep
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupOverlapStep
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupTimeWarpingStep
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberOfGraphMergeCandidatesAddedByTimeStep
+|| __DATA_CONST.__const _PV_AGGREGATE_KEY_PersonPromoter_NumberPersonsPromoterToGraphVerified
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedDataType_Double
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedDataType_Integer
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedDataType_String
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedMethodType_Add
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedMethodType_Push
+|| __DATA_CONST.__const _PV_AGGREGATE_SupportedMethodType_Set
+|| __DATA_CONST.__const _PV_FACECROP_CROPBOX_KEY
+|| __DATA_CONST.__const _PV_FACECROP_EXIF_ORIENTATION_STRING
+|| __DATA_CONST.__const _PV_FACECROP_FACEBOX_KEY
+|| __DATA_CONST.__const _PV_FACECROP_GROUPID_KEY
+|| __DATA_CONST.__const _PV_FACECROP_METADATA_NAMESPACE
+|| __DATA_CONST.__const _PV_FACECROP_METADATA_PREFIX
+|| __DATA_CONST.__const _PV_FACECROP_METADATA_ROOT_PATH
+|| __DATA_CONST.__const _PV_FACECROP_VERSION_KEY
+|| __DATA_CONST.__const _kGraphNodeF2Threshold
+|| __DATA_CONST.__const _kGraphNodeHighPrecisionThreshold
+|| __DATA_CONST.__const _kGraphNodeHighRecallThreshold
+|| __DATA_CONST.__const _kPVAggregateForAggdPrimaryDomainName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVCanceler
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVClusterer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVEventManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVFaceIDModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVFaceMerger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVImage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVNotification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVPersonClusterManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVPersonDeduper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVPersonDeduperProfile
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVPersonPromoter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVPersonPromoterProfile
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVQueue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVSceneTaxonomy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVSceneTaxonomyNode
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVUserDefaults
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVVisionAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PVVisionHelper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PhotoVision
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVCanceler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVClusterer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVDataAccessor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVEventManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVFaceIDModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVFaceMerger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVImage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVNotification
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVPersonClusterManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVPersonDeduper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVPersonDeduperProfile
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVPersonPromoter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVPersonPromoterProfile
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVQueue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVSceneTaxonomy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVSceneTaxonomyNode
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVUserDefaults
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVVisionAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PVVisionHelper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PhotoVision
+|| __TEXT.__const _PVFaceCropImageEXIFOrientation
+|| __TEXT.__const _PVFaceQualityMeasurePenaltyBlinking
+|| __TEXT.__const _PVFaceQualityMeasurePenaltyMultipleFaces
+|| __TEXT.__const _PVFaceQualityMeasurePenaltyNotSmiling
+|| __TEXT.__const _PVMaximumFaceAlgorithmUmbrellaVersionValue
+|| __TEXT.__const _PVMaximumSceneAlgorithmUmbrellaVersionValue
+|| __TEXT.__const _PVMinimumFaceAlgorithmUmbrellaVersionValue
+|| __TEXT.__const _PVMinimumSceneAlgorithmUmbrellaVersionValue
+|| __TEXT.__const _PVPersonPromoterQuiescentStateRequirementsMinimumNumberOfFacesOnSourceForUpgrading
+|| __TEXT.__const _PVVisionFaceLandmarkConfidenceThreshold
+|| __TEXT.__const _PVVisionFaceSmilingThreshold
+|| __TEXT.__const _PV_FACECROP_CURRENT_VERSION
+|| __TEXT.__const _PhotoVisionVersionNumber
+|| __TEXT.__const _PhotoVisionVersionString
+|| __TEXT.__text _AlgorithmRevisionForRequestClass
+|| __TEXT.__text _CentroidForLandmarkRegion
+|| __TEXT.__text _GetFaceAlgorithmRevisionDictionaryByAlgorithmUmbrellaVersion
+|| __TEXT.__text _GetSceneAlgorithmRevisionDictionaryByAlgorithmUmbrellaVersion
+|| __TEXT.__text _GroupingIdentifierFromDate
+|| __TEXT.__text _PVCompareLibraryClustersWithVisionClusters
+|| __TEXT.__text _PVFaceGetAbsoluteRectForImageSize
+|| __TEXT.__text _PVFaceGetCenterAndSizeForNormalizedRect
+|| __TEXT.__text _createOrientedCroppedAndScaledImageFromCGImageSource
+|| __TEXT.__text _getImagePropertiesFromCGImageSource
+|| __TEXT.__text _makeOrientationTransform
+|| __TEXT.__text _makeRectClippedAgainstImageBounds
+|| __TEXT.__text _makeRectWithAllIntegers
+|| __TEXT.__text _makeScaledRect
+__ Accelerate: _catlas_daxpby
+__ Accelerate: _cblas_dgemm
+__ Accelerate: _vDSP_sveD
+__ Accelerate: _vDSP_vsqD
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AggregateDictionary: _ADClientPushValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringGetIntValue
+__ CoreFoundation: _NSGenericException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformInvert
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGBitmapContextCreate
+__ CoreGraphics: _CGBitmapContextCreateImage
+__ CoreGraphics: _CGColorSpaceCreateWithName
+__ CoreGraphics: _CGColorSpaceRelease
+__ CoreGraphics: _CGContextConcatCTM
+__ CoreGraphics: _CGContextDrawImage
+__ CoreGraphics: _CGContextRelease
+__ CoreGraphics: _CGContextSetBlendMode
+__ CoreGraphics: _CGContextSetInterpolationQuality
+__ CoreGraphics: _CGContextSetShouldAntialias
+__ CoreGraphics: _CGImageCreateWithImageInRect
+__ CoreGraphics: _CGImageGetBytesPerRow
+__ CoreGraphics: _CGImageGetHeight
+__ CoreGraphics: _CGImageGetWidth
+__ CoreGraphics: _CGImageRelease
+__ CoreGraphics: _CGImageRetain
+__ CoreGraphics: _CGPointZero
+__ CoreGraphics: _CGRectApplyAffineTransform
+__ CoreGraphics: _CGRectContainsRect
+__ CoreGraphics: _CGRectCreateDictionaryRepresentation
+__ CoreGraphics: _CGRectGetMidX
+__ CoreGraphics: _CGRectGetMidY
+__ CoreGraphics: _CGRectIntersection
+__ CoreGraphics: _CGRectIsEmpty
+__ CoreGraphics: _CGRectIsInfinite
+__ CoreGraphics: _CGRectIsNull
+__ CoreGraphics: _CGRectMakeWithDictionaryRepresentation
+__ CoreGraphics: _CGRectNull
+__ CoreGraphics: _CGRectUnion
+__ CoreGraphics: _CGSizeZero
+__ CoreGraphics: _kCGColorSpaceSRGB
+__ CoreLocation: _CLLocationCoordinate2DGetDistanceFrom
+__ CoreLocation: _CLLocationCoordinate2DIsValid
+__ Foundation: _NSAllMapTableKeys
+__ Foundation: _NSAllMapTableValues
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSMapGet
+__ Foundation: _NSMapInsert
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCountedSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSExpression
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ ImageIO: _CGImageDestinationAddImageAndMetadata
+__ ImageIO: _CGImageDestinationCreateWithData
+__ ImageIO: _CGImageDestinationFinalize
+__ ImageIO: _CGImageMetadataCopyStringValueWithPath
+__ ImageIO: _CGImageMetadataCreateMutable
+__ ImageIO: _CGImageMetadataRegisterNamespaceForPrefix
+__ ImageIO: _CGImageMetadataSetValueWithPath
+__ ImageIO: _CGImageSourceCopyMetadataAtIndex
+__ ImageIO: _CGImageSourceCopyPropertiesAtIndex
+__ ImageIO: _CGImageSourceCreateImageAtIndex
+__ ImageIO: _CGImageSourceCreateWithData
+__ ImageIO: _CGImageSourceCreateWithURL
+__ ImageIO: _kCGImageDestinationLossyCompressionQuality
+__ ImageIO: _kCGImagePropertyOrientation
+__ ImageIO: _kCGImageSourceShouldCache
+__ ImageIO: _kCGImageSourceSubsampleFactor
+__ ImageIO: _kCGImageSourceUseHardwareAcceleration
+__ PhotosFormats: _OBJC_CLASS_$_PFPhotosFaceUtilities
+__ Vision: _OBJC_CLASS_$_VNAlignFaceRectangleRequest
+__ Vision: _OBJC_CLASS_$_VNCanceller
+__ Vision: _OBJC_CLASS_$_VNClassifyFaceAttributesRequest
+__ Vision: _OBJC_CLASS_$_VNClustererBuilder
+__ Vision: _OBJC_CLASS_$_VNClustererBuilderOptions
+__ Vision: _OBJC_CLASS_$_VNClustererQuery
+__ Vision: _OBJC_CLASS_$_VNCreateFaceTorsoprintRequest
+__ Vision: _OBJC_CLASS_$_VNCreateFaceprintRequest
+__ Vision: _OBJC_CLASS_$_VNDetectFaceCaptureQualityRequest
+__ Vision: _OBJC_CLASS_$_VNDetectFaceExpressionsRequest
+__ Vision: _OBJC_CLASS_$_VNDetectFaceLandmarksRequest
+__ Vision: _OBJC_CLASS_$_VNDetectFacePoseRequest
+__ Vision: _OBJC_CLASS_$_VNDetectFaceRectanglesRequest
+__ Vision: _OBJC_CLASS_$_VNFaceObservation
+__ Vision: _OBJC_CLASS_$_VNFaceTorsoprint
+__ Vision: _OBJC_CLASS_$_VNImageBlurScoreRequest
+__ Vision: _OBJC_CLASS_$_VNImageExposureScoreRequest
+__ Vision: _OBJC_CLASS_$_VNImageRequestHandler
+__ Vision: _OBJC_CLASS_$_VNMutablePersonsModel
+__ Vision: _OBJC_CLASS_$_VNPersonsModel
+__ Vision: _OBJC_CLASS_$_VNPersonsModelConfiguration
+__ Vision: _OBJC_CLASS_$_VNPersonsModelReadOptions
+__ Vision: _OBJC_CLASS_$_VNPersonsModelWriteOptions
+__ Vision: _OBJC_CLASS_$_VNRequest
+__ Vision: _VNClusteringAlgorithm_Greedy
+__ Vision: _VNClusteringAlgorithm_GreedyWithTorso
+__ Vision: _VNErrorDomain
+__ Vision: _VNExpressionFaceDisgusted
+__ Vision: _VNExpressionFaceNeutral
+__ Vision: _VNExpressionFaceScreaming
+__ Vision: _VNExpressionFaceSmiling
+__ Vision: _VNExpressionFaceSurprised
+__ Vision: _VNExpressionFaceSuspicious
+__ Vision: _VNFaceAttributeEyesClosed
+__ Vision: _VNRequestWarningImageTooSmall
+__ Vision: _VNRequestWarningImageTooSmallForFaceObservations
+__ libSystem.B.dylib: _CC_MD5_Final
+__ libSystem.B.dylib: _CC_MD5_Init
+__ libSystem.B.dylib: _CC_MD5_Update
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _acosf
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_barrier_async
+__ libSystem.B.dylib: _dispatch_barrier_sync
+__ libSystem.B.dylib: _dispatch_block_create
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _erfc
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _lseek
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _pread
+__ libSystem.B.dylib: _qos_class_self
+__ libSystem.B.dylib: _read
+__ libSystem.B.dylib: _rename
+__ libSystem.B.dylib: _write
+__ libSystem.B.dylib: dyld_stub_binder
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt9bad_alloc
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+PVVisionAnalyzer : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PVVisionAnalyzer .cxx_destruct]
+  -[PVVisionAnalyzer configureRequest:]
+  -[PVVisionAnalyzer analyzeImage:options:error:]
+  -[PVVisionAnalyzer initWithContext:visionIntegration:]
+  -[PVVisionAnalyzer centroidForLandmarkRegion:]
+  -[PVVisionAnalyzer _expressionTypeFromExpressionString:]
+  -[PVVisionAnalyzer angleInDegreesBetweenFaceDirectionAndImageXAxisForFace:]
+
+
+PVVisionHelper : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PVVisionHelper representativenessFromFaceObservations:error:]
+  -[PVVisionHelper distanceBetweenFaceObservation:andFaceObservation:error:]
+  -[PVVisionHelper faceObservationFromFace:]
+
+
+PVFace : PVObject <PFPhotosFaceRepresentation>
+ @property  NSString *personLocalIdentifier
+ @property  long long sourceWidth
+ @property  long long sourceHeight
+ @property  double centerX
+ @property  double centerY
+ @property  double size
+ @property  double leftEyeX
+ @property  double leftEyeY
+ @property  double rightEyeX
+ @property  double rightEyeY
+ @property  double mouthX
+ @property  double mouthY
+ @property  BOOL hidden
+ @property  BOOL isInTrash
+ @property  BOOL manual
+ @property  BOOL isTooSmall
+ @property  BOOL hasSmile
+ @property  double blurScore
+ @property  double exposureScore
+ @property  BOOL isLeftEyeClosed
+ @property  BOOL isRightEyeClosed
+ @property  NSString *adjustmentVersion
+ @property  long long nameSource
+ @property  int trainingType
+ @property  double poseYaw
+ @property  unsigned int faceAlgorithmVersion
+ @property  long long clusterSequenceNumber
+ @property  long long qualityMeasure
+ @property  NSString *ageType
+ @property  NSString *genderType
+ @property  NSString *eyesState
+ @property  NSString *smileType
+ @property  NSString *facialHairType
+ @property  NSString *hairColorType
+ @property  NSString *baldType
+ @property  NSString *glassesType
+ @property  NSString *eyeMakeupType
+ @property  NSString *lipMakeupType
+ @property  NSString *groupingIdentifier
+ @property  PVFaceprint *faceprint
+ @property  double roll
+ @property  double quality
+
+  // class methods
+  +[PVFace faceWithFace:copyPropertiesOption:]
+  +[PVFace faceFromVNFaceObservation:fromImageWithPixelWidth:pixelHeight:additionalVisionRequests:faceAlgorithmUmbrellaVersion:error:]
+  +[PVFace faceFromVNFaceObservation:fromImage:additionalVisionRequests:faceAlgorithmUmbrellaVersion:error:]
+
+  // instance methods
+  -[PVFace copyWithZone:]
+  -[PVFace .cxx_destruct]
+  -[PVFace size]
+  -[PVFace normalizedFaceRect]
+  -[PVFace hasSmile]
+  -[PVFace setSize:]
+  -[PVFace roll]
+  -[PVFace setRoll:]
+  -[PVFace centerX]
+  -[PVFace centerY]
+  -[PVFace setHidden:]
+  -[PVFace hidden]
+  -[PVFace faceprint]
+  -[PVFace setFaceprint:]
+  -[PVFace blurScore]
+  -[PVFace setBlurScore:]
+  -[PVFace exposureScore]
+  -[PVFace setExposureScore:]
+  -[PVFace quality]
+  -[PVFace isInTrash]
+  -[PVFace setQuality:]
+  -[PVFace personLocalIdentifier]
+  -[PVFace nameSource]
+  -[PVFace setCenterX:]
+  -[PVFace setCenterY:]
+  -[PVFace setManual:]
+  -[PVFace setNameSource:]
+  -[PVFace photosFaceRepresentationSourceWidth]
+  -[PVFace photosFaceRepresentationSourceHeight]
+  -[PVFace photosFaceRepresentationCenterX]
+  -[PVFace photosFaceRepresentationCenterY]
+  -[PVFace photosFaceRepresentationSize]
+  -[PVFace photosFaceRepresentationBlurScore]
+  -[PVFace photosFaceRepresentationHasSmile]
+  -[PVFace photosFaceRepresentationIsLeftEyeClosed]
+  -[PVFace photosFaceRepresentationIsRightEyeClosed]
+  -[PVFace photosFaceRepresentationQualityMeasure]
+  -[PVFace photosFaceRepresentationClusterSequenceNumber]
+  -[PVFace photosFaceRepresentationLocalIdentifier]
+  -[PVFace photosFaceRepresentationRoll]
+  -[PVFace faceAlgorithmVersion]
+  -[PVFace setFaceAlgorithmVersion:]
+  -[PVFace adjustmentVersion]
+  -[PVFace setAdjustmentVersion:]
+  -[PVFace sourceWidth]
+  -[PVFace setSourceWidth:]
+  -[PVFace sourceHeight]
+  -[PVFace setSourceHeight:]
+  -[PVFace manual]
+  -[PVFace trainingType]
+  -[PVFace setTrainingType:]
+  -[PVFace isLeftEyeClosed]
+  -[PVFace isRightEyeClosed]
+  -[PVFace qualityMeasure]
+  -[PVFace clusterSequenceNumber]
+  -[PVFace photosFaceRepresentationQuality]
+  -[PVFace setClusterSequenceNumber:]
+  -[PVFace setGenderType:]
+  -[PVFace genderType]
+  -[PVFace setAgeType:]
+  -[PVFace ageType]
+  -[PVFace leftEyeX]
+  -[PVFace setLeftEyeX:]
+  -[PVFace leftEyeY]
+  -[PVFace setLeftEyeY:]
+  -[PVFace rightEyeX]
+  -[PVFace setRightEyeX:]
+  -[PVFace rightEyeY]
+  -[PVFace setRightEyeY:]
+  -[PVFace mouthX]
+  -[PVFace setMouthX:]
+  -[PVFace mouthY]
+  -[PVFace setMouthY:]
+  -[PVFace setHasSmile:]
+  -[PVFace poseYaw]
+  -[PVFace setPoseYaw:]
+  -[PVFace setQualityMeasure:]
+  -[PVFace eyesState]
+  -[PVFace setEyesState:]
+  -[PVFace smileType]
+  -[PVFace setSmileType:]
+  -[PVFace facialHairType]
+  -[PVFace setFacialHairType:]
+  -[PVFace hairColorType]
+  -[PVFace setHairColorType:]
+  -[PVFace baldType]
+  -[PVFace setBaldType:]
+  -[PVFace glassesType]
+  -[PVFace setGlassesType:]
+  -[PVFace eyeMakeupType]
+  -[PVFace setEyeMakeupType:]
+  -[PVFace lipMakeupType]
+  -[PVFace setLipMakeupType:]
+  -[PVFace groupingIdentifier]
+  -[PVFace setGroupingIdentifier:]
+  -[PVFace setPersonLocalIdentifier:]
+  -[PVFace setIsInTrash:]
+  -[PVFace setIsRightEyeClosed:]
+  -[PVFace setIsLeftEyeClosed:]
+  -[PVFace _copyPropertiesFrom:copyPropertiesOption:]
+  -[PVFace setCoordinatesAndFeaturesFromFace:]
+  -[PVFace setCenterAndSizeFromNormalizedFaceRect:]
+  -[PVFace absoluteFaceRect]
+  -[PVFace absoluteFaceRectForImageSize:]
+  -[PVFace isTooSmall]
+  -[PVFace setIsTooSmall:]
+
+
+PVPersonDeduperProfile : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+ @property  double strictMaximumDistance
+ @property  double normalMaximumDistance
+ @property  double fuzzyMaximumDistance
+ @property  BOOL shouldRelaxThreshold
+
+  // instance methods
+  -[PVPersonDeduperProfile init]
+  -[PVPersonDeduperProfile copyWithZone:]
+  -[PVPersonDeduperProfile strictMaximumDistance]
+  -[PVPersonDeduperProfile setStrictMaximumDistance:]
+  -[PVPersonDeduperProfile normalMaximumDistance]
+  -[PVPersonDeduperProfile setNormalMaximumDistance:]
+  -[PVPersonDeduperProfile fuzzyMaximumDistance]
+  -[PVPersonDeduperProfile setFuzzyMaximumDistance:]
+  -[PVPersonDeduperProfile shouldRelaxThreshold]
+  -[PVPersonDeduperProfile setShouldRelaxThreshold:]
+
+
+PVPersonDeduper : NSObject /usr/lib/libc++.1.dylib
+ @property  PVPersonPromoter *personPromoter
+ @property  <PVPersonPromoterDelegate> *delegate
+
+  // instance methods
+  -[PVPersonDeduper delegate]
+  -[PVPersonDeduper setDelegate:]
+  -[PVPersonDeduper .cxx_destruct]
+  -[PVPersonDeduper personPromoter]
+  -[PVPersonDeduper setPersonPromoter:]
+  -[PVPersonDeduper initWithPersonClusterManager:andInvalidCandidatesMapping:profile:]
+  -[PVPersonDeduper _executeStepsInSequences:forPersons:andOtherPersons:updateBlock:resultBlock:]
+  -[PVPersonDeduper basicSequence]
+  -[PVPersonDeduper dedupeUnverifiedPersons:withVerifiedPersons:updateBlock:]
+  -[PVPersonDeduper dedupeUnverifiedPersons:updateBlock:]
+  -[PVPersonDeduper dedupeNewVerifiedPersons:withExistingVerifiedPersons:updateBlock:]
+
+
+PVQueue : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PVQueue .cxx_destruct]
+  -[PVQueue resume]
+  -[PVQueue waitForCurrentTasksToFinish]
+  -[PVQueue initQueueWithName:isSerial:qos_class:]
+  -[PVQueue execute_async:]
+  -[PVQueue execute_after:block:]
+  -[PVQueue execute_sync:]
+  -[PVQueue dispatch_barrier_async:]
+  -[PVQueue dispatch_barrier_sync:]
+  -[PVQueue suspend_sync]
+  -[PVQueue suspend_async]
+  -[PVQueue terminate_sync]
+
+
+PVFaceIDModel : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVFaceIDModel defaultConfiguration]
+  +[PVFaceIDModel modelFileName]
+  +[PVFaceIDModel loadModelAtPath:error:]
+  +[PVFaceIDModel classifyFaceObservation:withModel:error:]
+  +[PVFaceIDModel faceObservationFromFaceprintData:]
+  +[PVFaceIDModel addFaceObservations:forPersonIdentifier:toModel:error:]
+  +[PVFaceIDModel newMutablePersonsModel]
+  +[PVFaceIDModel persistModel:toPath:error:]
+
+
+PVFaceGroup : PVObject
+ @property  long long personBuilderState
+ @property  NSString *personLocalIdentifier
+ @property  NSString *representativeFaceLocalIdentifier
+ @property  NSArray *faces
+
+  // instance methods
+  -[PVFaceGroup copyWithZone:]
+  -[PVFaceGroup .cxx_destruct]
+  -[PVFaceGroup setFaces:]
+  -[PVFaceGroup faces]
+  -[PVFaceGroup personLocalIdentifier]
+  -[PVFaceGroup setPersonBuilderState:]
+  -[PVFaceGroup personBuilderState]
+  -[PVFaceGroup setPersonLocalIdentifier:]
+  -[PVFaceGroup initWithFaceGroup:]
+  -[PVFaceGroup _setPropertiesFrom:]
+  -[PVFaceGroup representativeFaceLocalIdentifier]
+  -[PVFaceGroup setRepresentativeFaceLocalIdentifier:]
+
+
+PVFaceCrop : PVObject
+ @property  short state
+
+  // instance methods
+  -[PVFaceCrop copyWithZone:]
+  -[PVFaceCrop .cxx_destruct]
+  -[PVFaceCrop state]
+  -[PVFaceCrop setState:]
+  -[PVFaceCrop imageDimensions]
+  -[PVFaceCrop faceCropData]
+  -[PVFaceCrop originatingFace]
+  -[PVFaceCrop initWithLocalIdentifier:faceCropData:]
+  -[PVFaceCrop initWithFaceCropData:originatingFace:]
+
+
+PVImage : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned long assetWidth
+ @property  unsigned long assetHeight
+ @property  unsigned long width
+ @property  unsigned long height
+ @property  unsigned long orientedWidth
+ @property  unsigned long orientedHeight
+ @property  unsigned long bytesPerRow
+ @property  unsigned int orientation
+ @property  id adjustmentVersion
+ @property  NSString *groupingIdentifier
+ @property  CIImage *CIImage
+ @property  ^{CGImage=} CGImage
+ @property  NSURL *imageURL
+ @property  NSData *imageData
+
+  // class methods
+  +[PVImage imageWithURL:assetWidth:assetHeight:imageCreationOptions:adjustmentVersion:creationDate:]
+  +[PVImage imageWithData:imageCreationOptions:assetWidth:assetHeight:adjustmentVersion:creationDate:]
+  +[PVImage imageWithCIImage:assetWidth:assetHeight:orientation:adjustmentVersion:creationDate:]
+  +[PVImage imageWithCGImage:orientation:adjustmentVersion:creationDate:]
+
+  // instance methods
+  -[PVImage dealloc]
+  -[PVImage .cxx_destruct]
+  -[PVImage orientation]
+  -[PVImage width]
+  -[PVImage height]
+  -[PVImage bytesPerRow]
+  -[PVImage CGImage]
+  -[PVImage CIImage]
+  -[PVImage imageURL]
+  -[PVImage imageData]
+  -[PVImage orientedWidth]
+  -[PVImage orientedHeight]
+  -[PVImage adjustmentVersion]
+  -[PVImage groupingIdentifier]
+  -[PVImage initWithCGImage:orientation:adjustmentVersion:creationDate:]
+  -[PVImage initWithCIImage:assetWidth:assetHeight:orientation:adjustmentVersion:creationDate:]
+  -[PVImage initWithData:imageCreationOptions:assetWidth:assetHeight:adjustmentVersion:creationDate:]
+  -[PVImage initWithURL:assetWidth:assetHeight:imageCreationOptions:adjustmentVersion:creationDate:]
+  -[PVImage imageRectForNormalizedRect:]
+  -[PVImage assetWidth]
+  -[PVImage assetHeight]
+
+
+PVPersonDeduperSocialGroupOverlaps : PVPersonDeduperStep
+  // instance methods
+  -[PVPersonDeduperSocialGroupOverlaps name]
+  -[PVPersonDeduperSocialGroupOverlaps metricsKey]
+  -[PVPersonDeduperSocialGroupOverlaps isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperSocialGroupOverlaps mergePersons:otherPersonLocalIdentifiers:personsFetchResult:mergeSocialGroupPersonIdentifiers:]
+  -[PVPersonDeduperSocialGroupOverlaps dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+
+
+PVUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVUtils faceprintFromFaceprintArchive:error:]
+  +[PVUtils selectRepresentativeFromFaceDescriptors:]
+
+
+PVCanceler : NSObject /usr/lib/libc++.1.dylib
+ @property  BOOL canceled
+ @property  @? updateBlock
+
+  // class methods
+  +[PVCanceler cancelerWithUpdateBlock:]
+
+  // instance methods
+  -[PVCanceler .cxx_destruct]
+  -[PVCanceler canceled]
+  -[PVCanceler setCanceled:]
+  -[PVCanceler updateBlock]
+  -[PVCanceler setUpdateBlock:]
+
+
+PVPersonDeduperMarkovClusteringStep : PVPersonDeduperStep
+  // class methods
+  +[PVPersonDeduperMarkovClusteringStep markovClustering:withDistanceBlock:]
+
+  // instance methods
+  -[PVPersonDeduperMarkovClusteringStep name]
+  -[PVPersonDeduperMarkovClusteringStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+
+
+PVPersonDeduperSocialGroupTimeWarpingStep : PVPersonDeduperStep
+  // instance methods
+  -[PVPersonDeduperSocialGroupTimeWarpingStep name]
+  -[PVPersonDeduperSocialGroupTimeWarpingStep metricsKey]
+  -[PVPersonDeduperSocialGroupTimeWarpingStep isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperSocialGroupTimeWarpingStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+
+
+PVPersonPromoterProfile : NSObject /usr/lib/libc++.1.dylib
+ @property  double interestingPersonMomentsNormalDistributionSigmaFactor
+ @property  double interestingPersonMomentsCumulativeNormalDistributionUpperTail
+ @property  double interestingPersonFacesNormalDistributionSigmaFactor
+ @property  double interestingPersonFacesCumulativeNormalDistributionUpperTail
+ @property  double interestingPersonTimeNormalDistributionSigmaFactor
+ @property  double interestingPersonTimeCumulativeNormalDistributionUpperTail
+ @property  double interestingPersonLastSeenNormalDistributionSigmaFactor
+ @property  double interestingPersonLastSeenCumulativeNormalDistributionLowerTail
+ @property  double interestingPersonLastSeenCumulativeNormalDistributionUpperTail
+ @property  double highlyInterestingPersonMomentsCumulativeNormalDistributionUpperTail
+ @property  double highlyInterestingPersonFacesCumulativeNormalDistributionUpperTail
+ @property  double highlyInterestingPersonTimeCumulativeNormalDistributionUpperTail
+ @property  double highlyInterestingPersonLastSeenCumulativeNormalDistributionLowerTail
+ @property  double highlyInterestingPersonLastSeenCumulativeNormalDistributionUpperTail
+ @property  unsigned long interestingPersonNormalDistributionsToMatch
+ @property  unsigned long highlyInterestingPersonNormalDistributionsToMatch
+
+  // instance methods
+  -[PVPersonPromoterProfile init]
+  -[PVPersonPromoterProfile interestingPersonMomentsNormalDistributionSigmaFactor]
+  -[PVPersonPromoterProfile setInterestingPersonMomentsNormalDistributionSigmaFactor:]
+  -[PVPersonPromoterProfile interestingPersonMomentsCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setInterestingPersonMomentsCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile interestingPersonFacesNormalDistributionSigmaFactor]
+  -[PVPersonPromoterProfile setInterestingPersonFacesNormalDistributionSigmaFactor:]
+  -[PVPersonPromoterProfile interestingPersonFacesCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setInterestingPersonFacesCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile interestingPersonTimeNormalDistributionSigmaFactor]
+  -[PVPersonPromoterProfile setInterestingPersonTimeNormalDistributionSigmaFactor:]
+  -[PVPersonPromoterProfile interestingPersonTimeCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setInterestingPersonTimeCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile interestingPersonLastSeenNormalDistributionSigmaFactor]
+  -[PVPersonPromoterProfile setInterestingPersonLastSeenNormalDistributionSigmaFactor:]
+  -[PVPersonPromoterProfile interestingPersonLastSeenCumulativeNormalDistributionLowerTail]
+  -[PVPersonPromoterProfile setInterestingPersonLastSeenCumulativeNormalDistributionLowerTail:]
+  -[PVPersonPromoterProfile interestingPersonLastSeenCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setInterestingPersonLastSeenCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile highlyInterestingPersonMomentsCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonMomentsCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile highlyInterestingPersonFacesCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonFacesCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile highlyInterestingPersonTimeCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonTimeCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile highlyInterestingPersonLastSeenCumulativeNormalDistributionLowerTail]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonLastSeenCumulativeNormalDistributionLowerTail:]
+  -[PVPersonPromoterProfile highlyInterestingPersonLastSeenCumulativeNormalDistributionUpperTail]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonLastSeenCumulativeNormalDistributionUpperTail:]
+  -[PVPersonPromoterProfile interestingPersonNormalDistributionsToMatch]
+  -[PVPersonPromoterProfile setInterestingPersonNormalDistributionsToMatch:]
+  -[PVPersonPromoterProfile highlyInterestingPersonNormalDistributionsToMatch]
+  -[PVPersonPromoterProfile setHighlyInterestingPersonNormalDistributionsToMatch:]
+
+
+PVPersonPromoter : NSObject /usr/lib/libc++.1.dylib
+ @property  <PVPersonPromoterDelegate> *delegate
+ @property  <PVPhotoLibraryProtocol> *photoLibrary
+ @property  float faceProcessingProgress
+ @property  BOOL didAskFaceProcesingProgress
+ @property  NSNumber *quiescentState
+ @property  PVPersonClusterManager *personClusterManager
+ @property  PVPersonPromoterProfile *promoterProfile
+ @property  PVPersonDeduperProfile *deduperProfile
+ @property  NSMutableDictionary *metricsReport
+
+  // class methods
+  +[PVPersonPromoter isEnabled]
+  +[PVPersonPromoter setProcessed:forLibrary:]
+  +[PVPersonPromoter hasProcessedForLibrary:]
+  +[PVPersonPromoter requestSuggestedMePersonIdentifierAtURL:withError:]
+  +[PVPersonPromoter _writePersonPromoterInformation:atURL:]
+  +[PVPersonPromoter _personPromoterInformationAtURL:]
+  +[PVPersonPromoter cumulativeNormalDistributionWithData:sigmaFactor:usingBlock:]
+  +[PVPersonPromoter numberOfFacesProcessedOnLastRunAtURL:]
+  +[PVPersonPromoter probabilityDensityNormalDistributionWithData:sigmaFactor:usingBlock:]
+
+  // instance methods
+  -[PVPersonPromoter delegate]
+  -[PVPersonPromoter setDelegate:]
+  -[PVPersonPromoter .cxx_destruct]
+  -[PVPersonPromoter reportMetrics]
+  -[PVPersonPromoter photoLibrary]
+  -[PVPersonPromoter setPhotoLibrary:]
+  -[PVPersonPromoter promoteUnverifiedPersonsWithUpdateBlock:]
+  -[PVPersonPromoter initWithPhotoLibrary:andDelegate:]
+  -[PVPersonPromoter advancedStatus]
+  -[PVPersonPromoter isInQuiescentState]
+  -[PVPersonPromoter _personTimespan:]
+  -[PVPersonPromoter interestingPersonsFromPersons:updateBlock:]
+  -[PVPersonPromoter _newPersonDeduperWithVerifiedPersons:]
+  -[PVPersonPromoter _verifiedPersonsToProcess]
+  -[PVPersonPromoter _sortedUnverifiedPersonsToDedupForVerifiedPersons:updateBlock:]
+  -[PVPersonPromoter _personClusterShouldBeVerified:]
+  -[PVPersonPromoter _interestingPersonsFromVerifiedPersons:unverifiedPersons:updateBlock:]
+  -[PVPersonPromoter _promoteInterestingPersons:updateBlock:]
+  -[PVPersonPromoter _updateSuggestedMeIdentifierWithPersons:updateBlock:]
+  -[PVPersonPromoter _graphOrderedPersonsWithPersons:withAllPersons:updateBlock:]
+  -[PVPersonPromoter _sortedSocialGroups:withPersonsByLocalIdentifier:]
+  -[PVPersonPromoter personClusterManager]
+  -[PVPersonPromoter setPersonClusterManager:]
+  -[PVPersonPromoter metricsReport]
+  -[PVPersonPromoter quiescentState]
+  -[PVPersonPromoter setQuiescentState:]
+  -[PVPersonPromoter faceProcessingProgress]
+  -[PVPersonPromoter setFaceProcessingProgress:]
+  -[PVPersonPromoter didAskFaceProcesingProgress]
+  -[PVPersonPromoter setDidAskFaceProcesingProgress:]
+  -[PVPersonPromoter promoterProfile]
+  -[PVPersonPromoter setPromoterProfile:]
+  -[PVPersonPromoter deduperProfile]
+  -[PVPersonPromoter setDeduperProfile:]
+  -[PVPersonPromoter incrementMetricForKey:withValue:]
+
+
+PVPersonClusterManager : NSObject /usr/lib/libc++.1.dylib <PVPhotoLibraryProtocol>
+ @property  <PVPhotoLibraryProtocol> *photoLibrary
+ @property  PVVisionHelper *visionHelper
+ @property  NSMutableDictionary *personClusters
+ @property  NSSet *assetsToIgnore
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PVPersonClusterManager peopleSortDescriptors]
+  +[PVPersonClusterManager faceSortDescriptors]
+  +[PVPersonClusterManager momentSortDescriptors]
+  +[PVPersonClusterManager assetSortDescriptors]
+  +[PVPersonClusterManager faceGroupSortDescriptors]
+  +[PVPersonClusterManager personProcessingSortDescriptors]
+  +[PVPersonClusterManager nodeSortDescriptors]
+
+  // instance methods
+  -[PVPersonClusterManager .cxx_destruct]
+  -[PVPersonClusterManager clearCaches]
+  -[PVPersonClusterManager photoLibrary]
+  -[PVPersonClusterManager initWithPhotoLibrary:]
+  -[PVPersonClusterManager setPhotoLibrary:]
+  -[PVPersonClusterManager mergePersons:withPerson:]
+  -[PVPersonClusterManager pv_persistentStorageDirectoryURL]
+  -[PVPersonClusterManager pv_performChangesAndWait:error:]
+  -[PVPersonClusterManager pv_fetchPersonsWithLocalIdentifiers:]
+  -[PVPersonClusterManager pv_fetchPersonsWithType:]
+  -[PVPersonClusterManager pv_fetchPersonsInMoment:]
+  -[PVPersonClusterManager pv_fetchCandidatePersonsForPerson:]
+  -[PVPersonClusterManager pv_fetchInvalidCandidatePersonsForPerson:]
+  -[PVPersonClusterManager pv_fetchPersonsGroupedByAssetLocalIdentifierForAssets:]
+  -[PVPersonClusterManager pv_fetchFacesWithLocalIdentifiers:]
+  -[PVPersonClusterManager pv_fetchFacesForPerson:]
+  -[PVPersonClusterManager pv_fetchFacesForPerson:inMoment:]
+  -[PVPersonClusterManager pv_fetchFacesForPersonLocalIdentifiers:inMoment:]
+  -[PVPersonClusterManager pv_fetchFacesForFaceGroup:]
+  -[PVPersonClusterManager pv_fetchFacesGroupedByAssetLocalIdentifierForAssets:]
+  -[PVPersonClusterManager pv_numberOfFacesWithFaceprints]
+  -[PVPersonClusterManager pv_fetchMoments]
+  -[PVPersonClusterManager pv_fetchMomentsWithLocalIdentifiers:]
+  -[PVPersonClusterManager pv_fetchMomentsForPerson:]
+  -[PVPersonClusterManager pv_fetchMomentsForAssetsWithLocalIdentifiers:]
+  -[PVPersonClusterManager pv_fetchAssetsWithLocalIdentifiers:]
+  -[PVPersonClusterManager pv_fetchAssetsInMoment:]
+  -[PVPersonClusterManager pv_fetchAssetsForPerson:]
+  -[PVPersonClusterManager pv_fetchAssetsForFaceGroup:]
+  -[PVPersonClusterManager pv_fetchFaceGroups]
+  -[PVPersonClusterManager pv_fetchFaceGroupsForPerson:]
+  -[PVPersonClusterManager pv_faceProcessingProgress]
+  -[PVPersonClusterManager pv_lastAssetDate]
+  -[PVPersonClusterManager pv_fetchInvalidAssetIdentifiersForCommonComparison]
+  -[PVPersonClusterManager invalidateCachesForPerson:]
+  -[PVPersonClusterManager _mapPersonClustersToPersons:]
+  -[PVPersonClusterManager _mapPersonClustersToFaceGroups:]
+  -[PVPersonClusterManager minAgeTypeForFaceAgeType:andFaceAgeType:]
+  -[PVPersonClusterManager assetsOverlapBetweenPerson:andPerson:]
+  -[PVPersonClusterManager assetsOverlapBetweenPersonAssetIdentifiers:andPersonAssetIdentifiers:]
+  -[PVPersonClusterManager numberOfAssetsInCommonBetweenPerson:andPerson:]
+  -[PVPersonClusterManager numberOfAssetsInCommonBetweenPersonAssetIdentifiers:andPersonAssetIdentifiers:]
+  -[PVPersonClusterManager numberOfMomentsInCommonBetweenPerson:andPerson:]
+  -[PVPersonClusterManager distanceWithOverlapCheckBetweenPerson:andPerson:useCommonMoments:minAgeType:updateBlock:error:]
+  -[PVPersonClusterManager distanceBetweenPerson:andPerson:useCommonMoments:minAgeType:updateBlock:error:]
+  -[PVPersonClusterManager _representativeFaceObservationForPerson:ageType:]
+  -[PVPersonClusterManager _representativeFaceObservationForPerson:ageType:inAssetCollections:]
+  -[PVPersonClusterManager representativeFaceObservationForFaces:ageType:inPerson:]
+  -[PVPersonClusterManager visionHelper]
+  -[PVPersonClusterManager setVisionHelper:]
+  -[PVPersonClusterManager personClusters]
+  -[PVPersonClusterManager setPersonClusters:]
+  -[PVPersonClusterManager assetsToIgnore]
+  -[PVPersonClusterManager setAssetsToIgnore:]
+
+
+PVPersonDeduperStep : NSObject /usr/lib/libc++.1.dylib
+ @property  PVPersonClusterManager *personClusterManager
+ @property  NSDictionary *invalidCandidatesMapping
+ @property  NSString *name
+ @property  <PVPersonPromoterDelegate> *delegate
+ @property  NSMapTable *mergeRelations
+ @property  PVPersonDeduperProfile *profile
+ @property  BOOL shouldStop
+ @property  float progress
+ @property  NSString *metricsKey
+
+  // instance methods
+  -[PVPersonDeduperStep name]
+  -[PVPersonDeduperStep delegate]
+  -[PVPersonDeduperStep setDelegate:]
+  -[PVPersonDeduperStep .cxx_destruct]
+  -[PVPersonDeduperStep progress]
+  -[PVPersonDeduperStep profile]
+  -[PVPersonDeduperStep shouldStop]
+  -[PVPersonDeduperStep setShouldStop:]
+  -[PVPersonDeduperStep setProgress:]
+  -[PVPersonDeduperStep metricsKey]
+  -[PVPersonDeduperStep isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+  -[PVPersonDeduperStep personClusterManager]
+  -[PVPersonDeduperStep initWithPersonClusterManager:invalidCandidatesMapping:profile:]
+  -[PVPersonDeduperStep shouldStopWithUpdateBlock:]
+  -[PVPersonDeduperStep _resolveMergeCandidate:forPerson:]
+  -[PVPersonDeduperStep mergeCandidatePersonsWithUpdateBlock:]
+  -[PVPersonDeduperStep addPotentialMergeCandidateForPerson:withOtherPerson:updateBlock:]
+  -[PVPersonDeduperStep adjustedThreshold:forMinAgeType:]
+  -[PVPersonDeduperStep invalidCandidatesMapping]
+  -[PVPersonDeduperStep mergeRelations]
+
+
+PVObject : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+ @property  NSString *localIdentifier
+
+  // instance methods
+  -[PVObject copyWithZone:]
+  -[PVObject .cxx_destruct]
+  -[PVObject localIdentifier]
+  -[PVObject initWithLocalIdentifier:]
+
+
+PhotoVision : NSObject /usr/lib/libc++.1.dylib
+ @property  unsigned int faceAlgorithmUmbrellaVersion
+ @property  unsigned int sceneAlgorithmUmbrellaVersion
+
+  // class methods
+  +[PhotoVision isAppleInternal]
+  +[PhotoVision _intValueForKey:defaultValue:]
+  +[PhotoVision setAlgorithmRevisionForRequest:algorithmUmbrellaVersion:algorithmCollectionType:]
+  +[PhotoVision maximumSceneAlgorithmUmbrellaVersion]
+  +[PhotoVision defaultFaceAnalysisOptionsForFaceAlgorithmUmbrellaVersion:]
+  +[PhotoVision maximumFaceAlgorithmUmbrellaVersion]
+  +[PhotoVision supportedFaceAlgorithmUmbrellaVersions]
+  +[PhotoVision faceprintAnalysisOptionsForFaceAlgorithmUmbrellaVersion:]
+  +[PhotoVision minimumFaceAlgorithmUmbrellaVersion]
+  +[PhotoVision minimumSceneAlgorithmUmbrellaVersion]
+  +[PhotoVision supportedSceneAlgorithmUmbrellaVersions]
+
+  // instance methods
+  -[PhotoVision .cxx_destruct]
+  -[PhotoVision stop]
+  -[PhotoVision context]
+  -[PhotoVision differencesBetweenClustersInClusterCacheAndLibrary:]
+  -[PhotoVision faceAlgorithmUmbrellaVersion]
+  -[PhotoVision sceneAlgorithmUmbrellaVersion]
+  -[PhotoVision analyzeImage:options:error:]
+  -[PhotoVision getFaceClusters:clusteringThreshold:utilizingGPU:error:]
+  -[PhotoVision performFaceClusteringAndWait]
+  -[PhotoVision resetFaceClusteringStateWithContext:error:]
+  -[PhotoVision reclusterFacesWithThreshold:shouldRecluster:withContext:error:]
+  -[PhotoVision suggestedPersonLocalIdentifierForPersonLocalIdentifier:error:]
+  -[PhotoVision suggestedPersonLocalIdentifierForFaceLocalIdentifier:error:]
+  -[PhotoVision numberOfFacesPendingClustering]
+  -[PhotoVision clustererState]
+  -[PhotoVision buildPersonsWithCanceler:keyFaceUpdateBlock:extendTimeoutBlock:error:]
+  -[PhotoVision scheduleUnclusteringOfFacesWithClusterSequenceNumbers:]
+  -[PhotoVision scheduleClusteringOfFacesWithLocalIdentifiers:]
+  -[PhotoVision performFaceClusteringWithCompletion:]
+  -[PhotoVision cancelAllSuggestionRequests]
+  -[PhotoVision requestSuggestionsForFaceClusterSequenceNumbers:withClusteringFlags:updateHandler:error:]
+  -[PhotoVision clustererIsReadyToReturnSuggestions]
+  -[PhotoVision mergeExistingFaces:withDetectedFaces:forImage:]
+  -[PhotoVision cancelFaceClustering]
+  -[PhotoVision initWithPersistenceDelegate:visionIntegration:workingDirectoryURL:faceAlgorithmUmbrellaVersion:sceneAlgorithmUmbrellaVersion:notificationListener:]
+  -[PhotoVision resetClusterer]
+  -[PhotoVision startAndSyncClusterCacheWithLibrary:reply:]
+  -[PhotoVision performFaceClusteringIfNecessaryAndWait]
+  -[PhotoVision clusteringStatus]
+  -[PhotoVision cancelSuggestionRequest:]
+  -[PhotoVision suggestionsForFaceClusterSequenceNumbers:error:]
+
+
+PVSceneTaxonomyNode : NSObject /usr/lib/libc++.1.dylib
+ @property  NSMutableSet *parentNodes
+ @property  NSMutableSet *childNodes
+ @property  PVSceneTaxonomy *taxonomy
+ @property  unsigned int sceneClassId
+ @property  NSString *name
+ @property  BOOL indexed
+ @property  double threshold
+ @property  double highRecallThreshold
+ @property  double highPrecisionThreshold
+ @property  NSSet *parents
+ @property  NSSet *children
+ @property  BOOL root
+
+  // class methods
+  +[PVSceneTaxonomyNode localizedStringForKey:localizationBundle:tableName:]
+
+  // instance methods
+  -[PVSceneTaxonomyNode isEqual:]
+  -[PVSceneTaxonomyNode name]
+  -[PVSceneTaxonomyNode .cxx_destruct]
+  -[PVSceneTaxonomyNode parents]
+  -[PVSceneTaxonomyNode threshold]
+  -[PVSceneTaxonomyNode isRoot]
+  -[PVSceneTaxonomyNode children]
+  -[PVSceneTaxonomyNode childNodes]
+  -[PVSceneTaxonomyNode isIndexed]
+  -[PVSceneTaxonomyNode localizedLabel]
+  -[PVSceneTaxonomyNode traverse:visitor:]
+  -[PVSceneTaxonomyNode addChildNode:]
+  -[PVSceneTaxonomyNode setChildNodes:]
+  -[PVSceneTaxonomyNode highRecallThreshold]
+  -[PVSceneTaxonomyNode highPrecisionThreshold]
+  -[PVSceneTaxonomyNode isEqualToNode:]
+  -[PVSceneTaxonomyNode sceneClassId]
+  -[PVSceneTaxonomyNode localizedSynonyms]
+  -[PVSceneTaxonomyNode initWithSceneClassId:name:indexed:threshold:highRecallThreshold:highPrecisionThreshold:taxonomy:]
+  -[PVSceneTaxonomyNode recursivelyReleaseParents]
+  -[PVSceneTaxonomyNode taxonomy]
+  -[PVSceneTaxonomyNode parentNodes]
+  -[PVSceneTaxonomyNode setParentNodes:]
+
+
+PVSceneTaxonomy : NSObject /usr/lib/libc++.1.dylib
+ @property  NSURL *graphURL
+ @property  NSBundle *localizationBundle
+ @property  NSString *tableName
+ @property  NSMapTable *sceneClassIndex
+ @property  NSMapTable *nameIndex
+ @property  PVSceneTaxonomyNode *rootNode
+ @property  NSString *sha256Hash
+
+  // class methods
+  +[PVSceneTaxonomy sharedTaxonomy]
+
+  // instance methods
+  -[PVSceneTaxonomy init]
+  -[PVSceneTaxonomy dealloc]
+  -[PVSceneTaxonomy .cxx_destruct]
+  -[PVSceneTaxonomy rootNode]
+  -[PVSceneTaxonomy tableName]
+  -[PVSceneTaxonomy setTableName:]
+  -[PVSceneTaxonomy sha256Hash]
+  -[PVSceneTaxonomy nodeForSceneClassId:]
+  -[PVSceneTaxonomy nodeForName:]
+  -[PVSceneTaxonomy graphURL]
+  -[PVSceneTaxonomy setGraphURL:]
+  -[PVSceneTaxonomy localizationBundle]
+  -[PVSceneTaxonomy setLocalizationBundle:]
+  -[PVSceneTaxonomy initWithGraphURL:localizationBundle:tableName:]
+  -[PVSceneTaxonomy putNodeInIndex:]
+  -[PVSceneTaxonomy buildNodesFromGraphURL:sha256Hash:]
+  -[PVSceneTaxonomy sceneClassIndex]
+  -[PVSceneTaxonomy setSceneClassIndex:]
+  -[PVSceneTaxonomy nameIndex]
+  -[PVSceneTaxonomy setNameIndex:]
+
+
+PVGeometryUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVGeometryUtils normalizedRectForRect:inBoundsOfSize:]
+  +[PVGeometryUtils normalizedRectForRect:inBounds:]
+  +[PVGeometryUtils rectFromMappingNormalizedRect:toBoundsOfSize:]
+  +[PVGeometryUtils rectFromMappingNormalizedRect:toBounds:]
+  +[PVGeometryUtils pointFromNormalizedPoint:inBounds:]
+
+
+PVPerson : PVObject
+ @property  NSString *name
+ @property  NSString *uri
+ @property  long long faceCount
+ @property  BOOL inPersonNamingModel
+ @property  BOOL verified
+ @property  long long manualOrder
+ @property  long long type
+
+  // instance methods
+  -[PVPerson name]
+  -[PVPerson copyWithZone:]
+  -[PVPerson type]
+  -[PVPerson setType:]
+  -[PVPerson .cxx_destruct]
+  -[PVPerson setName:]
+  -[PVPerson initWithName:]
+  -[PVPerson uri]
+  -[PVPerson faceCount]
+  -[PVPerson setUri:]
+  -[PVPerson manualOrder]
+  -[PVPerson setManualOrder:]
+  -[PVPerson setFaceCount:]
+  -[PVPerson setInPersonNamingModel:]
+  -[PVPerson setVerified:]
+  -[PVPerson initWithPerson:]
+  -[PVPerson verified]
+  -[PVPerson _setPropertiesFrom:]
+  -[PVPerson inPersonNamingModel]
+
+
+PVContext : NSObject /usr/lib/libc++.1.dylib <NSSecureCoding, NSCopying>
+ @property  float faceClusteringThreshold
+ @property  float faceClusteringJunkThreshold
+ @property  float faceClusteringAgeThreshold
+ @property  float faceMergeFaceprintDistanceThreshold
+ @property  float facePrimarySuggestionsThreshold
+ @property  unsigned long minimumSuggestionSize
+ @property  BOOL quarantineTwinsOnAssetEnabled
+ @property  unsigned long minFaceCountToTriggerClustering
+ @property  unsigned long maxFaceCountForClustering
+ @property  BOOL faceClusteringDisabled
+ @property  BOOL personBuildingDisabled
+ @property  BOOL personBuilderMergeCandidatesDisabled
+ @property  unsigned long minimumFaceGroupSizeForCreatingMergeCandidates
+ @property  unsigned int faceAlgorithmUmbrellaVersion
+ @property  unsigned int sceneAlgorithmUmbrellaVersion
+
+  // class methods
+  +[PVContext supportsSecureCoding]
+
+  // instance methods
+  -[PVContext init]
+  -[PVContext copyWithZone:]
+  -[PVContext encodeWithCoder:]
+  -[PVContext initWithCoder:]
+  -[PVContext faceAlgorithmUmbrellaVersion]
+  -[PVContext setFaceAlgorithmUmbrellaVersion:]
+  -[PVContext sceneAlgorithmUmbrellaVersion]
+  -[PVContext setSceneAlgorithmUmbrellaVersion:]
+  -[PVContext personBuilderMergeCandidatesDisabled]
+  -[PVContext setPersonBuilderMergeCandidatesDisabled:]
+  -[PVContext personBuildingDisabled]
+  -[PVContext quarantineTwinsOnAssetEnabled]
+  -[PVContext minimumFaceGroupSizeForCreatingMergeCandidates]
+  -[PVContext minimumSuggestionSize]
+  -[PVContext faceClusteringThreshold]
+  -[PVContext setFaceClusteringThreshold:]
+  -[PVContext faceClusteringJunkThreshold]
+  -[PVContext setFaceClusteringJunkThreshold:]
+  -[PVContext faceClusteringAgeThreshold]
+  -[PVContext setFaceClusteringAgeThreshold:]
+  -[PVContext faceMergeFaceprintDistanceThreshold]
+  -[PVContext setFaceMergeFaceprintDistanceThreshold:]
+  -[PVContext facePrimarySuggestionsThreshold]
+  -[PVContext setFacePrimarySuggestionsThreshold:]
+  -[PVContext setMinimumSuggestionSize:]
+  -[PVContext setQuarantineTwinsOnAssetEnabled:]
+  -[PVContext minFaceCountToTriggerClustering]
+  -[PVContext setMinFaceCountToTriggerClustering:]
+  -[PVContext maxFaceCountForClustering]
+  -[PVContext setMaxFaceCountForClustering:]
+  -[PVContext faceClusteringDisabled]
+  -[PVContext setFaceClusteringDisabled:]
+  -[PVContext setPersonBuildingDisabled:]
+  -[PVContext setMinimumFaceGroupSizeForCreatingMergeCandidates:]
+
+
+PVPersonDeduperSocialGroupComplementStep : PVPersonDeduperStep
+  // instance methods
+  -[PVPersonDeduperSocialGroupComplementStep name]
+  -[PVPersonDeduperSocialGroupComplementStep metricsKey]
+  -[PVPersonDeduperSocialGroupComplementStep isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperSocialGroupComplementStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+
+
+PVSuggestionRequest : NSObject /usr/lib/libc++.1.dylib
+ @property  long long type
+ @property  NSString *requestId
+ @property  NSMutableDictionary *clusterFlagByClusterId
+ @property  NSArray *csns
+ @property  NSArray *cflags
+ @property  @? updateHandler
+ @property  VNCanceller *canceller
+
+  // class methods
+  +[PVSuggestionRequest requestWithFaceClusterIds:clusterFlags:updateHandler:]
+
+  // instance methods
+  -[PVSuggestionRequest type]
+  -[PVSuggestionRequest .cxx_destruct]
+  -[PVSuggestionRequest requestId]
+  -[PVSuggestionRequest setUpdateHandler:]
+  -[PVSuggestionRequest updateHandler]
+  -[PVSuggestionRequest initWithFaceClusterIds:clusterFlags:updateHandler:]
+  -[PVSuggestionRequest clusterFlagByClusterId]
+  -[PVSuggestionRequest csns]
+  -[PVSuggestionRequest cflags]
+  -[PVSuggestionRequest canceller]
+
+
+PVClusterer : NSObject /usr/lib/libc++.1.dylib <PVFaceClusteringProtocol>
+ @property  BOOL needsFullSync
+ @property  BOOL needsUpdate
+ @property  BOOL ready
+ @property  long long clustererBringUpState
+ @property  PVEventManager *eventManager
+ @property  long long clustererState
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PVClusterer initialize]
+  +[PVClusterer removeClusteringStateCacheWithContext:cacheDirectoryUrl:error:]
+
+  // instance methods
+  -[PVClusterer .cxx_destruct]
+  -[PVClusterer isReady]
+  -[PVClusterer status]
+  -[PVClusterer terminate]
+  -[PVClusterer needsUpdate]
+  -[PVClusterer differencesBetweenClustersInClusterCacheAndLibrary:]
+  -[PVClusterer needsFullSync]
+  -[PVClusterer eventManager]
+  -[PVClusterer setEventManager:]
+  -[PVClusterer distancesFromClustersIdentifiedByFaceCSNs:toClustersIdentifiedByFaceCSNs:error:]
+  -[PVClusterer level0ClusterAsFaceCSNsByLevel0KeyFaceCSNForClusterIdentifiedByFaceCSN:error:]
+  -[PVClusterer _persistenceDelegate]
+  -[PVClusterer clustererState]
+  -[PVClusterer cancelAllSuggestionRequests]
+  -[PVClusterer requestSuggestionsForFaceClusterSequenceNumbers:withClusteringFlags:updateHandler:error:]
+  -[PVClusterer cancelSuggestionRequest:]
+  -[PVClusterer distanceBetweenLevel0ClusterIdentifiedByFaceCSN:andLevel0ClusterIdentifiedByFaceCSN:error:]
+  -[PVClusterer initWithContext:dataAccessor:cacheDirectoryURL:visionIntegration:]
+  -[PVClusterer _processingQueueDetermineNextClusterTriggeringAccumulatedChangesCountIfNecessary]
+  -[PVClusterer scheduleClusteringAfterRemovingFaceCSNs:addingFaceIdStrs:]
+  -[PVClusterer _processingQueuePerformForcedFaceClustering:withCanceler:]
+  -[PVClusterer numberOfAccumulatedClusterChanges]
+  -[PVClusterer clusterIfNecessaryAndWait]
+  -[PVClusterer clusterAndWait]
+  -[PVClusterer performClusteringWithCompletion:]
+  -[PVClusterer _cancelClusteringAndRestoreClusterCache:]
+  -[PVClusterer cancelClustering]
+  -[PVClusterer _recordClusteringState:]
+  -[PVClusterer _recordClusterRebuildRequired:]
+  -[PVClusterer _recordCountOfPendingFacesToAdd:]
+  -[PVClusterer _recordIncrementCountOfPendingFacesToAdd:]
+  -[PVClusterer _recordCurrentStatus:]
+  -[PVClusterer _performAndPersistClustersByAddingFaceObs:groupingIdentifiers:removingFaceObs:updateFaces:canceler:error:]
+  -[PVClusterer _faceObservationsFromFaceCSNs:]
+  -[PVClusterer _faceObservationsFromFaceIdStrs:assignClusterSeqNumberIfNeeded:updatedFaces:excludeClustered:groupingIdentifiers:]
+  -[PVClusterer _faceObservationsFromFaces:assignClusterSeqNumberIfNeeded:updatedFaces:]
+  -[PVClusterer _removeEmptyGroups]
+  -[PVClusterer _processingQueueQuickSyncClustererWithPhotoLibraryUsingFacesInClusterCache:visionClusters:withCanceler:]
+  -[PVClusterer _processingQueueSyncClustererWithPhotoLibraryUsingFacesInClusterCache:withCanceler:]
+  -[PVClusterer _processingQueueGetFaceClusterSequenceNumbersInClusterCache:lastClusterSequenceNumber:error:]
+  -[PVClusterer _processingQueueSaveClusterCache:]
+  -[PVClusterer _visionClusterMemmapFileInCacheDirectoryURL:clusterState:error:]
+  -[PVClusterer _processingQueueRestoreClusteringCacheWithCacheDirectoryURL:clusterState:threshold:error:]
+  -[PVClusterer _processingQueueResetClusterCache:]
+  -[PVClusterer _visionClusterStateDataBlobFromClusterSnapshotFileAtURL:error:]
+  -[PVClusterer _removeVisionClusterCacheFilesNotReferencedByVisionClusterState:]
+  -[PVClusterer _processingQueueRestoreFromClusterSnapshotFileAtURL:error:]
+  -[PVClusterer _processingQueueRestoreClusterCacheAndSyncWithLibrary:error:]
+  -[PVClusterer restoreClusterCacheAndSyncWithLibrary:error:]
+  -[PVClusterer suggestedFaceClusterSequenceNumbersForFaceClusterSequenceNumbersRepresentingClusters:error:]
+  -[PVClusterer isReadyToReturnSuggestions]
+  -[PVClusterer _processingQueueGetVisionClusters:minimumClusterSize:returnClusterAsCountedSet:error:]
+  -[PVClusterer getClusters:threshold:utilizingGPU:error:]
+  -[PVClusterer _propertyDictionaryFileURL]
+  -[PVClusterer _readPropertyDictionary]
+  -[PVClusterer _setPropertyDictionaryValue:forKey:]
+  -[PVClusterer _stringForPVClustererBringUpState:]
+  -[PVClusterer setClustererBringUpState:]
+  -[PVClusterer clustererBringUpState]
+
+
+PVAggregate : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *primaryDomain
+
+  // class methods
+  +[PVAggregate sharedAggregate]
+
+  // instance methods
+  -[PVAggregate .cxx_destruct]
+  -[PVAggregate recordValue:forKey:]
+  -[PVAggregate _allRegisteredKeys]
+  -[PVAggregate _registeredKeysLookupTable]
+  -[PVAggregate _distributionKeys]
+  -[PVAggregate _scalarToAddKeys]
+  -[PVAggregate _needsParsingKeys]
+  -[PVAggregate _stringValueTypeKeys]
+  -[PVAggregate _doubleValueTypeKeys]
+  -[PVAggregate _getSubdomain:]
+  -[PVAggregate _aggdMethodConstructionHints]
+  -[PVAggregate _messageTracerMethodConstructionHints]
+  -[PVAggregate _recordAGGDValue:forKey:]
+  -[PVAggregate _recordMessageTracerValue:forKey:]
+  -[PVAggregate _aggdMethodConstructionHintsForKey:]
+  -[PVAggregate _messageTracerMethodConstructionHintsForKey:]
+  -[PVAggregate _truncateToSignificantFigureForValue:numOfSignificantDigits:]
+  -[PVAggregate primaryDomain]
+  -[PVAggregate setPrimaryDomain:]
+  -[PVAggregate _registeredKeysForLibraryDomain]
+  -[PVAggregate _noOpRegisteredKeysForOSXLibraryDomain]
+
+
+PVPersonDeduperTimeStep : PVPersonDeduperStep
+  // instance methods
+  -[PVPersonDeduperTimeStep name]
+  -[PVPersonDeduperTimeStep metricsKey]
+  -[PVPersonDeduperTimeStep isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperTimeStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+
+
+PVFaceprint : PVObject
+ @property  unsigned int faceprintVersion
+ @property  NSData *faceprintData
+
+  // class methods
+  +[PVFaceprint faceprintWithFaceprintData:faceprintVersion:]
+
+  // instance methods
+  -[PVFaceprint copyWithZone:]
+  -[PVFaceprint .cxx_destruct]
+  -[PVFaceprint faceprintVersion]
+  -[PVFaceprint faceprintData]
+  -[PVFaceprint setFaceprintVersion:]
+  -[PVFaceprint _setPropertiesFrom:]
+  -[PVFaceprint getDistance:toOtherFaceprint:error:]
+  -[PVFaceprint setFaceprintData:]
+
+
+PVEvent : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *name
+ @property  id details
+
+  // class methods
+  +[PVEvent eventWithName:details:]
+
+  // instance methods
+  -[PVEvent name]
+  -[PVEvent .cxx_destruct]
+  -[PVEvent details]
+  -[PVEvent initWithName:details:]
+
+
+PVPersonDeduperLocationStep : PVPersonDeduperStep
+  // instance methods
+  -[PVPersonDeduperLocationStep name]
+  -[PVPersonDeduperLocationStep metricsKey]
+  -[PVPersonDeduperLocationStep isPersonSimilar:withOtherPerson:withDistance:minAgeType:]
+  -[PVPersonDeduperLocationStep dedupePersons:withOtherPersons:updateBlock:resultBlock:]
+  -[PVPersonDeduperLocationStep momentWithBestLocationForPersons:andOtherPersons:personsByMomentLocalIdentifiersCache:]
+
+
+PVFaceCropUtils : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVFaceCropUtils createOutputMetadataFromDictionary:]
+  +[PVFaceCropUtils newDictionaryPopulatedWithFaceCropDataFromImageData:]
+  +[PVFaceCropUtils newDictionaryRepresentationOfFaceCropDataFromFaceBox:andCropRegion:andGroupingIdentifier:]
+  +[PVFaceCropUtils newDictionaryWithCGImageSourceOptions]
+  +[PVFaceCropUtils newFaceCropFromCGImageSource:withFaceRect:groupingIdentifier:error:]
+  +[PVFaceCropUtils newFaceCropFromImageURL:withFaceRect:groupingIdentifier:error:]
+  +[PVFaceCropUtils newFaceCropFromImageData:withFaceRect:groupingIdentifier:error:]
+  +[PVFaceCropUtils isValidFaceCrop:]
+  +[PVFaceCropUtils faceBoundsFromFaceCrop:error:]
+  +[PVFaceCropUtils cropBoundsInOriginalImageFromFaceCrop:error:]
+  +[PVFaceCropUtils groupingIdentifierFromFaceCrop:error:]
+  +[PVFaceCropUtils faceCropDimensionsFromFaceCrop:error:]
+
+
+PVFaceCropAnalyzer : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVFaceCropAnalyzer faceFromFaceCrop:visionIntegration:faceAlgorithmUmbrellaVersion:createFaceTorsoprint:error:]
+  +[PVFaceCropAnalyzer bestFaceForFaceDetectionRequest:withRect:]
+
+
+PVFaceCropSourceDescriptor : NSObject /usr/lib/libc++.1.dylib <NSCopying>
+  // class methods
+  +[PVFaceCropSourceDescriptor descriptorForFace:image:]
+
+  // instance methods
+  -[PVFaceCropSourceDescriptor copyWithZone:]
+  -[PVFaceCropSourceDescriptor .cxx_destruct]
+  -[PVFaceCropSourceDescriptor face]
+  -[PVFaceCropSourceDescriptor image]
+  -[PVFaceCropSourceDescriptor initWithFace:image:]
+
+
+PVFaceCropGenerator : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVFaceCropGenerator generateFaceCropsFromSourceDescriptors:withProgressBlock:failureBlock:canceler:]
+
+
+PVDataAccessor : NSObject /usr/lib/libc++.1.dylib
+ @property  <PVPersistenceDelegate> *persistenceDelegate
+ @property  unsigned int faceAlgorithmUmbrellaVersion
+ @property  unsigned int sceneAlgorithmUmbrellaVersion
+
+  // instance methods
+  -[PVDataAccessor .cxx_destruct]
+  -[PVDataAccessor countOfFaces]
+  -[PVDataAccessor countOfClusteringEligibleFaces]
+  -[PVDataAccessor countOfClusteredFaces]
+  -[PVDataAccessor countOfClusteredFacesWithClusterSequenceNumbersInRange:]
+  -[PVDataAccessor unclusteredClusteringEligibleFaceLocalIdentifiers:]
+  -[PVDataAccessor facesForClusteringWithLocalIdentifiers:faceprintVersion:excludeClustered:groupingIdentifiers:]
+  -[PVDataAccessor deterministicallyOrderedFaceIdentifiersWithLocalIdentifiers:faceprintVersion:]
+  -[PVDataAccessor unverifiedVisibleFacesFromFaceGroupContainingFacesWithClusterSequenceNumbers:withFaceprintVersion:]
+  -[PVDataAccessor resetClusterSequenceNumberOfFacesWithLocalIdentifiers:error:]
+  -[PVDataAccessor invalidFaceClusterSequenceNumbersInClusterSequenceNumbers:canceler:error:]
+  -[PVDataAccessor persistGeneratedFaceCrops:error:]
+  -[PVDataAccessor personWithFaceLocalIdentifier:error:]
+  -[PVDataAccessor personsForLocalIdentifiers:error:]
+  -[PVDataAccessor facesForPersonWithLocalIdentifier:error:]
+  -[PVDataAccessor rejectedFacesForPersonWithLocalIdentifier:error:]
+  -[PVDataAccessor rejectedFaceLocalIdentifiersForPersonWithLocalIdentifier:error:]
+  -[PVDataAccessor rejectedFaceClusterSequenceNumbersForPersonWithLocalIdentifier:error:]
+  -[PVDataAccessor countOfAlgorithmicFaceGroups]
+  -[PVDataAccessor allAlgorithmicFaceGroups:]
+  -[PVDataAccessor groupedClusterSequenceNumbersOfFacesInFaceGroupsOfMinimumSize:error:]
+  -[PVDataAccessor localIdentifiersOfFacesAlgorithmicallyGroupedWithFacesWithLocalIdentifiers:error:]
+  -[PVDataAccessor facesAlgorithmicallyGroupedWithFacesWithClusterSequenceNumbers:includeSingletons:error:]
+  -[PVDataAccessor localIdentifiersOfKeyFacesFromAlgorithmicGroupsContainingFacesWithLocalIdentifiers:error:]
+  -[PVDataAccessor keyFacesFromAlgorithmicGroupsContainingFacesWithClusterSequenceNumbers:includeSingletons:error:]
+  -[PVDataAccessor removeAlgorithmicallyGroupedFacesWithLocalIdentifiers:error:]
+  -[PVDataAccessor resetLibraryClustersWithCanceler:error:]
+  -[PVDataAccessor deleteEmptyGroupsAndReturnError:]
+  -[PVDataAccessor faceAlgorithmUmbrellaVersion]
+  -[PVDataAccessor setFaceAlgorithmUmbrellaVersion:]
+  -[PVDataAccessor sceneAlgorithmUmbrellaVersion]
+  -[PVDataAccessor setSceneAlgorithmUmbrellaVersion:]
+  -[PVDataAccessor activeFaceprintsByFaceLocalIdentifiers:error:]
+  -[PVDataAccessor personForLocalIdentifier:error:]
+  -[PVDataAccessor persistenceDelegate]
+  -[PVDataAccessor setPersistenceDelegate:]
+
+
+PVPersonCluster : NSObject /usr/lib/libc++.1.dylib <PVPersonProtocol>
+ @property  <PVPhotoLibraryProtocol> *photoLibrary
+ @property  NSDate *lastSeenDate
+ @property  NSDate *firstSeenDate
+ @property  <PVPersonProtocol> *sourcePerson
+ @property  <PVFaceGroupProtocol> *sourceFaceGroup
+ @property  NSSet *sourcePersonBackingAssetIdentifiers
+ @property  NSMutableSet *mergedPersonIdentifiers
+ @property  NSMutableSet *backingFaceIdentifiers
+ @property  NSMutableSet *backingAssetIdentifiers
+ @property  NSMutableSet *backingMomentIdentifiers
+ @property  NSMutableDictionary *backingFaceIdentifiersByMomentIdentifiers
+ @property  NSMutableDictionary *representativeFaceByFaceIdentifiers
+ @property  double interestingScore
+ @property  BOOL highlyInteresting
+ @property  BOOL quarantined
+ @property  double libraryTimespan
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *localIdentifier
+ @property  unsigned long faceCount
+ @property  BOOL favorite
+ @property  BOOL hidden
+ @property  NSString *anonymizedName
+ @property  long long verifiedType
+ @property  BOOL isVerified
+ @property  long long manualOrder
+ @property  <PVFaceProtocol> *keyFace
+
+  // instance methods
+  -[PVPersonCluster isEqual:]
+  -[PVPersonCluster .cxx_destruct]
+  -[PVPersonCluster lastSeenDate]
+  -[PVPersonCluster setLastSeenDate:]
+  -[PVPersonCluster localIdentifier]
+  -[PVPersonCluster hidden]
+  -[PVPersonCluster isVerified]
+  -[PVPersonCluster setIsVerified:]
+  -[PVPersonCluster faceCount]
+  -[PVPersonCluster photoLibrary]
+  -[PVPersonCluster favorite]
+  -[PVPersonCluster setPhotoLibrary:]
+  -[PVPersonCluster keyFace]
+  -[PVPersonCluster verifiedType]
+  -[PVPersonCluster manualOrder]
+  -[PVPersonCluster setManualOrder:]
+  -[PVPersonCluster setKeyFace:]
+  -[PVPersonCluster invalidateCaches]
+  -[PVPersonCluster firstSeenDate]
+  -[PVPersonCluster setFirstSeenDate:]
+  -[PVPersonCluster sourcePerson]
+  -[PVPersonCluster setSourcePerson:]
+  -[PVPersonCluster setQuarantined:]
+  -[PVPersonCluster personLocalIdentifiers]
+  -[PVPersonCluster pv_addMergeCandidatePersons:]
+  -[PVPersonCluster anonymizedName]
+  -[PVPersonCluster initWithPerson:inPhotoLibrary:]
+  -[PVPersonCluster initWithFaceGroup:inPhotoLibrary:]
+  -[PVPersonCluster fetchFaces]
+  -[PVPersonCluster backingFaceIdentifiers]
+  -[PVPersonCluster fetchAssets]
+  -[PVPersonCluster backingAssetIdentifiers]
+  -[PVPersonCluster fetchMoments]
+  -[PVPersonCluster backingMomentIdentifiers]
+  -[PVPersonCluster libraryTimespan]
+  -[PVPersonCluster _cacheDates]
+  -[PVPersonCluster sourceFaceGroup]
+  -[PVPersonCluster setSourceFaceGroup:]
+  -[PVPersonCluster mergedPersonIdentifiers]
+  -[PVPersonCluster setMergedPersonIdentifiers:]
+  -[PVPersonCluster setBackingFaceIdentifiers:]
+  -[PVPersonCluster setBackingAssetIdentifiers:]
+  -[PVPersonCluster sourcePersonBackingAssetIdentifiers]
+  -[PVPersonCluster setSourcePersonBackingAssetIdentifiers:]
+  -[PVPersonCluster setBackingMomentIdentifiers:]
+  -[PVPersonCluster interestingScore]
+  -[PVPersonCluster setInterestingScore:]
+  -[PVPersonCluster backingFaceIdentifiersByMomentIdentifiers]
+  -[PVPersonCluster setBackingFaceIdentifiersByMomentIdentifiers:]
+  -[PVPersonCluster representativeFaceByFaceIdentifiers]
+  -[PVPersonCluster setRepresentativeFaceByFaceIdentifiers:]
+  -[PVPersonCluster highlyInteresting]
+  -[PVPersonCluster setHighlyInteresting:]
+  -[PVPersonCluster quarantined]
+
+
+PVFacePair : NSObject /usr/lib/libc++.1.dylib
+ @property  PVFace *face1
+ @property  PVFace *face2
+ @property  double score
+
+  // instance methods
+  -[PVFacePair .cxx_destruct]
+  -[PVFacePair score]
+  -[PVFacePair initWithFace:andFace:andScore:]
+  -[PVFacePair face1]
+  -[PVFacePair face2]
+
+
+PVFaceMerger : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PVFaceMerger .cxx_destruct]
+  -[PVFaceMerger initWithContext:visionIntegration:]
+  -[PVFaceMerger mergeExistingFaces:withDetectedFaces:forImage:]
+  -[PVFaceMerger _configureRequest:]
+  -[PVFaceMerger _faceObservationsWithBBoxFromPVFaces:mapping:]
+  -[PVFaceMerger _bboxAlignedFaceObservationsFromFaceObservations:inImage:withError:]
+  -[PVFaceMerger _alignBBoxForPVFaces:forImage:]
+  -[PVFaceMerger _sortedViableFaceMergePairsFromQueryFaces:andCandidateFaces:]
+
+
+PVUserDefaults : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVUserDefaults _boolValueForKey:defaultValue:]
+  +[PVUserDefaults _intValueForKey:defaultValue:]
+  +[PVUserDefaults _floatValueForKey:defaultValue:]
+  +[PVUserDefaults _doubleValueForKey:defaultValue:]
+  +[PVUserDefaults faceAlgorithmUmbrellaVersion]
+  +[PVUserDefaults sceneAlgorithmUmbrellaVersion]
+  +[PVUserDefaults personBuilderMergeCandidatesDisabled]
+  +[PVUserDefaults personBuildingDisabled]
+  +[PVUserDefaults quarantineTwinsOnAssetEnabled]
+  +[PVUserDefaults minimumFaceGroupSizeForCreatingMergeCandidates]
+  +[PVUserDefaults faceIDModelAlwaysRebuild]
+  +[PVUserDefaults minimumSuggestionSize]
+  +[PVUserDefaults faceIDModelRebuildPeriod]
+  +[PVUserDefaults suggestionsLogEnabled]
+  +[PVUserDefaults faceClusteringThreshold]
+  +[PVUserDefaults faceClusteringJunkThreshold]
+  +[PVUserDefaults faceClusteringAgeThreshold]
+  +[PVUserDefaults faceMergeFaceprintDistanceThreshold]
+  +[PVUserDefaults facePrimarySuggestionsThreshold]
+  +[PVUserDefaults minFaceCountToTriggerClustering]
+  +[PVUserDefaults maxFaceCountForClustering]
+  +[PVUserDefaults faceClusteringDisabled]
+  +[PVUserDefaults isBlacklistDisabled]
+  +[PVUserDefaults advancedStatusMergeCandidateLimit]
+  +[PVUserDefaults advancedStatusVerifiedPersonLimit]
+
+
+PVNotification : NSObject /usr/lib/libc++.1.dylib
+ @property  NSString *name
+ @property  id details
+
+  // class methods
+  +[PVNotification notificationWithName:]
+  +[PVNotification notificationWithName:details:]
+
+  // instance methods
+  -[PVNotification name]
+  -[PVNotification .cxx_destruct]
+  -[PVNotification details]
+  -[PVNotification initWithName:details:]
+
+
+PVImageLoader : NSObject /usr/lib/libc++.1.dylib
+  // class methods
+  +[PVImageLoader imageFromSRGBImageBuffer:width:height:bytesPerRow:bitmapInfo:error:]
+
+
+PVEventManager : NSObject /usr/lib/libc++.1.dylib
+  // instance methods
+  -[PVEventManager .cxx_destruct]
+  -[PVEventManager initWithContext:]
+  -[PVEventManager addNotificationListener:]
+  -[PVEventManager removeNotificationListener:]
+  -[PVEventManager publishEvent:source:]
+  -[PVEventManager notifyListeners:]
+
+
+NSError(PhotoVisionAdditions)
+	// class methods
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionUnimplementedFunction]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionInvalidParameterWithLocalizedDescription:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionInvalidParameterNamed:value:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionStorageErrorWithLocalizedDescription:underlyingError:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionStorageErrorWithUserInfo:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionErrorCode:localizedDescription:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionErrorCode:localizedDescription:underlyingError:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionCancelledOperation]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionUnexpectedCondition:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionInvalidNilParameterNamed:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionInvalidParameterNamed:integerValue:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionInvalidParameterNamed:realValue:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionStorageErrorWithLocalizedDescription:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionVisionKitErrorWithLocalizedDescription:underlyingError:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionVisionKitErrorWithUserInfo:]
+	+[NSError(PhotoVisionAdditions) errorForPhotoVisionErrorCode:userInfo:]
+
+NSArray(PVFetchResultProtocol)
+	// instance methods
+	-[NSArray(PVFetchResultProtocol) fetchedObjects]
+
+NSSet(PVFetchResultProtocol)
+	// instance methods
+	-[NSSet(PVFetchResultProtocol) fetchedObjects]
+
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSCountedSet 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSExpression 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0a00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0800 /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats: PFPhotosFaceUtilities 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNAlignFaceRectangleRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNCanceller 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNClassifyFaceAttributesRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNClustererBuilder 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNClustererBuilderOptions 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNClustererQuery 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNCreateFaceTorsoprintRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNCreateFaceprintRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNDetectFaceCaptureQualityRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNDetectFaceExpressionsRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNDetectFaceLandmarksRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNDetectFacePoseRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNDetectFaceRectanglesRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNFaceObservation 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNFaceTorsoprint 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNImageBlurScoreRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNImageExposureScoreRequest 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNImageRequestHandler 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNMutablePersonsModel 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNPersonsModel 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNPersonsModelConfiguration 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNPersonsModelReadOptions 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNPersonsModelWriteOptions 
+01 00 0500 /System/Library/Frameworks/Vision.framework/Vision: VNRequest 

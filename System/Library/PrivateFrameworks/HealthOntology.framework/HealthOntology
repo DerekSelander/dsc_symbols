@@ -1,0 +1,100 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_HNNode
+|| __DATA.__objc_data _OBJC_CLASS_$_HNOntology
+|| __DATA.__objc_data _OBJC_CLASS_$_HNPredicate
+|| __DATA.__objc_data _OBJC_CLASS_$_HNQuery
+|| __DATA.__objc_data _OBJC_CLASS_$_HNRelationship
+|| __DATA.__objc_data _OBJC_METACLASS_$_HNNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_HNOntology
+|| __DATA.__objc_data _OBJC_METACLASS_$_HNPredicate
+|| __DATA.__objc_data _OBJC_METACLASS_$_HNQuery
+|| __DATA.__objc_data _OBJC_METACLASS_$_HNRelationship
+|| __TEXT.__const _HealthOntologyVersionNumber
+|| __TEXT.__const _HealthOntologyVersionString
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+HNQuery : NSObject /usr/lib/libSystem.B.dylib
+ @property  HNPredicate *predicate
+
+  // instance methods
+  -[HNQuery init]
+  -[HNQuery .cxx_destruct]
+  -[HNQuery predicate]
+  -[HNQuery initWithPredicate:]
+
+
+HNNode : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *identifier
+ @property  NSDictionary *properties
+
+  // instance methods
+  -[HNNode init]
+  -[HNNode copyWithZone:]
+  -[HNNode .cxx_destruct]
+  -[HNNode identifier]
+  -[HNNode properties]
+  -[HNNode initWithIdentifier:properties:]
+
+
+HNOntology : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL needsDownload
+
+  // class methods
+  +[HNOntology sharedOntology]
+
+  // instance methods
+  -[HNOntology init]
+  -[HNOntology executeQuery:error:]
+  -[HNOntology needsDownload]
+
+
+HNRelationship : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+ @property  NSString *type
+
+  // instance methods
+  -[HNRelationship init]
+  -[HNRelationship copyWithZone:]
+  -[HNRelationship type]
+  -[HNRelationship .cxx_destruct]
+  -[HNRelationship initWithType:]
+
+
+HNPredicate : NSObject /usr/lib/libSystem.B.dylib <NSCopying>
+  // class methods
+  +[HNPredicate predicateForNodesMappedFromLOINCCode:]
+  +[HNPredicate predicateForNodesMappedFromRxNormCode:]
+
+  // instance methods
+  -[HNPredicate init]
+  -[HNPredicate copyWithZone:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

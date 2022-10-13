@@ -1,0 +1,506 @@
+|| __DATA.__common _gAppStateMonitor
+|| __DATA.__data _iap2ServerPortName
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCUserDefaults
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCiAP2ShimAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCiAP2ShimServerClient
+|| __DATA.__objc_data _OBJC_CLASS_$_ACCiAP2ShimServerDelegateInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCUserDefaults
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCiAP2ShimAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCiAP2ShimServerClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACCiAP2ShimServerDelegateInfo
+|| __DATA_CONST.__const _ACCUserDefaultsDomain
+|| __DATA_CONST.__const _ACCUserDefaultsIapdDomain
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_ChargingPowerBehavior
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_ChargingPowerOverride
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_PretendAccessoryType
+|| __DATA_CONST.__const _ACCUserDefaultsIapdKey_PretendBatteryLevel
+|| __DATA_CONST.__const _ACCUserDefaultsIapdNotification
+|| __DATA_CONST.__const _ACCUserDefaultsKey_BypassTrustDialog
+|| __DATA_CONST.__const _ACCUserDefaultsKey_DisableWirelessCTA
+|| __DATA_CONST.__const _ACCUserDefaultsKey_EnableTrustDialog
+|| __DATA_CONST.__const _ACCUserDefaultsKey_KnownAccessories
+|| __DATA_CONST.__const _ACCUserDefaultsKey_ShowHiddenAccessories
+|| __DATA_CONST.__const _ACCUserDefaultsNotification
+|| __DATA_CONST.__const _EAManagerAccessorySessions
+|| __DATA_CONST.__const _EAProcessAssertionIdentifierAccessoryConnect
+|| __DATA_CONST.__const _EAProcessAssertionIdentifierAccessoryDisconnect
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_ChargingPowerBehavior
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_ChargingPowerOverride
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_PretendAccessoryType
+|| __DATA_CONST.__const _kCFACCUserDefaultsIapdKey_PretendBatteryLevel
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_AuthenticationOverride
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_DisableWirelessCTA
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_EnableTrustDialog
+|| __DATA_CONST.__const _kCFACCUserDefaultsKey_MaxOutboundiAP2PacketSize
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ACCiAP2ShimServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ACCiAP2ShimServerUnregisteredClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ACCiAP2ShimServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ACCiAP2ShimServerUnregisteredClient
+|| __TEXT.__const _AccessoryiAP2ShimVersionNumber
+|| __TEXT.__const _AccessoryiAP2ShimVersionString
+|| __TEXT.__const _kACCExternalAccessoryCertDataKey
+|| __TEXT.__const _kACCExternalAccessoryCertSerialNumberKey
+|| __TEXT.__const _kIap2dConnectionIDMask
+|| __TEXT.__const _kIap2dInternalConnectionIDMask
+|| __TEXT.__const _kIapdConnectionIDMask
+|| __TEXT.__const _kIapdInternalConnectionIDMask
+|| __TEXT.__const _kInvalidConnectionID
+|| __TEXT.__const _kInvalidConnectionIDMask
+|| __TEXT.__const _kUnknownConnectionIDMask
+|| __TEXT.__const _kXPCAccessoryPowerDisable
+|| __TEXT.__const _kXPCAccessoryPowerToggle
+|| __TEXT.__const _kXPCActionStr
+|| __TEXT.__const _kXPCBoolHasE75To30PinAdapter
+|| __TEXT.__const _kXPCClientIDStr
+|| __TEXT.__const _kXPCCloseWasSuccessfulStr
+|| __TEXT.__const _kXPCConnectionIDStr
+|| __TEXT.__const _kXPCConnectionStr
+|| __TEXT.__const _kXPCContextChangeStr
+|| __TEXT.__const _kXPCDaemonMakingRequest
+|| __TEXT.__const _kXPCDataArrivedStr
+|| __TEXT.__const _kXPCDataStr
+|| __TEXT.__const _kXPCEAClientBundleIDStr
+|| __TEXT.__const _kXPCEAClientCapabilitiesStr
+|| __TEXT.__const _kXPCEAClientHasCheckedForConnectedAccessories
+|| __TEXT.__const _kXPCEAClientIDStr
+|| __TEXT.__const _kXPCEAClientSupportedProtocolsStr
+|| __TEXT.__const _kXPCEANotifyAppOfSessionCloseStr
+|| __TEXT.__const _kXPCEAProtocolAccessoryConnected
+|| __TEXT.__const _kXPCEAProtocolAccessoryDisconnected
+|| __TEXT.__const _kXPCEAProtocolAccessoryPlistData
+|| __TEXT.__const _kXPCEAProtocolAccessoryReconnected
+|| __TEXT.__const _kXPCEAProtocolIDStr
+|| __TEXT.__const _kXPCEAProtocolTransportConnectedState
+|| __TEXT.__const _kXPCEAProtocolTransportNotification
+|| __TEXT.__const _kXPCEAProtocolTransportRegistryID
+|| __TEXT.__const _kXPCEAProtocolTransportUpstreamRegistryID
+|| __TEXT.__const _kXPCEASessionIDStr
+|| __TEXT.__const _kXPCEnableStr
+|| __TEXT.__const _kXPCGetHasE75To30PinAdapter
+|| __TEXT.__const _kXPCHasAdaptorStr
+|| __TEXT.__const _kXPCIAP2DTransportListStatesStr
+|| __TEXT.__const _kXPCIAPAppAccessibilityResponseStr
+|| __TEXT.__const _kXPCIAPAppConnectedAccessoriesStr
+|| __TEXT.__const _kXPCIAPAppRegisterClientStr
+|| __TEXT.__const _kXPCIAPCheckInStr
+|| __TEXT.__const _kXPCIAPDTransportListStatesStr
+|| __TEXT.__const _kXPCIAPTransportDeviceUUIDStr
+|| __TEXT.__const _kXPCIsAvailableStr
+|| __TEXT.__const _kXPCIsSupportedStr
+|| __TEXT.__const _kXPCItemPropertyRequestStr
+|| __TEXT.__const _kXPCMacAddressStr
+|| __TEXT.__const _kXPCOpenWasSuccessfulStr
+|| __TEXT.__const _kXPCOwnsConnectionIDStr
+|| __TEXT.__const _kXPCOwnsPhysicalConnectorStr
+|| __TEXT.__const _kXPCPListDataStr
+|| __TEXT.__const _kXPCPingStr
+|| __TEXT.__const _kXPCPortIDStr
+|| __TEXT.__const _kXPCPortManagerNumberStr
+|| __TEXT.__const _kXPCPortNumberStr
+|| __TEXT.__const _kXPCPortTypeStr
+|| __TEXT.__const _kXPCRequestTypeStr
+|| __TEXT.__const _kXPCResistorArrivedStr
+|| __TEXT.__const _kXPCResistorIDStr
+|| __TEXT.__const _kXPCResultStr
+|| __TEXT.__const _kXPCSendWasSuccessfulStr
+|| __TEXT.__const _kXPCSystemPropertyChangeStr
+|| __TEXT.__const _kXPCSystemPropertyRequestStr
+|| __TEXT.__const _kXPCTransmitDataStr
+|| __TEXT.__const _kXPCTransportLeftStr
+|| __TEXT.__const _kXPCTransportListContainsItemsStr
+|| __TEXT.__const _kXPCTransportStr
+|| __TEXT.__const _kXPCUSBDeviceIDStr
+|| __TEXT.__const _kXPCUUIDDStr
+|| __TEXT.__const _kXPCUserInfoStr
+|| __TEXT.__const _kXPCVoiceOverStr
+|| __TEXT.__const _kXPCWaitSendDoneStr
+|| __TEXT.__text _acc_policies_endpointRequiresChargingCurrentLimit
+|| __TEXT.__text _acc_policies_endpointRequiresUserAuthorization
+|| __TEXT.__text _acc_policies_isTransportSupervised
+|| __TEXT.__text _acc_policies_shouldFailAuthOnOOBPairingFailure
+|| __TEXT.__text _acc_policies_shouldHideAccessoryWithModelNumber
+|| __TEXT.__text _acc_policies_shouldOverrideNameOnAccessoryWithModelNumber
+|| __TEXT.__text _acc_policies_shouldResetLightningBusWhenTransportIsNoLongerRestricted
+|| __TEXT.__text _acc_userDefaultsIapd_boolForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyArrayForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyDictionaryForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyDoubleForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyIntegerForKey
+|| __TEXT.__text _acc_userDefaultsIapd_copyStringForKey
+|| __TEXT.__text _acc_userDefaults_boolForKey
+|| __TEXT.__text _acc_userDefaults_copyArrayForKey
+|| __TEXT.__text _acc_userDefaults_copyDictionaryForKey
+|| __TEXT.__text _acc_userDefaults_copyDoubleForKey
+|| __TEXT.__text _acc_userDefaults_copyIntegerForKey
+|| __TEXT.__text _acc_userDefaults_copyStringForKey
+__ AppSupport: _OBJC_CLASS_$_CPDistributedNotificationCenter
+__ BackBoardServices: _BKSApplicationStateProcessIDKey
+__ BackBoardServices: _OBJC_CLASS_$_BKSApplicationStateMonitor
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_METACLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IAP: _IAP2AppDistributedNotificationServerPortName
+__ IAP: _IAP2GeneralDistributedNotificationServerName
+__ IAP: _IAPAppAccessoryCapabilitiesKey
+__ IAP: _IAPAppAccessoryConnectionTimeInSecKey
+__ IAP: _IAPAppAccessoryFirmwareRevisionKey
+__ IAP: _IAPAppAccessoryHardwareRevisionKey
+__ IAP: _IAPAppAccessoryManufacturerKey
+__ IAP: _IAPAppAccessoryModelNumberKey
+__ IAP: _IAPAppAccessoryNameKey
+__ IAP: _IAPAppAccessoryProtocolsKey
+__ IAP: _IAPAppAccessorySerialNumberKey
+__ IAP: _IAPAppConnectionIDKey
+__ IAP: _kIAP2AvailableNotification
+__ IAP: _kIAP2ServerDiedNotification
+__ IAP: _kIAP2ServerLaunchedNotification
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateWithAuditToken
+__ SpringBoardServices: _SBSProcessAssertionCreateForPID
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _gettimeofday
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _notify_register_check
+__ libSystem.B.dylib: _notify_set_state
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_audit_token
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+ACCiAP2ShimServerUnregisteredClient : NSObject /usr/lib/libSystem.B.dylib
+ @property  ^{SBSProcessAssertion=} processAssertion
+ @property  long long processAssertionStartTime
+ @property  NSString *bundleId
+ @property  int processId
+
+  // instance methods
+  -[ACCiAP2ShimServerUnregisteredClient .cxx_destruct]
+  -[ACCiAP2ShimServerUnregisteredClient bundleId]
+  -[ACCiAP2ShimServerUnregisteredClient processId]
+  -[ACCiAP2ShimServerUnregisteredClient initWithBundleId:]
+  -[ACCiAP2ShimServerUnregisteredClient processAssertion]
+  -[ACCiAP2ShimServerUnregisteredClient _getProcessId]
+  -[ACCiAP2ShimServerUnregisteredClient _applicationInfoForBundleIDSync:]
+  -[ACCiAP2ShimServerUnregisteredClient takeProcessAssertion:]
+  -[ACCiAP2ShimServerUnregisteredClient releaseProcessAssertion]
+  -[ACCiAP2ShimServerUnregisteredClient processAssertionStartTime]
+
+
+ACCiAP2ShimServerClient : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL entitlementForAllAccessories
+ @property  NSArray *clientEAProtocols
+ @property  NSObject<OS_dispatch_queue> *processAssertionQ
+ @property  ^{SBSProcessAssertion=} processAssertion
+ @property  long long processAssertionStartTime
+ @property  NSObject<OS_dispatch_source> *processAssertionTimer
+ @property  int iapSessionRefCount
+ @property  unsigned int applicationState
+ @property  unsigned int clientID
+ @property  int processId
+ @property  NSObject<OS_xpc_object> *xpcConnection
+ @property  NSString *bundleId
+ @property  {?=[8I]} auditToken
+ @property  unsigned int capabilities
+ @property  BOOL locationSupportedByClient
+ @property  BOOL cameraSupportedByClient
+ @property  BOOL supportsAccessibility
+ @property  BOOL clientRequiresAccReset
+
+  // instance methods
+  -[ACCiAP2ShimServerClient dealloc]
+  -[ACCiAP2ShimServerClient .cxx_destruct]
+  -[ACCiAP2ShimServerClient auditToken]
+  -[ACCiAP2ShimServerClient xpcConnection]
+  -[ACCiAP2ShimServerClient bundleId]
+  -[ACCiAP2ShimServerClient applicationState]
+  -[ACCiAP2ShimServerClient setClientID:]
+  -[ACCiAP2ShimServerClient clientID]
+  -[ACCiAP2ShimServerClient capabilities]
+  -[ACCiAP2ShimServerClient processId]
+  -[ACCiAP2ShimServerClient processAssertion]
+  -[ACCiAP2ShimServerClient setApplicationState:]
+  -[ACCiAP2ShimServerClient supportsAccessibility]
+  -[ACCiAP2ShimServerClient _applicationInfoForBundleIDSync:]
+  -[ACCiAP2ShimServerClient takeProcessAssertion:]
+  -[ACCiAP2ShimServerClient releaseProcessAssertion]
+  -[ACCiAP2ShimServerClient processAssertionStartTime]
+  -[ACCiAP2ShimServerClient initWithCapabilities:auditToken:xpcConnection:eaProtocols:andBundleId:]
+  -[ACCiAP2ShimServerClient canSendConnectionEventForAccessory:]
+  -[ACCiAP2ShimServerClient locationSupportedByClient]
+  -[ACCiAP2ShimServerClient setLocationSupportedByClient:]
+  -[ACCiAP2ShimServerClient cameraSupportedByClient]
+  -[ACCiAP2ShimServerClient setCameraSupportedByClient:]
+  -[ACCiAP2ShimServerClient clientRequiresAccReset]
+  -[ACCiAP2ShimServerClient setClientRequiresAccReset:]
+  -[ACCiAP2ShimServerClient entitlementForAllAccessories]
+  -[ACCiAP2ShimServerClient clientEAProtocols]
+  -[ACCiAP2ShimServerClient processAssertionQ]
+  -[ACCiAP2ShimServerClient processAssertionTimer]
+  -[ACCiAP2ShimServerClient iapSessionRefCount]
+
+
+ACCUserDefaults : NSUserDefaults
+  // class methods
+  +[ACCUserDefaults sharedDefaults]
+  +[ACCUserDefaults sharedDefaultsIapd]
+
+  // instance methods
+  -[ACCUserDefaults init]
+
+
+ACCiAP2ShimAccessory : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSString *keyTag
+ @property  NSString *keyAccessoryUID
+ @property  NSString *keyConnectionID
+ @property  unsigned int connectionID
+ @property  unsigned int featureTypeMask
+ @property  NSString *accessoryUID
+ @property  NSString *name
+ @property  NSString *model
+ @property  NSString *manufacturer
+ @property  NSString *serialNumber
+ @property  NSString *firmwareVersion
+ @property  NSString *hardwareVersion
+ @property  id context
+ @property  BOOL dontPublish
+
+  // instance methods
+  -[ACCiAP2ShimAccessory name]
+  -[ACCiAP2ShimAccessory .cxx_destruct]
+  -[ACCiAP2ShimAccessory setName:]
+  -[ACCiAP2ShimAccessory context]
+  -[ACCiAP2ShimAccessory model]
+  -[ACCiAP2ShimAccessory setContext:]
+  -[ACCiAP2ShimAccessory setModel:]
+  -[ACCiAP2ShimAccessory serialNumber]
+  -[ACCiAP2ShimAccessory firmwareVersion]
+  -[ACCiAP2ShimAccessory hardwareVersion]
+  -[ACCiAP2ShimAccessory addFeature:]
+  -[ACCiAP2ShimAccessory manufacturer]
+  -[ACCiAP2ShimAccessory setManufacturer:]
+  -[ACCiAP2ShimAccessory connectionID]
+  -[ACCiAP2ShimAccessory setSerialNumber:]
+  -[ACCiAP2ShimAccessory setConnectionID:]
+  -[ACCiAP2ShimAccessory setFirmwareVersion:]
+  -[ACCiAP2ShimAccessory initWithUID:keyTag:features:]
+  -[ACCiAP2ShimAccessory accessoryInfoDict]
+  -[ACCiAP2ShimAccessory connectionIDObj]
+  -[ACCiAP2ShimAccessory removeFeature:]
+  -[ACCiAP2ShimAccessory keyTag]
+  -[ACCiAP2ShimAccessory keyAccessoryUID]
+  -[ACCiAP2ShimAccessory keyConnectionID]
+  -[ACCiAP2ShimAccessory featureTypeMask]
+  -[ACCiAP2ShimAccessory accessoryUID]
+  -[ACCiAP2ShimAccessory setHardwareVersion:]
+  -[ACCiAP2ShimAccessory dontPublish]
+  -[ACCiAP2ShimAccessory setDontPublish:]
+
+
+ACCiAP2ShimServerDelegateInfo : NSObject /usr/lib/libSystem.B.dylib
+ @property  <ACCiAP2ShimServerDelegate> *delegate
+
+  // instance methods
+  -[ACCiAP2ShimServerDelegateInfo dealloc]
+  -[ACCiAP2ShimServerDelegateInfo delegate]
+  -[ACCiAP2ShimServerDelegateInfo .cxx_destruct]
+  -[ACCiAP2ShimServerDelegateInfo initWithDelegate:]
+
+
+ACCiAP2ShimServer : NSObject /usr/lib/libSystem.B.dylib
+ @property  NSMutableDictionary *delegateList
+ @property  NSMutableDictionary *accessoryViaKeyUIDList
+ @property  NSMutableDictionary *accessoryViaConnectionIDList
+ @property  NSObject<OS_dispatch_queue> *listQueue
+ @property  NSObject<OS_xpc_object> *listener
+ @property  BOOL isShuttingDown
+ @property  NSObject<OS_dispatch_queue> *iap2dhighPriorityRootQueue
+ @property  NSObject<OS_dispatch_queue> *internalListenerQueue
+ @property  {__serverFlags=b1b1b30} serverFlags
+ @property  NSMutableDictionary *clients
+ @property  NSLock *clientLock
+ @property  int iap2AvailableNotifyToken
+
+  // class methods
+  +[ACCiAP2ShimServer sharedInstance]
+  +[ACCiAP2ShimServer resetServerState]
+  +[ACCiAP2ShimServer stringForClientID:]
+  +[ACCiAP2ShimServer postNotifydNotificationType:]
+  +[ACCiAP2ShimServer postiAP2NotificationType:notifyDict:]
+  +[ACCiAP2ShimServer postiAP2AppNotificationType:notifyDict:]
+  +[ACCiAP2ShimServer postNSDistributeNotificationType:notifyDict:]
+
+  // instance methods
+  -[ACCiAP2ShimServer init]
+  -[ACCiAP2ShimServer dealloc]
+  -[ACCiAP2ShimServer listener]
+  -[ACCiAP2ShimServer .cxx_destruct]
+  -[ACCiAP2ShimServer stopServer]
+  -[ACCiAP2ShimServer addDelegate:]
+  -[ACCiAP2ShimServer removeDelegate:]
+  -[ACCiAP2ShimServer removeAllClients]
+  -[ACCiAP2ShimServer clients]
+  -[ACCiAP2ShimServer _startServer]
+  -[ACCiAP2ShimServer addAccessory:]
+  -[ACCiAP2ShimServer serverFlags]
+  -[ACCiAP2ShimServer removeAccessory:]
+  -[ACCiAP2ShimServer startServer]
+  -[ACCiAP2ShimServer isShuttingDown]
+  -[ACCiAP2ShimServer _removeAccessory:]
+  -[ACCiAP2ShimServer _stopServer]
+  -[ACCiAP2ShimServer _resetServerState]
+  -[ACCiAP2ShimServer _pollForDeathAfterPromptCompletes]
+  -[ACCiAP2ShimServer _addDelegate:]
+  -[ACCiAP2ShimServer _removeDelegate:]
+  -[ACCiAP2ShimServer _iterateDelegates:]
+  -[ACCiAP2ShimServer _attachAccessory:]
+  -[ACCiAP2ShimServer _addAccessory:]
+  -[ACCiAP2ShimServer _detachAccessory:]
+  -[ACCiAP2ShimServer _iterateAccessories:]
+  -[ACCiAP2ShimServer _findAccessoryForConnectionID:]
+  -[ACCiAP2ShimServer _findAccessoryForConnectionID:andKeyTag:]
+  -[ACCiAP2ShimServer _findAccessoryForAccessoryUID:andKeyTag:]
+  -[ACCiAP2ShimServer iterateDelegatesSync:]
+  -[ACCiAP2ShimServer removeClientForXPCConnection:]
+  -[ACCiAP2ShimServer _takeClientAssertionsForAccessoryConnection]
+  -[ACCiAP2ShimServer notifyEAClientsOfAccessoryConnection:]
+  -[ACCiAP2ShimServer _takeClientAssertionsForAccessoryDisconnection]
+  -[ACCiAP2ShimServer notifyEAClientsOfAccessoryDisconnection:]
+  -[ACCiAP2ShimServer generateClientID]
+  -[ACCiAP2ShimServer notifyEAClient:ofAccessoryEvent:accessory:]
+  -[ACCiAP2ShimServer iterateAccessoriesAsync:]
+  -[ACCiAP2ShimServer notifyEAClientsOfAccessoryEvent:accessory:]
+  -[ACCiAP2ShimServer iterateDelegatesAsync:]
+  -[ACCiAP2ShimServer iterateAccessoriesSync:]
+  -[ACCiAP2ShimServer findAccessoryForConnectionID:]
+  -[ACCiAP2ShimServer findAccessoryForConnectionID:andKeyTag:]
+  -[ACCiAP2ShimServer findAccessoryForAccessoryUID:andKeyTag:]
+  -[ACCiAP2ShimServer processXPCMessage:connection:]
+  -[ACCiAP2ShimServer processDetachXPCConnection:]
+  -[ACCiAP2ShimServer addClientWithCapabilities:auditToken:currentClientID:xpcConnection:eaProtocols:notifyOfAlreadyConnectedAccessories:andBundleId:]
+  -[ACCiAP2ShimServer findClientWithID:]
+  -[ACCiAP2ShimServer findClientWithXPCConnection:]
+  -[ACCiAP2ShimServer removeClientWithID:]
+  -[ACCiAP2ShimServer notifyEAClientsOfAccessoryReconnection:]
+  -[ACCiAP2ShimServer delegateList]
+  -[ACCiAP2ShimServer setDelegateList:]
+  -[ACCiAP2ShimServer accessoryViaKeyUIDList]
+  -[ACCiAP2ShimServer setAccessoryViaKeyUIDList:]
+  -[ACCiAP2ShimServer accessoryViaConnectionIDList]
+  -[ACCiAP2ShimServer setAccessoryViaConnectionIDList:]
+  -[ACCiAP2ShimServer listQueue]
+  -[ACCiAP2ShimServer iap2dhighPriorityRootQueue]
+  -[ACCiAP2ShimServer internalListenerQueue]
+  -[ACCiAP2ShimServer clientLock]
+  -[ACCiAP2ShimServer iap2AvailableNotifyToken]
+
+
+01 00 0500 /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices: BKSApplicationStateMonitor 
+01 00 0200 /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport: CPDistributedNotificationCenter 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

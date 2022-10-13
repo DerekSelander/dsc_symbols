@@ -1,0 +1,102 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FMIPLocateIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_FMIPLocateIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_FMIPPlaySoundIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_FMIPPlaySoundIntentResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_FMIPLocateIntent
+|| __DATA.__objc_data _OBJC_METACLASS_$_FMIPLocateIntentResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_FMIPPlaySoundIntent
+|| __DATA.__objc_data _OBJC_METACLASS_$_FMIPPlaySoundIntentResponse
+|| __TEXT.__text _LogCategory_Unspecified
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Intents: _OBJC_CLASS_$_INIntent
+__ Intents: _OBJC_CLASS_$_INIntentResponse
+__ Intents: _OBJC_CLASS_$_INInteraction
+__ Intents: _OBJC_CLASS_$_INObject
+__ Intents: _OBJC_METACLASS_$_INIntent
+__ Intents: _OBJC_METACLASS_$_INIntentResponse
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+FMIPLocateIntent : INIntent /System/Library/Frameworks/Foundation.framework/Foundation <FMIPIdentifiable>
+ @property  INObject *deviceId
+ @property  INObject *deviceId
+ @property  long long locateDeviceClass
+
+  // class methods
+  +[FMIPLocateIntent locateDeviceClassForDeviceType:]
+  +[FMIPLocateIntent locateIntentWithDeviceId:deviceType:deviceDisplayName:]
+  +[FMIPLocateIntent identityTag]
+
+  // instance methods
+  -[FMIPLocateIntent rootAggregateKey]
+
+
+FMIPLocateIntentResponse : INIntentResponse /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  long long code
+
+  // instance methods
+  -[FMIPLocateIntentResponse code]
+  -[FMIPLocateIntentResponse setCode:]
+  -[FMIPLocateIntentResponse initWithCode:userActivity:]
+
+
+FMIPPlaySoundIntent : INIntent /System/Library/Frameworks/Foundation.framework/Foundation <FMIPIdentifiable>
+ @property  INObject *deviceId
+ @property  INObject *deviceId
+ @property  long long playSoundDeviceClass
+
+  // class methods
+  +[FMIPPlaySoundIntent identityTag]
+  +[FMIPPlaySoundIntent playSoundDeviceClassForDeviceType:]
+  +[FMIPPlaySoundIntent playSoundIntentWithDeviceId:deviceType:deviceDisplayName:]
+
+  // instance methods
+  -[FMIPPlaySoundIntent rootAggregateKey]
+
+
+FMIPPlaySoundIntentResponse : INIntentResponse /System/Library/Frameworks/Foundation.framework/Foundation
+ @property  long long code
+
+  // instance methods
+  -[FMIPPlaySoundIntentResponse code]
+  -[FMIPPlaySoundIntentResponse setCode:]
+  -[FMIPPlaySoundIntentResponse initWithCode:userActivity:]
+
+
+INIntent(FMIPActions)
+	// class methods
+	+[INIntent(FMIPActions) undonateForDeviceId:withCompletion:]
+
+	// instance methods
+	-[INIntent(FMIPActions) rootAggregateKey]
+	-[INIntent(FMIPActions) identifierForIdentifiableIntent:]
+	-[INIntent(FMIPActions) groupIdentifierForIdentifiableIntent:]
+	-[INIntent(FMIPActions) stringForExecutionContext:]
+	-[INIntent(FMIPActions) donateWithCompletion:]
+	-[INIntent(FMIPActions) aggregateLabel]
+
+01 00 0200 /System/Library/Frameworks/Intents.framework/Intents: INIntent 
+01 00 0200 /System/Library/Frameworks/Intents.framework/Intents: INIntentResponse 
+01 00 0200 /System/Library/Frameworks/Intents.framework/Intents: INInteraction 
+01 00 0200 /System/Library/Frameworks/Intents.framework/Intents: INObject 

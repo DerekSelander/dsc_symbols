@@ -1,0 +1,108 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MXPowerlogService
+|| __DATA.__objc_data _OBJC_CLASS_$_MXService
+|| __DATA.__objc_data _OBJC_CLASS_$_MXUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXPowerlogService
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXService
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXUtilities
+|| __TEXT.__const _MetricKitServicesVersionNumber
+|| __TEXT.__const _MetricKitServicesVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ MetricKitSource: _OBJC_CLASS_$_MXSourceXPCPayload
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _container_system_path_for_identifier
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+MXService : NSObject /usr/lib/libSystem.B.dylib
+ @property  BOOL isStarted
+ @property  long long sourceID
+
+  // instance methods
+  -[MXService init]
+  -[MXService isStarted]
+  -[MXService sourceID]
+  -[MXService startService]
+  -[MXService stopService]
+  -[MXService metricsAvailableForDate:]
+  -[MXService getMetricsForClient:dateString:]
+  -[MXService initWithSourceID:]
+
+
+MXPowerlogService : MXService
+ @property  NSMutableArray *powerlogDataPaths
+ @property  MXSourceXPCPayload *unarchivedPowerlogData
+ @property  NSObject<OS_os_log> *MXPowerLogServiceLogHandle
+ @property  NSObject<OS_dispatch_queue> *requestQueue
+
+  // class methods
+  +[MXPowerlogService sharedPowerlogService]
+
+  // instance methods
+  -[MXPowerlogService init]
+  -[MXPowerlogService .cxx_destruct]
+  -[MXPowerlogService requestQueue]
+  -[MXPowerlogService setRequestQueue:]
+  -[MXPowerlogService startService]
+  -[MXPowerlogService _updateMetrics]
+  -[MXPowerlogService stopService]
+  -[MXPowerlogService metricsAvailableForDate:]
+  -[MXPowerlogService getMetricsForClient:dateString:]
+  -[MXPowerlogService powerlogDataPaths]
+  -[MXPowerlogService setPowerlogDataPaths:]
+  -[MXPowerlogService unarchivedPowerlogData]
+  -[MXPowerlogService setUnarchivedPowerlogData:]
+  -[MXPowerlogService MXPowerLogServiceLogHandle]
+  -[MXPowerlogService setMXPowerLogServiceLogHandle:]
+
+
+MXUtilities : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[MXUtilities containerPath]
+
+
+01 00 0300 /System/Library/PrivateFrameworks/MetricKitSource.framework/MetricKitSource: MXSourceXPCPayload 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 

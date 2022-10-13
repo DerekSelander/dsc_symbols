@@ -1,0 +1,88 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FIAPHistoricalDataRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_FIAPHistoricalDataRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_FIAPResult
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_FIAPResult
+|| __TEXT.__const _FoundInAppsPluginsVersionNumber
+|| __TEXT.__const _FoundInAppsPluginsVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+FIAPResult : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSArray *historicalDataRequests
+ @property  NSError *error
+
+  // class methods
+  +[FIAPResult new]
+  +[FIAPResult supportsSecureCoding]
+  +[FIAPResult success]
+  +[FIAPResult resultWithHistoricalDataRequests:error:]
+
+  // instance methods
+  -[FIAPResult init]
+  -[FIAPResult isEqual:]
+  -[FIAPResult copyWithZone:]
+  -[FIAPResult encodeWithCoder:]
+  -[FIAPResult initWithCoder:]
+  -[FIAPResult .cxx_destruct]
+  -[FIAPResult error]
+  -[FIAPResult historicalDataRequests]
+  -[FIAPResult initWithHistoricalDataRequests:error:]
+  -[FIAPResult isEqualToResult:]
+
+
+FIAPHistoricalDataRequest : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  unsigned long requestId
+ @property  NSString *pluginIdentifier
+ @property  NSString *personHandle
+ @property  NSDate *startDate
+ @property  NSDate *endDate
+
+  // class methods
+  +[FIAPHistoricalDataRequest supportsSecureCoding]
+  +[FIAPHistoricalDataRequest historicalDataRequestWithPersonHandle:startDate:endDate:]
+
+  // instance methods
+  -[FIAPHistoricalDataRequest isEqual:]
+  -[FIAPHistoricalDataRequest copyWithZone:]
+  -[FIAPHistoricalDataRequest encodeWithCoder:]
+  -[FIAPHistoricalDataRequest initWithCoder:]
+  -[FIAPHistoricalDataRequest .cxx_destruct]
+  -[FIAPHistoricalDataRequest startDate]
+  -[FIAPHistoricalDataRequest endDate]
+  -[FIAPHistoricalDataRequest pluginIdentifier]
+  -[FIAPHistoricalDataRequest personHandle]
+  -[FIAPHistoricalDataRequest requestId]
+  -[FIAPHistoricalDataRequest setRequestId:]
+  -[FIAPHistoricalDataRequest setPluginIdentifier:]
+  -[FIAPHistoricalDataRequest subsetOfHistoricalDataRequest:]
+  -[FIAPHistoricalDataRequest initWithPersonHandle:startDate:endDate:]
+  -[FIAPHistoricalDataRequest initWithRequestId:pluginIdentifier:personHandle:startDate:endDate:]
+  -[FIAPHistoricalDataRequest isEqualToHistoricalDataRequest:]
+  -[FIAPHistoricalDataRequest _dateRangeIsSubsetOfHistoricalDataRequest:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

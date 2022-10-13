@@ -1,0 +1,140 @@
+|| __DATA_CONST.__const _INDaemonBundleIdentifierKey
+|| __DATA_CONST.__const _INDaemonMachServiceName
+|| __DATA_CONST.__const _INErrorDomain
+|| __DATA_CONST.__const _INFamilyDidChangeNotification
+|| __DATA_CONST.__const _INFileLoggingEnabledKey
+|| __DATA_CONST.__const _INNextFreshmintRefreshDateKey
+|| __DATA_CONST.__const _INNextHeartbeatDateKey
+|| __DATA_CONST.__const _INSyslogOutputLevelKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_INDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_INDaemonInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_INDiagnosticReport
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_INManagedDefaults
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_INDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_INDaemonInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_INDiagnosticReport
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_INManagedDefaults
+|| __TEXT.__text _INCreateError
+|| __TEXT.__text _INCreateErrorWithKeychainError
+|| __TEXT.__text _INCreateErrorWithMessage
+|| __TEXT.__text __INLogSystem
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: __CFPreferencesManagementStatusChangedForDomains
+__ CoreFoundation: __CFPreferencesPostValuesChangedInDomains
+__ CoreFoundation: __CFPreferencesWriteManagedDomainForUser
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+INDaemonConnection : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[INDaemonConnection init]
+  -[INDaemonConnection dealloc]
+  -[INDaemonConnection .cxx_destruct]
+  -[INDaemonConnection notifyDeviceStorageLevel:completion:]
+  -[INDaemonConnection registerAccount:foriCloudNotificationsWithReason:error:]
+  -[INDaemonConnection registerAccount:foriCloudNotificationsWithReason:completion:]
+  -[INDaemonConnection unregisterAccount:fromiCloudNotificationsWithError:]
+  -[INDaemonConnection unregisterAccount:fromiCloudNotificationsWithCompletion:]
+  -[INDaemonConnection clearAllRegistrationDigestsWithError:]
+  -[INDaemonConnection diagnosticReport]
+  -[INDaemonConnection updateOfferForAccount:offerId:buttonId:info:completion:]
+  -[INDaemonConnection iCloudServerOfferForAccount:options:error:]
+  -[INDaemonConnection iCloudServerOfferForAccount:options:completion:]
+
+
+INDiagnosticReport : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *pushEnvironment
+ @property  NSString *pushToken
+ @property  NSArray *pushTopics
+ @property  NSDate *nextHeartbeatDate
+ @property  BOOL disabled
+
+  // class methods
+  +[INDiagnosticReport supportsSecureCoding]
+
+  // instance methods
+  -[INDiagnosticReport encodeWithCoder:]
+  -[INDiagnosticReport initWithCoder:]
+  -[INDiagnosticReport .cxx_destruct]
+  -[INDiagnosticReport disabled]
+  -[INDiagnosticReport pushToken]
+  -[INDiagnosticReport setDisabled:]
+  -[INDiagnosticReport setPushToken:]
+  -[INDiagnosticReport pushEnvironment]
+  -[INDiagnosticReport setPushEnvironment:]
+  -[INDiagnosticReport pushTopics]
+  -[INDiagnosticReport setPushTopics:]
+  -[INDiagnosticReport nextHeartbeatDate]
+  -[INDiagnosticReport setNextHeartbeatDate:]
+
+
+INManagedDefaults : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[INManagedDefaults sharedInstance]
+
+  // instance methods
+  -[INManagedDefaults _readManagedDefaults]
+  -[INManagedDefaults _writeManagedDefaults:]
+  -[INManagedDefaults valueForManagedDefault:]
+  -[INManagedDefaults setValue:forManagedDefault:]
+
+
+INDaemonInterface : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[INDaemonInterface XPCInterface]
+  +[INDaemonInterface _buildXPCInterface]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

@@ -1,0 +1,108 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DAAccountMigrator
+|| __DATA.__objc_data _OBJC_METACLASS_$_DAAccountMigrator
+__ Accounts: _ACAccountDataclassCalendars
+__ Accounts: _ACAccountTypeIdentifierExchange
+__ Accounts: _ACAccountTypeIdentifierFacebook
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ Accounts: _kAccountAuthenticationTypeParent
+__ CalendarDatabase: _OBJC_CLASS_$_CDBPreferences
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ DACalDAV: _kCalDAVMainPrincipalUID
+__ DACalDAV: _kCalDAVMobileAccountDelegatePrincipalPath
+__ DACalDAV: _kCalDAVMobileAccountIsDelegate
+__ DACalDAV: _kCalDAVPrincipalsKey
+__ DACalDAV: _kMobileCalDAVPrincipalPath
+__ DataAccess: _DAUpdateMigrationVersion
+__ DataAccess: _kDAAccountHost
+__ DataAccess: _sharedDAAccountStore
+__ DataAccessExpress: _DALoggingwithCategory
+__ DataAccessExpress: __CPLog_to_os_log_type
+__ DataMigration: _OBJC_CLASS_$_DataClassMigrator
+__ DataMigration: _OBJC_METACLASS_$_DataClassMigrator
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Security: _SecItemCopyMatching
+__ Security: _SecItemUpdate
+__ Security: _kSecAttrAccessGroup
+__ Security: _kSecAttrPath
+__ Security: _kSecAttrProtocol
+__ Security: _kSecAttrProtocolHTTP
+__ Security: _kSecAttrProtocolHTTPS
+__ Security: _kSecAttrSecurityDomain
+__ Security: _kSecAttrServer
+__ Security: _kSecClass
+__ Security: _kSecClassInternetPassword
+__ Security: _kSecMatchLimit
+__ Security: _kSecMatchLimitAll
+__ Security: _kSecReturnAttributes
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+DAAccountMigrator : DataClassMigrator /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase
+  // class methods
+  +[DAAccountMigrator _isEnterpriseCalendarAccount:]
+
+  // instance methods
+  -[DAAccountMigrator performMigration]
+  -[DAAccountMigrator migrationProgress]
+  -[DAAccountMigrator estimatedDuration]
+  -[DAAccountMigrator _cleanupDuplicateDelegateAccounts]
+  -[DAAccountMigrator _migrateDelegateAccounts]
+  -[DAAccountMigrator _moveExchangeCredentialsToAppleAccessGroup]
+  -[DAAccountMigrator _updateFacebookAccountAuthenticationTypes]
+  -[DAAccountMigrator _upgradeDAAccounts]
+  -[DAAccountMigrator _writeDeviceSpecificID]
+  -[DAAccountMigrator _migrateCDBPreferences]
+  -[DAAccountMigrator _notifyDaHolidaySubCalAccount]
+  -[DAAccountMigrator dataClassName]
+
+
+01 00 0400 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0600 /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase: CDBPreferences 
+01 00 0500 /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration: DataClassMigrator 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 

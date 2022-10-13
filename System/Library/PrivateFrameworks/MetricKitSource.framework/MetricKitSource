@@ -1,0 +1,177 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_MXPowerlogData
+|| __DATA.__objc_data _OBJC_CLASS_$_MXSourceData
+|| __DATA.__objc_data _OBJC_CLASS_$_MXSourceManager
+|| __DATA.__objc_data _OBJC_CLASS_$_MXSourceXPCPayload
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXPowerlogData
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXSourceData
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXSourceManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_MXSourceXPCPayload
+|| __TEXT.__const _MetricKitSourceVersionNumber
+|| __TEXT.__const _MetricKitSourceVersionString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ MetricKit: _OBJC_CLASS_$_MXAppLaunchMetric
+__ MetricKit: _OBJC_CLASS_$_MXAppResponsivenessMetric
+__ MetricKit: _OBJC_CLASS_$_MXAppRunTimeMetric
+__ MetricKit: _OBJC_CLASS_$_MXCPUMetric
+__ MetricKit: _OBJC_CLASS_$_MXCellularConditionMetric
+__ MetricKit: _OBJC_CLASS_$_MXDiskIOMetric
+__ MetricKit: _OBJC_CLASS_$_MXDisplayMetric
+__ MetricKit: _OBJC_CLASS_$_MXGPUMetric
+__ MetricKit: _OBJC_CLASS_$_MXLocationActivityMetric
+__ MetricKit: _OBJC_CLASS_$_MXMemoryMetric
+__ MetricKit: _OBJC_CLASS_$_MXNetworkTransferMetric
+__ MetricKit: _OBJC_CLASS_$_MXResourceExceptionMetric
+__ MetricKit: _OBJC_CLASS_$_MXSignpostMetric
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+MXSourceManager : NSObject /usr/lib/libSystem.B.dylib <MXSourceXPCClient>
+ @property  NSObject<OS_os_log> *sourceManagerLogHandle
+ @property  NSXPCConnection *connection
+
+  // class methods
+  +[MXSourceManager sharedManager]
+
+  // instance methods
+  -[MXSourceManager init]
+  -[MXSourceManager .cxx_destruct]
+  -[MXSourceManager connection]
+  -[MXSourceManager setConnection:]
+  -[MXSourceManager _createXPCConnection]
+  -[MXSourceManager sendMetrics:forDate:andSourceID:]
+  -[MXSourceManager simulatePayloadDeliveryForClient:]
+  -[MXSourceManager sourceManagerLogHandle]
+  -[MXSourceManager setSourceManagerLogHandle:]
+
+
+MXPowerlogData : MXSourceData
+ @property  BOOL includesMultipleApplicationVersions
+ @property  MXCPUMetric *cpuMetrics
+ @property  MXGPUMetric *gpuMetrics
+ @property  MXCellularConditionMetric *cellularConditionMetrics
+ @property  MXAppRunTimeMetric *applicationTimeMetrics
+ @property  MXLocationActivityMetric *locationActivityMetrics
+ @property  MXNetworkTransferMetric *networkTransferMetrics
+ @property  MXAppLaunchMetric *applicationLaunchMetrics
+ @property  MXAppResponsivenessMetric *applicationResponsivenessMetrics
+ @property  MXResourceExceptionMetric *applicationResourceExceptionMetrics
+ @property  MXDiskIOMetric *diskIOMetrics
+ @property  MXMemoryMetric *memoryMetrics
+ @property  MXDisplayMetric *displayMetrics
+ @property  NSArray *signpostMetrics
+
+  // class methods
+  +[MXPowerlogData supportsSecureCoding]
+
+  // instance methods
+  -[MXPowerlogData encodeWithCoder:]
+  -[MXPowerlogData initWithCoder:]
+  -[MXPowerlogData .cxx_destruct]
+  -[MXPowerlogData displayMetrics]
+  -[MXPowerlogData setDisplayMetrics:]
+  -[MXPowerlogData includesMultipleApplicationVersions]
+  -[MXPowerlogData cpuMetrics]
+  -[MXPowerlogData setCpuMetrics:]
+  -[MXPowerlogData gpuMetrics]
+  -[MXPowerlogData setGpuMetrics:]
+  -[MXPowerlogData cellularConditionMetrics]
+  -[MXPowerlogData setCellularConditionMetrics:]
+  -[MXPowerlogData applicationTimeMetrics]
+  -[MXPowerlogData setApplicationTimeMetrics:]
+  -[MXPowerlogData locationActivityMetrics]
+  -[MXPowerlogData setLocationActivityMetrics:]
+  -[MXPowerlogData networkTransferMetrics]
+  -[MXPowerlogData setNetworkTransferMetrics:]
+  -[MXPowerlogData applicationLaunchMetrics]
+  -[MXPowerlogData setApplicationLaunchMetrics:]
+  -[MXPowerlogData applicationResponsivenessMetrics]
+  -[MXPowerlogData setApplicationResponsivenessMetrics:]
+  -[MXPowerlogData diskIOMetrics]
+  -[MXPowerlogData setDiskIOMetrics:]
+  -[MXPowerlogData memoryMetrics]
+  -[MXPowerlogData setMemoryMetrics:]
+  -[MXPowerlogData signpostMetrics]
+  -[MXPowerlogData setSignpostMetrics:]
+  -[MXPowerlogData initPayloadDataWithMutipleAppVersions:withTimeStampBegin:withTimeStampEnd:withMetrics:]
+  -[MXPowerlogData setIncludesMultipleApplicationVersions:]
+  -[MXPowerlogData applicationResourceExceptionMetrics]
+  -[MXPowerlogData setApplicationResourceExceptionMetrics:]
+
+
+MXSourceXPCPayload : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  long long sourceID
+ @property  NSDate *datestamp
+ @property  NSDictionary *metrics
+
+  // class methods
+  +[MXSourceXPCPayload supportsSecureCoding]
+
+  // instance methods
+  -[MXSourceXPCPayload encodeWithCoder:]
+  -[MXSourceXPCPayload initWithCoder:]
+  -[MXSourceXPCPayload .cxx_destruct]
+  -[MXSourceXPCPayload metrics]
+  -[MXSourceXPCPayload sourceID]
+  -[MXSourceXPCPayload setSourceID:]
+  -[MXSourceXPCPayload setMetrics:]
+  -[MXSourceXPCPayload setDatestamp:]
+  -[MXSourceXPCPayload datestamp]
+  -[MXSourceXPCPayload initWithSourceID:withDateStamp:andMetrics:]
+
+
+MXSourceData : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+  // class methods
+  +[MXSourceData supportsSecureCoding]
+
+  // instance methods
+  -[MXSourceData init]
+  -[MXSourceData encodeWithCoder:]
+  -[MXSourceData initWithCoder:]
+
+
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXAppLaunchMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXAppResponsivenessMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXAppRunTimeMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXCPUMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXCellularConditionMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXDiskIOMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXDisplayMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXGPUMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXLocationActivityMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXMemoryMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXNetworkTransferMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXResourceExceptionMetric 
+01 00 0200 /System/Library/Frameworks/MetricKit.framework/MetricKit: MXSignpostMetric 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

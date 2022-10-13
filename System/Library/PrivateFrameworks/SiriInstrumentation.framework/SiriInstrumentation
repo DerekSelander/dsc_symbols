@@ -1,0 +1,986 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaAcousticProfile
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaClientEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaClientFlow
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaDialogOutput
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaLanguageProfile
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaRawSpeechProfileData
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaRedactableString
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaServerEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaSpeechResultSelected
+|| __DATA.__objc_data _OBJC_CLASS_$_SISchemaUserDataContainer
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaAcousticProfile
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaClientFlow
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaDialogOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaLanguageProfile
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaRawSpeechProfileData
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaRedactableString
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaServerEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaSpeechResultSelected
+|| __DATA.__objc_data _OBJC_METACLASS_$_SISchemaUserDataContainer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaAudioFirstBufferRecorded
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaAudioStopRecording
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaClientEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaClientTransportEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaConversationTrace
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaDeviceDynamicContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaDeviceFixedContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaDictationContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaInvocation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaLocation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaPunchOut
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaServerEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaSiriCue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaSpeechTranscription
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaTextToSpeechBegin
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaTextToSpeechEnd
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaTurnInteraction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaUIStateTransition
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaUUFRPresented
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaUserSpeechDuration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SISchemaViewContainer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaAudioFirstBufferRecorded
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaAudioStopRecording
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaClientEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaClientEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaClientTransportEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaConversationTrace
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaDeviceDynamicContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaDeviceFixedContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaDictationContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaInvocation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaLocation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaPunchOut
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaServerEventMetadata
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaSiriCue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaSpeechTranscription
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaTextToSpeechBegin
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaTextToSpeechEnd
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaTurnInteraction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaUIStateTransition
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaUUFRPresented
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaUserSpeechDuration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SISchemaViewContainer
+|| __TEXT.__const _SiriInstrumentationVersionNumber
+|| __TEXT.__const _SiriInstrumentationVersionString
+|| __TEXT.__text _SIReflectionHydrateProtoFromEventTypeAndData
+|| __TEXT.__text _SIReflectionInferClassFromEventType
+|| __TEXT.__text _SIReflectionInferEventTypeFromClass
+|| __TEXT.__text _SISchemaAcousticProfileReadFrom
+|| __TEXT.__text _SISchemaAudioFirstBufferRecordedReadFrom
+|| __TEXT.__text _SISchemaAudioStopRecordingReadFrom
+|| __TEXT.__text _SISchemaClientEventMetadataReadFrom
+|| __TEXT.__text _SISchemaClientEventReadFrom
+|| __TEXT.__text _SISchemaClientFlowReadFrom
+|| __TEXT.__text _SISchemaClientTransportEventMetadataReadFrom
+|| __TEXT.__text _SISchemaConversationTraceReadFrom
+|| __TEXT.__text _SISchemaDeviceDynamicContextReadFrom
+|| __TEXT.__text _SISchemaDeviceFixedContextReadFrom
+|| __TEXT.__text _SISchemaDialogOutputReadFrom
+|| __TEXT.__text _SISchemaDictationContextReadFrom
+|| __TEXT.__text _SISchemaInvocationReadFrom
+|| __TEXT.__text _SISchemaLanguageProfileReadFrom
+|| __TEXT.__text _SISchemaLocationReadFrom
+|| __TEXT.__text _SISchemaPunchOutReadFrom
+|| __TEXT.__text _SISchemaRawSpeechProfileDataReadFrom
+|| __TEXT.__text _SISchemaRedactableStringReadFrom
+|| __TEXT.__text _SISchemaServerEventMetadataReadFrom
+|| __TEXT.__text _SISchemaServerEventReadFrom
+|| __TEXT.__text _SISchemaSiriCueReadFrom
+|| __TEXT.__text _SISchemaSpeechResultSelectedReadFrom
+|| __TEXT.__text _SISchemaSpeechTranscriptionReadFrom
+|| __TEXT.__text _SISchemaTextToSpeechBeginReadFrom
+|| __TEXT.__text _SISchemaTextToSpeechEndReadFrom
+|| __TEXT.__text _SISchemaTurnInteractionReadFrom
+|| __TEXT.__text _SISchemaUIStateTransitionReadFrom
+|| __TEXT.__text _SISchemaUUFRPresentedReadFrom
+|| __TEXT.__text _SISchemaUserDataContainerReadFrom
+|| __TEXT.__text _SISchemaUserSpeechDurationReadFrom
+|| __TEXT.__text _SISchemaViewContainerReadFrom
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ ProtocolBuffer: _OBJC_CLASS_$_PBCodable
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._bytes
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._error
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._length
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._pos
+__ ProtocolBuffer: _OBJC_METACLASS_$_PBCodable
+__ ProtocolBuffer: _PBDataWriterWriteDataField
+__ ProtocolBuffer: _PBDataWriterWriteDoubleField
+__ ProtocolBuffer: _PBDataWriterWriteFloatField
+__ ProtocolBuffer: _PBDataWriterWriteInt32Field
+__ ProtocolBuffer: _PBDataWriterWriteInt64Field
+__ ProtocolBuffer: _PBDataWriterWriteStringField
+__ ProtocolBuffer: _PBDataWriterWriteSubmessage
+__ ProtocolBuffer: _PBReaderPlaceMark
+__ ProtocolBuffer: _PBReaderReadData
+__ ProtocolBuffer: _PBReaderReadString
+__ ProtocolBuffer: _PBReaderRecallMark
+__ ProtocolBuffer: _PBReaderSkipValueWithTag
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+SISchemaSiriCue : PBCodable /usr/lib/libobjc.A.dylib <SISchemaSiriCue, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int siriCueType
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaSiriCue isEqual:]
+  -[SISchemaSiriCue initWithDictionary:]
+  -[SISchemaSiriCue dictionaryRepresentation]
+  -[SISchemaSiriCue writeTo:]
+  -[SISchemaSiriCue readFrom:]
+  -[SISchemaSiriCue jsonData]
+  -[SISchemaSiriCue initWithJSON:]
+  -[SISchemaSiriCue setSiriCueType:]
+  -[SISchemaSiriCue siriCueType]
+
+
+SISchemaViewContainer : PBCodable /usr/lib/libobjc.A.dylib <SISchemaViewContainer, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *viewID
+ @property  NSString *snippetClass
+ @property  NSString *dialogIdentifier
+ @property  NSString *dialogPhase
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaViewContainer isEqual:]
+  -[SISchemaViewContainer .cxx_destruct]
+  -[SISchemaViewContainer initWithDictionary:]
+  -[SISchemaViewContainer dictionaryRepresentation]
+  -[SISchemaViewContainer writeTo:]
+  -[SISchemaViewContainer readFrom:]
+  -[SISchemaViewContainer jsonData]
+  -[SISchemaViewContainer initWithJSON:]
+  -[SISchemaViewContainer dialogPhase]
+  -[SISchemaViewContainer setDialogPhase:]
+  -[SISchemaViewContainer setDialogIdentifier:]
+  -[SISchemaViewContainer dialogIdentifier]
+  -[SISchemaViewContainer setViewID:]
+  -[SISchemaViewContainer setSnippetClass:]
+  -[SISchemaViewContainer viewID]
+  -[SISchemaViewContainer snippetClass]
+
+
+SISchemaRedactableString : PBCodable /usr/lib/libobjc.A.dylib <SISchemaRedactableString, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int redactionState
+ @property  NSString *value
+ @property  NSData *jsonData
+ @property  unsigned long which_String
+
+  // instance methods
+  -[SISchemaRedactableString isEqual:]
+  -[SISchemaRedactableString .cxx_destruct]
+  -[SISchemaRedactableString initWithDictionary:]
+  -[SISchemaRedactableString value]
+  -[SISchemaRedactableString setValue:]
+  -[SISchemaRedactableString dictionaryRepresentation]
+  -[SISchemaRedactableString writeTo:]
+  -[SISchemaRedactableString readFrom:]
+  -[SISchemaRedactableString jsonData]
+  -[SISchemaRedactableString initWithJSON:]
+  -[SISchemaRedactableString setRedactionState:]
+  -[SISchemaRedactableString redactionState]
+  -[SISchemaRedactableString which_String]
+
+
+SISchemaServerEvent : PBCodable /usr/lib/libobjc.A.dylib <SISchemaServerEvent, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  SISchemaServerEventMetadata *eventMetadata
+ @property  SISchemaUserSpeechDuration *userSpeechDuration
+ @property  SISchemaConversationTrace *serverConversationTrace
+ @property  SISchemaTurnInteraction *turnInteraction
+ @property  SISchemaSpeechResultSelected *speechResultSelected
+ @property  SISchemaDeviceFixedContext *serverDeviceFixedContext
+ @property  NSData *jsonData
+ @property  unsigned long whichEvent_Type
+
+  // class methods
+  +[SISchemaServerEvent getEventTypeClassForTag:]
+  +[SISchemaServerEvent getTagForEventTypeClass:]
+
+  // instance methods
+  -[SISchemaServerEvent isEqual:]
+  -[SISchemaServerEvent .cxx_destruct]
+  -[SISchemaServerEvent initWithDictionary:]
+  -[SISchemaServerEvent dictionaryRepresentation]
+  -[SISchemaServerEvent writeTo:]
+  -[SISchemaServerEvent readFrom:]
+  -[SISchemaServerEvent setEventType:]
+  -[SISchemaServerEvent jsonData]
+  -[SISchemaServerEvent initWithJSON:]
+  -[SISchemaServerEvent eventMetadata]
+  -[SISchemaServerEvent setEventMetadata:]
+  -[SISchemaServerEvent setUserSpeechDuration:]
+  -[SISchemaServerEvent setServerConversationTrace:]
+  -[SISchemaServerEvent setTurnInteraction:]
+  -[SISchemaServerEvent setSpeechResultSelected:]
+  -[SISchemaServerEvent setServerDeviceFixedContext:]
+  -[SISchemaServerEvent userSpeechDuration]
+  -[SISchemaServerEvent serverConversationTrace]
+  -[SISchemaServerEvent turnInteraction]
+  -[SISchemaServerEvent speechResultSelected]
+  -[SISchemaServerEvent serverDeviceFixedContext]
+  -[SISchemaServerEvent whichEvent_Type]
+
+
+SISchemaRawSpeechProfileData : PBCodable /usr/lib/libobjc.A.dylib <SISchemaRawSpeechProfileData, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *r
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaRawSpeechProfileData isEqual:]
+  -[SISchemaRawSpeechProfileData .cxx_destruct]
+  -[SISchemaRawSpeechProfileData initWithDictionary:]
+  -[SISchemaRawSpeechProfileData dictionaryRepresentation]
+  -[SISchemaRawSpeechProfileData writeTo:]
+  -[SISchemaRawSpeechProfileData readFrom:]
+  -[SISchemaRawSpeechProfileData jsonData]
+  -[SISchemaRawSpeechProfileData initWithJSON:]
+  -[SISchemaRawSpeechProfileData r]
+  -[SISchemaRawSpeechProfileData setR:]
+
+
+SISchemaUserSpeechDuration : PBCodable /usr/lib/libobjc.A.dylib <SISchemaUserSpeechDuration, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  long long durationMs
+ @property  NSString *resultCandidateId
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaUserSpeechDuration isEqual:]
+  -[SISchemaUserSpeechDuration .cxx_destruct]
+  -[SISchemaUserSpeechDuration initWithDictionary:]
+  -[SISchemaUserSpeechDuration dictionaryRepresentation]
+  -[SISchemaUserSpeechDuration writeTo:]
+  -[SISchemaUserSpeechDuration readFrom:]
+  -[SISchemaUserSpeechDuration durationMs]
+  -[SISchemaUserSpeechDuration setDurationMs:]
+  -[SISchemaUserSpeechDuration jsonData]
+  -[SISchemaUserSpeechDuration initWithJSON:]
+  -[SISchemaUserSpeechDuration resultCandidateId]
+  -[SISchemaUserSpeechDuration setResultCandidateId:]
+
+
+SISchemaSpeechTranscription : PBCodable /usr/lib/libobjc.A.dylib <SISchemaSpeechTranscription, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *aceID
+ @property  int speechTranscriptionType
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaSpeechTranscription isEqual:]
+  -[SISchemaSpeechTranscription .cxx_destruct]
+  -[SISchemaSpeechTranscription initWithDictionary:]
+  -[SISchemaSpeechTranscription dictionaryRepresentation]
+  -[SISchemaSpeechTranscription writeTo:]
+  -[SISchemaSpeechTranscription readFrom:]
+  -[SISchemaSpeechTranscription jsonData]
+  -[SISchemaSpeechTranscription initWithJSON:]
+  -[SISchemaSpeechTranscription setAceID:]
+  -[SISchemaSpeechTranscription setSpeechTranscriptionType:]
+  -[SISchemaSpeechTranscription aceID]
+  -[SISchemaSpeechTranscription speechTranscriptionType]
+
+
+SISchemaAudioFirstBufferRecorded : PBCodable /usr/lib/libobjc.A.dylib <SISchemaAudioFirstBufferRecorded, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int audioInputRoute
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaAudioFirstBufferRecorded isEqual:]
+  -[SISchemaAudioFirstBufferRecorded initWithDictionary:]
+  -[SISchemaAudioFirstBufferRecorded dictionaryRepresentation]
+  -[SISchemaAudioFirstBufferRecorded writeTo:]
+  -[SISchemaAudioFirstBufferRecorded readFrom:]
+  -[SISchemaAudioFirstBufferRecorded jsonData]
+  -[SISchemaAudioFirstBufferRecorded initWithJSON:]
+  -[SISchemaAudioFirstBufferRecorded setAudioInputRoute:]
+  -[SISchemaAudioFirstBufferRecorded audioInputRoute]
+
+
+SISchemaUUFRPresented : PBCodable /usr/lib/libobjc.A.dylib <SISchemaUUFRPresented, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  SISchemaViewContainer *viewContainer
+ @property  NSString *errorDomain
+ @property  int errorCode
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaUUFRPresented isEqual:]
+  -[SISchemaUUFRPresented .cxx_destruct]
+  -[SISchemaUUFRPresented initWithDictionary:]
+  -[SISchemaUUFRPresented dictionaryRepresentation]
+  -[SISchemaUUFRPresented writeTo:]
+  -[SISchemaUUFRPresented readFrom:]
+  -[SISchemaUUFRPresented errorCode]
+  -[SISchemaUUFRPresented errorDomain]
+  -[SISchemaUUFRPresented setErrorDomain:]
+  -[SISchemaUUFRPresented setErrorCode:]
+  -[SISchemaUUFRPresented jsonData]
+  -[SISchemaUUFRPresented initWithJSON:]
+  -[SISchemaUUFRPresented setViewContainer:]
+  -[SISchemaUUFRPresented viewContainer]
+
+
+SISchemaClientEventMetadata : PBCodable /usr/lib/libobjc.A.dylib <SISchemaClientEventMetadata, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *turnID
+ @property  NSData *siriDeviceID
+ @property  NSString *eventGeneratedTimestampRefId
+ @property  long long eventGeneratedRelativeToBootTimeTimestampNs
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaClientEventMetadata isEqual:]
+  -[SISchemaClientEventMetadata .cxx_destruct]
+  -[SISchemaClientEventMetadata initWithDictionary:]
+  -[SISchemaClientEventMetadata dictionaryRepresentation]
+  -[SISchemaClientEventMetadata writeTo:]
+  -[SISchemaClientEventMetadata readFrom:]
+  -[SISchemaClientEventMetadata jsonData]
+  -[SISchemaClientEventMetadata initWithJSON:]
+  -[SISchemaClientEventMetadata turnID]
+  -[SISchemaClientEventMetadata setTurnID:]
+  -[SISchemaClientEventMetadata setSiriDeviceID:]
+  -[SISchemaClientEventMetadata setEventGeneratedTimestampRefId:]
+  -[SISchemaClientEventMetadata setEventGeneratedRelativeToBootTimeTimestampNs:]
+  -[SISchemaClientEventMetadata siriDeviceID]
+  -[SISchemaClientEventMetadata eventGeneratedTimestampRefId]
+  -[SISchemaClientEventMetadata eventGeneratedRelativeToBootTimeTimestampNs]
+
+
+SISchemaServerEventMetadata : PBCodable /usr/lib/libobjc.A.dylib <SISchemaServerEventMetadata, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *turnID
+ @property  long long timestampNs
+ @property  NSData *siriDeviceID
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaServerEventMetadata isEqual:]
+  -[SISchemaServerEventMetadata .cxx_destruct]
+  -[SISchemaServerEventMetadata initWithDictionary:]
+  -[SISchemaServerEventMetadata dictionaryRepresentation]
+  -[SISchemaServerEventMetadata writeTo:]
+  -[SISchemaServerEventMetadata readFrom:]
+  -[SISchemaServerEventMetadata jsonData]
+  -[SISchemaServerEventMetadata initWithJSON:]
+  -[SISchemaServerEventMetadata turnID]
+  -[SISchemaServerEventMetadata setTurnID:]
+  -[SISchemaServerEventMetadata setSiriDeviceID:]
+  -[SISchemaServerEventMetadata siriDeviceID]
+  -[SISchemaServerEventMetadata setTimestampNs:]
+  -[SISchemaServerEventMetadata timestampNs]
+
+
+SISchemaUserDataContainer : PBCodable /usr/lib/libobjc.A.dylib <SISchemaUserDataContainer, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *c
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaUserDataContainer isEqual:]
+  -[SISchemaUserDataContainer c]
+  -[SISchemaUserDataContainer setC:]
+  -[SISchemaUserDataContainer .cxx_destruct]
+  -[SISchemaUserDataContainer initWithDictionary:]
+  -[SISchemaUserDataContainer dictionaryRepresentation]
+  -[SISchemaUserDataContainer writeTo:]
+  -[SISchemaUserDataContainer readFrom:]
+  -[SISchemaUserDataContainer jsonData]
+  -[SISchemaUserDataContainer initWithJSON:]
+
+
+SISchemaTextToSpeechEnd : PBCodable /usr/lib/libobjc.A.dylib <SISchemaTextToSpeechEnd, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *aceID
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaTextToSpeechEnd isEqual:]
+  -[SISchemaTextToSpeechEnd .cxx_destruct]
+  -[SISchemaTextToSpeechEnd initWithDictionary:]
+  -[SISchemaTextToSpeechEnd dictionaryRepresentation]
+  -[SISchemaTextToSpeechEnd writeTo:]
+  -[SISchemaTextToSpeechEnd readFrom:]
+  -[SISchemaTextToSpeechEnd jsonData]
+  -[SISchemaTextToSpeechEnd initWithJSON:]
+  -[SISchemaTextToSpeechEnd setAceID:]
+  -[SISchemaTextToSpeechEnd aceID]
+
+
+SISchemaPunchOut : PBCodable /usr/lib/libobjc.A.dylib <SISchemaPunchOut, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *appID
+ @property  NSString *urlScheme
+ @property  SISchemaViewContainer *viewContainer
+ @property  NSData *viewElementID
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaPunchOut isEqual:]
+  -[SISchemaPunchOut .cxx_destruct]
+  -[SISchemaPunchOut initWithDictionary:]
+  -[SISchemaPunchOut dictionaryRepresentation]
+  -[SISchemaPunchOut writeTo:]
+  -[SISchemaPunchOut readFrom:]
+  -[SISchemaPunchOut urlScheme]
+  -[SISchemaPunchOut jsonData]
+  -[SISchemaPunchOut initWithJSON:]
+  -[SISchemaPunchOut appID]
+  -[SISchemaPunchOut setAppID:]
+  -[SISchemaPunchOut setViewContainer:]
+  -[SISchemaPunchOut setUrlScheme:]
+  -[SISchemaPunchOut viewContainer]
+  -[SISchemaPunchOut setViewElementID:]
+  -[SISchemaPunchOut viewElementID]
+
+
+SISchemaTurnInteraction : PBCodable /usr/lib/libobjc.A.dylib <SISchemaTurnInteraction, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *interactionId
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaTurnInteraction isEqual:]
+  -[SISchemaTurnInteraction .cxx_destruct]
+  -[SISchemaTurnInteraction initWithDictionary:]
+  -[SISchemaTurnInteraction dictionaryRepresentation]
+  -[SISchemaTurnInteraction writeTo:]
+  -[SISchemaTurnInteraction readFrom:]
+  -[SISchemaTurnInteraction jsonData]
+  -[SISchemaTurnInteraction initWithJSON:]
+  -[SISchemaTurnInteraction interactionId]
+  -[SISchemaTurnInteraction setInteractionId:]
+
+
+SISchemaAudioStopRecording : PBCodable /usr/lib/libobjc.A.dylib <SISchemaAudioStopRecording, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int endpointType
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaAudioStopRecording isEqual:]
+  -[SISchemaAudioStopRecording initWithDictionary:]
+  -[SISchemaAudioStopRecording dictionaryRepresentation]
+  -[SISchemaAudioStopRecording writeTo:]
+  -[SISchemaAudioStopRecording readFrom:]
+  -[SISchemaAudioStopRecording endpointType]
+  -[SISchemaAudioStopRecording jsonData]
+  -[SISchemaAudioStopRecording initWithJSON:]
+  -[SISchemaAudioStopRecording setEndpointType:]
+
+
+SISchemaClientTransportEventMetadata : PBCodable /usr/lib/libobjc.A.dylib <SISchemaClientTransportEventMetadata, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *eventTransmittedTimestampRefId
+ @property  long long eventTransmittedRelativeToBootTimeTimestampNs
+ @property  long long serverArrivedTimestampNs
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaClientTransportEventMetadata isEqual:]
+  -[SISchemaClientTransportEventMetadata .cxx_destruct]
+  -[SISchemaClientTransportEventMetadata initWithDictionary:]
+  -[SISchemaClientTransportEventMetadata dictionaryRepresentation]
+  -[SISchemaClientTransportEventMetadata writeTo:]
+  -[SISchemaClientTransportEventMetadata readFrom:]
+  -[SISchemaClientTransportEventMetadata jsonData]
+  -[SISchemaClientTransportEventMetadata initWithJSON:]
+  -[SISchemaClientTransportEventMetadata eventTransmittedRelativeToBootTimeTimestampNs]
+  -[SISchemaClientTransportEventMetadata setEventTransmittedRelativeToBootTimeTimestampNs:]
+  -[SISchemaClientTransportEventMetadata eventTransmittedTimestampRefId]
+  -[SISchemaClientTransportEventMetadata setEventTransmittedTimestampRefId:]
+  -[SISchemaClientTransportEventMetadata setServerArrivedTimestampNs:]
+  -[SISchemaClientTransportEventMetadata serverArrivedTimestampNs]
+
+
+SISchemaTextToSpeechBegin : PBCodable /usr/lib/libobjc.A.dylib <SISchemaTextToSpeechBegin, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *aceID
+ @property  int audioOutputRoute
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaTextToSpeechBegin isEqual:]
+  -[SISchemaTextToSpeechBegin .cxx_destruct]
+  -[SISchemaTextToSpeechBegin initWithDictionary:]
+  -[SISchemaTextToSpeechBegin dictionaryRepresentation]
+  -[SISchemaTextToSpeechBegin writeTo:]
+  -[SISchemaTextToSpeechBegin readFrom:]
+  -[SISchemaTextToSpeechBegin jsonData]
+  -[SISchemaTextToSpeechBegin initWithJSON:]
+  -[SISchemaTextToSpeechBegin audioOutputRoute]
+  -[SISchemaTextToSpeechBegin setAudioOutputRoute:]
+  -[SISchemaTextToSpeechBegin setAceID:]
+  -[SISchemaTextToSpeechBegin aceID]
+
+
+SISchemaInvocation : PBCodable /usr/lib/libobjc.A.dylib <SISchemaInvocation, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int invocationAction
+ @property  int invocationSource
+ @property  SISchemaViewContainer *viewContainer
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaInvocation isEqual:]
+  -[SISchemaInvocation .cxx_destruct]
+  -[SISchemaInvocation initWithDictionary:]
+  -[SISchemaInvocation dictionaryRepresentation]
+  -[SISchemaInvocation writeTo:]
+  -[SISchemaInvocation readFrom:]
+  -[SISchemaInvocation jsonData]
+  -[SISchemaInvocation initWithJSON:]
+  -[SISchemaInvocation setViewContainer:]
+  -[SISchemaInvocation setInvocationSource:]
+  -[SISchemaInvocation setInvocationAction:]
+  -[SISchemaInvocation viewContainer]
+  -[SISchemaInvocation invocationAction]
+  -[SISchemaInvocation invocationSource]
+
+
+SISchemaDictationContext : PBCodable /usr/lib/libobjc.A.dylib <SISchemaDictationContext, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *keyboardLanguage
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaDictationContext isEqual:]
+  -[SISchemaDictationContext .cxx_destruct]
+  -[SISchemaDictationContext initWithDictionary:]
+  -[SISchemaDictationContext dictionaryRepresentation]
+  -[SISchemaDictationContext writeTo:]
+  -[SISchemaDictationContext readFrom:]
+  -[SISchemaDictationContext jsonData]
+  -[SISchemaDictationContext initWithJSON:]
+  -[SISchemaDictationContext setKeyboardLanguage:]
+  -[SISchemaDictationContext keyboardLanguage]
+
+
+SISchemaLocation : PBCodable /usr/lib/libobjc.A.dylib <SISchemaLocation, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  float latitude
+ @property  float longitude
+ @property  float horizontalAccuracyInMeters
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaLocation isEqual:]
+  -[SISchemaLocation initWithDictionary:]
+  -[SISchemaLocation dictionaryRepresentation]
+  -[SISchemaLocation writeTo:]
+  -[SISchemaLocation latitude]
+  -[SISchemaLocation longitude]
+  -[SISchemaLocation readFrom:]
+  -[SISchemaLocation setLongitude:]
+  -[SISchemaLocation setLatitude:]
+  -[SISchemaLocation jsonData]
+  -[SISchemaLocation initWithJSON:]
+  -[SISchemaLocation setHorizontalAccuracyInMeters:]
+  -[SISchemaLocation horizontalAccuracyInMeters]
+
+
+SISchemaDeviceFixedContext : PBCodable /usr/lib/libobjc.A.dylib <SISchemaDeviceFixedContext, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *deviceType
+ @property  NSString *systemBuild
+ @property  NSString *siriInputLanguage
+ @property  NSString *siriVoiceLanguage
+ @property  NSString *systemLocale
+ @property  NSString *siriDeviceID
+ @property  NSString *speechID
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaDeviceFixedContext isEqual:]
+  -[SISchemaDeviceFixedContext .cxx_destruct]
+  -[SISchemaDeviceFixedContext initWithDictionary:]
+  -[SISchemaDeviceFixedContext systemLocale]
+  -[SISchemaDeviceFixedContext dictionaryRepresentation]
+  -[SISchemaDeviceFixedContext writeTo:]
+  -[SISchemaDeviceFixedContext deviceType]
+  -[SISchemaDeviceFixedContext readFrom:]
+  -[SISchemaDeviceFixedContext setDeviceType:]
+  -[SISchemaDeviceFixedContext jsonData]
+  -[SISchemaDeviceFixedContext initWithJSON:]
+  -[SISchemaDeviceFixedContext systemBuild]
+  -[SISchemaDeviceFixedContext setSystemBuild:]
+  -[SISchemaDeviceFixedContext setSiriDeviceID:]
+  -[SISchemaDeviceFixedContext siriDeviceID]
+  -[SISchemaDeviceFixedContext setSiriInputLanguage:]
+  -[SISchemaDeviceFixedContext setSiriVoiceLanguage:]
+  -[SISchemaDeviceFixedContext setSystemLocale:]
+  -[SISchemaDeviceFixedContext setSpeechID:]
+  -[SISchemaDeviceFixedContext siriInputLanguage]
+  -[SISchemaDeviceFixedContext siriVoiceLanguage]
+  -[SISchemaDeviceFixedContext speechID]
+
+
+SISchemaAcousticProfile : PBCodable /usr/lib/libobjc.A.dylib <SISchemaAcousticProfile, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *a
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaAcousticProfile isEqual:]
+  -[SISchemaAcousticProfile .cxx_destruct]
+  -[SISchemaAcousticProfile initWithDictionary:]
+  -[SISchemaAcousticProfile dictionaryRepresentation]
+  -[SISchemaAcousticProfile writeTo:]
+  -[SISchemaAcousticProfile readFrom:]
+  -[SISchemaAcousticProfile jsonData]
+  -[SISchemaAcousticProfile initWithJSON:]
+  -[SISchemaAcousticProfile a]
+  -[SISchemaAcousticProfile setA:]
+
+
+SISchemaClientEvent : PBCodable /usr/lib/libobjc.A.dylib <SISchemaClientEvent, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  SISchemaClientEventMetadata *eventMetadata
+ @property  SISchemaClientTransportEventMetadata *transportMetadata
+ @property  SISchemaAudioFirstBufferRecorded *audioFirstBufferRecorded
+ @property  SISchemaAudioStopRecording *audioStopRecording
+ @property  SISchemaConversationTrace *clientConversationTrace
+ @property  SISchemaDeviceDynamicContext *deviceDynamicContext
+ @property  SISchemaDeviceFixedContext *deviceFixedContext
+ @property  SISchemaDictationContext *dictationContext
+ @property  SISchemaInvocation *invocation
+ @property  SISchemaLocation *location
+ @property  SISchemaPunchOut *punchOut
+ @property  SISchemaSiriCue *siriCue
+ @property  SISchemaUUFRPresented *uufrPresented
+ @property  SISchemaSpeechTranscription *speechTranscription
+ @property  SISchemaTextToSpeechBegin *textToSpeechBegin
+ @property  SISchemaTextToSpeechEnd *textToSpeechEnd
+ @property  SISchemaUIStateTransition *uiStateTransition
+ @property  SISchemaClientFlow *clientFlow
+ @property  SISchemaDialogOutput *dialogOutput
+ @property  NSData *jsonData
+ @property  unsigned long whichEvent_Type
+
+  // class methods
+  +[SISchemaClientEvent getEventTypeClassForTag:]
+  +[SISchemaClientEvent getTagForEventTypeClass:]
+
+  // instance methods
+  -[SISchemaClientEvent isEqual:]
+  -[SISchemaClientEvent .cxx_destruct]
+  -[SISchemaClientEvent initWithDictionary:]
+  -[SISchemaClientEvent dictionaryRepresentation]
+  -[SISchemaClientEvent invocation]
+  -[SISchemaClientEvent location]
+  -[SISchemaClientEvent writeTo:]
+  -[SISchemaClientEvent readFrom:]
+  -[SISchemaClientEvent setLocation:]
+  -[SISchemaClientEvent setPunchOut:]
+  -[SISchemaClientEvent punchOut]
+  -[SISchemaClientEvent setInvocation:]
+  -[SISchemaClientEvent setEventType:]
+  -[SISchemaClientEvent jsonData]
+  -[SISchemaClientEvent initWithJSON:]
+  -[SISchemaClientEvent eventMetadata]
+  -[SISchemaClientEvent setEventMetadata:]
+  -[SISchemaClientEvent whichEvent_Type]
+  -[SISchemaClientEvent setTransportMetadata:]
+  -[SISchemaClientEvent setAudioFirstBufferRecorded:]
+  -[SISchemaClientEvent setAudioStopRecording:]
+  -[SISchemaClientEvent setClientConversationTrace:]
+  -[SISchemaClientEvent setDeviceDynamicContext:]
+  -[SISchemaClientEvent setDeviceFixedContext:]
+  -[SISchemaClientEvent setDictationContext:]
+  -[SISchemaClientEvent setSiriCue:]
+  -[SISchemaClientEvent setUufrPresented:]
+  -[SISchemaClientEvent setSpeechTranscription:]
+  -[SISchemaClientEvent setTextToSpeechBegin:]
+  -[SISchemaClientEvent setTextToSpeechEnd:]
+  -[SISchemaClientEvent setUiStateTransition:]
+  -[SISchemaClientEvent setClientFlow:]
+  -[SISchemaClientEvent setDialogOutput:]
+  -[SISchemaClientEvent transportMetadata]
+  -[SISchemaClientEvent audioFirstBufferRecorded]
+  -[SISchemaClientEvent audioStopRecording]
+  -[SISchemaClientEvent clientConversationTrace]
+  -[SISchemaClientEvent deviceDynamicContext]
+  -[SISchemaClientEvent deviceFixedContext]
+  -[SISchemaClientEvent dictationContext]
+  -[SISchemaClientEvent siriCue]
+  -[SISchemaClientEvent uufrPresented]
+  -[SISchemaClientEvent speechTranscription]
+  -[SISchemaClientEvent textToSpeechBegin]
+  -[SISchemaClientEvent textToSpeechEnd]
+  -[SISchemaClientEvent uiStateTransition]
+  -[SISchemaClientEvent clientFlow]
+  -[SISchemaClientEvent dialogOutput]
+
+
+SISchemaDeviceDynamicContext : PBCodable /usr/lib/libobjc.A.dylib <SISchemaDeviceDynamicContext, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  SISchemaLocation *location
+ @property  NSString *countryCode
+ @property  double timeIntervalSince1970
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaDeviceDynamicContext timeIntervalSince1970]
+  -[SISchemaDeviceDynamicContext isEqual:]
+  -[SISchemaDeviceDynamicContext .cxx_destruct]
+  -[SISchemaDeviceDynamicContext initWithDictionary:]
+  -[SISchemaDeviceDynamicContext countryCode]
+  -[SISchemaDeviceDynamicContext dictionaryRepresentation]
+  -[SISchemaDeviceDynamicContext location]
+  -[SISchemaDeviceDynamicContext writeTo:]
+  -[SISchemaDeviceDynamicContext readFrom:]
+  -[SISchemaDeviceDynamicContext setLocation:]
+  -[SISchemaDeviceDynamicContext setCountryCode:]
+  -[SISchemaDeviceDynamicContext jsonData]
+  -[SISchemaDeviceDynamicContext initWithJSON:]
+  -[SISchemaDeviceDynamicContext setTimeIntervalSince1970:]
+
+
+SISchemaConversationTrace : PBCodable /usr/lib/libobjc.A.dylib <SISchemaConversationTrace, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *previousTurnID
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaConversationTrace isEqual:]
+  -[SISchemaConversationTrace .cxx_destruct]
+  -[SISchemaConversationTrace initWithDictionary:]
+  -[SISchemaConversationTrace dictionaryRepresentation]
+  -[SISchemaConversationTrace writeTo:]
+  -[SISchemaConversationTrace readFrom:]
+  -[SISchemaConversationTrace jsonData]
+  -[SISchemaConversationTrace initWithJSON:]
+  -[SISchemaConversationTrace setPreviousTurnID:]
+  -[SISchemaConversationTrace previousTurnID]
+
+
+SISchemaLanguageProfile : PBCodable /usr/lib/libobjc.A.dylib <SISchemaLanguageProfile, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSData *l
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaLanguageProfile isEqual:]
+  -[SISchemaLanguageProfile .cxx_destruct]
+  -[SISchemaLanguageProfile initWithDictionary:]
+  -[SISchemaLanguageProfile dictionaryRepresentation]
+  -[SISchemaLanguageProfile writeTo:]
+  -[SISchemaLanguageProfile readFrom:]
+  -[SISchemaLanguageProfile jsonData]
+  -[SISchemaLanguageProfile initWithJSON:]
+  -[SISchemaLanguageProfile setL:]
+  -[SISchemaLanguageProfile l]
+
+
+SISchemaSpeechResultSelected : PBCodable /usr/lib/libobjc.A.dylib <SISchemaSpeechResultSelected, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *resultCandidateId
+ @property  int source
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaSpeechResultSelected isEqual:]
+  -[SISchemaSpeechResultSelected setSource:]
+  -[SISchemaSpeechResultSelected .cxx_destruct]
+  -[SISchemaSpeechResultSelected initWithDictionary:]
+  -[SISchemaSpeechResultSelected source]
+  -[SISchemaSpeechResultSelected dictionaryRepresentation]
+  -[SISchemaSpeechResultSelected writeTo:]
+  -[SISchemaSpeechResultSelected readFrom:]
+  -[SISchemaSpeechResultSelected jsonData]
+  -[SISchemaSpeechResultSelected initWithJSON:]
+  -[SISchemaSpeechResultSelected resultCandidateId]
+  -[SISchemaSpeechResultSelected setResultCandidateId:]
+
+
+SISchemaUIStateTransition : PBCodable /usr/lib/libobjc.A.dylib <SISchemaUIStateTransition, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  int currentState
+ @property  int previousState
+ @property  int siriPresentationType
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaUIStateTransition isEqual:]
+  -[SISchemaUIStateTransition initWithDictionary:]
+  -[SISchemaUIStateTransition dictionaryRepresentation]
+  -[SISchemaUIStateTransition writeTo:]
+  -[SISchemaUIStateTransition currentState]
+  -[SISchemaUIStateTransition readFrom:]
+  -[SISchemaUIStateTransition previousState]
+  -[SISchemaUIStateTransition setCurrentState:]
+  -[SISchemaUIStateTransition setPreviousState:]
+  -[SISchemaUIStateTransition jsonData]
+  -[SISchemaUIStateTransition initWithJSON:]
+  -[SISchemaUIStateTransition setSiriPresentationType:]
+  -[SISchemaUIStateTransition siriPresentationType]
+
+
+SISchemaClientFlow : PBCodable /usr/lib/libobjc.A.dylib <SISchemaClientFlow, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *clientFlowPayload
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaClientFlow isEqual:]
+  -[SISchemaClientFlow .cxx_destruct]
+  -[SISchemaClientFlow initWithDictionary:]
+  -[SISchemaClientFlow dictionaryRepresentation]
+  -[SISchemaClientFlow writeTo:]
+  -[SISchemaClientFlow readFrom:]
+  -[SISchemaClientFlow jsonData]
+  -[SISchemaClientFlow initWithJSON:]
+  -[SISchemaClientFlow setClientFlowPayload:]
+  -[SISchemaClientFlow clientFlowPayload]
+
+
+SISchemaDialogOutput : PBCodable /usr/lib/libobjc.A.dylib <SISchemaDialogOutput, NSSecureCoding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *viewID
+ @property  SISchemaRedactableString *spokenDialogOutput
+ @property  SISchemaRedactableString *displayedDialogOutput
+ @property  NSData *jsonData
+
+  // instance methods
+  -[SISchemaDialogOutput isEqual:]
+  -[SISchemaDialogOutput .cxx_destruct]
+  -[SISchemaDialogOutput initWithDictionary:]
+  -[SISchemaDialogOutput dictionaryRepresentation]
+  -[SISchemaDialogOutput writeTo:]
+  -[SISchemaDialogOutput readFrom:]
+  -[SISchemaDialogOutput jsonData]
+  -[SISchemaDialogOutput initWithJSON:]
+  -[SISchemaDialogOutput setViewID:]
+  -[SISchemaDialogOutput setSpokenDialogOutput:]
+  -[SISchemaDialogOutput setDisplayedDialogOutput:]
+  -[SISchemaDialogOutput viewID]
+  -[SISchemaDialogOutput spokenDialogOutput]
+  -[SISchemaDialogOutput displayedDialogOutput]
+
+
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer: PBCodable 

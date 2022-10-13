@@ -1,0 +1,944 @@
+|| __DATA.__objc_ivar _OBJC_IVAR_$_TTSFormatArgument.attributes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_TTSFormatArgument.formatSpecifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_TTSFormatArgument.formattedArg
+|| __DATA_CONST.__const _TTSAllCachedAvailableVoicesKey
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceCompatibilityVersion
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceFootprint
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceGender
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceLanguages
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceMasteredVersion
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceName
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceType
+|| __DATA_CONST.__const _TTSAssetKeyCustomVoiceVersion
+|| __DATA_CONST.__const _TTSAssetKeyGryphonVoiceLanguages
+|| __DATA_CONST.__const _TTSAssetKeyMacinTalkVoiceVersion
+|| __DATA_CONST.__const _TTSAssetTypeCombinedVoice
+|| __DATA_CONST.__const _TTSAssetTypeCombinedVoiceId
+|| __DATA_CONST.__const _TTSAssetTypeCombinedVoiceProjectKey
+|| __DATA_CONST.__const _TTSAssetTypeCustomVoice
+|| __DATA_CONST.__const _TTSAssetTypeGryphonVoice
+|| __DATA_CONST.__const _TTSAssetTypeMacinTalkVoice
+|| __DATA_CONST.__const _TTSAssetTypeSystemVoice
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceFootprintCompact
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceFootprintPremium
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceFootprintPremiumHigh
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceGenderFemale
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceGenderMale
+|| __DATA_CONST.__const _TTSAssetValueCustomVoiceTypeNeural
+|| __DATA_CONST.__const _TTSAssetValueSystemVoiceFormatVersionKey
+|| __DATA_CONST.__const _TTSAssetValueSystemVoiceLanguageKey
+|| __DATA_CONST.__const _kTTSAlternativeAssetBrokerHeaderFileName
+|| __DATA_CONST.__const _kTTSErrorDomain
+|| __DATA_CONST.__const _kTTSFrameworkTTSPath
+|| __DATA_CONST.__const _kTTSFrameworkVoiceServicesPath
+|| __DATA_CONST.__const _kTTSGryphonVoiceIdentifierPrefix
+|| __DATA_CONST.__const _kTTSMacinTalkVoiceIdentifierPrefix
+|| __DATA_CONST.__const _kTTSOriginalAssetBrokerHeaderFileName
+|| __DATA_CONST.__const _kTTSPreferencesSpokenLanguageChangedNotification
+|| __DATA_CONST.__const _kTTSSiriVoiceIdentifierPrefix
+|| __DATA_CONST.__const _kTTSSpeechTextClassAttribute
+|| __DATA_CONST.__const _kTTSSpeechTextClassName
+|| __DATA_CONST.__const _kTTSSpeechTextClassTitle
+|| __DATA_CONST.__const _kTTSSystemVoiceIdentifierPrefix
+|| __DATA_CONST.__const _kTTSVocalizerLanguageKey
+|| __DATA_CONST.__const _kTTSVocalizerResourceAssetInstalledNotification
+|| __DATA_CONST.__const _kTTSVocalizerVoiceFormatKey
+|| __DATA_CONST.__const _kTTSVocalizerVoiceNameKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSAssetBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSAudioSession
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSAudioSessionChannel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSFormatArgument
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechChannel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechRequestOwner
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechSynthesizer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSpeechVoice
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSSubstitution
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSVoiceAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TTSVoiceResourceAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSAssetBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSAudioSession
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSAudioSessionChannel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSFormatArgument
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechChannel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechRequestOwner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechSynthesizer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSpeechVoice
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSSubstitution
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSVoiceAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TTSVoiceResourceAsset
+|| __TEXT.__const _TTSAudioSessionPreferredHardwareSampleRate
+|| __TEXT.__const _TTSAudioSessionPreferredHardwareSampleRateGryphon
+|| __TEXT.__text _AXSpeechReplaceJapaneseElongationCharactersIfNeeded
+|| __TEXT.__text _TTSAttributedStringCreateFromSerializedAttributes
+|| __TEXT.__text _TTSAttributedStringCreateSerializedAttributes
+|| __TEXT.__text _TTSAudioSessionConfigureForActivity
+|| __TEXT.__text _TTSAudioSessionCopyActiveInputRoute
+|| __TEXT.__text _TTSAudioSessionDeregisterQueue
+|| __TEXT.__text _TTSAudioSessionGetAudioSessionID
+|| __TEXT.__text _TTSAudioSessionGetOutputLatency
+|| __TEXT.__text _TTSAudioSessionGetServerGeneration
+|| __TEXT.__text _TTSAudioSessionInitialize
+|| __TEXT.__text _TTSAudioSessionRegisterQueue
+|| __TEXT.__text _TTSAudioSessionSetActive
+|| __TEXT.__text _TTSAudioSessionSetBluetoothInputAllowed
+|| __TEXT.__text _TTSCFArrayGetValueAtIndexIfType
+|| __TEXT.__text _TTSCFAttributedStringCreateStringByBracketingAttributeWithString
+|| __TEXT.__text _TTSCFAttributedStringGetAttributeAndLongestEffectiveRange
+|| __TEXT.__text _TTSCFDictionaryGetValueIfType
+|| __TEXT.__text _TTSCFSetCreateMutableArray
+|| __TEXT.__text _TTSCFSetSendDifferences
+|| __TEXT.__text _TTSCFURLDeleteDirectoryContents
+|| __TEXT.__text _TTSCopyContentsOfDirectoryAtURL
+|| __TEXT.__text _TTSCopyModificationDateForFileAtURL
+|| __TEXT.__text _TTSCreateDataFromContentsOfURL
+|| __TEXT.__text _TTSCreateDirectory
+|| __TEXT.__text _TTSCreateStringFromFileAtPath
+|| __TEXT.__text _TTSCreateTemporaryDirectory
+|| __TEXT.__text _TTSCreateURLAndDirectory
+|| __TEXT.__text _TTSDeleteItemAtURL
+|| __TEXT.__text _TTSDirectoryExistsAtURL
+|| __TEXT.__text _TTSErrorCreate
+|| __TEXT.__text _TTSFileExistsAtURL
+|| __TEXT.__text _TTSIsInternalBuild
+|| __TEXT.__text _TTSNashvilleRateToSpeechRate
+|| __TEXT.__text _TTSPreferencesCopyAutoDownloadedAssetsInfo
+|| __TEXT.__text _TTSPreferencesCopyAvailableLanguageIdentifiers
+|| __TEXT.__text _TTSPreferencesCopyAvailableOutputLanguageIdentifiers
+|| __TEXT.__text _TTSPreferencesCopyDefaultOutputLanguageIdentifierForUserPreferences
+|| __TEXT.__text _TTSPreferencesCopyDefaultSpokenLanguageIdentifierForUserPreferences
+|| __TEXT.__text _TTSPreferencesCopySpokenLanguageIdentifier
+|| __TEXT.__text _TTSPreferencesCopySpokenLanguageIdentifierArray
+|| __TEXT.__text _TTSPreferencesCopyValueForKey
+|| __TEXT.__text _TTSPreferencesHandleLanguageChange
+|| __TEXT.__text _TTSPreferencesInitialize
+|| __TEXT.__text _TTSPreferencesSetAutoDownloadedAssetsInfo
+|| __TEXT.__text _TTSPreferencesSetValueForKey
+|| __TEXT.__text _TTSSetThreadPriorityHigh
+|| __TEXT.__text _TTSSortedAssetsFromAssets
+|| __TEXT.__text _TTSSpeechRateToNashvilleRate
+|| __TEXT.__text _TTSSpeechRateToNashvilleRateWithMonarchOverride
+|| __TEXT.__text _TTSSpeechSetUnitTestingMode
+|| __TEXT.__text _TTSSpeechUnitTestingMode
+|| __TEXT.__text _TTSSpeechVolumeModulation
+|| __TEXT.__text _TTSStringForSpeechFootprint
+|| __TEXT.__text _TTSStringForSpeechGender
+|| __TEXT.__text _TTSSupportsNeuralVoices
+|| __TEXT.__text _TTSUniStrGetLength
+|| __TEXT.__text _TTSVocalizerCopyDefaultAssetLanguage
+|| __TEXT.__text _TTSVocalizerCopyFileNameForToneName
+|| __TEXT.__text _TTSVocalizerCopyPathForCommonResources
+|| __TEXT.__text _TTSVocalizerCopyPathForLocalizedResources
+|| __TEXT.__text _TTSVocalizerCopyPathForResources
+|| __TEXT.__text _TTSVocalizerCopyPathForTones
+|| __TEXT.__text _TTSVocalizerCopyURLForFallbackResource
+|| __TEXT.__text _TTSVocalizerCopyVoiceEngineFormatVersionForLanguage
+|| __TEXT.__text _TTSWatchSupportsSiriSpeaks
+|| __TEXT.__text __GetScheduledPriority
+|| __TEXT.__text __TTSBundleCopyResourceURL
+|| __TEXT.__text __TTSCopyAvailableLanguageIdentifiers
+|| __TEXT.__text __TTSCopyAvailableOutputLanguageIdentifiers
+|| __TEXT.__text __TTSCopyFallbackLanguageIdentifierExplicitForLocale
+|| __TEXT.__text __TTSCopyFallbackLanguageIdentifierForLanguageIdentifier
+|| __TEXT.__text __TTSCopyFallbackLanguageIdentifierForLocale
+|| __TEXT.__text __TTSCopyLanguageArrayForLanguageIdentifier
+|| __TEXT.__text __TTSCopyLanguageCodeFromLanguageIdentifier
+|| __TEXT.__text __TTSCopyLanguageIdentifierForLocale
+|| __TEXT.__text __TTSCopyLocalizedString
+|| __TEXT.__text __TTSCopyLocationCodeFromLanguageIdentifier
+|| __TEXT.__text __TTSCopyQualifiedLanguageIdentifierForLanguageCode
+|| __TEXT.__text __TTSDeviceLanguageChanged
+|| __TEXT.__text __TTSFrameworkBundle
+|| __TEXT.__text __TTSIdentifierForVoiceInformation
+|| __TEXT.__text __TTSLanguageIdentifierIsLanguageOnly
+|| __TEXT.__text __TTSNameForVoiceInformation
+|| __TEXT.__text __TTSPreferencesCopyCurrentGenericLocale
+|| __TEXT.__text __TTSPreferencesCopyDefaultOutputLanguageIdentifierForUserPreferences
+|| __TEXT.__text __TTSPreferencesCopyDefaultOutputLanguageIdentifierForUserPreferredLocalizations
+|| __TEXT.__text __TTSVocalizerCopyVoiceEngineFormatVersionsForLanguage
+|| __TEXT.__text __VocalizerFootprintForSpeechFootprint
+|| __TEXT.__text __VocalizerGenderForSpeechGender
+__ AVFoundation: _AVAudioSessionCategoryVoiceCommand
+__ AVFoundation: _AVAudioSessionCategoryVoiceOver
+__ AVFoundation: _AVAudioSessionInterruptionNotification
+__ AVFoundation: _AVAudioSessionInterruptionTypeKey
+__ AVFoundation: _AVAudioSessionMediaServicesWereResetNotification
+__ AVFoundation: _AVSpeechSynthesisVoiceIdentifierAlex
+__ AVFoundation: _OBJC_CLASS_$_AVAudioSession
+__ AXCoreUtilities: _AXSystemRootDirectory
+__ AXCoreUtilities: _AXTTSLogCommon
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AudioToolbox: _AudioQueueStop
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayApplyFunction
+__ CoreFoundation: _CFArrayContainsValue
+__ CoreFoundation: _CFArrayCreate
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFAttributedStringCreateMutable
+__ CoreFoundation: _CFAttributedStringGetAttribute
+__ CoreFoundation: _CFAttributedStringGetAttributeAndLongestEffectiveRange
+__ CoreFoundation: _CFAttributedStringGetAttributesAndLongestEffectiveRange
+__ CoreFoundation: _CFAttributedStringGetLength
+__ CoreFoundation: _CFAttributedStringGetString
+__ CoreFoundation: _CFAttributedStringReplaceString
+__ CoreFoundation: _CFAttributedStringSetAttributes
+__ CoreFoundation: _CFBagAddValue
+__ CoreFoundation: _CFBagCreateMutable
+__ CoreFoundation: _CFBagGetCountOfValue
+__ CoreFoundation: _CFBagRemoveValue
+__ CoreFoundation: _CFBundleCopyBundleLocalizations
+__ CoreFoundation: _CFBundleCopyLocalizationsForPreferences
+__ CoreFoundation: _CFBundleCopyLocalizedString
+__ CoreFoundation: _CFBundleCopyPreferredLocalizationsFromArray
+__ CoreFoundation: _CFBundleCopyResourceURL
+__ CoreFoundation: _CFBundleCopyResourceURLForLocalization
+__ CoreFoundation: _CFBundleCopyResourceURLsOfType
+__ CoreFoundation: _CFBundleCreate
+__ CoreFoundation: _CFBundleGetMainBundle
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataGetBytes
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetTypeID
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFErrorCreateWithUserInfoKeysAndValues
+__ CoreFoundation: _CFGetAllocator
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFLocaleCopyCurrent
+__ CoreFoundation: _CFLocaleCopyPreferredLanguages
+__ CoreFoundation: _CFLocaleCreate
+__ CoreFoundation: _CFLocaleCreateCanonicalLanguageIdentifierFromString
+__ CoreFoundation: _CFLocaleGetIdentifier
+__ CoreFoundation: _CFLocaleGetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterGetLocalCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPropertyListCreateWithStream
+__ CoreFoundation: _CFReadStreamClose
+__ CoreFoundation: _CFReadStreamCreateWithFile
+__ CoreFoundation: _CFReadStreamOpen
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFSetAddValue
+__ CoreFoundation: _CFSetApplyFunction
+__ CoreFoundation: _CFSetContainsValue
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFSetGetCount
+__ CoreFoundation: _CFSetRemoveValue
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCreateArrayBySeparatingStrings
+__ CoreFoundation: _CFStringCreateCopy
+__ CoreFoundation: _CFStringCreateFromExternalRepresentation
+__ CoreFoundation: _CFStringCreateMutable
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringCreateWithFileSystemRepresentation
+__ CoreFoundation: _CFStringCreateWithFormat
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringFind
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringHasPrefix
+__ CoreFoundation: _CFURLCopyFileSystemPath
+__ CoreFoundation: _CFURLCopyLastPathComponent
+__ CoreFoundation: _CFURLCopyPathExtension
+__ CoreFoundation: _CFURLCreateCopyAppendingPathComponent
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _CFURLGetFileSystemRepresentation
+__ CoreFoundation: _CFURLGetString
+__ CoreFoundation: _CFURLHasDirectoryPath
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFErrorDescriptionKey
+__ CoreFoundation: _kCFLocaleCountryCode
+__ CoreFoundation: _kCFLocaleCurrentLocaleDidChangeNotification
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ Foundation: _NSFileModificationDate
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ MobileAsset: _ASAttributeCompatibilityVersion
+__ MobileAsset: _ASAttributeContentVersion
+__ MobileAsset: _ASAttributeMasteredVersion
+__ libAccessibility.dylib: _kAXVoiceAssetsCacheUpdatedNotification
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetProductType
+__ libMobileGestalt.dylib: _MGGetStringAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dyld_get_program_sdk_version
+__ libSystem.B.dylib: _mach_thread_self
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _mkdtemp
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _pthread_mach_thread_np
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_once
+__ libSystem.B.dylib: _pthread_self
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _thread_info
+__ libSystem.B.dylib: _thread_policy_set
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_terminate
+TTSSubstitution : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  NSUUID *uuid
+ @property  NSString *originalString
+ @property  NSString *replacementString
+ @property  NSString *phonemes
+ @property  NSSet *languages
+ @property  NSSet *voiceIds
+ @property  BOOL active
+ @property  BOOL ignoreCase
+ @property  {_NSRange=QQ} replacementRange
+ @property  BOOL appliesToAllApps
+ @property  NSSet *bundleIdentifiers
+ @property  BOOL isReplacementTextAllPunctuation
+ @property  BOOL isReplacementTextSurroundedByPunctuation
+ @property  BOOL isUserSubstitution
+
+  // class methods
+  +[TTSSubstitution supportsSecureCoding]
+
+  // instance methods
+  -[TTSSubstitution init]
+  -[TTSSubstitution dealloc]
+  -[TTSSubstitution isEqual:]
+  -[TTSSubstitution copyWithZone:]
+  -[TTSSubstitution encodeWithCoder:]
+  -[TTSSubstitution initWithCoder:]
+  -[TTSSubstitution .cxx_destruct]
+  -[TTSSubstitution uuid]
+  -[TTSSubstitution setActive:]
+  -[TTSSubstitution replacementString]
+  -[TTSSubstitution setUuid:]
+  -[TTSSubstitution languages]
+  -[TTSSubstitution setLanguages:]
+  -[TTSSubstitution active]
+  -[TTSSubstitution setReplacementRange:]
+  -[TTSSubstitution replacementRange]
+  -[TTSSubstitution bundleIdentifiers]
+  -[TTSSubstitution setBundleIdentifiers:]
+  -[TTSSubstitution originalString]
+  -[TTSSubstitution setOriginalString:]
+  -[TTSSubstitution setPhonemes:]
+  -[TTSSubstitution setIgnoreCase:]
+  -[TTSSubstitution setAppliesToAllApps:]
+  -[TTSSubstitution setReplacementString:]
+  -[TTSSubstitution setVoiceIds:]
+  -[TTSSubstitution phonemes]
+  -[TTSSubstitution voiceIds]
+  -[TTSSubstitution ignoreCase]
+  -[TTSSubstitution appliesToAllApps]
+  -[TTSSubstitution isReplacementTextAllPunctuation]
+  -[TTSSubstitution isReplacementTextSurroundedByPunctuation]
+  -[TTSSubstitution isUserSubstitution]
+  -[TTSSubstitution setIsUserSubstitution:]
+
+
+TTSAssetBase : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  NSString *bundleIdentifier
+ @property  NSNumber *compatibilityVersion
+ @property  NSNumber *contentVersion
+ @property  NSString *masteredVersion
+
+  // class methods
+  +[TTSAssetBase supportsSecureCoding]
+
+  // instance methods
+  -[TTSAssetBase encodeWithCoder:]
+  -[TTSAssetBase initWithCoder:]
+  -[TTSAssetBase .cxx_destruct]
+  -[TTSAssetBase bundleIdentifier]
+  -[TTSAssetBase setBundleIdentifier:]
+  -[TTSAssetBase compatibilityVersion]
+  -[TTSAssetBase setCompatibilityVersion:]
+  -[TTSAssetBase contentVersion]
+  -[TTSAssetBase masteredVersion]
+  -[TTSAssetBase setMasteredVersion:]
+  -[TTSAssetBase setContentVersion:]
+
+
+TTSAudioSession : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[TTSAudioSession sharedInstance]
+
+  // instance methods
+  -[TTSAudioSession init]
+  -[TTSAudioSession dealloc]
+  -[TTSAudioSession .cxx_destruct]
+  -[TTSAudioSession _mediaServicesWereReset:]
+  -[TTSAudioSession _audioSessionInterrupted:]
+  -[TTSAudioSession _setupAudioSession]
+  -[TTSAudioSession _setCategoryForActivity:]
+  -[TTSAudioSession _nextActivityForActive:activity:serverActivity:]
+  -[TTSAudioSession _safeSetupAudioSession]
+  -[TTSAudioSession _safeServerGeneration]
+  -[TTSAudioSession _safeSetCategoryForActivity:]
+  -[TTSAudioSession _safeSetActive:withActivity:]
+  -[TTSAudioSession _safeSetBluetoothInputAllowed:]
+
+
+TTSVoiceResourceAsset : TTSAssetBase <NSSecureCoding>
+ @property  NSDictionary *voiceConfig
+ @property  NSArray *languages
+ @property  NSArray *resourceList
+ @property  NSURL *searchPathURL
+
+  // class methods
+  +[TTSVoiceResourceAsset supportsSecureCoding]
+  +[TTSVoiceResourceAsset legacyPlatforms]
+
+  // instance methods
+  -[TTSVoiceResourceAsset encodeWithCoder:]
+  -[TTSVoiceResourceAsset initWithCoder:]
+  -[TTSVoiceResourceAsset .cxx_destruct]
+  -[TTSVoiceResourceAsset languages]
+  -[TTSVoiceResourceAsset setLanguages:]
+  -[TTSVoiceResourceAsset defaultVoice]
+  -[TTSVoiceResourceAsset setSearchPathURL:]
+  -[TTSVoiceResourceAsset searchPathURL]
+  -[TTSVoiceResourceAsset voiceConfig]
+  -[TTSVoiceResourceAsset resourceList]
+  -[TTSVoiceResourceAsset defaultTypeString]
+  -[TTSVoiceResourceAsset defaultFootprintString]
+  -[TTSVoiceResourceAsset setVoiceConfig:]
+  -[TTSVoiceResourceAsset setResourceList:]
+  -[TTSVoiceResourceAsset syncWithConfigFile:]
+
+
+TTSFormatArgument : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[TTSFormatArgument dealloc]
+
+
+TTSSpeechChannel : NSObject /usr/lib/libSystem.B.dylib
+ @property  TTSSpeechVoice *voice
+
+  // class methods
+  +[TTSSpeechChannel supportsSecureCoding]
+
+  // instance methods
+  -[TTSSpeechChannel dealloc]
+  -[TTSSpeechChannel encodeWithCoder:]
+  -[TTSSpeechChannel initWithCoder:]
+  -[TTSSpeechChannel voice]
+  -[TTSSpeechChannel setVoice:]
+  -[TTSSpeechChannel initWithVoice:]
+
+
+TTSSpeechRequest : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding>
+ @property  TTSSpeechChannel *speechChannel
+ @property  NSString *text
+ @property  NSAttributedString *attributedText
+ @property  NSString *languageCode
+ @property  long long gender
+ @property  NSURL *outputPath
+ @property  double rate
+ @property  double pitch
+ @property  double volume
+ @property  BOOL maintainsInput
+ @property  BOOL supportsAccurateWordCallbacks
+ @property  BOOL audioSessionIDIsValid
+ @property  unsigned int audioSessionID
+ @property  unsigned int audioQueueFlags
+ @property  double latency
+ @property  double dispatchTime
+ @property  double handledTime
+ @property  BOOL useMonarchStyleRate
+ @property  NSArray *channels
+ @property  unsigned long synthesizerInstanceID
+ @property  ^v clientContext
+ @property  @? audioBufferCallback
+ @property  NSString *originalString
+ @property  NSMutableArray *originalWordRanges
+ @property  NSMutableArray *processedWordRanges
+ @property  NSMutableArray *replacedWords
+ @property  long long wordRangeCallbacksDispatched
+ @property  BOOL synthesizeSilently
+
+  // class methods
+  +[TTSSpeechRequest supportsSecureCoding]
+
+  // instance methods
+  -[TTSSpeechRequest dealloc]
+  -[TTSSpeechRequest encodeWithCoder:]
+  -[TTSSpeechRequest initWithCoder:]
+  -[TTSSpeechRequest delegate]
+  -[TTSSpeechRequest setDelegate:]
+  -[TTSSpeechRequest languageCode]
+  -[TTSSpeechRequest latency]
+  -[TTSSpeechRequest pitch]
+  -[TTSSpeechRequest text]
+  -[TTSSpeechRequest setPitch:]
+  -[TTSSpeechRequest setText:]
+  -[TTSSpeechRequest channels]
+  -[TTSSpeechRequest setChannels:]
+  -[TTSSpeechRequest setAttributedText:]
+  -[TTSSpeechRequest attributedText]
+  -[TTSSpeechRequest volume]
+  -[TTSSpeechRequest setVolume:]
+  -[TTSSpeechRequest setRate:]
+  -[TTSSpeechRequest rate]
+  -[TTSSpeechRequest setLanguageCode:]
+  -[TTSSpeechRequest setLatency:]
+  -[TTSSpeechRequest gender]
+  -[TTSSpeechRequest setGender:]
+  -[TTSSpeechRequest clientContext]
+  -[TTSSpeechRequest setClientContext:]
+  -[TTSSpeechRequest audioSessionID]
+  -[TTSSpeechRequest setAudioSessionID:]
+  -[TTSSpeechRequest originalString]
+  -[TTSSpeechRequest outputPath]
+  -[TTSSpeechRequest setOutputPath:]
+  -[TTSSpeechRequest audioSessionIDIsValid]
+  -[TTSSpeechRequest setAudioSessionIDIsValid:]
+  -[TTSSpeechRequest maintainsInput]
+  -[TTSSpeechRequest setMaintainsInput:]
+  -[TTSSpeechRequest audioQueueFlags]
+  -[TTSSpeechRequest setAudioQueueFlags:]
+  -[TTSSpeechRequest synthesizeSilently]
+  -[TTSSpeechRequest setSynthesizeSilently:]
+  -[TTSSpeechRequest audioBufferCallback]
+  -[TTSSpeechRequest setAudioBufferCallback:]
+  -[TTSSpeechRequest setOriginalString:]
+  -[TTSSpeechRequest setUseMonarchStyleRate:]
+  -[TTSSpeechRequest supportsAccurateWordCallbacks]
+  -[TTSSpeechRequest setSupportsAccurateWordCallbacks:]
+  -[TTSSpeechRequest speechChannel]
+  -[TTSSpeechRequest vocalizerFootprint]
+  -[TTSSpeechRequest vocalizerGender]
+  -[TTSSpeechRequest setSpeechChannel:]
+  -[TTSSpeechRequest setOriginalWordRanges:]
+  -[TTSSpeechRequest setProcessedWordRanges:]
+  -[TTSSpeechRequest setReplacedWords:]
+  -[TTSSpeechRequest initWithSpeechChannel:]
+  -[TTSSpeechRequest speechRequestDidStartForService:]
+  -[TTSSpeechRequest speechRequestDidPauseForService:]
+  -[TTSSpeechRequest speechRequestDidContinueForService:]
+  -[TTSSpeechRequest speechRequestMark:didStartForRange:forService:]
+  -[TTSSpeechRequest speechRequestDidStopWithSuccess:phonemesSpoken:forService:error:]
+  -[TTSSpeechRequest speechRequestDidSynthesizeSilentlyToURL:forService:]
+  -[TTSSpeechRequest dispatchTime]
+  -[TTSSpeechRequest setDispatchTime:]
+  -[TTSSpeechRequest handledTime]
+  -[TTSSpeechRequest setHandledTime:]
+  -[TTSSpeechRequest useMonarchStyleRate]
+  -[TTSSpeechRequest synthesizerInstanceID]
+  -[TTSSpeechRequest setSynthesizerInstanceID:]
+  -[TTSSpeechRequest originalWordRanges]
+  -[TTSSpeechRequest processedWordRanges]
+  -[TTSSpeechRequest replacedWords]
+  -[TTSSpeechRequest wordRangeCallbacksDispatched]
+  -[TTSSpeechRequest setWordRangeCallbacksDispatched:]
+
+
+TTSSpeechSynthesizer : NSObject /usr/lib/libSystem.B.dylib <TTSSpeechConnectionDelegate>
+ @property  <TTSSpeechSynthesizerDelegate> *delegate
+ @property  float rate
+ @property  float pitch
+ @property  float volume
+ @property  NSString *voiceIdentifier
+ @property  NSString *bundleIdentifier
+ @property  NSString *resolvedVoiceIdentifier
+ @property  unsigned long requestClientIdentifier
+ @property  ^v speakingRequestClientContext
+ @property  BOOL supportsAccurateWordCallbacks
+ @property  unsigned int audioQueueFlags
+ @property  unsigned int audioSessionID
+ @property  NSArray *userSubstitutions
+ @property  NSArray *phonemeSubstitutions
+ @property  @? audioBufferCallback
+ @property  NSArray *outputChannels
+ @property  BOOL ignoreSubstitutions
+ @property  BOOL synthesizeSilently
+
+  // class methods
+  +[TTSSpeechSynthesizer initialize]
+  +[TTSSpeechSynthesizer availableVoices]
+  +[TTSSpeechSynthesizer availableLanguageCodes]
+  +[TTSSpeechSynthesizer speechMarkupStringForType:forIdentifier:string:]
+  +[TTSSpeechSynthesizer allAvailableVoices]
+  +[TTSSpeechSynthesizer refreshAllAvailableVoices:]
+  +[TTSSpeechSynthesizer audioFileSettingsForVoice:]
+  +[TTSSpeechSynthesizer _speechVoiceForIdentifier:language:footprint:useFallbackDefault:]
+  +[TTSSpeechSynthesizer supportedIPAPhonemeLanguages]
+  +[TTSSpeechSynthesizer _initializeServers]
+  +[TTSSpeechSynthesizer availableVoicesForLanguageCode:queryingMobileAssets:]
+  +[TTSSpeechSynthesizer _speechVoiceForIdentifier:language:footprint:]
+  +[TTSSpeechSynthesizer voiceForIdentifier:]
+  +[TTSSpeechSynthesizer employSpeechMarkupForType:identifier:withLanguage:]
+  +[TTSSpeechSynthesizer testingSetAllVoices:]
+  +[TTSSpeechSynthesizer setVoiceAssetsForTesting:]
+  +[TTSSpeechSynthesizer voiceAssetsForTesting]
+  +[TTSSpeechSynthesizer synthesizerForSynthesizerID:]
+  +[TTSSpeechSynthesizer refreshAllAvailableVoices]
+  +[TTSSpeechSynthesizer voiceAccessQueue]
+  +[TTSSpeechSynthesizer setTestingAvailableVoicesForLanguageCode:]
+  +[TTSSpeechSynthesizer setSpeechJobFinishedUnitTestBlock:]
+  +[TTSSpeechSynthesizer setSpeechJobStartedUnitTestBlock:]
+
+  // instance methods
+  -[TTSSpeechSynthesizer init]
+  -[TTSSpeechSynthesizer dealloc]
+  -[TTSSpeechSynthesizer delegate]
+  -[TTSSpeechSynthesizer setDelegate:]
+  -[TTSSpeechSynthesizer .cxx_destruct]
+  -[TTSSpeechSynthesizer bundleIdentifier]
+  -[TTSSpeechSynthesizer setBundleIdentifier:]
+  -[TTSSpeechSynthesizer pitch]
+  -[TTSSpeechSynthesizer setPitch:]
+  -[TTSSpeechSynthesizer outputChannels]
+  -[TTSSpeechSynthesizer setOutputChannels:]
+  -[TTSSpeechSynthesizer _setDelegate:]
+  -[TTSSpeechSynthesizer volume]
+  -[TTSSpeechSynthesizer setVolume:]
+  -[TTSSpeechSynthesizer setRate:]
+  -[TTSSpeechSynthesizer rate]
+  -[TTSSpeechSynthesizer stopSpeakingAtNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer voiceIdentifier]
+  -[TTSSpeechSynthesizer setVoiceIdentifier:]
+  -[TTSSpeechSynthesizer isSpeaking]
+  -[TTSSpeechSynthesizer speechString]
+  -[TTSSpeechSynthesizer audioSessionID]
+  -[TTSSpeechSynthesizer footprint]
+  -[TTSSpeechSynthesizer setFootprint:]
+  -[TTSSpeechSynthesizer stopSpeakingAtNextBoundary:error:]
+  -[TTSSpeechSynthesizer startSpeakingString:withLanguageCode:error:]
+  -[TTSSpeechSynthesizer audioQueueFlags]
+  -[TTSSpeechSynthesizer setAudioQueueFlags:]
+  -[TTSSpeechSynthesizer _stopSpeakingRequest:atNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer _pauseSpeakingRequest:atNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer _startSpeakingString:orAttributedString:toURL:withLanguageCode:request:error:]
+  -[TTSSpeechSynthesizer pauseSpeakingAtNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer _continueSpeakingRequest:withError:]
+  -[TTSSpeechSynthesizer startSpeakingString:toURL:withLanguageCode:error:]
+  -[TTSSpeechSynthesizer connection:speechRequestDidStart:]
+  -[TTSSpeechSynthesizer connection:speechRequestDidPause:]
+  -[TTSSpeechSynthesizer connection:speechRequestDidContinue:]
+  -[TTSSpeechSynthesizer connection:speechRequest:didStopAtEnd:phonemesSpoken:error:]
+  -[TTSSpeechSynthesizer connection:speechRequest:willSpeakMark:inRange:]
+  -[TTSSpeechSynthesizer minimumRate]
+  -[TTSSpeechSynthesizer maximumRate]
+  -[TTSSpeechSynthesizer stopSpeakingRequest:atNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer startSpeakingString:request:error:]
+  -[TTSSpeechSynthesizer startSpeakingString:withLanguageCode:request:error:]
+  -[TTSSpeechSynthesizer stopSpeakingRequest:atNextBoundary:error:]
+  -[TTSSpeechSynthesizer pauseSpeakingRequest:atNextBoundary:error:]
+  -[TTSSpeechSynthesizer pauseSpeakingRequest:atNextBoundary:synchronously:error:]
+  -[TTSSpeechSynthesizer pauseSpeakingAtNextBoundary:error:]
+  -[TTSSpeechSynthesizer continueSpeakingRequest:withError:]
+  -[TTSSpeechSynthesizer useSpecificAudioSession:]
+  -[TTSSpeechSynthesizer useAudioQueueFlags:]
+  -[TTSSpeechSynthesizer startSpeakingString:error:]
+  -[TTSSpeechSynthesizer startSpeakingString:toURL:error:]
+  -[TTSSpeechSynthesizer continueSpeakingWithError:]
+  -[TTSSpeechSynthesizer synthesizeSilently]
+  -[TTSSpeechSynthesizer setSynthesizeSilently:]
+  -[TTSSpeechSynthesizer audioBufferCallback]
+  -[TTSSpeechSynthesizer setAudioBufferCallback:]
+  -[TTSSpeechSynthesizer setUserSubstitutions:]
+  -[TTSSpeechSynthesizer setUseMonarchStyleRate:]
+  -[TTSSpeechSynthesizer setPhonemeSubstitutions:]
+  -[TTSSpeechSynthesizer setSpeakingRequestClientContext:]
+  -[TTSSpeechSynthesizer supportsAccurateWordCallbacks]
+  -[TTSSpeechSynthesizer setSupportsAccurateWordCallbacks:]
+  -[TTSSpeechSynthesizer useMonarchStyleRate]
+  -[TTSSpeechSynthesizer synthesizerInstanceID]
+  -[TTSSpeechSynthesizer _mediaServicesDied]
+  -[TTSSpeechSynthesizer ignoreSubstitutions]
+  -[TTSSpeechSynthesizer _skipSubstition:language:bundleIdentifier:voice:]
+  -[TTSSpeechSynthesizer _applySubstitution:toText:wordRange:request:phonemes:]
+  -[TTSSpeechSynthesizer _preprocessText:languageCode:]
+  -[TTSSpeechSynthesizer phonemeSubstitutions]
+  -[TTSSpeechSynthesizer userSubstitutions]
+  -[TTSSpeechSynthesizer _processUserSubstitutions:toText:request:bundleIdentifier:voice:]
+  -[TTSSpeechSynthesizer connection:speechRequest:didSynthesizeSilentlyToURL:]
+  -[TTSSpeechSynthesizer testingLastRuleConversion]
+  -[TTSSpeechSynthesizer testingSetLastRuleConversion:replacement:]
+  -[TTSSpeechSynthesizer resolvedVoiceIdentifier]
+  -[TTSSpeechSynthesizer resolvedVoiceIdentifierForLanguageCode:]
+  -[TTSSpeechSynthesizer startSpeakingString:toURL:withLanguageCode:request:error:]
+  -[TTSSpeechSynthesizer requestClientIdentifier]
+  -[TTSSpeechSynthesizer setRequestClientIdentifier:]
+  -[TTSSpeechSynthesizer speakingRequestClientContext]
+  -[TTSSpeechSynthesizer setIgnoreSubstitutions:]
+
+
+TTSAudioSessionChannel : NSObject /usr/lib/libSystem.B.dylib
+ @property  AVAudioSessionChannelDescription *channel
+ @property  NSString *channelName
+ @property  unsigned long channelNumber
+ @property  unsigned int channelLabel
+ @property  NSString *owningPortUID
+
+  // class methods
+  +[TTSAudioSessionChannel channelWithChannel:]
+  +[TTSAudioSessionChannel convertChannels:]
+
+  // instance methods
+  -[TTSAudioSessionChannel init]
+  -[TTSAudioSessionChannel dealloc]
+  -[TTSAudioSessionChannel isEqual:]
+  -[TTSAudioSessionChannel .cxx_destruct]
+  -[TTSAudioSessionChannel channel]
+  -[TTSAudioSessionChannel setChannel:]
+  -[TTSAudioSessionChannel channelNumber]
+  -[TTSAudioSessionChannel setChannelNumber:]
+  -[TTSAudioSessionChannel owningPortUID]
+  -[TTSAudioSessionChannel channelLabel]
+  -[TTSAudioSessionChannel channelName]
+  -[TTSAudioSessionChannel setChannelName:]
+  -[TTSAudioSessionChannel setChannelLabel:]
+  -[TTSAudioSessionChannel setOwningPortUID:]
+
+
+TTSSpeechRequestOwner : NSObject /usr/lib/libSystem.B.dylib <TTSSpeechRequestDelegate>
+ @property  <TTSSpeechService> *speechService
+ @property  <TTSSpeechConnectionDelegate> *delegate
+ @property  TTSSpeechRequest *request
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[TTSSpeechRequestOwner init]
+  -[TTSSpeechRequestOwner dealloc]
+  -[TTSSpeechRequestOwner delegate]
+  -[TTSSpeechRequestOwner setDelegate:]
+  -[TTSSpeechRequestOwner .cxx_destruct]
+  -[TTSSpeechRequestOwner request]
+  -[TTSSpeechRequestOwner _setRequest:]
+  -[TTSSpeechRequestOwner startSpeechRequest:]
+  -[TTSSpeechRequestOwner isSystemSpeakingOnBehalfOfCurrentConnection]
+  -[TTSSpeechRequestOwner continueCurrentSpeechRequest]
+  -[TTSSpeechRequestOwner speechRequestDidStart:forService:]
+  -[TTSSpeechRequestOwner speechRequestDidPause:forService:]
+  -[TTSSpeechRequestOwner speechRequestDidContinue:forService:]
+  -[TTSSpeechRequestOwner speechRequest:withMark:didStartForRange:forService:]
+  -[TTSSpeechRequestOwner speechRequest:didStopWithSuccess:phonemesSpoken:forService:error:]
+  -[TTSSpeechRequestOwner speechRequest:didSynthesizeSilentlyToURL:]
+  -[TTSSpeechRequestOwner availableVoicesForLanguageCode:queryingMobileAssets:]
+  -[TTSSpeechRequestOwner initWithSpeechService:]
+  -[TTSSpeechRequestOwner stopCurrentSpeechRequestAtMark:waitUntilStopped:]
+  -[TTSSpeechRequestOwner pauseCurrentSpeechRequestAtMark:waitUntilPaused:]
+  -[TTSSpeechRequestOwner setSpeechService:]
+  -[TTSSpeechRequestOwner speechService]
+
+
+TTSSpeechVoice : NSObject /usr/lib/libSystem.B.dylib <NSSecureCoding, NSCopying>
+ @property  NSString *serviceIdentifier
+ @property  NSString *name
+ @property  NSString *language
+ @property  NSString *identifier
+ @property  long long footprint
+ @property  BOOL isDefault
+ @property  BOOL isFallbackDefault
+ @property  BOOL excludeInAvailableVoiceList
+ @property  long long gender
+ @property  BOOL canBeDownloaded
+ @property  BOOL isCombinedFootprint
+ @property  NSString *nonCombinedVoiceId
+
+  // class methods
+  +[TTSSpeechVoice supportsSecureCoding]
+
+  // instance methods
+  -[TTSSpeechVoice init]
+  -[TTSSpeechVoice isEqual:]
+  -[TTSSpeechVoice name]
+  -[TTSSpeechVoice copyWithZone:]
+  -[TTSSpeechVoice encodeWithCoder:]
+  -[TTSSpeechVoice initWithCoder:]
+  -[TTSSpeechVoice .cxx_destruct]
+  -[TTSSpeechVoice setName:]
+  -[TTSSpeechVoice identifier]
+  -[TTSSpeechVoice setIdentifier:]
+  -[TTSSpeechVoice service]
+  -[TTSSpeechVoice language]
+  -[TTSSpeechVoice setLanguage:]
+  -[TTSSpeechVoice setService:]
+  -[TTSSpeechVoice serviceIdentifier]
+  -[TTSSpeechVoice isDefault]
+  -[TTSSpeechVoice setServiceIdentifier:]
+  -[TTSSpeechVoice gender]
+  -[TTSSpeechVoice setGender:]
+  -[TTSSpeechVoice isFallbackDefault]
+  -[TTSSpeechVoice footprint]
+  -[TTSSpeechVoice setFootprint:]
+  -[TTSSpeechVoice canBeDownloaded]
+  -[TTSSpeechVoice setCanBeDownloaded:]
+  -[TTSSpeechVoice isCombinedFootprint]
+  -[TTSSpeechVoice nonCombinedVoiceId]
+  -[TTSSpeechVoice setNonCombinedVoiceId:]
+  -[TTSSpeechVoice excludeInAvailableVoiceList]
+
+
+TTSVoiceAsset : TTSAssetBase <NSSecureCoding>
+ @property  NSString *name
+ @property  NSString *identifier
+ @property  NSArray *languages
+ @property  long long gender
+ @property  long long footprint
+ @property  BOOL isInstalled
+ @property  BOOL isBuiltInVoice
+ @property  NSString *voicePath
+
+  // class methods
+  +[TTSVoiceAsset supportsSecureCoding]
+
+  // instance methods
+  -[TTSVoiceAsset name]
+  -[TTSVoiceAsset encodeWithCoder:]
+  -[TTSVoiceAsset initWithCoder:]
+  -[TTSVoiceAsset .cxx_destruct]
+  -[TTSVoiceAsset identifier]
+  -[TTSVoiceAsset setIdentifier:]
+  -[TTSVoiceAsset dictionaryRepresentation]
+  -[TTSVoiceAsset isInstalled]
+  -[TTSVoiceAsset languages]
+  -[TTSVoiceAsset initWithDictionaryRepresentation:]
+  -[TTSVoiceAsset gender]
+  -[TTSVoiceAsset footprint]
+  -[TTSVoiceAsset isBuiltInVoice]
+  -[TTSVoiceAsset voicePath]
+  -[TTSVoiceAsset setVoicePath:]
+  -[TTSVoiceAsset initWithName:languages:gender:footprint:isInstalled:isBuiltIn:masteredVersion:compatibilityVersion:]
+
+
+NSAttributedString(TTSSpeechAdditions)
+	// class methods
+	+[NSAttributedString(TTSSpeechAdditions) attributedStringWithFormatAndAttributes:]
+
+NSMutableAttributedString(TTSSpeechAdditions)
+	// instance methods
+	-[NSMutableAttributedString(TTSSpeechAdditions) appendString:withAttributes:]
+
+NSString(IPAPhonemeSupport)
+	// instance methods
+	-[NSString(IPAPhonemeSupport) setIPASpeechPhonemes:]
+	-[NSString(IPAPhonemeSupport) IPASpeechPhonemes]
+
+01 00 0800 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAudioSession 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0b00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0900 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 

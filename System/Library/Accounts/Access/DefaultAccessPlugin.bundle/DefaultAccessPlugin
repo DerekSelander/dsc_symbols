@@ -1,0 +1,96 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ACDefaultAccessPlugin
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACDefaultAccessPlugin
+__ Accounts: _ACAccountTypeIdentifierAppleAccount
+__ Accounts: _ACAccountTypeIdentifierAppleID
+__ Accounts: _ACAccountTypeIdentifierAppleIDAuthentication
+__ Accounts: _ACAccountTypeIdentifierFaceTime
+__ Accounts: _ACAccountTypeIdentifierFlickr
+__ Accounts: _ACAccountTypeIdentifierGameCenter
+__ Accounts: _ACAccountTypeIdentifierIDMS
+__ Accounts: _ACAccountTypeIdentifierMadrid
+__ Accounts: _ACAccountTypeIdentifierSinaWeiboDeprecated
+__ Accounts: _ACAccountTypeIdentifierTudou
+__ Accounts: _ACAccountTypeIdentifierTwitterDeprecated
+__ Accounts: _ACAccountTypeIdentifierVimeo
+__ Accounts: _ACAccountTypeIdentifierYouku
+__ Accounts: _ACAccountTypeIdentifieriTunesStore
+__ Accounts: _ACErrorDomain
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ Accounts: _kACDAllAccountsAccessEntitlement
+__ Accounts: _kACDAppleAccountsFullAccessEntitlement
+__ Accounts: _kACDAppleIDAuthenticationDefaultAccessEntitlement
+__ Accounts: _kACDIDMSAccountFullAccessEntitlement
+__ AccountsDaemon: _ACDLogAccessRequest
+__ AccountsDaemon: _OBJC_CLASS_$_ACDClientAuthorization
+__ AccountsDaemon: _OBJC_CLASS_$_ACDUserNotification
+__ AccountsDaemon: __ACDLogSystem
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+ACDefaultAccessPlugin : NSObject /usr/lib/libSystem.B.dylib <ACDAccountAccessPlugin>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[ACDefaultAccessPlugin supportsAccountTypeWithIdentifier:]
+  +[ACDefaultAccessPlugin _supportedAccountTypeIdentifiers]
+  +[ACDefaultAccessPlugin _accessAlertSupportedByAccountType:]
+  +[ACDefaultAccessPlugin _accessAlertFormerlySupportedByAccountType:]
+  +[ACDefaultAccessPlugin _fullAccessEntitlementForAccountType:]
+  +[ACDefaultAccessPlugin _defaultAccessEntitlementForAccountType:]
+
+  // instance methods
+  -[ACDefaultAccessPlugin handleAccessRequestToAccountsOfType:forClient:withOptions:store:allowUserInteraction:completion:]
+  -[ACDefaultAccessPlugin revokeAccessToAccountsOfType:forClient:store:completion:]
+  -[ACDefaultAccessPlugin authorizeAccessToAccountsOfType:forClient:store:completion:]
+  -[ACDefaultAccessPlugin revokeAllAccessToAccountsOfType:store:withCompletion:]
+  -[ACDefaultAccessPlugin _shouldGrantClient:unrestrictedAccessToAccountType:]
+  -[ACDefaultAccessPlugin _shouldGrantClient:defaultAccessToAccountType:]
+  -[ACDefaultAccessPlugin _presentAccessAlertforClient:onAccountType:withHandler:]
+
+
+01 00 0200 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0300 /System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon: ACDClientAuthorization 
+01 00 0300 /System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon: ACDUserNotification 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0400 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

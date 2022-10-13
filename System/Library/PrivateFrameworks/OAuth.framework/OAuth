@@ -1,0 +1,113 @@
+|| __DATA.__data _OAAuthTokenKey
+|| __DATA.__data _OAConsumerKeyKey
+|| __DATA.__data _OANonceKey
+|| __DATA.__data _OASignatureKey
+|| __DATA.__data _OASignatureMethodKey
+|| __DATA.__data _OATimestampKey
+|| __DATA.__data _OAVersionKey
+|| __DATA.__data _oauth_version
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OACredential._consumerKey
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OACredential._consumerSecret
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OACredential._oauthToken
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OACredential._oauthTokenSecret
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OAURLRequestSigner._credential
+|| __DATA.__objc_ivar _OBJC_IVAR_$_OAURLRequestSigner._signatureMethod
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OACredential
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OAHMAC_SHA1Signer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OAPlainTextSigner
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OAURLRequestSigner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OACredential
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OAHMAC_SHA1Signer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OAPlainTextSigner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OAURLRequestSigner
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFURLCreateStringByAddingPercentEscapes
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ libSystem.B.dylib: _CCHmac
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+OACredential : NSObject
+ @property  NSString *consumerKey
+ @property  NSString *consumerSecret
+ @property  NSString *oauthToken
+ @property  NSString *oauthTokenSecret
+
+  // instance methods
+  -[OACredential dealloc]
+  -[OACredential setOauthToken:]
+  -[OACredential setOauthTokenSecret:]
+  -[OACredential oauthToken]
+  -[OACredential oauthTokenSecret]
+  -[OACredential consumerSecret]
+  -[OACredential consumerKey]
+  -[OACredential setConsumerKey:]
+  -[OACredential setConsumerSecret:]
+  -[OACredential signingKey]
+
+
+OAURLRequestSigner : NSObject
+ @property  int signatureMethod
+
+  // instance methods
+  -[OAURLRequestSigner dealloc]
+  -[OAURLRequestSigner initWithCredential:]
+  -[OAURLRequestSigner signedURLRequestWithRequest:applicationID:timestamp:]
+  -[OAURLRequestSigner signedURLRequestWithRequest:]
+  -[OAURLRequestSigner signatureMethod]
+  -[OAURLRequestSigner signatureMethodString]
+  -[OAURLRequestSigner applyApplicationID:toRequest:containsMultiPartData:]
+  -[OAURLRequestSigner oauthNonce]
+  -[OAURLRequestSigner timestamp:]
+  -[OAURLRequestSigner oauthParametersWithNonce:timeStamp:]
+  -[OAURLRequestSigner signer]
+  -[OAURLRequestSigner oauthAuthorizationHeaderWithSignature:nonce:timestamp:]
+  -[OAURLRequestSigner setSignatureMethod:]
+
+
+OAHMAC_SHA1Signer : NSObject <OAuthSigner>
+  // class methods
+  +[OAHMAC_SHA1Signer signatureForText:withKey:]
+
+
+OAPlainTextSigner : NSObject <OAuthSigner>
+  // class methods
+  +[OAPlainTextSigner signatureForText:withKey:]
+
+
+NSString(OAURLEncode)
+	// instance methods
+	-[NSString(OAURLEncode) oauth_urlEncodedString]
+
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 

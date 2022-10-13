@@ -1,0 +1,114 @@
+|| __DATA.__data _EALogSubsystem
+|| __DATA_CONST.__const _EACategoryIdentifierAlert
+|| __DATA_CONST.__const _EACategoryIdentifierConfigurableAlert
+|| __DATA_CONST.__const _EANotificationCarrierBundleIdentifierKey
+|| __DATA_CONST.__const _EANotificationExternalToneFilePathKey
+|| __DATA_CONST.__const _EANotificationExternalVibrationPatternFilePathKey
+|| __DATA_CONST.__const _EANotificationFromPhoneKey
+|| __DATA_CONST.__const _EANotificationSoundIsMutableInRelayModeKey
+|| __DATA_DIRTY.__common _EALogDefault
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EACellBroadcastMessageListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_EAEmergencyAlertCenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EACellBroadcastMessageListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_EAEmergencyAlertCenter
+|| __TEXT.__const _EmergencyAlertsVersionNumber
+|| __TEXT.__const _EmergencyAlertsVersionString
+|| __TEXT.__const _kEADefaultMaxDuration
+|| __TEXT.__text _EARegisterUserNotificationsLogging
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreTelephony: _kCTSMSCellBroadcastAlertConfiguration
+__ CoreTelephony: _kCTSMSCellBroadcastAlertType
+__ CoreTelephony: _kCTSMSCellBroadcastBundleIdentifier
+__ CoreTelephony: _kCTSMSCellBroadcastEmergencyUserAlert
+__ CoreTelephony: _kCTSMSCellBroadcastString
+__ CoreTelephony: _kCTSMSCellBroadcastStringReceivedNotification
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ TelephonyUtilities: _OBJC_CLASS_$_TUCallCenter
+__ TelephonyUtilities: _TUAddTelephonyCenterObserver
+__ TelephonyUtilities: _TURemoveTelephonyCenterObserver
+__ ToneLibrary: _TLToneIdentifierNone
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationContent
+__ UserNotifications: _OBJC_CLASS_$_UNMutableNotificationSound
+__ UserNotifications: _OBJC_CLASS_$_UNNotificationRequest
+__ UserNotifications: _OBJC_CLASS_$_UNUserNotificationCenter
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: dyld_stub_binder
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+EAEmergencyAlertCenter : NSObject /usr/lib/libSystem.B.dylib
+  // instance methods
+  -[EAEmergencyAlertCenter init]
+  -[EAEmergencyAlertCenter .cxx_destruct]
+  -[EAEmergencyAlertCenter addNotificationRequest:withCompletionHandler:]
+  -[EAEmergencyAlertCenter currentCallCount]
+  -[EAEmergencyAlertCenter initWithUserNotificationCenter:]
+  -[EAEmergencyAlertCenter addAlertRequestForCellBroadcastMessage:withCompletionHandler:]
+
+
+EACellBroadcastMessageListener : NSObject /usr/lib/libSystem.B.dylib
+  // class methods
+  +[EACellBroadcastMessageListener sharedInstance]
+
+  // instance methods
+  -[EACellBroadcastMessageListener init]
+  -[EACellBroadcastMessageListener dealloc]
+  -[EACellBroadcastMessageListener .cxx_destruct]
+  -[EACellBroadcastMessageListener start]
+  -[EACellBroadcastMessageListener _cellBroadcastMessageReceived:]
+
+
+UNMutableNotificationContent(EmergencyAlerts)
+	// instance methods
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_setPropertiesForCellBroadcastMessage:withActivePhoneCall:]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_timestampSubtitleForDate:locale:]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_operatorPreferences]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_defaultTitle]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_timestampSubtitleForNow]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_bundleForBundleIdentifier:]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_externalToneFileURLForTone:inBundle:]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_externalVibrationPatternFileURLForVibration:inBundle:]
+	-[UNMutableNotificationContent(EmergencyAlerts) ea_operatorPreferenceForSoundIsMutableInRelayMode]
+
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0200 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUCallCenter 
+01 00 0400 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationContent 
+01 00 0400 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNMutableNotificationSound 
+01 00 0400 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNNotificationRequest 
+01 00 0400 /System/Library/Frameworks/UserNotifications.framework/UserNotifications: UNUserNotificationCenter 

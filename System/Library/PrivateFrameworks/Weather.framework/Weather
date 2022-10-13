@@ -1,0 +1,2379 @@
+|| __DATA.__common _MoonMap
+|| __DATA.__common _maxMoonPhaseIndex
+|| __DATA.__data _CityMaxWindChillTemperature
+|| __DATA.__data _CityMinHeatIndexTemperature
+|| __DATA.__data _CityMinimumContainmentDistance
+|| __DATA.__data _CityMinimumContainmentDistanceMatchingNames
+|| __DATA.__data _SecondsFromGMTUnset
+|| __DATA.__data _UnknownConditionCode
+|| __DATA.__data _WeatherDescription
+|| __DATA.__data _WeatherDescriptionGlance
+|| __DATA.__data _WeatherDescriptionShort
+|| __DATA.__data _smallWeatherIcons
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ProgressController._hideSpinnerTimer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ProgressController._loadingCount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ProgressController._progressShowing
+|| __DATA.__objc_ivar _OBJC_IVAR_$_WeatherView._city
+|| __DATA.__objc_ivar _OBJC_IVAR_$_WeatherView._showWind
+|| __DATA.__objc_ivar _OBJC_IVAR_$_WeatherView._showingDay
+|| __DATA.__objc_ivar _OBJC_IVAR_$_WeatherView._windView
+|| __DATA_CONST.__const _ActiveCityKey
+|| __DATA_CONST.__const _CelsiusKey
+|| __DATA_CONST.__const _CitiesKey
+|| __DATA_CONST.__const _DetailedLoggingKey
+|| __DATA_CONST.__const _ForcedCityCondition
+|| __DATA_CONST.__const _ForcedCityDay
+|| __DATA_CONST.__const _ForcedCityEnabled
+|| __DATA_CONST.__const _ForcedCityName
+|| __DATA_CONST.__const _LastLocationUpdateTimeKey
+|| __DATA_CONST.__const _NanoPrefsdIdentifier
+|| __DATA_CONST.__const _NilTemperatureString
+|| __DATA_CONST.__const _PrefsGroupId
+|| __DATA_CONST.__const _WAForecastOperationUnitTestingTag
+|| __DATA_CONST.__const _WALockscreenWidgetDidAppearNotification
+|| __DATA_CONST.__const _WALockscreenWidgetDidDisappearNotification
+|| __DATA_CONST.__const _WALockscreenWidgetWillAppearNotification
+|| __DATA_CONST.__const _WALockscreenWidgetWillDisappearNotification
+|| __DATA_CONST.__const _WAUserTemperatureUnitDidUpdateNotification
+|| __DATA_CONST.__const _WAUserTemperatureUnitNotificatonUserInfoKey
+|| __DATA_CONST.__const _WeatherAppIdentifier
+|| __DATA_CONST.__const _WeatherChannelBaseURLKey
+|| __DATA_CONST.__const _WeatherCityIndexKey
+|| __DATA_CONST.__const _WeatherCityIsLocalURLKey
+|| __DATA_CONST.__const _WeatherCityNameURLKey
+|| __DATA_CONST.__const _WeatherCityShowingHourlyURLKey
+|| __DATA_CONST.__const _WeatherCloudCitiesChangedExternally
+|| __DATA_CONST.__const _WeatherCloudCitiesIsInitialSyncKey
+|| __DATA_CONST.__const _WeatherCloudCitiesKey
+|| __DATA_CONST.__const _WeatherCloudLegacyCitiesKey
+|| __DATA_CONST.__const _WeatherLatitudeURLKey
+|| __DATA_CONST.__const _WeatherLocalCitiesKey
+|| __DATA_CONST.__const _WeatherLocalGeolocatedCityKey
+|| __DATA_CONST.__const _WeatherLocalGeolocationEnabledKey
+|| __DATA_CONST.__const _WeatherLocalLastUpdatedKey
+|| __DATA_CONST.__const _WeatherLocalPrefsVersionKey
+|| __DATA_CONST.__const _WeatherLongitudeSiriURLKey
+|| __DATA_CONST.__const _WeatherLongitudeURLKey
+|| __DATA_CONST.__const _WeatherServiceDefaultTrafficParameter
+|| __DATA_CONST.__const _WeatherServiceTodayURLString
+|| __DATA_CONST.__const _WeatherSimulationEnabledKey
+|| __DATA_CONST.__const _WeatherSimulationHorizontalAccuracyKey
+|| __DATA_CONST.__const _WeatherSimulationLatitudeKey
+|| __DATA_CONST.__const _WeatherSimulationLongitudeKey
+|| __DATA_CONST.__const _WeatherURLScheme
+|| __DATA_CONST.__const _WeatherYQLEnvStoreKey
+|| __DATA_CONST.__const _app_celsius_queue
+|| __DATA_CONST.__const _cityDetailView
+|| __DATA_CONST.__const _cityGlanceView
+|| __DATA_CONST.__const _cityLatitude
+|| __DATA_CONST.__const _cityListView
+|| __DATA_CONST.__const _cityLongitude
+|| __DATA_CONST.__const _cityNameKey
+|| __DATA_CONST.__const _destViewKey
+|| __DATA_CONST.__const _kActiveCityIndexKey
+|| __DATA_CONST.__const _kActiveCityNameKey
+|| __DATA_CONST.__const _kActiveLocalCityKey
+|| __DATA_CONST.__const _kBeganDataRequestNotification
+|| __DATA_CONST.__const _kBeganTrackingLocationNotification
+|| __DATA_CONST.__const _kCityNamesKey
+|| __DATA_CONST.__const _kCityNotificationNameDidUpdate
+|| __DATA_CONST.__const _kDefaultActiveCityIndexKey
+|| __DATA_CONST.__const _kDefaultActiveCityNameKey
+|| __DATA_CONST.__const _kDefaultActiveLocalCityKey
+|| __DATA_CONST.__const _kDefaultSelectedCityKey
+|| __DATA_CONST.__const _kFakePadWeather
+|| __DATA_CONST.__const _kFakePadWeatherCondition
+|| __DATA_CONST.__const _kFakePadWeatherConditionDescription
+|| __DATA_CONST.__const _kFakePadWeatherConditionTemperature
+|| __DATA_CONST.__const _kFakePadWeatherDisplayName
+|| __DATA_CONST.__const _kFakePadWeatherLatitude
+|| __DATA_CONST.__const _kFakePadWeatherLongitude
+|| __DATA_CONST.__const _kLastLocationParseTime
+|| __DATA_CONST.__const _kLocalWeatherCityID
+|| __DATA_CONST.__const _kRestStateNotification
+|| __DATA_CONST.__const _kShowingCardListKey
+|| __DATA_CONST.__const _kUserSelectedCityIDKey
+|| __DATA_CONST.__const _kUserSelectedCityIndexKey
+|| __DATA_CONST.__const _kUserSelectedCityNameKey
+|| __DATA_CONST.__const _kUserSelectedLocalCityKey
+|| __DATA_CONST.__const _kWAUpdateErrorCityKey
+|| __DATA_CONST.__const _kWeatherEffectiveBundleId
+|| __DATA_CONST.__const _kWeatherErrorDomain
+|| __DATA_CONST.__const _kWeatherMapCloudPaddingKey
+|| __DATA_CONST.__const _kWeatherMapColorsKey
+|| __DATA_CONST.__const _kWeatherPrefAppToPrefsDidUpdate
+|| __DATA_CONST.__const _kWeatherPrefGroupPrefsDidUpdate
+|| __DATA_CONST.__const _kWeatherPrefPrefsToAppDidUpdate
+|| __DATA_CONST.__const _localCity
+|| __DATA_CONST.__const _locationIDKey
+|| __DATA_CONST.__const _weatherInternalPrefsDomain
+|| __DATA_CONST.__const _weatherInternalPrefsDomainPath
+|| __DATA_CONST.__const _weatherInternalPrefsDomainRootPath
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_City
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ProgressController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TWCCityUpdater
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_TWCLocationUpdater
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WACurrentForecast
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WADayForecast
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAForecastModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAForecastOperation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAGreetingView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAHourlyForecast
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAHourlyForecastParser
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WALockscreenWidgetViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayAutoupdatingLocationModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayHeaderView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayHourlyForecastView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayModel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayPadView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WATodayPadViewStyle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WAWeatherPlatterViewController
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherImageLoader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherInternalPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherLocationManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherOpenURLHelper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherPrecipitationFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherPressureFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherVisibilityFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_WeatherWindSpeedFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_City
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ProgressController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TWCCityUpdater
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_TWCLocationUpdater
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WACurrentForecast
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WADayForecast
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAForecastModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAForecastOperation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAGreetingView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAHourlyForecast
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAHourlyForecastParser
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WALockscreenWidgetViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayAutoupdatingLocationModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayHeaderView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayHourlyForecastView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayModel
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayPadView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WATodayPadViewStyle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WAWeatherPlatterViewController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherImageLoader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherInternalPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherLocationManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherOpenURLHelper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherPrecipitationFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherPressureFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherVisibilityFormatter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_WeatherWindSpeedFormatter
+|| __TEXT.__const _CityUnsetValue
+|| __TEXT.__const _MaxAllowedDistance
+|| __TEXT.__const _MaxIconIndex
+|| __TEXT.__const _MoonIconIndex
+|| __TEXT.__const _MoonWithCloudsIndex
+|| __TEXT.__const _PrecipitationUnsetFlag
+|| __TEXT.__const _WALockscreenWidgetViewControllerDefaultUpdateInterval
+|| __TEXT.__const _WAUpdateIntervalMinutes
+|| __TEXT.__const _WeatherDegreeChar
+|| __TEXT.__const __WAWeatherIconCacheVersion
+|| __TEXT.__const _kMaxAllowedCitiesCount
+|| __TEXT.__const _kWATodayHourlyForecastViewWidth
+|| __TEXT.__text _CardinalDirectionFromAngle
+|| __TEXT.__text _CardinalDirectionStringForIndex
+|| __TEXT.__text _ChanceOfRainWithHourlyForecasts
+|| __TEXT.__text _CityTimeDigitForTimeZone
+|| __TEXT.__text _ClearNumberRTL
+|| __TEXT.__text _DateByAddingOneDay
+|| __TEXT.__text _DateIsTodayInTimezone
+|| __TEXT.__text _DateIsYesterdayInTimezone
+|| __TEXT.__text _DatesAreNotWithinSameHour
+|| __TEXT.__text _FormatShortTime
+|| __TEXT.__text _GetDeviceHeight
+|| __TEXT.__text _GetDeviceWidth
+|| __TEXT.__text _IsAllCapsMeridiemIndicatorRegion
+|| __TEXT.__text _IsDynamicTypeLargeOrSmaller
+|| __TEXT.__text _IsInternalInstall
+|| __TEXT.__text _IsLoDPI
+|| __TEXT.__text _IsNumberRTL
+|| __TEXT.__text _IsPad
+|| __TEXT.__text _IsPrecipitationCondition
+|| __TEXT.__text _IsSunsetCondition
+|| __TEXT.__text _IsTallDevice
+|| __TEXT.__text _IsUIRTL
+|| __TEXT.__text _LocalizedDecimalString
+|| __TEXT.__text _LocalizedPercentageSign
+|| __TEXT.__text _LocalizedPercentageString
+|| __TEXT.__text _NSStringFromWAUpdateErrorCode
+|| __TEXT.__text _NSStringFromWAUpdateStatus
+|| __TEXT.__text _NSStringFromWAWeatherDataAge
+|| __TEXT.__text _NSStringFromWAWeatherPressureState
+|| __TEXT.__text _NSStringFromWeatherConditionCode
+|| __TEXT.__text _OpenTWCLinkForCity
+|| __TEXT.__text _OpenTWCLinksInOrder
+|| __TEXT.__text _PrecipitationDescription
+|| __TEXT.__text _RemapSmallIconForDayOrNight
+|| __TEXT.__text _RemapStringIndexForDayOrNight
+|| __TEXT.__text _ShouldUseLargeiPadLayout
+|| __TEXT.__text _ShouldUseLargeiPadLayoutForSize
+|| __TEXT.__text _SpecialTemperatureForCity
+|| __TEXT.__text _SupportsLandscapeWeather
+|| __TEXT.__text _TWCAttributionURLForTrafficParameter
+|| __TEXT.__text _TWCFallbackURL
+|| __TEXT.__text _TemperatureDegreeSign
+|| __TEXT.__text _TemperatureDegreeSignShort
+|| __TEXT.__text _Time24StringToInt
+|| __TEXT.__text _TimeInRegionFormatFromFourDigitTime
+|| __TEXT.__text _TimeStringToIntValue
+|| __TEXT.__text _TruncateValueToDecimalAccuracy
+|| __TEXT.__text _WAAirQualityCategoryFromConditions
+|| __TEXT.__text _WAAirQualityDescriptionForCategory
+|| __TEXT.__text _WAAirQualityIsSignificantForCategory
+|| __TEXT.__text _WAAirQualityLongDescriptionForCategory
+|| __TEXT.__text _WAAttributionString
+|| __TEXT.__text _WACityFromForecastModel
+|| __TEXT.__text _WACondensedTimeInRegionFormat
+|| __TEXT.__text _WAConditionsLine2StringFromHourlyForecasts
+|| __TEXT.__text _WAConditionsLineStringFromConditionCode
+|| __TEXT.__text _WAConditionsLineStringFromCurrentForecasts
+|| __TEXT.__text _WAContentColor
+|| __TEXT.__text _WADetailColor
+|| __TEXT.__text _WADividerLineColor
+|| __TEXT.__text _WADoubleIsEqual
+|| __TEXT.__text _WAErrorWithCode
+|| __TEXT.__text _WAFloatIsEqual
+|| __TEXT.__text _WAHourlyConditionsTemperatureLabelAttributesDictionary
+|| __TEXT.__text _WAHourlyConditionsTimeLabelFont
+|| __TEXT.__text _WAImageForConditionCode
+|| __TEXT.__text _WAImageForConditionNamed
+|| __TEXT.__text _WAImageForLegacyConditionCode
+|| __TEXT.__text _WAImageForSunrise
+|| __TEXT.__text _WAImageForSunset
+|| __TEXT.__text _WAIsChinaSKUAndSimplifiedChinese
+|| __TEXT.__text _WAIsPadAndChinaSKU
+|| __TEXT.__text _WAIsShortDevice
+|| __TEXT.__text _WALogForCategory
+|| __TEXT.__text _WAMapsImageForLegacyConditionCode
+|| __TEXT.__text _WAMapsImageWithinBundle
+|| __TEXT.__text _WAMonospacedFont
+|| __TEXT.__text _WAObjectIsEqual
+|| __TEXT.__text _WAPresentFirstUsageDialogIfNeeded
+|| __TEXT.__text _WASetupVibrancyOnView
+|| __TEXT.__text _WASmallWeatherIconsMap
+|| __TEXT.__text _WATemperatureString
+|| __TEXT.__text _WATemperatureStringForOutputUnit
+|| __TEXT.__text _WATemperatureStringFromString
+|| __TEXT.__text _WATimeInRegionFormat
+|| __TEXT.__text _WATimeInRegionFormatFromFourDigitTime
+|| __TEXT.__text _WATodayHeaderViewDegreeAttributedStringWithTemperatureObject
+|| __TEXT.__text _WATodayLoadSavedFirstCityFromPreferences
+|| __TEXT.__text _WATodayLoadSavedLastForecastModelFromPreferences
+|| __TEXT.__text _WATodayPadViewFormatForSize
+|| __TEXT.__text _WAUIFormattedTimeString
+|| __TEXT.__text _WAUserTemperatureUnit
+|| __TEXT.__text _WAWeatherUtilityResetForTimeChange
+|| __TEXT.__text _WFAirQualityMatchesWAAirQuality
+|| __TEXT.__text _WFTemperatureUnitFromIsCelsiusValue
+|| __TEXT.__text _WeatherChannelBaseURL
+|| __TEXT.__text _WeatherFrameworkBundle
+|| __TEXT.__text _WeatherRowDegreeOffset
+|| __TEXT.__text _WeatherUtilityFunctionsLocaleChanged
+|| __TEXT.__text _WoeidFromLocationID
+|| __TEXT.__text __WebServiceConfigClearCachedObjects
+|| __TEXT.__text _haversineDistance
+|| __TEXT.__text _shortWeekdayNameForDayOfWeek
+|| __TEXT.__text _toRadians
+|| __TEXT.__text _weatherWeekdayFormatter
+|| __TEXT.__text _weekdayNameForDate
+|| __TEXT.__text _weekdayNameForDayOfWeek
+|| __TEXT.__text _weekdayNameForDayOfWeekHelper
+__ AggregateDictionary: _ADClientPushValueForDistributionKey
+__ AggregateDictionary: _ADClientSetValueForScalarKey
+__ AppSupport: _CPGetDeviceRegionCode
+__ AppSupport: _OBJC_CLASS_$_ALCity
+__ AppSupport: _OBJC_CLASS_$_ALCityManager
+__ AppSupport: _OBJC_CLASS_$_CPBitmapStore
+__ CoreFoundation: _CFDateFormatterCreate
+__ CoreFoundation: _CFDateFormatterCreateStringWithDate
+__ CoreFoundation: _CFLocaleCopyCurrent
+__ CoreFoundation: _CFLocaleGetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _NSCalendarIdentifierISO8601
+__ CoreFoundation: _NSCurrentLocaleDidChangeNotification
+__ CoreFoundation: _NSDateFormatterPatternCharacterKey
+__ CoreFoundation: _NSLocaleCountryCode
+__ CoreFoundation: _NSLocaleLanguageCode
+__ CoreFoundation: _NSLocaleTemperatureUnitCelsius
+__ CoreFoundation: _NSLocaleTemperatureUnitFahrenheit
+__ CoreFoundation: _NSLocaleUsesMetricSystem
+__ CoreFoundation: _NSMallocException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_METACLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__
+__ CoreFoundation: ___NSDictionary0__
+__ CoreFoundation: _kCFLocaleCountryCode
+__ CoreFoundation: _kCFLocaleIdentifier
+__ CoreFoundation: _kCFPreferencesAnyApplication
+__ CoreGraphics: _CGContextBeginTransparencyLayerWithRect
+__ CoreGraphics: _CGContextDrawPDFPage
+__ CoreGraphics: _CGContextEndTransparencyLayer
+__ CoreGraphics: _CGContextRestoreGState
+__ CoreGraphics: _CGContextSaveGState
+__ CoreGraphics: _CGContextScaleCTM
+__ CoreGraphics: _CGContextTranslateCTM
+__ CoreGraphics: _CGImageRelease
+__ CoreGraphics: _CGPDFPageGetBoxRect
+__ CoreGraphics: _CGPointZero
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetMaxY
+__ CoreGraphics: _CGRectGetMinX
+__ CoreGraphics: _CGRectZero
+__ CoreLocation: _CLLocationCoordinate2DIsValid
+__ CoreLocation: _CLLocationCoordinate2DMake
+__ CoreLocation: _OBJC_CLASS_$_CLGeocoder
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ CoreLocation: _OBJC_CLASS_$_CLLocationManager
+__ CoreLocation: _kCLErrorDomain
+__ CoreLocation: _kCLLocationAccuracyHundredMeters
+__ CoreLocation: _kCLLocationAccuracyKilometer
+__ CoreLocation: _kCLLocationCoordinate2DInvalid
+__ CoreText: _CTFontCreateCopyOfSystemUIFontWithGrade
+__ CoreText: _CTFontCreateUIFontForLanguage
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUbiquitousKeyValueStoreChangeReasonKey
+__ Foundation: _NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSDateComponentsFormatter
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSDistributedNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSFormatter
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSLengthFormatter
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotification
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSNumberFormatter
+__ Foundation: _OBJC_CLASS_$_NSOperation
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ Foundation: _OBJC_CLASS_$_NSURLQueryItem
+__ Foundation: _OBJC_CLASS_$_NSUbiquitousKeyValueStore
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_METACLASS_$_NSFormatter
+__ Foundation: _OBJC_METACLASS_$_NSLengthFormatter
+__ Foundation: _OBJC_METACLASS_$_NSOperation
+__ Foundation: __NSDictionaryOfVariableBindings
+__ MapKit: _OBJC_CLASS_$_MKMapItem
+__ MapKit: _OBJC_CLASS_$_MKPlacemark
+__ MobileKeyBag: _MKBDeviceUnlockedSinceBoot
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ NetAppsUtilitiesUI: _OBJC_CLASS_$_NAUIContentSizeLayoutConstraint
+__ NetAppsUtilitiesUI: _OBJC_CLASS_$_NAUIDeviceUtilities
+__ UIKit: _NSBaselineOffsetAttributeName
+__ UIKit: _NSFontAttributeName
+__ UIKit: _NSForegroundColorAttributeName
+__ UIKit: _NSLinkAttributeName
+__ UIKit: _NSUnderlineStyleAttributeName
+__ UIKit: _OBJC_CLASS_$_UIAlertAction
+__ UIKit: _OBJC_CLASS_$_UIAlertController
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIFontDescriptor
+__ UIKit: _OBJC_CLASS_$_UIGraphicsImageRenderer
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIImageView
+__ UIKit: _OBJC_CLASS_$_UILabel
+__ UIKit: _OBJC_CLASS_$_UILayoutGuide
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UIStackView
+__ UIKit: _OBJC_CLASS_$_UIVibrancyEffect
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_CLASS_$_UIVisualEffectView
+__ UIKit: _OBJC_CLASS_$__UILegibilitySettings
+__ UIKit: _OBJC_CLASS_$__UILegibilityView
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ UIKit: _UIAccessibilityDarkerSystemColorsEnabled
+__ UIKit: _UIAccessibilityIsReduceTransparencyEnabled
+__ UIKit: _UIApp
+__ UIKit: _UIContentSizeCategoryDidChangeNotification
+__ UIKit: _UIContentSizeCategoryExtraSmall
+__ UIKit: _UIContentSizeCategoryLarge
+__ UIKit: _UIContentSizeCategoryMedium
+__ UIKit: _UIContentSizeCategorySmall
+__ UIKit: _UIFontDescriptorFeatureSettingsAttribute
+__ UIKit: _UIFontFeatureSelectorIdentifierKey
+__ UIKit: _UIFontFeatureTypeIdentifierKey
+__ UIKit: _UIFontTextStyleCallout
+__ UIKit: _UIFontTextStyleFootnote
+__ UIKit: _UIFontTextStyleHeadline1
+__ UIKit: _UIFontTextStyleSubheadline
+__ UIKit: _UIFontWeightLight
+__ UIKit: _UIGraphicsBeginImageContextWithOptions
+__ UIKit: _UIGraphicsEndImageContext
+__ UIKit: _UIGraphicsGetCurrentContext
+__ UIKit: _UIGraphicsGetImageFromCurrentImageContext
+__ UIKit: _UILayoutFittingCompressedSize
+__ UIKit: _UIRectFillUsingBlendMode
+__ UIKit: __UIGraphicsDrawIntoImageContextWithOptions
+__ UIKit: __UILegibilityStrengthAutomatic
+__ WeatherFoundation: _CloudCityLatitudeKey
+__ WeatherFoundation: _CloudCityLongitudeKey
+__ WeatherFoundation: _CloudCityNameKey
+__ WeatherFoundation: _NSStringFromWFTemperatureUnit
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleATMO
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategory
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryATMO
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryCAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryDAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryEPA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryHJ6332012
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryIMECA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryNAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleCategoryUBA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleDAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleEPA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleHJ6332012
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleIMECA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleNAQI
+__ WeatherFoundation: _OBJC_CLASS_$_WFAQIScaleUBA
+__ WeatherFoundation: _OBJC_CLASS_$_WFAirQualityConditions
+__ WeatherFoundation: _OBJC_CLASS_$_WFAirQualityRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFDailyForecastRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFForecastRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFGeocodeRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFHourlyForecastRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFLocation
+__ WeatherFoundation: _OBJC_CLASS_$_WFServiceConnection
+__ WeatherFoundation: _OBJC_CLASS_$_WFTemperature
+__ WeatherFoundation: _OBJC_CLASS_$_WFTemperatureFormatter
+__ WeatherFoundation: _OBJC_CLASS_$_WFTemperatureUnitChangeRequest
+__ WeatherFoundation: _OBJC_CLASS_$_WFTemperatureUnitObserver
+__ WeatherFoundation: _OBJC_CLASS_$_WFURLComponents
+__ WeatherFoundation: _OBJC_CLASS_$_WFWeatherStoreService
+__ WeatherFoundation: _OBJC_CLASS_$_WeatherService
+__ WeatherFoundation: _WFWeatherDewpointComponent
+__ WeatherFoundation: _WFWeatherFeelsLikeTemperatureComponent
+__ WeatherFoundation: _WFWeatherForecastTimeComponent
+__ WeatherFoundation: _WFWeatherHighTemperatureComponent
+__ WeatherFoundation: _WFWeatherHumidityComponent
+__ WeatherFoundation: _WFWeatherIOSLinkComponent
+__ WeatherFoundation: _WFWeatherLowTemperatureComponent
+__ WeatherFoundation: _WFWeatherMobileLinkComponent
+__ WeatherFoundation: _WFWeatherPrecipitationAmountComponent
+__ WeatherFoundation: _WFWeatherPrecipitationChanceComponent
+__ WeatherFoundation: _WFWeatherPressureComponent
+__ WeatherFoundation: _WFWeatherPressureTrendComponent
+__ WeatherFoundation: _WFWeatherSunriseTimeComponent
+__ WeatherFoundation: _WFWeatherSunsetTimeComponent
+__ WeatherFoundation: _WFWeatherTemperatureComponent
+__ WeatherFoundation: _WFWeatherUVIndexComponent
+__ WeatherFoundation: _WFWeatherVisibilityComponent
+__ WeatherFoundation: _WFWeatherWebLinkComponent
+__ WeatherFoundation: _WFWeatherWindDirectionComponent
+__ WeatherFoundation: _WFWeatherWindSpeedComponent
+__ WeatherFoundation: ___WFWeatherLegacyConditionComponent
+__ WeatherFoundation: ___WFWeatherSeriesIndexComponent
+__ libCTGreenTeaLogger.dylib: _ct_green_tea_logger_create
+__ libCTGreenTeaLogger.dylib: _ct_green_tea_logger_destroy
+__ libCTGreenTeaLogger.dylib: _getCTGreenTeaOsLogHandle
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _cosf
+__ libSystem.B.dylib: _dispatch_apply
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _rand
+__ libSystem.B.dylib: _sinf
+__ libSystem.B.dylib: dyld_stub_binder
+__ libcupolicy.dylib: _network_usage_policy_create_client
+__ libcupolicy.dylib: _network_usage_policy_destroy_client
+__ libcupolicy.dylib: _perform_first_network_use_flow
+__ libicucore.A.dylib: _u_strToUTF8
+__ libicucore.A.dylib: _uameasfmt_close
+__ libicucore.A.dylib: _uameasfmt_format
+__ libicucore.A.dylib: _uameasfmt_open
+__ libicucore.A.dylib: _unum_clone
+__ libicucore.A.dylib: _unum_close
+__ libicucore.A.dylib: _unum_open
+__ libicucore.A.dylib: _unum_setAttribute
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+WAHourlyForecastParser : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+  // class methods
+  +[WAHourlyForecastParser parseForecasts:temperature:currentTime:condition:sunrise:sunset:]
+  +[WAHourlyForecastParser addSunEventIntoForecasts:eventType:forecastDetail:eventTime:currentTime:]
+  +[WAHourlyForecastParser parseForecasts:temperature:hour:condition:sunrise:sunset:]
+
+
+WATodayModel : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  WFServiceConnection *connection
+ @property  ^{ct_green_tea_logger_s=} greenTeaLogger
+ @property  BOOL hasPendingUpdates
+ @property  WAForecastModel *forecastModel
+ @property  NSDate *lastUpdateDate
+
+  // class methods
+  +[WATodayModel autoupdatingLocationModelWithPreferences:effectiveBundleIdentifier:]
+  +[WATodayModel modelWithLocation:]
+
+  // instance methods
+  -[WATodayModel init]
+  -[WATodayModel dealloc]
+  -[WATodayModel .cxx_destruct]
+  -[WATodayModel addObserver:]
+  -[WATodayModel removeObserver:]
+  -[WATodayModel connection]
+  -[WATodayModel setConnection:]
+  -[WATodayModel location]
+  -[WATodayModel initWithLocation:]
+  -[WATodayModel lastUpdateDate]
+  -[WATodayModel setLastUpdateDate:]
+  -[WATodayModel greenTeaLogger]
+  -[WATodayModel setHasPendingUpdates:]
+  -[WATodayModel forecastModel]
+  -[WATodayModel _locationUpdateCompleted:error:completion:]
+  -[WATodayModel _executeLocationUpdateWithCompletion:]
+  -[WATodayModel _forecastUpdateCompleted:forecastModel:error:completion:]
+  -[WATodayModel _executeForecastRetrievalForLocation:completion:]
+  -[WATodayModel setForecastModel:]
+  -[WATodayModel _willDeliverForecastModel:]
+  -[WATodayModel _fireTodayModelForecastWasUpdated:]
+  -[WATodayModel _persistStateWithModel:]
+  -[WATodayModel hasPendingUpdates]
+  -[WATodayModel performDelayedUpdatesForObserver:]
+  -[WATodayModel executeModelUpdateWithCompletion:]
+  -[WATodayModel checkIfNeedsToUpdate]
+  -[WATodayModel hasCrossedHourlyBoundary]
+  -[WATodayModel clearLocationUpdateState]
+  -[WATodayModel _fireTodayModelWantsUpdate]
+  -[WATodayModel setGreenTeaLogger:]
+
+
+WATodayAutoupdatingLocationModel : WATodayModel <CLLocationManagerDelegate, SynchronizedDefaultsDelegate>
+ @property  WFGeocodeRequest *geocodeRequest
+ @property  BOOL isLocationTrackingEnabled
+ @property  unsigned long citySource
+ @property  WeatherLocationManager *locationManager
+ @property  BOOL stopUpdateIfNeeded
+ @property  WeatherPreferences *preferences
+ @property  @? WeatherLocationManagerGenerator
+ @property  BOOL locationServicesActive
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WATodayAutoupdatingLocationModel init]
+  -[WATodayAutoupdatingLocationModel dealloc]
+  -[WATodayAutoupdatingLocationModel .cxx_destruct]
+  -[WATodayAutoupdatingLocationModel locationManager:didUpdateLocations:]
+  -[WATodayAutoupdatingLocationModel locationManager:didChangeAuthorizationStatus:]
+  -[WATodayAutoupdatingLocationModel setPreferences:]
+  -[WATodayAutoupdatingLocationModel preferences]
+  -[WATodayAutoupdatingLocationModel locationManager]
+  -[WATodayAutoupdatingLocationModel setLocationManager:]
+  -[WATodayAutoupdatingLocationModel initWithPreferences:effectiveBundleIdentifier:]
+  -[WATodayAutoupdatingLocationModel setLocationServicesActive:]
+  -[WATodayAutoupdatingLocationModel forecastModel]
+  -[WATodayAutoupdatingLocationModel _executeLocationUpdateWithCompletion:]
+  -[WATodayAutoupdatingLocationModel _willDeliverForecastModel:]
+  -[WATodayAutoupdatingLocationModel _persistStateWithModel:]
+  -[WATodayAutoupdatingLocationModel checkIfNeedsToUpdate]
+  -[WATodayAutoupdatingLocationModel clearLocationUpdateState]
+  -[WATodayAutoupdatingLocationModel weatherPreferencesWereSynchronized]
+  -[WATodayAutoupdatingLocationModel setWeatherLocationManagerGenerator:]
+  -[WATodayAutoupdatingLocationModel setStopUpdateIfNeeded:]
+  -[WATodayAutoupdatingLocationModel setCitySource:fireNotification:]
+  -[WATodayAutoupdatingLocationModel _teardownLocationManager]
+  -[WATodayAutoupdatingLocationModel _reloadForecastData:]
+  -[WATodayAutoupdatingLocationModel _kickstartLocationManager]
+  -[WATodayAutoupdatingLocationModel setIsLocationTrackingEnabled:]
+  -[WATodayAutoupdatingLocationModel setCitySource:]
+  -[WATodayAutoupdatingLocationModel WeatherLocationManagerGenerator]
+  -[WATodayAutoupdatingLocationModel updateLocationTrackingStatus]
+  -[WATodayAutoupdatingLocationModel isLocationTrackingEnabled]
+  -[WATodayAutoupdatingLocationModel citySource]
+  -[WATodayAutoupdatingLocationModel _executeLocationUpdateForLocalWeatherCityWithCompletion:]
+  -[WATodayAutoupdatingLocationModel _executeLocationUpdateForFirstWeatherCityWithCompletion:]
+  -[WATodayAutoupdatingLocationModel shouldNotUseUpdatedLocation]
+  -[WATodayAutoupdatingLocationModel stopUpdateIfNeeded]
+  -[WATodayAutoupdatingLocationModel geocodeRequest]
+  -[WATodayAutoupdatingLocationModel setGeocodeRequest:]
+  -[WATodayAutoupdatingLocationModel ubiquitousDefaultsDidChange:]
+  -[WATodayAutoupdatingLocationModel syncLastUpdateTime]
+  -[WATodayAutoupdatingLocationModel locationServicesActive]
+
+
+WeatherWindSpeedFormatter : NSFormatter /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+ @property  NSLocale *locale
+ @property  NSDictionary *directionSubstringAttributes
+
+  // class methods
+  +[WeatherWindSpeedFormatter convenienceFormatter]
+
+  // instance methods
+  -[WeatherWindSpeedFormatter init]
+  -[WeatherWindSpeedFormatter setLocale:]
+  -[WeatherWindSpeedFormatter .cxx_destruct]
+  -[WeatherWindSpeedFormatter locale]
+  -[WeatherWindSpeedFormatter stringForObjectValue:]
+  -[WeatherWindSpeedFormatter getObjectValue:forString:errorDescription:]
+  -[WeatherWindSpeedFormatter formattedStringForSpeed:direction:]
+  -[WeatherWindSpeedFormatter speedByConvertingToUserUnit:]
+  -[WeatherWindSpeedFormatter templateStringForSpeed:direction:]
+  -[WeatherWindSpeedFormatter stringForWindDirection:]
+  -[WeatherWindSpeedFormatter directionSubstringAttributes]
+  -[WeatherWindSpeedFormatter stringForWindSpeed:]
+  -[WeatherWindSpeedFormatter fallbackStringForWindSpeed:]
+  -[WeatherWindSpeedFormatter windSpeedUnit]
+  -[WeatherWindSpeedFormatter fallbackUnitString]
+  -[WeatherWindSpeedFormatter attributedFormattedStringForSpeed:direction:]
+  -[WeatherWindSpeedFormatter speedStringByConvertingToUserUnits:]
+  -[WeatherWindSpeedFormatter setDirectionSubstringAttributes:]
+
+
+WeatherView : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI <CityUpdateObserver>
+ @property  City *city
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WeatherView dealloc]
+  -[WeatherView .cxx_destruct]
+  -[WeatherView bundle]
+  -[WeatherView city]
+  -[WeatherView initWithFrame:]
+  -[WeatherView resetLocale:]
+  -[WeatherView cleanupWindView]
+  -[WeatherView showCity:]
+  -[WeatherView updateWeatherDisplayForCity:]
+  -[WeatherView _setCity:associateAsDelegate:]
+  -[WeatherView cityDidStartWeatherUpdate:]
+  -[WeatherView cityDidFinishWeatherUpdate:]
+  -[WeatherView refreshLocalization]
+
+
+WeatherUserDefaults : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <WeatherPreferencesPersistence>
+ @property  NSUserDefaults *userDefaults
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WeatherUserDefaults synchronize]
+  -[WeatherUserDefaults objectForKey:]
+  -[WeatherUserDefaults removeObjectForKey:]
+  -[WeatherUserDefaults setObject:forKey:]
+  -[WeatherUserDefaults .cxx_destruct]
+  -[WeatherUserDefaults boolForKey:]
+  -[WeatherUserDefaults stringForKey:]
+  -[WeatherUserDefaults arrayForKey:]
+  -[WeatherUserDefaults dictionaryForKey:]
+  -[WeatherUserDefaults setBool:forKey:]
+  -[WeatherUserDefaults userDefaults]
+  -[WeatherUserDefaults setUserDefaults:]
+  -[WeatherUserDefaults initWithUserDefaults:]
+
+
+WeatherPrecipitationFormatter : NSLengthFormatter /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+ @property  NSLocale *locale
+
+  // class methods
+  +[WeatherPrecipitationFormatter convenienceFormatter]
+
+  // instance methods
+  -[WeatherPrecipitationFormatter init]
+  -[WeatherPrecipitationFormatter setLocale:]
+  -[WeatherPrecipitationFormatter .cxx_destruct]
+  -[WeatherPrecipitationFormatter locale]
+  -[WeatherPrecipitationFormatter stringForObjectValue:]
+  -[WeatherPrecipitationFormatter stringFromDistance:isDataMetric:]
+  -[WeatherPrecipitationFormatter precipitationUnit]
+  -[WeatherPrecipitationFormatter convertDistanceInMetric:to:]
+  -[WeatherPrecipitationFormatter convertDistanceInImperial:to:]
+  -[WeatherPrecipitationFormatter stringFromCentimeters:]
+  -[WeatherPrecipitationFormatter stringFromInches:]
+
+
+WATodayHourlyForecastView : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+ @property  UIVisualEffectView *temperatureLabelVisualEffectView
+ @property  UIVisualEffectView *timeLabelVisualEffectView
+ @property  UILabel *temperatureLabel
+ @property  UILabel *timeLabel
+ @property  UIImageView *conditionsImageView
+ @property  NSArray *constraints
+ @property  UIImage *conditionsImage
+ @property  NSAttributedString *temperature
+ @property  NSAttributedString *time
+
+  // instance methods
+  -[WATodayHourlyForecastView .cxx_destruct]
+  -[WATodayHourlyForecastView constraints]
+  -[WATodayHourlyForecastView time]
+  -[WATodayHourlyForecastView setTime:]
+  -[WATodayHourlyForecastView initWithFrame:]
+  -[WATodayHourlyForecastView setConstraints:]
+  -[WATodayHourlyForecastView setTemperature:]
+  -[WATodayHourlyForecastView temperature]
+  -[WATodayHourlyForecastView _setupConstraints]
+  -[WATodayHourlyForecastView setTimeLabel:]
+  -[WATodayHourlyForecastView timeLabel]
+  -[WATodayHourlyForecastView setTemperatureLabel:]
+  -[WATodayHourlyForecastView temperatureLabel]
+  -[WATodayHourlyForecastView setTemperatureLabelVisualEffectView:]
+  -[WATodayHourlyForecastView temperatureLabelVisualEffectView]
+  -[WATodayHourlyForecastView setTimeLabelVisualEffectView:]
+  -[WATodayHourlyForecastView timeLabelVisualEffectView]
+  -[WATodayHourlyForecastView setConditionsImageView:]
+  -[WATodayHourlyForecastView conditionsImageView]
+  -[WATodayHourlyForecastView setConditionsImage:]
+  -[WATodayHourlyForecastView conditionsImage]
+  -[WATodayHourlyForecastView applyVibrancyToTimeWithEffect:]
+
+
+WALockscreenWidgetViewController : UIViewController /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI <WATodayModelObserver>
+ @property  WATodayModel *todayModel
+ @property  WATodayPadView *todayView
+ @property  WAForecastModel *currentForecastModel
+ @property  NSTimer *updateTimer
+ @property  NSDate *updateLastCompletionDate
+ @property  BOOL locationServicesActive
+ @property  double updateInterval
+ @property  <WAWidgetDelegate> *delegate
+ @property  BOOL todayViewIsVisible
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WALockscreenWidgetViewController sharedInstanceIfExists]
+
+  // instance methods
+  -[WALockscreenWidgetViewController init]
+  -[WALockscreenWidgetViewController delegate]
+  -[WALockscreenWidgetViewController setDelegate:]
+  -[WALockscreenWidgetViewController .cxx_destruct]
+  -[WALockscreenWidgetViewController viewWillAppear:]
+  -[WALockscreenWidgetViewController viewDidLoad]
+  -[WALockscreenWidgetViewController viewWillTransitionToSize:withTransitionCoordinator:]
+  -[WALockscreenWidgetViewController viewDidAppear:]
+  -[WALockscreenWidgetViewController viewDidDisappear:]
+  -[WALockscreenWidgetViewController updateForChangedSettings:]
+  -[WALockscreenWidgetViewController setUpdateInterval:]
+  -[WALockscreenWidgetViewController updateInterval]
+  -[WALockscreenWidgetViewController _locationName]
+  -[WALockscreenWidgetViewController _temperature]
+  -[WALockscreenWidgetViewController _updateTimerFired:]
+  -[WALockscreenWidgetViewController setLocationServicesActive:]
+  -[WALockscreenWidgetViewController todayModelWantsUpdate:]
+  -[WALockscreenWidgetViewController todayModel:forecastWasUpdated:]
+  -[WALockscreenWidgetViewController locationServicesActive]
+  -[WALockscreenWidgetViewController setTodayView:]
+  -[WALockscreenWidgetViewController todayView]
+  -[WALockscreenWidgetViewController _updateTodayView]
+  -[WALockscreenWidgetViewController _updateWithReason:]
+  -[WALockscreenWidgetViewController _teardownWeatherModel]
+  -[WALockscreenWidgetViewController _setTodayViewHidden:]
+  -[WALockscreenWidgetViewController _teardownTimer]
+  -[WALockscreenWidgetViewController todayModel]
+  -[WALockscreenWidgetViewController _scheduleNewTimer]
+  -[WALockscreenWidgetViewController _setupWeatherModel]
+  -[WALockscreenWidgetViewController _delegateShouldUpdateForecast]
+  -[WALockscreenWidgetViewController _delegateWillUpdate]
+  -[WALockscreenWidgetViewController setUpdateLastCompletionDate:]
+  -[WALockscreenWidgetViewController _delegateUpdateDidFailWithError:]
+  -[WALockscreenWidgetViewController setCurrentForecastModel:]
+  -[WALockscreenWidgetViewController currentForecastModel]
+  -[WALockscreenWidgetViewController shouldFakeWeather]
+  -[WALockscreenWidgetViewController _conditionsLine]
+  -[WALockscreenWidgetViewController _conditionsImage]
+  -[WALockscreenWidgetViewController getLocationServicesAuthorizationStatus:]
+  -[WALockscreenWidgetViewController setUpdateTimer:]
+  -[WALockscreenWidgetViewController updateTimer]
+  -[WALockscreenWidgetViewController setTodayModel:]
+  -[WALockscreenWidgetViewController updateWeather]
+  -[WALockscreenWidgetViewController todayViewIsVisible]
+  -[WALockscreenWidgetViewController _delegateDidUpdate]
+  -[WALockscreenWidgetViewController updateLastCompletionDate]
+
+
+WeatherImageLoader : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  CPBitmapStore *store
+ @property  NSCache *conditionImagesCache
+
+  // class methods
+  +[WeatherImageLoader sharedImageLoader]
+  +[WeatherImageLoader preloadImages]
+  +[WeatherImageLoader conditionImageNamed:style:]
+  +[WeatherImageLoader conditionImageNameWithConditionIndex:]
+  +[WeatherImageLoader conditionImageWithConditionIndex:]
+  +[WeatherImageLoader conditionImageBundle]
+  +[WeatherImageLoader conditionImageNamed:size:cloudAligned:stroke:strokeAlpha:lighterColors:]
+  +[WeatherImageLoader colorForImageColor:lighter:]
+  +[WeatherImageLoader cacheImageIfNecessary:]
+  +[WeatherImageLoader conditionImageWithConditionIndex:style:]
+  +[WeatherImageLoader cachedImageNamed:completion:]
+
+  // instance methods
+  -[WeatherImageLoader init]
+  -[WeatherImageLoader .cxx_destruct]
+  -[WeatherImageLoader store]
+  -[WeatherImageLoader setStore:]
+  -[WeatherImageLoader setImage:forKey:]
+  -[WeatherImageLoader conditionImagesCache]
+  -[WeatherImageLoader cachedImageForKey:]
+  -[WeatherImageLoader setConditionImagesCache:]
+
+
+WeatherLocationManager : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <CLLocationManagerDelegate>
+ @property  NSString *effectiveBundleIdentifier
+ @property  CLLocationManager *locationManager
+ @property  int authorizationStatus
+ @property  BOOL locationUpdatesEnabled
+ @property  BOOL locationTrackingIsReady
+ @property  unsigned long updateInterval
+ @property  double oldestAllowedUpdateTime
+ @property  NSTimer *delayedUpdateTimer
+ @property  NSTimer *accuracyFallbackTimer
+ @property  WeatherPreferences *preferences
+ @property  {CLLocationCoordinate2D=dd} lastLocationCoord
+ @property  NSDate *lastLocationTimeStamp
+ @property  float lastLocationAccuracy
+ @property  double lastLocationUpdateTime
+ @property  double nextPlannedUpdate
+ @property  BOOL isInternalBuild
+ @property  <CLLocationManagerDelegate> *delegate
+ @property  double distanceFilter
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WeatherLocationManager locationManagerAuthorizationWithEffectiveBundleId:]
+  +[WeatherLocationManager sharedWeatherLocationManager]
+  +[WeatherLocationManager clearSharedLocationManager]
+
+  // instance methods
+  -[WeatherLocationManager init]
+  -[WeatherLocationManager dealloc]
+  -[WeatherLocationManager delegate]
+  -[WeatherLocationManager setDelegate:]
+  -[WeatherLocationManager .cxx_destruct]
+  -[WeatherLocationManager location]
+  -[WeatherLocationManager locationManager:didUpdateLocations:]
+  -[WeatherLocationManager distanceFilter]
+  -[WeatherLocationManager locationManager:didFailWithError:]
+  -[WeatherLocationManager locationManager:didChangeAuthorizationStatus:]
+  -[WeatherLocationManager authorizationStatus]
+  -[WeatherLocationManager setPreferences:]
+  -[WeatherLocationManager preferences]
+  -[WeatherLocationManager setUpdateInterval:]
+  -[WeatherLocationManager updateInterval]
+  -[WeatherLocationManager isInternalBuild]
+  -[WeatherLocationManager initWithPreferences:]
+  -[WeatherLocationManager setAuthorizationStatus:]
+  -[WeatherLocationManager effectiveBundleIdentifier]
+  -[WeatherLocationManager locationManager]
+  -[WeatherLocationManager setLocationManager:]
+  -[WeatherLocationManager updateLocation:]
+  -[WeatherLocationManager initWithPreferences:effectiveBundleIdentifier:]
+  -[WeatherLocationManager stopLocationUpdate]
+  -[WeatherLocationManager setLocationTrackingReady:activelyTracking:watchKitExtension:]
+  -[WeatherLocationManager clearLocalWeatherUpdateState]
+  -[WeatherLocationManager locationTrackingIsReady]
+  -[WeatherLocationManager setLocationTrackingActive:]
+  -[WeatherLocationManager askForLocationManagerAuthorization]
+  -[WeatherLocationManager localWeatherAuthorized]
+  -[WeatherLocationManager isLocalStaleOrOutOfDate]
+  -[WeatherLocationManager isCacheOutOfDate]
+  -[WeatherLocationManager forceLocationUpdate]
+  -[WeatherLocationManager updateLocationWithNoConditionCheck]
+  -[WeatherLocationManager cancelAccuracyFallbackTimer]
+  -[WeatherLocationManager cancelDelayedUpdateTimer]
+  -[WeatherLocationManager forceLoadingAuthorizationStatus]
+  -[WeatherLocationManager setLocationTrackingReady:activelyTracking:watchKitExtension:shouldRequestAuthorization:]
+  -[WeatherLocationManager clearLastLocationUpdateTime]
+  -[WeatherLocationManager setLocationUpdatesEnabled:]
+  -[WeatherLocationManager setLocationTrackingIsReady:]
+  -[WeatherLocationManager setLastLocationUpdateTime:]
+  -[WeatherLocationManager lastLocationUpdateTime]
+  -[WeatherLocationManager locationUpdatesEnabled]
+  -[WeatherLocationManager oldestAllowedUpdateTime]
+  -[WeatherLocationManager setOldestAllowedUpdateTime:]
+  -[WeatherLocationManager scheduleDelayedUpdate:]
+  -[WeatherLocationManager lastLocationTimeStamp]
+  -[WeatherLocationManager setLastLocationTimeStamp:]
+  -[WeatherLocationManager lastLocationAccuracy]
+  -[WeatherLocationManager lastLocationCoord]
+  -[WeatherLocationManager delayedUpdateTimer]
+  -[WeatherLocationManager setNextPlannedUpdate:]
+  -[WeatherLocationManager delayedUpdateTimerDidFire:]
+  -[WeatherLocationManager setDelayedUpdateTimer:]
+  -[WeatherLocationManager accuracyFallbackTimerDidFire:]
+  -[WeatherLocationManager setAccuracyFallbackTimer:]
+  -[WeatherLocationManager setLastLocationCoord:]
+  -[WeatherLocationManager setLastLocationAccuracy:]
+  -[WeatherLocationManager accuracyFallbackTimer]
+  -[WeatherLocationManager forceLocationManagerAuthorization]
+  -[WeatherLocationManager monitorLocationAuthorization]
+  -[WeatherLocationManager hasCrossedHourBoundary]
+  -[WeatherLocationManager isLocationWithInRange:]
+  -[WeatherLocationManager nextPlannedUpdate]
+  -[WeatherLocationManager setIsInternalBuild:]
+
+
+WATodayHeaderView : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+ @property  UIVisualEffectView *weatherInformationVisualEffectView
+ @property  UILabel *locationLabel
+ @property  UILabel *conditionsLabel1
+ @property  UILabel *conditionsLabel2
+ @property  UIImageView *conditionsImageView
+ @property  UILabel *temperatureLabel
+ @property  UILabel *temperatureHighLowLabel
+ @property  double pageFontSize
+ @property  double pageDegreeFontSize
+ @property  double pageBaselineOffset
+ @property  NSString *conditionsLine1
+ @property  NSString *conditionsLine2
+ @property  UIImage *conditionsImage
+ @property  NSString *temperature
+ @property  NSString *temperatureHigh
+ @property  NSString *temperatureLow
+ @property  NSString *locationName
+
+  // class methods
+  +[WATodayHeaderView requiresConstraintBasedLayout]
+
+  // instance methods
+  -[WATodayHeaderView init]
+  -[WATodayHeaderView .cxx_destruct]
+  -[WATodayHeaderView locationName]
+  -[WATodayHeaderView setTemperature:]
+  -[WATodayHeaderView temperature]
+  -[WATodayHeaderView setLocationName:]
+  -[WATodayHeaderView _setupSubviews]
+  -[WATodayHeaderView _setupConstraints]
+  -[WATodayHeaderView locationLabel]
+  -[WATodayHeaderView setLocationLabel:]
+  -[WATodayHeaderView _updateContent]
+  -[WATodayHeaderView setTemperatureLabel:]
+  -[WATodayHeaderView temperatureLabel]
+  -[WATodayHeaderView setConditionsImageView:]
+  -[WATodayHeaderView conditionsImageView]
+  -[WATodayHeaderView setConditionsImage:]
+  -[WATodayHeaderView conditionsImage]
+  -[WATodayHeaderView temperatureHigh]
+  -[WATodayHeaderView temperatureLow]
+  -[WATodayHeaderView temperatureHighLowLabel]
+  -[WATodayHeaderView conditionsLine1]
+  -[WATodayHeaderView conditionsLabel1]
+  -[WATodayHeaderView conditionsLine2]
+  -[WATodayHeaderView conditionsLabel2]
+  -[WATodayHeaderView setWeatherInformationVisualEffectView:]
+  -[WATodayHeaderView weatherInformationVisualEffectView]
+  -[WATodayHeaderView setConditionsLabel1:]
+  -[WATodayHeaderView setConditionsLabel2:]
+  -[WATodayHeaderView setTemperatureHighLowLabel:]
+  -[WATodayHeaderView setConditionsLine1:]
+  -[WATodayHeaderView setConditionsLine2:]
+  -[WATodayHeaderView setTemperatureLow:]
+  -[WATodayHeaderView setTemperatureHigh:]
+  -[WATodayHeaderView pageFontSize]
+  -[WATodayHeaderView setPageFontSize:]
+  -[WATodayHeaderView pageDegreeFontSize]
+  -[WATodayHeaderView setPageDegreeFontSize:]
+  -[WATodayHeaderView pageBaselineOffset]
+  -[WATodayHeaderView setPageBaselineOffset:]
+
+
+WATodayPadViewStyle : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <NSCopying>
+ @property  long long orientation
+ @property  unsigned long format
+ @property  UIFont *locationFont
+ @property  UIFont *temperatureFont
+ @property  UIFont *conditionsFont
+ @property  double labelLeadingMargin
+ @property  double conditionsImageLeadingMargin
+ @property  double temperatureLabelBaselineToConditionsImageViewBottom
+ @property  double locationLabelBaselineToTemperatureLabelBaseline
+ @property  double conditionsLabelBaselineToLocationLabelBaseline
+ @property  double conditionsLabelBaselineToBottom
+
+  // class methods
+  +[WATodayPadViewStyle styleForScreenWithSize:orientation:]
+
+  // instance methods
+  -[WATodayPadViewStyle init]
+  -[WATodayPadViewStyle copyWithZone:]
+  -[WATodayPadViewStyle .cxx_destruct]
+  -[WATodayPadViewStyle orientation]
+  -[WATodayPadViewStyle format]
+  -[WATodayPadViewStyle setOrientation:]
+  -[WATodayPadViewStyle setFormat:]
+  -[WATodayPadViewStyle initWithFormat:orientation:]
+  -[WATodayPadViewStyle _setupForDefaultWithOrientation:]
+  -[WATodayPadViewStyle _setupForGigantorWithOrientation:]
+  -[WATodayPadViewStyle setTemperatureFont:]
+  -[WATodayPadViewStyle setLocationFont:]
+  -[WATodayPadViewStyle setConditionsFont:]
+  -[WATodayPadViewStyle setLabelLeadingMargin:]
+  -[WATodayPadViewStyle setConditionsImageLeadingMargin:]
+  -[WATodayPadViewStyle setTemperatureLabelBaselineToConditionsImageViewBottom:]
+  -[WATodayPadViewStyle setLocationLabelBaselineToTemperatureLabelBaseline:]
+  -[WATodayPadViewStyle setConditionsLabelBaselineToLocationLabelBaseline:]
+  -[WATodayPadViewStyle setConditionsLabelBaselineToBottom:]
+  -[WATodayPadViewStyle temperatureFont]
+  -[WATodayPadViewStyle locationFont]
+  -[WATodayPadViewStyle conditionsFont]
+  -[WATodayPadViewStyle labelLeadingMargin]
+  -[WATodayPadViewStyle conditionsImageLeadingMargin]
+  -[WATodayPadViewStyle temperatureLabelBaselineToConditionsImageViewBottom]
+  -[WATodayPadViewStyle locationLabelBaselineToTemperatureLabelBaseline]
+  -[WATodayPadViewStyle conditionsLabelBaselineToLocationLabelBaseline]
+  -[WATodayPadViewStyle conditionsLabelBaselineToBottom]
+
+
+ProgressController : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+  // class methods
+  +[ProgressController sharedProgressController]
+
+  // instance methods
+  -[ProgressController .cxx_destruct]
+  -[ProgressController suspend]
+  -[ProgressController _showSpinner]
+  -[ProgressController _setHideSpinnerTimer:]
+  -[ProgressController _hideSpinner]
+  -[ProgressController userScrolled]
+  -[ProgressController setLoadingData:]
+
+
+City : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  NSDictionary *urlComponents
+ @property  WFLocation *wfLocation
+ @property  NSTimeZone *timeZone
+ @property  NSError *lastUpdateError
+ @property  unsigned long lastUpdateStatus
+ @property  BOOL isUpdating
+ @property  BOOL isRequestedByFrameworkClient
+ @property  BOOL lockedForDemoMode
+ @property  long long updateInterval
+ @property  NSTimer *autoUpdateTimer
+ @property  WFGeocodeRequest *activeGeocodeRequest
+ @property  NSString *updateTimeString
+ @property  NSHashTable *cityUpdateObservers
+ @property  BOOL timeZoneIsFresh
+ @property  NSString *fullName
+ @property  BOOL isLocalWeatherCity
+ @property  BOOL transient
+ @property  NSString *woeid
+ @property  NSString *name
+ @property  NSString *locationID
+ @property  NSString *state
+ @property  NSString *ISO3166CountryAbbreviation
+ @property  WFTemperature *temperature
+ @property  WFTemperature *feelsLike
+ @property  long long conditionCode
+ @property  unsigned long observationTime
+ @property  unsigned long sunsetTime
+ @property  unsigned long sunriseTime
+ @property  unsigned long moonPhase
+ @property  unsigned long uvIndex
+ @property  double precipitationPast24Hours
+ @property  NSURL *link
+ @property  NSURL *deeplink
+ @property  CLLocation *location
+ @property  double longitude
+ @property  double latitude
+ @property  NSDate *timeZoneUpdateDate
+ @property  NSDate *updateTime
+ @property  float windChill
+ @property  float windDirection
+ @property  float windSpeed
+ @property  float humidity
+ @property  float visibility
+ @property  float pressure
+ @property  unsigned long pressureRising
+ @property  float dewPoint
+ @property  float heatIndex
+ @property  NSNumber *airQualityIdx
+ @property  NSNumber *airQualityCategory
+ @property  WFAQIScaleCategory *airQualityScaleCategory
+ @property  BOOL isDay
+ @property  BOOL autoUpdate
+ @property  NSArray *hourlyForecasts
+ @property  NSArray *dayForecasts
+
+  // class methods
+  +[City cityContainingLocation:expectedName:fromCities:]
+  +[City _ISO8601Calendar]
+
+  // instance methods
+  -[City init]
+  -[City dealloc]
+  -[City isEqual:]
+  -[City name]
+  -[City setTimeZone:]
+  -[City .cxx_destruct]
+  -[City timeZone]
+  -[City setName:]
+  -[City coordinate]
+  -[City dictionaryRepresentation]
+  -[City state]
+  -[City setVisibility:]
+  -[City visibility]
+  -[City displayName]
+  -[City setState:]
+  -[City location]
+  -[City latitude]
+  -[City longitude]
+  -[City update]
+  -[City fullName]
+  -[City setLongitude:]
+  -[City setLatitude:]
+  -[City setCoordinate:]
+  -[City setLocation:]
+  -[City isUpdating]
+  -[City isTransient]
+  -[City link]
+  -[City setLink:]
+  -[City initWithDictionaryRepresentation:]
+  -[City setUpdateInterval:]
+  -[City updateInterval]
+  -[City _isUpdating]
+  -[City setTransient:]
+  -[City setTemperature:]
+  -[City temperature]
+  -[City updateTime]
+  -[City setUpdateTime:]
+  -[City detailedDescription]
+  -[City pressure]
+  -[City setPressure:]
+  -[City setFullName:]
+  -[City _updateTimeZone]
+  -[City updateTimeString]
+  -[City conditionCode]
+  -[City setConditionCode:]
+  -[City dewPoint]
+  -[City setDewPoint:]
+  -[City heatIndex]
+  -[City setHeatIndex:]
+  -[City moonPhase]
+  -[City setMoonPhase:]
+  -[City uvIndex]
+  -[City windChill]
+  -[City setWindChill:]
+  -[City windSpeed]
+  -[City setWindSpeed:]
+  -[City windDirection]
+  -[City setWindDirection:]
+  -[City hourlyForecasts]
+  -[City setHourlyForecasts:]
+  -[City locationID]
+  -[City ISO3166CountryAbbreviation]
+  -[City feelsLike]
+  -[City setFeelsLike:]
+  -[City humidity]
+  -[City setHumidity:]
+  -[City pressureRising]
+  -[City setPressureRising:]
+  -[City setUVIndex:]
+  -[City precipitationPast24Hours]
+  -[City setPrecipitationPast24Hours:]
+  -[City observationTime]
+  -[City setObservationTime:]
+  -[City airQualityIdx]
+  -[City airQualityScaleCategory]
+  -[City airQualityCategory]
+  -[City dayForecasts]
+  -[City isLocalWeatherCity]
+  -[City updateCityForModel:]
+  -[City setIsLocalWeatherCity:]
+  -[City removeUpdateObserver:]
+  -[City addUpdateObserver:]
+  -[City precipitationForecast]
+  -[City deeplink]
+  -[City _clearAutoUpdateTimer]
+  -[City sunriseTime]
+  -[City sunsetTime]
+  -[City cityUpdateObservers]
+  -[City setCityUpdateObservers:]
+  -[City setAutoUpdateTimer:]
+  -[City lockedForDemoMode]
+  -[City weatherDataAge]
+  -[City timeDigit]
+  -[City _dataIsValid]
+  -[City setIsUpdating:]
+  -[City _notifyDidStartWeatherUpdate]
+  -[City timeZoneUpdateDate]
+  -[City timeZoneIsFresh]
+  -[City updateTimeZoneWithCompletionBlock:]
+  -[City activeGeocodeRequest]
+  -[City setWfLocation:]
+  -[City setActiveGeocodeRequest:]
+  -[City setDayForecasts:]
+  -[City setAirQualityIdx:]
+  -[City setAirQualityScaleCategory:]
+  -[City setAirQualityCategory:]
+  -[City setLastUpdateStatus:]
+  -[City setLastUpdateError:]
+  -[City discardDataIfNeeded]
+  -[City setTimeZoneUpdateDate:]
+  -[City setISO3166CountryAbbreviation:]
+  -[City setDeeplink:]
+  -[City setSunsetTime:]
+  -[City setSunriseTime:]
+  -[City lastUpdateStatus]
+  -[City distanceToLatitude:longitude:]
+  -[City distanceToLocation:]
+  -[City naturalLanguageDescriptionWithDescribedCondition:]
+  -[City isDay]
+  -[City windDirectionAsString:]
+  -[City primaryConditionForRange:]
+  -[City locationOfTime:]
+  -[City clearForecasts]
+  -[City setAutoUpdate:]
+  -[City setIsDay:]
+  -[City localWeatherDidBeginUpdate]
+  -[City cityDidFinishUpdatingWithError:]
+  -[City isUpdatingOrNoData]
+  -[City cityAndState]
+  -[City getName]
+  -[City populateWithDataFromCity:]
+  -[City containsLatitude:longitude:]
+  -[City isDuplicateOfCity:]
+  -[City naturalLanguageDescription]
+  -[City _generateLocalizableStrings]
+  -[City setUpdateTimeString:]
+  -[City woeid]
+  -[City setWoeid:]
+  -[City lastUpdateError]
+  -[City autoUpdate]
+  -[City wfLocation]
+  -[City isRequestedByFrameworkClient]
+  -[City setIsRequestedByFrameworkClient:]
+  -[City setLockedForDemoMode:]
+  -[City autoUpdateTimer]
+  -[City urlComponents]
+
+
+WAGreetingView : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+ @property  WATodayAutoupdatingLocationModel *todayModel
+ @property  UILabel *natualLanguageDescriptionLabel
+ @property  UIImageView *conditionImageView
+ @property  UILabel *temperatureLabel
+ @property  NSMutableArray *constraints
+ @property  BOOL isViewCreated
+ @property  UIColor *labelColor
+
+  // instance methods
+  -[WAGreetingView init]
+  -[WAGreetingView dealloc]
+  -[WAGreetingView .cxx_destruct]
+  -[WAGreetingView constraints]
+  -[WAGreetingView initWithColor:]
+  -[WAGreetingView initWithFrame:]
+  -[WAGreetingView labelColor]
+  -[WAGreetingView updateConstraints]
+  -[WAGreetingView updateView]
+  -[WAGreetingView setConstraints:]
+  -[WAGreetingView _temperature]
+  -[WAGreetingView setupConstraints]
+  -[WAGreetingView startService]
+  -[WAGreetingView setLabelColor:]
+  -[WAGreetingView setTemperatureLabel:]
+  -[WAGreetingView temperatureLabel]
+  -[WAGreetingView todayModel]
+  -[WAGreetingView _conditionsImage]
+  -[WAGreetingView setTodayModel:]
+  -[WAGreetingView setIsViewCreated:]
+  -[WAGreetingView createViews]
+  -[WAGreetingView updateLabelColors]
+  -[WAGreetingView natualLanguageDescriptionLabel]
+  -[WAGreetingView conditionImageView]
+  -[WAGreetingView setNatualLanguageDescriptionLabel:]
+  -[WAGreetingView setConditionImageView:]
+  -[WAGreetingView isViewCreated]
+
+
+WACurrentForecast : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <NSCopying>
+ @property  WFTemperature *temperature
+ @property  WFTemperature *feelsLike
+ @property  float windSpeed
+ @property  float windDirection
+ @property  float humidity
+ @property  float dewPoint
+ @property  float visibility
+ @property  float pressure
+ @property  unsigned long pressureRising
+ @property  unsigned long UVIndex
+ @property  float precipitationPast24Hours
+ @property  long long conditionCode
+ @property  unsigned long observationTime
+
+  // class methods
+  +[WACurrentForecast currentForecastForLocation:conditions:]
+
+  // instance methods
+  -[WACurrentForecast isEqual:]
+  -[WACurrentForecast copyWithZone:]
+  -[WACurrentForecast .cxx_destruct]
+  -[WACurrentForecast setVisibility:]
+  -[WACurrentForecast visibility]
+  -[WACurrentForecast setTemperature:]
+  -[WACurrentForecast temperature]
+  -[WACurrentForecast pressure]
+  -[WACurrentForecast setPressure:]
+  -[WACurrentForecast conditionCode]
+  -[WACurrentForecast setConditionCode:]
+  -[WACurrentForecast dewPoint]
+  -[WACurrentForecast setDewPoint:]
+  -[WACurrentForecast windSpeed]
+  -[WACurrentForecast setWindSpeed:]
+  -[WACurrentForecast windDirection]
+  -[WACurrentForecast setWindDirection:]
+  -[WACurrentForecast feelsLike]
+  -[WACurrentForecast setFeelsLike:]
+  -[WACurrentForecast humidity]
+  -[WACurrentForecast setHumidity:]
+  -[WACurrentForecast pressureRising]
+  -[WACurrentForecast setPressureRising:]
+  -[WACurrentForecast setUVIndex:]
+  -[WACurrentForecast precipitationPast24Hours]
+  -[WACurrentForecast setPrecipitationPast24Hours:]
+  -[WACurrentForecast observationTime]
+  -[WACurrentForecast setObservationTime:]
+  -[WACurrentForecast UVIndex]
+
+
+WeatherInMemoryDefaults : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <WeatherPreferencesPersistence>
+ @property  NSMutableDictionary *inMemoryStore
+ @property  BOOL synchronizeWasCalled
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WeatherInMemoryDefaults init]
+  -[WeatherInMemoryDefaults synchronize]
+  -[WeatherInMemoryDefaults objectForKey:]
+  -[WeatherInMemoryDefaults removeObjectForKey:]
+  -[WeatherInMemoryDefaults setObject:forKey:]
+  -[WeatherInMemoryDefaults .cxx_destruct]
+  -[WeatherInMemoryDefaults boolForKey:]
+  -[WeatherInMemoryDefaults stringForKey:]
+  -[WeatherInMemoryDefaults arrayForKey:]
+  -[WeatherInMemoryDefaults dictionaryForKey:]
+  -[WeatherInMemoryDefaults setBool:forKey:]
+  -[WeatherInMemoryDefaults setInMemoryStore:]
+  -[WeatherInMemoryDefaults inMemoryStore]
+  -[WeatherInMemoryDefaults synchronizeWasCalled]
+
+
+WeatherCloudPreferences : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <WeatherCloudPersistenceDelegate>
+ @property  <WeatherPreferencesPersistence> *cloudStore
+ @property  WeatherPreferences *localPreferences
+ @property  <SynchronizedDefaultsDelegate> *syncDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WeatherCloudPreferences .cxx_destruct]
+  -[WeatherCloudPreferences forceSync]
+  -[WeatherCloudPreferences _synchronize:]
+  -[WeatherCloudPreferences setSyncDelegate:]
+  -[WeatherCloudPreferences initWithLocalPreferences:persistence:]
+  -[WeatherCloudPreferences setLocalPreferences:]
+  -[WeatherCloudPreferences setCloudStore:]
+  -[WeatherCloudPreferences purgeLegacyCloudCities]
+  -[WeatherCloudPreferences cloudCitiesChangedExternally:]
+  -[WeatherCloudPreferences cloudStore]
+  -[WeatherCloudPreferences localPreferences]
+  -[WeatherCloudPreferences reconcileCloudCities:withLocal:isInitialSync:]
+  -[WeatherCloudPreferences areCloudCities:equalToLocalCities:]
+  -[WeatherCloudPreferences updateLocalStoreWithRemoteChanges:]
+  -[WeatherCloudPreferences saveCitiesToCloud:]
+  -[WeatherCloudPreferences syncDelegate]
+  -[WeatherCloudPreferences citiesByEnforcingSizeLimitOnResults:]
+  -[WeatherCloudPreferences prepareLocalCitiesForReconciliation:isInitialSync:]
+  -[WeatherCloudPreferences cloudRepresentationFromCities:]
+  -[WeatherCloudPreferences shouldWriteCitiesToCloud:]
+  -[WeatherCloudPreferences setCloudStoreCities:]
+  -[WeatherCloudPreferences cloudPersistenceDidSynchronize:]
+  -[WeatherCloudPreferences initWithLocalPreferences:]
+
+
+WAForecastOperation : NSOperation /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+ @property  WFWeatherConditions *currentWeatherConditions
+ @property  WACurrentForecast *currentConditions
+ @property  WFAirQualityConditions *airQualityConditions
+ @property  NSArray *dailyForecastConditions
+ @property  NSArray *hourlyForecastConditions
+ @property  NSArray *hourlyForecasts
+ @property  NSArray *dailyForecasts
+ @property  NSError *error
+ @property  NSDate *sunset
+ @property  NSDate *sunrise
+ @property  WFLocation *location
+ @property  NSDictionary *links
+ @property  WFDailyForecastRequest *dailyForecastRequest
+ @property  WFHourlyForecastRequest *hourlyForecastRequest
+ @property  WFForecastRequest *todayForecastRequest
+ @property  WFAirQualityRequest *airQualityRequest
+ @property  BOOL isDay
+ @property  NSCalendar *calendar
+ @property  NSLocale *locale
+ @property  NSString *trackingParameter
+ @property  BOOL shouldAttachRawAPIData
+ @property  NSData *rawAPIData
+ @property  City *city
+ @property  WFServiceConnection *connection
+ @property  WAForecastModel *forecastModel
+
+  // instance methods
+  -[WAForecastOperation setLocale:]
+  -[WAForecastOperation .cxx_destruct]
+  -[WAForecastOperation calendar]
+  -[WAForecastOperation setCalendar:]
+  -[WAForecastOperation locale]
+  -[WAForecastOperation error]
+  -[WAForecastOperation cancel]
+  -[WAForecastOperation main]
+  -[WAForecastOperation setError:]
+  -[WAForecastOperation connection]
+  -[WAForecastOperation setConnection:]
+  -[WAForecastOperation location]
+  -[WAForecastOperation city]
+  -[WAForecastOperation _failWithError:]
+  -[WAForecastOperation setLocation:]
+  -[WAForecastOperation sunrise]
+  -[WAForecastOperation sunset]
+  -[WAForecastOperation setCity:]
+  -[WAForecastOperation links]
+  -[WAForecastOperation setLinks:]
+  -[WAForecastOperation currentConditions]
+  -[WAForecastOperation setSunrise:]
+  -[WAForecastOperation setSunset:]
+  -[WAForecastOperation setCurrentConditions:]
+  -[WAForecastOperation dailyForecasts]
+  -[WAForecastOperation setDailyForecasts:]
+  -[WAForecastOperation hourlyForecasts]
+  -[WAForecastOperation setHourlyForecasts:]
+  -[WAForecastOperation setAirQualityConditions:]
+  -[WAForecastOperation forecastModel]
+  -[WAForecastOperation initWithLocation:onConnection:]
+  -[WAForecastOperation airQualityConditions]
+  -[WAForecastOperation isDay]
+  -[WAForecastOperation setIsDay:]
+  -[WAForecastOperation _needsGeolocation]
+  -[WAForecastOperation setCurrentWeatherConditions:]
+  -[WAForecastOperation setDailyForecastConditions:]
+  -[WAForecastOperation currentWeatherConditions]
+  -[WAForecastOperation setHourlyForecastConditions:]
+  -[WAForecastOperation setAirQualityRequest:]
+  -[WAForecastOperation airQualityRequest]
+  -[WAForecastOperation setTodayForecastRequest:]
+  -[WAForecastOperation todayForecastRequest]
+  -[WAForecastOperation trackingParameter]
+  -[WAForecastOperation setTrackingParameter:]
+  -[WAForecastOperation setDailyForecastRequest:]
+  -[WAForecastOperation dailyForecastRequest]
+  -[WAForecastOperation setHourlyForecastRequest:]
+  -[WAForecastOperation hourlyForecastRequest]
+  -[WAForecastOperation _determineSunriseAndSunset]
+  -[WAForecastOperation _mapReferralLinks]
+  -[WAForecastOperation shouldAttachRawAPIData]
+  -[WAForecastOperation rawAPIData]
+  -[WAForecastOperation setRawAPIData:]
+  -[WAForecastOperation dailyForecastConditions]
+  -[WAForecastOperation hourlyForecastConditions]
+  -[WAForecastOperation initWithCity:onConnection:]
+  -[WAForecastOperation setShouldAttachRawAPIData:]
+
+
+CityPersistenceConversions : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+  // class methods
+  +[CityPersistenceConversions cityFromDictionary:]
+  +[CityPersistenceConversions dictionaryRepresentationOfCity:]
+  +[CityPersistenceConversions cloudDictionaryRepresentationOfCity:]
+  +[CityPersistenceConversions cityFromCloudDictionary:]
+  +[CityPersistenceConversions temperatureFromDictionaryRepresentation:]
+  +[CityPersistenceConversions populateCity:withDayForecastDictionaries:]
+  +[CityPersistenceConversions populateCity:withHourlyForecastDictionaries:]
+  +[CityPersistenceConversions scaleCategoryFromDictionaryRepresentation:]
+  +[CityPersistenceConversions isCityValid:]
+  +[CityPersistenceConversions weatherDetailsDictionaryFromCity:]
+  +[CityPersistenceConversions dayForecastDictionariesFromCity:]
+  +[CityPersistenceConversions hourlyForecastDictionariesFromCity:]
+  +[CityPersistenceConversions dictionaryRepresentationOfTemperature:]
+  +[CityPersistenceConversions dictionaryRepresentationOfScaleCategory:]
+  +[CityPersistenceConversions cityDictionaryHasValidCoordinates:]
+  +[CityPersistenceConversions cityFromALCity:]
+  +[CityPersistenceConversions cloudDictionaryRepresentationOfALCity:]
+
+
+WeatherInternalPreferences : NSUserDefaults /usr/lib/libobjc.A.dylib
+ @property  <WeatherPreferencesPersistence> *persistence
+ @property  BOOL isInternalInstall
+ @property  BOOL isV3Enabled
+ @property  BOOL shouldShowUpdateTimestamp
+
+  // class methods
+  +[WeatherInternalPreferences sharedInternalPreferences]
+
+  // instance methods
+  -[WeatherInternalPreferences .cxx_destruct]
+  -[WeatherInternalPreferences isInternalInstall]
+  -[WeatherInternalPreferences persistence]
+  -[WeatherInternalPreferences setPersistence:]
+  -[WeatherInternalPreferences isV3Enabled]
+  -[WeatherInternalPreferences shouldShowUpdateTimestamp]
+
+
+WeatherVisibilityFormatter : NSLengthFormatter /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+ @property  NSLocale *locale
+
+  // class methods
+  +[WeatherVisibilityFormatter convenienceFormatter]
+
+  // instance methods
+  -[WeatherVisibilityFormatter init]
+  -[WeatherVisibilityFormatter setLocale:]
+  -[WeatherVisibilityFormatter .cxx_destruct]
+  -[WeatherVisibilityFormatter locale]
+  -[WeatherVisibilityFormatter stringFromDistance:isDataMetric:]
+  -[WeatherVisibilityFormatter stringFromKilometers:]
+  -[WeatherVisibilityFormatter stringFromMiles:]
+
+
+TWCCityUpdater : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  WAForecastModelController *forecastModelController
+ @property  <WeatherUpdaterDelegate> *delegate
+ @property  NSLocale *locale
+ @property  NSString *trackingParameter
+
+  // class methods
+  +[TWCCityUpdater sharedCityUpdater]
+
+  // instance methods
+  -[TWCCityUpdater init]
+  -[TWCCityUpdater delegate]
+  -[TWCCityUpdater setDelegate:]
+  -[TWCCityUpdater setLocale:]
+  -[TWCCityUpdater .cxx_destruct]
+  -[TWCCityUpdater locale]
+  -[TWCCityUpdater cancel]
+  -[TWCCityUpdater isUpdatingCity:]
+  -[TWCCityUpdater updateWeatherForCity:]
+  -[TWCCityUpdater trackingParameter]
+  -[TWCCityUpdater setTrackingParameter:]
+  -[TWCCityUpdater setForecastModelController:]
+  -[TWCCityUpdater forecastModelController]
+  -[TWCCityUpdater updateWeatherForCities:withCompletionHandler:]
+  -[TWCCityUpdater updateWeatherForCities:]
+
+
+WeatherPreferences : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <WFTemperatureUnitObserver, NSURLConnectionDelegate>
+ @property  BOOL userGroupPrefsLockedWhenInit
+ @property  int userTemperatureUnit
+ @property  WeatherCloudPreferences *cloudPreferences
+ @property  <SynchronizedDefaultsDelegate> *syncDelegate
+ @property  BOOL isLocalWeatherEnabled
+ @property  City *localWeatherCity
+ @property  NSDate *lastUpdated
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WeatherPreferences sharedPreferences]
+  +[WeatherPreferences userDefaultsPersistence]
+  +[WeatherPreferences preferencesWithPersistence:]
+  +[WeatherPreferences readInternalDefaultValueForKey:]
+  +[WeatherPreferences serviceDebuggingPath]
+  +[WeatherPreferences performUpgradeOfPersistence:fileManager:error:]
+
+  // instance methods
+  -[WeatherPreferences init]
+  -[WeatherPreferences .cxx_destruct]
+  -[WeatherPreferences UUID]
+  -[WeatherPreferences _cacheDirectoryPath]
+  -[WeatherPreferences initWithPersistence:]
+  -[WeatherPreferences lastUpdated]
+  -[WeatherPreferences resetLocale]
+  -[WeatherPreferences localWeatherCity]
+  -[WeatherPreferences loadSavedCities]
+  -[WeatherPreferences readDefaultValueForKey:]
+  -[WeatherPreferences setSyncDelegate:]
+  -[WeatherPreferences setLocalWeatherEnabled:]
+  -[WeatherPreferences writeDefaultValue:forKey:]
+  -[WeatherPreferences synchronizeStateToDisk]
+  -[WeatherPreferences saveToDiskWithLocalWeatherCity:]
+  -[WeatherPreferences saveToDiskWithCities:]
+  -[WeatherPreferences saveToDiskWithCities:activeCity:]
+  -[WeatherPreferences syncDelegate]
+  -[WeatherPreferences _defaultCities]
+  -[WeatherPreferences areCitiesDefault:]
+  -[WeatherPreferences setCelsius:]
+  -[WeatherPreferences setupUbiquitousStoreIfNeeded]
+  -[WeatherPreferences cloudPreferences]
+  -[WeatherPreferences setCloudPreferences:]
+  -[WeatherPreferences setDefaultSelectedCityID:]
+  -[WeatherPreferences synchronizeStateToDiskDoNotify:]
+  -[WeatherPreferences isLocalWeatherEnabled]
+  -[WeatherPreferences userTemperatureUnit]
+  -[WeatherPreferences _defaultsCurrent]
+  -[WeatherPreferences cityFromPreferencesDictionary:]
+  -[WeatherPreferences preferencesDictionaryForCity:]
+  -[WeatherPreferences _defaultsAreValid]
+  -[WeatherPreferences citiesByConsolidatingDuplicates:originalOrder:]
+  -[WeatherPreferences loadActiveCity]
+  -[WeatherPreferences setActiveCity:]
+  -[WeatherPreferences citiesByConsolidatingDuplicatesInBucket:]
+  -[WeatherPreferences saveToUbiquitousStore]
+  -[WeatherPreferences readInternalDefaultValueForKey:]
+  -[WeatherPreferences temperatureUnitObserver:didChangeTemperatureUnitTo:]
+  -[WeatherPreferences ensureValidSelectedCityID]
+  -[WeatherPreferences adjustPrefsForLocalWeatherEnabled:]
+  -[WeatherPreferences registerTemperatureUnits]
+  -[WeatherPreferences readTemperatureUnits]
+  -[WeatherPreferences isCelsius]
+  -[WeatherPreferences saveToDiskWithCity:forActiveIndex:]
+  -[WeatherPreferences setDefaultCities:]
+  -[WeatherPreferences loadDefaultSelectedCity]
+  -[WeatherPreferences loadDefaultSelectedCityID]
+  -[WeatherPreferences setDefaultSelectedCity:]
+  -[WeatherPreferences forceSyncCloudPreferences]
+  -[WeatherPreferences serviceHost]
+  -[WeatherPreferences twcLogoURL]
+  -[WeatherPreferences twcLogoURL:]
+  -[WeatherPreferences serviceDebugging]
+  -[WeatherPreferences _clearCachedObjects]
+  -[WeatherPreferences userGroupPrefsLockedWhenInit]
+  -[WeatherPreferences setUserGroupPrefsLockedWhenInit:]
+
+
+WAWeatherPlatterViewController : UIViewController /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI <WFTemperatureUnitObserver>
+ @property  WFURLComponents *URLComponents
+ @property  WATodayModel *model
+ @property  long long status
+ @property  UIView *backgroundView
+ @property  WATodayHeaderView *headerView
+ @property  UIView *dividerLineView
+ @property  NSArray *hourlyForecastViews
+ @property  UIStackView *hourlyBeltView
+ @property  NSMutableArray *constraints
+ @property  NSURL *commitURL
+ @property  double viewWidth
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[WAWeatherPlatterViewController init]
+  -[WAWeatherPlatterViewController initWithURL:]
+  -[WAWeatherPlatterViewController .cxx_destruct]
+  -[WAWeatherPlatterViewController constraints]
+  -[WAWeatherPlatterViewController status]
+  -[WAWeatherPlatterViewController URLComponents]
+  -[WAWeatherPlatterViewController setURLComponents:]
+  -[WAWeatherPlatterViewController model]
+  -[WAWeatherPlatterViewController setModel:]
+  -[WAWeatherPlatterViewController setStatus:]
+  -[WAWeatherPlatterViewController initWithLocation:]
+  -[WAWeatherPlatterViewController backgroundView]
+  -[WAWeatherPlatterViewController _updateStatus:]
+  -[WAWeatherPlatterViewController viewDidLoad]
+  -[WAWeatherPlatterViewController viewDidLayoutSubviews]
+  -[WAWeatherPlatterViewController headerView]
+  -[WAWeatherPlatterViewController setHeaderView:]
+  -[WAWeatherPlatterViewController setBackgroundView:]
+  -[WAWeatherPlatterViewController updateViewConstraints]
+  -[WAWeatherPlatterViewController setConstraints:]
+  -[WAWeatherPlatterViewController initWithURLComponents:]
+  -[WAWeatherPlatterViewController setupConstraints]
+  -[WAWeatherPlatterViewController temperatureUnitObserver:didChangeTemperatureUnitTo:]
+  -[WAWeatherPlatterViewController _kickoffLoadingWithLocation:orPerhapsALocationString:]
+  -[WAWeatherPlatterViewController _contentSizeDidUpdate:]
+  -[WAWeatherPlatterViewController setupBackgroundView]
+  -[WAWeatherPlatterViewController setupHeaderView]
+  -[WAWeatherPlatterViewController setupDividerView]
+  -[WAWeatherPlatterViewController setupHourlyForecast]
+  -[WAWeatherPlatterViewController setDividerLineView:]
+  -[WAWeatherPlatterViewController dividerLineView]
+  -[WAWeatherPlatterViewController hourlyBeltView]
+  -[WAWeatherPlatterViewController setHourlyBeltView:]
+  -[WAWeatherPlatterViewController setViewWidth:]
+  -[WAWeatherPlatterViewController viewWidth]
+  -[WAWeatherPlatterViewController setHourlyForecastViews:]
+  -[WAWeatherPlatterViewController hourlyForecastViews]
+  -[WAWeatherPlatterViewController _updateViewContent]
+  -[WAWeatherPlatterViewController _buildModelForLocation:]
+  -[WAWeatherPlatterViewController setCommitURL:]
+  -[WAWeatherPlatterViewController initWithLocationString:]
+  -[WAWeatherPlatterViewController commitURL]
+
+
+WeatherCloudPersistence : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <WeatherPreferencesPersistence>
+ @property  NSUbiquitousKeyValueStore *cloudStore
+ @property  <WeatherCloudPersistenceDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[WeatherCloudPersistence cloudPersistenceWithDelegate:]
+  +[WeatherCloudPersistence processIsWhitelistedForSync]
+
+  // instance methods
+  -[WeatherCloudPersistence init]
+  -[WeatherCloudPersistence synchronize]
+  -[WeatherCloudPersistence objectForKey:]
+  -[WeatherCloudPersistence removeObjectForKey:]
+  -[WeatherCloudPersistence delegate]
+  -[WeatherCloudPersistence setDelegate:]
+  -[WeatherCloudPersistence setObject:forKey:]
+  -[WeatherCloudPersistence .cxx_destruct]
+  -[WeatherCloudPersistence boolForKey:]
+  -[WeatherCloudPersistence stringForKey:]
+  -[WeatherCloudPersistence arrayForKey:]
+  -[WeatherCloudPersistence dictionaryForKey:]
+  -[WeatherCloudPersistence setBool:forKey:]
+  -[WeatherCloudPersistence initWithDelegate:]
+  -[WeatherCloudPersistence setCloudStore:]
+  -[WeatherCloudPersistence cloudCitiesChangedExternally:]
+  -[WeatherCloudPersistence cloudStore]
+  -[WeatherCloudPersistence isInitialSyncNotification:]
+
+
+WAForecastModel : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <NSCopying>
+ @property  City *city
+ @property  WFLocation *location
+ @property  WACurrentForecast *currentConditions
+ @property  WFAirQualityConditions *airQualityConditions
+ @property  NSArray *hourlyForecasts
+ @property  NSArray *dailyForecasts
+ @property  NSDate *sunrise
+ @property  NSDate *sunset
+ @property  NSURL *deepLink
+ @property  NSURL *link
+ @property  WFWeatherConditions *underlyingCurrentConditions
+ @property  NSArray *underlyingHourlyConditions
+ @property  NSArray *underlyingDailyConditions
+ @property  BOOL isPopulated
+
+  // instance methods
+  -[WAForecastModel isEqual:]
+  -[WAForecastModel copyWithZone:]
+  -[WAForecastModel .cxx_destruct]
+  -[WAForecastModel location]
+  -[WAForecastModel city]
+  -[WAForecastModel setLocation:]
+  -[WAForecastModel link]
+  -[WAForecastModel setLink:]
+  -[WAForecastModel sunrise]
+  -[WAForecastModel sunset]
+  -[WAForecastModel setCity:]
+  -[WAForecastModel deepLink]
+  -[WAForecastModel setDeepLink:]
+  -[WAForecastModel currentConditions]
+  -[WAForecastModel setSunrise:]
+  -[WAForecastModel setSunset:]
+  -[WAForecastModel setCurrentConditions:]
+  -[WAForecastModel dailyForecasts]
+  -[WAForecastModel setDailyForecasts:]
+  -[WAForecastModel hourlyForecasts]
+  -[WAForecastModel setHourlyForecasts:]
+  -[WAForecastModel setAirQualityConditions:]
+  -[WAForecastModel isPopulated]
+  -[WAForecastModel airQualityConditions]
+  -[WAForecastModel setUnderlyingCurrentConditions:]
+  -[WAForecastModel setUnderlyingHourlyConditions:]
+  -[WAForecastModel setUnderlyingDailyConditions:]
+  -[WAForecastModel underlyingCurrentConditions]
+  -[WAForecastModel underlyingHourlyConditions]
+  -[WAForecastModel underlyingDailyConditions]
+
+
+WALegibilityLabel : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+ @property  double strength
+ @property  _UILegibilitySettings *legibilitySettings
+ @property  NSAttributedString *attributedText
+ @property  NSString *text
+ @property  UIColor *textColor
+ @property  UIFont *font
+ @property  long long numberOfLines
+ @property  BOOL adjustsFontSizeToFitWidth
+ @property  double minimumScaleFactor
+ @property  double firstBaselineOffsetFromBottom
+ @property  double lastBaselineOffsetFromBottom
+ @property  double baselineOffset
+
+  // instance methods
+  -[WALegibilityLabel initWithCoder:]
+  -[WALegibilityLabel .cxx_destruct]
+  -[WALegibilityLabel setOptions:]
+  -[WALegibilityLabel setBounds:]
+  -[WALegibilityLabel text]
+  -[WALegibilityLabel setText:]
+  -[WALegibilityLabel minimumScaleFactor]
+  -[WALegibilityLabel setMinimumScaleFactor:]
+  -[WALegibilityLabel baselineOffset]
+  -[WALegibilityLabel setFrame:]
+  -[WALegibilityLabel initWithFrame:]
+  -[WALegibilityLabel setTextColor:]
+  -[WALegibilityLabel setFont:]
+  -[WALegibilityLabel setNumberOfLines:]
+  -[WALegibilityLabel setAdjustsFontSizeToFitWidth:]
+  -[WALegibilityLabel sizeThatFits:]
+  -[WALegibilityLabel layoutSubviews]
+  -[WALegibilityLabel font]
+  -[WALegibilityLabel updateConstraints]
+  -[WALegibilityLabel viewForFirstBaselineLayout]
+  -[WALegibilityLabel viewForLastBaselineLayout]
+  -[WALegibilityLabel numberOfLines]
+  -[WALegibilityLabel setAttributedText:]
+  -[WALegibilityLabel attributedText]
+  -[WALegibilityLabel textColor]
+  -[WALegibilityLabel adjustsFontSizeToFitWidth]
+  -[WALegibilityLabel legibilitySettings]
+  -[WALegibilityLabel setLegibilitySettings:]
+  -[WALegibilityLabel setStrength:]
+  -[WALegibilityLabel strength]
+  -[WALegibilityLabel updateForChangedSettings:]
+  -[WALegibilityLabel firstBaselineOffsetFromBottom]
+  -[WALegibilityLabel initWithSettings:strength:]
+  -[WALegibilityLabel _markOurselfDirty]
+  -[WALegibilityLabel lastBaselineOffsetFromBottom]
+  -[WALegibilityLabel _updateLegibilityView]
+  -[WALegibilityLabel _updateLabelForLegibilitySettings]
+  -[WALegibilityLabel initWithSettings:strength:text:font:]
+  -[WALegibilityLabel initWithSettings:strength:text:font:options:]
+  -[WALegibilityLabel _layoutGuideOffsetFromBottom:]
+
+
+WeatherOpenURLHelper : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+  // class methods
+  +[WeatherOpenURLHelper URLForWeatherCityComponents:]
+  +[WeatherOpenURLHelper handleOpenURL:withContainerViewController:completion:]
+  +[WeatherOpenURLHelper cityFromURLComponents:listedCities:]
+  +[WeatherOpenURLHelper displayCity:usingController:completion:]
+  +[WeatherOpenURLHelper presentAddTransientCityDialog:usingController:]
+  +[WeatherOpenURLHelper transientCityFromURLComponents:]
+  +[WeatherOpenURLHelper URLForCity:]
+  +[WeatherOpenURLHelper handleOpenURL:withContainerViewController:]
+
+
+WAForecastModelController : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+ @property  NSOperationQueue *forecastOperationQueue
+ @property  NSObject<OS_dispatch_queue> *incomingRequestQueue
+ @property  NSObject<OS_dispatch_queue> *completionHandlerQueue
+ @property  NSMutableSet *updatingCities
+ @property  NSMutableDictionary *completionHandlersForCity
+ @property  WFServiceConnection *connection
+ @property  ^{ct_green_tea_logger_s=} greenTeaLogger
+ @property  NSString *trackingParameter
+ @property  WFWeatherStoreService *store
+
+  // instance methods
+  -[WAForecastModelController init]
+  -[WAForecastModelController dealloc]
+  -[WAForecastModelController .cxx_destruct]
+  -[WAForecastModelController connection]
+  -[WAForecastModelController setConnection:]
+  -[WAForecastModelController store]
+  -[WAForecastModelController greenTeaLogger]
+  -[WAForecastModelController setGreenTeaLogger:]
+  -[WAForecastModelController trackingParameter]
+  -[WAForecastModelController setTrackingParameter:]
+  -[WAForecastModelController isCityBeingUpdated:]
+  -[WAForecastModelController cancelAllFetchRequests]
+  -[WAForecastModelController fetchForecastForCity:completion:]
+  -[WAForecastModelController fetchForecastForCities:completion:]
+  -[WAForecastModelController setForecastOperationQueue:]
+  -[WAForecastModelController forecastOperationQueue]
+  -[WAForecastModelController setIncomingRequestQueue:]
+  -[WAForecastModelController setCompletionHandlerQueue:]
+  -[WAForecastModelController setUpdatingCities:]
+  -[WAForecastModelController setCompletionHandlersForCity:]
+  -[WAForecastModelController incomingRequestQueue]
+  -[WAForecastModelController updatingCities]
+  -[WAForecastModelController _queue_executeFetchForCity:completion:]
+  -[WAForecastModelController completionHandlersForCity]
+  -[WAForecastModelController _commaSeparatedUpdatingCitiesNames]
+  -[WAForecastModelController _handleForecastOperationCompletion:]
+  -[WAForecastModelController completionHandlerQueue]
+
+
+WAHourlyForecast : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <NSCopying>
+ @property  unsigned long eventType
+ @property  NSString *time
+ @property  long long hourIndex
+ @property  WFTemperature *temperature
+ @property  NSString *forecastDetail
+ @property  long long conditionCode
+ @property  float percentPrecipitation
+
+  // class methods
+  +[WAHourlyForecast TimeValueFromString:]
+  +[WAHourlyForecast hourlyForecastForLocation:conditions:sunriseDateComponents:sunsetDateComponents:]
+
+  // instance methods
+  -[WAHourlyForecast isEqual:]
+  -[WAHourlyForecast copyWithZone:]
+  -[WAHourlyForecast .cxx_destruct]
+  -[WAHourlyForecast time]
+  -[WAHourlyForecast setTime:]
+  -[WAHourlyForecast eventType]
+  -[WAHourlyForecast setTemperature:]
+  -[WAHourlyForecast temperature]
+  -[WAHourlyForecast setEventType:]
+  -[WAHourlyForecast conditionCode]
+  -[WAHourlyForecast setConditionCode:]
+  -[WAHourlyForecast setForecastDetail:]
+  -[WAHourlyForecast setPercentPrecipitation:]
+  -[WAHourlyForecast percentPrecipitation]
+  -[WAHourlyForecast forecastDetail]
+  -[WAHourlyForecast setHourIndex:]
+  -[WAHourlyForecast hourIndex]
+
+
+WATodayPadView : UIView /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+ @property  NSArray *constraints
+ @property  UIImageView *conditionsImageView
+ @property  WALegibilityLabel *temperatureLabel
+ @property  WALegibilityLabel *locationLabel
+ @property  WALegibilityLabel *conditionsLabel
+ @property  _UILegibilitySettings *legibilitySettings
+ @property  NSString *conditionsLine
+ @property  UIImage *conditionsImage
+ @property  NSString *temperature
+ @property  NSString *locationName
+ @property  WATodayPadViewStyle *style
+
+  // class methods
+  +[WATodayPadView requiresConstraintBasedLayout]
+
+  // instance methods
+  -[WATodayPadView .cxx_destruct]
+  -[WATodayPadView constraints]
+  -[WATodayPadView style]
+  -[WATodayPadView setStyle:]
+  -[WATodayPadView locationName]
+  -[WATodayPadView initWithFrame:]
+  -[WATodayPadView sizeToFit]
+  -[WATodayPadView willMoveToWindow:]
+  -[WATodayPadView legibilitySettings]
+  -[WATodayPadView setLegibilitySettings:]
+  -[WATodayPadView updateForChangedSettings:]
+  -[WATodayPadView setConstraints:]
+  -[WATodayPadView setTemperature:]
+  -[WATodayPadView temperature]
+  -[WATodayPadView setLocationName:]
+  -[WATodayPadView locationLabel]
+  -[WATodayPadView setLocationLabel:]
+  -[WATodayPadView setTemperatureLabel:]
+  -[WATodayPadView temperatureLabel]
+  -[WATodayPadView setConditionsImageView:]
+  -[WATodayPadView conditionsImageView]
+  -[WATodayPadView setConditionsImage:]
+  -[WATodayPadView conditionsImage]
+  -[WATodayPadView setConditionsLine:]
+  -[WATodayPadView setConditionsLabel:]
+  -[WATodayPadView conditionsLabel]
+  -[WATodayPadView conditionsLine]
+  -[WATodayPadView _setupConstraintsForViews]
+
+
+WADayForecast : NSObject /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag <NSCopying>
+ @property  WFTemperature *high
+ @property  WFTemperature *low
+ @property  unsigned long icon
+ @property  unsigned long dayOfWeek
+ @property  unsigned long dayNumber
+ @property  BOOL isYesterday
+
+  // class methods
+  +[WADayForecast dayForecastForLocation:conditions:]
+
+  // instance methods
+  -[WADayForecast isEqual:]
+  -[WADayForecast copyWithZone:]
+  -[WADayForecast .cxx_destruct]
+  -[WADayForecast dayOfWeek]
+  -[WADayForecast icon]
+  -[WADayForecast setIcon:]
+  -[WADayForecast setDayOfWeek:]
+  -[WADayForecast isYesterday]
+  -[WADayForecast high]
+  -[WADayForecast setHigh:]
+  -[WADayForecast low]
+  -[WADayForecast setLow:]
+  -[WADayForecast compareDayNumberToDayForecast:]
+  -[WADayForecast setDayNumber:]
+  -[WADayForecast setIsYesterday:]
+  -[WADayForecast dayNumber]
+
+
+TWCLocationUpdater : TWCCityUpdater
+ @property  CLGeocoder *reverseGeocoder
+ @property  ^{ct_green_tea_logger_s=} greenTeaLogger
+ @property  City *currentCity
+
+  // class methods
+  +[TWCLocationUpdater sharedLocationUpdater]
+
+  // instance methods
+  -[TWCLocationUpdater init]
+  -[TWCLocationUpdater dealloc]
+  -[TWCLocationUpdater .cxx_destruct]
+  -[TWCLocationUpdater greenTeaLogger]
+  -[TWCLocationUpdater setGreenTeaLogger:]
+  -[TWCLocationUpdater updateWeatherForCity:]
+  -[TWCLocationUpdater updateWeatherForCities:withCompletionHandler:]
+  -[TWCLocationUpdater updateWeatherForLocation:city:]
+  -[TWCLocationUpdater _updateWeatherForLocation:city:completionHandler:]
+  -[TWCLocationUpdater setCurrentCity:]
+  -[TWCLocationUpdater _geocodeLocation:currentCity:completionHandler:]
+  -[TWCLocationUpdater reverseGeocoder]
+  -[TWCLocationUpdater setReverseGeocoder:]
+  -[TWCLocationUpdater _completeReverseGeocodeForLocation:currentCity:geocodeError:completionHandler:]
+  -[TWCLocationUpdater parsedResultCity:]
+  -[TWCLocationUpdater enableProgressIndicator:]
+  -[TWCLocationUpdater updateWeatherForLocation:city:isFromFrameworkClient:withCompletionHandler:]
+  -[TWCLocationUpdater currentCity]
+
+
+WeatherPressureFormatter : NSFormatter /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+ @property  NSLocale *locale
+
+  // class methods
+  +[WeatherPressureFormatter convenienceFormatter]
+
+  // instance methods
+  -[WeatherPressureFormatter init]
+  -[WeatherPressureFormatter dealloc]
+  -[WeatherPressureFormatter setLocale:]
+  -[WeatherPressureFormatter .cxx_destruct]
+  -[WeatherPressureFormatter locale]
+  -[WeatherPressureFormatter stringForObjectValue:]
+  -[WeatherPressureFormatter getObjectValue:forString:errorDescription:]
+  -[WeatherPressureFormatter stringFromMillibars:]
+  -[WeatherPressureFormatter createNumberFormatter]
+  -[WeatherPressureFormatter resetFormatter]
+  -[WeatherPressureFormatter stringFromInchesHG:]
+  -[WeatherPressureFormatter pressureUnit]
+  -[WeatherPressureFormatter convertMBarPressure:toUnit:]
+  -[WeatherPressureFormatter formatStringForPressure:inUnit:]
+  -[WeatherPressureFormatter fallbackStringForPressure:]
+  -[WeatherPressureFormatter convertInchesHGPressure:toUnit:]
+  -[WeatherPressureFormatter stringFromPressure:isDataMetric:]
+
+
+NSString(WeatherStringAdditions)
+	// class methods
+	+[NSString(WeatherStringAdditions) stringWithFormat:andArguments:]
+
+	// instance methods
+	-[NSString(WeatherStringAdditions) drawAtPoint:forWidth:withFont:fontColor:shadowColor:]
+	-[NSString(WeatherStringAdditions) drawWithDegreeAtPoint:font:degreeFont:degreeOffset:]
+	-[NSString(WeatherStringAdditions) sizeWithDegreeWithFont:degreeFont:degreeOffset:]
+
+NSLocale(isEqualToLocaleForWeather)
+	// instance methods
+	-[NSLocale(isEqualToLocaleForWeather) isEqualToLocaleForWeather:]
+
+UIImage(WAImageExtensions)
+	// instance methods
+	-[UIImage(WAImageExtensions) WAImageLoaderPreCacheImage]
+	-[UIImage(WAImageExtensions) drawPDFInRect:]
+
+WFAQIScaleCategory(Localized)
+	// instance methods
+	-[WFAQIScaleCategory(Localized) longDescription]
+	-[WFAQIScaleCategory(Localized) warningLevel]
+	-[WFAQIScaleCategory(Localized) scaleClassName]
+
+WFAQIScaleCategoryATMO(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryATMO(Localized) description]
+	-[WFAQIScaleCategoryATMO(Localized) warningLevel]
+	-[WFAQIScaleCategoryATMO(Localized) scaleClassName]
+
+WFAQIScaleCategoryCAQI(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryCAQI(Localized) description]
+	-[WFAQIScaleCategoryCAQI(Localized) warningLevel]
+	-[WFAQIScaleCategoryCAQI(Localized) scaleClassName]
+
+WFAQIScaleCategoryDAQI(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryDAQI(Localized) description]
+	-[WFAQIScaleCategoryDAQI(Localized) warningLevel]
+	-[WFAQIScaleCategoryDAQI(Localized) scaleClassName]
+
+WFAQIScaleCategoryEPA(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryEPA(Localized) description]
+	-[WFAQIScaleCategoryEPA(Localized) longDescription]
+	-[WFAQIScaleCategoryEPA(Localized) warningLevel]
+	-[WFAQIScaleCategoryEPA(Localized) scaleClassName]
+
+WFAQIScaleCategoryHJ6332012(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryHJ6332012(Localized) description]
+	-[WFAQIScaleCategoryHJ6332012(Localized) warningLevel]
+	-[WFAQIScaleCategoryHJ6332012(Localized) scaleClassName]
+
+WFAQIScaleCategoryIMECA(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryIMECA(Localized) description]
+	-[WFAQIScaleCategoryIMECA(Localized) warningLevel]
+	-[WFAQIScaleCategoryIMECA(Localized) scaleClassName]
+
+WFAQIScaleCategoryNAQI(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryNAQI(Localized) description]
+	-[WFAQIScaleCategoryNAQI(Localized) warningLevel]
+	-[WFAQIScaleCategoryNAQI(Localized) scaleClassName]
+
+WFAQIScaleCategoryUBA(Localized)
+	// instance methods
+	-[WFAQIScaleCategoryUBA(Localized) description]
+	-[WFAQIScaleCategoryUBA(Localized) warningLevel]
+	-[WFAQIScaleCategoryUBA(Localized) scaleClassName]
+
+CPBitmapStore(WeatherAppDataProtection)
+	// instance methods
+	-[CPBitmapStore(WeatherAppDataProtection) setVersion:withOptions:]
+
+01 00 0900 /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport: ALCity 
+01 00 0900 /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport: ALCityManager 
+01 00 1b00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLGeocoder 
+01 00 1b00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 1b00 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocationManager 
+01 00 0900 /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport: CPBitmapStore 
+01 00 0700 /System/Library/Frameworks/MapKit.framework/MapKit: MKMapItem 
+01 00 0700 /System/Library/Frameworks/MapKit.framework/MapKit: MKPlacemark 
+01 00 0b00 /System/Library/PrivateFrameworks/NetAppsUtilitiesUI.framework/NetAppsUtilitiesUI: NAUIContentSizeLayoutConstraint 
+01 00 0b00 /System/Library/PrivateFrameworks/NetAppsUtilitiesUI.framework/NetAppsUtilitiesUI: NAUIDeviceUtilities 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateComponentsFormatter 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSDistributedNotificationCenter 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFormatter 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSLengthFormatter 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotification 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumberFormatter 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperation 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLQueryItem 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUbiquitousKeyValueStore 
+01 00 0100 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 1300 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertAction 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertController 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIFontDescriptor 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIGraphicsImageRenderer 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIImageView 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UILabel 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UILayoutGuide 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIStackView 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIVibrancyEffect 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: UIVisualEffectView 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleATMO 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategory 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryATMO 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryCAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryDAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryEPA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryHJ6332012 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryIMECA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryNAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleCategoryUBA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleDAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleEPA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleHJ6332012 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleIMECA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleNAQI 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAQIScaleUBA 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAirQualityConditions 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFAirQualityRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFDailyForecastRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFForecastRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFGeocodeRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFHourlyForecastRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFLocation 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFServiceConnection 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFTemperature 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFTemperatureFormatter 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFTemperatureUnitChangeRequest 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFTemperatureUnitObserver 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFURLComponents 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WFWeatherStoreService 
+01 00 0a00 /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation: WeatherService 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: _UILegibilitySettings 
+01 00 1500 /System/Library/Frameworks/UIKit.framework/UIKit: _UILegibilityView 
