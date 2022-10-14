@@ -40,7 +40,7 @@ git diff  14.0.0 15.7.0  **/libsystem_c.dylib
 
 List all new symbols between iOS 14.0.0 to iOS 15.7.0
 ```
-git diff 14.0.0 15.7.0  **/UIKitCore | grep -E "^\+||"
+git diff 14.0.0 15.7.0  **/UIKitCore | grep -E "^\+\|\|"
 ```
 
 List all new external references that have been referenced UIKitCore between iOS 14.0.0 to iOS 15.7.0
@@ -51,4 +51,9 @@ git diff 14.0.0 15.7.0  **/UIKitCore | grep -E "^\+__"
 List all external references that have been removed UIKitCore between iOS 14.0.0 to iOS 15.7.0
 ```
 git diff 14.0.0 15.7.0  **/UIKitCore | grep -E "^\+__"
+```
+
+List all new Objective-C classes in UIKitCore between iOS 14.0.0 to iOS 15.7.0
+```
+git diff 14.0.0 15.7.0  **/UIKitCore | grep -E "^\+\|\|" | grep OBJC_CLASS_
 ```
