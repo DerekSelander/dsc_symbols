@@ -32,7 +32,7 @@ List all modules that were created between iOS 14.0.0 and iOS 15.7.0
 git diff 14.0.0 15.7.0 --diff-filter=A --name-status
 ```
 
-Tip: Get on a branch of interest and use your shell's autocomplete with an existing file in the directory
+Tip: Get on a branch of interest and use your shell's autocomplete with an existing file in the directory. That way you don't have to type out the fullpath
 ```
 git switch 14.0.0
 git diff  14.0.0 15.7.0  **/libsystem_c.dylib
