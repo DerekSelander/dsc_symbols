@@ -13,10 +13,24 @@ git clone, then...
 
 List currently available iOS versions to compare
 ```
-git tag # branch names match with the tags
+git branch -r
 ```
 
 Compare all the new shit in libsystem_c.dylib from iOS 14.0.0 -> 15.7.0
+
+```
+git diff 14.0.0:usr/lib/system/libsystem_c.dylib 15.7.0:usr/lib/system/libsystem_c.dylib
+```
+
+List all modules that were removed between iOS 14.0.0 and iOS 15.7.0
+```
+git diff 14.0.0 15.7.0 --diff-filter=D --name-status
+```
+
+List all modules that were created between iOS 14.0.0 and iOS 15.7.0
+```
+git diff 14.0.0 15.7.0 --diff-filter=A --name-status
+```
 
 ```
 git diff  14.0.0 15.7.0  **/libsystem_c.dylib
