@@ -1,0 +1,3002 @@
+|| __DATA.__common _kVMUPrintArchivingTiming
+|| __DATA.__data _VMUBacktraceIsExcludedMarker
+|| __DATA.__data _VMUmappedFileLabel
+|| __DATA.__data _VMUunusedSharedLibDataLabel
+|| __DATA.__data _VMUunusedSharedLibLabelOrPathPrefix
+|| __DATA.__data _VMUunusedSharedLibLabelPrefix
+|| __DATA.__data _VMUunusedSharedLibTextLabel
+|| __DATA.__data _kVMUAutoreleasePoolBoundaryClassName
+|| __DATA.__data _kVMUAutoreleasePoolThreadSpecificDataKeyString
+|| __DATA.__data _kVMURootRetainCycle
+|| __DATA.__data _kVMUThreadSpecificDataKeyString
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUArchitecture
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUCallTreeNode
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUCallTreeRoot
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUCallTreeRootWithBacktrace
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUDepthGraph
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUDepthGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUDominatedByGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUDominatesGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUDominatorGraph
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUFlattenGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUGroupBy
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUGroupByNode
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUGroupType
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUInverseDepthGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMULeakDetector
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUNodeGroup
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUObjectIdentifierDriverKitSupport
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUProcList
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUProgressBar
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUReverseGraphEnumerator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUStackLogConsolidator
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUTerminalColorizer
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUVMRegionRangeInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_VMUVMRegionTracker
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUArchitecture
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUCallTreeNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUCallTreeRoot
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUCallTreeRootWithBacktrace
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUDepthGraph
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUDepthGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUDominatedByGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUDominatesGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUDominatorGraph
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUFlattenGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUGroupBy
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUGroupByNode
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUGroupType
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUInverseDepthGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMULeakDetector
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUNodeGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUObjectIdentifierDriverKitSupport
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUProcList
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUProgressBar
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUReverseGraphEnumerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUStackLogConsolidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUTerminalColorizer
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUVMRegionRangeInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_VMUVMRegionTracker
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUBacktrace._asyncCallstack
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUBacktrace._callstack
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUBacktrace._flavor
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUBacktrace._timestamp
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._address
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._children
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._count
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._name
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._numBytes
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._numChildren
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUCallTreeNode._parent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUNodeToStringMap._nodeToStringIndexMapVoidPtr
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUNodeToStringMap._stringToIndexMapVoidPtr
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUNodeToStringMap._strings
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeArray._count
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeArray._max
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeArray._ranges
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeArray._sorted
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeToStringMap._rangeAndStringVectorVoidPtr
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeToStringMap._sorted
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeToStringMap._stringToIndexMapVoidPtr
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMURangeToStringMap._strings
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._addressToSymbolicationMap
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._binaryImagePathToIdentifierMap
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._coldestFrameIsNotThreadId
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._excludedFrames
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._regionTracker
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._symbolicator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._task
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUStackLogReaderBase._usesLiteMode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._nativeWeakReferenceMarkerMask
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._nativeWeakReferenceMarkerValue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._nativeWeakReferencePointerIsSideTable
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._nativeWeakReferencePointerMask
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._refcountIsSideTableMarkerMask
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._refcountIsSideTableMarkerValue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._runtimeHasStableABI
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._sideTableLayoutWithScannableOwnerPointer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._sideTableLayoutWithUnscannableOwnerPointer
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._sideTablePointerLeftShift
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._sideTablePointerMask
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._sideTablePointerRightShift
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUSwiftRuntimeInfo._unownedExtraDataLayout
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.coalesced_region_count
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.dirty_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.external_pager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.is_macho_region
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.is_submap
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.is_unused_data_page_shared_with_active_content
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.is_unused_data_region
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.is_wired
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.mallocBlockCount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.mallocTypeFlag
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.maxProt
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.nesting_depth
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.object_id
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.offset
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.pages_dirtied
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.pages_resident
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.pages_shared_now_private
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.pages_swapped_out
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.path
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.prot
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.purgable_empty_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.purgable_non_vol_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.purgable_vol_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.purgeable
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.range
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.ref_count
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.reserved_flags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.resident_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.reusable_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.share_mode
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.shared_now_private_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.summarized
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.swapped_out_size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.type
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.user_tag
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.virtual_pages
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegion.zone_index
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegionRangeInfo.address
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegionRangeInfo.size
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegionRangeInfo.stackIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VMUVMRegionRangeInfo.userTag
+|| __DATA_CONST.__const _VMUDirectedGraphCompatibilityVersionNumberInGraphKey
+|| __DATA_CONST.__const _VMUDirectedGraphToolCompatibilityVersionKey
+|| __DATA_CONST.__const _VMUmallocMetadataLabel
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUBacktrace
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUClassInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUClassInfoMap
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUClassPatternMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUDebugTimer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUDirectedGraph
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUFieldInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUGraphStackLogReader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUMutableClassInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUMutableFieldInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUNodeToStringMap
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUNonOverlappingRangeArray
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUObjectGraph
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUObjectIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUOptionParser
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUProcInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUProcessDescription
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUProcessObjectGraph
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMURangeArray
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMURangeToStringMap
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUSampler
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUScanOverlay
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUStackLogReaderBase
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUSwiftRuntimeInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUSymbolStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUTaskMemoryCache
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUTaskMemoryScanner
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUTaskStackLogReader
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUTaskThreadStates
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUVMRegion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VMUVMRegionIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUBacktrace
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUClassInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUClassInfoMap
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUClassPatternMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUDebugTimer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUDirectedGraph
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUFieldInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUGraphStackLogReader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUMutableClassInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUMutableFieldInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUNodeToStringMap
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUNonOverlappingRangeArray
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUObjectGraph
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUObjectIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUOptionParser
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUProcInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUProcessDescription
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUProcessObjectGraph
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMURangeArray
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMURangeToStringMap
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUSampler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUScanOverlay
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUStackLogReaderBase
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUSwiftRuntimeInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUSymbolStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUTaskMemoryCache
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUTaskMemoryScanner
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUTaskStackLogReader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUTaskThreadStates
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUVMRegion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VMUVMRegionIdentifier
+|| __TEXT.__text _VMUCreateRootNodeMarkingMap
+|| __TEXT.__text _VMUEnumerateVMAnnotatedMallocObjectsWithBlock
+|| __TEXT.__text _VMUGetFlagsForAllVMRegionStatistics
+|| __TEXT.__text _VMUGraphNodeTypeDescription
+|| __TEXT.__text _VMUGraphNodeType_IsRoot
+|| __TEXT.__text _VMUGraphNodeType_IsVMRegion
+|| __TEXT.__text _VMUIntersectionRange
+|| __TEXT.__text _VMUIsOwningReference
+|| __TEXT.__text _VMULiteZoneIndex
+|| __TEXT.__text _VMUMarkObject
+|| __TEXT.__text _VMUMemorySizeString
+|| __TEXT.__text _VMUOptionParserError
+|| __TEXT.__text _VMUOptionParserRegisterFlag
+|| __TEXT.__text _VMUOptionParserRegisterFlagInternal
+|| __TEXT.__text _VMUPlatformForTask
+|| __TEXT.__text _VMUPlatformNameForPlatform
+|| __TEXT.__text _VMUPlatformNameForTask
+|| __TEXT.__text _VMUPurgeableDisplayCharacter
+|| __TEXT.__text _VMURangeContainsRange
+|| __TEXT.__text _VMURangeDescription
+|| __TEXT.__text _VMURangeIntersectsOrAbutsRange
+|| __TEXT.__text _VMURangeIntersectsRange
+|| __TEXT.__text _VMURegionTypeDescriptionForTagShareProtAndPager
+|| __TEXT.__text _VMURegisterNameForIndex
+|| __TEXT.__text _VMUSanitizePath
+|| __TEXT.__text _VMUScanTypeKeywordDescription
+|| __TEXT.__text _VMUScanTypeScanDescription
+|| __TEXT.__text _VMUScanningMaskForAllReferences
+|| __TEXT.__text _VMUScanningMaskForOwningReferences
+|| __TEXT.__text _VMUSimplifyCPlusPlusSymbolName
+|| __TEXT.__text _VMUSortIndexForLibraryPath
+|| __TEXT.__text _VMUUnionRange
+|| __TEXT.__text _VMUVMRegionShareModeName
+|| __TEXT.__text _VMUWithRootNodeMarkingMap
+|| __TEXT.__text __VMUEnumerateMarkedObjects
+|| __TEXT.__text _dispositionDescription
+|| __TEXT.__text _pidFromHint
+|| __TEXT.__text _psName
+|| __TEXT.__text _task_enumerate_malloc_blocks
+|| __TEXT.__text _task_find_leaks
+|| __TEXT.__text _task_foreach_malloc_zone
+|| __TEXT.__text _task_get_malloc_ptrs
+|| __TEXT.__text _task_get_malloc_ptrs_by_zone
+|| __TEXT.__text _task_peek
+|| __TEXT.__text _task_peek_natural_size
+|| __TEXT.__text _task_peek_string
+|| __TEXT.__text _task_read_ptr_at
+|| __TEXT.__text _task_read_unsigned_at
+|| __TEXT.__text _task_start_peeking
+|| __TEXT.__text _task_stop_peeking
+|| __TEXT.__text _task_try_peek
+|| __TEXT.__text _vmu_context_for_uniqued_stack
+|| __TEXT.__text _vmu_create_backtrace_uniquing_table
+|| __TEXT.__text _vmu_destroy_backtrace_uniquing_table
+|| __TEXT.__text _vmu_enter_ptrSized_stack_in_backtrace_uniquing_table
+|| __TEXT.__text _vmu_enter_stack_in_backtrace_uniquing_table
+|| __TEXT.__text _vmu_enumerate_backtrace_uniquing_table
+|| __TEXT.__text _vmu_print_backtrace_uniquing_table
+|| __TEXT.__text _vmu_ptrSized_stack_frames_for_uniqued_stack
+|| __TEXT.__text _vmu_remove_stack_from_backtrace_uniquing_table
+|| __TEXT.__text _vmu_stack_frames_for_uniqued_stack
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFBundleGetIdentifier
+__ CoreFoundation: _CFBundleGetValueForInfoDictionaryKey
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValueIfPresent
+__ CoreFoundation: _CFDictionaryRemoveAllValues
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFLog
+__ CoreFoundation: _CFNumberGetType
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFURLCreateWithFileSystemPath
+__ CoreFoundation: _CFUUIDCreateFromUUIDBytes
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSBlock
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSEnumerator
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: _OBJC_METACLASS_$_NSEnumerator
+__ CoreFoundation: __CFBundleCreateWithExecutableURLIfLooksLikeBundle
+__ CoreFoundation: __CFCopyServerVersionDictionary
+__ CoreFoundation: __CFCopySystemVersionDictionary
+__ CoreFoundation: __CFStringGetLength2
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___CFGenericTypeID
+__ CoreFoundation: __kCFSystemVersionBuildVersionKey
+__ CoreFoundation: __kCFSystemVersionProductNameKey
+__ CoreFoundation: __kCFSystemVersionProductVersionKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBundleIdentifierKey
+__ CoreFoundation: _kCFBundleVersionKey
+__ CoreSymbolication: _CSArchitectureGetCurrent
+__ CoreSymbolication: _CSDemangleSymbolName
+__ CoreSymbolication: _CSIsNull
+__ CoreSymbolication: _CSRegionGetName
+__ CoreSymbolication: _CSRegionGetRange
+__ CoreSymbolication: _CSRelease
+__ CoreSymbolication: _CSRetain
+__ CoreSymbolication: _CSSourceInfoGetFilename
+__ CoreSymbolication: _CSSourceInfoGetLineNumber
+__ CoreSymbolication: _CSSourceInfoGetPath
+__ CoreSymbolication: _CSSourceInfoGetRange
+__ CoreSymbolication: _CSSymbolGetMangledName
+__ CoreSymbolication: _CSSymbolGetName
+__ CoreSymbolication: _CSSymbolGetRange
+__ CoreSymbolication: _CSSymbolGetSymbolOwner
+__ CoreSymbolication: _CSSymbolIsUnnamed
+__ CoreSymbolication: _CSSymbolOwnerCreateSparseDataWithBlock
+__ CoreSymbolication: _CSSymbolOwnerForeachSection
+__ CoreSymbolication: _CSSymbolOwnerForeachSegment
+__ CoreSymbolication: _CSSymbolOwnerForeachSymbol
+__ CoreSymbolication: _CSSymbolOwnerGetArchitecture
+__ CoreSymbolication: _CSSymbolOwnerGetBaseAddress
+__ CoreSymbolication: _CSSymbolOwnerGetCFUUIDBytes
+__ CoreSymbolication: _CSSymbolOwnerGetName
+__ CoreSymbolication: _CSSymbolOwnerGetPath
+__ CoreSymbolication: _CSSymbolOwnerGetSegmentWithAddress
+__ CoreSymbolication: _CSSymbolOwnerGetSourceInfoWithAddress
+__ CoreSymbolication: _CSSymbolOwnerGetSymbolWithAddress
+__ CoreSymbolication: _CSSymbolOwnerGetSymbolWithMangledName
+__ CoreSymbolication: _CSSymbolOwnerGetSymbolWithName
+__ CoreSymbolication: _CSSymbolOwnerGetVersion
+__ CoreSymbolication: _CSSymbolOwnerIsDyldSharedCache
+__ CoreSymbolication: _CSSymbolOwnerSetPathForSymbolication
+__ CoreSymbolication: _CSSymbolOwnerUsesCPlusPlus
+__ CoreSymbolication: _CSSymbolicatorCreateForTaskSharedCache
+__ CoreSymbolication: _CSSymbolicatorCreateNonFaultingWithSignatureAndGroupKey
+__ CoreSymbolication: _CSSymbolicatorCreateSignature
+__ CoreSymbolication: _CSSymbolicatorCreateWithBinaryImageListCountPidFlagsAndNotification
+__ CoreSymbolication: _CSSymbolicatorCreateWithPid
+__ CoreSymbolication: _CSSymbolicatorCreateWithSymbolOwners
+__ CoreSymbolication: _CSSymbolicatorCreateWithTask
+__ CoreSymbolication: _CSSymbolicatorCreateWithTaskFlagsAndNotification
+__ CoreSymbolication: _CSSymbolicatorFixupFrames
+__ CoreSymbolication: _CSSymbolicatorForceFullSymbolExtraction
+__ CoreSymbolication: _CSSymbolicatorForeachSymbolOwnerAtTime
+__ CoreSymbolication: _CSSymbolicatorForeachSymbolOwnerWithNameAtTime
+__ CoreSymbolication: _CSSymbolicatorForeachSymbolicatorWithPath
+__ CoreSymbolication: _CSSymbolicatorGetAOutSymbolOwner
+__ CoreSymbolication: _CSSymbolicatorGetArchitecture
+__ CoreSymbolication: _CSSymbolicatorGetFlagsForNListOnlyData
+__ CoreSymbolication: _CSSymbolicatorGetFlagsForNoSymbolOrSourceInfoData
+__ CoreSymbolication: _CSSymbolicatorGetSectionWithAddressAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSourceInfoWithAddressAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSymbolOwnerWithAddressAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSymbolOwnerWithNameAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSymbolWithAddressAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSymbolWithNameAtTime
+__ CoreSymbolication: _CSSymbolicatorGetSymbolWithNameFromSymbolOwnerWithNameAtTime
+__ CoreSymbolication: _CSSymbolicatorGetTask
+__ CoreSymbolication: _CSTaskHasStarted
+__ CoreSymbolication: _CSTaskIs64Bit
+__ CoreSymbolication: _CSTaskIsDriverKit
+__ CoreSymbolication: _CSTaskIsTranslated
+__ CoreSymbolication: _CSUUIDCFUUIDBytesToString
+__ CoreSymbolication: _CSUUIDStringToCFUUIDBytes
+__ CoreSymbolication: _clear_mapped_memory
+__ CoreSymbolication: _create_sampling_context_for_task_pid_symbolicator
+__ CoreSymbolication: _destroy_mapped_memory_cache
+__ CoreSymbolication: _destroy_sampling_context
+__ CoreSymbolication: _dispatch_queue_name_for_serial_number
+__ CoreSymbolication: _enumerate_mapped_memory_cache
+__ CoreSymbolication: _find_node
+__ CoreSymbolication: _map_new_node
+__ CoreSymbolication: _mapped_memory_resume_target
+__ CoreSymbolication: _mapped_memory_suspend_target
+__ CoreSymbolication: _sample_remote_thread_with_dispatch_queue_regular_and_swift_async
+__ CoreSymbolication: _sampling_context_clear_cache
+__ CoreSymbolication: _set_mapped_memory_cache_region_info_block
+__ CoreSymbolication: _task_get_mapped_memory_cache_with_label
+__ CoreSymbolication: _task_lookup_mapped_memory_cache
+__ CoreSymbolication: _task_release_mapped_memory_cache
+__ CoreSymbolication: _thread_name_for_thread_port
+__ CoreSymbolication: _unmap_node
+__ CoreSymbolication: _vm_tag_is_malloc
+__ Foundation: _NSAllMapTableKeys
+__ Foundation: _NSClassFromString
+__ Foundation: _NSEndMapTableEnumeration
+__ Foundation: _NSEnumerateMapTable
+__ Foundation: _NSHashGet
+__ Foundation: _NSHashInsert
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSMapGet
+__ Foundation: _NSMapInsert
+__ Foundation: _NSMapInsertKnownAbsent
+__ Foundation: _NSMapRemove
+__ Foundation: _NSNextMapEnumeratorPair
+__ Foundation: _NSResetMapTable
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConditionLock
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSCountedSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSIndexSet
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSRecursiveLock
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSScanner
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ IOSurface: _OBJC_CLASS_$_IOSurfaceDebugDescription
+__ MallocStackLogging: _msl_coldest_frame_is_threadid
+__ MallocStackLogging: _msl_copy_disk_stack_logs
+__ MallocStackLogging: _msl_disk_stack_logs_enumerate_from_buffer
+__ MallocStackLogging: _msl_disk_stack_logs_enumerate_from_task_with_block
+__ MallocStackLogging: _msl_get_frames_for_address
+__ MallocStackLogging: _msl_payload_create_from_index
+__ MallocStackLogging: _msl_payload_for_vm_region_in_task
+__ MallocStackLogging: _msl_payload_from_lite_zone_ptr
+__ MallocStackLogging: _msl_payload_get_invalid
+__ MallocStackLogging: _msl_payload_get_uniquing_table_index
+__ MallocStackLogging: _msl_payload_is_invalid
+__ MallocStackLogging: _msl_payload_version_from_task
+__ MallocStackLogging: _msl_start_reading
+__ MallocStackLogging: _msl_stop_reading
+__ MallocStackLogging: _msl_uniquing_table_copy_from_serialized
+__ MallocStackLogging: _msl_uniquing_table_copy_from_task
+__ MallocStackLogging: _msl_uniquing_table_enumerate
+__ MallocStackLogging: _msl_uniquing_table_get_frames_from_table
+__ MallocStackLogging: _msl_uniquing_table_get_frames_from_task
+__ MallocStackLogging: _msl_uniquing_table_release
+__ MallocStackLogging: _msl_uniquing_table_serialize
+__ libSystem.B.dylib: _CC_MD5_Final
+__ libSystem.B.dylib: _CC_MD5_Init
+__ libSystem.B.dylib: _CC_MD5_Update
+__ libSystem.B.dylib: _NXGetArchInfoFromCpuType
+__ libSystem.B.dylib: _NXGetArchInfoFromName
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdinp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: ___strcpy_chk
+__ libSystem.B.dylib: ___strlcpy_chk
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __dyld_process_info_create
+__ libSystem.B.dylib: __dyld_process_info_get_platform
+__ libSystem.B.dylib: __dyld_process_info_release
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __tlv_bootstrap
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _access
+__ libSystem.B.dylib: _atoi
+__ libSystem.B.dylib: _bsearch_b
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _chmod
+__ libSystem.B.dylib: _closedir
+__ libSystem.B.dylib: _csops
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_get_label
+__ libSystem.B.dylib: _dispatch_queue_get_qos_class
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlclose
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _dyld_process_is_restricted
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fdopen
+__ libSystem.B.dylib: _feof
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fgetln
+__ libSystem.B.dylib: _fgets
+__ libSystem.B.dylib: _flsll
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fputc
+__ libSystem.B.dylib: _fputs
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _geteuid
+__ libSystem.B.dylib: _getopt_long_only
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _getprogname
+__ libSystem.B.dylib: _getsectiondata
+__ libSystem.B.dylib: _getsegmentdata
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _host_info
+__ libSystem.B.dylib: _isatty
+__ libSystem.B.dylib: _kill
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_continuous_approximate_time
+__ libSystem.B.dylib: _mach_error
+__ libSystem.B.dylib: _mach_error_string
+__ libSystem.B.dylib: _mach_get_times
+__ libSystem.B.dylib: _mach_host_self
+__ libSystem.B.dylib: _mach_port_deallocate
+__ libSystem.B.dylib: _mach_port_mod_refs
+__ libSystem.B.dylib: _mach_task_is_self
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _mach_thread_self
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _mach_vm_allocate
+__ libSystem.B.dylib: _mach_vm_copy
+__ libSystem.B.dylib: _mach_vm_deallocate
+__ libSystem.B.dylib: _mach_vm_page_range_query
+__ libSystem.B.dylib: _mach_vm_purgable_control
+__ libSystem.B.dylib: _mach_vm_read
+__ libSystem.B.dylib: _mach_vm_region
+__ libSystem.B.dylib: _mach_vm_region_recurse
+__ libSystem.B.dylib: _mach_wait_until
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _malloc_get_all_zones
+__ libSystem.B.dylib: _malloc_good_size
+__ libSystem.B.dylib: _malloc_size
+__ libSystem.B.dylib: _malloc_zone_unregister
+__ libSystem.B.dylib: _memchr
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _memset_pattern4
+__ libSystem.B.dylib: _mergesort
+__ libSystem.B.dylib: _mergesort_b
+__ libSystem.B.dylib: _mkstemps
+__ libSystem.B.dylib: _opendir
+__ libSystem.B.dylib: _optarg
+__ libSystem.B.dylib: _optind
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _os_transaction_copy_description
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _os_variant_has_internal_content
+__ libSystem.B.dylib: _perror
+__ libSystem.B.dylib: _pid_for_task
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _proc_get_dirty
+__ libSystem.B.dylib: _proc_list_uptrs
+__ libSystem.B.dylib: _proc_name
+__ libSystem.B.dylib: _proc_pid_rusage
+__ libSystem.B.dylib: _proc_pidinfo
+__ libSystem.B.dylib: _proc_pidpath
+__ libSystem.B.dylib: _proc_regionfilename
+__ libSystem.B.dylib: _pthread_create
+__ libSystem.B.dylib: _pthread_join
+__ libSystem.B.dylib: _pthread_rwlock_destroy
+__ libSystem.B.dylib: _pthread_rwlock_init
+__ libSystem.B.dylib: _pthread_rwlock_rdlock
+__ libSystem.B.dylib: _pthread_rwlock_unlock
+__ libSystem.B.dylib: _pthread_rwlock_wrlock
+__ libSystem.B.dylib: _pthread_self
+__ libSystem.B.dylib: _putchar
+__ libSystem.B.dylib: _readdir
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _reallocf
+__ libSystem.B.dylib: _regcomp
+__ libSystem.B.dylib: _regerror
+__ libSystem.B.dylib: _regexec
+__ libSystem.B.dylib: _regfree
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _strchr
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strcspn
+__ libSystem.B.dylib: _strlcpy
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: _strncpy
+__ libSystem.B.dylib: _strndup
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _strrchr
+__ libSystem.B.dylib: _strstr
+__ libSystem.B.dylib: _strtol
+__ libSystem.B.dylib: _strtoll
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _sysctlnametomib
+__ libSystem.B.dylib: _task_info
+__ libSystem.B.dylib: _task_map_corpse_info_64
+__ libSystem.B.dylib: _task_read_for_pid
+__ libSystem.B.dylib: _task_resume2
+__ libSystem.B.dylib: _task_suspend2
+__ libSystem.B.dylib: _task_threads
+__ libSystem.B.dylib: _thread_get_state
+__ libSystem.B.dylib: _thread_info
+__ libSystem.B.dylib: _thread_policy_set
+__ libSystem.B.dylib: _thread_resume
+__ libSystem.B.dylib: _thread_suspend
+__ libSystem.B.dylib: _vasprintf
+__ libSystem.B.dylib: _vfprintf
+__ libSystem.B.dylib: _vm_allocate
+__ libSystem.B.dylib: _vm_deallocate
+__ libSystem.B.dylib: _vm_kernel_page_mask
+__ libSystem.B.dylib: _vm_kernel_page_size
+__ libSystem.B.dylib: _vm_map_page_query
+__ libSystem.B.dylib: _vm_page_mask
+__ libSystem.B.dylib: _vm_page_shift
+__ libSystem.B.dylib: _vm_page_size
+__ libSystem.B.dylib: _xpc_connection_get_pid
+__ libSystem.B.dylib: _xpc_inspect_copy_description
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libcompression.dylib: _compression_stream_destroy
+__ libcompression.dylib: _compression_stream_init
+__ libcompression.dylib: _compression_stream_process
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_getInstanceSize
+__ libobjc.A.dylib: _class_getInstanceVariable
+__ libobjc.A.dylib: _ivar_getName
+__ libobjc.A.dylib: _ivar_getOffset
+__ libobjc.A.dylib: _ivar_getTypeEncoding
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_debug_tag60_permutations
+__ libobjc.A.dylib: _objc_debug_taggedpointer_mask
+__ libobjc.A.dylib: _objc_debug_taggedpointer_obfuscator
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getAssociatedObject
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x3
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x10
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setAssociatedObject
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _object_getClass
+__ libobjc.A.dylib: _sel_getName
+__ libz.1.dylib: _deflate
+__ libz.1.dylib: _deflateBound
+__ libz.1.dylib: _deflateEnd
+__ libz.1.dylib: _deflateInit2_
+__ libz.1.dylib: _inflate
+__ libz.1.dylib: _inflateEnd
+__ libz.1.dylib: _inflateInit2_
+VMUArchitecture : NSObject <NSCoding, NSCopying>
+  // class methods
+  +[VMUArchitecture initialize]
+  +[VMUArchitecture currentArchitecture]
+  +[VMUArchitecture anyArchitecture]
+  +[VMUArchitecture ppcArchitecture]
+  +[VMUArchitecture ppc32Architecture]
+  +[VMUArchitecture ppc64Architecture]
+  +[VMUArchitecture i386Architecture]
+  +[VMUArchitecture x86_32Architecture]
+  +[VMUArchitecture x86_64Architecture]
+  +[VMUArchitecture armArchitecture]
+  +[VMUArchitecture architectureWithCpuType:cpuSubtype:]
+
+  // instance methods
+  -[VMUArchitecture is64Bit]
+  -[VMUArchitecture encodeWithCoder:]
+  -[VMUArchitecture cpuType]
+  -[VMUArchitecture cpuSubtype]
+  -[VMUArchitecture copyWithZone:]
+  -[VMUArchitecture isEqual:]
+  -[VMUArchitecture initWithCoder:]
+  -[VMUArchitecture initWithCpuType:cpuSubtype:]
+  -[VMUArchitecture isBigEndian]
+  -[VMUArchitecture isLittleEndian]
+  -[VMUArchitecture is32Bit]
+  -[VMUArchitecture isEqualToArchitecture:]
+  -[VMUArchitecture matchesArchitecture:]
+
+
+VMURuntimeMetadataChunkInfo : NSObject
+  // instance methods
+  -[VMURuntimeMetadataChunkInfo .cxx_destruct]
+
+
+VMUTaskMemoryScanner : NSObject <VMUCommonGraphInterface>
+ @property  unsigned long suspendTimeContinuous
+ @property  VMUTaskMemoryCache *memoryCache
+ @property  ^{_VMURegionMap=^v^{_VMURegionNode}IQQ[0I]} regionMap
+ @property  VMUObjectIdentifier *objectIdentifier
+ @property  BOOL exactScanningEnabled
+ @property  BOOL abandonedMarkingEnabled
+ @property  unsigned long maxInteriorOffset
+ @property  unsigned int scanningMask
+ @property  VMUDebugTimer *debugTimer
+ @property  BOOL showRawClassNames
+ @property  unsigned int objectContentLevel
+ @property  BOOL recordRuntimeMetadataChunkInfo
+ @property  unsigned int nodeCount
+ @property  unsigned int zoneCount
+ @property  unsigned int mallocNodeCount
+ @property  VMUClassInfoMap *realizedClasses
+ @property  unsigned int task
+ @property  int pid
+ @property  BOOL is64bit
+ @property  BOOL isTranslatedByRosetta
+ @property  unsigned int vmPageSize
+ @property  unsigned int kernelPageSize
+ @property  BOOL hasClassInfosDerivedFromStackBacktraces
+ @property  unsigned int regionCount
+ @property  unsigned int nodeNamespaceSize
+ @property  NSString *processName
+ @property  NSString *processDescriptionString
+ @property  NSString *executablePath
+ @property  NSString *binaryImagesDescription
+ @property  unsigned long physicalFootprint
+ @property  unsigned long physicalFootprintPeak
+ @property  unsigned int idleExitStatus
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[VMUTaskMemoryScanner initialize]
+
+  // instance methods
+  -[VMUTaskMemoryScanner _suspend]
+  -[VMUTaskMemoryScanner enumerateNodesWithBlock:]
+  -[VMUTaskMemoryScanner _lengthOfMappedFileOfRegion:]
+  -[VMUTaskMemoryScanner executablePath]
+  -[VMUTaskMemoryScanner physicalFootprint]
+  -[VMUTaskMemoryScanner _fixupBlockIsas]
+  -[VMUTaskMemoryScanner physicalFootprintPeak]
+  -[VMUTaskMemoryScanner scanningMask]
+  -[VMUTaskMemoryScanner realizedClasses]
+  -[VMUTaskMemoryScanner kernelPageSize]
+  -[VMUTaskMemoryScanner hasLabelsForNodes]
+  -[VMUTaskMemoryScanner _initWithTask:options:]
+  -[VMUTaskMemoryScanner idleExitStatus]
+  -[VMUTaskMemoryScanner maxInteriorOffset]
+  -[VMUTaskMemoryScanner binaryImagesDescription]
+  -[VMUTaskMemoryScanner initWithTask:]
+  -[VMUTaskMemoryScanner processName]
+  -[VMUTaskMemoryScanner _withMemoryReaderBlock:]
+  -[VMUTaskMemoryScanner objectIdentifier]
+  -[VMUTaskMemoryScanner _identifySwiftAsyncTaskSlabs]
+  -[VMUTaskMemoryScanner enumerateMarkedObjects:withBlock:]
+  -[VMUTaskMemoryScanner _addSpecialNodesFromTask]
+  -[VMUTaskMemoryScanner addressIsInDataSegment:]
+  -[VMUTaskMemoryScanner _identifySwiftTypeNameCache]
+  -[VMUTaskMemoryScanner vmuVMRegionForNode:]
+  -[VMUTaskMemoryScanner setObjectContentLevel:]
+  -[VMUTaskMemoryScanner classInfoForObjectAtAddress:]
+  -[VMUTaskMemoryScanner _destroyLinearClassInfos]
+  -[VMUTaskMemoryScanner _updateLinearClassInfos]
+  -[VMUTaskMemoryScanner dealloc]
+  -[VMUTaskMemoryScanner abandonedMarkingEnabled]
+  -[VMUTaskMemoryScanner _identifyObjCClassStructureBlocks]
+  -[VMUTaskMemoryScanner objectContentLevel]
+  -[VMUTaskMemoryScanner enumerateReferencesWithBlock:]
+  -[VMUTaskMemoryScanner removeRootReachableNodes]
+  -[VMUTaskMemoryScanner _orderedScanWithScanner:recorder:keepMapped:actions:]
+  -[VMUTaskMemoryScanner .cxx_destruct]
+  -[VMUTaskMemoryScanner setScanningMask:]
+  -[VMUTaskMemoryScanner shortLabelForNode:]
+  -[VMUTaskMemoryScanner addRootNodesFromTask]
+  -[VMUTaskMemoryScanner addMallocNodes:]
+  -[VMUTaskMemoryScanner suspendTimeContinuous]
+  -[VMUTaskMemoryScanner memoryCache]
+  -[VMUTaskMemoryScanner processSnapshotGraphWithOptions:]
+  -[VMUTaskMemoryScanner setMaxInteriorOffset:]
+  -[VMUTaskMemoryScanner processDescriptionString]
+  -[VMUTaskMemoryScanner _shortenScannableRangeOfMappedFile:]
+  -[VMUTaskMemoryScanner showRawClassNames]
+  -[VMUTaskMemoryScanner contentForNode:]
+  -[VMUTaskMemoryScanner nodeNamespaceSize]
+  -[VMUTaskMemoryScanner enumerateObjectsWithBlock:]
+  -[VMUTaskMemoryScanner nodeDetails:]
+  -[VMUTaskMemoryScanner validateAddressRangeForSwiftRemoteMirror:allowUnusedSplitLibs:]
+  -[VMUTaskMemoryScanner setRecordRuntimeMetadataChunkInfo:]
+  -[VMUTaskMemoryScanner nodeCount]
+  -[VMUTaskMemoryScanner mapDyldSharedCacheFromTargetWithRegions:]
+  -[VMUTaskMemoryScanner _sortBlocks]
+  -[VMUTaskMemoryScanner regionMap]
+  -[VMUTaskMemoryScanner _cachedVariantForGenericInfo:variantKey:]
+  -[VMUTaskMemoryScanner _indexForClassInfo:]
+  -[VMUTaskMemoryScanner is64bit]
+  -[VMUTaskMemoryScanner _findMarkedAbandonedBlocks]
+  -[VMUTaskMemoryScanner mallocNodeCount]
+  -[VMUTaskMemoryScanner _recursivelyIdentifySwiftAsyncTaskSlabs:containerRange:remoteBlock:mappedBlock:asyncTaskSlabMetadataIsa:nestingLevel:]
+  -[VMUTaskMemoryScanner zoneCount]
+  -[VMUTaskMemoryScanner setAbandonedMarkingEnabled:]
+  -[VMUTaskMemoryScanner _identifyNonObjectsPointingToSwiftMetadata:]
+  -[VMUTaskMemoryScanner _withOrderedNodeMapper:]
+  -[VMUTaskMemoryScanner debugTimer]
+  -[VMUTaskMemoryScanner pid]
+  -[VMUTaskMemoryScanner isTranslatedByRosetta]
+  -[VMUTaskMemoryScanner _withScanningContext:]
+  -[VMUTaskMemoryScanner unmapAllRegions]
+  -[VMUTaskMemoryScanner printRuntimeMetadataInfo]
+  -[VMUTaskMemoryScanner _removeFalsePositiveLeakedVMregionsFromNodes:nodeCount:recorder:]
+  -[VMUTaskMemoryScanner setCrashReporterInfoForMappedFileRegion:mappedRegionStartAddress:mappedSize:reason:]
+  -[VMUTaskMemoryScanner zoneNameForNode:]
+  -[VMUTaskMemoryScanner exactScanningEnabled]
+  -[VMUTaskMemoryScanner _callRemoteMallocEnumerators:block:]
+  -[VMUTaskMemoryScanner zoneNameForIndex:]
+  -[VMUTaskMemoryScanner recordRuntimeMetadataChunkInfo]
+  -[VMUTaskMemoryScanner _addThreadNodesFromTask]
+  -[VMUTaskMemoryScanner scanNodesForReferences:]
+  -[VMUTaskMemoryScanner setClassStructureFieldScanValueAtSourceAddress:toCorrectedAddress:]
+  -[VMUTaskMemoryScanner _identifyNonObjectsPointedToByTypedIvars:]
+  -[VMUTaskMemoryScanner setDebugTimer:]
+  -[VMUTaskMemoryScanner copyUserMarked]
+  -[VMUTaskMemoryScanner clearCrashReporterInfoForMappedFileRegion]
+  -[VMUTaskMemoryScanner setNodeScanningLogger:]
+  -[VMUTaskMemoryScanner processSnapshotGraph]
+  -[VMUTaskMemoryScanner initWithSelfTaskAndOptions:]
+  -[VMUTaskMemoryScanner setShowRawClassNames:]
+  -[VMUTaskMemoryScanner setExactScanningEnabled:]
+  -[VMUTaskMemoryScanner labelForNode:]
+  -[VMUTaskMemoryScanner detachFromTask]
+  -[VMUTaskMemoryScanner setReferenceScanningLogger:]
+  -[VMUTaskMemoryScanner enumerateRegionsWithBlock:]
+  -[VMUTaskMemoryScanner task]
+  -[VMUTaskMemoryScanner doesTargetProcessHaveObjCPatches]
+  -[VMUTaskMemoryScanner vmPageSize]
+  -[VMUTaskMemoryScanner initWithTask:options:]
+  -[VMUTaskMemoryScanner regionCount]
+  -[VMUTaskMemoryScanner _buildRegionPageBlockMaps]
+  -[VMUTaskMemoryScanner hasClassInfosDerivedFromStackBacktraces]
+  -[VMUTaskMemoryScanner markReachableNodesFromRoots:inMap:]
+  -[VMUTaskMemoryScanner vmuVMRegionForAddress:]
+  -[VMUTaskMemoryScanner _readonlyRegionRanges]
+  -[VMUTaskMemoryScanner addMallocNodesFromTask]
+  -[VMUTaskMemoryScanner _sortAndClassifyBlocks]
+  -[VMUTaskMemoryScanner refineTypesWithOverlay:]
+  -[VMUTaskMemoryScanner nodeForAddress:]
+  -[VMUTaskMemoryScanner _identifyNonObjectsUsingStackBacktrace]
+  -[VMUTaskMemoryScanner _registerVariant:forGenericInfo:variantKey:]
+
+
+VMUSymbolStore : NSObject <NSSecureCoding, NSXMLParserDelegate>
+ @property  {_CSTypeRef=QQ} symbolicator
+ @property  VMUProcessObjectGraph *graph
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[VMUSymbolStore supportsSecureCoding]
+  +[VMUSymbolStore initialize]
+
+  // instance methods
+  -[VMUSymbolStore setGraph:]
+  -[VMUSymbolStore graph]
+  -[VMUSymbolStore _createSymbolicatorSignature]
+  -[VMUSymbolStore parser:didStartElement:namespaceURI:qualifiedName:attributes:]
+  -[VMUSymbolStore _groupAddressTrackerByUuid]
+  -[VMUSymbolStore _extractAddressesFromSymbolicator]
+  -[VMUSymbolStore encodeWithCoder:]
+  -[VMUSymbolStore addBacktrace:origin:]
+  -[VMUSymbolStore .cxx_construct]
+  -[VMUSymbolStore dealloc]
+  -[VMUSymbolStore .cxx_destruct]
+  -[VMUSymbolStore initWithSymbolicator:debugTimer:]
+  -[VMUSymbolStore resymbolicateWithDsymPath:libraryNames:all:progress:showDebugInfo:error:]
+  -[VMUSymbolStore setSymbolicator:]
+  -[VMUSymbolStore _flagSymbolOwnersForResymbolication]
+  -[VMUSymbolStore parser:didEndElement:namespaceURI:qualifiedName:]
+  -[VMUSymbolStore _readContentsOfDsymFile:error:]
+  -[VMUSymbolStore _refillSymbolOwnersWithDataAndReportProgress:]
+  -[VMUSymbolStore addAddress:origin:]
+  -[VMUSymbolStore _createResymbolicatedSignature]
+  -[VMUSymbolStore parser:foundCharacters:]
+  -[VMUSymbolStore _getDsymPathsForUUIDs:andReportProgress:]
+  -[VMUSymbolStore symbolicator]
+  -[VMUSymbolStore initWithCoder:]
+
+
+VMUStackLogReaderBase : NSObject <VMUStackLogReader>
+ @property  unsigned int task
+ @property  BOOL is64bit
+ @property  BOOL inspectingLiveProcess
+ @property  BOOL usesLiteMode
+ @property  BOOL coldestFrameIsNotThreadId
+ @property  VMUVMRegionTracker *regionTracker
+ @property  {_CSTypeRef=QQ} symbolicator
+ @property  NSSet *excludedFrames
+ @property  unsigned long nodesInUniquingTable
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VMUStackLogReaderBase getFramesForNode:inLiteZone:stackFramesBuffer:]
+  -[VMUStackLogReaderBase getFramesForAddress:size:inLiteZone:stackFramesBuffer:]
+  -[VMUStackLogReaderBase enumerateMSLRecordsAndPayloads:]
+  -[VMUStackLogReaderBase binaryImagePathForPCaddress:]
+  -[VMUStackLogReaderBase getFramesForStackID:stackFramesBuffer:]
+  -[VMUStackLogReaderBase binaryImageRangeForPCaddress:]
+  -[VMUStackLogReaderBase inspectingLiveProcess]
+  -[VMUStackLogReaderBase sourceLineNumberForPCaddress:]
+  -[VMUStackLogReaderBase .cxx_destruct]
+  -[VMUStackLogReaderBase sourceFileNameAndLineNumberForPCaddress:fullPath:]
+  -[VMUStackLogReaderBase sourceFileNameForPCaddress:]
+  -[VMUStackLogReaderBase is64bit]
+  -[VMUStackLogReaderBase functionNameForPCaddress:]
+  -[VMUStackLogReaderBase functionRangeContainingPCaddress:]
+  -[VMUStackLogReaderBase regionTracker]
+  -[VMUStackLogReaderBase task]
+  -[VMUStackLogReaderBase vmuVMRegionForAddress:]
+  -[VMUStackLogReaderBase sourcePathForPCaddress:]
+  -[VMUStackLogReaderBase symbolicator]
+  -[VMUStackLogReaderBase symbolicatedBacktraceForNode:nodeDetails:isLiteZone:options:]
+  -[VMUStackLogReaderBase symbolicatedBacktraceForStackID:options:]
+  -[VMUStackLogReaderBase symbolicatedBacktraceForFrames:frameCount:options:]
+  -[VMUStackLogReaderBase usesLiteMode]
+  -[VMUStackLogReaderBase coldestFrameIsNotThreadId]
+  -[VMUStackLogReaderBase excludedFrames]
+  -[VMUStackLogReaderBase setExcludedFrames:]
+  -[VMUStackLogReaderBase identifyNonObjectsUsingStackBacktraces:classInfoMap:classInfoSetterBlock:]
+  -[VMUStackLogReaderBase identifierForBinaryImagePath:]
+  -[VMUStackLogReaderBase shouldIgnoreSymbolWithName:binaryPath:]
+  -[VMUStackLogReaderBase _allocationTypeNameForStackID:returnedBinaryPath:]
+
+
+VMUCallTreeRootWithBacktrace : VMUCallTreeRoot
+ @property  NSString *backtraceString
+
+  // instance methods
+  -[VMUCallTreeRootWithBacktrace .cxx_destruct]
+  -[VMUCallTreeRootWithBacktrace backtraceString]
+  -[VMUCallTreeRootWithBacktrace setBacktraceString:]
+
+
+VMULeakDetector : NSObject
+ @property  BOOL showLeakedVMregions
+ @property  BOOL showContext
+ @property  BOOL showOnlyVMregions
+ @property  BOOL fullStacks
+ @property  BOOL showRawClassNames
+ @property  BOOL showBinaryContents
+ @property  BOOL checkAbandoned
+ @property  BOOL suppressOutput
+ @property  BOOL showListOfLeaks
+ @property  BOOL groupByType
+ @property  BOOL referenceTreeShowRegionVirtualSize
+ @property  VMUDebugTimer *debugTimer
+ @property  ^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq} outputFile
+ @property  NSMutableString *outputString
+ @property  BOOL fcloseOutput
+ @property  unsigned int objectContentLevel
+ @property  unsigned int task
+ @property  VMUProcessObjectGraph *graph
+ @property  VMUTaskMemoryScanner *scanner
+ @property  <VMUStackLogReader> *stackLogReader
+ @property  ^v abandoned
+ @property  ^v leakedNodes
+ @property  NSMutableArray *leakTreeRootsArray
+ @property  VMUProcessObjectGraph *leakedGraph
+
+  // class methods
+  +[VMULeakDetector referenceDescription:dstDescription:is64bit:]
+
+  // instance methods
+  -[VMULeakDetector graph]
+  -[VMULeakDetector scanner]
+  -[VMULeakDetector stackLogReader]
+  -[VMULeakDetector setObjectContentLevel:]
+  -[VMULeakDetector dealloc]
+  -[VMULeakDetector objectContentLevel]
+  -[VMULeakDetector .cxx_destruct]
+  -[VMULeakDetector showRawClassNames]
+  -[VMULeakDetector debugTimer]
+  -[VMULeakDetector setDebugTimer:]
+  -[VMULeakDetector setShowRawClassNames:]
+  -[VMULeakDetector task]
+  -[VMULeakDetector nodeDescription:]
+  -[VMULeakDetector outputString]
+  -[VMULeakDetector referenceDescription:dstDescription:is64bit:]
+  -[VMULeakDetector initWithTask:graph:scanner:stackLogReader:]
+  -[VMULeakDetector printout:]
+  -[VMULeakDetector checkTaskExistence]
+  -[VMULeakDetector scannerOrGraph]
+  -[VMULeakDetector labelForNode:details:shortLabel:]
+  -[VMULeakDetector printContents:size:]
+  -[VMULeakDetector printLeak:node:details:region:stop:]
+  -[VMULeakDetector nodeTypeDescription:details:mallocBySize:]
+  -[VMULeakDetector nodeDescription:usingDetails:]
+  -[VMULeakDetector buildLeakTree]
+  -[VMULeakDetector printLeakTree]
+  -[VMULeakDetector doNormalLeakDetectionWithError:]
+  -[VMULeakDetector showLeakedVMregions]
+  -[VMULeakDetector setShowLeakedVMregions:]
+  -[VMULeakDetector showContext]
+  -[VMULeakDetector setShowContext:]
+  -[VMULeakDetector showOnlyVMregions]
+  -[VMULeakDetector setShowOnlyVMregions:]
+  -[VMULeakDetector fullStacks]
+  -[VMULeakDetector setFullStacks:]
+  -[VMULeakDetector showBinaryContents]
+  -[VMULeakDetector setShowBinaryContents:]
+  -[VMULeakDetector checkAbandoned]
+  -[VMULeakDetector setCheckAbandoned:]
+  -[VMULeakDetector suppressOutput]
+  -[VMULeakDetector setSuppressOutput:]
+  -[VMULeakDetector showListOfLeaks]
+  -[VMULeakDetector setShowListOfLeaks:]
+  -[VMULeakDetector groupByType]
+  -[VMULeakDetector setGroupByType:]
+  -[VMULeakDetector referenceTreeShowRegionVirtualSize]
+  -[VMULeakDetector setReferenceTreeShowRegionVirtualSize:]
+  -[VMULeakDetector outputFile]
+  -[VMULeakDetector setOutputFile:]
+  -[VMULeakDetector setOutputString:]
+  -[VMULeakDetector fcloseOutput]
+  -[VMULeakDetector setFcloseOutput:]
+  -[VMULeakDetector abandoned]
+  -[VMULeakDetector setAbandoned:]
+  -[VMULeakDetector leakedNodes]
+  -[VMULeakDetector setLeakedNodes:]
+  -[VMULeakDetector leakTreeRootsArray]
+  -[VMULeakDetector setLeakTreeRootsArray:]
+  -[VMULeakDetector leakedGraph]
+  -[VMULeakDetector setLeakedGraph:]
+
+
+VMUClassPatternMatcher : NSObject
+ @property  BOOL matchingKindOfClass
+
+  // instance methods
+  -[VMUClassPatternMatcher dealloc]
+  -[VMUClassPatternMatcher isMatchingKindOfClass]
+  -[VMUClassPatternMatcher setMatchingKindOfClass:]
+  -[VMUClassPatternMatcher initWithPattern:forArgument:error:]
+  -[VMUClassPatternMatcher resetCachedMatches]
+  -[VMUClassPatternMatcher _parseMallocSizePattern:error:]
+  -[VMUClassPatternMatcher _regex:matchesName:]
+  -[VMUClassPatternMatcher _matchesClassInfo:]
+  -[VMUClassPatternMatcher matchesNodeDetails:orNodeDescription:]
+
+
+VMUVMRegionRangeInfo : NSObject
+ @property  unsigned long address
+ @property  unsigned long size
+ @property  {_VMURange=QQ} range
+ @property  unsigned long stackIdentifier
+ @property  unsigned int userTag
+
+  // instance methods
+  -[VMUVMRegionRangeInfo setAddress:]
+  -[VMUVMRegionRangeInfo address]
+  -[VMUVMRegionRangeInfo size]
+  -[VMUVMRegionRangeInfo range]
+  -[VMUVMRegionRangeInfo setSize:]
+  -[VMUVMRegionRangeInfo init]
+  -[VMUVMRegionRangeInfo stackIdentifier]
+  -[VMUVMRegionRangeInfo setStackIdentifier:]
+  -[VMUVMRegionRangeInfo userTag]
+  -[VMUVMRegionRangeInfo setUserTag:]
+
+
+VMUVMRegionTracker : NSObject <NSSecureCoding>
+ @property  long long regionCount
+
+  // class methods
+  +[VMUVMRegionTracker supportsSecureCoding]
+  +[VMUVMRegionTracker initialize]
+
+  // instance methods
+  -[VMUVMRegionTracker initWithTask:]
+  -[VMUVMRegionTracker encodeWithCoder:]
+  -[VMUVMRegionTracker .cxx_destruct]
+  -[VMUVMRegionTracker regionCount]
+  -[VMUVMRegionTracker initWithCoder:]
+  -[VMUVMRegionTracker initWithTask:stackLogReader:]
+  -[VMUVMRegionTracker _regionIndexForAddress:]
+  -[VMUVMRegionTracker handleStackLogType:address:size:stackID:]
+  -[VMUVMRegionTracker convertStackIDs:]
+  -[VMUVMRegionTracker vmRegionRangeInfoForRange:]
+
+
+VMUProcessDescription : NSObject
+ @property  unsigned long physicalFootprint
+ @property  unsigned long physicalFootprintPeak
+ @property  unsigned int idleExitStatus
+
+  // class methods
+  +[VMUProcessDescription parseBinaryImagesDescription:]
+  +[VMUProcessDescription symbolicatorFromBinaryImagesDescription:]
+  +[VMUProcessDescription symbolicatorFromBinaryImagesDescription:withArchitecture:]
+
+  // instance methods
+  -[VMUProcessDescription _cpuTypeDescription]
+  -[VMUProcessDescription executablePath]
+  -[VMUProcessDescription physicalFootprint]
+  -[VMUProcessDescription physicalFootprintPeak]
+  -[VMUProcessDescription dateAndVersionDescription]
+  -[VMUProcessDescription idleExitStatus]
+  -[VMUProcessDescription initFromCorpse]
+  -[VMUProcessDescription binaryImagesDescription]
+  -[VMUProcessDescription is64Bit]
+  -[VMUProcessDescription processStatisticsDescription]
+  -[VMUProcessDescription isAppleApplication]
+  -[VMUProcessDescription processName]
+  -[VMUProcessDescription _binaryImagesDescriptionForRanges:]
+  -[VMUProcessDescription processDescriptionHeader]
+  -[VMUProcessDescription valueForEnvVar:]
+  -[VMUProcessDescription cpuType]
+  -[VMUProcessDescription binaryImagesDescriptionForBacktraces:]
+  -[VMUProcessDescription dealloc]
+  -[VMUProcessDescription date]
+  -[VMUProcessDescription .cxx_destruct]
+  -[VMUProcessDescription _bundleLock]
+  -[VMUProcessDescription binaryImageDictionaryForAddress:]
+  -[VMUProcessDescription parentPid]
+  -[VMUProcessDescription parentProcessPath]
+  -[VMUProcessDescription processVersion]
+  -[VMUProcessDescription processVersionDictionary]
+  -[VMUProcessDescription initWithPid:orTask:]
+  -[VMUProcessDescription initFromLiveProcess]
+  -[VMUProcessDescription setCrashReporterInfo]
+  -[VMUProcessDescription _systemVersionDescription]
+  -[VMUProcessDescription processIdentifier]
+  -[VMUProcessDescription _osVersionDictionary]
+  -[VMUProcessDescription bundleIdentifier]
+  -[VMUProcessDescription pid]
+  -[VMUProcessDescription _rangesOfBinaryImages:forBacktraces:]
+  -[VMUProcessDescription _buildInfoDescription]
+  -[VMUProcessDescription _sanitizeVersion:]
+  -[VMUProcessDescription displayName]
+  -[VMUProcessDescription task]
+  -[VMUProcessDescription binaryImages]
+  -[VMUProcessDescription parentProcessName]
+  -[VMUProcessDescription cleansePathsIncludingBinaryImageList:]
+  -[VMUProcessDescription _buildVersionDictionary]
+  -[VMUProcessDescription initWithTask:getBinariesList:]
+  -[VMUProcessDescription clearCrashReporterInfo]
+  -[VMUProcessDescription _libraryLoaded:]
+
+
+VMUOptionParser : NSObject
+ @property  NSString *purposeDescription
+ @property  NSString *syntaxDescription
+ @property  NSString *discussion
+ @property  BOOL singleHyphenLongNames
+ @property  BOOL parametersShowAsAssignment
+ @property  int optind
+ @property  BOOL abortOnError
+
+  // instance methods
+  -[VMUOptionParser dealloc]
+  -[VMUOptionParser printOptionDescriptions:]
+  -[VMUOptionParser setAbortOnError:]
+  -[VMUOptionParser discussion]
+  -[VMUOptionParser .cxx_destruct]
+  -[VMUOptionParser registerOptionWithLongName:shortName:argumentKind:argumentName:optionDescription:flags:handler:]
+  -[VMUOptionParser purposeDescription]
+  -[VMUOptionParser setSyntaxDescription:]
+  -[VMUOptionParser setParametersShowAsAssignment:]
+  -[VMUOptionParser optind]
+  -[VMUOptionParser registerOptionWithLongName:shortName:argumentKind:argumentName:optionDescription:handler:]
+  -[VMUOptionParser setSingleHyphenLongNames:]
+  -[VMUOptionParser singleHyphenLongNames]
+  -[VMUOptionParser parseArguments:withBlock:]
+  -[VMUOptionParser setDiscussion:]
+  -[VMUOptionParser setPurposeDescription:]
+  -[VMUOptionParser usage:]
+  -[VMUOptionParser parametersShowAsAssignment]
+  -[VMUOptionParser abortOnError]
+  -[VMUOptionParser syntaxDescription]
+  -[VMUOptionParser parseArgumentsArray:withBlock:]
+  -[VMUOptionParser usage:shouldExit:]
+  -[VMUOptionParser init]
+
+
+VMUNodeToStringMap : NSObject <NSSecureCoding>
+  // class methods
+  +[VMUNodeToStringMap supportsSecureCoding]
+  +[VMUNodeToStringMap initialize]
+
+  // instance methods
+  -[VMUNodeToStringMap uniquedStringCount]
+  -[VMUNodeToStringMap setString:forNode:]
+  -[VMUNodeToStringMap encodeWithCoder:]
+  -[VMUNodeToStringMap dealloc]
+  -[VMUNodeToStringMap .cxx_destruct]
+  -[VMUNodeToStringMap count]
+  -[VMUNodeToStringMap _indexForString:]
+  -[VMUNodeToStringMap stringForNode:]
+  -[VMUNodeToStringMap enumerateHexAddressesInStrings:]
+  -[VMUNodeToStringMap resymbolicate__NSMallocBlock__StringsWithGraph:]
+  -[VMUNodeToStringMap init]
+  -[VMUNodeToStringMap initWithCoder:]
+
+
+VMUScanOverlay : NSObject
+ @property  NSArray *refinementRules
+
+  // class methods
+  +[VMUScanOverlay foundationHasNSSliceMemoryOptimization]
+  +[VMUScanOverlay defaultOverlayWithScanner:]
+  +[VMUScanOverlay defaultOverlay]
+
+  // instance methods
+  -[VMUScanOverlay .cxx_destruct]
+  -[VMUScanOverlay addMetadataRefinementRule:]
+  -[VMUScanOverlay initWithScanner:]
+  -[VMUScanOverlay refinementRules]
+
+
+VMUGraphEnumerator : NSObject
+ @property  VMUProcessObjectGraph *graph
+
+  // instance methods
+  -[VMUGraphEnumerator graph]
+  -[VMUGraphEnumerator .cxx_destruct]
+  -[VMUGraphEnumerator initWithGraph:]
+  -[VMUGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUGraphEnumerator enumerateDestinationsOfNode:groupedBy:withBlock:]
+  -[VMUGraphEnumerator enumerateDestinationsOfNodes:groupedBy:withBlock:]
+  -[VMUGraphEnumerator enumerateDestinationsOfGroup:groupedBy:withBlock:]
+  -[VMUGraphEnumerator destinationsOfNodes:]
+  -[VMUGraphEnumerator destinationsOfGroup:]
+  -[VMUGraphEnumerator statusDisplayDescription]
+  -[VMUGraphEnumerator buildReversePostOrderWithRoots:]
+
+
+VMUReverseGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUReverseGraphEnumerator initWithGraph:]
+  -[VMUReverseGraphEnumerator statusDisplayDescription]
+
+
+VMUDominatesGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUDominatesGraphEnumerator .cxx_destruct]
+  -[VMUDominatesGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUDominatesGraphEnumerator statusDisplayDescription]
+  -[VMUDominatesGraphEnumerator initWithGraph:dominatorGraph:]
+
+
+VMUDominatedByGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUDominatedByGraphEnumerator .cxx_destruct]
+  -[VMUDominatedByGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUDominatedByGraphEnumerator statusDisplayDescription]
+  -[VMUDominatedByGraphEnumerator initWithGraph:dominatorGraph:]
+
+
+VMUDepthGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUDepthGraphEnumerator .cxx_destruct]
+  -[VMUDepthGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUDepthGraphEnumerator statusDisplayDescription]
+  -[VMUDepthGraphEnumerator initWithGraph:depthGraph:]
+
+
+VMUInverseDepthGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUInverseDepthGraphEnumerator .cxx_destruct]
+  -[VMUInverseDepthGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUInverseDepthGraphEnumerator statusDisplayDescription]
+  -[VMUInverseDepthGraphEnumerator initWithGraph:depthGraph:]
+
+
+VMUFlattenGraphEnumerator : VMUGraphEnumerator
+  // instance methods
+  -[VMUFlattenGraphEnumerator dealloc]
+  -[VMUFlattenGraphEnumerator .cxx_destruct]
+  -[VMUFlattenGraphEnumerator enumerateEdgesOfNode:withBlock:]
+  -[VMUFlattenGraphEnumerator statusDisplayDescription]
+  -[VMUFlattenGraphEnumerator initWithGraph:graphEnumerator:]
+
+
+VMUTaskStackLogReader : VMUStackLogReaderBase <VMUStackLogReader>
+ @property  VMUTaskMemoryScanner *scanner
+ @property  unsigned int task
+ @property  BOOL is64bit
+ @property  BOOL inspectingLiveProcess
+ @property  BOOL usesLiteMode
+ @property  BOOL coldestFrameIsNotThreadId
+ @property  VMUVMRegionTracker *regionTracker
+ @property  {_CSTypeRef=QQ} symbolicator
+ @property  NSSet *excludedFrames
+ @property  unsigned long nodesInUniquingTable
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VMUTaskStackLogReader liteMSLPayloadforVMregionAddress:]
+  -[VMUTaskStackLogReader getFramesForNode:inLiteZone:stackFramesBuffer:]
+  -[VMUTaskStackLogReader getFramesForAddress:size:inLiteZone:stackFramesBuffer:]
+  -[VMUTaskStackLogReader scanner]
+  -[VMUTaskStackLogReader enumerateMSLRecordsAndPayloads:]
+  -[VMUTaskStackLogReader getFramesForStackID:stackFramesBuffer:]
+  -[VMUTaskStackLogReader initWithTask:]
+  -[VMUTaskStackLogReader dealloc]
+  -[VMUTaskStackLogReader inspectingLiveProcess]
+  -[VMUTaskStackLogReader .cxx_destruct]
+  -[VMUTaskStackLogReader liteMSLPayloadforMallocAddress:size:]
+  -[VMUTaskStackLogReader is64bit]
+  -[VMUTaskStackLogReader nodesInUniquingTable]
+  -[VMUTaskStackLogReader initWithTask:symbolicator:]
+  -[VMUTaskStackLogReader regionTracker]
+  -[VMUTaskStackLogReader vmuVMRegionForAddress:]
+  -[VMUTaskStackLogReader setScanner:]
+
+
+VMUCallTreePseudoNode : VMUCallTreeNode
+  // instance methods
+  -[VMUCallTreePseudoNode isPseudo]
+  -[VMUCallTreePseudoNode pseudoNodeTopOfStackChild]
+  -[VMUCallTreePseudoNode sortedChildrenWithPseudoNode]
+  -[VMUCallTreePseudoNode largestTopOfStackPath]
+
+
+VMUCallTreeNode : NSObject
+  // class methods
+  +[VMUCallTreeNode rootForSamples:symbolicator:sampler:options:]
+  +[VMUCallTreeNode rootForSamples:symbolicator:]
+  +[VMUCallTreeNode nodeWithName:address:count:numBytes:]
+  +[VMUCallTreeNode makeFakeRootForNode:]
+
+  // instance methods
+  -[VMUCallTreeNode compare:]
+  -[VMUCallTreeNode setChildren:]
+  -[VMUCallTreeNode dealloc]
+  -[VMUCallTreeNode .cxx_destruct]
+  -[VMUCallTreeNode count]
+  -[VMUCallTreeNode address]
+  -[VMUCallTreeNode addChild:]
+  -[VMUCallTreeNode name]
+  -[VMUCallTreeNode parent]
+  -[VMUCallTreeNode numBytes]
+  -[VMUCallTreeNode childAtIndex:]
+  -[VMUCallTreeNode comparePuttingRetainCycleNodesAtTop:]
+  -[VMUCallTreeNode isPseudo]
+  -[VMUCallTreeNode pseudoNodeTopOfStackChild]
+  -[VMUCallTreeNode sortedChildrenWithPseudoNode]
+  -[VMUCallTreeNode largestTopOfStackPath]
+  -[VMUCallTreeNode comparePuttingMainThreadFirst:]
+  -[VMUCallTreeNode initWithName:address:count:numBytes:]
+  -[VMUCallTreeNode numChildren]
+  -[VMUCallTreeNode allChildren]
+  -[VMUCallTreeNode sumOfChildCounts]
+  -[VMUCallTreeNode getBrowserName:]
+  -[VMUCallTreeNode browserName]
+  -[VMUCallTreeNode pseudoName]
+  -[VMUCallTreeNode symbolNameIsUnknown]
+  -[VMUCallTreeNode isMallocBlockContentNode]
+  -[VMUCallTreeNode nameWithoutOffset]
+  -[VMUCallTreeNode nameWithStringsForSymbol:library:loadAddress:offset:address:suffix:]
+  -[VMUCallTreeNode parseNameIntoSymbol:library:loadAddress:offset:address:suffix:]
+  -[VMUCallTreeNode findOrAddChildWithName:address:nodeSearchType:isLeafNode:]
+  -[VMUCallTreeNode findOrAddChildWithName:address:]
+  -[VMUCallTreeNode compareSizeAndCount:]
+  -[VMUCallTreeNode sortedChildrenWithPseudoNode:withCompare:]
+  -[VMUCallTreeNode sortedChildren]
+  -[VMUCallTreeNode _printCallTreeToFile:cumulativeOutput:indentString:branchPointCount:topFunctions:options:]
+  -[VMUCallTreeNode countFunctionOccurrencesInTree:]
+  -[VMUCallTreeNode fullOutputWithThreshold:showPseudoNodes:]
+  -[VMUCallTreeNode fullOutputWithThreshold:]
+  -[VMUCallTreeNode callTreeHasBranches]
+  -[VMUCallTreeNode stringFromCallTreeWithOptions:]
+  -[VMUCallTreeNode stringFromCallTreeIndentIfNoBranches:showPseudoNodes:]
+  -[VMUCallTreeNode stringFromCallTreeIndentIfNoBranches:]
+  -[VMUCallTreeNode printCallTreeToFile:cumulativeOutput:options:]
+  -[VMUCallTreeNode printCallTreeToFile:]
+  -[VMUCallTreeNode printCallTree]
+  -[VMUCallTreeNode invertedNode]
+  -[VMUCallTreeNode filterOutSymbols:required:]
+  -[VMUCallTreeNode filterOutSymbols:]
+  -[VMUCallTreeNode chargeLibrariesInSet:toCaller:parentLibrary:]
+  -[VMUCallTreeNode chargeLibrariesToCallers:keepBoundaries:]
+  -[VMUCallTreeNode chargeSystemLibrariesToCallersAndKeepBoundaries:]
+  -[VMUCallTreeNode pruneCount:]
+  -[VMUCallTreeNode pruneMallocSize:]
+
+
+VMURangeToStringMap : NSObject <NSSecureCoding>
+  // class methods
+  +[VMURangeToStringMap supportsSecureCoding]
+  +[VMURangeToStringMap initialize]
+
+  // instance methods
+  -[VMURangeToStringMap rangeContainingAddress:]
+  -[VMURangeToStringMap resymbolicateStringsWithSymbolicator:]
+  -[VMURangeToStringMap enumerateRanges:]
+  -[VMURangeToStringMap uniquedStringCount]
+  -[VMURangeToStringMap encodeWithCoder:]
+  -[VMURangeToStringMap setString:forRange:]
+  -[VMURangeToStringMap dealloc]
+  -[VMURangeToStringMap .cxx_destruct]
+  -[VMURangeToStringMap count]
+  -[VMURangeToStringMap stringForAddress:]
+  -[VMURangeToStringMap indexForString:insertIfMissing:]
+  -[VMURangeToStringMap stringForIndex:]
+  -[VMURangeToStringMap sort]
+  -[VMURangeToStringMap enumerateHexAddressesInStrings:]
+  -[VMURangeToStringMap rangeForString:startingAtAddress:]
+  -[VMURangeToStringMap init]
+  -[VMURangeToStringMap initWithCoder:]
+
+
+VMUStackLogConsolidator : NSObject
+ @property  VMUDebugTimer *debugTimer
+
+  // instance methods
+  -[VMUStackLogConsolidator .cxx_destruct]
+  -[VMUStackLogConsolidator debugTimer]
+  -[VMUStackLogConsolidator setDebugTimer:]
+  -[VMUStackLogConsolidator initWithGraph:stackLogReader:]
+  -[VMUStackLogConsolidator initWithScannerOrGraph:stackLogReader:]
+  -[VMUStackLogConsolidator stackIDsToNodesFilteredBy:]
+  -[VMUStackLogConsolidator callTreeWithOptions:nodeFilter:]
+
+
+VMUProcList : NSObject
+  // instance methods
+  -[VMUProcList .cxx_destruct]
+  -[VMUProcList update]
+  -[VMUProcList count]
+  -[VMUProcList init]
+  -[VMUProcList setProcInfos:]
+  -[VMUProcList addProcInfo:]
+  -[VMUProcList removeProcInfo:]
+  -[VMUProcList _populateFromSystem]
+  -[VMUProcList updateFromSystem]
+  -[VMUProcList allProcInfos]
+  -[VMUProcList allPIDs]
+  -[VMUProcList allNames]
+  -[VMUProcList allPathNames]
+  -[VMUProcList newestProcInfo]
+  -[VMUProcList newestProcInfoWithName:]
+  -[VMUProcList procInfoWithPID:]
+
+
+VMUSampler : NSObject
+  // class methods
+  +[VMUSampler initialize]
+  +[VMUSampler sampleAllThreadsOfPID:]
+  +[VMUSampler sampleAllThreadsOfTask:]
+  +[VMUSampler sampleAllThreadsOfTask:symbolicate:]
+
+  // instance methods
+  -[VMUSampler initWithPID:]
+  -[VMUSampler sampleThread:]
+  -[VMUSampler initializeSamplingContextWithOptions:]
+  -[VMUSampler setRecordThreadStates:]
+  -[VMUSampler waitUntilDone]
+  -[VMUSampler setDelegate:]
+  -[VMUSampler initWithTask:]
+  -[VMUSampler dispatchQueueNameForSerialNumber:returnedConcurrentFlag:returnedThreadId:]
+  -[VMUSampler _checkDispatchThreadLimits]
+  -[VMUSampler delegate]
+  -[VMUSampler _fixupStacks:]
+  -[VMUSampler dealloc]
+  -[VMUSampler initWithPID:orTask:options:]
+  -[VMUSampler .cxx_destruct]
+  -[VMUSampler samplingInterval]
+  -[VMUSampler stopSamplingAndReturnCallNode]
+  -[VMUSampler dispatchQueueNameForSerialNumber:]
+  -[VMUSampler stopSampling]
+  -[VMUSampler stop]
+  -[VMUSampler threadDescriptionStringForBacktrace:returnedAddress:]
+  -[VMUSampler recordSampleTo:timestamp:thread:recordFramePointers:clearMemoryCache:]
+  -[VMUSampler sampleCount]
+  -[VMUSampler writeOutput:append:]
+  -[VMUSampler threadNameForThread:]
+  -[VMUSampler setTimeLimit:]
+  -[VMUSampler initWithPID:options:]
+  -[VMUSampler mainThread]
+  -[VMUSampler pid]
+  -[VMUSampler flushData]
+  -[VMUSampler setSampleLimit:]
+  -[VMUSampler _runSamplingThread]
+  -[VMUSampler threadNameForThread:returnedThreadId:returnedDispatchQueueSerialNum:]
+  -[VMUSampler sampleForDuration:interval:]
+  -[VMUSampler setSamplingInterval:]
+  -[VMUSampler preloadSymbols]
+  -[VMUSampler sampleAllThreadsOnce]
+  -[VMUSampler forceStop]
+  -[VMUSampler start]
+  -[VMUSampler timeLimit]
+  -[VMUSampler sampleLimit]
+  -[VMUSampler initWithTask:options:]
+  -[VMUSampler initWithPID:task:processName:is64Bit:options:]
+  -[VMUSampler sampleAllThreadsOnceWithFramePointers:]
+  -[VMUSampler outputString]
+  -[VMUSampler samples]
+  -[VMUSampler symbolicator]
+
+
+VMUTaskMemoryCache : NSObject
+ @property  ^{mapped_memory_t=} memoryRegions
+ @property  @? regionInfoBlock
+
+  // class methods
+  +[VMUTaskMemoryCache taskMemoryCacheForTask:]
+  +[VMUTaskMemoryCache taskIs64Bit:]
+
+  // instance methods
+  -[VMUTaskMemoryCache memoryRegions]
+  -[VMUTaskMemoryCache copyRange:to:]
+  -[VMUTaskMemoryCache mapAddress:size:returnedAddress:returnedSize:]
+  -[VMUTaskMemoryCache initWithTask:]
+  -[VMUTaskMemoryCache flushMemoryCache]
+  -[VMUTaskMemoryCache peekAtAddress:size:returnsBuf:]
+  -[VMUTaskMemoryCache dealloc]
+  -[VMUTaskMemoryCache .cxx_destruct]
+  -[VMUTaskMemoryCache stopPeeking]
+  -[VMUTaskMemoryCache mapAddress:size:]
+  -[VMUTaskMemoryCache readPointerAt:value:]
+  -[VMUTaskMemoryCache regionInfoBlock]
+  -[VMUTaskMemoryCache findMappedAddress:size:]
+  -[VMUTaskMemoryCache startPeeking]
+  -[VMUTaskMemoryCache enumerateMemoryCache:]
+  -[VMUTaskMemoryCache unmapAddress:size:]
+  -[VMUTaskMemoryCache setRegionInfoBlock:]
+  -[VMUTaskMemoryCache taskIsTranslated]
+
+
+VMUAbstractSerializer : NSObject
+
+VMUSimpleSerializer : VMUAbstractSerializer
+  // instance methods
+  -[VMUSimpleSerializer serializeString:]
+  -[VMUSimpleSerializer _serializeValues:count:]
+  -[VMUSimpleSerializer serializeNullTerminatedBytes:]
+  -[VMUSimpleSerializer copyContiguousData]
+  -[VMUSimpleSerializer dealloc]
+  -[VMUSimpleSerializer serialize64:]
+  -[VMUSimpleSerializer serialize32:]
+  -[VMUSimpleSerializer init]
+
+
+VMUSimpleDeserializer : VMUAbstractSerializer
+  // instance methods
+  -[VMUSimpleDeserializer dealloc]
+  -[VMUSimpleDeserializer .cxx_destruct]
+  -[VMUSimpleDeserializer initWithData:]
+  -[VMUSimpleDeserializer deserialize32WithError:]
+  -[VMUSimpleDeserializer deserialize64WithError:]
+  -[VMUSimpleDeserializer skipFields:]
+  -[VMUSimpleDeserializer copyDeserializedStringWithID:error:]
+  -[VMUSimpleDeserializer copyDeserializedStringWithError:]
+  -[VMUSimpleDeserializer copyDeserializedNullTerminatedBytesWithError:]
+  -[VMUSimpleDeserializer _deserializeValues:error:]
+
+
+VMURangeArray : NSObject <NSCopying>
+  // instance methods
+  -[VMURangeArray setCapacity:]
+  -[VMURangeArray addRange:]
+  -[VMURangeArray dealloc]
+  -[VMURangeArray intersectsRange:]
+  -[VMURangeArray count]
+  -[VMURangeArray rangeAtIndex:]
+  -[VMURangeArray ranges]
+  -[VMURangeArray copyWithZone:]
+  -[VMURangeArray range]
+  -[VMURangeArray sort]
+  -[VMURangeArray init]
+  -[VMURangeArray initWithRanges:count:]
+  -[VMURangeArray addRanges:]
+  -[VMURangeArray indexForLocation:]
+  -[VMURangeArray rangeForLocation:]
+  -[VMURangeArray insertRange:atIndex:]
+  -[VMURangeArray removeRangeAtIndex:]
+  -[VMURangeArray removeAllRanges]
+  -[VMURangeArray intersectsLocation:]
+  -[VMURangeArray subrangeNotExcludedBySelfForRange:]
+  -[VMURangeArray largestRange]
+  -[VMURangeArray sumLengths]
+
+
+VMUNonOverlappingRangeArray : VMURangeArray
+  // instance methods
+  -[VMUNonOverlappingRangeArray addOrExtendRange:]
+  -[VMUNonOverlappingRangeArray mergeRange:]
+  -[VMUNonOverlappingRangeArray mergeRanges:excludingRanges:]
+  -[VMUNonOverlappingRangeArray subtract:mergeRanges:]
+  -[VMUNonOverlappingRangeArray mergeRanges:]
+  -[VMUNonOverlappingRangeArray sortAndMergeRanges]
+  -[VMUNonOverlappingRangeArray mergeRange:excludingRanges:]
+  -[VMUNonOverlappingRangeArray _mergeAllBitsOfRange:excludingRanges:mergeRanges:]
+
+
+VMUClassInfo : NSObject
+ @property  unsigned int defaultScanType
+ @property  BOOL hasSpecificLayout
+ @property  BOOL hasVariantLayout
+ @property  unsigned int pointerSize
+ @property  BOOL usesSwiftRefcounting
+ @property  unsigned int ivarCount
+ @property  BOOL isDerivedFromStackBacktrace
+ @property  NSString *typeName
+ @property  NSString *className
+ @property  NSString *displayName
+ @property  NSString *binaryName
+ @property  NSString *binaryPath
+ @property  NSString *fullIvarDescription
+ @property  NSString *shortIvarDescription
+ @property  VMUClassInfo *superclassInfo
+ @property  VMUClassInfo *genericInfo
+ @property  unsigned int infoType
+ @property  unsigned long remoteIsa
+ @property  unsigned int instanceSize
+ @property  BOOL isARR
+ @property  BOOL isRealized
+ @property  BOOL isMetaClass
+ @property  BOOL isRootClass
+ @property  BOOL hasCppConstructorOrDestructor
+ @property  BOOL isCoreMediaFigObject
+
+  // class methods
+  +[VMUClassInfo initialize]
+  +[VMUClassInfo _genericBlockByrefInfo]
+  +[VMUClassInfo classInfoWithClassName:binaryPath:type:]
+  +[VMUClassInfo descriptionForTypeEncoding:ivarName:]
+  +[VMUClassInfo sizeofClassStructure]
+
+  // instance methods
+  -[VMUClassInfo encodeWithCoder:]
+  -[VMUClassInfo type]
+  -[VMUClassInfo dealloc]
+  -[VMUClassInfo typeName]
+  -[VMUClassInfo mutableCopy]
+  -[VMUClassInfo .cxx_destruct]
+  -[VMUClassInfo className]
+  -[VMUClassInfo displayName]
+  -[VMUClassInfo isRealized]
+  -[VMUClassInfo isEqual:]
+  -[VMUClassInfo initWithCoder:]
+  -[VMUClassInfo _setDisplayName:]
+  -[VMUClassInfo _processARRLayout:scanType:]
+  -[VMUClassInfo _parseIvarsAndLayouts]
+  -[VMUClassInfo _demangleClassName]
+  -[VMUClassInfo _setClassNameWithAddress:symbolicator:]
+  -[VMUClassInfo _setBinaryPath:sanitize:]
+  -[VMUClassInfo _setSuperclassInfo:]
+  -[VMUClassInfo _setIsCoreMediaFigObject:]
+  -[VMUClassInfo _setDefaultScanType:]
+  -[VMUClassInfo defaultScanType]
+  -[VMUClassInfo _setInstanceSize:]
+  -[VMUClassInfo _setIsRootClass:]
+  -[VMUClassInfo _setInfoType:]
+  -[VMUClassInfo hasVariantLayout]
+  -[VMUClassInfo hasSpecificLayout]
+  -[VMUClassInfo initWithClassName:binaryPath:type:]
+  -[VMUClassInfo initWithClosureContext:typeInfo:infoMap:swiftFieldMetadataContext:]
+  -[VMUClassInfo initSwiftClassWithName:classInfoType:size:]
+  -[VMUClassInfo _objcABIFromObjectIdentifier:]
+  -[VMUClassInfo _initWithClass:type:realizedOnly:infoMap:objectIdentifier:reader:]
+  -[VMUClassInfo _determineBinaryPathUsingObjectIdentifier:remoteClassNameLoc:]
+  -[VMUClassInfo initWithClass:type:infoMap:objectIdentifier:reader:]
+  -[VMUClassInfo initWithRealizedClass:type:infoMap:objectIdentifier:reader:]
+  -[VMUClassInfo _freeLocalIvarList]
+  -[VMUClassInfo _identifyObjCClassStructureBlocksForIsa:isMetaclass:withScanner:addressIdentifierBlock:]
+  -[VMUClassInfo identifyObjCClassStructureBlocksWithScanner:addressIdentifierBlock:]
+  -[VMUClassInfo serializeWithClassMap:simpleSerializer:version:]
+  -[VMUClassInfo initWithSerializer:classMap:version:error:]
+  -[VMUClassInfo _logDescriptionWithSuperclasses:indentation:toLogger:]
+  -[VMUClassInfo enumerateSublayoutsForSize:withBlock:]
+  -[VMUClassInfo _copyWithInstanceSize:superclassOffset:asVariant:mutable:]
+  -[VMUClassInfo _applyExtendedLayout:withSize:]
+  -[VMUClassInfo instanceSpecificInfoForObject:ofSize:memoryReader:]
+  -[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryReader:]
+  -[VMUClassInfo enumerateStoredEntriesForObject:ofSize:externalValues:block:]
+  -[VMUClassInfo enumerateExternalValuesFromObject:withSize:block:]
+  -[VMUClassInfo genericInfo]
+  -[VMUClassInfo _totalIvarCount]
+  -[VMUClassInfo enumerateClassHierarchyWithBlock:]
+  -[VMUClassInfo enumerateAllFieldsWithBlock:]
+  -[VMUClassInfo enumerateTypeFieldsWithBlock:]
+  -[VMUClassInfo enumerateAllPointerFieldsWithBlock:]
+  -[VMUClassInfo enumeratePointerTypeFieldsWithBlock:]
+  -[VMUClassInfo enumerateScanningLocationsForSize:withBlock:]
+  -[VMUClassInfo fieldAtOrBeforeOffset:]
+  -[VMUClassInfo firstFieldWithName:]
+  -[VMUClassInfo _adjustInstanceSize]
+  -[VMUClassInfo _addFields:]
+  -[VMUClassInfo _replaceField:withFields:]
+  -[VMUClassInfo _replaceFieldRecursively:withField:]
+  -[VMUClassInfo _setFields:]
+  -[VMUClassInfo _addVariantAction:withEvaluator:]
+  -[VMUClassInfo _addComplexAction:withEvaluator:]
+  -[VMUClassInfo _setIsa:]
+  -[VMUClassInfo binaryName]
+  -[VMUClassInfo infoType]
+  -[VMUClassInfo fullIvarDescription]
+  -[VMUClassInfo shortIvarDescription]
+  -[VMUClassInfo scanDescriptionWithSize:]
+  -[VMUClassInfo isARR]
+  -[VMUClassInfo isMetaClass]
+  -[VMUClassInfo isRootClass]
+  -[VMUClassInfo hasCppConstructorOrDestructor]
+  -[VMUClassInfo instanceSize]
+  -[VMUClassInfo remoteIsa]
+  -[VMUClassInfo binaryPath]
+  -[VMUClassInfo superclassInfo]
+  -[VMUClassInfo pointerSize]
+  -[VMUClassInfo usesSwiftRefcounting]
+  -[VMUClassInfo ivarCount]
+  -[VMUClassInfo isCoreMediaFigObject]
+  -[VMUClassInfo isDerivedFromStackBacktrace]
+  -[VMUClassInfo setIsDerivedFromStackBacktrace:]
+
+
+VMUMutableClassInfo : VMUClassInfo
+ @property  VMUClassInfo *superclassInfo
+ @property  NSString *displayName
+ @property  NSString *binaryPath
+ @property  BOOL isCoreMediaFigObject
+ @property  unsigned int defaultScanType
+ @property  unsigned int instanceSize
+ @property  BOOL isRootClass
+ @property  unsigned int infoType
+
+  // instance methods
+  -[VMUMutableClassInfo addFields:]
+  -[VMUMutableClassInfo addVariantRecursively:forField:withEvaluator:]
+  -[VMUMutableClassInfo setIsRootClass:]
+  -[VMUMutableClassInfo mutateTypeFieldsWithBlock:]
+  -[VMUMutableClassInfo setVariantScanType:withEvaluator:]
+  -[VMUMutableClassInfo setFields:]
+  -[VMUMutableClassInfo setInstanceSize:]
+  -[VMUMutableClassInfo setDisplayName:]
+  -[VMUMutableClassInfo replaceFieldRecursively:withField:]
+  -[VMUMutableClassInfo replaceField:withFields:]
+  -[VMUMutableClassInfo addVariant:forField:withEvaluator:]
+  -[VMUMutableClassInfo setInfoType:]
+  -[VMUMutableClassInfo mutateTypeFieldsRecursivelyWithBlock:]
+  -[VMUMutableClassInfo setSuperclassInfo:]
+  -[VMUMutableClassInfo setIsCoreMediaFigObject:]
+  -[VMUMutableClassInfo setBinaryPath:]
+  -[VMUMutableClassInfo addComplexAction:withEvaluator:]
+  -[VMUMutableClassInfo setDefaultScanType:]
+
+
+VMUFieldValue : NSObject
+ @property  VMUFieldInfo *field
+ @property  unsigned long value
+
+  // instance methods
+  -[VMUFieldValue field]
+  -[VMUFieldValue .cxx_destruct]
+  -[VMUFieldValue value]
+  -[VMUFieldValue initWithField:value:]
+
+
+VMUDepthGraph : NSObject
+  // instance methods
+  -[VMUDepthGraph dealloc]
+  -[VMUDepthGraph .cxx_destruct]
+  -[VMUDepthGraph initWithGraph:]
+  -[VMUDepthGraph depthOfNode:]
+  -[VMUDepthGraph markNodes:atDepth:]
+  -[VMUDepthGraph _processNodes:withDepth:]
+  -[VMUDepthGraph _buildNextDepth:into:depth:]
+  -[VMUDepthGraph _buildDepthMap]
+
+
+VMUSwiftRuntimeInfo : NSObject
+ @property  unsigned long nativeWeakReferenceMarkerMask
+ @property  unsigned long nativeWeakReferenceMarkerValue
+ @property  unsigned long nativeWeakReferencePointerMask
+ @property  BOOL nativeWeakReferencePointerIsSideTable
+ @property  unsigned long refcountIsSideTableMarkerMask
+ @property  unsigned long refcountIsSideTableMarkerValue
+ @property  unsigned long sideTablePointerMask
+ @property  unsigned char sideTablePointerRightShift
+ @property  unsigned char sideTablePointerLeftShift
+ @property  VMUMutableClassInfo *sideTableLayoutWithScannableOwnerPointer
+ @property  VMUMutableClassInfo *sideTableLayoutWithUnscannableOwnerPointer
+ @property  VMUMutableClassInfo *unownedExtraDataLayout
+ @property  BOOL runtimeHasStableABI
+
+  // instance methods
+  -[VMUSwiftRuntimeInfo nativeWeakReferencePointerMask]
+  -[VMUSwiftRuntimeInfo sideTablePointerLeftShift]
+  -[VMUSwiftRuntimeInfo nativeWeakReferenceMarkerMask]
+  -[VMUSwiftRuntimeInfo refcountIsSideTableMarkerMask]
+  -[VMUSwiftRuntimeInfo refcountIsSideTableMarkerValue]
+  -[VMUSwiftRuntimeInfo sideTableLayoutWithScannableOwnerPointer]
+  -[VMUSwiftRuntimeInfo nativeWeakReferenceMarkerValue]
+  -[VMUSwiftRuntimeInfo nativeWeakReferencePointerIsSideTable]
+  -[VMUSwiftRuntimeInfo runtimeHasStableABI]
+  -[VMUSwiftRuntimeInfo .cxx_destruct]
+  -[VMUSwiftRuntimeInfo initWithSwiftCore:memoryReader:]
+  -[VMUSwiftRuntimeInfo sideTablePointerMask]
+  -[VMUSwiftRuntimeInfo unownedExtraDataLayout]
+  -[VMUSwiftRuntimeInfo sideTablePointerRightShift]
+  -[VMUSwiftRuntimeInfo sideTableLayoutWithUnscannableOwnerPointer]
+
+
+VMUDebugTimer : NSObject
+ @property  NSObject<OS_os_log> *logHandle
+ @property  unsigned long signpostID
+
+  // class methods
+  +[VMUDebugTimer sharedTimerIfCreated]
+  +[VMUDebugTimer sharedTimer]
+
+  // instance methods
+  -[VMUDebugTimer logHandle]
+  -[VMUDebugTimer signpostID]
+  -[VMUDebugTimer .cxx_destruct]
+  -[VMUDebugTimer stop]
+  -[VMUDebugTimer init]
+  -[VMUDebugTimer endEvent:]
+  -[VMUDebugTimer startWithMessage:]
+  -[VMUDebugTimer startWithCategory:message:]
+
+
+__VMULeaksMarkerObject : NSObject
+ @property  ^{?=QIIIIIIQ} region
+ @property  unsigned int entryIndex
+
+  // instance methods
+  -[__VMULeaksMarkerObject dealloc]
+  -[__VMULeaksMarkerObject region]
+  -[__VMULeaksMarkerObject setRegion:]
+  -[__VMULeaksMarkerObject entryIndex]
+  -[__VMULeaksMarkerObject setEntryIndex:]
+
+
+VMUFieldInfo : NSObject
+ @property  unsigned int flags
+ @property  BOOL isCapture
+ @property  BOOL isByref
+ @property  BOOL isStorageImplPointer
+ @property  BOOL isArraySize
+ @property  BOOL isArrayEntries
+ @property  BOOL isStorageBitmapPointer
+ @property  BOOL isKeysPointer
+ @property  BOOL isValuesPointer
+ @property  BOOL isValueField
+ @property  BOOL isKeyField
+ @property  ^v swiftTyperef
+ @property  VMUClassInfo *destinationLayout
+ @property  NSString *typedDescription
+ @property  NSString *ivarName
+ @property  NSString *typeName
+ @property  unsigned int scanType
+ @property  unsigned int offset
+ @property  unsigned int size
+ @property  unsigned int kind
+ @property  unsigned int scannableSize
+ @property  unsigned int stride
+ @property  unsigned int bitfieldWidth
+ @property  NSArray *subFieldArray
+ @property  NSArray *possibleEnumPayloadFieldArray
+
+  // instance methods
+  -[VMUFieldInfo _setSize:]
+  -[VMUFieldInfo kind]
+  -[VMUFieldInfo stride]
+  -[VMUFieldInfo scanType]
+  -[VMUFieldInfo dealloc]
+  -[VMUFieldInfo typeName]
+  -[VMUFieldInfo mutableCopy]
+  -[VMUFieldInfo .cxx_destruct]
+  -[VMUFieldInfo flags]
+  -[VMUFieldInfo size]
+  -[VMUFieldInfo offset]
+  -[VMUFieldInfo isEqual:]
+  -[VMUFieldInfo _setFlags:]
+  -[VMUFieldInfo isByref]
+  -[VMUFieldInfo serializeWithClassMap:simpleSerializer:version:]
+  -[VMUFieldInfo initWithSerializer:classMap:version:error:]
+  -[VMUFieldInfo subFieldArray]
+  -[VMUFieldInfo possibleEnumPayloadFieldArray]
+  -[VMUFieldInfo initializeSubFieldArray]
+  -[VMUFieldInfo typedDescription]
+  -[VMUFieldInfo initWithObjcIvar:size:isARC:is64Bit:]
+  -[VMUFieldInfo initWithName:type:kind:scan:offset:size:stride:subFieldArray:swiftTyperef:]
+  -[VMUFieldInfo initSwiftEnumPayloadFieldWithName:type:kind:scan:offset:size:stride:possibleEnumSubFieldArray:swiftTyperef:]
+  -[VMUFieldInfo initStorageInfoFieldWithName:type:kind:scan:offset:size:stride:subFieldArray:]
+  -[VMUFieldInfo initStorageEntryFieldWithName:type:kind:scan:offset:size:stride:subFieldArray:]
+  -[VMUFieldInfo initWithName:type:scan:offset:size:]
+  -[VMUFieldInfo initWithSerializer:classMap:version:returnedDestinationLayoutClassInfoIndex:error:]
+  -[VMUFieldInfo _getFieldAtOffset:]
+  -[VMUFieldInfo getLeafFieldAtOffset:leafOffset:]
+  -[VMUFieldInfo _fullIvarNameAtOffset:leafOffset:depth:]
+  -[VMUFieldInfo fullIvarNameAtOffset:]
+  -[VMUFieldInfo _setIvarName:]
+  -[VMUFieldInfo _setTypeName:]
+  -[VMUFieldInfo _setScanType:]
+  -[VMUFieldInfo _setOffset:]
+  -[VMUFieldInfo bitfieldWidth]
+  -[VMUFieldInfo isCapture]
+  -[VMUFieldInfo isStorageImplPointer]
+  -[VMUFieldInfo isArraySize]
+  -[VMUFieldInfo isArrayEntries]
+  -[VMUFieldInfo isStorageBitmapPointer]
+  -[VMUFieldInfo isKeysPointer]
+  -[VMUFieldInfo isValuesPointer]
+  -[VMUFieldInfo isKeyField]
+  -[VMUFieldInfo isValueField]
+  -[VMUFieldInfo _setKind:]
+  -[VMUFieldInfo enumerateSublayoutsForSize:parentOffset:remotePointerSize:withBlock:]
+  -[VMUFieldInfo _setScannableSize:]
+  -[VMUFieldInfo _setStride:]
+  -[VMUFieldInfo setDestinationLayout:]
+  -[VMUFieldInfo destinationLayout]
+  -[VMUFieldInfo descriptionOfFieldValueInObjectMemory:scanner:]
+  -[VMUFieldInfo ivarName]
+  -[VMUFieldInfo scannableSize]
+  -[VMUFieldInfo swiftTyperef]
+
+
+VMUMutableFieldInfo : VMUFieldInfo
+ @property  unsigned int scannableSize
+ @property  unsigned int stride
+ @property  unsigned int flags
+ @property  BOOL isCapture
+ @property  BOOL isByref
+ @property  NSString *ivarName
+ @property  NSString *typeName
+ @property  unsigned int scanType
+
+  // instance methods
+  -[VMUMutableFieldInfo addSubField:]
+  -[VMUMutableFieldInfo setStride:]
+  -[VMUMutableFieldInfo setFlags:]
+  -[VMUMutableFieldInfo setScannableSize:]
+  -[VMUMutableFieldInfo replaceFieldRecursively:withField:]
+  -[VMUMutableFieldInfo setScanType:]
+  -[VMUMutableFieldInfo setIsByref:]
+  -[VMUMutableFieldInfo setTypeName:]
+  -[VMUMutableFieldInfo mutateTypeFieldsRecursivelyWithBlock:parentOffset:]
+  -[VMUMutableFieldInfo setKind:]
+  -[VMUMutableFieldInfo setIvarName:]
+  -[VMUMutableFieldInfo setIsCapture:]
+  -[VMUMutableFieldInfo setSize:]
+  -[VMUMutableFieldInfo setOffset:]
+
+
+VMUVMRegionIdentifier : NSObject
+  // class methods
+  +[VMUVMRegionIdentifier descriptionForRange:inSortedRegions:options:]
+
+  // instance methods
+  -[VMUVMRegionIdentifier descriptionForRange:options:]
+  -[VMUVMRegionIdentifier initWithTask:]
+  -[VMUVMRegionIdentifier initWithTask:pid:options:]
+  -[VMUVMRegionIdentifier descriptionOfRegionsAroundAddress:options:]
+  -[VMUVMRegionIdentifier .cxx_destruct]
+  -[VMUVMRegionIdentifier taskThreadStates]
+  -[VMUVMRegionIdentifier initWithGraph:options:]
+  -[VMUVMRegionIdentifier descriptionForMallocZoneTotalsWithOptions:memorySizeDivisor:]
+  -[VMUVMRegionIdentifier regions]
+  -[VMUVMRegionIdentifier _recordRegionsAroundAddress:regionDescriptionOptions:]
+  -[VMUVMRegionIdentifier descriptionForRange:]
+  -[VMUVMRegionIdentifier descriptionOfRegionsAroundAddress:options:maximumLength:memorySizeDivisor:]
+  -[VMUVMRegionIdentifier hasFractionalPageSizes]
+  -[VMUVMRegionIdentifier nonSubmapRegionContainingAddress:]
+  -[VMUVMRegionIdentifier descriptionForRegionTotalsWithOptions:]
+  -[VMUVMRegionIdentifier descriptionForRegionTotalsWithOptions:memorySizeDivisor:]
+  -[VMUVMRegionIdentifier initWithTask:options:]
+  -[VMUVMRegionIdentifier init]
+
+
+VMUObjectLabelHandlerInfo : NSObject
+  // instance methods
+  -[VMUObjectLabelHandlerInfo .cxx_destruct]
+
+
+VMUObjectIdentifier : NSObject
+ @property  {_CSTypeRef=QQ} libobjcSymbolOwner
+ @property  VMUSwiftRuntimeInfo *swiftRuntimeInfoStableABI
+ @property  VMUSwiftRuntimeInfo *swiftRuntimeInfoPreABI
+ @property  ^{libSwiftRemoteMirrorWrapper=^{SwiftReflectionInteropContext}Q} swiftMirror
+ @property  BOOL hasSwiftContent
+ @property  BOOL hasSwiftReflection
+ @property  VMUTaskMemoryScanner *scanner
+ @property  unsigned int objcABI
+ @property  NSMutableDictionary *moduleNameToBinaryPathDict
+ @property  unsigned long figBaseObjectFinalizeAddress
+ @property  unsigned long swiftConcurrencyDebugAsyncTaskMetadataIsa
+ @property  unsigned long swiftConcurrencyDebugAsyncTaskSlabMetadataIsa
+ @property  unsigned int task
+ @property  BOOL taskIsDriverKit
+ @property  @? memoryReader
+ @property  VMUClassInfoMap *realizedClasses
+ @property  unsigned long taggedPointerMask
+ @property  {_CSTypeRef=QQ} symbolicator
+ @property  unsigned int objectContentLevel
+ @property  VMURangeArray *readonlyRegionRanges
+ @property  ^{VMUAutoreleasePoolPageLayout=IIIQI} autoreleasePoolPageLayout
+
+  // instance methods
+  -[VMUObjectIdentifier labelForNSPathStore2:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForObjectOfClass:atOffset:ofObject:]
+  -[VMUObjectIdentifier destroy_libSwiftRemoteMirror]
+  -[VMUObjectIdentifier enumerateRealizedClassInfosWithBlock:]
+  -[VMUObjectIdentifier findFutureClasses]
+  -[VMUObjectIdentifier objcABI]
+  -[VMUObjectIdentifier setReadonlyRegionRanges:]
+  -[VMUObjectIdentifier labelFor_NSActivityAssertion:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSSet:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForClassDataRW:length:remoteAddress:]
+  -[VMUObjectIdentifier realizedClasses]
+  -[VMUObjectIdentifier labelForNSDate:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForMemory:length:]
+  -[VMUObjectIdentifier labelForNSConcreteData:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForOSLog:length:remoteAddress:]
+  -[VMUObjectIdentifier vmRegionRangeForAddress:]
+  -[VMUObjectIdentifier labelForOSTransaction:length:remoteAddress:]
+  -[VMUObjectIdentifier scanner]
+  -[VMUObjectIdentifier moduleNameToBinaryPathDict]
+  -[VMUObjectIdentifier taskIsDriverKit]
+  -[VMUObjectIdentifier enumerateAllClassInfosWithBlock:]
+  -[VMUObjectIdentifier CFTypeCount]
+  -[VMUObjectIdentifier _loadSwiftAsyncTaskAndSlabRecognitionInfo]
+  -[VMUObjectIdentifier labelForNSData:length:remoteAddress:]
+  -[VMUObjectIdentifier initWithTask:]
+  -[VMUObjectIdentifier labelForNSCFDictionary:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForClassDataExtRW:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForMallocBlock:usingHandlerBlock:]
+  -[VMUObjectIdentifier classInfoIndexForObjCClassStructurePointerType:]
+  -[VMUObjectIdentifier flushMemoryCache]
+  -[VMUObjectIdentifier loadSwiftReflectionLibraries]
+  -[VMUObjectIdentifier _dlopenLibSwiftRemoteMirrorFromDir:]
+  -[VMUObjectIdentifier labelForProtocol:length:remoteAddress:]
+  -[VMUObjectIdentifier _faultClass:ofType:]
+  -[VMUObjectIdentifier labelForMemory:length:remoteAddress:classInfo:usingHandlerBlock:]
+  -[VMUObjectIdentifier _symbolicator]
+  -[VMUObjectIdentifier labelForMemory:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForClassStructure:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSConcreteHashTable:length:remoteAddress:]
+  -[VMUObjectIdentifier setObjectContentLevel:]
+  -[VMUObjectIdentifier objectLabelHandlerForRemoteIsa:]
+  -[VMUObjectIdentifier labelForNSURL:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForSwiftStringStorage:length:remoteAddress:]
+  -[VMUObjectIdentifier dealloc]
+  -[VMUObjectIdentifier taggedPointerMask]
+  -[VMUObjectIdentifier objectContentLevel]
+  -[VMUObjectIdentifier figBaseObjectFinalizeAddress]
+  -[VMUObjectIdentifier .cxx_destruct]
+  -[VMUObjectIdentifier createAutoreleasePoolPageLayout]
+  -[VMUObjectIdentifier labelForMemory:length:remoteAddress:classInfo:]
+  -[VMUObjectIdentifier classInfoForCFTypeInstance:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSDictionary:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSConcreteMutableData:length:remoteAddress:]
+  -[VMUObjectIdentifier findCFTypes]
+  -[VMUObjectIdentifier swiftConcurrencyDebugAsyncTaskMetadataIsa]
+  -[VMUObjectIdentifier swiftRuntimeInfoPreABI]
+  -[VMUObjectIdentifier labelForNSCFStringAtRemoteAddress:printDetail:]
+  -[VMUObjectIdentifier labelForTaggedPointer:]
+  -[VMUObjectIdentifier noLabelForOSXPCObject:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForOSDispatchMach:length:remoteAddress:]
+  -[VMUObjectIdentifier _classInfoWithPthreadType:]
+  -[VMUObjectIdentifier SwiftClassCount]
+  -[VMUObjectIdentifier labelForNSXPCConnection:length:remoteAddress:]
+  -[VMUObjectIdentifier classInfoForMemory:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForOSXPCConnection:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForClassDataRO:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSNumber:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSCFSet:length:remoteAddress:]
+  -[VMUObjectIdentifier _findOffsetsInOSXPCConnection:length:]
+  -[VMUObjectIdentifier _classInfoForMemory:length:atOffset:remoteAddress:]
+  -[VMUObjectIdentifier symbolForAddress:]
+  -[VMUObjectIdentifier labelForNSBundle:length:remoteAddress:]
+  -[VMUObjectIdentifier setupIsaTranslator]
+  -[VMUObjectIdentifier labelForOSXPCObject:length:remoteAddress:]
+  -[VMUObjectIdentifier translateIsaPointer:]
+  -[VMUObjectIdentifier swiftMirror]
+  -[VMUObjectIdentifier hasSwiftContent]
+  -[VMUObjectIdentifier classInfoForObjCClassStructurePointerType:]
+  -[VMUObjectIdentifier formattedDateLabel:]
+  -[VMUObjectIdentifier _generateClassInfosForObjCClassStructurePointerTypes]
+  -[VMUObjectIdentifier _remoteAddressIsOKtoRead:]
+  -[VMUObjectIdentifier addressOfSymbol:inLibrary:]
+  -[VMUObjectIdentifier labelForNSTaggedPointerStringCStringContainer:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForOSXPCActivity:length:remoteAddress:]
+  -[VMUObjectIdentifier readonlyRegionRanges]
+  -[VMUObjectIdentifier memoryReader]
+  -[VMUObjectIdentifier findCFTypes_version1]
+  -[VMUObjectIdentifier labelForCoreMediaFigObject:length:remoteAddress:]
+  -[VMUObjectIdentifier osMajorMinorVersionString]
+  -[VMUObjectIdentifier _populateSwiftReflectionInfo:]
+  -[VMUObjectIdentifier classInfoForNonobjectMemory:length:]
+  -[VMUObjectIdentifier _dlopenLibSwiftRemoteMirrorNearExecutable]
+  -[VMUObjectIdentifier labelForOSDispatchQueue:length:remoteAddress:]
+  -[VMUObjectIdentifier findCFTypes_version2]
+  -[VMUObjectIdentifier uniquifyStringLabel:stringType:printDetail:]
+  -[VMUObjectIdentifier libobjcSymbolOwner]
+  -[VMUObjectIdentifier initWithTask:symbolicator:scanner:]
+  -[VMUObjectIdentifier _dlopenLibSwiftRemoteMirror]
+  -[VMUObjectIdentifier labelForNSConcreteAttributedString:length:remoteAddress:]
+  -[VMUObjectIdentifier initWithTask:symbolicator:]
+  -[VMUObjectIdentifier findObjCAndSwiftClasses]
+  -[VMUObjectIdentifier _dlopenLibSwiftRemoteMirrorNearLibSwiftCore]
+  -[VMUObjectIdentifier _returnFaultedClass:ofType:]
+  -[VMUObjectIdentifier hasSwiftReflection]
+  -[VMUObjectIdentifier classInfoForObjectWithRange:]
+  -[VMUObjectIdentifier buildIsaToObjectLabelHandlerMap]
+  -[VMUObjectIdentifier labelForMallocBlock:]
+  -[VMUObjectIdentifier labelForNSXPCInterface:length:remoteAddress:]
+  -[VMUObjectIdentifier task]
+  -[VMUObjectIdentifier _isValidInstanceLength:expectedLength:]
+  -[VMUObjectIdentifier labelFor__NSMallocBlock__:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForItemCount:]
+  -[VMUObjectIdentifier _scanner]
+  -[VMUObjectIdentifier _findObjCAndSwiftClassesFromClass:recursionDepth:]
+  -[VMUObjectIdentifier classInfoWithNonobjectType:binaryPath:]
+  -[VMUObjectIdentifier labelForNSArray:length:remoteAddress:]
+  -[VMUObjectIdentifier _populateSwiftABIVariables]
+  -[VMUObjectIdentifier classInfoForMemory:length:]
+  -[VMUObjectIdentifier isTaggedPointer:]
+  -[VMUObjectIdentifier autoreleasePoolPageLayout]
+  -[VMUObjectIdentifier classNameForTaggedPointer:]
+  -[VMUObjectIdentifier swiftConcurrencyDebugAsyncTaskSlabMetadataIsa]
+  -[VMUObjectIdentifier labelForCFBundle:length:remoteAddress:]
+  -[VMUObjectIdentifier labelForNSString:mappedSize:remoteAddress:printDetail:]
+  -[VMUObjectIdentifier swiftRuntimeInfoStableABI]
+  -[VMUObjectIdentifier labelForNSInlineData:length:remoteAddress:]
+  -[VMUObjectIdentifier symbolicator]
+  -[VMUObjectIdentifier ObjCclassCount]
+  -[VMUObjectIdentifier labelForNSString:length:remoteAddress:]
+
+
+VMUGraphStackLogReader : VMUStackLogReaderBase <NSSecureCoding, VMUStackLogReader>
+ @property  VMUProcessObjectGraph *graph
+ @property  NSData *diskLogs
+ @property  unsigned int task
+ @property  BOOL is64bit
+ @property  BOOL inspectingLiveProcess
+ @property  BOOL usesLiteMode
+ @property  BOOL coldestFrameIsNotThreadId
+ @property  VMUVMRegionTracker *regionTracker
+ @property  {_CSTypeRef=QQ} symbolicator
+ @property  NSSet *excludedFrames
+ @property  unsigned long nodesInUniquingTable
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[VMUGraphStackLogReader supportsSecureCoding]
+  +[VMUGraphStackLogReader initialize]
+
+  // instance methods
+  -[VMUGraphStackLogReader setGraph:]
+  -[VMUGraphStackLogReader graph]
+  -[VMUGraphStackLogReader getFramesForNode:inLiteZone:stackFramesBuffer:]
+  -[VMUGraphStackLogReader copyOriginalUniquingTable:]
+  -[VMUGraphStackLogReader _setFunctionName:forPCAddressRange:]
+  -[VMUGraphStackLogReader getFramesForAddress:size:inLiteZone:stackFramesBuffer:]
+  -[VMUGraphStackLogReader enumerateMSLRecordsAndPayloads:]
+  -[VMUGraphStackLogReader binaryImagePathForPCaddress:]
+  -[VMUGraphStackLogReader getFramesForStackID:stackFramesBuffer:]
+  -[VMUGraphStackLogReader encodeWithCoder:]
+  -[VMUGraphStackLogReader dealloc]
+  -[VMUGraphStackLogReader binaryImageRangeForPCaddress:]
+  -[VMUGraphStackLogReader inspectingLiveProcess]
+  -[VMUGraphStackLogReader sourceLineNumberForPCaddress:]
+  -[VMUGraphStackLogReader .cxx_destruct]
+  -[VMUGraphStackLogReader diskLogs]
+  -[VMUGraphStackLogReader stackIDForNode:]
+  -[VMUGraphStackLogReader symbolicateBacktraceUniquingTable]
+  -[VMUGraphStackLogReader sourceFileNameAndLineNumberForPCaddress:fullPath:]
+  -[VMUGraphStackLogReader _parseSourceInfoString:intoComponents:]
+  -[VMUGraphStackLogReader setDiskLogs:]
+  -[VMUGraphStackLogReader sourceFileNameForPCaddress:]
+  -[VMUGraphStackLogReader is64bit]
+  -[VMUGraphStackLogReader initWithTask:symbolicator:graph:debugTimer:collectDisklogs:]
+  -[VMUGraphStackLogReader nodesInUniquingTable]
+  -[VMUGraphStackLogReader enumerateUniquingTable:]
+  -[VMUGraphStackLogReader streamFullStackLogsToBlock:]
+  -[VMUGraphStackLogReader populateBacktraceUniquingTableWithStackLogs:]
+  -[VMUGraphStackLogReader _setSourcePath:lineNumber:forPCAddressRange:]
+  -[VMUGraphStackLogReader functionNameForPCaddress:]
+  -[VMUGraphStackLogReader functionRangeContainingPCaddress:]
+  -[VMUGraphStackLogReader sourceLineRangeContainingPCaddress:]
+  -[VMUGraphStackLogReader vmuVMRegionForAddress:]
+  -[VMUGraphStackLogReader sourcePathForPCaddress:]
+  -[VMUGraphStackLogReader initWithCoder:]
+
+
+VMUBacktrace : NSObject <NSCopying, NSSecureCoding>
+ @property  unsigned long timestamp
+
+  // class methods
+  +[VMUBacktrace supportsSecureCoding]
+  +[VMUBacktrace initialize]
+
+  // instance methods
+  -[VMUBacktrace thread]
+  -[VMUBacktrace setThreadState:]
+  -[VMUBacktrace setTimestamp:]
+  -[VMUBacktrace initWithSamplingContext:thread:recordFramePointers:]
+  -[VMUBacktrace backtrace]
+  -[VMUBacktrace backtraceLength]
+  -[VMUBacktrace stackFramePointers]
+  -[VMUBacktrace threadState]
+  -[VMUBacktrace encodeWithCoder:]
+  -[VMUBacktrace _symbolicator]
+  -[VMUBacktrace fixupStackWithSamplingContext:symbolicator:]
+  -[VMUBacktrace dealloc]
+  -[VMUBacktrace asyncBacktraceLength]
+  -[VMUBacktrace copyWithZone:]
+  -[VMUBacktrace timestamp]
+  -[VMUBacktrace dispatchQueueSerialNumber]
+  -[VMUBacktrace asyncBacktrace]
+  -[VMUBacktrace initWithCoder:]
+
+
+VMUProcInfo : NSObject
+ @property  BOOL shouldAnalyzeWithCorpse
+ @property  BOOL isSemiCriticalProcess
+
+  // class methods
+  +[VMUProcInfo getProcessIds]
+  +[VMUProcInfo isProcessRunning:]
+  +[VMUProcInfo processParentId:]
+
+  // instance methods
+  -[VMUProcInfo ppid]
+  -[VMUProcInfo arguments]
+  -[VMUProcInfo startTime]
+  -[VMUProcInfo _infoFromCommandLine:]
+  -[VMUProcInfo platform]
+  -[VMUProcInfo initWithTask:]
+  -[VMUProcInfo signal:]
+  -[VMUProcInfo platformName]
+  -[VMUProcInfo terminate]
+  -[VMUProcInfo compare:]
+  -[VMUProcInfo compareByName:]
+  -[VMUProcInfo shouldAnalyzeWithCorpse]
+  -[VMUProcInfo valueForEnvVar:]
+  -[VMUProcInfo cpuType]
+  -[VMUProcInfo dealloc]
+  -[VMUProcInfo isRunning]
+  -[VMUProcInfo .cxx_destruct]
+  -[VMUProcInfo update]
+  -[VMUProcInfo compareByUserAppName:]
+  -[VMUProcInfo envVars]
+  -[VMUProcInfo isSemiCriticalProcess]
+  -[VMUProcInfo procTableName]
+  -[VMUProcInfo userAppName]
+  -[VMUProcInfo initWithPid:]
+  -[VMUProcInfo pid]
+  -[VMUProcInfo isMachO]
+  -[VMUProcInfo name]
+  -[VMUProcInfo isNative]
+  -[VMUProcInfo firstArgument]
+  -[VMUProcInfo task]
+  -[VMUProcInfo isApp]
+  -[VMUProcInfo isCFM]
+  -[VMUProcInfo isEqual:]
+  -[VMUProcInfo realAppName]
+  -[VMUProcInfo requestedAppName]
+
+
+VMUProcessObjectGraph : VMUObjectGraph <VMUCommonGraphInterface>
+ @property  unsigned long snapshotMachTime
+ @property  unsigned long physicalFootprint
+ @property  unsigned long physicalFootprintPeak
+ @property  unsigned int idleExitStatus
+ @property  NSDictionary *srcAddressToExtraAutoreleaseCountDict
+ @property  BOOL isTranslatedByRosetta
+ @property  NSArray *backtraces
+ @property  VMUSymbolStore *symbolStore
+ @property  {_VMURange=QQ} dyldSharedCacheRange
+ @property  VMUTaskMemoryScanner *scanner
+ @property  VMUDebugTimer *debugTimer
+ @property  <VMUStackLogReader> *stackLogReader
+ @property  BOOL showRawClassNames
+ @property  BOOL showsPhysFootprint
+ @property  unsigned int objectContentLevel
+ @property  unsigned int objectContentLevelForNodeLabels
+ @property  unsigned long serializationOptions
+ @property  VMUNodeToStringMap *nodeLabels
+ @property  int pid
+ @property  BOOL is64bit
+ @property  unsigned int vmPageSize
+ @property  unsigned int kernelPageSize
+ @property  VMUClassInfoMap *realizedClasses
+ @property  BOOL hasClassInfosDerivedFromStackBacktraces
+ @property  unsigned int zoneCount
+ @property  unsigned int regionCount
+ @property  unsigned int nodeCount
+ @property  unsigned int nodeNamespaceSize
+ @property  NSString *processName
+ @property  NSString *processDescriptionString
+ @property  NSString *executablePath
+ @property  NSString *binaryImagesDescription
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VMUProcessObjectGraph nodeLabels]
+  -[VMUProcessObjectGraph threadNameForAddress:]
+  -[VMUProcessObjectGraph setDyldSharedCacheRange:]
+  -[VMUProcessObjectGraph _detailedNodeOffsetDescription:withSourceNode:destinationNode:alignmentSpacing:]
+  -[VMUProcessObjectGraph executablePath]
+  -[VMUProcessObjectGraph physicalFootprint]
+  -[VMUProcessObjectGraph parseMacOSArchitectureFromProcessDescription]
+  -[VMUProcessObjectGraph archiveDictionaryRepresentation:options:]
+  -[VMUProcessObjectGraph symbolStore]
+  -[VMUProcessObjectGraph physicalFootprintPeak]
+  -[VMUProcessObjectGraph setPhysicalFootprintPeak:]
+  -[VMUProcessObjectGraph realizedClasses]
+  -[VMUProcessObjectGraph kernelPageSize]
+  -[VMUProcessObjectGraph hasLabelsForNodes]
+  -[VMUProcessObjectGraph scanner]
+  -[VMUProcessObjectGraph rangeForSymbolName:inRegion:]
+  -[VMUProcessObjectGraph idleExitStatus]
+  -[VMUProcessObjectGraph binaryImagesDescription]
+  -[VMUProcessObjectGraph _deriveObjcClassStructureRanges]
+  -[VMUProcessObjectGraph setBacktraces:]
+  -[VMUProcessObjectGraph binarySectionNameForAddress:]
+  -[VMUProcessObjectGraph processName]
+  -[VMUProcessObjectGraph setStackLogReader:]
+  -[VMUProcessObjectGraph setIdleExitStatus:]
+  -[VMUProcessObjectGraph regionSymbolNameForAddress:]
+  -[VMUProcessObjectGraph stackLogReader]
+  -[VMUProcessObjectGraph serializationOptions]
+  -[VMUProcessObjectGraph initWithPid:nodes:nodeCount:zoneNames:classInfoMap:regions:pthreadOffsets:userMarked:]
+  -[VMUProcessObjectGraph vmuVMRegionForNode:]
+  -[VMUProcessObjectGraph setObjectContentLevel:]
+  -[VMUProcessObjectGraph setBinarySectionName:forRange:]
+  -[VMUProcessObjectGraph setThreadName:forRange:]
+  -[VMUProcessObjectGraph dealloc]
+  -[VMUProcessObjectGraph nodeIsAutoreleasePoolContentPage:]
+  -[VMUProcessObjectGraph setProcessName:]
+  -[VMUProcessObjectGraph objectContentLevel]
+  -[VMUProcessObjectGraph regionSymbolRangeContainingAddress:]
+  -[VMUProcessObjectGraph .cxx_destruct]
+  -[VMUProcessObjectGraph _descriptionForRegionAddress:withOffset:showSegment:]
+  -[VMUProcessObjectGraph shortLabelForNode:]
+  -[VMUProcessObjectGraph resymbolicateNonObjectsUsingStackBacktrace]
+  -[VMUProcessObjectGraph setSymbolStore:]
+  -[VMUProcessObjectGraph removeWeakEdges]
+  -[VMUProcessObjectGraph showsPhysFootprint]
+  -[VMUProcessObjectGraph resymbolicateWithDsymPath:libraryNames:all:progress:showDebugInfo:error:]
+  -[VMUProcessObjectGraph processDescriptionString]
+  -[VMUProcessObjectGraph setPhysicalFootprint:]
+  -[VMUProcessObjectGraph showRawClassNames]
+  -[VMUProcessObjectGraph contentForNode:]
+  -[VMUProcessObjectGraph snapshotMachTime]
+  -[VMUProcessObjectGraph referenceDescription:withSourceNode:destinationNode:alignmentSpacing:]
+  -[VMUProcessObjectGraph setLabel:forNode:]
+  -[VMUProcessObjectGraph resymbolicatePrivateMaps]
+  -[VMUProcessObjectGraph is64bit]
+  -[VMUProcessObjectGraph setIsTranslatedByRosetta:]
+  -[VMUProcessObjectGraph refineEdges:withOptions:markingInvalid:]
+  -[VMUProcessObjectGraph zoneCount]
+  -[VMUProcessObjectGraph setUserMarked:]
+  -[VMUProcessObjectGraph nodeDescription:withOffset:]
+  -[VMUProcessObjectGraph nodeDetailIsAutoreleasePoolContentPage:]
+  -[VMUProcessObjectGraph debugTimer]
+  -[VMUProcessObjectGraph srcAddressToExtraAutoreleaseCountDict]
+  -[VMUProcessObjectGraph shortNodeDescription:]
+  -[VMUProcessObjectGraph pid]
+  -[VMUProcessObjectGraph isTranslatedByRosetta]
+  -[VMUProcessObjectGraph backtraces]
+  -[VMUProcessObjectGraph nodeOffsetDescription:withSourceNode:destinationNode:]
+  -[VMUProcessObjectGraph setSnapshotMachTime:]
+  -[VMUProcessObjectGraph _renameWithNodeMap:nodeNamespace:edgeMap:edgeNamespace:]
+  -[VMUProcessObjectGraph sampleBacktracesString]
+  -[VMUProcessObjectGraph nodeReferencedFromDataRegion:byGlobalSymbol:]
+  -[VMUProcessObjectGraph copyWithZone:]
+  -[VMUProcessObjectGraph zoneNameForIndex:]
+  -[VMUProcessObjectGraph setSrcAddressToExtraAutoreleaseCountDict:]
+  -[VMUProcessObjectGraph _generateSymbolStoreFromExistingGraph]
+  -[VMUProcessObjectGraph setDebugTimer:]
+  -[VMUProcessObjectGraph setObjectContentLevelForNodeLabels:]
+  -[VMUProcessObjectGraph copyUserMarked]
+  -[VMUProcessObjectGraph _reorderLabelsWithNodeNameMap:]
+  -[VMUProcessObjectGraph markReachableNodesFromRoots:inMap:options:]
+  -[VMUProcessObjectGraph dyldSharedCacheRange]
+  -[VMUProcessObjectGraph nodeDescription:withOffset:showLabel:]
+  -[VMUProcessObjectGraph setProcessDescriptionString:]
+  -[VMUProcessObjectGraph setShowRawClassNames:]
+  -[VMUProcessObjectGraph labelForNode:]
+  -[VMUProcessObjectGraph markLeafNodes:]
+  -[VMUProcessObjectGraph enumerateRegionsWithBlock:]
+  -[VMUProcessObjectGraph binarySectionRangeContainingAddress:]
+  -[VMUProcessObjectGraph nodeDescription:]
+  -[VMUProcessObjectGraph setShowsPhysFootprint:]
+  -[VMUProcessObjectGraph vmPageSize]
+  -[VMUProcessObjectGraph regionCount]
+  -[VMUProcessObjectGraph setRegionSymbolName:forRange:]
+  -[VMUProcessObjectGraph hasClassInfosDerivedFromStackBacktraces]
+  -[VMUProcessObjectGraph enumerateReferencesFromDataRegion:atGlobalSymbol:withBlock:]
+  -[VMUProcessObjectGraph initWithArchived:version:options:diskLogs:error:]
+  -[VMUProcessObjectGraph markReachableNodesFromRoots:inMap:]
+  -[VMUProcessObjectGraph vmuVMRegionForAddress:]
+  -[VMUProcessObjectGraph setScanner:]
+  -[VMUProcessObjectGraph nodeDescription:withDestinationNode:referenceInfo:]
+  -[VMUProcessObjectGraph objectContentLevelForNodeLabels]
+  -[VMUProcessObjectGraph setBinaryImagesDescription:]
+  -[VMUProcessObjectGraph setSerializationOptions:]
+  -[VMUProcessObjectGraph refineTypesWithOverlay:]
+  -[VMUProcessObjectGraph markRootNodes:]
+
+
+VMUTaskThreadStates : NSObject
+ @property  unsigned int threadCount
+ @property  unsigned int threadStateSize
+
+  // instance methods
+  -[VMUTaskThreadStates stackPointerForThreadNum:]
+  -[VMUTaskThreadStates threadCount]
+  -[VMUTaskThreadStates dealloc]
+  -[VMUTaskThreadStates threadStateSize]
+  -[VMUTaskThreadStates threadStateForThreadNum:]
+  -[VMUTaskThreadStates initWithPid:task:]
+
+
+VMUCallTreeRoot : VMUCallTreeNode
+ @property  NSString *binaryImagesDescription
+
+  // instance methods
+  -[VMUCallTreeRoot binaryImagesDescription]
+  -[VMUCallTreeRoot setStackLogReader:]
+  -[VMUCallTreeRoot dealloc]
+  -[VMUCallTreeRoot .cxx_destruct]
+  -[VMUCallTreeRoot setBinaryImagesDescription:]
+  -[VMUCallTreeRoot chargeSystemLibrariesToCallersAndKeepBoundaries:]
+  -[VMUCallTreeRoot initWithSymbolicator:sampler:options:]
+  -[VMUCallTreeRoot setVMRegions:]
+  -[VMUCallTreeRoot setCambriaRuntimeVMObjectID:]
+  -[VMUCallTreeRoot allBacktracesHaveBeenAdded]
+  -[VMUCallTreeRoot descriptionStringForAddress:atTime:leafFrame:startOfRecursion:]
+  -[VMUCallTreeRoot addBacktrace:count:numBytes:]
+  -[VMUCallTreeRoot addBacktrace:]
+  -[VMUCallTreeRoot addChildWithName:address:count:numBytes:toNode:]
+  -[VMUCallTreeRoot addUniqueChildWithName:address:count:numBytes:toNode:]
+  -[VMUCallTreeRoot addUniqueChildWithName:address:count:numBytes:toNode:isLeafNode:]
+  -[VMUCallTreeRoot addChildCountsIntoNode]
+  -[VMUCallTreeRoot initWithCallGraphFile:fileHeader:topFunctionsList:binaryImagesList:]
+
+
+VMUNodeGroup : NSObject
+ @property  NSString *name
+
+  // instance methods
+  -[VMUNodeGroup nodes]
+  -[VMUNodeGroup enumerateNodesWithBlock:]
+  -[VMUNodeGroup dealloc]
+  -[VMUNodeGroup .cxx_destruct]
+  -[VMUNodeGroup count]
+  -[VMUNodeGroup name]
+  -[VMUNodeGroup addNode:]
+  -[VMUNodeGroup initWithName:graph:]
+  -[VMUNodeGroup _createGroup]
+
+
+VMUGroupBy : NSObject
+ @property  VMUProcessObjectGraph *graph
+
+  // instance methods
+  -[VMUGroupBy graph]
+  -[VMUGroupBy .cxx_destruct]
+  -[VMUGroupBy initWithGraph:]
+  -[VMUGroupBy typeNameForNode:]
+  -[VMUGroupBy enumerateGroups:withBlock:]
+
+
+VMUGroupByNode : VMUGroupBy
+  // instance methods
+  -[VMUGroupByNode enumerateGroups:withBlock:]
+
+
+VMUGroupType : VMUGroupBy
+  // instance methods
+  -[VMUGroupType enumerateGroups:withBlock:]
+
+
+VMUCallTreeLeafNode : VMUCallTreeNode
+  // instance methods
+  -[VMUCallTreeLeafNode .cxx_destruct]
+  -[VMUCallTreeLeafNode init]
+  -[VMUCallTreeLeafNode addAddress:]
+  -[VMUCallTreeLeafNode initWithName:address:count:numBytes:]
+  -[VMUCallTreeLeafNode getBrowserName:]
+
+
+VMUClassInfoMap : NSObject <NSSecureCoding>
+ @property  unsigned int count
+ @property  unsigned int fieldInfoCount
+ @property  BOOL hasClassInfosDerivedFromStackBacktraces
+
+  // class methods
+  +[VMUClassInfoMap supportsSecureCoding]
+  +[VMUClassInfoMap initialize]
+  +[VMUClassInfoMap _destroyRetainedLinearArray:withCount:]
+
+  // instance methods
+  -[VMUClassInfoMap swiftFieldWithName:offset:kind:typeref:]
+  -[VMUClassInfoMap addFieldInfo:]
+  -[VMUClassInfoMap fieldInfoCount]
+  -[VMUClassInfoMap indexForClassInfo:]
+  -[VMUClassInfoMap encodeWithCoder:]
+  -[VMUClassInfoMap fieldInfoForIndex:]
+  -[VMUClassInfoMap dealloc]
+  -[VMUClassInfoMap classInfoForIndex:]
+  -[VMUClassInfoMap .cxx_destruct]
+  -[VMUClassInfoMap classInfoForAddress:]
+  -[VMUClassInfoMap count]
+  -[VMUClassInfoMap enumerateInfosWithBlock:]
+  -[VMUClassInfoMap addClassInfo:forAddress:]
+  -[VMUClassInfoMap addClassInfosFromMap:]
+  -[VMUClassInfoMap indexForFieldInfo:]
+  -[VMUClassInfoMap _applyTypeOverlay:]
+  -[VMUClassInfoMap hasClassInfosDerivedFromStackBacktraces]
+  -[VMUClassInfoMap _retainedLinearArrayWithReturnedCount:]
+  -[VMUClassInfoMap init]
+  -[VMUClassInfoMap initWithCoder:]
+  -[VMUClassInfoMap memoizeSwiftField:withName:offset:kind:typeref:]
+
+
+VMUObjectIdentifierDriverKitSupport : NSObject
+  // instance methods
+  -[VMUObjectIdentifierDriverKitSupport dealloc]
+  -[VMUObjectIdentifierDriverKitSupport .cxx_destruct]
+  -[VMUObjectIdentifierDriverKitSupport initWithObjectIdentifier:]
+  -[VMUObjectIdentifierDriverKitSupport _fieldsFromStructureLayout:withOffset:]
+  -[VMUObjectIdentifierDriverKitSupport _fieldsOfLegacyOSObject:]
+  -[VMUObjectIdentifierDriverKitSupport _fieldsOfOSObject:startOffset:]
+  -[VMUObjectIdentifierDriverKitSupport _fieldsOfRemoteDriverKitOSObject:]
+  -[VMUObjectIdentifierDriverKitSupport _fieldsOfLocalDriverKitOSObject:]
+  -[VMUObjectIdentifierDriverKitSupport classInfoForDriverKitOSClassScan]
+  -[VMUObjectIdentifierDriverKitSupport classInfoForDriverKitOSMetaClassPrivate]
+  -[VMUObjectIdentifierDriverKitSupport classInfoForDriverKitOSMetaClass]
+  -[VMUObjectIdentifierDriverKitSupport classInfoForDriverKitMemory:length:atOffset:translatedIsa:symbol:]
+  -[VMUObjectIdentifierDriverKitSupport driverKitClassInfoForMemory:length:remoteAddress:]
+  -[VMUObjectIdentifierDriverKitSupport _labelForDriverKitOSClassLoadInformation:length:remoteAddress:]
+  -[VMUObjectIdentifierDriverKitSupport _labelForDriverKitOSMetaClass:length:remoteAddress:]
+  -[VMUObjectIdentifierDriverKitSupport labelForDriverKitMemory:length:remoteAddress:class:]
+
+
+VMUVMRegion : NSObject
+  // class methods
+  +[VMUVMRegion columnHeadersWithOptions:maximumLength:memorySizeDivisor:hasFractionalPageSizes:]
+  +[VMUVMRegion initialize]
+  +[VMUVMRegion columnHeadersWithOptions:maximumLength:]
+
+  // instance methods
+  -[VMUVMRegion path]
+  -[VMUVMRegion type]
+  -[VMUVMRegion protection]
+  -[VMUVMRegion isSubmap]
+  -[VMUVMRegion length]
+  -[VMUVMRegion dirtyLength]
+  -[VMUVMRegion .cxx_destruct]
+  -[VMUVMRegion breakAtLength:]
+  -[VMUVMRegion address]
+  -[VMUVMRegion isWired]
+  -[VMUVMRegion addInfoFromRegion:]
+  -[VMUVMRegion range]
+  -[VMUVMRegion getVMRegionData:withSimpleSerializer:]
+  -[VMUVMRegion setVMRegionDataExtra:]
+  -[VMUVMRegion isNullRegion]
+  -[VMUVMRegion maxProtection]
+  -[VMUVMRegion hasSameInfoAsRegion:]
+  -[VMUVMRegion getVMRegionDataExtra:]
+  -[VMUVMRegion isEqual:]
+  -[VMUVMRegion descriptionWithOptions:maximumLength:memorySizeDivisor:hasFractionalPageSizes:]
+  -[VMUVMRegion init]
+  -[VMUVMRegion descriptionWithOptions:maximumLength:]
+  -[VMUVMRegion initWithVMRegionData:encodedVersion:simpleSerializer:error:]
+
+
+VMUDomtreeName : NSObject <NSCopying>
+  // instance methods
+  -[VMUDomtreeName initWithDict:]
+  -[VMUDomtreeName .cxx_destruct]
+  -[VMUDomtreeName asArray]
+  -[VMUDomtreeName initWithArray:]
+  -[VMUDomtreeName copyWithZone:]
+  -[VMUDomtreeName isEqual:]
+
+
+VMUDominatorGraph : NSObject
+ @property  unsigned int nodeNamespaceSize
+ @property  ^I dominators
+ @property  ^I firstDominates
+ @property  ^I nextDominates
+ @property  NSData *dominators_data
+ @property  NSData *firstDominates_data
+ @property  NSData *nextDominates_data
+
+  // class methods
+  +[VMUDominatorGraph consolidate:]
+  +[VMUDominatorGraph callTreeWithGraph:groupByType:showRegionVirtualSize:desiredAddress:debugTimer:]
+  +[VMUDominatorGraph callTreeWithGraph:groupByType:showRegionVirtualSize:desiredClassesPattern:debugTimer:]
+
+  // instance methods
+  -[VMUDominatorGraph initWithDict:]
+  -[VMUDominatorGraph export:]
+  -[VMUDominatorGraph .cxx_destruct]
+  -[VMUDominatorGraph nodeNamespaceSize]
+  -[VMUDominatorGraph initWithGraph:]
+  -[VMUDominatorGraph copyDict]
+  -[VMUDominatorGraph fastDFS:graph:]
+  -[VMUDominatorGraph initWithGraph:debugTimer:]
+  -[VMUDominatorGraph _computeDominators:roots:reversePostOrder:debugTimer:]
+  -[VMUDominatorGraph _computeDominees:]
+  -[VMUDominatorGraph dominator:]
+  -[VMUDominatorGraph enumerateDomineesForNodeName:withBlock:]
+  -[VMUDominatorGraph hasAnyDirectDomineesForNodeName:]
+  -[VMUDominatorGraph enumerateDirectDomineesForNodeName:withBlock:]
+  -[VMUDominatorGraph enumerateDominatorRootsWithBlock:]
+  -[VMUDominatorGraph iterDominatorRoots]
+  -[VMUDominatorGraph iterDirectDomineesForNodeName:]
+  -[VMUDominatorGraph dominators_data]
+  -[VMUDominatorGraph setDominators_data:]
+  -[VMUDominatorGraph firstDominates_data]
+  -[VMUDominatorGraph setFirstDominates_data:]
+  -[VMUDominatorGraph nextDominates_data]
+  -[VMUDominatorGraph setNextDominates_data:]
+  -[VMUDominatorGraph setNodeNamespaceSize:]
+  -[VMUDominatorGraph dominators]
+  -[VMUDominatorGraph setDominators:]
+  -[VMUDominatorGraph firstDominates]
+  -[VMUDominatorGraph setFirstDominates:]
+  -[VMUDominatorGraph nextDominates]
+  -[VMUDominatorGraph setNextDominates:]
+
+
+VMUDominatorCallTreeCreator : NSObject
+ @property  VMUProcessObjectGraph *processObjectGraph
+ @property  VMUDominatorGraph *dominatorGraph
+ @property  VMUCallTreeRoot *callTreeRoot
+ @property  NSNumber *desiredAddress
+ @property  VMUClassPatternMatcher *desiredClassesPattern
+
+  // instance methods
+  -[VMUDominatorCallTreeCreator .cxx_destruct]
+  -[VMUDominatorCallTreeCreator removeJunkEdges]
+  -[VMUDominatorCallTreeCreator removeJunkNodes]
+  -[VMUDominatorCallTreeCreator sizeForNodeName:nodeInfo:]
+  -[VMUDominatorCallTreeCreator callTreeWithGraph:groupByType:showRegionVirtualSize:debugTimer:]
+  -[VMUDominatorCallTreeCreator buildCallTreeWithRootNodeNames:]
+  -[VMUDominatorCallTreeCreator remainingNodeNames]
+  -[VMUDominatorCallTreeCreator _addNodeWithNodeName:nodeInfo:callTreeParentNode:parentNodeName:parentNodeType:reference:]
+  -[VMUDominatorCallTreeCreator buildCallTreeWithNodeName:callTreeParentNode:parentNodeName:parentNodeType:reference:rootNodeFilter:]
+  -[VMUDominatorCallTreeCreator referenceDecriptionForSourceNodeAddress:referenceInfo:]
+  -[VMUDominatorCallTreeCreator groupByTypeNameForNode:]
+  -[VMUDominatorCallTreeCreator groupByNodeNameForNode:parentNodeName:parentNodeType:reference:]
+  -[VMUDominatorCallTreeCreator processObjectGraph]
+  -[VMUDominatorCallTreeCreator setProcessObjectGraph:]
+  -[VMUDominatorCallTreeCreator dominatorGraph]
+  -[VMUDominatorCallTreeCreator setDominatorGraph:]
+  -[VMUDominatorCallTreeCreator callTreeRoot]
+  -[VMUDominatorCallTreeCreator setCallTreeRoot:]
+  -[VMUDominatorCallTreeCreator desiredAddress]
+  -[VMUDominatorCallTreeCreator setDesiredAddress:]
+  -[VMUDominatorCallTreeCreator desiredClassesPattern]
+  -[VMUDominatorCallTreeCreator setDesiredClassesPattern:]
+
+
+VMUDominatorRoots : NSEnumerator
+  // instance methods
+  -[VMUDominatorRoots .cxx_destruct]
+  -[VMUDominatorRoots nextObject]
+  -[VMUDominatorRoots initWithDominatorGraph:]
+
+
+VMUDirectDominees : NSEnumerator
+  // instance methods
+  -[VMUDirectDominees .cxx_destruct]
+  -[VMUDirectDominees nextObject]
+  -[VMUDirectDominees initWithDominatorGraph:rootNode:]
+
+
+VMUTerminalColorizer : NSObject
+  // class methods
+  +[VMUTerminalColorizer colorize:withColor:bold:]
+  +[VMUTerminalColorizer startColorCodeString:]
+  +[VMUTerminalColorizer controlCodeResetString]
+
+
+VMUProgressBar : NSObject
+  // instance methods
+  -[VMUProgressBar .cxx_destruct]
+  -[VMUProgressBar setTitle:withTotalItems:]
+  -[VMUProgressBar updateItemName:]
+  -[VMUProgressBar itemCompleteWithStatus:]
+  -[VMUProgressBar colorize:]
+  -[VMUProgressBar _printProgressBar]
+
+
+VMUDirectedGraph : NSObject <NSCopying>
+ @property  BOOL inverted
+ @property  NSDictionary *additionalProperties
+ @property  unsigned int nodeCount
+ @property  unsigned int edgeCount
+ @property  unsigned int nodeNamespaceSize
+ @property  unsigned int edgeNamespaceSize
+ @property  BOOL graphIs64bit
+ @property  unsigned int pointerSize
+
+  // class methods
+  +[VMUDirectedGraph _archivedBytes:length:options:]
+  +[VMUDirectedGraph _copyUnarchived:length:options:]
+  +[VMUDirectedGraph _archivedObject:options:]
+  +[VMUDirectedGraph setupUnarchivingClaimsForClass:]
+  +[VMUDirectedGraph _unarchivedObject:ofClass:options:]
+  +[VMUDirectedGraph directedGraphWithData:error:]
+  +[VMUDirectedGraph encapsulateData:to:withSupplementalDataTag:error:dataGeneratorBlock:]
+
+  // instance methods
+  -[VMUDirectedGraph setGraphVersion:]
+  -[VMUDirectedGraph enumerateNodesWithBlock:]
+  -[VMUDirectedGraph archiveDictionaryRepresentation:options:]
+  -[VMUDirectedGraph inverted]
+  -[VMUDirectedGraph edgeCount]
+  -[VMUDirectedGraph dealloc]
+  -[VMUDirectedGraph .cxx_destruct]
+  -[VMUDirectedGraph nodeNamespaceSize]
+  -[VMUDirectedGraph nodeCount]
+  -[VMUDirectedGraph enumerateEdgesWithBlock:]
+  -[VMUDirectedGraph additionalProperties]
+  -[VMUDirectedGraph _renameWithNodeMap:nodeNamespace:edgeMap:edgeNamespace:]
+  -[VMUDirectedGraph copyWithZone:]
+  -[VMUDirectedGraph initWithArchived:version:options:diskLogs:error:]
+  -[VMUDirectedGraph initWithPlistRepresentation:]
+  -[VMUDirectedGraph setAdditionalProperties:]
+  -[VMUDirectedGraph setInverted:]
+  -[VMUDirectedGraph enumerateEdgesOfNode:withBlock:]
+  -[VMUDirectedGraph pointerSize]
+  -[VMUDirectedGraph initWithNodes:]
+  -[VMUDirectedGraph setGraphCompatibilityVersion:]
+  -[VMUDirectedGraph decapsulatePlistData:error:]
+  -[VMUDirectedGraph decapsulateSupplementalData:forTag:]
+  -[VMUDirectedGraph decapsulateIPSheaderInData:error:]
+  -[VMUDirectedGraph initWithPlistRepresentation:error:]
+  -[VMUDirectedGraph plistRepresentationWithOptions:]
+  -[VMUDirectedGraph addNode]
+  -[VMUDirectedGraph _internalAddEdgeFromNode:toNode:withName:]
+  -[VMUDirectedGraph addEdgeFromNode:toNode:]
+  -[VMUDirectedGraph _removeEdges:]
+  -[VMUDirectedGraph _faultDeadNodeMap]
+  -[VMUDirectedGraph deadNodeMap]
+  -[VMUDirectedGraph removeMarkedNodes:]
+  -[VMUDirectedGraph removeMarkedEdges:]
+  -[VMUDirectedGraph isNodePresent:]
+  -[VMUDirectedGraph addGroupNodeForNodes:count:]
+  -[VMUDirectedGraph ungroupNode:]
+  -[VMUDirectedGraph _adjustAdjacencyMap]
+  -[VMUDirectedGraph _renormalize]
+  -[VMUDirectedGraph enumerateMembersOfGroupNode:withBlock:]
+  -[VMUDirectedGraph parentGroupForNode:]
+  -[VMUDirectedGraph _internalAccessRawEdgesWithBlock:]
+  -[VMUDirectedGraph _internalEnumerateEdgesOfNode:withBlock:]
+  -[VMUDirectedGraph withNodeMarkingMap:]
+  -[VMUDirectedGraph withEdgeMarkingMap:]
+  -[VMUDirectedGraph _dfsCore:colors:visitBlock:examineBlock:]
+  -[VMUDirectedGraph _bfsCore:colors:visitBlock:examineBlock:]
+  -[VMUDirectedGraph _searchMainLoop:action:]
+  -[VMUDirectedGraph depthFirstSearch:nodeVisitBlock:edgeVisitBlock:]
+  -[VMUDirectedGraph breadthFirstSearch:nodeVisitBlock:edgeVisitBlock:]
+  -[VMUDirectedGraph _reorderEdgesNaturally]
+  -[VMUDirectedGraph _dumpAdjacencyList]
+  -[VMUDirectedGraph invertEdges]
+  -[VMUDirectedGraph subgraphWithMarkedNodes:]
+  -[VMUDirectedGraph renormalizedGraph]
+  -[VMUDirectedGraph invertedGraph]
+  -[VMUDirectedGraph edgeNamespaceSize]
+  -[VMUDirectedGraph graphIs64bit]
+
+
+VMUObjectGraph : VMUDirectedGraph
+ @property  VMUClassInfoMap *indexedClassInfos
+
+  // instance methods
+  -[VMUObjectGraph archiveDictionaryRepresentation:options:]
+  -[VMUObjectGraph enumerateMarkedObjects:withBlock:]
+  -[VMUObjectGraph dealloc]
+  -[VMUObjectGraph enumerateReferencesWithBlock:]
+  -[VMUObjectGraph .cxx_destruct]
+  -[VMUObjectGraph enumerateObjectsWithBlock:]
+  -[VMUObjectGraph nodeDetails:]
+  -[VMUObjectGraph _renameWithNodeMap:nodeNamespace:edgeMap:edgeNamespace:]
+  -[VMUObjectGraph copyWithZone:]
+  -[VMUObjectGraph hasClassInfosDerivedFromStackBacktraces]
+  -[VMUObjectGraph initWithArchived:version:options:diskLogs:error:]
+  -[VMUObjectGraph nodeForAddress:]
+  -[VMUObjectGraph initWithNodesNoCopy:nodeCount:]
+  -[VMUObjectGraph setIndexedClassInfos:]
+  -[VMUObjectGraph setClassInfoIndex:forNode:]
+  -[VMUObjectGraph indexedClassInfos]
+  -[VMUObjectGraph _refineTypesWithOverlay:]
+  -[VMUObjectGraph addEdgeFromNode:toNode:]
+  -[VMUObjectGraph initWithNodeCount:nodeProvider:]
+  -[VMUObjectGraph internalizeNodes]
+  -[VMUObjectGraph addEdgeFromNode:sourceOffset:withScanType:toNode:destinationOffset:]
+  -[VMUObjectGraph scanTypeOfReferenceWithName:]
+  -[VMUObjectGraph enumerateObjectsOfGroupNode:withBlock:]
+  -[VMUObjectGraph enumerateReferencesOfNode:withBlock:]
+  -[VMUObjectGraph nodeReferencedFromSourceNode:byIvarWithName:]
+  -[VMUObjectGraph enumerateObjectsContainedInCollection:withBlock:]
+  -[VMUObjectGraph referenceInfoWithName:]
+  -[VMUObjectGraph _rawReferenceInfoWithName:]
+  -[VMUObjectGraph _modifyDerivativeGraphCount:]
+  -[VMUObjectGraph _compareWithGraph:andMarkOnMatch:]
+  -[VMUObjectGraph createMapForMinusGraph:]
+  -[VMUObjectGraph createMapForIntersectGraph:]
+  -[VMUObjectGraph stronglyConnectedComponentSearch:withRecorder:]
+  -[VMUObjectGraph subgraphWithShortestPathsFromNode:toNodes:]
+  -[VMUObjectGraph subgraphWithUniquePathsFromNode:toNodes:]
+  -[VMUObjectGraph isGroupNode:]
+  -[VMUObjectGraph isRootNode:]
+
+
+01 00 0340 /System/Library/Frameworks/IOSurface.framework/IOSurface: IOSurfaceDebugDescription 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSBlock 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSConditionLock 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSCountedSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSEnumerator 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSIndexSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableCharacterSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0700 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSRecursiveLock 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSScanner 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0600 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

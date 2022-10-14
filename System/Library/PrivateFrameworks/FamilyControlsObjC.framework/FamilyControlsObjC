@@ -1,0 +1,149 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FOAgentConnectionPrivate
+|| __DATA.__objc_data _OBJC_CLASS_$_FOAuthorizationCenter
+|| __DATA.__objc_data _OBJC_CLASS_$_FOAuthorizationRecord
+|| __DATA.__objc_data _OBJC_CLASS_$_FOAuthorizationRecordDecoder
+|| __DATA.__objc_data _OBJC_CLASS_$_FOAuthorizationRecordEncoder
+|| __DATA.__objc_data _OBJC_CLASS_$_FOXPCRemoteObjectProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOAgentConnectionPrivate
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOAuthorizationCenter
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOAuthorizationRecord
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOAuthorizationRecordDecoder
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOAuthorizationRecordEncoder
+|| __DATA.__objc_data _OBJC_METACLASS_$_FOXPCRemoteObjectProxy
+|| __DATA_CONST.__const _FOFamilyControlsAgentPrivateServiceName
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_storeStrong
+FOAuthorizationRecordDecoder : NSObject
+  // class methods
+  +[FOAuthorizationRecordDecoder decodeRecordDatas:]
+
+
+FOAuthorizationRecordEncoder : NSObject
+  // class methods
+  +[FOAuthorizationRecordEncoder encodeRecords:]
+
+
+FOAgentConnectionPrivate : NSObject
+  // class methods
+  +[FOAgentConnectionPrivate newInterface]
+  +[FOAgentConnectionPrivate newConnection]
+
+
+FOAuthorizationCenter : NSObject
+ @property  NSXPCConnection *xpcConnection
+ @property  NSArray *authorizationRecords
+
+  // class methods
+  +[FOAuthorizationCenter sharedCenter]
+
+  // instance methods
+  -[FOAuthorizationCenter xpcConnection]
+  -[FOAuthorizationCenter authorizationRecords]
+  -[FOAuthorizationCenter initWithXPCConnection:]
+  -[FOAuthorizationCenter dealloc]
+  -[FOAuthorizationCenter .cxx_destruct]
+  -[FOAuthorizationCenter init]
+  -[FOAuthorizationCenter resetAuthorizationForRecordIdentifier:completionHandler:]
+  -[FOAuthorizationCenter requestAuthorizationForRecordIdentifier:completionHandler:]
+  -[FOAuthorizationCenter requestInternalAuthorizationWithCompletionHandler:]
+  -[FOAuthorizationCenter revokeAuthorizationForRecordIdentifier:completionHandler:]
+  -[FOAuthorizationCenter revokeAuthorizationForDeletionForRecordIdentifier:completionHandler:]
+  -[FOAuthorizationCenter revokeInternalAuthorizationWithCompletionHandler:]
+
+
+FOAuthorizationRecord : NSObject <NSSecureCoding>
+ @property  NSString *bundleIdentifier
+ @property  NSString *teamIdentifier
+ @property  NSUUID *recordIdentifier
+ @property  long long status
+ @property  long long type
+
+  // class methods
+  +[FOAuthorizationRecord supportsSecureCoding]
+
+  // instance methods
+  -[FOAuthorizationRecord teamIdentifier]
+  -[FOAuthorizationRecord recordIdentifier]
+  -[FOAuthorizationRecord encodeWithCoder:]
+  -[FOAuthorizationRecord type]
+  -[FOAuthorizationRecord status]
+  -[FOAuthorizationRecord .cxx_destruct]
+  -[FOAuthorizationRecord bundleIdentifier]
+  -[FOAuthorizationRecord isEqual:]
+  -[FOAuthorizationRecord initWithCoder:]
+  -[FOAuthorizationRecord initWithBundleIdentifier:teamIdentifier:recordIdentifier:status:type:]
+
+
+FOXPCRemoteObjectProxy : NSObject
+  // class methods
+  +[FOXPCRemoteObjectProxy proxyFromConnection:withRetryCount:proxyHandler:]
+  +[FOXPCRemoteObjectProxy synchronousProxyFromConnection:withRetryCount:proxyHandler:]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

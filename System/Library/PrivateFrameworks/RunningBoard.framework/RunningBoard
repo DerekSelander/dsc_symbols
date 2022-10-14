@@ -1,0 +1,3258 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_RBLaunchManager
+|| __DATA.__objc_data _OBJC_CLASS_$_RBLaunchTracker
+|| __DATA.__objc_data _OBJC_CLASS_$_RBMutableLaunchdProperties
+|| __DATA.__objc_data _OBJC_CLASS_$_RBMutableProcessAppNapState
+|| __DATA.__objc_data _OBJC_CLASS_$_RBProcessAppNapState
+|| __DATA.__objc_data _OBJC_CLASS_$_RBProcessCPUMinimumLimits
+|| __DATA.__objc_data _OBJC_CLASS_$_RBThermalResponseManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBLaunchManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBLaunchTracker
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBMutableLaunchdProperties
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBMutableProcessAppNapState
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBProcessAppNapState
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBProcessCPUMinimumLimits
+|| __DATA.__objc_data _OBJC_METACLASS_$_RBThermalResponseManager
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._disableFreezing
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._doesOverrideManagement
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._executablePath
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._explicitAngelFlag
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._hostPid
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._jobLabel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._multiInstance
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._overrideManageFlags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._path
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._specifiedIdentity
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._type
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._underlyingAssertion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBLaunchdProperties._variableEUID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._explicitJetsamBand
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._flags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._gpuRole
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._guaranteedRunning
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._identity
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._inheritances
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._jetsamLenientModeByRole
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._legacyAssertions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._legacyFinishTaskReason
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._maxCPULimitsByRole
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._memoryLimit
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._memoryLimitCategory
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._memoryLimitStrength
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._minCPULimitsByRole
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._preventIdleSleepIdentifiers
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._primitiveAssertions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._role
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._tags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessState._terminationResistance
+|| __DATA.__objc_ivar _OBJC_IVAR_$_RBProcessStateChangeSet._stateChangesByIdentity
+|| __DATA_CONST.__const _RBAttributePrimitiveEntitlement
+|| __DATA_CONST.__const _RBBackBoardClientEntitlement
+|| __DATA_CONST.__const _RBBackgroundViewServicesEntitlement
+|| __DATA_CONST.__const _RBContainerRequiredEntitlement
+|| __DATA_CONST.__const _RBDomainAttributeManagerDataProviderErrorDomain
+|| __DATA_CONST.__const _RBEndowmentOriginatorEntitlement
+|| __DATA_CONST.__const _RBIncreasedMemoryLimit
+|| __DATA_CONST.__const _RBInvalidateAnyAssertionEntitlement
+|| __DATA_CONST.__const _RBJetsamPropertyFreezable
+|| __DATA_CONST.__const _RBLaunchDextsEntitlement
+|| __DATA_CONST.__const _RBLaunchExtensionsEntitlement
+|| __DATA_CONST.__const _RBLaunchProcessEntitlement
+|| __DATA_CONST.__const _RBLegacyAppStateMonitorEntitlement
+|| __DATA_CONST.__const _RBLegacyBackBoardDebugEntitlement
+|| __DATA_CONST.__const _RBLegacyLaunchdAppServer
+|| __DATA_CONST.__const _RBLegacySpringBoardDebugEntitlement
+|| __DATA_CONST.__const _RBListAllAssertionDescriptorsEntitlement
+|| __DATA_CONST.__const _RBNewsstandProcessAssertionsEntitlement
+|| __DATA_CONST.__const _RBPerformanceTestEntitlement
+|| __DATA_CONST.__const _RBProcessAssertionSystemShellEntitlement
+|| __DATA_CONST.__const _RBProcessStateEntitlement
+|| __DATA_CONST.__const _RBStateCaptureEntitlement
+|| __DATA_CONST.__const _RBSystemAppProcessAssertionsEntitlement
+|| __DATA_CONST.__const _RBTargetIdentitiesEntitlement
+|| __DATA_CONST.__const _RBTerminateManagedProcessesEntitlement
+|| __DATA_CONST.__const _RBTerminateProcessEntitlement
+|| __DATA_CONST.__const _RBTerminationAssertionEntitlement
+|| __DATA_CONST.__const _RBTestBinaryEntitlement
+|| __DATA_CONST.__const _RBTrustedTargetEntitlement
+|| __DATA_CONST.__const _RBUnlimitedProcessAssertionsEntitlement
+|| __DATA_CONST.__const _RBViewServicesEntitlement
+|| __DATA_CONST.__const _RBVoIPProcessAssertionEntitlement
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionAcquisitionContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionBatchContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionCollection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionDescriptorValidator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionDescriptorValidatorContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionIntransientState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionManagerEventQueue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionOriginatorPidStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionResolutionContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionStateResolver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAssertionTransientState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAttributeContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBAttributeFactory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBBundleProperties
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBBundlePropertiesBSXPCProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBBundlePropertiesLSProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBBundlePropertiesManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBClientInheritanceManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBConcreteTarget
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBContainerManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBDaemon
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBDomainAttributeManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBDomainAttributeManagerDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBDomainRestriction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBEntitlementManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBEntitlementPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBEntitlements
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBEventQueue
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBEventQueueEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBExtensionDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBIgnoreAllEntitlementsManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBInheritanceCollection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBJetsamPropertyManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBLSBundleProperties
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBLaunchdInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBLaunchdJobManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBLaunchdProperties
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBMutableInheritanceCollection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBMutableProcessState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBMutableSystemState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBPowerAssertionManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBPrewarmManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcess
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessCPUMaximumLimits
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessIndex
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessMap
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessMonitorObserver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessMonitorObserverConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessReconnectManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessStateChange
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBProcessStateChangeSet
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBRequestManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBStateCaptureManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBSystemState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBThrottleBestEffortNetworkingManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBTimeProvider
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBXNUWrapper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RBXPCBundleProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionAcquisitionContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionBatchContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionCollection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionDescriptorValidator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionDescriptorValidatorContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionIntransientState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionManagerEventQueue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionOriginatorPidStore
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionResolutionContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionStateResolver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAssertionTransientState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAttributeContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBAttributeFactory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBBundleProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBBundlePropertiesBSXPCProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBBundlePropertiesLSProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBBundlePropertiesManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBClientInheritanceManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBConcreteTarget
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBContainerManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBDaemon
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBDomainAttributeManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBDomainAttributeManagerDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBDomainRestriction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBEntitlementManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBEntitlementPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBEntitlements
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBEventQueue
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBEventQueueEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBExtensionDataProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBIgnoreAllEntitlementsManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBInheritanceCollection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBJetsamPropertyManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBLSBundleProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBLaunchdInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBLaunchdJobManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBLaunchdProperties
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBMutableInheritanceCollection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBMutableProcessState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBMutableSystemState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBPowerAssertionManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBPrewarmManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcess
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessCPUMaximumLimits
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessIndex
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessMap
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessMonitorObserver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessMonitorObserverConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessReconnectManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessStateChange
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBProcessStateChangeSet
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBRequestManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBStateCaptureManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBSystemState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBThrottleBestEffortNetworkingManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBTimeProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBXNUWrapper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RBXPCBundleProperties
+|| __TEXT.__text _RBSAttributePathIncrement
+__ AppServerSupport: _OBJC_CLASS_$_LASSProperties4RB
+__ AppServerSupport: _OBJC_CLASS_$_OSLaunchdDomain
+__ AppServerSupport: _OBJC_CLASS_$_OSLaunchdJob
+__ AppServerSupport: __launch_get_last_exit_reason_4SB
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFSetGetCount
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: __CFXPCCreateCFObjectFromXPCObject
+__ CoreFoundation: __CFXPCCreateXPCObjectFromCFObject
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAbsoluteTimeIntervalSince1970
+__ CoreFoundation: _kCFBundleIdentifierKey
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreServices: _LSHiddenAppType
+__ CoreServices: _LSInternalApplicationType
+__ CoreServices: _LSSystemApplicationType
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CoreServices: _OBJC_CLASS_$_LSBundleProxy
+__ ExtensionFoundation: __EXConfigureLaunchContext
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSRequestConcreteImplementation
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSCountedSet
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ IOGPU: _IOGPUDeviceCreate
+__ IOGPU: _IOGPUDeviceSetAppGPURole
+__ IOKit: _IOPMAssertionDeclareSystemActivityWithProperties
+__ IOKit: _IOPMAssertionRelease
+__ IOKit: _IOPMAssertionSetProperty
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _kIOMainPortDefault
+__ OSAnalytics: _WriteCrashReportWithStackshot
+__ OSAnalytics: _WriteCrashReportWithStackshotWithPayload
+__ PlugInKit: _OBJC_CLASS_$_PKManager
+__ PowerLog: _PLLogRegisteredEvent
+__ RunningBoardServices: _NSStringFromRBSCPUMaximumUsageViolationPolicy
+__ RunningBoardServices: _NSStringFromRBSDurationEndPolicy
+__ RunningBoardServices: _NSStringFromRBSDurationStartPolicy
+__ RunningBoardServices: _NSStringFromRBSGPURole
+__ RunningBoardServices: _NSStringFromRBSLegacyReason
+__ RunningBoardServices: _NSStringFromRBSMemoryLimitStrength
+__ RunningBoardServices: _NSStringFromRBSRole
+__ RunningBoardServices: _NSStringFromRBSTaskState
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAcquisitionCompletionAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapEnableGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapInactiveGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapPreventBackgroundSocketsGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapPreventDiskThrottleGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapPreventLowPriorityCPUGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapPreventSuppressedCPUGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAppNapPreventTimerThrottleGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAssertionDescriptor
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAssertionIdentifier
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAuditToken
+__ RunningBoardServices: _OBJC_CLASS_$_RBSBaseMemoryGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSCPUAccessGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSCPUMaximumUsageLimitation
+__ RunningBoardServices: _OBJC_CLASS_$_RBSCPUMinimumUsageGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSConditionAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSConnection
+__ RunningBoardServices: _OBJC_CLASS_$_RBSConstraintsAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSDebugGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSDefineRelativeStartTimeGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSDomainAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSDurationAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSEndowmentGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSForceRoleManageAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSGPUAccessGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSHandshakeRequest
+__ RunningBoardServices: _OBJC_CLASS_$_RBSHandshakeResponse
+__ RunningBoardServices: _OBJC_CLASS_$_RBSHereditaryGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSInheritance
+__ RunningBoardServices: _OBJC_CLASS_$_RBSInheritanceChangeSet
+__ RunningBoardServices: _OBJC_CLASS_$_RBSInvalidateUnderConditionAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSJetsamPriorityGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSLaunchContext
+__ RunningBoardServices: _OBJC_CLASS_$_RBSLaunchGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSLaunchRequest
+__ RunningBoardServices: _OBJC_CLASS_$_RBSLegacyAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSMachPortTaskNameRight
+__ RunningBoardServices: _OBJC_CLASS_$_RBSMimicTaskSuspensionAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSPersistentAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSPreserveBaseMemoryGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSPreventIdleSleepGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSPreventLaunchLimitation
+__ RunningBoardServices: _OBJC_CLASS_$_RBSPrewarmAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessAssertionInfo
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessExitContext
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessExitEvent
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessExitStatus
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessHandle
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessIdentifier
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessIdentity
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessInfoPlistResult
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessInstance
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessLimitations
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessMonitorConfiguration
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessPredicate
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessState
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessStateDescriptor
+__ RunningBoardServices: _OBJC_CLASS_$_RBSResistTerminationGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSRunningReasonAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSSavedEndowmentGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSSubordinateProcessAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSSuspendableCPUGrant
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTagAttribute
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTarget
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTerminateContext
+__ RunningBoardServices: _OBJC_CLASS_$_RBSTerminateRequest
+__ RunningBoardServices: _OBJC_CLASS_$_RBSWorkloop
+__ RunningBoardServices: _OBJC_CLASS_$_RBSXPCMessage
+__ RunningBoardServices: _OBJC_CLASS_$_RBSXPCMessageContext
+__ RunningBoardServices: _RBSAcquisitionCompletionPolicyIsValid
+__ RunningBoardServices: _RBSArrayForKey
+__ RunningBoardServices: _RBSAssertionErrorAttributeKey
+__ RunningBoardServices: _RBSAssertionErrorDomain
+__ RunningBoardServices: _RBSAssertionErrorDomainKey
+__ RunningBoardServices: _RBSAuditTokenRepresentsPlatformBinary
+__ RunningBoardServices: _RBSBoolForKey
+__ RunningBoardServices: _RBSBundleIDForPID
+__ RunningBoardServices: _RBSConnectionServiceName
+__ RunningBoardServices: _RBSDaemonStartupNotification
+__ RunningBoardServices: _RBSDarwinRoleFromRBSRole
+__ RunningBoardServices: _RBSDictionaryForKey
+__ RunningBoardServices: _RBSDispatchAsyncWithQoS
+__ RunningBoardServices: _RBSEndowmentEncode
+__ RunningBoardServices: _RBSExecutablePathForPID
+__ RunningBoardServices: _RBSInvalidRealAuditToken
+__ RunningBoardServices: _RBSMachAbsoluteTime
+__ RunningBoardServices: _RBSMemoryLimitActive
+__ RunningBoardServices: _RBSMemoryLimitInactive
+__ RunningBoardServices: _RBSNumberForKey
+__ RunningBoardServices: _RBSPIDExists
+__ RunningBoardServices: _RBSPIDIsBeingDebugged
+__ RunningBoardServices: _RBSPathForSystemDirectory
+__ RunningBoardServices: _RBSProcessTimeLimitationNone
+__ RunningBoardServices: _RBSRealAuditTokenValid
+__ RunningBoardServices: _RBSRequestErrorDomain
+__ RunningBoardServices: _RBSResourceViolationServiceName
+__ RunningBoardServices: _RBSServiceErrorDomain
+__ RunningBoardServices: _RBSServiceErrorThrottleTimeKey
+__ RunningBoardServices: _RBSServiceMessageAssertionIdentifierKey
+__ RunningBoardServices: _RBSServiceMessageErrorKey
+__ RunningBoardServices: _RBSServiceMessageReturnValueKey
+__ RunningBoardServices: _RBSStringForKey
+__ RunningBoardServices: _RBSUserfacingNamespace
+__ RunningBoardServices: _RBSVisibilityNamespace
+__ RunningBoardServices: _rbs_assertion_log
+__ RunningBoardServices: _rbs_best_effort_networking_log
+__ RunningBoardServices: _rbs_connection_log
+__ RunningBoardServices: _rbs_general_log
+__ RunningBoardServices: _rbs_jetsam_log
+__ RunningBoardServices: _rbs_job_log
+__ RunningBoardServices: _rbs_job_oversize_log
+__ RunningBoardServices: _rbs_monitor_log
+__ RunningBoardServices: _rbs_power_log
+__ RunningBoardServices: _rbs_process_log
+__ RunningBoardServices: _rbs_sp_assertion_log
+__ RunningBoardServices: _rbs_sp_state_log
+__ RunningBoardServices: _rbs_sp_telemetry_log
+__ RunningBoardServices: _rbs_sp_therm_log
+__ RunningBoardServices: _rbs_state_log
+__ Security: _SecCodeCopySigningInformation
+__ Security: _SecStaticCodeCheckValidity
+__ Security: _SecStaticCodeCreateWithPath
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateWithAuditToken
+__ Security: _SecTaskGetCodeSignStatus
+__ Security: _kSecCodeInfoEntitlementsDict
+__ Security: _kSecCodeInfoIdentifier
+__ UserManagement: _OBJC_CLASS_$_UMUserManager
+__ UserManagement: _OBJC_CLASS_$_UMUserPersonaAttributes
+__ WatchdogClient: _wd_endpoint_activate
+__ WatchdogClient: _wd_endpoint_add_queue
+__ WatchdogClient: _wd_endpoint_register
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___strlcpy_chk
+__ libSystem.B.dylib: __dispatch_source_type_proc
+__ libSystem.B.dylib: __dispatch_source_type_timer
+__ libSystem.B.dylib: __launch_job_routine
+__ libSystem.B.dylib: __os_activity_initiate
+__ libSystem.B.dylib: __os_crash
+__ libSystem.B.dylib: __os_crash_msg
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_log_send_and_compose_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_type_bool
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _access
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _bsearch
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _container_copy_sandbox_token
+__ libSystem.B.dylib: _container_error_copy_unlocalized_description
+__ libSystem.B.dylib: _container_get_path
+__ libSystem.B.dylib: _container_query_create
+__ libSystem.B.dylib: _container_query_free
+__ libSystem.B.dylib: _container_query_get_last_error
+__ libSystem.B.dylib: _container_query_get_single_result
+__ libSystem.B.dylib: _container_query_iterate_results_with_subquery_sync
+__ libSystem.B.dylib: _container_query_operation_set_flags
+__ libSystem.B.dylib: _container_query_operation_set_platform
+__ libSystem.B.dylib: _container_query_set_class
+__ libSystem.B.dylib: _container_query_set_identifiers
+__ libSystem.B.dylib: _container_query_set_include_other_owners
+__ libSystem.B.dylib: _container_query_set_persona_unique_string
+__ libSystem.B.dylib: _container_query_set_uid
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_assert_queue_not$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_async_and_wait
+__ libSystem.B.dylib: _dispatch_block_create_with_qos_class
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_initially_inactive
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_set_context
+__ libSystem.B.dylib: _dispatch_set_qos_class_fallback
+__ libSystem.B.dylib: _dispatch_source_cancel
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_data
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_source_set_timer
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dispatch_workloop_create_inactive
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fstat
+__ libSystem.B.dylib: _ftruncate
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _getpwuid
+__ libSystem.B.dylib: _getxattr
+__ libSystem.B.dylib: _kill
+__ libSystem.B.dylib: _kpersona_info
+__ libSystem.B.dylib: _launch_copy_properties_for_pid_4assertiond
+__ libSystem.B.dylib: _launch_extension_property_host_pid
+__ libSystem.B.dylib: _launch_extension_property_path
+__ libSystem.B.dylib: _launch_extension_property_xpc_bundle
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memorystatus_control
+__ libSystem.B.dylib: _mmap
+__ libSystem.B.dylib: _munmap
+__ libSystem.B.dylib: _notify_get_state
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _notify_resume_pid
+__ libSystem.B.dylib: _notify_suspend_pid
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _os_signpost_id_make_with_pointer
+__ libSystem.B.dylib: _os_state_add_handler
+__ libSystem.B.dylib: _os_state_remove_handler
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_unfair_lock_assert_not_owner
+__ libSystem.B.dylib: _os_unfair_lock_assert_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_lock_with_options
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _os_unfair_recursive_lock_lock_with_options
+__ libSystem.B.dylib: _os_unfair_recursive_lock_unlock
+__ libSystem.B.dylib: _os_variant_has_internal_content
+__ libSystem.B.dylib: _os_variant_is_darwinos
+__ libSystem.B.dylib: _pid_resume
+__ libSystem.B.dylib: _pid_shutdown_sockets
+__ libSystem.B.dylib: _pid_suspend
+__ libSystem.B.dylib: _proc_disable_cpumon
+__ libSystem.B.dylib: _proc_pidfdinfo
+__ libSystem.B.dylib: _proc_pidinfo
+__ libSystem.B.dylib: _proc_resume_cpumon
+__ libSystem.B.dylib: _proc_set_cpumon_defaults
+__ libSystem.B.dylib: _proc_set_cpumon_params
+__ libSystem.B.dylib: _proc_set_cpumon_params_fatal
+__ libSystem.B.dylib: _qsort
+__ libSystem.B.dylib: _realpath$DARWIN_EXTSN
+__ libSystem.B.dylib: _sandbox_check_by_audit_token
+__ libSystem.B.dylib: _sandbox_container_path_for_audit_token
+__ libSystem.B.dylib: _sandbox_extension_consume
+__ libSystem.B.dylib: _sandbox_extension_release
+__ libSystem.B.dylib: _setiopolicy_np
+__ libSystem.B.dylib: _setpriority
+__ libSystem.B.dylib: _shm_open
+__ libSystem.B.dylib: _shm_unlink
+__ libSystem.B.dylib: _stat
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strerror
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _terminate_with_reason
+__ libSystem.B.dylib: _xpc_array_create
+__ libSystem.B.dylib: _xpc_array_get_count
+__ libSystem.B.dylib: _xpc_array_get_value
+__ libSystem.B.dylib: _xpc_array_set_int64
+__ libSystem.B.dylib: _xpc_array_set_string
+__ libSystem.B.dylib: _xpc_array_set_value
+__ libSystem.B.dylib: _xpc_bool_get_value
+__ libSystem.B.dylib: _xpc_bundle_create
+__ libSystem.B.dylib: _xpc_bundle_get_executable_path
+__ libSystem.B.dylib: _xpc_bundle_get_info_dictionary
+__ libSystem.B.dylib: _xpc_bundle_get_property
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_audit_token
+__ libSystem.B.dylib: _xpc_connection_get_pid
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_connection_suspend
+__ libSystem.B.dylib: _xpc_copy_description
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_mach_send
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_uuid
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_endpoint_get_bs_job_handle
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_strerror
+__ libSystem.B.dylib: _xpc_string_create
+__ libSystem.B.dylib: _xpc_string_get_string_ptr
+__ libSystem.B.dylib: _xpc_user_sessions_enabled
+__ libSystem.B.dylib: _xpc_user_sessions_get_foreground_uid
+__ libbsm.0.dylib: _audit_token_to_auid
+__ libbsm.0.dylib: _audit_token_to_euid
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x10
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libsp.dylib: _spd_client_start_monitoring_all_sockets_for_pid
+__ libsp.dylib: _spd_client_stop_monitoring_all_sockets_for_pid
+__ libsqlite3.dylib: __sqlite3_lockstate
+__ libtailspin.dylib: _tailspin_config_create_with_default_config
+__ libtailspin.dylib: _tailspin_config_free
+__ libtailspin.dylib: _tailspin_dump_output_sync
+__ libtailspin.dylib: _tailspin_enabled_set
+RBResourceViolationHandler : NSObject
+  // instance methods
+  -[RBResourceViolationHandler .cxx_destruct]
+
+
+RBEntitlements : NSObject <RBEntitlementPossessing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBEntitlements _initWithEntitlements:]
+  -[RBEntitlements .cxx_destruct]
+  -[RBEntitlements hasEntitlementDomain:]
+  -[RBEntitlements hasEntitlement:]
+  -[RBEntitlements init]
+
+
+RBXPCBundleProperties : NSObject <RBBundleProperties>
+ @property  NSURL *dataContainerURL
+ @property  NSDictionary *environmentVariables
+ @property  NSString *bundleIdentifier
+ @property  NSString *bundlePath
+ @property  NSString *executablePath
+ @property  NSString *extensionPointIdentifier
+ @property  BOOL supportsBackgroundContentFetching
+ @property  BOOL supportsBackgroundNetworkAuthentication
+ @property  BOOL supportsBackgroundAudio
+ @property  BOOL supportsUnboundedTaskCompletion
+ @property  BOOL usesSocketMonitoring
+ @property  BOOL continuousBackgroundMode
+ @property  int preferredJetsamBand
+ @property  BOOL hasPreferredJetsamBand
+ @property  BOOL isExtension
+ @property  int platform
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBXPCBundleProperties initWithPID:]
+  -[RBXPCBundleProperties extensionPointIdentifier]
+  -[RBXPCBundleProperties bundleInfoValuesForKeys:]
+  -[RBXPCBundleProperties usesSocketMonitoring]
+  -[RBXPCBundleProperties executablePath]
+  -[RBXPCBundleProperties dataContainerURL]
+  -[RBXPCBundleProperties platform]
+  -[RBXPCBundleProperties environmentVariables]
+  -[RBXPCBundleProperties preferredJetsamBand]
+  -[RBXPCBundleProperties .cxx_destruct]
+  -[RBXPCBundleProperties bundlePath]
+  -[RBXPCBundleProperties supportsBackgroundContentFetching]
+  -[RBXPCBundleProperties isExtension]
+  -[RBXPCBundleProperties supportsBackgroundNetworkAuthentication]
+  -[RBXPCBundleProperties hasPreferredJetsamBand]
+  -[RBXPCBundleProperties bundleIdentifier]
+  -[RBXPCBundleProperties supportsUnboundedTaskCompletion]
+  -[RBXPCBundleProperties supportsBackgroundAudio]
+  -[RBXPCBundleProperties continuousBackgroundMode]
+
+
+RBBundlePropertiesBSXPCProvider : NSObject
+  // instance methods
+  -[RBBundlePropertiesBSXPCProvider .cxx_destruct]
+  -[RBBundlePropertiesBSXPCProvider removePropertiesForIdentifier:]
+  -[RBBundlePropertiesBSXPCProvider propertiesForIdentifier:]
+  -[RBBundlePropertiesBSXPCProvider init]
+
+
+RBAssertionManagerEventQueue : NSObject
+ @property  <RBAssertionManagerQueueDelegate> *delegate
+ @property  unsigned long count
+
+  // instance methods
+  -[RBAssertionManagerEventQueue setDelegate:]
+  -[RBAssertionManagerEventQueue initWithTimeProvider:]
+  -[RBAssertionManagerEventQueue delegate]
+  -[RBAssertionManagerEventQueue .cxx_destruct]
+  -[RBAssertionManagerEventQueue count]
+  -[RBAssertionManagerEventQueue updateEventsForAssertions:]
+
+
+RBPowerAssertion : NSObject
+  // instance methods
+  -[RBPowerAssertion dealloc]
+  -[RBPowerAssertion .cxx_destruct]
+  -[RBPowerAssertion _preventIdleSleepIdentifiers]
+  -[RBPowerAssertion _targetPid]
+  -[RBPowerAssertion init]
+
+
+RBProcessPowerAssertion : RBPowerAssertion
+  // instance methods
+  -[RBProcessPowerAssertion .cxx_destruct]
+  -[RBProcessPowerAssertion _preventIdleSleepIdentifiers]
+  -[RBProcessPowerAssertion _targetPid]
+
+
+RBSystemPowerAssertion : RBPowerAssertion
+  // instance methods
+  -[RBSystemPowerAssertion .cxx_destruct]
+  -[RBSystemPowerAssertion _preventIdleSleepIdentifiers]
+  -[RBSystemPowerAssertion _targetPid]
+  -[RBSystemPowerAssertion init]
+
+
+RBPowerAssertionManager : NSObject <RBPowerAssertionManaging, RBStateCapturing>
+ @property  <RBPowerAssertionManagerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBPowerAssertionManager stateCaptureTitle]
+  -[RBPowerAssertionManager captureState]
+  -[RBPowerAssertionManager setDelegate:]
+  -[RBPowerAssertionManager removeProcess:]
+  -[RBPowerAssertionManager applySystemState:]
+  -[RBPowerAssertionManager delegate]
+  -[RBPowerAssertionManager dealloc]
+  -[RBPowerAssertionManager .cxx_destruct]
+  -[RBPowerAssertionManager removeStateForProcessIdentity:]
+  -[RBPowerAssertionManager _unitTest_hasPowerAssertionForProcess:]
+  -[RBPowerAssertionManager _unitTest_nameOfPowerAssertionForProcess:]
+  -[RBPowerAssertionManager _unitTest_hasSystemPowerAssertion]
+  -[RBPowerAssertionManager _unitTest_nameOfPowerAssertionForSystem]
+  -[RBPowerAssertionManager addProcess:]
+  -[RBPowerAssertionManager init]
+  -[RBPowerAssertionManager didUpdateProcessStates:]
+
+
+RBAssertionManager : NSObject <RBAssertionManagerQueueDelegate, RBAssertionManaging, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  RBSystemState *systemState
+ @property  NSString *stateCaptureTitle
+
+  // class methods
+  +[RBAssertionManager sharedWorkloop]
+
+  // instance methods
+  -[RBAssertionManager containsAttributeWithDomain:andName:]
+  -[RBAssertionManager stateCaptureTitle]
+  -[RBAssertionManager originatorEntitlementsForDomain:andName:]
+  -[RBAssertionManager attributesForDomain:andName:context:withError:]
+  -[RBAssertionManager areTargetPropertiesValidForContext:forAttributeWithDomain:andName:]
+  -[RBAssertionManager captureState]
+  -[RBAssertionManager allEntitlements]
+  -[RBAssertionManager endowmentNamespaceForDomain:andName:]
+  -[RBAssertionManager _lock_clearStartTimesForUnbusyTargets:]
+  -[RBAssertionManager savedEndowmentsForProcess:]
+  -[RBAssertionManager _lock_startTimeForAssertion:]
+  -[RBAssertionManager _lock_updateStatesDueToChangingAssertions:invalidatedAssertions:]
+  -[RBAssertionManager _lock_assertionCreationAttributeContextForTargetIdentity:originator:]
+  -[RBAssertionManager _lock_removeStateForProcessIdentityIfNecessary:]
+  -[RBAssertionManager _lock_createAssertionsForBatchContext:originatorState:errorsByIndex:]
+  -[RBAssertionManager invalidateAssertionWithIdentifier:]
+  -[RBAssertionManager commitBatchWithContext:completion:]
+  -[RBAssertionManager hasAssertionWithIdentifier:]
+  -[RBAssertionManager processDidTerminate:]
+  -[RBAssertionManager invalidateAssertionFromOriginator:sync:withIdentifier:]
+  -[RBAssertionManager _lock_enforceAssertionLimitIfNecessaryForBatchContext:originatorProcess:error:]
+  -[RBAssertionManager _concreteTargetForTarget:allowAbstractTarget:]
+  -[RBAssertionManager _lock_removeAssertion:]
+  -[RBAssertionManager _lock_createAssertionWithAcquisitionContext:attributeContext:concreteTarget:targetIdentity:originator:error:]
+  -[RBAssertionManager _lock_activateDelayedAssertionsForTargets:]
+  -[RBAssertionManager _lock_finalizeRemovingAssertions:]
+  -[RBAssertionManager additionalRestrictionsForDomain:andName:]
+  -[RBAssertionManager _lock_relativeStartTimeForAssertion:]
+  -[RBAssertionManager processDidLaunch:]
+  -[RBAssertionManager _lock_sortedAssertionsForTarget:]
+  -[RBAssertionManager _lock_deactivateDelayedAssertionsForTargets:]
+  -[RBAssertionManager targetEntitlementsForDomain:andName:]
+  -[RBAssertionManager _lock_numberOfStartTimeDefiningAssertionsForTargetProcessIdentity:]
+  -[RBAssertionManager _lock_notifyDelegateOfExcessiveAssertionsForOriginatorProcess:]
+  -[RBAssertionManager _acquireUnderlyingAssertionForProcess:]
+  -[RBAssertionManager processForIdentity:]
+  -[RBAssertionManager _invalidateAssertionsWithContext:]
+  -[RBAssertionManager _decreaseInFlightOperationsForTargetIdentities:]
+  -[RBAssertionManager stateForIdentity:]
+  -[RBAssertionManager invalidateAssertion:]
+  -[RBAssertionManager _remainingRuntimeForProcessIdentity:]
+  -[RBAssertionManager .cxx_destruct]
+  -[RBAssertionManager _lock_setState:forProcessIdentity:]
+  -[RBAssertionManager initWithDelegate:bundlePropertiesManager:originatorPidStore:assertionDescriptorValidator:timeProvider:daemonContext:maxOperationsInFlight:maxAssertionsPerOriginator:]
+  -[RBAssertionManager _lock_hasStartTimeDefiningAssertionsForTargetProcessIdentity:]
+  -[RBAssertionManager _lock_targetIdentitiesInAssertions:]
+  -[RBAssertionManager eventQueue:remainingRuntimeForProcessIdentity:]
+  -[RBAssertionManager _lock_resolvePreliminaryStatesForNonExistingProcessesWithAssertions:completionPolicy:]
+  -[RBAssertionManager isProcessForeground:]
+  -[RBAssertionManager _increaseInFlightOperationsForOriginator:andSuspendIfNeeded:]
+  -[RBAssertionManager _lock_incomingAssertionCountForBatchContext:originatorIdentifier:]
+  -[RBAssertionManager _lock_willExceedAssertionLimitForOriginatorProcess:withIncomingCount:]
+  -[RBAssertionManager _lock_batchContextInvalidatesSynchronously:]
+  -[RBAssertionManager _lock_delayedStartTimeForAssertion:]
+  -[RBAssertionManager _invalidateAssertion:sync:]
+  -[RBAssertionManager acquireAssertionWithContext:completion:]
+  -[RBAssertionManager _lock_notifyDelegateOfInvalidatedAssertions:]
+  -[RBAssertionManager _lock_enqueueAssertionsForRemoval:]
+  -[RBAssertionManager popPluginHoldForAssertion:]
+  -[RBAssertionManager invalidateAssertionFromOriginator:withIdentifier:]
+  -[RBAssertionManager addSavedEndowment:forProcess:]
+  -[RBAssertionManager _lock_removeAssertions:andUpdateChangedAssertions:]
+  -[RBAssertionManager _lock_invalidateAssertions:forceSync:]
+  -[RBAssertionManager _lock_deactivateAssertions:]
+  -[RBAssertionManager _lock_setSystemState:]
+  -[RBAssertionManager _removeInvalidAssertions]
+  -[RBAssertionManager invalidateAssertionsDueToCPUUsageViolationForProcessIdentifier:]
+  -[RBAssertionManager _lock_createAssertionForDescriptor:originatorState:acquisitionContext:error:]
+  -[RBAssertionManager _lock_deactivateExistingAssertionsDelayedByIncomingAssertions:]
+  -[RBAssertionManager systemState]
+  -[RBAssertionManager _lock_checkAssertionToInvalidateByCondition:condition:currentValue:assertionsToInvalidate:]
+  -[RBAssertionManager eventQueue:handleInvalidationEventForAssertion:]
+  -[RBAssertionManager _dumpAssertions]
+  -[RBAssertionManager limitationsForInstance:]
+  -[RBAssertionManager _lock_originatorIdentifiersInAssertions:]
+  -[RBAssertionManager _acquireAssertions:invalidateIdentifiers:forOriginatorProcess:completionPolicy:acquisitionErrorsByIndex:completeStage:]
+  -[RBAssertionManager _lock_invalidationTimeForAssertion:]
+  -[RBAssertionManager _decreaseInFlightOperationsForOriginator:]
+  -[RBAssertionManager _lock_notifyDelegateOfProcessStateChangeSet:]
+  -[RBAssertionManager _lock_addAssertion:]
+  -[RBAssertionManager _lock_savedEndowmentsForProcess:]
+  -[RBAssertionManager _increaseInFlightOperationsForTargetIdentities:]
+  -[RBAssertionManager _lock_originatorExitTimeForAssertion:]
+  -[RBAssertionManager _lock_validateDescriptor:originatorProcess:originatorState:concreteTarget:targetProcess:targetIdentity:targetIdentifier:targetState:acquisitionContext:error:]
+  -[RBAssertionManager assertionsForOriginator:]
+  -[RBAssertionManager revalidateAssertionsForProcessIdentities:]
+  -[RBAssertionManager eventQueue:handleAssertionsExpirationWarningEventForProcessIdentity:expirationTime:]
+  -[RBAssertionManager assertionDescriptorsWithFlattenedAttributes:]
+  -[RBAssertionManager _lock_invalidateAssertionByConditions:changedAssertions:]
+  -[RBAssertionManager eventQueue:startTimeForAssertion:]
+  -[RBAssertionManager _lock_originatorHasExited:]
+  -[RBAssertionManager eventQueue:handleWarningEventForAssertion:]
+  -[RBAssertionManager init]
+  -[RBAssertionManager _lock_dumpAssertionsForTarget:]
+  -[RBAssertionManager restrictionsForDomain:andName:]
+  -[RBAssertionManager _lock_removeInvalidAssertions]
+
+
+RBTimeProviderEvent : NSObject <RBTimeProvidingEvent>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBTimeProviderEvent eventWithSource:]
+
+  // instance methods
+  -[RBTimeProviderEvent _initWithSource:]
+  -[RBTimeProviderEvent .cxx_destruct]
+  -[RBTimeProviderEvent cancel]
+
+
+RBTimeProvider : NSObject <RBTimeProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBTimeProvider sharedInstance]
+
+  // instance methods
+  -[RBTimeProvider currentTime]
+  -[RBTimeProvider executeAfter:onQueue:block:]
+  -[RBTimeProvider executeWithCancellingAfter:onQueue:block:]
+  -[RBTimeProvider startTimeForProcess:]
+
+
+RBLaunchTracker : NSObject
+  // instance methods
+  -[RBLaunchTracker initWithTimeProvider:]
+  -[RBLaunchTracker trackLaunchOfIdentity:]
+  -[RBLaunchTracker .cxx_destruct]
+  -[RBLaunchTracker nextAllowedLaunchOfIdentity:]
+
+
+RBLaunchManager : NSObject
+  // instance methods
+  -[RBLaunchManager _checkLaunchForBackoff:error:]
+  -[RBLaunchManager .cxx_destruct]
+  -[RBLaunchManager _validateBundleIDForProcess:launchedWithContext:]
+  -[RBLaunchManager executeLaunchRequest:existingProcess:requestIdentity:withError:]
+  -[RBLaunchManager initWithJobManager:timeProvider:delegate:]
+  -[RBLaunchManager _resolveNewProcessForInstance:requestIdentity:context:withError:]
+  -[RBLaunchManager init]
+
+
+RBBundleProperties : NSObject <RBBundleProperties>
+ @property  NSString *bundleIdentifier
+ @property  NSString *bundlePath
+ @property  NSString *executablePath
+ @property  NSString *extensionPointIdentifier
+ @property  NSURL *dataContainerURL
+ @property  NSDictionary *environmentVariables
+ @property  BOOL supportsBackgroundContentFetching
+ @property  BOOL supportsBackgroundNetworkAuthentication
+ @property  BOOL supportsBackgroundAudio
+ @property  BOOL supportsUnboundedTaskCompletion
+ @property  BOOL usesSocketMonitoring
+ @property  BOOL continuousBackgroundMode
+ @property  int preferredJetsamBand
+ @property  BOOL hasPreferredJetsamBand
+ @property  BOOL isExtension
+ @property  int platform
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBBundleProperties extensionPointIdentifier]
+  -[RBBundleProperties bundleInfoValuesForKeys:]
+  -[RBBundleProperties usesSocketMonitoring]
+  -[RBBundleProperties executablePath]
+  -[RBBundleProperties dataContainerURL]
+  -[RBBundleProperties platform]
+  -[RBBundleProperties environmentVariables]
+  -[RBBundleProperties preferredJetsamBand]
+  -[RBBundleProperties .cxx_destruct]
+  -[RBBundleProperties bundlePath]
+  -[RBBundleProperties supportsBackgroundContentFetching]
+  -[RBBundleProperties initWithLSProvider:xpcProvider:processIdentity:processIdentifier:]
+  -[RBBundleProperties isExtension]
+  -[RBBundleProperties supportsBackgroundNetworkAuthentication]
+  -[RBBundleProperties hasPreferredJetsamBand]
+  -[RBBundleProperties bundleIdentifier]
+  -[RBBundleProperties supportsUnboundedTaskCompletion]
+  -[RBBundleProperties supportsBackgroundAudio]
+  -[RBBundleProperties continuousBackgroundMode]
+
+
+RBEventQueue : NSObject
+ @property  NSArray *events
+ @property  RBEventQueueEvent *nextEvent
+ @property  unsigned long count
+
+  // instance methods
+  -[RBEventQueue addEvents:]
+  -[RBEventQueue nextEvent]
+  -[RBEventQueue events]
+  -[RBEventQueue .cxx_destruct]
+  -[RBEventQueue batchModify:]
+  -[RBEventQueue count]
+  -[RBEventQueue initWithQueue:timeProvider:]
+  -[RBEventQueue removeEvent:]
+  -[RBEventQueue removeEvents:]
+  -[RBEventQueue addEvent:]
+
+
+RBEntitlementManager : NSObject <RBEntitlementManaging, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBEntitlementManager stateCaptureTitle]
+  -[RBEntitlementManager captureState]
+  -[RBEntitlementManager allEntitlements]
+  -[RBEntitlementManager entitlementsForProcess:]
+  -[RBEntitlementManager .cxx_destruct]
+  -[RBEntitlementManager purgeEntitlementsForProcess:]
+  -[RBEntitlementManager initWithDomainAttributeEntitlements:]
+
+
+RBIgnoreAllEntitlementsManager : NSObject <RBEntitlementManaging, RBEntitlementPossessing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBIgnoreAllEntitlementsManager allEntitlements]
+  -[RBIgnoreAllEntitlementsManager entitlementsForProcess:]
+  -[RBIgnoreAllEntitlementsManager hasEntitlementDomain:]
+  -[RBIgnoreAllEntitlementsManager purgeEntitlementsForProcess:]
+  -[RBIgnoreAllEntitlementsManager hasEntitlement:]
+
+
+RBThrottleBestEffortNetworkingManager : NSObject <RBThrottleBestEffortNetworkingManaging, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBThrottleBestEffortNetworkingManager stateCaptureTitle]
+  -[RBThrottleBestEffortNetworkingManager captureState]
+  -[RBThrottleBestEffortNetworkingManager removeProcess:]
+  -[RBThrottleBestEffortNetworkingManager .cxx_destruct]
+  -[RBThrottleBestEffortNetworkingManager addProcess:]
+  -[RBThrottleBestEffortNetworkingManager isThrottleBestEffortNetworkingEnabled]
+  -[RBThrottleBestEffortNetworkingManager init]
+  -[RBThrottleBestEffortNetworkingManager didUpdateProcessStates:]
+
+
+RBAssertionTransientState : NSObject <NSCopying>
+ @property  NSSet *tags
+
+  // instance methods
+  -[RBAssertionTransientState tags]
+  -[RBAssertionTransientState addTag:]
+  -[RBAssertionTransientState .cxx_destruct]
+  -[RBAssertionTransientState maxCPUUsageViolationPolicyForRole:]
+  -[RBAssertionTransientState copyWithZone:]
+  -[RBAssertionTransientState unionState:]
+  -[RBAssertionTransientState setMaxCPUUsageViolationPolicy:forRole:]
+  -[RBAssertionTransientState isEqual:]
+
+
+RBAssertionIntransientState : NSObject <NSCopying>
+ @property  BOOL isPersistent
+ @property  BOOL hasHereditaryGrant
+ @property  BOOL hasDomainAttribute
+ @property  BOOL definesRelativeStartTime
+ @property  BOOL terminateTargetOnOriginatorExit
+ @property  BOOL invalidatesSynchronously
+ @property  BOOL preventsSuspension
+ @property  unsigned long startPolicy
+ @property  unsigned long endPolicy
+ @property  double invalidationDuration
+ @property  double warningDuration
+ @property  NSMutableSet *sourceEnvironments
+ @property  unsigned long runningReason
+ @property  unsigned long legacyReason
+ @property  NSString *domainAttributes
+ @property  BOOL suspendsOnOriginatorSuspension
+ @property  NSMutableDictionary *invalidatesOnConditions
+
+  // instance methods
+  -[RBAssertionIntransientState setIsPersistent:]
+  -[RBAssertionIntransientState isPersistent]
+  -[RBAssertionIntransientState hasDomainAttribute]
+  -[RBAssertionIntransientState setDomainAttributes:]
+  -[RBAssertionIntransientState sourceEnvironments]
+  -[RBAssertionIntransientState runningReason]
+  -[RBAssertionIntransientState setPreventsSuspension:]
+  -[RBAssertionIntransientState setHasHereditaryGrant:]
+  -[RBAssertionIntransientState setLegacyReason:]
+  -[RBAssertionIntransientState invalidatesOnConditions]
+  -[RBAssertionIntransientState setInvalidatesSynchronously:]
+  -[RBAssertionIntransientState suspendsOnOriginatorSuspension]
+  -[RBAssertionIntransientState domainAttributes]
+  -[RBAssertionIntransientState definesRelativeStartTime]
+  -[RBAssertionIntransientState .cxx_destruct]
+  -[RBAssertionIntransientState terminateTargetOnOriginatorExit]
+  -[RBAssertionIntransientState setRunningReason:]
+  -[RBAssertionIntransientState invalidatesSynchronously]
+  -[RBAssertionIntransientState hasHereditaryGrant]
+  -[RBAssertionIntransientState setInvalidationDuration:]
+  -[RBAssertionIntransientState legacyReason]
+  -[RBAssertionIntransientState copyWithZone:]
+  -[RBAssertionIntransientState setTerminateTargetOnOriginatorExit:]
+  -[RBAssertionIntransientState setInvalidatesOnConditions:]
+  -[RBAssertionIntransientState setDefinesRelativeStartTime:]
+  -[RBAssertionIntransientState setStartPolicy:]
+  -[RBAssertionIntransientState setEndPolicy:]
+  -[RBAssertionIntransientState invalidationDuration]
+  -[RBAssertionIntransientState endPolicy]
+  -[RBAssertionIntransientState isEqual:]
+  -[RBAssertionIntransientState setWarningDuration:]
+  -[RBAssertionIntransientState setHasDomainAttribute:]
+  -[RBAssertionIntransientState preventsSuspension]
+  -[RBAssertionIntransientState startPolicy]
+  -[RBAssertionIntransientState setSuspendsOnOriginatorSuspension:]
+  -[RBAssertionIntransientState warningDuration]
+
+
+RBAssertionAcquisitionContext : NSObject
+ @property  RBProcess *process
+ @property  RBSAssertionDescriptor *descriptor
+ @property  <RBDaemonContextProviding> *daemonContext
+ @property  id holdToken
+ @property  BOOL unitTesting
+ @property  BOOL allowAbstractTarget
+ @property  unsigned long acquisitionPolicy
+
+  // class methods
+  +[RBAssertionAcquisitionContext contextForProcess:withDescriptor:daemonContext:]
+
+  // instance methods
+  -[RBAssertionAcquisitionContext descriptor]
+  -[RBAssertionAcquisitionContext process]
+  -[RBAssertionAcquisitionContext unitTesting]
+  -[RBAssertionAcquisitionContext holdToken]
+  -[RBAssertionAcquisitionContext setAllowAbstractTarget:]
+  -[RBAssertionAcquisitionContext .cxx_destruct]
+  -[RBAssertionAcquisitionContext setAcquisitionPolicy:]
+  -[RBAssertionAcquisitionContext allowAbstractTarget]
+  -[RBAssertionAcquisitionContext setUnitTesting:]
+  -[RBAssertionAcquisitionContext setHoldToken:]
+  -[RBAssertionAcquisitionContext daemonContext]
+  -[RBAssertionAcquisitionContext acquisitionPolicy]
+
+
+RBAssertionBatchContext : NSObject
+ @property  RBProcess *process
+ @property  NSArray *descriptorsToAcquire
+ @property  NSArray *identifiersToInvalidate
+ @property  <RBDaemonContextProviding> *daemonContext
+ @property  id holdToken
+ @property  BOOL unitTesting
+ @property  BOOL allowAbstractTarget
+ @property  unsigned long acquisitionPolicy
+
+  // class methods
+  +[RBAssertionBatchContext contextForProcess:withDescriptorsToAcquire:identifiersToInvalidate:daemonContext:]
+  +[RBAssertionBatchContext contextForProcess:acquisitionCompletionPolicy:withDescriptorsToAcquire:identifiersToInvalidate:daemonContext:]
+
+  // instance methods
+  -[RBAssertionBatchContext process]
+  -[RBAssertionBatchContext unitTesting]
+  -[RBAssertionBatchContext holdToken]
+  -[RBAssertionBatchContext setAllowAbstractTarget:]
+  -[RBAssertionBatchContext .cxx_destruct]
+  -[RBAssertionBatchContext setAcquisitionPolicy:]
+  -[RBAssertionBatchContext allowAbstractTarget]
+  -[RBAssertionBatchContext identifiersToInvalidate]
+  -[RBAssertionBatchContext setUnitTesting:]
+  -[RBAssertionBatchContext acquisitionContextForDescriptor:]
+  -[RBAssertionBatchContext setHoldToken:]
+  -[RBAssertionBatchContext descriptorsToAcquire]
+  -[RBAssertionBatchContext daemonContext]
+  -[RBAssertionBatchContext _init]
+  -[RBAssertionBatchContext acquisitionPolicy]
+
+
+RBThermalResponseManager : NSObject
+  // class methods
+  +[RBThermalResponseManager _thermalConditionLevelForThermalLevel:]
+  +[RBThermalResponseManager managerWithDaemonContext:notificationName:]
+
+  // instance methods
+  -[RBThermalResponseManager .cxx_destruct]
+  -[RBThermalResponseManager _takeAssertionForConditionLevel:completion:]
+  -[RBThermalResponseManager _queue_updateAssertion]
+  -[RBThermalResponseManager _initWithDaemonContext:notificationName:]
+
+
+RBProcessCPUMaximumLimits : NSObject
+ @property  unsigned long percentage
+ @property  unsigned long duration
+ @property  unsigned long violationPolicy
+
+  // instance methods
+  -[RBProcessCPUMaximumLimits duration]
+  -[RBProcessCPUMaximumLimits isEqual:]
+  -[RBProcessCPUMaximumLimits percentage]
+  -[RBProcessCPUMaximumLimits violationPolicy]
+  -[RBProcessCPUMaximumLimits initWithPercentage:duration:violationPolicy:]
+  -[RBProcessCPUMaximumLimits unionLimit:]
+
+
+RBProcessCPUMinimumLimits : NSObject
+ @property  unsigned long percentage
+ @property  unsigned long duration
+
+  // instance methods
+  -[RBProcessCPUMinimumLimits duration]
+  -[RBProcessCPUMinimumLimits isEqual:]
+  -[RBProcessCPUMinimumLimits percentage]
+  -[RBProcessCPUMinimumLimits unionLimit:]
+  -[RBProcessCPUMinimumLimits initWithPercentage:duration:]
+
+
+RBProcessState : NSObject <NSCopying, NSMutableCopying>
+ @property  RBSProcessIdentity *identity
+ @property  unsigned char role
+ @property  BOOL preventSuspend
+ @property  unsigned char gpuRole
+ @property  unsigned char terminationResistance
+ @property  unsigned long explicitJetsamBand
+ @property  BOOL isBeingDebugged
+ @property  BOOL preventBaseMemoryLimitReduction
+ @property  BOOL preventIdleSleep
+ @property  BOOL jetsamLenientMode
+ @property  BOOL throttleBestEffortNetworking
+ @property  BOOL effectiveJetsamLenientMode
+ @property  BOOL forceRoleManage
+ @property  BOOL guaranteedRunning
+ @property  BOOL targetedBySuspendableAssertion
+ @property  NSString *memoryLimitCategory
+ @property  unsigned char memoryLimitStrength
+ @property  int memoryLimit
+ @property  unsigned long effectiveMaxCPUPercentage
+ @property  unsigned long effectiveMaxCPUDuration
+ @property  unsigned long effectiveMaxCPUUsageViolationPolicy
+ @property  unsigned long effectiveMinCPUPercentage
+ @property  unsigned long effectiveMinCPUDuration
+ @property  unsigned long legacyFinishTaskReason
+ @property  NSSet *preventIdleSleepIdentifiers
+ @property  RBInheritanceCollection *inheritances
+ @property  NSSet *preventLaunchReasons
+ @property  NSSet *tags
+ @property  NSSet *legacyAssertions
+ @property  NSSet *primitiveAssertions
+
+  // instance methods
+  -[RBProcessState initWithIdentity:]
+  -[RBProcessState inheritancesForEnvironment:]
+  -[RBProcessState inheritances]
+  -[RBProcessState tags]
+  -[RBProcessState isBeingDebugged]
+  -[RBProcessState memoryLimit]
+  -[RBProcessState targetedBySuspendableAssertion]
+  -[RBProcessState effectiveMinCPUPercentage]
+  -[RBProcessState legacyFinishTaskReason]
+  -[RBProcessState preventLaunchReasons]
+  -[RBProcessState role]
+  -[RBProcessState isAppNapEqualToProcessState:]
+  -[RBProcessState jetsamLenientMode]
+  -[RBProcessState gpuRole]
+  -[RBProcessState memoryLimitStrength]
+  -[RBProcessState effectiveMinCPUDuration]
+  -[RBProcessState .cxx_destruct]
+  -[RBProcessState guaranteedRunning]
+  -[RBProcessState preventBaseMemoryLimitReduction]
+  -[RBProcessState minCPUUsageLimitsForRole:]
+  -[RBProcessState clientStateForProcess:]
+  -[RBProcessState identity]
+  -[RBProcessState preventIdleSleep]
+  -[RBProcessState effectiveMaxCPUPercentage]
+  -[RBProcessState effectiveJetsamLenientMode]
+  -[RBProcessState primitiveAssertions]
+  -[RBProcessState effectiveMaxCPUDuration]
+  -[RBProcessState effectiveMaxCPUUsageViolationPolicy]
+  -[RBProcessState memoryLimitCategory]
+  -[RBProcessState copyWithZone:]
+  -[RBProcessState isEqualToProcessStateIgnoringInheritances:]
+  -[RBProcessState throttleBestEffortNetworking]
+  -[RBProcessState maxCPUUsageLimitsForRole:]
+  -[RBProcessState mutableCopyWithZone:]
+  -[RBProcessState preventIdleSleepIdentifiers]
+  -[RBProcessState explicitJetsamBand]
+  -[RBProcessState terminationResistance]
+  -[RBProcessState forceRoleManage]
+  -[RBProcessState isEqualToProcessStateIgnoringIdentity:]
+  -[RBProcessState isEqual:]
+  -[RBProcessState init]
+  -[RBProcessState preventSuspend]
+  -[RBProcessState legacyAssertions]
+
+
+RBMutableProcessState : RBProcessState
+  // instance methods
+  -[RBMutableProcessState removeInheritance:]
+  -[RBMutableProcessState setMinCPUUsageLimits:forRole:]
+  -[RBMutableProcessState addInheritance:]
+  -[RBMutableProcessState setMemoryLimit:]
+  -[RBMutableProcessState setJetsamLenientMode:]
+  -[RBMutableProcessState setForceRoleManage:]
+  -[RBMutableProcessState setMemoryLimitStrength:]
+  -[RBMutableProcessState setTerminationResistance:]
+  -[RBMutableProcessState addTag:]
+  -[RBMutableProcessState addLegacyAssertion:]
+  -[RBMutableProcessState removeAllInheritances]
+  -[RBMutableProcessState setThrottleBestEffortNetworking:]
+  -[RBMutableProcessState setGPURole:]
+  -[RBMutableProcessState setRole:]
+  -[RBMutableProcessState setTargetedBySuspendableAssertion:]
+  -[RBMutableProcessState setMaxCPUUsageLimits:forRole:]
+  -[RBMutableProcessState setPreventSuspend:]
+  -[RBMutableProcessState setMemoryLimitCategory:]
+  -[RBMutableProcessState setLegacyFinishTaskReason:]
+  -[RBMutableProcessState copyWithZone:]
+  -[RBMutableProcessState setPreventIdleSleep:]
+  -[RBMutableProcessState setPreventBaseMemoryLimitReduction:]
+  -[RBMutableProcessState addRBAssertion:]
+  -[RBMutableProcessState unionState:]
+  -[RBMutableProcessState setGuaranteedRunning:]
+  -[RBMutableProcessState removePreventIdleSleepIdentifier:]
+  -[RBMutableProcessState setExplicitJetsamBand:]
+  -[RBMutableProcessState addPreventIdleSleepIdentifier:]
+  -[RBMutableProcessState removeAllPreventIdleSleepIdentifiers]
+  -[RBMutableProcessState setIsBeingDebugged:]
+
+
+RBAssertionDescriptorValidatorContext : NSObject <NSCopying, RBAssertionContextProviding>
+ @property  RBAssertionDescriptorValidator *assertionDescriptionValidator
+ @property  RBSAssertionDescriptor *assertionDescriptor
+ @property  RBProcess *originatorProcess
+ @property  RBProcessState *originatorState
+ @property  <RBConcreteTargeting> *target
+ @property  RBSProcessIdentity *targetIdentity
+ @property  RBSProcessIdentifier *targetIdentifier
+ @property  RBProcessState *targetState
+ @property  RBAssertionAcquisitionContext *acquisitionContext
+ @property  <RBEntitlementManaging> *entitlementManager
+ @property  <RBBundlePropertiesManaging> *bundlePropertiesManager
+ @property  <RBDomainAttributeManaging> *domainAttributeManager
+ @property  RBSProcessIdentity *originatorIdentity
+ @property  <RBEntitlementPossessing> *originatorEntitlements
+ @property  <RBEntitlementPossessing> *targetEntitlements
+ @property  NSDictionary *savedEndowments
+ @property  BOOL ignoreRestrictions
+ @property  BOOL targetIsSystem
+ @property  RBProcess *targetProcess
+ @property  RBSystemState *systemState
+ @property  <RBBundleProperties> *targetProperties
+ @property  <RBBundleProperties> *originatorProperties
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBAssertionDescriptorValidatorContext context]
+
+  // instance methods
+  -[RBAssertionDescriptorValidatorContext setSystemState:]
+  -[RBAssertionDescriptorValidatorContext targetState]
+  -[RBAssertionDescriptorValidatorContext setTargetState:]
+  -[RBAssertionDescriptorValidatorContext setAssertionDescriptor:]
+  -[RBAssertionDescriptorValidatorContext targetIdentifier]
+  -[RBAssertionDescriptorValidatorContext setTargetIdentity:]
+  -[RBAssertionDescriptorValidatorContext targetIdentity]
+  -[RBAssertionDescriptorValidatorContext pushIgnoreRestrictions]
+  -[RBAssertionDescriptorValidatorContext originatorState]
+  -[RBAssertionDescriptorValidatorContext setTarget:]
+  -[RBAssertionDescriptorValidatorContext assertionDescriptionValidator]
+  -[RBAssertionDescriptorValidatorContext ignoreRestrictions]
+  -[RBAssertionDescriptorValidatorContext target]
+  -[RBAssertionDescriptorValidatorContext originatorProcess]
+  -[RBAssertionDescriptorValidatorContext entitlementManager]
+  -[RBAssertionDescriptorValidatorContext .cxx_destruct]
+  -[RBAssertionDescriptorValidatorContext bundlePropertiesManager]
+  -[RBAssertionDescriptorValidatorContext setOriginatorState:]
+  -[RBAssertionDescriptorValidatorContext setTargetEntitlements:]
+  -[RBAssertionDescriptorValidatorContext targetProcess]
+  -[RBAssertionDescriptorValidatorContext savedEndowments]
+  -[RBAssertionDescriptorValidatorContext originatorEntitlements]
+  -[RBAssertionDescriptorValidatorContext setTargetProperties:]
+  -[RBAssertionDescriptorValidatorContext setAcquisitionContext:]
+  -[RBAssertionDescriptorValidatorContext originatorIdentity]
+  -[RBAssertionDescriptorValidatorContext targetEntitlements]
+  -[RBAssertionDescriptorValidatorContext copyWithZone:]
+  -[RBAssertionDescriptorValidatorContext setAssertionDescriptionValidator:]
+  -[RBAssertionDescriptorValidatorContext assertionDescriptor]
+  -[RBAssertionDescriptorValidatorContext setTargetIdentifier:]
+  -[RBAssertionDescriptorValidatorContext domainAttributeManager]
+  -[RBAssertionDescriptorValidatorContext targetIsSystem]
+  -[RBAssertionDescriptorValidatorContext popIgnoreRestrictions]
+  -[RBAssertionDescriptorValidatorContext setOriginatorEntitlements:]
+  -[RBAssertionDescriptorValidatorContext setBundlePropertiesManager:]
+  -[RBAssertionDescriptorValidatorContext setSavedEndowments:]
+  -[RBAssertionDescriptorValidatorContext systemState]
+  -[RBAssertionDescriptorValidatorContext setTargetProcess:]
+  -[RBAssertionDescriptorValidatorContext originatorProperties]
+  -[RBAssertionDescriptorValidatorContext setEntitlementManager:]
+  -[RBAssertionDescriptorValidatorContext setOriginatorProcess:]
+  -[RBAssertionDescriptorValidatorContext targetProperties]
+  -[RBAssertionDescriptorValidatorContext acquisitionContext]
+  -[RBAssertionDescriptorValidatorContext setDomainAttributeManager:]
+
+
+RBEventQueueEvent : NSObject
+ @property  id context
+ @property  double eventTime
+ @property  @? action
+
+  // instance methods
+  -[RBEventQueueEvent eventTime]
+  -[RBEventQueueEvent setEventTime:]
+  -[RBEventQueueEvent compare:]
+  -[RBEventQueueEvent .cxx_destruct]
+  -[RBEventQueueEvent action]
+  -[RBEventQueueEvent setContext:]
+  -[RBEventQueueEvent context]
+  -[RBEventQueueEvent setAction:]
+
+
+RBLaunchdJobManager : NSObject
+  // class methods
+  +[RBLaunchdJobManager lastExitStatusForLabel:error:]
+
+  // instance methods
+  -[RBLaunchdJobManager createAndLaunchWithIdentity:context:error:]
+  -[RBLaunchdJobManager synchronizeJobs]
+  -[RBLaunchdJobManager _createLaunchdJobWithIdentity:context:error:]
+  -[RBLaunchdJobManager .cxx_destruct]
+  -[RBLaunchdJobManager removeJobWithInstance:error:]
+  -[RBLaunchdJobManager initWithLaunchdInterface:personaManager:containerManager:]
+  -[RBLaunchdJobManager _generateDataWithIdentity:context:error:]
+  -[RBLaunchdJobManager _createAndSubmitExtensionJob:UUID:error:]
+  -[RBLaunchdJobManager _addSharedPropertiesToData:forIdentity:context:]
+  -[RBLaunchdJobManager _addReslideIdentityIfNeeded:exitStatus:]
+  -[RBLaunchdJobManager invokeOnProcessDeath:handler:onQueue:]
+  -[RBLaunchdJobManager _removeJobWithInstance:orJob:error:]
+  -[RBLaunchdJobManager _addAppPropertiesToData:forIdentity:context:error:]
+  -[RBLaunchdJobManager _isRunningBoardLaunched:]
+  -[RBLaunchdJobManager _addStandardAppPropertiesToData:]
+  -[RBLaunchdJobManager test_trackedJobCount]
+  -[RBLaunchdJobManager _addDextPropertiesToData:forIdentity:context:]
+
+
+RBInheritanceCollection : NSObject <NSCopying, NSMutableCopying, NSFastEnumeration>
+  // class methods
+  +[RBInheritanceCollection collectionWithInheritances:]
+
+  // instance methods
+  -[RBInheritanceCollection allEnvironments]
+  -[RBInheritanceCollection inheritancesForEnvironment:]
+  -[RBInheritanceCollection countByEnumeratingWithState:objects:count:]
+  -[RBInheritanceCollection _initWithCollection:]
+  -[RBInheritanceCollection allNamespaces]
+  -[RBInheritanceCollection .cxx_destruct]
+  -[RBInheritanceCollection allInheritances]
+  -[RBInheritanceCollection count]
+  -[RBInheritanceCollection _initWithInheritances:]
+  -[RBInheritanceCollection copyWithZone:]
+  -[RBInheritanceCollection mutableCopyWithZone:]
+  -[RBInheritanceCollection isEqual:]
+
+
+RBMutableInheritanceCollection : RBInheritanceCollection
+  // class methods
+  +[RBMutableInheritanceCollection collectionWithInheritances:]
+
+  // instance methods
+  -[RBMutableInheritanceCollection removeInheritance:]
+  -[RBMutableInheritanceCollection addInheritance:]
+  -[RBMutableInheritanceCollection _initWithCollection:]
+  -[RBMutableInheritanceCollection allNamespaces]
+  -[RBMutableInheritanceCollection .cxx_destruct]
+  -[RBMutableInheritanceCollection unionCollection:]
+  -[RBMutableInheritanceCollection copyWithZone:]
+
+
+RBAttributeContext : NSObject <RBAssertionContextProviding>
+ @property  RBAssertion *assertion
+ @property  RBSAssertionIdentifier *assertionID
+ @property  <RBConcreteTargeting> *target
+ @property  BOOL targetIsSystem
+ @property  RBSProcessIdentity *targetIdentity
+ @property  RBProcessState *initialProcessState
+ @property  RBInheritanceCollection *availableInheritances
+ @property  <RBDomainAttributeManaging> *domainAttributeManager
+ @property  <RBBundlePropertiesManaging> *bundlePropertiesManager
+ @property  <RBEntitlementManaging> *entitlementManager
+ @property  BOOL isActiveDueToInheritedEndowment
+ @property  NSDictionary *savedEndowments
+ @property  RBProcess *originatorProcess
+ @property  RBProcess *targetProcess
+ @property  RBSystemState *systemState
+ @property  <RBBundleProperties> *targetProperties
+ @property  <RBBundleProperties> *originatorProperties
+ @property  <RBEntitlementPossessing> *originatorEntitlements
+ @property  <RBEntitlementPossessing> *targetEntitlements
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBAttributeContext setSystemState:]
+  -[RBAttributeContext targetIdentity]
+  -[RBAttributeContext pushActiveDueToInheritedEndowment]
+  -[RBAttributeContext setAssertion:]
+  -[RBAttributeContext target]
+  -[RBAttributeContext assertionID]
+  -[RBAttributeContext setInitialProcessState:]
+  -[RBAttributeContext originatorProcess]
+  -[RBAttributeContext entitlementManager]
+  -[RBAttributeContext availableInheritances]
+  -[RBAttributeContext .cxx_destruct]
+  -[RBAttributeContext bundlePropertiesManager]
+  -[RBAttributeContext targetProcess]
+  -[RBAttributeContext savedEndowments]
+  -[RBAttributeContext assertion]
+  -[RBAttributeContext originatorEntitlements]
+  -[RBAttributeContext targetEntitlements]
+  -[RBAttributeContext popActiveDueToInheritedEndowment]
+  -[RBAttributeContext domainAttributeManager]
+  -[RBAttributeContext targetIsSystem]
+  -[RBAttributeContext setBundlePropertiesManager:]
+  -[RBAttributeContext setSavedEndowments:]
+  -[RBAttributeContext setAvailableInheritances:]
+  -[RBAttributeContext systemState]
+  -[RBAttributeContext isActiveDueToInheritedEndowment]
+  -[RBAttributeContext originatorProperties]
+  -[RBAttributeContext setEntitlementManager:]
+  -[RBAttributeContext targetProperties]
+  -[RBAttributeContext setDomainAttributeManager:]
+  -[RBAttributeContext initialProcessState]
+
+
+RBProcessAppNapState : NSObject <NSCopying, NSMutableCopying>
+  // instance methods
+  -[RBProcessAppNapState dealloc]
+  -[RBProcessAppNapState copyWithZone:]
+  -[RBProcessAppNapState mutableCopyWithZone:]
+  -[RBProcessAppNapState isEqual:]
+  -[RBProcessAppNapState init]
+  -[RBProcessAppNapState _initWithProcessAppNapState:]
+  -[RBProcessAppNapState encodedState]
+
+
+RBMutableProcessAppNapState : RBProcessAppNapState
+  // instance methods
+  -[RBMutableProcessAppNapState copyWithZone:]
+
+
+RBProcess : NSObject <RBSProcessIdentifier, RBConcreteTargeting>
+ @property  RBSProcessIdentifier *identifier
+ @property  RBSProcessHandle *handle
+ @property  RBSProcessIdentity *identity
+ @property  RBSProcessInstance *instance
+ @property  RBJetsamProperties *memoryLimits
+ @property  RBSAuditToken *auditToken
+ @property  <RBBundleProperties> *bundleProperties
+ @property  RBProcess *hostProcess
+ @property  BOOL terminating
+ @property  int pidversion
+ @property  NSString *shortDescription
+ @property  RBSProcessExitStatus *intendedExitStatus
+ @property  RBSProcessExitContext *lastExitContext
+ @property  BOOL beingPtraced
+ @property  BOOL lifecycleManaged
+ @property  BOOL jetsamManaged
+ @property  BOOL reported
+ @property  BOOL platformBinary
+ @property  BOOL suspended
+ @property  BOOL testApp
+ @property  NSString *underlyingAssertion
+ @property  double processStartTime
+ @property  NSString *homeDirectory
+ @property  NSString *tmpDirectory
+ @property  BOOL containerized
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  RBProcess *process
+ @property  NSString *environment
+ @property  BOOL system
+
+  // class methods
+  +[RBProcess processStateApplicationQueue]
+  +[RBProcess testProcessWithPid:andIdentity:]
+  +[RBProcess testProcessWithPid:]
+  +[RBProcess testProcessWithPid:identity:launchdProps:andBundleProps:]
+
+  // instance methods
+  -[RBProcess rbs_pid]
+  -[RBProcess isSystem]
+  -[RBProcess hostProcess]
+  -[RBProcess setTerminating:]
+  -[RBProcess homeDirectory]
+  -[RBProcess tmpDirectory]
+  -[RBProcess underlyingAssertion]
+  -[RBProcess pidversion]
+  -[RBProcess lastExitContext]
+  -[RBProcess isTerminating]
+  -[RBProcess identifier]
+  -[RBProcess collectDiagnostic:description:domain:code:additionalPayload:completion:]
+  -[RBProcess invokeHandlerOnProcessDeath:onQueue:]
+  -[RBProcess instance]
+  -[RBProcess matchesProcess:]
+  -[RBProcess process]
+  -[RBProcess isSuspended]
+  -[RBProcess terminateWithContext:]
+  -[RBProcess _initWithInstance:auditToken:bundleProperties:jetsamProperties:initialState:hostProcess:properties:systemPreventsIdleSleep:]
+  -[RBProcess _initThinWithInstance:auditToken:bundleProperties:jetsamProperties:hostProcess:properties:]
+  -[RBProcess isContainerized]
+  -[RBProcess bundleProperties]
+  -[RBProcess handle]
+  -[RBProcess setAuditToken:]
+  -[RBProcess .cxx_destruct]
+  -[RBProcess isJetsamManaged]
+  -[RBProcess auditToken]
+  -[RBProcess _systemPreventIdleSleepStateDidChange:]
+  -[RBProcess setProcessStartTime:]
+  -[RBProcess _sendSignal:]
+  -[RBProcess identity]
+  -[RBProcess shortDescription]
+  -[RBProcess intendedExitStatus]
+  -[RBProcess isLifecycleManaged]
+  -[RBProcess isReported]
+  -[RBProcess isTestApp]
+  -[RBProcess invalidate]
+  -[RBProcess isBeingPtraced]
+  -[RBProcess setIntendedExitStatus:]
+  -[RBProcess processPredicate]
+  -[RBProcess memoryLimits]
+  -[RBProcess isPlatformBinary]
+  -[RBProcess environment]
+  -[RBProcess setLastExitContext:]
+  -[RBProcess createRBSTarget]
+  -[RBProcess init]
+  -[RBProcess processStartTime]
+  -[RBProcess _applyState:]
+
+
+RBAttributeTemplateGroup : NSObject <RBAttributeTemplateConfiguring>
+ @property  NSArray *attributes
+ @property  NSDictionary *targetBundleProperties
+ @property  RBEntitlementPredicate *originatorEntitlements
+ @property  RBEntitlementPredicate *targetEntitlements
+ @property  NSDictionary *additionalRestrictions
+ @property  RBDomainRestriction *restriction
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBAttributeTemplateGroup setAdditionalRestrictions:]
+  -[RBAttributeTemplateGroup setTargetBundleProperties:]
+  -[RBAttributeTemplateGroup setAttributes:]
+  -[RBAttributeTemplateGroup attributes]
+  -[RBAttributeTemplateGroup setRestriction:]
+  -[RBAttributeTemplateGroup .cxx_destruct]
+  -[RBAttributeTemplateGroup setTargetEntitlements:]
+  -[RBAttributeTemplateGroup originatorEntitlements]
+  -[RBAttributeTemplateGroup targetEntitlements]
+  -[RBAttributeTemplateGroup targetBundleProperties]
+  -[RBAttributeTemplateGroup setOriginatorEntitlements:]
+  -[RBAttributeTemplateGroup restriction]
+  -[RBAttributeTemplateGroup additionalRestrictions]
+
+
+RBConnectionClient : NSObject <RBClientInheritanceManagerDelegate, RBEntitlementPossessing, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBConnectionClient stateCaptureTitle]
+  -[RBConnectionClient captureState]
+  -[RBConnectionClient .cxx_destruct]
+  -[RBConnectionClient hasEntitlementDomain:]
+  -[RBConnectionClient inheritanceManager:didChangeInheritances:completion:]
+  -[RBConnectionClient hasEntitlement:]
+  -[RBConnectionClient init]
+
+
+RBDomainAttributeTemplate : NSObject <RBAttributeTemplateConfiguring>
+ @property  NSArray *attributeGroups
+ @property  RBEntitlementPredicate *originatorEntitlements
+ @property  NSDictionary *targetBundleProperties
+ @property  RBEntitlementPredicate *targetEntitlements
+ @property  NSDictionary *additionalRestrictions
+ @property  RBDomainRestriction *restriction
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBDomainAttributeTemplate setAdditionalRestrictions:]
+  -[RBDomainAttributeTemplate setTargetBundleProperties:]
+  -[RBDomainAttributeTemplate setRestriction:]
+  -[RBDomainAttributeTemplate attributeGroups]
+  -[RBDomainAttributeTemplate .cxx_destruct]
+  -[RBDomainAttributeTemplate setTargetEntitlements:]
+  -[RBDomainAttributeTemplate originatorEntitlements]
+  -[RBDomainAttributeTemplate targetEntitlements]
+  -[RBDomainAttributeTemplate targetBundleProperties]
+  -[RBDomainAttributeTemplate setOriginatorEntitlements:]
+  -[RBDomainAttributeTemplate restriction]
+  -[RBDomainAttributeTemplate setAttributeGroups:]
+  -[RBDomainAttributeTemplate additionalRestrictions]
+
+
+RBJetsamProperties : NSObject
+ @property  BOOL valid
+ @property  BOOL freezerEligible
+
+  // class methods
+  +[RBJetsamProperties jetsamPropertiesForProperties:globalProperties:taskLimit:unLimit:]
+
+  // instance methods
+  -[RBJetsamProperties _initWithProperties:globalProperties:taskLimit:unLimit:]
+  -[RBJetsamProperties _setLimitFor:strength:toValue:]
+  -[RBJetsamProperties _altStrength:]
+  -[RBJetsamProperties isFreezerEligible]
+  -[RBJetsamProperties isValid]
+  -[RBJetsamProperties .cxx_destruct]
+  -[RBJetsamProperties getValueFrom:forKey:]
+  -[RBJetsamProperties _propertiesDescription]
+  -[RBJetsamProperties memoryLimitForCategory:strength:]
+  -[RBJetsamProperties _keyForCategory:strength:]
+  -[RBJetsamProperties _altKeyForCategory:strength:]
+  -[RBJetsamProperties _defaultKeyForCategory:strength:]
+  -[RBJetsamProperties _integerLimitValue:]
+  -[RBJetsamProperties _directPropertyDescription:]
+
+
+RBUnmanagedJetsamProperties : RBJetsamProperties
+  // class methods
+  +[RBUnmanagedJetsamProperties new]
+
+  // instance methods
+  -[RBUnmanagedJetsamProperties isValid]
+  -[RBUnmanagedJetsamProperties memoryLimitForCategory:strength:]
+  -[RBUnmanagedJetsamProperties init]
+
+
+RBPrewarmManager : NSObject
+  // instance methods
+  -[RBPrewarmManager initWithDelegate:timeProvider:]
+  -[RBPrewarmManager prewarmingConfigurationDidChange:]
+  -[RBPrewarmManager identityDidTerminate:]
+  -[RBPrewarmManager _prewarmingQueue]
+  -[RBPrewarmManager .cxx_destruct]
+  -[RBPrewarmManager _queue_addPrewarmForIdentity:]
+  -[RBPrewarmManager _queue_checkForNewPrewarms]
+  -[RBPrewarmManager _queue_runPrewarm]
+  -[RBPrewarmManager _queue_schedulePrewarmForIdentity:withInterval:]
+
+
+RBSystemState : NSObject <NSCopying, NSMutableCopying>
+ @property  BOOL preventIdleSleep
+ @property  BOOL preventLaunch
+ @property  NSSet *preventIdleSleepIdentifiers
+ @property  NSSet *tags
+ @property  NSSet *preventLaunchPredicates
+ @property  NSDictionary *conditions
+ @property  NSDictionary *prewarmConfiguration
+
+  // instance methods
+  -[RBSystemState tags]
+  -[RBSystemState preventLaunchPredicates]
+  -[RBSystemState .cxx_destruct]
+  -[RBSystemState conditions]
+  -[RBSystemState preventIdleSleep]
+  -[RBSystemState copyWithZone:]
+  -[RBSystemState mutableCopyWithZone:]
+  -[RBSystemState preventIdleSleepIdentifiers]
+  -[RBSystemState _init]
+  -[RBSystemState isEqual:]
+  -[RBSystemState preventLaunch]
+  -[RBSystemState prewarmConfiguration]
+
+
+RBMutableSystemState : RBSystemState
+  // instance methods
+  -[RBMutableSystemState addPreventLaunchPredicate:]
+  -[RBMutableSystemState addTag:]
+  -[RBMutableSystemState upgradeCondition:toValue:]
+  -[RBMutableSystemState copyWithZone:]
+  -[RBMutableSystemState setPreventIdleSleep:]
+  -[RBMutableSystemState unionState:]
+  -[RBMutableSystemState removePreventIdleSleepIdentifier:]
+  -[RBMutableSystemState prewarmIdentity:withInterval:]
+  -[RBMutableSystemState addPreventIdleSleepIdentifier:]
+  -[RBMutableSystemState removeAllPreventIdleSleepIdentifiers]
+  -[RBMutableSystemState setPreventLaunch:]
+  -[RBMutableSystemState init]
+
+
+RBJetsamPropertyManager : NSObject <RBJetsamPropertyManaging>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBJetsamPropertyManager testTaskLimitForPid:]
+  +[RBJetsamPropertyManager testJetsamProperties]
+  +[RBJetsamPropertyManager unmanagedJetsamProperties]
+
+  // instance methods
+  -[RBJetsamPropertyManager initWithEntitlementManager:properties:]
+  -[RBJetsamPropertyManager .cxx_destruct]
+  -[RBJetsamPropertyManager initWithEntitlementManager:]
+  -[RBJetsamPropertyManager jetsamPropertiesForProcess:identity:bundleProperties:isPlatformBinary:]
+
+
+RBProcessStateChange : NSObject
+ @property  RBSProcessIdentity *identity
+ @property  RBProcessState *originalState
+ @property  RBProcessState *updatedState
+
+  // instance methods
+  -[RBProcessStateChange originalState]
+  -[RBProcessStateChange initWithIdentity:originalState:updatedState:]
+  -[RBProcessStateChange updatedState]
+  -[RBProcessStateChange changeByApplyingChange:]
+  -[RBProcessStateChange .cxx_destruct]
+  -[RBProcessStateChange identity]
+
+
+RBProcessStateChangeSet : NSObject <NSFastEnumeration>
+ @property  BOOL hasChanges
+
+  // instance methods
+  -[RBProcessStateChangeSet hasChanges]
+  -[RBProcessStateChangeSet countByEnumeratingWithState:objects:count:]
+  -[RBProcessStateChangeSet processIdentities]
+  -[RBProcessStateChangeSet .cxx_destruct]
+  -[RBProcessStateChangeSet applyChanges:]
+  -[RBProcessStateChangeSet initWithOriginalStatesByIdentity:updatedStatesByIdentity:]
+  -[RBProcessStateChangeSet initWithChanges:]
+  -[RBProcessStateChangeSet processStateChangeForIdentity:]
+
+
+RBProcessMonitor : NSObject <RBProcessMonitoring, RBStateCapturing>
+ @property  NSObject<OS_dispatch_queue> *monitorSerializationQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBProcessMonitor stateCaptureTitle]
+  -[RBProcessMonitor captureState]
+  -[RBProcessMonitor trackStateForProcessIdentity:]
+  -[RBProcessMonitor addObserver:]
+  -[RBProcessMonitor preventLaunchPredicates]
+  -[RBProcessMonitor unsuppressUpdatesForIdentity:]
+  -[RBProcessMonitor .cxx_destruct]
+  -[RBProcessMonitor removeStateForProcessIdentity:]
+  -[RBProcessMonitor initWithStateCaptureManager:]
+  -[RBProcessMonitor statesMatchingPredicate:]
+  -[RBProcessMonitor monitorSerializationQueue]
+  -[RBProcessMonitor didRemoveProcess:withState:]
+  -[RBProcessMonitor didResolvePreventLaunchPredicates:]
+  -[RBProcessMonitor removeObserver:]
+  -[RBProcessMonitor suppressUpdatesForIdentity:]
+  -[RBProcessMonitor didAddProcess:withState:]
+  -[RBProcessMonitor statesMatchingConfiguration:]
+  -[RBProcessMonitor didUpdateProcessStates:]
+
+
+RBAssertion : NSObject <RBStateCapturing>
+ @property  <RBConcreteTargeting> *target
+ @property  RBProcess *originator
+ @property  RBSAssertionIdentifier *identifier
+ @property  NSString *explanation
+ @property  NSArray *attributes
+ @property  RBInheritanceCollection *inheritances
+ @property  RBAssertionIntransientState *intransientState
+ @property  RBProcessState *processState
+ @property  unsigned long startPolicy
+ @property  unsigned long endPolicy
+ @property  BOOL persistent
+ @property  BOOL active
+ @property  BOOL suspended
+ @property  BOOL invalid
+ @property  BOOL suspendsOnOriginatorSuspension
+ @property  BOOL invalidatesSynchronously
+ @property  double invalidationDuration
+ @property  double warningDuration
+ @property  double creationTime
+ @property  unsigned long legacyReason
+ @property  unsigned long runningReason
+ @property  BOOL definesRelativeStartTime
+ @property  BOOL terminateTargetOnOriginatorExit
+ @property  BOOL hasHereditaryGrant
+ @property  BOOL hasDomainAttribute
+ @property  NSSet *sourceEnvironments
+ @property  unsigned char invalidationReason
+ @property  id plugInHoldToken
+ @property  NSString *stateCaptureTitle
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBAssertion assertionWithDescriptor:target:originator:context:creationTime:]
+  +[RBAssertion assertionWithDescriptor:target:originator:context:]
+  +[RBAssertion assertionWithIdentifier:target:explanation:attributes:originator:context:]
+
+  // instance methods
+  -[RBAssertion stateCaptureTitle]
+  -[RBAssertion captureState]
+  -[RBAssertion isPersistent]
+  -[RBAssertion activate]
+  -[RBAssertion intransientState]
+  -[RBAssertion hasDomainAttribute]
+  -[RBAssertion inheritances]
+  -[RBAssertion identifier]
+  -[RBAssertion sourceEnvironments]
+  -[RBAssertion attributes]
+  -[RBAssertion runningReason]
+  -[RBAssertion resolveStateWithContext:]
+  -[RBAssertion applyToProcessState:withAttributeContext:]
+  -[RBAssertion isSuspended]
+  -[RBAssertion target]
+  -[RBAssertion deactivate]
+  -[RBAssertion suspend]
+  -[RBAssertion creationTime]
+  -[RBAssertion suspendsOnOriginatorSuspension]
+  -[RBAssertion setInvalidationReason:]
+  -[RBAssertion applyToSystemState:withAttributeContext:]
+  -[RBAssertion explanation]
+  -[RBAssertion isActive]
+  -[RBAssertion invalidationReason]
+  -[RBAssertion definesRelativeStartTime]
+  -[RBAssertion isValid]
+  -[RBAssertion .cxx_destruct]
+  -[RBAssertion resume]
+  -[RBAssertion terminateTargetOnOriginatorExit]
+  -[RBAssertion originator]
+  -[RBAssertion lock_targetProcessForAbstract]
+  -[RBAssertion invalidatesSynchronously]
+  -[RBAssertion maxCPUUsageViolationPolicyForRole:]
+  -[RBAssertion hasHereditaryGrant]
+  -[RBAssertion plugInHoldToken]
+  -[RBAssertion legacyReason]
+  -[RBAssertion updateProcessStateWithAttributeContext:]
+  -[RBAssertion setPlugInHoldToken:]
+  -[RBAssertion setTargetProcessForAbstract:]
+  -[RBAssertion processState]
+  -[RBAssertion invalidationDuration]
+  -[RBAssertion applyToAssertionTransientState:withAttributeContext:]
+  -[RBAssertion endPolicy]
+  -[RBAssertion startPolicy]
+  -[RBAssertion warningDuration]
+
+
+RBContainerManager : NSObject <RBContainerManaging>
+  // instance methods
+  -[RBContainerManager dealloc]
+  -[RBContainerManager .cxx_destruct]
+  -[RBContainerManager _clearCache]
+  -[RBContainerManager containerPathForIdentity:context:persona:error:]
+  -[RBContainerManager _probeCache:withContainerIdentifier:persona:completionHandler:]
+  -[RBContainerManager _retryLookupAfterCacheMissForIdentity:context:persona:containerIdentifier:]
+  -[RBContainerManager initWithPersonaManager:]
+  -[RBContainerManager _fetchCacheUIDChoice:]
+  -[RBContainerManager _fetchCache:]
+  -[RBContainerManager _probeCacheSubqueryIterationEvaluate:withAccummulatedState:]
+  -[RBContainerManager _lookupContainerPathForIdentity:context:persona:containerIdentifier:retry:error:]
+
+
+RBConnectionListener : NSObject <NSXPCListenerDelegate, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBConnectionListener stateCaptureTitle]
+  -[RBConnectionListener captureState]
+  -[RBConnectionListener .cxx_destruct]
+  -[RBConnectionListener init]
+
+
+RBProcessMap : NSObject <NSCopying>
+  // instance methods
+  -[RBProcessMap removeAllObjects]
+  -[RBProcessMap valueForIdentity:]
+  -[RBProcessMap setValue:forIdentity:]
+  -[RBProcessMap enumerateWithBlock:]
+  -[RBProcessMap addIdentity:]
+  -[RBProcessMap .cxx_destruct]
+  -[RBProcessMap count]
+  -[RBProcessMap containsIdentity:]
+  -[RBProcessMap allValue]
+  -[RBProcessMap removeValueForIdentity:withPredicate:]
+  -[RBProcessMap removeIdentity:]
+  -[RBProcessMap removeValueForIdentity:]
+  -[RBProcessMap copyWithZone:]
+  -[RBProcessMap allIdentities]
+  -[RBProcessMap init]
+  -[RBProcessMap dictionary]
+
+
+RBProcessIndex : NSObject <NSFastEnumeration>
+  // class methods
+  +[RBProcessIndex index]
+  +[RBProcessIndex indexWithCapacity:]
+
+  // instance methods
+  -[RBProcessIndex countByEnumeratingWithState:objects:count:]
+  -[RBProcessIndex removeAllObjects]
+  -[RBProcessIndex removeProcess:]
+  -[RBProcessIndex containsProcess:]
+  -[RBProcessIndex processForIdentity:]
+  -[RBProcessIndex .cxx_destruct]
+  -[RBProcessIndex containsIdentity:]
+  -[RBProcessIndex addProcess:existingProcess:]
+  -[RBProcessIndex containsIdentifier:]
+  -[RBProcessIndex containsInstance:]
+  -[RBProcessIndex processForInstance:]
+  -[RBProcessIndex allProcesses]
+  -[RBProcessIndex addProcess:]
+  -[RBProcessIndex processForIdentifier:]
+  -[RBProcessIndex init]
+
+
+RBAssertionCollection : NSObject
+  // instance methods
+  -[RBAssertionCollection assertionCountForTargetProcessIdentity:]
+  -[RBAssertionCollection allAssertions]
+  -[RBAssertionCollection removeAssertion:]
+  -[RBAssertionCollection addAssertion:]
+  -[RBAssertionCollection enumerateAssertionsForSystemTargetWithBlock:]
+  -[RBAssertionCollection enumerateAssertionsForOriginator:withBlock:]
+  -[RBAssertionCollection hasAssertionsForOriginator:]
+  -[RBAssertionCollection .cxx_destruct]
+  -[RBAssertionCollection hasAssertion:]
+  -[RBAssertionCollection count]
+  -[RBAssertionCollection hasAssertionsForOriginator:exceedingCount:]
+  -[RBAssertionCollection noteResolvedAssertion:]
+  -[RBAssertionCollection assertionsForTarget:]
+  -[RBAssertionCollection hasResolvedAssertion:]
+  -[RBAssertionCollection assertionCountForOriginator:]
+  -[RBAssertionCollection enumerateAssertionsWithBlock:]
+  -[RBAssertionCollection enumerateAssertionsForProcessTargetsWithBlock:]
+  -[RBAssertionCollection enumerateAssertionsForTargetProcessIdentity:withBlock:]
+  -[RBAssertionCollection assertionsForTargetIdentity:]
+  -[RBAssertionCollection assertionWithIdentifier:]
+  -[RBAssertionCollection assertionsForOriginator:]
+  -[RBAssertionCollection init]
+
+
+RBAttributeCondition : NSObject
+  // instance methods
+  -[RBAttributeCondition .cxx_destruct]
+
+
+RBEntitlementPredicate : NSObject <NSCopying>
+ @property  unsigned long count
+
+  // class methods
+  +[RBEntitlementPredicate predicateForObject:forDomain:attribute:errors:]
+
+  // instance methods
+  -[RBEntitlementPredicate allEntitlements]
+  -[RBEntitlementPredicate count]
+  -[RBEntitlementPredicate copyWithZone:]
+  -[RBEntitlementPredicate matchesEntitlements:]
+
+
+RBAnyEntitlementPredicate : RBEntitlementPredicate
+  // instance methods
+  -[RBAnyEntitlementPredicate allEntitlements]
+  -[RBAnyEntitlementPredicate .cxx_destruct]
+  -[RBAnyEntitlementPredicate count]
+  -[RBAnyEntitlementPredicate copyWithZone:]
+  -[RBAnyEntitlementPredicate matchesEntitlements:]
+  -[RBAnyEntitlementPredicate initWithArray:forDomain:attribute:errors:]
+
+
+RBAllEntitlementPredicate : RBEntitlementPredicate
+  // instance methods
+  -[RBAllEntitlementPredicate allEntitlements]
+  -[RBAllEntitlementPredicate .cxx_destruct]
+  -[RBAllEntitlementPredicate count]
+  -[RBAllEntitlementPredicate copyWithZone:]
+  -[RBAllEntitlementPredicate matchesEntitlements:]
+  -[RBAllEntitlementPredicate initWithDictionary:forDomain:attribute:errors:]
+
+
+RBLSBundleProperties : NSObject <RBBundleProperties>
+ @property  NSString *bundleIdentifier
+ @property  NSString *bundlePath
+ @property  NSString *executablePath
+ @property  NSString *extensionPointIdentifier
+ @property  NSURL *dataContainerURL
+ @property  NSDictionary *environmentVariables
+ @property  BOOL supportsBackgroundContentFetching
+ @property  BOOL supportsBackgroundNetworkAuthentication
+ @property  BOOL supportsBackgroundAudio
+ @property  BOOL supportsUnboundedTaskCompletion
+ @property  BOOL usesSocketMonitoring
+ @property  BOOL continuousBackgroundMode
+ @property  int preferredJetsamBand
+ @property  BOOL hasPreferredJetsamBand
+ @property  BOOL isExtension
+ @property  int platform
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBLSBundleProperties extensionPointIdentifier]
+  -[RBLSBundleProperties bundleInfoValuesForKeys:]
+  -[RBLSBundleProperties usesSocketMonitoring]
+  -[RBLSBundleProperties executablePath]
+  -[RBLSBundleProperties dataContainerURL]
+  -[RBLSBundleProperties platform]
+  -[RBLSBundleProperties environmentVariables]
+  -[RBLSBundleProperties preferredJetsamBand]
+  -[RBLSBundleProperties .cxx_destruct]
+  -[RBLSBundleProperties bundlePath]
+  -[RBLSBundleProperties supportsBackgroundContentFetching]
+  -[RBLSBundleProperties isExtension]
+  -[RBLSBundleProperties supportsBackgroundNetworkAuthentication]
+  -[RBLSBundleProperties hasPreferredJetsamBand]
+  -[RBLSBundleProperties bundleIdentifier]
+  -[RBLSBundleProperties supportsUnboundedTaskCompletion]
+  -[RBLSBundleProperties supportsBackgroundAudio]
+  -[RBLSBundleProperties continuousBackgroundMode]
+
+
+RBBundlePropertiesLSProvider : NSObject <LSApplicationWorkspaceObserverProtocol>
+ @property  <RBBundlePropertiesLSProviderDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBBundlePropertiesLSProvider applicationsDidInstall:]
+  -[RBBundlePropertiesLSProvider setDelegate:]
+  -[RBBundlePropertiesLSProvider applicationsDidUninstall:]
+  -[RBBundlePropertiesLSProvider delegate]
+  -[RBBundlePropertiesLSProvider dealloc]
+  -[RBBundlePropertiesLSProvider .cxx_destruct]
+  -[RBBundlePropertiesLSProvider propertiesForIdentity:]
+  -[RBBundlePropertiesLSProvider init]
+
+
+RBAssertionOriginatorPidStore : NSObject <RBAssertionOriginatorPidPersisting, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBAssertionOriginatorPidStore stateCaptureTitle]
+  -[RBAssertionOriginatorPidStore captureState]
+  -[RBAssertionOriginatorPidStore initWithPath:]
+  -[RBAssertionOriginatorPidStore setValidProcesses:]
+  -[RBAssertionOriginatorPidStore dealloc]
+  -[RBAssertionOriginatorPidStore isValid]
+  -[RBAssertionOriginatorPidStore .cxx_destruct]
+  -[RBAssertionOriginatorPidStore containsPid:]
+  -[RBAssertionOriginatorPidStore addPid:]
+  -[RBAssertionOriginatorPidStore removePid:]
+
+
+RBComplexConcreteTarget : RBConcreteTarget
+  // instance methods
+  -[RBComplexConcreteTarget isSystem]
+  -[RBComplexConcreteTarget process]
+  -[RBComplexConcreteTarget .cxx_destruct]
+  -[RBComplexConcreteTarget identity]
+  -[RBComplexConcreteTarget environment]
+  -[RBComplexConcreteTarget isEqual:]
+  -[RBComplexConcreteTarget createRBSTarget]
+
+
+RBConcreteTarget : NSObject <NSCopying, RBConcreteTargeting>
+ @property  RBProcess *process
+ @property  RBSProcessIdentity *identity
+ @property  NSString *environment
+ @property  BOOL system
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBConcreteTarget targetWithIdentity:environment:]
+  +[RBConcreteTarget targetWithProcess:environment:]
+  +[RBConcreteTarget systemTarget]
+
+  // instance methods
+  -[RBConcreteTarget isSystem]
+  -[RBConcreteTarget process]
+  -[RBConcreteTarget identity]
+  -[RBConcreteTarget copyWithZone:]
+  -[RBConcreteTarget environment]
+  -[RBConcreteTarget createRBSTarget]
+
+
+RBProcessReconnectManager : NSObject
+  // instance methods
+  -[RBProcessReconnectManager .cxx_destruct]
+  -[RBProcessReconnectManager initWithDaemonContext:originatorProcess:]
+  -[RBProcessReconnectManager reconnectProcesses:]
+  -[RBProcessReconnectManager didInvalidateAssertion:]
+  -[RBProcessReconnectManager init]
+
+
+RBPersonaManager : NSObject <RBPersonaManaging>
+  // instance methods
+  -[RBPersonaManager personasAreSupported]
+  -[RBPersonaManager personalPersonaUniqueString]
+  -[RBPersonaManager .cxx_destruct]
+  -[RBPersonaManager personaForIdentity:context:personaUID:personaUniqueString:]
+  -[RBPersonaManager isConcretePersona:]
+  -[RBPersonaManager init]
+
+
+RBExtensionDataProvider : NSObject <RBExtensionDataProviding>
+  // instance methods
+  -[RBExtensionDataProvider configureLaunchContext:error:]
+
+
+RBAttributeFactory : NSObject
+  // class methods
+  +[RBAttributeFactory attributeForClass:andProperties:errors:]
+
+
+RBLaunchdInterface : NSObject <RBLaunchdInterfacing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[RBLaunchdInterface interface]
+
+  // instance methods
+  -[RBLaunchdInterface domainForUser:]
+  -[RBLaunchdInterface domainForPid:]
+  -[RBLaunchdInterface copyJobsManagedBy:error:]
+  -[RBLaunchdInterface jobWithPlist:]
+  -[RBLaunchdInterface jobWithPlist:domain:]
+  -[RBLaunchdInterface currentDomain]
+  -[RBLaunchdInterface forJob:createInstance:error:]
+  -[RBLaunchdInterface propertiesForJob:error:]
+  -[RBLaunchdInterface copyJobWithLabel:domain:]
+  -[RBLaunchdInterface propertiesForPid:error:]
+  -[RBLaunchdInterface copyJobWithPid:]
+  -[RBLaunchdInterface submitExtension:overlay:domain:error:]
+
+
+RBLaunchdProperties : NSObject
+ @property  BOOL XPCService
+ @property  BOOL daemon
+ @property  BOOL angel
+ @property  BOOL multiInstance
+ @property  BOOL variableEUID
+ @property  BOOL doesOverrideManagement
+ @property  unsigned char overrideManageFlags
+ @property  BOOL disableFreezing
+ @property  BOOL hasBackoff
+ @property  NSString *jobLabel
+ @property  NSString *executablePath
+ @property  int hostPid
+ @property  NSString *underlyingAssertion
+ @property  NSString *beforeTranslocationBundlePath
+ @property  NSString *homeDirectory
+ @property  NSString *tmpDirectory
+ @property  NSUUID *uuid
+ @property  RBSProcessIdentity *specifiedIdentity
+
+  // class methods
+  +[RBLaunchdProperties propertiesForPid:]
+  +[RBLaunchdProperties processIdentityForEndpoint:]
+  +[RBLaunchdProperties propertiesForLabel:error:]
+  +[RBLaunchdProperties propertiesForJob:]
+  +[RBLaunchdProperties _instanceWithProperties:xpcProps:]
+
+  // instance methods
+  -[RBLaunchdProperties isXPCService]
+  -[RBLaunchdProperties homeDirectory]
+  -[RBLaunchdProperties tmpDirectory]
+  -[RBLaunchdProperties isMultiInstance]
+  -[RBLaunchdProperties underlyingAssertion]
+  -[RBLaunchdProperties executablePath]
+  -[RBLaunchdProperties _parseAdditionalProperties:]
+  -[RBLaunchdProperties hasBackoff]
+  -[RBLaunchdProperties resolvedIdentityWithPid:auid:]
+  -[RBLaunchdProperties _configureAppWithProperties:]
+  -[RBLaunchdProperties uuid]
+  -[RBLaunchdProperties .cxx_destruct]
+  -[RBLaunchdProperties disableFreezing]
+  -[RBLaunchdProperties isAngel]
+  -[RBLaunchdProperties doesOverrideManagement]
+  -[RBLaunchdProperties isDaemon]
+  -[RBLaunchdProperties beforeTranslocationBundlePath]
+  -[RBLaunchdProperties _configureXPCServiceWithProperties:HostPid:]
+  -[RBLaunchdProperties resolvedIdentity]
+  -[RBLaunchdProperties _configureDaemonOrAngelWithProperties:path:isAngel:]
+  -[RBLaunchdProperties _initWithProperties:xpcProps:]
+  -[RBLaunchdProperties hasVariableEUID]
+  -[RBLaunchdProperties overrideManageFlags]
+  -[RBLaunchdProperties _parseLASSProperties:]
+  -[RBLaunchdProperties specifiedIdentity]
+  -[RBLaunchdProperties jobLabel]
+  -[RBLaunchdProperties hostPid]
+
+
+RBMutableLaunchdProperties : RBLaunchdProperties
+  // instance methods
+  -[RBMutableLaunchdProperties setIsDaemon]
+  -[RBMutableLaunchdProperties setSpecifiedIdentity:]
+  -[RBMutableLaunchdProperties setIsAngel]
+  -[RBMutableLaunchdProperties setDisableFreezing:]
+  -[RBMutableLaunchdProperties initWithProperties:]
+  -[RBMutableLaunchdProperties setExecutablePath:]
+  -[RBMutableLaunchdProperties setPath:]
+  -[RBMutableLaunchdProperties setMultiInstance:]
+  -[RBMutableLaunchdProperties setUnderlyingAssertion:]
+  -[RBMutableLaunchdProperties setDoesOverrideManagement:]
+  -[RBMutableLaunchdProperties setHostPid:]
+  -[RBMutableLaunchdProperties setOverrideManageFlags:]
+  -[RBMutableLaunchdProperties setJobLabel:]
+  -[RBMutableLaunchdProperties setVariableEUID:]
+
+
+RBLogStateCaptureEntry : NSObject
+  // instance methods
+  -[RBLogStateCaptureEntry .cxx_destruct]
+
+
+RBStateCaptureInvalidator : NSObject <RBSInvalidatable>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBStateCaptureInvalidator invalidate]
+
+
+RBStateCaptureItem : NSObject
+ @property  @? block
+ @property  NSString *title
+ @property  NSString *identifier
+
+  // instance methods
+  -[RBStateCaptureItem identifier]
+  -[RBStateCaptureItem dealloc]
+  -[RBStateCaptureItem .cxx_destruct]
+  -[RBStateCaptureItem title]
+  -[RBStateCaptureItem block]
+  -[RBStateCaptureItem initWithTitle:identifier:block:]
+
+
+RBSStateCaptureSetSegment : NSObject
+ @property  NSSet *items
+
+  // instance methods
+  -[RBSStateCaptureSetSegment containsItem:]
+  -[RBSStateCaptureSetSegment addItem:withLength:]
+  -[RBSStateCaptureSetSegment removeItem:]
+  -[RBSStateCaptureSetSegment dealloc]
+  -[RBSStateCaptureSetSegment .cxx_destruct]
+  -[RBSStateCaptureSetSegment _stateCapture]
+  -[RBSStateCaptureSetSegment count]
+  -[RBSStateCaptureSetSegment items]
+  -[RBSStateCaptureSetSegment init]
+
+
+RBSStateCaptureSet : NSObject
+ @property  NSSet *itemsCopy
+
+  // instance methods
+  -[RBSStateCaptureSet addItem:]
+  -[RBSStateCaptureSet removeItem:]
+  -[RBSStateCaptureSet .cxx_destruct]
+  -[RBSStateCaptureSet itemsCopy]
+  -[RBSStateCaptureSet init]
+
+
+RBStateCaptureManager : NSObject <RBStateCaptureManaging>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBStateCaptureManager addItem:]
+  -[RBStateCaptureManager identifiers]
+  -[RBStateCaptureManager stateForSubsystem:]
+  -[RBStateCaptureManager addItemWithTitle:identifier:block:]
+  -[RBStateCaptureManager removeItem:]
+  -[RBStateCaptureManager addItem:withIdentifier:]
+  -[RBStateCaptureManager .cxx_destruct]
+  -[RBStateCaptureManager removeItemWithIdentifier:]
+  -[RBStateCaptureManager init]
+
+
+RBProcessManager : NSObject <RBProcessManaging, RBStateCapturing, RBLaunchManagerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // class methods
+  +[RBProcessManager stateApplicationQueue]
+
+  // instance methods
+  -[RBProcessManager stateCaptureTitle]
+  -[RBProcessManager captureState]
+  -[RBProcessManager executeTerminateRequest:completion:]
+  -[RBProcessManager didUpdateProcessStates:completion:]
+  -[RBProcessManager executeLaunchRequest:withError:]
+  -[RBProcessManager _releaseLifecycleQueueForIdentity:]
+  -[RBProcessManager applySystemState:]
+  -[RBProcessManager processForIdentity:]
+  -[RBProcessManager initWithBundlePropertiesManager:entitlementManager:jetsamPropertytManager:timeProvider:delegate:]
+  -[RBProcessManager .cxx_destruct]
+  -[RBProcessManager removeStateForProcessIdentity:]
+  -[RBProcessManager processForAuditToken:]
+  -[RBProcessManager _executeLifecycleEventForIdentity:sync:withBlock:]
+  -[RBProcessManager _processForInstance:]
+  -[RBProcessManager busyExtensionInstancesFromSet:]
+  -[RBProcessManager _getLifecycleQueueForIdentity:]
+  -[RBProcessManager isActiveProcess:]
+  -[RBProcessManager _resolveProcessWithIdentifier:auditToken:properties:]
+  -[RBProcessManager _lifecycleQueue_addProcessWithInstance:properties:]
+  -[RBProcessManager systemPreventIdleSleepStateDidChange:]
+  -[RBProcessManager processForInstance:]
+  -[RBProcessManager start]
+  -[RBProcessManager _removeProcess:]
+  -[RBProcessManager _canTerminateProcess:withContext:error:]
+  -[RBProcessManager processForIdentifier:]
+  -[RBProcessManager processForIdentifierWithoutStartingTracking:]
+  -[RBProcessManager _processForIdentifier:]
+  -[RBProcessManager _processForIdentifier:withAuditToken:forceStartTracking:]
+  -[RBProcessManager init]
+  -[RBProcessManager processesMatchingPredicate:]
+
+
+RBDomainAttributeManager : NSObject <RBDomainAttributeManaging, RBStateCapturing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBDomainAttributeManager initWithDataProvider:]
+  -[RBDomainAttributeManager containsAttributeWithDomain:andName:]
+  -[RBDomainAttributeManager stateCaptureTitle]
+  -[RBDomainAttributeManager originatorEntitlementsForDomain:andName:]
+  -[RBDomainAttributeManager attributesForDomain:andName:context:withError:]
+  -[RBDomainAttributeManager areTargetPropertiesValidForContext:forAttributeWithDomain:andName:]
+  -[RBDomainAttributeManager captureState]
+  -[RBDomainAttributeManager allEntitlements]
+  -[RBDomainAttributeManager endowmentNamespaceForDomain:andName:]
+  -[RBDomainAttributeManager additionalRestrictionsForDomain:andName:]
+  -[RBDomainAttributeManager targetEntitlementsForDomain:andName:]
+  -[RBDomainAttributeManager .cxx_destruct]
+  -[RBDomainAttributeManager restrictionsForDomain:andName:]
+
+
+RBRequestManager : NSObject <RBRequestManaging>
+  // instance methods
+  -[RBRequestManager initWithContext:]
+  -[RBRequestManager executeLaunchRequest:euid:requestor:entitlements:completion:]
+  -[RBRequestManager .cxx_destruct]
+
+
+RBClientInheritanceManager : NSObject
+ @property  <RBClientInheritanceManagerDelegate> *delegate
+
+  // instance methods
+  -[RBClientInheritanceManager setInheritances:]
+  -[RBClientInheritanceManager delegate]
+  -[RBClientInheritanceManager .cxx_destruct]
+  -[RBClientInheritanceManager initWithInheritances:delegate:]
+  -[RBClientInheritanceManager init]
+
+
+RBProcessMonitorObserverConnection : NSObject <RBProcessMonitorObserverConnection>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBProcessMonitorObserverConnection initWithConnection:]
+  -[RBProcessMonitorObserverConnection .cxx_destruct]
+  -[RBProcessMonitorObserverConnection sendMessage:replyQueue:completion:]
+
+
+RBProcessMonitorObserver : NSObject <RBProcessMonitorObserving>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBProcessMonitorObserver stateCaptureTitle]
+  -[RBProcessMonitorObserver removeConfigurationWithIdentifier:]
+  -[RBProcessMonitorObserver captureState]
+  -[RBProcessMonitorObserver _lock_sendPendingStateUpdates]
+  -[RBProcessMonitorObserver _lock_clearPendingNonterminalStates]
+  -[RBProcessMonitorObserver initWithMonitor:forProcess:connection:]
+  -[RBProcessMonitorObserver dealloc]
+  -[RBProcessMonitorObserver .cxx_destruct]
+  -[RBProcessMonitorObserver didObserveProcessExit:]
+  -[RBProcessMonitorObserver _checkForBadActorWithPendingStates:]
+  -[RBProcessMonitorObserver processMonitor:didChangeProcessStates:]
+  -[RBProcessMonitorObserver invalidate]
+  -[RBProcessMonitorObserver _lock_rebuildConfiguration]
+  -[RBProcessMonitorObserver didResolvePreventLaunchPredicates:]
+  -[RBProcessMonitorObserver _lock_addAllConfiguredStatesToPending]
+  -[RBProcessMonitorObserver _lock_addConfigurationStatesToPending:]
+  -[RBProcessMonitorObserver addConfiguration:]
+
+
+RBAssertionStateResolver : NSObject
+ @property  RBAssertionCollection *assertionCollection
+ @property  RBProcessIndex *processIndex
+ @property  RBProcessMap *stateMap
+ @property  <RBDomainAttributeManaging> *domainAttributeManager
+ @property  <RBBundlePropertiesManaging> *bundlePropertiesManager
+ @property  <RBEntitlementManaging> *entitlementManager
+ @property  NSMapTable *savedEndowments
+ @property  RBSystemState *systemState
+
+  // instance methods
+  -[RBAssertionStateResolver setSystemState:]
+  -[RBAssertionStateResolver setAssertionCollection:]
+  -[RBAssertionStateResolver entitlementManager]
+  -[RBAssertionStateResolver .cxx_destruct]
+  -[RBAssertionStateResolver bundlePropertiesManager]
+  -[RBAssertionStateResolver setProcessIndex:]
+  -[RBAssertionStateResolver savedEndowments]
+  -[RBAssertionStateResolver setStateMap:]
+  -[RBAssertionStateResolver stateMap]
+  -[RBAssertionStateResolver domainAttributeManager]
+  -[RBAssertionStateResolver setBundlePropertiesManager:]
+  -[RBAssertionStateResolver setSavedEndowments:]
+  -[RBAssertionStateResolver systemState]
+  -[RBAssertionStateResolver assertionCollection]
+  -[RBAssertionStateResolver setEntitlementManager:]
+  -[RBAssertionStateResolver processIndex]
+  -[RBAssertionStateResolver assertionDescriptorsWithFlattenedAttributes:]
+  -[RBAssertionStateResolver setDomainAttributeManager:]
+  -[RBAssertionStateResolver resolveForAssertions:]
+
+
+RBAssertionResolutionContext : NSObject
+ @property  RBProcessStateChangeSet *changeSet
+ @property  RBSystemState *systemState
+ @property  NSSet *touchedAssertions
+ @property  NSSet *lostStartTimeDefining
+ @property  NSSet *gainedStartTimeDefining
+
+  // instance methods
+  -[RBAssertionResolutionContext _suspendAssertionsForTarget:]
+  -[RBAssertionResolutionContext _resolveSystemState]
+  -[RBAssertionResolutionContext _checkForSuspendableAssertionCycle:newState:]
+  -[RBAssertionResolutionContext .cxx_destruct]
+  -[RBAssertionResolutionContext changeSet]
+  -[RBAssertionResolutionContext lostStartTimeDefining]
+  -[RBAssertionResolutionContext _assertionGraphFromAssertion:graph:]
+  -[RBAssertionResolutionContext _finalizeStateChangeSet]
+  -[RBAssertionResolutionContext _latestStateForIdentity:]
+  -[RBAssertionResolutionContext _resolveProcessStateForTarget:ofType:viaAssertion:]
+  -[RBAssertionResolutionContext touchedAssertions]
+  -[RBAssertionResolutionContext _inheritancesForOriginator:]
+  -[RBAssertionResolutionContext _originatorInheritancesForAssertion:]
+  -[RBAssertionResolutionContext _suspendOrResumeAssertionsForTarget:oldState:newState:]
+  -[RBAssertionResolutionContext systemState]
+  -[RBAssertionResolutionContext _assertionGraphFromAssertion:]
+  -[RBAssertionResolutionContext _updateStatesForAssertion:]
+  -[RBAssertionResolutionContext gainedStartTimeDefining]
+
+
+RBXNUWrapper : NSObject
+  // class methods
+  +[RBXNUWrapper sharedWrapper]
+
+  // instance methods
+  -[RBXNUWrapper init]
+  -[RBXNUWrapper setGPURole:forPid:]
+
+
+RBDaemon : NSObject <RBAssertionManagerDelegate, RBProcessManagerDelegate, RBBundlePropertiesManagerDelegate, RBPowerAssertionManagerDelegate, RBDaemonContextProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <RBAssertionManaging> *assertionManager
+ @property  <RBEntitlementManaging> *entitlementManager
+ @property  <RBProcessManaging> *processManager
+ @property  <RBProcessMonitoring> *processMonitor
+ @property  <RBStateCaptureManaging> *stateCaptureManager
+ @property  <RBDomainAttributeManaging> *domainAttributeManager
+ @property  <RBAssertionOriginatorPidPersisting> *assertionOriginatorPidStore
+ @property  <RBJetsamPropertyManaging> *jetsamPropertyManager
+ @property  <RBExtensionDataProviding> *extensionDataProvider
+ @property  <RBRequestManaging> *requestManager
+ @property  RBProcess *process
+
+  // class methods
+  +[RBDaemon run]
+
+  // instance methods
+  -[RBDaemon assertionManager:willExpireAssertionsSoonForProcess:expirationTime:]
+  -[RBDaemon bundlePropertiesManager:didChangePropertiesForProcessIdentities:]
+  -[RBDaemon processManager:didReconnectProcesses:]
+  -[RBDaemon assertionManager:didResolveSystemState:]
+  -[RBDaemon process]
+  -[RBDaemon processMonitor]
+  -[RBDaemon entitlementManager]
+  -[RBDaemon assertionManager:didUpdateProcessStates:completion:]
+  -[RBDaemon assertionManager:didInvalidateAssertions:]
+  -[RBDaemon assertionManager:didEndTrackingInFightUpdatesForProcessIdentity:]
+  -[RBDaemon jetsamPropertyManager]
+  -[RBDaemon assertionManager:didRejectAcquisitionFromOriginatorWithExcessiveAssertions:]
+  -[RBDaemon .cxx_destruct]
+  -[RBDaemon assertionManager:didBeginTrackingStateForProcessIdentity:]
+  -[RBDaemon processManager:didRemoveProcess:]
+  -[RBDaemon assertionManager:didRemoveProcess:withState:]
+  -[RBDaemon processManager:didAddProcess:]
+  -[RBDaemon assertionManager:willInvalidateAssertion:]
+  -[RBDaemon assertionManager:didEndTrackingStateForProcessIdentity:]
+  -[RBDaemon processManager]
+  -[RBDaemon powerAssertionManagerDidPreventIdleSleep:]
+  -[RBDaemon domainAttributeManager]
+  -[RBDaemon assertionOriginatorPidStore]
+  -[RBDaemon assertionManager]
+  -[RBDaemon assertionManager:didAddProcess:withState:]
+  -[RBDaemon assertionManager:didBeginTrackingInFightUpdatesForProcessIdentity:]
+  -[RBDaemon extensionDataProvider]
+  -[RBDaemon powerAssertionManagerDidAllowIdleSleep:]
+  -[RBDaemon requestManager]
+  -[RBDaemon init]
+  -[RBDaemon stateCaptureManager]
+
+
+RBDomainRestriction : NSObject <NSCopying>
+  // class methods
+  +[RBDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBDomainRestriction allEntitlements]
+  -[RBDomainRestriction allowsContext:withError:]
+  -[RBDomainRestriction copyWithZone:]
+  -[RBDomainRestriction _init]
+
+
+RBOriginatorEntitlementDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBOriginatorEntitlementDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBOriginatorEntitlementDomainRestriction allEntitlements]
+  -[RBOriginatorEntitlementDomainRestriction allowsContext:withError:]
+  -[RBOriginatorEntitlementDomainRestriction .cxx_destruct]
+  -[RBOriginatorEntitlementDomainRestriction _initWithEntitlement:]
+  -[RBOriginatorEntitlementDomainRestriction copyWithZone:]
+  -[RBOriginatorEntitlementDomainRestriction isEqual:]
+
+
+RBOriginatorExtensionPointRestriction : RBDomainRestriction
+  // class methods
+  +[RBOriginatorExtensionPointRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBOriginatorExtensionPointRestriction allEntitlements]
+  -[RBOriginatorExtensionPointRestriction allowsContext:withError:]
+  -[RBOriginatorExtensionPointRestriction .cxx_destruct]
+  -[RBOriginatorExtensionPointRestriction _initWithExtensionPoint:]
+  -[RBOriginatorExtensionPointRestriction copyWithZone:]
+  -[RBOriginatorExtensionPointRestriction isEqual:]
+
+
+RBTargetEntitlementDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBTargetEntitlementDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBTargetEntitlementDomainRestriction allEntitlements]
+  -[RBTargetEntitlementDomainRestriction allowsContext:withError:]
+  -[RBTargetEntitlementDomainRestriction .cxx_destruct]
+  -[RBTargetEntitlementDomainRestriction _initWithEntitlement:]
+  -[RBTargetEntitlementDomainRestriction copyWithZone:]
+  -[RBTargetEntitlementDomainRestriction isEqual:]
+
+
+RBCompoundAnyDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBCompoundAnyDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBCompoundAnyDomainRestriction allEntitlements]
+  -[RBCompoundAnyDomainRestriction _initWithRestrictions:]
+  -[RBCompoundAnyDomainRestriction allowsContext:withError:]
+  -[RBCompoundAnyDomainRestriction .cxx_destruct]
+  -[RBCompoundAnyDomainRestriction copyWithZone:]
+  -[RBCompoundAnyDomainRestriction isEqual:]
+
+
+RBCompoundAllDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBCompoundAllDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBCompoundAllDomainRestriction allEntitlements]
+  -[RBCompoundAllDomainRestriction _initWithRestrictions:]
+  -[RBCompoundAllDomainRestriction allowsContext:withError:]
+  -[RBCompoundAllDomainRestriction .cxx_destruct]
+  -[RBCompoundAllDomainRestriction copyWithZone:]
+  -[RBCompoundAllDomainRestriction isEqual:]
+
+
+RBCompoundNoneDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBCompoundNoneDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBCompoundNoneDomainRestriction allEntitlements]
+  -[RBCompoundNoneDomainRestriction _initWithRestrictions:]
+  -[RBCompoundNoneDomainRestriction allowsContext:withError:]
+  -[RBCompoundNoneDomainRestriction .cxx_destruct]
+  -[RBCompoundNoneDomainRestriction copyWithZone:]
+  -[RBCompoundNoneDomainRestriction isEqual:]
+
+
+RBTargetPropertyDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBTargetPropertyDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBTargetPropertyDomainRestriction allEntitlements]
+  -[RBTargetPropertyDomainRestriction allowsContext:withError:]
+  -[RBTargetPropertyDomainRestriction .cxx_destruct]
+  -[RBTargetPropertyDomainRestriction copyWithZone:]
+  -[RBTargetPropertyDomainRestriction isEqual:]
+  -[RBTargetPropertyDomainRestriction _initWithProperty:value:]
+
+
+RBTargetsSelfDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBTargetsSelfDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBTargetsSelfDomainRestriction allEntitlements]
+  -[RBTargetsSelfDomainRestriction allowsContext:withError:]
+  -[RBTargetsSelfDomainRestriction .cxx_destruct]
+  -[RBTargetsSelfDomainRestriction copyWithZone:]
+  -[RBTargetsSelfDomainRestriction _init]
+  -[RBTargetsSelfDomainRestriction isEqual:]
+
+
+RBTargetsHostedDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBTargetsHostedDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBTargetsHostedDomainRestriction allEntitlements]
+  -[RBTargetsHostedDomainRestriction allowsContext:withError:]
+  -[RBTargetsHostedDomainRestriction .cxx_destruct]
+  -[RBTargetsHostedDomainRestriction copyWithZone:]
+  -[RBTargetsHostedDomainRestriction _init]
+  -[RBTargetsHostedDomainRestriction isEqual:]
+
+
+RBLessThanConditionDomainRestriction : RBDomainRestriction
+  // class methods
+  +[RBLessThanConditionDomainRestriction domainRestrictionForDictionary:withError:]
+
+  // instance methods
+  -[RBLessThanConditionDomainRestriction allEntitlements]
+  -[RBLessThanConditionDomainRestriction allowsContext:withError:]
+  -[RBLessThanConditionDomainRestriction .cxx_destruct]
+  -[RBLessThanConditionDomainRestriction _initWithCondition:value:]
+  -[RBLessThanConditionDomainRestriction copyWithZone:]
+  -[RBLessThanConditionDomainRestriction isEqual:]
+
+
+RBAssertionDescriptorValidator : NSObject <RBAssertionDescriptorValidating>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBAssertionDescriptorValidator isAssertionValidForContext:error:]
+
+
+RBDomainAttributeManagerDataProvider : NSObject <RBDomainAttributeDataProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[RBDomainAttributeManagerDataProvider validationErrors]
+  -[RBDomainAttributeManagerDataProvider initWithPath:]
+  -[RBDomainAttributeManagerDataProvider initWithDictionary:]
+  -[RBDomainAttributeManagerDataProvider .cxx_destruct]
+  -[RBDomainAttributeManagerDataProvider templatesByDomain]
+  -[RBDomainAttributeManagerDataProvider validDomains]
+
+
+RBBundlePropertiesManager : NSObject <RBBundlePropertiesLSProviderDelegate, RBBundlePropertiesManaging, RBStateCapturing>
+ @property  <RBBundlePropertiesManagerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *stateCaptureTitle
+
+  // instance methods
+  -[RBBundlePropertiesManager stateCaptureTitle]
+  -[RBBundlePropertiesManager captureState]
+  -[RBBundlePropertiesManager setDelegate:]
+  -[RBBundlePropertiesManager removeProcess:]
+  -[RBBundlePropertiesManager delegate]
+  -[RBBundlePropertiesManager .cxx_destruct]
+  -[RBBundlePropertiesManager bundlePropertiesProvider:didChangePropertiesForProcessIdentities:]
+  -[RBBundlePropertiesManager propertiesForIdentity:identifier:]
+  -[RBBundlePropertiesManager addProcess:]
+  -[RBBundlePropertiesManager init]
+
+
+RBSLegacyAttribute(RBProcessState)
+	// instance methods
+	-[RBSLegacyAttribute(RBProcessState) preventsSuspension]
+	-[RBSLegacyAttribute(RBProcessState) applyToAcquisitionContext:]
+	-[RBSLegacyAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSLegacyAttribute(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSLegacyAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSLegacyAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSLegacyAttribute(RBProcessState) allowedWithAttribute:error:]
+
+RBSDebugGrant(RBProcessState)
+	// instance methods
+	-[RBSDebugGrant(RBProcessState) preventsSuspension]
+	-[RBSDebugGrant(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSDebugGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSDebugGrant(RBProcessState) isValidForContext:withError:]
+
+RBSCPUAccessGrant(RBProcessState)
+	// instance methods
+	-[RBSCPUAccessGrant(RBProcessState) preventsSuspension]
+	-[RBSCPUAccessGrant(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSCPUAccessGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSCPUAccessGrant(RBProcessState) isValidForContext:withError:]
+
+RBSPersistentAttribute(RBProcessState)
+	// instance methods
+	-[RBSPersistentAttribute(RBProcessState) applyToAcquisitionContext:]
+	-[RBSPersistentAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSPersistentAttribute(RBProcessState) isValidForContext:withError:]
+
+RBSPreventIdleSleepGrant(RBProcessState)
+	// instance methods
+	-[RBSPreventIdleSleepGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSPreventIdleSleepGrant(RBProcessState) isValidForContext:withError:]
+	-[RBSPreventIdleSleepGrant(RBProcessState) applyToSystemState:attributePath:context:]
+
+RBSAppNapPreventBackgroundSocketsGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapPreventBackgroundSocketsGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSForceRoleManageAttribute(RBProcessState)
+	// instance methods
+	-[RBSForceRoleManageAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSForceRoleManageAttribute(RBProcessState) isValidForContext:withError:]
+
+RBSDurationAttribute(RBProcessState)
+	// instance methods
+	-[RBSDurationAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSDurationAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSDurationAttribute(RBProcessState) allowedWithAttribute:error:]
+
+RBSAppNapPreventLowPriorityCPUGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapPreventLowPriorityCPUGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSPreserveBaseMemoryGrant(RBProcessState)
+	// instance methods
+	-[RBSPreserveBaseMemoryGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSPreserveBaseMemoryGrant(RBProcessState) isValidForContext:withError:]
+
+RBSMimicTaskSuspensionAttribute(RBProcessState)
+	// instance methods
+	-[RBSMimicTaskSuspensionAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSMimicTaskSuspensionAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSMimicTaskSuspensionAttribute(RBProcessState) isValidForContext:withError:]
+
+RBSCPUMinimumUsageGrant(RBProcessState)
+	// instance methods
+	-[RBSCPUMinimumUsageGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSCPUMinimumUsageGrant(RBProcessState) isValidForContext:withError:]
+	-[RBSCPUMinimumUsageGrant(RBProcessState) allowedWithAttribute:error:]
+
+RBSGPUAccessGrant(RBProcessState)
+	// instance methods
+	-[RBSGPUAccessGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSGPUAccessGrant(RBProcessState) isValidForContext:withError:]
+
+RBSAppNapEnableGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapEnableGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSAppNapEnableGrant(RBProcessState) isValidForContext:withError:]
+
+RBSAppNapPreventTimerThrottleGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapPreventTimerThrottleGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSConditionAttribute(RBProcessState)
+	// instance methods
+	-[RBSConditionAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSConditionAttribute(RBProcessState) applyToSystemState:attributePath:context:]
+
+RBSAcquisitionCompletionAttribute(RBProcessState)
+	// instance methods
+	-[RBSAcquisitionCompletionAttribute(RBProcessState) applyToAcquisitionContext:]
+
+RBSAppNapPreventSuppressedCPUGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapPreventSuppressedCPUGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSAppNapInactiveGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapInactiveGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSAppNapGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapGrant(RBProcessState) isValidForContext:withError:]
+
+RBSBaseMemoryGrant(RBProcessState)
+	// instance methods
+	-[RBSBaseMemoryGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSBaseMemoryGrant(RBProcessState) isValidForContext:withError:]
+
+RBSAppNapPreventDiskThrottleGrant(RBProcessState)
+	// instance methods
+	-[RBSAppNapPreventDiskThrottleGrant(RBProcessState) applyToProcessState:attributePath:context:]
+
+RBSPreventLaunchLimitation(RBProcessState)
+	// instance methods
+	-[RBSPreventLaunchLimitation(RBProcessState) applyToAcquisitionContext:]
+	-[RBSPreventLaunchLimitation(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSPreventLaunchLimitation(RBProcessState) isValidForContext:withError:]
+	-[RBSPreventLaunchLimitation(RBProcessState) allowedWithAttribute:error:]
+	-[RBSPreventLaunchLimitation(RBProcessState) applyToSystemState:attributePath:context:]
+
+RBSJetsamPriorityGrant(RBProcessState)
+	// instance methods
+	-[RBSJetsamPriorityGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSJetsamPriorityGrant(RBProcessState) isValidForContext:withError:]
+
+RBSEndowmentGrant(RBProcessState)
+	// instance methods
+	-[RBSEndowmentGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSEndowmentGrant(RBProcessState) isValidForContext:withError:]
+
+RBSCPUMaximumUsageLimitation(RBProcessState)
+	// instance methods
+	-[RBSCPUMaximumUsageLimitation(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSCPUMaximumUsageLimitation(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSCPUMaximumUsageLimitation(RBProcessState) isValidForContext:withError:]
+	-[RBSCPUMaximumUsageLimitation(RBProcessState) allowedWithAttribute:error:]
+
+RBSDefineRelativeStartTimeGrant(RBProcessState)
+	// instance methods
+	-[RBSDefineRelativeStartTimeGrant(RBProcessState) preventsSuspension]
+	-[RBSDefineRelativeStartTimeGrant(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSDefineRelativeStartTimeGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSDefineRelativeStartTimeGrant(RBProcessState) isValidForContext:withError:]
+
+RBSProcessIdentity(RBConcreteTargeting)
+	// instance methods
+	-[RBSProcessIdentity(RBConcreteTargeting) isSystem]
+	-[RBSProcessIdentity(RBConcreteTargeting) process]
+	-[RBSProcessIdentity(RBConcreteTargeting) identity]
+	-[RBSProcessIdentity(RBConcreteTargeting) environment]
+	-[RBSProcessIdentity(RBConcreteTargeting) createRBSTarget]
+
+RBSLaunchGrant(RBProcessState)
+	// instance methods
+	-[RBSLaunchGrant(RBProcessState) applyToAcquisitionContext:]
+	-[RBSLaunchGrant(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSLaunchGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSLaunchGrant(RBProcessState) isValidForContext:withError:]
+
+RBSHereditaryGrant(RBProcessState)
+	// instance methods
+	-[RBSHereditaryGrant(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSHereditaryGrant(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSHereditaryGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSHereditaryGrant(RBProcessState) isValidForContext:withError:]
+	-[RBSHereditaryGrant(RBProcessState) effectiveAttributesWithContext:]
+
+RBSAttribute(RBProcessState)
+	// class methods
+	+[RBSAttribute(RBProcessState) allowedForPrimitiveAttributeForProcessTarget:withError:]
+
+	// instance methods
+	-[RBSAttribute(RBProcessState) preventsSuspension]
+	-[RBSAttribute(RBProcessState) applyToAcquisitionContext:]
+	-[RBSAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSAttribute(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSAttribute(RBProcessState) allowedWithAttribute:error:]
+	-[RBSAttribute(RBProcessState) applyToSystemState:attributePath:context:]
+	-[RBSAttribute(RBProcessState) effectiveAttributesWithContext:]
+	-[RBSAttribute(RBProcessState) hasMandatoryAttributes:error:]
+
+RBSConstraintsAttribute(RBProcessState)
+	// instance methods
+	-[RBSConstraintsAttribute(RBProcessState) allowedWithAttribute:error:]
+	-[RBSConstraintsAttribute(RBProcessState) hasMandatoryAttributes:error:]
+
+RBSRunningReasonAttribute(RBProcessState)
+	// instance methods
+	-[RBSRunningReasonAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSRunningReasonAttribute(RBProcessState) isValidForContext:withError:]
+
+RBSInvalidateUnderConditionAttribute(RBProcessState)
+	// instance methods
+	-[RBSInvalidateUnderConditionAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSInvalidateUnderConditionAttribute(RBProcessState) isValidForContext:withError:]
+
+RBSSavedEndowmentGrant(RBProcessState)
+	// instance methods
+	-[RBSSavedEndowmentGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSSavedEndowmentGrant(RBProcessState) isValidForContext:withError:]
+
+RBSSuspendableCPUGrant(RBProcessState)
+	// instance methods
+	-[RBSSuspendableCPUGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSSuspendableCPUGrant(RBProcessState) isValidForContext:withError:]
+
+RBSTagAttribute(RBProcessState)
+	// instance methods
+	-[RBSTagAttribute(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSTagAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSTagAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSTagAttribute(RBProcessState) applyToSystemState:attributePath:context:]
+
+RBSDomainAttribute(RBProcessState)
+	// instance methods
+	-[RBSDomainAttribute(RBProcessState) applyToAcquisitionContext:]
+	-[RBSDomainAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSDomainAttribute(RBProcessState) applyToAssertionTransientState:attributePath:context:]
+	-[RBSDomainAttribute(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSDomainAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSDomainAttribute(RBProcessState) applyToSystemState:attributePath:context:]
+	-[RBSDomainAttribute(RBProcessState) effectiveAttributesWithContext:]
+
+RBSPrewarmAttribute(RBProcessState)
+	// instance methods
+	-[RBSPrewarmAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSPrewarmAttribute(RBProcessState) isValidForContext:withError:]
+	-[RBSPrewarmAttribute(RBProcessState) allowedWithAttribute:error:]
+	-[RBSPrewarmAttribute(RBProcessState) applyToSystemState:attributePath:context:]
+
+RBSResistTerminationGrant(RBProcessState)
+	// instance methods
+	-[RBSResistTerminationGrant(RBProcessState) applyToProcessState:attributePath:context:]
+	-[RBSResistTerminationGrant(RBProcessState) isValidForContext:withError:]
+
+RBSSubordinateProcessAttribute(RBProcessState)
+	// instance methods
+	-[RBSSubordinateProcessAttribute(RBProcessState) applyToAssertionIntransientState:attributePath:context:]
+	-[RBSSubordinateProcessAttribute(RBProcessState) isValidForContext:withError:]
+
+01 00 0200 /System/Library/PrivateFrameworks/AppServerSupport.framework/AppServerSupport: LASSProperties4RB 
+01 00 0300 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 0300 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0300 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSBundleProxy 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSCountedSet 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 1400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0200 /System/Library/PrivateFrameworks/AppServerSupport.framework/AppServerSupport: OSLaunchdDomain 
+01 00 0200 /System/Library/PrivateFrameworks/AppServerSupport.framework/AppServerSupport: OSLaunchdJob 
+01 00 0800 /System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit: PKManager 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAcquisitionCompletionAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapEnableGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapInactiveGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapPreventBackgroundSocketsGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapPreventDiskThrottleGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapPreventLowPriorityCPUGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapPreventSuppressedCPUGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAppNapPreventTimerThrottleGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAssertionDescriptor 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAssertionIdentifier 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAuditToken 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSBaseMemoryGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSCPUAccessGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSCPUMaximumUsageLimitation 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSCPUMinimumUsageGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSConditionAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSConnection 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSConstraintsAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSDebugGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSDefineRelativeStartTimeGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSDomainAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSDurationAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSEndowmentGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSForceRoleManageAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSGPUAccessGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSHandshakeRequest 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSHandshakeResponse 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSHereditaryGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSInheritance 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSInheritanceChangeSet 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSInvalidateUnderConditionAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSJetsamPriorityGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSLaunchContext 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSLaunchGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSLaunchRequest 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSLegacyAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSMachPortTaskNameRight 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSMimicTaskSuspensionAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSPersistentAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSPreserveBaseMemoryGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSPreventIdleSleepGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSPreventLaunchLimitation 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSPrewarmAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessAssertionInfo 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessExitContext 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessExitEvent 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessExitStatus 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessHandle 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessIdentifier 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessIdentity 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessInfoPlistResult 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessInstance 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessLimitations 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessMonitorConfiguration 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessPredicate 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessState 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessStateDescriptor 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSResistTerminationGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSRunningReasonAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSSavedEndowmentGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSSubordinateProcessAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSSuspendableCPUGrant 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTagAttribute 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTarget 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTerminateContext 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSTerminateRequest 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSWorkloop 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSXPCMessage 
+01 00 0f00 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSXPCMessageContext 
+01 00 0a40 /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement: UMUserManager 
+01 00 0a40 /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement: UMUserPersonaAttributes 

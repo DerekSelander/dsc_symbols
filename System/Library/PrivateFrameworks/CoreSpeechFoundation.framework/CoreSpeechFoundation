@@ -1,0 +1,1996 @@
+|| __DATA.__common _SSRLogContextFacilityCoreSpeech
+|| __DATA.__data _CSLoggingSubsystem
+|| __DATA.__data _SSRLoggingSubsystem
+|| __DATA.__data _kCSLoggingContextFramework
+|| __DATA.__data _kSSRLoggingContextFramework
+|| __DATA.__objc_data _OBJC_CLASS_$_CSAudioChunkForTV
+|| __DATA.__objc_data _OBJC_CLASS_$_CSAudioDecoder
+|| __DATA.__objc_data _OBJC_CLASS_$_CSAudioPlayingApp
+|| __DATA.__objc_data _OBJC_CLASS_$_CSAudioZeroCounter
+|| __DATA.__objc_data _OBJC_CLASS_$_CSDarwinVoiceTriggerEventInfoProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_CSDiagnosticReporter
+|| __DATA.__objc_data _OBJC_CLASS_$_CSDispatchGroup
+|| __DATA.__objc_data _OBJC_CLASS_$_CSFCircularEventsCacheBuffer
+|| __DATA.__objc_data _OBJC_CLASS_$_CSFRangeUtils
+|| __DATA.__objc_data _OBJC_CLASS_$_CSFVoiceTriggerEventInfoSelfLoggerDarwin
+|| __DATA.__objc_data _OBJC_CLASS_$_CSFVoiceTriggerEventInfoSelfLoggerEmbedded
+|| __DATA.__objc_data _OBJC_CLASS_$_CSOSTransactionStat
+|| __DATA.__objc_data _OBJC_CLASS_$_CSPlainAudioFileWriter
+|| __DATA.__objc_data _OBJC_CLASS_$_CSPowerAssertionAccessory
+|| __DATA.__objc_data _OBJC_CLASS_$_CSRemoteAssetManager
+|| __DATA.__objc_data _OBJC_CLASS_$_CSReusableBufferBackingStore
+|| __DATA.__objc_data _OBJC_CLASS_$_CSReusableBufferPool
+|| __DATA.__objc_data _OBJC_CLASS_$_CSReusableBufferPoolConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_CSReusablePrivateMemoryBackingStore
+|| __DATA.__objc_data _OBJC_CLASS_$_CSReusableSharedMemoryBackingStore
+|| __DATA.__objc_data _OBJC_CLASS_$_CSSelectiveChannelAudioFileWriter
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVTUITrainingSelfLogger
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVoiceTriggerAirPodWearerDetectionConfig
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVoiceTriggerPhraseConfig
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVoiceTriggerPhraseConfigDecoder
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVoiceTriggerSecondPassConfig
+|| __DATA.__objc_data _OBJC_CLASS_$_CSVoiceTriggerSecondPassConfigDecoder
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSAudioChunkForTV
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSAudioDecoder
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSAudioPlayingApp
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSAudioZeroCounter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSDarwinVoiceTriggerEventInfoProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSDiagnosticReporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSDispatchGroup
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSFCircularEventsCacheBuffer
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSFRangeUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSFVoiceTriggerEventInfoSelfLoggerDarwin
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSFVoiceTriggerEventInfoSelfLoggerEmbedded
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSOSTransactionStat
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSPlainAudioFileWriter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSPowerAssertionAccessory
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSRemoteAssetManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSReusableBufferBackingStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSReusableBufferPool
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSReusableBufferPoolConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSReusablePrivateMemoryBackingStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSReusableSharedMemoryBackingStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSSelectiveChannelAudioFileWriter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVTUITrainingSelfLogger
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerAirPodWearerDetectionConfig
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerPhraseConfig
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerPhraseConfigDecoder
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerSecondPassConfig
+|| __DATA.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerSecondPassConfigDecoder
+|| __DATA_CONST.__const _bcMetricAbsMaxVal
+|| __DATA_CONST.__const _bcMetricBeepLocation
+|| __DATA_CONST.__const _bcMetricBeepPower
+|| __DATA_CONST.__const _bcMetricOriginalPower
+|| __DATA_CONST.__const _bcMetricSignalPower
+|| __DATA_CONST.__const _bcMetricStatsComputed
+|| __DATA_CONST.__const _bcMetricTotalInputSamples
+|| __DATA_CONST.__const _bcMetricTotalOutputSamples
+|| __DATA_CONST.__const _bcMetricaAbove95pcOfMax
+|| __DATA_CONST.__const _kCSAudioSyncedFileSuffix
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioCodecError
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioDeliveryWatchDogFire
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioDidStartWatchDogFire
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioDidStopWatchDogFire
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioInsufficientPriority
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioResourceNotAvailable
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioSessionInterrupted
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioStreamDeallocDuringStreaming
+|| __DATA_CONST.__const _kCSDiagnosticReporterAudioTypeKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterConsectiveFalseFirstPassTriggers
+|| __DATA_CONST.__const _kCSDiagnosticReporterDomainKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterEndpointerModelVersionIsNil
+|| __DATA_CONST.__const _kCSDiagnosticReporterEndpointerTypeKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterHardwareConfigurationChanged
+|| __DATA_CONST.__const _kCSDiagnosticReporterHardwareRemoved
+|| __DATA_CONST.__const _kCSDiagnosticReporterMixedAudioSessionInterrupted
+|| __DATA_CONST.__const _kCSDiagnosticReporterNoHardwareError
+|| __DATA_CONST.__const _kCSDiagnosticReporterNoRouteAvailable
+|| __DATA_CONST.__const _kCSDiagnosticReporterRemoteCoreSpeechSubtypeAudioRecordingFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterRemoteCoreSpeechType
+|| __DATA_CONST.__const _kCSDiagnosticReporterSiriPowerKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterSpeechPrepareFailure
+|| __DATA_CONST.__const _kCSDiagnosticReporterSpeechStartFailure
+|| __DATA_CONST.__const _kCSDiagnosticReporterSpeechStopFailure
+|| __DATA_CONST.__const _kCSDiagnosticReporterTrialAssetFetchFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterTrialDownloadFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterTrialTypeKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterUresRCUnavailable
+|| __DATA_CONST.__const _kCSDiagnosticReporterUresTypeKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdDelayedScores
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdExplicitUttRejected
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdMissingHomeId
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdRetrainSATVecFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdSATInitFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdSATModelFileFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdSATVectorFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdStaleProfileDetected
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdTDSRFailed
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdTDSRTimeout
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdTooLessAudioFiles
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdTypeKey
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceIdUnrecognizedMetaData
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceTriggerAPLeak
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceTriggerAPStuckInTransition
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceTriggerLaunchSlow
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceTriggerSecondPassCompleteWatchDogFire
+|| __DATA_CONST.__const _kCSDiagnosticReporterVoiceTriggerTypeKey
+|| __DATA_CONST.__const _kCSFSelfLoggingMHUUIDKey
+|| __DATA_CONST.__const _kCSFSelfLoggingSecondPassResultKey
+|| __DATA_CONST.__const _kCSInitialContinousZerosMetricKey
+|| __DATA_CONST.__const _kCSLiveOnHomePodKey
+|| __DATA_CONST.__const _kCSMaxContinousZerosMetricKey
+|| __DATA_CONST.__const _kCSMidSegmentContinousZerosMetricKey
+|| __DATA_CONST.__const _kCSNotBackedupPreferencesDomain
+|| __DATA_CONST.__const _kCSPowerAssertionName
+|| __DATA_CONST.__const _kCSPreferencesDomain
+|| __DATA_CONST.__const _kCSPreferencesJarvisTriggerModeDidChangeDarwinNotification
+|| __DATA_CONST.__const _kCSSystemDomain
+|| __DATA_CONST.__const _kCSZeroRunLengthMetricKey
+|| __DATA_CONST.__const _kCSZeroRunStartingSampleMetricKey
+|| __DATA_DIRTY.__common _CSLogContextFacilityCoreSpeech
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSADPPreventStandbyAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAsset
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioChunk
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioCircularBuffer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioFileManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioPlayingAppMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioPowerMeter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioRecordContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioTimeConverter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioTimeConverterPool
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSAudioZeroFilter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSBeepCanceller
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSContinuousVoiceTriggerConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSContinuousVoiceTriggerConfigDecoder
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFAudioMetricsSelfLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFAudioStreamBasicDescriptionFactory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFLPCMTypeConverter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFTimeUtils
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSFVoiceTriggerEventInfoSelfLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSMobileAssetVersions
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSOSTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSPowerLogger
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSUtils
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSVoiceTriggerFirstPassConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CSVoiceTriggerFirstPassConfigDecoder
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSADPPreventStandbyAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAsset
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioChunk
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioCircularBuffer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioFileManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioPlayingAppMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioPowerMeter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioRecordContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioTimeConverter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioTimeConverterPool
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSAudioZeroFilter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSBeepCanceller
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSContinuousVoiceTriggerConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSContinuousVoiceTriggerConfigDecoder
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFAudioMetricsSelfLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFAudioStreamBasicDescriptionFactory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFLPCMTypeConverter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFPreferences
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFTimeUtils
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSFVoiceTriggerEventInfoSelfLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSMobileAssetVersions
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSOSTransaction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSPolicy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSPowerLogger
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSUtils
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerFirstPassConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CSVoiceTriggerFirstPassConfigDecoder
+|| __TEXT.__const _CoreSpeechFoundationVersionNumber
+|| __TEXT.__const _CoreSpeechFoundationVersionString
+|| __TEXT.__const _kCSDiagnosticReporterAudioSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterEndpointerSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterFirstPassFailuresSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterTrialSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterUresSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterVoiceIdSnapshotTime
+|| __TEXT.__const _kCSDiagnosticReporterVoiceTriggerSnapshotTime
+|| __TEXT.__const _kCSFSelfLoggingCachedEventsMaxSize
+|| __TEXT.__const _kDecay
+|| __TEXT.__const _kDecay1
+|| __TEXT.__const _kMinDecibelsPower
+|| __TEXT.__const _kMinLinearPower
+|| __TEXT.__const _kPeakDecay
+|| __TEXT.__const _kPeakDecay1
+|| __TEXT.__const _kPeakResetTime
+|| __TEXT.__text _CSHasAOP
+|| __TEXT.__text _CSInternalPreferencesSynchronize
+|| __TEXT.__text _CSIsASMacWithAOP
+|| __TEXT.__text _CSIsAppleSiliconMac
+|| __TEXT.__text _CSIsBridgeOS
+|| __TEXT.__text _CSIsCommunalDevice
+|| __TEXT.__text _CSIsEmbedded
+|| __TEXT.__text _CSIsHorseman
+|| __TEXT.__text _CSIsHorsemanJunior
+|| __TEXT.__text _CSIsHorsemanLiveOn
+|| __TEXT.__text _CSIsIOS
+|| __TEXT.__text _CSIsIPad
+|| __TEXT.__text _CSIsIPhone
+|| __TEXT.__text _CSIsInternalBuild
+|| __TEXT.__text _CSIsMac
+|| __TEXT.__text _CSIsOSX
+|| __TEXT.__text _CSIsSimulator
+|| __TEXT.__text _CSIsTV
+|| __TEXT.__text _CSIsTorpedo
+|| __TEXT.__text _CSIsWatch
+|| __TEXT.__text _CSLogInitIfNeeded
+|| __TEXT.__text _CSMachAbsoluteTimeAddTimeInterval
+|| __TEXT.__text _CSMachAbsoluteTimeGetTimeInterval
+|| __TEXT.__text _CSMachAbsoluteTimeSubtractTimeInterval
+|| __TEXT.__text _CSMachAbsoluteTimeToMachContinuousTime
+|| __TEXT.__text _CSNotBackedupInternalPreferencesSynchronize
+|| __TEXT.__text _CSResourcePathInSystemDomainMaskByAppending
+|| __TEXT.__text _CSSafeSetOutErrorWithNSError
+|| __TEXT.__text _CSShouldCensorSpeech
+|| __TEXT.__text _CSSupportsUSBTypeC
+|| __TEXT.__text _CSSupportsVibrator
+|| __TEXT.__text _CSSystemRootDirectory
+|| __TEXT.__text _CSUsesExplicitContentAllowedForCensorSetting
+|| __TEXT.__text _CSUsesMirroredCensorSetting
+|| __TEXT.__text _SSRLogInitIfNeeded
+|| __TEXT.__text __CSNotBackedupPreferencesSetValueForKey
+|| __TEXT.__text __CSNotBackedupPreferencesSetValueForKeyFromRoot
+|| __TEXT.__text __CSNotBackedupPreferencesValueForKey
+|| __TEXT.__text __CSPreferencesSetValueForKey
+|| __TEXT.__text __CSPreferencesSetValueForKeyFromRoot
+|| __TEXT.__text __CSPreferencesValueForKey
+|| __TEXT.__text __CSPreferencesValueForKeyFromRoot
+|| __TEXT.__text __ZN16LDLDecomposition9decomposeERKNSt3__16vectorIfNS0_9allocatorIfEEEE
+|| __TEXT.__text __ZN16LDLDecompositionC1Ev
+|| __TEXT.__text __ZN16LDLDecompositionC2Ev
+|| __TEXT.__text __ZN18BatchBeepCanceller10beepComingEj
+|| __TEXT.__text __ZN18BatchBeepCanceller10initializeERKNSt3__16vectorIfNS0_9allocatorIfEEEEPKcRKjSA_SA_SA_SA_SA_RKf
+|| __TEXT.__text __ZN18BatchBeepCanceller13doBatchCancelEj
+|| __TEXT.__text __ZN18BatchBeepCanceller13resetBeepInfoEi
+|| __TEXT.__text __ZN18BatchBeepCanceller14recordBeepInfoEi
+|| __TEXT.__text __ZN18BatchBeepCanceller16doAdaptiveCancelEj
+|| __TEXT.__text __ZN18BatchBeepCanceller16storeReportPart1Ej
+|| __TEXT.__text __ZN18BatchBeepCanceller16storeReportPart2Ej
+|| __TEXT.__text __ZN18BatchBeepCanceller22updateCrossCorrelationEjj
+|| __TEXT.__text __ZN18BatchBeepCanceller23proportionAbsAboveBoundERKNSt3__16vectorIfNS0_9allocatorIfEEEEfjj
+|| __TEXT.__text __ZN18BatchBeepCanceller24findCrossCorrelationPeakEjj
+|| __TEXT.__text __ZN18BatchBeepCanceller26initNonlinearBeepCancellerEv
+|| __TEXT.__text __ZN18BatchBeepCanceller3rmsERKNSt3__16vectorIfNS0_9allocatorIfEEEEj
+|| __TEXT.__text __ZN18BatchBeepCanceller3rmsERKNSt3__16vectorIfNS0_9allocatorIfEEEEjj
+|| __TEXT.__text __ZN18BatchBeepCanceller4feedEPKsjPS1_
+|| __TEXT.__text __ZN18BatchBeepCanceller5resetEv
+|| __TEXT.__text __ZN18BatchBeepCanceller6maxabsERKNSt3__16vectorIfNS0_9allocatorIfEEEEjj
+|| __TEXT.__text __ZN18BatchBeepCanceller8convolveERNSt3__16vectorIfNS0_9allocatorIfEEEERKS4_S7_
+|| __TEXT.__text __ZN18BatchBeepCanceller9feedFloatEPKfjPS1_
+|| __TEXT.__text __ZN18BatchBeepCanceller9updateLDLERKjPKc
+|| __TEXT.__text __ZN18BatchBeepCancellerC1Ev
+|| __TEXT.__text __ZN18BatchBeepCancellerC2Ev
+|| __TEXT.__text __ZN22NonlinearBeepCanceller7nl_initEjfffffffffjjjjjjj
+|| __TEXT.__text __ZN22NonlinearBeepCanceller7nl_procEPK15AudioBufferListS2_PS0_S3_S3_S3_
+|| __TEXT.__text __ZN22NonlinearBeepCancellerC1Ev
+|| __TEXT.__text __ZN22NonlinearBeepCancellerC2Ev
+|| __TEXT.__text __ZNK16LDLDecomposition15wholeSquareRootEj
+|| __TEXT.__text __ZNK16LDLDecomposition9ldl_solveERKNSt3__16vectorIfNS0_9allocatorIfEEEERS4_
+|| __TEXT.__text __ZNK18BatchBeepCanceller12lastBeepInfoEP14_batchbeepinfo
+__ AVFAudio: _AVAudioSessionPortBluetoothA2DP
+__ AVFAudio: _AVAudioSessionPortBluetoothHFP
+__ AVFAudio: _AVAudioSessionPortHeadphones
+__ AVFAudio: _AVAudioSessionPortHeadsetMic
+__ AVFAudio: _AVSampleRateConverterAlgorithm_Mastering
+__ AVFAudio: _AVVoiceActivationDeviceIDKey
+__ AVFAudio: _AVVoiceActivationModeKey
+__ AVFAudio: _OBJC_CLASS_$_AVAudioSession
+__ Accelerate: _vDSP_DFT_DestroySetup
+__ Accelerate: _vDSP_DFT_Execute
+__ Accelerate: _vDSP_DFT_zrop_CreateSetup
+__ Accelerate: _vDSP_conv
+__ Accelerate: _vDSP_ctoz
+__ Accelerate: _vDSP_meanv
+__ Accelerate: _vDSP_svdiv
+__ Accelerate: _vDSP_svesq
+__ Accelerate: _vDSP_vabs
+__ Accelerate: _vDSP_vadd
+__ Accelerate: _vDSP_vclip
+__ Accelerate: _vDSP_vclr
+__ Accelerate: _vDSP_vdiv
+__ Accelerate: _vDSP_vfix16
+__ Accelerate: _vDSP_vflt16
+__ Accelerate: _vDSP_vma
+__ Accelerate: _vDSP_vmma
+__ Accelerate: _vDSP_vmul
+__ Accelerate: _vDSP_vsadd
+__ Accelerate: _vDSP_vsma
+__ Accelerate: _vDSP_vsmul
+__ Accelerate: _vDSP_vsub
+__ Accelerate: _vDSP_ztoc
+__ Accelerate: _vDSP_zvcma
+__ Accelerate: _vDSP_zvma
+__ Accelerate: _vDSP_zvmags
+__ Accelerate: _vDSP_zvmul
+__ AppSupport: _CPSharedResourcesDirectory
+__ AppSupport: _CPSystemRootDirectory
+__ AppleDisplayPlatform: _ADPAssertionCreateWithDispatchQueue
+__ AppleDisplayPlatform: _ADPAssertionDestroy
+__ AppleDisplayPlatform: _ADPAssertionSetCancelHandler
+__ AssistantServices: _AFDeviceSupportsSiriUOD
+__ AssistantServices: _AFOfflineDictationCapable
+__ AssistantServices: _AFPreferencesStartAlertEnabled
+__ AssistantServices: _OBJC_CLASS_$_AFFeatureFlags
+__ AssistantServices: _OBJC_CLASS_$_AFPreferences
+__ AudioToolbox: _AudioConverterFillComplexBuffer
+__ AudioToolbox: _AudioConverterNew
+__ AudioToolbox: _ExtAudioFileCreateWithURL
+__ AudioToolbox: _ExtAudioFileDispose
+__ AudioToolbox: _ExtAudioFileSetProperty
+__ AudioToolbox: _ExtAudioFileWrite
+__ Celestial: _AVSystemController_PlayingSessionsDescriptionAttribute
+__ Celestial: _AVSystemController_PlayingSessionsDescriptionKey_ClientPID
+__ Celestial: _AVSystemController_RouteDescriptionKey_BTDetails_EndpointType_Headphones
+__ Celestial: _AVSystemController_RouteDescriptionKey_BTDetails_EndpointType_Speakers
+__ Celestial: _AVSystemController_RouteDescriptionKey_BTDetails_EndpointType_TTY
+__ Celestial: _AVSystemController_RouteDescriptionKey_BTDetails_EndpointType_Unspecified
+__ Celestial: _AVSystemController_RouteDescriptionKey_BTDetails_EndpointType_Vehicle
+__ Celestial: _OBJC_CLASS_$_AVSystemController
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFDataGetBytes
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFErrorGetCode
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesCopyAppValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPreferencesSetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _NSURLCreationDateKey
+__ CoreFoundation: _NSURLNameKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreServices: _OBJC_CLASS_$_LSApplicationProxy
+__ CrashReporterSupport: _OSAWriteLogForSubmission
+__ Foundation: _NSLog
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantFloatNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSFileHandle
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ IOKit: _IOObjectRelease
+__ IOKit: _IOPMAssertionCreateWithDescription
+__ IOKit: _IOPMAssertionCreateWithName
+__ IOKit: _IOPMAssertionRelease
+__ IOKit: _IORegistryEntryCreateCFProperty
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _kIOMasterPortDefault
+__ ManagedConfiguration: _MCFeatureAssistantProfanityFilterForced
+__ ManagedConfiguration: _MCFeatureExplicitContentAllowed
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ PowerLog: _PLLogRegisteredEvent
+__ PowerLog: _PLShouldLogRegisteredEvent
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessHandle
+__ RunningBoardServices: _OBJC_CLASS_$_RBSProcessIdentifier
+__ SAObjects: _SASCodecForString
+__ Security: _SecTaskCopyValueForEntitlement
+__ Security: _SecTaskCreateWithAuditToken
+__ SiriAnalytics: _OBJC_CLASS_$_AssistantSiriAnalytics
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaFirstPassChannelSelectionScore
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHASRAudioConfigureStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHApplicationPlaybackAttempted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioBluetoothInfo
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioConfigureContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioConfigureEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioConfigureStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioFanInfo
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioFetchRouteContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioFetchRouteEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioFetchRouteStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioInitContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioInitEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioInitStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioLateBufferDetected
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrepareContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrepareEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrepareStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrewarmContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrewarmEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioPrewarmStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordinFirstBufferReceipt
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingFailed
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingFirstBufferContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingFirstBufferStart
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingInterruptionContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingInterruptionEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingInterruptionStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingInterruptionStartedTier1
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingLastBufferContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingLastBufferReceipt
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingLastBufferStart
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingMissedBufferDetected
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioRecordingStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetActiveContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetActiveEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetActiveStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetInactiveContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetInactiveEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioSessionSetInactiveStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStartRecordingContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStartRecordingEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStartRecordingStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStopRecordingContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStopRecordingEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioStopRecordingeStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioTwoShotTransitionContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioTwoShotTransitionEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHAssistantDaemonAudioTwoShotTransitionStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHClientEvent
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHClientEventMetadata
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHCoreSpeechPreprocessorCompleted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHCoreSpeechZeroFilterRunPair
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHSiriLaunchRequestContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHSiriLaunchRequestEnded
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHSiriLaunchRequestStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerContext
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerEventInfo
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerSecondPassCancelled
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerSecondPassRejected
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerSecondPassStarted
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerSecondPassTriggered
+__ SiriInstrumentation: _OBJC_CLASS_$_MHSchemaMHVoiceTriggerTwoShotDetected
+__ SiriInstrumentation: _OBJC_CLASS_$_SIRISETUPSchemaSIRISETUPClientEvent
+__ SiriInstrumentation: _OBJC_CLASS_$_SIRISETUPSchemaSIRISETUPClientEventMetadata
+__ SiriInstrumentation: _OBJC_CLASS_$_SIRISETUPSchemaSIRISETUPPHSEnrollmentDigitalZeroDetectionCompleted
+__ SiriInstrumentation: _OBJC_CLASS_$_SIRISETUPSchemaSIRISETUPPHSEnrollmentUtteranceCompleted
+__ SiriInstrumentation: _OBJC_CLASS_$_SISchemaUUID
+__ SoftLinking: __sl_dlopen
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libMobileGestalt.dylib: _MGGetSInt32Answer
+__ libSystem.B.dylib: _CC_SHA1
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___exp10f
+__ libSystem.B.dylib: ___fpclassifyd
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _cosf
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_async_and_wait
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_pthread_root_queue_create
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_create_with_target$V2
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _gettimeofday
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _log10
+__ libSystem.B.dylib: _log10f
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_continuous_time
+__ libSystem.B.dylib: _mach_get_times
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _os_variant_is_darwinos
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _pthread_attr_destroy
+__ libSystem.B.dylib: _pthread_attr_getschedparam
+__ libSystem.B.dylib: _pthread_attr_init
+__ libSystem.B.dylib: _pthread_attr_setinheritsched
+__ libSystem.B.dylib: _pthread_attr_setschedparam
+__ libSystem.B.dylib: _pthread_attr_setschedpolicy
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _xpc_bool_create
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_array
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_dictionary
+__ libSystem.B.dylib: _xpc_dictionary_get_double
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_double_create
+__ libSystem.B.dylib: _xpc_int64_create
+__ libSystem.B.dylib: _xpc_uint64_create
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x2
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+CSVoiceTriggerAirPodWearerDetectionConfig : NSObject
+ @property  float threshold
+ @property  float minimumPhraseLength
+ @property  float shadowMicScoreThreshold
+ @property  float myriadThreshold
+ @property  NSArray *phrasesToSkipBoronDecisionMaking
+
+  // instance methods
+  -[CSVoiceTriggerAirPodWearerDetectionConfig threshold]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig .cxx_destruct]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig initWithThreshold:minimumPhraseLength:shadowMicScoreThreshold:myriadThreshold:phrasesToSkipBoronDecisionMaking:]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig minimumPhraseLength]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig shadowMicScoreThreshold]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig myriadThreshold]
+  -[CSVoiceTriggerAirPodWearerDetectionConfig phrasesToSkipBoronDecisionMaking]
+
+
+CSAudioTimeConverterPool : NSObject
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  NSMutableDictionary *pool
+
+  // class methods
+  +[CSAudioTimeConverterPool sharedInstance]
+
+  // instance methods
+  -[CSAudioTimeConverterPool pool]
+  -[CSAudioTimeConverterPool .cxx_destruct]
+  -[CSAudioTimeConverterPool setQueue:]
+  -[CSAudioTimeConverterPool queue]
+  -[CSAudioTimeConverterPool setPool:]
+  -[CSAudioTimeConverterPool init]
+  -[CSAudioTimeConverterPool defaultConverter]
+  -[CSAudioTimeConverterPool converterForAudioStreamId:]
+  -[CSAudioTimeConverterPool _getAudioTimeConverterWithAudioStreamId:]
+
+
+CSVoiceTriggerFirstPassConfig : NSObject
+ @property  NSString *configPathNDAPI
+ @property  float threshold
+ @property  float delaySecondsForChannelSelection
+ @property  float masterChannelScoreBoost
+ @property  float processingChunkSeconds
+ @property  unsigned long processingChannelsBitset
+
+  // instance methods
+  -[CSVoiceTriggerFirstPassConfig threshold]
+  -[CSVoiceTriggerFirstPassConfig .cxx_destruct]
+  -[CSVoiceTriggerFirstPassConfig configPathNDAPI]
+  -[CSVoiceTriggerFirstPassConfig initWithConfigPathNDAPI:threshold:delaySecondsForChannelSelection:masterChannelScoreBoost:processingChunkSeconds:processingChannelsBitset:]
+  -[CSVoiceTriggerFirstPassConfig processingChannelsBitset]
+  -[CSVoiceTriggerFirstPassConfig processingChunkSeconds]
+  -[CSVoiceTriggerFirstPassConfig masterChannelScoreBoost]
+  -[CSVoiceTriggerFirstPassConfig delaySecondsForChannelSelection]
+
+
+CSAudioChunkForTV : NSObject
+ @property  NSArray *packets
+ @property  float avgPower
+ @property  float peakPower
+ @property  unsigned long timeStamp
+ @property  unsigned int numChannels
+ @property  unsigned int audioFormat
+ @property  unsigned long streamHandleID
+
+  // instance methods
+  -[CSAudioChunkForTV peakPower]
+  -[CSAudioChunkForTV xpcObject]
+  -[CSAudioChunkForTV .cxx_destruct]
+  -[CSAudioChunkForTV initWithXPCObject:]
+  -[CSAudioChunkForTV timeStamp]
+  -[CSAudioChunkForTV audioFormat]
+  -[CSAudioChunkForTV setAudioFormat:]
+  -[CSAudioChunkForTV setTimeStamp:]
+  -[CSAudioChunkForTV packets]
+  -[CSAudioChunkForTV setPackets:]
+  -[CSAudioChunkForTV avgPower]
+  -[CSAudioChunkForTV setAvgPower:]
+  -[CSAudioChunkForTV setPeakPower:]
+  -[CSAudioChunkForTV numChannels]
+  -[CSAudioChunkForTV setNumChannels:]
+  -[CSAudioChunkForTV streamHandleID]
+  -[CSAudioChunkForTV setStreamHandleID:]
+
+
+CSMobileAssetVersions : NSObject
+  // class methods
+  +[CSMobileAssetVersions getVoiceTriggerAssetTypeStringWithSupportMphAssets:deviceIsIPad:deviceIsWatch:deviceIsHorseman:deviceIsOSX:deviceIsTV:deviceIsIOS:]
+  +[CSMobileAssetVersions getVoiceTriggerCurrentCompatibilityVersion]
+  +[CSMobileAssetVersions getVoiceTriggerCurrentCompatibilityVersionWithSupportMphAssets:deviceIsIPad:deviceIsWatch:deviceIsHorseman:deviceIsOSX:deviceIsTV:deviceIsIOS:]
+  +[CSMobileAssetVersions getVoiceTriggerAssetTypeString]
+
+
+CSAsset : NSObject
+ @property  NSString *path
+ @property  NSString *resourcePath
+ @property  NSDictionary *dictionary
+ @property  NSString *hashFromResourcePath
+ @property  NSString *configVersion
+ @property  unsigned long assetProvider
+
+  // class methods
+  +[CSAsset hybridEndpointerAssetFilename]
+  +[CSAsset assetForAssetType:resourcePath:configVersion:]
+  +[CSAsset getConfigFileNameForAssetType:]
+  +[CSAsset assetForAssetType:resourcePath:configVersion:assetProvider:]
+  +[CSAsset fallBackAssetResourcePath]
+  +[CSAsset defaultFallBackAssetForSmartSiriVolume]
+  +[CSAsset defaultFallBackAssetForHearst]
+  +[CSAsset defaultFallBackAssetForAdBlocker]
+  +[CSAsset defaultFallBackAssetForVoiceTrigger]
+  +[CSAsset parseCompatibilityFromConfigVersion:]
+  +[CSAsset decodeJson:]
+  +[CSAsset isLeftConfigVersion:newerThanRightConfigVersion:]
+
+  // instance methods
+  -[CSAsset resourcePath]
+  -[CSAsset path]
+  -[CSAsset configVersion]
+  -[CSAsset .cxx_destruct]
+  -[CSAsset dictionary]
+  -[CSAsset initWithResourcePath:configFile:configVersion:assetProvderType:]
+  -[CSAsset getNumberForKey:category:default:]
+  -[CSAsset getBoolForKey:category:default:]
+  -[CSAsset getStringForKey:category:default:]
+  -[CSAsset getValueForKey:category:]
+  -[CSAsset containsKey:category:]
+  -[CSAsset containsCategory:]
+  -[CSAsset hashFromResourcePath]
+  -[CSAsset isEqualAsset:]
+  -[CSAsset stringForCurrentAssetProviderType]
+  -[CSAsset assetHashForTrial:]
+  -[CSAsset assetHashInResourcePath:]
+  -[CSAsset _sha1ForString:]
+  -[CSAsset assetProvider]
+
+
+CSVoiceTriggerSecondPassConfig : NSObject
+ @property  float preTriggerAudioTime
+ @property  float prependingAudioTime
+ @property  float trailingAudioTime
+ @property  NSString *resourcePath
+ @property  NSString *configPathNDAPI
+ @property  BOOL useRecognizerCombination
+ @property  NSString *configPathRecognizer
+ @property  BOOL useKeywordSpotting
+ @property  NSArray *phraseConfigs
+ @property  CSVoiceTriggerAirPodWearerDetectionConfig *wearerDetectionConfig
+
+  // instance methods
+  -[CSVoiceTriggerSecondPassConfig resourcePath]
+  -[CSVoiceTriggerSecondPassConfig .cxx_destruct]
+  -[CSVoiceTriggerSecondPassConfig configPathNDAPI]
+  -[CSVoiceTriggerSecondPassConfig initWithPreTriggerAudioTime:prependingAudioTime:trailingAudioTime:resourcePath:configPathNDAPI:useRecognizerCombination:configPathRecognizer:useKeywordSpotting:phraseConfigs:wearerDetectionConfig:]
+  -[CSVoiceTriggerSecondPassConfig preTriggerAudioTime]
+  -[CSVoiceTriggerSecondPassConfig prependingAudioTime]
+  -[CSVoiceTriggerSecondPassConfig trailingAudioTime]
+  -[CSVoiceTriggerSecondPassConfig useRecognizerCombination]
+  -[CSVoiceTriggerSecondPassConfig configPathRecognizer]
+  -[CSVoiceTriggerSecondPassConfig useKeywordSpotting]
+  -[CSVoiceTriggerSecondPassConfig phraseConfigs]
+  -[CSVoiceTriggerSecondPassConfig wearerDetectionConfig]
+
+
+CSVTUITrainingSelfLogger : NSObject
+  // class methods
+  +[CSVTUITrainingSelfLogger sharedLogger]
+
+  // instance methods
+  -[CSVTUITrainingSelfLogger logSiriSetupPHSEnrollmentUtteranceCompletedWithSiriSetupID:withPageNumber:withPhId:withTopScoreForUtterance:withStartSampleCount:withEndSampleCount:withHasSpeechDetected:]
+  -[CSVTUITrainingSelfLogger logSiriSetupPHSEnrollmentDigitalZeroDetectionCompletedWithSiriSetupID:withPageNumber:withPhId:withMaxNumContinuousZeros:withMaxNumAllowedContinuousZeros:withIsMaxNumContinuousZerosOverThreshold:]
+
+
+CSVoiceTriggerPhraseConfig : NSObject
+ @property  NSString *name
+ @property  float threshold
+ @property  float secondChanceThreshold
+ @property  float loggingThreshold
+ @property  float ndapiScaleFactor
+ @property  float recognizerScoreOffset
+ @property  float recognizerScoreScaleFactor
+ @property  NSString *recognizerToken
+ @property  float twoShotFeedbackDelay
+ @property  float remoraTwoShotFeedbackDelay
+ @property  float keywordRejectLoggingThreshold
+ @property  float speakerRejectLoggingThreshold
+ @property  float preTriggerSilenceOffset
+
+  // instance methods
+  -[CSVoiceTriggerPhraseConfig threshold]
+  -[CSVoiceTriggerPhraseConfig .cxx_destruct]
+  -[CSVoiceTriggerPhraseConfig name]
+  -[CSVoiceTriggerPhraseConfig initWithName:threshold:secondChanceThreshold:loggingThreshold:ndapiScaleFactor:recognizerScoreOffset:recognizerScoreScaleFactor:recognizerToken:twoShotFeedbackDelay:remoraTwoShotFeedbackDelay:keywordRejectLoggingThreshold:speakerRejectLoggingThreshold:preTriggerSilenceOffset:]
+  -[CSVoiceTriggerPhraseConfig copyWithThreshold:secondChanceThreshold:loggingThreshold:ndapiScaleFactor:recognizerScoreOffset:recognizerScoreScaleFactor:keywordRejectLoggingThreshold:]
+  -[CSVoiceTriggerPhraseConfig secondChanceThreshold]
+  -[CSVoiceTriggerPhraseConfig loggingThreshold]
+  -[CSVoiceTriggerPhraseConfig ndapiScaleFactor]
+  -[CSVoiceTriggerPhraseConfig recognizerScoreOffset]
+  -[CSVoiceTriggerPhraseConfig recognizerScoreScaleFactor]
+  -[CSVoiceTriggerPhraseConfig recognizerToken]
+  -[CSVoiceTriggerPhraseConfig twoShotFeedbackDelay]
+  -[CSVoiceTriggerPhraseConfig remoraTwoShotFeedbackDelay]
+  -[CSVoiceTriggerPhraseConfig keywordRejectLoggingThreshold]
+  -[CSVoiceTriggerPhraseConfig speakerRejectLoggingThreshold]
+  -[CSVoiceTriggerPhraseConfig preTriggerSilenceOffset]
+
+
+CSReusableBufferBackingStore : NSObject
+ @property  r^v bytes
+ @property  unsigned long recycleHostTime
+
+  // instance methods
+  -[CSReusableBufferBackingStore dealloc]
+  -[CSReusableBufferBackingStore .cxx_destruct]
+  -[CSReusableBufferBackingStore bytes]
+  -[CSReusableBufferBackingStore initWithBuffer:bufferSize:deallocator:]
+  -[CSReusableBufferBackingStore configureWithBytes:length:]
+  -[CSReusableBufferBackingStore recycleHostTime]
+  -[CSReusableBufferBackingStore setRecycleHostTime:]
+
+
+CSReusableSharedMemoryBackingStore : CSReusableBufferBackingStore
+  // instance methods
+  -[CSReusableSharedMemoryBackingStore initWithBuffer:bufferSize:deallocator:]
+
+
+CSReusablePrivateMemoryBackingStore : CSReusableBufferBackingStore
+  // instance methods
+  -[CSReusablePrivateMemoryBackingStore initWithBufferSize:]
+
+
+CSAudioZeroFilter : NSObject
+  // instance methods
+  -[CSAudioZeroFilter .cxx_construct]
+  -[CSAudioZeroFilter .cxx_destruct]
+  -[CSAudioZeroFilter metrics]
+  -[CSAudioZeroFilter initWithZeroWindowSize:approxAbsSpeechThreshold:numHostTicksPerAudioSample:]
+  -[CSAudioZeroFilter filterZerosInAudioPacket:atBufferHostTime:filteredPacket:]
+  -[CSAudioZeroFilter endAudioAndFetchAnyTrailingZerosPacket:]
+
+
+CSOSTransactionStat : NSObject
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  int numTransactionNow
+
+  // class methods
+  +[CSOSTransactionStat sharedInstance]
+
+  // instance methods
+  -[CSOSTransactionStat .cxx_destruct]
+  -[CSOSTransactionStat setQueue:]
+  -[CSOSTransactionStat queue]
+  -[CSOSTransactionStat init]
+  -[CSOSTransactionStat reportCreation]
+  -[CSOSTransactionStat reportDestroy]
+  -[CSOSTransactionStat numTransaction]
+  -[CSOSTransactionStat numTransactionNow]
+  -[CSOSTransactionStat setNumTransactionNow:]
+
+
+CSFAudioMetricsSelfLogger : NSObject
+  // class methods
+  +[CSFAudioMetricsSelfLogger sharedLogger]
+
+  // instance methods
+  -[CSFAudioMetricsSelfLogger init]
+  -[CSFAudioMetricsSelfLogger _getSelfFanWithCSSiriFanInfo:]
+  -[CSFAudioMetricsSelfLogger _getSelfStopRecordingReasonWithADStopRecordingEvent:]
+  -[CSFAudioMetricsSelfLogger _getMHBluetoothAudioDeviceCategoryFromString:]
+  -[CSFAudioMetricsSelfLogger _getRunPairs:]
+  -[CSFAudioMetricsSelfLogger _getPreprocessorCompletedMessageWithMetrics:]
+  -[CSFAudioMetricsSelfLogger logCoreSpeechPreprocessorCompletedWithMHUUID:withMetricsDictionary:]
+  -[CSFAudioMetricsSelfLogger logMHASRAudioConfigureStartedWithMHUUID:withAudioCodecString:withAudioSkippedNumSamples:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioInitContextWithMHUUID:withInitStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioConfigureContextWithMHUUID:withConfigureStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioPrepareContextWithMHUUID:withPrepareStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioPrewarmContextWithMHUUID:withPrewarmStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioStartRecordingContextWithMHUUID:withStartRecordingContext:withFanInfoArray:withActiveSessionDisplayIDs:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioStopRecordingContextWithMHUUID:withStopRecordingStarted:withADStopRecordingEvent:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioSessionSetActivateContextWithMHUUID:withSetActivateStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioSessionSetInactiveWithMHUUID:withSetInactiveStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioFetchRouteContextWithMHUUID:withFetchRouteContextStarted:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingContextWithMHUUID:withAudioRecordingStarted:withAudioInputRoute:withAudioSource:withAudioInterfaceVendorId:withAudioInterfaceProductId:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingMissedBufferDetectedWithMHUUID:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioLateBufferDetectedWithMHUUID:withBufferReceiptTimeInNs:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingFirstBufferWithMHUUID:withStartEvent:withFirstBufferStartTimeOffsetNs:withFirstBufferReceiptTimeOffsetNs:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingLastBufferWithMHUUID:withStartEvent:withLastBufferStartTimeOffsetNs:withLastBufferReceiptTimeOffsetNs:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingInterruptionContextWithMHUUID:withStartEvent:withLinkID:withAvAudioSessionInterruptorName:withAVAudioSessionInterrupterType:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingInterruptionStartedTier1WithMHUUID:withLinkID:withActiveSessionDisplayIDs:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioBluetoothInfoWithMHUUID:withWirelessSplitterSessionState:withAudioDeviceCategory:]
+  -[CSFAudioMetricsSelfLogger logMHApplicationPlaybackAttemptedWithMHUUID:withAppBundleName:withAppBundleVersion:]
+  -[CSFAudioMetricsSelfLogger logMHAssistantDaemonAudioRecordingFailedWithMHUUID:withReason:vendorId:productId:]
+  -[CSFAudioMetricsSelfLogger _getSpeechErrorTypeWithRecordingFailedReason:]
+
+
+CSAudioPlayingAppMonitor : NSObject
+  // class methods
+  +[CSAudioPlayingAppMonitor sharedMonitor]
+
+  // instance methods
+  -[CSAudioPlayingAppMonitor init]
+  -[CSAudioPlayingAppMonitor playingApps]
+
+
+CSUtils : NSObject
+  // class methods
+  +[CSUtils deviceProductVersion]
+  +[CSUtils deviceIdentifier]
+  +[CSUtils deviceProductType]
+  +[CSUtils supportTTS]
+  +[CSUtils _timeStampString]
+  +[CSUtils supportRemoteDarwinVoiceTrigger]
+  +[CSUtils systemUpTime]
+  +[CSUtils supportPremiumAssets]
+  +[CSUtils supportsANE]
+  +[CSUtils supportHearstVoiceTrigger]
+  +[CSUtils supportSessionActivateDelay]
+  +[CSUtils processIdentifier]
+  +[CSUtils supportPhatic]
+  +[CSUtils checkEntitlementForToken:withEntitlement:]
+  +[CSUtils getTokenFromDictionary:withTokenKey:]
+  +[CSUtils auditTokenToString:]
+  +[CSUtils isDarwinOS]
+  +[CSUtils isLocalVoiceTriggerAvailable]
+  +[CSUtils supportContinuousVoiceTrigger]
+  +[CSUtils supportKeywordDetector]
+  +[CSUtils supportOpportunisticZLL]
+  +[CSUtils supportSelfTriggerSuppression:refChannelIdx:]
+  +[CSUtils supportCSTwoShotDecision]
+  +[CSUtils supportHybridEndpointer]
+  +[CSUtils supportEndpointerWhileHostAsleep]
+  +[CSUtils supportSmartVolume]
+  +[CSUtils supportSAT]
+  +[CSUtils supportRaiseToSpeak]
+  +[CSUtils supportCompactPlus]
+  +[CSUtils supportPremiumWatchAssets]
+  +[CSUtils isIOSDeviceSupportingBargeIn]
+  +[CSUtils supportAdBlocker]
+  +[CSUtils supportContinuousAudioFingerprint]
+  +[CSUtils supportPremiumModel]
+  +[CSUtils shouldDelayPhaticForMyriadDecision]
+  +[CSUtils supportLanguageDetector]
+  +[CSUtils shouldDownloadVTAssetsOnDaemon]
+  +[CSUtils supportLazySessionActivation]
+  +[CSUtils supportMyriadLightHouse]
+  +[CSUtils supportAcousticProgressiveChecker]
+  +[CSUtils hasRemoteCoreSpeech]
+  +[CSUtils supportJarvisVoiceTrigger]
+  +[CSUtils supportRemoraVoiceTrigger]
+  +[CSUtils supportVoiceTriggerChannelSelection]
+  +[CSUtils supportHomeKitAccessory]
+  +[CSUtils supportBluetoothDeviceVoiceTrigger]
+  +[CSUtils shouldDeinterleaveAudioOnCS]
+  +[CSUtils supportCircularBuffer]
+  +[CSUtils supportBeepCanceller:]
+  +[CSUtils supportZeroFilter:]
+  +[CSUtils rootQueueWithFixedPriority:]
+  +[CSUtils getFixedPrioritySerialQueueWithLabel:fixedPriority:]
+  +[CSUtils getFixedHighPrioritySerialQueueWithLabel:priority:]
+  +[CSUtils getSerialQueue:qualityOfService:]
+  +[CSUtils getSerialQueue:withQualityOfService:andTargetQueue:]
+  +[CSUtils deviceUserAssignedName]
+  +[CSUtils deviceBuildVersion]
+  +[CSUtils deviceHwRevision]
+  +[CSUtils timeStampWithSaltGrain]
+  +[CSUtils supportsSpeakerRecognitionAssets]
+  +[CSUtils supportsSiriLiminal]
+  +[CSUtils supportNonInterruptibleSiri]
+  +[CSUtils supportHandsFree]
+  +[CSUtils supportsVoiceTriggerFides]
+  +[CSUtils supportsUnderstandingOnDevice]
+  +[CSUtils supportsDictationOnDevice]
+  +[CSUtils supportsSpeechRecognitionOnDevice]
+  +[CSUtils isAttentiveSiriEnabled]
+  +[CSUtils deviceRequirePowerAssertionHeld]
+  +[CSUtils deviceRequirePreventStandbyAssertion]
+  +[CSUtils supportsEndpointingOnATV]
+  +[CSUtils supportHangUp]
+  +[CSUtils supportTrialMitigationAssets]
+  +[CSUtils supportRingtoneA2DP]
+  +[CSUtils supportMph]
+  +[CSUtils supportMphAssets]
+  +[CSUtils horsemanDeviceType]
+  +[CSUtils getResourcePathInSystemDomainMaskByAppending:]
+  +[CSUtils getResourcePathInSystemDomainMaskFromRootPathByAppending:]
+  +[CSUtils allowExtendedRingBufferSize]
+  +[CSUtils platformSupportsImplcitUttAddition]
+  +[CSUtils isHFPWithRecordRoute:]
+  +[CSUtils isHeadphoneDeviceWithRecordRoute:playbackRoute:]
+  +[CSUtils isBluetoothAudioDeviceConnected]
+  +[CSUtils audioPortSubtypeAsString:]
+  +[CSUtils _sharedDisposeLoggingQueue]
+  +[CSUtils removeLogFilesInDirectory:matchingPattern:beforeDays:]
+  +[CSUtils clearLogFilesInDirectory:matchingPattern:exceedNumber:]
+  +[CSUtils loggingFilePathWithDirectory:token:postfix:]
+  +[CSUtils _createLoggingDirectoryIfNeeded:]
+  +[CSUtils URLsInDirectory:matchingPattern:completion:]
+  +[CSUtils _sortedURLsInDirectory:matchingPattern:completion:]
+  +[CSUtils _contentsOfDirectoryAtURL:matchingPattern:includingPropertiesForKeys:error:]
+
+
+CSAudioRecordContext : NSObject <NSCopying>
+ @property  long long type
+ @property  NSString *deviceId
+ @property  BOOL alwaysUseRemoteBuiltInMic
+ @property  BOOL isRequestDuringActiveCall
+ @property  NSDictionary *activationMetadata
+ @property  NSString *turnIdentifier
+ @property  NSObject<OS_xpc_object> *xpcObject
+ @property  BOOL isRequestFromSpokenNotification
+
+  // class methods
+  +[CSAudioRecordContext defaultContext]
+  +[CSAudioRecordContext contextForHearstVoiceTriggerWithDeviceId:]
+  +[CSAudioRecordContext contextForRemoraVoiceTriggerWithDeviceId:]
+  +[CSAudioRecordContext contextForRemoraButtonTriggerWithDeviceId:]
+  +[CSAudioRecordContext contextForOpportuneSpeakerListener]
+  +[CSAudioRecordContext contextForOpportuneSpeakerListenerWithCall]
+  +[CSAudioRecordContext contextForBuiltInVoiceTrigger]
+  +[CSAudioRecordContext contextForJarvisWithDeviceId:]
+  +[CSAudioRecordContext contextForBTLEWithDeviceId:]
+  +[CSAudioRecordContext contextForVoiceTriggerTraining]
+  +[CSAudioRecordContext contextForServerInvoke]
+  +[CSAudioRecordContext contextForHomeButton]
+  +[CSAudioRecordContext contextForDarwinVoiceTriggerWithDeviceId:]
+  +[CSAudioRecordContext contextForDictation]
+  +[CSAudioRecordContext recordTypeString:]
+
+  // instance methods
+  -[CSAudioRecordContext deviceId]
+  -[CSAudioRecordContext turnIdentifier]
+  -[CSAudioRecordContext type]
+  -[CSAudioRecordContext xpcObject]
+  -[CSAudioRecordContext setDeviceId:]
+  -[CSAudioRecordContext .cxx_destruct]
+  -[CSAudioRecordContext initWithXPCObject:]
+  -[CSAudioRecordContext setType:]
+  -[CSAudioRecordContext activationMetadata]
+  -[CSAudioRecordContext copyWithZone:]
+  -[CSAudioRecordContext isEqual:]
+  -[CSAudioRecordContext setTurnIdentifier:]
+  -[CSAudioRecordContext initWithAVVCContext:]
+  -[CSAudioRecordContext initWithRecordType:deviceId:]
+  -[CSAudioRecordContext avvcContext]
+  -[CSAudioRecordContext _createAVVCContextWithType:deviceId:]
+  -[CSAudioRecordContext isVoiceTriggered]
+  -[CSAudioRecordContext isBuiltInVoiceTriggered]
+  -[CSAudioRecordContext isVoiceTriggeredFromRemoteXPCDevice]
+  -[CSAudioRecordContext isGibraltarVoiceTriggered]
+  -[CSAudioRecordContext isTriggeredFromHearst]
+  -[CSAudioRecordContext isHearstVoiceTriggered]
+  -[CSAudioRecordContext isHearstDoubleTapTriggered]
+  -[CSAudioRecordContext isRTSTriggered]
+  -[CSAudioRecordContext isJarvisVoiceTriggered]
+  -[CSAudioRecordContext isRemoraVoiceTriggered]
+  -[CSAudioRecordContext isRemoraTriggered]
+  -[CSAudioRecordContext isRemoraButtonPress]
+  -[CSAudioRecordContext isDarwinVoiceTriggered]
+  -[CSAudioRecordContext isHomePressed]
+  -[CSAudioRecordContext isTVRemote]
+  -[CSAudioRecordContext isServerInvoked]
+  -[CSAudioRecordContext isStarkTriggered]
+  -[CSAudioRecordContext isDictation]
+  -[CSAudioRecordContext isiOSButtonPress]
+  -[CSAudioRecordContext isUIButtonPress]
+  -[CSAudioRecordContext isAudioRecordTypeSupportedByRemora]
+  -[CSAudioRecordContext recordTypeFromAVVCActivationMode:]
+  -[CSAudioRecordContext avvcActivationMode:]
+  -[CSAudioRecordContext alwaysUseRemoteBuiltInMic]
+  -[CSAudioRecordContext setAlwaysUseRemoteBuiltInMic:]
+  -[CSAudioRecordContext isRequestDuringActiveCall]
+  -[CSAudioRecordContext setIsRequestDuringActiveCall:]
+  -[CSAudioRecordContext setActivationMetadata:]
+  -[CSAudioRecordContext isRequestFromSpokenNotification]
+  -[CSAudioRecordContext setIsRequestFromSpokenNotification:]
+
+
+CSADPPreventStandbyAssertion : NSObject
+ @property  ^{ADPAssertion=} adpAssertion
+ @property  NSString *name
+ @property  NSObject<OS_dispatch_queue> *clientQueue
+
+  // instance methods
+  -[CSADPPreventStandbyAssertion setClientQueue:]
+  -[CSADPPreventStandbyAssertion clientQueue]
+  -[CSADPPreventStandbyAssertion dealloc]
+  -[CSADPPreventStandbyAssertion .cxx_destruct]
+  -[CSADPPreventStandbyAssertion setName:]
+  -[CSADPPreventStandbyAssertion name]
+  -[CSADPPreventStandbyAssertion initWithName:clientQueue:]
+  -[CSADPPreventStandbyAssertion _setupADPAssertion:]
+  -[CSADPPreventStandbyAssertion adpAssertion]
+  -[CSADPPreventStandbyAssertion setAdpAssertion:]
+
+
+CSAudioTimeConverter : NSObject
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  unsigned long anchorSampleCount
+ @property  unsigned long anchorHostTime
+
+  // instance methods
+  -[CSAudioTimeConverter hostTimeFromSampleCount:]
+  -[CSAudioTimeConverter .cxx_destruct]
+  -[CSAudioTimeConverter sampleCountFromHostTime:]
+  -[CSAudioTimeConverter setQueue:]
+  -[CSAudioTimeConverter queue]
+  -[CSAudioTimeConverter init]
+  -[CSAudioTimeConverter processSampleCount:hostTime:]
+  -[CSAudioTimeConverter anchorSampleCount]
+  -[CSAudioTimeConverter setAnchorSampleCount:]
+  -[CSAudioTimeConverter anchorHostTime]
+  -[CSAudioTimeConverter setAnchorHostTime:]
+
+
+CSPolicy : NSObject <CSEventMonitorDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CSPolicy setCallback:]
+  -[CSPolicy dealloc]
+  -[CSPolicy .cxx_destruct]
+  -[CSPolicy addConditions:]
+  -[CSPolicy CSEventMonitorDidReceiveEvent:]
+  -[CSPolicy init]
+  -[CSPolicy isEnabled]
+  -[CSPolicy subscribeEventMonitor:]
+  -[CSPolicy _checkAllConditionsEnabled]
+  -[CSPolicy notifyCallback:option:]
+  -[CSPolicy notifyCallbackWithOption:]
+
+
+CSDarwinVoiceTriggerEventInfoProvider : NSObject
+ @property  NSMutableDictionary *triggerInfos
+ @property  NSObject<OS_dispatch_queue> *queue
+
+  // class methods
+  +[CSDarwinVoiceTriggerEventInfoProvider sharedInstance]
+  +[CSDarwinVoiceTriggerEventInfoProvider voiceTriggerEventInfoWithAdjustedMachTime:deviceUUID:anchorHostMachTime:anchorDarwinMachTime:]
+
+  // instance methods
+  -[CSDarwinVoiceTriggerEventInfoProvider .cxx_destruct]
+  -[CSDarwinVoiceTriggerEventInfoProvider setQueue:]
+  -[CSDarwinVoiceTriggerEventInfoProvider queue]
+  -[CSDarwinVoiceTriggerEventInfoProvider init]
+  -[CSDarwinVoiceTriggerEventInfoProvider setRawVoiceTriggerEventInfo:fromDeviceUUID:anchorHostMachTime:anchorDarwinMachTime:]
+  -[CSDarwinVoiceTriggerEventInfoProvider getMachTimeAdjustedVoiceTriggerEventInfoForDeviceUUID:]
+  -[CSDarwinVoiceTriggerEventInfoProvider triggerInfos]
+  -[CSDarwinVoiceTriggerEventInfoProvider setTriggerInfos:]
+
+
+CSAudioChunk : NSObject
+ @property  NSData *data
+ @property  unsigned long numChannels
+ @property  unsigned long numSamples
+ @property  unsigned long sampleByteDepth
+ @property  unsigned long startSampleCount
+ @property  unsigned long hostTime
+ @property  unsigned long arrivalHostTimeToAudioRecorder
+ @property  BOOL wasBuffered
+ @property  BOOL remoteVADAvailable
+ @property  NSData *remoteVAD
+ @property  NSObject<OS_xpc_object> *xpcObject
+
+  // instance methods
+  -[CSAudioChunk numSamples]
+  -[CSAudioChunk xpcObject]
+  -[CSAudioChunk .cxx_destruct]
+  -[CSAudioChunk initWithXPCObject:]
+  -[CSAudioChunk hostTime]
+  -[CSAudioChunk data]
+  -[CSAudioChunk startSampleCount]
+  -[CSAudioChunk numChannels]
+  -[CSAudioChunk initWithData:numChannels:numSamples:sampleByteDepth:startSampleCount:hostTime:arrivalHostTimeToAudioRecorder:wasBuffered:remoteVAD:]
+  -[CSAudioChunk initWithData:numChannels:numSamples:sampleByteDepth:startSampleCount:hostTime:remoteVAD:]
+  -[CSAudioChunk chunkForChannel:]
+  -[CSAudioChunk dataForChannel:]
+  -[CSAudioChunk dataWithRemoteVADWithScaleFactor:numAudioSamplesPerRemoteVAD:]
+  -[CSAudioChunk remoteVADAvailable]
+  -[CSAudioChunk subChunkFrom:numSamples:forChannel:]
+  -[CSAudioChunk subChunkFrom:numSamples:]
+  -[CSAudioChunk copySubAudioChunkFrom:numSamples:to:dstBufferSize:]
+  -[CSAudioChunk remoteVADSubChunkFrom:numSamples:numAudioSamplesPerRemoteVAD:]
+  -[CSAudioChunk gainCompensatedChunk]
+  -[CSAudioChunk skipSamplesAtStartSuchThatNumSamplesReceivedSoFar:reachesACountOf:completionHandler:]
+  -[CSAudioChunk splitAudioChunkSuchThatNumSamplesReceivedSoFar:reachesACountOf:completionHandler:]
+  -[CSAudioChunk sampleByteDepth]
+  -[CSAudioChunk arrivalHostTimeToAudioRecorder]
+  -[CSAudioChunk wasBuffered]
+  -[CSAudioChunk remoteVAD]
+  -[CSAudioChunk setRemoteVAD:]
+
+
+CSAudioCircularBuffer : NSObject
+ @property  unsigned long bufferLength
+ @property  CSAudioTimeConverter *audioTimeConverter
+ @property  unsigned long numInputChannels
+ @property  float inputRecordingDuration
+
+  // instance methods
+  -[CSAudioCircularBuffer .cxx_construct]
+  -[CSAudioCircularBuffer reset]
+  -[CSAudioCircularBuffer .cxx_destruct]
+  -[CSAudioCircularBuffer audioTimeConverter]
+  -[CSAudioCircularBuffer sampleCount]
+  -[CSAudioCircularBuffer setAudioTimeConverter:]
+  -[CSAudioCircularBuffer initWithNumChannels:recordingDuration:samplingRate:]
+  -[CSAudioCircularBuffer initWithNumChannels:recordingDuration:samplingRate:audioTimeConverter:]
+  -[CSAudioCircularBuffer numInputChannels]
+  -[CSAudioCircularBuffer inputRecordingDuration]
+  -[CSAudioCircularBuffer addSamples:numSamples:]
+  -[CSAudioCircularBuffer addSamples:numSamples:atHostTime:]
+  -[CSAudioCircularBuffer copySamplesFromHostTime:]
+  -[CSAudioCircularBuffer copySamplesFrom:to:]
+  -[CSAudioCircularBuffer copySamplesFrom:to:channelIdx:]
+  -[CSAudioCircularBuffer copybufferFrom:to:]
+  -[CSAudioCircularBuffer copyBufferWithNumSamplesCopiedIn:]
+  -[CSAudioCircularBuffer bufferLength]
+  -[CSAudioCircularBuffer setBufferLength:]
+  -[CSAudioCircularBuffer setNumInputChannels:]
+  -[CSAudioCircularBuffer setInputRecordingDuration:]
+
+
+CSAudioPlayingApp : NSObject
+ @property  NSString *bundleId
+ @property  NSString *appName
+ @property  NSString *version
+
+  // instance methods
+  -[CSAudioPlayingApp appName]
+  -[CSAudioPlayingApp .cxx_destruct]
+  -[CSAudioPlayingApp version]
+  -[CSAudioPlayingApp initWithPid:]
+  -[CSAudioPlayingApp bundleId]
+
+
+CSVoiceTriggerPhraseConfigDecoder : NSObject
+  // class methods
+  +[CSVoiceTriggerPhraseConfigDecoder decodeConfigFrom:category:]
+  +[CSVoiceTriggerPhraseConfigDecoder decodeConfigV2:category:]
+  +[CSVoiceTriggerPhraseConfigDecoder decodeConfigV1:category:]
+  +[CSVoiceTriggerPhraseConfigDecoder defaultTwoShotDelay]
+  +[CSVoiceTriggerPhraseConfigDecoder twoShotDelayConfigKey]
+  +[CSVoiceTriggerPhraseConfigDecoder adjustTwoShotDelay:]
+
+
+CSConfig : NSObject
+  // class methods
+  +[CSConfig daysBeforeRemovingLogFiles]
+  +[CSConfig inputRecordingBytesPerFrame]
+  +[CSConfig channelForOutputReference]
+  +[CSConfig inputRecordingSampleRate]
+  +[CSConfig inputRecordingNumberOfChannels]
+  +[CSConfig defaultContinousFingerprintBufferDuration]
+  +[CSConfig remoteVADDuration]
+  +[CSConfig inputRecordingBufferDuration]
+  +[CSConfig zeroFilterWindowSizeInMs]
+  +[CSConfig inputRecordingDurationInSecsExtended]
+  +[CSConfig inputRecordingSampleRateConverterAlgorithm]
+  +[CSConfig inputRecordingEncoderAudioQuality]
+  +[CSConfig hearstNumberOfBytesPerChunk]
+  +[CSConfig inputRecordingFramesPerPacket]
+  +[CSConfig inputRecordingDurationInSecs]
+  +[CSConfig audioConverterBitrate]
+  +[CSConfig inputRecordingSampleByteDepth]
+  +[CSConfig channelForProcessedInput]
+  +[CSConfig inputRecordingSampleBitDepth]
+  +[CSConfig inputRecordingIsFloat]
+  +[CSConfig hearstNumberOfSamplesPerChunk]
+  +[CSConfig EncryptionAudioSampleByteDepth]
+  +[CSConfig serverLoggingChannelBitset]
+  +[CSConfig zeroFilterApproxAbsSpeechThreshold]
+  +[CSConfig defaultContinousFingerprintBufferDurationForRemora]
+  +[CSConfig csAudioProcessingQueuePriority]
+  +[CSConfig inputRecordingBytesPerPacket]
+  +[CSConfig zeroFilterWindowSizeInMsForReport]
+  +[CSConfig inputRecordingSampleRateNarrowBand]
+
+
+CSFVoiceTriggerEventInfoSelfLogger : NSObject
+  // class methods
+  +[CSFVoiceTriggerEventInfoSelfLogger sharedLogger]
+
+  // instance methods
+  -[CSFVoiceTriggerEventInfoSelfLogger fetchAndClearCachedVoiceTriggerEventsWithCompletion:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logStartEventWithFirstPassStartedInfo:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logTriggerEventWithVTEI:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logRejectEventWithVTEI:withMHUUID:withSecondPassResult:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logCancelledEventWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logTwoShotEndEventWithSuppresedAlert:withTimedOut:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logTwoShotStartEventWithPromptType:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logTwoShotDetectedWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logSiriLaunchStartedWithVoiceTriggerEventInfo:]
+  -[CSFVoiceTriggerEventInfoSelfLogger logSiriLaunchCompletedWithVoiceTriggerEventInfo:]
+
+
+CSOSTransaction : NSObject
+  // instance methods
+  -[CSOSTransaction dealloc]
+  -[CSOSTransaction .cxx_destruct]
+  -[CSOSTransaction initWithDescription:]
+
+
+CSContinuousVoiceTriggerConfigDecoder : NSObject
+  // class methods
+  +[CSContinuousVoiceTriggerConfigDecoder decodeConfigFrom:]
+
+
+CSFTimeUtils : NSObject
+  // class methods
+  +[CSFTimeUtils secondsToHostTime:]
+  +[CSFTimeUtils hostTimeToSeconds:]
+  +[CSFTimeUtils hostTimeToTimeInterval:]
+  +[CSFTimeUtils getHostClockFrequency]
+  +[CSFTimeUtils hostTimeFromSampleCount:anchorHostTime:anchorSampleCount:sampleRate:]
+  +[CSFTimeUtils sampleCountFromHostTime:anchorHostTime:anchorSampleCount:sampleRate:]
+  +[CSFTimeUtils macHostTimeFromBridgeHostTime:]
+  +[CSFTimeUtils isReceivedTimeInterval:matchCurrentTimeInterval:]
+  +[CSFTimeUtils convertSampleCountToNs:sampleRate:]
+  +[CSFTimeUtils secondsToNs:]
+  +[CSFTimeUtils millisecondsToNs:]
+  +[CSFTimeUtils hostTimeToNs:]
+  +[CSFTimeUtils absoluteHostTimeToContinuousHostTime:]
+
+
+CSAudioDecoder : NSObject
+ @property  <CSAudioDecoderDelegate> *delegate
+
+  // instance methods
+  -[CSAudioDecoder setDelegate:]
+  -[CSAudioDecoder delegate]
+  -[CSAudioDecoder .cxx_destruct]
+  -[CSAudioDecoder initWithInASBD:outASBD:]
+  -[CSAudioDecoder addPackets:audioStreamHandleId:remoteVAD:timestamp:arrivalTimestampToAudioRecorder:wasBuffered:receivedNumChannels:]
+
+
+CSPlainAudioFileWriter : NSObject <CSAudioFileWriter>
+ @property  NSURL *fileURL
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CSPlainAudioFileWriter saveAudioChunck:toURL:]
+
+  // instance methods
+  -[CSPlainAudioFileWriter endAudio]
+  -[CSPlainAudioFileWriter fileURL]
+  -[CSPlainAudioFileWriter initWithURL:]
+  -[CSPlainAudioFileWriter dealloc]
+  -[CSPlainAudioFileWriter .cxx_destruct]
+  -[CSPlainAudioFileWriter initWithFilepath:]
+  -[CSPlainAudioFileWriter addSamples:numSamples:]
+  -[CSPlainAudioFileWriter initWithURL:inputFormat:outputFormat:]
+  -[CSPlainAudioFileWriter addContextKey:withContext:]
+  -[CSPlainAudioFileWriter createAcousticMetaFileForContext:withContext:]
+  -[CSPlainAudioFileWriter addContextKey:fromMetaFile:]
+
+
+CSFPreferences : NSObject
+  // class methods
+  +[CSFPreferences sharedPreferences]
+
+  // instance methods
+  -[CSFPreferences useSpeexForAudioInjection]
+  -[CSFPreferences isAdaptiveSiriVolumePermanentOffsetEnabled]
+  -[CSFPreferences startOfSpeechAudioLoggingEnabled]
+  -[CSFPreferences isEndpointAssetBypassTrialEnabled]
+  -[CSFPreferences setIsTimerPlayingOnAccessory:isTimerPlaying:]
+  -[CSFPreferences setVoiceTriggerEverUsed]
+  -[CSFPreferences enableEndpointEnhancedLogging:]
+  -[CSFPreferences setRemoteDarwinEverConnectedWithNotifyKey:]
+  -[CSFPreferences forceVoiceTriggerAPMode]
+  -[CSFPreferences getBooleanAccessorySettingValueForKey:forAccessory:]
+  -[CSFPreferences setFileLoggingIsEnabled:]
+  -[CSFPreferences speakerIdScoreReportingType]
+  -[CSFPreferences isMphVTEnabled]
+  -[CSFPreferences baseDir]
+  -[CSFPreferences voiceTriggerEnabled]
+  -[CSFPreferences setSelfTriggerEnabledGibraltar:]
+  -[CSFPreferences remoteVoiceTriggerDelayTime]
+  -[CSFPreferences isAdBlockerAudioLoggingEnabled]
+  -[CSFPreferences _isAdaptiveSiriVolumeDisabled]
+  -[CSFPreferences maxNumLoggingFiles]
+  -[CSFPreferences assistantAudioFileLogDirectory]
+  -[CSFPreferences _isRemoteVoiceTriggerAvailable]
+  -[CSFPreferences getSSVLogFilePathWithSessionIdentifier:]
+  -[CSFPreferences languageCodeDarwin]
+  -[CSFPreferences smartSiriVolumeSoftVolumeEnabled]
+  -[CSFPreferences clearMediaPlaybackInterruptedTimeOnAccessory:]
+  -[CSFPreferences getIdleUserPreventSleepAssertionAcquitionDate]
+  -[CSFPreferences isAlarmPlayingOnAccessory:]
+  -[CSFPreferences ssvLogDirectory]
+  -[CSFPreferences getJarvisTriggerMode]
+  -[CSFPreferences interstitialRelativeDirForLevel:]
+  -[CSFPreferences smartSiriVolumeContextAwareLoggingEnabled]
+  -[CSFPreferences audioInjectionFilePath]
+  -[CSFPreferences setFileLoggingLevel:]
+  -[CSFPreferences isModelBenchmarkingEnabled]
+  -[CSFPreferences isEndpointAssetOverridingEnabled]
+  -[CSFPreferences isTimerPlayingOnAccessory:]
+  -[CSFPreferences bypassPersonalizedHeySiri]
+  -[CSFPreferences myriadHashDirectory]
+  -[CSFPreferences isReducedPHSThresholdEnabled]
+  -[CSFPreferences setASVUserIntent:]
+  -[CSFPreferences clearTimerPlayingStatusOnAccessory:]
+  -[CSFPreferences forceVoiceTriggerAOPMode]
+  -[CSFPreferences audioSessionActivationDelay]
+  -[CSFPreferences myriadFileLoggingEnabled]
+  -[CSFPreferences jarvisAudioLoggingEnabled]
+  -[CSFPreferences remoteVoiceTriggerEndpointTimeoutWithDefault:]
+  -[CSFPreferences overwritingVoiceTriggerMLock]
+  -[CSFPreferences useSiriActivationSPIForwatchOS]
+  -[CSFPreferences setAudioInjectionFilePath:]
+  -[CSFPreferences setFakeHearstModelPath:]
+  -[CSFPreferences isAttentiveSiriAudioLoggingEnabled]
+  -[CSFPreferences isSpeakerRecognitionAvailable]
+  -[CSFPreferences _isDirectory:]
+  -[CSFPreferences interstitialAbsoluteDirForLevel:]
+  -[CSFPreferences readSpeakerIdScoreOverrrideConfig]
+  -[CSFPreferences opportuneSpeakListenerBypassEnabled]
+  -[CSFPreferences phraseSpotterEnabled]
+  -[CSFPreferences fakeMitigationAssetPath]
+  -[CSFPreferences trialBaseAssetDirectory]
+  -[CSFPreferences isAdaptiveSiriVolumeTemporaryIntentValid]
+  -[CSFPreferences shouldOverwriteVoiceTriggerMLock]
+  -[CSFPreferences shouldOverwriteRemoteVADScore]
+  -[CSFPreferences isVoiceTriggerAssetOverridingEnabled]
+  -[CSFPreferences getStartOfSpeechAudioLogFilePath]
+  -[CSFPreferences twoShotNotificationEnabled]
+  -[CSFPreferences companionSyncVoiceTriggerUtterancesEnabled]
+  -[CSFPreferences setMediaPlayingSettingForAccessory:isMediaPlaying:isInterrupted:interruptedTime:]
+  -[CSFPreferences isMitigationAssetOverridingEnabled]
+  -[CSFPreferences fakeHearstModelPath]
+  -[CSFPreferences audioInjectionEnabled]
+  -[CSFPreferences setIsMediaPlayingOnAccessory:isMediaPlaying:isInterrupted:interruptedTime:]
+  -[CSFPreferences setIdleUserPreventSleepAssertionAcquitionDate:]
+  -[CSFPreferences clearAlarmPlayingStatusOnAccessory:]
+  -[CSFPreferences bypassSpeakerIdForMitigation]
+  -[CSFPreferences personalizedSiriEnrollmentAudioLoggingEnabled]
+  -[CSFPreferences geckoAudioLogDirectory]
+  -[CSFPreferences audioInjectionEnabledWithKey:]
+  -[CSFPreferences disableAdaptiveSiriVolume:]
+  -[CSFPreferences clearMyriadSettingsOnAccessory:]
+  -[CSFPreferences geckoLoggingLevel]
+  -[CSFPreferences getMediaPlaybackInterruptedTime:]
+  -[CSFPreferences overwritingRemoteVADScore]
+  -[CSFPreferences remoteP2pLogDirectory]
+  -[CSFPreferences getAttendingTimeoutConfig]
+  -[CSFPreferences fakeVoiceTriggerAssetPath]
+  -[CSFPreferences _updatePreferenceSettingsForAccessory:settingsUpdateBlock:]
+  -[CSFPreferences assistantLogDirectory]
+  -[CSFPreferences fileLoggingLevel]
+  -[CSFPreferences programmableAudioInjectionEnabled]
+  -[CSFPreferences adaptiveSiriVolumeRecentIntent]
+  -[CSFPreferences setHearstSecondPassModelVersion:]
+  -[CSFPreferences setHearstFirstPassModelVersion:]
+  -[CSFPreferences clearMediaPlayingStatusOnAccessory:]
+  -[CSFPreferences enableAudioInjection:withKey:]
+  -[CSFPreferences isMultiChannelAudioLoggingEnabled]
+  -[CSFPreferences isEndpointEnhancedLoggingEnabled]
+  -[CSFPreferences enableProgrammableAudioInjection:]
+  -[CSFPreferences setBooleanAccessorySettingValue:forKey:forAccessory:]
+  -[CSFPreferences fakeEndpointAssetPath]
+  -[CSFPreferences setSiriLanguageCodeDarwin:]
+  -[CSFPreferences isMediaPlayingOnAccessory:]
+  -[CSFPreferences voiceTriggerAudioLogDirectory]
+  -[CSFPreferences isP2PTransferEnabled]
+  -[CSFPreferences _storeModeEnabled]
+  -[CSFPreferences isSelfTriggerFileLoggingEnabled]
+  -[CSFPreferences bypassTrialAssets]
+  -[CSFPreferences adaptiveSiriVolumePermanentOffset]
+  -[CSFPreferences speakerRecognitionAudioLoggingEnabled]
+  -[CSFPreferences setIsAlarmPlayingOnAccessory:isAlarmPlaying:]
+  -[CSFPreferences useSiriActivationSPIForHomePod]
+  -[CSFPreferences maxNumGradingFiles]
+  -[CSFPreferences isSelfTriggerEnabledGibraltar]
+  -[CSFPreferences myriadHashFilePath]
+  -[CSFPreferences secondPassAudioLoggingEnabled]
+  -[CSFPreferences fileLoggingIsEnabled]
+  -[CSFPreferences enableAudioInjection:]
+  -[CSFPreferences setJarvisTriggerMode:]
+  -[CSFPreferences remoteGradingDataDirectory]
+  -[CSFPreferences _clearAccessorySettingForKeys:forAccessory:]
+  -[CSFPreferences getASVUserIntent:]
+  -[CSFPreferences isPHSSupported]
+  -[CSFPreferences mhLogDirectory]
+  -[CSFPreferences smartSiriVolumeContextAwareEnabled]
+
+
+CSBeepCanceller : NSObject
+ @property  <CSBeepCancellerDelegate> *delegate
+ @property  NSDictionary *metrics
+
+  // instance methods
+  -[CSBeepCanceller setDelegate:]
+  -[CSBeepCanceller delegate]
+  -[CSBeepCanceller .cxx_construct]
+  -[CSBeepCanceller reset]
+  -[CSBeepCanceller .cxx_destruct]
+  -[CSBeepCanceller metrics]
+  -[CSBeepCanceller flush]
+  -[CSBeepCanceller init]
+  -[CSBeepCanceller cancelBeepFromSamples:timestamp:]
+  -[CSBeepCanceller willBeep]
+
+
+CSVoiceTriggerFirstPassConfigDecoder : NSObject
+  // class methods
+  +[CSVoiceTriggerFirstPassConfigDecoder decodeConfigFrom:]
+
+
+CSPowerAssertionAccessory : NSObject
+  // instance methods
+  -[CSPowerAssertionAccessory dealloc]
+  -[CSPowerAssertionAccessory .cxx_destruct]
+  -[CSPowerAssertionAccessory invalidate]
+  -[CSPowerAssertionAccessory initWithName:timeout:]
+
+
+CSFRangeUtils : NSObject
+ @property  unsigned long startPoint
+ @property  unsigned long endPoint
+
+  // instance methods
+  -[CSFRangeUtils startPoint]
+  -[CSFRangeUtils endPoint]
+  -[CSFRangeUtils initWithStartPoint:endPoint:]
+  -[CSFRangeUtils hasIntersectionWithRange:]
+
+
+CSDiagnosticReporter : NSObject
+ @property  SDRDiagnosticReporter *reporter
+ @property  NSObject<OS_dispatch_queue> *queue
+
+  // class methods
+  +[CSDiagnosticReporter sharedInstance]
+
+  // instance methods
+  -[CSDiagnosticReporter reporter]
+  -[CSDiagnosticReporter .cxx_destruct]
+  -[CSDiagnosticReporter setReporter:]
+  -[CSDiagnosticReporter setQueue:]
+  -[CSDiagnosticReporter queue]
+  -[CSDiagnosticReporter init]
+  -[CSDiagnosticReporter submitTrialIssueReport:]
+  -[CSDiagnosticReporter submitVoiceIdIssueReport:]
+  -[CSDiagnosticReporter submitAudioIssueReport:]
+  -[CSDiagnosticReporter submitVoiceTriggerIssueReport:]
+  -[CSDiagnosticReporter submitEndpointerIssueReport:]
+  -[CSDiagnosticReporter submitUresIssueReport:]
+  -[CSDiagnosticReporter submitSiriPowerIssueReport:]
+  -[CSDiagnosticReporter submitRemoteCoreSpeechIssueReport:context:]
+  -[CSDiagnosticReporter submitDiagnosticReportWithType:withSubType:withDuration:withContext:]
+
+
+CSAudioPowerMeter : NSObject
+  // instance methods
+  -[CSAudioPowerMeter _reset]
+  -[CSAudioPowerMeter reset]
+  -[CSAudioPowerMeter .cxx_destruct]
+  -[CSAudioPowerMeter initWithSampleRate:]
+  -[CSAudioPowerMeter _scaleDecayConstants:]
+  -[CSAudioPowerMeter processShortBuffer:stride:inFrameToProcess:]
+  -[CSAudioPowerMeter processFloatBuffer:stride:inFrameToProcess:]
+  -[CSAudioPowerMeter _savePeaks:averagePower:maxSample:]
+  -[CSAudioPowerMeter getPeakPowerDB]
+  -[CSAudioPowerMeter getAveragePowerDB]
+  -[CSAudioPowerMeter _ampToDB:]
+  -[CSAudioPowerMeter _linearToDB:]
+  -[CSAudioPowerMeter _zapgremlins:]
+
+
+CSFVoiceTriggerEventInfoSelfLoggerEmbedded : CSFVoiceTriggerEventInfoSelfLogger
+  // class methods
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToFirstPassSource:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _round:withPlaces:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded sanitizeEventInfoForLogging:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToSELFVTEI:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertPowerState:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertJarvisTriggerModeString:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToMatchResult:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToSELFRejectedReason:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToTwoShotPromptType:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _convertToFirstPassChannelSelectionScores:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _getStartedMessageWithFirstPassInfo:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _emitTwoShotClientEventWithTwoShotTransitionContext:withMHUUID:]
+  +[CSFVoiceTriggerEventInfoSelfLoggerEmbedded _emitVTClientEventWithVTContext:withMHUUID:]
+
+  // instance methods
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded init]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded fetchAndClearCachedVoiceTriggerEventsWithCompletion:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logStartEventWithFirstPassStartedInfo:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logTriggerEventWithVTEI:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logRejectEventWithVTEI:withMHUUID:withSecondPassResult:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logCancelledEventWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logTwoShotEndEventWithSuppresedAlert:withTimedOut:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logTwoShotStartEventWithPromptType:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logTwoShotDetectedWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logSiriLaunchStartedWithVoiceTriggerEventInfo:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerEmbedded logSiriLaunchCompletedWithVoiceTriggerEventInfo:]
+
+
+CSAudioZeroCounter : NSObject
+  // instance methods
+  -[CSAudioZeroCounter stopCountingZeroStatisticsWithReporter:]
+  -[CSAudioZeroCounter .cxx_destruct]
+  -[CSAudioZeroCounter resetWithSampleRate:]
+  -[CSAudioZeroCounter initWithToken:sampleRate:numChannels:]
+  -[CSAudioZeroCounter getZeroStatisticsFromBuffer:entireSamples:]
+
+
+CSContinuousVoiceTriggerConfig : NSObject
+ @property  NSString *configPathNDAPI
+ @property  float threshold
+ @property  float twoShotThreshold
+ @property  float twoShotDecisionWaitTime
+ @property  NSArray *voiceTriggerPhIds
+ @property  NSArray *silencePhIds
+
+  // instance methods
+  -[CSContinuousVoiceTriggerConfig threshold]
+  -[CSContinuousVoiceTriggerConfig initWithConfigPathNDAPI:threshold:twoShotThreshold:twoShotDecisionWaitTime:voiceTriggerPhIds:silencePhIds:]
+  -[CSContinuousVoiceTriggerConfig voiceTriggerPhIds]
+  -[CSContinuousVoiceTriggerConfig .cxx_destruct]
+  -[CSContinuousVoiceTriggerConfig configPathNDAPI]
+  -[CSContinuousVoiceTriggerConfig twoShotDecisionWaitTime]
+  -[CSContinuousVoiceTriggerConfig silencePhIds]
+  -[CSContinuousVoiceTriggerConfig twoShotThreshold]
+
+
+CSReusableBufferPool : NSObject
+ @property  CSReusableBufferPoolConfiguration *configuration
+
+  // instance methods
+  -[CSReusableBufferPool cleanup]
+  -[CSReusableBufferPool configuration]
+  -[CSReusableBufferPool .cxx_destruct]
+  -[CSReusableBufferPool initWithConfiguration:]
+  -[CSReusableBufferPool dataWithBytes:length:]
+  -[CSReusableBufferPool handleUsedBackingStore:]
+  -[CSReusableBufferPool _getAvailableBackingStore]
+  -[CSReusableBufferPool _createNewBackingStore]
+  -[CSReusableBufferPool _canCreateNewBackingStore]
+  -[CSReusableBufferPool _recycleUsedBackingStore:]
+  -[CSReusableBufferPool _checkIdleBackingStores]
+
+
+CSAudioFileManager : NSObject
+  // class methods
+  +[CSAudioFileManager createAudioFileWriterForAdBlockerWithInputFormat:outputFormat:withAccessoryID:]
+  +[CSAudioFileManager removeLogFilesOlderThanNDays:]
+  +[CSAudioFileManager _createAudioFileWriterForAdBlockerWithLoggingDir:inputFormat:outputFormat:withAccessoryID:]
+  +[CSAudioFileManager _getDateLabel]
+  +[CSAudioFileManager pruneNumberOfGradingFilesTo:]
+  +[CSAudioFileManager pruneLogFiles]
+  +[CSAudioFileManager removeRemoteP2PLogFilesOlderThanNDays:]
+  +[CSAudioFileManager createAudioFileWriterForPHSTrainingWithInputFormat:outputFormat:]
+  +[CSAudioFileManager cleanupOrphanedGradingFiles]
+  +[CSAudioFileManager generateDeviceAudioLogging:speechId:]
+  +[CSAudioFileManager removeOpportunisticAudioLoggingOlderThanNDays:]
+  +[CSAudioFileManager _createAudioFileWriterForOSDWithLoggingDir:inputFormat:outputFormat:]
+  +[CSAudioFileManager _createAudioFileWriterForOpportuneSpeakListenerWithLoggingDir:inputFormat:outputFormat:]
+  +[CSAudioFileManager _readDataFromFileHandle:toFileHandle:]
+  +[CSAudioFileManager createAudioFileWriterWithInputFormat:outputFormat:withLoggingUUID:]
+  +[CSAudioFileManager _createAudioFileWriterForPHSTrainingWithLoggingDir:inputFormat:outputFormat:]
+  +[CSAudioFileManager audioFileWriterForAttentiveSiri]
+  +[CSAudioFileManager _createAudioFileWriterWithLoggingDir:withLoggingUUID:inputFormat:outputFormat:]
+  +[CSAudioFileManager createAudioFileWriterForOSDWithInputFormat:outputFormat:]
+  +[CSAudioFileManager createSelectiveChannelAudioFileWriterWithChannelBitset:]
+  +[CSAudioFileManager createAudioFileWriterForOpportuneSpeakListenerWithInputFormat:outputFormat:]
+  +[CSAudioFileManager createAudioFileWriterForRemoteVADWithInputFormat:outputFormat:withLoggingUUID:]
+  +[CSAudioFileManager _sharedAudioLoggingQueue]
+  +[CSAudioFileManager pruneNumberOfLogFilesTo:]
+
+
+CSFCircularEventsCacheBuffer : NSObject
+ @property  NSMutableArray *eventsArray
+
+  // instance methods
+  -[CSFCircularEventsCacheBuffer .cxx_destruct]
+  -[CSFCircularEventsCacheBuffer init]
+  -[CSFCircularEventsCacheBuffer addEventToCacheBuffer:]
+  -[CSFCircularEventsCacheBuffer clearBuffer]
+  -[CSFCircularEventsCacheBuffer eventsArray]
+
+
+CSFVoiceTriggerEventInfoSelfLoggerDarwin : CSFVoiceTriggerEventInfoSelfLogger
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  CSFCircularEventsCacheBuffer *firstPassEvents
+ @property  CSFCircularEventsCacheBuffer *rejectEvents
+ @property  CSFCircularEventsCacheBuffer *cancelledEvents
+
+  // instance methods
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin .cxx_destruct]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin setQueue:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin queue]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin init]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin fetchAndClearCachedVoiceTriggerEventsWithCompletion:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logStartEventWithFirstPassStartedInfo:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logTriggerEventWithVTEI:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logRejectEventWithVTEI:withMHUUID:withSecondPassResult:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logCancelledEventWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logTwoShotEndEventWithSuppresedAlert:withTimedOut:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logTwoShotStartEventWithPromptType:withMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logTwoShotDetectedWithMHUUID:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logSiriLaunchStartedWithVoiceTriggerEventInfo:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin logSiriLaunchCompletedWithVoiceTriggerEventInfo:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin firstPassEvents]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin setFirstPassEvents:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin rejectEvents]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin setRejectEvents:]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin cancelledEvents]
+  -[CSFVoiceTriggerEventInfoSelfLoggerDarwin setCancelledEvents:]
+
+
+CSPowerLogger : NSObject
+  // class methods
+  +[CSPowerLogger sharedPowerLogger]
+
+  // instance methods
+  -[CSPowerLogger _configPowerlog:]
+  -[CSPowerLogger powerLogSiriConfigWithVoiceTriggerEnabled:withLanguage:withModelVersion:]
+  -[CSPowerLogger powerLogVoiceTriggerStart]
+  -[CSPowerLogger powerWithNumFalseWakeup:withDuration:]
+  -[CSPowerLogger powerLogVoiceTriggerStop]
+  -[CSPowerLogger _borealisPowerlog:]
+
+
+CSRemoteAssetManager : NSObject
+  // class methods
+  +[CSRemoteAssetManager sharedManager]
+
+  // instance methods
+  -[CSRemoteAssetManager removeObserver:forAssetType:]
+  -[CSRemoteAssetManager .cxx_destruct]
+  -[CSRemoteAssetManager languageCode]
+  -[CSRemoteAssetManager addObserver:forAssetType:]
+  -[CSRemoteAssetManager init]
+  -[CSRemoteAssetManager assetForCurrentLanguageOfType:]
+  -[CSRemoteAssetManager _loadPreinstalledAssetMetaIfNeeded]
+  -[CSRemoteAssetManager _remoteAssetMetaPath]
+  -[CSRemoteAssetManager _writeToJsonFile:]
+  -[CSRemoteAssetManager _loadFromJsonFile:]
+  -[CSRemoteAssetManager _setAssetsInfoFromMetaData:]
+  -[CSRemoteAssetManager _loadJsonDataFromFile:]
+  -[CSRemoteAssetManager setLanguageCode:resourcePath:configVersion:assetHash:assetType:]
+  -[CSRemoteAssetManager assetConfigVersionForAssetType:]
+  -[CSRemoteAssetManager assetHashForAssetType:]
+  -[CSRemoteAssetManager resourcePathForAssetType:]
+
+
+CSSelectiveChannelAudioFileWriter : NSObject <CSAudioFileWriter>
+ @property  NSURL *fileURL
+ @property  unsigned int numberOfChannels
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CSSelectiveChannelAudioFileWriter endAudio]
+  -[CSSelectiveChannelAudioFileWriter fileURL]
+  -[CSSelectiveChannelAudioFileWriter dealloc]
+  -[CSSelectiveChannelAudioFileWriter .cxx_destruct]
+  -[CSSelectiveChannelAudioFileWriter numberOfChannels]
+  -[CSSelectiveChannelAudioFileWriter addSamples:numSamples:]
+  -[CSSelectiveChannelAudioFileWriter initWithURL:inputFormat:outputFormat:channelBitset:]
+
+
+CSReusableBufferPoolConfiguration : NSObject
+ @property  unsigned long backingStoreCapacity
+ @property  unsigned long minimalNumberOfBackingStores
+ @property  unsigned long maximumNumberOfBackingStores
+ @property  double backingStoreIdleTimeout
+
+  // instance methods
+  -[CSReusableBufferPoolConfiguration initWithBackingStoreCapacity:minimalNumberOfBackingStores:maximumNumberOfBackingStores:backingStoreIdleTimeout:]
+  -[CSReusableBufferPoolConfiguration backingStoreCapacity]
+  -[CSReusableBufferPoolConfiguration minimalNumberOfBackingStores]
+  -[CSReusableBufferPoolConfiguration maximumNumberOfBackingStores]
+  -[CSReusableBufferPoolConfiguration backingStoreIdleTimeout]
+
+
+CSFLPCMTypeConverter : NSObject
+  // class methods
+  +[CSFLPCMTypeConverter convertToShortLPCMBufFromFloatLPCMBuf:]
+  +[CSFLPCMTypeConverter convertToFloatLPCMBufFromShortLPCMBuf:]
+  +[CSFLPCMTypeConverter applyGain:toShortBuffer:]
+  +[CSFLPCMTypeConverter applyGain:toFloatBuffer:]
+  +[CSFLPCMTypeConverter apply12dBGainToShortBuffer:]
+  +[CSFLPCMTypeConverter apply12dBGainToFloatBuffer:]
+  +[CSFLPCMTypeConverter applyNegative32dBGainToShortBuffer:]
+  +[CSFLPCMTypeConverter applyNegative32dBGainToFloatBuffer:]
+  +[CSFLPCMTypeConverter applyNegative20dBGainToShortBuffer:]
+  +[CSFLPCMTypeConverter applyNegative20dBGainToFloatBuffer:]
+
+
+CSDispatchGroup : NSObject
+  // instance methods
+  -[CSDispatchGroup waitWithTimeout:]
+  -[CSDispatchGroup enter]
+  -[CSDispatchGroup .cxx_destruct]
+  -[CSDispatchGroup leave]
+  -[CSDispatchGroup init]
+
+
+CSFAudioStreamBasicDescriptionFactory : NSObject
+  // class methods
+  +[CSFAudioStreamBasicDescriptionFactory lpcmInt16ASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmInt16NarrowBandASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmFloatASBD]
+  +[CSFAudioStreamBasicDescriptionFactory opusASBD]
+  +[CSFAudioStreamBasicDescriptionFactory opusNarrowBandASBD]
+  +[CSFAudioStreamBasicDescriptionFactory speexASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmInterleavedASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmMonoInterleavedASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmInterleavedWithRemoteVADASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmMonoInterleavedWithRemoteVADASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmInterleavedASBDWithSampleRate:numberOfChannels:]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmNonInterleavedASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmMonoNonInterleavedASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmNonInterleavedWithRemoteVADASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmMonoNonInterleavedWithRemoteVADASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmNonInterleavedASBDWithSampleRate:numberOfChannels:]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmASBD]
+  +[CSFAudioStreamBasicDescriptionFactory lpcmNarrowBandASBD]
+  +[CSFAudioStreamBasicDescriptionFactory utteranceFileASBD]
+  +[CSFAudioStreamBasicDescriptionFactory aiffFileASBD]
+
+
+CSVoiceTriggerSecondPassConfigDecoder : NSObject
+  // class methods
+  +[CSVoiceTriggerSecondPassConfigDecoder categoryForFirstPass:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeConfigFrom:forFirstPassSource:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodePreTriggerAudioTime:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodePrependingAudioTime:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeTrailingAudioTime:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeConfigFileNDAPI:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeUseRecognizerCombination:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeConfigFileRecognizer:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeUseKeywordSpotting:fromCategory:]
+  +[CSVoiceTriggerSecondPassConfigDecoder decodeWearerDetectionConfig:fromCategory:]
+
+
+01 00 1140 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFFeatureFlags 
+01 00 1140 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFPreferences 
+01 00 0340 /System/Library/Frameworks/AVFAudio.framework/AVFAudio: AVAudioSession 
+01 00 1240 /System/Library/PrivateFrameworks/Celestial.framework/Celestial: AVSystemController 
+01 00 0840 /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics: AssistantSiriAnalytics 
+01 00 0c40 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationProxy 
+01 00 1040 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaFirstPassChannelSelectionScore 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHASRAudioConfigureStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHApplicationPlaybackAttempted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioBluetoothInfo 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioConfigureContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioConfigureEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioConfigureStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioFanInfo 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioFetchRouteContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioFetchRouteEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioFetchRouteStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioInitContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioInitEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioInitStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioLateBufferDetected 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrepareContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrepareEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrepareStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrewarmContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrewarmEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioPrewarmStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordinFirstBufferReceipt 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingFailed 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingFirstBufferContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingFirstBufferStart 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingInterruptionContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingInterruptionEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingInterruptionStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingInterruptionStartedTier1 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingLastBufferContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingLastBufferReceipt 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingLastBufferStart 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingMissedBufferDetected 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioRecordingStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetActiveContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetActiveEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetActiveStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetInactiveContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetInactiveEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioSessionSetInactiveStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStartRecordingContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStartRecordingEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStartRecordingStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStopRecordingContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStopRecordingEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioStopRecordingeStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioTwoShotTransitionContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioTwoShotTransitionEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHAssistantDaemonAudioTwoShotTransitionStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHClientEvent 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHClientEventMetadata 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHCoreSpeechPreprocessorCompleted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHCoreSpeechZeroFilterRunPair 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHSiriLaunchRequestContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHSiriLaunchRequestEnded 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHSiriLaunchRequestStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerContext 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerEventInfo 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerSecondPassCancelled 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerSecondPassRejected 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerSecondPassStarted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerSecondPassTriggered 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: MHSchemaMHVoiceTriggerTwoShotDetected 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantFloatNumber 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileHandle 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0d40 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessHandle 
+01 00 0d40 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSProcessIdentifier 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: SIRISETUPSchemaSIRISETUPClientEvent 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: SIRISETUPSchemaSIRISETUPClientEventMetadata 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: SIRISETUPSchemaSIRISETUPPHSEnrollmentDigitalZeroDetectionCompleted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: SIRISETUPSchemaSIRISETUPPHSEnrollmentUtteranceCompleted 
+01 00 0740 /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation: SISchemaUUID 

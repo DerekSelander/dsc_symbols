@@ -1,0 +1,571 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_DigitDialResultHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_DigitDialResultValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_VDDisambiguationAddressBookContext
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialDataProvider
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialDisambiguationAddressBookContext
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialFacetimeRecognitionAction
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialLastNameDataSource
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialMaidenNameDataSource
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialNameDataSource
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialRecognitionAction
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialResultHandler
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialResultHandlerContext
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialResultValidator
+|| __DATA.__objc_data _OBJC_CLASS_$_VoiceDialVoicemailRecognitionAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_DigitDialResultHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_DigitDialResultValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VDDisambiguationAddressBookContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialDataProvider
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialDisambiguationAddressBookContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialFacetimeRecognitionAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialLastNameDataSource
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialMaidenNameDataSource
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialNameDataSource
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialRecognitionAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialResultHandler
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialResultHandlerContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialResultValidator
+|| __DATA.__objc_data _OBJC_METACLASS_$_VoiceDialVoicemailRecognitionAction
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DigitDialResultValidator._deviceExceptions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_DigitDialResultValidator._networkExceptions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._addressBook
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._facetimeLabels
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._lastDatabaseUUID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._lastSequenceNumber
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._namesSource
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._people
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._peopleRange
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._phoneLabels
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._totalPeople
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._voiceDialProviderFlags
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._weightedFacetimeLabels
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialDataProvider._weightedPhoneLabels
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialFacetimeRecognitionAction._abID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialFacetimeRecognitionAction._contactInfo
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialNameDataSource._compositeNamesOnly
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialNameDataSource._nameTypeMask
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialRecognitionAction._phoneNumber
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialRecognitionAction._uid
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialResultHandler._addressBook
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialResultHandler._nameSource
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialResultValidator._addressBook
+|| __DATA.__objc_ivar _OBJC_IVAR_$_VoiceDialResultValidator._nameSource
+|| __DATA_CONST.__const _kVoiceDialCommandClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialFaceTimeAvailabilityListenerID
+|| __DATA_CONST.__const _kVoiceDialFacetimeCommandClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialFacetimeLabelClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialFirstNameClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialLabelClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialLabelTypeEmailClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialLabelTypePhoneClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialLastNameClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialModelIdentifier
+|| __DATA_CONST.__const _kVoiceDialNameClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialNickNameClassIdentifier
+|| __DATA_CONST.__const _kVoiceDialVoicemailClassIdentifier
+|| __TEXT.__text _DigitDialPhoneNumberFromResult
+|| __TEXT.__text _PHDefaultLog
+|| __TEXT.__text _PHOversizedLog
+|| __TEXT.__text _PHOversizedLogQueue
+|| __TEXT.__text _VoiceDialAppendCompositeNamePropertyValue
+|| __TEXT.__text _VoiceDialBundle
+|| __TEXT.__text _VoiceDialConfigureSpokenLocalizedLabel
+|| __TEXT.__text _VoiceDialCopyErrorActionForResult
+|| __TEXT.__text _VoiceDialCopyMostLikelyNumberWithPersonAndLabel
+|| __TEXT.__text _VoiceDialCopyNameLabelAndTypeFromRecognitionResult
+|| __TEXT.__text _VoiceDialCopyNamesLabelAndTypeFromRecognitionResults
+|| __TEXT.__text _VoiceDialCopySpokenLocalizedLabel
+|| __TEXT.__text _VoiceDialGetMostLikelyFacetimeContactWithPersonAndLabel
+|| __TEXT.__text _VoiceDialNumberToDialForNumber
+|| __TEXT.__text _VoiceDialPersonCopyCompositeName
+|| __TEXT.__text _VoiceDialPersonCopyCompositeNameWithSubstitution
+|| __TEXT.__text _VoiceDialPersonIsCompany
+|| __TEXT.__text _VoiceDialSendNameAndExtendedLabelMatches
+|| __TEXT.__text _VoiceDialSpokenLocalizedString
+|| __TEXT.__text _VoiceDialSpokenLocalizedStringIfAvailable
+|| __TEXT.__text _VoiceDialTelephonyUtilitiesFrameworkHandle
+__ AddressBookLegacy: _ABAddressBookCopyAllLabelsForProperty
+__ AddressBookLegacy: _ABAddressBookCopyChangesSinceSequenceNumber
+__ AddressBookLegacy: _ABAddressBookCopyLocalizedLabel
+__ AddressBookLegacy: _ABAddressBookCopyLocalizedStringsForLanguageArray
+__ AddressBookLegacy: _ABAddressBookCopyPeopleWithName
+__ AddressBookLegacy: _ABAddressBookCopyUniqueIdentifier
+__ AddressBookLegacy: _ABAddressBookCreateWithOptions
+__ AddressBookLegacy: _ABAddressBookGetPersonCount
+__ AddressBookLegacy: _ABAddressBookGetSequenceNumber
+__ AddressBookLegacy: _ABAddressBookInvalidateCaches
+__ AddressBookLegacy: _ABAddressBookRegisterExternalChangeCallback
+__ AddressBookLegacy: _ABAddressBookRevert
+__ AddressBookLegacy: _ABAddressBookUnregisterExternalChangeCallback
+__ AddressBookLegacy: _ABCopyArrayOfPeopleAtOffset
+__ AddressBookLegacy: _ABMultiValueCopyLabelAtIndex
+__ AddressBookLegacy: _ABMultiValueCopyValueAtIndex
+__ AddressBookLegacy: _ABMultiValueGetCount
+__ AddressBookLegacy: _ABMultiValueGetIdentifierAtIndex
+__ AddressBookLegacy: _ABMultiValueGetIndexForIdentifier
+__ AddressBookLegacy: _ABPersonGetCompositeNameFormatForRecord
+__ AddressBookLegacy: _ABRecordCopyCompositeName
+__ AddressBookLegacy: _ABRecordCopyValue
+__ AddressBookLegacy: _ABRecordGetRecordID
+__ AddressBookLegacy: _kABAddressBookChangesToEmailLabelsKey
+__ AddressBookLegacy: _kABAddressBookChangesToNamesKey
+__ AddressBookLegacy: _kABAddressBookChangesToPhoneLabelsKey
+__ AddressBookLegacy: _kABHomeLabel
+__ AddressBookLegacy: _kABPersonEmailProperty
+__ AddressBookLegacy: _kABPersonFirstNamePhoneticProperty
+__ AddressBookLegacy: _kABPersonFirstNamePronunciationProperty
+__ AddressBookLegacy: _kABPersonFirstNameProperty
+__ AddressBookLegacy: _kABPersonKindOrganization
+__ AddressBookLegacy: _kABPersonKindProperty
+__ AddressBookLegacy: _kABPersonLastNamePhoneticProperty
+__ AddressBookLegacy: _kABPersonLastNamePronunciationProperty
+__ AddressBookLegacy: _kABPersonLastNameProperty
+__ AddressBookLegacy: _kABPersonMiddleNamePhoneticProperty
+__ AddressBookLegacy: _kABPersonMiddleNamePronunciationProperty
+__ AddressBookLegacy: _kABPersonMiddleNameProperty
+__ AddressBookLegacy: _kABPersonNicknameProperty
+__ AddressBookLegacy: _kABPersonOrganizationProperty
+__ AddressBookLegacy: _kABPersonPhoneIPhoneLabel
+__ AddressBookLegacy: _kABPersonPhoneMobileLabel
+__ AddressBookLegacy: _kABPersonPhoneProperty
+__ AddressBookLegacy: _kABWorkLabel
+__ AppSupport: _CFPhoneNumberCopyUnformattedRepresentation
+__ AppSupport: _CFPhoneNumberCreate
+__ AppSupport: _OBJC_CLASS_$_RadiosPreferences
+__ AppSupport: _PNIsValidPhoneNumberForCountry
+__ Contacts: _CNActionBundleIdentifierFaceTime
+__ Contacts: _CNActionBundleIdentifierPhone
+__ Contacts: _CNActionTypeAudioCall
+__ Contacts: _CNActionTypeVideoCall
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNContactStore
+__ Contacts: _OBJC_CLASS_$_CNFavorites
+__ Contacts: _OBJC_CLASS_$_CNPhoneNumber
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterRemoveEveryObserver
+__ CoreFoundation: _CFNotificationCenterRemoveObserver
+__ CoreFoundation: _CFNumberCompare
+__ CoreFoundation: _CFPreferencesAppSynchronize
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCompareWithOptions
+__ CoreFoundation: _CFStringCreateMutable
+__ CoreFoundation: _CFStringCreateWithSubstring
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreTelephony: _CTRegistrationGetStatus
+__ CoreTelephony: _kCTRegistrationStatusRegisteredHome
+__ CoreTelephony: _kCTRegistrationStatusRegisteredRoaming
+__ FTClientServices: _OBJC_CLASS_$_FTCServiceAvailabilityCenter
+__ Foundation: _NSClassFromString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSMutableIndexSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ GraphicsServices: _GSSystemRootDirectory
+__ IMCore: _OBJC_CLASS_$_IMIDStatusController
+__ IMCore: _OBJC_CLASS_$_IMServiceImpl
+__ IMFoundation: _IMCleanupPhoneNumber
+__ TelephonyUtilities: _OBJC_CLASS_$_TUCallCapabilities
+__ TelephonyUtilities: _OBJC_CLASS_$_TUCallProviderManager
+__ TelephonyUtilities: _OBJC_CLASS_$_TUContactsDataProvider
+__ TelephonyUtilities: _OBJC_CLASS_$_TUContactsDataProviderFetchRequest
+__ TelephonyUtilities: _OBJC_CLASS_$_TUDialRequest
+__ TelephonyUtilities: _OBJC_CLASS_$_TUHandle
+__ TelephonyUtilities: _TUFormattedPhoneNumber
+__ TelephonyUtilities: _TUHomeCountryCode
+__ TelephonyUtilities: _TUNetworkCountryCode
+__ TelephonyUtilities: _TUStringsAreEqualOrNil
+__ VoiceServices: _OBJC_CLASS_$_VSRecognitionDisambiguateAction
+__ VoiceServices: _OBJC_CLASS_$_VSRecognitionSpeakAction
+__ VoiceServices: _OBJC_CLASS_$_VSRecognitionURLAction
+__ VoiceServices: _OBJC_METACLASS_$_VSRecognitionURLAction
+__ VoiceServices: _VSPreferencesCopySpokenLanguageIdentifier
+__ VoiceServices: _VSRecognitionModelCopyActiveLanguageIdentifier
+__ VoiceServices: _VSRecognitionModelCopyActiveLanguageIdentifierArray
+__ VoiceServices: _VSRecognitionModelCopyLanguageResourceURL
+__ VoiceServices: _VSRecognitionModelCopyResourceURL
+__ VoiceServices: _VSRecognitionModelDataProviderChanged
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dlopen
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_once
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+VoiceDialResultHandlerContext : NSObject
+ @property  ^v resultPerson
+ @property  ^{__CFString=} contactInfo
+ @property  NSString *nameToMatch
+ @property  NSMutableSet *compositeNames
+ @property  NSMutableSet *spokenCompositeNames
+ @property  NSMutableSet *topLevelNonNickNames
+ @property  NSMutableSet *localizedPhoneLabels
+ @property  NSMutableSet *localizedEmailLabels
+ @property  NSMutableSet *unlocalizedPhoneLabels
+ @property  NSMutableSet *unlocalizedEmailLabels
+ @property  NSMutableDictionary *lastNamesByFirstNames
+ @property  NSMutableDictionary *firstNamesByLastNames
+ @property  NSMutableDictionary *phoneticNamesByName
+ @property  long long nicknameMatchCount
+ @property  int resultStatus
+ @property  int requiredNameMatchType
+ @property  int lastNameMatchType
+ @property  BOOL allNamesMatchedType
+ @property  int matchedLabelType
+ @property  BOOL allowFirstFT
+
+  // instance methods
+  -[VoiceDialResultHandlerContext contactInfo]
+  -[VoiceDialResultHandlerContext resultStatus]
+  -[VoiceDialResultHandlerContext setResultStatus:]
+  -[VoiceDialResultHandlerContext dealloc]
+  -[VoiceDialResultHandlerContext .cxx_destruct]
+  -[VoiceDialResultHandlerContext setContactInfo:]
+  -[VoiceDialResultHandlerContext init]
+  -[VoiceDialResultHandlerContext resultPerson]
+  -[VoiceDialResultHandlerContext setResultPerson:]
+  -[VoiceDialResultHandlerContext nameToMatch]
+  -[VoiceDialResultHandlerContext setNameToMatch:]
+  -[VoiceDialResultHandlerContext compositeNames]
+  -[VoiceDialResultHandlerContext setCompositeNames:]
+  -[VoiceDialResultHandlerContext spokenCompositeNames]
+  -[VoiceDialResultHandlerContext setSpokenCompositeNames:]
+  -[VoiceDialResultHandlerContext topLevelNonNickNames]
+  -[VoiceDialResultHandlerContext setTopLevelNonNickNames:]
+  -[VoiceDialResultHandlerContext localizedPhoneLabels]
+  -[VoiceDialResultHandlerContext setLocalizedPhoneLabels:]
+  -[VoiceDialResultHandlerContext localizedEmailLabels]
+  -[VoiceDialResultHandlerContext setLocalizedEmailLabels:]
+  -[VoiceDialResultHandlerContext unlocalizedPhoneLabels]
+  -[VoiceDialResultHandlerContext setUnlocalizedPhoneLabels:]
+  -[VoiceDialResultHandlerContext unlocalizedEmailLabels]
+  -[VoiceDialResultHandlerContext setUnlocalizedEmailLabels:]
+  -[VoiceDialResultHandlerContext lastNamesByFirstNames]
+  -[VoiceDialResultHandlerContext setLastNamesByFirstNames:]
+  -[VoiceDialResultHandlerContext firstNamesByLastNames]
+  -[VoiceDialResultHandlerContext setFirstNamesByLastNames:]
+  -[VoiceDialResultHandlerContext phoneticNamesByName]
+  -[VoiceDialResultHandlerContext setPhoneticNamesByName:]
+  -[VoiceDialResultHandlerContext nicknameMatchCount]
+  -[VoiceDialResultHandlerContext setNicknameMatchCount:]
+  -[VoiceDialResultHandlerContext requiredNameMatchType]
+  -[VoiceDialResultHandlerContext setRequiredNameMatchType:]
+  -[VoiceDialResultHandlerContext lastNameMatchType]
+  -[VoiceDialResultHandlerContext setLastNameMatchType:]
+  -[VoiceDialResultHandlerContext allNamesMatchedType]
+  -[VoiceDialResultHandlerContext setAllNamesMatchedType:]
+  -[VoiceDialResultHandlerContext matchedLabelType]
+  -[VoiceDialResultHandlerContext setMatchedLabelType:]
+  -[VoiceDialResultHandlerContext allowFirstFT]
+  -[VoiceDialResultHandlerContext setAllowFirstFT:]
+
+
+VoiceDialResultHandler : NSObject <VSRecognitionResultHandler>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VoiceDialResultHandler .cxx_destruct]
+  -[VoiceDialResultHandler _addressBook]
+  -[VoiceDialResultHandler _nameSource]
+  -[VoiceDialResultHandler actionForRecognitionResults:]
+  -[VoiceDialResultHandler _phoneticNames:fromDictionary:]
+
+
+VoiceDialRecognitionAction : VSRecognitionURLAction
+  // instance methods
+  -[VoiceDialRecognitionAction perform]
+  -[VoiceDialRecognitionAction .cxx_destruct]
+  -[VoiceDialRecognitionAction initWithPhoneNumber:uid:]
+
+
+DigitDialResultValidator : NSObject <VSRecognitionResultValidator>
+ @property  NSString *deviceCountryCode
+ @property  NSString *networkCountryCode
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DigitDialResultValidator deviceCountryCode]
+  -[DigitDialResultValidator setDeviceCountryCode:]
+  -[DigitDialResultValidator .cxx_destruct]
+  -[DigitDialResultValidator validRecognitionResultFromRecognitionResult:]
+  -[DigitDialResultValidator networkCountryCode]
+  -[DigitDialResultValidator _copyExceptionsForCountryCode:]
+  -[DigitDialResultValidator _isValidExceptionForDevice:]
+  -[DigitDialResultValidator _isValidExceptionForNetwork:]
+  -[DigitDialResultValidator _hasMinimumNumberOfDigits:countryCode:]
+  -[DigitDialResultValidator indexOfValidPhoneNumber:]
+  -[DigitDialResultValidator setNetworkCountryCode:]
+
+
+DigitDialResultHandler : NSObject <VSRecognitionResultHandler>
+ @property  TUContactsDataProvider *contactsDataProvider
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[DigitDialResultHandler .cxx_destruct]
+  -[DigitDialResultHandler actionForRecognitionResult:]
+  -[DigitDialResultHandler contactsDataProvider]
+  -[DigitDialResultHandler setContactsDataProvider:]
+
+
+VoiceDialNameDataSource : NSObject
+  // class methods
+  +[VoiceDialNameDataSource _nameDataSourceByLanguageMap]
+  +[VoiceDialNameDataSource nameDataSourceForLanguageIdentifier:]
+
+  // instance methods
+  -[VoiceDialNameDataSource setUseCompositeNamesOnly:]
+  -[VoiceDialNameDataSource useCompositeNamesOnly]
+  -[VoiceDialNameDataSource personNameCount]
+  -[VoiceDialNameDataSource indexOfMainNameOfType:]
+  -[VoiceDialNameDataSource copyPronunciationPropertyForPerson:withNameType:]
+  -[VoiceDialNameDataSource getName:phoneticName:atIndex:forPerson:]
+  -[VoiceDialNameDataSource getNth:name:phoneticName:ofType:nameIndex:forPerson:]
+  -[VoiceDialNameDataSource typeOfNameAtIndex:]
+  -[VoiceDialNameDataSource nameTypes]
+  -[VoiceDialNameDataSource countOfNamesOfType:]
+  -[VoiceDialNameDataSource matchingNameType:fromTypes:forPerson:]
+
+
+VoiceDialLastNameDataSource : VoiceDialNameDataSource
+  // instance methods
+  -[VoiceDialLastNameDataSource personNameCount]
+  -[VoiceDialLastNameDataSource indexOfMainNameOfType:]
+  -[VoiceDialLastNameDataSource getName:phoneticName:atIndex:forPerson:]
+  -[VoiceDialLastNameDataSource typeOfNameAtIndex:]
+
+
+VoiceDialMaidenNameDataSource : VoiceDialNameDataSource
+  // instance methods
+  -[VoiceDialMaidenNameDataSource personNameCount]
+  -[VoiceDialMaidenNameDataSource getName:phoneticName:atIndex:forPerson:]
+  -[VoiceDialMaidenNameDataSource getNth:name:phoneticName:ofType:nameIndex:forPerson:]
+  -[VoiceDialMaidenNameDataSource typeOfNameAtIndex:]
+  -[VoiceDialMaidenNameDataSource countOfNamesOfType:]
+  -[VoiceDialMaidenNameDataSource matchingNameType:fromTypes:forPerson:]
+
+
+VoiceDialVoicemailRecognitionAction : VSRecognitionURLAction
+  // instance methods
+  -[VoiceDialVoicemailRecognitionAction init]
+
+
+VDDisambiguationAddressBookContext : NSObject
+ @property  int previousNameProperty
+ @property  NSString *previousName
+ @property  NSString *matchedName
+ @property  VSRecognitionResult *result
+ @property  BOOL resultFound
+
+  // instance methods
+  -[VDDisambiguationAddressBookContext setResult:]
+  -[VDDisambiguationAddressBookContext .cxx_destruct]
+  -[VDDisambiguationAddressBookContext resultFound]
+  -[VDDisambiguationAddressBookContext result]
+  -[VDDisambiguationAddressBookContext setResultFound:]
+  -[VDDisambiguationAddressBookContext previousNameProperty]
+  -[VDDisambiguationAddressBookContext setPreviousNameProperty:]
+  -[VDDisambiguationAddressBookContext previousName]
+  -[VDDisambiguationAddressBookContext setPreviousName:]
+  -[VDDisambiguationAddressBookContext matchedName]
+  -[VDDisambiguationAddressBookContext setMatchedName:]
+
+
+VoiceDialDataProvider : NSObject <VSRecognitionModelDataProvider>
+ @property  NSObject<OS_dispatch_queue> *serialQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VoiceDialDataProvider serialQueue]
+  -[VoiceDialDataProvider dealloc]
+  -[VoiceDialDataProvider .cxx_destruct]
+  -[VoiceDialDataProvider init]
+  -[VoiceDialDataProvider _addressBook]
+  -[VoiceDialDataProvider beginReportingChanges]
+  -[VoiceDialDataProvider stopReportingChanges]
+  -[VoiceDialDataProvider valueCountForClassWithIdentifier:inModelWithIdentifier:]
+  -[VoiceDialDataProvider getValue:weight:atIndex:forClassWithIdentifier:inModelWithIdentifier:]
+  -[VoiceDialDataProvider phoneticValueAtIndex:forClassWithIdentifier:inModelWithIdentifier:]
+  -[VoiceDialDataProvider cacheValidityIdentifier]
+  -[VoiceDialDataProvider isCacheValidityIdentifierValid:]
+  -[VoiceDialDataProvider _namesSource]
+  -[VoiceDialDataProvider getLabels:andWeightedLabels:ForABProperty:]
+  -[VoiceDialDataProvider _phoneLabels]
+  -[VoiceDialDataProvider _facetimeLabels]
+  -[VoiceDialDataProvider _totalPeople]
+  -[VoiceDialDataProvider _voiceDialRecordAtIndex:]
+  -[VoiceDialDataProvider _shouldUseCompositeNamesOnly]
+  -[VoiceDialDataProvider _sequenceNumberIsValid:]
+  -[VoiceDialDataProvider _handleAddressBookChanged]
+
+
+VoiceDialFacetimeRecognitionAction : VSRecognitionURLAction
+  // instance methods
+  -[VoiceDialFacetimeRecognitionAction perform]
+  -[VoiceDialFacetimeRecognitionAction .cxx_destruct]
+  -[VoiceDialFacetimeRecognitionAction initWithContactInfo:uid:]
+
+
+VoiceDialDisambiguationAddressBookContext : NSObject
+ @property  NSString *previousName
+ @property  int previousNameProperty
+ @property  NSString *matchedName
+ @property  ^@ result
+ @property  BOOL resultFound
+
+  // instance methods
+  -[VoiceDialDisambiguationAddressBookContext setResult:]
+  -[VoiceDialDisambiguationAddressBookContext .cxx_destruct]
+  -[VoiceDialDisambiguationAddressBookContext resultFound]
+  -[VoiceDialDisambiguationAddressBookContext result]
+  -[VoiceDialDisambiguationAddressBookContext setResultFound:]
+  -[VoiceDialDisambiguationAddressBookContext previousNameProperty]
+  -[VoiceDialDisambiguationAddressBookContext setPreviousNameProperty:]
+  -[VoiceDialDisambiguationAddressBookContext previousName]
+  -[VoiceDialDisambiguationAddressBookContext setPreviousName:]
+  -[VoiceDialDisambiguationAddressBookContext matchedName]
+  -[VoiceDialDisambiguationAddressBookContext setMatchedName:]
+
+
+VoiceDialResultValidator : NSObject <VSRecognitionResultValidator>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VoiceDialResultValidator dealloc]
+  -[VoiceDialResultValidator .cxx_destruct]
+  -[VoiceDialResultValidator _addressBook]
+  -[VoiceDialResultValidator _nameSource]
+  -[VoiceDialResultValidator validRecognitionResultFromRecognitionResult:]
+  -[VoiceDialResultValidator validRecognitionResultFromRecognitionResult:knownDisambiguationValues:]
+
+
+(VoiceDialResultHandlerMerge)
+	// instance methods
+	-[(VoiceDialResultHandlerMerge) mergeSetValuesIntoArray]
+
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStore 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNFavorites 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNPhoneNumber 
+01 00 0500 /System/Library/PrivateFrameworks/FTClientServices.framework/FTClientServices: FTCServiceAvailabilityCenter 
+01 00 0d00 /System/Library/PrivateFrameworks/IMCore.framework/IMCore: IMIDStatusController 
+01 00 0d00 /System/Library/PrivateFrameworks/IMCore.framework/IMCore: IMServiceImpl 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableIndexSet 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0e00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0200 /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport: RadiosPreferences 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUCallCapabilities 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUCallProviderManager 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUContactsDataProvider 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUContactsDataProviderFetchRequest 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUDialRequest 
+01 00 0600 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities: TUHandle 
+01 00 0400 /System/Library/PrivateFrameworks/VoiceServices.framework/VoiceServices: VSRecognitionDisambiguateAction 
+01 00 0400 /System/Library/PrivateFrameworks/VoiceServices.framework/VoiceServices: VSRecognitionSpeakAction 
+01 00 0400 /System/Library/PrivateFrameworks/VoiceServices.framework/VoiceServices: VSRecognitionURLAction 

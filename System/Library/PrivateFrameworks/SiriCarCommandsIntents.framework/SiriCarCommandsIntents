@@ -1,0 +1,96 @@
+|| __DATA.__data _OBJC_METACLASS_$_IntentCarDefrosterResolutionResult
+|| __DATA.__data _OBJC_METACLASS_$_IntentRadioBandResolutionResult
+|| __DATA.__data _OBJC_METACLASS_$_SetCarDefrosterIntent
+|| __DATA.__data _OBJC_METACLASS_$_SetCarDefrosterIntentResponse
+|| __DATA.__data _OBJC_METACLASS_$_SetCarRadioStationIntent
+|| __DATA.__data _OBJC_METACLASS_$_SetCarRadioStationIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_IntentCarDefrosterResolutionResult
+|| __DATA.__objc_data _OBJC_CLASS_$_IntentRadioBandResolutionResult
+|| __DATA.__objc_data _OBJC_CLASS_$_SetCarDefrosterIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_SetCarDefrosterIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_SetCarRadioStationIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_SetCarRadioStationIntentResponse
+|| __TEXT.__const _SiriCarCommandsIntentsVersionNumber
+|| __TEXT.__const _SiriCarCommandsIntentsVersionString
+__ Intents: _OBJC_CLASS_$_INEnumResolutionResult
+__ Intents: _OBJC_CLASS_$_INIntent
+__ Intents: _OBJC_CLASS_$_INIntentResponse
+__ Intents: _OBJC_METACLASS_$_INEnumResolutionResult
+__ Intents: _OBJC_METACLASS_$_INIntent
+__ Intents: _OBJC_METACLASS_$_INIntentResponse
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x3
+__ libswiftCore.dylib: _swift_beginAccess
+__ libswiftCore.dylib: _swift_deletedMethodError
+__ libswiftCore.dylib: _swift_getObjCClassFromMetadata
+__ libswiftCore.dylib: _swift_getObjCClassMetadata
+__ libswiftCore.dylib: _swift_getWitnessTable
+SetCarRadioStationIntent : INIntent
+ @property  NSNumber *channel
+ @property  NSString *callsign
+ @property  NSString *name
+ @property  NSNumber *frequency
+ @property  long long band
+
+  // instance methods
+  -[SetCarRadioStationIntent init]
+  -[SetCarRadioStationIntent initWithCoder:]
+
+
+SetCarRadioStationIntentResponse : INIntentResponse
+ @property  long long code
+
+  // instance methods
+  -[SetCarRadioStationIntentResponse setCode:]
+  -[SetCarRadioStationIntentResponse code]
+  -[SetCarRadioStationIntentResponse init]
+  -[SetCarRadioStationIntentResponse initWithCoder:]
+  -[SetCarRadioStationIntentResponse initWithCode:userActivity:]
+
+
+SetCarDefrosterIntent : INIntent
+ @property  long long defroster
+ @property  NSNumber *enabled
+
+  // instance methods
+  -[SetCarDefrosterIntent init]
+  -[SetCarDefrosterIntent initWithCoder:]
+
+
+SetCarDefrosterIntentResponse : INIntentResponse
+ @property  long long code
+
+  // instance methods
+  -[SetCarDefrosterIntentResponse setCode:]
+  -[SetCarDefrosterIntentResponse code]
+  -[SetCarDefrosterIntentResponse init]
+  -[SetCarDefrosterIntentResponse initWithCoder:]
+  -[SetCarDefrosterIntentResponse initWithCode:userActivity:]
+
+
+IntentRadioBandResolutionResult : INEnumResolutionResult
+  // class methods
+  +[IntentRadioBandResolutionResult successWithResolvedIntentRadioBand:]
+  +[IntentRadioBandResolutionResult confirmationRequiredWithIntentRadioBandToConfirm:]
+
+
+IntentCarDefrosterResolutionResult : INEnumResolutionResult
+  // class methods
+  +[IntentCarDefrosterResolutionResult successWithResolvedIntentCarDefroster:]
+  +[IntentCarDefrosterResolutionResult confirmationRequiredWithIntentCarDefrosterToConfirm:]
+
+
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INEnumResolutionResult 
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INIntent 
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INIntentResponse 

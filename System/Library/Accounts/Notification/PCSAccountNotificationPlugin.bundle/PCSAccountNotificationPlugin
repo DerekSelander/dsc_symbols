@@ -1,0 +1,55 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PCSAccountNotificationPlugin
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PCSAccountNotificationPlugin
+|| __TEXT.__const _PCSAccountNotificationPluginVersionNumber
+|| __TEXT.__const _PCSAccountNotificationPluginVersionString
+__ Accounts: _ACAccountDataclassProtectedCloudStorage
+__ Accounts: _ACAccountTypeIdentifierAppleAccount
+__ Accounts: _OBJC_CLASS_$_ACAccount
+__ Accounts: _kAccountDataclassBackup
+__ AppleAccount: _AAAccountClassFull
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ ProtectedCloudStorage: _PCSAccountSetupIdentities
+__ ProtectedCloudStorage: _PCSIdentityNeedsSetup
+__ ProtectedCloudStorage: _PCSIdentityiCDPSignOut
+__ ProtectedCloudStorage: _kPCSSetupAuthToken
+__ ProtectedCloudStorage: _kPCSSetupDSID
+__ ProtectedCloudStorage: _kPCSSetupEscrowURL
+__ ProtectedCloudStorage: _kPCSSetupPassword
+__ ProtectedCloudStorage: _kPCSSetupUsername
+__ ProtectedCloudStorage: _kPCSSetupiCloudEnvironment
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _notify_post
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_msgSend
+PCSAccountNotificationPlugin : NSObject <ACDAccountNotificationPlugin>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PCSAccountNotificationPlugin account:willChangeWithType:inStore:oldAccount:]
+  -[PCSAccountNotificationPlugin careAboutAccount:]
+  -[PCSAccountNotificationPlugin account:didChangeWithType:inStore:oldAccount:]
+  -[PCSAccountNotificationPlugin iCloudEnvironmentForAccount:]
+  -[PCSAccountNotificationPlugin setupAccount:reason:optional:]
+  -[PCSAccountNotificationPlugin escrowURL:]
+
+
+ACAccount(ACAccountPCSAdditions)
+	// instance methods
+	-[ACAccount(ACAccountPCSAdditions) pcs_personID]
+	-[ACAccount(ACAccountPCSAdditions) pcs_appleID]
+	-[ACAccount(ACAccountPCSAdditions) pcs_authToken]
+	-[ACAccount(ACAccountPCSAdditions) pcs_isFullAccount]
+
+01 00 0300 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccount 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 

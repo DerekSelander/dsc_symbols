@@ -1,0 +1,79 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_SecureChannelAction
+|| __DATA.__objc_data _OBJC_CLASS_$_SecureChannelController
+|| __DATA.__objc_data _OBJC_METACLASS_$_SecureChannelAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_SecureChannelController
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: _dispatch_once
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_storeStrong
+SecureChannelController : NSObject
+  // class methods
+  +[SecureChannelController actionForURL:completion:]
+  +[SecureChannelController runApproverFlowForURL:withCompletion:]
+
+
+SecureChannelServiceProxy : NSObject <SecureChannelService>
+  // class methods
+  +[SecureChannelServiceProxy sharedInstance]
+
+  // instance methods
+  -[SecureChannelServiceProxy .cxx_destruct]
+  -[SecureChannelServiceProxy init]
+  -[SecureChannelServiceProxy actionForURL:completion:]
+  -[SecureChannelServiceProxy runApproverFlowForURL:completion:]
+
+
+SecureChannelAction : NSObject <NSSecureCoding>
+ @property  NSString *title
+ @property  NSString *message
+ @property  NSURL *url
+
+  // class methods
+  +[SecureChannelAction supportsSecureCoding]
+
+  // instance methods
+  -[SecureChannelAction encodeWithCoder:]
+  -[SecureChannelAction .cxx_destruct]
+  -[SecureChannelAction title]
+  -[SecureChannelAction url]
+  -[SecureChannelAction message]
+  -[SecureChannelAction initWithCoder:]
+  -[SecureChannelAction performWithCompletionHandler:]
+  -[SecureChannelAction initWithURL:title:message:]
+
+
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

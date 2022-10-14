@@ -1,0 +1,177 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_ATCIOA2Device
+|| __DATA.__objc_data _OBJC_CLASS_$_ATCIOA2Stream
+|| __DATA.__objc_data _OBJC_CLASS_$_ATCIOA2StreamFormat
+|| __DATA.__objc_data _OBJC_METACLASS_$_ATCIOA2Device
+|| __DATA.__objc_data _OBJC_METACLASS_$_ATCIOA2Stream
+|| __DATA.__objc_data _OBJC_METACLASS_$_ATCIOA2StreamFormat
+|| __TEXT.__const _AudioTransportCommonVersionNumber
+|| __TEXT.__const _AudioTransportCommonVersionString
+|| __TEXT.__text _Float64ToIOAudio2Fixed64
+|| __TEXT.__text _IOAudio2Fixed64ToFloat64
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOKitten: _OBJC_CLASS_$_IOKNotificationPort
+__ IOKitten: _OBJC_CLASS_$_IOKService
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_mach_recv
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _mach_msg
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+ATCIOA2Device : NSObject
+ @property  NSArray *inputStreams
+ @property  NSArray *outputStreams
+ @property  NSArray *availableSampleRates
+ @property  NSString *name
+ @property  NSString *uid
+ @property  double sampleRate
+ @property  unsigned int clockDomain
+ @property  unsigned int inputSafetyOffset
+ @property  unsigned int inputLatency
+ @property  unsigned int outputSafetyOffset
+ @property  unsigned int outputLatency
+ @property  unsigned int ioBufferSize
+
+  // class methods
+  +[ATCIOA2Device iokitMatchingDictionary]
+
+  // instance methods
+  -[ATCIOA2Device handleNotification:]
+  -[ATCIOA2Device uid]
+  -[ATCIOA2Device inputStreams]
+  -[ATCIOA2Device clockDomain]
+  -[ATCIOA2Device outputLatency]
+  -[ATCIOA2Device initWithService:]
+  -[ATCIOA2Device inputLatency]
+  -[ATCIOA2Device dealloc]
+  -[ATCIOA2Device sampleRate]
+  -[ATCIOA2Device outputStreams]
+  -[ATCIOA2Device .cxx_destruct]
+  -[ATCIOA2Device outputSafetyOffset]
+  -[ATCIOA2Device inputSafetyOffset]
+  -[ATCIOA2Device name]
+  -[ATCIOA2Device setOutputStreams:]
+  -[ATCIOA2Device setInputStreams:]
+  -[ATCIOA2Device changeToSampleRate:error:]
+  -[ATCIOA2Device ioBufferSize]
+  -[ATCIOA2Device _buildInputStreams]
+  -[ATCIOA2Device _buildOutputStreams]
+  -[ATCIOA2Device startIOError:]
+  -[ATCIOA2Device stopIOError:]
+  -[ATCIOA2Device performConfiigChangeForNotification:error:]
+  -[ATCIOA2Device availableSampleRates]
+  -[ATCIOA2Device setAvailableSampleRates:]
+
+
+ATCIOA2Stream : NSObject
+ @property  BOOL input
+ @property  ATCIOA2StreamFormat *currentFormat
+ @property  NSArray *availableFormats
+ @property  unsigned int startingChannel
+
+  // instance methods
+  -[ATCIOA2Stream .cxx_destruct]
+  -[ATCIOA2Stream isInput]
+  -[ATCIOA2Stream initWithService:connection:index:input:description:]
+  -[ATCIOA2Stream currentFormat]
+  -[ATCIOA2Stream availableFormats]
+  -[ATCIOA2Stream startingChannel]
+
+
+ATCIOA2StreamFormat : NSObject <NSCopying>
+ @property  double sampleRate
+ @property  unsigned int formatID
+ @property  unsigned int formatFlags
+ @property  unsigned int bytesPerPacket
+ @property  unsigned int framesPerPacket
+ @property  unsigned int bytesPerFrame
+ @property  unsigned int channelsPerFrame
+ @property  unsigned int bitsPerChannel
+
+  // class methods
+  +[ATCIOA2StreamFormat aeaStreamFormatWithDictionary:]
+  +[ATCIOA2StreamFormat aeaStreamFormatsWithRangedDictionary:]
+
+  // instance methods
+  -[ATCIOA2StreamFormat sampleRate]
+  -[ATCIOA2StreamFormat copyWithZone:]
+  -[ATCIOA2StreamFormat isEqual:]
+  -[ATCIOA2StreamFormat setSampleRate:]
+  -[ATCIOA2StreamFormat formatID]
+  -[ATCIOA2StreamFormat setFormatID:]
+  -[ATCIOA2StreamFormat audioStreamBasicDescription]
+  -[ATCIOA2StreamFormat formatFlags]
+  -[ATCIOA2StreamFormat bytesPerPacket]
+  -[ATCIOA2StreamFormat framesPerPacket]
+  -[ATCIOA2StreamFormat bytesPerFrame]
+  -[ATCIOA2StreamFormat channelsPerFrame]
+  -[ATCIOA2StreamFormat bitsPerChannel]
+  -[ATCIOA2StreamFormat setBytesPerFrame:]
+  -[ATCIOA2StreamFormat setBitsPerChannel:]
+  -[ATCIOA2StreamFormat setBytesPerPacket:]
+  -[ATCIOA2StreamFormat setChannelsPerFrame:]
+  -[ATCIOA2StreamFormat setFormatFlags:]
+  -[ATCIOA2StreamFormat setFramesPerPacket:]
+  -[ATCIOA2StreamFormat initWithSampleRate:numChannels:commonPCMFormat:isInterleaved:]
+  -[ATCIOA2StreamFormat initWithAudioStreamBasicDescription:]
+  -[ATCIOA2StreamFormat initWithIOAudio2Dictionary:]
+  -[ATCIOA2StreamFormat framesToBytes:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/IOKitten.framework/IOKitten: IOKNotificationPort 
+01 00 0100 /System/Library/PrivateFrameworks/IOKitten.framework/IOKitten: IOKService 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

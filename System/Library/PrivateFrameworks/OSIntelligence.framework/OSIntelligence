@@ -1,0 +1,578 @@
+|| __DATA.__objc_data _OBJC_CLASS_$__OSChargingPredictorOutput
+|| __DATA.__objc_data _OBJC_CLASS_$__OSHighBatteryDrainPredictor
+|| __DATA.__objc_data _OBJC_CLASS_$__OSHighBatteryDrainUtil
+|| __DATA.__objc_data _OBJC_CLASS_$__OSInactivityPredictorOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSChargingPredictorOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSHighBatteryDrainPredictor
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSHighBatteryDrainUtil
+|| __DATA.__objc_data _OBJC_METACLASS_$__OSInactivityPredictorOutput
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSBatteryDrainPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSChargingPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSInactivityPredictionClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSInactivityPredictorBackupHourEntry
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSInactivityPredictorBackupHourEntry_v1
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__OSInactivityPredictorBackupHourEntry_v2
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__dayDrainInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSBatteryDrainPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSChargingPredictor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSInactivityPredictionClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSInactivityPredictorBackupHourEntry
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSInactivityPredictorBackupHourEntry_v1
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__OSInactivityPredictorBackupHourEntry_v2
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__dayDrainInfo
+|| __TEXT.__const _OSIntelligenceVersionNumber
+|| __TEXT.__const _OSIntelligenceVersionString
+|| __TEXT.__const _kInvalidPredictedDuration
+|| __TEXT.__const _kOSHighBatteryDrain12Hrs
+|| __TEXT.__const _kOSHighBatteryDrain15Min
+|| __TEXT.__const _kOSHighBatteryDrain1Day
+|| __TEXT.__const _kOSHighBatteryDrain1Hr
+|| __TEXT.__const _kOSHighBatteryDrain20Min
+|| __TEXT.__const _kOSHighBatteryDrain3Hrs
+|| __TEXT.__const _kOSHighBatteryDrainActivityMean
+|| __TEXT.__const _kOSHighBatteryDrainActivityStd
+|| __TEXT.__const _kOSHighBatteryDrainBattThreshold
+|| __TEXT.__const _kOSHighBatteryDrainBattWeekdayPercentileMean
+|| __TEXT.__const _kOSHighBatteryDrainBattWeekdayPercentileStd
+|| __TEXT.__const _kOSHighBatteryDrainDistFromTotalMean
+|| __TEXT.__const _kOSHighBatteryDrainDistFromTotalStd
+|| __TEXT.__const _kOSHighBatteryDrainDrainSinceLastPluginMean
+|| __TEXT.__const _kOSHighBatteryDrainDrainSinceLastPluginStd
+|| __TEXT.__const _kOSHighBatteryDrainHour
+|| __TEXT.__const _kOSHighBatteryDrainMaxBatt12Mean
+|| __TEXT.__const _kOSHighBatteryDrainMaxBatt12Std
+|| __TEXT.__const _kOSHighBatteryDrainMeanActivityMean
+|| __TEXT.__const _kOSHighBatteryDrainMeanActivityStd
+|| __TEXT.__const _kOSHighBatteryDrainMeanChargeDurationThreshold
+|| __TEXT.__const _kOSHighBatteryDrainMeanDailyPluginsMean
+|| __TEXT.__const _kOSHighBatteryDrainMeanDailyPluginsStd
+|| __TEXT.__const _kOSHighBatteryDrainMinute
+|| __TEXT.__const _kOSHighBatteryDrainNEventsPrior
+|| __TEXT.__const _kOSHighBatteryDrainNEventsPriorStd
+|| __TEXT.__const _kOSHighBatteryDrainNetDrainSinceMaxMean
+|| __TEXT.__const _kOSHighBatteryDrainNetDrainSinceMaxStd
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain15MinMean
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain15MinStd
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain1Mean
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain1Std
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain3Mean
+|| __TEXT.__const _kOSHighBatteryDrainRecentDrain3Std
+|| __TEXT.__const _kOSHighBatteryDrainSaturday
+|| __TEXT.__const _kOSHighBatteryDrainStartTimeSecsMean
+|| __TEXT.__const _kOSHighBatteryDrainStartTimeSecsStd
+|| __TEXT.__const _kOSHighBatteryDrainSunday
+|| __TEXT.__const _kOSHighBatteryDrainUserMeanDrainMean
+|| __TEXT.__const _kOSHighBatteryDrainUserMeanDrainStd
+|| __TEXT.__const _kOSHighBatteryDrainValueMean
+|| __TEXT.__const _kOSHighBatteryDrainValueStd
+__ BiomeStreams: _OBJC_CLASS_$_BMStreams
+__ CoreDuet: _OBJC_CLASS_$__DKEventQuery
+__ CoreDuet: _OBJC_CLASS_$__DKQuery
+__ CoreDuet: _OBJC_CLASS_$__DKSystemEventStreams
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreML: _OBJC_CLASS_$_MLArrayBatchProvider
+__ CoreML: _OBJC_CLASS_$_MLDictionaryFeatureProvider
+__ CoreML: _OBJC_CLASS_$_MLFeatureValue
+__ CoreML: _OBJC_CLASS_$_MLModel
+__ CoreML: _OBJC_CLASS_$_MLPredictionOptions
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+_OSChargingPredictor : NSObject
+ @property  NSObject<OS_os_log> *log
+ @property  NSXPCConnection *connection
+
+  // class methods
+  +[_OSChargingPredictor predictor]
+
+  // instance methods
+  -[_OSChargingPredictor .cxx_destruct]
+  -[_OSChargingPredictor connection]
+  -[_OSChargingPredictor log]
+  -[_OSChargingPredictor setLog:]
+  -[_OSChargingPredictor init]
+  -[_OSChargingPredictor setConnection:]
+  -[_OSChargingPredictor longChargeExpected]
+  -[_OSChargingPredictor longChargeExpectedWithConfidence:]
+  -[_OSChargingPredictor predictedChargeDuration]
+  -[_OSChargingPredictor chargePredictionOutputWithError:]
+  -[_OSChargingPredictor timeUntilNextExpectedPlugin]
+  -[_OSChargingPredictor timeUntilNextExpectedPluginWithConfidence:]
+  -[_OSChargingPredictor isDeepDischargeExpected]
+  -[_OSChargingPredictor expectedMinimumDischarge]
+
+
+_OSInactivityPredictorBackupHourEntry : NSObject <NSSecureCoding>
+ @property  double averageDuration
+ @property  double stdDev
+
+  // class methods
+  +[_OSInactivityPredictorBackupHourEntry supportsSecureCoding]
+  +[_OSInactivityPredictorBackupHourEntry descriptionWithHistoryEntries:]
+
+  // instance methods
+  -[_OSInactivityPredictorBackupHourEntry encodeWithCoder:]
+  -[_OSInactivityPredictorBackupHourEntry initWithCoder:]
+  -[_OSInactivityPredictorBackupHourEntry averageDuration]
+  -[_OSInactivityPredictorBackupHourEntry setAverageDuration:]
+  -[_OSInactivityPredictorBackupHourEntry stdDev]
+  -[_OSInactivityPredictorBackupHourEntry setStdDev:]
+
+
+_OSInactivityPredictorBackupHourEntry_v1 : _OSInactivityPredictorBackupHourEntry
+ @property  int count
+
+  // class methods
+  +[_OSInactivityPredictorBackupHourEntry_v1 supportsSecureCoding]
+
+  // instance methods
+  -[_OSInactivityPredictorBackupHourEntry_v1 setCount:]
+  -[_OSInactivityPredictorBackupHourEntry_v1 encodeWithCoder:]
+  -[_OSInactivityPredictorBackupHourEntry_v1 count]
+  -[_OSInactivityPredictorBackupHourEntry_v1 isEqual:]
+  -[_OSInactivityPredictorBackupHourEntry_v1 initWithCoder:]
+
+
+_OSInactivityPredictorBackupHourEntry_v2 : _OSInactivityPredictorBackupHourEntry
+ @property  double pctLong
+
+  // class methods
+  +[_OSInactivityPredictorBackupHourEntry_v2 supportsSecureCoding]
+
+  // instance methods
+  -[_OSInactivityPredictorBackupHourEntry_v2 encodeWithCoder:]
+  -[_OSInactivityPredictorBackupHourEntry_v2 isEqual:]
+  -[_OSInactivityPredictorBackupHourEntry_v2 initWithCoder:]
+  -[_OSInactivityPredictorBackupHourEntry_v2 pctLong]
+  -[_OSInactivityPredictorBackupHourEntry_v2 setPctLong:]
+
+
+_OSChargingPredictorOutput : NSObject <NSSecureCoding>
+ @property  double confidence
+ @property  BOOL meetsSystemConfidenceThreshold
+ @property  double chargingDuration
+
+  // class methods
+  +[_OSChargingPredictorOutput supportsSecureCoding]
+
+  // instance methods
+  -[_OSChargingPredictorOutput confidence]
+  -[_OSChargingPredictorOutput setChargingDuration:]
+  -[_OSChargingPredictorOutput chargingDuration]
+  -[_OSChargingPredictorOutput encodeWithCoder:]
+  -[_OSChargingPredictorOutput setConfidence:]
+  -[_OSChargingPredictorOutput initWithCoder:]
+  -[_OSChargingPredictorOutput meetsSystemConfidenceThreshold]
+  -[_OSChargingPredictorOutput setMeetsSystemConfidenceThreshold:]
+
+
+_OSHighBatteryDrainHighChargeDurationModelInput : NSObject <MLFeatureProvider>
+ @property  double activity
+ @property  double n_events_prior
+ @property  double batt_weekday_percentile_prior
+ @property  double dist_from_total_mean
+ @property  double drain_since_last_plugin
+ @property  double max_batt_12
+ @property  double mean_activity
+ @property  double mean_daily_plugins
+ @property  double net_drain_since_max
+ @property  double recent_drain_1
+ @property  double recent_drain_15min
+ @property  double recent_drain_3
+ @property  double start_time_secs
+ @property  double user_mean_drain
+ @property  double value
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[_OSHighBatteryDrainHighChargeDurationModelInput featureNames]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput featureValueForName:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setValue:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput activity]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput value]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setActivity:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput initWithActivity:n_events_prior:batt_weekday_percentile_prior:dist_from_total_mean:drain_since_last_plugin:max_batt_12:mean_activity:mean_daily_plugins:net_drain_since_max:recent_drain_1:recent_drain_15min:recent_drain_3:start_time_secs:user_mean_drain:value:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput n_events_prior]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setN_events_prior:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput batt_weekday_percentile_prior]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setBatt_weekday_percentile_prior:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput dist_from_total_mean]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setDist_from_total_mean:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput drain_since_last_plugin]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setDrain_since_last_plugin:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput max_batt_12]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setMax_batt_12:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput mean_activity]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setMean_activity:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput mean_daily_plugins]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setMean_daily_plugins:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput net_drain_since_max]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setNet_drain_since_max:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput recent_drain_1]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setRecent_drain_1:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput recent_drain_15min]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setRecent_drain_15min:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput recent_drain_3]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setRecent_drain_3:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput start_time_secs]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setStart_time_secs:]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput user_mean_drain]
+  -[_OSHighBatteryDrainHighChargeDurationModelInput setUser_mean_drain:]
+
+
+_OSHighBatteryDrainHighChargeDurationModelOutput : NSObject <MLFeatureProvider>
+ @property  long long label
+ @property  NSDictionary *classProbability
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput featureNames]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput featureValueForName:]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput setLabel:]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput .cxx_destruct]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput label]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput classProbability]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput initWithLabel:classProbability:]
+  -[_OSHighBatteryDrainHighChargeDurationModelOutput setClassProbability:]
+
+
+_OSHighBatteryDrainHighChargeDurationModel : NSObject
+ @property  MLModel *model
+
+  // class methods
+  +[_OSHighBatteryDrainHighChargeDurationModel urlOfModelInThisBundle]
+
+  // instance methods
+  -[_OSHighBatteryDrainHighChargeDurationModel initWithContentsOfURL:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel predictionFromFeatures:options:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel model]
+  -[_OSHighBatteryDrainHighChargeDurationModel .cxx_destruct]
+  -[_OSHighBatteryDrainHighChargeDurationModel initWithConfiguration:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel predictionFromFeatures:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel init]
+  -[_OSHighBatteryDrainHighChargeDurationModel initWithContentsOfURL:configuration:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel predictionsFromInputs:options:error:]
+  -[_OSHighBatteryDrainHighChargeDurationModel predictionFromActivity:n_events_prior:batt_weekday_percentile_prior:dist_from_total_mean:drain_since_last_plugin:max_batt_12:mean_activity:mean_daily_plugins:net_drain_since_max:recent_drain_1:recent_drain_15min:recent_drain_3:start_time_secs:user_mean_drain:value:error:]
+
+
+_OSHighBatteryDrainLowChargeDurationModelInput : NSObject <MLFeatureProvider>
+ @property  double activity
+ @property  double n_events_prior
+ @property  double batt_weekday_percentile_prior
+ @property  double dist_from_total_mean
+ @property  double drain_since_last_plugin
+ @property  double max_batt_12
+ @property  double mean_activity
+ @property  double mean_daily_plugins
+ @property  double net_drain_since_max
+ @property  double recent_drain_1
+ @property  double recent_drain_15min
+ @property  double recent_drain_3
+ @property  double start_time_secs
+ @property  double user_mean_drain
+ @property  double value
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[_OSHighBatteryDrainLowChargeDurationModelInput featureNames]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput featureValueForName:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setValue:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput activity]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput value]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setActivity:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput initWithActivity:n_events_prior:batt_weekday_percentile_prior:dist_from_total_mean:drain_since_last_plugin:max_batt_12:mean_activity:mean_daily_plugins:net_drain_since_max:recent_drain_1:recent_drain_15min:recent_drain_3:start_time_secs:user_mean_drain:value:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput n_events_prior]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setN_events_prior:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput batt_weekday_percentile_prior]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setBatt_weekday_percentile_prior:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput dist_from_total_mean]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setDist_from_total_mean:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput drain_since_last_plugin]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setDrain_since_last_plugin:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput max_batt_12]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setMax_batt_12:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput mean_activity]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setMean_activity:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput mean_daily_plugins]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setMean_daily_plugins:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput net_drain_since_max]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setNet_drain_since_max:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput recent_drain_1]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setRecent_drain_1:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput recent_drain_15min]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setRecent_drain_15min:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput recent_drain_3]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setRecent_drain_3:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput start_time_secs]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setStart_time_secs:]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput user_mean_drain]
+  -[_OSHighBatteryDrainLowChargeDurationModelInput setUser_mean_drain:]
+
+
+_OSHighBatteryDrainLowChargeDurationModelOutput : NSObject <MLFeatureProvider>
+ @property  long long label
+ @property  NSDictionary *classProbability
+ @property  NSSet *featureNames
+
+  // instance methods
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput featureNames]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput featureValueForName:]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput setLabel:]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput .cxx_destruct]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput label]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput classProbability]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput initWithLabel:classProbability:]
+  -[_OSHighBatteryDrainLowChargeDurationModelOutput setClassProbability:]
+
+
+_OSHighBatteryDrainLowChargeDurationModel : NSObject
+ @property  MLModel *model
+
+  // class methods
+  +[_OSHighBatteryDrainLowChargeDurationModel urlOfModelInThisBundle]
+
+  // instance methods
+  -[_OSHighBatteryDrainLowChargeDurationModel initWithContentsOfURL:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel predictionFromFeatures:options:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel model]
+  -[_OSHighBatteryDrainLowChargeDurationModel .cxx_destruct]
+  -[_OSHighBatteryDrainLowChargeDurationModel initWithConfiguration:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel predictionFromFeatures:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel init]
+  -[_OSHighBatteryDrainLowChargeDurationModel initWithContentsOfURL:configuration:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel predictionsFromInputs:options:error:]
+  -[_OSHighBatteryDrainLowChargeDurationModel predictionFromActivity:n_events_prior:batt_weekday_percentile_prior:dist_from_total_mean:drain_since_last_plugin:max_batt_12:mean_activity:mean_daily_plugins:net_drain_since_max:recent_drain_1:recent_drain_15min:recent_drain_3:start_time_secs:user_mean_drain:value:error:]
+
+
+_OSHighBatteryDrainPredictor : NSObject
+ @property  NSObject<OS_os_log> *log
+
+  // instance methods
+  -[_OSHighBatteryDrainPredictor getValue:]
+  -[_OSHighBatteryDrainPredictor .cxx_destruct]
+  -[_OSHighBatteryDrainPredictor log]
+  -[_OSHighBatteryDrainPredictor getActivity:]
+  -[_OSHighBatteryDrainPredictor setLog:]
+  -[_OSHighBatteryDrainPredictor init]
+  -[_OSHighBatteryDrainPredictor getNEventsPrior:]
+  -[_OSHighBatteryDrainPredictor getBattWeekdayPercentilePrior:forValue:]
+  -[_OSHighBatteryDrainPredictor getDistFromTotalMean:forValue:]
+  -[_OSHighBatteryDrainPredictor getDrainSinceLastPlugin:forValue:]
+  -[_OSHighBatteryDrainPredictor getMaxBatt12:]
+  -[_OSHighBatteryDrainPredictor getMeanActivity:]
+  -[_OSHighBatteryDrainPredictor getMeanDailyPlugins:]
+  -[_OSHighBatteryDrainPredictor getNetDrainSinceMax:forValue:]
+  -[_OSHighBatteryDrainPredictor getRecentDrain1:forValue:]
+  -[_OSHighBatteryDrainPredictor getRecentDrain15Min:forValue:]
+  -[_OSHighBatteryDrainPredictor getRecentDrain3:forValue:]
+  -[_OSHighBatteryDrainPredictor getStartTimeSeconds:]
+  -[_OSHighBatteryDrainPredictor getUserMeanDrain:]
+  -[_OSHighBatteryDrainPredictor getMeanChargeDuration:]
+  -[_OSHighBatteryDrainPredictor getDataWithStore:]
+  -[_OSHighBatteryDrainPredictor getFeatures:]
+  -[_OSHighBatteryDrainPredictor batteryDrainPrediction:withChargeDuration:]
+  -[_OSHighBatteryDrainPredictor predictLowBatteryEventWithStore:]
+
+
+_OSHighBatteryDrainUtil : NSObject
+  // class methods
+  +[_OSHighBatteryDrainUtil hourFromDate:]
+  +[_OSHighBatteryDrainUtil dateFromDate:]
+  +[_OSHighBatteryDrainUtil isWeekday:]
+  +[_OSHighBatteryDrainUtil maxOf:]
+  +[_OSHighBatteryDrainUtil meanOf:]
+  +[_OSHighBatteryDrainUtil timeInSeconds:]
+  +[_OSHighBatteryDrainUtil percentileOf:forDistribution:]
+
+
+_OSInactivityPredictionClient : NSObject <_OSInactivityPredictionProtocol_Private, _OSInactivityPredictionProtocol>
+ @property  NSXPCConnection *connection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_OSInactivityPredictionClient longInactivityPredictionResultWithError:]
+  -[_OSInactivityPredictionClient overrideRecommendedWaitTimeTo:]
+  -[_OSInactivityPredictionClient restoreInactivityModel]
+  -[_OSInactivityPredictionClient modelDescription]
+  -[_OSInactivityPredictionClient backedUpDataWithHandler:]
+  -[_OSInactivityPredictionClient recommendedWaitTime]
+  -[_OSInactivityPredictionClient restoreInactivityModelWithHandler:]
+  -[_OSInactivityPredictionClient unfixModelOutputWithHandler:]
+  -[_OSInactivityPredictionClient .cxx_destruct]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultAtDate:withError:]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultAtDate:withHandler:]
+  -[_OSInactivityPredictionClient overrideRecommendedWaitTimeTo:withHandler:]
+  -[_OSInactivityPredictionClient backedUpData]
+  -[_OSInactivityPredictionClient connection]
+  -[_OSInactivityPredictionClient longInactivityPredictionResultWithHandler:]
+  -[_OSInactivityPredictionClient hasEnoughInactivityHistory]
+  -[_OSInactivityPredictionClient forceInactivityTwoStageModel]
+  -[_OSInactivityPredictionClient hasEnoughInactivityHistoryWithHandler:]
+  -[_OSInactivityPredictionClient fixModelOutput:]
+  -[_OSInactivityPredictionClient fixModelOutput:withHandler:]
+  -[_OSInactivityPredictionClient restoreRecommendedWaitTime]
+  -[_OSInactivityPredictionClient deviceUsageDiagnosis]
+  -[_OSInactivityPredictionClient unfixModelOutput]
+  -[_OSInactivityPredictionClient inactivityHistoryDiagnosisWithHandler:]
+  -[_OSInactivityPredictionClient restoreRecommendedWaitTimeWithHandler:]
+  -[_OSInactivityPredictionClient inactivityHistoryDiagnosis]
+  -[_OSInactivityPredictionClient modelDescriptionWithHandler:]
+  -[_OSInactivityPredictionClient forceInactivityTwoStageModelWithHandler:]
+  -[_OSInactivityPredictionClient recommendedWaitTimeWithHandler:]
+  -[_OSInactivityPredictionClient deviceUsageDiagnosisWithHandler:]
+  -[_OSInactivityPredictionClient init]
+
+
+_OSInactivityPredictorOutput : NSObject <NSSecureCoding>
+ @property  long long confidenceLevel
+ @property  double confidenceValue
+ @property  double predictedDuration
+ @property  long long outputReason
+
+  // class methods
+  +[_OSInactivityPredictorOutput supportsSecureCoding]
+
+  // instance methods
+  -[_OSInactivityPredictorOutput confidenceLevel]
+  -[_OSInactivityPredictorOutput encodeWithCoder:]
+  -[_OSInactivityPredictorOutput initWithCoder:]
+  -[_OSInactivityPredictorOutput initInvalidOutput]
+  -[_OSInactivityPredictorOutput initWithConfidenceLevel:andConfidenceValue:andPredictedDuration:andReason:]
+  -[_OSInactivityPredictorOutput initWithConfidenceValue:andRelaxedThreshold:andStrictThreshold:andPredictedDuration:andReason:]
+  -[_OSInactivityPredictorOutput initWithConfidenceValue:andRelaxedThreshold:andStrictThreshold:andPredictedDuration:withReason:]
+  -[_OSInactivityPredictorOutput adjustedPredictedDurationWithStrictLeeway:andRelaxedLeeway:andMaxPredictionCap:]
+  -[_OSInactivityPredictorOutput safeSubtractWaitTimeFromPredictedDuration:]
+  -[_OSInactivityPredictorOutput outputReasonString]
+  -[_OSInactivityPredictorOutput confidenceLevelString]
+  -[_OSInactivityPredictorOutput confidenceValueString]
+  -[_OSInactivityPredictorOutput predictedDurationString]
+  -[_OSInactivityPredictorOutput confidenceValue]
+  -[_OSInactivityPredictorOutput predictedDuration]
+  -[_OSInactivityPredictorOutput outputReason]
+
+
+_dayDrainInfo : NSObject
+ @property  long long drainSoFar
+ @property  long long lastBatterySoC
+
+  // instance methods
+  -[_dayDrainInfo setDrainSoFar:]
+  -[_dayDrainInfo setLastBatterySoC:]
+  -[_dayDrainInfo drainSoFar]
+  -[_dayDrainInfo lastBatterySoC]
+  -[_dayDrainInfo init]
+
+
+_OSBatteryDrainPredictor : NSObject
+ @property  NSObject<OS_os_log> *log
+
+  // class methods
+  +[_OSBatteryDrainPredictor predictor]
+  +[_OSBatteryDrainPredictor behaviorDescription:]
+
+  // instance methods
+  -[_OSBatteryDrainPredictor .cxx_destruct]
+  -[_OSBatteryDrainPredictor logCompletion:]
+  -[_OSBatteryDrainPredictor log]
+  -[_OSBatteryDrainPredictor drainPerDayFromDate:forNumberOfDays:]
+  -[_OSBatteryDrainPredictor setLog:]
+  -[_OSBatteryDrainPredictor init]
+  -[_OSBatteryDrainPredictor historicalClassification]
+  -[_OSBatteryDrainPredictor drainForEventsFromStream:matchingQuery:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams: BMStreams 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLArrayBatchProvider 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLDictionaryFeatureProvider 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLFeatureValue 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLModel 
+01 00 0700 /System/Library/Frameworks/CoreML.framework/CoreML: MLPredictionOptions 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKEventQuery 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKQuery 
+01 00 0200 /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet: _DKSystemEventStreams 

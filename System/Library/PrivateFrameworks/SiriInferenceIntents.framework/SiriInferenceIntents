@@ -1,0 +1,191 @@
+|| __DATA.__data _OBJC_METACLASS_$_ActionParameter
+|| __DATA.__data _OBJC_METACLASS_$_ActionParameterResolutionResult
+|| __DATA.__data _OBJC_METACLASS_$_ExecuteSuggestionIntent
+|| __DATA.__data _OBJC_METACLASS_$_ExecuteSuggestionIntentResponse
+|| __DATA.__data _OBJC_METACLASS_$_GetSuggestionsIntent
+|| __DATA.__data _OBJC_METACLASS_$_GetSuggestionsIntentResponse
+|| __DATA.__data _OBJC_METACLASS_$_SearchForSportsIntent
+|| __DATA.__data _OBJC_METACLASS_$_SearchForSportsIntentResponse
+|| __DATA.__data _OBJC_METACLASS_$_SiriLinkFlowIntent
+|| __DATA.__data _OBJC_METACLASS_$_SiriLinkFlowIntentResponse
+|| __DATA.__data _OBJC_METACLASS_$_Suggestion
+|| __DATA.__data _OBJC_METACLASS_$_SuggestionResolutionResult
+|| __DATA.__objc_data _OBJC_CLASS_$_ActionParameter
+|| __DATA.__objc_data _OBJC_CLASS_$_ActionParameterResolutionResult
+|| __DATA.__objc_data _OBJC_CLASS_$_ExecuteSuggestionIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_ExecuteSuggestionIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_GetSuggestionsIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_GetSuggestionsIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_SearchForSportsIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_SearchForSportsIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_SiriLinkFlowIntent
+|| __DATA.__objc_data _OBJC_CLASS_$_SiriLinkFlowIntentResponse
+|| __DATA.__objc_data _OBJC_CLASS_$_Suggestion
+|| __DATA.__objc_data _OBJC_CLASS_$_SuggestionResolutionResult
+__ Intents: _OBJC_CLASS_$_INIntent
+__ Intents: _OBJC_CLASS_$_INIntentResponse
+__ Intents: _OBJC_CLASS_$_INObject
+__ Intents: _OBJC_CLASS_$_INObjectResolutionResult
+__ Intents: _OBJC_METACLASS_$_INIntent
+__ Intents: _OBJC_METACLASS_$_INIntentResponse
+__ Intents: _OBJC_METACLASS_$_INObject
+__ Intents: _OBJC_METACLASS_$_INObjectResolutionResult
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x3
+__ libswiftCore.dylib: _swift_beginAccess
+__ libswiftCore.dylib: _swift_bridgeObjectRelease
+__ libswiftCore.dylib: _swift_bridgeObjectRetain
+__ libswiftCore.dylib: _swift_deletedMethodError
+__ libswiftCore.dylib: _swift_getObjCClassFromMetadata
+__ libswiftCore.dylib: _swift_getObjCClassMetadata
+__ libswiftCore.dylib: _swift_getWitnessTable
+__ libswiftCore.dylib: _swift_isaMask
+__ libswiftCore.dylib: _swift_lookUpClassMethod
+SearchForSportsIntent : INIntent
+ @property  NSString *sportName
+ @property  NSString *leagueName
+ @property  NSString *teamName
+ @property  NSString *athleteName
+ @property  NSString *sportQId
+ @property  NSString *leagueQId
+ @property  NSString *teamQId
+ @property  NSString *athleteQId
+
+  // instance methods
+  -[SearchForSportsIntent init]
+  -[SearchForSportsIntent initWithCoder:]
+
+
+SearchForSportsIntentResponse : INIntentResponse
+ @property  long long code
+
+  // instance methods
+  -[SearchForSportsIntentResponse setCode:]
+  -[SearchForSportsIntentResponse code]
+  -[SearchForSportsIntentResponse init]
+  -[SearchForSportsIntentResponse initWithCoder:]
+  -[SearchForSportsIntentResponse initWithCode:userActivity:]
+
+
+GetSuggestionsIntent : INIntent
+  // instance methods
+  -[GetSuggestionsIntent init]
+  -[GetSuggestionsIntent initWithCoder:]
+
+
+GetSuggestionsIntentResponse : INIntentResponse
+ @property  NSArray *suggestions
+ @property  long long code
+
+  // instance methods
+  -[GetSuggestionsIntentResponse setCode:]
+  -[GetSuggestionsIntentResponse code]
+  -[GetSuggestionsIntentResponse init]
+  -[GetSuggestionsIntentResponse initWithCoder:]
+  -[GetSuggestionsIntentResponse initWithCode:userActivity:]
+
+
+ExecuteSuggestionIntent : INIntent
+ @property  Suggestion *suggestion
+
+  // instance methods
+  -[ExecuteSuggestionIntent init]
+  -[ExecuteSuggestionIntent initWithCoder:]
+
+
+ExecuteSuggestionIntentResponse : INIntentResponse
+ @property  long long code
+
+  // instance methods
+  -[ExecuteSuggestionIntentResponse setCode:]
+  -[ExecuteSuggestionIntentResponse code]
+  -[ExecuteSuggestionIntentResponse init]
+  -[ExecuteSuggestionIntentResponse initWithCoder:]
+  -[ExecuteSuggestionIntentResponse initWithCode:userActivity:]
+
+
+Suggestion : INObject
+ @property  NSString *actionIdentifier
+ @property  NSArray *parameters
+
+  // class methods
+  +[Suggestion supportsSecureCoding]
+
+  // instance methods
+  -[Suggestion initWithIdentifier:displayString:pronunciationHint:]
+  -[Suggestion initWithCoder:]
+
+
+SuggestionResolutionResult : INObjectResolutionResult
+  // class methods
+  +[SuggestionResolutionResult successWithResolvedObject:]
+  +[SuggestionResolutionResult disambiguationWithObjectsToDisambiguate:]
+  +[SuggestionResolutionResult confirmationRequiredWithObjectToConfirm:]
+  +[SuggestionResolutionResult successWithResolvedSuggestion:]
+  +[SuggestionResolutionResult disambiguationWithSuggestionsToDisambiguate:]
+  +[SuggestionResolutionResult confirmationRequiredWithSuggestionToConfirm:]
+
+
+ActionParameter : INObject
+ @property  NSString *key
+ @property  NSString *value
+
+  // class methods
+  +[ActionParameter supportsSecureCoding]
+
+  // instance methods
+  -[ActionParameter initWithIdentifier:displayString:pronunciationHint:]
+  -[ActionParameter initWithCoder:]
+
+
+ActionParameterResolutionResult : INObjectResolutionResult
+  // class methods
+  +[ActionParameterResolutionResult successWithResolvedObject:]
+  +[ActionParameterResolutionResult disambiguationWithObjectsToDisambiguate:]
+  +[ActionParameterResolutionResult confirmationRequiredWithObjectToConfirm:]
+  +[ActionParameterResolutionResult successWithResolvedActionParameter:]
+  +[ActionParameterResolutionResult disambiguationWithActionParametersToDisambiguate:]
+  +[ActionParameterResolutionResult confirmationRequiredWithActionParameterToConfirm:]
+
+
+SiriLinkFlowIntent : INIntent
+ @property  NSString *bundleIdentifier
+ @property  NSString *actionIdentifier
+
+  // instance methods
+  -[SiriLinkFlowIntent init]
+  -[SiriLinkFlowIntent initWithCoder:]
+
+
+SiriLinkFlowIntentResponse : INIntentResponse
+ @property  long long code
+
+  // instance methods
+  -[SiriLinkFlowIntentResponse setCode:]
+  -[SiriLinkFlowIntentResponse code]
+  -[SiriLinkFlowIntentResponse init]
+  -[SiriLinkFlowIntentResponse initWithCoder:]
+  -[SiriLinkFlowIntentResponse initWithCode:userActivity:]
+
+
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INIntent 
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INIntentResponse 
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INObject 
+01 00 0400 /System/Library/Frameworks/Intents.framework/Intents: INObjectResolutionResult 

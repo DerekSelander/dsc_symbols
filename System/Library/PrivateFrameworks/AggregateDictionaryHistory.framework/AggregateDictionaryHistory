@@ -1,0 +1,34 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADHistory
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_ADHistoryDistributionEnumerator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADHistory
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_ADHistoryDistributionEnumerator
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ libSystem.B.dylib: _time
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+ADHistoryDistributionEnumerator : NSObject
+  // instance methods
+  -[ADHistoryDistributionEnumerator getNextValue:secondsInDayOffset:]
+
+
+ADHistory : NSObject
+ @property  NSString *path
+
+  // instance methods
+  -[ADHistory initWithPath:]
+  -[ADHistory path]
+  -[ADHistory initWithDefaultPath]
+  -[ADHistory scalarsForKeyPrefix:minDaysSince1970:maxDaysSince1970:rowHandler:]
+  -[ADHistory distributionsForKeyPrefix:minDaysSince1970:maxDaysSince1970:rowHandler:]
+
+
+(AggregateDictionaryAdditions)
+	// class methods
+	+[(AggregateDictionaryAdditions) daysSince1970]
+	+[(AggregateDictionaryAdditions) dateForDaysSince1970:]
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 

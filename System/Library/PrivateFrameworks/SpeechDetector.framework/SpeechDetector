@@ -1,0 +1,104 @@
+|| __DATA.__data _SDLoggingSubsystem
+|| __DATA.__data _kSDLoggingContextFramework
+|| __DATA_DIRTY.__common _SDLogContextFacilityLocalSRBridge
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSDAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_OSDFeatures
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSDAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_OSDFeatures
+|| __TEXT.__text _SDLogInitIfNeeded
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: ___CFConstantStringClassReference
+__ EmbeddedAcousticRecognition: _OBJC_CLASS_$_EARCaesuraSilencePosteriorGenerator
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+OSDFeatures : NSObject
+ @property  double silenceFramesCountMs
+ @property  double silenceProbability
+ @property  double silenceDurationMs
+ @property  double processedAudioMs
+
+  // instance methods
+  -[OSDFeatures silenceProbability]
+  -[OSDFeatures silenceFramesCountMs]
+  -[OSDFeatures silenceDurationMs]
+  -[OSDFeatures processedAudioMs]
+  -[OSDFeatures initWithSilenceFramesCountMs:silenceProbability:silenceDurationMs:processedAudioMs:]
+
+
+OSDAnalyzer : NSObject <EARCaesuraSilencePosteriorGeneratorDelegate>
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  EARCaesuraSilencePosteriorGenerator *caesuraSPG
+ @property  <OSDAnalyzerDelegate> *delegate
+ @property  NSDictionary *osdContext
+ @property  OSDFeatures *osdFeatures
+ @property  BOOL endOfSpeechDetected
+ @property  BOOL startOfSpeechDetected
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[OSDAnalyzer endAudio]
+  -[OSDAnalyzer setDelegate:]
+  -[OSDAnalyzer delegate]
+  -[OSDAnalyzer .cxx_destruct]
+  -[OSDAnalyzer setQueue:]
+  -[OSDAnalyzer queue]
+  -[OSDAnalyzer clientSilenceFeaturesAvailable:]
+  -[OSDAnalyzer addAudio:numSamples:]
+  -[OSDAnalyzer getFrameDurationMs]
+  -[OSDAnalyzer initWithConfigFile:sampleRate:context:queue:delegate:]
+  -[OSDAnalyzer startOfSpeechDetected]
+  -[OSDAnalyzer setStartOfSpeechDetected:]
+  -[OSDAnalyzer caesuraSPG]
+  -[OSDAnalyzer setCaesuraSPG:]
+  -[OSDAnalyzer getCurrentOSDFeatures]
+  -[OSDAnalyzer resetForNewRequestWithContext:]
+  -[OSDAnalyzer osdContext]
+  -[OSDAnalyzer setOsdContext:]
+  -[OSDAnalyzer osdFeatures]
+  -[OSDAnalyzer setOsdFeatures:]
+  -[OSDAnalyzer endOfSpeechDetected]
+  -[OSDAnalyzer setEndOfSpeechDetected:]
+
+
+01 00 0240 /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition: EARCaesuraSilencePosteriorGenerator 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0500 /usr/lib/libobjc.A.dylib: NSObject 

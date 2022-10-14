@@ -1,0 +1,929 @@
+|| __DATA.__data _kSFLogConnection
+|| __DATA.__data _kSFLogFramework
+|| __DATA.__objc_data _OBJC_CLASS_$_SFAcousticFeature
+|| __DATA.__objc_data _OBJC_CLASS_$_SFSpeechAudioBufferRecognitionRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_SFSpeechLanguageModel
+|| __DATA.__objc_data _OBJC_CLASS_$_SFSpeechRecognitionMetadata
+|| __DATA.__objc_data _OBJC_CLASS_$_SFVoiceAnalytics
+|| __DATA.__objc_data _OBJC_CLASS_$__SFSearchRequest
+|| __DATA.__objc_data _OBJC_CLASS_$__SFSearchResult
+|| __DATA.__objc_data _OBJC_CLASS_$__SFSpeechRecognitionBlockTask
+|| __DATA.__objc_data _OBJC_METACLASS_$_SFAcousticFeature
+|| __DATA.__objc_data _OBJC_METACLASS_$_SFSpeechAudioBufferRecognitionRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_SFSpeechLanguageModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_SFSpeechRecognitionMetadata
+|| __DATA.__objc_data _OBJC_METACLASS_$_SFVoiceAnalytics
+|| __DATA.__objc_data _OBJC_METACLASS_$__SFSearchRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$__SFSearchResult
+|| __DATA.__objc_data _OBJC_METACLASS_$__SFSpeechRecognitionBlockTask
+|| __DATA_CONST.__const _kLSRServiceName
+|| __DATA_CONST.__const _kSFCoreAnalyticsAppnameKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsAsrInitializationTimeKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsAudioDurationKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsCpuRtfKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsErrorCode
+|| __DATA_CONST.__const _kSFCoreAnalyticsErrorDomain
+|| __DATA_CONST.__const _kSFCoreAnalyticsIsFinalKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsJitLmeProcessingTimeKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsLanguageKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsModelLoadTimeKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsModelVersionKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsNarrowbandKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsOndeviceKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsRecognitionDurationKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsRecognitionResponseTimeKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsSuccessKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsTTFWKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsTaskKey
+|| __DATA_CONST.__const _kSFCoreAnalyticsTextNotEmptyKey
+|| __DATA_CONST.__const _kSFHindiLocaleIdentifier
+|| __DATA_CONST.__const _kSFHindiTranslitKeyboardIdentifier
+|| __DATA_CONST.__const _kSFHindiTranslitReplacementLocaleIdentifier
+|| __DATA_CONST.__const _kSFSpeechRecognizerDumpedTaskIdentifierKey
+|| __DATA_CONST.__const _kSFSpeechRecognizerTaskCaptioning
+|| __DATA_CONST.__const _kSFSpeechRecognizerTaskDictation
+|| __DATA_CONST.__const _kSFSpeechRecognizerTaskVoiceMail
+|| __DATA_DIRTY.__common _SFLogConnection
+|| __DATA_DIRTY.__common _SFLogFramework
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFLocalSpeechRecognitionClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFRequestParameters
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechAssetManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechRecognitionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechRecognitionResult
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechRecognitionTask
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechRecognizer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSpeechURLRecognitionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFTranscription
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFTranscriptionSegment
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__SFSpeechRecognitionDelegateTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFLocalSpeechRecognitionClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFRequestParameters
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechAssetManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechRecognitionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechRecognitionResult
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechRecognitionTask
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechRecognizer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSpeechURLRecognitionRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFTranscription
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFTranscriptionSegment
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFUtilities
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__SFSpeechRecognitionDelegateTask
+|| __TEXT.__const _SpeechVersionNumber
+|| __TEXT.__const _SpeechVersionString
+|| __TEXT.__const _SupportedASBD
+|| __TEXT.__text _SFAnalyticsEventTypeGetName
+|| __TEXT.__text _SFIsIOS
+|| __TEXT.__text _SFIsInternalInstall
+|| __TEXT.__text _SFIsMac
+|| __TEXT.__text _SFIsTV
+|| __TEXT.__text _SFLSRDelegateGetInterface
+|| __TEXT.__text _SFLSRGetInterface
+|| __TEXT.__text _SFLogInitIfNeeded
+|| __TEXT.__text _SFSupportsANE
+__ AVFAudio: _AVFormatIDKey
+__ AVFAudio: _AVLinearPCMBitDepthKey
+__ AVFAudio: _AVLinearPCMIsBigEndianKey
+__ AVFAudio: _AVLinearPCMIsFloatKey
+__ AVFAudio: _AVNumberOfChannelsKey
+__ AVFAudio: _AVSampleRateKey
+__ AVFAudio: _OBJC_CLASS_$_AVAudioConverter
+__ AVFAudio: _OBJC_CLASS_$_AVAudioFormat
+__ AVFAudio: _OBJC_CLASS_$_AVAudioPCMBuffer
+__ AVFoundation: _AVMediaTypeAudio
+__ AVFoundation: _OBJC_CLASS_$_AVAssetReader
+__ AVFoundation: _OBJC_CLASS_$_AVAssetReaderAudioMixOutput
+__ AVFoundation: _OBJC_CLASS_$_AVURLAsset
+__ AssistantServices: _AFDictationLanguageForKeyboardLanguage
+__ AssistantServices: _AFOfflineDictationCapable
+__ AssistantServices: _AFPreferencesDidChangeNotification
+__ AssistantServices: _AFPreferencesSupportedDictationLanguages
+__ AssistantServices: _OBJC_CLASS_$_AFDictationConnection
+__ AssistantServices: _OBJC_CLASS_$_AFDictationOptions
+__ AssistantServices: _OBJC_CLASS_$_AFSpeechRequestOptions
+__ AssistantServices: __AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode
+__ AssistantServices: _kAFAssistantErrorDomain
+__ AssistantServices: _kAssetTypeEmbeddedSpeechModel
+__ CFNetwork: _CFHTTPMessageCreateResponse
+__ CFNetwork: _CFHTTPMessageSetHeaderFieldValue
+__ CFNetwork: _CFURLResponseCreateWithHTTPResponse
+__ CFNetwork: _kCFHTTPVersion1_1
+__ CallKit: _OBJC_CLASS_$_CXCallObserver
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _NSLocaleCountryCode
+__ CoreFoundation: _NSLocaleLanguageCode
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBundleVersionKey
+__ CoreMedia: _CMAudioFormatDescriptionGetStreamBasicDescription
+__ CoreMedia: _CMBlockBufferCopyDataBytes
+__ CoreMedia: _CMBlockBufferGetDataLength
+__ CoreMedia: _CMBlockBufferGetDataPointer
+__ CoreMedia: _CMSampleBufferCopyPCMDataIntoAudioBufferList
+__ CoreMedia: _CMSampleBufferGetDataBuffer
+__ CoreMedia: _CMSampleBufferGetFormatDescription
+__ CoreMedia: _CMSampleBufferGetNumSamples
+__ EmbeddedAcousticRecognition: _OBJC_CLASS_$__EARPlsParser
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _NSStringFromRange
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ MobileAsset: _OBJC_CLASS_$_MAAsset
+__ MobileAsset: _OBJC_CLASS_$_MAAssetQuery
+__ SAObjects: _SASearchTypeVOICE_SEARCHValue
+__ SAObjects: _SASearchTypeWEB_SEARCHValue
+__ TCC: _TCCAccessPreflight
+__ TCC: _TCCAccessRequest
+__ TCC: _TCCAccessRestricted
+__ TCC: _kTCCServiceSpeechRecognition
+__ libMobileGestalt.dylib: _MGGetBoolAnswer
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _sandbox_extension_issue_file
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x10
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+SFAcousticFeature : NSObject <NSCopying, NSSecureCoding>
+ @property  NSArray *acousticFeatureValuePerFrame
+ @property  double frameDuration
+
+  // class methods
+  +[SFAcousticFeature supportsSecureCoding]
+
+  // instance methods
+  -[SFAcousticFeature encodeWithCoder:]
+  -[SFAcousticFeature .cxx_destruct]
+  -[SFAcousticFeature copyWithZone:]
+  -[SFAcousticFeature initWithCoder:]
+  -[SFAcousticFeature frameDuration]
+  -[SFAcousticFeature acousticFeatureValuePerFrame]
+  -[SFAcousticFeature _initWithAcousticFeatureValue:frameDuration:]
+
+
+SFVoiceAnalytics : NSObject <NSCopying, NSSecureCoding>
+ @property  SFAcousticFeature *jitter
+ @property  SFAcousticFeature *shimmer
+ @property  SFAcousticFeature *pitch
+ @property  SFAcousticFeature *voicing
+
+  // class methods
+  +[SFVoiceAnalytics supportsSecureCoding]
+
+  // instance methods
+  -[SFVoiceAnalytics encodeWithCoder:]
+  -[SFVoiceAnalytics .cxx_destruct]
+  -[SFVoiceAnalytics pitch]
+  -[SFVoiceAnalytics jitter]
+  -[SFVoiceAnalytics copyWithZone:]
+  -[SFVoiceAnalytics initWithCoder:]
+  -[SFVoiceAnalytics _initWithJitter:shimmer:pitch:voicing:]
+  -[SFVoiceAnalytics shimmer]
+  -[SFVoiceAnalytics voicing]
+
+
+_SFSearchResult : NSObject
+ @property  NSHTTPURLResponse *response
+ @property  NSData *data
+ @property  long long searchType
+
+  // instance methods
+  -[_SFSearchResult searchType]
+  -[_SFSearchResult .cxx_destruct]
+  -[_SFSearchResult response]
+  -[_SFSearchResult data]
+  -[_SFSearchResult initWithVoiceSearchResult:]
+
+
+SFSpeechRecognitionTask : NSObject <AFDictationDelegate, SFSpeechRecognitionBufferDelegate, SFLocalSpeechRecognitionDelegate>
+ @property  long long _taskHint
+ @property  NSString *requestIdentifier
+ @property  long long state
+ @property  BOOL finishing
+ @property  BOOL cancelled
+ @property  NSError *error
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SFSpeechRecognitionTask initialize]
+
+  // instance methods
+  -[SFSpeechRecognitionTask averagePower]
+  -[SFSpeechRecognitionTask requestIdentifier]
+  -[SFSpeechRecognitionTask peakPower]
+  -[SFSpeechRecognitionTask dictationConnectionSpeechRecordingDidBegin:]
+  -[SFSpeechRecognitionTask dictationConnectionSpeechRecordingDidEnd:]
+  -[SFSpeechRecognitionTask error]
+  -[SFSpeechRecognitionTask stopSpeech]
+  -[SFSpeechRecognitionTask state]
+  -[SFSpeechRecognitionTask .cxx_destruct]
+  -[SFSpeechRecognitionTask finish]
+  -[SFSpeechRecognitionTask dictationConnectionSpeechRecordingDidCancel:]
+  -[SFSpeechRecognitionTask addRecordedSpeechSampleData:]
+  -[SFSpeechRecognitionTask dictationConnectionSpeechRecognitionDidSucceed:]
+  -[SFSpeechRecognitionTask isCancelled]
+  -[SFSpeechRecognitionTask cancel]
+  -[SFSpeechRecognitionTask dictationConnection:speechRecognitionDidFail:]
+  -[SFSpeechRecognitionTask dictationConnection:speechRecordingDidFail:]
+  -[SFSpeechRecognitionTask _taskHint]
+  -[SFSpeechRecognitionTask localSpeechRecognitionClientSpeechRecordingDidCancel:]
+  -[SFSpeechRecognitionTask localSpeechRecognitionClientSpeechRecognitionDidSucceed:]
+  -[SFSpeechRecognitionTask localSpeechRecognitionClient:speechRecordingDidFail:]
+  -[SFSpeechRecognitionTask localSpeechRecognitionClient:speechRecognitionDidFail:]
+  -[SFSpeechRecognitionTask _initWithRequest:queue:languageCode:taskHint:]
+  -[SFSpeechRecognitionTask handleSpeechRecognitionDidFailWithError:]
+  -[SFSpeechRecognitionTask isFinishing]
+
+
+_SFSpeechRecognitionBlockTask : SFSpeechRecognitionTask
+  // instance methods
+  -[_SFSpeechRecognitionBlockTask .cxx_destruct]
+  -[_SFSpeechRecognitionBlockTask dictationConnectionSpeechRecordingDidCancel:]
+  -[_SFSpeechRecognitionBlockTask dictationConnection:didRecognizeTokens:languageModel:]
+  -[_SFSpeechRecognitionBlockTask dictationConnectionSpeechRecognitionDidSucceed:]
+  -[_SFSpeechRecognitionBlockTask dictationConnection:speechRecognitionDidFail:]
+  -[_SFSpeechRecognitionBlockTask dictationConnection:speechRecordingDidFail:]
+  -[_SFSpeechRecognitionBlockTask dictationConnection:didRecognizePackage:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClientSpeechRecordingDidCancel:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClientSpeechRecognitionDidSucceed:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClient:speechRecordingDidFail:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClient:didRecognizePartialResult:rawPartialResult:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClient:didProcessAudioDuration:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClient:didFinishRecognition:]
+  -[_SFSpeechRecognitionBlockTask localSpeechRecognitionClient:speechRecognitionDidFail:]
+  -[_SFSpeechRecognitionBlockTask _initWithRequest:queue:languageCode:taskHint:resultHandler:]
+  -[_SFSpeechRecognitionBlockTask _fireResultHandlerWithResult:error:]
+  -[_SFSpeechRecognitionBlockTask _finalizeResultHandler]
+
+
+_SFSpeechRecognitionDelegateTask : SFSpeechRecognitionTask
+  // instance methods
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:didReceiveSearchResults:recognizedText:stable:final:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnectionSpeechRecordingDidEnd:]
+  -[_SFSpeechRecognitionDelegateTask .cxx_destruct]
+  -[_SFSpeechRecognitionDelegateTask dictationConnectionSpeechRecordingDidCancel:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:didRecognizeTokens:languageModel:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnectionSpeechRecognitionDidSucceed:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:speechRecognitionDidFail:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:speechRecordingDidFail:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:didProcessAudioDuration:]
+  -[_SFSpeechRecognitionDelegateTask dictationConnection:didRecognizePackage:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClientSpeechRecordingDidCancel:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClientSpeechRecognitionDidSucceed:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClient:speechRecordingDidFail:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClient:didRecognizePartialResult:rawPartialResult:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClient:didProcessAudioDuration:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClient:didFinishRecognition:]
+  -[_SFSpeechRecognitionDelegateTask localSpeechRecognitionClient:speechRecognitionDidFail:]
+  -[_SFSpeechRecognitionDelegateTask _initWithRequest:queue:languageCode:taskHint:delegate:]
+  -[_SFSpeechRecognitionDelegateTask _handleSpeechRecordingDidCancel]
+  -[_SFSpeechRecognitionDelegateTask _handleDidRecognizePartialResult:]
+  -[_SFSpeechRecognitionDelegateTask _handleDidFinishRecognition:]
+  -[_SFSpeechRecognitionDelegateTask _handleDidProcessAudioDuration:]
+  -[_SFSpeechRecognitionDelegateTask _tellDelegateDidFinishSuccessfully:]
+
+
+SFRequestParameters : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *applicationName
+ @property  NSString *applicationVersion
+ @property  NSArray *inlineItemList
+ @property  NSString *requestIdentifier
+ @property  NSString *taskIdentifier
+ @property  NSString *language
+ @property  NSString *task
+ @property  BOOL narrowband
+ @property  NSDictionary *recognitionOverrides
+ @property  NSURL *modelOverrideURL
+ @property  double maximumRecognitionDuration
+ @property  NSURL *dynamicLanguageModel
+ @property  NSURL *dynamicVocabulary
+ @property  BOOL detectMultipleUtterances
+ @property  BOOL onDeviceOnly
+ @property  BOOL enableAutoPunctuation
+
+  // class methods
+  +[SFRequestParameters supportsSecureCoding]
+
+  // instance methods
+  -[SFRequestParameters setLanguage:]
+  -[SFRequestParameters setTask:]
+  -[SFRequestParameters requestIdentifier]
+  -[SFRequestParameters encodeWithCoder:]
+  -[SFRequestParameters setApplicationName:]
+  -[SFRequestParameters .cxx_destruct]
+  -[SFRequestParameters applicationVersion]
+  -[SFRequestParameters applicationName]
+  -[SFRequestParameters copyWithZone:]
+  -[SFRequestParameters language]
+  -[SFRequestParameters setRequestIdentifier:]
+  -[SFRequestParameters taskIdentifier]
+  -[SFRequestParameters task]
+  -[SFRequestParameters isEqual:]
+  -[SFRequestParameters setApplicationVersion:]
+  -[SFRequestParameters initWithCoder:]
+  -[SFRequestParameters setTaskIdentifier:]
+  -[SFRequestParameters setRecognitionOverrides:]
+  -[SFRequestParameters setMaximumRecognitionDuration:]
+  -[SFRequestParameters setDetectMultipleUtterances:]
+  -[SFRequestParameters inlineItemList]
+  -[SFRequestParameters setInlineItemList:]
+  -[SFRequestParameters maximumRecognitionDuration]
+  -[SFRequestParameters recognitionOverrides]
+  -[SFRequestParameters modelOverrideURL]
+  -[SFRequestParameters setModelOverrideURL:]
+  -[SFRequestParameters narrowband]
+  -[SFRequestParameters setNarrowband:]
+  -[SFRequestParameters dynamicLanguageModel]
+  -[SFRequestParameters setDynamicLanguageModel:]
+  -[SFRequestParameters dynamicVocabulary]
+  -[SFRequestParameters setDynamicVocabulary:]
+  -[SFRequestParameters detectMultipleUtterances]
+  -[SFRequestParameters onDeviceOnly]
+  -[SFRequestParameters setOnDeviceOnly:]
+  -[SFRequestParameters enableAutoPunctuation]
+  -[SFRequestParameters setEnableAutoPunctuation:]
+
+
+SFSpeechLanguageModel : NSObject
+ @property  NSLocale *locale
+ @property  NSArray *outOfVocabularyWords
+ @property  NSDictionary *outOfVocabularyWordsAndFrequencies
+
+  // class methods
+  +[SFSpeechLanguageModel initialize]
+  +[SFSpeechLanguageModel supportedLocales]
+  +[SFSpeechLanguageModel trainAppLmFromNgramsSerializedDataFile:customPronsFile:language:writeToDirectory:modelOverride:completion:]
+  +[SFSpeechLanguageModel trainAppLmFromNgramCountsArtifact:language:writeToDirectory:modelOverride:completion:]
+
+  // instance methods
+  -[SFSpeechLanguageModel initWithLocale:]
+  -[SFSpeechLanguageModel addSentence:]
+  -[SFSpeechLanguageModel dealloc]
+  -[SFSpeechLanguageModel .cxx_destruct]
+  -[SFSpeechLanguageModel locale]
+  -[SFSpeechLanguageModel metrics]
+  -[SFSpeechLanguageModel init]
+  -[SFSpeechLanguageModel deserializeModelData:]
+  -[SFSpeechLanguageModel lmeThreshold]
+  -[SFSpeechLanguageModel initWithAssetPath:]
+  -[SFSpeechLanguageModel addSentences:]
+  -[SFSpeechLanguageModel addOovsFromSentence:]
+  -[SFSpeechLanguageModel outOfVocabularyWords]
+  -[SFSpeechLanguageModel outOfVocabularyWordsAndFrequencies]
+  -[SFSpeechLanguageModel trainFromPlainTextAndWriteToDirectory:completion:]
+  -[SFSpeechLanguageModel trainFromPlainTextAndWriteToDirectory:]
+  -[SFSpeechLanguageModel generateNgramsSerializeDataAndWriteToFile:]
+  -[SFSpeechLanguageModel addPronsFromFile:]
+  -[SFSpeechLanguageModel addProns:forWord:]
+  -[SFSpeechLanguageModel createPhraseCountsArtifactWithIdentifier:rawPhraseCountsPath:customPronunciationsPath:writeDirectory:]
+  -[SFSpeechLanguageModel createNgramCountsArtifactFromPhraseCountArtifact:writeDirectory:]
+  -[SFSpeechLanguageModel createNgramCountsArtifactWithIdentifier:rawPhraseCountsPath:customPronunciationsPath:writeDirectory:]
+
+
+SFSpeechRecognitionResult : NSObject <SRSampling, NSCopying, NSSecureCoding>
+ @property  SFTranscription *rawTranscription
+ @property  NSArray *rawTranscriptions
+ @property  SFTranscription *bestTranscription
+ @property  NSArray *transcriptions
+ @property  BOOL final
+ @property  SFSpeechRecognitionMetadata *speechRecognitionMetadata
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SFSpeechRecognitionResult supportsSecureCoding]
+
+  // instance methods
+  -[SFSpeechRecognitionResult encodeWithCoder:]
+  -[SFSpeechRecognitionResult .cxx_destruct]
+  -[SFSpeechRecognitionResult copyWithZone:]
+  -[SFSpeechRecognitionResult isEqual:]
+  -[SFSpeechRecognitionResult initWithCoder:]
+  -[SFSpeechRecognitionResult initWithBinarySampleRepresentation:metadata:timestamp:]
+  -[SFSpeechRecognitionResult binarySampleRepresentation]
+  -[SFSpeechRecognitionResult transcriptions]
+  -[SFSpeechRecognitionResult isFinal]
+  -[SFSpeechRecognitionResult rawTranscription]
+  -[SFSpeechRecognitionResult _initWithBestTranscription:final:]
+  -[SFSpeechRecognitionResult _initWithBestTranscription:rawTranscription:final:]
+  -[SFSpeechRecognitionResult _initWithBestTranscription:rawTranscription:final:speechRecognitionMetadata:]
+  -[SFSpeechRecognitionResult expandTranscription:]
+  -[SFSpeechRecognitionResult rawTranscriptions]
+  -[SFSpeechRecognitionResult bestTranscription]
+  -[SFSpeechRecognitionResult speechRecognitionMetadata]
+
+
+SFSpeechRecognizer : NSObject <CXCallObserverDelegate, AFDictationDelegate>
+ @property  BOOL _availableForForcedOfflineRecognition
+ @property  BOOL available
+ @property  NSLocale *locale
+ @property  BOOL supportsOnDeviceRecognition
+ @property  <SFSpeechRecognizerDelegate> *delegate
+ @property  long long defaultTaskHint
+ @property  NSOperationQueue *queue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SFSpeechRecognizer authorizationStatus]
+  +[SFSpeechRecognizer initialize]
+  +[SFSpeechRecognizer requestAuthorization:]
+  +[SFSpeechRecognizer supportedLocales]
+  +[SFSpeechRecognizer _fetchSupportedForcedOfflineLocalesWithCompletion:]
+
+  // instance methods
+  -[SFSpeechRecognizer dictationConnnectionDidChangeAvailability:]
+  -[SFSpeechRecognizer initWithLocale:]
+  -[SFSpeechRecognizer setDelegate:]
+  -[SFSpeechRecognizer isAvailable]
+  -[SFSpeechRecognizer delegate]
+  -[SFSpeechRecognizer dealloc]
+  -[SFSpeechRecognizer .cxx_destruct]
+  -[SFSpeechRecognizer callObserver:callChanged:]
+  -[SFSpeechRecognizer locale]
+  -[SFSpeechRecognizer setQueue:]
+  -[SFSpeechRecognizer queue]
+  -[SFSpeechRecognizer init]
+  -[SFSpeechRecognizer supportsOnDeviceRecognition]
+  -[SFSpeechRecognizer recognitionTaskWithRequest:delegate:]
+  -[SFSpeechRecognizer _isAvailableForForcedOfflineRecognition]
+  -[SFSpeechRecognizer _requestOfflineDictationSupportWithCompletion:]
+  -[SFSpeechRecognizer _prepareToRecognizeWithTaskHint:completion:]
+  -[SFSpeechRecognizer _isInternalTaskHint:]
+  -[SFSpeechRecognizer recognitionTaskWithRequest:resultHandler:]
+  -[SFSpeechRecognizer _informDelegateOfAvailabilityChange]
+  -[SFSpeechRecognizer _informDelegateOfPreferencesChange]
+  -[SFSpeechRecognizer setSupportsOnDeviceRecognition:]
+  -[SFSpeechRecognizer defaultTaskHint]
+  -[SFSpeechRecognizer setDefaultTaskHint:]
+
+
+SFTranscriptionSegment : NSObject <NSCopying, NSSecureCoding>
+ @property  NSArray *alternativeConfidences
+ @property  NSString *phoneSequence
+ @property  NSString *ipaPhoneSequence
+ @property  NSString *substring
+ @property  {_NSRange=QQ} substringRange
+ @property  double timestamp
+ @property  double duration
+ @property  float confidence
+ @property  NSArray *alternativeSubstrings
+ @property  SFVoiceAnalytics *voiceAnalytics
+
+  // class methods
+  +[SFTranscriptionSegment supportsSecureCoding]
+
+  // instance methods
+  -[SFTranscriptionSegment confidence]
+  -[SFTranscriptionSegment encodeWithCoder:]
+  -[SFTranscriptionSegment .cxx_destruct]
+  -[SFTranscriptionSegment duration]
+  -[SFTranscriptionSegment copyWithZone:]
+  -[SFTranscriptionSegment timestamp]
+  -[SFTranscriptionSegment isEqual:]
+  -[SFTranscriptionSegment substring]
+  -[SFTranscriptionSegment initWithCoder:]
+  -[SFTranscriptionSegment phoneSequence]
+  -[SFTranscriptionSegment ipaPhoneSequence]
+  -[SFTranscriptionSegment _initWithSubstring:range:timestamp:duration:confidence:alternativeSubstrings:alternativeConfidences:phoneSequence:ipaPhoneSequence:voiceAnalytics:]
+  -[SFTranscriptionSegment substringRange]
+  -[SFTranscriptionSegment alternativeSubstrings]
+  -[SFTranscriptionSegment voiceAnalytics]
+  -[SFTranscriptionSegment alternativeConfidences]
+
+
+SFLocalSpeechRecognitionClient : NSObject <SFLSRDelegate>
+ @property  <SFLocalSpeechRecognitionDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SFLocalSpeechRecognitionClient initialize]
+  +[SFLocalSpeechRecognitionClient logCoreAnalyticsEvent:withAnalytics:]
+
+  // instance methods
+  -[SFLocalSpeechRecognitionClient cancelSpeech]
+  -[SFLocalSpeechRecognitionClient delegate]
+  -[SFLocalSpeechRecognitionClient stopSpeech]
+  -[SFLocalSpeechRecognitionClient dealloc]
+  -[SFLocalSpeechRecognitionClient .cxx_destruct]
+  -[SFLocalSpeechRecognitionClient initWithDelegate:]
+  -[SFLocalSpeechRecognitionClient addAudioPacket:]
+  -[SFLocalSpeechRecognitionClient fetchAssetsForLanguage:completion:]
+  -[SFLocalSpeechRecognitionClient invalidate]
+  -[SFLocalSpeechRecognitionClient init]
+  -[SFLocalSpeechRecognitionClient startRecordedAudioDictationWithParameters:]
+  -[SFLocalSpeechRecognitionClient preloadRecognizerForLanguage:task:recognitionOverrides:modelOverrideURL:completion:]
+  -[SFLocalSpeechRecognitionClient initializeWithSandboxExtensions:]
+  -[SFLocalSpeechRecognitionClient configParametersForVoicemailWithLanguage:completion:]
+  -[SFLocalSpeechRecognitionClient purgeAssetsForLanguage:completion:]
+  -[SFLocalSpeechRecognitionClient setAssetsAsProvisional]
+  -[SFLocalSpeechRecognitionClient promoteAssets]
+  -[SFLocalSpeechRecognitionClient initializeLmWithLocale:completion:]
+  -[SFLocalSpeechRecognitionClient initializeLmWithAssetPath:completion:]
+  -[SFLocalSpeechRecognitionClient addSentenceToNgramCounts:]
+  -[SFLocalSpeechRecognitionClient addSentenceToNgramCounts:completion:]
+  -[SFLocalSpeechRecognitionClient addProns:forWord:completion:]
+  -[SFLocalSpeechRecognitionClient oovWordsAndFrequenciesWithCompletion:]
+  -[SFLocalSpeechRecognitionClient trainFromPlainTextAndWriteToDirectory:sandboxExtension:completion:]
+  -[SFLocalSpeechRecognitionClient generateNgramCountsSerializeDataWithCompletion:]
+  -[SFLocalSpeechRecognitionClient deserializeNgramCountsData:completion:]
+  -[SFLocalSpeechRecognitionClient lmeThresholdWithCompletion:]
+  -[SFLocalSpeechRecognitionClient metricsWithCompletion:]
+  -[SFLocalSpeechRecognitionClient wakeUpWithCompletion:]
+  -[SFLocalSpeechRecognitionClient trainAppLmFromNgramsSerializedData:customPronsData:language:writeToDirectory:sandboxExtension:completion:]
+  -[SFLocalSpeechRecognitionClient createPhraseCountsArtifactWithIdentifier:rawPhraseCountsPath:customPronunciationsPath:writeToDirectory:sandboxExtensions:completion:]
+  -[SFLocalSpeechRecognitionClient createNgramCountsArtifactFromPhraseCountArtifact:writeToDirectory:sandboxExtensions:completion:]
+  -[SFLocalSpeechRecognitionClient trainAppLmFromNgramCountsArtifact:language:writeToDirectory:sandboxExtensions:completion:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidRecognizePartialResult:rawPartialResult:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidProcessAudioDuration:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidFinishRecognition:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidFail:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidSucceed]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidDownloadAssetsWithProgress:isStalled:]
+  -[SFLocalSpeechRecognitionClient localSpeechRecognitionDidFinishDownloadingAssets:error:]
+  -[SFLocalSpeechRecognitionClient _serviceProxyWithErrorHandler:]
+  -[SFLocalSpeechRecognitionClient _asynchronousServiceProxyWithErrorHandler:]
+  -[SFLocalSpeechRecognitionClient installedLanguagesWithSynchronousConnection:completion:]
+  -[SFLocalSpeechRecognitionClient downloadAssetsForLanguage:urgent:forceUpgrade:progress:completionHandler:]
+  -[SFLocalSpeechRecognitionClient downloadAssetsForLanguage:urgent:forceUpgrade:detailedProgress:completionHandler:]
+
+
+SFUtilities : NSObject
+  // class methods
+  +[SFUtilities initialize]
+  +[SFUtilities supportedLocalesWithCompletion:]
+  +[SFUtilities taskNameFromTaskHint:]
+  +[SFUtilities transcriptionFromSpeechPhrases:afAudioAnalytics:utteranceStart:]
+  +[SFUtilities recognitionMetadataFromSpeechPhrases:afAudioAnalytics:utteranceStart:]
+  +[SFUtilities transcriptionsWithTokens:]
+  +[SFUtilities recognizedResultFromPackage:]
+  +[SFUtilities isSpeechXPCEnabled]
+  +[SFUtilities canAccessPathAt:methodName:error:]
+  +[SFUtilities issueReadWriteSandboxExtensionForDirectoryPath:error:]
+  +[SFUtilities issueReadSandboxExtensionForFilePath:error:]
+  +[SFUtilities isCacheDirInternal]
+  +[SFUtilities lsrCacheDirPath]
+
+
+_SFSearchRequest : NSObject
+ @property  long long searchTypes
+ @property  NSDictionary *headerFields
+ @property  NSDictionary *queryParameters
+
+  // instance methods
+  -[_SFSearchRequest headerFields]
+  -[_SFSearchRequest .cxx_destruct]
+  -[_SFSearchRequest searchTypes]
+  -[_SFSearchRequest setSearchTypes:]
+  -[_SFSearchRequest queryParameters]
+  -[_SFSearchRequest setQueryParameters:]
+  -[_SFSearchRequest setHeaderFields:]
+
+
+SFSpeechRecognitionRequest : NSObject
+ @property  NSDictionary *_afDictationRequestParams
+ @property  _SFSearchRequest *_searchRequest
+ @property  BOOL detectMultipleUtterances
+ @property  BOOL _forceOfflineRecognition
+ @property  NSDictionary *_voiceTriggerEventInfo
+ @property  double _maximumRecognitionDuration
+ @property  NSDictionary *_recognitionOverrides
+ @property  NSURL *_modelOverrideURL
+ @property  NSURL *_dynamicLanguageModel
+ @property  NSURL *_dynamicVocabulary
+ @property  BOOL _forceUseSiriProcess
+ @property  NSString *taskIdentifier
+ @property  long long taskHint
+ @property  BOOL shouldReportPartialResults
+ @property  NSArray *contextualStrings
+ @property  NSString *interactionIdentifier
+ @property  BOOL requiresOnDeviceRecognition
+ @property  BOOL addsPunctuation
+
+  // class methods
+  +[SFSpeechRecognitionRequest initialize]
+
+  // instance methods
+  -[SFSpeechRecognitionRequest interactionIdentifier]
+  -[SFSpeechRecognitionRequest setInteractionIdentifier:]
+  -[SFSpeechRecognitionRequest .cxx_destruct]
+  -[SFSpeechRecognitionRequest taskIdentifier]
+  -[SFSpeechRecognitionRequest init]
+  -[SFSpeechRecognitionRequest setTaskIdentifier:]
+  -[SFSpeechRecognitionRequest setTaskHint:]
+  -[SFSpeechRecognitionRequest setDetectMultipleUtterances:]
+  -[SFSpeechRecognitionRequest setShouldReportPartialResults:]
+  -[SFSpeechRecognitionRequest setRequiresOnDeviceRecognition:]
+  -[SFSpeechRecognitionRequest _setMaximumRecognitionDuration:]
+  -[SFSpeechRecognitionRequest _speechRequestOptions]
+  -[SFSpeechRecognitionRequest _forceOfflineRecognition]
+  -[SFSpeechRecognitionRequest taskHint]
+  -[SFSpeechRecognitionRequest _voiceTriggerEventInfo]
+  -[SFSpeechRecognitionRequest _maximumRecognitionDuration]
+  -[SFSpeechRecognitionRequest _recognitionOverrides]
+  -[SFSpeechRecognitionRequest _modelOverrideURL]
+  -[SFSpeechRecognitionRequest detectMultipleUtterances]
+  -[SFSpeechRecognitionRequest _dynamicLanguageModel]
+  -[SFSpeechRecognitionRequest _dynamicVocabulary]
+  -[SFSpeechRecognitionRequest _setSearchRequests:]
+  -[SFSpeechRecognitionRequest _searchRequests]
+  -[SFSpeechRecognitionRequest automaticallyEndpoint]
+  -[SFSpeechRecognitionRequest _powerMeteringAvailable]
+  -[SFSpeechRecognitionRequest requiresOnDeviceRecognition]
+  -[SFSpeechRecognitionRequest _startedConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:]
+  -[SFSpeechRecognitionRequest _startedLocalConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:taskIdentifier:]
+  -[SFSpeechRecognitionRequest _dictationOptionsWithTaskHint:requestIdentifier:]
+  -[SFSpeechRecognitionRequest _requestParametersWithTaskHint:requestIdentifier:taskIdentifier:narrowband:language:]
+  -[SFSpeechRecognitionRequest _sandboxExtensionsWithError:]
+  -[SFSpeechRecognitionRequest _setForceOfflineRecognition:]
+  -[SFSpeechRecognitionRequest _searchRequest]
+  -[SFSpeechRecognitionRequest _setSearchRequest:]
+  -[SFSpeechRecognitionRequest _setVoiceTriggerEventInfo:]
+  -[SFSpeechRecognitionRequest _setRecognitionOverrides:]
+  -[SFSpeechRecognitionRequest _setModelOverrideURL:]
+  -[SFSpeechRecognitionRequest _afDictationRequestParams]
+  -[SFSpeechRecognitionRequest _setAFDictationRequestParams:]
+  -[SFSpeechRecognitionRequest _setDynamicLanguageModel:]
+  -[SFSpeechRecognitionRequest _setDynamicVocabulary:]
+  -[SFSpeechRecognitionRequest _forceUseSiriProcess]
+  -[SFSpeechRecognitionRequest _setForceUseSiriProcess:]
+  -[SFSpeechRecognitionRequest shouldReportPartialResults]
+  -[SFSpeechRecognitionRequest contextualStrings]
+  -[SFSpeechRecognitionRequest setContextualStrings:]
+  -[SFSpeechRecognitionRequest addsPunctuation]
+  -[SFSpeechRecognitionRequest setAddsPunctuation:]
+
+
+SFSpeechURLRecognitionRequest : SFSpeechRecognitionRequest
+ @property  NSURL *URL
+
+  // instance methods
+  -[SFSpeechURLRecognitionRequest initWithURL:]
+  -[SFSpeechURLRecognitionRequest .cxx_destruct]
+  -[SFSpeechURLRecognitionRequest URL]
+  -[SFSpeechURLRecognitionRequest init]
+  -[SFSpeechURLRecognitionRequest _startedConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:]
+  -[SFSpeechURLRecognitionRequest _startedLocalConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:taskIdentifier:]
+  -[SFSpeechURLRecognitionRequest _handlePreRecordedAudioWithAsset:audioTracks:narrowband:addSpeechDataBlock:stopSpeechBlock:cancelSpeechWithErrorBlock:]
+
+
+SFSpeechAudioBufferRecognitionRequest : SFSpeechRecognitionRequest
+ @property  AVAudioFormat *nativeAudioFormat
+
+  // instance methods
+  -[SFSpeechAudioBufferRecognitionRequest endAudio]
+  -[SFSpeechAudioBufferRecognitionRequest .cxx_destruct]
+  -[SFSpeechAudioBufferRecognitionRequest init]
+  -[SFSpeechAudioBufferRecognitionRequest appendAudioSampleBuffer:]
+  -[SFSpeechAudioBufferRecognitionRequest _startedConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:]
+  -[SFSpeechAudioBufferRecognitionRequest _startedLocalConnectionWithLanguageCode:delegate:taskHint:requestIdentifier:taskIdentifier:]
+  -[SFSpeechAudioBufferRecognitionRequest nativeAudioFormat]
+  -[SFSpeechAudioBufferRecognitionRequest _handleAudioBuffersWithDelegate:]
+  -[SFSpeechAudioBufferRecognitionRequest _appendAudioPCMBuffer:]
+  -[SFSpeechAudioBufferRecognitionRequest appendAudioPCMBuffer:]
+  -[SFSpeechAudioBufferRecognitionRequest _drainAndClearAudioConverter]
+  -[SFSpeechAudioBufferRecognitionRequest _convertAndFeedPCMBuffer:]
+  -[SFSpeechAudioBufferRecognitionRequest _endAudio]
+
+
+SFTranscription : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *formattedString
+ @property  NSArray *segments
+ @property  double speakingRate
+ @property  double averagePauseDuration
+
+  // class methods
+  +[SFTranscription supportsSecureCoding]
+
+  // instance methods
+  -[SFTranscription formattedString]
+  -[SFTranscription encodeWithCoder:]
+  -[SFTranscription segments]
+  -[SFTranscription .cxx_destruct]
+  -[SFTranscription copyWithZone:]
+  -[SFTranscription isEqual:]
+  -[SFTranscription initWithCoder:]
+  -[SFTranscription _initWithSegments:formattedString:speakingRate:averagePauseDuration:]
+  -[SFTranscription speakingRate]
+  -[SFTranscription averagePauseDuration]
+
+
+SFSpeechAssetManager : NSObject
+  // class methods
+  +[SFSpeechAssetManager installedLanguagesWithCompletion:]
+  +[SFSpeechAssetManager setAssetsAsProvisional]
+  +[SFSpeechAssetManager promoteAssets]
+  +[SFSpeechAssetManager _assetQueryForLanguage:]
+  +[SFSpeechAssetManager fetchMAAssetPathForInstalledLanguage:]
+  +[SFSpeechAssetManager installedLanguages]
+  +[SFSpeechAssetManager fetchAssetsForLanguage:progress:completion:]
+  +[SFSpeechAssetManager fetchAssetsForLanguage:urgent:progress:completion:]
+  +[SFSpeechAssetManager fetchAssetsForLanguage:urgent:forceUpgrade:progress:completion:]
+  +[SFSpeechAssetManager fetchAssetsForLanguage:urgent:forceUpgrade:detailedProgress:completion:]
+  +[SFSpeechAssetManager assetPathForLanguage:]
+  +[SFSpeechAssetManager configParametersForVoicemailWithLanguage:]
+  +[SFSpeechAssetManager purgeAssetsForLanguage:error:]
+
+
+SFSpeechRecognitionMetadata : NSObject <SRSampling, NSCopying, NSSecureCoding>
+ @property  double speakingRate
+ @property  double averagePauseDuration
+ @property  double speechStartTimestamp
+ @property  double speechDuration
+ @property  SFVoiceAnalytics *voiceAnalytics
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SFSpeechRecognitionMetadata supportsSecureCoding]
+
+  // instance methods
+  -[SFSpeechRecognitionMetadata encodeWithCoder:]
+  -[SFSpeechRecognitionMetadata .cxx_destruct]
+  -[SFSpeechRecognitionMetadata copyWithZone:]
+  -[SFSpeechRecognitionMetadata initWithCoder:]
+  -[SFSpeechRecognitionMetadata initWithBinarySampleRepresentation:metadata:timestamp:]
+  -[SFSpeechRecognitionMetadata binarySampleRepresentation]
+  -[SFSpeechRecognitionMetadata speechDuration]
+  -[SFSpeechRecognitionMetadata voiceAnalytics]
+  -[SFSpeechRecognitionMetadata speakingRate]
+  -[SFSpeechRecognitionMetadata averagePauseDuration]
+  -[SFSpeechRecognitionMetadata _initWithSpeechStartTimestamp:speechDuration:voiceAnalytics:speakingRate:averagePauseDuration:]
+  -[SFSpeechRecognitionMetadata speechStartTimestamp]
+
+
+MAAsset(SFAdditions)
+	// instance methods
+	-[MAAsset(SFAdditions) _sf_path]
+	-[MAAsset(SFAdditions) _sf_quasarModelPath]
+	-[MAAsset(SFAdditions) _sf_isInstalled]
+
+01 00 0400 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFDictationConnection 
+01 00 0400 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFDictationOptions 
+01 00 0400 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFSpeechRequestOptions 
+01 00 0200 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetReader 
+01 00 0200 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetReaderAudioMixOutput 
+01 00 0e00 /System/Library/Frameworks/AVFAudio.framework/AVFAudio: AVAudioConverter 
+01 00 0e00 /System/Library/Frameworks/AVFAudio.framework/AVFAudio: AVAudioFormat 
+01 00 0e00 /System/Library/Frameworks/AVFAudio.framework/AVFAudio: AVAudioPCMBuffer 
+01 00 0200 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVURLAsset 
+01 00 0b00 /System/Library/Frameworks/CallKit.framework/CallKit: CXCallObserver 
+01 00 0800 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAsset 
+01 00 0800 /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset: MAAssetQuery 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0c00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0f00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0900 /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition: _EARPlsParser 

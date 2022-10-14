@@ -1,0 +1,843 @@
+|| __DATA.__common _os_log_nettest
+|| __DATA.__data _executions
+|| __DATA.__data _tests
+|| __DATA.__objc_data _OBJC_CLASS_$_Base32Codec
+|| __DATA.__objc_data _OBJC_CLASS_$_CoordinateApproximation
+|| __DATA.__objc_data _OBJC_CLASS_$_CoreAnalyticsNetworkQualityReportImpl
+|| __DATA.__objc_data _OBJC_CLASS_$_DownloadThroughputDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_GaussianSampleGenerator
+|| __DATA.__objc_data _OBJC_CLASS_$_GeohashCodec
+|| __DATA.__objc_data _OBJC_CLASS_$_GeohashCodecState
+|| __DATA.__objc_data _OBJC_CLASS_$_IdleLatencyURLSessionDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_LatencyURLSessionDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_NQLocationManagerDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkInterfaceInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityAssessment
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityExecutions
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityExecutionsCustomDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityExecutionsReporter
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityExecutionsResult
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityRemoteConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityResult
+|| __DATA.__objc_data _OBJC_CLASS_$_NetworkQualityValue
+|| __DATA.__objc_data _OBJC_CLASS_$_SaturationDetection
+|| __DATA.__objc_data _OBJC_CLASS_$_ThroughputDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_UploadDataStream
+|| __DATA.__objc_data _OBJC_CLASS_$_UploadThroughputDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_WorkingLatencyURLSessionDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_Base32Codec
+|| __DATA.__objc_data _OBJC_METACLASS_$_CoordinateApproximation
+|| __DATA.__objc_data _OBJC_METACLASS_$_CoreAnalyticsNetworkQualityReportImpl
+|| __DATA.__objc_data _OBJC_METACLASS_$_DownloadThroughputDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_GaussianSampleGenerator
+|| __DATA.__objc_data _OBJC_METACLASS_$_GeohashCodec
+|| __DATA.__objc_data _OBJC_METACLASS_$_GeohashCodecState
+|| __DATA.__objc_data _OBJC_METACLASS_$_IdleLatencyURLSessionDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_LatencyURLSessionDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_NQLocationManagerDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkInterfaceInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityAssessment
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityExecutions
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityExecutionsCustomDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityExecutionsReporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityExecutionsResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityRemoteConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_NetworkQualityValue
+|| __DATA.__objc_data _OBJC_METACLASS_$_SaturationDetection
+|| __DATA.__objc_data _OBJC_METACLASS_$_ThroughputDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_UploadDataStream
+|| __DATA.__objc_data _OBJC_METACLASS_$_UploadThroughputDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_WorkingLatencyURLSessionDelegate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._cancelCompletionHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._canceled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._completionHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._config
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._error
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._execution
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._metrics
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._parallel
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._queue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._reqrespKey
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._request
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._results
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._selfKey
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._sessions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._tasks
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._tcpKey
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._testEndpoint
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._tlsKey
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LatencyURLSessionDelegate._workingMetrics
+|| __DATA.__objc_ivar _OBJC_IVAR_$_NetworkQualityExecutions._completionHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_NetworkQualityExecutions._operationQueue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection._arraySize
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection._currentAverage
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection._previousAverage
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection._saturationValue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection._values
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SaturationDetection.state
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._byte_accumulator
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._cancelCompletionHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._canceled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._completionHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._current
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._currentBytesTransferred
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._error
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._instanceId
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._lastAddedTasksDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._lastCurrent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._lastProgressUpdate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._nqConfig
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._previous_throughput
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._request
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._results
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._saturation
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._saturationHandler
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._saturation_reached
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._saturation_signaled
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._sessions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._start
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._tasks
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ThroughputDelegate._testEndpoint
+|| __DATA_CONST.__const _NetworkQualityClientIPHeaderName
+|| __DATA_CONST.__const _NetworkQualityDefaultURL
+|| __DATA_CONST.__const _NetworkQualityErrorDomain
+|| __DATA_CONST.__const _NetworkQualityOperatorASNHeaderName
+|| __DATA_CONST.__const _NetworkQualityOperatorCompanyHeaderName
+|| __DATA_CONST.__const _NetworkQualityUnknownClientIP
+|| __TEXT.__const _NetworkQualityErrorDataLimitExceeded
+|| __TEXT.__const _NetworkQualityErrorExecutionsCanceledByUser
+|| __TEXT.__const _NetworkQualityErrorImplementationIssue
+|| __TEXT.__const _NetworkQualityErrorIncorrectHTTPResponse
+|| __TEXT.__const _NetworkQualityErrorJSONParsing
+|| __TEXT.__text _generateUniqueId
+|| __TEXT.__text _get_average
+|| __TEXT.__text _get_execution
+|| __TEXT.__text _get_execution_iterator
+|| __TEXT.__text _get_test
+|| __TEXT.__text _nettest_log_init
+|| __TEXT.__text _percentile
+__ CFNetwork: _OBJC_CLASS_$_NSMutableURLRequest
+__ CFNetwork: _OBJC_CLASS_$_NSURLCredential
+__ CFNetwork: _OBJC_CLASS_$_NSURLSession
+__ CFNetwork: _OBJC_CLASS_$_NSURLSessionConfiguration
+__ CFNetwork: __CFURLRequestSetAllowedProtocolTypes
+__ CoreAnalytics: _AnalyticsSendEventLazy
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSInputStream
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: _OBJC_METACLASS_$_NSInputStream
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreLocation: _OBJC_CLASS_$_CLLocationManager
+__ CoreLocation: _kCLLocationAccuracyThreeKilometers
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSURLErrorDomain
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Network: _nw_endpoint_create_host
+__ Network: _nw_establishment_report_enumerate_protocols
+__ Network: _nw_interface_create_with_name
+__ Network: _nw_protocol_copy_quic_connection_definition
+__ Network: _nw_protocol_copy_tcp_definition
+__ Network: _nw_protocol_copy_tls_definition
+__ Network: _nw_protocol_definition_is_equal
+__ SystemConfiguration: _SCNetworkInterfaceCopyAll
+__ SystemConfiguration: _SCNetworkInterfaceGetBSDName
+__ SystemConfiguration: _SCNetworkInterfaceGetInterfaceType
+__ SystemConfiguration: _kSCNetworkInterfaceTypeEthernet
+__ SystemConfiguration: _kSCNetworkInterfaceTypeIEEE80211
+__ SystemConfiguration: _kSCNetworkInterfaceTypeModem
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _arc4random
+__ libSystem.B.dylib: _arc4random_uniform
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _strcmp
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+NetworkQualityExecutionsCustomDelegate : NSObject <NetworkQualityExecutionsDelegate>
+  // instance methods
+  -[NetworkQualityExecutionsCustomDelegate .cxx_destruct]
+  -[NetworkQualityExecutionsCustomDelegate progress:]
+  -[NetworkQualityExecutionsCustomDelegate initWithResponsivenessHandler:]
+
+
+NetworkQualityExecutionsResult : NetworkQualityResult <NSCopying>
+ @property  NSNumber *downloadSaturationReason
+ @property  NSNumber *uploadSaturationReason
+ @property  NSString *executionsId
+ @property  NSString *applicationId
+ @property  NetworkInterfaceInfo *interfaceInfo
+ @property  NSNumber *operatorASN
+ @property  NSString *operatorCompanyName
+ @property  NSString *clientIP
+ @property  NQLocationManagerDelegate *locationDataSource
+ @property  NSMutableDictionary *workingLatencyResults
+ @property  NSMutableDictionary *idleLatencyResults
+ @property  NSMutableDictionary *mutableURLSessionMetrics
+
+  // instance methods
+  -[NetworkQualityExecutionsResult .cxx_destruct]
+  -[NetworkQualityExecutionsResult init]
+  -[NetworkQualityExecutionsResult applicationId]
+  -[NetworkQualityExecutionsResult setApplicationId:]
+  -[NetworkQualityExecutionsResult downloadSaturationReason]
+  -[NetworkQualityExecutionsResult setDownloadSaturationReason:]
+  -[NetworkQualityExecutionsResult uploadSaturationReason]
+  -[NetworkQualityExecutionsResult setUploadSaturationReason:]
+  -[NetworkQualityExecutionsResult executionsId]
+  -[NetworkQualityExecutionsResult setExecutionsId:]
+  -[NetworkQualityExecutionsResult interfaceInfo]
+  -[NetworkQualityExecutionsResult setInterfaceInfo:]
+  -[NetworkQualityExecutionsResult operatorASN]
+  -[NetworkQualityExecutionsResult setOperatorASN:]
+  -[NetworkQualityExecutionsResult operatorCompanyName]
+  -[NetworkQualityExecutionsResult setOperatorCompanyName:]
+  -[NetworkQualityExecutionsResult clientIP]
+  -[NetworkQualityExecutionsResult setClientIP:]
+  -[NetworkQualityExecutionsResult locationDataSource]
+  -[NetworkQualityExecutionsResult setLocationDataSource:]
+  -[NetworkQualityExecutionsResult workingLatencyResults]
+  -[NetworkQualityExecutionsResult setWorkingLatencyResults:]
+  -[NetworkQualityExecutionsResult idleLatencyResults]
+  -[NetworkQualityExecutionsResult setIdleLatencyResults:]
+  -[NetworkQualityExecutionsResult mutableURLSessionMetrics]
+  -[NetworkQualityExecutionsResult setMutableURLSessionMetrics:]
+
+
+NetworkQualityExecutions : NSObject <NSURLSessionDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[NetworkQualityExecutions ratingForResponsivenessScore:]
+
+  // instance methods
+  -[NetworkQualityExecutions initWithInterfaceName:]
+  -[NetworkQualityExecutions drain]
+  -[NetworkQualityExecutions run]
+  -[NetworkQualityExecutions .cxx_destruct]
+  -[NetworkQualityExecutions URLSession:task:didReceiveChallenge:completionHandler:]
+  -[NetworkQualityExecutions initWithConfiguration:]
+  -[NetworkQualityExecutions cancel]
+  -[NetworkQualityExecutions init]
+  -[NetworkQualityExecutions runWithCompletionHandler:]
+  -[NetworkQualityExecutions initWithConfiguration:delegate:]
+  -[NetworkQualityExecutions createDefaultNSURLSessionConfiguration]
+  -[NetworkQualityExecutions createDefaultRequestwithURL:]
+  -[NetworkQualityExecutions shareProgress]
+  -[NetworkQualityExecutions reportingCompletionHandler:]
+  -[NetworkQualityExecutions setTimeout]
+  -[NetworkQualityExecutions captureError:]
+  -[NetworkQualityExecutions invokeReporterWithResults:]
+  -[NetworkQualityExecutions execDLWithCompletionHandler:]
+  -[NetworkQualityExecutions execULWithCompletionHandler:]
+  -[NetworkQualityExecutions initializeResultsReporterWithDefaults]
+  -[NetworkQualityExecutions execParallelWithCompletionHandler:]
+  -[NetworkQualityExecutions reallyExecuteFast]
+  -[NetworkQualityExecutions executeFastWithDownloadProgressHandler:uploadProgressHandler:downloadCompletionHandler:uploadCompletionHandler:responsivenessCompletionHandler:completionHandler:]
+  -[NetworkQualityExecutions reallyExecuteDL]
+  -[NetworkQualityExecutions reallyExecuteUL]
+  -[NetworkQualityExecutions _cancelWithOptionalError:]
+  -[NetworkQualityExecutions getResultsReporter]
+
+
+CoreAnalyticsNetworkQualityReportImpl : NSObject <NetworkQualityReportImpl>
+  // instance methods
+  -[CoreAnalyticsNetworkQualityReportImpl .cxx_destruct]
+  -[CoreAnalyticsNetworkQualityReportImpl startReportWithContext:withConfiguration:]
+  -[CoreAnalyticsNetworkQualityReportImpl reportSummary:]
+  -[CoreAnalyticsNetworkQualityReportImpl visitLatencyTestResult:withLatencies:]
+
+
+NetworkQualityExecutionsReporter : NSObject
+ @property  NSString *remoteMeasurementEndpoint
+
+  // instance methods
+  -[NetworkQualityExecutionsReporter .cxx_destruct]
+  -[NetworkQualityExecutionsReporter addDetailedReportType:]
+  -[NetworkQualityExecutionsReporter reportExecutionResults:withConfiguration:]
+  -[NetworkQualityExecutionsReporter remoteMeasurementEndpoint]
+  -[NetworkQualityExecutionsReporter setRemoteMeasurementEndpoint:]
+
+
+GaussianSampleGenerator : NSObject
+  // class methods
+  +[GaussianSampleGenerator generator]
+  +[GaussianSampleGenerator generatorWithPrecision:]
+
+  // instance methods
+  -[GaussianSampleGenerator nextSample]
+
+
+NQLocationManagerDelegate : NSObject <CLLocationManagerDelegate>
+ @property  BOOL fuzzingEnabled
+ @property  long long precision
+ @property  NSString *currentLocationGeohash
+ @property  NSString *currentLatFuzzed
+ @property  NSString *currentLonFuzzed
+ @property  BOOL locationDataAvailable
+ @property  BOOL locationSharingIsAuthorized
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[NQLocationManagerDelegate locationManager:didFailWithError:]
+  -[NQLocationManagerDelegate requestLocation]
+  -[NQLocationManagerDelegate precision]
+  -[NQLocationManagerDelegate .cxx_destruct]
+  -[NQLocationManagerDelegate updateLocation:]
+  -[NQLocationManagerDelegate locationManager:didUpdateLocations:]
+  -[NQLocationManagerDelegate init]
+  -[NQLocationManagerDelegate isLocationSharedAuthorized]
+  -[NQLocationManagerDelegate isLocationDataAvailable]
+  -[NQLocationManagerDelegate formatAndPreservePrivacy:]
+  -[NQLocationManagerDelegate getPrivate:via:]
+  -[NQLocationManagerDelegate getPrivacyPresevedGeohash]
+  -[NQLocationManagerDelegate getPrivacyPreservedLat]
+  -[NQLocationManagerDelegate getPrivacyPreservedLon]
+  -[NQLocationManagerDelegate fuzzingEnabled]
+  -[NQLocationManagerDelegate setFuzzingEnabled:]
+
+
+NetworkQualityConfiguration : NSObject <NSCopying>
+ @property  BOOL forceQuic
+ @property  BOOL enableL4S
+ @property  BOOL privateRelay
+ @property  NSObject<OS_nw_endpoint> *hostOverride
+ @property  NSObject *configuration
+ @property  NSString *networkInterfaceName
+ @property  BOOL idleLatency
+ @property  BOOL upload
+ @property  BOOL download
+ @property  BOOL parallel
+ @property  BOOL workingLatency
+ @property  BOOL validateCertificate
+ @property  long long minUploadFlows
+ @property  long long maxUploadFlows
+ @property  long long minDownloadFlows
+ @property  long long maxDownloadFlows
+ @property  BOOL telemetry
+ @property  long long minRuntime
+ @property  long long maxRuntime
+ @property  long long maxDownlinkData
+ @property  long long maxUplinkData
+
+  // instance methods
+  -[NetworkQualityConfiguration setConfiguration:]
+  -[NetworkQualityConfiguration download]
+  -[NetworkQualityConfiguration setTelemetry:]
+  -[NetworkQualityConfiguration configuration]
+  -[NetworkQualityConfiguration .cxx_destruct]
+  -[NetworkQualityConfiguration copyWithZone:]
+  -[NetworkQualityConfiguration telemetry]
+  -[NetworkQualityConfiguration mutableCopyWithZone:]
+  -[NetworkQualityConfiguration init]
+  -[NetworkQualityConfiguration setNetworkInterfaceName:]
+  -[NetworkQualityConfiguration networkInterfaceName]
+  -[NetworkQualityConfiguration setDownload:]
+  -[NetworkQualityConfiguration idleLatency]
+  -[NetworkQualityConfiguration setIdleLatency:]
+  -[NetworkQualityConfiguration upload]
+  -[NetworkQualityConfiguration setUpload:]
+  -[NetworkQualityConfiguration parallel]
+  -[NetworkQualityConfiguration setParallel:]
+  -[NetworkQualityConfiguration workingLatency]
+  -[NetworkQualityConfiguration setWorkingLatency:]
+  -[NetworkQualityConfiguration validateCertificate]
+  -[NetworkQualityConfiguration setValidateCertificate:]
+  -[NetworkQualityConfiguration minUploadFlows]
+  -[NetworkQualityConfiguration setMinUploadFlows:]
+  -[NetworkQualityConfiguration maxUploadFlows]
+  -[NetworkQualityConfiguration setMaxUploadFlows:]
+  -[NetworkQualityConfiguration minDownloadFlows]
+  -[NetworkQualityConfiguration setMinDownloadFlows:]
+  -[NetworkQualityConfiguration maxDownloadFlows]
+  -[NetworkQualityConfiguration setMaxDownloadFlows:]
+  -[NetworkQualityConfiguration minRuntime]
+  -[NetworkQualityConfiguration setMinRuntime:]
+  -[NetworkQualityConfiguration maxRuntime]
+  -[NetworkQualityConfiguration setMaxRuntime:]
+  -[NetworkQualityConfiguration maxDownlinkData]
+  -[NetworkQualityConfiguration setMaxDownlinkData:]
+  -[NetworkQualityConfiguration maxUplinkData]
+  -[NetworkQualityConfiguration setMaxUplinkData:]
+  -[NetworkQualityConfiguration forceQuic]
+  -[NetworkQualityConfiguration setForceQuic:]
+  -[NetworkQualityConfiguration enableL4S]
+  -[NetworkQualityConfiguration setEnableL4S:]
+  -[NetworkQualityConfiguration privateRelay]
+  -[NetworkQualityConfiguration setPrivateRelay:]
+  -[NetworkQualityConfiguration hostOverride]
+  -[NetworkQualityConfiguration setHostOverride:]
+
+
+ThroughputDelegate : NSObject <NSURLSessionDataDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[ThroughputDelegate URLSession:dataTask:didReceiveResponse:completionHandler:]
+  -[ThroughputDelegate URLSession:task:didCompleteWithError:]
+  -[ThroughputDelegate URLSession:didReceiveChallenge:completionHandler:]
+  -[ThroughputDelegate dealloc]
+  -[ThroughputDelegate .cxx_destruct]
+  -[ThroughputDelegate URLSession:task:didReceiveChallenge:completionHandler:]
+  -[ThroughputDelegate URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
+  -[ThroughputDelegate URLSession:didBecomeInvalidWithError:]
+  -[ThroughputDelegate URLSession:task:didFinishCollectingMetrics:]
+  -[ThroughputDelegate cancel]
+  -[ThroughputDelegate shareProgress]
+  -[ThroughputDelegate initWithExecution:testName:withQueue:testEndpoint:withConfig:resultsObject:]
+  -[ThroughputDelegate getSessions]
+  -[ThroughputDelegate addTasks]
+  -[ThroughputDelegate createTaskWithRequest:session:]
+  -[ThroughputDelegate amendRequest:]
+  -[ThroughputDelegate executeTaskWithRequest:saturationHandler:completionHandler:]
+  -[ThroughputDelegate addNewThroughputMeasurement:]
+  -[ThroughputDelegate cancelWithCompletionHandler:]
+  -[ThroughputDelegate updateResultsWithThroughput:confidence:]
+  -[ThroughputDelegate checkLimits]
+  -[ThroughputDelegate minFlows]
+  -[ThroughputDelegate maxFlows]
+  -[ThroughputDelegate actUponNewThroughputMeasurement:]
+
+
+DownloadThroughputDelegate : ThroughputDelegate
+  // instance methods
+  -[DownloadThroughputDelegate URLSession:dataTask:didReceiveData:]
+  -[DownloadThroughputDelegate createTaskWithRequest:session:]
+  -[DownloadThroughputDelegate updateResultsWithThroughput:confidence:]
+  -[DownloadThroughputDelegate checkLimits]
+  -[DownloadThroughputDelegate minFlows]
+  -[DownloadThroughputDelegate maxFlows]
+
+
+UploadThroughputDelegate : ThroughputDelegate
+  // instance methods
+  -[UploadThroughputDelegate URLSession:task:needNewBodyStream:]
+  -[UploadThroughputDelegate URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
+  -[UploadThroughputDelegate createTaskWithRequest:session:]
+  -[UploadThroughputDelegate amendRequest:]
+  -[UploadThroughputDelegate updateResultsWithThroughput:confidence:]
+  -[UploadThroughputDelegate checkLimits]
+  -[UploadThroughputDelegate minFlows]
+  -[UploadThroughputDelegate maxFlows]
+
+
+LatencyURLSessionDelegate : NSObject <NSURLSessionDataDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[LatencyURLSessionDelegate URLSession:didReceiveChallenge:completionHandler:]
+  -[LatencyURLSessionDelegate didFinishCollectingMetrics:]
+  -[LatencyURLSessionDelegate dealloc]
+  -[LatencyURLSessionDelegate .cxx_destruct]
+  -[LatencyURLSessionDelegate URLSession:task:didReceiveChallenge:completionHandler:]
+  -[LatencyURLSessionDelegate URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
+  -[LatencyURLSessionDelegate URLSession:didBecomeInvalidWithError:]
+  -[LatencyURLSessionDelegate cancel]
+  -[LatencyURLSessionDelegate shareProgress]
+  -[LatencyURLSessionDelegate cancelWithCompletionHandler:]
+  -[LatencyURLSessionDelegate initWithConfiguration:testName:queue:testEndpoint:resultsObject:resultsDelegate:tcpKey:tlsKey:reqrespKey:selfKey:]
+  -[LatencyURLSessionDelegate executeTaskWithRequest:completionHandler:]
+
+
+IdleLatencyURLSessionDelegate : LatencyURLSessionDelegate
+  // instance methods
+  -[IdleLatencyURLSessionDelegate URLSession:task:didCompleteWithError:]
+  -[IdleLatencyURLSessionDelegate URLSession:task:didFinishCollectingMetrics:]
+  -[IdleLatencyURLSessionDelegate executeTaskWithRequest:completionHandler:]
+
+
+WorkingLatencyURLSessionDelegate : LatencyURLSessionDelegate
+  // instance methods
+  -[WorkingLatencyURLSessionDelegate URLSession:task:didCompleteWithError:]
+  -[WorkingLatencyURLSessionDelegate .cxx_destruct]
+  -[WorkingLatencyURLSessionDelegate URLSession:task:didFinishCollectingMetrics:]
+  -[WorkingLatencyURLSessionDelegate executeTaskWithRequest:completionHandler:]
+  -[WorkingLatencyURLSessionDelegate initWithConfiguration:testName:queue:testEndpoint:resultsObject:resultsDelegate:urlSessions:tcpKey:tlsKey:reqrespKey:selfKey:]
+  -[WorkingLatencyURLSessionDelegate scheduleNewTask:]
+  -[WorkingLatencyURLSessionDelegate scheduleNewTask]
+  -[WorkingLatencyURLSessionDelegate isDownlinkTest]
+
+
+UploadDataStream : NSInputStream
+  // instance methods
+  -[UploadDataStream initWithLength:]
+  -[UploadDataStream scheduleInRunLoop:forMode:]
+  -[UploadDataStream setDelegate:]
+  -[UploadDataStream removeFromRunLoop:forMode:]
+  -[UploadDataStream delegate]
+  -[UploadDataStream read:maxLength:]
+  -[UploadDataStream close]
+  -[UploadDataStream getBuffer:length:]
+  -[UploadDataStream streamStatus]
+  -[UploadDataStream open]
+  -[UploadDataStream hasBytesAvailable]
+  -[UploadDataStream streamError]
+
+
+SaturationDetection : NSObject
+  // instance methods
+  -[SaturationDetection add:]
+  -[SaturationDetection .cxx_destruct]
+  -[SaturationDetection init]
+  -[SaturationDetection initWithAverageSpan:]
+  -[SaturationDetection getAverage]
+  -[SaturationDetection getSaturation]
+
+
+NetworkInterfaceInfo : NSObject
+ @property  NSString *name
+ @property  NSString *networkAccessTechnology
+ @property  NSNumber *type
+
+  // class methods
+  +[NetworkInterfaceInfo initWithInterfaceName:interfaceType:networkAccessTechnology:]
+  +[NetworkInterfaceInfo getInfoForInterface:]
+
+  // instance methods
+  -[NetworkInterfaceInfo type]
+  -[NetworkInterfaceInfo .cxx_destruct]
+  -[NetworkInterfaceInfo setType:]
+  -[NetworkInterfaceInfo setName:]
+  -[NetworkInterfaceInfo copyWithZone:]
+  -[NetworkInterfaceInfo name]
+  -[NetworkInterfaceInfo mutableCopyWithZone:]
+  -[NetworkInterfaceInfo describe]
+  -[NetworkInterfaceInfo networkAccessTechnology]
+  -[NetworkInterfaceInfo setNetworkAccessTechnology:]
+
+
+NetworkQualityValue : NSObject
+ @property  NSNumber *value
+ @property  NSNumber *rating
+ @property  long long confidence
+
+  // instance methods
+  -[NetworkQualityValue confidence]
+  -[NetworkQualityValue .cxx_destruct]
+  -[NetworkQualityValue setValue:]
+  -[NetworkQualityValue rating]
+  -[NetworkQualityValue copyWithZone:]
+  -[NetworkQualityValue value]
+  -[NetworkQualityValue mutableCopyWithZone:]
+  -[NetworkQualityValue setConfidence:]
+  -[NetworkQualityValue setRating:]
+  -[NetworkQualityValue updateConfidence:]
+
+
+NetworkQualityResult : NSObject <NSCopying>
+ @property  NSDate *timestamp
+ @property  long long index
+ @property  NetworkQualityValue *downlinkCapacity
+ @property  NSNumber *downloadCapacity
+ @property  NSNumber *downlinkBytesTransferred
+ @property  NSNumber *downlinkFlows
+ @property  NSString *interfaceName
+ @property  NetworkQualityValue *uplinkCapacity
+ @property  NSNumber *uploadCapacity
+ @property  NSNumber *uplinkBytesTransferred
+ @property  NSNumber *uplinkFlows
+ @property  NetworkQualityValue *downlinkResponsiveness
+ @property  NSNumber *downloadResponsiveness
+ @property  long long downloadResponsivenessRating
+ @property  NetworkQualityValue *uplinkResponsiveness
+ @property  NSNumber *uploadResponsiveness
+ @property  long long uploadResponsivenessRating
+ @property  NSDictionary *workingLatencyValues
+ @property  NetworkQualityValue *latency
+ @property  NSNumber *idleLatency
+ @property  NSDictionary *idleLatencyValues
+ @property  NSDictionary *urlSessionMetrics
+ @property  NSError *error
+
+  // class methods
+  +[NetworkQualityResult ratingForResponsivenessScore:]
+
+  // instance methods
+  -[NetworkQualityResult latency]
+  -[NetworkQualityResult setLatency:]
+  -[NetworkQualityResult setIndex:]
+  -[NetworkQualityResult setTimestamp:]
+  -[NetworkQualityResult index]
+  -[NetworkQualityResult error]
+  -[NetworkQualityResult interfaceName]
+  -[NetworkQualityResult setInterfaceName:]
+  -[NetworkQualityResult .cxx_destruct]
+  -[NetworkQualityResult setError:]
+  -[NetworkQualityResult copyWithZone:]
+  -[NetworkQualityResult timestamp]
+  -[NetworkQualityResult mutableCopyWithZone:]
+  -[NetworkQualityResult init]
+  -[NetworkQualityResult idleLatency]
+  -[NetworkQualityResult setIdleLatency:]
+  -[NetworkQualityResult finalizeResult]
+  -[NetworkQualityResult downlinkCapacity]
+  -[NetworkQualityResult setDownlinkCapacity:]
+  -[NetworkQualityResult downloadCapacity]
+  -[NetworkQualityResult setDownloadCapacity:]
+  -[NetworkQualityResult downlinkBytesTransferred]
+  -[NetworkQualityResult setDownlinkBytesTransferred:]
+  -[NetworkQualityResult downlinkFlows]
+  -[NetworkQualityResult setDownlinkFlows:]
+  -[NetworkQualityResult uplinkCapacity]
+  -[NetworkQualityResult setUplinkCapacity:]
+  -[NetworkQualityResult uploadCapacity]
+  -[NetworkQualityResult setUploadCapacity:]
+  -[NetworkQualityResult uplinkBytesTransferred]
+  -[NetworkQualityResult setUplinkBytesTransferred:]
+  -[NetworkQualityResult uplinkFlows]
+  -[NetworkQualityResult setUplinkFlows:]
+  -[NetworkQualityResult downlinkResponsiveness]
+  -[NetworkQualityResult setDownlinkResponsiveness:]
+  -[NetworkQualityResult downloadResponsiveness]
+  -[NetworkQualityResult setDownloadResponsiveness:]
+  -[NetworkQualityResult downloadResponsivenessRating]
+  -[NetworkQualityResult setDownloadResponsivenessRating:]
+  -[NetworkQualityResult uplinkResponsiveness]
+  -[NetworkQualityResult setUplinkResponsiveness:]
+  -[NetworkQualityResult uploadResponsiveness]
+  -[NetworkQualityResult setUploadResponsiveness:]
+  -[NetworkQualityResult uploadResponsivenessRating]
+  -[NetworkQualityResult setUploadResponsivenessRating:]
+  -[NetworkQualityResult workingLatencyValues]
+  -[NetworkQualityResult setWorkingLatencyValues:]
+  -[NetworkQualityResult idleLatencyValues]
+  -[NetworkQualityResult setIdleLatencyValues:]
+  -[NetworkQualityResult urlSessionMetrics]
+  -[NetworkQualityResult setUrlSessionMetrics:]
+
+
+NetworkQualityAssessment : NSObject <NetworkQualityExecutionsDelegate>
+  // instance methods
+  -[NetworkQualityAssessment initWithConfiguration:delegate:delegateQueue:]
+  -[NetworkQualityAssessment .cxx_destruct]
+  -[NetworkQualityAssessment progress:]
+  -[NetworkQualityAssessment initWithConfiguration:]
+  -[NetworkQualityAssessment cancel]
+  -[NetworkQualityAssessment runWithCompletionHandler:]
+  -[NetworkQualityAssessment finalizeResults:withError:withCompletionHandler:]
+
+
+NetworkQualityRemoteConfiguration : NSObject
+ @property  NSString *resolver
+ @property  NSString *targetDomain
+ @property  NSString *testEndpoint
+ @property  NSString *interfaceName
+
+  // class methods
+  +[NetworkQualityRemoteConfiguration isAppleInternal]
+  +[NetworkQualityRemoteConfiguration environment]
+  +[NetworkQualityRemoteConfiguration networkQualityConfigurationURL]
+
+  // instance methods
+  -[NetworkQualityRemoteConfiguration setResolver:]
+  -[NetworkQualityRemoteConfiguration interfaceName]
+  -[NetworkQualityRemoteConfiguration initWithDictionary:]
+  -[NetworkQualityRemoteConfiguration setInterfaceName:]
+  -[NetworkQualityRemoteConfiguration .cxx_destruct]
+  -[NetworkQualityRemoteConfiguration resolver]
+  -[NetworkQualityRemoteConfiguration initWithData:]
+  -[NetworkQualityRemoteConfiguration setTestEndpoint:]
+  -[NetworkQualityRemoteConfiguration DNSConfigured]
+  -[NetworkQualityRemoteConfiguration URLForURLType:]
+  -[NetworkQualityRemoteConfiguration portForURLType:]
+  -[NetworkQualityRemoteConfiguration testEndpoint:]
+  -[NetworkQualityRemoteConfiguration targetDomain]
+  -[NetworkQualityRemoteConfiguration setTargetDomain:]
+  -[NetworkQualityRemoteConfiguration testEndpoint]
+
+
+CoordinateApproximation : NSObject
+ @property  double low
+ @property  double high
+ @property  double value
+ @property  double error
+
+  // class methods
+  +[CoordinateApproximation new]
+
+  // instance methods
+  -[CoordinateApproximation low]
+  -[CoordinateApproximation error]
+  -[CoordinateApproximation setError:]
+  -[CoordinateApproximation setValue:]
+  -[CoordinateApproximation setHigh:]
+  -[CoordinateApproximation setLow:]
+  -[CoordinateApproximation high]
+  -[CoordinateApproximation value]
+
+
+GeohashCodecState : NSObject
+ @property  CoordinateApproximation *latitude
+ @property  CoordinateApproximation *longitude
+
+  // class methods
+  +[GeohashCodecState new]
+
+  // instance methods
+  -[GeohashCodecState latitude]
+  -[GeohashCodecState setLatitude:]
+  -[GeohashCodecState setLongitude:]
+  -[GeohashCodecState longitude]
+  -[GeohashCodecState .cxx_destruct]
+
+
+Base32Codec : NSObject
+  // class methods
+  +[Base32Codec unpackBase32:]
+  +[Base32Codec packBase32:]
+
+
+GeohashCodec : NSObject
+  // class methods
+  +[GeohashCodec decodeExactly:intoInterimState:]
+  +[GeohashCodec decodeGeohash:intoCoordinate:]
+  +[GeohashCodec encodeCoordinate:withPrecision:]
+
+
+(MetricName)
+	// instance methods
+	-[(MetricName) minMetric]
+	-[(MetricName) maxMetric]
+	-[(MetricName) meanMetric]
+	-[(MetricName) responsivenessMetric]
+	-[(MetricName) throughputMetric]
+
+01 00 0100 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocationManager 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSInputStream 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSMutableURLRequest 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSURLCredential 
+01 00 0600 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSURLSession 
+01 00 0600 /System/Library/Frameworks/CFNetwork.framework/CFNetwork: NSURLSessionConfiguration 

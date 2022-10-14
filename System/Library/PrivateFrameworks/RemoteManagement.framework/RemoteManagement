@@ -1,0 +1,973 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_RMAccountHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_RMAsset
+|| __DATA.__objc_data _OBJC_CLASS_$_RMAuthenticationCredential
+|| __DATA.__objc_data _OBJC_CLASS_$_RMConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_RMDateFormat
+|| __DATA.__objc_data _OBJC_CLASS_$_RMDebounceTimer
+|| __DATA.__objc_data _OBJC_CLASS_$_RMDeclarationKey
+|| __DATA.__objc_data _OBJC_CLASS_$_RMDevice
+|| __DATA.__objc_data _OBJC_CLASS_$_RMDeviceAuthenticationCredential
+|| __DATA.__objc_data _OBJC_CLASS_$_RMEnrollmentController
+|| __DATA.__objc_data _OBJC_CLASS_$_RMErrorUtilities
+|| __DATA.__objc_data _OBJC_CLASS_$_RMFeatureOverrides
+|| __DATA.__objc_data _OBJC_CLASS_$_RMGenericAuthenticationCredential
+|| __DATA.__objc_data _OBJC_CLASS_$_RMJSONUtilities
+|| __DATA.__objc_data _OBJC_CLASS_$_RMMCAdapter
+|| __DATA.__objc_data _OBJC_CLASS_$_RMMDMHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_RMManagementChannel
+|| __DATA.__objc_data _OBJC_CLASS_$_RMSandbox
+|| __DATA.__objc_data _OBJC_CLASS_$_RMSharedLock
+|| __DATA.__objc_data _OBJC_CLASS_$_RMSynchronous
+|| __DATA.__objc_data _OBJC_CLASS_$_RMTimedDispatch
+|| __DATA.__objc_data _OBJC_CLASS_$_RMXPCNotifications
+|| __DATA.__objc_data _OBJC_CLASS_$_RMXPCProxy
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMAccountHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMAsset
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMAuthenticationCredential
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMDateFormat
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMDebounceTimer
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMDeclarationKey
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMDevice
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMDeviceAuthenticationCredential
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMEnrollmentController
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMErrorUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMFeatureOverrides
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMGenericAuthenticationCredential
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMJSONUtilities
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMMCAdapter
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMMDMHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMManagementChannel
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMSandbox
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMSharedLock
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMSynchronous
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMTimedDispatch
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMXPCNotifications
+|| __DATA.__objc_data _OBJC_METACLASS_$_RMXPCProxy
+|| __DATA_CONST.__const _DatabaseDirectoryName
+|| __DATA_CONST.__const _HTTPLogsDirectoryName
+|| __DATA_CONST.__const _IdentitiesDirectoryName
+|| __DATA_CONST.__const _InteractiveLegacyProfileIdentifierPrefix
+|| __DATA_CONST.__const _LegacyProfileIdentifierPrefix
+|| __DATA_CONST.__const _RMAccountAdditionalInfoKeyManagedByOlympus
+|| __DATA_CONST.__const _RMAccountPropertyKeyAccountScheme
+|| __DATA_CONST.__const _RMAccountPropertyKeyAdditionalInfo
+|| __DATA_CONST.__const _RMAccountPropertyKeyAltDSID
+|| __DATA_CONST.__const _RMAccountPropertyKeyBearerToken
+|| __DATA_CONST.__const _RMAccountPropertyKeyDSID
+|| __DATA_CONST.__const _RMAccountPropertyKeyEnrollmentToken
+|| __DATA_CONST.__const _RMAccountPropertyKeyEnrollmentURL
+|| __DATA_CONST.__const _RMAccountPropertyKeyManagementSourceIdentifier
+|| __DATA_CONST.__const _RMAccountSchemeBearer
+|| __DATA_CONST.__const _RMAccountSchemeMAID
+|| __DATA_CONST.__const _RMAccountSchemeTest
+|| __DATA_CONST.__const _RMAssetTypeImage
+|| __DATA_CONST.__const _RMAssetTypeUserIdentity
+|| __DATA_CONST.__const _RMAssetTypeVPPOnDemand
+|| __DATA_CONST.__const _RMAuthenticationSchemeBearer
+|| __DATA_CONST.__const _RMAuthenticationSchemeBearerFieldAccessToken
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAID
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAIDFieldAltDSID
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAIDFieldDSID
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAIDFieldLongLivedToken
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAIDFieldShortLivedToken
+|| __DATA_CONST.__const _RMAuthenticationSchemeMAIDFieldUsername
+|| __DATA_CONST.__const _RMAuthenticationSchemeTest
+|| __DATA_CONST.__const _RMAuthenticationSchemeTestFieldToken
+|| __DATA_CONST.__const _RMAuthenticationSchemeTestFieldUsername
+|| __DATA_CONST.__const _RMCMSDecodeStatusCodeKey
+|| __DATA_CONST.__const _RMConfigurationTypeAccountCalDAV
+|| __DATA_CONST.__const _RMConfigurationTypeAccountCardDAV
+|| __DATA_CONST.__const _RMConfigurationTypeAccountExchange
+|| __DATA_CONST.__const _RMConfigurationTypeAccountGoogle
+|| __DATA_CONST.__const _RMConfigurationTypeAccountLDAP
+|| __DATA_CONST.__const _RMConfigurationTypeAccountMail
+|| __DATA_CONST.__const _RMConfigurationTypeAccountSubscribedCalendar
+|| __DATA_CONST.__const _RMConfigurationTypeApplicationManagement
+|| __DATA_CONST.__const _RMConfigurationTypeLegacyInteractiveProfiles
+|| __DATA_CONST.__const _RMConfigurationTypeLegacyProfiles
+|| __DATA_CONST.__const _RMConfigurationTypeManagementStatusSubscription
+|| __DATA_CONST.__const _RMConfigurationTypeManagementTest
+|| __DATA_CONST.__const _RMConfigurationTypePasscodeSettings
+|| __DATA_CONST.__const _RMErrorDomain
+|| __DATA_CONST.__const _RMErrorUserInfoKeyDescriptionKey
+|| __DATA_CONST.__const _RMHTTPStatusCodeKey
+|| __DATA_CONST.__const _RMMobileKeyBagErrorCodeKey
+|| __DATA_CONST.__const _RMXPCAgentMachServiceName
+|| __DATA_CONST.__const _RMXPCDaemonMachServiceName
+|| __DATA_CONST.__const _StatusDirectoryName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMBundle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMFeatureFlags
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMLocations
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMLog
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMProfilesAdapter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_RMProfilesController
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMBundle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMFeatureFlags
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMLocations
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMLog
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMProfilesAdapter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_RMProfilesController
+__ Accounts: _ACAccountPropertyPersonaIdentifier
+__ Accounts: _ACAccountPropertyRemoteManagingAccountIdentifier
+__ Accounts: _ACAccountTypeIdentifierAppleAccount
+__ Accounts: _ACAccountTypeIdentifierRemoteManagement
+__ Accounts: _ACAccountTypeIdentifieriTunesStore
+__ Accounts: _OBJC_CLASS_$_ACAccount
+__ Accounts: _OBJC_CLASS_$_ACAccountStore
+__ CoreData: _NSDetailedErrorsKey
+__ CoreData: _NSValidationKeyErrorKey
+__ CoreData: _NSValidationObjectErrorKey
+__ CoreData: _NSValidationValueErrorKey
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ DMCEnrollmentLibrary: _OBJC_CLASS_$_DMCEnrollmentFlowController
+__ DMCUtilities: _DMCSystemContainerPathWithBundleIdentifier
+__ DMCUtilities: _OBJC_CLASS_$_DMCMultiUserModeUtilities
+__ DMCUtilities: _OBJC_CLASS_$_DMCPersonaHelper
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSDebugDescriptionErrorKey
+__ Foundation: _NSFilePosixPermissions
+__ Foundation: _NSFileSize
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSURLErrorKey
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConditionLock
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHTTPURLResponse
+__ Foundation: _OBJC_CLASS_$_NSISO8601DateFormatter
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSSecureUnarchiveFromDataTransformer
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ Foundation: _OBJC_CLASS_$_NSURLSession
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_METACLASS_$_NSSecureUnarchiveFromDataTransformer
+__ MDMClientLibrary: _OBJC_CLASS_$_MDMCloudConfiguration
+__ MDMClientLibrary: _OBJC_CLASS_$_MDMConfiguration
+__ MDMClientLibrary: _OBJC_CLASS_$_MDMDeclarativeManagement
+__ MDMClientLibrary: _kCCOrganizationNameKey
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ ManagedConfiguration: _kMCInstallProfileOptionInstallationType
+__ ManagedConfiguration: _kMCInstallProfileOptionInstalledBy
+__ ManagedConfiguration: _kMCInstallProfileOptionsIsInstalledByDeclarativeManagement
+__ ManagedConfiguration: _kMCInstallProfileOptionsIsRMUserEnrollment
+__ MobileKeyBag: _MKBGetDeviceLockState
+__ RemoteManagementModel: _OBJC_CLASS_$_RMModelAnyPayload
+__ RemoteManagementModel: _OBJC_CLASS_$_RMModelStatusReason
+__ RemoteManagementProtocol: _OBJC_CLASS_$_RMProtocolWellKnownResponse
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __set_user_dir_suffix
+__ libSystem.B.dylib: __xpc_event_key_name
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _confstr
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_block_cancel
+__ libSystem.B.dylib: _dispatch_block_create
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _fcntl
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_variant_has_internal_ui
+__ libSystem.B.dylib: _realpath$DARWIN_EXTSN
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_set_string
+__ libSystem.B.dylib: _xpc_set_event
+__ libSystem.B.dylib: _xpc_set_event_stream_handler
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+RMAccountHelper : NSObject
+  // class methods
+  +[RMAccountHelper createAccountWithEnrollmentURL:username:personaID:description:error:]
+  +[RMAccountHelper _createAccountWithEnrollmentURL:username:personaID:description:error:]
+  +[RMAccountHelper updateAccountWithIdentifier:enrollmentURL:personaID:error:]
+  +[RMAccountHelper removeAccountWithIdentifier:error:]
+  +[RMAccountHelper removeAccountWithEnrollmentURL:error:]
+  +[RMAccountHelper _removeAccount:store:error:]
+
+
+RMAsset : NSObject <NSSecureCoding>
+ @property  NSString *type
+ @property  NSString *identifier
+ @property  NSString *serverToken
+ @property  NSData *content
+ @property  RMManagementChannel *channel
+
+  // class methods
+  +[RMAsset supportsSecureCoding]
+
+  // instance methods
+  -[RMAsset identifier]
+  -[RMAsset content]
+  -[RMAsset encodeWithCoder:]
+  -[RMAsset type]
+  -[RMAsset channel]
+  -[RMAsset isEqualToAsset:]
+  -[RMAsset .cxx_destruct]
+  -[RMAsset isEqual:]
+  -[RMAsset initWithCoder:]
+  -[RMAsset serverToken]
+  -[RMAsset initWithType:identifier:serverToken:content:channel:]
+
+
+RMAuthenticationCredential : NSObject <NSSecureCoding>
+  // class methods
+  +[RMAuthenticationCredential supportsSecureCoding]
+
+  // instance methods
+  -[RMAuthenticationCredential encodeWithCoder:]
+  -[RMAuthenticationCredential initWithCoder:]
+
+
+RMAuthenticationCredentialTransformer : NSSecureUnarchiveFromDataTransformer
+  // class methods
+  +[RMAuthenticationCredentialTransformer allowedTopLevelClasses]
+
+
+RMDeviceAuthenticationCredential : RMAuthenticationCredential
+  // class methods
+  +[RMDeviceAuthenticationCredential supportsSecureCoding]
+
+  // instance methods
+  -[RMDeviceAuthenticationCredential encodeWithCoder:]
+  -[RMDeviceAuthenticationCredential initWithCoder:]
+
+
+RMGenericAuthenticationCredential : RMAuthenticationCredential
+ @property  NSString *authenticationScheme
+ @property  NSDictionary *properties
+
+  // class methods
+  +[RMGenericAuthenticationCredential supportsSecureCoding]
+
+  // instance methods
+  -[RMGenericAuthenticationCredential properties]
+  -[RMGenericAuthenticationCredential encodeWithCoder:]
+  -[RMGenericAuthenticationCredential .cxx_destruct]
+  -[RMGenericAuthenticationCredential authenticationScheme]
+  -[RMGenericAuthenticationCredential isEqual:]
+  -[RMGenericAuthenticationCredential initWithCoder:]
+  -[RMGenericAuthenticationCredential initWithAuthenticationScheme:properties:]
+  -[RMGenericAuthenticationCredential isEqualToAuthenticationCredential:]
+
+
+RMBundle : NSObject
+  // class methods
+  +[RMBundle setManagementScope:]
+  +[RMBundle managementScope]
+  +[RMBundle remoteManagementBundle]
+
+
+RMConfiguration : NSObject <NSSecureCoding>
+ @property  NSString *type
+ @property  NSString *identifier
+ @property  NSString *serverToken
+ @property  NSData *content
+ @property  RMManagementChannel *channel
+ @property  NSDictionary *assetByIdentifier
+
+  // class methods
+  +[RMConfiguration supportsSecureCoding]
+
+  // instance methods
+  -[RMConfiguration identifier]
+  -[RMConfiguration isEqualToConfiguration:]
+  -[RMConfiguration content]
+  -[RMConfiguration encodeWithCoder:]
+  -[RMConfiguration type]
+  -[RMConfiguration channel]
+  -[RMConfiguration .cxx_destruct]
+  -[RMConfiguration isEqual:]
+  -[RMConfiguration initWithCoder:]
+  -[RMConfiguration serverToken]
+  -[RMConfiguration initWithType:identifier:serverToken:content:channel:assetByIdentifier:]
+  -[RMConfiguration assetByIdentifier]
+
+
+RMDateFormat : NSObject
+  // class methods
+  +[RMDateFormat stringUTCWithDate:]
+  +[RMDateFormat stringUTCFractionalSecondsWithDate:]
+  +[RMDateFormat stringLocalTimeZoneWithDate:]
+  +[RMDateFormat stringLocalTimeZoneFractionalSecondsWithDate:]
+  +[RMDateFormat dateWithStringUTC:]
+  +[RMDateFormat dateWithStringUTCFractionalSeconds:]
+  +[RMDateFormat dateWithStringLocalTimeZone:]
+  +[RMDateFormat dateWithStringLocalTimeZoneFractionalSeconds:]
+  +[RMDateFormat _isoUTCDateFormatter]
+  +[RMDateFormat _isoUTCFractionalSecondsDateFormatter]
+  +[RMDateFormat _isoLocalTimeZoneDateFormatter]
+  +[RMDateFormat _isoLocalTimeZoneFractionalSecondsDateFormatter]
+
+
+RMDebounceTimer : NSObject
+ @property  NSString *identifier
+ @property  double minimumInterval
+ @property  double maximumInterval
+ @property  RMTimedDispatch *minimumTimer
+ @property  RMTimedDispatch *maximumTimer
+ @property  NSString *lastTimerID
+ @property  <RMDebounceTimerDelegate> *delegate
+
+  // class methods
+  +[RMDebounceTimer debounceTimerWithMinimumInterval:maximumInterval:delegate:identifier:]
+
+  // instance methods
+  -[RMDebounceTimer identifier]
+  -[RMDebounceTimer setDelegate:]
+  -[RMDebounceTimer delegate]
+  -[RMDebounceTimer dealloc]
+  -[RMDebounceTimer trigger]
+  -[RMDebounceTimer .cxx_destruct]
+  -[RMDebounceTimer _timerDidFire]
+  -[RMDebounceTimer setMinimumInterval:]
+  -[RMDebounceTimer minimumInterval]
+  -[RMDebounceTimer initWithMinimumInterval:maximumInterval:delegate:identifier:]
+  -[RMDebounceTimer maximumInterval]
+  -[RMDebounceTimer setMaximumInterval:]
+  -[RMDebounceTimer minimumTimer]
+  -[RMDebounceTimer setMinimumTimer:]
+  -[RMDebounceTimer maximumTimer]
+  -[RMDebounceTimer setMaximumTimer:]
+  -[RMDebounceTimer lastTimerID]
+  -[RMDebounceTimer setLastTimerID:]
+
+
+RMDeclarationKey : NSObject <NSCopying>
+ @property  NSString *key
+ @property  NSString *keyWithoutServerToken
+ @property  NSString *subscriberIdentifier
+ @property  NSString *storeIdentifier
+ @property  NSString *declarationIdentifier
+ @property  NSString *declarationServerToken
+
+  // class methods
+  +[RMDeclarationKey newDeclarationKey:]
+  +[RMDeclarationKey newDeclarationKeyWithSubscriberIdentifier:store:declaration:]
+  +[RMDeclarationKey newDeclarationKeyWithSubscriberIdentifier:storeIdentifier:declarationIdentifier:declarationServerToken:]
+  +[RMDeclarationKey synchronizeOldKeys:newKeys:returningUnchangedKeys:returningNewAddKeys:returningNewChangeKeys:returningOldReplaceKeys:returningOldRemoveKeys:]
+
+  // instance methods
+  -[RMDeclarationKey storeIdentifier]
+  -[RMDeclarationKey isValid]
+  -[RMDeclarationKey .cxx_destruct]
+  -[RMDeclarationKey copyWithZone:]
+  -[RMDeclarationKey key]
+  -[RMDeclarationKey isEqual:]
+  -[RMDeclarationKey subscriberIdentifier]
+  -[RMDeclarationKey declarationIdentifier]
+  -[RMDeclarationKey initWithDeclarationKey:]
+  -[RMDeclarationKey initWithSubscriberIdentifier:store:declaration:]
+  -[RMDeclarationKey initWithSubscriberIdentifier:storeIdentifier:declarationIdentifier:declarationServerToken:]
+  -[RMDeclarationKey keyWithoutServerToken]
+  -[RMDeclarationKey declarationServerToken]
+
+
+RMDevice : NSObject
+ @property  NSString *UDID
+ @property  NSString *serialNumber
+ @property  NSString *modelFamily
+ @property  NSString *modelIdentifier
+ @property  NSString *modelMarketingName
+ @property  NSString *operatingSystem
+ @property  NSString *operatingSystemMarketingName
+ @property  NSString *operatingSystemVersion
+ @property  NSString *operatingSystemBuildVersion
+ @property  BOOL locked
+
+  // class methods
+  +[RMDevice currentDevice]
+
+  // instance methods
+  -[RMDevice serialNumber]
+  -[RMDevice operatingSystem]
+  -[RMDevice modelIdentifier]
+  -[RMDevice operatingSystemVersion]
+  -[RMDevice locked]
+  -[RMDevice UDID]
+  -[RMDevice modelFamily]
+  -[RMDevice modelMarketingName]
+  -[RMDevice operatingSystemMarketingName]
+  -[RMDevice operatingSystemBuildVersion]
+
+
+RMEnrollmentController : NSObject
+ @property  BOOL synchronous
+ @property  long long enrollmentType
+ @property  long long scope
+
+  // class methods
+  +[RMEnrollmentController userDefaultsEnrollmentURL]
+  +[RMEnrollmentController synchronousEnrollmentControllerForManagementEnrollmentType:scope:]
+
+  // instance methods
+  -[RMEnrollmentController scope]
+  -[RMEnrollmentController _daemonConnection]
+  -[RMEnrollmentController .cxx_destruct]
+  -[RMEnrollmentController setSynchronous:]
+  -[RMEnrollmentController isSynchronous]
+  -[RMEnrollmentController enrollmentType]
+  -[RMEnrollmentController _daemonProxyWithErrorHandler:]
+  -[RMEnrollmentController _agentConnection]
+  -[RMEnrollmentController initWithEnrollmentType:scope:]
+  -[RMEnrollmentController enrollDeviceChannelWithURI:completionHandler:]
+  -[RMEnrollmentController enrollUserChannelWithAccountIdentifier:completionHandler:]
+  -[RMEnrollmentController enrollViaMDMWithEnrollmentType:uri:accountIdentifier:personaIdentifier:completionHandler:]
+  -[RMEnrollmentController unenrollDeviceChannelWithIdentifier:completionHandler:]
+  -[RMEnrollmentController unenrollUserChannelWithIdentifier:completionHandler:]
+  -[RMEnrollmentController unenrollViaMDMWithEnrollmentType:identifier:completionHandler:]
+  -[RMEnrollmentController _unenrollIdentifier:completionHandler:]
+  -[RMEnrollmentController deviceChannelEnrollmentExistsWithCompletionHandler:]
+  -[RMEnrollmentController syncWithIdentifier:completionHandler:]
+  -[RMEnrollmentController updateWithIdentifier:pushMessage:completionHandler:]
+  -[RMEnrollmentController updateWithIdentifier:tokensResponse:completionHandler:]
+  -[RMEnrollmentController managementChannelWithAccountIdentifier:completionHandler:]
+  -[RMEnrollmentController managementChannelWithEnrollmentURL:completionHandler:]
+  -[RMEnrollmentController _scopedProxyWithErrorHandler:]
+  -[RMEnrollmentController _agentProxyWithErrorHandler:]
+  -[RMEnrollmentController discoverEnrollmentURLForUserIdentifier:completionHandler:]
+  -[RMEnrollmentController _discoverEnrollmentURLForDomain:port:completionHandler:]
+  -[RMEnrollmentController _enrollmentURLFromWellKnownURL:completionHandler:]
+
+
+RMErrorUtilities : NSObject
+  // class methods
+  +[RMErrorUtilities createErrorWithCode:userInfo:descriptionKey:]
+  +[RMErrorUtilities _populateDescriptionInUserInfo:descriptionKey:]
+  +[RMErrorUtilities _populateDescriptionInUserInfo:descriptionKey:arguments:]
+  +[RMErrorUtilities _localizedDescriptionFormatWithKey:]
+  +[RMErrorUtilities _englishDescriptionFormatWithKey:]
+  +[RMErrorUtilities createAccountAlreadyExistsErrorWithIdentifier:]
+  +[RMErrorUtilities createAccountMissingErrorWithIdentifier:]
+  +[RMErrorUtilities createAlreadyEnrolledInMDMv1Error]
+  +[RMErrorUtilities createAssetCannotBeDownloadedErrorWithUnderlyingError:]
+  +[RMErrorUtilities createAssetContentTypeCannotBeVerifiedError]
+  +[RMErrorUtilities createAssetSizeCannotBeVerifiedError]
+  +[RMErrorUtilities createAssetHashCannotBeVerifiedError]
+  +[RMErrorUtilities createAssetCannotProcessFileErrorWithUnderlyingError:]
+  +[RMErrorUtilities createAssetInvalidError:]
+  +[RMErrorUtilities createAssetInvalidURLError:]
+  +[RMErrorUtilities createBootstrapURINotFound]
+  +[RMErrorUtilities createCannotChangeValueErrorForPropertyNamed:onObject:]
+  +[RMErrorUtilities createCMSDecodeErrorWithStatusCode:reason:]
+  +[RMErrorUtilities createConnectionNotEntitledWithName:]
+  +[RMErrorUtilities createCouldNotInstallApp]
+  +[RMErrorUtilities createCouldNotInstallAppWithUnderlyingError:]
+  +[RMErrorUtilities createCouldNotParseURLErrorWithString:]
+  +[RMErrorUtilities createDeclarationNotFoundErrorWithIdentifier:]
+  +[RMErrorUtilities createDeviceIdentityNotFoundError]
+  +[RMErrorUtilities createDisallowedStatusValueErrorWithKeyPath:]
+  +[RMErrorUtilities createFeatureDisabledError:]
+  +[RMErrorUtilities createHTTPErrorWithStatusCode:reason:]
+  +[RMErrorUtilities createIncorrectPayloadTypeErrorWithExpectedType:actualType:]
+  +[RMErrorUtilities createInternalError]
+  +[RMErrorUtilities createInternalErrorWithUnderlyingError:]
+  +[RMErrorUtilities createInvalidPasscodeError]
+  +[RMErrorUtilities createInvalidStatusValueErrorWithKeyPath:]
+  +[RMErrorUtilities createLicenseNotFound]
+  +[RMErrorUtilities createManagementSourceNotFoundErrorWithAccountIdentifier:]
+  +[RMErrorUtilities createManagementSourceNotFoundErrorWithIdentifier:]
+  +[RMErrorUtilities createManagementSourceAlreadyExistsErrorWithAccountIdentifier:]
+  +[RMErrorUtilities createManagementSourceAlreadyExistsErrorWithURI:]
+  +[RMErrorUtilities createMDMRequestFailed:]
+  +[RMErrorUtilities createMDMRequestInvalid:]
+  +[RMErrorUtilities createMismatchedValuesErrorForPropertyNamed:onObject:expected:actual:]
+  +[RMErrorUtilities createMissingMandatoryPropertyErrorWithPropertyNamed:onObject:]
+  +[RMErrorUtilities createMissingReferralURLError]
+  +[RMErrorUtilities createMissingServerResponseItemErrorWithName:]
+  +[RMErrorUtilities createMobileKeyBagErrorWithCode:]
+  +[RMErrorUtilities createMultipleErrorOrReturnTheSingleErrorWithErrors:]
+  +[RMErrorUtilities createMultipleValidationErrorOrReturnTheSingleErrorWithErrors:]
+  +[RMErrorUtilities createNotImplementedErrorForFeature:]
+  +[RMErrorUtilities createOrganizationProofInvalidError]
+  +[RMErrorUtilities createServiceDiscoveryInvalidUserIdentifierWithReason:]
+  +[RMErrorUtilities createServiceDiscoveryWellKnownFailedWithReason:]
+  +[RMErrorUtilities createServiceDiscoveryWellKnownInvalidWithReason:]
+  +[RMErrorUtilities createStatePreventsSyncingError]
+  +[RMErrorUtilities createTooManyFailedAuthenticationsError]
+  +[RMErrorUtilities createTooManyReferralsError]
+  +[RMErrorUtilities createTooManyDeviceManagementSourcesError]
+  +[RMErrorUtilities createUnableToEvaluatePredicateErrorWithFormat:reason:]
+  +[RMErrorUtilities createUnableToParsePredicateErrorWithFormat:reason:]
+  +[RMErrorUtilities createUnableToParsePredicateErrorWithCustomOperator:predicateFormat:]
+  +[RMErrorUtilities createUnhandledContentTypeErrorWithContentType:]
+  +[RMErrorUtilities createUnsupportedAuthenticationSchemeErrorWithScheme:]
+  +[RMErrorUtilities createUnsupportedStatusValueErrorWithKeyPath:]
+  +[RMErrorUtilities createUnverifiedDownloadHashErrorWithURL:]
+  +[RMErrorUtilities createUnverifiedDownloadSizeErrorWithURL:]
+
+
+RMFeatureFlags : NSObject
+  // class methods
+  +[RMFeatureFlags isAppleInternal]
+  +[RMFeatureFlags hasBridgeOS]
+  +[RMFeatureFlags isEnabled]
+  +[RMFeatureFlags isDeviceChannelEnabled]
+  +[RMFeatureFlags isCreateAccountInSettingsEnabled]
+  +[RMFeatureFlags isHTTPConduitEnabled]
+  +[RMFeatureFlags isFileConduitEnabled]
+
+
+RMFeatureOverrides : NSObject
+  // class methods
+  +[RMFeatureOverrides useHTTPLogging]
+  +[RMFeatureOverrides stringForDefaultsKey:]
+  +[RMFeatureOverrides boolForDefaultsKey:]
+  +[RMFeatureOverrides defaultOverrideForKey:]
+  +[RMFeatureOverrides dictionaryForDefaultsKey:]
+  +[RMFeatureOverrides bootstrapURL]
+  +[RMFeatureOverrides internalStatusForKey:defaultValue:]
+  +[RMFeatureOverrides permissiveURLSchemes]
+  +[RMFeatureOverrides qaMode]
+  +[RMFeatureOverrides testBooleanValue]
+
+
+RMJSONUtilities : NSObject
+  // class methods
+  +[RMJSONUtilities serializeJSONDictionary:fileURL:error:]
+  +[RMJSONUtilities deserializeJSONDictionaryAtFileURL:error:]
+
+
+RMLocations : NSObject
+  // class methods
+  +[RMLocations homeDirectoryURL]
+  +[RMLocations currentDomain]
+  +[RMLocations managedObjectModelURL]
+  +[RMLocations _rootDirectoryURLInDomain:error:]
+  +[RMLocations baseDirectoryURLCreateIfNeeded:]
+  +[RMLocations baseDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations oldBaseDirectoryURLInSystemDomain]
+  +[RMLocations dataVaultDirectoryURLCreateIfNeeded:]
+  +[RMLocations dataVaultDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations _oneTimeDataVaultConversionInDomain:dataVaultDirectoryURL:]
+  +[RMLocations identityDirectoryURLCreateIfNeeded:]
+  +[RMLocations identityDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations persistentStoreDirectoryURLCreateIfNeeded:]
+  +[RMLocations persistentStoreDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations persistentStoreURLCreateIfNeeded:]
+  +[RMLocations persistentStoreURLInDomain:createIfNeeded:]
+  +[RMLocations httpLoggingDirectoryURLCreateIfNeeded:]
+  +[RMLocations httpLoggingDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations statusDirectoryURLCreateIfNeeded:]
+  +[RMLocations statusDirectoryURLInDomain:createIfNeeded:]
+  +[RMLocations defaultsOverrideFileURLCreateIfNeeded:]
+  +[RMLocations defaultsOverrideFileURLInDomain:createIfNeeded:]
+  +[RMLocations migrationStatusFileURLCreateIfNeeded:]
+  +[RMLocations migrationStatusFileURLInDomain:createIfNeeded:]
+  +[RMLocations xpcServiceDirectoryURL]
+  +[RMLocations darwinUserDirectoryURL]
+  +[RMLocations darwinCacheDirectoryURL]
+  +[RMLocations darwinTemporaryDirectoryURL]
+  +[RMLocations _applicationSupportChildDirectoryURLInDomain:createIfNeeded:childName:descriptor:]
+  +[RMLocations _dataVaultChildDirectoryURLInDomain:createIfNeeded:childName:descriptor:]
+  +[RMLocations URLWithResolvedSymlinksFromURL:error:]
+
+
+RMLog : NSObject
+  // class methods
+  +[RMLog locations]
+  +[RMLog debounceTimer]
+  +[RMLog device]
+  +[RMLog sandbox]
+  +[RMLog accountHelper]
+  +[RMLog enrollmentController]
+  +[RMLog jsonUtilities]
+  +[RMLog mdmHelper]
+  +[RMLog profilesController]
+  +[RMLog sharedLock]
+  +[RMLog timeddispatch]
+  +[RMLog xpcNotifications]
+
+
+RMManagementChannel : NSObject <NSSecureCoding>
+ @property  long long type
+ @property  NSString *identifier
+ @property  NSString *accountIdentifier
+ @property  NSString *accountDescription
+ @property  NSString *organizationDescription
+ @property  NSURL *enrollmentURL
+ @property  NSString *enrollmentToken
+ @property  BOOL isEnrolled
+
+  // class methods
+  +[RMManagementChannel supportsSecureCoding]
+
+  // instance methods
+  -[RMManagementChannel accountDescription]
+  -[RMManagementChannel identifier]
+  -[RMManagementChannel encodeWithCoder:]
+  -[RMManagementChannel type]
+  -[RMManagementChannel isEqualToChannel:]
+  -[RMManagementChannel .cxx_destruct]
+  -[RMManagementChannel accountIdentifier]
+  -[RMManagementChannel enrollmentURL]
+  -[RMManagementChannel isEqual:]
+  -[RMManagementChannel initWithCoder:]
+  -[RMManagementChannel isEnrolled]
+  -[RMManagementChannel initWithType:identifier:accountIdentifier:accountDescription:organizationDescription:enrollmentURL:enrollmentToken:isEnrolled:]
+  -[RMManagementChannel organizationDescription]
+  -[RMManagementChannel enrollmentToken]
+
+
+RMMCAdapter : NSObject
+  // class methods
+  +[RMMCAdapter fetchDataAtURL:completionHandler:]
+
+
+RMMDMHelper : NSObject
+  // class methods
+  +[RMMDMHelper isActiveForScope:]
+  +[RMMDMHelper _setActive:scope:]
+  +[RMMDMHelper processDeclarativeManagementCommandWithProfileIdentifier:channelType:username:personaID:request:error:]
+  +[RMMDMHelper processDeclarativeManagementCommandWithProfileIdentifier:enrollmentType:scope:username:personaID:request:error:]
+  +[RMMDMHelper unenrollWithProfileIdentifier:channelType:error:]
+  +[RMMDMHelper unenrollWithProfileIdentifier:enrollmentType:scope:error:]
+  +[RMMDMHelper _enrolledDDMChannelWithController:profileIdentifier:enrollmentType:scope:username:personaID:error:]
+  +[RMMDMHelper _enrollDDMChannelIfNeededWithController:profileIdentifier:enrollmentType:scope:username:personaID:error:]
+  +[RMMDMHelper _unenrollDDMChannelWithController:enrollmentURL:enrollmentType:error:]
+  +[RMMDMHelper _managementChannelForEnrollmentURL:controller:error:]
+
+
+RMProfilesAdapter : NSObject
+ @property  BOOL isSystemScope
+
+  // instance methods
+  -[RMProfilesAdapter initWithScope:]
+  -[RMProfilesAdapter profileNameForIdentifier:]
+  -[RMProfilesAdapter installedProfileIdentifierByDeclarationKey]
+  -[RMProfilesAdapter installProfileData:store:declarationKey:completionHandler:]
+  -[RMProfilesAdapter uninstallProfileWithIdentifier:completionHandler:]
+  -[RMProfilesAdapter isSystemScope]
+  -[RMProfilesAdapter setIsSystemScope:]
+
+
+RMProfilesController : NSObject
+ @property  RMProfilesAdapter *profilesAdapter
+ @property  NSString *profileIdentifierPrefix
+
+  // class methods
+  +[RMProfilesController newProfileControllerWithPrefix:scope:]
+
+  // instance methods
+  -[RMProfilesController .cxx_destruct]
+  -[RMProfilesController installedProfileIdentifiers]
+  -[RMProfilesController installedProfileIdentifierByDeclarationKey]
+  -[RMProfilesController uninstallProfileWithIdentifier:completionHandler:]
+  -[RMProfilesController initWithProfileIdentifierPrefix:]
+  -[RMProfilesController initWithProfileIdentifierPrefix:scope:]
+  -[RMProfilesController initWithProfilesAdapter:profileIdentifierPrefix:]
+  -[RMProfilesController profileIdentifierForConfiguration:]
+  -[RMProfilesController profileIdentifierForDeclaration:store:]
+  -[RMProfilesController profileNameForProfileIdentifier:]
+  -[RMProfilesController configurationByDeclarationKeyForConfigurations:]
+  -[RMProfilesController declarationKeyForStore:declaration:]
+  -[RMProfilesController downloadAndInstallProfileConfiguration:fromURL:completionHandler:]
+  -[RMProfilesController downloadAndInstallProfileDeclaration:store:fromURL:completionHandler:]
+  -[RMProfilesController _installProfileAtPath:store:declaration:completionHandler:]
+  -[RMProfilesController _installProfileData:store:declaration:completionHandler:]
+  -[RMProfilesController profilesAdapter]
+  -[RMProfilesController setProfilesAdapter:]
+  -[RMProfilesController profileIdentifierPrefix]
+  -[RMProfilesController setProfileIdentifierPrefix:]
+
+
+RMSandbox : NSObject
+  // class methods
+  +[RMSandbox configureSandbox]
+
+
+RMSharedLock : NSObject
+ @property  NSString *lockTitle
+
+  // class methods
+  +[RMSharedLock newSharedLockWithDescription:]
+
+  // instance methods
+  -[RMSharedLock unlock]
+  -[RMSharedLock .cxx_destruct]
+  -[RMSharedLock initWithDescription:]
+  -[RMSharedLock lock]
+  -[RMSharedLock performBlockUnderLock:]
+  -[RMSharedLock lockTitle]
+  -[RMSharedLock setLockTitle:]
+
+
+RMSynchronous : NSObject
+  // instance methods
+  -[RMSynchronous complete]
+  -[RMSynchronous .cxx_destruct]
+  -[RMSynchronous waitForCompletion]
+  -[RMSynchronous init]
+
+
+RMTimedDispatch : NSObject
+ @property  @? timerCompletionBlock
+ @property  NSString *timerID
+ @property  BOOL complete
+
+  // class methods
+  +[RMTimedDispatch timedDispatchAfterInterval:completionBlock:]
+
+  // instance methods
+  -[RMTimedDispatch timerID]
+  -[RMTimedDispatch complete]
+  -[RMTimedDispatch .cxx_destruct]
+  -[RMTimedDispatch cancel]
+  -[RMTimedDispatch initAfterInterval:completionBlock:]
+  -[RMTimedDispatch timerCompletionBlock]
+
+
+RMXPCNotifications : NSObject
+ @property  NSString *streamName
+ @property  NSString *eventDictKeyName
+ @property  NSSet *registeredNotifications
+ @property  NSMutableSet *pendingNotifications
+ @property  NSMutableDictionary *notificationObservers
+ @property  NSObject<OS_dispatch_queue> *modificationQueue
+
+  // class methods
+  +[RMXPCNotifications darwinNotifier]
+  +[RMXPCNotifications distributedNotifier]
+  +[RMXPCNotifications registerForDarwinNotifications:]
+  +[RMXPCNotifications registerForDistributedNotifications:]
+  +[RMXPCNotifications _setupNotifier:notifications:]
+  +[RMXPCNotifications _setupEventStreamHandler:]
+
+  // instance methods
+  -[RMXPCNotifications streamName]
+  -[RMXPCNotifications notificationObservers]
+  -[RMXPCNotifications .cxx_destruct]
+  -[RMXPCNotifications modificationQueue]
+  -[RMXPCNotifications setRegisteredNotifications:]
+  -[RMXPCNotifications registeredNotifications]
+  -[RMXPCNotifications setNotificationObservers:]
+  -[RMXPCNotifications setModificationQueue:]
+  -[RMXPCNotifications _didReceiveNotification:]
+  -[RMXPCNotifications pendingNotifications]
+  -[RMXPCNotifications initWithStreamName:eventDictKeyName:]
+  -[RMXPCNotifications hasObserverForNotification:]
+  -[RMXPCNotifications addObserverForNotification:observer:]
+  -[RMXPCNotifications _addXPCEventForNotification:]
+  -[RMXPCNotifications removeObserverForNotification:]
+  -[RMXPCNotifications _removeXPCEventForNotification:]
+  -[RMXPCNotifications _waitForQueue:]
+  -[RMXPCNotifications eventDictKeyName]
+  -[RMXPCNotifications setPendingNotifications:]
+
+
+RMXPCProxy : NSObject
+  // class methods
+  +[RMXPCProxy newInterface]
+  +[RMXPCProxy newConnectionWithScope:]
+  +[RMXPCProxy newAgentConnection]
+  +[RMXPCProxy newDaemonConnection]
+  +[RMXPCProxy newConnectionWithListenerEndpoint:]
+
+
+ACAccount(RemoteManagement)
+	// class methods
+	+[ACAccount(RemoteManagement) rm_createTestAccountWithStore:username:description:enrollmentURL:]
+	+[ACAccount(RemoteManagement) rm_createBearerAccountWithStore:username:description:enrollmentURL:authToken:]
+	+[ACAccount(RemoteManagement) rm_createMAIDAccountWithStore:username:description:dsid:altDSID:personaIdentifier:enrollmentURL:]
+
+	// instance methods
+	-[ACAccount(RemoteManagement) rm_accountScheme]
+	-[ACAccount(RemoteManagement) rm_setAccountScheme:]
+	-[ACAccount(RemoteManagement) rm_altDSID]
+	-[ACAccount(RemoteManagement) rm_setAltDSID:]
+	-[ACAccount(RemoteManagement) rm_DSID]
+	-[ACAccount(RemoteManagement) rm_setDSID:]
+	-[ACAccount(RemoteManagement) rm_enrollmentToken]
+	-[ACAccount(RemoteManagement) rm_setEnrollmentToken:]
+	-[ACAccount(RemoteManagement) rm_enrollmentURL]
+	-[ACAccount(RemoteManagement) rm_setEnrollmentURL:]
+	-[ACAccount(RemoteManagement) rm_managementSourceIdentifier]
+	-[ACAccount(RemoteManagement) rm_setManagementSourceIdentifier:]
+	-[ACAccount(RemoteManagement) rm_remoteManagingAccountIdentifier]
+	-[ACAccount(RemoteManagement) rm_setRemoteManagingAccountIdentifier:]
+	-[ACAccount(RemoteManagement) rm_personaIdentifier]
+	-[ACAccount(RemoteManagement) rm_setPersonaIdentifier:]
+	-[ACAccount(RemoteManagement) rm_managedByOlympus]
+	-[ACAccount(RemoteManagement) rm_setmanagedByOlympus:]
+	-[ACAccount(RemoteManagement) rm_bearerToken]
+	-[ACAccount(RemoteManagement) rm_setBearerToken:]
+	-[ACAccount(RemoteManagement) rm_isAccountSchemeTest]
+	-[ACAccount(RemoteManagement) rm_isAccountSchemeBearer]
+	-[ACAccount(RemoteManagement) rm_isAccountSchemeMAID]
+
+ACAccountStore(RemoteManagement)
+	// class methods
+	+[ACAccountStore(RemoteManagement) rm_defaultStore]
+
+	// instance methods
+	-[ACAccountStore(RemoteManagement) rm_RemoteManagementAccountType]
+	-[ACAccountStore(RemoteManagement) rm_RemoteManagementAccounts]
+	-[ACAccountStore(RemoteManagement) rm_iCloudAccountForRemoteManagingAccount]
+	-[ACAccountStore(RemoteManagement) rm_iCloudAccountForRemoteManagingAccountWithAltDSID:]
+	-[ACAccountStore(RemoteManagement) rm_iTunesAccountForRemoteManagingAccount]
+	-[ACAccountStore(RemoteManagement) rm_iTunesAccountForRemoteManagingAccountWithAltDSID:]
+	-[ACAccountStore(RemoteManagement) _rm_AccountAssociatedWithRemoteManagementWithAccountTypeIdentifier:]
+	-[ACAccountStore(RemoteManagement) _rm_AccountAssociatedWithRemoteManagementWithAccountTypeIdentifier:altDSID:]
+	-[ACAccountStore(RemoteManagement) rm_remoteManagementAccountForAltDSID:]
+	-[ACAccountStore(RemoteManagement) rm_remoteManagementAccountForDSID:]
+	-[ACAccountStore(RemoteManagement) rm_remoteManagementAccountForIdentifier:]
+	-[ACAccountStore(RemoteManagement) rm_remoteManagementAccountForEnrollmentURL:]
+	-[ACAccountStore(RemoteManagement) rm_remoteManagementAccountForProfileIdentifier:]
+
+RMModelStatusReason(RemoteManagement)
+	// class methods
+	+[RMModelStatusReason(RemoteManagement) reasonWithCode:description:details:]
+	+[RMModelStatusReason(RemoteManagement) reasonWithCode:description:underlyingError:]
+	+[RMModelStatusReason(RemoteManagement) reasonWithError:]
+
+	// instance methods
+	-[RMModelStatusReason(RemoteManagement) isEqual:]
+	-[RMModelStatusReason(RemoteManagement) isEqualToStatusReason:]
+
+01 00 0600 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccount 
+01 00 0600 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccountStore 
+01 00 0100 /System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary: DMCEnrollmentFlowController 
+01 00 0800 /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities: DMCMultiUserModeUtilities 
+01 00 0800 /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities: DMCPersonaHelper 
+01 00 0200 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0300 /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary: MDMCloudConfiguration 
+01 00 0300 /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary: MDMConfiguration 
+01 00 0300 /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary: MDMDeclarativeManagement 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSConditionLock 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSHTTPURLResponse 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSISO8601DateFormatter 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0c00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSSecureUnarchiveFromDataTransformer 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLSession 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0900 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0a00 /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel: RMModelAnyPayload 
+01 00 0a00 /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel: RMModelStatusReason 
+01 00 0b00 /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementProtocol.framework/RemoteManagementProtocol: RMProtocolWellKnownResponse 

@@ -1,0 +1,1580 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CRCameraReaderOutput
+|| __DATA.__objc_data _OBJC_CLASS_$_CRCameraReaderOutputCameraText
+|| __DATA.__objc_data _OBJC_CLASS_$_CRCameraReaderOutputExpirationDate
+|| __DATA.__objc_data _OBJC_CLASS_$_CRCameraReaderOutputIDCard
+|| __DATA.__objc_data _OBJC_CLASS_$_CRCodeRedeemerController
+|| __DATA.__objc_data _OBJC_CLASS_$_CRInsights
+|| __DATA.__objc_data _OBJC_CLASS_$_CRInsightsCodeSection
+|| __DATA.__objc_data _OBJC_CLASS_$_CRInsightsContext
+|| __DATA.__objc_data _OBJC_CLASS_$_CRMLCCModel
+|| __DATA.__objc_data _OBJC_CLASS_$_CRMLEmbossedCardholderModel
+|| __DATA.__objc_data _OBJC_CLASS_$_CRMLEmbossedExpirationModel
+|| __DATA.__objc_data _OBJC_CLASS_$_CRMLEmbossedNumberModel
+|| __DATA.__objc_data _OBJC_CLASS_$_CRMLFlatModel
+|| __DATA.__objc_data _OBJC_CLASS_$_CRPollingTimer
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRCameraReaderOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRCameraReaderOutputCameraText
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRCameraReaderOutputExpirationDate
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRCameraReaderOutputIDCard
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRCodeRedeemerController
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRInsightsCodeSection
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRInsightsContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRMLCCModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRMLEmbossedCardholderModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRMLEmbossedExpirationModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRMLEmbossedNumberModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRMLFlatModel
+|| __DATA.__objc_data _OBJC_METACLASS_$_CRPollingTimer
+|| __DATA_CONST.__const _CRCameraReaderErrorDomain
+|| __DATA_CONST.__const _CRCameraReaderIDCardCapturePathAutomatic
+|| __DATA_CONST.__const _CRCameraReaderIDCardCapturePathFallback
+|| __DATA_CONST.__const _CRCodeRedeemerErrorDomain
+|| __DATA_CONST.__const _CRCodeRedeemerInfoCodeKey
+|| __DATA_CONST.__const _CRCodeRedeemerInfoErrorKey
+|| __DATA_CONST.__const _CRCodeRedeemerInfoStatsKey
+|| __DATA_CONST.__const _CRInsightsCardImageCutBufferKey
+|| __DATA_CONST.__const _CRInsightsCardImageCutEmbossedBufferKey
+|| __DATA_CONST.__const _CRInsightsCardImageFixedCutLandscape
+|| __DATA_CONST.__const _CRInsightsCardImageFreeformLandscape
+|| __DATA_CONST.__const _CRInsightsCardImageFreeformLandscapeInverted
+|| __DATA_CONST.__const _CRInsightsCardImageFreeformPortrait
+|| __DATA_CONST.__const _CRInsightsCardPointsKey
+|| __DATA_CONST.__const _CRInsightsCardholderNameKey
+|| __DATA_CONST.__const _CRInsightsCodeKey
+|| __DATA_CONST.__const _CRInsightsContextImageOrientation
+|| __DATA_CONST.__const _CRInsightsContextImageOrientationLandscape
+|| __DATA_CONST.__const _CRInsightsContextImageOrientationLandscapeInverted
+|| __DATA_CONST.__const _CRInsightsContextImageOrientationPortrait
+|| __DATA_CONST.__const _CRInsightsContextImageOrientationPortraitInverted
+|| __DATA_CONST.__const _CRInsightsContextImagePath
+|| __DATA_CONST.__const _CRInsightsContextImagePathFixedCut
+|| __DATA_CONST.__const _CRInsightsContextImagePathFreeform
+|| __DATA_CONST.__const _CRInsightsContextRecognitionTextFeature
+|| __DATA_CONST.__const _CRInsightsContextRecognitionTextFeatureGroup
+|| __DATA_CONST.__const _CRInsightsDateResultsKey
+|| __DATA_CONST.__const _CRInsightsEmbossedRegionsExpirationDate
+|| __DATA_CONST.__const _CRInsightsEmbossedRegionsName
+|| __DATA_CONST.__const _CRInsightsEmbossedRegionsNumber
+|| __DATA_CONST.__const _CRInsightsEmbossedResultsFixedCutLandscape
+|| __DATA_CONST.__const _CRInsightsEmbossedResultsFreeformLandscape
+|| __DATA_CONST.__const _CRInsightsEmbossedResultsFreeformLandscapeInverted
+|| __DATA_CONST.__const _CRInsightsEndToEndTimeKey
+|| __DATA_CONST.__const _CRInsightsExpirationKey
+|| __DATA_CONST.__const _CRInsightsNameResultsKey
+|| __DATA_CONST.__const _CRInsightsNumberResultsKey
+|| __DATA_CONST.__const _CRInsightsPerFrameTimeKey
+|| __DATA_CONST.__const _CRInsightsRecognitionResultForExpDateEmbossed
+|| __DATA_CONST.__const _CRInsightsRecognitionResultForNameEmbossed
+|| __DATA_CONST.__const _CRInsightsRecognitionResultForNumberEmbossed
+|| __DATA_CONST.__const _CRInsightsRecognitionResultsForRegion
+|| __DATA_CONST.__const _CRInsightsReferenceExpirationKey
+|| __DATA_CONST.__const _CRInsightsTextDetectorRegionsFixedCutLandscape
+|| __DATA_CONST.__const _CRInsightsTextDetectorRegionsFreeformLandscape
+|| __DATA_CONST.__const _CRInsightsTextDetectorRegionsFreeformLandscapeInverted
+|| __DATA_CONST.__const _CRInsightsTextDetectorRegionsFreeformPortrait
+|| __DATA_CONST.__const _CRInsightsTextDetectorResultsFixedCutLandscape
+|| __DATA_CONST.__const _CRInsightsTextDetectorResultsFreeformLandscape
+|| __DATA_CONST.__const _CRInsightsTextDetectorResultsFreeformLandscapeInverted
+|| __DATA_CONST.__const _CRInsightsTextDetectorResultsFreeformPortrait
+|| __DATA_CONST.__const _CRInsightsTextFeatureRecognitionTime
+|| __DATA_CONST.__const _CRInsightsTotalRecognitionTimeCountKey
+|| __DATA_CONST.__const _CRInsightsTotalRecognitionTimeKey
+|| __DATA_CONST.__const _CROutputTypeCameraText
+|| __DATA_CONST.__const _CROutputTypeCreditCardCardholderName
+|| __DATA_CONST.__const _CROutputTypeCreditCardExpirationDate
+|| __DATA_CONST.__const _CROutputTypeCreditCardNumber
+|| __DATA_CONST.__const _CROutputTypeHomeKitCode
+|| __DATA_CONST.__const _CROutputTypeIDCardBack
+|| __DATA_CONST.__const _CROutputTypeIDCardFront
+|| __DATA_CONST.__const _CROutputTypeQRCode
+|| __DATA_CONST.__const _kCRMLModelArrayResultKey
+|| __DATA_CONST.__const _kCROverrideCaptureSessionManager
+|| __DATA_CONST.__const _kCROverrideRegionsFixedCutLandscape
+|| __DATA_CONST.__const _kCROverrideRegionsFreeformLandscape
+|| __DATA_CONST.__const _kCROverrideRegionsFreeformLandscapeInverted
+|| __DATA_CONST.__const _kCROverrideRegionsFreeformPortrait
+|| __DATA_CONST.__const _kCROverrideShouldRunEmbossedPath
+|| __DATA_CONST.__const _kCROverrideShouldRunFixedCutPath
+|| __DATA_CONST.__const _kCROverrideShouldRunFreeformInvertedPath
+|| __DATA_CONST.__const _kCROverrideShouldRunFreeformPath
+|| __DATA_CONST.__const _kCROverrideShouldRunLandscapeFlatPrintedPath
+|| __DATA_CONST.__const _kCROverrideShouldRunOffline
+|| __DATA_CONST.__const _kCROverrideShouldRunPortraitFlatPrintedPath
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRCameraReader
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRCameraReader
+|| __TEXT.__const _CoreRecognitionVersionNumber
+|| __TEXT.__const _CoreRecognitionVersionString
+|| __TEXT.__text _CRAdaptiveThresholdImage
+|| __TEXT.__text __findCodeRectInImage
+|| __TEXT.__text __findCodeRectInImageWithModel
+|| __TEXT.__text __recognizeCodeImages
+|| __TEXT.__text __segmentCodeImages
+|| __TEXT.__text _allocatePixel8Buffer
+|| __TEXT.__text _bestMatchInStringCandidates
+|| __TEXT.__text _calculateImageBlur
+|| __TEXT.__text _ccArea1Rect
+|| __TEXT.__text _ccArea1RectScaleIndependent
+|| __TEXT.__text _ccArea2Rect
+|| __TEXT.__text _ccArea2RectScaleIndependent
+|| __TEXT.__text _ccCardRect
+|| __TEXT.__text _ccMMRectToUnitRect
+|| __TEXT.__text _ccMMRectToUnitRectIsPortait
+|| __TEXT.__text _ccUnitRectToMMRect
+|| __TEXT.__text _ccUnitRectToMMRectIsPortrait
+|| __TEXT.__text _checkCardCode
+|| __TEXT.__text _checkCodePrefix
+|| __TEXT.__text _checkPartialCodePrefix
+|| __TEXT.__text _closestNameInContacts
+|| __TEXT.__text _computeReferenceDateFromString
+|| __TEXT.__text _cr_dispatch_async
+|| __TEXT.__text _createCGImageFromFile
+|| __TEXT.__text _createCachedContact
+|| __TEXT.__text _createPlanar420PixelBufferFromImageFile
+|| __TEXT.__text _createPlanar420PixelBufferFromJPEGFile
+|| __TEXT.__text _decodeCreditCardExpirationActivations
+|| __TEXT.__text _decodeCreditCardNumberActivations
+|| __TEXT.__text _decodeCreditCardholderActivations
+|| __TEXT.__text _deviceModel
+|| __TEXT.__text _enrichedNumbersListHK
+|| __TEXT.__text _extractBestDateString
+|| __TEXT.__text _extractCardCode
+|| __TEXT.__text _extractCardCodeHK
+|| __TEXT.__text _extractCardNumberResults
+|| __TEXT.__text _extractCardholderNameResults
+|| __TEXT.__text _extractExpirationDateResults
+|| __TEXT.__text _extractValidDateStrings
+|| __TEXT.__text _isLeastBlurryFrame
+|| __TEXT.__text _isNonNameString
+|| __TEXT.__text _isValidCodeLocation
+|| __TEXT.__text _isValidNameLocationForCode
+|| __TEXT.__text _isValidNameString
+|| __TEXT.__text _keepAllLayersWithinHorizontalBounds
+|| __TEXT.__text _matchAgainstContact
+|| __TEXT.__text _rotateBuffer180
+|| __TEXT.__text _secondsBetweenTimestamps
+|| __TEXT.__text _sortOverlappingCALayers
+|| __TEXT.__text _stringByTransliteratingNameToPinyin
+|| __TEXT.__text _stringCandidatesByTransliteratingNameToRomaji
+__ AVFoundation: _AVCaptureDeviceTypeBuiltInUltraWideCamera
+__ AVFoundation: _AVCaptureDeviceTypeBuiltInWideAngleCamera
+__ AVFoundation: _AVCaptureInputPortFormatDescriptionDidChangeNotification
+__ AVFoundation: _AVCaptureSessionInterruptionReasonKey
+__ AVFoundation: _AVCaptureSessionPreset1280x720
+__ AVFoundation: _AVCaptureSessionPreset640x480
+__ AVFoundation: _AVCaptureSessionPresetHigh
+__ AVFoundation: _AVCaptureSessionPresetPhoto
+__ AVFoundation: _AVCaptureSessionWasInterruptedNotification
+__ AVFoundation: _AVLayerVideoGravityResizeAspectFill
+__ AVFoundation: _AVMediaTypeVideo
+__ AVFoundation: _AVMetadataObjectTypeQRCode
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureDeviceDiscoverySession
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureDeviceInput
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureMetadataOutput
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureSession
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureVideoDataOutput
+__ AVFoundation: _OBJC_CLASS_$_AVCaptureVideoPreviewLayer
+__ Accelerate: _vDSP_mmul
+__ Accelerate: _vImageRotate90_Planar8
+__ Accelerate: _vImageScale_Planar8
+__ AudioToolbox: _AudioServicesPlaySystemSound
+__ CMCapture: _kFigCaptureSampleBufferAttachmentKey_ClientSpecifiedMetadata
+__ CMCapture: _kFigCaptureStreamMetadata_PixelFocalLength
+__ Celestial: _FigCreateIOSurfaceFromJPEG
+__ Contacts: _CNContactFamilyNameKey
+__ Contacts: _CNContactGivenNameKey
+__ Contacts: _CNContactMiddleNameKey
+__ Contacts: _CNContactNicknameKey
+__ Contacts: _CNContactPhoneticFamilyNameKey
+__ Contacts: _CNContactPhoneticGivenNameKey
+__ Contacts: _CNContactStoreDidChangeNotification
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNContactFetchRequest
+__ Contacts: _OBJC_CLASS_$_CNContactStore
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayCreate
+__ CoreFoundation: _CFArrayCreateCopy
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArraySetValueAtIndex
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataCreateWithBytesNoCopy
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetBytes
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFLocaleCreate
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFStringAppend
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringTokenizerAdvanceToNextToken
+__ CoreFoundation: _CFStringTokenizerCopyCurrentTokenAttribute
+__ CoreFoundation: _CFStringTokenizerCreate
+__ CoreFoundation: _CFStringTokenizerGetCurrentTokenRange
+__ CoreFoundation: _CFStringTokenizerSetString
+__ CoreFoundation: _CFStringTransform
+__ CoreFoundation: _CFURLGetFileSystemRepresentation
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFAllocatorMalloc
+__ CoreFoundation: _kCFStringTransformStripCombiningMarks
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGColorSpaceCreateDeviceRGB
+__ CoreGraphics: _CGColorSpaceRelease
+__ CoreGraphics: _CGDataProviderCopyData
+__ CoreGraphics: _CGImageGetAlphaInfo
+__ CoreGraphics: _CGImageGetBitsPerPixel
+__ CoreGraphics: _CGImageGetBytesPerRow
+__ CoreGraphics: _CGImageGetDataProvider
+__ CoreGraphics: _CGImageGetHeight
+__ CoreGraphics: _CGImageGetWidth
+__ CoreGraphics: _CGImageRelease
+__ CoreGraphics: _CGPathAddPath
+__ CoreGraphics: _CGPathAddRect
+__ CoreGraphics: _CGPathCreateMutable
+__ CoreGraphics: _CGPathCreateWithEllipseInRect
+__ CoreGraphics: _CGPathCreateWithRect
+__ CoreGraphics: _CGPathGetBoundingBox
+__ CoreGraphics: _CGPathRelease
+__ CoreGraphics: _CGPathRetain
+__ CoreGraphics: _CGPointZero
+__ CoreGraphics: _CGRectContainsPoint
+__ CoreGraphics: _CGRectContainsRect
+__ CoreGraphics: _CGRectEqualToRect
+__ CoreGraphics: _CGRectGetHeight
+__ CoreGraphics: _CGRectGetMaxX
+__ CoreGraphics: _CGRectGetMaxY
+__ CoreGraphics: _CGRectGetMidX
+__ CoreGraphics: _CGRectGetMidY
+__ CoreGraphics: _CGRectGetMinX
+__ CoreGraphics: _CGRectGetMinY
+__ CoreGraphics: _CGRectGetWidth
+__ CoreGraphics: _CGRectInset
+__ CoreGraphics: _CGRectIntegral
+__ CoreGraphics: _CGRectIntersection
+__ CoreGraphics: _CGRectIntersectsRect
+__ CoreGraphics: _CGRectIsEmpty
+__ CoreGraphics: _CGRectNull
+__ CoreGraphics: _CGRectOffset
+__ CoreGraphics: _CGRectUnion
+__ CoreGraphics: _CGSizeZero
+__ CoreImage: _CIDetectorAccuracy
+__ CoreImage: _CIDetectorAccuracyHigh
+__ CoreImage: _CIDetectorDetectDiacritics
+__ CoreImage: _CIDetectorReturnSubFeatures
+__ CoreImage: _CIDetectorTypeText
+__ CoreImage: _OBJC_CLASS_$_CIContext
+__ CoreImage: _OBJC_CLASS_$_CIDetector
+__ CoreImage: _OBJC_CLASS_$_CIFilter
+__ CoreImage: _OBJC_CLASS_$_CIImage
+__ CoreImage: _OBJC_CLASS_$_CIVector
+__ CoreImage: _kCIInputImageKey
+__ CoreImage: _kCIOutputImageKey
+__ CoreMedia: _CMCopyDictionaryOfAttachments
+__ CoreMedia: _CMFormatDescriptionGetMediaSubType
+__ CoreMedia: _CMGetAttachment
+__ CoreMedia: _CMSampleBufferGetImageBuffer
+__ CoreMedia: _CMSampleBufferGetPresentationTimeStamp
+__ CoreMedia: _CMTimeCompare
+__ CoreMedia: _CMTimeGetSeconds
+__ CoreMedia: _CMTimeMakeWithSeconds
+__ CoreMedia: _CMTimeSubtract
+__ CoreMedia: _CMVideoFormatDescriptionGetDimensions
+__ CoreMedia: _kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix
+__ CoreMedia: _kCMTimeInvalid
+__ CoreMedia: _kCMTimeNegativeInfinity
+__ CoreMedia: _kCMTimePositiveInfinity
+__ CoreText: _CTFontCreateWithName
+__ CoreText: _CTFontManagerRegisterFontsForURL
+__ CoreText: _CTFrameGetVisibleStringRange
+__ CoreText: _CTFramesetterCreateFrame
+__ CoreText: _CTFramesetterCreateWithAttributedString
+__ CoreText: _kCTFontAttributeName
+__ CoreVideo: _CVPixelBufferCreate
+__ CoreVideo: _CVPixelBufferCreateWithIOSurface
+__ CoreVideo: _CVPixelBufferGetBaseAddressOfPlane
+__ CoreVideo: _CVPixelBufferGetBytesPerRowOfPlane
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetHeightOfPlane
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferGetWidthOfPlane
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferRelease
+__ CoreVideo: _CVPixelBufferRetain
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ CoreVideo: _kCVPixelBufferIOSurfacePropertiesKey
+__ CoreVideo: _kCVPixelBufferPixelFormatTypeKey
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSKeyValueChangeNewKey
+__ Foundation: _NSKeyValueChangeOldKey
+__ Foundation: _NSLog
+__ Foundation: _NSPointFromString
+__ Foundation: _NSRectFromString
+__ Foundation: _NSStringFromPoint
+__ Foundation: _NSStringFromRect
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnionRange
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSOperationQueue
+__ Foundation: _OBJC_CLASS_$_NSPointerArray
+__ Foundation: _OBJC_CLASS_$_NSRegularExpression
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _kIOMasterPortDefault
+__ IOSurface: _kIOSurfaceAllocSize
+__ IOSurface: _kIOSurfaceBytesPerRow
+__ IOSurface: _kIOSurfaceCacheMode
+__ IOSurface: _kIOSurfaceHeight
+__ IOSurface: _kIOSurfaceMemoryRegion
+__ IOSurface: _kIOSurfacePixelFormat
+__ IOSurface: _kIOSurfaceWidth
+__ ImageIO: _CGImageSourceCopyPropertiesAtIndex
+__ ImageIO: _CGImageSourceCreateImageAtIndex
+__ ImageIO: _CGImageSourceCreateWithURL
+__ QuartzCore: _CATransform3DIdentity
+__ QuartzCore: _CATransform3DMakeRotation
+__ QuartzCore: _CATransform3DMakeScale
+__ QuartzCore: _CATransform3DRotate
+__ QuartzCore: _CATransform3DScale
+__ QuartzCore: _OBJC_CLASS_$_CAAnimationGroup
+__ QuartzCore: _OBJC_CLASS_$_CABasicAnimation
+__ QuartzCore: _OBJC_CLASS_$_CAKeyframeAnimation
+__ QuartzCore: _OBJC_CLASS_$_CALayer
+__ QuartzCore: _OBJC_CLASS_$_CAReplicatorLayer
+__ QuartzCore: _OBJC_CLASS_$_CAShapeLayer
+__ QuartzCore: _OBJC_CLASS_$_CATextLayer
+__ QuartzCore: _OBJC_CLASS_$_CATransaction
+__ QuartzCore: _OBJC_METACLASS_$_CALayer
+__ QuartzCore: _OBJC_METACLASS_$_CAReplicatorLayer
+__ QuartzCore: _kCAAlignmentCenter
+__ QuartzCore: _kCAAnimationDiscrete
+__ QuartzCore: _kCATransactionAnimationDuration
+__ TextRecognition: _CRImageReaderImageCaptureOrientationPortrait
+__ TextRecognition: _CRImageReaderLanguageKey
+__ TextRecognition: _CRImageReaderRecognitionMethod
+__ TextRecognition: _CRImageReaderRecognitionMethodSingleChar
+__ TextRecognition: _CRImageReaderTextDetector
+__ TextRecognition: _CRImageReaderTextDetectorCR
+__ TextRecognition: _CROutputTypeText
+__ TextRecognition: _OBJC_CLASS_$_CRImage
+__ TextRecognition: _OBJC_CLASS_$_CRImageReader
+__ TextRecognition: _OBJC_CLASS_$_CRMLModel
+__ TextRecognition: _OBJC_CLASS_$_CRTextFeature
+__ TextRecognition: _OBJC_CLASS_$_CRTextFeatureMultiRegion
+__ TextRecognition: _OBJC_CLASS_$_GeometricCutTools
+__ TextRecognition: _OBJC_IVAR_$_CRMLModel._modelHeight
+__ TextRecognition: _OBJC_IVAR_$_CRMLModel._modelWidth
+__ TextRecognition: _OBJC_METACLASS_$_CRImage
+__ TextRecognition: _OBJC_METACLASS_$_CRMLModel
+__ TextRecognition: __ZN15RectangleFinder18findCodeRectPointsE13vImage_Bufferi
+__ TextRecognition: __ZN15RectangleFinderC1Ev
+__ TextRecognition: __ZN8CTCLayer10setCodeMapEPKii
+__ TextRecognition: __ZN8CTCLayer11removeNoiseENSt3__16vectorIiNS0_9allocatorIiEEEE
+__ TextRecognition: __ZN8CTCLayer12computeScoreENSt3__16vectorIiNS0_9allocatorIiEEEE
+__ TextRecognition: __ZN8CTCLayer12injectSpacesENSt3__16vectorIiNS0_9allocatorIiEEEE
+__ TextRecognition: __ZN8CTCLayer14setActivationsENSt3__16vectorINS1_INS1_IfNS0_9allocatorIfEEEENS2_IS4_EEEENS2_IS6_EEEE
+__ TextRecognition: __ZN8CTCLayer16bestPathDecodingEv
+__ TextRecognition: __ZN8CTCLayer17getMaxActivationsEv
+__ TextRecognition: __ZN8CTCLayer20setCummulativeScoresEv
+__ TextRecognition: __ZN8CTCLayer22pathDecodingCTCSegmentE17FieldDecodingTypePKi
+__ TextRecognition: __ZN8CTCLayer35pathDecodingFixedLengthInjectSpacesEi
+__ TextRecognition: __ZN8CTCLayerC1Ev
+__ TextRecognition: __ZN8CTCLayerD1Ev
+__ TextRecognition: _adaptiveThresholdIntegralImage
+__ TextRecognition: _applyHomograpyMatrix
+__ TextRecognition: _correctHistogram
+__ TextRecognition: _find_homography
+__ TextRecognition: _normalizedPointForSize
+__ TextRecognition: _normalizedRectForSize
+__ TextRecognition: _unicodeToNSString
+__ TextRecognition: _writeBuffer
+__ TextRecognition: _writeBufferWithFullColor
+__ TextRecognition: _writeCGImageToPNG
+__ UIKit: _NSFontAttributeName
+__ UIKit: _NSForegroundColorAttributeName
+__ UIKit: _NSParagraphStyleAttributeName
+__ UIKit: _OBJC_CLASS_$_NSMutableParagraphStyle
+__ UIKit: _OBJC_CLASS_$_UIActivityIndicatorView
+__ UIKit: _OBJC_CLASS_$_UIAlertAction
+__ UIKit: _OBJC_CLASS_$_UIAlertController
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIBezierPath
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIFont
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UITapGestureRecognizer
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_METACLASS_$_UIColor
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ UIKit: _UIDeviceOrientationDidChangeNotification
+__ VideoToolbox: _FigCreateIOSurfaceBackedCVPixelBufferWithAttributes
+__ VideoToolbox: _FigCreatePixelBufferAttributesWithIOSurfaceSupport
+__ Vision: _OBJC_CLASS_$_VNDetectRectanglesRequest
+__ Vision: _OBJC_CLASS_$_VNDetectTextRectanglesRequest
+__ Vision: _OBJC_CLASS_$_VNImageBlurScoreRequest
+__ Vision: _OBJC_CLASS_$_VNImageRequestHandler
+__ Vision: _VNImageOptionCameraIntrinsics
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: _atan
+__ libSystem.B.dylib: _atof
+__ libSystem.B.dylib: _atoi
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _clock
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _exit
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _exp2
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseek
+__ libSystem.B.dylib: _ftell
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _hypotf
+__ libSystem.B.dylib: _log2
+__ libSystem.B.dylib: _logf
+__ libSystem.B.dylib: _mach_thread_self
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _perror
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_cond_broadcast
+__ libSystem.B.dylib: _pthread_cond_destroy
+__ libSystem.B.dylib: _pthread_cond_init
+__ libSystem.B.dylib: _pthread_cond_wait
+__ libSystem.B.dylib: _pthread_create
+__ libSystem.B.dylib: _pthread_exit
+__ libSystem.B.dylib: _pthread_join
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: _rand
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _sscanf
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strncmp
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _thread_policy_set
+__ libSystem.B.dylib: _uname
+__ libc++.1.dylib: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKcm
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__16locale9use_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__18ios_base6getlocEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorC1EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorD1Ev
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+__ libc++.1.dylib: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEE4openEPKcj
+__ libc++.1.dylib: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEE5closeEv
+__ libc++.1.dylib: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEEC1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd
+__ libc++.1.dylib: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERj
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPKv
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj
+__ libc++.1.dylib: __ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEEC2Ev
+__ libc++.1.dylib: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZNSt3__15ctypeIcE2idE
+__ libc++.1.dylib: __ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_
+__ libc++.1.dylib: __ZNSt3__16localeD1Ev
+__ libc++.1.dylib: __ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv
+__ libc++.1.dylib: __ZNSt3__18ios_base4initEPv
+__ libc++.1.dylib: __ZNSt3__18ios_base5clearEj
+__ libc++.1.dylib: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt13runtime_error
+__ libc++.1.dylib: __ZTTNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTTNSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTTNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTVNSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE
+__ libc++.1.dylib: __ZTVNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+__ libc++.1.dylib: __ZTVNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_rethrow
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___dynamic_cast
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+CRDefaultCaptureSessionManager : NSObject <CRCaptureSessionManager>
+ @property  AVCaptureSession *captureSession
+ @property  AVCaptureVideoPreviewLayer *avfPreviewLayer
+ @property  AVCaptureDeviceInput *deviceInput
+ @property  AVCaptureVideoDataOutput *captureVideoDataOutput
+ @property  id inputPortFormatObserver
+ @property  AVCaptureInputPort *inputPortFormatSender
+ @property  float maxISO
+ @property  float minISO
+ @property  {?=qiIq} highISOThresholdDuration
+ @property  BOOL exposureAdjustmentInProgress
+ @property  int exposureAdjustmentInProgressTimeoutCount
+ @property  BOOL runningManualExposure
+ @property  ^{?=^{?}idd} exposure_table
+ @property  long long cameraPosition
+ @property  NSString *cameraMode
+ @property  long long whiteBalanceMode
+ @property  long long focusMode
+ @property  long long exposureMode
+ @property  long long torchMode
+ @property  <AVCaptureVideoDataOutputSampleBufferDelegate> *captureSessionDelegate
+ @property  <AVCaptureMetadataOutputObjectsDelegate> *captureSessionMetadataDelegate
+ @property  CALayer *previewLayer
+ @property  NSString *currentDeviceID
+ @property  BOOL enableMetadataOutput
+ @property  {CGSize=dd} cameraResolution
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CRDefaultCaptureSessionManager setTorchMode:]
+  -[CRDefaultCaptureSessionManager isAdjustingFocus]
+  -[CRDefaultCaptureSessionManager whiteBalanceMode]
+  -[CRDefaultCaptureSessionManager setExposureMode:]
+  -[CRDefaultCaptureSessionManager torchMode]
+  -[CRDefaultCaptureSessionManager setFocusMode:]
+  -[CRDefaultCaptureSessionManager isRunning]
+  -[CRDefaultCaptureSessionManager cameraPosition]
+  -[CRDefaultCaptureSessionManager .cxx_destruct]
+  -[CRDefaultCaptureSessionManager focusPointOfInterest]
+  -[CRDefaultCaptureSessionManager setWhiteBalanceMode:]
+  -[CRDefaultCaptureSessionManager maxISO]
+  -[CRDefaultCaptureSessionManager focusMode]
+  -[CRDefaultCaptureSessionManager exposureMode]
+  -[CRDefaultCaptureSessionManager minISO]
+  -[CRDefaultCaptureSessionManager isFocusPointOfInterestSupported]
+  -[CRDefaultCaptureSessionManager startRunning]
+  -[CRDefaultCaptureSessionManager stopRunning]
+  -[CRDefaultCaptureSessionManager frontFacingCamera]
+  -[CRDefaultCaptureSessionManager setPreviewOrientation:]
+  -[CRDefaultCaptureSessionManager captureSession]
+  -[CRDefaultCaptureSessionManager setCaptureSession:]
+  -[CRDefaultCaptureSessionManager setCameraPosition:]
+  -[CRDefaultCaptureSessionManager toggleCamera]
+  -[CRDefaultCaptureSessionManager previewLayer]
+  -[CRDefaultCaptureSessionManager cameraSessionWasInterrupted:]
+  -[CRDefaultCaptureSessionManager setupCameraSession]
+  -[CRDefaultCaptureSessionManager teardownCameraSession]
+  -[CRDefaultCaptureSessionManager switchToCamera:]
+  -[CRDefaultCaptureSessionManager switchToCameraWithDeviceID:]
+  -[CRDefaultCaptureSessionManager refocusOnPoint:]
+  -[CRDefaultCaptureSessionManager refocusOnPoint:exposure:]
+  -[CRDefaultCaptureSessionManager resetFocus]
+  -[CRDefaultCaptureSessionManager convertCameraPoint:fromLayer:]
+  -[CRDefaultCaptureSessionManager convertCameraPoint:toLayer:]
+  -[CRDefaultCaptureSessionManager convertCameraPoint:toLayer:flipped:]
+  -[CRDefaultCaptureSessionManager convertCameraRect:fromLayer:]
+  -[CRDefaultCaptureSessionManager convertCameraPointOCR:toLayer:flipped:]
+  -[CRDefaultCaptureSessionManager highISOAdjustExposure]
+  -[CRDefaultCaptureSessionManager isPreviewVideoMirrored]
+  -[CRDefaultCaptureSessionManager previewVisibleRect]
+  -[CRDefaultCaptureSessionManager targetVideoFormat]
+  -[CRDefaultCaptureSessionManager cameraMode]
+  -[CRDefaultCaptureSessionManager setCameraMode:]
+  -[CRDefaultCaptureSessionManager captureSessionDelegate]
+  -[CRDefaultCaptureSessionManager setCaptureSessionDelegate:]
+  -[CRDefaultCaptureSessionManager captureSessionMetadataDelegate]
+  -[CRDefaultCaptureSessionManager setCaptureSessionMetadataDelegate:]
+  -[CRDefaultCaptureSessionManager currentDeviceID]
+  -[CRDefaultCaptureSessionManager setCurrentDeviceID:]
+  -[CRDefaultCaptureSessionManager enableMetadataOutput]
+  -[CRDefaultCaptureSessionManager setEnableMetadataOutput:]
+  -[CRDefaultCaptureSessionManager cameraResolution]
+  -[CRDefaultCaptureSessionManager setCameraResolution:]
+  -[CRDefaultCaptureSessionManager cacheCameraResolution:]
+  -[CRDefaultCaptureSessionManager setupCameraSessionWithCaptureDevice:]
+  -[CRDefaultCaptureSessionManager changeCameraConfiguration]
+  -[CRDefaultCaptureSessionManager isRearCamera]
+  -[CRDefaultCaptureSessionManager cameraCount]
+  -[CRDefaultCaptureSessionManager backFacingCamera]
+  -[CRDefaultCaptureSessionManager captureDeviceWithPosition:]
+  -[CRDefaultCaptureSessionManager captureDeviceWithIdentifier:]
+  -[CRDefaultCaptureSessionManager _refocusOnPoint:focusMode:exposure:]
+  -[CRDefaultCaptureSessionManager setupHighISO:]
+  -[CRDefaultCaptureSessionManager avfPreviewLayer]
+  -[CRDefaultCaptureSessionManager setAvfPreviewLayer:]
+  -[CRDefaultCaptureSessionManager deviceInput]
+  -[CRDefaultCaptureSessionManager setDeviceInput:]
+  -[CRDefaultCaptureSessionManager captureVideoDataOutput]
+  -[CRDefaultCaptureSessionManager setCaptureVideoDataOutput:]
+  -[CRDefaultCaptureSessionManager inputPortFormatObserver]
+  -[CRDefaultCaptureSessionManager setInputPortFormatObserver:]
+  -[CRDefaultCaptureSessionManager inputPortFormatSender]
+  -[CRDefaultCaptureSessionManager setInputPortFormatSender:]
+  -[CRDefaultCaptureSessionManager setMaxISO:]
+  -[CRDefaultCaptureSessionManager setMinISO:]
+  -[CRDefaultCaptureSessionManager highISOThresholdDuration]
+  -[CRDefaultCaptureSessionManager setHighISOThresholdDuration:]
+  -[CRDefaultCaptureSessionManager exposureAdjustmentInProgress]
+  -[CRDefaultCaptureSessionManager setExposureAdjustmentInProgress:]
+  -[CRDefaultCaptureSessionManager exposureAdjustmentInProgressTimeoutCount]
+  -[CRDefaultCaptureSessionManager setExposureAdjustmentInProgressTimeoutCount:]
+  -[CRDefaultCaptureSessionManager runningManualExposure]
+  -[CRDefaultCaptureSessionManager setRunningManualExposure:]
+  -[CRDefaultCaptureSessionManager exposure_table]
+  -[CRDefaultCaptureSessionManager setExposure_table:]
+
+
+CRInsightsContext : NSObject
+ @property  NSMutableDictionary *info
+ @property  CRCameraReader *cameraReader
+
+  // instance methods
+  -[CRInsightsContext initWithContext:]
+  -[CRInsightsContext valueForKey:]
+  -[CRInsightsContext .cxx_destruct]
+  -[CRInsightsContext setInfo:]
+  -[CRInsightsContext info]
+  -[CRInsightsContext setValue:forKey:]
+  -[CRInsightsContext init]
+  -[CRInsightsContext cameraReader]
+  -[CRInsightsContext setCameraReader:]
+
+
+CRInsightsCodeSection : NSObject
+  // instance methods
+  -[CRInsightsCodeSection .cxx_destruct]
+  -[CRInsightsCodeSection initWithName:andDescription:]
+
+
+CRInsights : NSObject
+ @property  NSMutableDictionary *threadsToContexts
+ @property  <CRInsightsDelegate> *delegate
+
+  // class methods
+  +[CRInsights sharedInsights]
+  +[CRInsights dispatchAsyncOnQueue:block:]
+
+  // instance methods
+  -[CRInsights setDelegate:]
+  -[CRInsights delegate]
+  -[CRInsights .cxx_destruct]
+  -[CRInsights setContextValue:forKey:]
+  -[CRInsights init]
+  -[CRInsights currentContext]
+  -[CRInsights takeContextSnapshot]
+  -[CRInsights attachNewContextToCurrentThreadWithCameraReader:]
+  -[CRInsights attachContextToCurrentThread:]
+  -[CRInsights attachContextCopyToCurrentThread:]
+  -[CRInsights resetContextForCurrentThread]
+  -[CRInsights cameraReaderForCurrentThread]
+  -[CRInsights notifySampleBufferProcessingStart:]
+  -[CRInsights notifySampleBufferProcessingEnd:]
+  -[CRInsights provideInsightValue:forKey:]
+  -[CRInsights enterSection:withDescription:]
+  -[CRInsights leaveSection:]
+  -[CRInsights allowOverrideWithKey:forResultFromBlock:]
+  -[CRInsights allowOverrideWithKey:forValue:]
+  -[CRInsights threadsToContexts]
+  -[CRInsights setThreadsToContexts:]
+
+
+CRColor : UIColor
+
+CRAlignmentLayer : CALayer
+ @property  CAShapeLayer *maskLayer
+ @property  CAShapeLayer *outlineLayer
+ @property  CALayer *infoLayer
+ @property  NSMutableArray *cardNumberLayers
+ @property  {CGPoint=dd} cardNumberHorizontalDefaultPos
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} cardNumberHorizontalDefaultBounds
+ @property  CATextLayer *cardholderNameLayer
+ @property  CATextLayer *expirationDateLayer
+ @property  CATextLayer *instructionLayer
+
+  // class methods
+  +[CRAlignmentLayer layer]
+
+  // instance methods
+  -[CRAlignmentLayer layoutSublayers]
+  -[CRAlignmentLayer .cxx_destruct]
+  -[CRAlignmentLayer init]
+  -[CRAlignmentLayer alignmentRect]
+  -[CRAlignmentLayer maskLayer]
+  -[CRAlignmentLayer setMaskLayer:]
+  -[CRAlignmentLayer outlineLayer]
+  -[CRAlignmentLayer setOutlineLayer:]
+  -[CRAlignmentLayer resetLayer]
+  -[CRAlignmentLayer fadePlacementImage]
+  -[CRAlignmentLayer pointOnInfoLayerForPointOnCard:]
+  -[CRAlignmentLayer makeTextLayer:matchWidthOfText:]
+  -[CRAlignmentLayer animateFoundCodeParts:codePartPositions:codeFrameIndex:cardHolder:cardholderPosition:cardholderFrameIndex:expDate:expdatePosition:expDateFrameIndex:completionBlock:]
+  -[CRAlignmentLayer animateFoundCardRect:]
+  -[CRAlignmentLayer propogateMaskColor:outlineColor:placementTextColor:capturedTextColor:]
+  -[CRAlignmentLayer instructionLayer]
+  -[CRAlignmentLayer setInstructionLayer:]
+  -[CRAlignmentLayer infoLayer]
+  -[CRAlignmentLayer setInfoLayer:]
+  -[CRAlignmentLayer cardNumberLayers]
+  -[CRAlignmentLayer setCardNumberLayers:]
+  -[CRAlignmentLayer cardNumberHorizontalDefaultPos]
+  -[CRAlignmentLayer setCardNumberHorizontalDefaultPos:]
+  -[CRAlignmentLayer cardNumberHorizontalDefaultBounds]
+  -[CRAlignmentLayer setCardNumberHorizontalDefaultBounds:]
+  -[CRAlignmentLayer cardholderNameLayer]
+  -[CRAlignmentLayer setCardholderNameLayer:]
+  -[CRAlignmentLayer expirationDateLayer]
+  -[CRAlignmentLayer setExpirationDateLayer:]
+
+
+CRPollingTimer : NSObject
+ @property  {?=qiIq} fireTime
+ @property  id target
+ @property  SEL selector
+ @property  BOOL fired
+ @property  BOOL valid
+
+  // instance methods
+  -[CRPollingTimer selector]
+  -[CRPollingTimer setValid:]
+  -[CRPollingTimer fireTime]
+  -[CRPollingTimer valid]
+  -[CRPollingTimer setFireTime:]
+  -[CRPollingTimer setTarget:]
+  -[CRPollingTimer fired]
+  -[CRPollingTimer target]
+  -[CRPollingTimer setSelector:]
+  -[CRPollingTimer .cxx_destruct]
+  -[CRPollingTimer invalidate]
+  -[CRPollingTimer initWithTarget:selector:]
+  -[CRPollingTimer evalAtTime:]
+  -[CRPollingTimer setFired:]
+
+
+CRCameraReaderOutputInternal : NSObject
+ @property  NSString *type
+ @property  NSArray *vertices
+ @property  NSString *stringValue
+ @property  NSString *formattedStringValue
+ @property  NSNumber *yearValue
+ @property  NSNumber *monthValue
+ @property  NSNumber *dayValue
+ @property  UIImage *imageValue
+ @property  NSAttributedString *overlayString
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} boundingBox
+ @property  float rotation
+ @property  NSArray *targetVertices
+ @property  NSString *capturePath
+
+  // instance methods
+  -[CRCameraReaderOutputInternal setRotation:]
+  -[CRCameraReaderOutputInternal rotation]
+  -[CRCameraReaderOutputInternal type]
+  -[CRCameraReaderOutputInternal stringValue]
+  -[CRCameraReaderOutputInternal .cxx_destruct]
+  -[CRCameraReaderOutputInternal setType:]
+  -[CRCameraReaderOutputInternal boundingBox]
+  -[CRCameraReaderOutputInternal setStringValue:]
+  -[CRCameraReaderOutputInternal setBoundingBox:]
+  -[CRCameraReaderOutputInternal formattedStringValue]
+  -[CRCameraReaderOutputInternal vertices]
+  -[CRCameraReaderOutputInternal imageValue]
+  -[CRCameraReaderOutputInternal dayValue]
+  -[CRCameraReaderOutputInternal yearValue]
+  -[CRCameraReaderOutputInternal monthValue]
+  -[CRCameraReaderOutputInternal setVertices:]
+  -[CRCameraReaderOutputInternal setOverlayString:]
+  -[CRCameraReaderOutputInternal overlayString]
+  -[CRCameraReaderOutputInternal setFormattedStringValue:]
+  -[CRCameraReaderOutputInternal targetVertices]
+  -[CRCameraReaderOutputInternal setTargetVertices:]
+  -[CRCameraReaderOutputInternal capturePath]
+  -[CRCameraReaderOutputInternal setCapturePath:]
+  -[CRCameraReaderOutputInternal setYearValue:]
+  -[CRCameraReaderOutputInternal setMonthValue:]
+  -[CRCameraReaderOutputInternal setDayValue:]
+  -[CRCameraReaderOutputInternal setImageValue:]
+
+
+CRCameraReaderOutput : NSObject
+ @property  CRCameraReaderOutputInternal *objectInternal
+ @property  NSString *type
+ @property  NSString *stringValue
+ @property  NSString *formattedStringValue
+
+  // instance methods
+  -[CRCameraReaderOutput type]
+  -[CRCameraReaderOutput stringValue]
+  -[CRCameraReaderOutput dealloc]
+  -[CRCameraReaderOutput .cxx_destruct]
+  -[CRCameraReaderOutput init]
+  -[CRCameraReaderOutput formattedStringValue]
+  -[CRCameraReaderOutput initWithImageReaderOutput:]
+  -[CRCameraReaderOutput objectInternal]
+  -[CRCameraReaderOutput setObjectInternal:]
+
+
+CRCameraReaderOutputExpirationDate : CRCameraReaderOutput
+ @property  NSNumber *yearValue
+ @property  NSNumber *monthValue
+ @property  NSNumber *dayValue
+
+  // instance methods
+  -[CRCameraReaderOutputExpirationDate dayValue]
+  -[CRCameraReaderOutputExpirationDate yearValue]
+  -[CRCameraReaderOutputExpirationDate monthValue]
+
+
+CRCameraReaderOutputIDCard : CRCameraReaderOutput
+ @property  UIImage *imageValue
+ @property  NSArray *vertices
+ @property  NSArray *targetVertices
+ @property  NSString *capturePath
+
+  // instance methods
+  -[CRCameraReaderOutputIDCard vertices]
+  -[CRCameraReaderOutputIDCard imageValue]
+  -[CRCameraReaderOutputIDCard targetVertices]
+  -[CRCameraReaderOutputIDCard capturePath]
+
+
+CRCameraReaderOutputCameraText : CRCameraReaderOutput
+ @property  NSAttributedString *overlayString
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} boundingBox
+ @property  float rotation
+
+  // instance methods
+  -[CRCameraReaderOutputCameraText setRotation:]
+  -[CRCameraReaderOutputCameraText rotation]
+  -[CRCameraReaderOutputCameraText boundingBox]
+  -[CRCameraReaderOutputCameraText setBoundingBox:]
+  -[CRCameraReaderOutputCameraText setOverlayString:]
+  -[CRCameraReaderOutputCameraText overlayString]
+
+
+ActivationMapTools : NSObject
+  // class methods
+  +[ActivationMapTools characterCentroidsFromActivationMap:codeMap:decodedSymbolIndexes:]
+  +[ActivationMapTools colInImage:forPoint:inActivationMapWithSize:]
+  +[ActivationMapTools characterCentroidsFromActivationMap:codeMap:potentialPatterns:minWordLengthFractionForCorrelationPeak:bestModelIndex:]
+  +[ActivationMapTools decodeStringWithCentroids:activationMap:codeMap:model:]
+  +[ActivationMapTools textFromActivationMap:codeMap:invert:]
+  +[ActivationMapTools extractActivationSignals:fromActivationMap:forModel:codeMap:]
+  +[ActivationMapTools matchLabel:toModelCharacter:]
+  +[ActivationMapTools fitSpacingModel:toActivationMap:codeMap:minWordLengthFractionForCorrelationPeak:cost:]
+
+
+CRMLCCModel : CRMLModel
+  // instance methods
+  -[CRMLCCModel init]
+  -[CRMLCCModel creditcardResultsFromImage:]
+  -[CRMLCCModel creditcardResultsFromImage:textFeatures:invert:tryPatternMatch:]
+  -[CRMLCCModel creditcardMLResultsFromImage:textFeatures:invert:tryPatternMatch:]
+
+
+CRMLFlatModel : CRMLCCModel
+  // instance methods
+  -[CRMLFlatModel modelName]
+  -[CRMLFlatModel codeMap]
+  -[CRMLFlatModel classCount]
+
+
+CRMLEmbossedNumberModel : CRMLCCModel
+  // instance methods
+  -[CRMLEmbossedNumberModel modelName]
+  -[CRMLEmbossedNumberModel codeMap]
+  -[CRMLEmbossedNumberModel classCount]
+  -[CRMLEmbossedNumberModel decodeActivations:]
+
+
+CRMLEmbossedCardholderModel : CRMLCCModel
+  // instance methods
+  -[CRMLEmbossedCardholderModel modelName]
+  -[CRMLEmbossedCardholderModel codeMap]
+  -[CRMLEmbossedCardholderModel classCount]
+  -[CRMLEmbossedCardholderModel decodeActivations:]
+
+
+CRMLEmbossedExpirationModel : CRMLCCModel
+  // instance methods
+  -[CRMLEmbossedExpirationModel modelName]
+  -[CRMLEmbossedExpirationModel codeMap]
+  -[CRMLEmbossedExpirationModel classCount]
+  -[CRMLEmbossedExpirationModel decodeActivations:]
+
+
+CRCameraReader : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate, CALayerDelegate>
+ @property  ^{__CVBuffer=} correctedCardBuffer
+ @property  BOOL configPresentCentered
+ @property  double configDemoSpeed
+ @property  CRBoxLayer *boxLayer
+ @property  DiagnosticHUDLayer *diagnosticHUDLayer
+ @property  NSArray *foundPoints
+ @property  NSString *foundCode
+ @property  BOOL isQRCode
+ @property  NSString *previousCode
+ @property  {?=qiIq} sessionStarted
+ @property  {?=qiIq} pointsFound
+ @property  NSDate *codePresented
+ @property  BOOL codeInverted
+ @property  BOOL didSendEndOrCancel
+ @property  BOOL didSendFindBox
+ @property  {?=qiIq} lastSendFindBox
+ @property  unsigned long imagesToCapture
+ @property  BOOL configUseJPEGForColor
+ @property  NSPointerArray *captureBuffer
+ @property  CRPollingTimer *boxLayerHideTimer
+ @property  BOOL configUseFastScanning
+ @property  ^{opaqueCMSampleBuffer=} lastBuffer
+ @property  NSObject<OS_dispatch_semaphore> *processingImage
+ @property  NSMutableDictionary *cardNumberCounts
+ @property  NSMutableDictionary *cardholderCounts
+ @property  NSMutableDictionary *expirationDateCounts
+ @property  NSMutableDictionary *pinnedFoundInfo
+ @property  {?=qiIq} lastFieldFoundTime
+ @property  CRAlignmentLayer *alignmentLayer
+ @property  NSObject<OS_dispatch_queue> *processingQueue
+ @property  NSObject<OS_dispatch_queue> *delegateQueue
+ @property  <CRCameraReaderDelegate> *callbackDelegate
+ @property  UIActivityIndicatorView *activityIndicator
+ @property  UITapGestureRecognizer *tapGestureRecognizer
+ @property  BOOL previousIdleState
+ @property  NSMutableArray *dateCutRects
+ @property  NSMutableArray *nameCutRects
+ @property  NSDictionary *contactsCache
+ @property  NSCache *previousContactMatches
+ @property  BOOL sessionIsStopping
+ @property  CRMLCCModel *flatPrintedModel
+ @property  CRMLCCModel *embossedNumberModel
+ @property  CRMLCCModel *embossedExpirationModel
+ @property  CRMLCCModel *embossedCardholderModel
+ @property  NSMutableArray *cardBlurValues
+ @property  NSMutableDictionary *optionsDictionary
+ @property  CRImageReader *ocrImageReader
+ @property  CATextLayer *overlayTextLayer
+ @property  NSMutableArray *textDetectorRTFeedback
+ @property  NSString *ocrOverlayFontName
+ @property  float ocrOverlayBackgroundOpacity
+ @property  BOOL continousMode
+ @property  BOOL captureMode
+ @property  unsigned long captureCount
+ @property  double sessionTimeout
+ @property  long long whiteBalanceMode
+ @property  long long focusMode
+ @property  long long exposureMode
+ @property  long long torchMode
+ @property  NSString *cameraMode
+ @property  long long cameraPosition
+ @property  BOOL showDiagnosticHUD
+ @property  <CRCaptureSessionManager> *sessionManager
+ @property  NSArray *outputObjectTypes
+ @property  BOOL hidePlacementText
+ @property  long long currentCameraIdentifier
+ @property  UIColor *maskColor
+ @property  UIColor *maskOutlineColor
+ @property  UIColor *placementTextColor
+ @property  UIColor *capturedTextColor
+ @property  BOOL enableAltIDCardScan
+ @property  float borderPaddingIDCard
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CRCameraReader supportedCameraCount]
+  +[CRCameraReader supportedCameraCountForTypes:]
+  +[CRCameraReader loadFonts]
+  +[CRCameraReader extractCardImage:fromPixelBuffer:withCardBuffer:cameraIntrinsicData:]
+  +[CRCameraReader extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:]
+  +[CRCameraReader extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:padding:inputOrientation:]
+  +[CRCameraReader findCodeInImage:maxStage:outputObjectTypes:]
+  +[CRCameraReader findCodeInImage:maxStage:]
+  +[CRCameraReader findCodeInImage:maxStage:roi:]
+  +[CRCameraReader findCodeInImage:maxStage:roi:outputObjectTypes:]
+  +[CRCameraReader textFeatureWithVNTextObservation:]
+  +[CRCameraReader targetRectsForImage:]
+  +[CRCameraReader uniformPadRect:widthPadding:heightPadding:width:height:]
+  +[CRCameraReader aspectRatioPaddedRect:expectedWidth:height:orientation:]
+
+  // instance methods
+  -[CRCameraReader setTorchMode:]
+  -[CRCameraReader setCaptureMode:]
+  -[CRCameraReader viewWillTransitionToSize:withTransitionCoordinator:]
+  -[CRCameraReader whiteBalanceMode]
+  -[CRCameraReader setExposureMode:]
+  -[CRCameraReader torchMode]
+  -[CRCameraReader activityIndicator]
+  -[CRCameraReader setFocusMode:]
+  -[CRCameraReader optionsDictionary]
+  -[CRCameraReader setProcessingQueue:]
+  -[CRCameraReader loadModels]
+  -[CRCameraReader processingQueue]
+  -[CRCameraReader setDelegate:]
+  -[CRCameraReader didReceiveMemoryWarning]
+  -[CRCameraReader setDelegateQueue:]
+  -[CRCameraReader initWithNibName:bundle:]
+  -[CRCameraReader dealloc]
+  -[CRCameraReader stopSession]
+  -[CRCameraReader captureOutput:didOutputSampleBuffer:fromConnection:]
+  -[CRCameraReader cameraPosition]
+  -[CRCameraReader .cxx_destruct]
+  -[CRCameraReader delegateQueue]
+  -[CRCameraReader viewWillAppear:]
+  -[CRCameraReader loadView]
+  -[CRCameraReader viewDidLayoutSubviews]
+  -[CRCameraReader sessionManager]
+  -[CRCameraReader setActivityIndicator:]
+  -[CRCameraReader setWhiteBalanceMode:]
+  -[CRCameraReader startSession]
+  -[CRCameraReader viewDidDisappear:]
+  -[CRCameraReader focusMode]
+  -[CRCameraReader start]
+  -[CRCameraReader exposureMode]
+  -[CRCameraReader tapGestureRecognizer]
+  -[CRCameraReader setTapGestureRecognizer:]
+  -[CRCameraReader cancel]
+  -[CRCameraReader initWithOptions:]
+  -[CRCameraReader init]
+  -[CRCameraReader setCapturedTextColor:]
+  -[CRCameraReader setMaskColor:]
+  -[CRCameraReader setMaskOutlineColor:]
+  -[CRCameraReader setOutputObjectTypes:]
+  -[CRCameraReader setEnableAltIDCardScan:]
+  -[CRCameraReader setPlacementTextColor:]
+  -[CRCameraReader setHidePlacementText:]
+  -[CRCameraReader captureOutput:didOutputMetadataObjects:fromConnection:]
+  -[CRCameraReader maskColor]
+  -[CRCameraReader setSessionStarted:]
+  -[CRCameraReader sessionStarted]
+  -[CRCameraReader captureImage]
+  -[CRCameraReader setCameraPosition:]
+  -[CRCameraReader showMessage:color:style:duration:]
+  -[CRCameraReader toggleCamera]
+  -[CRCameraReader captureCount]
+  -[CRCameraReader orientationDidChange:]
+  -[CRCameraReader setSessionManager:]
+  -[CRCameraReader outputObjectTypes]
+  -[CRCameraReader switchToCamera:]
+  -[CRCameraReader switchToCameraWithDeviceID:]
+  -[CRCameraReader cameraMode]
+  -[CRCameraReader setCameraMode:]
+  -[CRCameraReader currentDeviceID]
+  -[CRCameraReader hideBoxLayer]
+  -[CRCameraReader handleTapFrom:]
+  -[CRCameraReader updateContactsCache:]
+  -[CRCameraReader initWithNibName:bundle:options:]
+  -[CRCameraReader aetPlacementTextColor:]
+  -[CRCameraReader createFastAccessPixelBufferWithSize:videoFormat:]
+  -[CRCameraReader releaseCorrectedCardBuffer]
+  -[CRCameraReader createCorrectedCardBuffer]
+  -[CRCameraReader setupInitialLayerConfiguration]
+  -[CRCameraReader currentCameraIdentifier]
+  -[CRCameraReader cameraIntrinsicDataForSampleBuffer:width:height:]
+  -[CRCameraReader flashScreenAndPlayCaptureSound]
+  -[CRCameraReader captureImageFromSampleBuffer:]
+  -[CRCameraReader findCodeInSampleBuffer:]
+  -[CRCameraReader sendProvideOverlayObjects:]
+  -[CRCameraReader findOCRTextObjects:inPixelBuffer:attachments:frameTime:]
+  -[CRCameraReader findObjects:inImage:properties:]
+  -[CRCameraReader updatePinnedInfoFrameIndex]
+  -[CRCameraReader setFirstTimeFrameIndexForPinnedField:]
+  -[CRCameraReader getFirstTimeFrameIndexForPinnedField:]
+  -[CRCameraReader findIDObjects:inPixelBuffer:cameraIntrinsicData:frameTime:]
+  -[CRCameraReader findObjects:inPixelBuffer:cameraIntrinsicData:frameTime:]
+  -[CRCameraReader findObjectsEmbossed:inImage:]
+  -[CRCameraReader findCCObjectEmbossed:inImage:forRect:]
+  -[CRCameraReader findObjectsFlat:inImage:numberRects:invert:]
+  -[CRCameraReader findCCObjectsEmbossed:inImage:numberRects:nameRects:dateRects:]
+  -[CRCameraReader findCCResultsInImageFlat:usingTextFeatures:invert:]
+  -[CRCameraReader findCCNumberInImageEmbossed:]
+  -[CRCameraReader findCCNumberInImageEmbossed:withFinalDigit:]
+  -[CRCameraReader findCCNameInImageEmbossed:]
+  -[CRCameraReader findCCExpDateInImageEmbossed:]
+  -[CRCameraReader removeLayerTree]
+  -[CRCameraReader primeBoxLayerHideTimerWithFrameTime:]
+  -[CRCameraReader pauseBoxLayerHideTimer]
+  -[CRCameraReader boxLayerPresentationFrame]
+  -[CRCameraReader animatePresentCodeAtFrameTime:]
+  -[CRCameraReader sendDidCancel]
+  -[CRCameraReader sendDidEndWithInfo:]
+  -[CRCameraReader sendDidRecognizeNewObjects:]
+  -[CRCameraReader sendDidEndAnimation]
+  -[CRCameraReader sendDidEndWithError:]
+  -[CRCameraReader attributedStringWithFrame:withFont:withString:color:]
+  -[CRCameraReader createTextLayerForRecognizedObject:]
+  -[CRCameraReader showTextDetectorObjects:]
+  -[CRCameraReader sendDidDisplayMessageStyle:]
+  -[CRCameraReader sendDidFindTarget:frameTime:]
+  -[CRCameraReader sendDidEndWithErrorDomain:code:userInfo:]
+  -[CRCameraReader hidePlacementText]
+  -[CRCameraReader generateStringFromDate:]
+  -[CRCameraReader reportAcceptedString:forOutput:withClientID:]
+  -[CRCameraReader mergeInfo:intoFindInfo:]
+  -[CRCameraReader extractFinalDigitStringFromNumbers:]
+  -[CRCameraReader callbackDelegate]
+  -[CRCameraReader setCallbackDelegate:]
+  -[CRCameraReader maskOutlineColor]
+  -[CRCameraReader placementTextColor]
+  -[CRCameraReader capturedTextColor]
+  -[CRCameraReader enableAltIDCardScan]
+  -[CRCameraReader borderPaddingIDCard]
+  -[CRCameraReader setBorderPaddingIDCard:]
+  -[CRCameraReader correctedCardBuffer]
+  -[CRCameraReader setCorrectedCardBuffer:]
+  -[CRCameraReader configPresentCentered]
+  -[CRCameraReader setConfigPresentCentered:]
+  -[CRCameraReader configDemoSpeed]
+  -[CRCameraReader setConfigDemoSpeed:]
+  -[CRCameraReader boxLayer]
+  -[CRCameraReader setBoxLayer:]
+  -[CRCameraReader diagnosticHUDLayer]
+  -[CRCameraReader setDiagnosticHUDLayer:]
+  -[CRCameraReader foundPoints]
+  -[CRCameraReader setFoundPoints:]
+  -[CRCameraReader foundCode]
+  -[CRCameraReader setFoundCode:]
+  -[CRCameraReader isQRCode]
+  -[CRCameraReader setIsQRCode:]
+  -[CRCameraReader previousCode]
+  -[CRCameraReader setPreviousCode:]
+  -[CRCameraReader pointsFound]
+  -[CRCameraReader setPointsFound:]
+  -[CRCameraReader codePresented]
+  -[CRCameraReader setCodePresented:]
+  -[CRCameraReader codeInverted]
+  -[CRCameraReader setCodeInverted:]
+  -[CRCameraReader didSendEndOrCancel]
+  -[CRCameraReader setDidSendEndOrCancel:]
+  -[CRCameraReader didSendFindBox]
+  -[CRCameraReader setDidSendFindBox:]
+  -[CRCameraReader lastSendFindBox]
+  -[CRCameraReader setLastSendFindBox:]
+  -[CRCameraReader imagesToCapture]
+  -[CRCameraReader setImagesToCapture:]
+  -[CRCameraReader configUseJPEGForColor]
+  -[CRCameraReader setConfigUseJPEGForColor:]
+  -[CRCameraReader captureBuffer]
+  -[CRCameraReader setCaptureBuffer:]
+  -[CRCameraReader boxLayerHideTimer]
+  -[CRCameraReader setBoxLayerHideTimer:]
+  -[CRCameraReader configUseFastScanning]
+  -[CRCameraReader setConfigUseFastScanning:]
+  -[CRCameraReader lastBuffer]
+  -[CRCameraReader setLastBuffer:]
+  -[CRCameraReader processingImage]
+  -[CRCameraReader setProcessingImage:]
+  -[CRCameraReader cardNumberCounts]
+  -[CRCameraReader setCardNumberCounts:]
+  -[CRCameraReader cardholderCounts]
+  -[CRCameraReader setCardholderCounts:]
+  -[CRCameraReader expirationDateCounts]
+  -[CRCameraReader setExpirationDateCounts:]
+  -[CRCameraReader pinnedFoundInfo]
+  -[CRCameraReader setPinnedFoundInfo:]
+  -[CRCameraReader lastFieldFoundTime]
+  -[CRCameraReader setLastFieldFoundTime:]
+  -[CRCameraReader alignmentLayer]
+  -[CRCameraReader setAlignmentLayer:]
+  -[CRCameraReader previousIdleState]
+  -[CRCameraReader setPreviousIdleState:]
+  -[CRCameraReader dateCutRects]
+  -[CRCameraReader setDateCutRects:]
+  -[CRCameraReader nameCutRects]
+  -[CRCameraReader setNameCutRects:]
+  -[CRCameraReader contactsCache]
+  -[CRCameraReader setContactsCache:]
+  -[CRCameraReader previousContactMatches]
+  -[CRCameraReader setPreviousContactMatches:]
+  -[CRCameraReader sessionIsStopping]
+  -[CRCameraReader setSessionIsStopping:]
+  -[CRCameraReader flatPrintedModel]
+  -[CRCameraReader setFlatPrintedModel:]
+  -[CRCameraReader embossedNumberModel]
+  -[CRCameraReader setEmbossedNumberModel:]
+  -[CRCameraReader embossedExpirationModel]
+  -[CRCameraReader setEmbossedExpirationModel:]
+  -[CRCameraReader embossedCardholderModel]
+  -[CRCameraReader setEmbossedCardholderModel:]
+  -[CRCameraReader cardBlurValues]
+  -[CRCameraReader setCardBlurValues:]
+  -[CRCameraReader setOptionsDictionary:]
+  -[CRCameraReader ocrImageReader]
+  -[CRCameraReader setOcrImageReader:]
+  -[CRCameraReader overlayTextLayer]
+  -[CRCameraReader setOverlayTextLayer:]
+  -[CRCameraReader textDetectorRTFeedback]
+  -[CRCameraReader setTextDetectorRTFeedback:]
+  -[CRCameraReader ocrOverlayFontName]
+  -[CRCameraReader setOcrOverlayFontName:]
+  -[CRCameraReader ocrOverlayBackgroundOpacity]
+  -[CRCameraReader setOcrOverlayBackgroundOpacity:]
+  -[CRCameraReader continousMode]
+  -[CRCameraReader setContinousMode:]
+  -[CRCameraReader isCaptureMode]
+  -[CRCameraReader setCaptureCount:]
+  -[CRCameraReader sessionTimeout]
+  -[CRCameraReader setSessionTimeout:]
+  -[CRCameraReader showDiagnosticHUD]
+  -[CRCameraReader setShowDiagnosticHUD:]
+
+
+CRCodeRedeemerController : CRCameraReader <CRCameraReaderDelegate>
+ @property  BOOL captureMode
+ @property  unsigned long captureCount
+ @property  double sessionTimeout
+ @property  long long whiteBalanceMode
+ @property  long long focusMode
+ @property  long long exposureMode
+ @property  long long torchMode
+ @property  NSString *cameraMode
+ @property  long long cameraPosition
+ @property  BOOL showDiagnosticHUD
+ @property  <CRCodeRedeemerControllerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CRCodeRedeemerController isCRCodeRedeemerAvailable]
+  +[CRCodeRedeemerController findCodeInImage:maxStage:]
+  +[CRCodeRedeemerController findCodeInImage:maxStage:roi:]
+
+  // instance methods
+  -[CRCodeRedeemerController setDelegate:]
+  -[CRCodeRedeemerController delegate]
+  -[CRCodeRedeemerController .cxx_destruct]
+  -[CRCodeRedeemerController init]
+  -[CRCodeRedeemerController cameraReaderDidCancel:]
+  -[CRCodeRedeemerController cameraReaderDidEnd:]
+  -[CRCodeRedeemerController cameraReader:didFailWithError:]
+  -[CRCodeRedeemerController cameraReaderDidDisplayMessage:]
+  -[CRCodeRedeemerController cameraReaderDidFindTarget:]
+  -[CRCodeRedeemerController cameraReader:didRecognizeObjects:]
+  -[CRCodeRedeemerController showMessage:color:style:duration:]
+
+
+DiagnosticHUDLayer : CALayer
+ @property  CALayer *previewLayer
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} previewLayerVisibleRect
+ @property  {CGSize=dd} cameraResolution
+ @property  CRColor *freshPointColor
+ @property  CRColor *stalePointColor
+ @property  NSMutableArray *pointLayers
+ @property  CAShapeLayer *cameraAreaLayer
+ @property  CAShapeLayer *focusIndicatorLayer
+ @property  CAShapeLayer *focusPointLayer
+ @property  CAShapeLayer *frameIndicator
+
+  // class methods
+  +[DiagnosticHUDLayer layer]
+
+  // instance methods
+  -[DiagnosticHUDLayer layoutSublayers]
+  -[DiagnosticHUDLayer .cxx_destruct]
+  -[DiagnosticHUDLayer init]
+  -[DiagnosticHUDLayer previewLayer]
+  -[DiagnosticHUDLayer setPreviewLayer:]
+  -[DiagnosticHUDLayer cameraResolution]
+  -[DiagnosticHUDLayer setCameraResolution:]
+  -[DiagnosticHUDLayer setBoxPoints:]
+  -[DiagnosticHUDLayer setPreviewLayer:visibleRect:cameraResolution:]
+  -[DiagnosticHUDLayer setAdjustingFocus:pointOfInterestSupported:focusPoint:]
+  -[DiagnosticHUDLayer refreshFrameIndicator]
+  -[DiagnosticHUDLayer previewLayerVisibleRect]
+  -[DiagnosticHUDLayer setPreviewLayerVisibleRect:]
+  -[DiagnosticHUDLayer freshPointColor]
+  -[DiagnosticHUDLayer setFreshPointColor:]
+  -[DiagnosticHUDLayer stalePointColor]
+  -[DiagnosticHUDLayer setStalePointColor:]
+  -[DiagnosticHUDLayer pointLayers]
+  -[DiagnosticHUDLayer setPointLayers:]
+  -[DiagnosticHUDLayer cameraAreaLayer]
+  -[DiagnosticHUDLayer setCameraAreaLayer:]
+  -[DiagnosticHUDLayer focusIndicatorLayer]
+  -[DiagnosticHUDLayer setFocusIndicatorLayer:]
+  -[DiagnosticHUDLayer focusPointLayer]
+  -[DiagnosticHUDLayer setFocusPointLayer:]
+  -[DiagnosticHUDLayer frameIndicator]
+  -[DiagnosticHUDLayer setFrameIndicator:]
+
+
+CRBoxLayer : CAReplicatorLayer
+ @property  CAShapeLayer *reticleLayer
+ @property  CATextLayer *codeLayer
+ @property  NSMutableArray *completionBlocks
+ @property  double demoSpeed
+ @property  BOOL customInit
+ @property  double frameRatio
+
+  // class methods
+  +[CRBoxLayer layer]
+
+  // instance methods
+  -[CRBoxLayer setCompletionBlocks:]
+  -[CRBoxLayer completionBlocks]
+  -[CRBoxLayer addCompletionBlock:]
+  -[CRBoxLayer layoutSublayers]
+  -[CRBoxLayer dealloc]
+  -[CRBoxLayer setFrameRatio:]
+  -[CRBoxLayer animateReveal]
+  -[CRBoxLayer setDemoSpeed:]
+  -[CRBoxLayer customInit]
+  -[CRBoxLayer .cxx_destruct]
+  -[CRBoxLayer positionForCodeBoxPoints:]
+  -[CRBoxLayer observeValueForKeyPath:ofObject:change:context:]
+  -[CRBoxLayer initWithCodeFrameRatio:]
+  -[CRBoxLayer demoSpeed]
+  -[CRBoxLayer animatePulseColor:]
+  -[CRBoxLayer frameRatio]
+  -[CRBoxLayer setCustomInit:]
+  -[CRBoxLayer codeLayer]
+  -[CRBoxLayer reticleLayer]
+  -[CRBoxLayer setReticleLayer:]
+  -[CRBoxLayer animateConceal]
+  -[CRBoxLayer init]
+  -[CRBoxLayer animateToPosition:transform:opacity:type:]
+  -[CRBoxLayer setCodeLayer:]
+  -[CRBoxLayer setString:mirrored:inverted:]
+
+
+(CoreRecognitionCaseCheck)
+	// instance methods
+	-[(CoreRecognitionCaseCheck) isUppercase]
+	-[(CoreRecognitionCaseCheck) isLowercase]
+	-[(CoreRecognitionCaseCheck) isCaseApplicable]
+
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureDeviceDiscoverySession 
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureDeviceInput 
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureMetadataOutput 
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureSession 
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureVideoDataOutput 
+01 00 0c00 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVCaptureVideoPreviewLayer 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAAnimationGroup 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CABasicAnimation 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAKeyframeAnimation 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CALayer 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAReplicatorLayer 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CAShapeLayer 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CATextLayer 
+01 00 0400 /System/Library/Frameworks/QuartzCore.framework/QuartzCore: CATransaction 
+01 00 0e00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIContext 
+01 00 0e00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIDetector 
+01 00 0e00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIFilter 
+01 00 0e00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIImage 
+01 00 0e00 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIVector 
+01 00 0600 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0600 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactFetchRequest 
+01 00 0600 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStore 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: CRImage 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: CRImageReader 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: CRMLModel 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: CRTextFeature 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: CRTextFeatureMultiRegion 
+01 00 0900 /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition: GeometricCutTools 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: NSMutableParagraphStyle 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSOperationQueue 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSPointerArray 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSRegularExpression 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 1500 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIActivityIndicatorView 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertAction 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertController 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIBezierPath 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIFont 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UITapGestureRecognizer 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0d00 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 
+01 00 0200 /System/Library/Frameworks/Vision.framework/Vision: VNDetectRectanglesRequest 
+01 00 0200 /System/Library/Frameworks/Vision.framework/Vision: VNDetectTextRectanglesRequest 
+01 00 0200 /System/Library/Frameworks/Vision.framework/Vision: VNImageBlurScoreRequest 
+01 00 0200 /System/Library/Frameworks/Vision.framework/Vision: VNImageRequestHandler 

@@ -1,0 +1,897 @@
+|| __DATA.__data _FSKitVolumeMachPortForKernelMount
+|| __DATA.__data _LISearchFileContentsInclude
+|| __DATA.__data _LISearchFileNameContains
+|| __DATA.__data _LISearchFileNameEndsWith
+|| __DATA.__data _LISearchObjModifiedAfter
+|| __DATA.__data _LISearchObjTypeReturnAll
+|| __DATA.__data _LISearchObjTypeReturnDirs
+|| __DATA.__data _LISearchObjTypeReturnFiles
+|| __DATA.__data _LISearchObjTypeReturnLinks
+|| __DATA.__data _LISearchObjXattrsInclude
+|| __DATA.__data _LISearchObjXattrsToReturn
+|| __DATA.__data _LiveFSAuthCredPasswordKey
+|| __DATA.__data _LiveFSAuthCredUsernameKey
+|| __DATA.__data _LiveFSFileSystemTypeName
+|| __DATA.__data _LiveFSMounterDisplayNameKey
+|| __DATA.__data _LiveFSMounterDomainContainsPhotos
+|| __DATA.__data _LiveFSMounterDomainErrorKey
+|| __DATA.__data _LiveFSMounterDomainHidden
+|| __DATA.__data _LiveFSMounterDomainStorageKey
+|| __DATA.__data _LiveFSMounterMountIDKey
+|| __DATA.__data _LiveFSMounterMountStateKey
+|| __DATA.__data _LiveFSMounterMountedOnKey
+|| __DATA.__data _LiveFSMounterVolumeNameKey
+|| __DATA.__data _LiveFSMounterVolumeProviderNameKey
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSAppleDouble
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSAppleDoubleManager
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSDiskUnlock
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSHexAndASCIIString
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSIDHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSItemPair
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSLRUCache
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSMemoryMap
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSMountClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSPathHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSRBTree
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSServiceClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSServiceConnection
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSSharedMutableBuffer
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSUserClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSVolume
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSVolumeClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSVolumeManager
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSVolumeSearchResultConnector
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSXattrCache
+|| __DATA.__objc_data _OBJC_CLASS_$_LiveFSXattrCacheEntry
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSAppleDouble
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSAppleDoubleManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSDiskUnlock
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSHexAndASCIIString
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSIDHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSItemPair
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSLRUCache
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSMemoryMap
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSMountClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSPathHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSRBTree
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSServiceClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSServiceConnection
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSSharedMutableBuffer
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSUserClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSVolume
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSVolumeClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSVolumeManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSVolumeSearchResultConnector
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSXattrCache
+|| __DATA.__objc_data _OBJC_METACLASS_$_LiveFSXattrCacheEntry
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSClient.conn
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSHexAndASCIIString.data
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSMountClient.conn
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSMountClient.helper
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSMountClient.provider
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSServiceConnection._ourID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSServiceConnection.mount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSServiceConnection.ourConnection
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSServiceConnection.setUpdateInterestQueue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSVolume._currentConnections
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSVolume._hasPersistentFileIDs
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSVolume._renameChangesFileID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSVolume.connectionCount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSVolume.validConnections
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._cacheEntries
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._entryCount
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._entryLifetime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._maxItemSize
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._maxItems
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._noXattrsPresent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_LiveFSXattrCache._noXattrsPresentSetTime
+|| __DATA_CONST.__const _LIUpdateNSFileProviderRootContainerItemIdentifier
+|| __DATA_CONST.__const _LIUpdateNSFileProviderWorkingSetContainerItemIdentifier
+|| __TEXT.__const _LiveFSVersionNumber
+|| __TEXT.__const _LiveFSVersionString
+|| __TEXT.__text _getBootUUID
+|| __TEXT.__text _getNSErrorFromLiveFSErrno
+|| __TEXT.__text _livefs_std_log
+__ CoreFoundation: _NSInternalInconsistencyException
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableData
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSFilePathErrorKey
+__ Foundation: _NSIntersectionRange
+__ Foundation: _NSPOSIXErrorDomain
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSCondition
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSXPCCoder
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ Foundation: _OBJC_METACLASS_$_NSString
+__ IOKit: _IOConnectCallStructMethod
+__ IOKit: _IOConnectSetNotificationPort
+__ IOKit: _IOServiceClose
+__ IOKit: _IOServiceGetMatchingService
+__ IOKit: _IOServiceMatching
+__ IOKit: _IOServiceOpen
+__ IOKit: _kIOMasterPortDefault
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___strlcpy_chk
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_type_mach_send
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _clock_gettime
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_data_create
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_get_label
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getgid
+__ libSystem.B.dylib: _getuid
+__ libSystem.B.dylib: _mach_make_memory_entry_64
+__ libSystem.B.dylib: _mach_port_deallocate
+__ libSystem.B.dylib: _mach_port_mod_refs
+__ libSystem.B.dylib: _mach_task_self_
+__ libSystem.B.dylib: _mach_vm_map
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcmp
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _pthread_cond_destroy
+__ libSystem.B.dylib: _pthread_cond_init
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_rwlock_destroy
+__ libSystem.B.dylib: _pthread_rwlock_init
+__ libSystem.B.dylib: _rb_tree_count
+__ libSystem.B.dylib: _rb_tree_init
+__ libSystem.B.dylib: _rb_tree_insert_node
+__ libSystem.B.dylib: _rb_tree_iterate
+__ libSystem.B.dylib: _rb_tree_remove_node
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strnlen
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _vm_allocate
+__ libSystem.B.dylib: _vm_deallocate
+__ libSystem.B.dylib: _xpc_mach_send_copy_right
+__ libSystem.B.dylib: _xpc_mach_send_create
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x10
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+LiveFSHexAndASCIIString : NSString
+  // instance methods
+  -[LiveFSHexAndASCIIString getCharacters:range:]
+  -[LiveFSHexAndASCIIString length]
+  -[LiveFSHexAndASCIIString .cxx_destruct]
+  -[LiveFSHexAndASCIIString characterAtIndex:]
+  -[LiveFSHexAndASCIIString initWithData:]
+  -[LiveFSHexAndASCIIString init]
+  -[LiveFSHexAndASCIIString data]
+
+
+LiveFSXattrCacheEntry : NSObject
+ @property  ^v xattrBytes
+ @property  unsigned long xattrSize
+ @property  {timespec=qq} addedTime
+ @property  {timespec=qq} lastUsedTime
+
+  // instance methods
+  -[LiveFSXattrCacheEntry setLastUsedTime:]
+  -[LiveFSXattrCacheEntry dealloc]
+  -[LiveFSXattrCacheEntry lastUsedTime]
+  -[LiveFSXattrCacheEntry initWithData:andTime:]
+  -[LiveFSXattrCacheEntry isExpiredAsOf:forLifetime:]
+  -[LiveFSXattrCacheEntry xattrBytes]
+  -[LiveFSXattrCacheEntry xattrSize]
+  -[LiveFSXattrCacheEntry addedTime]
+
+
+LiveFSXattrCache : NSObject
+ @property  BOOL noXattrsPresent
+
+  // class methods
+  +[LiveFSXattrCache xattrCacheWithMaxItems:andMaxItemSize:]
+  +[LiveFSXattrCache xattrCacheWithMaxItems:maxItemSize:andEntryLifetimeInSeconds:]
+
+  // instance methods
+  -[LiveFSXattrCache dealloc]
+  -[LiveFSXattrCache .cxx_destruct]
+  -[LiveFSXattrCache invalidate]
+  -[LiveFSXattrCache initWithMaxItems:andMaxItemSize:]
+  -[LiveFSXattrCache initWithMaxItems:maxItemSize:andEntryLifetimeInSeconds:]
+  -[LiveFSXattrCache insertEntryForData:forName:]
+  -[LiveFSXattrCache setData:forName:]
+  -[LiveFSXattrCache setNegativeForName:]
+  -[LiveFSXattrCache dataForName:wasNegative:]
+  -[LiveFSXattrCache noXattrsPresent]
+  -[LiveFSXattrCache setNoXattrsPresent:]
+
+
+LiveFSItemPair : NSObject <NSCopying>
+ @property  NSString *itemId
+ @property  NSString *filename
+
+  // class methods
+  +[LiveFSItemPair newWithParent:fname:]
+  +[LiveFSItemPair newWithParent:fname:caseSensitivity:]
+
+  // instance methods
+  -[LiveFSItemPair filename]
+  -[LiveFSItemPair .cxx_destruct]
+  -[LiveFSItemPair copyWithZone:]
+  -[LiveFSItemPair isEqual:]
+  -[LiveFSItemPair itemId]
+  -[LiveFSItemPair initWithParent:fname:caseSensitivity:]
+
+
+LiveFSMountClient : NSObject
+  // class methods
+  +[LiveFSMountClient newClientForProvider:]
+  +[LiveFSMountClient newClient]
+
+  // instance methods
+  -[LiveFSMountClient initWithProvider:]
+  -[LiveFSMountClient .cxx_destruct]
+  -[LiveFSMountClient fixupConnectionFor:]
+  -[LiveFSMountClient mounts:]
+  -[LiveFSMountClient allMounts:]
+  -[LiveFSMountClient mountVolume:displayName:provider:domainError:on:how:options:]
+  -[LiveFSMountClient mountVolume:displayName:provider:domainError:on:how:]
+  -[LiveFSMountClient mountVolume:displayName:provider:on:how:]
+  -[LiveFSMountClient mountVolume:provider:on:how:]
+  -[LiveFSMountClient unmountVolume:how:]
+  -[LiveFSMountClient unmountVolumeByID:how:]
+  -[LiveFSMountClient unmountVolumeNamed:providerName:domainError:how:reply:]
+  -[LiveFSMountClient verboseLevelOrError:]
+  -[LiveFSMountClient setVerboseLevel:]
+  -[LiveFSMountClient updateErrorStateForVolume:provider:domainError:]
+
+
+LiveFSClient : NSObject
+  // class methods
+  +[LiveFSClient interfaceForListeners]
+  +[LiveFSClient newConnectionForService:]
+  +[LiveFSClient supportDirURL:forURL:daemonPrefName:error:]
+
+  // instance methods
+  -[LiveFSClient dealloc]
+  -[LiveFSClient .cxx_destruct]
+  -[LiveFSClient listenerForVolume:error:]
+  -[LiveFSClient volumes:]
+  -[LiveFSClient unlockVolume:password:saveToKeychain:completionHandler:]
+  -[LiveFSClient forgetVolume:withFlags:]
+  -[LiveFSClient listenerForVolume:completionHandler:]
+  -[LiveFSClient initConnectionForService:]
+  -[LiveFSClient terminateDevice:]
+
+
+LiveFSPathHelper : NSObject
+ @property  BOOL resolveTrailingSymlink
+ @property  NSError *error
+ @property  NSString *fileHandle
+ @property  NSData *attributes
+
+  // class methods
+  +[LiveFSPathHelper helperWithMount:andPath:]
+
+  // instance methods
+  -[LiveFSPathHelper attributes]
+  -[LiveFSPathHelper error]
+  -[LiveFSPathHelper dealloc]
+  -[LiveFSPathHelper fileHandle]
+  -[LiveFSPathHelper .cxx_destruct]
+  -[LiveFSPathHelper finalizeWithError:]
+  -[LiveFSPathHelper initWithMount:andPath:]
+  -[LiveFSPathHelper finalizeWithErrno:]
+  -[LiveFSPathHelper currentFileHandle]
+  -[LiveFSPathHelper reclaimItem:withContinuation:]
+  -[LiveFSPathHelper processReadLinkReplyForLink:withResult:linkString:andAttributes:]
+  -[LiveFSPathHelper resolveSymlink:]
+  -[LiveFSPathHelper processLookupReplyWithResult:item:andAttributes:]
+  -[LiveFSPathHelper lookupNextComponent]
+  -[LiveFSPathHelper lookupWithCompletionHandler:]
+  -[LiveFSPathHelper pushFileHandle:attributes:]
+  -[LiveFSPathHelper popFileHandle]
+  -[LiveFSPathHelper peekFileHandle]
+  -[LiveFSPathHelper resolveTrailingSymlink]
+  -[LiveFSPathHelper setResolveTrailingSymlink:]
+
+
+LiveFSUserClient : NSObject
+  // class methods
+  +[LiveFSUserClient defaultClient]
+
+  // instance methods
+  -[LiveFSUserClient dealloc]
+  -[LiveFSUserClient init]
+  -[LiveFSUserClient getUserClientPort]
+  -[LiveFSUserClient checkUserClientPort]
+  -[LiveFSUserClient setMainMachPort:forDomain:]
+  -[LiveFSUserClient callStructMethod:inStruct:inSize:outStruct:outStructSize:]
+
+
+LiveFSIDHelper : NSObject
+  // class methods
+  +[LiveFSIDHelper rootItemID]
+  +[LiveFSIDHelper identifierForItem:name:parentID:]
+
+
+LiveFSDiskUnlock : NSObject
+  // class methods
+  +[LiveFSDiskUnlock unlockDomain:withPassword:saveToKeychain:completionHandler:]
+
+
+LiveFSVolumeClient : NSObject <LiveFSCoreClient>
+ @property  NSMutableDictionary *searchResultsBlocks
+ @property  NSMutableDictionary *searchCompletionBlocks
+ @property  NSMapTable *updateHandlers
+
+  // class methods
+  +[LiveFSVolumeClient exportedClientInterface]
+
+  // instance methods
+  -[LiveFSVolumeClient .cxx_destruct]
+  -[LiveFSVolumeClient updateHandlers]
+  -[LiveFSVolumeClient connectionWasInvalidated]
+  -[LiveFSVolumeClient init]
+  -[LiveFSVolumeClient setUpdateHandlers:]
+  -[LiveFSVolumeClient LISCDropUpdateHandlerForInterestedItem:]
+  -[LiveFSVolumeClient connectionWasInterupted]
+  -[LiveFSVolumeClient LISCAddSearchHandlers:resultHandler:completionHandler:]
+  -[LiveFSVolumeClient LISCAddUpdateHandler:forInterestedItem:]
+  -[LiveFSVolumeClient updatedItem:name:interestedItem:]
+  -[LiveFSVolumeClient updatedName:interestedItem:]
+  -[LiveFSVolumeClient deletedItem:name:how:interestedItem:]
+  -[LiveFSVolumeClient deletedName:item:how:interestedItem:]
+  -[LiveFSVolumeClient renamedItem:named:fromDirectory:intoDirectory:newName:atopItem:]
+  -[LiveFSVolumeClient volumeWideUpdatedName:interestedItem:]
+  -[LiveFSVolumeClient volumeWideDeletedName:interestedItem:]
+  -[LiveFSVolumeClient historyResetItem:interestedItem:]
+  -[LiveFSVolumeClient historyResetName:interestedItem:]
+  -[LiveFSVolumeClient updatesDoneFor:]
+  -[LiveFSVolumeClient searchResults:paths:attributes:attributeSize:xAttrs:resumePath:]
+  -[LiveFSVolumeClient tokenDone:result:]
+  -[LiveFSVolumeClient LISCDropSearchHandlers:]
+  -[LiveFSVolumeClient searchResultsBlocks]
+  -[LiveFSVolumeClient setSearchResultsBlocks:]
+  -[LiveFSVolumeClient searchCompletionBlocks]
+  -[LiveFSVolumeClient setSearchCompletionBlocks:]
+
+
+LiveFSServiceClient : LiveFSVolumeClient
+
+LiveFSRBTree : NSObject
+ @property  NSMutableArray *ourData
+
+  // class methods
+  +[LiveFSRBTree newWithComparitor:]
+
+  // instance methods
+  -[LiveFSRBTree addEntry:]
+  -[LiveFSRBTree dealloc]
+  -[LiveFSRBTree .cxx_destruct]
+  -[LiveFSRBTree count]
+  -[LiveFSRBTree extractItemsInRange:withBlock:]
+  -[LiveFSRBTree addDataBuffer:]
+  -[LiveFSRBTree initWithComparitor:]
+  -[LiveFSRBTree ourData]
+  -[LiveFSRBTree setOurData:]
+
+
+anonymousDaemon : NSObject <NSXPCListenerDelegate>
+ @property  NSXPCListener *listener
+ @property  NSXPCInterface *interface
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  Class clientClass
+ @property  NSObject *proxy
+ @property  NSXPCListenerEndpoint *endpoint
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[anonymousDaemon interface]
+  -[anonymousDaemon proxy]
+  -[anonymousDaemon endpoint]
+  -[anonymousDaemon dealloc]
+  -[anonymousDaemon .cxx_destruct]
+  -[anonymousDaemon clientClass]
+  -[anonymousDaemon queue]
+  -[anonymousDaemon listener]
+  -[anonymousDaemon listener:shouldAcceptNewConnection:]
+  -[anonymousDaemon initWithListener:]
+  -[anonymousDaemon initUsingInterface:clientClass:queue:andProxy:]
+
+
+LiveFSVolumeManager : NSObject <LiveFSVolumeManager>
+  // class methods
+  +[LiveFSVolumeManager newServiceProxyObjectWithDelegate:]
+
+  // instance methods
+  -[LiveFSVolumeManager dealloc]
+  -[LiveFSVolumeManager .cxx_destruct]
+  -[LiveFSVolumeManager ejectDisk:usingFlags:reply:]
+  -[LiveFSVolumeManager addDisk:reply:]
+  -[LiveFSVolumeManager addDisk:fileSystemType:reply:]
+  -[LiveFSVolumeManager listVolumes:]
+  -[LiveFSVolumeManager unlockVolume:password:saveToKeychain:completionHandler:]
+  -[LiveFSVolumeManager listenerForVolume:reply:]
+  -[LiveFSVolumeManager ejectVolume:usingFlags:reply:]
+  -[LiveFSVolumeManager sharesAtServer:credentialType:credential:reply:]
+  -[LiveFSVolumeManager addVolume:atServer:credentialType:credential:reply:]
+  -[LiveFSVolumeManager addVolume:listener:description:reply:]
+  -[LiveFSVolumeManager addShimForFileSystemType:parameters:reply:]
+  -[LiveFSVolumeManager credentialTypes:]
+  -[LiveFSVolumeManager uniqueNameForName:reply:]
+  -[LiveFSVolumeManager initServiceProxyObjectWithDelegate:]
+  -[LiveFSVolumeManager initializationFinished]
+  -[LiveFSVolumeManager addVolume:usingInterface:connectionClass:queue:proxy:description:]
+  -[LiveFSVolumeManager addVolume:usingInterface:connectionClass:andProxy:withDescription:]
+  -[LiveFSVolumeManager getUniqueVolumeName:]
+  -[LiveFSVolumeManager addVolumeCluster:]
+  -[LiveFSVolumeManager removeVolumeCluster:]
+  -[LiveFSVolumeManager removeVolumeLocked:]
+  -[LiveFSVolumeManager removeVolume:]
+  -[LiveFSVolumeManager descriptionForVolume:]
+  -[LiveFSVolumeManager LiveMountEjectVolumeCluster:withFlags:reply:]
+  -[LiveFSVolumeManager volumeProxyForVolume:]
+
+
+LiveFSMemoryMap : NSObject
+ @property  unsigned int port
+ @property  unsigned long address
+ @property  unsigned long size
+
+  // class methods
+  +[LiveFSMemoryMap newWithPort:address:andSize:]
+
+  // instance methods
+  -[LiveFSMemoryMap port]
+  -[LiveFSMemoryMap setPort:]
+  -[LiveFSMemoryMap dealloc]
+  -[LiveFSMemoryMap address]
+  -[LiveFSMemoryMap size]
+  -[LiveFSMemoryMap initWithPort:address:andSize:]
+
+
+LiveFSSharedMutableBuffer : NSObject <NSSecureCoding>
+ @property  unsigned long length
+
+  // class methods
+  +[LiveFSSharedMutableBuffer supportsSecureCoding]
+  +[LiveFSSharedMutableBuffer dataWithCapacity:]
+  +[LiveFSSharedMutableBuffer dataWithLength:]
+  +[LiveFSSharedMutableBuffer bufferWithLength:]
+  +[LiveFSSharedMutableBuffer bufferWithCapacity:]
+  +[LiveFSSharedMutableBuffer newByCopyingPort:]
+
+  // instance methods
+  -[LiveFSSharedMutableBuffer initWithLength:]
+  -[LiveFSSharedMutableBuffer initWithCapacity:]
+  -[LiveFSSharedMutableBuffer encodeWithCoder:]
+  -[LiveFSSharedMutableBuffer dealloc]
+  -[LiveFSSharedMutableBuffer length]
+  -[LiveFSSharedMutableBuffer .cxx_destruct]
+  -[LiveFSSharedMutableBuffer classForCoder]
+  -[LiveFSSharedMutableBuffer mutableBytes]
+  -[LiveFSSharedMutableBuffer setLength:]
+  -[LiveFSSharedMutableBuffer bytes]
+  -[LiveFSSharedMutableBuffer initWithCoder:]
+  -[LiveFSSharedMutableBuffer initWithMachPort:capacity:length:wrapsIOWMD:]
+  -[LiveFSSharedMutableBuffer initWithCapacity:andLength:]
+  -[LiveFSSharedMutableBuffer detachBytes]
+  -[LiveFSSharedMutableBuffer createMappingForVMAAt:options:startingAtOffset:forLength:completionHandler:]
+  -[LiveFSSharedMutableBuffer createMappingAt:options:startingAtOffset:forLength:completionHandler:]
+  -[LiveFSSharedMutableBuffer ensureMappedMB:]
+  -[LiveFSSharedMutableBuffer ensureMappedIOMD]
+  -[LiveFSSharedMutableBuffer ensureMapped]
+  -[LiveFSSharedMutableBuffer createDispatchData]
+
+
+LiveFSServiceConnection : NSObject <LiveFSVolumeCore, NSFileProviderLiveItemCore, LiveFSConnectorMaker>
+ @property  unsigned long ourID
+
+  // class methods
+  +[LiveFSServiceConnection newExportObjectForObject:connection:error:]
+  +[LiveFSServiceConnection newConnectionForMount:connection:error:]
+
+  // instance methods
+  -[LiveFSServiceConnection dealloc]
+  -[LiveFSServiceConnection .cxx_destruct]
+  -[LiveFSServiceConnection connectionWasInvalidated]
+  -[LiveFSServiceConnection connectionWasInterrupted]
+  -[LiveFSServiceConnection otherAttributeOf:named:requestID:reply:]
+  -[LiveFSServiceConnection getRootFileHandleWithError:]
+  -[LiveFSServiceConnection setUpdateInterest:interest:requestID:reply:]
+  -[LiveFSServiceConnection search:token:criteria:resumeAt:maxData:maxDelay:initialCredits:requestID:reply:]
+  -[LiveFSServiceConnection xattrOf:named:forPID:requestID:reply:]
+  -[LiveFSServiceConnection lookupIn:name:requestID:reply:]
+  -[LiveFSServiceConnection reclaim:requestID:reply:]
+  -[LiveFSServiceConnection pathsAndAttributesForItemsByIDs:requestID:reply:]
+  -[LiveFSServiceConnection readDirectoryAndAttributes:amount:cookie:verifier:requestID:reply:]
+  -[LiveFSServiceConnection readDirectory:amount:cookie:verifier:requestID:reply:]
+  -[LiveFSServiceConnection fileAttributes:requestID:reply:]
+  -[LiveFSServiceConnection setFileAttributesOf:to:forPID:requestID:reply:]
+  -[LiveFSServiceConnection createIn:named:attributes:forPID:requestID:reply:]
+  -[LiveFSServiceConnection makeDirectoryIn:named:attributes:forPID:requestID:reply:]
+  -[LiveFSServiceConnection makeSymLinkIn:named:contents:attributes:forPID:requestID:reply:]
+  -[LiveFSServiceConnection makeLinkOf:named:inDirectory:forPID:requestID:reply:]
+  -[LiveFSServiceConnection makeCloneOf:named:inDirectory:attributes:usingFlags:forPID:requestID:reply:]
+  -[LiveFSServiceConnection open:withMode:forPID:requestID:reply:]
+  -[LiveFSServiceConnection close:keepingMode:forPID:requestID:reply:]
+  -[LiveFSServiceConnection readFrom:atOffset:intoBuffer:forPID:requestID:reply:]
+  -[LiveFSServiceConnection readFrom:length:atOffset:forPID:requestID:reply:]
+  -[LiveFSServiceConnection writeTo:atOffset:fromBuffer:forPID:requestID:reply:]
+  -[LiveFSServiceConnection writeTo:atOffset:sharedBuffer:forPID:requestID:reply:]
+  -[LiveFSServiceConnection blockmapFile:range:startIO:flags:bufFlags:forPID:requestID:reply:]
+  -[LiveFSServiceConnection endIO:range:status:flags:requestID:reply:]
+  -[LiveFSServiceConnection fetchVolumeMachPortLabeled:requestID:reply:]
+  -[LiveFSServiceConnection readLinkOf:requestID:reply:]
+  -[LiveFSServiceConnection removeItem:from:named:usingFlags:forPID:requestID:reply:]
+  -[LiveFSServiceConnection removeDirectory:from:named:usingFlags:forPID:requestID:reply:]
+  -[LiveFSServiceConnection renameItemIn:named:toDirectory:newName:usingFlags:forPID:requestID:reply:]
+  -[LiveFSServiceConnection readDirectory:intoBuffer:cookie:verifier:requestID:reply:]
+  -[LiveFSServiceConnection readDirectoryAndAttributes:intoBuffer:cookie:verifier:requestID:reply:]
+  -[LiveFSServiceConnection volumeStatistics:requestID:reply:]
+  -[LiveFSServiceConnection pathConfiguration:requestID:reply:]
+  -[LiveFSServiceConnection setOtherAttributeOf:named:value:requestID:reply:]
+  -[LiveFSServiceConnection setXattrOf:named:value:how:forPID:requestID:reply:]
+  -[LiveFSServiceConnection listXattrsOf:forPID:requestID:reply:]
+  -[LiveFSServiceConnection replenishSearchCreditsFor:credits:requestID:reply:]
+  -[LiveFSServiceConnection abortSearch:requestID:reply:]
+  -[LiveFSServiceConnection checkAccessTo:requestedAccess:requestID:reply:]
+  -[LiveFSServiceConnection verifyItemExistenceByIDs:requestID:reply:]
+  -[LiveFSServiceConnection parentsAndAttributesForItemsByID:requestID:reply:]
+  -[LiveFSServiceConnection LIGetRootFileHandle:]
+  -[LiveFSServiceConnection LIGetAttr:reply:]
+  -[LiveFSServiceConnection LILookup:name:reply:]
+  -[LiveFSServiceConnection LIGetFsAttr:name:reply:]
+  -[LiveFSServiceConnection LISearch:token:criteria:resumeAt:maxData:maxDelay:initialCredits:reply:]
+  -[LiveFSServiceConnection LISearchAbort:reply:]
+  -[LiveFSServiceConnection LIGetParentsAndAttributesForFileIDs:reply:]
+  -[LiveFSServiceConnection initForMount:connection:error:]
+  -[LiveFSServiceConnection scrubOurClientId]
+  -[LiveFSServiceConnection sanitizedAttrsForNewObjectAttrs:forType:]
+  -[LiveFSServiceConnection ourID]
+
+
+LiveFSVolumeSearchResultConnector : NSObject <LiveFSSearchResults>
+ @property  NSXPCConnection *conn
+ @property  NSString *ourToken
+ @property  unsigned int maxData
+ @property  double maxDelay
+ @property  BOOL throttlingActive
+ @property  unsigned int currentCredits
+ @property  BOOL active
+
+  // class methods
+  +[LiveFSVolumeSearchResultConnector newSearchConnector:connection:maxData:maxDelay:initialCredits:]
+
+  // instance methods
+  -[LiveFSVolumeSearchResultConnector setConn:]
+  -[LiveFSVolumeSearchResultConnector conn]
+  -[LiveFSVolumeSearchResultConnector active]
+  -[LiveFSVolumeSearchResultConnector maxDelay]
+  -[LiveFSVolumeSearchResultConnector setMaxDelay:]
+  -[LiveFSVolumeSearchResultConnector .cxx_destruct]
+  -[LiveFSVolumeSearchResultConnector setActive:]
+  -[LiveFSVolumeSearchResultConnector addSearchResult:attributes:attributeSize:xAttrs:]
+  -[LiveFSVolumeSearchResultConnector tokenDone:]
+  -[LiveFSVolumeSearchResultConnector replenishCredits:reply:]
+  -[LiveFSVolumeSearchResultConnector initForToken:connection:maxData:maxDelay:initialCredits:]
+  -[LiveFSVolumeSearchResultConnector grabACredit]
+  -[LiveFSVolumeSearchResultConnector flushBufferedResults:]
+  -[LiveFSVolumeSearchResultConnector ourToken]
+  -[LiveFSVolumeSearchResultConnector setOurToken:]
+  -[LiveFSVolumeSearchResultConnector maxData]
+  -[LiveFSVolumeSearchResultConnector setMaxData:]
+  -[LiveFSVolumeSearchResultConnector throttlingActive]
+  -[LiveFSVolumeSearchResultConnector setThrottlingActive:]
+  -[LiveFSVolumeSearchResultConnector currentCredits]
+  -[LiveFSVolumeSearchResultConnector setCurrentCredits:]
+
+
+LiveFSAppleDoubleManager : NSObject
+ @property  LiveFSVolume *mount
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  unsigned long clientID
+
+  // class methods
+  +[LiveFSAppleDoubleManager AppleDoubleManagerForMount:]
+
+  // instance methods
+  -[LiveFSAppleDoubleManager clientID]
+  -[LiveFSAppleDoubleManager setClientID:]
+  -[LiveFSAppleDoubleManager dealloc]
+  -[LiveFSAppleDoubleManager .cxx_destruct]
+  -[LiveFSAppleDoubleManager setQueue:]
+  -[LiveFSAppleDoubleManager queue]
+  -[LiveFSAppleDoubleManager mount]
+  -[LiveFSAppleDoubleManager initWithMount:]
+  -[LiveFSAppleDoubleManager AppleDoubleNameForFileNamed:]
+  -[LiveFSAppleDoubleManager acquireForBaseFile:]
+  -[LiveFSAppleDoubleManager releaseForBaseFile:]
+  -[LiveFSAppleDoubleManager AppleDoubleForReadingWithBaseFile:named:inDirectory:andPID:]
+  -[LiveFSAppleDoubleManager AppleDoubleForWritingWithBaseFile:named:inDirectory:andPID:]
+  -[LiveFSAppleDoubleManager AppleDoubleForNamespaceWithBaseFile:named:inDirectory:andPID:]
+  -[LiveFSAppleDoubleManager AppleDoubleForPurpose:withBaseFile:named:inDirectory:andPID:]
+  -[LiveFSAppleDoubleManager enumerateDirectory:intoArray:]
+  -[LiveFSAppleDoubleManager scrubDirectoryNamed:inDirectory:forPID:]
+  -[LiveFSAppleDoubleManager isDotUnderBarFileName:]
+  -[LiveFSAppleDoubleManager setMount:]
+
+
+LiveFSAppleDouble : NSObject
+ @property  LiveFSAppleDoubleManager *manager
+ @property  NSString *parentDirHandle
+ @property  NSString *baseFileHandle
+ @property  NSString *fileName
+ @property  NSString *fileHandle
+ @property  NSObject<OS_dispatch_semaphore> *syncSem
+ @property  int purpose
+
+  // instance methods
+  -[LiveFSAppleDouble closeFile]
+  -[LiveFSAppleDouble fileName]
+  -[LiveFSAppleDouble setManager:]
+  -[LiveFSAppleDouble purpose]
+  -[LiveFSAppleDouble dealloc]
+  -[LiveFSAppleDouble fileHandle]
+  -[LiveFSAppleDouble .cxx_destruct]
+  -[LiveFSAppleDouble setFileHandle:]
+  -[LiveFSAppleDouble manager]
+  -[LiveFSAppleDouble setFileName:]
+  -[LiveFSAppleDouble syncSem]
+  -[LiveFSAppleDouble initWithManager:baseFileHandle:name:andDirectoryHandle:andPID:andPurpose:]
+  -[LiveFSAppleDouble reclaimFile]
+  -[LiveFSAppleDouble containerFileExists]
+  -[LiveFSAppleDouble lookupFile]
+  -[LiveFSAppleDouble createFile]
+  -[LiveFSAppleDouble openFile]
+  -[LiveFSAppleDouble writeXattrInfo]
+  -[LiveFSAppleDouble swapFileHeader:]
+  -[LiveFSAppleDouble swapAttrHeader:]
+  -[LiveFSAppleDouble initEmptyResourceFork:]
+  -[LiveFSAppleDouble loadAttrHeader]
+  -[LiveFSAppleDouble loadADHeader]
+  -[LiveFSAppleDouble valueForXattrNamed:posixError:]
+  -[LiveFSAppleDouble setValue:forXattrNamed:how:]
+  -[LiveFSAppleDouble removeXattrNamed:]
+  -[LiveFSAppleDouble allXattrNamesAndPosixError:]
+  -[LiveFSAppleDouble removeFile]
+  -[LiveFSAppleDouble renameFileToDirectory:andName:]
+  -[LiveFSAppleDouble linkFileToDirectory:andName:]
+  -[LiveFSAppleDouble shiftDataDownAtOffset:lengh:howMuch:]
+  -[LiveFSAppleDouble shiftDataUp:length:howMuch:]
+  -[LiveFSAppleDouble parentDirHandle]
+  -[LiveFSAppleDouble setParentDirHandle:]
+  -[LiveFSAppleDouble setSyncSem:]
+  -[LiveFSAppleDouble baseFileHandle]
+  -[LiveFSAppleDouble setBaseFileHandle:]
+
+
+LiveFSVolume : NSObject <LiveFSConnectionCoordination, LiveFSVolumeImplementation>
+ @property  unsigned long workingSetInterest
+ @property  BOOL renameChangesFileID
+ @property  BOOL hasPersistentFileIDs
+
+  // instance methods
+  -[LiveFSVolume .cxx_destruct]
+  -[LiveFSVolume init]
+  -[LiveFSVolume otherAttributeOf:named:requestID:reply:]
+  -[LiveFSVolume xattrOf:named:forPID:requestID:reply:]
+  -[LiveFSVolume readDirectoryAndAttributes:amount:cookie:verifier:requestID:reply:]
+  -[LiveFSVolume readDirectory:amount:cookie:verifier:requestID:reply:]
+  -[LiveFSVolume fileAttributes:requestID:reply:]
+  -[LiveFSVolume setFileAttributesOf:to:forPID:requestID:reply:]
+  -[LiveFSVolume open:withMode:forPID:requestID:reply:]
+  -[LiveFSVolume close:keepingMode:forPID:requestID:reply:]
+  -[LiveFSVolume readFrom:atOffset:intoBuffer:forPID:requestID:reply:]
+  -[LiveFSVolume readFrom:length:atOffset:forPID:requestID:reply:]
+  -[LiveFSVolume writeTo:atOffset:fromBuffer:forPID:requestID:reply:]
+  -[LiveFSVolume blockmapFile:range:startIO:flags:bufFlags:forPID:requestID:reply:]
+  -[LiveFSVolume endIO:range:status:flags:requestID:reply:]
+  -[LiveFSVolume readLinkOf:requestID:reply:]
+  -[LiveFSVolume removeItem:from:named:usingFlags:forPID:requestID:reply:]
+  -[LiveFSVolume removeDirectory:from:named:usingFlags:forPID:requestID:reply:]
+  -[LiveFSVolume renameItemIn:named:toDirectory:newName:usingFlags:forPID:requestID:reply:]
+  -[LiveFSVolume readDirectory:intoBuffer:cookie:verifier:requestID:reply:]
+  -[LiveFSVolume readDirectoryAndAttributes:intoBuffer:cookie:verifier:requestID:reply:]
+  -[LiveFSVolume volumeStatistics:requestID:reply:]
+  -[LiveFSVolume pathConfiguration:requestID:reply:]
+  -[LiveFSVolume setOtherAttributeOf:named:value:requestID:reply:]
+  -[LiveFSVolume setXattrOf:named:value:how:forPID:requestID:reply:]
+  -[LiveFSVolume listXattrsOf:forPID:requestID:reply:]
+  -[LiveFSVolume replenishSearchCreditsFor:credits:requestID:reply:]
+  -[LiveFSVolume abortSearch:requestID:reply:]
+  -[LiveFSVolume checkAccessTo:requestedAccess:requestID:reply:]
+  -[LiveFSVolume verifyItemExistenceByIDs:requestID:reply:]
+  -[LiveFSVolume parentsAndAttributesForItemsByID:requestID:reply:]
+  -[LiveFSVolume rootFileHandleForClient:reply:]
+  -[LiveFSVolume lookupin:name:forClient:requestID:reply:]
+  -[LiveFSVolume reclaim:forClient:requestID:reply:]
+  -[LiveFSVolume createIn:named:attributes:forPID:andClient:requestID:reply:]
+  -[LiveFSVolume makeDirectoryIn:named:attributes:forPID:andClient:requestID:reply:]
+  -[LiveFSVolume makeSymLinkIn:named:contents:attributes:forPID:andClient:requestID:reply:]
+  -[LiveFSVolume makeLinkOf:named:inDirectory:forPID:andClient:requestID:reply:]
+  -[LiveFSVolume makeCloneOf:named:inDirectory:attributes:usingFlags:forPID:andClient:requestID:reply:]
+  -[LiveFSVolume fetchVolumeMachPortLabeled:forClient:requestID:reply:]
+  -[LiveFSVolume search:token:criteria:returnProxy:forClient:requestID:reply:]
+  -[LiveFSVolume abortAllClientSearchesFor:]
+  -[LiveFSVolume setUpdateInterest:interest:forClient:requestID:reply:]
+  -[LiveFSVolume newConnectionIDOrError:]
+  -[LiveFSVolume invalidateFileNodesForConnection:]
+  -[LiveFSVolume releaseConnectionAllocation:]
+  -[LiveFSVolume invalidateAllConnections]
+  -[LiveFSVolume rememberConnection:forID:]
+  -[LiveFSVolume LISMPUpdateItem:nameOrPath:interestedItem:interestedClients:op:]
+  -[LiveFSVolume updatedItem:name:interestedItem:interestedClients:]
+  -[LiveFSVolume deletedItem:name:interestedItem:how:interestedClients:]
+  -[LiveFSVolume updatedName:interestedItem:interestedClients:]
+  -[LiveFSVolume deletedName:item:interestedItem:how:interestedClients:]
+  -[LiveFSVolume volumeWideUpdatedName:interestedItem:interestedClients:]
+  -[LiveFSVolume volumeWideDeletedName:interestedItem:interestedClients:]
+  -[LiveFSVolume historyResetItem:interestedItem:interestedClients:]
+  -[LiveFSVolume historyResetName:interestedItem:interestedClients:]
+  -[LiveFSVolume itemUpdatesDone:interestedClients:]
+  -[LiveFSVolume itemRenamedIn:named:originalID:intoDirectory:newName:atopItem:interestedClients:]
+  -[LiveFSVolume workingSetInterest]
+  -[LiveFSVolume setWorkingSetInterest:]
+  -[LiveFSVolume renameChangesFileID]
+  -[LiveFSVolume hasPersistentFileIDs]
+
+
+LiveFSLRUCache : NSObject
+ @property  NSMutableDictionary *mapping
+ @property  NSMutableArray *usageOrder
+ @property  int countLimit
+
+  // instance methods
+  -[LiveFSLRUCache removeAllObjects]
+  -[LiveFSLRUCache setObject:forKey:]
+  -[LiveFSLRUCache .cxx_destruct]
+  -[LiveFSLRUCache mapping]
+  -[LiveFSLRUCache removeObjectForKey:]
+  -[LiveFSLRUCache setMapping:]
+  -[LiveFSLRUCache objectForKey:]
+  -[LiveFSLRUCache init]
+  -[LiveFSLRUCache setCountLimit:]
+  -[LiveFSLRUCache countLimit]
+  -[LiveFSLRUCache objectForKeyLocked:]
+  -[LiveFSLRUCache removeLastItem]
+  -[LiveFSLRUCache usageOrder]
+  -[LiveFSLRUCache setUsageOrder:]
+
+
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSCondition 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableData 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableOrderedSet 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0300 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0500 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCCoder 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

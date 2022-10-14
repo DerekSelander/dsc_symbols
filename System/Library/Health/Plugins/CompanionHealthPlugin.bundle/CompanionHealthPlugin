@@ -1,0 +1,125 @@
+|| __DATA_CONST.__const _CHCompanionHealthPluginIdentifier
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHCompanionHealthPlugin
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CHCompanionHealthProfileExtension
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHCompanionHealthPlugin
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CHCompanionHealthProfileExtension
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHActivityApplicationInstallationManager
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHCoachingDiagnosticManager
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHCompanionWidgetSchedulingManager
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHCompanionWorkoutCreditManager
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHFitnessAppBadgeManager
+__ CompanionHealthDaemon: _OBJC_CLASS_$_CHTrendsNotificationManager
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ FitnessCoachingHealthServices: _OBJC_CLASS_$_FCHealthServer
+__ FitnessCoachingHealthServices: _OBJC_CLASS_$_FCHealthService
+__ HealthDaemon: _OBJC_CLASS_$_HDActivityCacheManager
+__ HealthKit: _HKLogActivity
+__ HealthKit: _HKStandalonePhoneFitnessModeDidUpdateNotification
+__ HealthKit: _OBJC_CLASS_$__HKBehavior
+__ HealthKit: __HKInitializeLogging
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _notify_cancel
+__ libSystem.B.dylib: _notify_register_dispatch
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+CHCompanionHealthPlugin : NSObject <HDPlugin, HDDiagnosticObject, HDTaskServerClassProvider>
+ @property  NSString *pluginIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CHCompanionHealthPlugin pluginIdentifier]
+  -[CHCompanionHealthPlugin extensionForHealthDaemon:]
+  -[CHCompanionHealthPlugin extensionForProfile:]
+  -[CHCompanionHealthPlugin diagnosticDescription]
+  -[CHCompanionHealthPlugin taskServerClasses]
+
+
+CHCompanionHealthProfileExtension : NSObject <HDProfileExtension, CHCompanionHealthProfileExtending, FCHealthProfileExtending>
+ @property  HDProfile *profile
+ @property  CHActivityApplicationInstallationManager *activityApplicationInstallationManager
+ @property  HDActivityCacheManager *activityCacheManager
+ @property  CHCompanionWorkoutCreditManager *companionWorkoutCreditManager
+ @property  CHFitnessAppBadgeManager *fitnessAppBadgeManager
+ @property  CHCoachingDiagnosticManager *coachDiagnosticManager
+ @property  CHTrendsNotificationManager *trendsNotificationManager
+ @property  CHCompanionWidgetSchedulingManager *widgetSchedulingManager
+ @property  FCHealthService *fitnessCoachingHealthService
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CHCompanionHealthProfileExtension setProfile:]
+  -[CHCompanionHealthProfileExtension _activityCacheManager]
+  -[CHCompanionHealthProfileExtension setActivityApplicationInstallationManager:]
+  -[CHCompanionHealthProfileExtension setCompanionWorkoutCreditManager:]
+  -[CHCompanionHealthProfileExtension initWithProfile:]
+  -[CHCompanionHealthProfileExtension fitnessAppBadgeManager]
+  -[CHCompanionHealthProfileExtension fitnessCoachingHealthService]
+  -[CHCompanionHealthProfileExtension dealloc]
+  -[CHCompanionHealthProfileExtension companionWorkoutCreditManager]
+  -[CHCompanionHealthProfileExtension profile]
+  -[CHCompanionHealthProfileExtension .cxx_destruct]
+  -[CHCompanionHealthProfileExtension setFitnessAppBadgeManager:]
+  -[CHCompanionHealthProfileExtension activityApplicationInstallationManager]
+  -[CHCompanionHealthProfileExtension setActivityCacheManager:]
+  -[CHCompanionHealthProfileExtension trendsNotificationManager]
+  -[CHCompanionHealthProfileExtension setFitnessCoachingHealthService:]
+  -[CHCompanionHealthProfileExtension coachDiagnosticManager]
+  -[CHCompanionHealthProfileExtension activityCacheManager]
+  -[CHCompanionHealthProfileExtension setCoachDiagnosticManager:]
+  -[CHCompanionHealthProfileExtension requestFitnessAppBadgeCountUpdate]
+  -[CHCompanionHealthProfileExtension widgetSchedulingManager]
+  -[CHCompanionHealthProfileExtension unregisterFitnessAppBadgeCountProvider:]
+  -[CHCompanionHealthProfileExtension setWidgetSchedulingManager:]
+  -[CHCompanionHealthProfileExtension registerFitnessAppBadgeCountProvider:]
+  -[CHCompanionHealthProfileExtension setTrendsNotificationManager:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHActivityApplicationInstallationManager 
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHCoachingDiagnosticManager 
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHCompanionWidgetSchedulingManager 
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHCompanionWorkoutCreditManager 
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHFitnessAppBadgeManager 
+01 00 0100 /System/Library/PrivateFrameworks/CompanionHealthDaemon.framework/CompanionHealthDaemon: CHTrendsNotificationManager 
+01 00 0600 /System/Library/PrivateFrameworks/FitnessCoachingHealthServices.framework/FitnessCoachingHealthServices: FCHealthServer 
+01 00 0600 /System/Library/PrivateFrameworks/FitnessCoachingHealthServices.framework/FitnessCoachingHealthServices: FCHealthService 
+01 00 0700 /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon: HDActivityCacheManager 
+01 00 0b00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/HealthKit.framework/HealthKit: _HKBehavior 

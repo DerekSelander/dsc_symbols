@@ -1,0 +1,199 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_FusionPluginServer
+|| __DATA.__objc_data _OBJC_CLASS_$_HSMessage
+|| __DATA.__objc_data _OBJC_CLASS_$_HSMessageRequest
+|| __DATA.__objc_data _OBJC_CLASS_$_HSMessageResponse
+|| __DATA.__objc_data _OBJC_METACLASS_$_FusionPluginServer
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSMessage
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSMessageRequest
+|| __DATA.__objc_data _OBJC_METACLASS_$_HSMessageResponse
+|| __TEXT.__const _FusionPluginServicesVersionNumber
+|| __TEXT.__const _FusionPluginServicesVersionString
+|| __TEXT.__text _getLogHandle
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_disabled
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_uint64
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_dictionary_set_uint64
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_storeStrong
+FusionPluginServer : NSObject <NSXPCListenerDelegate>
+ @property  NSXPCListener *listener
+ @property  Class principalClass
+ @property  NSXPCConnection *connection
+ @property  <FusionPluginServerInterface> *exportedObject
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[FusionPluginServer setPrincipalClass:]
+  -[FusionPluginServer .cxx_destruct]
+  -[FusionPluginServer resume]
+  -[FusionPluginServer connection]
+  -[FusionPluginServer setListener:]
+  -[FusionPluginServer initWithServiceName:]
+  -[FusionPluginServer exportedObject]
+  -[FusionPluginServer initWithClass:]
+  -[FusionPluginServer listener]
+  -[FusionPluginServer principalClass]
+  -[FusionPluginServer listener:shouldAcceptNewConnection:]
+  -[FusionPluginServer setConnection:]
+
+
+HSMessage : NSObject <NSSecureCoding, NSCopying>
+ @property  NSUUID *uuid
+ @property  NSString *hostEnvironment
+ @property  NSString *deviceEnvironment
+
+  // class methods
+  +[HSMessage supportsSecureCoding]
+  +[HSMessage supportedClasses]
+
+  // instance methods
+  -[HSMessage encodeWithCoder:]
+  -[HSMessage uuid]
+  -[HSMessage .cxx_destruct]
+  -[HSMessage copyWithZone:]
+  -[HSMessage init]
+  -[HSMessage initWithCoder:]
+  -[HSMessage hostEnvironment]
+  -[HSMessage deviceEnvironment]
+  -[HSMessage setDeviceEnvironment:]
+  -[HSMessage setHostEnvironment:]
+
+
+HSMessageRequest : HSMessage <NSSecureCoding, NSCopying>
+ @property  NSString *messageStr
+ @property  NSDictionary *messageDict
+
+  // class methods
+  +[HSMessageRequest supportsSecureCoding]
+
+  // instance methods
+  -[HSMessageRequest encodeWithCoder:]
+  -[HSMessageRequest .cxx_destruct]
+  -[HSMessageRequest copyWithZone:]
+  -[HSMessageRequest initWithCoder:]
+  -[HSMessageRequest initWithName:request:]
+  -[HSMessageRequest messageStr]
+  -[HSMessageRequest messageDict]
+
+
+HSMessageResponse : HSMessage <NSSecureCoding, NSCopying>
+ @property  NSString *messageStr
+ @property  NSNumber *statusCode
+ @property  NSDictionary *responseDict
+ @property  NSError *error
+ @property  NSString *errorDescription
+
+  // class methods
+  +[HSMessageResponse supportsSecureCoding]
+
+  // instance methods
+  -[HSMessageResponse statusCode]
+  -[HSMessageResponse errorDescription]
+  -[HSMessageResponse encodeWithCoder:]
+  -[HSMessageResponse error]
+  -[HSMessageResponse .cxx_destruct]
+  -[HSMessageResponse copyWithZone:]
+  -[HSMessageResponse initWithCoder:]
+  -[HSMessageResponse messageStr]
+  -[HSMessageResponse initWithName:statusCode:]
+  -[HSMessageResponse initWithName:statusCode:andResponse:]
+  -[HSMessageResponse initWithName:statusCode:andResponse:andError:]
+  -[HSMessageResponse responseDict]
+
+
+NSKeyedArchiver(XPC)
+	// class methods
+	+[NSKeyedArchiver(XPC) archiveObjectToData:]
+	+[NSKeyedArchiver(XPC) archiveObjectToDict:]
+	+[NSKeyedArchiver(XPC) archiveObject:]
+	+[NSKeyedArchiver(XPC) archiveObject:to:]
+
+NSKeyedUnarchiver(XPC)
+	// class methods
+	+[NSKeyedUnarchiver(XPC) unarchiveDataToObject:allowedClasses:]
+	+[NSKeyedUnarchiver(XPC) _unarchiveObjectFromVersion1XPCObject:allowedClasses:]
+	+[NSKeyedUnarchiver(XPC) unarchiveXPCObject:allowedClasses:]
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 

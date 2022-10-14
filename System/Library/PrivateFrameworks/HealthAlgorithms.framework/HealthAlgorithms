@@ -1,0 +1,874 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_HAECGExporter
+|| __DATA.__objc_data _OBJC_CLASS_$_HAECGSample
+|| __DATA.__objc_data _OBJC_CLASS_$_HAFacialMetricsExporter
+|| __DATA.__objc_data _OBJC_CLASS_$_HAPPGExporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAECGExporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAECGSample
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAFacialMetricsExporter
+|| __DATA.__objc_data _OBJC_METACLASS_$_HAPPGExporter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsAnalysis
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDayInput
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDayStreamProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDayStreamProcessorConfig
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDeviation
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDeviationAnalysis
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsDeviationInput
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsHeartRateStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsHistoricalAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsHistoricalCycle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsPrediction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsStats
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HAMenstrualAlgorithmsWristTemperature
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsAnalysis
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDayInput
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDayStreamProcessor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDayStreamProcessorConfig
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDeviation
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDeviationAnalysis
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsDeviationInput
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsHeartRateStatistics
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsHistoricalAnalyzer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsHistoricalCycle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsPrediction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsStats
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HAMenstrualAlgorithmsWristTemperature
+|| __TEXT.__const _HealthAlgorithmsVersionNumber
+|| __TEXT.__const _HealthAlgorithmsVersionString
+|| __TEXT.__const __ZN14polyfit_O3_N824invAE
+|| __TEXT.__const __ZN7dynComp4a0_aE
+|| __TEXT.__const __ZN7dynComp4a1_aE
+|| __TEXT.__text _HAFacialMetricsGenerateHashForTimestamp
+|| __TEXT.__text __ZN11cin_RTHREst10estimateHREPKfjP6RTHR_t
+|| __TEXT.__text __ZN11cin_RTHREst11updateBlkSzEj
+|| __TEXT.__text __ZN11cin_RTHREst13erb_HRConfEstEffffff
+|| __TEXT.__text __ZN11cin_RTHREst5resetEv
+|| __TEXT.__text __ZN11cin_RTHREst7processEPKfiyPKhPNSt3__16vectorI6RTHR_tNS4_9allocatorIS6_EEEE
+|| __TEXT.__text __ZN11cin_RTHREst8erb_FDHREPKfPKhj
+|| __TEXT.__text __ZN11cin_RTHREst8erb_TDHREPjP7flags_tPfS0_
+|| __TEXT.__text __ZN11cin_RTHREstC1Ef
+|| __TEXT.__text __ZN11cin_RTHREstC2Ef
+|| __TEXT.__text __ZN11cin_RTHREstD1Ev
+|| __TEXT.__text __ZN11cin_RTHREstD2Ev
+|| __TEXT.__text __ZN11gaussFilter10makeFilterEv
+|| __TEXT.__text __ZN11gaussFilter15makeAbscissaVecEv
+|| __TEXT.__text __ZN11gaussFilter5resetEv
+|| __TEXT.__text __ZN11gaussFilter7processEPfS0_j
+|| __TEXT.__text __ZN11gaussFilterC1Ef
+|| __TEXT.__text __ZN11gaussFilterC2Ef
+|| __TEXT.__text __ZN11gaussFilterD1Ev
+|| __TEXT.__text __ZN11gaussFilterD2Ev
+|| __TEXT.__text __ZN12cin_RTFilter5resetEv
+|| __TEXT.__text __ZN12cin_RTFilter7processEPKfPfj
+|| __TEXT.__text __ZN12cin_RTFilterC1Eh
+|| __TEXT.__text __ZN12cin_RTFilterC2Eh
+|| __TEXT.__text __ZN12cin_RTFilterD1Ev
+|| __TEXT.__text __ZN12cin_RTFilterD2Ev
+|| __TEXT.__text __ZN14polyfit_O3_N8210cmptCoeffsEPKfS1_iPd
+|| __TEXT.__text __ZN14polyfit_O3_N8212cmptPolyValsEPKfPfiPKd
+|| __TEXT.__text __ZN14polyfit_O3_N82C1Ev
+|| __TEXT.__text __ZN14polyfit_O3_N82C2Ev
+|| __TEXT.__text __ZN14polyfit_O3_N82D1Ev
+|| __TEXT.__text __ZN14polyfit_O3_N82D2Ev
+|| __TEXT.__text __ZN16BWSubtractionIIR5resetEv
+|| __TEXT.__text __ZN16BWSubtractionIIR7processEPfS0_j
+|| __TEXT.__text __ZN16BWSubtractionIIRC1Ej
+|| __TEXT.__text __ZN16BWSubtractionIIRC2Ej
+|| __TEXT.__text __ZN16BWSubtractionIIRD1Ev
+|| __TEXT.__text __ZN16BWSubtractionIIRD2Ev
+|| __TEXT.__text __ZN17health_algorithms15MimosaDistiller7distillEPKSt4bytem
+|| __TEXT.__text __ZN17health_algorithms15MimosaDistillerC1ENSt3__18functionIFvdRKN6mimosa6PacketEbEEE
+|| __TEXT.__text __ZN17health_algorithms15MimosaDistillerC2ENSt3__18functionIFvdRKN6mimosa6PacketEbEEE
+|| __TEXT.__text __ZN17health_algorithms20PerfusionIndexFilter21process_for_debuggingEd
+|| __TEXT.__text __ZN17health_algorithms20PerfusionIndexFilter7processEd
+|| __TEXT.__text __ZN17health_algorithms6Biquad7processEd
+|| __TEXT.__text __ZN17health_algorithms6BiquadC1Edddddd
+|| __TEXT.__text __ZN17health_algorithms6BiquadC2Edddddd
+|| __TEXT.__text __ZN6mimosa2v17Decoder11PatchHeader14representationEv
+|| __TEXT.__text __ZN6mimosa2v17Decoder11PatchHeader17is_start_of_patchEh
+|| __TEXT.__text __ZN6mimosa2v17Decoder11PatchHeader20parse_representationEPKSt4byteS5_
+|| __TEXT.__text __ZN6mimosa2v17Decoder11PatchHeader21uint64_representationEv
+|| __TEXT.__text __ZN6mimosa2v17Decoder11apply_patchERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v17Decoder12decode_patchERKNS1_11PatchHeaderEPKSt4byteS7_
+|| __TEXT.__text __ZN6mimosa2v17Decoder15decode_metadataERPKSt4byteS4_
+|| __TEXT.__text __ZN6mimosa2v17Decoder20decode_accel_changesERNS1_5PatchERPKSt4byteS6_b
+|| __TEXT.__text __ZN6mimosa2v17Decoder23decode_pgg_flag_changesERNS1_5PatchERPKSt4byteS6_b
+|| __TEXT.__text __ZN6mimosa2v17Decoder23decode_rare_ppg_changesERNS1_5PatchERPKSt4byteS6_
+|| __TEXT.__text __ZN6mimosa2v17Decoder26decode_ambient_adc_changesERNS1_5PatchERPKSt4byteS6_
+|| __TEXT.__text __ZN6mimosa2v17Decoder5resetEv
+|| __TEXT.__text __ZN6mimosa2v17Decoder6decodeEPKSt4bytem
+|| __TEXT.__text __ZN6mimosa2v17Decoder9to_packetEv
+|| __TEXT.__text __ZN6mimosa2v17DecoderC1ENSt3__18functionIFbRKNS_8MetadataEEEENS3_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN6mimosa2v17DecoderC2ENSt3__18functionIFbRKNS_8MetadataEEEENS3_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN6mimosa2v211PacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v211PacketState6updateERKNS_6PacketE
+|| __TEXT.__text __ZN6mimosa2v212PatchDecoder13extract_patchEPKSt4byteS4_
+|| __TEXT.__text __ZN6mimosa2v212PatchDecoder6decodeEPKSt4bytem
+|| __TEXT.__text __ZN6mimosa2v212PatchDecoderC1ENSt3__18functionIFbRKNS0_11PacketState5PatchEEEE
+|| __TEXT.__text __ZN6mimosa2v212PatchDecoderC2ENSt3__18functionIFbRKNS0_11PacketState5PatchEEEE
+|| __TEXT.__text __ZN6mimosa2v215decode_metadataEPKSt4bytemNSt3__18functionIFbRKNS_8MetadataEEEE
+|| __TEXT.__text __ZN6mimosa2v217PPGSubpacketState32update_pseudo_light_path_patternEh
+|| __TEXT.__text __ZN6mimosa2v217PPGSubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v217PPGSubpacketState6updateERKNS1_5PatchERKNSt3__16vectorItNS5_9allocatorItEEEE
+|| __TEXT.__text __ZN6mimosa2v217PPGSubpacketState6updateERKNS_6Packet12PPGSubpacketE
+|| __TEXT.__text __ZN6mimosa2v217PPGSubpacketState6updateERKNS_6Packet12PPGSubpacketERKNSt3__16vectorItNS6_9allocatorItEEEE
+|| __TEXT.__text __ZN6mimosa2v219AccelSubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v219AccelSubpacketState6updateERKNS_6Packet14AccelSubpacketE
+|| __TEXT.__text __ZN6mimosa2v220BeatV1SubpacketState12current_codeEv
+|| __TEXT.__text __ZN6mimosa2v220BeatV1SubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v220BeatV1SubpacketState6updateERKNS_6Packet15BeatV1SubpacketE
+|| __TEXT.__text __ZN6mimosa2v220BeatV1SubpacketState7predictEv
+|| __TEXT.__text __ZN6mimosa2v220BeatV2SubpacketState12current_codeEv
+|| __TEXT.__text __ZN6mimosa2v220BeatV2SubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v220BeatV2SubpacketState6updateERKNS_6Packet15BeatV2SubpacketE
+|| __TEXT.__text __ZN6mimosa2v220BeatV2SubpacketState7predictEv
+|| __TEXT.__text __ZN6mimosa2v220ContainerHeaderState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v220ContainerHeaderState6updateERKNS_6Packet15ContainerHeaderE
+|| __TEXT.__text __ZN6mimosa2v220ContainerHeaderState7predictEv
+|| __TEXT.__text __ZN6mimosa2v220SubpacketHeaderState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v220SubpacketHeaderState6updateERKNS_6Packet15SubpacketHeaderE
+|| __TEXT.__text __ZN6mimosa2v220SubpacketHeaderState7predictEv
+|| __TEXT.__text __ZN6mimosa2v222encode_start_of_streamERKNS_8MetadataENSt3__18functionIFvPKSt4bytemEEE
+|| __TEXT.__text __ZN6mimosa2v224WavelengthSubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v224WavelengthSubpacketState6updateERKNS_6Packet19WavelengthSubpacketE
+|| __TEXT.__text __ZN6mimosa2v224WavelengthSubpacketState7predictEv
+|| __TEXT.__text __ZN6mimosa2v225TemperatureSubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v225TemperatureSubpacketState6updateERKNS_6Packet20TemperatureSubpacketE
+|| __TEXT.__text __ZN6mimosa2v228AlgsResponseV1SubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v228AlgsResponseV1SubpacketState6updateERKNS_6Packet23AlgsResponseV1SubpacketE
+|| __TEXT.__text __ZN6mimosa2v228AlgsResponseV2SubpacketState6updateERKNS1_5PatchE
+|| __TEXT.__text __ZN6mimosa2v228AlgsResponseV2SubpacketState6updateERKNS_6Packet23AlgsResponseV2SubpacketE
+|| __TEXT.__text __ZN6mimosa2v26varint14sign_transformEx
+|| __TEXT.__text __ZN6mimosa2v26varint14sign_transformEy
+|| __TEXT.__text __ZN6mimosa2v26varint6decodeERKNSt3__15arrayISt4byteLm9EEE
+|| __TEXT.__text __ZN6mimosa2v26varint6encodeEy
+|| __TEXT.__text __ZN6mimosa2v27Decoder12handle_patchERKNS0_11PacketState5PatchE
+|| __TEXT.__text __ZN6mimosa2v27Decoder6decodeEPKSt4bytem
+|| __TEXT.__text __ZN6mimosa2v27DecoderC1ENSt3__18functionIFbRKNS_8MetadataEEEENS3_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN6mimosa2v27DecoderC1EOS1_
+|| __TEXT.__text __ZN6mimosa2v27DecoderC2ENSt3__18functionIFbRKNS_8MetadataEEEENS3_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN6mimosa2v27DecoderC2EOS1_
+|| __TEXT.__text __ZN6mimosa7Decoder24decode_version_if_neededERPKSt4byteS3_
+|| __TEXT.__text __ZN6mimosa7Decoder24select_codec_for_versionENS_12CodecVersionE
+|| __TEXT.__text __ZN6mimosa7Decoder6decodeEPKSt4bytem
+|| __TEXT.__text __ZN6mimosa7DecoderC1ENSt3__18functionIFbRKNS_12CodecVersionEEEENS2_IFbRKNS_8MetadataEEEENS2_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN6mimosa7DecoderC2ENSt3__18functionIFbRKNS_12CodecVersionEEEENS2_IFbRKNS_8MetadataEEEENS2_IFbRKNS_6PacketEdEEE
+|| __TEXT.__text __ZN7dynComp11estEnvelopeEf
+|| __TEXT.__text __ZN7dynComp11updateRatioEv
+|| __TEXT.__text __ZN7dynComp12setThresholdEf
+|| __TEXT.__text __ZN7dynComp13setAttackTimeEf
+|| __TEXT.__text __ZN7dynComp14setEngageOnOffEb
+|| __TEXT.__text __ZN7dynComp14setReleaseTimeEf
+|| __TEXT.__text __ZN7dynComp5resetEv
+|| __TEXT.__text __ZN7dynComp7processEPfS0_j
+|| __TEXT.__text __ZN7dynComp8setRatioEf
+|| __TEXT.__text __ZN7dynCompC1Efffffj
+|| __TEXT.__text __ZN7dynCompC2Efffffj
+|| __TEXT.__text __ZN7dynCompD1Ev
+|| __TEXT.__text __ZN7dynCompD2Ev
+|| __TEXT.__text __ZN8CinnAlgs10getPgaGainEh
+|| __TEXT.__text __ZN8CinnAlgs11getBuffGainEh
+|| __TEXT.__text __ZN8CinnAlgs11getZdacFreqE15cn2_zdac_freq_e
+|| __TEXT.__text __ZN8CinnAlgs16convertAdcAcVoltERK16cn2_hal_output_ttb
+|| __TEXT.__text __ZN8CinnAlgs16convertImpedanceERK16cn2_hal_output_tt
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetect14processIQDemodEPK16cn2_hal_output_tiRNS_17CinPluginAlgsCA_tE
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetect23checkContactDetectStateEv
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetect5resetEv
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetect7processEPK16cn2_hal_output_tbRNS_17CinPluginAlgsCA_tE
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetectC1ENSt3__18functionIFjvEEENS2_IFjNS_22CnContactDetectState_tEEEE
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetectC2ENSt3__18functionIFjvEEENS2_IFjNS_22CnContactDetectState_tEEEE
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetectD1Ev
+|| __TEXT.__text __ZN8CinnAlgs17cin_ContactDetectD2Ev
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetect14processIQDemodEPK16cn2_hal_output_ti
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetect5resetEv
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetect7processEPKfjPhPK16cn2_hal_output_tb
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetectC1Ev
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetectC2Ev
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetectD1Ev
+|| __TEXT.__text __ZN8CinnAlgs21cin_ContactLossDetectD2Ev
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetector3rmsEPfS1_jj
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetector5resetEv
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetector7processEPfPhfjRNS_17CinPluginAlgsCA_tE
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetectorC1Ev
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetectorC2Ev
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetectorD1Ev
+|| __TEXT.__text __ZN8CinnAlgs21erb_lineNoiseDetectorD2Ev
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs10copyHRInfoER6RTHR_tRNS_27CnRealTimeHeartRateReport_tE
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs10getVersionEv
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs10processPktEPK15cn_hal_output_tPt
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs10processPktEPK16cn2_hal_output_tPt
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs11getRunStateEv
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs11procPktIdleEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs12accumBadDataEPhj
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs13chkCrownStateEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs13convertHalPktEPK15cn_hal_output_tP16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs13setSampleRateEf
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs14procPktRunningEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs16filterForDisplayEPKfPfj
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs17packOfflineOutputEv
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs17procContactDetectEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs18flushOfflineOutputEv
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs18procPktInitializedEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs19procPktEndOfSessionEPK16cn2_hal_output_t
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs20generateSigQualAlertEPhj
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs20handleDroppedSamplesEPK16cn2_hal_output_tjPfj
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs24consolidateSigCheckFlagsEPhS1_j
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs5resetEPNS_10CnConfig_tE
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgs9getCaInfoEv
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgsC1EPNS_10CnConfig_tE
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgsC2EPNS_10CnConfig_tE
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgsD1Ev
+|| __TEXT.__text __ZN8CinnAlgs6CnAlgsD2Ev
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder18has_beat_v1_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder18has_beat_v2_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder19has_waveform_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder22has_temperature_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder27has_algs_response_v1_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v210PatchCoder27has_algs_response_v2_subpktEv
+|| __TEXT.__text __ZNK6mimosa2v217PPGSubpacketState5Patch24homogeneous_sample_flagsEv
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_12__assignmentINS0_8__traitsIJNS_6vectorIN6mimosa2v219AccelSubpacketState12SampleHeaderENS_9allocatorISC_EEEEhEEEE16__generic_assignINS0_17__move_assignmentISG_LNS0_6_TraitE1EEEEEvOT_EUlRSM_OT0_E_JRNS0_6__baseILSK_1EJSF_hEEEOSU_EEEDcSM_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_12__assignmentINS0_8__traitsIJNS_6vectorItNS_9allocatorItEEEEhEEEE16__generic_assignINS0_17__move_assignmentISC_LNS0_6_TraitE1EEEEEvOT_EUlRSI_OT0_E_JRNS0_6__baseILSG_1EJSB_hEEEOSQ_EEEDcSI_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_6__ctorINS0_8__traitsIJNS_6vectorIN6mimosa2v219AccelSubpacketState12SampleHeaderENS_9allocatorISC_EEEEhEEEE19__generic_constructINS0_18__move_constructorISG_LNS0_6_TraitE1EEEEEvRSH_OT_EUlRSN_OT0_E_JRNS0_6__baseILSK_1EJSF_hEEEOSV_EEEDcSN_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm0ELm0EEE10__dispatchIOZNS0_6__ctorINS0_8__traitsIJNS_6vectorItNS_9allocatorItEEEEhEEEE19__generic_constructINS0_18__move_constructorISC_LNS0_6_TraitE1EEEEEvRSD_OT_EUlRSJ_OT0_E_JRNS0_6__baseILSG_1EJSB_hEEEOSR_EEEDcSJ_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1ELm1EEE10__dispatchIOZNS0_12__assignmentINS0_8__traitsIJNS_6vectorIN6mimosa2v219AccelSubpacketState12SampleHeaderENS_9allocatorISC_EEEEhEEEE16__generic_assignINS0_17__move_assignmentISG_LNS0_6_TraitE1EEEEEvOT_EUlRSM_OT0_E_JRNS0_6__baseILSK_1EJSF_hEEEOSU_EEEDcSM_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1ELm1EEE10__dispatchIOZNS0_12__assignmentINS0_8__traitsIJNS_6vectorItNS_9allocatorItEEEEhEEEE16__generic_assignINS0_17__move_assignmentISC_LNS0_6_TraitE1EEEEEvOT_EUlRSI_OT0_E_JRNS0_6__baseILSG_1EJSB_hEEEOSQ_EEEDcSI_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1ELm1EEE10__dispatchIOZNS0_6__ctorINS0_8__traitsIJNS_6vectorIN6mimosa2v219AccelSubpacketState12SampleHeaderENS_9allocatorISC_EEEEhEEEE19__generic_constructINS0_18__move_constructorISG_LNS0_6_TraitE1EEEEEvRSH_OT_EUlRSN_OT0_E_JRNS0_6__baseILSK_1EJSF_hEEEOSV_EEEDcSN_DpT0_
+|| __TEXT.__text __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1ELm1EEE10__dispatchIOZNS0_6__ctorINS0_8__traitsIJNS_6vectorItNS_9allocatorItEEEEhEEEE19__generic_constructINS0_18__move_constructorISC_LNS0_6_TraitE1EEEEEvRSD_OT_EUlRSJ_OT0_E_JRNS0_6__baseILSG_1EJSB_hEEEOSR_EEEDcSJ_DpT0_
+|| __TEXT.__text _cin_algs_get_log
+|| __TEXT.__text _erb_filtFilt_delete
+|| __TEXT.__text _erb_filtFilt_new
+|| __TEXT.__text _erb_filtFilt_newPrivate
+|| __TEXT.__text _erb_filtFilt_newWithInitState
+|| __TEXT.__text _erb_filtFilt_process
+|| __TEXT.__text _erb_filtFilt_reset
+|| __TEXT.__text _erb_iirSos_delete
+|| __TEXT.__text _erb_iirSos_getDemeanOffset
+|| __TEXT.__text _erb_iirSos_new
+|| __TEXT.__text _erb_iirSos_process
+|| __TEXT.__text _erb_iirSos_reset
+|| __TEXT.__text _erb_iirSos_setDemeanOffset
+|| __TEXT.__text _erb_iirSos_updateCoef
+|| __TEXT.__text _erb_inputChecker_delete
+|| __TEXT.__text _erb_inputChecker_new
+|| __TEXT.__text _erb_inputChecker_process
+|| __TEXT.__text _erb_inputChecker_reset
+|| __TEXT.__text _erb_lineNoiseFltr_delete
+|| __TEXT.__text _erb_lineNoiseFltr_new
+|| __TEXT.__text _erb_lineNoiseFltr_process
+|| __TEXT.__text _erb_lineNoiseFltr_reset
+|| __TEXT.__text _erb_lineNoiseFltr_updateSampFreq
+|| __TEXT.__text _erb_medFilt_delete
+|| __TEXT.__text _erb_medFilt_getMAD
+|| __TEXT.__text _erb_medFilt_new
+|| __TEXT.__text _erb_medFilt_process
+|| __TEXT.__text _erb_medFilt_reset
+|| __TEXT.__text _erb_medFilter_isPrimed
+|| __TEXT.__text _erb_qrsDetect_delete
+|| __TEXT.__text _erb_qrsDetect_new
+|| __TEXT.__text _erb_qrsDetect_process
+|| __TEXT.__text _erb_qrsDetect_reset
+|| __TEXT.__text _erb_signalQuality_delete
+|| __TEXT.__text _erb_signalQuality_new
+|| __TEXT.__text _erb_signalQuality_process
+|| __TEXT.__text _erb_signalQuality_reset
+|| __TEXT.__text _findPeaks
+|| __TEXT.__text _firFilt_delete
+|| __TEXT.__text _firFilt_new
+|| __TEXT.__text _firFilt_process
+|| __TEXT.__text _firFilt_reset
+|| __TEXT.__text _firFilt_setCoeffs
+|| __TEXT.__text _firFilt_setState
+|| __TEXT.__text _ha_get_log
+|| __TEXT.__text _ha_sensitive_logging_is_enabled
+|| __TEXT.__text _waveform_pad
+__ Accelerate: _vDSP_DFT_DestroySetup
+__ Accelerate: _vDSP_DFT_Execute
+__ Accelerate: _vDSP_DFT_zrop_CreateSetup
+__ Accelerate: _vDSP_conv
+__ Accelerate: _vDSP_create_fftsetup
+__ Accelerate: _vDSP_destroy_fftsetup
+__ Accelerate: _vDSP_dotpr
+__ Accelerate: _vDSP_fft_zrip
+__ Accelerate: _vDSP_maxv
+__ Accelerate: _vDSP_maxvi
+__ Accelerate: _vDSP_meanv
+__ Accelerate: _vDSP_vsort
+__ Accelerate: _vDSP_vsorti
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Security: _SecSHA1DigestCreate
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___cxa_atexit
+__ libSystem.B.dylib: ___exp10
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___memset_chk
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _cos
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _logb
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: _scalbn
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _tan
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZNKSt9exception4whatEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorC1EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+__ libc++.1.dylib: __ZNSt13runtime_errorD1Ev
+__ libc++.1.dylib: __ZNSt19bad_optional_accessD1Ev
+__ libc++.1.dylib: __ZNSt3__112__next_primeEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+__ libc++.1.dylib: __ZNSt3__19to_stringEi
+__ libc++.1.dylib: __ZNSt9exceptionD2Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTISt13runtime_error
+__ libc++.1.dylib: __ZTISt18bad_variant_access
+__ libc++.1.dylib: __ZTISt19bad_optional_access
+__ libc++.1.dylib: __ZTISt9exception
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZTVSt18bad_variant_access
+__ libc++.1.dylib: __ZTVSt19bad_optional_access
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_guard_abort
+__ libc++.1.dylib: ___cxa_guard_acquire
+__ libc++.1.dylib: ___cxa_guard_release
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+HAPPGExporter : NSObject <SRSampleExporting, SRSampling>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HAPPGExporter .cxx_destruct]
+  -[HAPPGExporter initWithBinarySampleRepresentation:metadata:timestamp:]
+  -[HAPPGExporter sr_exportRepresentationEnumerator]
+
+
+HAECGSample : NSObject <SRSampling>
+ @property  NSData *representation
+ @property  double timestamp
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HAECGSample .cxx_destruct]
+  -[HAECGSample timestamp]
+  -[HAECGSample representation]
+  -[HAECGSample initWithBinarySampleRepresentation:metadata:timestamp:]
+
+
+HAECGExporter : NSObject <SRMultiSampleExporting>
+ @property  BOOL fromRightWrist
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HAECGExporter resetFilter]
+  -[HAECGExporter .cxx_construct]
+  -[HAECGExporter .cxx_destruct]
+  -[HAECGExporter sr_beginMultiSampleStream]
+  -[HAECGExporter sr_endMultiSampleStream]
+  -[HAECGExporter sr_dictionaryRepresentationWithSample:]
+  -[HAECGExporter handleRealtimeSamples:count:startTimestamp:]
+  -[HAECGExporter dumpCurrentWaveform]
+  -[HAECGExporter fromRightWrist]
+
+
+HAMenstrualAlgorithmsWristTemperature : NSObject <NSSecureCoding>
+ @property  double temperatureCelsius
+ @property  NSString *watchIdentifier
+
+  // class methods
+  +[HAMenstrualAlgorithmsWristTemperature supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsWristTemperature encodeWithCoder:]
+  -[HAMenstrualAlgorithmsWristTemperature .cxx_destruct]
+  -[HAMenstrualAlgorithmsWristTemperature initWithCoder:]
+  -[HAMenstrualAlgorithmsWristTemperature watchIdentifier]
+  -[HAMenstrualAlgorithmsWristTemperature temperatureCelsius]
+  -[HAMenstrualAlgorithmsWristTemperature initWithTemperature:forWatchIdentifier:]
+
+
+HAMenstrualAlgorithmsHeartRateStatistics : NSObject <NSSecureCoding>
+ @property  NSNumber *lowerPercentile
+ @property  long long sampleCount
+
+  // class methods
+  +[HAMenstrualAlgorithmsHeartRateStatistics supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsHeartRateStatistics encodeWithCoder:]
+  -[HAMenstrualAlgorithmsHeartRateStatistics setSampleCount:]
+  -[HAMenstrualAlgorithmsHeartRateStatistics .cxx_destruct]
+  -[HAMenstrualAlgorithmsHeartRateStatistics sampleCount]
+  -[HAMenstrualAlgorithmsHeartRateStatistics initWithCoder:]
+  -[HAMenstrualAlgorithmsHeartRateStatistics lowerPercentile]
+  -[HAMenstrualAlgorithmsHeartRateStatistics setLowerPercentile:]
+
+
+HAMenstrualAlgorithmsDeviationInput : NSObject <NSSecureCoding>
+ @property  NSNumber *julianDayMinAnalysisWindowStartIrregular
+ @property  NSNumber *julianDayMinAnalysisWindowStartInfrequent
+ @property  NSNumber *julianDayMinAnalysisWindowStartProlonged
+ @property  NSNumber *julianDayMinAnalysisWindowStartSpotting
+ @property  NSNumber *julianDayMinAnalysisWindowEndIrregular
+ @property  NSNumber *julianDayMinAnalysisWindowEndInfrequent
+ @property  NSNumber *julianDayMinAnalysisWindowEndProlonged
+ @property  NSNumber *julianDayMinAnalysisWindowEndSpotting
+
+  // class methods
+  +[HAMenstrualAlgorithmsDeviationInput supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDeviationInput encodeWithCoder:]
+  -[HAMenstrualAlgorithmsDeviationInput .cxx_destruct]
+  -[HAMenstrualAlgorithmsDeviationInput initWithCoder:]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowStartIrregular]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowStartInfrequent]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowStartProlonged]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowStartSpotting]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowEndIrregular]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowEndInfrequent]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowEndProlonged]
+  -[HAMenstrualAlgorithmsDeviationInput julianDayMinAnalysisWindowEndSpotting]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowStartIrregular:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowStartInfrequent:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowStartProlonged:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowStartSpotting:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowEndIrregular:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowEndInfrequent:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowEndProlonged:]
+  -[HAMenstrualAlgorithmsDeviationInput setJulianDayMinAnalysisWindowEndSpotting:]
+
+
+HAMenstrualAlgorithmsDayInput : NSObject <NSSecureCoding>
+ @property  unsigned int julianDay
+ @property  unsigned char flow
+ @property  BOOL spotting
+ @property  unsigned char ovulationTestResult
+ @property  HAMenstrualAlgorithmsHeartRateStatistics *sedentaryHeartRateStatistics
+ @property  HAMenstrualAlgorithmsHeartRateStatistics *sleepHeartRateStatistics
+ @property  HAMenstrualAlgorithmsWristTemperature *wristTemperature
+
+  // class methods
+  +[HAMenstrualAlgorithmsDayInput supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDayInput encodeWithCoder:]
+  -[HAMenstrualAlgorithmsDayInput .cxx_destruct]
+  -[HAMenstrualAlgorithmsDayInput initWithCoder:]
+  -[HAMenstrualAlgorithmsDayInput julianDay]
+  -[HAMenstrualAlgorithmsDayInput flow]
+  -[HAMenstrualAlgorithmsDayInput setFlow:]
+  -[HAMenstrualAlgorithmsDayInput spotting]
+  -[HAMenstrualAlgorithmsDayInput ovulationTestResult]
+  -[HAMenstrualAlgorithmsDayInput sedentaryHeartRateStatistics]
+  -[HAMenstrualAlgorithmsDayInput sleepHeartRateStatistics]
+  -[HAMenstrualAlgorithmsDayInput wristTemperature]
+  -[HAMenstrualAlgorithmsDayInput setJulianDay:]
+  -[HAMenstrualAlgorithmsDayInput setSpotting:]
+  -[HAMenstrualAlgorithmsDayInput setOvulationTestResult:]
+  -[HAMenstrualAlgorithmsDayInput setSedentaryHeartRateStatistics:]
+  -[HAMenstrualAlgorithmsDayInput setSleepHeartRateStatistics:]
+  -[HAMenstrualAlgorithmsDayInput setWristTemperature:]
+
+
+HAMenstrualAlgorithmsStats : NSObject <NSSecureCoding>
+ @property  NSNumber *medianCycleLength
+ @property  NSNumber *medianMenstruationLength
+ @property  NSNumber *lowerCycleLengthPercentile
+ @property  NSNumber *lowerMenstruationLengthPercentile
+ @property  NSNumber *upperCycleLengthPercentile
+ @property  NSNumber *upperMenstruationLengthPercentile
+ @property  NSNumber *numberOfCyclesFound
+ @property  NSNumber *julianDayOfFirstCycleStart
+ @property  NSNumber *julianDayOfLastCycleStart
+
+  // class methods
+  +[HAMenstrualAlgorithmsStats supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsStats encodeWithCoder:]
+  -[HAMenstrualAlgorithmsStats .cxx_destruct]
+  -[HAMenstrualAlgorithmsStats initWithCoder:]
+  -[HAMenstrualAlgorithmsStats medianCycleLength]
+  -[HAMenstrualAlgorithmsStats medianMenstruationLength]
+  -[HAMenstrualAlgorithmsStats lowerCycleLengthPercentile]
+  -[HAMenstrualAlgorithmsStats lowerMenstruationLengthPercentile]
+  -[HAMenstrualAlgorithmsStats upperCycleLengthPercentile]
+  -[HAMenstrualAlgorithmsStats upperMenstruationLengthPercentile]
+  -[HAMenstrualAlgorithmsStats numberOfCyclesFound]
+  -[HAMenstrualAlgorithmsStats julianDayOfFirstCycleStart]
+  -[HAMenstrualAlgorithmsStats julianDayOfLastCycleStart]
+  -[HAMenstrualAlgorithmsStats setMedianCycleLength:]
+  -[HAMenstrualAlgorithmsStats setMedianMenstruationLength:]
+  -[HAMenstrualAlgorithmsStats setLowerCycleLengthPercentile:]
+  -[HAMenstrualAlgorithmsStats setLowerMenstruationLengthPercentile:]
+  -[HAMenstrualAlgorithmsStats setUpperCycleLengthPercentile:]
+  -[HAMenstrualAlgorithmsStats setUpperMenstruationLengthPercentile:]
+  -[HAMenstrualAlgorithmsStats setNumberOfCyclesFound:]
+  -[HAMenstrualAlgorithmsStats setJulianDayOfFirstCycleStart:]
+  -[HAMenstrualAlgorithmsStats setJulianDayOfLastCycleStart:]
+
+
+HAMenstrualAlgorithmsPrediction : NSObject <NSSecureCoding>
+ @property  unsigned int julianDayOfWindowStart
+ @property  double startProbabilityMean
+ @property  double endProbabilityMean
+ @property  double startProbabilityStdDev
+ @property  double endProbabilityStdDev
+ @property  {_NSRange=QQ} lowRange
+ @property  BOOL isOngoingMenstruation
+ @property  unsigned char predictionPrimarySource
+ @property  long long daysOffsetFromCalendarMethod
+
+  // class methods
+  +[HAMenstrualAlgorithmsPrediction supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsPrediction encodeWithCoder:]
+  -[HAMenstrualAlgorithmsPrediction initWithCoder:]
+  -[HAMenstrualAlgorithmsPrediction setDaysOffsetFromCalendarMethod:]
+  -[HAMenstrualAlgorithmsPrediction setPredictionPrimarySource:]
+  -[HAMenstrualAlgorithmsPrediction daysOffsetFromCalendarMethod]
+  -[HAMenstrualAlgorithmsPrediction predictionPrimarySource]
+  -[HAMenstrualAlgorithmsPrediction julianDayOfWindowStart]
+  -[HAMenstrualAlgorithmsPrediction startProbabilityMean]
+  -[HAMenstrualAlgorithmsPrediction endProbabilityMean]
+  -[HAMenstrualAlgorithmsPrediction startProbabilityStdDev]
+  -[HAMenstrualAlgorithmsPrediction endProbabilityStdDev]
+  -[HAMenstrualAlgorithmsPrediction lowRange]
+  -[HAMenstrualAlgorithmsPrediction isOngoingMenstruation]
+  -[HAMenstrualAlgorithmsPrediction setJulianDayOfWindowStart:]
+  -[HAMenstrualAlgorithmsPrediction setStartProbabilityMean:]
+  -[HAMenstrualAlgorithmsPrediction setEndProbabilityMean:]
+  -[HAMenstrualAlgorithmsPrediction setStartProbabilityStdDev:]
+  -[HAMenstrualAlgorithmsPrediction setEndProbabilityStdDev:]
+  -[HAMenstrualAlgorithmsPrediction setLowRange:]
+  -[HAMenstrualAlgorithmsPrediction setIsOngoingMenstruation:]
+
+
+HAMenstrualAlgorithmsAnalysis : NSObject <NSSecureCoding>
+ @property  NSArray *menstruationPredictions
+ @property  NSArray *fertilityPredictions
+ @property  HAMenstrualAlgorithmsStats *stats
+ @property  HAMenstrualAlgorithmsDeviationAnalysis *deviationAnalysis
+ @property  BOOL isUserInactive
+
+  // class methods
+  +[HAMenstrualAlgorithmsAnalysis supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsAnalysis stats]
+  -[HAMenstrualAlgorithmsAnalysis encodeWithCoder:]
+  -[HAMenstrualAlgorithmsAnalysis .cxx_destruct]
+  -[HAMenstrualAlgorithmsAnalysis init]
+  -[HAMenstrualAlgorithmsAnalysis initWithCoder:]
+  -[HAMenstrualAlgorithmsAnalysis setStats:]
+  -[HAMenstrualAlgorithmsAnalysis menstruationPredictions]
+  -[HAMenstrualAlgorithmsAnalysis fertilityPredictions]
+  -[HAMenstrualAlgorithmsAnalysis deviationAnalysis]
+  -[HAMenstrualAlgorithmsAnalysis isUserInactive]
+  -[HAMenstrualAlgorithmsAnalysis setMenstruationPredictions:]
+  -[HAMenstrualAlgorithmsAnalysis setFertilityPredictions:]
+  -[HAMenstrualAlgorithmsAnalysis setDeviationAnalysis:]
+  -[HAMenstrualAlgorithmsAnalysis setIsUserInactive:]
+
+
+HAMenstrualAlgorithmsDeviation : NSObject <NSSecureCoding>
+ @property  unsigned int julianDayOfAnalysisWindowStart
+ @property  unsigned int julianDayOfAnalysisWindowEnd
+ @property  NSDictionary *metricsForCoreAnalytics
+
+  // class methods
+  +[HAMenstrualAlgorithmsDeviation supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDeviation encodeWithCoder:]
+  -[HAMenstrualAlgorithmsDeviation .cxx_destruct]
+  -[HAMenstrualAlgorithmsDeviation initWithCoder:]
+  -[HAMenstrualAlgorithmsDeviation metricsForCoreAnalytics]
+  -[HAMenstrualAlgorithmsDeviation julianDayOfAnalysisWindowEnd]
+  -[HAMenstrualAlgorithmsDeviation julianDayOfAnalysisWindowStart]
+  -[HAMenstrualAlgorithmsDeviation setJulianDayOfAnalysisWindowStart:]
+  -[HAMenstrualAlgorithmsDeviation setJulianDayOfAnalysisWindowEnd:]
+  -[HAMenstrualAlgorithmsDeviation setMetricsForCoreAnalytics:]
+
+
+HAMenstrualAlgorithmsDeviationAnalysis : NSObject <NSSecureCoding>
+ @property  HAMenstrualAlgorithmsDeviation *irregularBleeding
+ @property  HAMenstrualAlgorithmsDeviation *infrequentBleeding
+ @property  HAMenstrualAlgorithmsDeviation *prolongedBleeding
+ @property  HAMenstrualAlgorithmsDeviation *spotting
+
+  // class methods
+  +[HAMenstrualAlgorithmsDeviationAnalysis supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDeviationAnalysis encodeWithCoder:]
+  -[HAMenstrualAlgorithmsDeviationAnalysis .cxx_destruct]
+  -[HAMenstrualAlgorithmsDeviationAnalysis initWithCoder:]
+  -[HAMenstrualAlgorithmsDeviationAnalysis spotting]
+  -[HAMenstrualAlgorithmsDeviationAnalysis setSpotting:]
+  -[HAMenstrualAlgorithmsDeviationAnalysis irregularBleeding]
+  -[HAMenstrualAlgorithmsDeviationAnalysis infrequentBleeding]
+  -[HAMenstrualAlgorithmsDeviationAnalysis prolongedBleeding]
+  -[HAMenstrualAlgorithmsDeviationAnalysis setIrregularBleeding:]
+  -[HAMenstrualAlgorithmsDeviationAnalysis setInfrequentBleeding:]
+  -[HAMenstrualAlgorithmsDeviationAnalysis setProlongedBleeding:]
+
+
+HAMenstrualAlgorithmsDayStreamProcessorConfig : NSObject <NSSecureCoding>
+ @property  NSNumber *userReportedCycleLength
+ @property  NSNumber *julianDayOfUserReportedCycleLength
+ @property  NSNumber *userReportedMenstruationLength
+ @property  NSNumber *julianDayOfUserReportedMenstruationLength
+ @property  NSDateComponents *birthDateComponents
+ @property  HAMenstrualAlgorithmsDeviationInput *deviationInput
+ @property  unsigned int todayAsJulianDay
+
+  // class methods
+  +[HAMenstrualAlgorithmsDayStreamProcessorConfig supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig encodeWithCoder:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig .cxx_destruct]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig initWithCoder:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig birthDateComponents]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setBirthDateComponents:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig userReportedCycleLength]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig julianDayOfUserReportedCycleLength]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig userReportedMenstruationLength]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig julianDayOfUserReportedMenstruationLength]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig deviationInput]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig todayAsJulianDay]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setUserReportedCycleLength:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setJulianDayOfUserReportedCycleLength:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setUserReportedMenstruationLength:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setJulianDayOfUserReportedMenstruationLength:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setDeviationInput:]
+  -[HAMenstrualAlgorithmsDayStreamProcessorConfig setTodayAsJulianDay:]
+
+
+HAMenstrualAlgorithmsDayStreamProcessor : NSObject <HAMenstrualAlgorithmsPhaseIngestion>
+ @property  NSMutableArray *dayInputBuffer
+ @property  NSXPCConnection *connectionToService
+ @property  <HADayStreamProcessorServiceProtocol> *remoteObjectProxy
+
+  // instance methods
+  -[HAMenstrualAlgorithmsDayStreamProcessor initWithConfig:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor setRemoteObjectProxy:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor dealloc]
+  -[HAMenstrualAlgorithmsDayStreamProcessor .cxx_destruct]
+  -[HAMenstrualAlgorithmsDayStreamProcessor setConnectionToService:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor connectionToService]
+  -[HAMenstrualAlgorithmsDayStreamProcessor remoteObjectProxy]
+  -[HAMenstrualAlgorithmsDayStreamProcessor beginPhase:onJulianDay:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor endPhase:onJulianDay:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor appendDay:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor analyzeWithMostRecentMenstrualFlowJulianDayUpdated:error:]
+  -[HAMenstrualAlgorithmsDayStreamProcessor dayInputBuffer]
+  -[HAMenstrualAlgorithmsDayStreamProcessor setDayInputBuffer:]
+
+
+HAMenstrualAlgorithmsHistoricalCycle : NSObject <NSSecureCoding>
+ @property  NSNumber *fertilityStartJulianDay
+ @property  NSNumber *fertilityEndJulianDay
+ @property  unsigned int julianDayOfMenstruationStart
+ @property  unsigned int julianDayOfMenstruationEnd
+ @property  BOOL isDeterminant
+ @property  unsigned char predictionPrimarySource
+ @property  NSArray *phases
+ @property  long long dailyEligibleWristTemperatureCount
+ @property  unsigned char ovulationConfirmationFailure
+
+  // class methods
+  +[HAMenstrualAlgorithmsHistoricalCycle supportsSecureCoding]
+
+  // instance methods
+  -[HAMenstrualAlgorithmsHistoricalCycle encodeWithCoder:]
+  -[HAMenstrualAlgorithmsHistoricalCycle .cxx_destruct]
+  -[HAMenstrualAlgorithmsHistoricalCycle init]
+  -[HAMenstrualAlgorithmsHistoricalCycle initWithCoder:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setPredictionPrimarySource:]
+  -[HAMenstrualAlgorithmsHistoricalCycle predictionPrimarySource]
+  -[HAMenstrualAlgorithmsHistoricalCycle fertilityStartJulianDay]
+  -[HAMenstrualAlgorithmsHistoricalCycle fertilityEndJulianDay]
+  -[HAMenstrualAlgorithmsHistoricalCycle julianDayOfMenstruationStart]
+  -[HAMenstrualAlgorithmsHistoricalCycle julianDayOfMenstruationEnd]
+  -[HAMenstrualAlgorithmsHistoricalCycle isDeterminant]
+  -[HAMenstrualAlgorithmsHistoricalCycle phases]
+  -[HAMenstrualAlgorithmsHistoricalCycle dailyEligibleWristTemperatureCount]
+  -[HAMenstrualAlgorithmsHistoricalCycle ovulationConfirmationFailure]
+  -[HAMenstrualAlgorithmsHistoricalCycle setFertilityStartJulianDay:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setFertilityEndJulianDay:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setJulianDayOfMenstruationStart:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setJulianDayOfMenstruationEnd:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setIsDeterminant:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setPhases:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setDailyEligibleWristTemperatureCount:]
+  -[HAMenstrualAlgorithmsHistoricalCycle setOvulationConfirmationFailure:]
+
+
+HAMenstrualAlgorithmsHistoricalAnalyzer : NSObject <HAMenstrualAlgorithmsPhaseIngestion>
+ @property  NSMutableArray *dayInputBuffer
+ @property  NSXPCConnection *connectionToService
+ @property  <HAHistoricalAnalyzerServiceProtocol> *remoteObjectProxy
+
+  // instance methods
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer setRemoteObjectProxy:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer dealloc]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer .cxx_destruct]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer analyzeWithError:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer setConnectionToService:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer connectionToService]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer remoteObjectProxy]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer init]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer beginPhase:onJulianDay:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer endPhase:onJulianDay:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer appendDay:]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer dayInputBuffer]
+  -[HAMenstrualAlgorithmsHistoricalAnalyzer setDayInputBuffer:]
+
+
+HAFacialMetricsExporter : NSObject <SRSampling, SRSampleExporting>
+ @property  NSData *packet
+ @property  unsigned int packetType
+ @property  NSData *data
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[HAFacialMetricsExporter .cxx_destruct]
+  -[HAFacialMetricsExporter data]
+  -[HAFacialMetricsExporter initWithBinarySampleRepresentation:metadata:timestamp:]
+  -[HAFacialMetricsExporter sr_dictionaryRepresentation]
+  -[HAFacialMetricsExporter packetType]
+  -[HAFacialMetricsExporter packet]
+
+
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0200 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

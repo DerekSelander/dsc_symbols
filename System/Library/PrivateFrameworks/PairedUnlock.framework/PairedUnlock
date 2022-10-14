@@ -1,0 +1,208 @@
+|| __DATA.__data _kPUDidRemoveLockoutNotification
+|| __DATA.__objc_data _OBJC_CLASS_$_PUConnection
+|| __DATA.__objc_data _OBJC_CLASS_$_PUError
+|| __DATA.__objc_data _OBJC_CLASS_$_PURemoteDeviceState
+|| __DATA.__objc_data _OBJC_CLASS_$_PURemotePasscodePolicy
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUConnection
+|| __DATA.__objc_data _OBJC_METACLASS_$_PUError
+|| __DATA.__objc_data _OBJC_METACLASS_$_PURemoteDeviceState
+|| __DATA.__objc_data _OBJC_METACLASS_$_PURemotePasscodePolicy
+|| __TEXT.__text _PURemoteActionToString
+|| __TEXT.__text _pu_log
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSEqualsBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSHashBuilder
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+PUError : NSObject
+  // class methods
+  +[PUError errorWithCode:description:]
+
+  // instance methods
+  -[PUError init]
+
+
+PURemoteDeviceState : NSObject <NSSecureCoding>
+ @property  unsigned int version
+ @property  BOOL passcodeSet
+ @property  BOOL passcodeLocked
+ @property  BOOL unlockOnly
+ @property  BOOL wristDetectEnabled
+ @property  PURemotePasscodePolicy *passcodePolicy
+
+  // class methods
+  +[PURemoteDeviceState supportsSecureCoding]
+
+  // instance methods
+  -[PURemoteDeviceState hasPasscodeSet]
+  -[PURemoteDeviceState isPasscodeLocked]
+  -[PURemoteDeviceState encodeWithCoder:]
+  -[PURemoteDeviceState .cxx_destruct]
+  -[PURemoteDeviceState isWristDetectEnabled]
+  -[PURemoteDeviceState version]
+  -[PURemoteDeviceState passcodePolicy]
+  -[PURemoteDeviceState setPasscodePolicy:]
+  -[PURemoteDeviceState setVersion:]
+  -[PURemoteDeviceState isEqual:]
+  -[PURemoteDeviceState initWithCoder:]
+  -[PURemoteDeviceState setPasscodeSet:]
+  -[PURemoteDeviceState setPasscodeLocked:]
+  -[PURemoteDeviceState isUnlockOnly]
+  -[PURemoteDeviceState setUnlockOnly:]
+  -[PURemoteDeviceState setWristDetectEnabled:]
+
+
+PURemotePasscodePolicy : NSObject <NSSecureCoding>
+ @property  BOOL modificationAllowed
+ @property  unsigned long passcodeMinimumLength
+
+  // class methods
+  +[PURemotePasscodePolicy supportsSecureCoding]
+
+  // instance methods
+  -[PURemotePasscodePolicy encodeWithCoder:]
+  -[PURemotePasscodePolicy isEqual:]
+  -[PURemotePasscodePolicy initWithCoder:]
+  -[PURemotePasscodePolicy isModificationAllowed]
+  -[PURemotePasscodePolicy setModificationAllowed:]
+  -[PURemotePasscodePolicy passcodeMinimumLength]
+  -[PURemotePasscodePolicy setPasscodeMinimumLength:]
+
+
+PUConnection : NSObject
+ @property  @? remoteDeviceRemoveLockoutHandler
+ @property  <PUConnectionDelegate> *delegate
+
+  // class methods
+  +[PUConnection serverInterface]
+  +[PUConnection clientInterface]
+  +[PUConnection syncPasscodeState]
+
+  // instance methods
+  -[PUConnection setDelegate:]
+  -[PUConnection delegate]
+  -[PUConnection serverConnection]
+  -[PUConnection dealloc]
+  -[PUConnection .cxx_destruct]
+  -[PUConnection initWithDelegate:]
+  -[PUConnection init]
+  -[PUConnection setServerConnection:]
+  -[PUConnection getRemoteDeviceState:]
+  -[PUConnection pairForUnlockWithPasscode:]
+  -[PUConnection unpairForUnlock]
+  -[PUConnection enableOnlyRemoteUnlockWithPasscode:]
+  -[PUConnection disableOnlyRemoteUnlock]
+  -[PUConnection requestRemoteDeviceRemoteAction:type:]
+  -[PUConnection requestRemoteDeviceUnlockNotification]
+  -[PUConnection queryRemoteDeviceState:]
+  -[PUConnection requestDeviceSetWristDetectionDisabled:completion:]
+  -[PUConnection didPairForUnlock:error:]
+  -[PUConnection didUnpairForUnlock:error:]
+  -[PUConnection didEnableOnlyRemoteUnlock:error:]
+  -[PUConnection didDisableOnlyRemoteUnlock:error:]
+  -[PUConnection remoteDeviceDidCompleteRemoteAction:remoteDeviceState:error:]
+  -[PUConnection remoteDeviceDidUnlock]
+  -[PUConnection remoteDeviceDidRemoveLockout:error:]
+  -[PUConnection didGetRemoteDeviceState:error:]
+  -[PUConnection queueNameWithSuffix:]
+  -[PUConnection requestRemoteDeviceRemoveLockout:]
+  -[PUConnection delegateIfRespondsToSelector:]
+  -[PUConnection remoteDeviceRemoveLockoutHandler]
+  -[PUConnection setRemoteDeviceRemoveLockoutHandler:]
+
+
+PUConnectionUnlockClient : NSObject <PUUnlockClient>
+ @property  PUConnection *connection
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PUConnectionUnlockClient initWithConnection:]
+  -[PUConnectionUnlockClient .cxx_destruct]
+  -[PUConnectionUnlockClient connection]
+  -[PUConnectionUnlockClient setConnection:]
+  -[PUConnectionUnlockClient didPairForUnlock:error:]
+  -[PUConnectionUnlockClient didUnpairForUnlock:error:]
+  -[PUConnectionUnlockClient didEnableOnlyRemoteUnlock:error:]
+  -[PUConnectionUnlockClient didDisableOnlyRemoteUnlock:error:]
+  -[PUConnectionUnlockClient remoteDeviceDidCompleteRemoteAction:remoteDeviceState:error:]
+  -[PUConnectionUnlockClient remoteDeviceDidUnlock]
+  -[PUConnectionUnlockClient remoteDeviceDidRemoveLockout:error:]
+  -[PUConnectionUnlockClient didGetRemoteDeviceState:error:]
+
+
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSEqualsBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSHashBuilder 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0500 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

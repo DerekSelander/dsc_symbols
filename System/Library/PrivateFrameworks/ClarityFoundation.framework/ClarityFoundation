@@ -1,0 +1,218 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFBaseSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFLog
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFMessagesSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFMusicSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFPhoneFaceTimeSettings
+|| __DATA.__objc_data _OBJC_CLASS_$_CLFSettings
+|| __DATA.__objc_data _OBJC_CLASS_$__CLFSettingsObserver
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFBaseSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFLog
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFMessagesSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFMusicSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFPhoneFaceTimeSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$_CLFSettings
+|| __DATA.__objc_data _OBJC_METACLASS_$__CLFSettingsObserver
+|| __DATA_CONST.__const _CLFCommunicationLimitContacts
+|| __DATA_CONST.__const _CLFCommunicationLimitEveryone
+|| __DATA_CONST.__const _CLFListLayoutGrid
+|| __DATA_CONST.__const _CLFListLayoutStack
+|| __DATA_CONST.__const _CLFMessagesSettingsBundleName
+|| __DATA_CONST.__const _CLFMusicSettingsBundleName
+|| __DATA_CONST.__const _CLFPhoneSettingsBundleName
+|| __DATA_CONST.__const _CLFSupportsClarityUIKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CLFSystemShellSwitcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CLFSystemShellSwitcher
+|| __TEXT.__const _ClarityFoundationVersionNumber
+|| __TEXT.__const _ClarityFoundationVersionString
+__ AXCoreUtilities: _CLFLogCommon
+__ AXCoreUtilities: _OBJC_CLASS_$_AXBaseSettings
+__ AXCoreUtilities: _OBJC_METACLASS_$_AXBaseSettings
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSRequestConcreteImplementation
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libAccessibility.dylib: _AXCPSharedResourcesDirectory
+__ libAccessibility.dylib: __AXSClarityUIFeatureFlagEnabled
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _reboot3
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+CLFSystemShellSwitcher : NSObject
+ @property  BOOL clarityBoardEnabled
+
+  // instance methods
+  -[CLFSystemShellSwitcher _removeFileWithError:]
+  -[CLFSystemShellSwitcher setClarityBoardEnabled:error:]
+  -[CLFSystemShellSwitcher isClarityBoardEnabled]
+  -[CLFSystemShellSwitcher _createFileWithError:]
+  -[CLFSystemShellSwitcher setClarityBoardEnabled:]
+  -[CLFSystemShellSwitcher _directoryURL]
+
+
+CLFSettings : CLFBaseSettings
+ @property  NSArray *applicationBundleIdentifiers
+ @property  BOOL didCompleteSetup
+ @property  NSString *listLayout
+ @property  BOOL volumeButtonsEnabled
+
+  // class methods
+  +[CLFSettings sharedInstance]
+  +[CLFSettings domainName]
+  +[CLFSettings allPreferenceSelectorsAsStrings]
+
+  // instance methods
+  -[CLFSettings setDidCompleteSetup:]
+  -[CLFSettings setListLayout:]
+  -[CLFSettings listLayout]
+  -[CLFSettings applicationBundleIdentifiers]
+  -[CLFSettings didCompleteSetup]
+  -[CLFSettings setApplicationBundleIdentifiers:]
+  -[CLFSettings setVolumeButtonsEnabled:]
+  -[CLFSettings init]
+  -[CLFSettings volumeButtonsEnabled]
+
+
+CLFLog : NSObject
+  // class methods
+  +[CLFLog commonLog]
+
+
+_CLFSettingsObserver : NSObject <BSInvalidatable>
+ @property  CLFBaseSettings *settings
+ @property  SEL settingsSelector
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_CLFSettingsObserver .cxx_destruct]
+  -[_CLFSettingsObserver settings]
+  -[_CLFSettingsObserver setSettings:]
+  -[_CLFSettingsObserver invalidate]
+  -[_CLFSettingsObserver initWithSettings:settingsSelector:]
+  -[_CLFSettingsObserver settingsSelector]
+  -[_CLFSettingsObserver setSettingsSelector:]
+
+
+CLFBaseSettings : AXBaseSettings
+  // class methods
+  +[CLFBaseSettings domainName]
+  +[CLFBaseSettings allPreferenceSelectorsAsStrings]
+  +[CLFBaseSettings deleteAllKeys]
+
+  // instance methods
+  -[CLFBaseSettings domainNameForPreferenceKey:]
+  -[CLFBaseSettings observeUpdatesForSelector:handler:]
+  -[CLFBaseSettings .cxx_destruct]
+  -[CLFBaseSettings preferenceKeyForSelector:]
+  -[CLFBaseSettings init]
+  -[CLFBaseSettings registerUpdateBlock:withListener:]
+
+
+CLFPhoneFaceTimeSettings : CLFBaseSettings
+ @property  BOOL dialerKeypadEnabled
+ @property  BOOL inCallKeypadEnabled
+ @property  NSString *incomingCommunicationLimit
+ @property  BOOL recentsEnabled
+ @property  BOOL speakerOptionEnabled
+
+  // class methods
+  +[CLFPhoneFaceTimeSettings sharedInstance]
+  +[CLFPhoneFaceTimeSettings domainName]
+  +[CLFPhoneFaceTimeSettings allPreferenceSelectorsAsStrings]
+
+  // instance methods
+  -[CLFPhoneFaceTimeSettings dialerKeypadEnabled]
+  -[CLFPhoneFaceTimeSettings incomingCommunicationLimit]
+  -[CLFPhoneFaceTimeSettings setRecentsEnabled:]
+  -[CLFPhoneFaceTimeSettings setIncomingCommunicationLimit:]
+  -[CLFPhoneFaceTimeSettings setInCallKeypadEnabled:]
+  -[CLFPhoneFaceTimeSettings speakerOptionEnabled]
+  -[CLFPhoneFaceTimeSettings inCallKeypadEnabled]
+  -[CLFPhoneFaceTimeSettings recentsEnabled]
+  -[CLFPhoneFaceTimeSettings init]
+  -[CLFPhoneFaceTimeSettings setDialerKeypadEnabled:]
+  -[CLFPhoneFaceTimeSettings setSpeakerOptionEnabled:]
+
+
+CLFMusicSettings : CLFBaseSettings
+ @property  NSArray *selectedPlaylists
+
+  // class methods
+  +[CLFMusicSettings sharedInstance]
+  +[CLFMusicSettings domainName]
+  +[CLFMusicSettings allPreferenceSelectorsAsStrings]
+
+  // instance methods
+  -[CLFMusicSettings selectedPlaylists]
+  -[CLFMusicSettings init]
+  -[CLFMusicSettings setSelectedPlaylists:]
+
+
+CLFMessagesSettings : CLFBaseSettings
+ @property  NSString *communicationLimit
+ @property  BOOL conversationDetailsEnabled
+
+  // class methods
+  +[CLFMessagesSettings sharedInstance]
+  +[CLFMessagesSettings domainName]
+  +[CLFMessagesSettings allPreferenceSelectorsAsStrings]
+
+  // instance methods
+  -[CLFMessagesSettings communicationLimit]
+  -[CLFMessagesSettings conversationDetailsEnabled]
+  -[CLFMessagesSettings setCommunicationLimit:]
+  -[CLFMessagesSettings init]
+  -[CLFMessagesSettings setConversationDetailsEnabled:]
+
+
+01 00 0200 /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities: AXBaseSettings 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 

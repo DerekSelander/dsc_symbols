@@ -1,0 +1,581 @@
+|| __DATA.__data _sCRRecentRecentIdentifier
+|| __DATA.__data _sCRRecentSyncKeyDict
+|| __DATA.__data _sCRSQLite3MPrintTransform
+|| __DATA_CONST.__const _CRAddressKindEmail
+|| __DATA_CONST.__const _CRAddressKindGroup
+|| __DATA_CONST.__const _CRAddressKindInstantMessage
+|| __DATA_CONST.__const _CRAddressKindMapLocation
+|| __DATA_CONST.__const _CRAddressKindPhoneNumber
+|| __DATA_CONST.__const _CRAddressKindURL
+|| __DATA_CONST.__const _CRRecentContactKeyAddress
+|| __DATA_CONST.__const _CRRecentContactKeyContactID
+|| __DATA_CONST.__const _CRRecentContactKeyDisplayName
+|| __DATA_CONST.__const _CRRecentContactKeyKind
+|| __DATA_CONST.__const _CRRecentContactKeyLastSendingAddress
+|| __DATA_CONST.__const _CRRecentContactMetadataCreationTime
+|| __DATA_CONST.__const _CRRecentContactMetadataEventTime
+|| __DATA_CONST.__const _CRRecentContactMetadataFrom
+|| __DATA_CONST.__const _CRRecentContactMetadataFromAddress
+|| __DATA_CONST.__const _CRRecentContactMetadataFromAddressKind
+|| __DATA_CONST.__const _CRRecentContactMetadataFromDisplayName
+|| __DATA_CONST.__const _CRRecentContactMetadataReferenceURL
+|| __DATA_CONST.__const _CRRecentContactMetadataSubject
+|| __DATA_CONST.__const _CRRecentContactMetadataUpcomingEventIdentifier
+|| __DATA_CONST.__const _CRRecentContactsErrorDomain
+|| __DATA_CONST.__const _CRRecentContactsSyncKeyDict
+|| __DATA_CONST.__const _CRRecentContactsSyncKeyDictAddressKey
+|| __DATA_CONST.__const _CRRecentContactsSyncKeyDictKindKey
+|| __DATA_CONST.__const _CRRecentContactsSyncKeyDictMembersKey
+|| __DATA_CONST.__const _CRRecentsAgentMachServiceName
+|| __DATA_CONST.__const _CRRecentsDomainCalendar
+|| __DATA_CONST.__const _CRRecentsDomainEventKitContact
+|| __DATA_CONST.__const _CRRecentsDomainEventKitLocation
+|| __DATA_CONST.__const _CRRecentsDomainFaceTime
+|| __DATA_CONST.__const _CRRecentsDomainMail
+|| __DATA_CONST.__const _CRRecentsDomainMaps
+|| __DATA_CONST.__const _CRRecentsDomainMessages
+|| __DATA_CONST.__const _CRRecentsDomainPassbook
+|| __DATA_CONST.__const _CRRecentsDomainRemindersLocation
+|| __DATA_CONST.__const _CRiCloudAccountChangedNotification
+|| __DATA_CONST.__const __CRAddressArchiveKey
+|| __DATA_CONST.__const __CRContactIDArchiveKey
+|| __DATA_CONST.__const __CRDisplayNameArchiveKey
+|| __DATA_CONST.__const __CRGroupKindArchiveKey
+|| __DATA_CONST.__const __CRGroupNameArchiveKey
+|| __DATA_CONST.__const __CRKindArchiveKey
+|| __DATA_CONST.__const __CRLastSendingAddressArchiveKey
+|| __DATA_CONST.__const __CRMembersArchiveKey
+|| __DATA_CONST.__const __CRMetadataArchiveKey
+|| __DATA_CONST.__const __CROriginalSourceArchiveKey
+|| __DATA_CONST.__const __CRRawAddressArchiveKey
+|| __DATA_CONST.__const __CRRecentDatesArchiveKey
+|| __DATA_CONST.__const __CRRecentIDArchiveKey
+|| __DATA_CONST.__const __CRRecentsDomainArchiveKey
+|| __DATA_CONST.__const __CRWeightArchiveKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRDRecentContactsLibraryInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRLogging
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRRecentContact
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRRecentContactsLibrary
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSQLRow
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSearchPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CRSearchQuery
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CRAndConjunctionPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CRMatchTextPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CROrConjunctionPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__CRSearchCollectionPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRDRecentContactsLibraryInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRLogging
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRRecentContact
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRRecentContactsLibrary
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSQLRow
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSearchPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CRSearchQuery
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CRAndConjunctionPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CRMatchTextPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CROrConjunctionPredicate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__CRSearchCollectionPredicate
+|| __TEXT.__const _CRRecentWeightMailReceivedAddress
+|| __TEXT.__const _CRRecentWeightMailReceivedTrustedAddress
+|| __TEXT.__const _CRRecentWeightMailSentAddress
+|| __TEXT.__const _CRRecentWeightMailViewedAddress
+|| __TEXT.__const _CRRecentWeightMessagesReceivedAddress
+|| __TEXT.__const _CRRecentWeightMessagesRespondedAddress
+|| __TEXT.__const _CRRecentWeightMessagesSentAddress
+|| __TEXT.__const _CRRecentWeightPassbookShippingAddress
+|| __TEXT.__const _kCRRecentContactMaxDateEvents
+|| __TEXT.__text _CRIsInternalDevice
+__ AppSupport: _CPIsInternalDevice
+__ ContactsFoundation: _CNAbstractMethodException
+__ ContactsFoundation: _OBJC_CLASS_$_CNAtomicUnsignedIntegerGenerator
+__ ContactsFoundation: _OBJC_CLASS_$_CNDescriptionBuilder
+__ ContactsFoundation: _OBJC_CLASS_$_CNFoundationError
+__ ContactsFoundation: _OBJC_CLASS_$_CNFuture
+__ ContactsFoundation: _OBJC_CLASS_$_CNHashBuilder
+__ ContactsFoundation: _OBJC_CLASS_$_CNPromise
+__ ContactsFoundation: _OBJC_CLASS_$_CNTimeIntervalFormatter
+__ ContactsFoundation: _OBJC_CLASS_$_CNTimeProvider
+__ CoreFoundation: _CFAllocatorAllocate
+__ CoreFoundation: _CFAllocatorDeallocate
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFStringCreateWithCharactersNoCopy
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetCharacters
+__ CoreFoundation: _CFStringGetCharactersPtr
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringTokenizerAdvanceToNextToken
+__ CoreFoundation: _CFStringTokenizerCreate
+__ CoreFoundation: _CFStringTokenizerGetCurrentTokenRange
+__ CoreFoundation: _CFStringTokenizerSetString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: _kCFAllocatorDefault
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCompoundPredicate
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSMutableCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _pow
+__ libicucore.A.dylib: _uidna_IDNToASCII
+__ libicucore.A.dylib: _uidna_IDNToUnicode
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x2
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libsqlite3.dylib: _sqlite3_column_blob
+__ libsqlite3.dylib: _sqlite3_column_bytes
+__ libsqlite3.dylib: _sqlite3_column_double
+__ libsqlite3.dylib: _sqlite3_column_int64
+__ libsqlite3.dylib: _sqlite3_column_text
+__ libsqlite3.dylib: _sqlite3_column_type
+__ libsqlite3.dylib: _sqlite3_free
+__ libsqlite3.dylib: _sqlite3_mprintf
+__ libsqlite3.dylib: _sqlite3_reset
+__ libsqlite3.dylib: _sqlite3_step
+CRSearchPredicate : NSObject <NSSecureCoding>
+  // class methods
+  +[CRSearchPredicate supportsSecureCoding]
+  +[CRSearchPredicate predicateForKey:inCollection:]
+  +[CRSearchPredicate predicateSatisfyingAllSubpredicates:]
+  +[CRSearchPredicate predicateForKey:matchingText:comparison:]
+  +[CRSearchPredicate predicateSatisfyingAnySubpredicate:]
+  +[CRSearchPredicate secureCodableSubclasses]
+
+  // instance methods
+  -[CRSearchPredicate encodeWithCoder:]
+  -[CRSearchPredicate asNSPredicate]
+  -[CRSearchPredicate init]
+  -[CRSearchPredicate initWithCoder:]
+
+
+_CRSearchCollectionPredicate : CRSearchPredicate
+ @property  NSString *key
+ @property  NSArray *collection
+
+  // class methods
+  +[_CRSearchCollectionPredicate supportsSecureCoding]
+
+  // instance methods
+  -[_CRSearchCollectionPredicate encodeWithCoder:]
+  -[_CRSearchCollectionPredicate collection]
+  -[_CRSearchCollectionPredicate .cxx_destruct]
+  -[_CRSearchCollectionPredicate initWithKey:collection:]
+  -[_CRSearchCollectionPredicate key]
+  -[_CRSearchCollectionPredicate asNSPredicate]
+  -[_CRSearchCollectionPredicate isEqual:]
+  -[_CRSearchCollectionPredicate initWithCoder:]
+
+
+_CRMatchTextPredicate : CRSearchPredicate
+ @property  NSString *key
+ @property  NSString *text
+ @property  unsigned long comparison
+
+  // class methods
+  +[_CRMatchTextPredicate supportsSecureCoding]
+
+  // instance methods
+  -[_CRMatchTextPredicate text]
+  -[_CRMatchTextPredicate encodeWithCoder:]
+  -[_CRMatchTextPredicate .cxx_destruct]
+  -[_CRMatchTextPredicate comparison]
+  -[_CRMatchTextPredicate key]
+  -[_CRMatchTextPredicate asNSPredicate]
+  -[_CRMatchTextPredicate isEqual:]
+  -[_CRMatchTextPredicate initWithCoder:]
+  -[_CRMatchTextPredicate initWithKey:text:comparison:]
+
+
+_CRAndConjunctionPredicate : CRSearchPredicate
+ @property  NSArray *subpredicates
+
+  // class methods
+  +[_CRAndConjunctionPredicate supportsSecureCoding]
+
+  // instance methods
+  -[_CRAndConjunctionPredicate encodeWithCoder:]
+  -[_CRAndConjunctionPredicate .cxx_destruct]
+  -[_CRAndConjunctionPredicate subpredicates]
+  -[_CRAndConjunctionPredicate asNSPredicate]
+  -[_CRAndConjunctionPredicate isEqual:]
+  -[_CRAndConjunctionPredicate initWithCoder:]
+  -[_CRAndConjunctionPredicate initWithSubpredicates:]
+
+
+_CROrConjunctionPredicate : CRSearchPredicate
+ @property  NSArray *subpredicates
+
+  // class methods
+  +[_CROrConjunctionPredicate supportsSecureCoding]
+
+  // instance methods
+  -[_CROrConjunctionPredicate encodeWithCoder:]
+  -[_CROrConjunctionPredicate .cxx_destruct]
+  -[_CROrConjunctionPredicate subpredicates]
+  -[_CROrConjunctionPredicate asNSPredicate]
+  -[_CROrConjunctionPredicate isEqual:]
+  -[_CROrConjunctionPredicate initWithCoder:]
+  -[_CROrConjunctionPredicate initWithSubpredicates:]
+
+
+CRDRecentContactsLibraryInterface : NSObject
+  // class methods
+  +[CRDRecentContactsLibraryInterface XPCInterface]
+  +[CRDRecentContactsLibraryInterface _xpcInterface]
+
+
+CRSearchQuery : NSObject <NSSecureCoding>
+ @property  NSString *uuid
+ @property  CRSearchPredicate *searchPredicate
+ @property  NSPredicate *predicate
+ @property  NSArray *domains
+ @property  unsigned long implicitGroupThreshold
+ @property  unsigned long options
+ @property  {_NSRange=QQ} pageRange
+ @property  @? weightDecayer
+ @property  @? comparator
+
+  // class methods
+  +[CRSearchQuery supportsSecureCoding]
+  +[CRSearchQuery frecencyComparatorForSearch:preferredKinds:sendingAddress:queryOptions:]
+  +[CRSearchQuery searchQueryForSearchTerm:preferredKinds:sendingAddress:recentsDomain:]
+  +[CRSearchQuery rankedFrecencyComparatorWithPreferredSources:]
+  +[CRSearchQuery frecencyComparator]
+
+  // instance methods
+  -[CRSearchQuery domains]
+  -[CRSearchQuery setPredicate:]
+  -[CRSearchQuery comparator]
+  -[CRSearchQuery setComparator:]
+  -[CRSearchQuery setPageRange:]
+  -[CRSearchQuery setImplicitGroupThreshold:]
+  -[CRSearchQuery setSearchPredicate:]
+  -[CRSearchQuery encodeWithCoder:]
+  -[CRSearchQuery pageRange]
+  -[CRSearchQuery uuid]
+  -[CRSearchQuery predicate]
+  -[CRSearchQuery .cxx_destruct]
+  -[CRSearchQuery implicitGroupThreshold]
+  -[CRSearchQuery setDomains:]
+  -[CRSearchQuery options]
+  -[CRSearchQuery setWeightDecayer:]
+  -[CRSearchQuery copyWithZone:]
+  -[CRSearchQuery setOptions:]
+  -[CRSearchQuery searchPredicate]
+  -[CRSearchQuery isEqual:]
+  -[CRSearchQuery init]
+  -[CRSearchQuery weightDecayer]
+  -[CRSearchQuery initWithCoder:]
+
+
+CRRecentContact : NSObject <NSSecureCoding>
+ @property  long long contactID
+ @property  long long recentID
+ @property  NSString *groupName
+ @property  NSString *recentsDomain
+ @property  NSString *displayName
+ @property  NSString *kind
+ @property  NSString *address
+ @property  NSString *rawAddress
+ @property  NSString *lastSendingAddress
+ @property  NSDictionary *metadata
+ @property  NSNumber *weight
+ @property  NSNumber *decayedWeight
+ @property  NSArray *recentDates
+ @property  NSArray *members
+ @property  NSString *originalSource
+ @property  unsigned long groupKind
+ @property  unsigned long countOfRecents
+ @property  NSDate *mostRecentDate
+ @property  NSDate *leastRecentDate
+ @property  BOOL group
+
+  // class methods
+  +[CRRecentContact supportsSecureCoding]
+
+  // instance methods
+  -[CRRecentContact weight]
+  -[CRRecentContact setWeight:]
+  -[CRRecentContact kind]
+  -[CRRecentContact isGroup]
+  -[CRRecentContact encodeWithCoder:]
+  -[CRRecentContact setAddress:]
+  -[CRRecentContact dealloc]
+  -[CRRecentContact setContactID:]
+  -[CRRecentContact setDisplayName:]
+  -[CRRecentContact groupName]
+  -[CRRecentContact address]
+  -[CRRecentContact setMetadata:]
+  -[CRRecentContact setKind:]
+  -[CRRecentContact setMembers:]
+  -[CRRecentContact members]
+  -[CRRecentContact displayName]
+  -[CRRecentContact metadata]
+  -[CRRecentContact isEqual:]
+  -[CRRecentContact initWithCoder:]
+  -[CRRecentContact setGroupName:]
+  -[CRRecentContact contactID]
+  -[CRRecentContact setOriginalSource:]
+  -[CRRecentContact originalSource]
+  -[CRRecentContact rawAddress]
+  -[CRRecentContact hasFullTextMatch:]
+  -[CRRecentContact initWithContactID:]
+  -[CRRecentContact initWithAddress:displayName:kind:recentDate:recentsDomain:]
+  -[CRRecentContact initWithMembers:displayName:recentDate:recentsDomain:]
+  -[CRRecentContact _wordTokenizerForString:locale:]
+  -[CRRecentContact _enumerateWordsInString:usingBlock:]
+  -[CRRecentContact applyWeight:]
+  -[CRRecentContact countOfRecents]
+  -[CRRecentContact mostRecentDate]
+  -[CRRecentContact leastRecentDate]
+  -[CRRecentContact recentDates]
+  -[CRRecentContact setRecentDates:]
+  -[CRRecentContact recordRecentEventForDate:userInitiated:]
+  -[CRRecentContact lazilyCreateRecentDates]
+  -[CRRecentContact insertionIndexForDate:wouldBeUnique:]
+  -[CRRecentContact insertDate:atIndex:required:]
+  -[CRRecentContact enumerateArchivablePropertiesWithBlock:]
+  -[CRRecentContact setArchivableRecentID:]
+  -[CRRecentContact archivableRecentID]
+  -[CRRecentContact setArchivableContactID:]
+  -[CRRecentContact archivableContactID]
+  -[CRRecentContact setArchivableGroupMembers:]
+  -[CRRecentContact archivableGroupMembers]
+  -[CRRecentContact setArchivableMetadata:]
+  -[CRRecentContact archivableMetadata]
+  -[CRRecentContact setArchivableGroupKind:]
+  -[CRRecentContact archivableGroupKind]
+  -[CRRecentContact recentsDomain]
+  -[CRRecentContact setRecentsDomain:]
+  -[CRRecentContact lastSendingAddress]
+  -[CRRecentContact setLastSendingAddress:]
+  -[CRRecentContact decayedWeight]
+  -[CRRecentContact setDecayedWeight:]
+  -[CRRecentContact groupKind]
+  -[CRRecentContact setGroupKind:]
+  -[CRRecentContact recentID]
+  -[CRRecentContact setRecentID:]
+  -[CRRecentContact setRawAddress:]
+
+
+CRRecentContactsLibrary : NSObject
+  // class methods
+  +[CRRecentContactsLibrary frecencyComparatorForSearch:preferredKinds:sendingAddress:queryOptions:]
+  +[CRRecentContactsLibrary defaultInstance]
+  +[CRRecentContactsLibrary rankedFrecencyComparatorWithPreferredSources:]
+  +[CRRecentContactsLibrary frecencyComparator]
+  +[CRRecentContactsLibrary recentEventForAddress:displayName:kind:date:weight:metadata:options:]
+  +[CRRecentContactsLibrary _recentEventForGroupMembers:displayName:date:weight:metadata:options:]
+  +[CRRecentContactsLibrary recentEventForAddress:displayName:kind:date:]
+  +[CRRecentContactsLibrary recentEventForAddress:displayName:kind:date:metadata:]
+  +[CRRecentContactsLibrary recentEventForAddress:displayName:kind:date:weight:metadata:]
+  +[CRRecentContactsLibrary explicitGroupEventForGroupMembers:displayName:date:metadata:options:]
+  +[CRRecentContactsLibrary groupMemberWithAddress:displayName:kind:]
+  +[CRRecentContactsLibrary frecencyComparatorForSearch:preferredKinds:sendingAddress:]
+  +[CRRecentContactsLibrary apiLogDescriptionOfEvent:]
+
+  // instance methods
+  -[CRRecentContactsLibrary _newConnection]
+  -[CRRecentContactsLibrary dealloc]
+  -[CRRecentContactsLibrary start]
+  -[CRRecentContactsLibrary init]
+  -[CRRecentContactsLibrary performRecentsSearch:queue:completion:]
+  -[CRRecentContactsLibrary _recentContactsWithQuery:]
+  -[CRRecentContactsLibrary removeRecentContacts:error:]
+  -[CRRecentContactsLibrary recordContactEvents:recentsDomain:sendingAddress:completion:]
+  -[CRRecentContactsLibrary maxDateEventsPerRecentContact]
+  -[CRRecentContactsLibrary setImplicitGroupThreshold:forDomain:]
+  -[CRRecentContactsLibrary _remoteLibraryWithErrorHandler:]
+  -[CRRecentContactsLibrary _searchRecentsUsingQuery:completion:]
+  -[CRRecentContactsLibrary _searchRecentsUsingQuery:error:]
+  -[CRRecentContactsLibrary _searchRecentsUsingQuery:]
+  -[CRRecentContactsLibrary requestRecentsUsingPredicate:inDomains:comparator:queue:completion:]
+  -[CRRecentContactsLibrary performRecentsSearch:operationQueue:completion:]
+  -[CRRecentContactsLibrary copyOrderedRecentsForSearchText:recentsDomain:sendingAddress:kinds:]
+  -[CRRecentContactsLibrary copyRecentsForDomain:]
+  -[CRRecentContactsLibrary recordContactEvents:recentsDomain:sendingAddress:]
+  -[CRRecentContactsLibrary recordContactEvents:recentsDomain:sendingAddress:userInitiated:]
+  -[CRRecentContactsLibrary recordContactEvents:recentsDomain:sendingAddress:source:userInitiated:]
+  -[CRRecentContactsLibrary _recordContactEvents:recentsDomain:sendingAddress:source:userInitiated:completion:]
+  -[CRRecentContactsLibrary _removeRecentContactsWithRecentIDs:syncKeys:recentsDomain:error:]
+  -[CRRecentContactsLibrary removeRecentContactsWithRecentIDs:recentsDomain:error:]
+  -[CRRecentContactsLibrary _removeAllRecentContactsWithCompletion:]
+  -[CRRecentContactsLibrary _removeRecentContactsMatchingQuery:]
+  -[CRRecentContactsLibrary _daemonProcessID]
+
+
+CRLogging : NSObject
+  // class methods
+  +[CRLogging client]
+  +[CRLogging log]
+
+
+CRSQLRow : NSObject
+  // class methods
+  +[CRSQLRow step:]
+  +[CRSQLRow numberWithIntegerAtIndex:statement:]
+  +[CRSQLRow objectAtIndex:statement:]
+  +[CRSQLRow stringAtIndex:statement:]
+  +[CRSQLRow dataAtIndex:copyBytes:statement:]
+  +[CRSQLRow enumerateRowsInStatement:usingBlock:]
+  +[CRSQLRow rowWithStatement:]
+  +[CRSQLRow numberWithDoubleAtIndex:statement:]
+
+  // instance methods
+  -[CRSQLRow initWithStatement:]
+  -[CRSQLRow objectAtIndex:]
+  -[CRSQLRow stringAtIndex:]
+  -[CRSQLRow dataAtIndex:copyBytes:]
+  -[CRSQLRow numberWithIntegerAtIndex:]
+  -[CRSQLRow numberWithDoubleAtIndex:]
+
+
+(CoreRecentsUtilities)
+	// instance methods
+	-[(CoreRecentsUtilities) cr_md5DigestHexString]
+
+<DEREK BUG Categories!>(CoreRecentsUtilities)
+	// instance methods
+	-[<DEREK BUG Categories!>(CoreRecentsUtilities) cr_setNonNilObject:forKey:]
+
+(CoreRecentsUtilities)
+	// instance methods
+	-[(CoreRecentsUtilities) cr_rangeOfAddressDomain]
+	-[(CoreRecentsUtilities) cr_copyStringByDecodingIDNAInRange:]
+	-[(CoreRecentsUtilities) cr_copyStringByEncodingIDNAInRange:]
+	-[(CoreRecentsUtilities) cr_copyIDNADecodedEmailAddress]
+	-[(CoreRecentsUtilities) cr_copyIDNAEncodedEmailAddress]
+	-[(CoreRecentsUtilities) cr_uniqueFilenameWithRespectToFilenames:]
+	-[(CoreRecentsUtilities) cr_lowercaseStringWithStandardLocale]
+
+NSNumber(CoreRecentsUtilities)
+	// class methods
+	+[NSNumber(CoreRecentsUtilities) cr_numberWithCRRecentID:]
+	+[NSNumber(CoreRecentsUtilities) cr_numberWithCRContactID:]
+	+[NSNumber(CoreRecentsUtilities) cr_numberWithCRContactGroupKind:]
+
+	// instance methods
+	-[NSNumber(CoreRecentsUtilities) cr_CRRecentIDValue]
+	-[NSNumber(CoreRecentsUtilities) cr_CRContactIDValue]
+	-[NSNumber(CoreRecentsUtilities) cr_CRContactGroupKindValue]
+
+(CoreRecentsUtilities)
+	// instance methods
+	-[(CoreRecentsUtilities) cr_binaryInsertionIndexOfObject:usingComparator:match:]
+	-[(CoreRecentsUtilities) cr_firstObjectPassingTest:]
+	-[(CoreRecentsUtilities) cr_map:]
+	-[(CoreRecentsUtilities) cr_insertionSortedArrayUsingComparator:]
+
+<DEREK BUG Categories!>(CoreRecentsUtilities)
+	// instance methods
+	-[<DEREK BUG Categories!>(CoreRecentsUtilities) cr_removeObjectsStartingAtIndex:]
+	-[<DEREK BUG Categories!>(CoreRecentsUtilities) cr_insertObject:usingComparator:]
+	-[<DEREK BUG Categories!>(CoreRecentsUtilities) cr_addNonNilObject:]
+	-[<DEREK BUG Categories!>(CoreRecentsUtilities) cr_addObject:orPlaceholder:]
+
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNAtomicUnsignedIntegerGenerator 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNDescriptionBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNFoundationError 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNFuture 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNHashBuilder 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNPromise 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNTimeIntervalFormatter 
+01 00 0200 /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation: CNTimeProvider 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSCompoundPredicate 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableCharacterSet 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0700 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 

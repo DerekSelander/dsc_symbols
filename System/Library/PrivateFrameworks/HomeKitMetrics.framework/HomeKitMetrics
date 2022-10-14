@@ -1,0 +1,181 @@
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HMMHomeLogEvent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HMMInterval
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HMMIntervalMapper
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_HMMLogEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HMMHomeLogEvent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HMMInterval
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HMMIntervalMapper
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_HMMLogEvent
+|| __TEXT.__text _HMMSafeHomeUUIDFromLogEvent
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: ___CFConstantStringClassReference
+__ Foundation: _OBJC_CLASS_$_NSConstantFloatNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+HMMLogEvent : NSObject
+ @property  BOOL submitted
+ @property  NSDate *endDate
+ @property  NSError *error
+ @property  double durationInMilliseconds
+ @property  NSDate *startDate
+
+  // class methods
+  +[HMMLogEvent alloc]
+
+  // instance methods
+  -[HMMLogEvent shouldSubmit]
+  -[HMMLogEvent endDate]
+  -[HMMLogEvent error]
+  -[HMMLogEvent .cxx_destruct]
+  -[HMMLogEvent setError:]
+  -[HMMLogEvent setStartDate:]
+  -[HMMLogEvent setSubmitted:]
+  -[HMMLogEvent setEndDate:]
+  -[HMMLogEvent startDate]
+  -[HMMLogEvent init]
+  -[HMMLogEvent durationInMilliseconds]
+  -[HMMLogEvent submitAtDate:]
+  -[HMMLogEvent isSubmitted]
+
+
+HMMInterval : NSObject
+ @property  NSString *standardIntervalString
+ @property  NSString *negativeInfinityIntervalString
+ @property  NSString *positiveInfinityIntervalString
+ @property  NSString *allNumbersIntervalString
+ @property  NSNumber *start
+ @property  NSNumber *end
+
+  // class methods
+  +[HMMInterval openOpenIntervalFromStart:toEnd:]
+  +[HMMInterval positiveInfinityEnd]
+  +[HMMInterval initialize]
+  +[HMMInterval closedClosedIntervalFromStart:toEnd:]
+  +[HMMInterval openClosedIntervalFromStart:toEnd:]
+  +[HMMInterval intervalForSingleValue:]
+  +[HMMInterval closedOpenIntervalFromStart:toEnd:]
+  +[HMMInterval negativeInfinityStart]
+
+  // instance methods
+  -[HMMInterval positiveInfinityIntervalString]
+  -[HMMInterval end]
+  -[HMMInterval standardIntervalString]
+  -[HMMInterval .cxx_destruct]
+  -[HMMInterval negativeInfinityIntervalString]
+  -[HMMInterval start]
+  -[HMMInterval labelString]
+  -[HMMInterval initFromStart:toEnd:]
+  -[HMMInterval allNumbersIntervalString]
+
+
+HMMOpenOpenInterval : HMMInterval
+  // instance methods
+  -[HMMOpenOpenInterval positiveInfinityIntervalString]
+  -[HMMOpenOpenInterval standardIntervalString]
+  -[HMMOpenOpenInterval negativeInfinityIntervalString]
+
+
+HMMOpenClosedInterval : HMMInterval
+  // instance methods
+  -[HMMOpenClosedInterval positiveInfinityIntervalString]
+  -[HMMOpenClosedInterval standardIntervalString]
+  -[HMMOpenClosedInterval negativeInfinityIntervalString]
+
+
+HMMClosedOpenInterval : HMMInterval
+  // instance methods
+  -[HMMClosedOpenInterval positiveInfinityIntervalString]
+  -[HMMClosedOpenInterval standardIntervalString]
+  -[HMMClosedOpenInterval negativeInfinityIntervalString]
+
+
+HMMClosedClosedInterval : HMMInterval
+  // instance methods
+  -[HMMClosedClosedInterval positiveInfinityIntervalString]
+  -[HMMClosedClosedInterval standardIntervalString]
+  -[HMMClosedClosedInterval negativeInfinityIntervalString]
+
+
+HMMIntervalMapper : NSObject
+  // class methods
+  +[HMMIntervalMapper unsignedOpenClosedFixedIntervalMapper:]
+  +[HMMIntervalMapper unsignedClosedOpenFixedIntervalMapper:]
+
+  // instance methods
+  -[HMMIntervalMapper intervalForValue:]
+  -[HMMIntervalMapper intervalIndexForValue:]
+
+
+UnsignedFixedIntervalMapper : HMMIntervalMapper
+ @property  NSArray *intervals
+ @property  @? creationBlock
+ @property  @? comparisonBlock
+
+  // instance methods
+  -[UnsignedFixedIntervalMapper creationBlock]
+  -[UnsignedFixedIntervalMapper intervals]
+  -[UnsignedFixedIntervalMapper .cxx_destruct]
+  -[UnsignedFixedIntervalMapper intervalForValue:]
+  -[UnsignedFixedIntervalMapper intervalIndexForValue:]
+  -[UnsignedFixedIntervalMapper initWithBins:intervalCreationBlock:valueComparisonBlock:]
+  -[UnsignedFixedIntervalMapper comparisonBlock]
+
+
+HMMHomeLogEvent : HMMLogEvent
+ @property  NSUUID *homeUUID
+ @property  NSString *homeUUIDString
+
+  // class methods
+  +[HMMHomeLogEvent alloc]
+
+  // instance methods
+  -[HMMHomeLogEvent .cxx_destruct]
+  -[HMMHomeLogEvent homeUUID]
+  -[HMMHomeLogEvent initWithHomeUUID:]
+  -[HMMHomeLogEvent homeUUIDString]
+
+
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantFloatNumber 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0100 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

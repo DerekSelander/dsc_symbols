@@ -1,0 +1,614 @@
+|| __DATA.__common _LRRLogContextAssetManager
+|| __DATA.__common _LRRLogContextCdmClient
+|| __DATA.__common _LRRLogContextComparator
+|| __DATA.__common _LRRLogContextEvaluator
+|| __DATA.__common _LRRLogContextFeatureStore
+|| __DATA.__common _LRRLogContextFiltering
+|| __DATA.__common _LRRLogContextNluLog
+|| __DATA.__data _LRRLoggingCategoryAssetManager
+|| __DATA.__data _LRRLoggingCategoryCdmClient
+|| __DATA.__data _LRRLoggingCategoryComparator
+|| __DATA.__data _LRRLoggingCategoryEvaluator
+|| __DATA.__data _LRRLoggingCategoryFeatureStore
+|| __DATA.__data _LRRLoggingCategoryFiltering
+|| __DATA.__data _LRRLoggingCategoryNluLog
+|| __DATA.__data _LRRLoggingSubsystem
+|| __DATA.__data _OBJC_METACLASS_$__TtC29LighthouseReferenceResolution21LRRCdmNluRequestUtils
+|| __DATA.__data _OBJC_METACLASS_$__TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils
+|| __DATA.__data _OBJC_METACLASS_$__TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreMDRequestReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreMDResponseReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreMRRequestReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreMRResponseReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreNluRequestReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreNluRequestWriter
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreNluResponseReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreSpanMatchReader
+|| __DATA.__objc_data _OBJC_CLASS_$_FeatureStoreUtils
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRCDMReplayRequestResult
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRCdmClient
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRCdmProtobufConverter
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRCdmTrialAssetManager
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRComparatorResult
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRComparatorUtil
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRErrorUtil
+|| __DATA.__objc_data _OBJC_CLASS_$_LRREvaluator
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRFeatureStoreFilterInformation
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRFeatureStoreFiltering
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRJsonUtil
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRMDComparator
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRMRComparator
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRNluResponseComparator
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRReplayResultStat
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRSampleReplayResult
+|| __DATA.__objc_data _OBJC_CLASS_$_LRRSpanUtil
+|| __DATA.__objc_data _OBJC_CLASS_$__TtC29LighthouseReferenceResolution21LRRCdmNluRequestUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils
+|| __DATA.__objc_data _OBJC_CLASS_$__TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreMDRequestReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreMDResponseReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreMRRequestReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreMRResponseReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreNluRequestReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreNluRequestWriter
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreNluResponseReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreSpanMatchReader
+|| __DATA.__objc_data _OBJC_METACLASS_$_FeatureStoreUtils
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRCDMReplayRequestResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRCdmClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRCdmProtobufConverter
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRCdmTrialAssetManager
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRComparatorResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRComparatorUtil
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRErrorUtil
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRREvaluator
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRFeatureStoreFilterInformation
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRFeatureStoreFiltering
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRJsonUtil
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRMDComparator
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRMRComparator
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRNluResponseComparator
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRReplayResultStat
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRSampleReplayResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_LRRSpanUtil
+|| __DATA_CONST.__const _kConnectionId
+|| __TEXT.__const _LighthouseReferenceResolutionVersionNumber
+|| __TEXT.__const _LighthouseReferenceResolutionVersionString
+|| __TEXT.__text _LRRLoggingInit
+__ AssistantServices: _OBJC_CLASS_$_AFPreferences
+__ CDMFoundation: _OBJC_CLASS_$_CDMClient
+__ CDMFoundation: _OBJC_CLASS_$_CDMClientSetup
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreKnowledge: _OBJC_CLASS_$_CKVocabularySandbox
+__ FeatureStore: _OBJC_CLASS_$_FSFBiomeFeatureStore
+__ FeatureStore: _OBJC_CLASS_$_FSFCurareEvaluationFeature
+__ FeatureStore: _OBJC_CLASS_$_FSFCurareInteractionAsJsonStr
+__ FeatureStore: _OBJC_CLASS_$_FSFCurareInteractionStream
+__ FeatureStore: _OBJC_CLASS_$_FSFNLUFeature
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSSortDescriptor
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUEXTERNALCDMNluRequest
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUEXTERNALCDMNluResponse
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUEXTERNALUsoGraph
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUINTERNALMENTION_DETECTORMentionDetectorRequest
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUINTERNALMENTION_DETECTORMentionDetectorResponse
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUINTERNALMENTION_RESOLVERMentionResolverRequest
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUINTERNALMENTION_RESOLVERMentionResolverResponse
+__ SiriNLUTypes: _OBJC_CLASS_$_SIRINLUINTERNALMatchingSpan
+__ Trial: _OBJC_CLASS_$_TRIClient
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libswiftCore.dylib: _swift_bridgeObjectRelease
+__ libswiftCore.dylib: _swift_bridgeObjectRetain
+__ libswiftCore.dylib: _swift_errorRelease
+__ libswiftCore.dylib: _swift_getTypeByMangledNameInContext
+__ libswiftCore.dylib: _swift_getWitnessTable
+__ libswiftCore.dylib: _swift_release
+__ libswiftCore.dylib: _swift_retain
+LRRErrorUtil : NSObject
+  // class methods
+  +[LRRErrorUtil getPluginError:userInfo:]
+
+
+LRRFeatureStoreFiltering : NSObject
+ @property  NSString *experimentID
+ @property  NSNumber *deploymentID
+ @property  NSString *treatmentID
+
+  // instance methods
+  -[LRRFeatureStoreFiltering treatmentID]
+  -[LRRFeatureStoreFiltering setExperimentID:]
+  -[LRRFeatureStoreFiltering experimentID]
+  -[LRRFeatureStoreFiltering .cxx_destruct]
+  -[LRRFeatureStoreFiltering setDeploymentID:]
+  -[LRRFeatureStoreFiltering deploymentID]
+  -[LRRFeatureStoreFiltering setTreatmentID:]
+  -[LRRFeatureStoreFiltering init:deploymentID:treatmentID:]
+  -[LRRFeatureStoreFiltering isKeyInUserDefaults:]
+  -[LRRFeatureStoreFiltering manageDeploymentInfoForEvaluation]
+  -[LRRFeatureStoreFiltering getTrialAssetInfo]
+  -[LRRFeatureStoreFiltering filterSamplesAndComputeTimestamps:assetInfo:]
+  -[LRRFeatureStoreFiltering readUserDefaultAndFilterSamples]
+
+
+FeatureStoreNluResponseReader : NSObject
+  // class methods
+  +[FeatureStoreNluResponseReader getEvents]
+  +[FeatureStoreNluResponseReader getEventsWithInteractionIds:]
+
+
+LRRCdmClient : NSObject <CDMClientDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[LRRCdmClient cleanup]
+  -[LRRCdmClient .cxx_destruct]
+  -[LRRCdmClient observeValueForKeyPath:ofObject:change:context:]
+  -[LRRCdmClient init]
+  -[LRRCdmClient processCDMNluRequestErrorCallback:error:]
+  -[LRRCdmClient processCDMNluRequestCallback:]
+  -[LRRCdmClient watchCdmClientSetup]
+  -[LRRCdmClient stopWatchingCdmClientSetup]
+  -[LRRCdmClient setup:rawSpeechProfile:rawSpeechProfileMetadata:assetDirPath:overrideSiriVocabSpans:]
+  -[LRRCdmClient replayRequestProto:proto:outError:]
+
+
+FeatureStoreMRResponseReader : NSObject
+  // class methods
+  +[FeatureStoreMRResponseReader getEventsWithInteractionIds:]
+
+
+FeatureStoreMRRequestReader : NSObject
+  // class methods
+  +[FeatureStoreMRRequestReader getEventsWithInteractionIds:]
+
+
+FeatureStoreSpanMatchReader : NSObject
+  // class methods
+  +[FeatureStoreSpanMatchReader getEventsWithInteractionIds:]
+  +[FeatureStoreSpanMatchReader filterSpans:]
+
+
+FeatureStoreMDResponseReader : NSObject
+  // class methods
+  +[FeatureStoreMDResponseReader getEventsWithInteractionIds:]
+
+
+LRREvaluator : NSObject
+ @property  NSString *siriPreferenceLanguageCode
+ @property  BOOL siriPreferenceSiriVocabularyEnabled
+ @property  {?=qqq} operatingSystemVersion
+ @property  BOOL isAppleConnectInstalled
+ @property  <LRREvaluatorProtocol> *evaluatorProtocol
+ @property  NSString *customAssetDirPath
+ @property  LRRFeatureStoreFiltering *featureStoreFilteringManager
+ @property  BOOL buildLocalResult
+ @property  BOOL shouldStop
+
+  // instance methods
+  -[LRREvaluator evaluate]
+  -[LRREvaluator .cxx_destruct]
+  -[LRREvaluator operatingSystemVersion]
+  -[LRREvaluator shouldStop]
+  -[LRREvaluator setShouldStop:]
+  -[LRREvaluator initWithProtocol:customAssetDirPath:featureStoreFiltering:]
+  -[LRREvaluator getCalendarWeekNumberFromDate:]
+  -[LRREvaluator getWeekdayNumberFromDate:]
+  -[LRREvaluator isValidRequestId:]
+  -[LRREvaluator getUserIsHabitualUserFromRequestProtos:]
+  -[LRREvaluator getRepetitionCountByUtteranceAndWeekFromRequestProtos:]
+  -[LRREvaluator snapshotInteractionsFromFeatureStore]
+  -[LRREvaluator snapshotInteractionsFromFeatureStoreForIds:]
+  -[LRREvaluator replayOneSample:taskStarted:useCandidateModel:emitMessage:]
+  -[LRREvaluator compareReplayResuts:replayRequestId:]
+  -[LRREvaluator emitSampleEvaluationResult:taskStarted:]
+  -[LRREvaluator emitTaskEvaluationResult:dateStart:taskStartTs:]
+  -[LRREvaluator getNlxAssetVersion]
+  -[LRREvaluator evaluateWithCandidateModel:useCandidateModelOnReplay2:]
+  -[LRREvaluator buildLocalResult]
+  -[LRREvaluator setBuildLocalResult:]
+  -[LRREvaluator siriPreferenceLanguageCode]
+  -[LRREvaluator siriPreferenceSiriVocabularyEnabled]
+  -[LRREvaluator setSiriPreferenceSiriVocabularyEnabled:]
+  -[LRREvaluator isAppleConnectInstalled]
+  -[LRREvaluator setIsAppleConnectInstalled:]
+  -[LRREvaluator evaluatorProtocol]
+  -[LRREvaluator customAssetDirPath]
+  -[LRREvaluator featureStoreFilteringManager]
+  -[LRREvaluator setFeatureStoreFilteringManager:]
+
+
+LRRComparatorUtil : NSObject
+  // class methods
+  +[LRRComparatorUtil compareTokenChain1:withTokenChain2:]
+  +[LRRComparatorUtil compareToken1:withToken2:]
+  +[LRRComparatorUtil compareEmbeddingTensor1:withEmbeddingTensor2:]
+  +[LRRComparatorUtil hasDanglingNode:nodes2:]
+  +[LRRComparatorUtil buildEdgIdSignature:]
+  +[LRRComparatorUtil compareMDMRUsoGraphs:graph2:]
+  +[LRRComparatorUtil compareUSONode1:withUSONode2:]
+  +[LRRComparatorUtil compareUSOEntityIdentifier1:withUSOEntityIdentifier2:]
+  +[LRRComparatorUtil compareEntityCandidate1:withEntityCandidate2:]
+  +[LRRComparatorUtil compareRRGroupId1:withRRGroupId2:]
+  +[LRRComparatorUtil compareSiriCommonStringValue1:withCommonStringValue2:]
+  +[LRRComparatorUtil compareMatchingSpans:span2:]
+  +[LRRComparatorUtil compareInternalSpanData1:withInternalSpanData2:]
+  +[LRRComparatorUtil compareInternalMDSpanData1:withMDSpanData2:]
+  +[LRRComparatorUtil compareInternalMRSpanData1:withMRSpanData2:]
+
+
+FeatureStoreNluRequestReader : NSObject
+  // class methods
+  +[FeatureStoreNluRequestReader getEvents]
+  +[FeatureStoreNluRequestReader getEventsWithInteractionIds:]
+  +[FeatureStoreNluRequestReader getEventsFromDate:]
+  +[FeatureStoreNluRequestReader getEventsWithInteractionIdsFromDate:startDate:endDate:]
+
+
+LRRFeatureStoreFilterInformation : NSObject
+ @property  BOOL filterSamples
+ @property  NSDate *lastReplayDate
+ @property  NSString *currentTimeStampStr
+ @property  NSDictionary *assetInfo
+
+  // instance methods
+  -[LRRFeatureStoreFilterInformation init]
+  -[LRRFeatureStoreFilterInformation assetInfo]
+  -[LRRFeatureStoreFilterInformation setAssetInfo:]
+  -[LRRFeatureStoreFilterInformation filterSamples]
+  -[LRRFeatureStoreFilterInformation setFilterSamples:]
+  -[LRRFeatureStoreFilterInformation lastReplayDate]
+  -[LRRFeatureStoreFilterInformation setLastReplayDate:]
+  -[LRRFeatureStoreFilterInformation currentTimeStampStr]
+  -[LRRFeatureStoreFilterInformation setCurrentTimeStampStr:]
+
+
+LRRSpanUtil : NSObject
+  // class methods
+  +[LRRSpanUtil dedupIdentifiers:]
+  +[LRRSpanUtil cleanupSpan:]
+  +[LRRSpanUtil cleanupSpans:]
+
+
+FeatureStoreUtils : NSObject
+  // class methods
+  +[FeatureStoreUtils insertDictionaryToFeatureStore:streamId:interactionId:]
+  +[FeatureStoreUtils insertCurareEvaluationToFeatureStore:streamId:interactionId:]
+  +[FeatureStoreUtils getEventsFromStreamName:starting:ending:]
+  +[FeatureStoreUtils getEventsFromStreamName:]
+  +[FeatureStoreUtils extractJSONStringFromFSFFeature:]
+
+  // instance methods
+  -[FeatureStoreUtils init]
+
+
+LRRReplayResultStat : NSObject
+ @property  unsigned int evaluatedCount
+ @property  unsigned int nluResponseTrueCount
+ @property  unsigned int topUserParseTrueCount
+ @property  unsigned int mdRequestTrueCount
+ @property  unsigned int mdResponseTrueCount
+ @property  unsigned int mrRequestTrueCount
+ @property  unsigned int mrResponseTrueCount
+ @property  NSDictionary *userIsHabitualUserByWeek
+
+  // instance methods
+  -[LRRReplayResultStat init]
+  -[LRRReplayResultStat append:]
+  -[LRRReplayResultStat setEvaluatedCount:]
+  -[LRRReplayResultStat evaluatedCount]
+  -[LRRReplayResultStat userIsHabitualUserByWeek]
+  -[LRRReplayResultStat nluResponseTrueCount]
+  -[LRRReplayResultStat setNluResponseTrueCount:]
+  -[LRRReplayResultStat topUserParseTrueCount]
+  -[LRRReplayResultStat setTopUserParseTrueCount:]
+  -[LRRReplayResultStat mdRequestTrueCount]
+  -[LRRReplayResultStat setMdRequestTrueCount:]
+  -[LRRReplayResultStat mdResponseTrueCount]
+  -[LRRReplayResultStat setMdResponseTrueCount:]
+  -[LRRReplayResultStat mrRequestTrueCount]
+  -[LRRReplayResultStat setMrRequestTrueCount:]
+  -[LRRReplayResultStat mrResponseTrueCount]
+  -[LRRReplayResultStat setMrResponseTrueCount:]
+  -[LRRReplayResultStat setUserIsHabitualUserByWeek:]
+
+
+LRRMRComparator : NSObject
+  // instance methods
+  -[LRRMRComparator compareMRRequest1:withMRRequest2:]
+  -[LRRMRComparator compareMRResponse1:withMRResponse2:]
+
+
+LRRCdmTrialAssetManager : NSObject
+ @property  NSLocale *locale
+
+  // instance methods
+  -[LRRCdmTrialAssetManager .cxx_destruct]
+  -[LRRCdmTrialAssetManager locale]
+  -[LRRCdmTrialAssetManager initTRIClient]
+  -[LRRCdmTrialAssetManager initWithLocale:forNamespaces:]
+  -[LRRCdmTrialAssetManager getAssetInfo:]
+  -[LRRCdmTrialAssetManager fetchRolloutStatus]
+  -[LRRCdmTrialAssetManager fetchRolloutStatusForNamespace:]
+  -[LRRCdmTrialAssetManager fetchCompatibilityVersion]
+  -[LRRCdmTrialAssetManager fetchCompatibilityVersionForNamespace:]
+
+
+FeatureStoreNluRequestWriter : NSObject
+  // class methods
+  +[FeatureStoreNluRequestWriter setEvent:]
+
+
+LRRCdmProtobufConverter : NSObject
+  // class methods
+  +[LRRCdmProtobufConverter deserializeNluRequestFromJson:]
+  +[LRRCdmProtobufConverter deserializeNluResponseFromJson:]
+  +[LRRCdmProtobufConverter deserializeMDRequestFromJson:]
+  +[LRRCdmProtobufConverter deserializeMDResponseFromJson:]
+  +[LRRCdmProtobufConverter deserializeMRRequestFromJson:]
+  +[LRRCdmProtobufConverter deserializeMRResponseFromJson:]
+  +[LRRCdmProtobufConverter serializeUsoGraphToJson:]
+  +[LRRCdmProtobufConverter serializeNluRequestToJson:]
+  +[LRRCdmProtobufConverter deserializeUsoGraphFromJson:]
+
+
+FeatureStoreMDRequestReader : NSObject
+  // class methods
+  +[FeatureStoreMDRequestReader getEventsWithInteractionIds:]
+
+
+LRRCDMReplayRequestResult : NSObject
+ @property  SIRINLUEXTERNALCDMNluRequest *request
+ @property  SIRINLUEXTERNALCDMNluResponse *responseReplay
+
+  // instance methods
+  -[LRRCDMReplayRequestResult .cxx_destruct]
+  -[LRRCDMReplayRequestResult request]
+  -[LRRCDMReplayRequestResult initWithReplayResult:responseReplay:]
+  -[LRRCDMReplayRequestResult responseReplay]
+
+
+LRRNluResponseComparator : NSObject
+  // instance methods
+  -[LRRNluResponseComparator compareUsoGraphs:graph2:]
+  -[LRRNluResponseComparator compareUserDialogActs:uda2:]
+  -[LRRNluResponseComparator compareProbability:probability2:]
+  -[LRRNluResponseComparator compareParses:parse2:]
+  -[LRRNluResponseComparator compareParsesWithProb:parse2:]
+  -[LRRNluResponseComparator compare:response2:]
+
+
+LRRSampleReplayResult : NSObject
+ @property  NSString *originalInteractionId
+ @property  NSString *replayRequestId
+ @property  BOOL evaluated
+ @property  NSDictionary *comparatorResults
+ @property  NSString *strRequestStart
+ @property  double requestStartTs
+ @property  NSString *strRequestEnd
+ @property  double requestEndTs
+ @property  double timeRequestInterval
+ @property  unsigned int repetitionCount
+ @property  BOOL userWasHabitualInSameWeek
+ @property  long long errorCode
+
+  // instance methods
+  -[LRRSampleReplayResult setErrorCode:]
+  -[LRRSampleReplayResult errorCode]
+  -[LRRSampleReplayResult .cxx_destruct]
+  -[LRRSampleReplayResult init]
+  -[LRRSampleReplayResult comparatorResults]
+  -[LRRSampleReplayResult setComparatorResults:]
+  -[LRRSampleReplayResult setEvaluated:]
+  -[LRRSampleReplayResult evaluated]
+  -[LRRSampleReplayResult originalInteractionId]
+  -[LRRSampleReplayResult setOriginalInteractionId:]
+  -[LRRSampleReplayResult replayRequestId]
+  -[LRRSampleReplayResult setReplayRequestId:]
+  -[LRRSampleReplayResult strRequestStart]
+  -[LRRSampleReplayResult setStrRequestStart:]
+  -[LRRSampleReplayResult requestStartTs]
+  -[LRRSampleReplayResult setRequestStartTs:]
+  -[LRRSampleReplayResult strRequestEnd]
+  -[LRRSampleReplayResult setStrRequestEnd:]
+  -[LRRSampleReplayResult requestEndTs]
+  -[LRRSampleReplayResult setRequestEndTs:]
+  -[LRRSampleReplayResult timeRequestInterval]
+  -[LRRSampleReplayResult setTimeRequestInterval:]
+  -[LRRSampleReplayResult repetitionCount]
+  -[LRRSampleReplayResult setRepetitionCount:]
+  -[LRRSampleReplayResult userWasHabitualInSameWeek]
+  -[LRRSampleReplayResult setUserWasHabitualInSameWeek:]
+
+
+LRRComparatorResult : NSObject
+ @property  int comparatorName
+ @property  BOOL isValidOriginalItem
+ @property  BOOL isValidReplayedItem
+ @property  BOOL isMatched
+
+  // instance methods
+  -[LRRComparatorResult isMatched]
+  -[LRRComparatorResult setIsValidOriginalItem:]
+  -[LRRComparatorResult setIsValidReplayedItem:]
+  -[LRRComparatorResult setIsMatched:]
+  -[LRRComparatorResult comparatorName]
+  -[LRRComparatorResult isValidOriginalItem]
+  -[LRRComparatorResult isValidReplayedItem]
+  -[LRRComparatorResult initWithComparatorName:]
+
+
+LRRJsonUtil : NSObject
+  // class methods
+  +[LRRJsonUtil prettifyJsonString:]
+
+
+LRRMDComparator : NSObject
+  // instance methods
+  -[LRRMDComparator compareMDRequest1:withMDRequest2:]
+  -[LRRMDComparator compareMDResponse1:withMDResponse2:]
+
+
+_TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils : NSObject
+  // class methods
+  +[_TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils getProtoDataWithResponse:]
+  +[_TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils getObjcProtoWithResponse:]
+
+  // instance methods
+  -[_TtC29LighthouseReferenceResolution22LRRCdmNluResponseUtils init]
+
+
+_TtC29LighthouseReferenceResolution21LRRCdmNluRequestUtils : NSObject
+  // class methods
+  +[_TtC29LighthouseReferenceResolution21LRRCdmNluRequestUtils createCdmNluRequestWithProto:]
+
+  // instance methods
+  -[_TtC29LighthouseReferenceResolution21LRRCdmNluRequestUtils init]
+
+
+_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift : NSObject
+  // class methods
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift serializeNluRequestToJsonWithProtoData:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift serializeNluResponseToJsonWithProtoData:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeNluRequestFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeNluResponseFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeMDRequestFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeMDResponseFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeMRRequestFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeMRResponseFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeMatchingSpanFromJsonWithProtoJson:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift serializeUsoGraphToJsonWithProtoData:]
+  +[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift deserializeUsoGraphFromJsonWithProtoJson:]
+
+  // instance methods
+  -[_TtC29LighthouseReferenceResolution29LRRCdmProtobufConverter_swift init]
+
+
+01 00 0d00 /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices: AFPreferences 
+01 00 0400 /System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation: CDMClient 
+01 00 0400 /System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation: CDMClientSetup 
+01 00 0e00 /System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge: CKVocabularySandbox 
+01 00 0600 /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore: FSFBiomeFeatureStore 
+01 00 0600 /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore: FSFCurareEvaluationFeature 
+01 00 0600 /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore: FSFCurareInteractionAsJsonStr 
+01 00 0600 /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore: FSFCurareInteractionStream 
+01 00 0600 /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore: FSFNLUFeature 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSSortDescriptor 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUEXTERNALCDMNluRequest 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUEXTERNALCDMNluResponse 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUEXTERNALUsoGraph 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUINTERNALMENTION_DETECTORMentionDetectorRequest 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUINTERNALMENTION_DETECTORMentionDetectorResponse 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUINTERNALMENTION_RESOLVERMentionResolverRequest 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUINTERNALMENTION_RESOLVERMentionResolverResponse 
+01 00 0700 /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes: SIRINLUINTERNALMatchingSpan 
+01 00 0100 /System/Library/PrivateFrameworks/Trial.framework/Trial: TRIClient 

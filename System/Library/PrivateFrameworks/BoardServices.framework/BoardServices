@@ -1,0 +1,886 @@
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSServiceInterface._client
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSServiceInterface._clientWaitsForActivation
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSServiceInterface._identifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSServiceInterface._server
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSXPCServiceConnectionMessage._handshake
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSXPCServiceConnectionMessage._sendFlag
+|| __DATA.__objc_ivar _OBJC_IVAR_$_BSXPCServiceConnectionMessage._targetQueue
+|| __DATA_CONST.__const _BSServiceConnectionEndpointInstanceKey
+|| __DATA_CONST.__const _BSServiceConnectionEndpointServiceKey
+|| __DATA_CONST.__const _BSServiceConnectionErrorDomain
+|| __DATA_CONST.__const _BSServiceMethodNameErrorKey
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSMutableServiceInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSNSXPCTransport
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceConnectionEndpoint
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceConnectionEndpointInjector
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceConnectionEndpointMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceDomainSpecification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceInterface
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceQuality
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServiceSpecification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSServicesConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionActivationMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionChildContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionEventHandler
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionMessageReply
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionNullContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionPeer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionProxy
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionRootClientEndpointContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionRootContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_BSXPCServiceConnectionRootServerContext
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BSServiceConnectionConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BSServiceDispatchingQueueImpl
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__BSServiceOutgoingEndpoint
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSMutableServiceInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSNSXPCTransport
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceConnectionEndpoint
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceConnectionEndpointInjector
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceConnectionEndpointMonitor
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceDomain
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceDomainSpecification
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceInterface
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceQuality
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServiceSpecification
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSServicesConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionActivationMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionChildContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionEventHandler
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionListener
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionMessageReply
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionNullContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionPeer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionProxy
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionRootClientEndpointContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionRootContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_BSXPCServiceConnectionRootServerContext
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BSServiceConnectionConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BSServiceDispatchingQueueImpl
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$__BSServiceOutgoingEndpoint
+|| __TEXT.__const _BSBoardServicesVersionNumber
+|| __TEXT.__const _BSBoardServicesVersionString
+|| __TEXT.__text _BSServiceBootstrapLog
+|| __TEXT.__text _BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain
+|| __TEXT.__text _BSServiceConnectionEndpointTargetDescriptionForMachName
+|| __TEXT.__text _BSServiceConnectionErrorCreate
+|| __TEXT.__text _BSServiceConnectionErrorCreateWithInfo
+|| __TEXT.__text _BSServiceEndpointGrantNamespace
+|| __TEXT.__text _BSServiceInjectionLog
+|| __TEXT.__text _BSServiceLog
+|| __TEXT.__text _BSServiceXPCErrorsLog
+|| __TEXT.__text _BSServiceXPCLog
+|| __TEXT.__text _BSXPCServiceConnectionExecuteCallOut
+|| __TEXT.__text _NSStringFromBSServiceConnectionErrorCode
+|| __TEXT.__text _NSStringFromBSServiceDomainStartType
+__ BaseBoard: _BSAtomicGetFlag
+__ BaseBoard: _BSAtomicSetFlag
+__ BaseBoard: _BSCreateDeserializedStringFromXPCDictionaryWithKey
+__ BaseBoard: _BSDispatchQueueAssertBarrier
+__ BaseBoard: _BSDispatchQueueAssertMain
+__ BaseBoard: _BSDispatchQueueCreate
+__ BaseBoard: _BSEqualObjects
+__ BaseBoard: _BSEqualStrings
+__ BaseBoard: _BSErrorCodeDescriptionKey
+__ BaseBoard: _BSErrorExceptionDescriptionKey
+__ BaseBoard: _BSPIDForXPCConnection
+__ BaseBoard: _BSSerializeStringToXPCDictionaryWithKey
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSDispatchQueueAttributes
+__ BaseBoard: _OBJC_CLASS_$_BSMutableIntegerMap
+__ BaseBoard: _OBJC_CLASS_$_BSObjCProtocol
+__ BaseBoard: _OBJC_CLASS_$_BSProcessHandle
+__ BaseBoard: _OBJC_CLASS_$_BSSimpleAssertion
+__ BaseBoard: _OBJC_CLASS_$_BSXPCCoder
+__ BaseBoard: _OBJC_CLASS_$_BSZeroingWeakReference
+__ BaseBoard: _OBJC_IVAR_$_BSXPCCoder._message
+__ BaseBoard: _OBJC_IVAR_$_BSXPCCoder._xpcConnection
+__ BaseBoard: _OBJC_METACLASS_$_BSXPCCoder
+__ BaseBoard: __BSSafeCast
+__ BaseBoard: __bs_set_crash_log_message
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _NSInvalidArgumentException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSBlock
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSRequestConcreteImplementation
+__ Foundation: _NSSelectorFromString
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSAutoreleasePool
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSXPCCoder
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCListenerEndpoint
+__ SoftLinking: __sl_dlopen
+__ libSystem.B.dylib: __Block_object_assign
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_error_termination_imminent
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_endpoint
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_async_and_wait
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _dlerror
+__ libSystem.B.dylib: _dlsym
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getpid
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_assert_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _qos_class_main
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_create
+__ libSystem.B.dylib: _xpc_connection_create_from_endpoint
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_bs_type
+__ libSystem.B.dylib: _xpc_connection_get_context
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_barrier
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply_sync
+__ libSystem.B.dylib: _xpc_connection_send_notification
+__ libSystem.B.dylib: _xpc_connection_set_bs_type
+__ libSystem.B.dylib: _xpc_connection_set_context
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_finalizer_f
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_connection_suspend
+__ libSystem.B.dylib: _xpc_copy
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_expects_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_bool
+__ libSystem.B.dylib: _xpc_dictionary_get_int64
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_handoff_reply
+__ libSystem.B.dylib: _xpc_dictionary_set_bool
+__ libSystem.B.dylib: _xpc_dictionary_set_int64
+__ libSystem.B.dylib: _xpc_dictionary_set_value
+__ libSystem.B.dylib: _xpc_endpoint_compare
+__ libSystem.B.dylib: _xpc_endpoint_create
+__ libSystem.B.dylib: _xpc_endpoint_create_bs_named
+__ libSystem.B.dylib: _xpc_equal
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_hash
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _class_addMethod
+__ libobjc.A.dylib: _class_addProtocol
+__ libobjc.A.dylib: _class_getInstanceMethod
+__ libobjc.A.dylib: _imp_implementationWithBlock
+__ libobjc.A.dylib: _method_invoke
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_allocateClassPair
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_lookUpClass
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_registerClassPair
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x10
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+BSServiceConnectionEndpointInjector : NSObject <BSServiceConnectionEndpointInjectorConfiguring, BSInvalidatable>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceConnectionEndpointInjector injectorWithConfigurator:]
+
+  // instance methods
+  -[BSServiceConnectionEndpointInjector setInstance:]
+  -[BSServiceConnectionEndpointInjector setTarget:]
+  -[BSServiceConnectionEndpointInjector dealloc]
+  -[BSServiceConnectionEndpointInjector setService:]
+  -[BSServiceConnectionEndpointInjector .cxx_destruct]
+  -[BSServiceConnectionEndpointInjector setAdditionalAttributes:]
+  -[BSServiceConnectionEndpointInjector setInheritingEnvironment:]
+  -[BSServiceConnectionEndpointInjector invalidate]
+  -[BSServiceConnectionEndpointInjector setDomain:]
+  -[BSServiceConnectionEndpointInjector init]
+
+
+BSXPCServiceConnectionProxy : NSObject
+  // instance methods
+  -[BSXPCServiceConnectionProxy dealloc]
+
+
+BSNSXPCTransport : NSObject <BSNSXPCConnectionConfiguring, _NSXPCTransport>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSNSXPCTransport sendMessage:]
+  -[BSNSXPCTransport activate]
+  -[BSNSXPCTransport setTargetQueue:]
+  -[BSNSXPCTransport auditSessionIdentifier]
+  -[BSNSXPCTransport effectiveUserIdentifier]
+  -[BSNSXPCTransport suspend]
+  -[BSNSXPCTransport setMessageHandler:]
+  -[BSNSXPCTransport .cxx_destruct]
+  -[BSNSXPCTransport resume]
+  -[BSNSXPCTransport auditToken]
+  -[BSNSXPCTransport sendMessageWithReplySync:]
+  -[BSNSXPCTransport effectiveGroupIdentifier]
+  -[BSNSXPCTransport processIdentifier]
+  -[BSNSXPCTransport setErrorHandler:]
+  -[BSNSXPCTransport sendNotification:]
+  -[BSNSXPCTransport cancel]
+  -[BSNSXPCTransport sendMessageWithReply:onQueue:replyHandler:]
+  -[BSNSXPCTransport sendBarrierBlock:]
+  -[BSNSXPCTransport setPerMessageAssertionAttributes:]
+
+
+_BSServiceConnectionConfiguration : NSObject <BSServiceConnectionInternalConfiguring, BSServiceConnectionConfiguring_DispatchingQueue>
+  // instance methods
+  -[_BSServiceConnectionConfiguration setInvalidationHandler:]
+  -[_BSServiceConnectionConfiguration interface]
+  -[_BSServiceConnectionConfiguration setTargetQueue:]
+  -[_BSServiceConnectionConfiguration setUserInfo:]
+  -[_BSServiceConnectionConfiguration setMessageHandler:]
+  -[_BSServiceConnectionConfiguration .cxx_destruct]
+  -[_BSServiceConnectionConfiguration setInterruptionHandler:]
+  -[_BSServiceConnectionConfiguration setInterface:]
+  -[_BSServiceConnectionConfiguration setErrorHandler:]
+  -[_BSServiceConnectionConfiguration setName:]
+  -[_BSServiceConnectionConfiguration setServiceQuality:]
+  -[_BSServiceConnectionConfiguration setActivationHandler:]
+  -[_BSServiceConnectionConfiguration setTargetDispatchingQueue:]
+  -[_BSServiceConnectionConfiguration setInterfaceTarget:]
+
+
+BSServiceConnection : NSObject <BSServiceConnectionClient, BSServiceConnectionHost, BSServiceConnectionContext, BSXPCServiceConnectionMessaging, BSInvalidatable>
+ @property  BSProcessHandle *remoteProcess
+ @property  NSString *service
+ @property  NSString *instance
+ @property  <NSCopying> *userInfo
+ @property  id remoteTarget
+ @property  RBSTarget *remoteAssertionTarget
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceConnection NSXPCConnectionWithEndpoint:configurator:]
+  +[BSServiceConnection connectionWithEndpoint:clientContextBuilder:]
+  +[BSServiceConnection NSXPCConnectionWithEndpoint:clientContextBuilder:configurator:]
+  +[BSServiceConnection currentContext]
+  +[BSServiceConnection connectionWithEndpoint:]
+
+  // instance methods
+  -[BSServiceConnection activate]
+  -[BSServiceConnection instance]
+  -[BSServiceConnection extractNSXPCConnectionWithConfigurator:]
+  -[BSServiceConnection userInfo]
+  -[BSServiceConnection configureConnection:]
+  -[BSServiceConnection dealloc]
+  -[BSServiceConnection .cxx_destruct]
+  -[BSServiceConnection createMessage]
+  -[BSServiceConnection service]
+  -[BSServiceConnection remoteTargetWithAssertionAttributes:]
+  -[BSServiceConnection remoteProcess]
+  -[BSServiceConnection _configureConnection:]
+  -[BSServiceConnection remoteAssertionTarget]
+  -[BSServiceConnection remoteTarget]
+  -[BSServiceConnection invalidate]
+  -[BSServiceConnection remoteTargetWithLaunchingAssertionAttributes:]
+  -[BSServiceConnection createMessageWithCompletion:]
+  -[BSServiceConnection init]
+
+
+BSServiceDomainSpecification : NSObject <BSDescriptionProviding>
+ @property  NSString *identifier
+ @property  NSString *machName
+ @property  NSSet *services
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSServiceDomainSpecification machName]
+  -[BSServiceDomainSpecification identifier]
+  -[BSServiceDomainSpecification descriptionWithMultilinePrefix:]
+  -[BSServiceDomainSpecification descriptionBuilderWithMultilinePrefix:]
+  -[BSServiceDomainSpecification services]
+  -[BSServiceDomainSpecification .cxx_destruct]
+  -[BSServiceDomainSpecification succinctDescription]
+  -[BSServiceDomainSpecification serviceForIdentifier:]
+  -[BSServiceDomainSpecification succinctDescriptionBuilder]
+  -[BSServiceDomainSpecification init]
+
+
+BSXPCServiceConnectionPeer : NSObject <BSDescriptionProviding>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSXPCServiceConnectionPeer descriptionWithMultilinePrefix:]
+  -[BSXPCServiceConnectionPeer descriptionBuilderWithMultilinePrefix:]
+  -[BSXPCServiceConnectionPeer .cxx_destruct]
+  -[BSXPCServiceConnectionPeer succinctDescription]
+  -[BSXPCServiceConnectionPeer succinctDescriptionBuilder]
+  -[BSXPCServiceConnectionPeer init]
+
+
+BSXPCServiceConnectionEventHandler : NSObject
+  // instance methods
+  -[BSXPCServiceConnectionEventHandler .cxx_destruct]
+  -[BSXPCServiceConnectionEventHandler init]
+
+
+BSServicesConfiguration : NSObject <BSDescriptionProviding>
+ @property  NSSet *domains
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServicesConfiguration extendAutomaticBootstrapCompletion]
+  +[BSServicesConfiguration registerDynamicDomainsFromPlist:]
+  +[BSServicesConfiguration defaultConfiguration]
+  +[BSServicesConfiguration activateManualDomain:]
+  +[BSServicesConfiguration bootstrapConfiguration]
+
+  // instance methods
+  -[BSServicesConfiguration domains]
+  -[BSServicesConfiguration descriptionWithMultilinePrefix:]
+  -[BSServicesConfiguration domainForMachName:]
+  -[BSServicesConfiguration descriptionBuilderWithMultilinePrefix:]
+  -[BSServicesConfiguration domainForIdentifier:]
+  -[BSServicesConfiguration .cxx_destruct]
+  -[BSServicesConfiguration succinctDescription]
+  -[BSServicesConfiguration domainsContainingServiceIdentifier:]
+  -[BSServicesConfiguration succinctDescriptionBuilder]
+  -[BSServicesConfiguration init]
+
+
+BSServiceInterface : NSObject <NSCopying, NSMutableCopying, BSDescriptionProviding>
+ @property  NSString *identifier
+ @property  long long clientMessagingExpectation
+ @property  BSObjCProtocol *server
+ @property  BSObjCProtocol *client
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceInterface interfaceWithServer:client:]
+
+  // instance methods
+  -[BSServiceInterface identifier]
+  -[BSServiceInterface descriptionWithMultilinePrefix:]
+  -[BSServiceInterface descriptionBuilderWithMultilinePrefix:]
+  -[BSServiceInterface .cxx_destruct]
+  -[BSServiceInterface succinctDescription]
+  -[BSServiceInterface client]
+  -[BSServiceInterface server]
+  -[BSServiceInterface setIdentifier:]
+  -[BSServiceInterface copyWithZone:]
+  -[BSServiceInterface succinctDescriptionBuilder]
+  -[BSServiceInterface mutableCopyWithZone:]
+  -[BSServiceInterface clientMessagingExpectation]
+  -[BSServiceInterface isEqual:]
+  -[BSServiceInterface init]
+
+
+BSMutableServiceInterface : BSServiceInterface
+ @property  NSString *identifier
+ @property  long long clientMessagingExpectation
+ @property  BSObjCProtocol *server
+ @property  BSObjCProtocol *client
+
+  // class methods
+  +[BSMutableServiceInterface interfaceWithIdentifier:]
+
+  // instance methods
+  -[BSMutableServiceInterface setClient:]
+  -[BSMutableServiceInterface setIdentifier:]
+  -[BSMutableServiceInterface copyWithZone:]
+  -[BSMutableServiceInterface setClientMessagingExpectation:]
+  -[BSMutableServiceInterface setServer:]
+
+
+_BSServiceOutgoingEndpoint : NSObject <NSCopying>
+  // instance methods
+  -[_BSServiceOutgoingEndpoint .cxx_destruct]
+  -[_BSServiceOutgoingEndpoint copyWithZone:]
+  -[_BSServiceOutgoingEndpoint isEqual:]
+
+
+BSServiceManager : NSObject <RBSServiceDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSServiceManager .cxx_destruct]
+  -[BSServiceManager service:didLoseInheritances:]
+  -[BSServiceManager service:didReceiveInheritances:]
+  -[BSServiceManager init]
+
+
+BSXPCServiceConnectionContext : NSObject <NSCopying>
+ @property  NSString *endpointDescription
+ @property  BOOL server
+ @property  BOOL client
+ @property  BOOL root
+ @property  BOOL child
+ @property  BOOL nonLaunching
+
+  // instance methods
+  -[BSXPCServiceConnectionContext isRoot]
+  -[BSXPCServiceConnectionContext isClient]
+  -[BSXPCServiceConnectionContext .cxx_destruct]
+  -[BSXPCServiceConnectionContext isNonLaunching]
+  -[BSXPCServiceConnectionContext copyWithZone:]
+  -[BSXPCServiceConnectionContext isChild]
+  -[BSXPCServiceConnectionContext isServer]
+  -[BSXPCServiceConnectionContext init]
+  -[BSXPCServiceConnectionContext endpointDescription]
+
+
+BSXPCServiceConnectionChildContext : BSXPCServiceConnectionContext
+  // instance methods
+  -[BSXPCServiceConnectionChildContext isClient]
+  -[BSXPCServiceConnectionChildContext .cxx_destruct]
+  -[BSXPCServiceConnectionChildContext isNonLaunching]
+  -[BSXPCServiceConnectionChildContext isChild]
+  -[BSXPCServiceConnectionChildContext isServer]
+  -[BSXPCServiceConnectionChildContext isEqual:]
+  -[BSXPCServiceConnectionChildContext endpointDescription]
+
+
+BSXPCServiceConnectionRootContext : BSXPCServiceConnectionContext
+  // instance methods
+  -[BSXPCServiceConnectionRootContext isRoot]
+  -[BSXPCServiceConnectionRootContext .cxx_destruct]
+  -[BSXPCServiceConnectionRootContext isEqual:]
+  -[BSXPCServiceConnectionRootContext endpointDescription]
+
+
+BSXPCServiceConnectionRootServerContext : BSXPCServiceConnectionRootContext
+  // instance methods
+  -[BSXPCServiceConnectionRootServerContext isServer]
+
+
+BSXPCServiceConnectionNullContext : BSXPCServiceConnectionRootContext
+  // instance methods
+  -[BSXPCServiceConnectionNullContext isClient]
+
+
+BSXPCServiceConnectionRootClientEndpointContext : BSXPCServiceConnectionRootContext
+  // instance methods
+  -[BSXPCServiceConnectionRootClientEndpointContext isClient]
+  -[BSXPCServiceConnectionRootClientEndpointContext .cxx_destruct]
+  -[BSXPCServiceConnectionRootClientEndpointContext isNonLaunching]
+
+
+BSService : NSObject
+  // instance methods
+  -[BSService .cxx_destruct]
+
+
+BSServiceDomain : NSObject
+  // instance methods
+  -[BSServiceDomain .cxx_destruct]
+  -[BSServiceDomain init]
+
+
+BSXPCServiceConnectionListener : NSObject <BSXPCServiceConnectionListenerConfiguring, BSXPCServiceConnectionParent, BSInvalidatable>
+ @property  BOOL _invalidated
+ @property  BOOL _clientInvalidated
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSXPCServiceConnectionListener setEndpointDescription:]
+  -[BSXPCServiceConnectionListener _isInvalidated]
+  -[BSXPCServiceConnectionListener _isClientInvalidated]
+  -[BSXPCServiceConnectionListener dealloc]
+  -[BSXPCServiceConnectionListener setConnectionHandler:]
+  -[BSXPCServiceConnectionListener .cxx_destruct]
+  -[BSXPCServiceConnectionListener setErrorHandler:]
+  -[BSXPCServiceConnectionListener invalidate]
+  -[BSXPCServiceConnectionListener setServiceQuality:]
+  -[BSXPCServiceConnectionListener _invalidateChildConnection:]
+  -[BSXPCServiceConnectionListener init]
+
+
+BSServiceQuality : NSObject <NSCopying>
+ @property  unsigned int serviceClass
+ @property  int relativePriority
+
+  // class methods
+  +[BSServiceQuality userInitiated]
+  +[BSServiceQuality utility]
+  +[BSServiceQuality serviceWithClass:relativePriority:]
+  +[BSServiceQuality userInteractive]
+  +[BSServiceQuality background]
+  +[BSServiceQuality serviceWithClass:]
+  +[BSServiceQuality main]
+
+  // instance methods
+  -[BSServiceQuality dealloc]
+  -[BSServiceQuality .cxx_destruct]
+  -[BSServiceQuality serviceClass]
+  -[BSServiceQuality copyWithZone:]
+  -[BSServiceQuality isEqual:]
+  -[BSServiceQuality init]
+  -[BSServiceQuality relativePriority]
+
+
+BSServiceConnectionEndpointMonitor : NSObject <BSServiceMonitor, BSInvalidatable>
+ @property  NSString *service
+ @property  <BSServiceConnectionEndpointMonitorDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceConnectionEndpointMonitor monitorForService:]
+
+  // instance methods
+  -[BSServiceConnectionEndpointMonitor activate]
+  -[BSServiceConnectionEndpointMonitor setDelegate:]
+  -[BSServiceConnectionEndpointMonitor delegate]
+  -[BSServiceConnectionEndpointMonitor dealloc]
+  -[BSServiceConnectionEndpointMonitor .cxx_destruct]
+  -[BSServiceConnectionEndpointMonitor service]
+  -[BSServiceConnectionEndpointMonitor invalidate]
+  -[BSServiceConnectionEndpointMonitor endpointsForEnvironment:]
+  -[BSServiceConnectionEndpointMonitor serialCallOut_didUpdateEndpointEnvironments:]
+  -[BSServiceConnectionEndpointMonitor init]
+
+
+BSServiceConnectionListener : NSObject <BSServiceConnectionListenerConfiguring, BSServiceListener, BSInvalidatable>
+ @property  NSString *domain
+ @property  NSString *service
+ @property  NSString *instance
+ @property  BSServiceConnectionEndpoint *endpoint
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceConnectionListener extendBootstrap]
+  +[BSServiceConnectionListener listenerWithConfigurator:]
+
+  // instance methods
+  -[BSServiceConnectionListener activate]
+  -[BSServiceConnectionListener domain]
+  -[BSServiceConnectionListener setInstance:]
+  -[BSServiceConnectionListener instance]
+  -[BSServiceConnectionListener setDelegate:]
+  -[BSServiceConnectionListener endpoint]
+  -[BSServiceConnectionListener dealloc]
+  -[BSServiceConnectionListener setService:]
+  -[BSServiceConnectionListener .cxx_destruct]
+  -[BSServiceConnectionListener service]
+  -[BSServiceConnectionListener didReceiveConnection:]
+  -[BSServiceConnectionListener invalidate]
+  -[BSServiceConnectionListener setDomain:]
+  -[BSServiceConnectionListener init]
+
+
+_BSServiceDispatchingQueueImpl : NSObject <BSServiceDispatchingQueue>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[_BSServiceDispatchingQueueImpl assertBarrierOnQueue]
+  -[_BSServiceDispatchingQueueImpl backingQueueIfExists]
+  -[_BSServiceDispatchingQueueImpl .cxx_destruct]
+  -[_BSServiceDispatchingQueueImpl performAsync:withHandoff:]
+  -[_BSServiceDispatchingQueueImpl performAsync:]
+
+
+BSXPCServiceConnectionMessage : BSXPCCoder <BSXPCServiceConnectionMessage, BSInvalidatable>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSXPCServiceConnectionMessage send]
+  -[BSXPCServiceConnectionMessage sendSynchronouslyWithError:]
+  -[BSXPCServiceConnectionMessage expectsReply]
+  -[BSXPCServiceConnectionMessage createReply]
+  -[BSXPCServiceConnectionMessage .cxx_destruct]
+  -[BSXPCServiceConnectionMessage initWithMessage:]
+  -[BSXPCServiceConnectionMessage sendSynchronously]
+  -[BSXPCServiceConnectionMessage invalidate]
+
+
+BSXPCServiceConnectionMessageReply : BSXPCServiceConnectionMessage
+  // instance methods
+  -[BSXPCServiceConnectionMessageReply initWithMessage:]
+  -[BSXPCServiceConnectionMessageReply sendSynchronously]
+
+
+BSXPCServiceConnection : NSObject <BSXPCServiceConnectionParent, BSInvalidatable>
+ @property  BOOL _invalidated
+ @property  BOOL _clientInvalidated
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSXPCServiceConnection _isInvalidated]
+  -[BSXPCServiceConnection _isClientInvalidated]
+  -[BSXPCServiceConnection dealloc]
+  -[BSXPCServiceConnection .cxx_destruct]
+  -[BSXPCServiceConnection invalidate]
+  -[BSXPCServiceConnection _invalidateChildConnection:]
+  -[BSXPCServiceConnection init]
+
+
+BSXPCServiceConnectionActivationMessage : NSObject <BSXPCServiceConnectionHandshake, BSInvalidatable>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSXPCServiceConnectionActivationMessage sendIfNecessary]
+  -[BSXPCServiceConnectionActivationMessage dealloc]
+  -[BSXPCServiceConnectionActivationMessage .cxx_destruct]
+  -[BSXPCServiceConnectionActivationMessage invalidate]
+
+
+BSServiceSpecification : NSObject <NSCopying, BSDescriptionProviding>
+ @property  NSString *identifier
+ @property  BOOL hiddenAtLaunch
+ @property  BOOL derived
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[BSServiceSpecification identifier]
+  -[BSServiceSpecification descriptionWithMultilinePrefix:]
+  -[BSServiceSpecification descriptionBuilderWithMultilinePrefix:]
+  -[BSServiceSpecification optionForKey:]
+  -[BSServiceSpecification .cxx_destruct]
+  -[BSServiceSpecification succinctDescription]
+  -[BSServiceSpecification isHiddenAtLaunch]
+  -[BSServiceSpecification isDerived]
+  -[BSServiceSpecification copyWithZone:]
+  -[BSServiceSpecification succinctDescriptionBuilder]
+  -[BSServiceSpecification isEqual:]
+  -[BSServiceSpecification init]
+
+
+BSServiceConnectionEndpoint : NSObject <NSCopying, BSXPCCoding, BSXPCSecureCoding, NSSecureCoding>
+ @property  BOOL nonLaunching
+ @property  NSString *targetDescription
+ @property  NSString *service
+ @property  NSString *instance
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[BSServiceConnectionEndpoint supportsSecureCoding]
+  +[BSServiceConnectionEndpoint defaultShellMachName]
+  +[BSServiceConnectionEndpoint nullEndpointForService:instance:]
+  +[BSServiceConnectionEndpoint endpointForMachName:service:instance:]
+  +[BSServiceConnectionEndpoint supportsBSXPCSecureCoding]
+  +[BSServiceConnectionEndpoint endpointForSystemMachName:service:instance:]
+
+  // instance methods
+  -[BSServiceConnectionEndpoint initWithXPCDictionary:]
+  -[BSServiceConnectionEndpoint instance]
+  -[BSServiceConnectionEndpoint initWithBSXPCCoder:]
+  -[BSServiceConnectionEndpoint encodeWithCoder:]
+  -[BSServiceConnectionEndpoint compare:]
+  -[BSServiceConnectionEndpoint targetDescription]
+  -[BSServiceConnectionEndpoint .cxx_destruct]
+  -[BSServiceConnectionEndpoint service]
+  -[BSServiceConnectionEndpoint isNonLaunching]
+  -[BSServiceConnectionEndpoint saveAsInjectorEndowmentForKey:]
+  -[BSServiceConnectionEndpoint isEqualToServiceEndpoint:]
+  -[BSServiceConnectionEndpoint copyWithZone:]
+  -[BSServiceConnectionEndpoint isNullEndpoint]
+  -[BSServiceConnectionEndpoint encodeWithBSXPCCoder:]
+  -[BSServiceConnectionEndpoint encodeWithXPCDictionary:]
+  -[BSServiceConnectionEndpoint isEqual:]
+  -[BSServiceConnectionEndpoint init]
+  -[BSServiceConnectionEndpoint initWithCoder:]
+
+
+NSError(BSServiceConnection)
+	// instance methods
+	-[NSError(BSServiceConnection) isBSServiceConnectionError]
+
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDispatchQueueAttributes 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableIntegerMap 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSObjCProtocol 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSProcessHandle 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSSimpleAssertion 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSXPCCoder 
+01 00 0100 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSZeroingWeakReference 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSAutoreleasePool 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSBlock 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0400 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSOrderedSet 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCCoder 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0300 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListenerEndpoint 

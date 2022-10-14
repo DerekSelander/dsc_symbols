@@ -1,0 +1,998 @@
+|| __DATA.__common __suggestionViewControllerPresenter
+|| __DATA.__data _OBJC_METACLASS_$__TtC17CoreSuggestionsUI20SGReminderSuggestion
+|| __DATA.__data _OBJC_METACLASS_$__TtC17CoreSuggestionsUI27SGSuggestionTableController
+|| __DATA.__data _SGSuggestionEventTrailingComparator
+|| __DATA.__objc_data _OBJC_CLASS_$_SGBannerDividerParameter
+|| __DATA.__objc_data _OBJC_CLASS_$_SGContactSuggestion
+|| __DATA.__objc_data _OBJC_CLASS_$_SGContactSuggestionBase
+|| __DATA.__objc_data _OBJC_CLASS_$_SGEventSuggestion
+|| __DATA.__objc_data _OBJC_CLASS_$_SGEventSuggestionBase
+|| __DATA.__objc_data _OBJC_CLASS_$_SGRadarSuggestion
+|| __DATA.__objc_data _OBJC_CLASS_$_SGRadarSuggestionBase
+|| __DATA.__objc_data _OBJC_CLASS_$_SGUIDateFormatting
+|| __DATA.__objc_data _OBJC_CLASS_$_SGUIIconSupport
+|| __DATA.__objc_data _OBJC_CLASS_$__TtC17CoreSuggestionsUI20SGReminderSuggestion
+|| __DATA.__objc_data _OBJC_CLASS_$__TtC17CoreSuggestionsUI27SGSuggestionTableController
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGBannerDividerParameter
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGContactSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGContactSuggestionBase
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGEventSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGEventSuggestionBase
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGRadarSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGRadarSuggestionBase
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGUIDateFormatting
+|| __DATA.__objc_data _OBJC_METACLASS_$_SGUIIconSupport
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGContactSuggestionBase._realtimeContact
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGEventSuggestionBase._eventKitEvent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGEventSuggestionBase._realtimeEvent
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGFoundInSuggestionGuardedData._mailService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGFoundInSuggestionGuardedData._messageService
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SGRadarSuggestionBase._sourceMessageId
+|| __DATA_CONST.__const _SGUIAccessibilityIdentifierActionButton
+|| __DATA_CONST.__const _SGUIAccessibilityIdentifierCloseButton
+|| __DATA_CONST.__const _SGUIAccessibilityIdentifierSubtitleLabel
+|| __DATA_CONST.__const _SGUIAccessibilityIdentifierTitleLabel
+|| __DATA_CONST.__const _kSGSuggestionCategoryContactsId
+|| __DATA_CONST.__const _kSGSuggestionCategoryEventsId
+|| __DATA_CONST.__const _kSGSuggestionCategoryRadarsId
+|| __DATA_CONST.__const _kSGSuggestionCategoryRemindersId
+|| __DATA_CONST.__const _kSGSuggestionCategorySubscriptionsId
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$__TtC17CoreSuggestionsUI15SGBannerContent
+|| __DATA_DIRTY.__data _OBJC_METACLASS_$__TtC17CoreSuggestionsUI26SGBannerContentHostingView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGBannerUtility
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGBannerView
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGFoundInSuggestionGuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGFoundInSuggestionPresenter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGList
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGSuggestionAction
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGSuggestionCategoryList
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGSuggestionPresenter
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGSuggestionSection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SGSuggestionStore
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__TtC17CoreSuggestionsUI15SGBannerContent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$__TtC17CoreSuggestionsUI26SGBannerContentHostingView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGBannerUtility
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGBannerView
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGFoundInSuggestionGuardedData
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGFoundInSuggestionPresenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGList
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGSuggestionAction
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGSuggestionCategoryList
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGSuggestionPresenter
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGSuggestionSection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SGSuggestionStore
+|| __TEXT.__const _CoreSuggestionsUIVersionNumber
+|| __TEXT.__const _CoreSuggestionsUIVersionString
+|| __TEXT.__text _currentUIContext
+|| __TEXT.__text _dateStringForDate
+|| __TEXT.__text _dispatchInContext
+|| __TEXT.__text _getRealtimeSuggestion
+|| __TEXT.__text _getReminderSuggestion
+|| __TEXT.__text _isMultiDayEvent
+|| __TEXT.__text _suggestionImageSGView
+|| __TEXT.__text _timeStringForDate
+__ Contacts: _CNContactStoreDidChangeNotification
+__ Contacts: _OBJC_CLASS_$_CNContact
+__ Contacts: _OBJC_CLASS_$_CNContactStore
+__ Contacts: _OBJC_CLASS_$_CNContactStoreConfiguration
+__ Contacts: _OBJC_CLASS_$_CNContactsEnvironment
+__ Contacts: _OBJC_CLASS_$_CNLabeledValue
+__ Contacts: _OBJC_CLASS_$_CNMutablePostalAddress
+__ Contacts: _OBJC_CLASS_$_CNPhoneNumber
+__ Contacts: _OBJC_CLASS_$_CNPostalAddressFormatter
+__ Contacts: _OBJC_CLASS_$_CNSaveRequest
+__ ContactsUI: _OBJC_CLASS_$_CNContactViewController
+__ CoreFoundation: _NSCalendarIdentifierGregorian
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSLocale
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreGraphics: _CGRectZero
+__ CoreLocation: _CLLocationCoordinate2DMake
+__ CoreLocation: _OBJC_CLASS_$_CLLocation
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ CoreServices: _OBJC_CLASS_$_NSUserActivity
+__ CoreSuggestions: _OBJC_CLASS_$_SGEvent
+__ CoreSuggestions: _OBJC_CLASS_$_SGRealtimeContact
+__ CoreSuggestions: _OBJC_CLASS_$_SGRealtimeEvent
+__ CoreSuggestions: _OBJC_CLASS_$_SGRealtimeReminder
+__ CoreSuggestions: _OBJC_CLASS_$_SGSuggestionsService
+__ CoreSuggestions: _SGActivityIdentifierMail
+__ CoreSuggestions: _SGActivityIdentifierMessages
+__ CoreSuggestions: _SGBundleIdentifierMail
+__ CoreSuggestions: _SGBundleIdentifierMessages
+__ CoreSuggestions: _SGBundleIdentifierReminders
+__ CoreSuggestions: _sgEventsLogHandle
+__ CoreSuggestions: _sgLogHandle
+__ CoreSuggestions: _sgRemindersLogHandle
+__ EventKit: _EKEventStoreChangedNotification
+__ EventKit: _OBJC_CLASS_$_EKEventStore
+__ Foundation: _NSLog
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSAttributedString
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSLayoutConstraint
+__ Foundation: _OBJC_CLASS_$_NSListFormatter
+__ Foundation: _OBJC_CLASS_$_NSMutableAttributedString
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSURLComponents
+__ Foundation: _OBJC_CLASS_$_NSURLQueryItem
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ IconServices: _OBJC_CLASS_$_ISIcon
+__ IconServices: _OBJC_CLASS_$_ISImageDescriptor
+__ IconServices: _kISImageDescriptorHomeScreen
+__ IconServices: _kISImageDescriptorSpotlight
+__ ProactiveSupport: _OBJC_CLASS_$__PASDispatch
+__ ProactiveSupport: _OBJC_CLASS_$__PASLock
+__ ReminderKitUI: _OBJC_CLASS_$_REMReminderCreationViewController
+__ SoftLinking: __sl_dlopen
+__ UIKit: _NSStrikethroughStyleAttributeName
+__ UIKit: _OBJC_CLASS_$_UIAlertAction
+__ UIKit: _OBJC_CLASS_$_UIAlertController
+__ UIKit: _OBJC_CLASS_$_UIApplication
+__ UIKit: _OBJC_CLASS_$_UIBarButtonItem
+__ UIKit: _OBJC_CLASS_$_UIColor
+__ UIKit: _OBJC_CLASS_$_UIDevice
+__ UIKit: _OBJC_CLASS_$_UIImage
+__ UIKit: _OBJC_CLASS_$_UINavigationController
+__ UIKit: _OBJC_CLASS_$_UIScreen
+__ UIKit: _OBJC_CLASS_$_UITableViewController
+__ UIKit: _OBJC_CLASS_$_UIView
+__ UIKit: _OBJC_CLASS_$_UIViewController
+__ UIKit: _OBJC_METACLASS_$_UIView
+__ UIKit: _OBJC_METACLASS_$_UIViewController
+__ UIKit: _UIContentSizeCategoryDidChangeNotification
+__ UIKit: _UIDeviceOrientationDidChangeNotification
+__ UIKit: _UIKeyboardDidShowNotification
+__ libSystem.B.dylib: __Block_copy
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __Block_release
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _malloc_size
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_variant_has_internal_diagnostics
+__ libSystem.B.dylib: _pthread_main_np
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x10
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x7
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libswiftCore.dylib: _OBJC_CLASS_$__TtCs12_SwiftObject
+__ libswiftCore.dylib: _OBJC_METACLASS_$__TtCs12_SwiftObject
+__ libswiftCore.dylib: __swiftEmptyArrayStorage
+__ libswiftCore.dylib: __swiftEmptyDictionarySingleton
+__ libswiftCore.dylib: __swift_stdlib_reportUnimplementedInitializer
+__ libswiftCore.dylib: _swift_allocObject
+__ libswiftCore.dylib: _swift_allocateGenericValueMetadata
+__ libswiftCore.dylib: _swift_arrayDestroy
+__ libswiftCore.dylib: _swift_arrayInitWithCopy
+__ libswiftCore.dylib: _swift_beginAccess
+__ libswiftCore.dylib: _swift_bridgeObjectRelease
+__ libswiftCore.dylib: _swift_bridgeObjectRelease_n
+__ libswiftCore.dylib: _swift_bridgeObjectRetain
+__ libswiftCore.dylib: _swift_bridgeObjectRetain_n
+__ libswiftCore.dylib: _swift_checkMetadataState
+__ libswiftCore.dylib: _swift_deallocClassInstance
+__ libswiftCore.dylib: _swift_deallocObject
+__ libswiftCore.dylib: _swift_deletedMethodError
+__ libswiftCore.dylib: _swift_dynamicCast
+__ libswiftCore.dylib: _swift_dynamicCastObjCClass
+__ libswiftCore.dylib: _swift_endAccess
+__ libswiftCore.dylib: _swift_errorRelease
+__ libswiftCore.dylib: _swift_errorRetain
+__ libswiftCore.dylib: _swift_getAtKeyPath
+__ libswiftCore.dylib: _swift_getEnumCaseMultiPayload
+__ libswiftCore.dylib: _swift_getEnumTagSinglePayloadGeneric
+__ libswiftCore.dylib: _swift_getForeignTypeMetadata
+__ libswiftCore.dylib: _swift_getGenericMetadata
+__ libswiftCore.dylib: _swift_getKeyPath
+__ libswiftCore.dylib: _swift_getObjCClassFromMetadata
+__ libswiftCore.dylib: _swift_getObjCClassMetadata
+__ libswiftCore.dylib: _swift_getObjectType
+__ libswiftCore.dylib: _swift_getOpaqueTypeConformance
+__ libswiftCore.dylib: _swift_getSingletonMetadata
+__ libswiftCore.dylib: _swift_getTypeByMangledNameInContext
+__ libswiftCore.dylib: _swift_getTypeByMangledNameInContextInMetadataState
+__ libswiftCore.dylib: _swift_getWitnessTable
+__ libswiftCore.dylib: _swift_initStaticObject
+__ libswiftCore.dylib: _swift_initStructMetadata
+__ libswiftCore.dylib: _swift_isEscapingClosureAtFileLocation
+__ libswiftCore.dylib: _swift_isUniquelyReferenced_nonNull_bridgeObject
+__ libswiftCore.dylib: _swift_isUniquelyReferenced_nonNull_native
+__ libswiftCore.dylib: _swift_isaMask
+__ libswiftCore.dylib: _swift_once
+__ libswiftCore.dylib: _swift_release
+__ libswiftCore.dylib: _swift_retain
+__ libswiftCore.dylib: _swift_slowAlloc
+__ libswiftCore.dylib: _swift_slowDealloc
+__ libswiftCore.dylib: _swift_storeEnumTagMultiPayload
+__ libswiftCore.dylib: _swift_storeEnumTagSinglePayloadGeneric
+__ libswiftCore.dylib: _swift_unknownObjectRelease
+__ libswiftCore.dylib: _swift_unknownObjectRelease_n
+__ libswiftCore.dylib: _swift_unknownObjectRetain
+__ libswiftCore.dylib: _swift_unknownObjectWeakAssign
+__ libswiftCore.dylib: _swift_unknownObjectWeakDestroy
+__ libswiftCore.dylib: _swift_unknownObjectWeakInit
+__ libswiftCore.dylib: _swift_unknownObjectWeakLoadStrong
+__ libswiftCore.dylib: _swift_updateClassMetadata2
+_TtC17CoreSuggestionsUI15SGBannerContent : NSObject
+ @property  NSString *title
+ @property  NSString *subtitle
+ @property  NSAttributedString *attributedSubtitle
+ @property  long long accessoryType
+ @property  NSArray *images
+ @property  NSString *actionTitle
+ @property  <SGSuggestion> *suggestion
+ @property  <SGSuggestionDelegate> *delegate
+ @property  double primaryActionButtonWidth
+ @property  double closeButtonWidth
+ @property  long long actionButtonType
+ @property  NSArray *imageSGViews
+ @property  NSString *listTitle
+ @property  UIVisualEffectView *backgroundVisualEffectView
+ @property  UIColor *backgroundColor
+ @property  SGBannerDividerParameter *bannerDivider
+ @property  BOOL suggestionCategorySupportsBatchDismissal
+ @property  SGSuggestionAction *primaryAction
+ @property  SGSuggestionAction *dismissAction
+ @property  double closeButtonXAnchorOffset
+ @property  BOOL prominentActionButton
+
+  // instance methods
+  -[_TtC17CoreSuggestionsUI15SGBannerContent suggestion]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent images]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent dismissAction]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent subtitle]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setActionTitle:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setSubtitle:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setSuggestion:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent actionTitle]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setDelegate:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent accessoryType]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setAttributedSubtitle:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent delegate]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent .cxx_destruct]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setImages:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setAccessoryType:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent backgroundColor]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent title]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setBackgroundColor:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setDismissAction:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setPrimaryAction:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setTitle:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent primaryAction]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent attributedSubtitle]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent init]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent backgroundVisualEffectView]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setBackgroundVisualEffectView:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent suggestionCategorySupportsBatchDismissal]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent actionButtonType]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setActionButtonType:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setCloseButtonXAnchorOffset:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setBannerDivider:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent primaryActionButtonWidth]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setPrimaryActionButtonWidth:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent closeButtonWidth]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setCloseButtonWidth:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent imageSGViews]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setImageSGViews:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent listTitle]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setListTitle:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent bannerDivider]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setSuggestionCategorySupportsBatchDismissal:]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent closeButtonXAnchorOffset]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent prominentActionButton]
+  -[_TtC17CoreSuggestionsUI15SGBannerContent setProminentActionButton:]
+
+
+_TtC17CoreSuggestionsUI21BannerUpdateViewModel : Swift._SwiftObject
+
+_TtC17CoreSuggestionsUI27SGSuggestionTableController : UIViewController <SGSuggestionViewControllerPresenter>
+  // instance methods
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController initWithNibName:bundle:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController viewDidAppear:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController dealloc]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController .cxx_destruct]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController viewDidLoad]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController viewWillAppear:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController presentViewController:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController dismissViewController:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController viewDidDisappear:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController viewWillDisappear:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController initWithCoder:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController dismissalPressed:]
+  -[_TtC17CoreSuggestionsUI27SGSuggestionTableController initWithStore:delegate:suggestionPresenter:suggestionList:]
+
+
+_TtC17CoreSuggestionsUI25SectionHeadersUpdateModel : Swift._SwiftObject
+
+_TtC17CoreSuggestionsUI24SGSuggestionStoreWrapper : Swift._SwiftObject
+
+_TtC17CoreSuggestionsUI20SGReminderSuggestion : NSObject <REMReminderCreationDelegate, SGSuggestionExtensions, SGSuggestion, SGSuggestionCategory>
+ @property  <SGSuggestionDelegate> *suggestionDelegate
+ @property  NSAttributedString *title
+ @property  NSAttributedString *notes
+ @property  NSDateComponents *dueDateComponents
+ @property  CLLocation *location
+ @property  NSString *locationString
+ @property  NSURL *url
+ @property  NSUserActivity *userActivity
+ @property  BOOL wantsExtendedDetailOnlyView
+ @property  long long locationProximity
+
+  // instance methods
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion userActivity]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion setSuggestionDelegate:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion .cxx_destruct]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion notes]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion title]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionDelegate]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion url]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion location]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion init]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionTitle]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion locationString]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryId]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryImage]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryTitle]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryTitleForItems:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategorySubtitleForItems:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryLocalizedCountOfItems:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategoryActionButtonType]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionCategory]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionPrimaryAction]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionDismissAction]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionSubtitle]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionAttributedSubtitle]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionImage]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion suggestionActionButtonType]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion dueDateComponents]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion dismissViewController:finished:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion initWithRealtimeReminder:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion wantsExtendedDetailOnlyView]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion locationProximity]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion reminderCreationViewController:didCreateReminder:error:]
+  -[_TtC17CoreSuggestionsUI20SGReminderSuggestion realtimeSuggestion]
+
+
+_TtC17CoreSuggestionsUI26SGBannerContentHostingView : UIView
+ @property  {CGSize=dd} intrinsicContentSize
+
+  // instance methods
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView .cxx_destruct]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView reload]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView intrinsicContentSize]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView initWithFrame:]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView initWithCoder:]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView initWithBanner:]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView updateBannerViews]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView updateWithBanner:]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView setSuggestionWithStore:]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView invalidateBannerView]
+  -[_TtC17CoreSuggestionsUI26SGBannerContentHostingView actionButtonLeadingEdgeOffset]
+
+
+SGRadarSuggestion : SGRadarSuggestionBase
+  // class methods
+  +[SGRadarSuggestion tapToRadarImage]
+
+  // instance methods
+  -[SGRadarSuggestion suggestionCategoryImage]
+  -[SGRadarSuggestion suggestionPrimaryAction]
+  -[SGRadarSuggestion suggestionImage]
+  -[SGRadarSuggestion _dismissViewController:andSignalCompletionWithResult:]
+  -[SGRadarSuggestion _writeEMLtoDiskForMessageWithIdentifier:]
+
+
+SGEventSuggestion : SGEventSuggestionBase <EKEventViewDelegate, EKEventEditViewDelegate, EKEventViewDelegatePrivate, SGSuggestionList>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SGEventSuggestion calendarImage]
+
+  // instance methods
+  -[SGEventSuggestion .cxx_destruct]
+  -[SGEventSuggestion eventEditViewController:didCompleteWithAction:]
+  -[SGEventSuggestion suggestionListSupportsDismissal]
+  -[SGEventSuggestion suggestionPrimaryAction]
+  -[SGEventSuggestion suggestionAttributedSubtitle]
+  -[SGEventSuggestion suggestionImage]
+  -[SGEventSuggestion suggestionList]
+  -[SGEventSuggestion eventViewController:didCompleteWithAction:]
+  -[SGEventSuggestion eventViewControllerShouldAlwaysShowNavBar:]
+  -[SGEventSuggestion _dismissViewController:retainBanner:]
+  -[SGEventSuggestion preloadPrimaryActionViewController]
+
+
+SGBannerDividerParameter : NSObject
+  // instance methods
+  -[SGBannerDividerParameter .cxx_destruct]
+  -[SGBannerDividerParameter color]
+  -[SGBannerDividerParameter position]
+  -[SGBannerDividerParameter initWithPosition:color:]
+
+
+SGSuggestionAction : NSObject
+  // class methods
+  +[SGSuggestionAction actionWithTitle:handler:]
+
+  // instance methods
+  -[SGSuggestionAction execute]
+  -[SGSuggestionAction .cxx_destruct]
+  -[SGSuggestionAction title]
+  -[SGSuggestionAction initWithTitle:handler:]
+
+
+SGBannerUtility : NSObject
+  // class methods
+  +[SGBannerUtility dateForUTCDate:]
+
+
+SGSuggestionCategoryList : NSObject
+ @property  NSString *listTitle
+ @property  BOOL supportsDismissAll
+
+  // instance methods
+  -[SGSuggestionCategoryList .cxx_destruct]
+  -[SGSuggestionCategoryList init]
+  -[SGSuggestionCategoryList listTitle]
+  -[SGSuggestionCategoryList setListTitle:]
+  -[SGSuggestionCategoryList supportsDismissAll]
+  -[SGSuggestionCategoryList setSupportsDismissAll:]
+
+
+SGContactSuggestionBase : NSObject <SGSuggestion, SGSuggestionCategory, SGSuggestionExtensions>
+ @property  <SGSuggestionDelegate> *suggestionDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SGContactSuggestionBase contactImage]
+  +[SGContactSuggestionBase confirm:suggestion:completion:]
+
+  // instance methods
+  -[SGContactSuggestionBase setSuggestionDelegate:]
+  -[SGContactSuggestionBase .cxx_destruct]
+  -[SGContactSuggestionBase suggestionDelegate]
+  -[SGContactSuggestionBase suggestionTitle]
+  -[SGContactSuggestionBase suggestionCategoryId]
+  -[SGContactSuggestionBase suggestionCategoryImage]
+  -[SGContactSuggestionBase suggestionCategoryTitle]
+  -[SGContactSuggestionBase suggestionCategoryTitleForItems:]
+  -[SGContactSuggestionBase suggestionCategorySubtitleForItems:]
+  -[SGContactSuggestionBase suggestionCategoryLocalizedCountOfItems:]
+  -[SGContactSuggestionBase suggestionCategoryActionButtonType]
+  -[SGContactSuggestionBase suggestionCategory]
+  -[SGContactSuggestionBase suggestionPrimaryAction]
+  -[SGContactSuggestionBase suggestionDismissAction]
+  -[SGContactSuggestionBase suggestionSubtitle]
+  -[SGContactSuggestionBase suggestionActionButtonType]
+  -[SGContactSuggestionBase primaryActionTitle]
+  -[SGContactSuggestionBase realtimeSuggestion]
+  -[SGContactSuggestionBase initWithRealtimeContact:]
+  -[SGContactSuggestionBase titleForCategory:]
+  -[SGContactSuggestionBase subtitleAndCategoryFor:]
+  -[SGContactSuggestionBase ignoreActionButtonTitleForContactSuggestion:]
+  -[SGContactSuggestionBase mailingAddressFromPostalAddress:]
+
+
+SGRadarSuggestionBase : NSObject <SGSuggestion, SGSuggestionCategory, SGSuggestionExtensions>
+ @property  <SGSuggestionDelegate> *suggestionDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SGRadarSuggestionBase setSuggestionDelegate:]
+  -[SGRadarSuggestionBase .cxx_destruct]
+  -[SGRadarSuggestionBase suggestionDelegate]
+  -[SGRadarSuggestionBase suggestionTitle]
+  -[SGRadarSuggestionBase suggestionCategoryId]
+  -[SGRadarSuggestionBase suggestionCategoryImage]
+  -[SGRadarSuggestionBase suggestionCategoryTitle]
+  -[SGRadarSuggestionBase suggestionCategoryTitleForItems:]
+  -[SGRadarSuggestionBase suggestionCategorySubtitleForItems:]
+  -[SGRadarSuggestionBase suggestionCategoryLocalizedCountOfItems:]
+  -[SGRadarSuggestionBase suggestionCategory]
+  -[SGRadarSuggestionBase suggestionPrimaryAction]
+  -[SGRadarSuggestionBase suggestionDismissAction]
+  -[SGRadarSuggestionBase suggestionSubtitle]
+  -[SGRadarSuggestionBase suggestionActionButtonType]
+  -[SGRadarSuggestionBase primaryActionTitle]
+  -[SGRadarSuggestionBase realtimeSuggestion]
+  -[SGRadarSuggestionBase initWithSourceMessageId:]
+  -[SGRadarSuggestionBase suggestionsSecondTitle]
+
+
+SGSuggestionSection : SGList
+  // instance methods
+  -[SGSuggestionSection comparator]
+  -[SGSuggestionSection category]
+  -[SGSuggestionSection list]
+
+
+SGSuggestionStore : SGList <SGListDelegate>
+ @property  NSArray *suggestions
+ @property  <SGSuggestionDelegate> *suggestionDelegate
+ @property  long long hostApp
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SGSuggestionStore setSuggestionDelegate:]
+  -[SGSuggestionStore setSuggestions:]
+  -[SGSuggestionStore .cxx_destruct]
+  -[SGSuggestionStore suggestions]
+  -[SGSuggestionStore suggestionDelegate]
+  -[SGSuggestionStore init]
+  -[SGSuggestionStore removeSuggestion:]
+  -[SGSuggestionStore dismissAllSuggestions]
+  -[SGSuggestionStore hostApp]
+  -[SGSuggestionStore list:didAddItem:atIndex:]
+  -[SGSuggestionStore list:didRemoveItem:atIndex:]
+  -[SGSuggestionStore sectionWithItem:]
+  -[SGSuggestionStore addSuggestion:]
+  -[SGSuggestionStore updateSuggestion:]
+  -[SGSuggestionStore lockNotifications]
+  -[SGSuggestionStore unlockNotifications]
+  -[SGSuggestionStore setHostApp:]
+
+
+SGBannerView : UIView <SGBannerProtocol>
+ @property  _TtC17CoreSuggestionsUI26SGBannerContentHostingView *bannerHostingView
+ @property  _TtC17CoreSuggestionsUI15SGBannerContent *banner
+ @property  BOOL orientationChanged
+ @property  NSString *title
+ @property  NSString *subtitle
+ @property  NSAttributedString *attributedSubtitle
+ @property  NSString *actionTitle
+ @property  NSArray *images
+ @property  NSArray *imageSGViews
+ @property  long long accessoryType
+ @property  SGSuggestionAction *primaryAction
+ @property  <SGSuggestion> *suggestion
+ @property  <SGSuggestionDelegate> *delegate
+ @property  SGSuggestionStore *suggestionStore
+ @property  long long actionButtonType
+ @property  BOOL suggestionCategorySupportsBatchDismissal
+ @property  UIVisualEffectView *backgroundVisualEffectView
+ @property  NSLayoutXAxisAnchor *closeButtonCenterXAnchor
+ @property  double closeButtonXAnchorOffset
+ @property  UIColor *backgroundColor
+ @property  SGBannerDividerParameter *bannerDivider
+ @property  SGSuggestionAction *dismissAction
+ @property  BOOL prominentActionButton
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[SGBannerView suggestion]
+  -[SGBannerView images]
+  -[SGBannerView banner]
+  -[SGBannerView dismissAction]
+  -[SGBannerView subtitle]
+  -[SGBannerView setBanner:]
+  -[SGBannerView setActionTitle:]
+  -[SGBannerView setSubtitle:]
+  -[SGBannerView setSuggestion:]
+  -[SGBannerView actionTitle]
+  -[SGBannerView setDelegate:]
+  -[SGBannerView accessoryType]
+  -[SGBannerView setAttributedSubtitle:]
+  -[SGBannerView .cxx_destruct]
+  -[SGBannerView setImages:]
+  -[SGBannerView setAccessoryType:]
+  -[SGBannerView backgroundColor]
+  -[SGBannerView title]
+  -[SGBannerView setBackgroundColor:]
+  -[SGBannerView setDismissAction:]
+  -[SGBannerView reload]
+  -[SGBannerView intrinsicContentSize]
+  -[SGBannerView setPrimaryAction:]
+  -[SGBannerView willMoveToWindow:]
+  -[SGBannerView setTitle:]
+  -[SGBannerView primaryAction]
+  -[SGBannerView attributedSubtitle]
+  -[SGBannerView init]
+  -[SGBannerView popoverSourceRect]
+  -[SGBannerView backgroundVisualEffectView]
+  -[SGBannerView setBackgroundVisualEffectView:]
+  -[SGBannerView suggestionCategorySupportsBatchDismissal]
+  -[SGBannerView actionButtonType]
+  -[SGBannerView setActionButtonType:]
+  -[SGBannerView setCloseButtonXAnchorOffset:]
+  -[SGBannerView setBannerDivider:]
+  -[SGBannerView imageSGViews]
+  -[SGBannerView setImageSGViews:]
+  -[SGBannerView bannerDivider]
+  -[SGBannerView setSuggestionCategorySupportsBatchDismissal:]
+  -[SGBannerView closeButtonXAnchorOffset]
+  -[SGBannerView prominentActionButton]
+  -[SGBannerView setProminentActionButton:]
+  -[SGBannerView invalidateBannerView]
+  -[SGBannerView actionButtonLeadingEdgeOffset]
+  -[SGBannerView invalidateReloadBannerView:]
+  -[SGBannerView forceReloadBannerView:]
+  -[SGBannerView setSuggestionStore:]
+  -[SGBannerView setCloseButtonCenterXAnchor:]
+  -[SGBannerView bannerHostingView]
+  -[SGBannerView orientationChanged]
+  -[SGBannerView setOrientationChanged:]
+
+
+SGEventSuggestionBase : NSObject <SGSuggestion, SGSuggestionCategory, SGSuggestionExtensions>
+ @property  <SGSuggestionDelegate> *suggestionDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SGEventSuggestionBase _eventStore]
+  +[SGEventSuggestionBase calendarImage]
+  +[SGEventSuggestionBase confirm:event:completion:]
+
+  // instance methods
+  -[SGEventSuggestionBase setSuggestionDelegate:]
+  -[SGEventSuggestionBase dealloc]
+  -[SGEventSuggestionBase .cxx_destruct]
+  -[SGEventSuggestionBase suggestionDelegate]
+  -[SGEventSuggestionBase suggestionTitle]
+  -[SGEventSuggestionBase suggestionCategoryId]
+  -[SGEventSuggestionBase suggestionCategoryImage]
+  -[SGEventSuggestionBase suggestionCategoryTitle]
+  -[SGEventSuggestionBase suggestionCategoryTitleForItems:]
+  -[SGEventSuggestionBase suggestionCategorySubtitleForItems:]
+  -[SGEventSuggestionBase suggestionCategoryLocalizedCountOfItems:]
+  -[SGEventSuggestionBase suggestionComparator]
+  -[SGEventSuggestionBase suggestionCategoryActionButtonType]
+  -[SGEventSuggestionBase suggestionCategory]
+  -[SGEventSuggestionBase suggestionPrimaryAction]
+  -[SGEventSuggestionBase suggestionDismissAction]
+  -[SGEventSuggestionBase suggestionSubtitle]
+  -[SGEventSuggestionBase suggestionActionButtonType]
+  -[SGEventSuggestionBase primaryActionTitle]
+  -[SGEventSuggestionBase realtimeSuggestion]
+  -[SGEventSuggestionBase preloadPrimaryActionViewController]
+  -[SGEventSuggestionBase eventKitStoreChangedNotification:]
+  -[SGEventSuggestionBase initWithRealtimeEvent:]
+  -[SGEventSuggestionBase suggestionsEvent]
+  -[SGEventSuggestionBase eventKitEvent]
+
+
+SGFoundInSuggestionGuardedData : NSObject
+  // instance methods
+  -[SGFoundInSuggestionGuardedData .cxx_destruct]
+
+
+SGFoundInSuggestionPresenter : SGSuggestionPresenter
+ @property  NSArray *realtimeSuggestions
+
+  // instance methods
+  -[SGFoundInSuggestionPresenter dealloc]
+  -[SGFoundInSuggestionPresenter .cxx_destruct]
+  -[SGFoundInSuggestionPresenter init]
+  -[SGFoundInSuggestionPresenter addSuggestionsFromSearchableItems:options:filter:]
+  -[SGFoundInSuggestionPresenter reloadSuggestionsFromSearchableItems]
+  -[SGFoundInSuggestionPresenter setMailService:messageService:]
+  -[SGFoundInSuggestionPresenter setRealtimeSuggestions:]
+  -[SGFoundInSuggestionPresenter setRealtimeSuggestions:fromHostApp:]
+  -[SGFoundInSuggestionPresenter realtimeSuggestions]
+  -[SGFoundInSuggestionPresenter addSuggestionsFromSearchableItems:existingSuggestions:options:filter:]
+  -[SGFoundInSuggestionPresenter addSuggestionsFromSearchableItems:existingSuggestions:mailService:messageService:options:filter:]
+  -[SGFoundInSuggestionPresenter _setNeedsToReloadSuggestionsAfter:]
+  -[SGFoundInSuggestionPresenter _loadSuggestions]
+  -[SGFoundInSuggestionPresenter _loadedRealtimeSuggestions:fromHostApp:]
+  -[SGFoundInSuggestionPresenter formatMixedCategoriesTitle:]
+
+
+SGList : NSObject
+ @property  NSMutableArray *array
+ @property  <SGListDelegate> *delegate
+ @property  @? comparator
+
+  // instance methods
+  -[SGList addItem:]
+  -[SGList comparator]
+  -[SGList array]
+  -[SGList setComparator:]
+  -[SGList itemAtIndex:]
+  -[SGList setDelegate:]
+  -[SGList delegate]
+  -[SGList removeItem:]
+  -[SGList .cxx_destruct]
+  -[SGList count]
+  -[SGList items]
+  -[SGList removeAllItems]
+  -[SGList init]
+  -[SGList objectAtIndexedSubscript:]
+  -[SGList setArray:]
+  -[SGList indexOfItem:]
+
+
+SGUIDateFormatting : NSObject
+  // class methods
+  +[SGUIDateFormatting mediumDateFormatter]
+  +[SGUIDateFormatting reminderDateTimeFormatter]
+  +[SGUIDateFormatting reminderAllDayDateFormatter]
+  +[SGUIDateFormatting allDayFormatter]
+  +[SGUIDateFormatting fullDayFormatter]
+  +[SGUIDateFormatting fullDayTimeFormatter]
+  +[SGUIDateFormatting singleDayDateFormatter]
+  +[SGUIDateFormatting singleDayTimeFormatter]
+  +[SGUIDateFormatting multiDayDateFormatter]
+  +[SGUIDateFormatting reminderDateFormatter]
+  +[SGUIDateFormatting birthdayFormatter]
+
+
+SGContactSuggestion : SGContactSuggestionBase <CNContactViewControllerDelegate>
+ @property  <SGContactSuggestionDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SGContactSuggestion contactImage]
+
+  // instance methods
+  -[SGContactSuggestion setDelegate:]
+  -[SGContactSuggestion delegate]
+  -[SGContactSuggestion .cxx_destruct]
+  -[SGContactSuggestion contactViewController:didCompleteWithContact:]
+  -[SGContactSuggestion suggestionPrimaryAction]
+  -[SGContactSuggestion suggestionImage]
+  -[SGContactSuggestion suggestionImageSGView]
+
+
+SGSuggestionPresenter : NSObject <UIPopoverPresentationControllerDelegate, SGSuggestionDelegate>
+ @property  BOOL wantsToShowBanner
+ @property  <SGSuggestionPresenterDelegate> *delegate
+ @property  UIView<SGBannerProtocol> *banner
+ @property  NSArray *suggestions
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SGSuggestionPresenter formatList:]
+
+  // instance methods
+  -[SGSuggestionPresenter presentationControllerDidDismiss:]
+  -[SGSuggestionPresenter presentationControllerShouldDismiss:]
+  -[SGSuggestionPresenter banner]
+  -[SGSuggestionPresenter setDelegate:]
+  -[SGSuggestionPresenter delegate]
+  -[SGSuggestionPresenter dealloc]
+  -[SGSuggestionPresenter _presentingViewController]
+  -[SGSuggestionPresenter setSuggestions:]
+  -[SGSuggestionPresenter .cxx_destruct]
+  -[SGSuggestionPresenter suggestions]
+  -[SGSuggestionPresenter presentViewController:]
+  -[SGSuggestionPresenter dismissViewController:]
+  -[SGSuggestionPresenter init]
+  -[SGSuggestionPresenter presentationController:willPresentWithAdaptiveStyle:transitionCoordinator:]
+  -[SGSuggestionPresenter tableViewController]
+  -[SGSuggestionPresenter wantsToShowBanner]
+  -[SGSuggestionPresenter removeSuggestion:]
+  -[SGSuggestionPresenter reloadSuggestionsFromSearchableItems]
+  -[SGSuggestionPresenter dismissAllSuggestions]
+  -[SGSuggestionPresenter _dismissPresentedViewController:]
+  -[SGSuggestionPresenter _dismissViewControllerAnimated:]
+  -[SGSuggestionPresenter suggestion:actionFinished:]
+  -[SGSuggestionPresenter suggestionWasUpdated:]
+  -[SGSuggestionPresenter suggestionsUIContext]
+  -[SGSuggestionPresenter bannerPrimaryAction]
+  -[SGSuggestionPresenter bannerDismissAction]
+  -[SGSuggestionPresenter suggestionBatchDismissal]
+  -[SGSuggestionPresenter addSuggestion:]
+  -[SGSuggestionPresenter suggestionStore]
+  -[SGSuggestionPresenter formatMixedCategoriesTitle:]
+  -[SGSuggestionPresenter _listDidChangeNotification:]
+  -[SGSuggestionPresenter setWantsToShowBanner:]
+  -[SGSuggestionPresenter _bannerPrimaryAction]
+  -[SGSuggestionPresenter _bannerDismiss]
+  -[SGSuggestionPresenter _removeBanner]
+  -[SGSuggestionPresenter _filterSuggestions]
+  -[SGSuggestionPresenter _restoreSuggestions]
+  -[SGSuggestionPresenter _sortSuggestionByCategoryUsing:]
+  -[SGSuggestionPresenter _bannerAccessoryType]
+  -[SGSuggestionPresenter _updateBanner]
+  -[SGSuggestionPresenter formatMixedCategoriesSubtitle:]
+  -[SGSuggestionPresenter _viewControllerForPresentingFromBanner]
+  -[SGSuggestionPresenter _presentModalViewControllerFromButton:]
+  -[SGSuggestionPresenter _presentModalViewController:fromSourceView:]
+  -[SGSuggestionPresenter _presentedControllerDoneButtonItem]
+  -[SGSuggestionPresenter _presentedControllerCancelButtonItem]
+
+
+SGUIIconSupport : NSObject
+  // class methods
+  +[SGUIIconSupport spotlightIconImageWithBundleIdentifier:]
+  +[SGUIIconSupport homeScreenIconImageWithBundleIdentifier:]
+  +[SGUIIconSupport homeScreenIconImageWithBundleIdentifier:drawBorder:]
+  +[SGUIIconSupport spotlightIconImageWithBundleIdentifier:drawBorder:]
+  +[SGUIIconSupport _spotlightDescriptorWithBorder:]
+  +[SGUIIconSupport _homeScreenDescriptorWithBorder:]
+  +[SGUIIconSupport iconForCalendarDate:]
+  +[SGUIIconSupport iconForCalendarDate:drawBorder:]
+  +[SGUIIconSupport _iconImageWithBundleIdentifier:imageDescriptor:]
+  +[SGUIIconSupport _imageWithIcon:imageDescriptor:]
+
+
+SGEvent(Presentation)
+	// class methods
+	+[SGEvent(Presentation) sameDayEvents:]
+	+[SGEvent(Presentation) formatEvents:]
+
+	// instance methods
+	-[SGEvent(Presentation) timeZoneOrGMT]
+	-[SGEvent(Presentation) formattedStartTime]
+	-[SGEvent(Presentation) formattedStartDate]
+
+01 00 0700 /System/Library/Frameworks/CoreLocation.framework/CoreLocation: CLLocation 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContact 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStore 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactStoreConfiguration 
+01 00 0500 /System/Library/Frameworks/ContactsUI.framework/ContactsUI: CNContactViewController 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNContactsEnvironment 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNLabeledValue 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNMutablePostalAddress 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNPhoneNumber 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNPostalAddressFormatter 
+01 00 0100 /System/Library/Frameworks/Contacts.framework/Contacts: CNSaveRequest 
+01 00 0200 /System/Library/Frameworks/EventKit.framework/EventKit: EKEventStore 
+01 00 0600 /System/Library/PrivateFrameworks/IconServices.framework/IconServices: ISIcon 
+01 00 0600 /System/Library/PrivateFrameworks/IconServices.framework/IconServices: ISImageDescriptor 
+01 00 0b00 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAttributedString 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLayoutConstraint 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSListFormatter 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSLocale 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableAttributedString 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 1000 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLComponents 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSURLQueryItem 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0b00 /System/Library/Frameworks/CoreServices.framework/CoreServices: NSUserActivity 
+01 00 1200 /System/Library/PrivateFrameworks/ReminderKitUI.framework/ReminderKitUI: REMReminderCreationViewController 
+01 00 0400 /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions: SGEvent 
+01 00 0400 /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions: SGRealtimeContact 
+01 00 0400 /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions: SGRealtimeEvent 
+01 00 0400 /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions: SGRealtimeReminder 
+01 00 0400 /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions: SGSuggestionsService 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertAction 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIAlertController 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIApplication 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIBarButtonItem 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIColor 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIDevice 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIImage 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UINavigationController 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIScreen 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UITableViewController 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIView 
+01 00 0300 /System/Library/Frameworks/UIKit.framework/UIKit: UIViewController 
+01 00 0900 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASDispatch 
+01 00 0900 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASLock 
+01 00 1300 /usr/lib/swift/libswiftCore.dylib: _TtCs12_SwiftObject 

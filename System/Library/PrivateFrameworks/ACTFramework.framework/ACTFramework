@@ -1,0 +1,1563 @@
+|| __DATA.__common _USE_ISP_MOTION
+|| __DATA.__data _FastRegistration_statusDescription
+|| __DATA.__data _Projections_statusDescription
+|| __DATA.__objc_data _OBJC_CLASS_$_ACTPanoGPUDownscaler
+|| __DATA.__objc_data _OBJC_CLASS_$_LKTFlowGPU
+|| __DATA.__objc_data _OBJC_CLASS_$_MetalContext
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaAssemblyShaders
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaAssemblyStage
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaGyroStage
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaOutput
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaParallaxStage
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaParallaxStageShaders
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaPreviewOutput
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaProcessor
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaRegistrationShaders
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaRegistrationStage
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaStitchingShaders
+|| __DATA.__objc_data _OBJC_CLASS_$_PanoramaStitchingStage
+|| __DATA.__objc_data _OBJC_CLASS_$_StagingBuffer
+|| __DATA.__objc_data _OBJC_METACLASS_$_ACTPanoGPUDownscaler
+|| __DATA.__objc_data _OBJC_METACLASS_$_LKTFlowGPU
+|| __DATA.__objc_data _OBJC_METACLASS_$_MetalContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaAssemblyShaders
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaAssemblyStage
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaGyroStage
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaParallaxStage
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaParallaxStageShaders
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaPreviewOutput
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaProcessor
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaRegistrationShaders
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaRegistrationStage
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaStitchingShaders
+|| __DATA.__objc_data _OBJC_METACLASS_$_PanoramaStitchingStage
+|| __DATA.__objc_data _OBJC_METACLASS_$_StagingBuffer
+|| __DATA_CONST.__const _kACTDeltaPTSAttachmentKey
+|| __DATA_CONST.__const _kACTJPEGPhotoQuality
+|| __DATA_CONST.__const _kACTPanoramaBPNRMode
+|| __DATA_CONST.__const _kACTPanoramaBlendingVersion
+|| __DATA_CONST.__const _kACTPanoramaBufferRingSize
+|| __DATA_CONST.__const _kACTPanoramaCaptureBecameActive
+|| __DATA_CONST.__const _kACTPanoramaDefaultBlendingConfig
+|| __DATA_CONST.__const _kACTPanoramaDefaultDirectionProperty
+|| __DATA_CONST.__const _kACTPanoramaDefaultFallbackProperty
+|| __DATA_CONST.__const _kACTPanoramaDefaultMFDriftCorrectorFlag
+|| __DATA_CONST.__const _kACTPanoramaDefaultPredictionMethodProperty
+|| __DATA_CONST.__const _kACTPanoramaDefaultPredictionProperty
+|| __DATA_CONST.__const _kACTPanoramaDefaultRegistrationMethodProperty
+|| __DATA_CONST.__const _kACTPanoramaErrorNotifications
+|| __DATA_CONST.__const _kACTPanoramaFastMovement
+|| __DATA_CONST.__const _kACTPanoramaForceMaxComputation
+|| __DATA_CONST.__const _kACTPanoramaFrameHeightProperty
+|| __DATA_CONST.__const _kACTPanoramaFrameWidthProperty
+|| __DATA_CONST.__const _kACTPanoramaGhostingSpeedScaleBrightLight
+|| __DATA_CONST.__const _kACTPanoramaGhostingSpeedScaleBrightLightIntegrationTime
+|| __DATA_CONST.__const _kACTPanoramaGhostingSpeedScaleLowLight
+|| __DATA_CONST.__const _kACTPanoramaGhostingSpeedScaleLowLightIntegrationTime
+|| __DATA_CONST.__const _kACTPanoramaJPEGSizeAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaJitter
+|| __DATA_CONST.__const _kACTPanoramaMaxFrameRate
+|| __DATA_CONST.__const _kACTPanoramaMaxSizeReached
+|| __DATA_CONST.__const _kACTPanoramaMaxWidthPerCamera
+|| __DATA_CONST.__const _kACTPanoramaMaxWidthProperty
+|| __DATA_CONST.__const _kACTPanoramaMinFrameRate
+|| __DATA_CONST.__const _kACTPanoramaOptions
+|| __DATA_CONST.__const _kACTPanoramaPowerBlurBiasProperty
+|| __DATA_CONST.__const _kACTPanoramaPowerBlurSlopeProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewCropRectAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewCropXAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewHeightProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewIdealAdvancementAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewMotionSpeedScaleAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewScaleProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewThumbnailAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewThumbnailBufferAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewThumbnailJPEGSizeAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewThumbnailMaxHeightProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewThumbnailMaxWidthProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewWidthProperty
+|| __DATA_CONST.__const _kACTPanoramaPreviewXDeviationAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaPreviewYDeviationAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaSliceWidthProperty
+|| __DATA_CONST.__const _kACTPanoramaSlitHeightProperty
+|| __DATA_CONST.__const _kACTPanoramaSlowMovement
+|| __DATA_CONST.__const _kACTPanoramaStatusNotifications
+|| __DATA_CONST.__const _kACTPanoramaThumbnailAttachmentKey
+|| __DATA_CONST.__const _kACTPanoramaTranslationCorrection
+|| __DATA_CONST.__const _kACTPanoramaUseHEIF
+|| __DATA_CONST.__const _kACTPanoramaUserStopped
+|| __DATA_CONST.__const _kACTPanoramaWarningNotifications
+|| __DATA_CONST.__const _kACTPreviewAssemblyPositionXMetadataKey
+|| __DATA_CONST.__const _kACTPreviewAssemblyPositionYMetadataKey
+|| __DATA_CONST.__const _kACTRegistrationMethodUsedKey
+|| __DATA_CONST.__const _kACTRegistrationTransformationKey
+|| __DATA_CONST.__const _kACTRegistrationWasFallbackInvokedKey
+|| __DATA_CONST.__const _kACTThreadBufferRingSize
+|| __DATA_CONST.__const _kACTThreadIdentifier
+|| __DATA_CONST.__const _kAtlasTranslationCorrectionStrength
+|| __DATA_CONST.__const _kAtlasTranslationShiftHighThreshold
+|| __DATA_CONST.__const _kAtlasTranslationShiftLowThreshold
+|| __DATA_CONST.__const _kEnableTranslationCorrection
+|| __DATA_CONST.__const _kFigCaptureSampleBufferAttachmentKey_MetadataDictionary
+|| __DATA_CONST.__const _kMovingAverageFilterSize
+|| __DATA_CONST.__const _kPano_SkipFrame
+|| __DATA_CONST.__const _kPano_SliceHomography
+|| __DATA_CONST.__const _kPano_SliceNumber
+|| __DATA_CONST.__const _kPano_SliceType
+|| __DATA_CONST.__const _kReferenceMeanStartingFrame
+|| __DATA_CONST.__const _kWriteSlicesToDisc
+|| __DATA_DIRTY.__common _gListenerList
+|| __TEXT.__const _KFlareLut
+|| __TEXT.__text _ABRegComputeShift
+|| __TEXT.__text _ABRegDisposeContext
+|| __TEXT.__text _ABRegInitContext
+|| __TEXT.__text _ABRegRegisterSlices
+|| __TEXT.__text _ABRegRegisterSlicesRobust
+|| __TEXT.__text _ABRegUpdateIntegralImage
+|| __TEXT.__text _ACTAddCSVMetadata
+|| __TEXT.__text _ACTAttachRegistrationMetadata
+|| __TEXT.__text _ACTFinalThreadedNoiseReduction
+|| __TEXT.__text _ACTLogAddListener
+|| __TEXT.__text _ACTLogMessageImp
+|| __TEXT.__text _ACTLogRemoveListener
+|| __TEXT.__text _ACTLogReset
+|| __TEXT.__text _ACTNoiseReduction
+|| __TEXT.__text _ACTPano_GPUDownscaler
+|| __TEXT.__text _ACTPano_GPUDownscaler_destroy
+|| __TEXT.__text _ACTPano_GPUDownscaler_downscale
+|| __TEXT.__text _ACTPostRegisterSlices
+|| __TEXT.__text _ACTPreRegisterSlices
+|| __TEXT.__text _ACTQueryPredictorValidator
+|| __TEXT.__text _ACTRegisterSlices
+|| __TEXT.__text _ACTRegistrationWarmup
+|| __TEXT.__text _ACTThreadCreate
+|| __TEXT.__text _ACTThreadIsAlive
+|| __TEXT.__text _ACTThreadIsLocked
+|| __TEXT.__text _ACTThreadMutexLock
+|| __TEXT.__text _ACTThreadMutexUnlock
+|| __TEXT.__text _ACTThreadRelease
+|| __TEXT.__text _ACTThreadWaitForSemaphore
+|| __TEXT.__text _ACTThreadWakeup
+|| __TEXT.__text _ACTUpdatePredictorValidator
+|| __TEXT.__text _ACT_CopyDefaultConfigurationForPanorama
+|| __TEXT.__text _ACT_FigSampleBufferProcessorCreateForPanoramaWithOptions
+|| __TEXT.__text _ACT_FigSampleBufferProcessorCreateForPanoramaWithOptionsAndPreviewScale
+|| __TEXT.__text _ACT_FigSampleBufferProcessorCreateForPanoramaWithOptionsAndPreviewSize
+|| __TEXT.__text _ACT_FigSampleBufferProcessorStartPanoramaCapture
+|| __TEXT.__text _ACT_FigSampleBufferProcessorStartPanoramaCaptureWithMetadata
+|| __TEXT.__text _ACT_FigSampleBufferProcessorStopPanoramaCapture
+|| __TEXT.__text _ACT_IsPanoramaSupported
+|| __TEXT.__text _BlendingCtrl_Defaults_Propagate
+|| __TEXT.__text _BlendingCtrl_Defaults_Propagate_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_getBlendingDefaults
+|| __TEXT.__text _BlendingCtrl_Defaults_getBlendingDefaults_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_getBlendingFlareCorrection
+|| __TEXT.__text _BlendingCtrl_Defaults_getBlendingFlareCorrection_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_getPoissonBlending
+|| __TEXT.__text _BlendingCtrl_Defaults_getPoissonBlending_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_getWideSceneCutn
+|| __TEXT.__text _BlendingCtrl_Defaults_getWideSceneCutn_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_setBlendingDefaults
+|| __TEXT.__text _BlendingCtrl_Defaults_setBlendingDefaults_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_setBlendingFlareCorrection
+|| __TEXT.__text _BlendingCtrl_Defaults_setBlendingFlareCorrection_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_setPoissonBlending
+|| __TEXT.__text _BlendingCtrl_Defaults_setPoissonBlending_v2
+|| __TEXT.__text _BlendingCtrl_Defaults_setWideSceneCut
+|| __TEXT.__text _BlendingCtrl_Defaults_setWideSceneCut_v2
+|| __TEXT.__text _BlendingCtrl_Roi
+|| __TEXT.__text _BlendingCtrl_Roi_v2
+|| __TEXT.__text _BlendingCtrl_blendSlice
+|| __TEXT.__text _BlendingCtrl_blendSliceIntoContext
+|| __TEXT.__text _BlendingCtrl_blendSliceIntoContext_v2
+|| __TEXT.__text _BlendingCtrl_blendSlice_v2
+|| __TEXT.__text _BlendingCtrl_createBlendingContext
+|| __TEXT.__text _BlendingCtrl_createBlendingContext_v2
+|| __TEXT.__text _BlendingCtrl_cropAndRotateBuffer
+|| __TEXT.__text _BlendingCtrl_cropAndRotateBuffer_v2
+|| __TEXT.__text _BlendingCtrl_cropAndRotateSlice
+|| __TEXT.__text _BlendingCtrl_cropAndRotateSlice_v2
+|| __TEXT.__text _BlendingCtrl_deleteBlendingContext
+|| __TEXT.__text _BlendingCtrl_deleteBlendingContext_v2
+|| __TEXT.__text _BlendingCtrl_finishBlending
+|| __TEXT.__text _BlendingCtrl_finishBlending_v2
+|| __TEXT.__text _BlendingCtrl_getCroppingArea
+|| __TEXT.__text _BlendingCtrl_getCroppingArea_v2
+|| __TEXT.__text _BlendingCtrl_getTargetContext
+|| __TEXT.__text _BlendingCtrl_getTargetContext_v2
+|| __TEXT.__text _BlendingCtrl_initSlice
+|| __TEXT.__text _BlendingCtrl_initSlice_v2
+|| __TEXT.__text _BlendingCtrl_resetBlendingContext
+|| __TEXT.__text _BlendingCtrl_resetBlendingContext_v2
+|| __TEXT.__text _BlendingCtrl_setBlendingForceMaxComputation
+|| __TEXT.__text _BlendingCtrl_setBlendingForceMaxComputation_v2
+|| __TEXT.__text _BlendingCtrl_setEdgeBlendingErrorMetricLogging
+|| __TEXT.__text _BlendingCtrl_setEdgeBlendingErrorMetricLogging_v2
+|| __TEXT.__text _BlendingCtrl_setMaxOverlapPercent
+|| __TEXT.__text _BlendingCtrl_setMaxOverlapPercent_v2
+|| __TEXT.__text _BlendingCtrl_setOptions
+|| __TEXT.__text _BlendingCtrl_setOptions_v2
+|| __TEXT.__text _BlendingCtrl_setPanoramaDirection
+|| __TEXT.__text _BlendingCtrl_setPanoramaDirection_v2
+|| __TEXT.__text _BlendingCtrl_zero
+|| __TEXT.__text _BlendingCtrl_zero_v2
+|| __TEXT.__text _BlendingDefaults_constructor
+|| __TEXT.__text _BlendingDefaults_copy
+|| __TEXT.__text _BlendingDefaults_destructor
+|| __TEXT.__text _BlendingDefaults_reset
+|| __TEXT.__text _Blending_addImage
+|| __TEXT.__text _Blending_addImage_v2
+|| __TEXT.__text _Blending_constructor
+|| __TEXT.__text _Blending_constructor_v2
+|| __TEXT.__text _Blending_destructor
+|| __TEXT.__text _Blending_destructor_v2
+|| __TEXT.__text _Blending_end
+|| __TEXT.__text _Blending_end_v2
+|| __TEXT.__text _Blending_overlap
+|| __TEXT.__text _Blending_overlap_v2
+|| __TEXT.__text _Blending_post
+|| __TEXT.__text _Blending_reset
+|| __TEXT.__text _Blending_reset_v2
+|| __TEXT.__text _Blending_setDefaults
+|| __TEXT.__text _Blending_setDefaults_v2
+|| __TEXT.__text _Blending_start
+|| __TEXT.__text _Blending_start_v2
+|| __TEXT.__text _Blending_storeIOSurfaceIDs
+|| __TEXT.__text _Blending_storeIOSurfaceIDs_v2
+|| __TEXT.__text _Blending_storeM2MTime
+|| __TEXT.__text _Blending_storeM2MTime_v2
+|| __TEXT.__text _Blending_updateBlendingMode
+|| __TEXT.__text _Blending_zero
+|| __TEXT.__text _Blending_zero_v2
+|| __TEXT.__text _CVPixelBufferToJPEG
+|| __TEXT.__text _Contrast_globalEnhance
+|| __TEXT.__text _DoBandPassNoiseReductionComplete
+|| __TEXT.__text _DoMultiBandNoiseReductionComplete
+|| __TEXT.__text _FIR1DFilter_Gaussian
+|| __TEXT.__text _FIR1DFilter_constructor
+|| __TEXT.__text _FIR1DFilter_destructor
+|| __TEXT.__text _FIR1DFilter_execute
+|| __TEXT.__text _FastFilter_BoxFilter
+|| __TEXT.__text _FastFilter_HorBoxFilterAndSubsampling
+|| __TEXT.__text _FastFilter_HorTentFilter
+|| __TEXT.__text _FastFilter_HorTentFilterByResampling
+|| __TEXT.__text _FastFilter_allocFilterSpecificData
+|| __TEXT.__text _FastFilter_constructor
+|| __TEXT.__text _FastFilter_destructor
+|| __TEXT.__text _FastFilter_execute
+|| __TEXT.__text _FastFilter_horTentFilter
+|| __TEXT.__text _FastRegistration_compareSignatures
+|| __TEXT.__text _FastRegistration_computePaddedRowByteSize
+|| __TEXT.__text _FastRegistration_computeSignatures
+|| __TEXT.__text _FastRegistration_getStatusDescription
+|| __TEXT.__text _FastRegistration_initRoi
+|| __TEXT.__text _FastRegistration_isRoiInImage
+|| __TEXT.__text _FastRegistration_register
+|| __TEXT.__text _FastRegistration_vImageBufferFree
+|| __TEXT.__text _FastRegistration_vImageBufferMalloc
+|| __TEXT.__text _FlareDetector_avgFlareProbability
+|| __TEXT.__text _FlareDetector_constructor
+|| __TEXT.__text _FlareDetector_destructor
+|| __TEXT.__text _FlareDetector_flareProbability
+|| __TEXT.__text _FlareDetector_isFlare
+|| __TEXT.__text _FlareDetector_isFlareInBlock
+|| __TEXT.__text _GaussianScaler_constructor
+|| __TEXT.__text _GaussianScaler_destructor
+|| __TEXT.__text _GaussianScaler_downsample
+|| __TEXT.__text _GaussianScaler_uint16_constructor
+|| __TEXT.__text _GaussianScaler_uint16_destructor
+|| __TEXT.__text _GaussianScaler_uint16_downsample
+|| __TEXT.__text _GetHostTime
+|| __TEXT.__text _MFAreMotionFilterValuesReliable
+|| __TEXT.__text _MFGetMotionFilterAbsoluteTranslation
+|| __TEXT.__text _MFGetMotionFilterIncrementalTranslation
+|| __TEXT.__text _MFHasMotionFilterTranslation
+|| __TEXT.__text _MFRegDampenCorrector
+|| __TEXT.__text _MFRegDisposeContext
+|| __TEXT.__text _MFRegInitContext
+|| __TEXT.__text _MFRegRegisterSlices
+|| __TEXT.__text _MFRegUpdateCorrector
+|| __TEXT.__text _MFResetCorrector
+|| __TEXT.__text _PixelShuffler_constructor
+|| __TEXT.__text _PixelShuffler_cropRoi
+|| __TEXT.__text _PixelShuffler_cropRoi_uint16
+|| __TEXT.__text _PixelShuffler_destructor
+|| __TEXT.__text _PixelShuffler_dirRot90
+|| __TEXT.__text _PixelShuffler_imageFlipHorizontally
+|| __TEXT.__text _PixelShuffler_imageFlipHorizontally_uint16
+|| __TEXT.__text _PixelShuffler_imageTranspose
+|| __TEXT.__text _PixelShuffler_imageTransposeRoi
+|| __TEXT.__text _PixelShuffler_imageTransposeRoi_uint16
+|| __TEXT.__text _PixelShuffler_imageTranspose_uint16
+|| __TEXT.__text _PixelShuffler_init
+|| __TEXT.__text _PixelShuffler_invRot90
+|| __TEXT.__text _PixelShuffler_reset
+|| __TEXT.__text _PixelShuffler_setOptions
+|| __TEXT.__text _PixelShuffler_yuv420ExposureMap
+|| __TEXT.__text _PixelShuffler_yuv420FlipHorizontally
+|| __TEXT.__text _PixelShuffler_yuv420TransposeAndFlipHorizontally
+|| __TEXT.__text _PixelShuffler_yuv420TransposeAndFlipHorizontallyRoi
+|| __TEXT.__text _PixelShuffler_yuv420TransposeRoi
+|| __TEXT.__text _Projections_computeMeanStdTable
+|| __TEXT.__text _Projections_computeProjectionDerivative
+|| __TEXT.__text _Projections_computeProjectionLineRegressionQuality
+|| __TEXT.__text _Projections_computeShiftBruteForce
+|| __TEXT.__text _Projections_computeShiftDescent
+|| __TEXT.__text _Projections_fastRecSqrtf
+|| __TEXT.__text _Projections_fastSqrtf
+|| __TEXT.__text _Projections_getStatusDescription
+|| __TEXT.__text _Projections_isZero
+|| __TEXT.__text _Projections_normalizeMeanStdUsingTable
+|| __TEXT.__text _Projections_projectionCols_planar8UtoF
+|| __TEXT.__text _Projections_projectionRowsCols_planar8UtoF
+|| __TEXT.__text _Projections_projectionRows_planar8UtoF
+|| __TEXT.__text _Projections_smoothProjection
+|| __TEXT.__text _RobustPano_copyProperty
+|| __TEXT.__text _RobustPano_cropRect
+|| __TEXT.__text _RobustPano_finishProcessing
+|| __TEXT.__text _RobustPano_invalidate
+|| __TEXT.__text _RobustPano_new
+|| __TEXT.__text _RobustPano_processSampleBuffer
+|| __TEXT.__text _RobustPano_release
+|| __TEXT.__text _RobustPano_reset
+|| __TEXT.__text _RobustPano_setDirection
+|| __TEXT.__text _RobustPano_setProperty
+|| __TEXT.__text _RobustPano_startCapture
+|| __TEXT.__text _RobustPano_stopCapture
+|| __TEXT.__text _Stitcher_Alpha_constructor
+|| __TEXT.__text _Stitcher_Alpha_destructor
+|| __TEXT.__text _Stitcher_Alpha_pasteImageToReference
+|| __TEXT.__text _Stitcher_Alpha_reset
+|| __TEXT.__text _Stitcher_Alpha_setDefaults
+|| __TEXT.__text _Stitcher_SceneCut_ExposureRatioFactorUpdate
+|| __TEXT.__text _Stitcher_SceneCut_ExposureRatioFactorUpdate_v2
+|| __TEXT.__text _Stitcher_SceneCut_SNRFactorUpdate
+|| __TEXT.__text _Stitcher_SceneCut_SNRFactorUpdate_v2
+|| __TEXT.__text _Stitcher_SceneCut_alphaBlendToReference
+|| __TEXT.__text _Stitcher_SceneCut_alphaBlendToReference_v2
+|| __TEXT.__text _Stitcher_SceneCut_blendToReference
+|| __TEXT.__text _Stitcher_SceneCut_blendToReferencePoisson
+|| __TEXT.__text _Stitcher_SceneCut_blendToReferencePoisson_NoExposureDifference
+|| __TEXT.__text _Stitcher_SceneCut_blendToReferencePoisson_NoExposureDifference_v2
+|| __TEXT.__text _Stitcher_SceneCut_blendToReferencePoisson_v2
+|| __TEXT.__text _Stitcher_SceneCut_blendToReference_v2
+|| __TEXT.__text _Stitcher_SceneCut_calculateCostImage_Y
+|| __TEXT.__text _Stitcher_SceneCut_calculateCostImage_Y_v2
+|| __TEXT.__text _Stitcher_SceneCut_calculateCostImage_Yuv
+|| __TEXT.__text _Stitcher_SceneCut_calculateCostImage_Yuv_v2
+|| __TEXT.__text _Stitcher_SceneCut_calculateFlarePerRow
+|| __TEXT.__text _Stitcher_SceneCut_calculateFlarePerRow_v2
+|| __TEXT.__text _Stitcher_SceneCut_calculateSpatialBiasLut
+|| __TEXT.__text _Stitcher_SceneCut_calculateSpatialBiasLutFlare
+|| __TEXT.__text _Stitcher_SceneCut_calculateSpatialBiasLutFlare_v2
+|| __TEXT.__text _Stitcher_SceneCut_calculateSpatialBiasLut_v2
+|| __TEXT.__text _Stitcher_SceneCut_constructor
+|| __TEXT.__text _Stitcher_SceneCut_constructor_v2
+|| __TEXT.__text _Stitcher_SceneCut_destructor
+|| __TEXT.__text _Stitcher_SceneCut_destructor_v2
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam_NEON
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam_orig
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam_orig_v2
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam_v2
+|| __TEXT.__text _Stitcher_SceneCut_findVerticalSeam_v2_NEON
+|| __TEXT.__text _Stitcher_SceneCut_maxMinOverlapWidth
+|| __TEXT.__text _Stitcher_SceneCut_maxMinOverlapWidth_v2
+|| __TEXT.__text _Stitcher_SceneCut_minOverlapWidth
+|| __TEXT.__text _Stitcher_SceneCut_minOverlapWidth_v2
+|| __TEXT.__text _Stitcher_SceneCut_pasteImageToReference
+|| __TEXT.__text _Stitcher_SceneCut_pasteImageToReference_v2
+|| __TEXT.__text _Stitcher_SceneCut_postProcessCostImage
+|| __TEXT.__text _Stitcher_SceneCut_postProcessCostImage_v2
+|| __TEXT.__text _Stitcher_SceneCut_reset
+|| __TEXT.__text _Stitcher_SceneCut_reset_v2
+|| __TEXT.__text _Stitcher_SceneCut_setDefaults
+|| __TEXT.__text _Stitcher_SceneCut_setDefaults_v2
+|| __TEXT.__text _Stitcher_SceneCut_setStraightVerticalSeam
+|| __TEXT.__text _Stitcher_SceneCut_setStraightVerticalSeam_v2
+|| __TEXT.__text _Stitcher_SceneCut_zero
+|| __TEXT.__text _Stitcher_SceneCut_zero_v2
+|| __TEXT.__text _Stitcher_constructor
+|| __TEXT.__text _Stitcher_constructor_v2
+|| __TEXT.__text _Stitcher_destructor
+|| __TEXT.__text _Stitcher_destructor_v2
+|| __TEXT.__text _Stitcher_maxMinOverlapWidth
+|| __TEXT.__text _Stitcher_maxMinOverlapWidth_v2
+|| __TEXT.__text _Stitcher_minOverlapWidth
+|| __TEXT.__text _Stitcher_minOverlapWidth_v2
+|| __TEXT.__text _Stitcher_pasteImageToReference
+|| __TEXT.__text _Stitcher_pasteImageToReference_v2
+|| __TEXT.__text _Stitcher_reset
+|| __TEXT.__text _Stitcher_reset_v2
+|| __TEXT.__text _Stitcher_setDefaults
+|| __TEXT.__text _Stitcher_setDefaults_v2
+|| __TEXT.__text _Stitcher_storeIOSurfaceIDs
+|| __TEXT.__text _Stitcher_storeIOSurfaceIDs_v2
+|| __TEXT.__text _Stitcher_storeM2MTime
+|| __TEXT.__text _Stitcher_storeM2MTime_v2
+|| __TEXT.__text _TUGetTiming
+|| __TEXT.__text _TUPrintTiming
+|| __TEXT.__text __createDebugWriteThread
+|| __TEXT.__text __invalidateDebugWriteThread
+|| __TEXT.__text _addCVPixelBufferToPanoArchive
+|| __TEXT.__text _addDataFileToPanoArchive
+|| __TEXT.__text _addOrReplaceKeyValueToTargetDictionary
+|| __TEXT.__text _allocateSignatureBuffers
+|| __TEXT.__text _applyWiringAssertionToProperties
+|| __TEXT.__text _blendSliceIntoContext
+|| __TEXT.__text _blockyfyGeometry
+|| __TEXT.__text _boxFilter_uint8_init
+|| __TEXT.__text _closePanoArchive
+|| __TEXT.__text _computeIntegralImages
+|| __TEXT.__text _convertCoordLKTToMetal
+|| __TEXT.__text _convertCoordMetalToLKT
+|| __TEXT.__text _copyDebugDescrioption
+|| __TEXT.__text _createACTNoiseReductionContext
+|| __TEXT.__text _createACTRegistrationContext
+|| __TEXT.__text _createBandPassNoiseReductionContext
+|| __TEXT.__text _createBlendingContext
+|| __TEXT.__text _createCVPixelBufferFromPlanary420File
+|| __TEXT.__text _createIOSurfacePropertiesDictionary
+|| __TEXT.__text _createMeanStdTable
+|| __TEXT.__text _createMultiBandNoiseReductionContext
+|| __TEXT.__text _cropAndRotateBufferForBlending
+|| __TEXT.__text _deleteACTRegistrationContext
+|| __TEXT.__text _deleteBlendingContext
+|| __TEXT.__text _deleteNoiseReductionContext
+|| __TEXT.__text _destroyBandPassNoiseReductionContext
+|| __TEXT.__text _destroyMeanStdTable
+|| __TEXT.__text _destroyMultiBandNoiseReductionContext
+|| __TEXT.__text _diffMachTime
+|| __TEXT.__text _disposeProjectionContext
+|| __TEXT.__text _dumpCVPixelBufferToJPEGFile
+|| __TEXT.__text _dumpCVPixelBufferToRawFile
+|| __TEXT.__text _dumpSurfaceToRawFile
+|| __TEXT.__text _fastRecSqrtf
+|| __TEXT.__text _fastSqrtf
+|| __TEXT.__text _finishBlending
+|| __TEXT.__text _getACTPredictionMethod
+|| __TEXT.__text _getACTRegistrationCSVLogBuffer
+|| __TEXT.__text _getACTRegistrationCSVLogLevel
+|| __TEXT.__text _getACTRegistrationCumulativeTransform
+|| __TEXT.__text _getACTRegistrationDirection
+|| __TEXT.__text _getACTRegistrationForceMaxComputation
+|| __TEXT.__text _getACTRegistrationInvokeFallback
+|| __TEXT.__text _getACTRegistrationLogLevel
+|| __TEXT.__text _getACTRegistrationMFDriftCorrectorFlag
+|| __TEXT.__text _getACTRegistrationMethod
+|| __TEXT.__text _getACTRegistrationMethodDescription
+|| __TEXT.__text _getACTRegistrationMethodUsed
+|| __TEXT.__text _getACTRegistrationSyslogLevel
+|| __TEXT.__text _getACTRegistrationUsePrediction
+|| __TEXT.__text _getBlackPointOfChannel
+|| __TEXT.__text _getCFPreferenceFloat
+|| __TEXT.__text _getCFPreferenceNumber
+|| __TEXT.__text _getCroppingArea
+|| __TEXT.__text _getDefaultPowerBlurTuning
+|| __TEXT.__text _getHostTime
+|| __TEXT.__text _getPointersFromGeometry
+|| __TEXT.__text _getPrevMultipleOf16
+|| __TEXT.__text _getSNR
+|| __TEXT.__text _getSNR_v2
+|| __TEXT.__text _getTargetContext
+|| __TEXT.__text _getThreadgroupSizeForShader
+|| __TEXT.__text _getThreadgroupSizeForShaderDebug
+|| __TEXT.__text _get_Defaults_ACTBlendingConfig
+|| __TEXT.__text _glPixelShuffler_yuv420TransposeAndFlipHorizontallyRoi
+|| __TEXT.__text _glPixelShuffler_yuv420TransposeRoi
+|| __TEXT.__text _histogramCalculation
+|| __TEXT.__text _horTentFilter_uint8_init
+|| __TEXT.__text _initMeanStdTable
+|| __TEXT.__text _initProjectionContext
+|| __TEXT.__text _isZero
+|| __TEXT.__text _loadPanoIBPFromBundle
+|| __TEXT.__text _minInRange
+|| __TEXT.__text _normalizeMeanStd
+|| __TEXT.__text _normalizeMeanStdUsingTable
+|| __TEXT.__text _normalizeMinMax
+|| __TEXT.__text _openPanoArchive
+|| __TEXT.__text _panoCloseLogFile
+|| __TEXT.__text _panoLog
+|| __TEXT.__text _panoOpenLogFile
+|| __TEXT.__text _perfInit
+|| __TEXT.__text _printHomography
+|| __TEXT.__text _print_int16
+|| __TEXT.__text _print_int16_2
+|| __TEXT.__text _print_uint8
+|| __TEXT.__text _print_uint8_2
+|| __TEXT.__text _projectionColsFromIntegralImage
+|| __TEXT.__text _projectionRowsFromIntegralImage
+|| __TEXT.__text _readPlanar420vFrameIntoCVPixelBuffer
+|| __TEXT.__text _readPlanary420FrameIntoCVPixelBuffer
+|| __TEXT.__text _registerSampleBuffers
+|| __TEXT.__text _resetACTRegistrationContext
+|| __TEXT.__text _resetBlendingContext
+|| __TEXT.__text _resetNoiseReduction
+|| __TEXT.__text _resetNoiseReductionContext
+|| __TEXT.__text _scaleAndRotatePixelBuffer
+|| __TEXT.__text _scaleCropAndRotatePixelBuffer
+|| __TEXT.__text _scalePixelBuffer
+|| __TEXT.__text _setACTNoiseReductionBuffer
+|| __TEXT.__text _setACTNoiseReductionCropRect
+|| __TEXT.__text _setACTPredictionMethod
+|| __TEXT.__text _setACTRegistrationCSVLogLevel
+|| __TEXT.__text _setACTRegistrationCumulativeTransform
+|| __TEXT.__text _setACTRegistrationDirection
+|| __TEXT.__text _setACTRegistrationForceMaxComputation
+|| __TEXT.__text _setACTRegistrationInvokeFallback
+|| __TEXT.__text _setACTRegistrationLogLevel
+|| __TEXT.__text _setACTRegistrationMFDriftCorrectorFlag
+|| __TEXT.__text _setACTRegistrationMethod
+|| __TEXT.__text _setACTRegistrationMethodUsed
+|| __TEXT.__text _setACTRegistrationSyslogLevel
+|| __TEXT.__text _setACTRegistrationUsePrediction
+|| __TEXT.__text _setBlendingContextOptions
+|| __TEXT.__text _setBlendingForceMaxComputation
+|| __TEXT.__text _setEdgeBlendingErrorMetricLogging
+|| __TEXT.__text _setMaxOverlapPercent
+|| __TEXT.__text _setPanoramaDirection
+|| __TEXT.__text _setPowerBlurTuning
+|| __TEXT.__text _set_Defaults_ACTBlendingConfig
+|| __TEXT.__text _signatureDerivative
+|| __TEXT.__text _signatureLineRegressionQuality
+|| __TEXT.__text _smoothSignature
+|| __TEXT.__text _timeElapsedSinceInit
+|| __TEXT.__text _timestampToSeconds
+|| __TEXT.__text _updateACTNoiseReductionContext
+|| __TEXT.__text _updateBandPassNoiseReductionCropRect
+|| __TEXT.__text _updateMultiBandNoiseReductionCropRect
+|| __TEXT.__text _updateMultiBandNoiseReductionMetadata
+__ Accelerate: _vDSP_conv
+__ Accelerate: _vDSP_dotpr
+__ Accelerate: _vDSP_sve_svesq
+__ Accelerate: _vDSP_svesq
+__ Accelerate: _vDSP_vabs
+__ Accelerate: _vDSP_vflt32
+__ Accelerate: _vDSP_vramp
+__ Accelerate: _vDSP_vsbsm
+__ Accelerate: _vDSP_vsmsa
+__ Accelerate: _vDSP_vsub
+__ Accelerate: _vImageBoxConvolve_Planar8
+__ Accelerate: _vImageConvolve_ARGB8888
+__ Accelerate: _vImageConvolve_Planar8
+__ Accelerate: _vImageHorizontalReflect_Planar16U
+__ Accelerate: _vImageHorizontalReflect_Planar8
+__ Accelerate: _vImageRotate90_Planar16U
+__ Accelerate: _vImageRotate90_Planar8
+__ CMCapture: _OBJC_CLASS_$_FigCaptureCameraParameters
+__ CMCapture: _kChromaNoiseReductionCropRect
+__ CMCapture: _kChromaNoiseReductionTuningParameters_Bias
+__ CMCapture: _kChromaNoiseReductionTuningParameters_Slope
+__ CMCapture: _kFigCaptureDiagnosticDictionary
+__ CMCapture: _kFigCapturePortType_BackFacingCamera
+__ CMCapture: _kFigCapturePortType_BackFacingSuperWideCamera
+__ CMCapture: _kFigCaptureSampleBufferAttachmentKey_ClientSpecifiedMetadata
+__ CMCapture: _kFigCaptureSampleBufferProcessorOption_TuningParameters
+__ CMCapture: _kFigCaptureStreamMetadata_AELimitCurrentToBaseExposureRatio
+__ CMCapture: _kFigCaptureStreamMetadata_AGC
+__ CMCapture: _kFigCaptureStreamMetadata_AWBBGain
+__ CMCapture: _kFigCaptureStreamMetadata_AWBComputedBGain
+__ CMCapture: _kFigCaptureStreamMetadata_AWBComputedGGain
+__ CMCapture: _kFigCaptureStreamMetadata_AWBComputedRGain
+__ CMCapture: _kFigCaptureStreamMetadata_AWBGGain
+__ CMCapture: _kFigCaptureStreamMetadata_AWBRGain
+__ CMCapture: _kFigCaptureStreamMetadata_CriticalFocusErrorOccurred
+__ CMCapture: _kFigCaptureStreamMetadata_ExposureTime
+__ CMCapture: _kFigCaptureStreamMetadata_LTMLocked
+__ CMCapture: _kFigCaptureStreamMetadata_SensorID
+__ CMCapture: _kFigCaptureStreamMetadata_ispDGain
+__ CMCapture: _kFigCaptureStreamMetadata_sensorDGain
+__ CMCapture: _kFigCaptureStreamProperty_PortType
+__ CMCapture: _kFigClientSpecifiedMetadataKey_StreamReadyForPanoramaCapture
+__ CMCapture: _kFigGNRSampleBufferProcessorOption_InitializationSynchronization
+__ CMCapture: _kFigGNRSampleBufferProcessorOption_NoiseReductionSynchronization
+__ CMCapture: _kFigGNRSampleBufferProcessorOption_PanoramaMode
+__ CMCapture: _kFigGNRSampleBufferProcessorProperty_ProcessSequence
+__ CMCapture: _kFigGNRSampleBufferProcessorProperty_ProcessingType
+__ CMCapture: _kFigStillImageStabilizationSampleBufferProcessorProperty_FusionType
+__ CMCapture: _noiseReductionContextCreateWithOptions
+__ CMCapture: _noiseReductionContextDestroy
+__ CMCapture: _noiseReductionInOutWithTuningOptions
+__ CMCapture: _noiseReductionWithTuningOptions
+__ CMImaging: _CreateSampleBuffer
+__ CMImaging: _OBJC_CLASS_$_FigMetalContext
+__ CMPhoto: _CMPhotoCompressionSessionAddDebugMetadata
+__ CMPhoto: _CMPhotoCompressionSessionAddImage
+__ CMPhoto: _CMPhotoCompressionSessionAddMetadataFromImageProperties
+__ CMPhoto: _CMPhotoCompressionSessionAddThumbnail
+__ CMPhoto: _CMPhotoCompressionSessionCloseContainerAndCopyBacking
+__ CMPhoto: _CMPhotoCompressionSessionCreate
+__ CMPhoto: _CMPhotoCompressionSessionOpenEmptyContainer
+__ CMPhoto: _kCMPhotoCompressionContainerOption_BackingType
+__ CMPhoto: _kCMPhotoCompressionOption_CodecType
+__ CMPhoto: _kCMPhotoCompressionOption_ImageOrientation
+__ CMPhoto: _kCMPhotoCompressionOption_MaxPixelSize
+__ CMPhoto: _kCMPhotoCompressionOption_SourceCropRect
+__ CMPhoto: _kCMPhotoCompressionOption_Tiling
+__ Celestial: _FigAspenCreateJPEGFromCVPixelBuffer
+__ Celestial: _FigAspenCreateJPEGFromIOSurface
+__ Celestial: _kFigJPEGPhotoQuality
+__ Celestial: _kFigJPEGSourceCropRect
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetTypeID
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFArrayRemoveValueAtIndex
+__ CoreFoundation: _CFArraySetValueAtIndex
+__ CoreFoundation: _CFBooleanGetTypeID
+__ CoreFoundation: _CFBooleanGetValue
+__ CoreFoundation: _CFBundleCopyResourceURL
+__ CoreFoundation: _CFBundleGetBundleWithIdentifier
+__ CoreFoundation: _CFCalendarCreateWithIdentifier
+__ CoreFoundation: _CFCalendarDecomposeAbsoluteTime
+__ CoreFoundation: _CFDataCreate
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDataGetBytes
+__ CoreFoundation: _CFDataGetLength
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryApplyFunction
+__ CoreFoundation: _CFDictionaryContainsKey
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryCreateMutableCopy
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetKeysAndValues
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryGetValueIfPresent
+__ CoreFoundation: _CFDictionaryRemoveAllValues
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionaryReplaceValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFEqual
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNotificationCenterGetLocalCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFNumberGetTypeID
+__ CoreFoundation: _CFNumberGetValue
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPropertyListCreateData
+__ CoreFoundation: _CFPropertyListCreateWithStream
+__ CoreFoundation: _CFReadStreamClose
+__ CoreFoundation: _CFReadStreamCreateWithFile
+__ CoreFoundation: _CFReadStreamOpen
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFStringAppendFormat
+__ CoreFoundation: _CFStringCompare
+__ CoreFoundation: _CFStringCreateMutable
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _CFStringGetCString
+__ CoreFoundation: _CFStringGetCStringPtr
+__ CoreFoundation: _CFStringGetDoubleValue
+__ CoreFoundation: _CFStringGetIntValue
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFStringGetSystemEncoding
+__ CoreFoundation: _CFStringGetTypeID
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFGregorianCalendar
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFTypeArrayCallBacks
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreGraphics: _CGAffineTransformConcat
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGRectCreateDictionaryRepresentation
+__ CoreGraphics: _CGRectIsEmpty
+__ CoreImage: _OBJC_CLASS_$_CIContext
+__ CoreImage: _OBJC_CLASS_$_CIImage
+__ CoreMedia: _CMBaseObjectGetDerivedStorage
+__ CoreMedia: _CMBaseObjectGetVTable
+__ CoreMedia: _CMBufferQueueCreate
+__ CoreMedia: _CMBufferQueueDequeueAndRetain
+__ CoreMedia: _CMBufferQueueEnqueue
+__ CoreMedia: _CMBufferQueueGetBufferCount
+__ CoreMedia: _CMBufferQueueGetCallbacksForUnsortedSampleBuffers
+__ CoreMedia: _CMBufferQueueReset
+__ CoreMedia: _CMDerivedObjectCreate
+__ CoreMedia: _CMGetAttachment
+__ CoreMedia: _CMPropagateAttachments
+__ CoreMedia: _CMRemoveAttachment
+__ CoreMedia: _CMSampleBufferCreateForImageBuffer
+__ CoreMedia: _CMSampleBufferGetImageBuffer
+__ CoreMedia: _CMSampleBufferGetPresentationTimeStamp
+__ CoreMedia: _CMSampleBufferGetTypeID
+__ CoreMedia: _CMSetAttachment
+__ CoreMedia: _CMSimpleQueueCreate
+__ CoreMedia: _CMSimpleQueueDequeue
+__ CoreMedia: _CMSimpleQueueEnqueue
+__ CoreMedia: _CMSimpleQueueGetCount
+__ CoreMedia: _CMSimpleQueueReset
+__ CoreMedia: _CMTimeGetSeconds
+__ CoreMedia: _CMTimeMake
+__ CoreMedia: _CMVideoFormatDescriptionCreateForImageBuffer
+__ CoreMedia: _FigCFDictionaryCreateMutableCopy
+__ CoreMedia: _FigGetUpTime
+__ CoreMedia: _FigHostTimeToNanoseconds
+__ CoreMedia: _FigMemoryBarrier
+__ CoreMedia: _FigSampleBufferRelease
+__ CoreMedia: _FigSampleBufferRetain
+__ CoreMedia: _FigSemaphoreCreate
+__ CoreMedia: _FigSemaphoreDestroy
+__ CoreMedia: _FigSemaphoreSignal
+__ CoreMedia: _FigSemaphoreWaitRelative
+__ CoreMedia: _FigSignalErrorAt2
+__ CoreMedia: _FigSimpleMutexCreate
+__ CoreMedia: _FigSimpleMutexDestroy
+__ CoreMedia: _FigSimpleMutexLock
+__ CoreMedia: _FigSimpleMutexUnlock
+__ CoreMedia: _FigThreadCreate
+__ CoreMedia: _FigThreadJoin
+__ CoreMedia: _fig_log_emit
+__ CoreMedia: _fig_note_initialize_work
+__ CoreMedia: _kFigThreadCreateKey_Identifier
+__ CoreMedia: _kFigThreadCreateKey_MachTimeSharePolicy
+__ CoreVideo: _CVBufferGetAttachment
+__ CoreVideo: _CVBufferGetAttachments
+__ CoreVideo: _CVBufferPropagateAttachments
+__ CoreVideo: _CVBufferSetAttachment
+__ CoreVideo: _CVPixelBufferCreate
+__ CoreVideo: _CVPixelBufferGetBaseAddress
+__ CoreVideo: _CVPixelBufferGetBaseAddressOfPlane
+__ CoreVideo: _CVPixelBufferGetBytesPerRow
+__ CoreVideo: _CVPixelBufferGetBytesPerRowOfPlane
+__ CoreVideo: _CVPixelBufferGetDataSize
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetHeightOfPlane
+__ CoreVideo: _CVPixelBufferGetIOSurface
+__ CoreVideo: _CVPixelBufferGetPixelFormatType
+__ CoreVideo: _CVPixelBufferGetPlaneCount
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferGetWidthOfPlane
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferPoolCreate
+__ CoreVideo: _CVPixelBufferPoolCreatePixelBuffer
+__ CoreVideo: _CVPixelBufferPoolRelease
+__ CoreVideo: _CVPixelBufferRelease
+__ CoreVideo: _CVPixelBufferRetain
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ CoreVideo: _kCVPixelBufferBytesPerRowAlignmentKey
+__ CoreVideo: _kCVPixelBufferCacheModeKey
+__ CoreVideo: _kCVPixelBufferHeightKey
+__ CoreVideo: _kCVPixelBufferIOSurfacePropertiesKey
+__ CoreVideo: _kCVPixelBufferIOSurfaceWiringAssertion
+__ CoreVideo: _kCVPixelBufferPixelFormatTypeKey
+__ CoreVideo: _kCVPixelBufferPoolMinimumBufferCountKey
+__ CoreVideo: _kCVPixelBufferWidthKey
+__ CoreVideo: _kCVPixelFormatOpenGLESCompatibility
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLog
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSScanner
+__ Foundation: _OBJC_CLASS_$_NSString
+__ IOSurface: _IOSurfaceCopyValue
+__ IOSurface: _IOSurfaceGetBaseAddress
+__ IOSurface: _IOSurfaceGetBaseAddressOfPlane
+__ IOSurface: _IOSurfaceGetBytesPerRow
+__ IOSurface: _IOSurfaceGetBytesPerRowOfPlane
+__ IOSurface: _IOSurfaceGetHeight
+__ IOSurface: _IOSurfaceGetHeightOfPlane
+__ IOSurface: _IOSurfaceGetID
+__ IOSurface: _IOSurfaceGetPixelFormat
+__ IOSurface: _IOSurfaceGetPlaneCount
+__ IOSurface: _IOSurfaceGetWidth
+__ IOSurface: _IOSurfaceGetWidthOfPlane
+__ IOSurface: _IOSurfaceLock
+__ IOSurface: _IOSurfaceSetValue
+__ IOSurface: _IOSurfaceUnlock
+__ IOSurface: _kIOSurfaceCacheMode
+__ ImageIO: _kCGImageDestinationICCProfile
+__ ImageIO: _kCGImagePropertyExifCustomRendered
+__ ImageIO: _kCGImagePropertyExifDictionary
+__ ImageIO: _kCGImagePropertyExifFlash
+__ ImageIO: _kCGImagePropertyExifPixelXDimension
+__ ImageIO: _kCGImagePropertyExifPixelYDimension
+__ ImageIO: _kCGImagePropertyExifUserComment
+__ ImageIO: _kCGImagePropertyTIFFOrientation
+__ MediaToolbox: _FigSampleBufferProcessorCreateForCustom
+__ MediaToolbox: _FigSampleBufferProcessorGetClassID
+__ MediaToolbox: _FigSampleBufferProcessorGetFigBaseObject
+__ Metal: _MTLCreateSystemDefaultDevice
+__ Metal: _MTLPixelFormatGetInfoForDevice
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ MetalPerformanceShaders: _OBJC_CLASS_$_MPSImageHistogram
+__ VideoToolbox: _FigCreateIOSurfaceBackedCVPixelBufferWithAttributes
+__ VideoToolbox: _FigCreateIOSurfacePropertiesDictionary
+__ VideoToolbox: _FigCreatePixelBufferAttributesWithIOSurfaceSupport
+__ VideoToolbox: _FigRegisterIOSurfacePixelTransferCapability
+__ VideoToolbox: _VTImageRotationSessionCreate
+__ VideoToolbox: _VTImageRotationSessionInvalidate
+__ VideoToolbox: _VTImageRotationSessionRelease
+__ VideoToolbox: _VTImageRotationSessionSetProperty
+__ VideoToolbox: _VTImageRotationSessionTransferSubImage
+__ VideoToolbox: _VTPixelTransferSessionCreate
+__ VideoToolbox: _VTPixelTransferSessionInvalidate
+__ VideoToolbox: _VTPixelTransferSessionTransferImage
+__ VideoToolbox: _kVTImageRotationPropertyKey_FlipHorizontalOrientation
+__ libMobileGestalt.dylib: _MGCopyAnswer
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __DefaultRuneLocale
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___invert_f3
+__ libSystem.B.dylib: ___maskrune
+__ libSystem.B.dylib: ___memcpy_chk
+__ libSystem.B.dylib: ___sincosf_stret
+__ libSystem.B.dylib: ___sprintf_chk
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: ___stderrp
+__ libSystem.B.dylib: ___stdoutp
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_pack_fill
+__ libSystem.B.dylib: __os_log_pack_size
+__ libSystem.B.dylib: _access
+__ libSystem.B.dylib: _atoi
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_barrier_sync
+__ libSystem.B.dylib: _dispatch_group_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fflush
+__ libSystem.B.dylib: _fgetpos
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fputs
+__ libSystem.B.dylib: _fread
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _fseek
+__ libSystem.B.dylib: _fwrite
+__ libSystem.B.dylib: _logf
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _mach_timebase_info
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _matrix_identity_float3x3
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _mkdir
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: _pread
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _putchar
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _remove
+__ libSystem.B.dylib: _rewind
+__ libSystem.B.dylib: _rmdir
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _sprintf
+__ libSystem.B.dylib: _strcat
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _strstr
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _sysctlbyname
+__ libSystem.B.dylib: _syslog
+__ libSystem.B.dylib: _time
+__ libSystem.B.dylib: _vsnprintf
+__ libarchive.2.dylib: _archive_entry_free
+__ libarchive.2.dylib: _archive_entry_new
+__ libarchive.2.dylib: _archive_entry_set_filetype
+__ libarchive.2.dylib: _archive_entry_set_mtime
+__ libarchive.2.dylib: _archive_entry_set_pathname
+__ libarchive.2.dylib: _archive_entry_set_perm
+__ libarchive.2.dylib: _archive_entry_set_size
+__ libarchive.2.dylib: _archive_errno
+__ libarchive.2.dylib: _archive_error_string
+__ libarchive.2.dylib: _archive_position_compressed
+__ libarchive.2.dylib: _archive_write_close
+__ libarchive.2.dylib: _archive_write_data
+__ libarchive.2.dylib: _archive_write_finish
+__ libarchive.2.dylib: _archive_write_header
+__ libarchive.2.dylib: _archive_write_new
+__ libarchive.2.dylib: _archive_write_open_filename
+__ libarchive.2.dylib: _archive_write_set_compression_none
+__ libarchive.2.dylib: _archive_write_set_format_ar_bsd
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic
+__ libobjc.A.dylib: _objc_storeStrong
+PanoramaProcessor : NSObject <MetalImageBufferProcessor>
+ @property  <MTLCommandQueue> *commandQueue
+ @property  <PanoRegistrationProvider> *registrationProvider
+ @property  BOOL doParallaxCorrection
+ @property  PanoramaPreviewOutput *previewOutput
+ @property  PanoramaOutput *output
+ @property  NSNumber *writeSlicesToDisc
+ @property  NSNumber *previewScale
+ @property  NSNumber *maxWidth
+ @property  NSNumber *previewWidth
+ @property  NSNumber *previewHeight
+ @property  NSNumber *defaultDirection
+ @property  NSNumber *defaultRegistrationMethod
+ @property  NSNumber *defaultPredictionMethod
+ @property  NSNumber *defaultPrediction
+ @property  NSNumber *defaultFallback
+ @property  NSNumber *defaultBlendingConfig
+ @property  unsigned long nbFramesReceived
+ @property  unsigned long nbFramesSkipped
+ @property  unsigned long nbFramesDropped
+ @property  <MTLCommandQueue> *metalCommandQueue
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PanoramaProcessor prewarm]
+
+  // instance methods
+  -[PanoramaProcessor prewarm]
+  -[PanoramaProcessor tuningParameters]
+  -[PanoramaProcessor resetState]
+  -[PanoramaProcessor init:]
+  -[PanoramaProcessor setDirection:]
+  -[PanoramaProcessor prepareToProcess:]
+  -[PanoramaProcessor setup]
+  -[PanoramaProcessor setTuningParameters:]
+  -[PanoramaProcessor process]
+  -[PanoramaProcessor finishProcessing]
+  -[PanoramaProcessor dealloc]
+  -[PanoramaProcessor .cxx_destruct]
+  -[PanoramaProcessor metalCommandQueue]
+  -[PanoramaProcessor setOutput:]
+  -[PanoramaProcessor cameraInfoByPortType]
+  -[PanoramaProcessor commandQueue]
+  -[PanoramaProcessor purgeResources]
+  -[PanoramaProcessor setCameraInfoByPortType:]
+  -[PanoramaProcessor setMetalCommandQueue:]
+  -[PanoramaProcessor maxWidth]
+  -[PanoramaProcessor output]
+  -[PanoramaProcessor previewOutput]
+  -[PanoramaProcessor metalContext]
+  -[PanoramaProcessor previewWidth]
+  -[PanoramaProcessor previewHeight]
+  -[PanoramaProcessor defaultDirection]
+  -[PanoramaProcessor _commonInitWithContext:NRFversion:]
+  -[PanoramaProcessor refineInitialHomography:]
+  -[PanoramaProcessor getRegistrationWidth:height:]
+  -[PanoramaProcessor addFrameForStitching:withInitialHomography:registrationCallback:]
+  -[PanoramaProcessor addFrameWithoutStitching:registrationCallback:]
+  -[PanoramaProcessor _setPreviousFrameDroppedFlag:dropped:]
+  -[PanoramaProcessor addFrame:registrationCallback:]
+  -[PanoramaProcessor _addLastSlice]
+  -[PanoramaProcessor _createDummyOutput]
+  -[PanoramaProcessor prepareToProcess_PanoSpecific:frameWidth:frameHeight:]
+  -[PanoramaProcessor encodedResult]
+  -[PanoramaProcessor setPanoramaParameters:]
+  -[PanoramaProcessor getMaskAsBuffer:widthOut:heightOut:]
+  -[PanoramaProcessor autocropMask]
+  -[PanoramaProcessor registrationProvider]
+  -[PanoramaProcessor setRegistrationProvider:]
+  -[PanoramaProcessor doParallaxCorrection]
+  -[PanoramaProcessor setDoParallaxCorrection:]
+  -[PanoramaProcessor setPreviewOutput:]
+  -[PanoramaProcessor writeSlicesToDisc]
+  -[PanoramaProcessor setWriteSlicesToDisc:]
+  -[PanoramaProcessor previewScale]
+  -[PanoramaProcessor defaultRegistrationMethod]
+  -[PanoramaProcessor defaultPredictionMethod]
+  -[PanoramaProcessor defaultPrediction]
+  -[PanoramaProcessor defaultFallback]
+  -[PanoramaProcessor defaultBlendingConfig]
+  -[PanoramaProcessor nbFramesReceived]
+  -[PanoramaProcessor nbFramesSkipped]
+  -[PanoramaProcessor nbFramesDropped]
+
+
+LKTFlowGPU : NSObject
+ @property  BOOL isValid
+ @property  int inputPixelFormat
+ @property  {CGSize=dd} ref_size
+ @property  {CGSize=dd} aux_size
+ @property  int nscales
+ @property  int streamFrameCount
+ @property  int nwarpings
+ @property  int nscales_icp
+ @property  int warping_scheme_icp
+ @property  {parametric_transform=[8f]i} p
+ @property  int decimation_factor_icp
+ @property  int flow_upper_most_scale
+ @property  BOOL useNonLocalRegularization
+ @property  int nlreg_radius
+ @property  int nlreg_padding
+ @property  float nlreg_sigma_l
+ @property  float nlreg_sigma_c
+ @property  float nlreg_sigma_w
+ @property  BOOL isBidirectional
+ @property  <MTLBuffer> *keypoints
+
+  // class methods
+  +[LKTFlowGPU _computeScalingFactor:dst_tex:scale_xy_inv:coeff:]
+
+  // instance methods
+  -[LKTFlowGPU waitUntilCompleted]
+  -[LKTFlowGPU setPreset:]
+  -[LKTFlowGPU dealloc]
+  -[LKTFlowGPU reset]
+  -[LKTFlowGPU isValid]
+  -[LKTFlowGPU .cxx_destruct]
+  -[LKTFlowGPU _setupBuffer]
+  -[LKTFlowGPU keypoints]
+  -[LKTFlowGPU _computeOpticalFlow]
+  -[LKTFlowGPU _zeroFlowWithCommandBuffer:uv_tex:]
+  -[LKTFlowGPU _computeFeaturesWithCommandBuffer:in_tex:out_tex:]
+  -[LKTFlowGPU _computeFeaturesDerivativesWithCommandBuffer:in_tex:out_tex:]
+  -[LKTFlowGPU _doNLRegularizationWithCommandBuffer:in_uv_tex:join_tex:w_tex:out_uv_tex:]
+  -[LKTFlowGPU useNonLocalRegularization]
+  -[LKTFlowGPU setUseNonLocalRegularization:]
+  -[LKTFlowGPU nlreg_radius]
+  -[LKTFlowGPU setNlreg_radius:]
+  -[LKTFlowGPU nlreg_padding]
+  -[LKTFlowGPU setNlreg_padding:]
+  -[LKTFlowGPU nlreg_sigma_l]
+  -[LKTFlowGPU setNlreg_sigma_l:]
+  -[LKTFlowGPU nlreg_sigma_c]
+  -[LKTFlowGPU setNlreg_sigma_c:]
+  -[LKTFlowGPU nlreg_sigma_w]
+  -[LKTFlowGPU setNlreg_sigma_w:]
+  -[LKTFlowGPU setInputPixelFormat:]
+  -[LKTFlowGPU p]
+  -[LKTFlowGPU inputPixelFormat]
+  -[LKTFlowGPU _setDefaultParameters]
+  -[LKTFlowGPU isBidirectional]
+  -[LKTFlowGPU _initMemory:height:nscales:]
+  -[LKTFlowGPU _setupPipelines]
+  -[LKTFlowGPU _downscale2XWithCommandBuffer:in_tex:out_tex:]
+  -[LKTFlowGPU _doSolverWithCommandBuffer:scale:in_uv_tex:in_G0_tex:in_G1_tex:in_C0_tex:in_C1_tex:out_uv_tex:out_w_tex:]
+  -[LKTFlowGPU _enqueueFlowConsistencyWithCommandBuffer:in_uv0_tex:in_uv1_tex:out_uv_tex:]
+  -[LKTFlowGPU _enqueueKeypointsFromFlowWithCommandBuffer:in_uv_fwd_tex:in_uv_bwd_tex:out_kpt_buf:block_size:bidirectional_error:out_num_keypoints:]
+  -[LKTFlowGPU ref_size]
+  -[LKTFlowGPU aux_size]
+  -[LKTFlowGPU nscales]
+  -[LKTFlowGPU streamFrameCount]
+  -[LKTFlowGPU nwarpings]
+  -[LKTFlowGPU setNwarpings:]
+  -[LKTFlowGPU setIsBidirectional:]
+  -[LKTFlowGPU setP:]
+  -[LKTFlowGPU initWithMetalContext:width:height:nscales:]
+  -[LKTFlowGPU setOutputUV:]
+  -[LKTFlowGPU setOutputUVForward:backward:]
+  -[LKTFlowGPU estimateFlowFromReference:target:]
+  -[LKTFlowGPU estimateFlowStream:]
+  -[LKTFlowGPU computeKeypointsFromForwardFlow:backwardFlow:bidirectionalError:blockSize:outNumKeypoints:]
+  -[LKTFlowGPU _computeOpticalFlowBidirectional]
+  -[LKTFlowGPU _createImagePyramidWithCommandBuffer:in_pixelbuf:I_idx:]
+  -[LKTFlowGPU initWithMetalContext:ICPtransform:width:height:nscales:flowUpperMostScale:]
+  -[LKTFlowGPU setICPWeights:]
+  -[LKTFlowGPU setPresetICP:withRegularizerTerms:decimation_factor:]
+  -[LKTFlowGPU estimatePanoRegistration:metadata:initTForm:]
+  -[LKTFlowGPU resetCurrentFrameIndex]
+  -[LKTFlowGPU getParametricTransform]
+  -[LKTFlowGPU getMaxNumberOfScales]
+  -[LKTFlowGPU _initMemoryICP:]
+  -[LKTFlowGPU _setupBufferPyramids]
+  -[LKTFlowGPU _setupBufferDerivatives]
+  -[LKTFlowGPU _setupBufferLKT]
+  -[LKTFlowGPU _setupBufferICP]
+  -[LKTFlowGPU _setDefaultParametersICP]
+  -[LKTFlowGPU _setICPRegularizerTerms:]
+  -[LKTFlowGPU _initICPWeightsWithCommandBuffer:]
+  -[LKTFlowGPU _computeFeaturesAndTGSumWithCommandBuffer:in_tex:out_tex:]
+  -[LKTFlowGPU _resampleTransformWithCommandBuffer:from:to:]
+  -[LKTFlowGPU _computeICPThreadgroupsWithSize:computePipeline:threadsPerThreadgroup:threadgroupsPerGrid:debug_string:]
+  -[LKTFlowGPU _computeICPThreadgroupsWithSize:threadsPerThreadgroupForPass1:threadgroupsPerGridForPass1:threadsPerThreadgroupForPass2:threadgroupsPerGridForPass2:threadsPerThreadgroupForPass3:threadgroupsPerGridForPass3:]
+  -[LKTFlowGPU _computeICPThreadgroupsForDecimation:threadsPerThreadgroupForUniform:threadsPerThreadgroupForPass1:threadgroupsPerGridForPass1:]
+  -[LKTFlowGPU _computeICPThreadgroupsForActivation:]
+  -[LKTFlowGPU _getICPNWarp:scale:]
+  -[LKTFlowGPU _panoRegistration:metadata:]
+  -[LKTFlowGPU _computeICPWeights:weights:flow:]
+  -[LKTFlowGPU _computeICPResiduals:flow:]
+  -[LKTFlowGPU _computeActiveThreadgroupsWithCommandBuffer:]
+  -[LKTFlowGPU _computeHomographyWithCommandBuffer:in_tex0:in_tex1:in_tex2:weight_tex:regularizer_term:decimation_factor:scale:nwarp:]
+  -[LKTFlowGPU _setParametricTransformFromGyro:]
+  -[LKTFlowGPU _matrix3x3ToParametricTransform:]
+  -[LKTFlowGPU _parametricTransformToMatrix3x3]
+  -[LKTFlowGPU _resampleTransform:to:]
+  -[LKTFlowGPU _resampleHomography:to:]
+  -[LKTFlowGPU _copyTransfromFromGPU]
+  -[LKTFlowGPU _copyTransfromToGPU]
+  -[LKTFlowGPU _resetLoss]
+  -[LKTFlowGPU nscales_icp]
+  -[LKTFlowGPU warping_scheme_icp]
+  -[LKTFlowGPU setWarping_scheme_icp:]
+  -[LKTFlowGPU decimation_factor_icp]
+  -[LKTFlowGPU setDecimation_factor_icp:]
+  -[LKTFlowGPU flow_upper_most_scale]
+  -[LKTFlowGPU setFlow_upper_most_scale:]
+
+
+PanoramaRegistrationShaders : NSObject
+  // instance methods
+  -[PanoramaRegistrationShaders initWithContext:]
+
+
+PanoramaRegistrationStage : NSObject <MetalImageBufferProcessor, PanoRegistrationProvider>
+ @property  <MTLTexture> *RegistrationMask
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} roi
+ @property  {?=[3]} homography
+ @property  BOOL homographyFailure
+ @property  BOOL hasRetrogradeMotion
+ @property  ^{__CVBuffer=} residualFlow
+ @property  <MTLTexture> *registrationWeights
+ @property  <MTLCommandQueue> *metalCommandQueue
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  {?=[3]} _homography
+
+  // instance methods
+  -[PanoramaRegistrationStage resetState]
+  -[PanoramaRegistrationStage setDirection:]
+  -[PanoramaRegistrationStage initWithContext:]
+  -[PanoramaRegistrationStage dealloc]
+  -[PanoramaRegistrationStage .cxx_destruct]
+  -[PanoramaRegistrationStage metalCommandQueue]
+  -[PanoramaRegistrationStage cameraInfoByPortType]
+  -[PanoramaRegistrationStage setCameraInfoByPortType:]
+  -[PanoramaRegistrationStage setMetalCommandQueue:]
+  -[PanoramaRegistrationStage homography]
+  -[PanoramaRegistrationStage setHomography:]
+  -[PanoramaRegistrationStage registerNewSlice:withHFromGyro:registrationCallback:]
+  -[PanoramaRegistrationStage replacePreviousSlice:]
+  -[PanoramaRegistrationStage residualFlow]
+  -[PanoramaRegistrationStage setResidualFlow:]
+  -[PanoramaRegistrationStage _getLKTFlowUpperMostScale]
+  -[PanoramaRegistrationStage _getICPDecimationFactor]
+  -[PanoramaRegistrationStage prepareRegistrationWithDevice:library:commandQueue:width:height:]
+  -[PanoramaRegistrationStage _checkForNaNs:]
+  -[PanoramaRegistrationStage _isTranslationOutlier:]
+  -[PanoramaRegistrationStage _setHomographyFailureFlag]
+  -[PanoramaRegistrationStage _resetHomographyFailureFlagToFalse]
+  -[PanoramaRegistrationStage hasHomographyFailureFlag]
+  -[PanoramaRegistrationStage _isRetrogradeMotion:tolerance:]
+  -[PanoramaRegistrationStage _setRetrogradeMotionFlag]
+  -[PanoramaRegistrationStage _resetRetrogradeMotionFlagToFalse]
+  -[PanoramaRegistrationStage hasRetrogradeMotionFlag]
+  -[PanoramaRegistrationStage _logTransform:metadata:message:error:]
+  -[PanoramaRegistrationStage _setRegistrationParams:initTransform:]
+  -[PanoramaRegistrationStage _computeRegistration:metadata:initTransform:]
+  -[PanoramaRegistrationStage RegistrationMask]
+  -[PanoramaRegistrationStage roi]
+  -[PanoramaRegistrationStage homographyFailure]
+  -[PanoramaRegistrationStage setHomographyFailure:]
+  -[PanoramaRegistrationStage hasRetrogradeMotion]
+  -[PanoramaRegistrationStage setHasRetrogradeMotion:]
+  -[PanoramaRegistrationStage registrationWeights]
+  -[PanoramaRegistrationStage setRegistrationWeights:]
+
+
+PanoramaParallaxStageShaders : NSObject
+ @property  <MTLComputePipelineState> *applyWarpToSlice
+ @property  <MTLComputePipelineState> *computePreShifts
+ @property  <MTLComputePipelineState> *downsampleShifts
+
+  // instance methods
+  -[PanoramaParallaxStageShaders initWithContext:]
+  -[PanoramaParallaxStageShaders .cxx_destruct]
+  -[PanoramaParallaxStageShaders applyWarpToSlice]
+  -[PanoramaParallaxStageShaders computePreShifts]
+  -[PanoramaParallaxStageShaders downsampleShifts]
+
+
+PanoramaParallaxStage : NSObject <MetalImageBufferProcessor>
+ @property  ^{__CVBuffer=} warpedFrame
+ @property  <MTLTexture> *warpedMask
+ @property  <MTLCommandQueue> *metalCommandQueue
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PanoramaParallaxStage prewarm]
+  -[PanoramaParallaxStage tuningParameters]
+  -[PanoramaParallaxStage resetState]
+  -[PanoramaParallaxStage setDirection:]
+  -[PanoramaParallaxStage prepareToProcess:]
+  -[PanoramaParallaxStage setup]
+  -[PanoramaParallaxStage initWithContext:]
+  -[PanoramaParallaxStage setTuningParameters:]
+  -[PanoramaParallaxStage process]
+  -[PanoramaParallaxStage finishProcessing]
+  -[PanoramaParallaxStage dealloc]
+  -[PanoramaParallaxStage .cxx_destruct]
+  -[PanoramaParallaxStage metalCommandQueue]
+  -[PanoramaParallaxStage cameraInfoByPortType]
+  -[PanoramaParallaxStage purgeResources]
+  -[PanoramaParallaxStage setCameraInfoByPortType:]
+  -[PanoramaParallaxStage setMetalCommandQueue:]
+  -[PanoramaParallaxStage _applyWarpToSlice:chroma:mask:preFlow:warpedLuma:warpedChroma:warpedMask:]
+  -[PanoramaParallaxStage prepareToProcess:sliceHeight:]
+  -[PanoramaParallaxStage _allocateShiftPyramidLike:]
+  -[PanoramaParallaxStage _buildShiftPyramid]
+  -[PanoramaParallaxStage _computePreShift:homography:]
+  -[PanoramaParallaxStage addSlice:mask:homography:residualFlow:]
+  -[PanoramaParallaxStage warpedFrame]
+  -[PanoramaParallaxStage setWarpedFrame:]
+  -[PanoramaParallaxStage warpedMask]
+  -[PanoramaParallaxStage setWarpedMask:]
+
+
+PanoramaStitchingShaders : NSObject
+ @property  <MTLComputePipelineState> *computeCentralStitchingMask
+ @property  <MTLComputePipelineState> *initializeSeamPreviousSlice
+ @property  <MTLComputePipelineState> *initializeSeamPreviousSliceWithMask
+ @property  <MTLComputePipelineState> *computeSeamCost
+ @property  <MTLComputePipelineState> *seamCutDescend
+ @property  <MTLComputePipelineState> *seamCutAscend
+
+  // instance methods
+  -[PanoramaStitchingShaders initWithContext:]
+  -[PanoramaStitchingShaders .cxx_destruct]
+  -[PanoramaStitchingShaders computeCentralStitchingMask]
+  -[PanoramaStitchingShaders initializeSeamPreviousSlice]
+  -[PanoramaStitchingShaders initializeSeamPreviousSliceWithMask]
+  -[PanoramaStitchingShaders computeSeamCost]
+  -[PanoramaStitchingShaders seamCutDescend]
+  -[PanoramaStitchingShaders seamCutAscend]
+
+
+PanoramaStitchingStage : NSObject <MetalImageBufferProcessor>
+ @property  <MTLTexture> *stitchingMask
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} roi
+ @property  BOOL isReadyToProcess
+ @property  int stitchingMode
+ @property  <MTLTexture> *motionMask
+ @property  <MTLCommandQueue> *metalCommandQueue
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PanoramaStitchingStage prewarm]
+  -[PanoramaStitchingStage tuningParameters]
+  -[PanoramaStitchingStage resetState]
+  -[PanoramaStitchingStage setDirection:]
+  -[PanoramaStitchingStage prepareToProcess:]
+  -[PanoramaStitchingStage setup]
+  -[PanoramaStitchingStage initWithContext:]
+  -[PanoramaStitchingStage setTuningParameters:]
+  -[PanoramaStitchingStage process]
+  -[PanoramaStitchingStage finishProcessing]
+  -[PanoramaStitchingStage .cxx_destruct]
+  -[PanoramaStitchingStage metalCommandQueue]
+  -[PanoramaStitchingStage cameraInfoByPortType]
+  -[PanoramaStitchingStage purgeResources]
+  -[PanoramaStitchingStage setCameraInfoByPortType:]
+  -[PanoramaStitchingStage setMetalCommandQueue:]
+  -[PanoramaStitchingStage roi]
+  -[PanoramaStitchingStage _centralStitchAddSlice:sliceHomography:sliceType:]
+  -[PanoramaStitchingStage _seamStitchAddSlice:sliceHomography:sliceType:]
+  -[PanoramaStitchingStage addSlice:sliceHomography:sliceType:]
+  -[PanoramaStitchingStage prepareToProcessSliceWidth:sliceHeight:]
+  -[PanoramaStitchingStage stitchingMask]
+  -[PanoramaStitchingStage isReadyToProcess]
+  -[PanoramaStitchingStage setIsReadyToProcess:]
+  -[PanoramaStitchingStage stitchingMode]
+  -[PanoramaStitchingStage setStitchingMode:]
+  -[PanoramaStitchingStage motionMask]
+  -[PanoramaStitchingStage setMotionMask:]
+
+
+MetalContext : NSObject
+ @property  <MTLDevice> *device
+ @property  <MTLCommandQueue> *commandQueue
+ @property  <MTLLibrary> *library
+
+  // class methods
+  +[MetalContext bytesPerPixelForTextureFormat:]
+  +[MetalContext makeTextureCoherent:texture:]
+  +[MetalContext makeBufferCoherent:buffer:]
+
+  // instance methods
+  -[MetalContext library]
+  -[MetalContext .cxx_destruct]
+  -[MetalContext device]
+  -[MetalContext commandQueue]
+  -[MetalContext init]
+  -[MetalContext newBufferWithPixelFormat:width:data:]
+  -[MetalContext initWithDevice:library:commandQueue:]
+  -[MetalContext writeMetalTextureToData:texture:mipmapLevel:]
+  -[MetalContext writeMetalTextureToFile:texture:]
+  -[MetalContext writeMetalTextureToFile:texture:mipmapLevel:]
+  -[MetalContext writeMetalBufferToFile:buffer:]
+  -[MetalContext newTextureWithPixelFormat:width:height:]
+  -[MetalContext readTextureFromFile:width:height:pixelFormat:]
+  -[MetalContext readBufferFromFile:width:pixelFormat:]
+  -[MetalContext bindPixelBufferToMTL2DTexture:pixelFormat:plane:]
+  -[MetalContext bindPixelBufferToMTL2DTexture:pixelFormat:textureSize:plane:]
+  -[MetalContext bindIOSurfaceToMTL2DTexture:pixelFormat:width:height:plane:]
+  -[MetalContext copyMTLBufferToMTLTexture:bytesPerRow:texture:]
+  -[MetalContext textureBytesPerRow:format:]
+
+
+ACTPanoGPUDownscaler : NSObject
+  // instance methods
+  -[ACTPanoGPUDownscaler initWithContext:]
+  -[ACTPanoGPUDownscaler dealloc]
+  -[ACTPanoGPUDownscaler .cxx_destruct]
+  -[ACTPanoGPUDownscaler init]
+  -[ACTPanoGPUDownscaler downsample:to:]
+
+
+PanoramaPreviewOutput : NSObject
+ @property  ^{__CVBuffer=} pixelBuffer
+
+  // instance methods
+  -[PanoramaPreviewOutput pixelBuffer]
+  -[PanoramaPreviewOutput init]
+  -[PanoramaPreviewOutput setPixelBuffer:]
+
+
+PanoramaOutput : NSObject
+ @property  ^{__CVBuffer=} pixelBuffer
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} cropRect
+
+  // instance methods
+  -[PanoramaOutput cropRect]
+  -[PanoramaOutput pixelBuffer]
+  -[PanoramaOutput dealloc]
+  -[PanoramaOutput setCropRect:]
+  -[PanoramaOutput setPixelBuffer:]
+
+
+PanoramaAssemblyShaders : NSObject
+ @property  <MTLComputePipelineState> *resetPanoSizedState
+ @property  <MTLComputePipelineState> *resetSliceSizedState
+ @property  <MTLComputePipelineState> *addSliceToStaging
+ @property  <MTLComputePipelineState> *addSliceToProjectiveGrid
+ @property  <MTLComputePipelineState> *addStagingToOutput
+ @property  <MTLComputePipelineState> *prepareForDenoising
+
+  // instance methods
+  -[PanoramaAssemblyShaders initWithContext:]
+  -[PanoramaAssemblyShaders .cxx_destruct]
+  -[PanoramaAssemblyShaders resetPanoSizedState]
+  -[PanoramaAssemblyShaders resetSliceSizedState]
+  -[PanoramaAssemblyShaders addSliceToStaging]
+  -[PanoramaAssemblyShaders addSliceToProjectiveGrid]
+  -[PanoramaAssemblyShaders addStagingToOutput]
+  -[PanoramaAssemblyShaders prepareForDenoising]
+
+
+StagingBuffer : NSObject
+ @property  <MTLTexture> *luma
+ @property  <MTLTexture> *chroma
+ @property  <MTLTexture> *weights
+ @property  {?=[3]} homographyToReference
+ @property  {?=[3]} atlasHomography
+ @property  NSDictionary *metadata
+ @property  BOOL dirty
+
+  // instance methods
+  -[StagingBuffer setDirty:]
+  -[StagingBuffer dirty]
+  -[StagingBuffer .cxx_destruct]
+  -[StagingBuffer setMetadata:]
+  -[StagingBuffer weights]
+  -[StagingBuffer metadata]
+  -[StagingBuffer setWeights:]
+  -[StagingBuffer luma]
+  -[StagingBuffer chroma]
+  -[StagingBuffer initWithContext:stagingWidth:stagingHeight:homography:atlasHomography:]
+  -[StagingBuffer overlapWithAtlasHomography:roi:]
+  -[StagingBuffer setLuma:]
+  -[StagingBuffer setChroma:]
+  -[StagingBuffer homographyToReference]
+  -[StagingBuffer setHomographyToReference:]
+  -[StagingBuffer atlasHomography]
+  -[StagingBuffer setAtlasHomography:]
+
+
+PanoramaAssemblyStage : NSObject <MetalImageBufferProcessor>
+ @property  ^{__CVBuffer=} output
+ @property  int assemblyMode
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} cropRect
+ @property  NRFProcessor *nrfProcessor
+ @property  <MTLCommandQueue> *metalCommandQueue
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PanoramaAssemblyStage prewarm]
+  -[PanoramaAssemblyStage tuningParameters]
+  -[PanoramaAssemblyStage resetState]
+  -[PanoramaAssemblyStage setDirection:]
+  -[PanoramaAssemblyStage prepareToProcess:]
+  -[PanoramaAssemblyStage cropRect]
+  -[PanoramaAssemblyStage setup]
+  -[PanoramaAssemblyStage setTuningParameters:]
+  -[PanoramaAssemblyStage process]
+  -[PanoramaAssemblyStage finishProcessing]
+  -[PanoramaAssemblyStage dealloc]
+  -[PanoramaAssemblyStage .cxx_destruct]
+  -[PanoramaAssemblyStage metalCommandQueue]
+  -[PanoramaAssemblyStage setOutput:]
+  -[PanoramaAssemblyStage cameraInfoByPortType]
+  -[PanoramaAssemblyStage purgeResources]
+  -[PanoramaAssemblyStage setCameraInfoByPortType:]
+  -[PanoramaAssemblyStage setMetalCommandQueue:]
+  -[PanoramaAssemblyStage output]
+  -[PanoramaAssemblyStage setCropRect:]
+  -[PanoramaAssemblyStage getMaskAsBuffer:widthOut:heightOut:]
+  -[PanoramaAssemblyStage initWithContext:robustPanoParams:]
+  -[PanoramaAssemblyStage clearStagingBuffer:withEncoder:]
+  -[PanoramaAssemblyStage prepareToProcessPanoWidth:panoHeight:]
+  -[PanoramaAssemblyStage _bindOutput]
+  -[PanoramaAssemblyStage _addStagingBuffer]
+  -[PanoramaAssemblyStage prepareToProcessSliceWidth:sliceHeight:stagingWidth:stagingHeight:]
+  -[PanoramaAssemblyStage addHomogToStaging:]
+  -[PanoramaAssemblyStage panoHomography]
+  -[PanoramaAssemblyStage addSliceToProjectiveGrid:atlasHomography:panoHomography:encoder:sliceType:]
+  -[PanoramaAssemblyStage _stagingHomography]
+  -[PanoramaAssemblyStage addSliceToStagingBuffer:sliceLuma:sliceChroma:sliceMask:sliceGlobalHomography:encoder:]
+  -[PanoramaAssemblyStage addSlice:metadata:sliceHomography:stitchingMask:motionCue:roi:sliceType:]
+  -[PanoramaAssemblyStage addStagingToOutput:]
+  -[PanoramaAssemblyStage renderDirtyStagingBuffers]
+  -[PanoramaAssemblyStage assemblyMode]
+  -[PanoramaAssemblyStage setAssemblyMode:]
+  -[PanoramaAssemblyStage nrfProcessor]
+  -[PanoramaAssemblyStage setNrfProcessor:]
+
+
+PanoramaGyroStage : NSObject <ImageBufferProcessor>
+ @property  NSDictionary *tuningParameters
+ @property  NSDictionary *cameraInfoByPortType
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PanoramaGyroStage prewarm]
+  -[PanoramaGyroStage tuningParameters]
+  -[PanoramaGyroStage resetState]
+  -[PanoramaGyroStage prepareToProcess:]
+  -[PanoramaGyroStage setup]
+  -[PanoramaGyroStage setTuningParameters:]
+  -[PanoramaGyroStage process]
+  -[PanoramaGyroStage finishProcessing]
+  -[PanoramaGyroStage .cxx_destruct]
+  -[PanoramaGyroStage cameraInfoByPortType]
+  -[PanoramaGyroStage purgeResources]
+  -[PanoramaGyroStage setCameraInfoByPortType:]
+  -[PanoramaGyroStage init]
+  -[PanoramaGyroStage update:sliceType:sliceWidth:sliceHeight:sliceID:]
+  -[PanoramaGyroStage updateWithTranslation:sliceType:]
+  -[PanoramaGyroStage updateWithTransformMatrix:sliceType:]
+  -[PanoramaGyroStage updateWithDebugISPMedian:]
+  -[PanoramaGyroStage toHomography]
+  -[PanoramaGyroStage transformToHomography]
+  -[PanoramaGyroStage translationToHomography]
+  -[PanoramaGyroStage ISPMotionToHomography]
+
+
+01 00 0400 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIContext 
+01 00 0400 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIImage 
+01 00 0300 /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture: FigCaptureCameraParameters 
+01 00 1400 /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging: FigMetalContext 
+01 00 0200 /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders: MPSImageHistogram 
+01 00 0d00 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSScanner 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 

@@ -1,0 +1,906 @@
+|| __DATA.__data _IC_ANALYTICS_SOURCETYPE_LIVEPHOTO
+|| __DATA.__data _IC_ANALYTICS_SOURCETYPE_OTHERVIDEO
+|| __DATA.__data _IC_A_COLLECT_FEATURE_POINTS
+|| __DATA.__data _IC_A_CONVERTED_FROM_BOUNDS
+|| __DATA.__data _IC_A_CROP_RECT
+|| __DATA.__data _IC_A_DISABLE_GPU_STABILIZATION
+|| __DATA.__data _IC_A_FLIP_Y_COORDS
+|| __DATA.__data _IC_A_FRAMEINSTRUCTIONS
+|| __DATA.__data _IC_A_FRAMETRANSFORM_HOMOGRAPHY
+|| __DATA.__data _IC_A_FRAMETRANSFORM_RAWTIME
+|| __DATA.__data _IC_A_HOMOGRAPHIES_INVERTED
+|| __DATA.__data _IC_A_HOMOGRAPHIES_MAP_TO_REFERENCE
+|| __DATA.__data _IC_A_INPUT_IMAGE_BOUNDS
+|| __DATA.__data _IC_A_LOOP_CLOSURE_PTS
+|| __DATA.__data _IC_A_OPTIMIZE_FOR_MEMORY
+|| __DATA.__data _IC_A_PREROLL_FRAME_COUNT
+|| __DATA.__data _IC_A_REQUESTED_CROP_RECT
+|| __DATA.__data _IC_A_RESULT_DELEGATE
+|| __DATA.__data _IC_A_SOURCE_SIZE
+|| __DATA.__data _IC_A_STAT_FRAME_COUNT
+|| __DATA.__data _IC_A_STAT_FRAME_MATCH_CONFIDENCE
+|| __DATA.__data _IC_A_STAT_MOVIE_DIMENSIONS
+|| __DATA.__data _IC_A_TRIM_DURATION
+|| __DATA.__data _IC_A_TRIM_START_TIME
+|| __DATA.__data _IC_C_CROP_FRACTION
+|| __DATA.__data _IC_C_DISABLE_CROP
+|| __DATA.__data _IC_C_DISABLE_GAUSSIAN
+|| __DATA.__data _IC_C_FIRST_INDEX
+|| __DATA.__data _IC_C_FREE_ASPECT_RATIO
+|| __DATA.__data _IC_C_KERNEL_LENGTH
+|| __DATA.__data _IC_C_L1_CENTER_TARGETS
+|| __DATA.__data _IC_C_L1_PATH_CONSTRAINTS
+|| __DATA.__data _IC_C_L1_SALIENT_RECTS
+|| __DATA.__data _IC_C_L1_WINDOW_LENGTH
+|| __DATA.__data _IC_C_L1_WINDOW_STRIDE
+|| __DATA.__data _IC_C_LAST_INDEX
+|| __DATA.__data _IC_C_MOTION_BLUR_VECTOR
+|| __DATA.__data _IC_C_REF_INDEX
+|| __DATA.__data _IC_D_CALC_TRIPOD_CONFIDENCE
+|| __DATA.__data _IC_D_HOMOGRAPHY_METRICS
+|| __DATA.__data _IC_D_L1_CONSTRAINT_VIOLATIONS
+|| __DATA.__data _IC_D_L1_CORRECTION_MAGNITUDE
+|| __DATA.__data _IC_D_L1_CROP_CONSTRAINT_VIOLATION
+|| __DATA.__data _IC_D_L1_FIRST_DERIV
+|| __DATA.__data _IC_D_L1_OBJECTIVE
+|| __DATA.__data _IC_D_L1_SALIENCY_CONSTRAINT_VIOLATION
+|| __DATA.__data _IC_D_L1_SECOND_DERIV
+|| __DATA.__data _IC_D_L1_SMOOTHNESS_METRICS
+|| __DATA.__data _IC_D_L1_THIRD_DERIV
+|| __DATA.__data _IC_D_PER_FRAME_FEATURES
+|| __DATA.__data _inertiaCamMetalLibEnd
+|| __DATA.__data _inertiaCamMetalLibStart
+|| __DATA.__objc_data _OBJC_CLASS_$_ICFlowControlBasic
+|| __DATA.__objc_data _OBJC_METACLASS_$_ICFlowControlBasic
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ICFlowControlBasic.reportProgress
+|| __DATA.__objc_ivar _OBJC_IVAR_$_ICFlowControlBasic.shouldBeCanceled
+|| __DATA_CONST.__const _ICErrorDomain
+|| __TEXT.__text _CreateCorrectionHomographiesWithNewImageCoordinates
+|| __TEXT.__text _ICAnalysisAddFrame
+|| __TEXT.__text _ICAnalysisInit
+|| __TEXT.__text _ICAnalysisStopAndGetResult
+|| __TEXT.__text _ICAnalyzeInputMotion
+|| __TEXT.__text _ICCalcCanDoTripod
+|| __TEXT.__text _ICCalcCinematicL1Corrections
+|| __TEXT.__text _ICCalcPassThruCorrections
+|| __TEXT.__text _ICCalcSmoothingCorrections
+|| __TEXT.__text _ICCalcTripodCorrections
+|| __TEXT.__text _ICChangeCorrectionsForDimensions
+|| __TEXT.__text _ICCorrectionCopyAndExtend
+|| __TEXT.__text _ICCreateCorrectionHomographiesWithNewImageCoordinates
+|| __TEXT.__text _ICDebugExpWriteVideoWithHomographies
+|| __TEXT.__text _ICDestroyResult
+|| __TEXT.__text _ICFillHomographyGaps
+|| __TEXT.__text _ICFillMotionBlurVectorGaps
+|| __TEXT.__text _ICGetAnalysisConfidence
+|| __TEXT.__text _ICGetAnomalyScore
+|| __TEXT.__text _ICGetCoordinateShiftedHomographies
+|| __TEXT.__text _ICGetCorrectionResultCropData
+|| __TEXT.__text _ICGetCorrectionsResultOptionalData
+|| __TEXT.__text _ICGetIdentityHomographies
+|| __TEXT.__text _ICGetRecordIndexForTime
+|| __TEXT.__text _ICGetResultConfidence
+|| __TEXT.__text _ICGetResultFramePresentationTimes
+|| __TEXT.__text _ICGetResultHomographies
+|| __TEXT.__text _ICGetResultOptionalData
+|| __TEXT.__text _ICGetResultStats
+|| __TEXT.__text _ICLiveAnalysisApplyFrameCorrection
+|| __TEXT.__text _ICStoreAnalyticsViaDodML
+|| __TEXT.__text _ICSynthesizeAnalysis
+|| __TEXT.__text _ICSynthesizeCorrections
+__ AVFoundation: _AVFileTypeQuickTimeMovie
+__ AVFoundation: _AVMediaTypeVideo
+__ AVFoundation: _AVVideoCodecKey
+__ AVFoundation: _AVVideoCodecTypeHEVC
+__ AVFoundation: _AVVideoHeightKey
+__ AVFoundation: _AVVideoWidthKey
+__ AVFoundation: _OBJC_CLASS_$_AVAssetReader
+__ AVFoundation: _OBJC_CLASS_$_AVAssetReaderTrackOutput
+__ AVFoundation: _OBJC_CLASS_$_AVAssetWriter
+__ AVFoundation: _OBJC_CLASS_$_AVAssetWriterInput
+__ AVFoundation: _OBJC_CLASS_$_AVAssetWriterInputPixelBufferAdaptor
+__ Accelerate: __SparseDestroyOpaqueNumeric_Double
+__ Accelerate: __SparseDestroyOpaqueSymbolic
+__ Accelerate: __SparseGetOptionsFromSymbolicFactor
+__ Accelerate: __SparseNumericFactorQR_Double
+__ Accelerate: __SparseNumericFactorSymmetric_Double
+__ Accelerate: __SparseSolveOpaque_Double
+__ Accelerate: __SparseSymbolicFactorSymmetric
+__ Accelerate: __SparseTrap
+__ Accelerate: _dgeev_
+__ Accelerate: _sgesdd_
+__ Accelerate: _sparse_commit
+__ Accelerate: _sparse_extract_sparse_row_double
+__ Accelerate: _sparse_get_matrix_nonzero_count
+__ Accelerate: _sparse_get_matrix_nonzero_count_for_column
+__ Accelerate: _sparse_get_matrix_number_of_columns
+__ Accelerate: _sparse_get_matrix_number_of_rows
+__ Accelerate: _sparse_insert_entry_double
+__ Accelerate: _sparse_matrix_create_double
+__ Accelerate: _sparse_matrix_destroy
+__ Accelerate: _sparse_matrix_vector_product_dense_double
+__ Accelerate: _sparse_set_matrix_property
+__ Accelerate: _vDSP_conv
+__ Accelerate: _vImageBoxConvolve_Planar8
+__ Accelerate: _vImageConvolve_Planar8
+__ Accelerate: _zgetrf_
+__ Accelerate: _zgetri_
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFAttributedStringCreate
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFDataGetBytePtr
+__ CoreFoundation: _CFDictionaryAddValue
+__ CoreFoundation: _CFDictionaryCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFNumberCreate
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _NSGenericException
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSException
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreGraphics: _CGAffineTransformIdentity
+__ CoreGraphics: _CGAffineTransformInvert
+__ CoreGraphics: _CGAffineTransformMakeScale
+__ CoreGraphics: _CGAffineTransformMakeTranslation
+__ CoreGraphics: _CGAffineTransformTranslate
+__ CoreGraphics: _CGBitmapContextCreate
+__ CoreGraphics: _CGBitmapContextGetColorSpace
+__ CoreGraphics: _CGColorCreate
+__ CoreGraphics: _CGColorSpaceCreateDeviceRGB
+__ CoreGraphics: _CGColorSpaceRelease
+__ CoreGraphics: _CGContextAddLineToPoint
+__ CoreGraphics: _CGContextBeginPath
+__ CoreGraphics: _CGContextFillEllipseInRect
+__ CoreGraphics: _CGContextFillRect
+__ CoreGraphics: _CGContextMoveToPoint
+__ CoreGraphics: _CGContextRelease
+__ CoreGraphics: _CGContextRestoreGState
+__ CoreGraphics: _CGContextSaveGState
+__ CoreGraphics: _CGContextScaleCTM
+__ CoreGraphics: _CGContextSetLineWidth
+__ CoreGraphics: _CGContextSetRGBFillColor
+__ CoreGraphics: _CGContextSetRGBStrokeColor
+__ CoreGraphics: _CGContextSetTextPosition
+__ CoreGraphics: _CGContextStrokePath
+__ CoreGraphics: _CGContextStrokeRect
+__ CoreGraphics: _CGContextTranslateCTM
+__ CoreGraphics: _CGDataProviderCopyData
+__ CoreGraphics: _CGDataProviderCreateWithData
+__ CoreGraphics: _CGDataProviderRelease
+__ CoreGraphics: _CGImageCreate
+__ CoreGraphics: _CGImageGetBitmapInfo
+__ CoreGraphics: _CGImageGetBitsPerPixel
+__ CoreGraphics: _CGImageGetBytesPerRow
+__ CoreGraphics: _CGImageGetColorSpace
+__ CoreGraphics: _CGImageGetDataProvider
+__ CoreGraphics: _CGImageGetHeight
+__ CoreGraphics: _CGImageGetWidth
+__ CoreGraphics: _CGPointMakeWithDictionaryRepresentation
+__ CoreGraphics: _CGRectCreateDictionaryRepresentation
+__ CoreGraphics: _CGRectEqualToRect
+__ CoreGraphics: _CGRectIsEmpty
+__ CoreGraphics: _CGRectIsNull
+__ CoreGraphics: _CGRectMakeWithDictionaryRepresentation
+__ CoreGraphics: _CGRectNull
+__ CoreGraphics: _CGRectZero
+__ CoreGraphics: _CGSizeCreateDictionaryRepresentation
+__ CoreGraphics: _CGSizeMakeWithDictionaryRepresentation
+__ CoreImage: _OBJC_CLASS_$_CIColor
+__ CoreImage: _OBJC_CLASS_$_CIContext
+__ CoreImage: _OBJC_CLASS_$_CIFilter
+__ CoreImage: _OBJC_CLASS_$_CIImage
+__ CoreImage: _OBJC_CLASS_$_CIVector
+__ CoreImage: _kCIContextHighQualityDownsample
+__ CoreImage: _kCIContextWorkingColorSpace
+__ CoreMedia: _CMFormatDescriptionGetMediaType
+__ CoreMedia: _CMSampleBufferGetImageBuffer
+__ CoreMedia: _CMSampleBufferGetSampleTimingInfo
+__ CoreMedia: _CMTimeAdd
+__ CoreMedia: _CMTimeCompare
+__ CoreMedia: _CMTimeCopyAsDictionary
+__ CoreMedia: _CMTimeGetSeconds
+__ CoreMedia: _CMTimeMake
+__ CoreMedia: _CMTimeMakeFromDictionary
+__ CoreMedia: _CMTimeRangeMake
+__ CoreMedia: _CMTimeSubtract
+__ CoreMedia: _CMVideoFormatDescriptionGetDimensions
+__ CoreMedia: _kCMTimeIndefinite
+__ CoreMedia: _kCMTimeInvalid
+__ CoreMedia: _kCMTimeNegativeInfinity
+__ CoreMedia: _kCMTimePositiveInfinity
+__ CoreMedia: _kCMTimeRangeInvalid
+__ CoreText: _CTFontCreateWithFontDescriptor
+__ CoreText: _CTFontDescriptorCreateWithNameAndSize
+__ CoreText: _CTLineCreateWithAttributedString
+__ CoreText: _CTLineDraw
+__ CoreText: _CTLineGetImageBounds
+__ CoreText: _kCTFontAttributeName
+__ CoreText: _kCTForegroundColorAttributeName
+__ CoreText: _kCTKernAttributeName
+__ CoreText: _kCTStrokeWidthAttributeName
+__ CoreVideo: _CVBufferGetAttachment
+__ CoreVideo: _CVBufferPropagateAttachments
+__ CoreVideo: _CVBufferRemoveAttachment
+__ CoreVideo: _CVBufferSetAttachment
+__ CoreVideo: _CVImageBufferGetCleanRect
+__ CoreVideo: _CVImageBufferGetEncodedSize
+__ CoreVideo: _CVMetalTextureCacheCreate
+__ CoreVideo: _CVMetalTextureCacheCreateTextureFromImage
+__ CoreVideo: _CVMetalTextureGetTexture
+__ CoreVideo: _CVPixelBufferCreate
+__ CoreVideo: _CVPixelBufferGetBaseAddress
+__ CoreVideo: _CVPixelBufferGetBaseAddressOfPlane
+__ CoreVideo: _CVPixelBufferGetBytesPerRow
+__ CoreVideo: _CVPixelBufferGetBytesPerRowOfPlane
+__ CoreVideo: _CVPixelBufferGetHeight
+__ CoreVideo: _CVPixelBufferGetHeightOfPlane
+__ CoreVideo: _CVPixelBufferGetPixelFormatType
+__ CoreVideo: _CVPixelBufferGetWidth
+__ CoreVideo: _CVPixelBufferGetWidthOfPlane
+__ CoreVideo: _CVPixelBufferIsPlanar
+__ CoreVideo: _CVPixelBufferLockBaseAddress
+__ CoreVideo: _CVPixelBufferPoolCreatePixelBuffer
+__ CoreVideo: _CVPixelBufferPoolGetPixelBufferAttributes
+__ CoreVideo: _CVPixelBufferRelease
+__ CoreVideo: _CVPixelBufferRetain
+__ CoreVideo: _CVPixelBufferUnlockBaseAddress
+__ CoreVideo: _kCVImageBufferCleanApertureKey
+__ CoreVideo: _kCVPixelBufferBytesPerRowAlignmentKey
+__ CoreVideo: _kCVPixelBufferHeightKey
+__ CoreVideo: _kCVPixelBufferIOSurfacePropertiesKey
+__ CoreVideo: _kCVPixelBufferMetalCompatibilityKey
+__ CoreVideo: _kCVPixelBufferOpenGLESTextureCacheCompatibilityKey
+__ CoreVideo: _kCVPixelBufferPixelFormatTypeKey
+__ CoreVideo: _kCVPixelBufferPlaneAlignmentKey
+__ CoreVideo: _kCVPixelBufferWidthKey
+__ DistributedEvaluation: _OBJC_CLASS_$_DESRecordStore
+__ Foundation: _NSDebugDescriptionErrorKey
+__ Foundation: _NSLog
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConditionLock
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSLock
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSValue
+__ Metal: _MTLCreateSystemDefaultDevice
+__ Metal: _OBJC_CLASS_$_MTLSamplerDescriptor
+__ Metal: _OBJC_CLASS_$_MTLTextureDescriptor
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___chkstk_darwin
+__ libSystem.B.dylib: ___exp10f
+__ libSystem.B.dylib: ___sincos_stret
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_queue_attr_concurrent
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _abort
+__ libSystem.B.dylib: _acosf
+__ libSystem.B.dylib: _atan2
+__ libSystem.B.dylib: _atan2f
+__ libSystem.B.dylib: _atoi
+__ libSystem.B.dylib: _bsearch
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _calloc
+__ libSystem.B.dylib: _clock
+__ libSystem.B.dylib: _close
+__ libSystem.B.dylib: _dispatch_apply
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_data_create
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_release
+__ libSystem.B.dylib: _dispatch_retain
+__ libSystem.B.dylib: _dispatch_semaphore_create
+__ libSystem.B.dylib: _dispatch_semaphore_signal
+__ libSystem.B.dylib: _dispatch_semaphore_wait
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _exp
+__ libSystem.B.dylib: _expf
+__ libSystem.B.dylib: _fclose
+__ libSystem.B.dylib: _fopen
+__ libSystem.B.dylib: _fprintf
+__ libSystem.B.dylib: _fputc
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _getenv
+__ libSystem.B.dylib: _hypot
+__ libSystem.B.dylib: _log
+__ libSystem.B.dylib: _logf
+__ libSystem.B.dylib: _malloc
+__ libSystem.B.dylib: _memcpy
+__ libSystem.B.dylib: _memmove
+__ libSystem.B.dylib: _memset
+__ libSystem.B.dylib: _memset_pattern16
+__ libSystem.B.dylib: _open
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _perror
+__ libSystem.B.dylib: _pow
+__ libSystem.B.dylib: _powf
+__ libSystem.B.dylib: _printf
+__ libSystem.B.dylib: _pthread_attr_init
+__ libSystem.B.dylib: _pthread_attr_set_qos_class_np
+__ libSystem.B.dylib: _pthread_cond_destroy
+__ libSystem.B.dylib: _pthread_cond_signal
+__ libSystem.B.dylib: _pthread_cond_wait
+__ libSystem.B.dylib: _pthread_create
+__ libSystem.B.dylib: _pthread_detach
+__ libSystem.B.dylib: _pthread_exit
+__ libSystem.B.dylib: _pthread_mutex_destroy
+__ libSystem.B.dylib: _pthread_mutex_init
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _pthread_setname_np
+__ libSystem.B.dylib: _putchar
+__ libSystem.B.dylib: _puts
+__ libSystem.B.dylib: _qos_class_self
+__ libSystem.B.dylib: _qsort
+__ libSystem.B.dylib: _read
+__ libSystem.B.dylib: _realloc
+__ libSystem.B.dylib: _snprintf
+__ libSystem.B.dylib: _strcmp
+__ libSystem.B.dylib: _sysctl
+__ libSystem.B.dylib: _tanhf
+__ libSystem.B.dylib: _usleep
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+__ libc++.1.dylib: __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+__ libc++.1.dylib: __ZNKSt3__16locale9use_facetERNS0_2idE
+__ libc++.1.dylib: __ZNKSt3__18ios_base6getlocEv
+__ libc++.1.dylib: __ZNKSt9exception4whatEv
+__ libc++.1.dylib: __ZNSt11logic_errorC2EPKc
+__ libc++.1.dylib: __ZNSt12length_errorD1Ev
+__ libc++.1.dylib: __ZNSt12out_of_rangeD1Ev
+__ libc++.1.dylib: __ZNSt13runtime_errorC1EPKc
+__ libc++.1.dylib: __ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+__ libc++.1.dylib: __ZNSt13runtime_errorD1Ev
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+__ libc++.1.dylib: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEb
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEd
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEf
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi
+__ libc++.1.dylib: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEm
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_count14__release_weakEv
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_count4lockEv
+__ libc++.1.dylib: __ZNSt3__119__shared_weak_countD2Ev
+__ libc++.1.dylib: __ZNSt3__14coutE
+__ libc++.1.dylib: __ZNSt3__15ctypeIcE2idE
+__ libc++.1.dylib: __ZNSt3__16__sortIRNS_6__lessIddEEPdEEvT0_S5_T_
+__ libc++.1.dylib: __ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_
+__ libc++.1.dylib: __ZNSt3__16__sortIRNS_6__lessIjjEEPjEEvT0_S5_T_
+__ libc++.1.dylib: __ZNSt3__16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_
+__ libc++.1.dylib: __ZNSt3__16localeD1Ev
+__ libc++.1.dylib: __ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv
+__ libc++.1.dylib: __ZNSt3__18ios_base5clearEj
+__ libc++.1.dylib: __ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_
+__ libc++.1.dylib: __ZNSt9exceptionD2Ev
+__ libc++.1.dylib: __ZSt9terminatev
+__ libc++.1.dylib: __ZTINSt3__119__shared_weak_countE
+__ libc++.1.dylib: __ZTISt12length_error
+__ libc++.1.dylib: __ZTISt12out_of_range
+__ libc++.1.dylib: __ZTISt13runtime_error
+__ libc++.1.dylib: __ZTISt9exception
+__ libc++.1.dylib: __ZTVN10__cxxabiv117__class_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv119__pointer_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__function_type_infoE
+__ libc++.1.dylib: __ZTVN10__cxxabiv120__si_class_type_infoE
+__ libc++.1.dylib: __ZTVSt12length_error
+__ libc++.1.dylib: __ZTVSt12out_of_range
+__ libc++.1.dylib: __ZdaPv
+__ libc++.1.dylib: __ZdlPv
+__ libc++.1.dylib: __Znam
+__ libc++.1.dylib: __Znwm
+__ libc++.1.dylib: ___cxa_allocate_exception
+__ libc++.1.dylib: ___cxa_begin_catch
+__ libc++.1.dylib: ___cxa_end_catch
+__ libc++.1.dylib: ___cxa_free_exception
+__ libc++.1.dylib: ___cxa_pure_virtual
+__ libc++.1.dylib: ___cxa_rethrow
+__ libc++.1.dylib: ___cxa_throw
+__ libc++.1.dylib: ___dynamic_cast
+__ libc++.1.dylib: ___gxx_personality_v0
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_throw
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_moveWeak
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+ICFlowControlBasic : NSObject <ICFlowControl>
+ @property  @? shouldBeCanceled
+ @property  @? reportProgress
+
+  // instance methods
+  -[ICFlowControlBasic .cxx_destruct]
+  -[ICFlowControlBasic ICShouldBeCanceled]
+  -[ICFlowControlBasic ICReportProgress:]
+  -[ICFlowControlBasic initWithProgress:]
+  -[ICFlowControlBasic initWithCancel:]
+  -[ICFlowControlBasic shouldBeCanceled]
+  -[ICFlowControlBasic setShouldBeCanceled:]
+  -[ICFlowControlBasic reportProgress]
+  -[ICFlowControlBasic setReportProgress:]
+
+
+PipelineStatePromise : NSObject
+  // instance methods
+  -[PipelineStatePromise .cxx_destruct]
+  -[PipelineStatePromise initWithDispatchGroup:pipelineStates:errors:]
+  -[PipelineStatePromise timesOutWaitingForPipelineStates:]
+  -[PipelineStatePromise groupWasSuccessful]
+  -[PipelineStatePromise pipelineStateForFunction:]
+  -[PipelineStatePromise errorForFunction:]
+
+
+MetalFAST9BRIEF : NSObject
+ @property  <MTLDevice> *device
+ @property  <MTLCommandQueue> *queue
+
+  // class methods
+  +[MetalFAST9BRIEF _createMTLBufferFromRects:device:storageMode:maxRectWidth:maxRectHeight:]
+  +[MetalFAST9BRIEF _createMTLBufferFromRectRegionsDesiredKeypoints:device:storageMode:maxAllowedDescriptors:]
+
+  // instance methods
+  -[MetalFAST9BRIEF dealloc]
+  -[MetalFAST9BRIEF textureCache]
+  -[MetalFAST9BRIEF .cxx_destruct]
+  -[MetalFAST9BRIEF device]
+  -[MetalFAST9BRIEF queue]
+  -[MetalFAST9BRIEF init]
+  -[MetalFAST9BRIEF didFinishInitializationWithTimeout:]
+  -[MetalFAST9BRIEF _textureFromPixelBuffer:forcedMetalPixelFormat:forcedWidthDivisior:]
+  -[MetalFAST9BRIEF _computeResponseMap_metal:inputTexture:outputTexture:garbagePixelCount:]
+  -[MetalFAST9BRIEF _suppressResponseMap_metal:unsuppressedTexture:suppressedTexture:garbagePixelCount:]
+  -[MetalFAST9BRIEF _generateHistograms_metal:suppressedTexture:tileBuffer:desiredKeypointCountsBuffer:thresholdsBuffer:histogramBuffer:thresholdRangeBuffer:keypointsAtChosenThresholdBuffer:truncatedRegionsBuffer:tileCount:maxTileHeight:]
+  -[MetalFAST9BRIEF _cumulativeSum_metal:expectedPointsBuffer:cumulativePointsBuffer:regionCountBuffer:keypointCountBuffer:regionCount:]
+  -[MetalFAST9BRIEF _listKeypointsSimple_metal:suppressedResponseMapTexture:tileBuffer:tileCountBuffer:tileCount:thresholdsBuffer:cumulativePointsBuffer:keypointLocationsBuffer:keypointResponsesBuffer:desiredKeypointsBuffer:indexBuffer:]
+  -[MetalFAST9BRIEF _listKeypoints2_metal:suppressedResponseMapTexture:tileBuffer:tileCountBuffer:tileCount:thresholdsBuffer:cumulativePointsBuffer:keypointLocationsBuffer:keypointResponsesBuffer:maxRegionHeight:]
+  -[MetalFAST9BRIEF _listKeypoints3_metal:suppressedResponseMapTexture:tileBuffer:tileCountBuffer:tileCount:thresholdsBuffer:cumulativePointsBuffer:keypointLocationsBuffer:keypointResponsesBuffer:maxRegionHeight:maxRegionWidth:]
+  -[MetalFAST9BRIEF _refineKeypoints_metal:inputImageTexture:keypointLocationsBuffer:refinedLocationsBuffer:keypointCountBuffer:keypointCount:debugIntermediatesBuffer:cumulativePointsBuffer:tileCountBuffer:]
+  -[MetalFAST9BRIEF _extractORB_metal:boxBlurredTexture:keypointLocationsBuffer:outputORBDescriptorBuffer:keypointCountBuffer:keypointCount:]
+  -[MetalFAST9BRIEF _boxBlur_metal:inputImageTexture:boxBlurredTexture:]
+  -[MetalFAST9BRIEF _ORBDescriptorsFromTextures_part1_metal:inputTexture_RGBA8Uint:inputTexture_R8Unorm:responseBuffer:cumulativeKeypointsPerRegionBuffer:intermediateBuffers:]
+  -[MetalFAST9BRIEF _ORBDescriptorsFromTextures_part2_metal:inputTexture_RGBA8Uint:inputTexture_R8Unorm:descriptorBuffer:refinedKeypointsBuffer:cumulativeKeypointsPerRegionBuffer:intermediateBuffers:keypointCount:]
+  -[MetalFAST9BRIEF ORBDescriptorsFromPixelBuffer_metal:inputBuffer:descriptorBuffer:refinedKeypointsBuffer:responseBuffer:cumulativeKeypointsPerRegionBuffer:intermediateBuffers:]
+  -[MetalFAST9BRIEF _gaussianishBlur_metal:inputTexture:outputTexture:offset:]
+
+
+ORBExtractionIntermediateBuffers : NSObject
+ @property  MPSKernel *mpsFindKeypoints
+ @property  MPSKernel *mpsHistogram
+ @property  <MTLBuffer> *rectRegionsBuffer
+ @property  <MTLBuffer> *rectRegionCount
+ @property  <MTLBuffer> *rectRegionsDesiredKeypoints
+ @property  <MTLBuffer> *thresholdRangeBuffer
+ @property  NSArray *rectRegions
+ @property  int maxKeypointsPerRegion
+ @property  <MTLTexture> *gaussianBlurredTexture_RGBA8Uint
+ @property  <MTLTexture> *gaussianBlurredTexture_R8Uint
+ @property  <MTLTexture> *gaussianBlurredTexture_R8Unorm
+ @property  <MTLTexture> *responseTexture
+ @property  <MTLTexture> *suppressedResponseTexture_RGBA8Uint
+ @property  <MTLTexture> *suppressedResponseTexture_R8Uint
+ @property  <MTLTexture> *suppressedResponseTexture_R8Unorm
+ @property  <MTLTexture> *boxBlurredTexture_R8Uint
+ @property  <MTLTexture> *boxBlurredTexture_RGBA8Uint
+ @property  <MTLBuffer> *thresholdsBuffer
+ @property  <MTLBuffer> *histogramsBuffer
+ @property  <MTLBuffer> *countOfKeypointsPerRegion
+ @property  <MTLBuffer> *cumulativeCountOfKeypointsPerRegion
+ @property  <MTLBuffer> *truncatedRegionsBuffer
+ @property  <MTLBuffer> *compactKeypointsBuffer
+ @property  <MTLBuffer> *refinedKeypointsBuffer
+ @property  <MTLBuffer> *compactKeypointsAndResponsesBuffer
+ @property  <MTLBuffer> *responseBuffer
+ @property  <MTLBuffer> *descriptorBuffer
+ @property  <MTLBuffer> *keypointCountBuffer
+ @property  <MTLBuffer> *mpsRegionStrideBuffer
+ @property  <MTLBuffer> *refinementIntermediatesBuffer
+ @property  unsigned int maxRegionHeight
+ @property  unsigned int countOfRectRegions
+ @property  unsigned long maxDescriptorCount
+
+  // instance methods
+  -[ORBExtractionIntermediateBuffers .cxx_destruct]
+  -[ORBExtractionIntermediateBuffers _reinitializeIntermediateBuffersWithDevice:templateImage:rectRegions:maxKeypointsPerRegion:minKeypointResponseThreshold:]
+  -[ORBExtractionIntermediateBuffers initWithDevice:templateImage:rectRegions:maxKeypointsPerRegion:minKeypointResponseThreshold:]
+  -[ORBExtractionIntermediateBuffers mpsFindKeypoints]
+  -[ORBExtractionIntermediateBuffers setMpsFindKeypoints:]
+  -[ORBExtractionIntermediateBuffers mpsHistogram]
+  -[ORBExtractionIntermediateBuffers setMpsHistogram:]
+  -[ORBExtractionIntermediateBuffers rectRegionsBuffer]
+  -[ORBExtractionIntermediateBuffers setRectRegionsBuffer:]
+  -[ORBExtractionIntermediateBuffers rectRegionCount]
+  -[ORBExtractionIntermediateBuffers setRectRegionCount:]
+  -[ORBExtractionIntermediateBuffers rectRegionsDesiredKeypoints]
+  -[ORBExtractionIntermediateBuffers setRectRegionsDesiredKeypoints:]
+  -[ORBExtractionIntermediateBuffers thresholdRangeBuffer]
+  -[ORBExtractionIntermediateBuffers setThresholdRangeBuffer:]
+  -[ORBExtractionIntermediateBuffers rectRegions]
+  -[ORBExtractionIntermediateBuffers setRectRegions:]
+  -[ORBExtractionIntermediateBuffers maxKeypointsPerRegion]
+  -[ORBExtractionIntermediateBuffers setMaxKeypointsPerRegion:]
+  -[ORBExtractionIntermediateBuffers gaussianBlurredTexture_RGBA8Uint]
+  -[ORBExtractionIntermediateBuffers setGaussianBlurredTexture_RGBA8Uint:]
+  -[ORBExtractionIntermediateBuffers gaussianBlurredTexture_R8Uint]
+  -[ORBExtractionIntermediateBuffers setGaussianBlurredTexture_R8Uint:]
+  -[ORBExtractionIntermediateBuffers gaussianBlurredTexture_R8Unorm]
+  -[ORBExtractionIntermediateBuffers setGaussianBlurredTexture_R8Unorm:]
+  -[ORBExtractionIntermediateBuffers responseTexture]
+  -[ORBExtractionIntermediateBuffers setResponseTexture:]
+  -[ORBExtractionIntermediateBuffers suppressedResponseTexture_RGBA8Uint]
+  -[ORBExtractionIntermediateBuffers setSuppressedResponseTexture_RGBA8Uint:]
+  -[ORBExtractionIntermediateBuffers suppressedResponseTexture_R8Uint]
+  -[ORBExtractionIntermediateBuffers setSuppressedResponseTexture_R8Uint:]
+  -[ORBExtractionIntermediateBuffers suppressedResponseTexture_R8Unorm]
+  -[ORBExtractionIntermediateBuffers setSuppressedResponseTexture_R8Unorm:]
+  -[ORBExtractionIntermediateBuffers boxBlurredTexture_R8Uint]
+  -[ORBExtractionIntermediateBuffers setBoxBlurredTexture_R8Uint:]
+  -[ORBExtractionIntermediateBuffers boxBlurredTexture_RGBA8Uint]
+  -[ORBExtractionIntermediateBuffers setBoxBlurredTexture_RGBA8Uint:]
+  -[ORBExtractionIntermediateBuffers thresholdsBuffer]
+  -[ORBExtractionIntermediateBuffers setThresholdsBuffer:]
+  -[ORBExtractionIntermediateBuffers histogramsBuffer]
+  -[ORBExtractionIntermediateBuffers setHistogramsBuffer:]
+  -[ORBExtractionIntermediateBuffers countOfKeypointsPerRegion]
+  -[ORBExtractionIntermediateBuffers setCountOfKeypointsPerRegion:]
+  -[ORBExtractionIntermediateBuffers cumulativeCountOfKeypointsPerRegion]
+  -[ORBExtractionIntermediateBuffers setCumulativeCountOfKeypointsPerRegion:]
+  -[ORBExtractionIntermediateBuffers truncatedRegionsBuffer]
+  -[ORBExtractionIntermediateBuffers setTruncatedRegionsBuffer:]
+  -[ORBExtractionIntermediateBuffers compactKeypointsBuffer]
+  -[ORBExtractionIntermediateBuffers setCompactKeypointsBuffer:]
+  -[ORBExtractionIntermediateBuffers refinedKeypointsBuffer]
+  -[ORBExtractionIntermediateBuffers setRefinedKeypointsBuffer:]
+  -[ORBExtractionIntermediateBuffers compactKeypointsAndResponsesBuffer]
+  -[ORBExtractionIntermediateBuffers setCompactKeypointsAndResponsesBuffer:]
+  -[ORBExtractionIntermediateBuffers responseBuffer]
+  -[ORBExtractionIntermediateBuffers setResponseBuffer:]
+  -[ORBExtractionIntermediateBuffers descriptorBuffer]
+  -[ORBExtractionIntermediateBuffers setDescriptorBuffer:]
+  -[ORBExtractionIntermediateBuffers keypointCountBuffer]
+  -[ORBExtractionIntermediateBuffers setKeypointCountBuffer:]
+  -[ORBExtractionIntermediateBuffers mpsRegionStrideBuffer]
+  -[ORBExtractionIntermediateBuffers setMpsRegionStrideBuffer:]
+  -[ORBExtractionIntermediateBuffers refinementIntermediatesBuffer]
+  -[ORBExtractionIntermediateBuffers setRefinementIntermediatesBuffer:]
+  -[ORBExtractionIntermediateBuffers maxRegionHeight]
+  -[ORBExtractionIntermediateBuffers setMaxRegionHeight:]
+  -[ORBExtractionIntermediateBuffers countOfRectRegions]
+  -[ORBExtractionIntermediateBuffers setCountOfRectRegions:]
+  -[ORBExtractionIntermediateBuffers maxDescriptorCount]
+  -[ORBExtractionIntermediateBuffers setMaxDescriptorCount:]
+
+
+VideoFrameWriterElement : NSObject
+ @property  ^{__CVBuffer=} pixelBuffer
+ @property  {?=qiIq} frameTime
+ @property  long long frameNumber
+
+  // instance methods
+  -[VideoFrameWriterElement pixelBuffer]
+  -[VideoFrameWriterElement dealloc]
+  -[VideoFrameWriterElement setPixelBuffer:]
+  -[VideoFrameWriterElement frameTime]
+  -[VideoFrameWriterElement setFrameTime:]
+  -[VideoFrameWriterElement frameNumber]
+  -[VideoFrameWriterElement setFrameNumber:]
+  -[VideoFrameWriterElement DeallocPixBuffer]
+
+
+VideoFrameWriterQueue : NSObject
+ @property  AVAssetWriter *videoWriter
+ @property  AVAssetWriterInput *writerInput
+ @property  AVAssetWriterInputPixelBufferAdaptor *inputAdaptor
+ @property  NSMutableArray *frameArray
+ @property  NSLock *frameArrayLock
+ @property  NSObject<OS_dispatch_queue> *frameWriteQueue
+ @property  {?=qiIq} startTime
+ @property  {?=qiIq} endTime
+ @property  NSConditionLock *writingDoneLock
+ @property  NSError *writeError
+ @property  BOOL writeSuccess
+ @property  unsigned long nextFrameIndex
+ @property  BOOL canceled
+ @property  BOOL doneQueueing
+ @property  unsigned int drainMinimum
+ @property  unsigned int drainMaximum
+ @property  NSConditionLock *drainConditionLock
+ @property  unsigned long drainTarget
+ @property  <VideoFrameWriterProgressRecipient> *frameWriterUpdateCallback
+
+  // instance methods
+  -[VideoFrameWriterQueue setEndTime:]
+  -[VideoFrameWriterQueue startTime]
+  -[VideoFrameWriterQueue endTime]
+  -[VideoFrameWriterQueue dealloc]
+  -[VideoFrameWriterQueue setStartTime:]
+  -[VideoFrameWriterQueue .cxx_destruct]
+  -[VideoFrameWriterQueue setCanceled:]
+  -[VideoFrameWriterQueue setWriteError:]
+  -[VideoFrameWriterQueue writeError]
+  -[VideoFrameWriterQueue canceled]
+  -[VideoFrameWriterQueue nextFrameIndex]
+  -[VideoFrameWriterQueue setNextFrameIndex:]
+  -[VideoFrameWriterQueue videoWriter]
+  -[VideoFrameWriterQueue setVideoWriter:]
+  -[VideoFrameWriterQueue writerInput]
+  -[VideoFrameWriterQueue setWriterInput:]
+  -[VideoFrameWriterQueue inputAdaptor]
+  -[VideoFrameWriterQueue setInputAdaptor:]
+  -[VideoFrameWriterQueue frameWriteQueue]
+  -[VideoFrameWriterQueue setFrameWriteQueue:]
+  -[VideoFrameWriterQueue initWithOutputURL:forMovieDimensions:outputTransform:startTime:endTime:]
+  -[VideoFrameWriterQueue AddAFrame:]
+  -[VideoFrameWriterQueue FramesInQueue]
+  -[VideoFrameWriterQueue WaitForFinish]
+  -[VideoFrameWriterQueue FindFrameWithIndex:]
+  -[VideoFrameWriterQueue FrameRequestCallback]
+  -[VideoFrameWriterQueue StartWatchingForFrames]
+  -[VideoFrameWriterQueue DrainIfAbove:downTo:]
+  -[VideoFrameWriterQueue frameArray]
+  -[VideoFrameWriterQueue setFrameArray:]
+  -[VideoFrameWriterQueue frameArrayLock]
+  -[VideoFrameWriterQueue setFrameArrayLock:]
+  -[VideoFrameWriterQueue writeSuccess]
+  -[VideoFrameWriterQueue setWriteSuccess:]
+  -[VideoFrameWriterQueue frameWriterUpdateCallback]
+  -[VideoFrameWriterQueue setFrameWriterUpdateCallback:]
+  -[VideoFrameWriterQueue doneQueueing]
+  -[VideoFrameWriterQueue setDoneQueueing:]
+  -[VideoFrameWriterQueue drainConditionLock]
+  -[VideoFrameWriterQueue setDrainConditionLock:]
+  -[VideoFrameWriterQueue drainMaximum]
+  -[VideoFrameWriterQueue setDrainMaximum:]
+  -[VideoFrameWriterQueue drainMinimum]
+  -[VideoFrameWriterQueue setDrainMinimum:]
+  -[VideoFrameWriterQueue drainTarget]
+  -[VideoFrameWriterQueue setDrainTarget:]
+  -[VideoFrameWriterQueue writingDoneLock]
+  -[VideoFrameWriterQueue setWritingDoneLock:]
+
+
+StabilizationSuccessClassifier : NSObject
+ @property  int classifierMode
+ @property  unsigned long subsegmentLength
+ @property  unsigned long subsegmentStep
+ @property  float lastClassifierScore
+
+  // instance methods
+  -[StabilizationSuccessClassifier init]
+  -[StabilizationSuccessClassifier calcLogisticForStats:paramsForStats:error:]
+  -[StabilizationSuccessClassifier getSequentialParamDict]
+  -[StabilizationSuccessClassifier getTripodCorrectionParamDict]
+  -[StabilizationSuccessClassifier getSequentialAnalysisCoeffsDict]
+  -[StabilizationSuccessClassifier getDefaultParamDict]
+  -[StabilizationSuccessClassifier AddStats:toDict:withBaseName:]
+  -[StabilizationSuccessClassifier calcStatsDictForArray:withKey:firstIndex:lastIndex:usingTempStorage:outErr:]
+  -[StabilizationSuccessClassifier statsDictFromFrameArray:firstIndex:lastIndex:errorOut:]
+  -[StabilizationSuccessClassifier testForHomographies:movieSize:firstIndex:lastIndex:scoreThreshold:errorOut:verbose:]
+  -[StabilizationSuccessClassifier applyClassifierToOverlappedSegments:withCoefficientsDict:movieSize:firstIndex:lastIndex:stride:length:result:verbose:minThreshold:]
+  -[StabilizationSuccessClassifier classifySequentialAnalysisSuccess:movieSize:precalcedFeatures:result:]
+  -[StabilizationSuccessClassifier classifierMode]
+  -[StabilizationSuccessClassifier setClassifierMode:]
+  -[StabilizationSuccessClassifier subsegmentLength]
+  -[StabilizationSuccessClassifier setSubsegmentLength:]
+  -[StabilizationSuccessClassifier subsegmentStep]
+  -[StabilizationSuccessClassifier setSubsegmentStep:]
+  -[StabilizationSuccessClassifier lastClassifierScore]
+
+
+ImageHomographyResampler : NSObject
+  // instance methods
+  -[ImageHomographyResampler init]
+  -[ImageHomographyResampler setHomographyMatrix:]
+  -[ImageHomographyResampler ResampleCGImage:clipToRect:outputSize:]
+  -[ImageHomographyResampler EraseCVPixelBuffer:]
+  -[ImageHomographyResampler ClearOutOfBoundsPixels:]
+  -[ImageHomographyResampler ResampleCVPixels:clipToRect:outputSize:]
+  -[ImageHomographyResampler ResampleCVPixels:clipToRect:outputSize:toPixelBuffer:]
+
+
+MetalRANSACDispatcher : NSObject
+ @property  <MTLDevice> *m_metalDevice
+ @property  <MTLLibrary> *m_metalLibrary
+ @property  <MTLCommandQueue> *m_metalCommandQueue
+ @property  <MTLFunction> *m_metalKernelFunction
+ @property  <MTLComputePipelineState> *m_metalPipeline
+ @property  unsigned long m_numThreadsPerGroup
+ @property  unsigned long m_maxCorrespondences
+ @property  <MTLBuffer> *m_mX
+ @property  <MTLBuffer> *m_mXhat
+ @property  <MTLBuffer> *m_ScoreBuffer
+ @property  <MTLBuffer> *m_RansacParams
+ @property  <MTLBuffer> *m_RansacHomographies
+ @property  <MTLBuffer> *m_ModelScores
+ @property  float inlierLimit
+ @property  {CGSize=dd} frameSize
+
+  // instance methods
+  -[MetalRANSACDispatcher .cxx_destruct]
+  -[MetalRANSACDispatcher setFrameSize:]
+  -[MetalRANSACDispatcher frameSize]
+  -[MetalRANSACDispatcher initWithMaxCorrespondences:]
+  -[MetalRANSACDispatcher performRansacOnData:firstPointSet:secondPointSet:pointWeights:homographies:numHomographies:homScores:]
+  -[MetalRANSACDispatcher assureSizeAndCopyToMetalBuffer:fromData:dataSize:metalResourceOptions:]
+  -[MetalRANSACDispatcher m_metalCommandQueue]
+  -[MetalRANSACDispatcher setM_metalCommandQueue:]
+  -[MetalRANSACDispatcher m_metalDevice]
+  -[MetalRANSACDispatcher setM_metalDevice:]
+  -[MetalRANSACDispatcher m_metalKernelFunction]
+  -[MetalRANSACDispatcher setM_metalKernelFunction:]
+  -[MetalRANSACDispatcher m_metalLibrary]
+  -[MetalRANSACDispatcher setM_metalLibrary:]
+  -[MetalRANSACDispatcher m_metalPipeline]
+  -[MetalRANSACDispatcher setM_metalPipeline:]
+  -[MetalRANSACDispatcher inlierLimit]
+  -[MetalRANSACDispatcher setInlierLimit:]
+  -[MetalRANSACDispatcher m_numThreadsPerGroup]
+  -[MetalRANSACDispatcher setM_numThreadsPerGroup:]
+  -[MetalRANSACDispatcher m_maxCorrespondences]
+  -[MetalRANSACDispatcher setM_maxCorrespondences:]
+  -[MetalRANSACDispatcher m_mX]
+  -[MetalRANSACDispatcher setM_mX:]
+  -[MetalRANSACDispatcher m_mXhat]
+  -[MetalRANSACDispatcher setM_mXhat:]
+  -[MetalRANSACDispatcher m_ScoreBuffer]
+  -[MetalRANSACDispatcher setM_ScoreBuffer:]
+  -[MetalRANSACDispatcher m_RansacParams]
+  -[MetalRANSACDispatcher setM_RansacParams:]
+  -[MetalRANSACDispatcher m_RansacHomographies]
+  -[MetalRANSACDispatcher setM_RansacHomographies:]
+  -[MetalRANSACDispatcher m_ModelScores]
+  -[MetalRANSACDispatcher setM_ModelScores:]
+
+
+CIHomographyResampler : ImageHomographyResampler
+ @property  {CGRect={CGPoint=dd}{CGSize=dd}} hightlightRect
+
+  // instance methods
+  -[CIHomographyResampler .cxx_destruct]
+  -[CIHomographyResampler init]
+  -[CIHomographyResampler ResampleCVPixels:clipToRect:outputSize:]
+  -[CIHomographyResampler ResampleCVPixels:clipToRect:outputSize:pixelBufferPool:]
+  -[CIHomographyResampler updateBackgroundFill:]
+  -[CIHomographyResampler ResampleCVPixels:clipToRect:outputSize:toPixelBuffer:]
+  -[CIHomographyResampler hightlightRect]
+  -[CIHomographyResampler setHightlightRect:]
+
+
+01 00 0900 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetReader 
+01 00 0900 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetReaderTrackOutput 
+01 00 0900 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetWriter 
+01 00 0900 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetWriterInput 
+01 00 0900 /System/Library/Frameworks/AVFoundation.framework/AVFoundation: AVAssetWriterInputPixelBufferAdaptor 
+01 00 0300 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIColor 
+01 00 0300 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIContext 
+01 00 0300 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIFilter 
+01 00 0300 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIImage 
+01 00 0300 /System/Library/Frameworks/CoreImage.framework/CoreImage: CIVector 
+01 00 0100 /System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation: DESRecordStore 
+01 00 0200 /System/Library/Frameworks/Metal.framework/Metal: MTLSamplerDescriptor 
+01 00 0200 /System/Library/Frameworks/Metal.framework/Metal: MTLTextureDescriptor 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConditionLock 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantDictionary 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSException 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSLock 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0d00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0600 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0c00 /System/Library/Frameworks/Foundation.framework/Foundation: NSValue 

@@ -1,0 +1,125 @@
+|| __DATA.__data _OBJC_METACLASS_$_IMCorePipelineHelloWorldClass_Impl
+|| __DATA.__objc_data _OBJC_CLASS_$_IMCorePipelineHelloWorldClass
+|| __DATA.__objc_data _OBJC_CLASS_$_IMCorePipelineHelloWorldClass_Impl
+|| __DATA.__objc_data _OBJC_METACLASS_$_IMCorePipelineHelloWorldClass
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMPromise._completionBlocks
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMPromise._result
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMResult._inError
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMResult._inValue
+|| __DATA.__objc_ivar _OBJC_IVAR_$_IMResult._state
+|| __DATA_CONST.__const _IMCoreBlastdoorErrorDomain
+|| __DATA_CONST.__const _IMCoreReceivePipelineErrorDomain
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_IMPipelineComponent
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_IMPromise
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_IMResult
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_IMPipelineComponent
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_IMPromise
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_IMResult
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: ___CFConstantStringClassReference
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_allocWithZone
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libswiftCore.dylib: _swift_isaMask
+__ libswiftCore.dylib: _swift_lookUpClassMethod
+IMCorePipelineHelloWorldClass : NSObject
+  // instance methods
+  -[IMCorePipelineHelloWorldClass .cxx_destruct]
+  -[IMCorePipelineHelloWorldClass init]
+  -[IMCorePipelineHelloWorldClass printGreeting]
+
+
+IMResult : NSObject
+ @property  NSError *inError
+ @property  id inValue
+ @property  long long state
+ @property  NSError *error
+ @property  id value
+
+  // instance methods
+  -[IMResult inError]
+  -[IMResult initWithSuccess:]
+  -[IMResult error]
+  -[IMResult state]
+  -[IMResult .cxx_destruct]
+  -[IMResult initWithError:]
+  -[IMResult inValue]
+  -[IMResult value]
+  -[IMResult setInError:]
+  -[IMResult initWithState:value:error:]
+  -[IMResult setInValue:]
+
+
+IMPipelineComponent : NSObject <IMPipelineComponent>
+ @property  <IMPipelineComponent> *nextComponent
+
+  // class methods
+  +[IMPipelineComponent pipelineFromComponents:]
+
+  // instance methods
+  -[IMPipelineComponent .cxx_destruct]
+  -[IMPipelineComponent runWithInput:]
+  -[IMPipelineComponent runIndividuallyWithInput:]
+  -[IMPipelineComponent bindTo:]
+  -[IMPipelineComponent nextComponent]
+  -[IMPipelineComponent setNextComponent:]
+
+
+IMPromise : NSObject
+  // class methods
+  +[IMPromise all:]
+
+  // instance methods
+  -[IMPromise then:]
+  -[IMPromise initWithValue:]
+  -[IMPromise failWithError:]
+  -[IMPromise .cxx_destruct]
+  -[IMPromise initWithError:]
+  -[IMPromise completed]
+  -[IMPromise registerCompletionBlock:]
+  -[IMPromise fullfillWithValue:]
+
+
+IMCorePipelineHelloWorldClass_Impl : NSObject
+  // instance methods
+  -[IMCorePipelineHelloWorldClass_Impl init]
+  -[IMCorePipelineHelloWorldClass_Impl printGreeting]
+
+
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0400 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 0200 /usr/lib/libobjc.A.dylib: NSObject 

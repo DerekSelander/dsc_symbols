@@ -1,0 +1,942 @@
+|| __DATA.__data _VirtualGarageConfig_AutomaticallyDeselectMissingVehicles
+|| __DATA.__data _VirtualGarageConfig_CapacityThresholdForVehicleStateComparison
+|| __DATA.__data _VirtualGarageConfig_EVRoutingDisabledApplications
+|| __DATA.__data _VirtualGarageConfig_EVRoutingEnableAllowListing
+|| __DATA.__data _VirtualGarageConfig_EVRoutingEnableAutomaticVehicleDeselection
+|| __DATA.__data _VirtualGarageConfig_EVRoutingEnableIAP2Onboarding
+|| __DATA.__data _VirtualGarageConfig_EVRoutingForceShowLastSyncDate
+|| __DATA.__data _VirtualGarageConfig_EVRoutingIntentsRequestTimeout
+|| __DATA.__data _VirtualGarageConfig_EVRoutingKeyNameForModelID
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApAllowlist
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApDenyListedFirmwareID
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApDenyListedModel
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApDenyListedModelID
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApDenyListedYear
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForIApDenylist
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForSiriAllowListedModelIDs
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForSiriAllowlist
+|| __DATA.__data _VirtualGarageConfig_EVRoutingManifestKeyNameForSiriBundleID
+|| __DATA.__data _VirtualGarageConfig_EVRoutingOEMAppPullInterval
+|| __DATA.__data _VirtualGarageConfig_EVRoutingResourceNameForAllowAndDenylists
+|| __DATA.__data _VirtualGarageConfig_EVRoutingStreamUpdatesDuringNav
+|| __DATA.__data _VirtualGarageConfig_EVRoutingSynchronousVehicleStateUpdate
+|| __DATA.__data _VirtualGarageConfig_EVRoutingUseCarDisplaySimIdentifier
+|| __DATA.__data _VirtualGarageConfig_EVRoutingUseMapsSyncLiveUpdates
+|| __DATA.__data _VirtualGarageConfig_TimeThresholdForVehicleStateComparison
+|| __DATA.__objc_data _OBJC_CLASS_$_VGOEMApplication
+|| __DATA.__objc_data _OBJC_CLASS_$_VGVehicleDeduper
+|| __DATA.__objc_data _OBJC_CLASS_$_VGVehicleState
+|| __DATA.__objc_data _OBJC_CLASS_$_VGVehicleStateStorage
+|| __DATA.__objc_data _OBJC_METACLASS_$_VGOEMApplication
+|| __DATA.__objc_data _OBJC_METACLASS_$_VGVehicleDeduper
+|| __DATA.__objc_data _OBJC_METACLASS_$_VGVehicleState
+|| __DATA.__objc_data _OBJC_METACLASS_$_VGVehicleStateStorage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VGDataCoordinator
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VGOEMApplicationFinder
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VGVehicle
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VGVirtualGarage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_VGVirtualGarageService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VGDataCoordinator
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VGOEMApplicationFinder
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VGVehicle
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VGVirtualGarage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_VGVirtualGarageService
+|| __TEXT.__text _GEOEvChargingConnectorTypeFromVGConnectorType
+|| __TEXT.__text _IsVirtualGarageEnabled
+|| __TEXT.__text _NSStringFromVGChargingConnectorTypeOptions
+|| __TEXT.__text _VGChargingConnectorTypeOptionsList
+|| __TEXT.__text _VGChargingConnectorTypeOptionsPacked
+|| __TEXT.__text _VGChargingConnectorTypeOptionsUnpacked
+|| __TEXT.__text _VGGetAssertLog
+|| __TEXT.__text _VGGetDataCoordinatorLog
+|| __TEXT.__text _VGGetExternalAccessoryLog
+|| __TEXT.__text _VGGetExternalAccessoryModelFilterLog
+|| __TEXT.__text _VGGetOEMApplicationLog
+|| __TEXT.__text _VGGetPersistingLog
+|| __TEXT.__text _VGGetUIHelperLog
+|| __TEXT.__text _VGGetVirtualGarageLog
+|| __TEXT.__text _VGHexRepresentationFromCGColor
+|| __TEXT.__text _VGProcessNameForPID
+|| __TEXT.__text _VGVehicleStateStorageReadFrom
+|| __TEXT.__text _VGVehiclesHaveMatchingVehicleStateProviders
+|| __TEXT.__text _startHostingVirtualGarageServiceWithPersister
+|| __TEXT.__text _stopHostingVirtualGarageService
+__ CoreFoundation: _CFStringCreateWithCString
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimer
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ CoreFoundation: ___kCFBooleanTrue
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreGraphics: _CGColorGetColorSpace
+__ CoreGraphics: _CGColorGetComponents
+__ CoreGraphics: _CGColorGetNumberOfComponents
+__ CoreGraphics: _CGColorSpaceGetModel
+__ CoreGraphics: _CGColorSpaceGetName
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSApplicationWorkspace
+__ ExternalAccessory: _EAAccessoryDidConnectNotification
+__ ExternalAccessory: _EAAccessoryDidDisconnectNotification
+__ ExternalAccessory: _EAAccessoryKey
+__ ExternalAccessory: _EAAccessoryVehicleDataUpdateNotification
+__ ExternalAccessory: _EAVehicleInfoActiveConnectorKey
+__ ExternalAccessory: _EAVehicleInfoChargingParameterKey
+__ ExternalAccessory: _EAVehicleInfoConsumptionParameterKey
+__ ExternalAccessory: _EAVehicleInfoCurrentBatteryChargeKey
+__ ExternalAccessory: _EAVehicleInfoDisplayNameKey
+__ ExternalAccessory: _EAVehicleInfoDisplayedBatteryPercentageKey
+__ ExternalAccessory: _EAVehicleInfoIsChargingKey
+__ ExternalAccessory: _EAVehicleInfoMakeKey
+__ ExternalAccessory: _EAVehicleInfoMapsDisplayNameKey
+__ ExternalAccessory: _EAVehicleInfoMaxBatteryChargeKey
+__ ExternalAccessory: _EAVehicleInfoMaxRangeElectricKey
+__ ExternalAccessory: _EAVehicleInfoMinBatteryChargeKey
+__ ExternalAccessory: _EAVehicleInfoModelKey
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeCCS1Key
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeCCS2Key
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeCHAdeMOKey
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeGBT_ACKey
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeGBT_DCKey
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeJ1772Key
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeMennekesKey
+__ ExternalAccessory: _EAVehicleInfoPowerForConnectorTypeTeslaKey
+__ ExternalAccessory: _EAVehicleInfoSupportedChargingConnectorsBitMaskKey
+__ ExternalAccessory: _EAVehicleInfoVehicleColorHexCodeKey
+__ ExternalAccessory: _EAVehicleInfoYearKey
+__ ExternalAccessory: _OBJC_CLASS_$_EAAccessory
+__ ExternalAccessory: _OBJC_CLASS_$_EAAccessoryManager
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMeasurement
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSUnitEnergy
+__ Foundation: _OBJC_CLASS_$_NSUnitLength
+__ Foundation: _OBJC_CLASS_$_NSUnitPower
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ GeoServices: _GEOConfigGetBOOL
+__ GeoServices: _GEOConfigGetDouble
+__ GeoServices: _GEOConfigGetString
+__ GeoServices: _GEOConfigRemoveDelegateListenerForAllKeys
+__ GeoServices: _GEOErrorDomain
+__ GeoServices: _MapsFeature_IsEnabled_Alberta
+__ GeoServices: _MapsFeature_IsEnabled_EVRouting
+__ GeoServices: _MapsFeaturesConfig_EnableAlberta
+__ GeoServices: _MapsFeaturesConfig_EnableEVRouting
+__ GeoServices: _OBJC_CLASS_$_GEONetworkObserver
+__ GeoServices: _OBJC_CLASS_$_GEOObserverHashTable
+__ GeoServices: _OBJC_CLASS_$_GEOResourceManager
+__ GeoServices: __GEOConfigAddDelegateListenerForKey
+__ GeoServices: _geo_get_global_queue
+__ GeoServices: _geo_isolate_sync_data
+__ GeoServices: _geo_isolater_create_with_format
+__ Intents: _INCarChargingConnectorTypeCCS1
+__ Intents: _INCarChargingConnectorTypeCCS2
+__ Intents: _INCarChargingConnectorTypeCHAdeMO
+__ Intents: _INCarChargingConnectorTypeGBTAC
+__ Intents: _INCarChargingConnectorTypeGBTDC
+__ Intents: _INCarChargingConnectorTypeJ1772
+__ Intents: _INCarChargingConnectorTypeMennekes
+__ Intents: _INCarChargingConnectorTypeTesla
+__ Intents: _OBJC_CLASS_$_INAppInfo
+__ Intents: _OBJC_CLASS_$_INGetCarPowerLevelStatusIntent
+__ Intents: _OBJC_CLASS_$_INGetCarPowerLevelStatusIntentResponse
+__ Intents: _OBJC_CLASS_$_INListCarsIntent
+__ Intents: _OBJC_CLASS_$_INSpeakableString
+__ IntentsCore: _OBJC_CLASS_$_INCExtensionConnection
+__ ProtocolBuffer: _OBJC_CLASS_$_PBCodable
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._bytes
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._error
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._length
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._pos
+__ ProtocolBuffer: _OBJC_METACLASS_$_PBCodable
+__ ProtocolBuffer: _PBDataWriterWriteBOOLField
+__ ProtocolBuffer: _PBDataWriterWriteDataField
+__ ProtocolBuffer: _PBDataWriterWriteDoubleField
+__ ProtocolBuffer: _PBDataWriterWriteInt32Field
+__ ProtocolBuffer: _PBDataWriterWriteStringField
+__ ProtocolBuffer: _PBReaderReadData
+__ ProtocolBuffer: _PBReaderReadString
+__ ProtocolBuffer: _PBReaderSkipValueWithTag
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_main_q
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __os_signpost_emit_with_name_impl
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_signpost_enabled
+__ libSystem.B.dylib: _os_signpost_id_generate
+__ libSystem.B.dylib: _sysctl
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_atomic_copy
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+__ libobjc.A.dylib: _sel_getName
+VGVehicleDeduper : NSObject
+  // class methods
+  +[VGVehicleDeduper actionForAddingNewVehicle:withExistingGarageVehicles:andUnpairedVehicles:]
+  +[VGVehicleDeduper _vehicleMatchingVehicle:inArray:]
+
+
+VGVehicle : NSObject <NSCopying, NSSecureCoding>
+ @property  NSString *pairedAppInstallDeviceIdentifier
+ @property  NSData *pairedAppInstallSessionIdentifier
+ @property  NSString *identifier
+ @property  NSDate *creationDate
+ @property  NSDate *lastStateUpdateDate
+ @property  NSString *displayName
+ @property  NSString *year
+ @property  NSString *manufacturer
+ @property  NSString *model
+ @property  NSString *colorHex
+ @property  NSString *headUnitBluetoothIdentifier
+ @property  NSString *headUnitIdentifier
+ @property  NSString *licensePlate
+ @property  NSString *lprVehicleType
+ @property  NSString *lprPowerType
+ @property  unsigned long supportedConnectors
+ @property  NSDictionary *powerByConnector
+ @property  VGVehicleState *currentVehicleState
+ @property  BOOL isPureElectricVehicle
+ @property  NSString *pairedAppIdentifier
+ @property  NSString *iapIdentifier
+ @property  NSString *siriIntentsIdentifier
+
+  // class methods
+  +[VGVehicle supportsSecureCoding]
+
+  // instance methods
+  -[VGVehicle identifier]
+  -[VGVehicle year]
+  -[VGVehicle model]
+  -[VGVehicle encodeWithCoder:]
+  -[VGVehicle .cxx_destruct]
+  -[VGVehicle setDisplayName:]
+  -[VGVehicle creationDate]
+  -[VGVehicle copyWithZone:]
+  -[VGVehicle manufacturer]
+  -[VGVehicle displayName]
+  -[VGVehicle isEqual:]
+  -[VGVehicle initWithCoder:]
+  -[VGVehicle licensePlate]
+  -[VGVehicle setLicensePlate:]
+  -[VGVehicle colorHex]
+  -[VGVehicle setColorHex:]
+  -[VGVehicle currentVehicleState]
+  -[VGVehicle headUnitBluetoothIdentifier]
+  -[VGVehicle iapIdentifier]
+  -[VGVehicle setIapIdentifier:]
+  -[VGVehicle lastStateUpdateDate]
+  -[VGVehicle lprPowerType]
+  -[VGVehicle setLprPowerType:]
+  -[VGVehicle lprVehicleType]
+  -[VGVehicle setLprVehicleType:]
+  -[VGVehicle pairedAppIdentifier]
+  -[VGVehicle setPairedAppIdentifier:]
+  -[VGVehicle powerByConnector]
+  -[VGVehicle siriIntentsIdentifier]
+  -[VGVehicle setSiriIntentsIdentifier:]
+  -[VGVehicle supportedConnectors]
+  -[VGVehicle setSupportedConnectors:]
+  -[VGVehicle displayedBatteryPercentage]
+  -[VGVehicle isPureElectricVehicle]
+  -[VGVehicle initWithIdentifier:displayName:year:manufacturer:model:colorHex:licensePlate:lprVehicleType:lprPowerType:]
+  -[VGVehicle _updateWithVehicleState:]
+  -[VGVehicle initWithDisplayName:year:manufacturer:model:colorHex:headUnitIdentifier:headUnitBluetoothIdentifier:supportedConnectors:powerByConnector:]
+  -[VGVehicle initWithLicensePlate:lprVehicleType:lprPowerType:]
+  -[VGVehicle initWithMapsSyncVehicle:]
+  -[VGVehicle _setVehicleState:]
+  -[VGVehicle _vehicleByUpdatingWithVehicle:]
+  -[VGVehicle pairToIapIdentifier:bluetoothIdentifier:]
+  -[VGVehicle _identifierForVehicleStateOrigin:]
+  -[VGVehicle _canBeUpdatedFromState:]
+  -[VGVehicle combinedDisplayName]
+  -[VGVehicle batteryPercentageBasedOfCapacity]
+  -[VGVehicle headUnitIdentifier]
+  -[VGVehicle pairedAppInstallDeviceIdentifier]
+  -[VGVehicle setPairedAppInstallDeviceIdentifier:]
+  -[VGVehicle pairedAppInstallSessionIdentifier]
+  -[VGVehicle setPairedAppInstallSessionIdentifier:]
+
+
+VGVehicleStateStorage : PBCodable <NSCopying>
+ @property  NSString *identifier
+ @property  BOOL hasDateOfUpdate
+ @property  double dateOfUpdate
+ @property  BOOL hasOrigin
+ @property  int origin
+ @property  BOOL hasBatteryPercentage
+ @property  double batteryPercentage
+ @property  BOOL hasCurrentEVRange
+ @property  double currentEVRange
+ @property  BOOL hasMaxEVRange
+ @property  double maxEVRange
+ @property  BOOL hasMinBatteryCapacity
+ @property  double minBatteryCapacity
+ @property  BOOL hasCurrentBatteryCapacity
+ @property  double currentBatteryCapacity
+ @property  BOOL hasMaxBatteryCapacity
+ @property  double maxBatteryCapacity
+ @property  BOOL hasConsumptionArguments
+ @property  NSString *consumptionArguments
+ @property  BOOL hasChargingArguments
+ @property  NSString *chargingArguments
+ @property  BOOL hasIsCharging
+ @property  BOOL isCharging
+ @property  BOOL hasActiveConnector
+ @property  int activeConnector
+ @property  BOOL hasPairedAppInstallSessionIdentifier
+ @property  NSData *pairedAppInstallSessionIdentifier
+ @property  BOOL hasPairedAppInstallDeviceIdentifier
+ @property  NSString *pairedAppInstallDeviceIdentifier
+
+  // instance methods
+  -[VGVehicleStateStorage setOrigin:]
+  -[VGVehicleStateStorage isCharging]
+  -[VGVehicleStateStorage origin]
+  -[VGVehicleStateStorage identifier]
+  -[VGVehicleStateStorage setBatteryPercentage:]
+  -[VGVehicleStateStorage hasOrigin]
+  -[VGVehicleStateStorage copyTo:]
+  -[VGVehicleStateStorage .cxx_destruct]
+  -[VGVehicleStateStorage mergeFrom:]
+  -[VGVehicleStateStorage hasBatteryPercentage]
+  -[VGVehicleStateStorage setIsCharging:]
+  -[VGVehicleStateStorage setIdentifier:]
+  -[VGVehicleStateStorage dictionaryRepresentation]
+  -[VGVehicleStateStorage copyWithZone:]
+  -[VGVehicleStateStorage batteryPercentage]
+  -[VGVehicleStateStorage readFrom:]
+  -[VGVehicleStateStorage setHasBatteryPercentage:]
+  -[VGVehicleStateStorage writeTo:]
+  -[VGVehicleStateStorage isEqual:]
+  -[VGVehicleStateStorage setHasOrigin:]
+  -[VGVehicleStateStorage originAsString:]
+  -[VGVehicleStateStorage StringAsOrigin:]
+  -[VGVehicleStateStorage hasConsumptionArguments]
+  -[VGVehicleStateStorage consumptionArguments]
+  -[VGVehicleStateStorage setConsumptionArguments:]
+  -[VGVehicleStateStorage hasChargingArguments]
+  -[VGVehicleStateStorage chargingArguments]
+  -[VGVehicleStateStorage setChargingArguments:]
+  -[VGVehicleStateStorage setHasIsCharging:]
+  -[VGVehicleStateStorage hasIsCharging]
+  -[VGVehicleStateStorage activeConnectorAsString:]
+  -[VGVehicleStateStorage StringAsActiveConnector:]
+  -[VGVehicleStateStorage activeConnector]
+  -[VGVehicleStateStorage setActiveConnector:]
+  -[VGVehicleStateStorage hasActiveConnector]
+  -[VGVehicleStateStorage setHasActiveConnector:]
+  -[VGVehicleStateStorage currentBatteryCapacity]
+  -[VGVehicleStateStorage setCurrentBatteryCapacity:]
+  -[VGVehicleStateStorage hasCurrentBatteryCapacity]
+  -[VGVehicleStateStorage dateOfUpdate]
+  -[VGVehicleStateStorage maxBatteryCapacity]
+  -[VGVehicleStateStorage maxEVRange]
+  -[VGVehicleStateStorage minBatteryCapacity]
+  -[VGVehicleStateStorage currentEVRange]
+  -[VGVehicleStateStorage pairedAppInstallDeviceIdentifier]
+  -[VGVehicleStateStorage setPairedAppInstallDeviceIdentifier:]
+  -[VGVehicleStateStorage pairedAppInstallSessionIdentifier]
+  -[VGVehicleStateStorage setPairedAppInstallSessionIdentifier:]
+  -[VGVehicleStateStorage setDateOfUpdate:]
+  -[VGVehicleStateStorage setHasDateOfUpdate:]
+  -[VGVehicleStateStorage hasDateOfUpdate]
+  -[VGVehicleStateStorage setCurrentEVRange:]
+  -[VGVehicleStateStorage setHasCurrentEVRange:]
+  -[VGVehicleStateStorage hasCurrentEVRange]
+  -[VGVehicleStateStorage setMaxEVRange:]
+  -[VGVehicleStateStorage setHasMaxEVRange:]
+  -[VGVehicleStateStorage hasMaxEVRange]
+  -[VGVehicleStateStorage setMinBatteryCapacity:]
+  -[VGVehicleStateStorage setHasMinBatteryCapacity:]
+  -[VGVehicleStateStorage hasMinBatteryCapacity]
+  -[VGVehicleStateStorage setHasCurrentBatteryCapacity:]
+  -[VGVehicleStateStorage setMaxBatteryCapacity:]
+  -[VGVehicleStateStorage setHasMaxBatteryCapacity:]
+  -[VGVehicleStateStorage hasMaxBatteryCapacity]
+  -[VGVehicleStateStorage hasPairedAppInstallSessionIdentifier]
+  -[VGVehicleStateStorage hasPairedAppInstallDeviceIdentifier]
+
+
+VGDataCoordinator : NSObject <VGOEMApplicationFinderUpdates, VGExternalAccessoryUpdating, VGOEMAppSOCStreaming>
+ @property  NSArray *unpairedVehicles
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VGDataCoordinator vehicleStateUpdated:]
+  -[VGDataCoordinator startContinuousUpdatesForVehicle:]
+  -[VGDataCoordinator accessoryUpdatedWithVehicle:]
+  -[VGDataCoordinator deviceIdentifier]
+  -[VGDataCoordinator _setupTimerIfNeeded]
+  -[VGDataCoordinator _oemAppForChargeStreamForVehicle:]
+  -[VGDataCoordinator _vehicleStateProviderForVehicle:]
+  -[VGDataCoordinator endAllContinuousUpdates]
+  -[VGDataCoordinator shouldUnpairVehicle:]
+  -[VGDataCoordinator _removeUnpairedIapVehicleIfNeeded]
+  -[VGDataCoordinator _stopChargeStreamForVehicle:]
+  -[VGDataCoordinator _applicationRecordForVehicle:]
+  -[VGDataCoordinator dealloc]
+  -[VGDataCoordinator .cxx_destruct]
+  -[VGDataCoordinator unpairedVehicles]
+  -[VGDataCoordinator _applicationForVehicle:]
+  -[VGDataCoordinator getLatestStateOfVehicle:withReply:]
+  -[VGDataCoordinator OEMAppsUpdated:]
+  -[VGDataCoordinator unpairVehicle:]
+  -[VGDataCoordinator _saveOnboardingInfoForVehicle:]
+  -[VGDataCoordinator finishOnboardingVehicle:]
+  -[VGDataCoordinator _startChargeStreamForVehicle:]
+  -[VGDataCoordinator _updateStateOfChargeForVehicle:syncAcrossDevices:completion:]
+  -[VGDataCoordinator _invalidateRefreshTimer]
+  -[VGDataCoordinator _indexOfVehicleInUnpairedVehicles:]
+  -[VGDataCoordinator _loadAllOEMVehiclesForApps:completion:]
+  -[VGDataCoordinator initWithApplicationFinder:externalAccessory:delegate:]
+  -[VGDataCoordinator _updateGarageWithVehicle:syncAcrossDevices:]
+  -[VGDataCoordinator _loadIapVehicles]
+  -[VGDataCoordinator _refreshStateForTrackedVehicles]
+  -[VGDataCoordinator _vehicleStateRefreshInterval]
+
+
+VGExternalAccessoryState : NSObject
+ @property  NSString *name
+ @property  NSString *manufacturer
+ @property  NSString *model
+ @property  NSString *year
+ @property  NSString *colorHex
+ @property  NSMeasurement *currentEVRange
+ @property  NSMeasurement *maxEVRange
+ @property  NSString *consumptionArguments
+ @property  NSString *chargingArguments
+ @property  NSNumber *batteryCharge
+ @property  NSMeasurement *minBatteryCapacity
+ @property  NSMeasurement *currentBatteryCapacity
+ @property  NSMeasurement *maxBatteryCapacity
+ @property  NSNumber *supportedConnectors
+ @property  BOOL isCharging
+ @property  NSNumber *activeConnector
+ @property  NSDictionary *powerByConnector
+
+  // instance methods
+  -[VGExternalAccessoryState isCharging]
+  -[VGExternalAccessoryState setModel:]
+  -[VGExternalAccessoryState setYear:]
+  -[VGExternalAccessoryState year]
+  -[VGExternalAccessoryState model]
+  -[VGExternalAccessoryState .cxx_destruct]
+  -[VGExternalAccessoryState setManufacturer:]
+  -[VGExternalAccessoryState setName:]
+  -[VGExternalAccessoryState name]
+  -[VGExternalAccessoryState manufacturer]
+  -[VGExternalAccessoryState consumptionArguments]
+  -[VGExternalAccessoryState setConsumptionArguments:]
+  -[VGExternalAccessoryState chargingArguments]
+  -[VGExternalAccessoryState setChargingArguments:]
+  -[VGExternalAccessoryState activeConnector]
+  -[VGExternalAccessoryState currentBatteryCapacity]
+  -[VGExternalAccessoryState setCurrentBatteryCapacity:]
+  -[VGExternalAccessoryState colorHex]
+  -[VGExternalAccessoryState setColorHex:]
+  -[VGExternalAccessoryState powerByConnector]
+  -[VGExternalAccessoryState supportedConnectors]
+  -[VGExternalAccessoryState setSupportedConnectors:]
+  -[VGExternalAccessoryState maxBatteryCapacity]
+  -[VGExternalAccessoryState maxEVRange]
+  -[VGExternalAccessoryState minBatteryCapacity]
+  -[VGExternalAccessoryState currentEVRange]
+  -[VGExternalAccessoryState setCurrentEVRange:]
+  -[VGExternalAccessoryState setMaxEVRange:]
+  -[VGExternalAccessoryState setMinBatteryCapacity:]
+  -[VGExternalAccessoryState setMaxBatteryCapacity:]
+  -[VGExternalAccessoryState _updateWithVehicleInfo:]
+  -[VGExternalAccessoryState batteryCharge]
+  -[VGExternalAccessoryState setBatteryCharge:]
+
+
+VGExternalAccessory : NSObject <VGExternalAccessory>
+ @property  <VGExternalAccessoryUpdating> *accessoryUpdateDelegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[VGExternalAccessory _addNewCarPlayAccessory:]
+  -[VGExternalAccessory _currentStatePassesEVRoutingRequirements]
+  -[VGExternalAccessory _modelIdFromArguments:]
+  -[VGExternalAccessory _vehicleForCurrentState]
+  -[VGExternalAccessory _checkAvailableAccessoriesAndAttachIfNeeded]
+  -[VGExternalAccessory _identifier]
+  -[VGExternalAccessory dealloc]
+  -[VGExternalAccessory .cxx_destruct]
+  -[VGExternalAccessory accessoryUpdateDelegate]
+  -[VGExternalAccessory _vehicleStateForCurrentState]
+  -[VGExternalAccessory isConnectedToVehicle:]
+  -[VGExternalAccessory listCarsWithCompletion:]
+  -[VGExternalAccessory _isConnectedToCarPlayAccessory]
+  -[VGExternalAccessory _bluetoothIdentifier]
+  -[VGExternalAccessory _updateFromVehicleInfo:]
+  -[VGExternalAccessory _removeCarPlayAccessory:]
+  -[VGExternalAccessory _firmwareId]
+  -[VGExternalAccessory _accessoryDidDisconnect:]
+  -[VGExternalAccessory _notifyDelegateWithCurrentVehicle]
+  -[VGExternalAccessory _isConnectedVehicleAllowlisted]
+  -[VGExternalAccessory setAccessoryUpdateDelegate:]
+  -[VGExternalAccessory _accessoryDidUpdateVehicle:]
+  -[VGExternalAccessory _accessoryDidConnect:]
+  -[VGExternalAccessory _isConnectedToElectricVehicle]
+  -[VGExternalAccessory getStateOfChargeForVehicle:completion:]
+  -[VGExternalAccessory init]
+  -[VGExternalAccessory isConnectedToAccessoryWithIdentifier:]
+  -[VGExternalAccessory _isAccessoryTracked:]
+
+
+VGVehicleState : NSObject <NSCopying, NSSecureCoding>
+ @property  NSNumber *batteryPercentage
+ @property  NSString *identifier
+ @property  NSDate *dateOfUpdate
+ @property  long long origin
+ @property  NSMeasurement *currentEVRange
+ @property  NSMeasurement *maxEVRange
+ @property  NSMeasurement *minBatteryCapacity
+ @property  NSMeasurement *currentBatteryCapacity
+ @property  NSMeasurement *maxBatteryCapacity
+ @property  NSString *consumptionArguments
+ @property  NSString *chargingArguments
+ @property  BOOL isCharging
+ @property  unsigned long activeConnector
+
+  // class methods
+  +[VGVehicleState supportsSecureCoding]
+  +[VGVehicleState _vehicleStateFromStorage:]
+
+  // instance methods
+  -[VGVehicleState isCharging]
+  -[VGVehicleState origin]
+  -[VGVehicleState identifier]
+  -[VGVehicleState encodeWithCoder:]
+  -[VGVehicleState .cxx_destruct]
+  -[VGVehicleState copyWithZone:]
+  -[VGVehicleState batteryPercentage]
+  -[VGVehicleState isEqual:]
+  -[VGVehicleState initWithCoder:]
+  -[VGVehicleState _storage]
+  -[VGVehicleState consumptionArguments]
+  -[VGVehicleState chargingArguments]
+  -[VGVehicleState activeConnector]
+  -[VGVehicleState currentBatteryCapacity]
+  -[VGVehicleState dateOfUpdate]
+  -[VGVehicleState maxBatteryCapacity]
+  -[VGVehicleState maxEVRange]
+  -[VGVehicleState initWithIdentifier:dateOfUpdate:origin:batteryPercentage:currentEVRange:maxEVRange:minBatteryCapacity:currentBatteryCapacity:maxBatteryCapacity:consumptionArguments:chargingArguments:isCharging:activeConnector:]
+  -[VGVehicleState minBatteryCapacity]
+  -[VGVehicleState currentEVRange]
+  -[VGVehicleState isSignificantlyDifferentFromVehicleState:]
+
+
+VGDenylistEntry : NSObject
+  // instance methods
+  -[VGDenylistEntry .cxx_destruct]
+  -[VGDenylistEntry isEqual:]
+  -[VGDenylistEntry initWithModelId:firmwareIds:years:models:]
+  -[VGDenylistEntry isSupersetOfEntry:]
+
+
+VGExternalAccessoryModelFilter : NSObject
+ @property  NSArray *modelIdAllowlist
+ @property  NSArray *denylist
+
+  // instance methods
+  -[VGExternalAccessoryModelFilter allowsVehicleWithModelId:firmwareId:year:model:]
+  -[VGExternalAccessoryModelFilter setModelIdAllowlist:]
+  -[VGExternalAccessoryModelFilter modelIdAllowlist]
+  -[VGExternalAccessoryModelFilter .cxx_destruct]
+  -[VGExternalAccessoryModelFilter setDenylist:]
+  -[VGExternalAccessoryModelFilter _initializeAllowAndDenylists]
+  -[VGExternalAccessoryModelFilter denylist]
+  -[VGExternalAccessoryModelFilter init]
+
+
+VGVirtualGarage : NSObject <NSCopying, VGDataCoordinatorDelegate, VGVirtualGaragePersistingDelegate, GEOConfigChangeListenerDelegate, VGVirtualGarageActions, NSSecureCoding>
+ @property  <VGVirtualGarageDelegate> *delegate
+ @property  NSArray *vehicles
+ @property  VGVehicle *selectedVehicle
+ @property  BOOL shouldAssumeFullCharge
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[VGVirtualGarage supportsSecureCoding]
+
+  // instance methods
+  -[VGVirtualGarage virtualGarageRemoveVehicle:]
+  -[VGVirtualGarage virtualGarageOnboardVehicle:]
+  -[VGVirtualGarage virtualGarageEndContinuousUpdates]
+  -[VGVirtualGarage virtualGarageSaveVehicle:]
+  -[VGVirtualGarage virtualGarageAddVehicle:]
+  -[VGVirtualGarage virtualGarageSetAssumesFullCharge:]
+  -[VGVirtualGarage virtualGarageSelectVehicle:]
+  -[VGVirtualGarage virtualGarageGetLatestStateOfVehicleWithIdentifier:syncAcrossDevices:withReply:]
+  -[VGVirtualGarage _forceUpdateWithVehicles:]
+  -[VGVirtualGarage _persisterHasStaleStateForVehicle:]
+  -[VGVirtualGarage _garageCopy]
+  -[VGVirtualGarage dataCoordinator:wantsToUpdateVehicle:syncAcrossDevices:]
+  -[VGVirtualGarage setDelegate:]
+  -[VGVirtualGarage virtualGarageGetListOfUnpairedVehiclesWithReply:]
+  -[VGVirtualGarage _addVehicle:]
+  -[VGVirtualGarage setShouldAssumeFullCharge:]
+  -[VGVirtualGarage valueChangedForGEOConfigKey:]
+  -[VGVirtualGarage _executeQueuedCompletionHandlersIfNeeded]
+  -[VGVirtualGarage encodeWithCoder:]
+  -[VGVirtualGarage delegate]
+  -[VGVirtualGarage _updateDataCoordinatorAvailability]
+  -[VGVirtualGarage _selectVehicleWithIdentifier:]
+  -[VGVirtualGarage dealloc]
+  -[VGVirtualGarage _removeVehicleWithIdentifier:]
+  -[VGVirtualGarage .cxx_destruct]
+  -[VGVirtualGarage _saveVehicle:syncAcrossDevices:]
+  -[VGVirtualGarage _onboardVehicle:]
+  -[VGVirtualGarage _vehicleWithIdentifier:]
+  -[VGVirtualGarage virtualGarageGetGarageWithReply:]
+  -[VGVirtualGarage selectedVehicle]
+  -[VGVirtualGarage initWithGaragePersister:]
+  -[VGVirtualGarage garagePersister:wantsToUpdateVehicles:]
+  -[VGVirtualGarage virtualGarageStartContinuousUpdatesIfNeeded]
+  -[VGVirtualGarage copyWithZone:]
+  -[VGVirtualGarage _unpairVehicle:]
+  -[VGVirtualGarage _notifyObserversGarageDidUpdateVehicles]
+  -[VGVirtualGarage dataCoordinator:didUpdateUnpairedVehicles:]
+  -[VGVirtualGarage _startContinuousUpdatesIfNeeded]
+  -[VGVirtualGarage shouldAssumeFullCharge]
+  -[VGVirtualGarage dataCoordinatorDidUpdateInstalledApps:]
+  -[VGVirtualGarage _removeVehiclesWithUninstalledAppsIfNeeded]
+  -[VGVirtualGarage _endContinuousUpdates]
+  -[VGVirtualGarage _setDataCoordintorRunning:]
+  -[VGVirtualGarage vehicles]
+  -[VGVirtualGarage initWithCoder:]
+
+
+VGOEMApplicationFinder : NSObject <LSApplicationWorkspaceObserverProtocol, GEOConfigChangeListenerDelegate, VGOEMApplicationFinding>
+ @property  NSSet *disabledAppIdentifiers
+ @property  NSDictionary *allowlist
+ @property  NSMutableDictionary *applications
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <VGOEMApplicationFinderUpdates> *delegate
+
+  // instance methods
+  -[VGOEMApplicationFinder applicationsDidInstall:]
+  -[VGOEMApplicationFinder applications]
+  -[VGOEMApplicationFinder _removeOEMApplicationForBundleIdentifier:]
+  -[VGOEMApplicationFinder _applicationRecordForBundleIdentifier:]
+  -[VGOEMApplicationFinder setDelegate:]
+  -[VGOEMApplicationFinder applicationsDidUninstall:]
+  -[VGOEMApplicationFinder valueChangedForGEOConfigKey:]
+  -[VGOEMApplicationFinder disabledAppIdentifiers]
+  -[VGOEMApplicationFinder delegate]
+  -[VGOEMApplicationFinder setApplications:]
+  -[VGOEMApplicationFinder dealloc]
+  -[VGOEMApplicationFinder .cxx_destruct]
+  -[VGOEMApplicationFinder setDisabledAppIdentifiers:]
+  -[VGOEMApplicationFinder allowlist]
+  -[VGOEMApplicationFinder _allowlistPayload]
+  -[VGOEMApplicationFinder setAllowlist:]
+  -[VGOEMApplicationFinder findOEMApplications]
+  -[VGOEMApplicationFinder init]
+  -[VGOEMApplicationFinder _addOEMApplicationForApplicationRecordIfNeeded:]
+
+
+VGOEMApplication : NSObject <INIntentResponseObserver, VGOEMApplication>
+ @property  NSArray *allowedFormulaIDs
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSString *identifier
+ @property  LSApplicationRecord *applicationRecord
+ @property  BOOL enabled
+ @property  <VGOEMAppSOCStreaming> *chargeStreamingDelegate
+
+  // instance methods
+  -[VGOEMApplication identifier]
+  -[VGOEMApplication .cxx_destruct]
+  -[VGOEMApplication setEnabled:]
+  -[VGOEMApplication listCarsWithCompletion:]
+  -[VGOEMApplication isEqual:]
+  -[VGOEMApplication getStateOfChargeForVehicle:completion:]
+  -[VGOEMApplication isEnabled]
+  -[VGOEMApplication intentResponseDidUpdate:withSerializedCacheItems:]
+  -[VGOEMApplication applicationRecord]
+  -[VGOEMApplication initWithIdentifier:applicationRecord:]
+  -[VGOEMApplication startSendingChargeUpdatesForVehicle:]
+  -[VGOEMApplication stopSendingChargeUpdatesForVehicle:]
+  -[VGOEMApplication chargeStreamingDelegate]
+  -[VGOEMApplication setChargeStreamingDelegate:]
+  -[VGOEMApplication _VGChargingConnectorTypeOptionsFromINCarChargingConnectorTypes:]
+  -[VGOEMApplication _VGChargingConnectorTypeOptionFromINCarChargingConnectorType:]
+  -[VGOEMApplication _isValidConsumptionModelForResponse:]
+  -[VGOEMApplication _vehicleStateFromResponse:error:]
+  -[VGOEMApplication _vehiclesFromListCarsIntentResponse:]
+  -[VGOEMApplication _powerByConnectorDictionaryFromCar:]
+  -[VGOEMApplication _createChargeStreamingConnectionIfNeededForVehicle:]
+  -[VGOEMApplication _connectionWithIntent:]
+  -[VGOEMApplication allowedFormulaIDs]
+  -[VGOEMApplication setAllowedFormulaIDs:]
+
+
+VGVirtualGarageServer : NSObject <NSXPCListenerDelegate, VGVirtualGarageDelegate, GEOConfigChangeListenerDelegate, VGVirtualGarageActions>
+ @property  BOOL hostsVirtualGarage
+ @property  VGVirtualGarage *garage
+ @property  NSXPCListener *listener
+ @property  NSMutableArray *activeConnections
+ @property  <VGVirtualGarageObserver> *observer
+ @property  NSObject<OS_dispatch_queue> *observerQueue
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[VGVirtualGarageServer sharedServer]
+  +[VGVirtualGarageServer canUseVirtualGarageXPCService]
+
+  // instance methods
+  -[VGVirtualGarageServer virtualGarageRemoveVehicle:]
+  -[VGVirtualGarageServer virtualGarageOnboardVehicle:]
+  -[VGVirtualGarageServer virtualGarageEndContinuousUpdates]
+  -[VGVirtualGarageServer virtualGarageSaveVehicle:]
+  -[VGVirtualGarageServer virtualGarageAddVehicle:]
+  -[VGVirtualGarageServer virtualGarageSetAssumesFullCharge:]
+  -[VGVirtualGarageServer virtualGarageSelectVehicle:]
+  -[VGVirtualGarageServer virtualGarageGetLatestStateOfVehicleWithIdentifier:syncAcrossDevices:withReply:]
+  -[VGVirtualGarageServer setActiveConnections:]
+  -[VGVirtualGarageServer observerQueue]
+  -[VGVirtualGarageServer startWithPersister:]
+  -[VGVirtualGarageServer virtualGarageDidUpdate:]
+  -[VGVirtualGarageServer virtualGarageGetListOfUnpairedVehiclesWithReply:]
+  -[VGVirtualGarageServer setObserverQueue:]
+  -[VGVirtualGarageServer valueChangedForGEOConfigKey:]
+  -[VGVirtualGarageServer activeConnections]
+  -[VGVirtualGarageServer dealloc]
+  -[VGVirtualGarageServer .cxx_destruct]
+  -[VGVirtualGarageServer stop]
+  -[VGVirtualGarageServer setListener:]
+  -[VGVirtualGarageServer observer]
+  -[VGVirtualGarageServer virtualGarage:didUpdateUnpairedVehicles:]
+  -[VGVirtualGarageServer setGarage:]
+  -[VGVirtualGarageServer virtualGarageGetGarageWithReply:]
+  -[VGVirtualGarageServer garage]
+  -[VGVirtualGarageServer _cleanUp]
+  -[VGVirtualGarageServer _setupVirtualGarageHostingIfNeeded]
+  -[VGVirtualGarageServer virtualGarageStartContinuousUpdatesIfNeeded]
+  -[VGVirtualGarageServer setHostsVirtualGarage:]
+  -[VGVirtualGarageServer hostsVirtualGarage]
+  -[VGVirtualGarageServer listener]
+  -[VGVirtualGarageServer setObserver:]
+  -[VGVirtualGarageServer listener:shouldAcceptNewConnection:]
+  -[VGVirtualGarageServer init]
+
+
+VGVirtualGarageService : NSObject <VGVirtualGarageObserver, VGVirtualGarageActions>
+ @property  NSXPCConnection *connection
+ @property  NSString *activeVehicleIdentifier
+
+  // class methods
+  +[VGVirtualGarageService sharedService]
+  +[VGVirtualGarageService canUseVirtualGarageXPCService]
+
+  // instance methods
+  -[VGVirtualGarageService virtualGarageRemoveVehicle:]
+  -[VGVirtualGarageService virtualGarageOnboardVehicle:]
+  -[VGVirtualGarageService virtualGarageEndContinuousUpdates]
+  -[VGVirtualGarageService virtualGarageSaveVehicle:]
+  -[VGVirtualGarageService unregisterObserver:]
+  -[VGVirtualGarageService virtualGarageAddVehicle:]
+  -[VGVirtualGarageService virtualGarageSetAssumesFullCharge:]
+  -[VGVirtualGarageService virtualGarageSelectVehicle:]
+  -[VGVirtualGarageService virtualGarageGetLatestStateOfVehicleWithIdentifier:syncAcrossDevices:withReply:]
+  -[VGVirtualGarageService virtualGarageDidUpdate:]
+  -[VGVirtualGarageService openForClient:]
+  -[VGVirtualGarageService virtualGarageGetListOfUnpairedVehiclesWithReply:]
+  -[VGVirtualGarageService _closeConnection]
+  -[VGVirtualGarageService .cxx_destruct]
+  -[VGVirtualGarageService registerObserver:]
+  -[VGVirtualGarageService connection]
+  -[VGVirtualGarageService virtualGarage:didUpdateUnpairedVehicles:]
+  -[VGVirtualGarageService virtualGarageGetGarageWithReply:]
+  -[VGVirtualGarageService virtualGarageStartContinuousUpdatesIfNeeded]
+  -[VGVirtualGarageService _openConnection]
+  -[VGVirtualGarageService closeForClient:]
+  -[VGVirtualGarageService init]
+  -[VGVirtualGarageService setConnection:]
+  -[VGVirtualGarageService setActiveVehicleIdentifier:]
+  -[VGVirtualGarageService _clearActiveVehicleIdentifierIfNeeded:]
+  -[VGVirtualGarageService messageTargetWithErrorReply:]
+  -[VGVirtualGarageService activeVehicleIdentifier]
+
+
+NSMeasurement(VGExtras)
+	// instance methods
+	-[NSMeasurement(VGExtras) compare:]
+	-[NSMeasurement(VGExtras) isGreaterThanOrEqualToMeasurement:]
+	-[NSMeasurement(VGExtras) isGreaterThanMeasurement:]
+	-[NSMeasurement(VGExtras) isLessThanMeasurement:]
+	-[NSMeasurement(VGExtras) isEqualToMeasurement:]
+	-[NSMeasurement(VGExtras) isLessThanOrEqualToMeasurement:]
+
+EAAccessory(CarPlaySupport)
+	// instance methods
+	-[EAAccessory(CarPlaySupport) _vg_supportsCarPlay]
+
+01 00 0700 /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory: EAAccessory 
+01 00 0700 /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory: EAAccessoryManager 
+01 00 0100 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEONetworkObserver 
+01 00 0100 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOObserverHashTable 
+01 00 0100 /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices: GEOResourceManager 
+01 00 0500 /System/Library/Frameworks/Intents.framework/Intents: INAppInfo 
+01 00 0300 /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore: INCExtensionConnection 
+01 00 0500 /System/Library/Frameworks/Intents.framework/Intents: INGetCarPowerLevelStatusIntent 
+01 00 0500 /System/Library/Frameworks/Intents.framework/Intents: INGetCarPowerLevelStatusIntentResponse 
+01 00 0500 /System/Library/Frameworks/Intents.framework/Intents: INListCarsIntent 
+01 00 0500 /System/Library/Frameworks/Intents.framework/Intents: INSpeakableString 
+01 00 0600 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 0600 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationWorkspace 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMeasurement 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0900 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimer 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUnitEnergy 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUnitLength 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSUnitPower 
+01 00 0c00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0800 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0400 /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer: PBCodable 

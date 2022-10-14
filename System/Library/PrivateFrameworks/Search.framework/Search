@@ -1,0 +1,941 @@
+|| __DATA.__common _gSPLogDebugAsDefault
+|| __DATA.__common _gSPLogInfoAsDefault
+|| __DATA.__data _DisableCategoryPromotion
+|| __DATA.__data _DisableCoreDuet
+|| __DATA.__data _DisableParsec
+|| __DATA.__data _DisableParsecInfluence
+|| __DATA.__data _DisableShortcut
+|| __DATA.__data _DisableTextMatch
+|| __DATA.__data _MaxNumberProactiveSiriActions
+|| __DATA.__data _SPSUGGESTIONS_BUNDLE_ID
+|| __DATA.__data _SPSearchEnableBullseyeRanking
+|| __DATA.__data _SPSpotlightAppBundleId
+|| __DATA.__data _SPUTIAppType
+|| __DATA.__data _SearchDisableTapToRadar
+|| __DATA.__data _SearchParsecEnabledKey
+|| __DATA.__data _SearchRankingDisableModelUpdate
+|| __DATA.__data _SearchRankingDisablePolicy
+|| __DATA.__data _SearchRankingUseCreationDateL2
+|| __DATA.__data _SpotlightUIPrefsDomain
+|| __DATA.__data _gSPLogLevel
+|| __DATA.__data _kSPSearchInternetDomainsChangedNotification
+|| __DATA.__objc_data _OBJC_CLASS_$_SPMLLogging
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPDaemonQueryToken._delegate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPDaemonQueryToken._query
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPDaemonQueryToken._queryID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPSearchQuery._cancellationTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPSearchQuery._creationTime
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPSearchQuery._finished
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPSearchQuery._queryID
+|| __DATA.__objc_ivar _OBJC_IVAR_$_SPSearchQuery._searchString
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralAppClips
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralApplication
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralApplicationCStr
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralPeople
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralPeopleAskToBuy
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralPeopleFindMy
+|| __DATA_CONST.__const _SPApplicationBundleIdGeneralPeopleScreenTimeRequest
+|| __DATA_CONST.__const _SPApplicationBundleIdSpringBoard
+|| __DATA_CONST.__const _SPLogLevelKey
+|| __DATA_CONST.__const _SPLogPersistedTypesKey
+|| __DATA_CONST.__const _SPOutputLevelKey
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionContact
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionLocal
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionParsec
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionSearchThrough
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionSiri
+|| __DATA_CONST.__const _SPResultBundleIdSuggestionUserTypedString
+|| __DATA_CONST.__const _SPResultBundleIdWebSuggestionParsec
+|| __DATA_CONST.__const _SPResultBundleIdWebSuggestionUserTypedString
+|| __DATA_CONST.__const _SPSearchResultIdentifierShowMore
+|| __DATA_CONST.__const _SPSearchResultIdentifierTapToRadar
+|| __DATA_CONST.__const _SPSearchThroughBundleID
+|| __DATA_CONST.__const _SPSuggestionIdentifierActualSearch
+|| __DATA_CONST.__const _SPSuggestionIdentifierSearchWeb
+|| __DATA_CONST.__const _SPZKWSectionBundleID
+|| __DATA_CONST.__const _SPZKWSiriActionsBundleID
+|| __DATA_CONST.__const _SiriSuggestionPrefChangeNotification
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SFSearchResult_Compatibility
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPApplication
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPCoreSpotlightResult
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPDaemonQueryToken
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPDomainManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPFeedbackManager
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPResultSet
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPSearchQuery
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPXPCConnection
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPXPCMessage
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_SPXPCServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SFSearchResult_Compatibility
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPDaemonConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPDaemonQueryToken
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPDomainManager
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPMatcher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPResultSet
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPSearchQuery
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPXPCConnection
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPXPCMessage
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_SPXPCServer
+|| __TEXT.__text _SPBlueButtonBehavior
+|| __TEXT.__text _SPBuildApplications
+|| __TEXT.__text _SPCategoryForDomain
+|| __TEXT.__text _SPCommittedScreenMatchingBehavior
+|| __TEXT.__text _SPCopyVisibleApps
+|| __TEXT.__text _SPDayStringForDate
+|| __TEXT.__text _SPDisableBullseyeBackend
+|| __TEXT.__text _SPDisableBullseyeUI
+|| __TEXT.__text _SPDisplayIdentifierForDomain
+|| __TEXT.__text _SPDisplayNameForDomain
+|| __TEXT.__text _SPDisplayNameForExtendedDomain
+|| __TEXT.__text _SPDomains
+|| __TEXT.__text _SPEnableBullseyeUI
+|| __TEXT.__text _SPEnableSafariTopHitsLogic
+|| __TEXT.__text _SPFastApplicationsGet
+|| __TEXT.__text _SPFastApplicationsGetNoBuild
+|| __TEXT.__text _SPFastApplicationsSet
+|| __TEXT.__text _SPFastHiddenAppsGetNoBuild
+|| __TEXT.__text _SPFilterLocalSuggestions
+|| __TEXT.__text _SPGenreGroupingEnabled
+|| __TEXT.__text _SPGetDisabledAppSet
+|| __TEXT.__text _SPGetDisabledBundleSet
+|| __TEXT.__text _SPGetDisabledDomainSet
+|| __TEXT.__text _SPGetDisabledDomains
+|| __TEXT.__text _SPGetDomainOrdering
+|| __TEXT.__text _SPHideSearchThroughSuggestions
+|| __TEXT.__text _SPIsiPad
+|| __TEXT.__text _SPKeyForSearchDomain
+|| __TEXT.__text _SPL1Threshold
+|| __TEXT.__text _SPL2Threshold
+|| __TEXT.__text _SPLogDirectory
+|| __TEXT.__text _SPLogForSPLogCategoryDefault
+|| __TEXT.__text _SPLogForSPLogCategoryFeedback
+|| __TEXT.__text _SPLogForSPLogCategoryIndex
+|| __TEXT.__text _SPLogForSPLogCategoryQuery
+|| __TEXT.__text _SPLogForSPLogCategoryRanking
+|| __TEXT.__text _SPLogForSPLogCategoryTelemetry
+|| __TEXT.__text _SPLogInit
+|| __TEXT.__text _SPLogSetLevel
+|| __TEXT.__text _SPLogSetOutputLevel
+|| __TEXT.__text _SPLogV
+|| __TEXT.__text _SPMaxCountTopHits
+|| __TEXT.__text _SPMaxSectionsBeforeShowMore
+|| __TEXT.__text _SPMaxSectionsBeforeShowMoreWithScopedSearch
+|| __TEXT.__text _SPMaxVisibleResultsCountPerSection
+|| __TEXT.__text _SPMinSectionCountThresholdForShowMore
+|| __TEXT.__text _SPMinTopHitThresholdForBigResult
+|| __TEXT.__text _SPSearchDomainForDisplayIdentifierAndCategory
+|| __TEXT.__text _SPSearchDomainForKey
+|| __TEXT.__text _SPSearchFrameworkPath
+|| __TEXT.__text _SPSetAppUpdateBlock
+|| __TEXT.__text _SPSetExtendedDomains
+|| __TEXT.__text _SPSetInternetDomainsAvailable
+|| __TEXT.__text _SPSetInternetDomainsEnabled
+|| __TEXT.__text _SPSetNumberForPref
+|| __TEXT.__text _SPShowDebugLocalSuggestions
+|| __TEXT.__text _SPShowTopHitSectionHeaderInAsYouTypeScreen
+|| __TEXT.__text _SPSpotlightSupportDirectoryPath
+|| __TEXT.__text _SPStringForDuration
+|| __TEXT.__text _SPSuggestionDetailTextBehavior
+|| __TEXT.__text _SPTimeStringForDate
+|| __TEXT.__text _SPTransactionCreate
+|| __TEXT.__text _SPTransactionDone
+|| __TEXT.__text __SPLog
+__ AggregateDictionary: _ADClientAddValueForScalarKey
+__ ClipServices: _CPSAppClipBundleIdentifierPrefix
+__ ClipServices: _CPSClipsFeatureEnabled
+__ ClipServices: _OBJC_CLASS_$_CPSWebClipStore
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFDictionaryApplyFunction
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetCount
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFDictionaryRemoveValue
+__ CoreFoundation: _CFDictionarySetValue
+__ CoreFoundation: _CFNotificationCenterAddObserver
+__ CoreFoundation: _CFNotificationCenterGetDarwinNotifyCenter
+__ CoreFoundation: _CFNotificationCenterGetLocalCenter
+__ CoreFoundation: _CFNotificationCenterPostNotification
+__ CoreFoundation: _CFPreferencesCopyValue
+__ CoreFoundation: _CFPreferencesGetAppBooleanValue
+__ CoreFoundation: _CFPreferencesGetAppIntegerValue
+__ CoreFoundation: _CFPreferencesSetAppValue
+__ CoreFoundation: _CFPreferencesSynchronize
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCache
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSConstantArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_CLASS_$_NSUserDefaults
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFBooleanFalse
+__ CoreFoundation: _kCFBooleanTrue
+__ CoreFoundation: _kCFNull
+__ CoreFoundation: _kCFPreferencesAnyApplication
+__ CoreFoundation: _kCFPreferencesAnyHost
+__ CoreFoundation: _kCFPreferencesCurrentUser
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFURLNameKey
+__ CoreServices: _LSApplicationsChangedNotificationName
+__ CoreServices: _LSInternalApplicationType
+__ CoreServices: _LSSystemApplicationType
+__ CoreServices: _LSUserApplicationType
+__ CoreServices: _OBJC_CLASS_$_LSApplicationRecord
+__ CoreServices: _OBJC_CLASS_$_LSDatabaseContext
+__ DataMigration: _DMGetPreviousBuildVersion
+__ Foundation: _NSClassFromString
+__ Foundation: _NSHomeDirectory
+__ Foundation: _NSKeyedArchiveRootObjectKey
+__ Foundation: _NSSearchPathForDirectoriesInDomains
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSCharacterSet
+__ Foundation: _OBJC_CLASS_$_NSConstantDoubleNumber
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSDateFormatter
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSProcessInfo
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ ManagedConfiguration: _OBJC_CLASS_$_MCProfileConnection
+__ MobileSpotlightIndex: _icu_ctx_release
+__ MobileSpotlightIndex: _icu_word_matcher_count
+__ MobileSpotlightIndex: _icu_word_matcher_create
+__ MobileSpotlightIndex: _icu_word_matcher_matches
+__ MobileSpotlightIndex: _icu_word_matcher_matches_string
+__ MobileSpotlightIndex: _resolve_transcriptions_for_locale
+__ SearchFoundation: _OBJC_CLASS_$_SFCollectionCardSection
+__ SearchFoundation: _OBJC_CLASS_$_SFCommandEngagementFeedback
+__ SearchFoundation: _OBJC_CLASS_$_SFResultSection
+__ SearchFoundation: _OBJC_CLASS_$_SFRichText
+__ SearchFoundation: _OBJC_CLASS_$_SFSearchSuggestion
+__ SearchFoundation: _OBJC_CLASS_$_SFText
+__ SearchFoundation: _OBJC_CLASS_$_SFVisibleResultsFeedback
+__ SpotlightServices: _OBJC_CLASS_$_SFMutableResultSection
+__ SpotlightServices: _OBJC_CLASS_$_SFSearchResult_SpotlightExtras
+__ SpotlightServices: _OBJC_CLASS_$_SPSearchEntity
+__ SpotlightServices: _OBJC_CLASS_$_SPSearchQueryContext
+__ SpotlightServices: _OBJC_CLASS_$_SPSearchSuggestionResult
+__ SpotlightServices: _OBJC_CLASS_$_SSRecentResultsManager
+__ SpotlightServices: _OBJC_CLASS_$_SSTrialManager
+__ SpotlightServices: _OBJC_METACLASS_$_SFSearchResult_SpotlightExtras
+__ SpringBoardServices: _SBSCopyDisplayIdentifiers
+__ SpringBoardServices: _SBSRegisterDisplayIdentifiersChangedBlock
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __dispatch_source_type_data_or
+__ libSystem.B.dylib: __os_activity_create
+__ libSystem.B.dylib: __os_activity_current
+__ libSystem.B.dylib: __os_feature_enabled_impl
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_error_connection_interrupted
+__ libSystem.B.dylib: __xpc_error_connection_invalid
+__ libSystem.B.dylib: __xpc_error_key_description
+__ libSystem.B.dylib: __xpc_type_array
+__ libSystem.B.dylib: __xpc_type_bool
+__ libSystem.B.dylib: __xpc_type_connection
+__ libSystem.B.dylib: __xpc_type_data
+__ libSystem.B.dylib: __xpc_type_date
+__ libSystem.B.dylib: __xpc_type_dictionary
+__ libSystem.B.dylib: __xpc_type_double
+__ libSystem.B.dylib: __xpc_type_error
+__ libSystem.B.dylib: __xpc_type_fd
+__ libSystem.B.dylib: __xpc_type_int64
+__ libSystem.B.dylib: __xpc_type_null
+__ libSystem.B.dylib: __xpc_type_shmem
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: __xpc_type_uint64
+__ libSystem.B.dylib: __xpc_type_uuid
+__ libSystem.B.dylib: _bzero
+__ libSystem.B.dylib: _dispatch_activate
+__ libSystem.B.dylib: _dispatch_after
+__ libSystem.B.dylib: _dispatch_apply
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_block_create
+__ libSystem.B.dylib: _dispatch_block_create_with_qos_class
+__ libSystem.B.dylib: _dispatch_get_specific
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_group_wait
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_attr_make_initially_inactive
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_autorelease_frequency
+__ libSystem.B.dylib: _dispatch_queue_attr_make_with_qos_class
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _dispatch_queue_set_specific
+__ libSystem.B.dylib: _dispatch_resume
+__ libSystem.B.dylib: _dispatch_source_create
+__ libSystem.B.dylib: _dispatch_source_get_data
+__ libSystem.B.dylib: _dispatch_source_merge_data
+__ libSystem.B.dylib: _dispatch_source_set_event_handler
+__ libSystem.B.dylib: _dispatch_suspend
+__ libSystem.B.dylib: _dispatch_sync
+__ libSystem.B.dylib: _dispatch_time
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _kdebug_trace
+__ libSystem.B.dylib: _mach_absolute_time
+__ libSystem.B.dylib: _os_activity_apply
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_transaction_copy_description
+__ libSystem.B.dylib: _os_transaction_create
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _pthread_cond_broadcast
+__ libSystem.B.dylib: _pthread_cond_wait
+__ libSystem.B.dylib: _pthread_mutex_lock
+__ libSystem.B.dylib: _pthread_mutex_unlock
+__ libSystem.B.dylib: _qos_class_self
+__ libSystem.B.dylib: _xpc_array_append_value
+__ libSystem.B.dylib: _xpc_array_create
+__ libSystem.B.dylib: _xpc_array_get_count
+__ libSystem.B.dylib: _xpc_array_get_data
+__ libSystem.B.dylib: _xpc_array_set_value
+__ libSystem.B.dylib: _xpc_connection_activate
+__ libSystem.B.dylib: _xpc_connection_cancel
+__ libSystem.B.dylib: _xpc_connection_copy_entitlement_value
+__ libSystem.B.dylib: _xpc_connection_create_mach_service
+__ libSystem.B.dylib: _xpc_connection_get_name
+__ libSystem.B.dylib: _xpc_connection_resume
+__ libSystem.B.dylib: _xpc_connection_send_barrier
+__ libSystem.B.dylib: _xpc_connection_send_message
+__ libSystem.B.dylib: _xpc_connection_send_message_with_reply
+__ libSystem.B.dylib: _xpc_connection_set_event_handler
+__ libSystem.B.dylib: _xpc_connection_set_target_queue
+__ libSystem.B.dylib: _xpc_data_create
+__ libSystem.B.dylib: _xpc_data_get_bytes_ptr
+__ libSystem.B.dylib: _xpc_data_get_length
+__ libSystem.B.dylib: _xpc_dictionary_create
+__ libSystem.B.dylib: _xpc_dictionary_create_reply
+__ libSystem.B.dylib: _xpc_dictionary_get_data
+__ libSystem.B.dylib: _xpc_dictionary_get_remote_connection
+__ libSystem.B.dylib: _xpc_dictionary_get_string
+__ libSystem.B.dylib: _xpc_dictionary_get_value
+__ libSystem.B.dylib: _xpc_dictionary_set_data
+__ libSystem.B.dylib: _xpc_get_type
+__ libSystem.B.dylib: _xpc_null_create
+__ libSystem.B.dylib: _xpc_string_create
+__ libSystem.B.dylib: _xpc_string_get_string_ptr
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyStruct
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getProperty
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_atomic
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+SFSearchResult_Compatibility : SFSearchResult_SpotlightExtras
+ @property  NSString *resultIdentifier
+ @property  NSString *externalIdentifier
+ @property  NSString *compatibilityTitle
+
+  // instance methods
+  -[SFSearchResult_Compatibility setUniqueIdentifier:]
+  -[SFSearchResult_Compatibility copy]
+  -[SFSearchResult_Compatibility externalIdentifier]
+  -[SFSearchResult_Compatibility classForKeyedArchiver]
+  -[SFSearchResult_Compatibility classForCoder]
+  -[SFSearchResult_Compatibility copyWithZone:]
+  -[SFSearchResult_Compatibility uniqueIdentifier]
+  -[SFSearchResult_Compatibility writeTo:]
+  -[SFSearchResult_Compatibility setExternalIdentifier:]
+  -[SFSearchResult_Compatibility resultIdentifier]
+  -[SFSearchResult_Compatibility setResultIdentifier:]
+  -[SFSearchResult_Compatibility isQuickGlance]
+  -[SFSearchResult_Compatibility setCompatibilityTitle:]
+  -[SFSearchResult_Compatibility compatibilityTitle]
+  -[SFSearchResult_Compatibility setSimpleTitle:]
+  -[SFSearchResult_Compatibility simpleTitle]
+  -[SFSearchResult_Compatibility section_header]
+
+
+SPCoreSpotlightResult : SFSearchResult_Compatibility <NSCopying>
+ @property  NSString *containerIdentifier
+ @property  NSString *relatedUniqueIdentifier
+ @property  NSString *accountIdentifier
+ @property 	bug here! ->  T buddyScore
+ @property  NSString *itemIdentifier
+ @property  NSDate *interestingDate
+ @property  BOOL completed
+ @property  NSString *domainIdentifier
+ @property  ^q incomingCount
+ @property  ^q outgoingCount
+ @property  NSArray *compatibilityDescriptions
+ @property  NSString *relatedBundleID
+ @property  NSString *mailConversationIdentifier
+ @property  NSString *stringForDedupe
+ @property  BOOL bestInContainer
+ @property  BOOL hasAssociatedUserActivity
+ @property  NSArray *launchDates
+ @property  NSDate *contentCreationDate
+ @property  NSString *bundleID
+ @property  int title_maxlines
+
+  // instance methods
+  -[SPCoreSpotlightResult domainIdentifier]
+  -[SPCoreSpotlightResult setAccountIdentifier:]
+  -[SPCoreSpotlightResult containerIdentifier]
+  -[SPCoreSpotlightResult setBundleID:]
+  -[SPCoreSpotlightResult setCompleted:]
+  -[SPCoreSpotlightResult .cxx_destruct]
+  -[SPCoreSpotlightResult completed]
+  -[SPCoreSpotlightResult setContainerIdentifier:]
+  -[SPCoreSpotlightResult classForCoder]
+  -[SPCoreSpotlightResult itemIdentifier]
+  -[SPCoreSpotlightResult accountIdentifier]
+  -[SPCoreSpotlightResult setItemIdentifier:]
+  -[SPCoreSpotlightResult copyWithZone:]
+  -[SPCoreSpotlightResult bundleID]
+  -[SPCoreSpotlightResult init]
+  -[SPCoreSpotlightResult hasDetail]
+  -[SPCoreSpotlightResult setContentCreationDate:]
+  -[SPCoreSpotlightResult setDomainIdentifier:]
+  -[SPCoreSpotlightResult setRelatedUniqueIdentifier:]
+  -[SPCoreSpotlightResult relatedUniqueIdentifier]
+  -[SPCoreSpotlightResult contentCreationDate]
+  -[SPCoreSpotlightResult interestingDate]
+  -[SPCoreSpotlightResult mailConversationIdentifier]
+  -[SPCoreSpotlightResult setMailConversationIdentifier:]
+  -[SPCoreSpotlightResult setIncomingCount:]
+  -[SPCoreSpotlightResult incomingCount]
+  -[SPCoreSpotlightResult setCompatibilityDescriptions:]
+  -[SPCoreSpotlightResult compatibilityDescriptions]
+  -[SPCoreSpotlightResult setTitle_maxlines:]
+  -[SPCoreSpotlightResult title_maxlines]
+  -[SPCoreSpotlightResult buddyScore]
+  -[SPCoreSpotlightResult setBuddyScore:]
+  -[SPCoreSpotlightResult setInterestingDate:]
+  -[SPCoreSpotlightResult outgoingCount]
+  -[SPCoreSpotlightResult setOutgoingCount:]
+  -[SPCoreSpotlightResult relatedBundleID]
+  -[SPCoreSpotlightResult setRelatedBundleID:]
+  -[SPCoreSpotlightResult stringForDedupe]
+  -[SPCoreSpotlightResult setStringForDedupe:]
+  -[SPCoreSpotlightResult bestInContainer]
+  -[SPCoreSpotlightResult setBestInContainer:]
+  -[SPCoreSpotlightResult hasAssociatedUserActivity]
+  -[SPCoreSpotlightResult setHasAssociatedUserActivity:]
+  -[SPCoreSpotlightResult launchDates]
+  -[SPCoreSpotlightResult setLaunchDates:]
+
+
+SPApplication : NSObject <NSSecureCoding>
+ @property  NSString *displayNameInternal
+ @property  NSString *displayIdentifier
+ @property  NSString *displayName
+ @property  NSString *longDisplayName
+ @property  NSMutableArray *keywords
+ @property  NSURL *URL
+ @property  NSString *shortVersion
+ @property  BOOL displayNameLoaded
+ @property  NSString *appBundleIdentifier
+ @property  long long webClipType
+ @property  BOOL isWebClip
+ @property  BOOL isAppClip
+ @property  NSString *utiType
+ @property  NSString *subtitle
+
+  // class methods
+  +[SPApplication supportsSecureCoding]
+
+  // instance methods
+  -[SPApplication appBundleIdentifier]
+  -[SPApplication keywords]
+  -[SPApplication subtitle]
+  -[SPApplication setSubtitle:]
+  -[SPApplication setKeywords:]
+  -[SPApplication encodeWithCoder:]
+  -[SPApplication setURL:]
+  -[SPApplication .cxx_destruct]
+  -[SPApplication setDisplayName:]
+  -[SPApplication utiType]
+  -[SPApplication isAppClip]
+  -[SPApplication displayName]
+  -[SPApplication URL]
+  -[SPApplication setAppBundleIdentifier:]
+  -[SPApplication isEqual:]
+  -[SPApplication initWithCoder:]
+  -[SPApplication displayIdentifier]
+  -[SPApplication setDisplayIdentifier:]
+  -[SPApplication shortVersion]
+  -[SPApplication setShortVersion:]
+  -[SPApplication isWebClip]
+  -[SPApplication webClipType]
+  -[SPApplication displayNameLoaded]
+  -[SPApplication setLongDisplayName:]
+  -[SPApplication longDisplayName]
+  -[SPApplication setWebClipType:]
+  -[SPApplication displayNameInternal]
+  -[SPApplication setDisplayNameInternal:]
+  -[SPApplication copySearchFoundationResult:]
+
+
+SPResultSet : NSObject <NSSecureCoding>
+ @property  NSArray *resultSections
+ @property  NSArray *stableSections
+
+  // class methods
+  +[SPResultSet supportsSecureCoding]
+  +[SPResultSet initialize]
+
+  // instance methods
+  -[SPResultSet encodeWithCoder:]
+  -[SPResultSet .cxx_destruct]
+  -[SPResultSet initWithSections:]
+  -[SPResultSet resultSections]
+  -[SPResultSet initWithCoder:]
+  -[SPResultSet initWithSections:stableSections:]
+  -[SPResultSet stableSections]
+
+
+SPSearchQuery : NSObject <NSCopying>
+ @property  SPSearchQueryContext *queryContext
+ @property  BOOL cancelled
+ @property  BOOL grouped
+ @property  long long maxCount
+ @property  NSArray *disabledBundles
+ @property  NSArray *disabledApps
+ @property  BOOL noTokenize
+ @property  BOOL infinitePatience
+ @property  BOOL isWideScreen
+ @property  unsigned long queryIdent
+ @property  BOOL promoteLocalResults
+ @property  BOOL promoteParsecResults
+ @property  BOOL internalDebug
+ @property  BOOL internalValidation
+ @property  long long contentFilters
+ @property  double creationTime
+ @property  double cancellationTime
+ @property  unsigned long creationStamp
+ @property  double currentTime
+
+  // instance methods
+  -[SPSearchQuery setMaxCount:]
+  -[SPSearchQuery maxCount]
+  -[SPSearchQuery setGrouped:]
+  -[SPSearchQuery currentTime]
+  -[SPSearchQuery isWideScreen]
+  -[SPSearchQuery setDisabledApps:]
+  -[SPSearchQuery hasMarkedText]
+  -[SPSearchQuery cancelled]
+  -[SPSearchQuery execute:]
+  -[SPSearchQuery setIsWideScreen:]
+  -[SPSearchQuery initWithQuery:domains:]
+  -[SPSearchQuery promoteLocalResults]
+  -[SPSearchQuery queryContext]
+  -[SPSearchQuery creationTime]
+  -[SPSearchQuery initWithSearchQueryContext:]
+  -[SPSearchQuery contentFilters]
+  -[SPSearchQuery .cxx_destruct]
+  -[SPSearchQuery internalDebug]
+  -[SPSearchQuery setNoTokenize:]
+  -[SPSearchQuery disabledBundles]
+  -[SPSearchQuery queryIdent]
+  -[SPSearchQuery setPromoteParsecResults:]
+  -[SPSearchQuery cancellationTime]
+  -[SPSearchQuery promoteParsecResults]
+  -[SPSearchQuery setContentFilters:]
+  -[SPSearchQuery setInternalValidation:]
+  -[SPSearchQuery setDisabledBundles:]
+  -[SPSearchQuery copyWithZone:]
+  -[SPSearchQuery setPromoteLocalResults:]
+  -[SPSearchQuery setInternalDebug:]
+  -[SPSearchQuery grouped]
+  -[SPSearchQuery disabledApps]
+  -[SPSearchQuery creationStamp]
+  -[SPSearchQuery noTokenize]
+  -[SPSearchQuery internalValidation]
+  -[SPSearchQuery setQueryIdent:]
+  -[SPSearchQuery infinitePatience]
+  -[SPSearchQuery isEqual:]
+  -[SPSearchQuery cancel]
+  -[SPSearchQuery setInfinitePatience:]
+
+
+SPDaemonConnection : NSObject
+ @property  NSString *daemonName
+ @property  ^{__CFDictionary=} runningQueries
+
+  // class methods
+  +[SPDaemonConnection sharedBackgroundConnection]
+  +[SPDaemonConnection sharedConnection]
+
+  // instance methods
+  -[SPDaemonConnection preheat]
+  -[SPDaemonConnection connectionQueue]
+  -[SPDaemonConnection activate]
+  -[SPDaemonConnection _sendMessage:object:info:reply:]
+  -[SPDaemonConnection _connection]
+  -[SPDaemonConnection deactivate]
+  -[SPDaemonConnection sendSFFeedback:type:queryId:]
+  -[SPDaemonConnection startQuery:queue:delegate:]
+  -[SPDaemonConnection dealloc]
+  -[SPDaemonConnection .cxx_destruct]
+  -[SPDaemonConnection barrierOnXPC:]
+  -[SPDaemonConnection _sendFeedbackMessage:object:info:reply:]
+  -[SPDaemonConnection runningQueries]
+  -[SPDaemonConnection retrieveFirstTimeExperienceTextWithReply:]
+  -[SPDaemonConnection requestParsecParametersWithReply:]
+  -[SPDaemonConnection clearInput:]
+  -[SPDaemonConnection initWithDaemonName:qos:]
+  -[SPDaemonConnection cancelQuery:]
+  -[SPDaemonConnection sendMessageForToken:]
+  -[SPDaemonConnection sendApps:]
+  -[SPDaemonConnection daemonName]
+  -[SPDaemonConnection _resetConnection]
+  -[SPDaemonConnection setDaemonName:]
+  -[SPDaemonConnection init]
+  -[SPDaemonConnection activate:]
+  -[SPDaemonConnection setRunningQueries:]
+
+
+SPDaemonQueryToken : NSObject <NSCopying>
+ @property  <SPDaemonQueryDelegate> *delegate
+ @property  unsigned int queryID
+ @property  SPSearchQuery *query
+ @property  NSObject<OS_dispatch_queue> *queue
+ @property  BOOL queryFinished
+ @property  NSString *fbq
+ @property  NSString *web_fbq
+ @property  BOOL gotQueryComplete
+ @property  BOOL didReissue
+ @property  BOOL isLocalQuery
+
+  // instance methods
+  -[SPDaemonQueryToken query]
+  -[SPDaemonQueryToken copy]
+  -[SPDaemonQueryToken delegate]
+  -[SPDaemonQueryToken queryID]
+  -[SPDaemonQueryToken .cxx_destruct]
+  -[SPDaemonQueryToken handleMessage:]
+  -[SPDaemonQueryToken copyWithZone:]
+  -[SPDaemonQueryToken queryDidComplete]
+  -[SPDaemonQueryToken queue]
+  -[SPDaemonQueryToken fbq]
+  -[SPDaemonQueryToken handleLocalQueryWithResultSet:]
+  -[SPDaemonQueryToken initWithQuery:queue:delegate:]
+  -[SPDaemonQueryToken queryFinished]
+  -[SPDaemonQueryToken setQueryFinished:]
+  -[SPDaemonQueryToken web_fbq]
+  -[SPDaemonQueryToken gotQueryComplete]
+  -[SPDaemonQueryToken didReissue]
+  -[SPDaemonQueryToken setDidReissue:]
+  -[SPDaemonQueryToken isLocalQuery]
+  -[SPDaemonQueryToken setIsLocalQuery:]
+
+
+SPDomainManager : NSObject
+  // class methods
+  +[SPDomainManager initialize]
+  +[SPDomainManager defaultManager]
+
+  // instance methods
+  -[SPDomainManager siriSuggestionsEnabled]
+  -[SPDomainManager _removeAllDomainsForDisplayIdentifier:]
+  -[SPDomainManager getBundleIdForDomainNumber:]
+  -[SPDomainManager registerApplication:withCategories:]
+  -[SPDomainManager applicationWasUninstalled:]
+  -[SPDomainManager notifyIndexer]
+
+
+SPMLLogging : NSObject
+  // class methods
+  +[SPMLLogging dateFormatter]
+  +[SPMLLogging submitttedSpotlightReportsError:]
+  +[SPMLLogging submittedLogsURL]
+  +[SPMLLogging logURLForCurrentTime]
+  +[SPMLLogging candidateLogsURL]
+
+
+SPMatcher : NSObject
+  // class methods
+  +[SPMatcher transcriptionForString:withLanguage:]
+
+  // instance methods
+  -[SPMatcher matches:]
+  -[SPMatcher dealloc]
+  -[SPMatcher wordCount]
+  -[SPMatcher matchesUTF8String:]
+  -[SPMatcher initWithSearchString:andLocale:andOptions:]
+  -[SPMatcher matches:outMatchBits:]
+  -[SPMatcher matchesUTF8String:outMatchBits:]
+
+
+SPXPCConnection : NSObject
+ @property  NSString *serviceName
+ @property  NSString *bundleID
+ @property  @? messageHandler
+ @property  @? disconnectHandler
+ @property  id context
+
+  // instance methods
+  -[SPXPCConnection sendMessage:]
+  -[SPXPCConnection eventQueue]
+  -[SPXPCConnection messageHandler]
+  -[SPXPCConnection setMessageHandler:]
+  -[SPXPCConnection dealloc]
+  -[SPXPCConnection _handleXPCError:]
+  -[SPXPCConnection serviceName]
+  -[SPXPCConnection .cxx_destruct]
+  -[SPXPCConnection initWithServiceName:onQueue:]
+  -[SPXPCConnection barrier:]
+  -[SPXPCConnection setContext:]
+  -[SPXPCConnection shutdown]
+  -[SPXPCConnection bundleID]
+  -[SPXPCConnection sendMessage:withReply:]
+  -[SPXPCConnection context]
+  -[SPXPCConnection disconnectHandler]
+  -[SPXPCConnection setDisconnectHandler:]
+  -[SPXPCConnection _sendMessage:handler:]
+  -[SPXPCConnection _handleXPCMessage:]
+  -[SPXPCConnection _setEventHandlerOnConnection:]
+  -[SPXPCConnection initWithXPCConnection:qos:]
+  -[SPXPCConnection eventQueueWithQOS:]
+
+
+SPXPCServer : NSObject
+ @property  @? disconnectHandler
+ @property  @? defaultMessageHandler
+ @property  @? firstConnectionBlock
+
+  // instance methods
+  -[SPXPCServer startListening]
+  -[SPXPCServer dealloc]
+  -[SPXPCServer .cxx_destruct]
+  -[SPXPCServer shutdown]
+  -[SPXPCServer disconnectHandler]
+  -[SPXPCServer setDisconnectHandler:]
+  -[SPXPCServer _highAvailabilityQueue]
+  -[SPXPCServer _handlerForMessageName:]
+  -[SPXPCServer initListenerWithServiceName:]
+  -[SPXPCServer setHandlerForMessageName:handler:]
+  -[SPXPCServer defaultMessageHandler]
+  -[SPXPCServer setDefaultMessageHandler:]
+  -[SPXPCServer _handleNewConnection:qos:]
+  -[SPXPCServer initListenerWithServiceName:onQueue:qos:]
+  -[SPXPCServer firstConnectionBlock]
+  -[SPXPCServer setFirstConnectionBlock:]
+
+
+SPXPCMessage : NSObject
+ @property  NSString *name
+ @property  NSObject<OS_xpc_object> *feedbackData
+ @property  NSDictionary *info
+
+  // instance methods
+  -[SPXPCMessage needsReply]
+  -[SPXPCMessage sendReply:]
+  -[SPXPCMessage .cxx_destruct]
+  -[SPXPCMessage setInfo:]
+  -[SPXPCMessage setObject:atIndex:]
+  -[SPXPCMessage initWithName:]
+  -[SPXPCMessage info]
+  -[SPXPCMessage name]
+  -[SPXPCMessage init]
+  -[SPXPCMessage setRootObject:]
+  -[SPXPCMessage _initWithXPCMessage:onConnection:]
+  -[SPXPCMessage _createXPCMessage]
+  -[SPXPCMessage initWithName:batchSize:]
+  -[SPXPCMessage rootObjectOfClasses:]
+  -[SPXPCMessage objectsOfClasses:atIndex:]
+  -[SPXPCMessage rootObjectOfClassesForFeedback:]
+  -[SPXPCMessage setRootObjectForFeedback:]
+  -[SPXPCMessage feedbackData]
+
+
+SPFeedbackManager : NSObject <SFFeedbackListener>
+ @property  NSObject<OS_dispatch_queue> *feedbackQueue
+ @property  NSUserDefaults *defaultsCenter
+ @property  BOOL needsToDisplayFirstTimeView
+ @property  BOOL isParsecEnabled
+ @property  PARSession *parsecFeedbackListener
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[SPFeedbackManager flushFeedbackWithCompletion:]
+  +[SPFeedbackManager sharedManager]
+  +[SPFeedbackManager bumpPriorityOnQueue:withCompletion:]
+
+  // instance methods
+  -[SPFeedbackManager didEngageCardSection:]
+  -[SPFeedbackManager resultsDidBecomeVisible:]
+  -[SPFeedbackManager cardViewDidDisappear:]
+  -[SPFeedbackManager searchViewDidDisappear:]
+  -[SPFeedbackManager didReceiveResultsAfterTimeout:]
+  -[SPFeedbackManager didReportUserResponseFeedback:]
+  -[SPFeedbackManager didEngageSuggestion:]
+  -[SPFeedbackManager cardViewDidAppear:]
+  -[SPFeedbackManager suggestionsDidBecomeVisible:]
+  -[SPFeedbackManager sectionHeaderDidBecomeVisible:]
+  -[SPFeedbackManager didErrorOccur:]
+  -[SPFeedbackManager searchViewDidAppear:]
+  -[SPFeedbackManager didRankSections:]
+  -[SPFeedbackManager didGradeResultRelevancy:]
+  -[SPFeedbackManager didEngageSection:]
+  -[SPFeedbackManager didClearInput:]
+  -[SPFeedbackManager setFeedbackQueue:]
+  -[SPFeedbackManager didAppendLateSections:]
+  -[SPFeedbackManager didPerformCommand:]
+  -[SPFeedbackManager sendCustomFeedback:]
+  -[SPFeedbackManager feedbackQueue]
+  -[SPFeedbackManager didEngageResult:]
+  -[SPFeedbackManager didStartSearch:]
+  -[SPFeedbackManager didEndSearch:]
+  -[SPFeedbackManager reportFeedback:queryId:]
+  -[SPFeedbackManager setDefaultsCenter:]
+  -[SPFeedbackManager defaultsCenter]
+  -[SPFeedbackManager .cxx_destruct]
+  -[SPFeedbackManager setIsParsecEnabled:]
+  -[SPFeedbackManager observeValueForKeyPath:ofObject:change:context:]
+  -[SPFeedbackManager _sendFeedback:type:queryId:]
+  -[SPFeedbackManager isParsecEnabled]
+  -[SPFeedbackManager setParsecFeedbackListener:]
+  -[SPFeedbackManager _sendFeedback:type:]
+  -[SPFeedbackManager isParsecFeedbackEnabled]
+  -[SPFeedbackManager updateParsecEnabled]
+  -[SPFeedbackManager updateNeedsToDisplayFirstTimeView]
+  -[SPFeedbackManager init]
+  -[SPFeedbackManager needsToDisplayFirstTimeView]
+  -[SPFeedbackManager parsecFeedbackListener]
+  -[SPFeedbackManager setNeedsToDisplayFirstTimeView:]
+
+
+(Feedback)
+	// instance methods
+	-[(Feedback) sp_copyForFeedback]
+
+01 00 0200 /System/Library/PrivateFrameworks/ClipServices.framework/ClipServices: CPSWebClipStore 
+01 00 0300 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSApplicationRecord 
+01 00 0300 /System/Library/Frameworks/CoreServices.framework/CoreServices: LSDatabaseContext 
+01 00 0500 /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration: MCProfileConnection 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCache 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSCharacterSet 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSConstantArray 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantDoubleNumber 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSDateFormatter 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0b00 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSProcessInfo 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0a00 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0d00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSUserDefaults 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFCollectionCardSection 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFCommandEngagementFeedback 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SFMutableResultSection 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFResultSection 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFRichText 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SFSearchResult_SpotlightExtras 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFSearchSuggestion 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFText 
+01 00 0700 /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation: SFVisibleResultsFeedback 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SPSearchEntity 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SPSearchQueryContext 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SPSearchSuggestionResult 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SSRecentResultsManager 
+01 00 0800 /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices: SSTrialManager 

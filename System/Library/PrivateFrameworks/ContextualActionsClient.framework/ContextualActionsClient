@@ -1,0 +1,788 @@
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXBiomeContextualActionsFeedbackStream
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualAction
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionContent
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionParameter
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionsClient
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionsFeedbackEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionsPredictionElement
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionsPredictor
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXContextualActionsPredictorDriver
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBContextualAction
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBContextualActionContent
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBContextualActionParameter
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBContextualActionsFeedbackEvent
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBPredictionContext
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPBSuggestion
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXPredictionContext
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXShortcutsSessionSummary
+|| __DATA.__objc_data _OBJC_CLASS_$_CAXSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXBiomeContextualActionsFeedbackStream
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionContent
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionParameter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionsClient
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionsFeedbackEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionsPredictionElement
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionsPredictor
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXContextualActionsPredictorDriver
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBContextualAction
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBContextualActionContent
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBContextualActionParameter
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBContextualActionsFeedbackEvent
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBPredictionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPBSuggestion
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXPredictionContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXShortcutsSessionSummary
+|| __DATA.__objc_data _OBJC_METACLASS_$_CAXSuggestion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualAction._actionIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualAction._parameters
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionContent._contentMetadata
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionContent._contentType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionParameter._parameterMetadata
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionParameter._parameterType
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionsFeedbackEvent._deviceContext
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionsFeedbackEvent._selectedAction
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionsFeedbackEvent._sessionIdentifier
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBContextualActionsFeedbackEvent._suggestion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBPredictionContext._contents
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBPredictionContext._previousActions
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBPredictionContext._searchTerm
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBPredictionContext._sourceAppName
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBPredictionContext._suggestionDate
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBSuggestion._modelVersion
+|| __DATA.__objc_ivar _OBJC_IVAR_$_CAXPBSuggestion._suggestedActions
+|| __DATA_CONST.__const _kCAXContextualActionsXPCInterfaceMachServiceName
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CAXContextualActionsSuggestionReceiver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_CAXSuggestionProvider
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CAXContextualActionsSuggestionReceiver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_CAXSuggestionProvider
+|| __TEXT.__const _ContextualActionsClientVersionNumber
+|| __TEXT.__const _ContextualActionsClientVersionString
+|| __TEXT.__text _CAXContextualActionsXPCInterface
+|| __TEXT.__text _CAXPBContextualActionContentReadFrom
+|| __TEXT.__text _CAXPBContextualActionParameterReadFrom
+|| __TEXT.__text _CAXPBContextualActionReadFrom
+|| __TEXT.__text _CAXPBContextualActionsFeedbackEventReadFrom
+|| __TEXT.__text _CAXPBPredictionContextReadFrom
+|| __TEXT.__text _CAXPBSuggestionReadFrom
+__ AppPredictionFoundation: _OBJC_CLASS_$_ATXPaths
+__ BiomeStorage: _OBJC_CLASS_$_BMStoreConfig
+__ BiomeStreams: _OBJC_CLASS_$_BMStoreStream
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSOrderedSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ Foundation: _NSClassFromString
+__ Foundation: _NSLocalizedDescriptionKey
+__ Foundation: _NSLog
+__ Foundation: _NSStringFromClass
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSJSONSerialization
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSXPCConnection
+__ Foundation: _OBJC_CLASS_$_NSXPCInterface
+__ Foundation: _OBJC_CLASS_$_NSXPCListener
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXContextualActionSuggestionRequest
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestion
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionClientModel
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionClientModelSpecification
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionConsumer
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionExecutableSpecification
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionLayoutConfig
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionScoreSpecification
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXProactiveSuggestionUISpecification
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXSuggestionLayout
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXSuggestionRequestResponse
+__ ProactiveSuggestionClientModel: _OBJC_CLASS_$_ATXUniversalBlendingFeedbackWriter
+__ ProactiveSupport: _OBJC_CLASS_$__PASSecureCodingHelper
+__ ProtocolBuffer: _OBJC_CLASS_$_PBCodable
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._bytes
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._error
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._length
+__ ProtocolBuffer: _OBJC_IVAR_$_PBDataReader._pos
+__ ProtocolBuffer: _OBJC_METACLASS_$_PBCodable
+__ ProtocolBuffer: _PBDataWriterWriteDataField
+__ ProtocolBuffer: _PBDataWriterWriteDoubleField
+__ ProtocolBuffer: _PBDataWriterWriteStringField
+__ ProtocolBuffer: _PBDataWriterWriteSubmessage
+__ ProtocolBuffer: _PBReaderPlaceMark
+__ ProtocolBuffer: _PBReaderReadData
+__ ProtocolBuffer: _PBReaderReadString
+__ ProtocolBuffer: _PBReaderRecallMark
+__ ProtocolBuffer: _PBReaderSkipValueWithTag
+__ SoftLinking: __sl_dlopen
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___assert_rtn
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _abort_report_np
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _fmod
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x6
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+CAXBiomeContextualActionsFeedbackStream : NSObject <BMStream, BMSourceStream>
+ @property  NSString *identifier
+
+  // instance methods
+  -[CAXBiomeContextualActionsFeedbackStream source]
+  -[CAXBiomeContextualActionsFeedbackStream identifier]
+  -[CAXBiomeContextualActionsFeedbackStream initWithStoreConfig:]
+  -[CAXBiomeContextualActionsFeedbackStream publisherFromStartTime:]
+  -[CAXBiomeContextualActionsFeedbackStream .cxx_destruct]
+  -[CAXBiomeContextualActionsFeedbackStream init]
+
+
+CAXPBPredictionContext : PBCodable <NSCopying>
+ @property  double suggestionDate
+ @property  BOOL hasSourceAppName
+ @property  NSString *sourceAppName
+ @property  NSMutableArray *contents
+ @property  NSMutableArray *previousActions
+ @property  BOOL hasSearchTerm
+ @property  NSString *searchTerm
+
+  // class methods
+  +[CAXPBPredictionContext contentsType]
+  +[CAXPBPredictionContext previousActionsType]
+
+  // instance methods
+  -[CAXPBPredictionContext searchTerm]
+  -[CAXPBPredictionContext copyTo:]
+  -[CAXPBPredictionContext setSearchTerm:]
+  -[CAXPBPredictionContext contents]
+  -[CAXPBPredictionContext .cxx_destruct]
+  -[CAXPBPredictionContext setContents:]
+  -[CAXPBPredictionContext mergeFrom:]
+  -[CAXPBPredictionContext suggestionDate]
+  -[CAXPBPredictionContext dictionaryRepresentation]
+  -[CAXPBPredictionContext copyWithZone:]
+  -[CAXPBPredictionContext clearContents]
+  -[CAXPBPredictionContext readFrom:]
+  -[CAXPBPredictionContext writeTo:]
+  -[CAXPBPredictionContext setSuggestionDate:]
+  -[CAXPBPredictionContext isEqual:]
+  -[CAXPBPredictionContext contentsCount]
+  -[CAXPBPredictionContext hasSearchTerm]
+  -[CAXPBPredictionContext addContents:]
+  -[CAXPBPredictionContext contentsAtIndex:]
+  -[CAXPBPredictionContext hasSourceAppName]
+  -[CAXPBPredictionContext clearPreviousActions]
+  -[CAXPBPredictionContext addPreviousActions:]
+  -[CAXPBPredictionContext previousActionsCount]
+  -[CAXPBPredictionContext previousActionsAtIndex:]
+  -[CAXPBPredictionContext sourceAppName]
+  -[CAXPBPredictionContext setSourceAppName:]
+  -[CAXPBPredictionContext previousActions]
+  -[CAXPBPredictionContext setPreviousActions:]
+
+
+CAXContextualActionsFeedbackEvent : NSObject <BMStoreData, ATXProtoBufWrapper, NSSecureCoding>
+ @property  CAXContextualAction *selectedAction
+ @property  CAXSuggestion *suggestion
+ @property  CAXPredictionContext *deviceContext
+ @property  NSString *sessionIdentifier
+ @property  unsigned int dataVersion
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CAXContextualActionsFeedbackEvent supportsSecureCoding]
+  +[CAXContextualActionsFeedbackEvent eventWithData:dataVersion:]
+
+  // instance methods
+  -[CAXContextualActionsFeedbackEvent suggestion]
+  -[CAXContextualActionsFeedbackEvent setSessionIdentifier:]
+  -[CAXContextualActionsFeedbackEvent sessionIdentifier]
+  -[CAXContextualActionsFeedbackEvent setSuggestion:]
+  -[CAXContextualActionsFeedbackEvent deviceContext]
+  -[CAXContextualActionsFeedbackEvent encodeWithCoder:]
+  -[CAXContextualActionsFeedbackEvent encodeAsProto]
+  -[CAXContextualActionsFeedbackEvent setDeviceContext:]
+  -[CAXContextualActionsFeedbackEvent json]
+  -[CAXContextualActionsFeedbackEvent setSelectedAction:]
+  -[CAXContextualActionsFeedbackEvent .cxx_destruct]
+  -[CAXContextualActionsFeedbackEvent initWithProto:]
+  -[CAXContextualActionsFeedbackEvent selectedAction]
+  -[CAXContextualActionsFeedbackEvent checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXContextualActionsFeedbackEvent proto]
+  -[CAXContextualActionsFeedbackEvent serialize]
+  -[CAXContextualActionsFeedbackEvent initWithProtoData:]
+  -[CAXContextualActionsFeedbackEvent jsonRawData]
+  -[CAXContextualActionsFeedbackEvent dataVersion]
+  -[CAXContextualActionsFeedbackEvent initWithCoder:]
+  -[CAXContextualActionsFeedbackEvent initWithSelectedAction:suggestion:deviceContext:sessionIdentifier:]
+
+
+CAXPBContextualAction : PBCodable <NSCopying>
+ @property  NSString *actionIdentifier
+ @property  NSMutableArray *parameters
+
+  // class methods
+  +[CAXPBContextualAction parametersType]
+
+  // instance methods
+  -[CAXPBContextualAction parameters]
+  -[CAXPBContextualAction copyTo:]
+  -[CAXPBContextualAction .cxx_destruct]
+  -[CAXPBContextualAction mergeFrom:]
+  -[CAXPBContextualAction setParameters:]
+  -[CAXPBContextualAction dictionaryRepresentation]
+  -[CAXPBContextualAction copyWithZone:]
+  -[CAXPBContextualAction readFrom:]
+  -[CAXPBContextualAction writeTo:]
+  -[CAXPBContextualAction isEqual:]
+  -[CAXPBContextualAction actionIdentifier]
+  -[CAXPBContextualAction parametersCount]
+  -[CAXPBContextualAction clearParameters]
+  -[CAXPBContextualAction addParameters:]
+  -[CAXPBContextualAction parametersAtIndex:]
+  -[CAXPBContextualAction setActionIdentifier:]
+
+
+CAXContextualActionsClient : NSObject <CAXContextualActionsXPCInterface>
+  // instance methods
+  -[CAXContextualActionsClient processShortcutsActionSelectionGivenFeedbackEvent:completion:]
+  -[CAXContextualActionsClient dealloc]
+  -[CAXContextualActionsClient .cxx_destruct]
+  -[CAXContextualActionsClient processShortcutsSessionGivenSummary:]
+  -[CAXContextualActionsClient processShortcutsActionSelectionGivenFeedbackEvent:]
+  -[CAXContextualActionsClient processShortcutsSessionGivenSummary:completion:]
+  -[CAXContextualActionsClient initWithClientModelId:]
+
+
+CAXPredictionContext : NSObject <NSSecureCoding, ATXProtoBufWrapper, ATXSuggestionExecutableProtocol>
+ @property  NSDate *suggestionDate
+ @property  NSString *sourceAppName
+ @property  NSArray *contents
+ @property  NSArray *previousActions
+ @property  NSString *searchTerm
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CAXPredictionContext supportsSecureCoding]
+
+  // instance methods
+  -[CAXPredictionContext searchTerm]
+  -[CAXPredictionContext encodeWithCoder:]
+  -[CAXPredictionContext contents]
+  -[CAXPredictionContext encodeAsProto]
+  -[CAXPredictionContext json]
+  -[CAXPredictionContext setDate:]
+  -[CAXPredictionContext date]
+  -[CAXPredictionContext .cxx_destruct]
+  -[CAXPredictionContext checkAndReportDecodingFailureIfNeededFordouble:key:coder:errorDomain:errorCode:]
+  -[CAXPredictionContext setContents:]
+  -[CAXPredictionContext initWithProto:]
+  -[CAXPredictionContext suggestionDate]
+  -[CAXPredictionContext checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXPredictionContext proto]
+  -[CAXPredictionContext checkAndReportDecodingFailureIfNeededForint32_t:key:coder:errorDomain:errorCode:]
+  -[CAXPredictionContext initWithProtoData:]
+  -[CAXPredictionContext jsonRawData]
+  -[CAXPredictionContext setSuggestionDate:]
+  -[CAXPredictionContext isEqual:]
+  -[CAXPredictionContext initWithCoder:]
+  -[CAXPredictionContext initWithSuggestionDate:sourceAppName:contents:previousActions:searchTerm:]
+  -[CAXPredictionContext sourceAppName]
+  -[CAXPredictionContext setSourceAppName:]
+  -[CAXPredictionContext previousActions]
+  -[CAXPredictionContext setPreviousActions:]
+  -[CAXPredictionContext initWithAbsoluteDate:sourceAppName:contents:previousActions:searchTerm:]
+  -[CAXPredictionContext isEqualToCAXPredictionContext:]
+
+
+CAXContextualActionsPredictionElement : NSObject
+ @property  NSString *encodedActionIdentifier
+ @property  NSNumber *frequency
+ @property  NSNumber *normalizedFrequency
+ @property  NSNumber *priorTotal
+
+  // instance methods
+  -[CAXContextualActionsPredictionElement frequency]
+  -[CAXContextualActionsPredictionElement setFrequency:]
+  -[CAXContextualActionsPredictionElement .cxx_destruct]
+  -[CAXContextualActionsPredictionElement isEqual:]
+  -[CAXContextualActionsPredictionElement initWithIdentifier:frequency:]
+  -[CAXContextualActionsPredictionElement initWithIdentifier:frequency:normalizedFrequency:priorTotal:]
+  -[CAXContextualActionsPredictionElement encodedActionIdentifier]
+  -[CAXContextualActionsPredictionElement setEncodedActionIdentifier:]
+  -[CAXContextualActionsPredictionElement normalizedFrequency]
+  -[CAXContextualActionsPredictionElement setNormalizedFrequency:]
+  -[CAXContextualActionsPredictionElement priorTotal]
+  -[CAXContextualActionsPredictionElement setPriorTotal:]
+
+
+CAXPBSuggestion : PBCodable <NSCopying>
+ @property  NSMutableArray *suggestedActions
+ @property  BOOL hasModelVersion
+ @property  NSString *modelVersion
+
+  // class methods
+  +[CAXPBSuggestion suggestedActionsType]
+
+  // instance methods
+  -[CAXPBSuggestion modelVersion]
+  -[CAXPBSuggestion setModelVersion:]
+  -[CAXPBSuggestion copyTo:]
+  -[CAXPBSuggestion hasModelVersion]
+  -[CAXPBSuggestion .cxx_destruct]
+  -[CAXPBSuggestion mergeFrom:]
+  -[CAXPBSuggestion dictionaryRepresentation]
+  -[CAXPBSuggestion copyWithZone:]
+  -[CAXPBSuggestion readFrom:]
+  -[CAXPBSuggestion writeTo:]
+  -[CAXPBSuggestion isEqual:]
+  -[CAXPBSuggestion suggestedActions]
+  -[CAXPBSuggestion clearSuggestedActions]
+  -[CAXPBSuggestion addSuggestedActions:]
+  -[CAXPBSuggestion suggestedActionsCount]
+  -[CAXPBSuggestion suggestedActionsAtIndex:]
+  -[CAXPBSuggestion setSuggestedActions:]
+
+
+CAXPBContextualActionContent : PBCodable <NSCopying>
+ @property  NSString *contentType
+ @property  BOOL hasContentMetadata
+ @property  NSData *contentMetadata
+
+  // instance methods
+  -[CAXPBContextualActionContent contentType]
+  -[CAXPBContextualActionContent copyTo:]
+  -[CAXPBContextualActionContent .cxx_destruct]
+  -[CAXPBContextualActionContent mergeFrom:]
+  -[CAXPBContextualActionContent dictionaryRepresentation]
+  -[CAXPBContextualActionContent copyWithZone:]
+  -[CAXPBContextualActionContent readFrom:]
+  -[CAXPBContextualActionContent setContentType:]
+  -[CAXPBContextualActionContent writeTo:]
+  -[CAXPBContextualActionContent isEqual:]
+  -[CAXPBContextualActionContent contentMetadata]
+  -[CAXPBContextualActionContent setContentMetadata:]
+  -[CAXPBContextualActionContent hasContentMetadata]
+
+
+CAXSuggestionProvider : NSObject <ATXProactiveSuggestionRealTimeProviderDelegateProtocol>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[CAXSuggestionProvider registerModelForRealTimeRequestsWithBlendingLayerServer:]
+  -[CAXSuggestionProvider predictWithPredictionContext:candidateActions:maxSuggestions:]
+  -[CAXSuggestionProvider suggestionsForContextualActionSuggestionRequest:clientModelId:reply:]
+  -[CAXSuggestionProvider recordShortcutsEditorEvent:]
+  -[CAXSuggestionProvider pingWithCompletion:]
+  -[CAXSuggestionProvider proactiveSuggestionForCaxContextualAction:clientModelSpec:]
+
+
+CAXPBContextualActionParameter : PBCodable <NSCopying>
+ @property  NSString *parameterType
+ @property  BOOL hasParameterMetadata
+ @property  NSData *parameterMetadata
+
+  // instance methods
+  -[CAXPBContextualActionParameter copyTo:]
+  -[CAXPBContextualActionParameter .cxx_destruct]
+  -[CAXPBContextualActionParameter mergeFrom:]
+  -[CAXPBContextualActionParameter dictionaryRepresentation]
+  -[CAXPBContextualActionParameter copyWithZone:]
+  -[CAXPBContextualActionParameter readFrom:]
+  -[CAXPBContextualActionParameter writeTo:]
+  -[CAXPBContextualActionParameter isEqual:]
+  -[CAXPBContextualActionParameter parameterType]
+  -[CAXPBContextualActionParameter parameterMetadata]
+  -[CAXPBContextualActionParameter setParameterMetadata:]
+  -[CAXPBContextualActionParameter hasParameterMetadata]
+  -[CAXPBContextualActionParameter setParameterType:]
+
+
+CAXContextualActionsPredictorDriver : NSObject
+ @property  CAXContextualActionsPredictor *globalModel
+ @property  CAXContextualActionsPredictor *personalizedModel
+ @property  NSDictionary *configDict
+
+  // class methods
+  +[CAXContextualActionsPredictorDriver encoderUrl]
+  +[CAXContextualActionsPredictorDriver decoderUrl]
+  +[CAXContextualActionsPredictorDriver personalizedModelInUseKey]
+
+  // instance methods
+  -[CAXContextualActionsPredictorDriver .cxx_destruct]
+  -[CAXContextualActionsPredictorDriver setConfigDict:]
+  -[CAXContextualActionsPredictorDriver configDict]
+  -[CAXContextualActionsPredictorDriver initWithConfigUrl:]
+  -[CAXContextualActionsPredictorDriver initWithConfigUrl:encoderUrl:decoderUrl:globalModelUrl:personalizedModelUrl:]
+  -[CAXContextualActionsPredictorDriver predictWithConfidenceFromContext:numActions:]
+  -[CAXContextualActionsPredictorDriver decodeArrayOfCAElements:fromDecoderUrl:]
+  -[CAXContextualActionsPredictorDriver decodeArrayOfCAElementsIntoActionIds:fromDecoderUrl:]
+  -[CAXContextualActionsPredictorDriver globalModel]
+  -[CAXContextualActionsPredictorDriver setGlobalModel:]
+  -[CAXContextualActionsPredictorDriver personalizedModel]
+  -[CAXContextualActionsPredictorDriver setPersonalizedModel:]
+
+
+CAXPBContextualActionsFeedbackEvent : PBCodable <NSCopying>
+ @property  BOOL hasSelectedAction
+ @property  CAXPBContextualAction *selectedAction
+ @property  BOOL hasSuggestion
+ @property  CAXPBSuggestion *suggestion
+ @property  BOOL hasDeviceContext
+ @property  CAXPBPredictionContext *deviceContext
+ @property  BOOL hasSessionIdentifier
+ @property  NSString *sessionIdentifier
+
+  // instance methods
+  -[CAXPBContextualActionsFeedbackEvent suggestion]
+  -[CAXPBContextualActionsFeedbackEvent setSessionIdentifier:]
+  -[CAXPBContextualActionsFeedbackEvent sessionIdentifier]
+  -[CAXPBContextualActionsFeedbackEvent copyTo:]
+  -[CAXPBContextualActionsFeedbackEvent setSuggestion:]
+  -[CAXPBContextualActionsFeedbackEvent deviceContext]
+  -[CAXPBContextualActionsFeedbackEvent setDeviceContext:]
+  -[CAXPBContextualActionsFeedbackEvent setSelectedAction:]
+  -[CAXPBContextualActionsFeedbackEvent .cxx_destruct]
+  -[CAXPBContextualActionsFeedbackEvent mergeFrom:]
+  -[CAXPBContextualActionsFeedbackEvent selectedAction]
+  -[CAXPBContextualActionsFeedbackEvent dictionaryRepresentation]
+  -[CAXPBContextualActionsFeedbackEvent copyWithZone:]
+  -[CAXPBContextualActionsFeedbackEvent readFrom:]
+  -[CAXPBContextualActionsFeedbackEvent writeTo:]
+  -[CAXPBContextualActionsFeedbackEvent isEqual:]
+  -[CAXPBContextualActionsFeedbackEvent hasSessionIdentifier]
+  -[CAXPBContextualActionsFeedbackEvent hasSuggestion]
+  -[CAXPBContextualActionsFeedbackEvent hasDeviceContext]
+  -[CAXPBContextualActionsFeedbackEvent hasSelectedAction]
+
+
+CAXShortcutsSessionSummary : NSObject <NSSecureCoding>
+ @property  NSArray *actions
+ @property  NSString *sessionIdentifier
+ @property  NSUUID *blendingCacheUpdateUUID
+
+  // class methods
+  +[CAXShortcutsSessionSummary supportsSecureCoding]
+
+  // instance methods
+  -[CAXShortcutsSessionSummary sessionIdentifier]
+  -[CAXShortcutsSessionSummary encodeWithCoder:]
+  -[CAXShortcutsSessionSummary .cxx_destruct]
+  -[CAXShortcutsSessionSummary actions]
+  -[CAXShortcutsSessionSummary checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXShortcutsSessionSummary initWithCoder:]
+  -[CAXShortcutsSessionSummary initWithActions:sessionIdentifier:]
+  -[CAXShortcutsSessionSummary blendingCacheUpdateUUID]
+
+
+CAXSuggestion : NSObject <NSSecureCoding, ATXProtoBufWrapper>
+ @property  NSArray *suggestedActions
+ @property  NSString *modelVersion
+ @property  NSUUID *blendingCacheUpdateUUID
+
+  // class methods
+  +[CAXSuggestion supportsSecureCoding]
+
+  // instance methods
+  -[CAXSuggestion modelVersion]
+  -[CAXSuggestion setModelVersion:]
+  -[CAXSuggestion encodeWithCoder:]
+  -[CAXSuggestion encodeAsProto]
+  -[CAXSuggestion json]
+  -[CAXSuggestion .cxx_destruct]
+  -[CAXSuggestion initWithProto:]
+  -[CAXSuggestion checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXSuggestion proto]
+  -[CAXSuggestion initWithProtoData:]
+  -[CAXSuggestion jsonRawData]
+  -[CAXSuggestion initWithCoder:]
+  -[CAXSuggestion suggestedActions]
+  -[CAXSuggestion blendingCacheUpdateUUID]
+  -[CAXSuggestion initWithSuggestedActions:modelVersion:]
+  -[CAXSuggestion setBlendingCacheUpdateUUID:]
+
+
+CAXContextualActionsSuggestionReceiver : NSObject <CAXContextualActionsXPCInterface, NSXPCListenerDelegate>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CAXContextualActionsSuggestionReceiver sharedInstance]
+
+  // instance methods
+  -[CAXContextualActionsSuggestionReceiver donateSessionSummary:]
+  -[CAXContextualActionsSuggestionReceiver setupXPCListener]
+  -[CAXContextualActionsSuggestionReceiver processShortcutsActionSelectionGivenFeedbackEvent:completion:]
+  -[CAXContextualActionsSuggestionReceiver dealloc]
+  -[CAXContextualActionsSuggestionReceiver .cxx_destruct]
+  -[CAXContextualActionsSuggestionReceiver startWithBlendingLayerServer:]
+  -[CAXContextualActionsSuggestionReceiver processShortcutsSessionGivenSummary:]
+  -[CAXContextualActionsSuggestionReceiver processShortcutsActionSelectionGivenFeedbackEvent:]
+  -[CAXContextualActionsSuggestionReceiver listener:shouldAcceptNewConnection:]
+  -[CAXContextualActionsSuggestionReceiver processShortcutsSessionGivenSummary:completion:]
+
+
+CAXContextualActionsPredictor : NSObject
+ @property  NSURL *modelUrl
+ @property  NSURL *configUrl
+ @property  NSURL *encoderUrl
+ @property  NSURL *decoderUrl
+ @property  NSMutableDictionary *model
+ @property  NSMutableDictionary *typeEncoder
+ @property  NSMutableDictionary *actionEncoder
+ @property  NSMutableDictionary *typeDecoder
+ @property  NSMutableDictionary *actionDecoder
+
+  // class methods
+  +[CAXContextualActionsPredictor decoderFileName]
+  +[CAXContextualActionsPredictor encoderFileName]
+  +[CAXContextualActionsPredictor personalizedModelFileName]
+  +[CAXContextualActionsPredictor ioDictKey]
+  +[CAXContextualActionsPredictor unigramDictKey]
+  +[CAXContextualActionsPredictor bigramDictKey]
+  +[CAXContextualActionsPredictor frequencyDictKey]
+  +[CAXContextualActionsPredictor ioNoneType]
+  +[CAXContextualActionsPredictor defaultConfigFileUrl]
+  +[CAXContextualActionsPredictor defaultGlobalModelUrl]
+  +[CAXContextualActionsPredictor defaultPersonalizedModelUrl]
+  +[CAXContextualActionsPredictor defaultCoderUrlForName:]
+
+  // instance methods
+  -[CAXContextualActionsPredictor setModel:]
+  -[CAXContextualActionsPredictor model]
+  -[CAXContextualActionsPredictor .cxx_destruct]
+  -[CAXContextualActionsPredictor modelUrl]
+  -[CAXContextualActionsPredictor encoderUrl]
+  -[CAXContextualActionsPredictor decoderUrl]
+  -[CAXContextualActionsPredictor initWithModelUrl:configUrl:]
+  -[CAXContextualActionsPredictor initWithDefaultCodersAndModelUrl:configUrl:]
+  -[CAXContextualActionsPredictor initWithModelUrl:encoderUrl:decoderUrl:configUrl:]
+  -[CAXContextualActionsPredictor loadCoderFilesToInstanceFromDefaulUrls]
+  -[CAXContextualActionsPredictor loadCoderFilesToInstanceFromEncoderUrl:decoderUrl:]
+  -[CAXContextualActionsPredictor fillNormalizedFrequencyValuesOnPredictions:]
+  -[CAXContextualActionsPredictor predictNumActions:givenContext:]
+  -[CAXContextualActionsPredictor saveModelToUrl:]
+  -[CAXContextualActionsPredictor loadModelsFromUrl:]
+  -[CAXContextualActionsPredictor getWFContentTypeStringFromContentTypeString:]
+  -[CAXContextualActionsPredictor encodeContentTypes:]
+  -[CAXContextualActionsPredictor encodeActionSequence:]
+  -[CAXContextualActionsPredictor addEncodedActionSequence:toFrequencyDict:]
+  -[CAXContextualActionsPredictor extractCAElementsByOrderingCounterDictByValue:]
+  -[CAXContextualActionsPredictor addModelResults:toFinalResults:withNumActions:seenSet:]
+  -[CAXContextualActionsPredictor convertToStringEncodedActionSequence:]
+  -[CAXContextualActionsPredictor addKeyString:andValueString:toCounterDict:]
+  -[CAXContextualActionsPredictor combineDict:withSourceDict:]
+  -[CAXContextualActionsPredictor persistCoderFileChangesToEncoderUrl:decoderUrl:]
+  -[CAXContextualActionsPredictor extractInputTypesAsCAXContentFromActionId:]
+  -[CAXContextualActionsPredictor updateModelWithSummary:]
+  -[CAXContextualActionsPredictor setModelUrl:]
+  -[CAXContextualActionsPredictor configUrl]
+  -[CAXContextualActionsPredictor setConfigUrl:]
+  -[CAXContextualActionsPredictor setEncoderUrl:]
+  -[CAXContextualActionsPredictor setDecoderUrl:]
+  -[CAXContextualActionsPredictor typeEncoder]
+  -[CAXContextualActionsPredictor setTypeEncoder:]
+  -[CAXContextualActionsPredictor actionEncoder]
+  -[CAXContextualActionsPredictor setActionEncoder:]
+  -[CAXContextualActionsPredictor typeDecoder]
+  -[CAXContextualActionsPredictor setTypeDecoder:]
+  -[CAXContextualActionsPredictor actionDecoder]
+  -[CAXContextualActionsPredictor setActionDecoder:]
+
+
+CAXContextualActionContent : NSObject <NSSecureCoding, ATXProtoBufWrapper>
+ @property  NSString *contentType
+ @property  NSDictionary *contentMetadata
+
+  // class methods
+  +[CAXContextualActionContent supportsSecureCoding]
+
+  // instance methods
+  -[CAXContextualActionContent contentType]
+  -[CAXContextualActionContent encodeWithCoder:]
+  -[CAXContextualActionContent encodeAsProto]
+  -[CAXContextualActionContent json]
+  -[CAXContextualActionContent .cxx_destruct]
+  -[CAXContextualActionContent initWithProto:]
+  -[CAXContextualActionContent checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXContextualActionContent proto]
+  -[CAXContextualActionContent initWithProtoData:]
+  -[CAXContextualActionContent jsonRawData]
+  -[CAXContextualActionContent initWithCoder:]
+  -[CAXContextualActionContent contentMetadata]
+  -[CAXContextualActionContent initWithContentType:contentMetadata:]
+
+
+CAXContextualActionParameter : NSObject <NSSecureCoding, ATXProtoBufWrapper>
+ @property  NSString *parameterType
+ @property  NSDictionary *parameterMetadata
+
+  // class methods
+  +[CAXContextualActionParameter supportsSecureCoding]
+
+  // instance methods
+  -[CAXContextualActionParameter encodeWithCoder:]
+  -[CAXContextualActionParameter encodeAsProto]
+  -[CAXContextualActionParameter json]
+  -[CAXContextualActionParameter .cxx_destruct]
+  -[CAXContextualActionParameter initWithProto:]
+  -[CAXContextualActionParameter checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXContextualActionParameter proto]
+  -[CAXContextualActionParameter initWithProtoData:]
+  -[CAXContextualActionParameter jsonRawData]
+  -[CAXContextualActionParameter initWithCoder:]
+  -[CAXContextualActionParameter parameterType]
+  -[CAXContextualActionParameter parameterMetadata]
+  -[CAXContextualActionParameter initWithParameterType:parameterMetadata:]
+
+
+CAXContextualAction : NSObject <NSSecureCoding, ATXProtoBufWrapper, ATXSuggestionExecutableProtocol>
+ @property  NSUUID *suggestionUUID
+ @property  NSString *actionIdentifier
+ @property  long long confidence
+ @property  NSArray *parameters
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[CAXContextualAction supportsSecureCoding]
+
+  // instance methods
+  -[CAXContextualAction confidence]
+  -[CAXContextualAction parameters]
+  -[CAXContextualAction encodeWithCoder:]
+  -[CAXContextualAction encodeAsProto]
+  -[CAXContextualAction suggestionUUID]
+  -[CAXContextualAction json]
+  -[CAXContextualAction .cxx_destruct]
+  -[CAXContextualAction initWithProto:]
+  -[CAXContextualAction checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:]
+  -[CAXContextualAction proto]
+  -[CAXContextualAction initWithProtoData:]
+  -[CAXContextualAction setConfidence:]
+  -[CAXContextualAction jsonRawData]
+  -[CAXContextualAction setSuggestionUUID:]
+  -[CAXContextualAction initWithCoder:]
+  -[CAXContextualAction actionIdentifier]
+  -[CAXContextualAction initWithActionIdentifier:parameters:]
+  -[CAXContextualAction initWithActionIdentifier:confidence:parameters:]
+
+
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXContextualActionSuggestionRequest 
+01 00 0200 /System/Library/PrivateFrameworks/AppPredictionFoundation.framework/AppPredictionFoundation: ATXPaths 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestion 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionClientModel 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionClientModelSpecification 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionConsumer 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionExecutableSpecification 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionLayoutConfig 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionScoreSpecification 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXProactiveSuggestionUISpecification 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXSuggestionLayout 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXSuggestionRequestResponse 
+01 00 0100 /System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel: ATXUniversalBlendingFeedbackWriter 
+01 00 0600 /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage: BMStoreConfig 
+01 00 0500 /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams: BMStoreStream 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSJSONSerialization 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSOrderedSet 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCConnection 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCInterface 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCListener 
+01 00 0400 /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer: PBCodable 
+01 00 0300 /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport: _PASSecureCodingHelper 

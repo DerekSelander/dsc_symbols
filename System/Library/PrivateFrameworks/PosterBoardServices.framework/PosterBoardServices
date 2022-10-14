@@ -1,0 +1,947 @@
+|| __DATA.__common ___allIdentitiesLock
+|| __DATA.__common ___allPathsLock
+|| __DATA.__common ___cachedServerPathsByIdentityByURLLock
+|| __DATA.__objc_data _OBJC_CLASS_$_PRSMutablePosterConfiguration
+|| __DATA.__objc_data _OBJC_CLASS_$_PRSMutablePosterDescriptor
+|| __DATA.__objc_data _OBJC_CLASS_$_PRSPosterDescriptor
+|| __DATA.__objc_data _OBJC_CLASS_$_PRSPosterGalleryLayoutDataStore
+|| __DATA.__objc_data _OBJC_CLASS_$_PRSPosterSnapshotCollection
+|| __DATA.__objc_data _OBJC_METACLASS_$_PRSMutablePosterConfiguration
+|| __DATA.__objc_data _OBJC_METACLASS_$_PRSMutablePosterDescriptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_PRSPosterDescriptor
+|| __DATA.__objc_data _OBJC_METACLASS_$_PRSPosterGalleryLayoutDataStore
+|| __DATA.__objc_data _OBJC_METACLASS_$_PRSPosterSnapshotCollection
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PRSPosterPath._contentsURL
+|| __DATA.__objc_ivar _OBJC_IVAR_$_PRSPosterPath._serverIdentity
+|| __DATA_CONST.__const _PRSEndpointMachName
+|| __DATA_CONST.__const _PRSServerAccessEntitlement
+|| __DATA_CONST.__const _PRSServerAccessSwitcherConfigurationEntitlement
+|| __DATA_CONST.__const _PRSServerAccessSwitcherFocusConfigurationEntitlement
+|| __DATA_CONST.__const _PRSServerDeleteConfigurationsAccessEntitlement
+|| __DATA_CONST.__const _PRSServerDeleteDataStoreAccessEntitlement
+|| __DATA_CONST.__const _PRSServerDeleteDescriptorsAccessEntitlement
+|| __DATA_CONST.__const _PRSServerMigrationEntitlement
+|| __DATA_CONST.__const _PRSServerMutateSwitcherConfigurationEntitlement
+|| __DATA_CONST.__const _PRSServerMutateSwitcherFocusConfigurationEntitlement
+|| __DATA_CONST.__const _PRSServerRefreshConfigurationSnapshotEntitlement
+|| __DATA_CONST.__const _PRSServerRefreshConfigurationsAccessEntitlement
+|| __DATA_CONST.__const _PRSServiceDidUpdateActivePosterConfigurationNotification
+|| __DATA_CONST.__const _PRSServiceDidUpdateAssociatedHomeScreenPosterConfigurationNotification
+|| __DATA_CONST.__const _PRSServiceDidUpdatePosterConfigurationNotification
+|| __DATA_CONST.__const _PRSServiceDidUpdateSelectedPosterConfigurationNotification
+|| __DATA_CONST.__const _PRSServiceDiedNotification
+|| __DATA_CONST.__const _PRSServiceFromActivePosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceFromSelectedPosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceHomeScreenAssociatedPosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceToActivePosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceToSelectedPosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceUpdatedPosterConfigurationUserInfoKey
+|| __DATA_CONST.__const _PRSServiceWillUpdateActivePosterConfigurationNotification
+|| __DATA_CONST.__const _PRSServiceWillUpdateSelectedPosterConfigurationNotification
+|| __DATA_CONST.__const _PosterBoardServicesLoggingSubsystem
+|| __DATA_CONST.__const _kPRSWallpaperConnectionContext_explanation
+|| __DATA_CONST.__const _kPRSWallpaperConnectionContext_needsSandboxExtensions
+|| __DATA_CONST.__const _kPRSWallpaperConnectionContext_observedLocations
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSActivePosterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterPath
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterPathsAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterSnapshot
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterSnapshotRequest
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterSnapshotResponse
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSPosterUpdateSessionInfo
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSServer
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSServerPosterIdentity
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSServerPosterPath
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSService
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperClient
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperObserver
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperObserverConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperObserverPathUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperObserverState
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperObserverTransition
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWallpaperPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_PRSWidget
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSActivePosterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterPath
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterPathsAssertion
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterSnapshot
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterSnapshotRequest
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterSnapshotResponse
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSPosterUpdateSessionInfo
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSServer
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSServerPosterIdentity
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSServerPosterPath
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSService
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperClient
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperObserver
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperObserverConfiguration
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperObserverPathUpdate
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperObserverState
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperObserverTransition
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWallpaperPublisher
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_PRSWidget
+|| __TEXT.__const _PosterBoardServicesVersionNumber
+|| __TEXT.__const _PosterBoardServicesVersionString
+|| __TEXT.__text _NSStringFromPRSPosterSnapshotOptions
+|| __TEXT.__text _NSStringFromPRSPosterType
+|| __TEXT.__text _PRSDefaultServiceQuality
+|| __TEXT.__text _PRSLogCommon
+|| __TEXT.__text _PRSLogDataStoreMigration
+|| __TEXT.__text _PRSLogDataStorePrewarm
+|| __TEXT.__text _PRSLogDataStoreProactive
+|| __TEXT.__text _PRSLogObserver
+|| __TEXT.__text _PRSLogPosterContents
+|| __TEXT.__text _PRSPosterPathFileAttributes
+|| __TEXT.__text _PRSPosterTypeFromDirectoryName
+|| __TEXT.__text _PRSPosterTypeIsValid
+|| __TEXT.__text _PRSServiceInterface
+|| __TEXT.__text _PRSWallpaperObserverInterface
+|| __TEXT.__text _PRSWallpaperObserverLocationsDescription
+|| __TEXT.__text _PRSWallpaperObserverLocationsFromIndex
+|| __TEXT.__text _PRSWallpaperObserverLocationsIndexIsValid
+|| __TEXT.__text _PRSWallpaperObserverLocationsLockIndexIfHomeIndex
+|| __TEXT.__text _PRSWallpaperObserverLocationsToIndex
+|| __TEXT.__text _configurationsForPath
+|| __TEXT.__text _descriptorsForPath
+__ AppPredictionClient: _OBJC_CLASS_$_ATXPosterDescriptorGalleryOptions
+__ BaseBoard: _BSAbsoluteMachTimeNow
+__ BaseBoard: _BSEqualObjects
+__ BaseBoard: _BSEqualStrings
+__ BaseBoard: _BSStringFromBOOL
+__ BaseBoard: _OBJC_CLASS_$_BSAction
+__ BaseBoard: _OBJC_CLASS_$_BSActionResponder
+__ BaseBoard: _OBJC_CLASS_$_BSActionResponse
+__ BaseBoard: _OBJC_CLASS_$_BSDescriptionBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSEqualsBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSHashBuilder
+__ BaseBoard: _OBJC_CLASS_$_BSMutableSettings
+__ BaseBoard: _OBJC_CLASS_$_BSObjCProtocol
+__ BaseBoard: _OBJC_CLASS_$_BSSimpleAssertion
+__ BaseBoard: __BSSafeCast
+__ BaseBoard: __bs_set_crash_log_message
+__ BoardServices: _OBJC_CLASS_$_BSMutableServiceInterface
+__ BoardServices: _OBJC_CLASS_$_BSServiceConnection
+__ BoardServices: _OBJC_CLASS_$_BSServiceConnectionEndpoint
+__ BoardServices: _OBJC_CLASS_$_BSServiceConnectionListener
+__ BoardServices: _OBJC_CLASS_$_BSServiceQuality
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSArray0__struct
+__ CoreFoundation: ___kCFBooleanFalse
+__ Foundation: _NSClassFromString
+__ Foundation: _NSCocoaErrorDomain
+__ Foundation: _NSFilePosixPermissions
+__ Foundation: _NSFileProtectionKey
+__ Foundation: _NSFileProtectionNone
+__ Foundation: _NSLocalizedFailureReasonErrorKey
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSStringFromSelector
+__ Foundation: _NSTemporaryDirectory
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSHashTable
+__ Foundation: _OBJC_CLASS_$_NSKeyedArchiver
+__ Foundation: _OBJC_CLASS_$_NSKeyedUnarchiver
+__ Foundation: _OBJC_CLASS_$_NSMapTable
+__ Foundation: _OBJC_CLASS_$_NSMutableString
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ Foundation: _OBJC_CLASS_$_NSXPCCoder
+__ IOSurface: _IOSurfaceCreateXPCObject
+__ IOSurface: _IOSurfaceLookupFromXPCObject
+__ Intents: _OBJC_CLASS_$_INIntent
+__ RunningBoardServices: _OBJC_CLASS_$_RBSAssertion
+__ RunningBoardServices: _OBJC_CLASS_$_RBSDomainAttribute
+__ libSystem.B.dylib: _APP_SANDBOX_READ
+__ libSystem.B.dylib: _SANDBOX_EXTENSION_DEFAULT
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___error
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_debug_impl
+__ libSystem.B.dylib: __os_log_default
+__ libSystem.B.dylib: __os_log_error_impl
+__ libSystem.B.dylib: __os_log_fault_impl
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: __xpc_type_mach_send
+__ libSystem.B.dylib: __xpc_type_string
+__ libSystem.B.dylib: _dispatch_assert_queue$V2
+__ libSystem.B.dylib: _dispatch_async
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _dispatch_queue_create
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _memset_pattern16
+__ libSystem.B.dylib: _mkdtemp
+__ libSystem.B.dylib: _os_log_create
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libSystem.B.dylib: _os_unfair_lock_assert_owner
+__ libSystem.B.dylib: _os_unfair_lock_lock
+__ libSystem.B.dylib: _os_unfair_lock_unlock
+__ libSystem.B.dylib: _sandbox_extension_consume
+__ libSystem.B.dylib: _sandbox_extension_issue_file
+__ libSystem.B.dylib: _sandbox_extension_issue_file_to_process
+__ libSystem.B.dylib: _sandbox_extension_release
+__ libSystem.B.dylib: _strdup
+__ libSystem.B.dylib: _strerror_r
+__ libSystem.B.dylib: _strlen
+__ libSystem.B.dylib: _xpc_string_create
+__ libSystem.B.dylib: _xpc_string_get_string_ptr
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_self
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x10
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+PRSWallpaperObserverPathUpdate : NSObject <BSXPCSecureCoding>
+ @property  PRSServerPosterPath *path
+ @property  PRSServerPosterIdentity *identity
+ @property  unsigned long locations
+ @property  unsigned long changed
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSWallpaperObserverPathUpdate supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSWallpaperObserverPathUpdate changed]
+  -[PRSWallpaperObserverPathUpdate setChanged:]
+  -[PRSWallpaperObserverPathUpdate setIdentity:]
+  -[PRSWallpaperObserverPathUpdate locations]
+  -[PRSWallpaperObserverPathUpdate initWithBSXPCCoder:]
+  -[PRSWallpaperObserverPathUpdate path]
+  -[PRSWallpaperObserverPathUpdate setLocations:]
+  -[PRSWallpaperObserverPathUpdate .cxx_destruct]
+  -[PRSWallpaperObserverPathUpdate setPath:]
+  -[PRSWallpaperObserverPathUpdate identity]
+  -[PRSWallpaperObserverPathUpdate encodeWithBSXPCCoder:]
+
+
+PRSPosterDescriptor : NSObject
+ @property  PRSPosterPath *_path
+ @property  NSString *identifier
+ @property  NSURL *assetDirectory
+
+  // instance methods
+  -[PRSPosterDescriptor identifier]
+  -[PRSPosterDescriptor dealloc]
+  -[PRSPosterDescriptor _path]
+  -[PRSPosterDescriptor .cxx_destruct]
+  -[PRSPosterDescriptor loadUserInfoWithError:]
+  -[PRSPosterDescriptor loadGalleryOptionsWithError:]
+  -[PRSPosterDescriptor isEqual:]
+  -[PRSPosterDescriptor init]
+  -[PRSPosterDescriptor assetDirectory]
+  -[PRSPosterDescriptor _initWithPath:]
+
+
+PRSMutablePosterDescriptor : PRSPosterDescriptor
+  // class methods
+  +[PRSMutablePosterDescriptor mutableDescriptorWithIdentifier:]
+
+  // instance methods
+  -[PRSMutablePosterDescriptor storeUserInfo:error:]
+  -[PRSMutablePosterDescriptor storeGalleryOptions:error:]
+
+
+PRSPosterSnapshot : NSObject <BSXPCSecureCoding>
+ @property  IOSurface *surface
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterSnapshot supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterSnapshot initWithIOSurface:]
+  -[PRSPosterSnapshot initWithBSXPCCoder:]
+  -[PRSPosterSnapshot .cxx_destruct]
+  -[PRSPosterSnapshot surface]
+  -[PRSPosterSnapshot encodeWithBSXPCCoder:]
+
+
+PRSServerPosterIdentity : NSObject <BSXPCSecureCoding, NSSecureCoding, NSCopying>
+ @property  NSString *provider
+ @property  long long type
+ @property  NSUUID *posterUUID
+ @property  unsigned long version
+ @property  unsigned long supplement
+ @property  NSString *descriptorIdentifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSServerPosterIdentity supportsSecureCoding]
+  +[PRSServerPosterIdentity staticDescriptorIdentityWithProvider:identifier:posterUUID:version:]
+  +[PRSServerPosterIdentity configurationIdentityWithProvider:posterUUID:version:supplement:]
+  +[PRSServerPosterIdentity _setDisableUniquing:]
+  +[PRSServerPosterIdentity supportsBSXPCSecureCoding]
+  +[PRSServerPosterIdentity descriptorIdentityWithProvider:identifier:posterUUID:version:]
+
+  // instance methods
+  -[PRSServerPosterIdentity posterUUID]
+  -[PRSServerPosterIdentity initWithBSXPCCoder:]
+  -[PRSServerPosterIdentity encodeWithCoder:]
+  -[PRSServerPosterIdentity type]
+  -[PRSServerPosterIdentity compare:]
+  -[PRSServerPosterIdentity dealloc]
+  -[PRSServerPosterIdentity .cxx_destruct]
+  -[PRSServerPosterIdentity provider]
+  -[PRSServerPosterIdentity version]
+  -[PRSServerPosterIdentity descriptorIdentifier]
+  -[PRSServerPosterIdentity copyWithZone:]
+  -[PRSServerPosterIdentity encodeWithBSXPCCoder:]
+  -[PRSServerPosterIdentity supplement]
+  -[PRSServerPosterIdentity isEqual:]
+  -[PRSServerPosterIdentity isNewerVersionOfIdentity:]
+  -[PRSServerPosterIdentity init]
+  -[PRSServerPosterIdentity initWithCoder:]
+
+
+PRSPosterPath : NSObject <BSInvalidatable, BSXPCSecureCoding, NSSecureCoding>
+ @property  PRSServerPosterIdentity *serverIdentity
+ @property  NSString *descriptorIdentifier
+ @property  NSURL *containerURL
+ @property  NSURL *contentsURL
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterPath supportsSecureCoding]
+  +[PRSPosterPath _setDisableUniquing:]
+  +[PRSPosterPath supportsBSXPCSecureCoding]
+  +[PRSPosterPath temporaryDescriptorPathWithIdentifier:]
+  +[PRSPosterPath temporaryPath]
+
+  // instance methods
+  -[PRSPosterPath containerURL]
+  -[PRSPosterPath initWithBSXPCCoder:]
+  -[PRSPosterPath encodeWithCoder:]
+  -[PRSPosterPath extendContentsReadAccessToAuditToken:error:]
+  -[PRSPosterPath dealloc]
+  -[PRSPosterPath .cxx_destruct]
+  -[PRSPosterPath loadUserInfoWithError:]
+  -[PRSPosterPath descriptorIdentifier]
+  -[PRSPosterPath isServerPosterPath]
+  -[PRSPosterPath invalidate]
+  -[PRSPosterPath encodeWithBSXPCCoder:]
+  -[PRSPosterPath storeUserInfo:error:]
+  -[PRSPosterPath storeGalleryOptions:error:]
+  -[PRSPosterPath loadGalleryOptionsWithError:]
+  -[PRSPosterPath init]
+  -[PRSPosterPath initWithCoder:]
+  -[PRSPosterPath extendValidityForReason:]
+  -[PRSPosterPath serverIdentity]
+  -[PRSPosterPath ensureContentsURLIsReachableAndReturnError:]
+  -[PRSPosterPath contentsURL]
+  -[PRSPosterPath compareDescriptorIdentifiers:]
+
+
+PRSServerPosterPath : PRSPosterPath
+ @property  PRSServerPosterIdentity *identity
+ @property  NSURL *providerURL
+ @property  NSURL *typeURL
+ @property  NSURL *identifierURL
+ @property  NSURL *versionsURL
+ @property  NSURL *instanceURL
+ @property  NSURL *supplementURL
+ @property  NSString *identityPathComponent
+
+  // class methods
+  +[PRSServerPosterPath pathWithContainerURL:identity:]
+  +[PRSServerPosterPath pathWithProviderURL:identity:]
+
+  // instance methods
+  -[PRSServerPosterPath containerURL]
+  -[PRSServerPosterPath identifierURL]
+  -[PRSServerPosterPath extendContentsReadAccessToAuditToken:error:]
+  -[PRSServerPosterPath extendInstanceReadAccessToAuditToken:error:]
+  -[PRSServerPosterPath versionsURL]
+  -[PRSServerPosterPath identityPathComponent]
+  -[PRSServerPosterPath identity]
+  -[PRSServerPosterPath typeURL]
+  -[PRSServerPosterPath providerURL]
+  -[PRSServerPosterPath isServerPosterPath]
+  -[PRSServerPosterPath instanceURL]
+  -[PRSServerPosterPath supplementURL]
+  -[PRSServerPosterPath isEqual:]
+
+
+PRSServer : NSObject <PRSClientToServerInterface, BSServiceConnectionListenerDelegate>
+ @property  <PRSServerDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PRSServer activate]
+  -[PRSServer refreshPosterConfigurationMatchingUUID:sessionInfo:completion:]
+  -[PRSServer updateToSelectedConfigurationMatchingUUID:completion:]
+  -[PRSServer fetchContentCutoutBoundsForPosterConfiguration:orientation:completion:]
+  -[PRSServer fetchActivePosterConfiguration:]
+  -[PRSServer deleteTransientDataWithCompletion:]
+  -[PRSServer fetchLimitedOcclusionBoundsForPosterConfiguration:orientation:completion:]
+  -[PRSServer setDelegate:]
+  -[PRSServer fetchFocusUUIDForConfiguration:completion:]
+  -[PRSServer deleteSnapshots:completion:]
+  -[PRSServer retrieveGallery:]
+  -[PRSServer refreshSnapshotForGalleryItemsMatchingDescriptorIdentifier:extensionIdentifier:completion:]
+  -[PRSServer fetchPosterDescriptorsForExtension:completion:]
+  -[PRSServer fetchExtensionIdentifiersWithCompletion:]
+  -[PRSServer delegate]
+  -[PRSServer pushPosterGalleryUpdate:completion:]
+  -[PRSServer notifyFocusModeDidChange:completion:]
+  -[PRSServer fetchRuntimeAssertionState:]
+  -[PRSServer fetchMaximalContentCutoutBoundsForOrientation:completion:]
+  -[PRSServer createPosterConfigurationForProviderIdentifier:posterDescriptorIdentifier:completion:]
+  -[PRSServer .cxx_destruct]
+  -[PRSServer overnightUpdateWithCompletion:]
+  -[PRSServer prewarmWithCompletion:]
+  -[PRSServer fetchPosterSnapshotsWithRequest:completion:]
+  -[PRSServer fetchPosterConfigurations:]
+  -[PRSServer deletePosterConfigurationsMatchingUUID:completion:]
+  -[PRSServer _queue_addConnection:]
+  -[PRSServer gatherDataFreshnessState:]
+  -[PRSServer fetchStaticPosterDescriptorsForExtension:completion:]
+  -[PRSServer removeAllFocusConfigurationsMatchingFocusUUID:completion:]
+  -[PRSServer associateConfigurationMatchingUUID:focusModeActivityUUID:completion:]
+  -[PRSServer fetchGallery:]
+  -[PRSServer exportPosterConfigurationMatchingUUID:completion:]
+  -[PRSServer fetchActiveConfiguration:]
+  -[PRSServer importPosterConfigurationFromArchiveData:completion:]
+  -[PRSServer clearMigrationFlags:]
+  -[PRSServer invalidate]
+  -[PRSServer fetchObscurableBoundsForPosterConfiguration:orientation:completion:]
+  -[PRSServer fetchContentObstructionBoundsForPosterConfiguration:orientation:completion:]
+  -[PRSServer runMigration:completion:]
+  -[PRSServer pushToProactiveWithCompletion:]
+  -[PRSServer notifyPosterBoardOfApplicationUpdatesWithCompletion:]
+  -[PRSServer _queue_removeConnection:]
+  -[PRSServer fetchAssociatedHomeScreenPosterConfigurationUUID:completion:]
+  -[PRSServer deletePosterDescriptorsForExtension:completion:]
+  -[PRSServer deleteDataStoreWithCompletion:]
+  -[PRSServer ingestSnapshotCollection:forPosterConfigurationUUID:completion:]
+  -[PRSServer init]
+  -[PRSServer refreshPosterDescriptorsForExtension:sessionInfo:completion:]
+  -[PRSServer fetchSelectedConfiguration:]
+  -[PRSServer listener:didReceiveConnection:withContext:]
+  -[PRSServer refreshSnapshotForPosterConfigurationMatchUUID:completion:]
+
+
+PRSPosterConfiguration : NSObject <BSXPCSecureCoding, NSSecureCoding>
+ @property  PRSPosterPath *_path
+ @property  NSURL *assetDirectory
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterConfiguration supportsSecureCoding]
+  +[PRSPosterConfiguration supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterConfiguration initWithBSXPCCoder:]
+  -[PRSPosterConfiguration encodeWithCoder:]
+  -[PRSPosterConfiguration dealloc]
+  -[PRSPosterConfiguration _path]
+  -[PRSPosterConfiguration .cxx_destruct]
+  -[PRSPosterConfiguration loadUserInfoWithError:]
+  -[PRSPosterConfiguration encodeWithBSXPCCoder:]
+  -[PRSPosterConfiguration isEqual:]
+  -[PRSPosterConfiguration init]
+  -[PRSPosterConfiguration assetDirectory]
+  -[PRSPosterConfiguration initWithCoder:]
+  -[PRSPosterConfiguration _initWithPath:]
+  -[PRSPosterConfiguration providerBundleIdentifier]
+  -[PRSPosterConfiguration serverUUID]
+
+
+PRSMutablePosterConfiguration : PRSPosterConfiguration
+  // class methods
+  +[PRSMutablePosterConfiguration mutableConfiguration]
+
+  // instance methods
+  -[PRSMutablePosterConfiguration storeUserInfo:error:]
+
+
+PRSWallpaperObserverConfiguration : NSObject
+ @property  unsigned long locations
+ @property  BOOL needsSandboxExtensions
+
+  // class methods
+  +[PRSWallpaperObserverConfiguration configurationWithHandler:]
+
+  // instance methods
+  -[PRSWallpaperObserverConfiguration locations]
+  -[PRSWallpaperObserverConfiguration setLocations:]
+  -[PRSWallpaperObserverConfiguration .cxx_destruct]
+  -[PRSWallpaperObserverConfiguration setQueue:]
+  -[PRSWallpaperObserverConfiguration init]
+  -[PRSWallpaperObserverConfiguration _initWithHandler:]
+  -[PRSWallpaperObserverConfiguration needsSandboxExtensions]
+  -[PRSWallpaperObserverConfiguration setNeedsSandboxExtensions:]
+
+
+PRSWallpaperObserverState : NSObject
+ @property  PRSPosterConfiguration *selectedLock
+ @property  PRSPosterConfiguration *selectedHome
+ @property  PRSPosterConfiguration *activeLock
+ @property  PRSPosterConfiguration *activeHome
+
+  // instance methods
+  -[PRSWallpaperObserverState selectedHome]
+  -[PRSWallpaperObserverState activeHome]
+  -[PRSWallpaperObserverState .cxx_destruct]
+  -[PRSWallpaperObserverState _initWithSelectedLock:selectedHome:activeLock:activeHome:]
+  -[PRSWallpaperObserverState activeLock]
+  -[PRSWallpaperObserverState selectedLock]
+  -[PRSWallpaperObserverState init]
+
+
+PRSWallpaperObserverTransition : NSObject
+ @property  unsigned long changed
+
+  // instance methods
+  -[PRSWallpaperObserverTransition changed]
+  -[PRSWallpaperObserverTransition setChanged:]
+  -[PRSWallpaperObserverTransition _initWithChanged:]
+  -[PRSWallpaperObserverTransition init]
+
+
+PRSWallpaperObserver : NSObject <PRSWallpaperObserving, BSInvalidatable>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PRSWallpaperObserver notifyWallpaperUpdates:]
+  -[PRSWallpaperObserver dealloc]
+  -[PRSWallpaperObserver initWithExplanation:]
+  -[PRSWallpaperObserver .cxx_destruct]
+  -[PRSWallpaperObserver _lock_invalidate]
+  -[PRSWallpaperObserver invalidate]
+  -[PRSWallpaperObserver activateWithConfiguration:]
+  -[PRSWallpaperObserver init]
+
+
+PRSWallpaperPublisher : NSObject <BSServiceConnectionListenerDelegate>
+ @property  <PRSWallpaperPublisherDelegate> *delegate
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PRSWallpaperPublisher initializeWithPaths:recentlyChanged:]
+  -[PRSWallpaperPublisher _lock_sendStateToClient:]
+  -[PRSWallpaperPublisher setDelegate:]
+  -[PRSWallpaperPublisher _initializeClient:withKnownIdentities:]
+  -[PRSWallpaperPublisher delegate]
+  -[PRSWallpaperPublisher _lock_noteChanged:]
+  -[PRSWallpaperPublisher updatePaths:]
+  -[PRSWallpaperPublisher .cxx_destruct]
+  -[PRSWallpaperPublisher _lock_descriptionIfInvalidPaths:]
+  -[PRSWallpaperPublisher init]
+  -[PRSWallpaperPublisher listener:didReceiveConnection:withContext:]
+
+
+PRSWallpaperClient : NSObject <PRSWallpaperObserverInitializing>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[PRSWallpaperClient .cxx_destruct]
+  -[PRSWallpaperClient initializeWithKnownIdentities:]
+
+
+PRSPosterUpdateSessionInfo : NSObject <BSXPCSecureCoding, NSSecureCoding>
+ @property  BOOL empty
+ @property  NSString *identifier
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterUpdateSessionInfo supportsSecureCoding]
+  +[PRSPosterUpdateSessionInfo supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterUpdateSessionInfo identifier]
+  -[PRSPosterUpdateSessionInfo initWithBSXPCCoder:]
+  -[PRSPosterUpdateSessionInfo encodeWithCoder:]
+  -[PRSPosterUpdateSessionInfo .cxx_destruct]
+  -[PRSPosterUpdateSessionInfo isEmpty]
+  -[PRSPosterUpdateSessionInfo setIdentifier:]
+  -[PRSPosterUpdateSessionInfo encodeWithBSXPCCoder:]
+  -[PRSPosterUpdateSessionInfo initWithCoder:]
+
+
+PRSPosterSnapshotRequest : NSObject <BSXPCSecureCoding>
+ @property  NSString *focusModeUUID
+ @property  long long configurationType
+ @property  long long variant
+ @property  unsigned long options
+ @property  unsigned long maxCount
+ @property  double imageScaleRelativeToScreen
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterSnapshotRequest supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterSnapshotRequest maxCount]
+  -[PRSPosterSnapshotRequest initWithBSXPCCoder:]
+  -[PRSPosterSnapshotRequest configurationType]
+  -[PRSPosterSnapshotRequest variant]
+  -[PRSPosterSnapshotRequest .cxx_destruct]
+  -[PRSPosterSnapshotRequest options]
+  -[PRSPosterSnapshotRequest encodeWithBSXPCCoder:]
+  -[PRSPosterSnapshotRequest init]
+  -[PRSPosterSnapshotRequest initWithFocusModeUUID:maxCount:]
+  -[PRSPosterSnapshotRequest initWithFocusModeUUID:configurationType:variant:options:maxCount:]
+  -[PRSPosterSnapshotRequest focusModeUUID]
+  -[PRSPosterSnapshotRequest imageScaleRelativeToScreen]
+  -[PRSPosterSnapshotRequest setImageScaleRelativeToScreen:]
+
+
+PRSPosterPathsAssertion : NSObject <NSSecureCoding>
+ @property  NSArray *paths
+
+  // class methods
+  +[PRSPosterPathsAssertion supportsSecureCoding]
+
+  // instance methods
+  -[PRSPosterPathsAssertion paths]
+  -[PRSPosterPathsAssertion _initWithPaths:invalidationAction:]
+  -[PRSPosterPathsAssertion encodeWithCoder:]
+  -[PRSPosterPathsAssertion initWithPaths:queue:invalidationHandler:]
+  -[PRSPosterPathsAssertion .cxx_destruct]
+  -[PRSPosterPathsAssertion invalidateWithResponder:]
+  -[PRSPosterPathsAssertion initWithPaths:]
+  -[PRSPosterPathsAssertion init]
+  -[PRSPosterPathsAssertion initWithCoder:]
+
+
+PRSPosterSnapshotResponse : NSObject <BSXPCSecureCoding>
+ @property  NSArray *snapshots
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterSnapshotResponse supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterSnapshotResponse initWithBSXPCCoder:]
+  -[PRSPosterSnapshotResponse .cxx_destruct]
+  -[PRSPosterSnapshotResponse encodeWithBSXPCCoder:]
+  -[PRSPosterSnapshotResponse snapshots]
+  -[PRSPosterSnapshotResponse initWithSnapshots:]
+
+
+PRSPosterSnapshotCollection : NSObject <BSXPCSecureCoding>
+ @property  PRSPosterSnapshot *primaryLayersSnapshot
+ @property  PRSPosterSnapshot *floatingLayerSnapshot
+ @property  double snapshotScale
+ @property  long long interfaceStyle
+ @property  long long accessibilityContrast
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSPosterSnapshotCollection supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSPosterSnapshotCollection initWithBSXPCCoder:]
+  -[PRSPosterSnapshotCollection .cxx_destruct]
+  -[PRSPosterSnapshotCollection interfaceStyle]
+  -[PRSPosterSnapshotCollection encodeWithBSXPCCoder:]
+  -[PRSPosterSnapshotCollection accessibilityContrast]
+  -[PRSPosterSnapshotCollection snapshotScale]
+  -[PRSPosterSnapshotCollection initWithPrimaryLayersSnapshot:floatingLayerSnapshot:snapshotScale:interfaceStyle:accessibilityContrast:]
+  -[PRSPosterSnapshotCollection primaryLayersSnapshot]
+  -[PRSPosterSnapshotCollection floatingLayerSnapshot]
+
+
+PRSService : NSObject
+  // instance methods
+  -[PRSService refreshPosterConfigurationMatchingUUID:sessionInfo:completion:]
+  -[PRSService updateToSelectedConfigurationMatchingUUID:completion:]
+  -[PRSService fetchContentCutoutBoundsForPosterConfiguration:orientation:completionHandler:]
+  -[PRSService fetchActivePosterConfiguration:]
+  -[PRSService deleteTransientDataWithCompletion:]
+  -[PRSService fetchFocusUUIDForConfiguration:completion:]
+  -[PRSService deleteSnapshots:completion:]
+  -[PRSService refreshSnapshotForPosterConfiguration:completion:]
+  -[PRSService retrieveGallery:]
+  -[PRSService refreshSnapshotForGalleryItemsMatchingDescriptorIdentifier:extensionIdentifier:completion:]
+  -[PRSService fetchPosterDescriptorsForExtension:completion:]
+  -[PRSService fetchExtensionIdentifiersWithCompletion:]
+  -[PRSService pushPosterGalleryUpdate:completion:]
+  -[PRSService dealloc]
+  -[PRSService refreshPosterConfiguration:sessionInfo:completion:]
+  -[PRSService notifyFocusModeDidChange:completion:]
+  -[PRSService fetchRuntimeAssertionState:]
+  -[PRSService createPosterConfigurationForProviderIdentifier:posterDescriptorIdentifier:completion:]
+  -[PRSService .cxx_destruct]
+  -[PRSService overnightUpdateWithCompletion:]
+  -[PRSService _refreshPosterDescriptorsForExtension:sessionInfo:completion:]
+  -[PRSService prewarmWithCompletion:]
+  -[PRSService fetchPosterSnapshotsWithRequest:completion:]
+  -[PRSService fetchPosterConfigurations:]
+  -[PRSService createAndSelectLegacyPosterConfigurationIfNeededWithCompletion:]
+  -[PRSService deletePosterConfigurationsMatchingUUID:completion:]
+  -[PRSService refreshPosterConfiguration:completion:]
+  -[PRSService fetchPosterConfigurationsForExtension:completion:]
+  -[PRSService gatherDataFreshnessState:]
+  -[PRSService fetchStaticPosterDescriptorsForExtension:completion:]
+  -[PRSService updateToSelectedConfiguration:completion:]
+  -[PRSService removeAllFocusConfigurationsMatchingFocusUUID:completion:]
+  -[PRSService associateConfigurationMatchingUUID:focusModeActivityUUID:completion:]
+  -[PRSService fetchGallery:]
+  -[PRSService exportPosterConfigurationMatchingUUID:completion:]
+  -[PRSService ingestSnapshotCollection:forPosterConfiguration:completion:]
+  -[PRSService _serviceInterfaceWithError:]
+  -[PRSService fetchActiveConfiguration:]
+  -[PRSService fetchContentObstructionBoundsForActivePosterWithOrientation:completionHandler:]
+  -[PRSService importPosterConfigurationFromArchiveData:completion:]
+  -[PRSService fetchMaximalContentCutoutBoundsForOrientation:completionHandler:]
+  -[PRSService clearMigrationFlags:]
+  -[PRSService _selectConfigurationAndRefreshSnapshot:completion:]
+  -[PRSService serviceNotificationCenterWithError:]
+  -[PRSService runMigration:completion:]
+  -[PRSService pushToProactiveWithCompletion:]
+  -[PRSService notifyPosterBoardOfApplicationUpdatesWithCompletion:]
+  -[PRSService fetchAssociatedHomeScreenPosterConfigurationUUID:completion:]
+  -[PRSService deletePosterDescriptorsForExtension:completion:]
+  -[PRSService fetchContentObstructionBoundsForPosterConfiguration:orientation:completionHandler:]
+  -[PRSService refreshPosterDescriptorsForExtension:completion:]
+  -[PRSService deleteDataStoreWithCompletion:]
+  -[PRSService fetchLimitedOcclusionBoundsForPosterConfiguration:orientation:completionHandler:]
+  -[PRSService fetchContentCutoutBoundsForActivePosterWithOrientation:completionHandler:]
+  -[PRSService fetchObscurableBoundsForPosterConfiguration:orientation:completionHandler:]
+  -[PRSService init]
+  -[PRSService refreshPosterDescriptorsForExtension:sessionInfo:completion:]
+  -[PRSService refreshSnapshotForPosterConfigurationMatchingUUID:completion:]
+  -[PRSService fetchSelectedConfiguration:]
+
+
+PRSPosterGalleryLayoutDataStore : NSObject
+
+PRSWidget : NSObject <NSSecureCoding, BSXPCSecureCoding, NSCopying, BSDescriptionProviding>
+ @property  NSString *uniqueIdentifier
+ @property  NSString *kind
+ @property  NSString *extensionBundleIdentifier
+ @property  NSString *containerBundleIdentifier
+ @property  unsigned long family
+ @property  INIntent *intent
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSWidget supportsSecureCoding]
+  +[PRSWidget supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSWidget setUniqueIdentifier:]
+  -[PRSWidget setExtensionBundleIdentifier:]
+  -[PRSWidget kind]
+  -[PRSWidget family]
+  -[PRSWidget initWithBSXPCCoder:]
+  -[PRSWidget containerBundleIdentifier]
+  -[PRSWidget descriptionWithMultilinePrefix:]
+  -[PRSWidget encodeWithCoder:]
+  -[PRSWidget descriptionBuilderWithMultilinePrefix:]
+  -[PRSWidget setIntent:]
+  -[PRSWidget .cxx_destruct]
+  -[PRSWidget succinctDescription]
+  -[PRSWidget setContainerBundleIdentifier:]
+  -[PRSWidget extensionBundleIdentifier]
+  -[PRSWidget copyWithZone:]
+  -[PRSWidget setKind:]
+  -[PRSWidget uniqueIdentifier]
+  -[PRSWidget encodeWithBSXPCCoder:]
+  -[PRSWidget succinctDescriptionBuilder]
+  -[PRSWidget isEqual:]
+  -[PRSWidget intent]
+  -[PRSWidget initWithCoder:]
+  -[PRSWidget initWithUniqueIdentifier:kind:extensionBundleIdentifier:containerBundleIdentifier:family:intent:]
+  -[PRSWidget setFamily:]
+
+
+PRSActivePosterConfiguration : NSObject <BSXPCSecureCoding, NSSecureCoding>
+ @property  PRSPosterConfiguration *lockScreenPosterConfiguration
+ @property  PRSPosterConfiguration *homeScreenPosterConfiguration
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[PRSActivePosterConfiguration supportsSecureCoding]
+  +[PRSActivePosterConfiguration supportsBSXPCSecureCoding]
+
+  // instance methods
+  -[PRSActivePosterConfiguration initWithBSXPCCoder:]
+  -[PRSActivePosterConfiguration encodeWithCoder:]
+  -[PRSActivePosterConfiguration .cxx_destruct]
+  -[PRSActivePosterConfiguration lockScreenPosterConfiguration]
+  -[PRSActivePosterConfiguration initWithLockScreenPosterConfiguration:homeScreenPosterConfiguration:]
+  -[PRSActivePosterConfiguration homeScreenPosterConfiguration]
+  -[PRSActivePosterConfiguration encodeWithBSXPCCoder:]
+  -[PRSActivePosterConfiguration initWithCoder:]
+
+
+(PRSServerPosterPathAdditions)
+	// class methods
+	+[(PRSServerPosterPathAdditions) prs_posterPathTypeURLForProviderURL:type:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathIdentifierURLProviderURL:type:posterUUID:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathVersionsURLForProviderURL:type:posterUUID:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathInstanceURLForProviderURL:type:posterUUID:version:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathInstanceURLForVersionsURL:version:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathContentsURLForProviderURL:type:posterUUID:version:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathContentsURLForInstanceURL:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathSupplementContainerURLForInstanceURL:]
+	+[(PRSServerPosterPathAdditions) prs_posterPathSupplementURLForInstanceURL:supplement:]
+
+	// instance methods
+	-[(PRSServerPosterPathAdditions) prs_loadFromPlistWithError:]
+	-[(PRSServerPosterPathAdditions) prs_storeToPlist:error:]
+
+01 00 0300 /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient: ATXPosterDescriptorGalleryOptions 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSAction 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSActionResponder 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSActionResponse 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSDescriptionBuilder 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSEqualsBuilder 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSHashBuilder 
+01 00 0500 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSMutableServiceInterface 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSMutableSettings 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSObjCProtocol 
+01 00 0500 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceConnection 
+01 00 0500 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceConnectionEndpoint 
+01 00 0500 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceConnectionListener 
+01 00 0500 /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices: BSServiceQuality 
+01 00 0400 /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard: BSSimpleAssertion 
+01 00 0100 /System/Library/Frameworks/Intents.framework/Intents: INIntent 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSHashTable 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedArchiver 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSKeyedUnarchiver 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSMapTable 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSMutableString 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 0800 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 0a00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
+01 00 0700 /System/Library/Frameworks/Foundation.framework/Foundation: NSXPCCoder 
+01 00 0600 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSAssertion 
+01 00 0600 /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices: RBSDomainAttribute 

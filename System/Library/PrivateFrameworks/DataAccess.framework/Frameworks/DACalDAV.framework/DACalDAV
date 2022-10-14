@@ -1,0 +1,2452 @@
+|| __DATA.__data _CalDAVPrincipalResultType_Group
+|| __DATA.__data _CalDAVPrincipalResultType_Person
+|| __DATA.__data _CalDAVPrincipalResultType_Resource
+|| __DATA.__data _CalDAVPrincipalResultType_Room
+|| __DATA.__data _CalDAVPrincipalResultType_Unknown
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVAccountDelegatesRefreshOperation
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVDBChangeTrackingHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVDBHelper
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVHTTPTrafficLog
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVMove
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVPrincipalResult
+|| __DATA.__objc_data _OBJC_CLASS_$_CalDAVRefreshContext
+|| __DATA.__objc_data _OBJC_CLASS_$_DACalDAViCalItem
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVAccountRefreshActor
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVAttachmentUploadInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVCalendar
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVDelegateUserInfo
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVDeletedItemContext
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVInboxCalendar
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVNotificationCalendar
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVPollCalendar
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalDAVSubscribedCalendar
+|| __DATA.__objc_data _OBJC_CLASS_$_MobileCalUserAddress
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVAccountDelegatesRefreshOperation
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVDBChangeTrackingHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVDBHelper
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVHTTPTrafficLog
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVMove
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVPrincipalResult
+|| __DATA.__objc_data _OBJC_METACLASS_$_CalDAVRefreshContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_DACalDAViCalItem
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVAccountRefreshActor
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVAttachmentUploadInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVCalendar
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVDelegateUserInfo
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVDeletedItemContext
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVInboxCalendar
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVNotificationCalendar
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVPollCalendar
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalDAVSubscribedCalendar
+|| __DATA.__objc_data _OBJC_METACLASS_$_MobileCalUserAddress
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileCalDAVAccountRefreshActor._transaction
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileCalDAVCalendar._calendarURLString
+|| __DATA.__objc_ivar _OBJC_IVAR_$_MobileCalDAVSubscribedCalendar._properties
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_attachmentid_param
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_auto_refresh_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_autoarchived_param
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_calendar_color_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_changekey_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_ews_itemid_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_ews_permission_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_filename_param
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_needs_server_confirmation_prop
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_self_invited_param
+|| __DATA_CONST.__const _kCALSTR_XAPPLE_sort_order_prop
+|| __DATA_CONST.__const _kCALSTR_XCS_attendee_comment_prop
+|| __DATA_CONST.__const _kCALSTR_XCS_attendee_ref_param
+|| __DATA_CONST.__const _kCALSTR_XCS_dtstamp_param
+|| __DATA_CONST.__const _kCALSTR_XCS_private_comment_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_alarmuid_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_attendee_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_byday_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_byhour_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_byminute_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_bymonth_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_bymonthday_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_bysecond_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_bysetpos_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_byweekno_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_byyearday_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_cachedenddate_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_caldesc_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_calname_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_caltype_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_cancelid_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_count_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_dontschedule_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_expiration_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_iconinfo_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_interval_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_invitationid_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_itatst_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_itmscl_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_itsent_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_lang_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_occdateid_param
+|| __DATA_CONST.__const _kCALSTR_XWR_occtrigger_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_parent_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_relcalid_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_rsvpneeded_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_template_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_timezonehint_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_until_prop
+|| __DATA_CONST.__const _kCALSTR_XWR_weekstart_prop
+|| __DATA_CONST.__const _kCALSTR_action_prop
+|| __DATA_CONST.__const _kCALSTR_altrep_param
+|| __DATA_CONST.__const _kCALSTR_attach_prop
+|| __DATA_CONST.__const _kCALSTR_attendee_prop
+|| __DATA_CONST.__const _kCALSTR_byday_param
+|| __DATA_CONST.__const _kCALSTR_byhour_param
+|| __DATA_CONST.__const _kCALSTR_byminute_param
+|| __DATA_CONST.__const _kCALSTR_bymonth_param
+|| __DATA_CONST.__const _kCALSTR_bymonthday_param
+|| __DATA_CONST.__const _kCALSTR_bysecond_param
+|| __DATA_CONST.__const _kCALSTR_bysetpos_param
+|| __DATA_CONST.__const _kCALSTR_byweekno_param
+|| __DATA_CONST.__const _kCALSTR_byyearday_param
+|| __DATA_CONST.__const _kCALSTR_calendarserveraccess_prop
+|| __DATA_CONST.__const _kCALSTR_calscale_prop
+|| __DATA_CONST.__const _kCALSTR_categories_prop
+|| __DATA_CONST.__const _kCALSTR_class_prop
+|| __DATA_CONST.__const _kCALSTR_cn_param
+|| __DATA_CONST.__const _kCALSTR_comment_prop
+|| __DATA_CONST.__const _kCALSTR_completed_prop
+|| __DATA_CONST.__const _kCALSTR_contact_prop
+|| __DATA_CONST.__const _kCALSTR_count_param
+|| __DATA_CONST.__const _kCALSTR_created_prop
+|| __DATA_CONST.__const _kCALSTR_cutype_param
+|| __DATA_CONST.__const _kCALSTR_delfrom_param
+|| __DATA_CONST.__const _kCALSTR_delto_param
+|| __DATA_CONST.__const _kCALSTR_description_prop
+|| __DATA_CONST.__const _kCALSTR_dir_param
+|| __DATA_CONST.__const _kCALSTR_dropbox_prop
+|| __DATA_CONST.__const _kCALSTR_dtend_prop
+|| __DATA_CONST.__const _kCALSTR_dtstamp_prop
+|| __DATA_CONST.__const _kCALSTR_dtstart_prop
+|| __DATA_CONST.__const _kCALSTR_due_prop
+|| __DATA_CONST.__const _kCALSTR_duration_prop
+|| __DATA_CONST.__const _kCALSTR_email_param
+|| __DATA_CONST.__const _kCALSTR_encoding_param
+|| __DATA_CONST.__const _kCALSTR_exdate_prop
+|| __DATA_CONST.__const _kCALSTR_exrule_prop
+|| __DATA_CONST.__const _kCALSTR_fbtype_param
+|| __DATA_CONST.__const _kCALSTR_fmttype_param
+|| __DATA_CONST.__const _kCALSTR_freebusy_prop
+|| __DATA_CONST.__const _kCALSTR_geo_prop
+|| __DATA_CONST.__const _kCALSTR_ignore_on_restore_prop
+|| __DATA_CONST.__const _kCALSTR_interval_param
+|| __DATA_CONST.__const _kCALSTR_language_param
+|| __DATA_CONST.__const _kCALSTR_lastmodified_prop
+|| __DATA_CONST.__const _kCALSTR_location_prop
+|| __DATA_CONST.__const _kCALSTR_maskuid_prop
+|| __DATA_CONST.__const _kCALSTR_maxresults_prop
+|| __DATA_CONST.__const _kCALSTR_member_param
+|| __DATA_CONST.__const _kCALSTR_method_prop
+|| __DATA_CONST.__const _kCALSTR_mxaresultsize_prop
+|| __DATA_CONST.__const _kCALSTR_needs_reply_prop
+|| __DATA_CONST.__const _kCALSTR_num_guests_param
+|| __DATA_CONST.__const _kCALSTR_organizer_prop
+|| __DATA_CONST.__const _kCALSTR_partstat_param
+|| __DATA_CONST.__const _kCALSTR_percentcomplete_prop
+|| __DATA_CONST.__const _kCALSTR_priority_prop
+|| __DATA_CONST.__const _kCALSTR_prodid_prop
+|| __DATA_CONST.__const _kCALSTR_query_prop
+|| __DATA_CONST.__const _kCALSTR_queryname_prop
+|| __DATA_CONST.__const _kCALSTR_range_param
+|| __DATA_CONST.__const _kCALSTR_rdate_prop
+|| __DATA_CONST.__const _kCALSTR_recurrenceid_prop
+|| __DATA_CONST.__const _kCALSTR_relatedto_prop
+|| __DATA_CONST.__const _kCALSTR_reltype_param
+|| __DATA_CONST.__const _kCALSTR_repeat_prop
+|| __DATA_CONST.__const _kCALSTR_requeststatus_prop
+|| __DATA_CONST.__const _kCALSTR_resources_prop
+|| __DATA_CONST.__const _kCALSTR_role_param
+|| __DATA_CONST.__const _kCALSTR_rrule_prop
+|| __DATA_CONST.__const _kCALSTR_rsvp_param
+|| __DATA_CONST.__const _kCALSTR_scheduleforcesend_param
+|| __DATA_CONST.__const _kCALSTR_schedulestatus_param
+|| __DATA_CONST.__const _kCALSTR_scope_prop
+|| __DATA_CONST.__const _kCALSTR_sentby_param
+|| __DATA_CONST.__const _kCALSTR_sequence_prop
+|| __DATA_CONST.__const _kCALSTR_status_prop
+|| __DATA_CONST.__const _kCALSTR_summary_prop
+|| __DATA_CONST.__const _kCALSTR_target_prop
+|| __DATA_CONST.__const _kCALSTR_transp_prop
+|| __DATA_CONST.__const _kCALSTR_trigger_prop
+|| __DATA_CONST.__const _kCALSTR_trigrel_param
+|| __DATA_CONST.__const _kCALSTR_tzid_param
+|| __DATA_CONST.__const _kCALSTR_tzid_prop
+|| __DATA_CONST.__const _kCALSTR_tzname_prop
+|| __DATA_CONST.__const _kCALSTR_tzoffsetfrom_prop
+|| __DATA_CONST.__const _kCALSTR_tzoffsetto_prop
+|| __DATA_CONST.__const _kCALSTR_tzurl_prop
+|| __DATA_CONST.__const _kCALSTR_uid_prop
+|| __DATA_CONST.__const _kCALSTR_until_param
+|| __DATA_CONST.__const _kCALSTR_url_prop
+|| __DATA_CONST.__const _kCALSTR_valuetype_param
+|| __DATA_CONST.__const _kCALSTR_version_prop
+|| __DATA_CONST.__const _kCALSTR_weekstart_param
+|| __DATA_CONST.__const _kCALSTR_x_prop
+|| __DATA_CONST.__const _kCalDAVAccountVersionKey
+|| __DATA_CONST.__const _kCalDAVChangeAlarm
+|| __DATA_CONST.__const _kCalDAVChangeAttachment
+|| __DATA_CONST.__const _kCalDAVChangeAttendee
+|| __DATA_CONST.__const _kCalDAVChangeEvent
+|| __DATA_CONST.__const _kCalDAVChangeOrganizer
+|| __DATA_CONST.__const _kCalDAVChangeRecurrence
+|| __DATA_CONST.__const _kCalDAVChangeTask
+|| __DATA_CONST.__const _kCalDAVHostKey
+|| __DATA_CONST.__const _kCalDAVMobileAccountCollectionSetNameKey
+|| __DATA_CONST.__const _kCalDAVMobileAccountDelegatePrincipalPath
+|| __DATA_CONST.__const _kCalDAVMobileAccountIsWritableKey
+|| __DATA_CONST.__const _kCalDAVMobileAccountOverriddenPort
+|| __DATA_CONST.__const _kCalDAVMobileAccountOverriddenScheme
+|| __DATA_CONST.__const _kCalDAVMobileAccountOverriddenServer
+|| __DATA_CONST.__const _kCalDAVMobileAccountSearchPropertySetKey
+|| __DATA_CONST.__const _kCalDAVMobileAccountSearchPropertySetKey_CoreDAV
+|| __DATA_CONST.__const _kCalDAVMobileAccountServerVersionKey
+|| __DATA_CONST.__const _kCalDAVMobileAccountWasUpgradedFromLegacy
+|| __DATA_CONST.__const _kCalDAVPortKey
+|| __DATA_CONST.__const _kCalDAVSchemeKey
+|| __DATA_CONST.__const _kCalEventPropertyChangeID
+|| __DATA_CONST.__const _kCalEventPropertyChangeRowid
+|| __DATA_CONST.__const _kCalEventPropertyEntityType
+|| __DATA_CONST.__const _kCalEventPropertyEventRef
+|| __DATA_CONST.__const _kCalEventPropertyExternalID
+|| __DATA_CONST.__const _kCalEventPropertyOldCalendarID
+|| __DATA_CONST.__const _kCalEventPropertySignificantAttributeChange
+|| __DATA_CONST.__const _kCalEventPropertyUniqueIdentifier
+|| __DATA_CONST.__const _kMobileCalDAVPrincipalURL
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MobileCalDAVAccount
+|| __DATA_DIRTY.__objc_data _OBJC_CLASS_$_MobileCalDAVPrincipal
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MobileCalDAVAccount
+|| __DATA_DIRTY.__objc_data _OBJC_METACLASS_$_MobileCalDAVPrincipal
+|| __TEXT.__const _kEventSyncLookAheadYears
+|| __TEXT.__text _RecordCalendarDiagnostics
+|| __TEXT.__text _checkOrCreatePath
+|| __TEXT.__text _createPath
+|| __TEXT.__text _generateFilenameForUID
+|| __TEXT.__text _getStringUUID
+|| __TEXT.__text _mobileCalDAVProdID
+__ Accounts: _ACAccountTypeIdentifierAppleAccount
+__ Accounts: _ACAccountTypeIdentifierCalDAV
+__ Accounts: _ACAccountTypeIdentifierGmail
+__ Accounts: _OBJC_CLASS_$_ACAccount
+__ Accounts: _kAccountAuthenticationTypeParent
+__ Accounts: _kAccountDataclassCalendars
+__ Accounts: _kAccountDataclassReminders
+__ AuthKit: _OBJC_CLASS_$_AKAppleIDSession
+__ CalDAV: _CalDAVErrorDomain
+__ CalDAV: _CalDAVHTTPHeader_ScheduleTag
+__ CalDAV: _CalDAVRemoveShareeItemKey
+__ CalDAV: _CalDAVRemoveShareeMuteKey
+__ CalDAV: _OBJC_CLASS_$_CalDAVAccountPropertyRefreshOperation
+__ CalDAV: _OBJC_CLASS_$_CalDAVAddManagedAttachmentsTaskGroup
+__ CalDAV: _OBJC_CLASS_$_CalDAVCalendarPropertyRefreshOperation
+__ CalDAV: _OBJC_CLASS_$_CalDAVCalendarServerUserItem
+__ CalDAV: _OBJC_CLASS_$_CalDAVCalendarSyncOperation
+__ CalDAV: _OBJC_CLASS_$_CalDAVCalendarUserAddress
+__ CalDAV: _OBJC_CLASS_$_CalDAVGetDelegatesTaskGroup
+__ CalDAV: _OBJC_CLASS_$_CalDAVNotificationItemData
+__ CalDAV: _OBJC_CLASS_$_CalDAVOperation
+__ CalDAV: _OBJC_CLASS_$_CalDAVPrincipalPropertySearchTask
+__ CalDAV: _OBJC_CLASS_$_CalDAVPrincipalSearchPropertySet
+__ CalDAV: _OBJC_CLASS_$_CalDAVPrincipalSearchSupport
+__ CalDAV: _OBJC_CLASS_$_CalDAVRecurrenceSplitAction
+__ CalDAV: _OBJC_CLASS_$_CalDAVScheduleChangesProperty
+__ CalDAV: _OBJC_CLASS_$_CalDAVServerVersion
+__ CalDAV: _OBJC_CLASS_$_CalDAVSupportedCalendarComponentSets
+__ CalDAV: _OBJC_METACLASS_$_CalDAVOperation
+__ CalDAV: _cdXMLCalDAVScheduleTag
+__ CalDAV: _cdXMLCalendarServerInviteAccepted
+__ CalDAV: _cdXMLCalendarServerInviteDeclined
+__ CalDAV: _cdXMLCalendarServerInviteDeleted
+__ CalDAV: _cdXMLCalendarServerInviteInvalid
+__ CalDAV: _cdXMLCalendarServerInviteNoResponse
+__ CalDAV: _cdXMLCalendarServerRead
+__ CalDAV: _cdXMLCalendarServerReadWrite
+__ CalDAV: _cdXMLCalendarServerReadWriteSchedule
+__ CalDAV: _kGoogleCalDAVServerType
+__ CalDAV: _kMobileMeCalDAVServerType
+__ CalendarDatabase: _CalAttachmentCopyFilename
+__ CalendarDatabase: _CalAttachmentCopyLocalURL
+__ CalendarDatabase: _CalAttachmentCopyLocalURLForArchivedData
+__ CalendarDatabase: _CalAttachmentCopyOwner
+__ CalendarDatabase: _CalAttachmentCopyURL
+__ CalendarDatabase: _CalAttachmentCopyUUID
+__ CalendarDatabase: _CalAttachmentFileCopyDownloadStart
+__ CalendarDatabase: _CalAttachmentFileCopyUUID
+__ CalendarDatabase: _CalAttachmentFileGetDownloadTries
+__ CalendarDatabase: _CalAttachmentGetUID
+__ CalendarDatabase: _CalAttachmentIsAutoArchived
+__ CalendarDatabase: _CalAttachmentSetURL
+__ CalendarDatabase: _CalAttendeeCopyAddress
+__ CalendarDatabase: _CalAttendeeCopyEmailAddress
+__ CalendarDatabase: _CalAttendeeGetProposedStartDate
+__ CalendarDatabase: _CalCalendarCanContainEntityType
+__ CalendarDatabase: _CalCalendarCopyBulkRequests
+__ CalendarDatabase: _CalCalendarCopyColorString
+__ CalendarDatabase: _CalCalendarCopyColorStringForDisplay
+__ CalendarDatabase: _CalCalendarCopyEvents
+__ CalendarDatabase: _CalCalendarCopyExternalID
+__ CalendarDatabase: _CalCalendarCopyExternalIdentificationTag
+__ CalendarDatabase: _CalCalendarCopyExternalModificationTag
+__ CalendarDatabase: _CalCalendarCopyExternalRepresentation
+__ CalendarDatabase: _CalCalendarCopyLastSyncTitle
+__ CalendarDatabase: _CalCalendarCopyNotes
+__ CalendarDatabase: _CalCalendarCopyOwnerIdentityAddress
+__ CalendarDatabase: _CalCalendarCopyOwnerIdentityDisplayName
+__ CalendarDatabase: _CalCalendarCopyOwnerIdentityEmail
+__ CalendarDatabase: _CalCalendarCopyOwnerIdentityPhoneNumber
+__ CalendarDatabase: _CalCalendarCopyPublishedURL
+__ CalendarDatabase: _CalCalendarCopyPushKey
+__ CalendarDatabase: _CalCalendarCopySelfIdentityAddress
+__ CalendarDatabase: _CalCalendarCopySelfIdentityDisplayName
+__ CalendarDatabase: _CalCalendarCopySelfIdentityEmail
+__ CalendarDatabase: _CalCalendarCopySelfIdentityPhoneNumber
+__ CalendarDatabase: _CalCalendarCopySharedOwnerAddress
+__ CalendarDatabase: _CalCalendarCopySharedOwnerName
+__ CalendarDatabase: _CalCalendarCopySharees
+__ CalendarDatabase: _CalCalendarCopyStore
+__ CalendarDatabase: _CalCalendarCopySubscriptionURL
+__ CalendarDatabase: _CalCalendarCopySymbolicColorName
+__ CalendarDatabase: _CalCalendarCopySyncToken
+__ CalendarDatabase: _CalCalendarCopyTasks
+__ CalendarDatabase: _CalCalendarCopyTitle
+__ CalendarDatabase: _CalCalendarCopyUUID
+__ CalendarDatabase: _CalCalendarFlagsAreValid
+__ CalendarDatabase: _CalCalendarGetCanBePublished
+__ CalendarDatabase: _CalCalendarGetCanBeShared
+__ CalendarDatabase: _CalCalendarGetDisplayOrder
+__ CalendarDatabase: _CalCalendarGetIsPublished
+__ CalendarDatabase: _CalCalendarGetMaxAttendees
+__ CalendarDatabase: _CalCalendarGetRefreshInterval
+__ CalendarDatabase: _CalCalendarGetSharingStatus
+__ CalendarDatabase: _CalCalendarGetStripAlarms
+__ CalendarDatabase: _CalCalendarGetStripAttachments
+__ CalendarDatabase: _CalCalendarGetUID
+__ CalendarDatabase: _CalCalendarHasCalendarErrorWithCode
+__ CalendarDatabase: _CalCalendarHasEvents
+__ CalendarDatabase: _CalCalendarHasTasks
+__ CalendarDatabase: _CalCalendarIsAffectingAvailability
+__ CalendarDatabase: _CalCalendarIsFamilyCalendar
+__ CalendarDatabase: _CalCalendarIsHidden
+__ CalendarDatabase: _CalCalendarIsImmutable
+__ CalendarDatabase: _CalCalendarIsInbox
+__ CalendarDatabase: _CalCalendarIsMarkedImmutableSharees
+__ CalendarDatabase: _CalCalendarIsMarkedUndeletable
+__ CalendarDatabase: _CalCalendarIsNotificationsCollection
+__ CalendarDatabase: _CalCalendarIsReadOnly
+__ CalendarDatabase: _CalCalendarIsSchedulingProhibited
+__ CalendarDatabase: _CalCalendarIsSharingInvitation
+__ CalendarDatabase: _CalCalendarIsSubscribed
+__ CalendarDatabase: _CalCalendarItemCopyAttachments
+__ CalendarDatabase: _CalCalendarItemCopyAttendees
+__ CalendarDatabase: _CalCalendarItemCopyCalendar
+__ CalendarDatabase: _CalCalendarItemCopyExternalID
+__ CalendarDatabase: _CalCalendarItemCopyExternalModificationTag
+__ CalendarDatabase: _CalCalendarItemCopyExternalScheduleID
+__ CalendarDatabase: _CalCalendarItemCopyOrganizer
+__ CalendarDatabase: _CalCalendarItemCopySelfAttendee
+__ CalendarDatabase: _CalCalendarItemCopyUniqueIdentifier
+__ CalendarDatabase: _CalCalendarItemGetEntityType
+__ CalendarDatabase: _CalCalendarItemGetRowID
+__ CalendarDatabase: _CalCalendarItemHasErrorCode
+__ CalendarDatabase: _CalCalendarItemIsSelfOrganizedWithScheduleAgentClient
+__ CalendarDatabase: _CalCalendarItemSetCreatedByAddress
+__ CalendarDatabase: _CalCalendarItemSetCreatedByDisplayName
+__ CalendarDatabase: _CalCalendarItemSetCreatedByFirstName
+__ CalendarDatabase: _CalCalendarItemSetCreatedByLastName
+__ CalendarDatabase: _CalCalendarItemSetCreatedDate
+__ CalendarDatabase: _CalCalendarItemSetCreatedTimezone
+__ CalendarDatabase: _CalCalendarItemSetError
+__ CalendarDatabase: _CalCalendarItemSetErrorCodeAndUserInfo
+__ CalendarDatabase: _CalCalendarItemSetExternalID
+__ CalendarDatabase: _CalCalendarItemSetExternalModificationTag
+__ CalendarDatabase: _CalCalendarItemSetExternalScheduleID
+__ CalendarDatabase: _CalCalendarItemSetModifiedByAddress
+__ CalendarDatabase: _CalCalendarItemSetModifiedByDisplayName
+__ CalendarDatabase: _CalCalendarItemSetModifiedByFirstName
+__ CalendarDatabase: _CalCalendarItemSetModifiedByLastName
+__ CalendarDatabase: _CalCalendarItemSetModifiedDate
+__ CalendarDatabase: _CalCalendarItemSetModifiedTimezone
+__ CalendarDatabase: _CalCalendarItemSetOrganizer
+__ CalendarDatabase: _CalCalendarItemSetSelfAttendee
+__ CalendarDatabase: _CalCalendarItemSetUniqueIdentifier
+__ CalendarDatabase: _CalCalendarItemStillExists
+__ CalendarDatabase: _CalCalendarSetBulkRequests
+__ CalendarDatabase: _CalCalendarSetCanBePublished
+__ CalendarDatabase: _CalCalendarSetCanBeShared
+__ CalendarDatabase: _CalCalendarSetCanContainEntityType
+__ CalendarDatabase: _CalCalendarSetColorString
+__ CalendarDatabase: _CalCalendarSetDisplayOrder
+__ CalendarDatabase: _CalCalendarSetError
+__ CalendarDatabase: _CalCalendarSetExternalID
+__ CalendarDatabase: _CalCalendarSetExternalIdentificationTag
+__ CalendarDatabase: _CalCalendarSetExternalModificationTag
+__ CalendarDatabase: _CalCalendarSetHidden
+__ CalendarDatabase: _CalCalendarSetImmutable
+__ CalendarDatabase: _CalCalendarSetIsAffectingAvailability
+__ CalendarDatabase: _CalCalendarSetIsFamilyCalendar
+__ CalendarDatabase: _CalCalendarSetIsInbox
+__ CalendarDatabase: _CalCalendarSetIsMarkedImmutableSharees
+__ CalendarDatabase: _CalCalendarSetIsMarkedUndeletable
+__ CalendarDatabase: _CalCalendarSetIsNotificationsCollection
+__ CalendarDatabase: _CalCalendarSetIsPublished
+__ CalendarDatabase: _CalCalendarSetLastSyncTitle
+__ CalendarDatabase: _CalCalendarSetMaxAttendees
+__ CalendarDatabase: _CalCalendarSetNotes
+__ CalendarDatabase: _CalCalendarSetOwnerIdentityAddress
+__ CalendarDatabase: _CalCalendarSetOwnerIdentityDisplayName
+__ CalendarDatabase: _CalCalendarSetOwnerIdentityEmail
+__ CalendarDatabase: _CalCalendarSetOwnerIdentityPhoneNumber
+__ CalendarDatabase: _CalCalendarSetPublishedURL
+__ CalendarDatabase: _CalCalendarSetPushKey
+__ CalendarDatabase: _CalCalendarSetReadOnly
+__ CalendarDatabase: _CalCalendarSetRefreshInterval
+__ CalendarDatabase: _CalCalendarSetSchedulingProhibited
+__ CalendarDatabase: _CalCalendarSetSelfIdentityAddress
+__ CalendarDatabase: _CalCalendarSetSelfIdentityDisplayName
+__ CalendarDatabase: _CalCalendarSetSelfIdentityEmail
+__ CalendarDatabase: _CalCalendarSetSelfIdentityPhoneNumber
+__ CalendarDatabase: _CalCalendarSetSharedOwnerAddress
+__ CalendarDatabase: _CalCalendarSetSharedOwnerName
+__ CalendarDatabase: _CalCalendarSetSharingStatus
+__ CalendarDatabase: _CalCalendarSetStripAlarms
+__ CalendarDatabase: _CalCalendarSetStripAttachments
+__ CalendarDatabase: _CalCalendarSetSubscribed
+__ CalendarDatabase: _CalCalendarSetSubscriptionURL
+__ CalendarDatabase: _CalCalendarSetSymbolicColorName
+__ CalendarDatabase: _CalCalendarSetSyncToken
+__ CalendarDatabase: _CalCalendarSetTitle
+__ CalendarDatabase: _CalCopyDatabaseForEntity
+__ CalendarDatabase: _CalDatabaseAmendDeleteForCalendarItemWithExternalID
+__ CalendarDatabase: _CalDatabaseClearIndividualChangeRowIDsForClient
+__ CalendarDatabase: _CalDatabaseCopyAlarmChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyAlarmChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyAllEventActionsWithExternalIDInStore
+__ CalendarDatabase: _CalDatabaseCopyAttachmentChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyAttachmentChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyAttendeeChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyAttendeeChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemWithExternalIDInCalendarOrStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemWithRowID
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemWithUniqueIdentifierInCalendarOrStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarItemsWithCalendar
+__ CalendarDatabase: _CalDatabaseCopyCalendarWithExternalIDInStore
+__ CalendarDatabase: _CalDatabaseCopyCalendarWithUID
+__ CalendarDatabase: _CalDatabaseCopyEntityWithRecordID
+__ CalendarDatabase: _CalDatabaseCopyEventActionChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyEventActionWithExternalIDInStore
+__ CalendarDatabase: _CalDatabaseCopyEventChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyEventMovesInStore
+__ CalendarDatabase: _CalDatabaseCopyEventWithExternalIDInCalendar
+__ CalendarDatabase: _CalDatabaseCopyEventWithUID
+__ CalendarDatabase: _CalDatabaseCopyEventWithUniqueIdentifierInCalendar
+__ CalendarDatabase: _CalDatabaseCopyEventWithUniqueIdentifierInStore
+__ CalendarDatabase: _CalDatabaseCopyEventsWithRecurrenceSet
+__ CalendarDatabase: _CalDatabaseCopyNotificationChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyNotificationWithExternalIDInCalendarOrStore
+__ CalendarDatabase: _CalDatabaseCopyNotificationWithUniqueIdentifierInCalendarOrStore
+__ CalendarDatabase: _CalDatabaseCopyNotificationsWithCalendar
+__ CalendarDatabase: _CalDatabaseCopyOfAllAttachmentFilesInStoreWithoutLocalFilesAndDownloadAttemptsBelow
+__ CalendarDatabase: _CalDatabaseCopyOfAllCalendarsInStore
+__ CalendarDatabase: _CalDatabaseCopyOfAllEventActionsInStore
+__ CalendarDatabase: _CalDatabaseCopyOrganizerChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyRecurrenceChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyRecurrenceChangesInStore
+__ CalendarDatabase: _CalDatabaseCopyShareeChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyShareeWithUID
+__ CalendarDatabase: _CalDatabaseCopyStoreWithExternalID
+__ CalendarDatabase: _CalDatabaseCopyTaskChangesInCalendar
+__ CalendarDatabase: _CalDatabaseCopyTaskMovesInStore
+__ CalendarDatabase: _CalDatabaseCopyUpdatedCalEventFromICSEventWithOptions
+__ CalendarDatabase: _CalDatabaseCopyUpdatedCalTaskFromICSTodoWithOptions
+__ CalendarDatabase: _CalDatabaseCreateCalendar
+__ CalendarDatabase: _CalDatabaseCreateError
+__ CalendarDatabase: _CalDatabaseCreateEventAction
+__ CalendarDatabase: _CalDatabaseCreateSharee
+__ CalendarDatabase: _CalDatabaseCreateStore
+__ CalendarDatabase: _CalDatabaseEnumerateUnconsumedObjectChangesForClient
+__ CalendarDatabase: _CalDatabaseGetCountOfCalendarItemsInStore
+__ CalendarDatabase: _CalDatabaseGetSequenceNumber
+__ CalendarDatabase: _CalDatabaseRegisterClientForPersistentChangeTrackingInStore
+__ CalendarDatabase: _CalDatabaseRevert
+__ CalendarDatabase: _CalDateFromICSDateAsUTC
+__ CalendarDatabase: _CalEntityCopyRecordID
+__ CalendarDatabase: _CalEntityGetType
+__ CalendarDatabase: _CalEntityIsNew
+__ CalendarDatabase: _CalEntityTypeGetName
+__ CalendarDatabase: _CalErrorSetCalendarErrorCode
+__ CalendarDatabase: _CalErrorSetCalendarItemErrorCode
+__ CalendarDatabase: _CalEventActionCopyExternalID
+__ CalendarDatabase: _CalEventActionCopyExternalModTag
+__ CalendarDatabase: _CalEventActionCopyOwningEvent
+__ CalendarDatabase: _CalEventActionRemove
+__ CalendarDatabase: _CalEventActionSetExternalID
+__ CalendarDatabase: _CalEventActionSetExternalModTag
+__ CalendarDatabase: _CalEventAddDetachedEvent
+__ CalendarDatabase: _CalEventAddEventAction
+__ CalendarDatabase: _CalEventCopyDetachedEvents
+__ CalendarDatabase: _CalEventCopyEventActions
+__ CalendarDatabase: _CalEventCopyExternalID
+__ CalendarDatabase: _CalEventCopyNextRecurrenceInSetForEvent
+__ CalendarDatabase: _CalEventCopyOriginalEvent
+__ CalendarDatabase: _CalEventCopyRecurrenceSet
+__ CalendarDatabase: _CalEventCopyUncachedCalendar
+__ CalendarDatabase: _CalEventCopyUniqueIdentifier
+__ CalendarDatabase: _CalEventGetInvitationStatus
+__ CalendarDatabase: _CalEventGetJunkStatus
+__ CalendarDatabase: _CalEventGetLocationPredictionState
+__ CalendarDatabase: _CalEventGetModifiedProperties
+__ CalendarDatabase: _CalEventGetOriginalStartDate
+__ CalendarDatabase: _CalEventGetStartDate
+__ CalendarDatabase: _CalEventGetUID
+__ CalendarDatabase: _CalEventIsAllDay
+__ CalendarDatabase: _CalEventIsDetached
+__ CalendarDatabase: _CalEventIsFloating
+__ CalendarDatabase: _CalEventNeedsResponse
+__ CalendarDatabase: _CalEventNotifyInvitationIfNeeded
+__ CalendarDatabase: _CalEventRemoveDetachedEvent
+__ CalendarDatabase: _CalEventRemoveEventAction
+__ CalendarDatabase: _CalEventSetExternalModificationTag
+__ CalendarDatabase: _CalEventSetExternalScheduleID
+__ CalendarDatabase: _CalEventSetInvitationChangedProperties
+__ CalendarDatabase: _CalEventSetLocationPredictionState
+__ CalendarDatabase: _CalEventSetNeedsNotification
+__ CalendarDatabase: _CalEventSetProposedStartDate
+__ CalendarDatabase: _CalEventSetRecurrenceSet
+__ CalendarDatabase: _CalGetRealUIDFromRecurrenceUID
+__ CalendarDatabase: _CalGetRecurrenceUIDFromRealUID
+__ CalendarDatabase: _CalNotificationCopyExternalID
+__ CalendarDatabase: _CalNotificationCopyExternalModTag
+__ CalendarDatabase: _CalNotificationCopyHostURL
+__ CalendarDatabase: _CalNotificationSetExternalID
+__ CalendarDatabase: _CalNotificationSetExternalModTag
+__ CalendarDatabase: _CalOrganizerCopyAddress
+__ CalendarDatabase: _CalOrganizerCopyEmailAddress
+__ CalendarDatabase: _CalOrganizerSetIsSelf
+__ CalendarDatabase: _CalParticipantPropagateUUIDsFromMainEventToDetachments
+__ CalendarDatabase: _CalRemoveCalendar
+__ CalendarDatabase: _CalRemoveEvent
+__ CalendarDatabase: _CalRemoveEventAndDetachedEvents
+__ CalendarDatabase: _CalRemoveNotification
+__ CalendarDatabase: _CalRemoveSharee
+__ CalendarDatabase: _CalRemoveTask
+__ CalendarDatabase: _CalShareeCopyAddress
+__ CalendarDatabase: _CalShareeCopyDisplayName
+__ CalendarDatabase: _CalShareeCopyFirstName
+__ CalendarDatabase: _CalShareeCopyLastName
+__ CalendarDatabase: _CalShareeGetAccessLevel
+__ CalendarDatabase: _CalShareeGetStatus
+__ CalendarDatabase: _CalShareeSetAccessLevel
+__ CalendarDatabase: _CalShareeSetAddress
+__ CalendarDatabase: _CalShareeSetDisplayName
+__ CalendarDatabase: _CalShareeSetFirstName
+__ CalendarDatabase: _CalShareeSetLastName
+__ CalendarDatabase: _CalShareeSetOwner
+__ CalendarDatabase: _CalShareeSetStatus
+__ CalendarDatabase: _CalShouldSyncReminders
+__ CalendarDatabase: _CalStoreAddCalendar
+__ CalendarDatabase: _CalStoreAllowsCalendarAddDeleteModify
+__ CalendarDatabase: _CalStoreAllowsEvents
+__ CalendarDatabase: _CalStoreAllowsTasks
+__ CalendarDatabase: _CalStoreCopyCachedExternalInfo
+__ CalendarDatabase: _CalStoreCopyCalendars
+__ CalendarDatabase: _CalStoreCopyConstraintsName
+__ CalendarDatabase: _CalStoreCopyDelegatedAccountOwnerStoreID
+__ CalendarDatabase: _CalStoreCopyExternalID
+__ CalendarDatabase: _CalStoreCopyExternalModificationTag
+__ CalendarDatabase: _CalStoreCopyName
+__ CalendarDatabase: _CalStoreCopyOwnerName
+__ CalendarDatabase: _CalStoreCopyUUID
+__ CalendarDatabase: _CalStoreGetDefaultAlarmOffsetNSInteger
+__ CalendarDatabase: _CalStoreGetDefaultAllDayAlarmOffsetNSInteger
+__ CalendarDatabase: _CalStoreGetPreferredEventPrivateValue
+__ CalendarDatabase: _CalStoreGetStrictestEventPrivateValue
+__ CalendarDatabase: _CalStoreGetSupportsJunkReporting
+__ CalendarDatabase: _CalStoreGetSupportsPhoneNumbers
+__ CalendarDatabase: _CalStoreGetType
+__ CalendarDatabase: _CalStoreIsEnabled
+__ CalendarDatabase: _CalStoreIsWritable
+__ CalendarDatabase: _CalStoreProhibitsPrivateEventsWithAttendees
+__ CalendarDatabase: _CalStoreProhibitsUsingEventOrganizerEmailWhenComposingMail
+__ CalendarDatabase: _CalStoreRemoveCalendar
+__ CalendarDatabase: _CalStoreRemoveItemsOfTypeOlderThanDateInStore
+__ CalendarDatabase: _CalStoreRequiresOpeningAttachmentAsLink
+__ CalendarDatabase: _CalStoreRequiresSamePrivacyLevelAcrossRecurrenceSeries
+__ CalendarDatabase: _CalStoreSetAllowsCalendarAddDeleteModify
+__ CalendarDatabase: _CalStoreSetAllowsEvents
+__ CalendarDatabase: _CalStoreSetAllowsTasks
+__ CalendarDatabase: _CalStoreSetCachedExternalInfo
+__ CalendarDatabase: _CalStoreSetConstraintsName
+__ CalendarDatabase: _CalStoreSetDefaultAlarmOffset
+__ CalendarDatabase: _CalStoreSetDefaultAllDayAlarmOffset
+__ CalendarDatabase: _CalStoreSetDelegatedAccountOwnerStoreID
+__ CalendarDatabase: _CalStoreSetEnabled
+__ CalendarDatabase: _CalStoreSetExternalID
+__ CalendarDatabase: _CalStoreSetExternalModificationTag
+__ CalendarDatabase: _CalStoreSetIsWritable
+__ CalendarDatabase: _CalStoreSetName
+__ CalendarDatabase: _CalStoreSetOwnerName
+__ CalendarDatabase: _CalStoreSetPreferredEventPrivateValue
+__ CalendarDatabase: _CalStoreSetProhibitsPrivateEventsWithAttendees
+__ CalendarDatabase: _CalStoreSetProhibitsUsingEventOrganizerEmailWhenComposingMail
+__ CalendarDatabase: _CalStoreSetRequiresOpeningAttachmentAsLink
+__ CalendarDatabase: _CalStoreSetRequiresSamePrivacyLevelAcrossRecurrenceSeries
+__ CalendarDatabase: _CalStoreSetShouldUseDeleteAndAddInsteadOfMoveBetweenCalendars
+__ CalendarDatabase: _CalStoreSetStrictestEventPrivateValue
+__ CalendarDatabase: _CalStoreSetSupportsAlarmAcknowledgedDate
+__ CalendarDatabase: _CalStoreSetSupportsAttachments
+__ CalendarDatabase: _CalStoreSetSupportsAvailabilityRequests
+__ CalendarDatabase: _CalStoreSetSupportsDelegateEnumeration
+__ CalendarDatabase: _CalStoreSetSupportsDelegation
+__ CalendarDatabase: _CalStoreSetSupportsFloatingTimeZone
+__ CalendarDatabase: _CalStoreSetSupportsIgnoringEventsInAvailabilityRequests
+__ CalendarDatabase: _CalStoreSetSupportsInboxAvailability
+__ CalendarDatabase: _CalStoreSetSupportsInvitationModificationsWithoutNotification
+__ CalendarDatabase: _CalStoreSetSupportsJunkReporting
+__ CalendarDatabase: _CalStoreSetSupportsLocationDirectorySearches
+__ CalendarDatabase: _CalStoreSetSupportsManagedSubscriptionCalendars
+__ CalendarDatabase: _CalStoreSetSupportsParticipantRoles
+__ CalendarDatabase: _CalStoreSetSupportsPhoneNumbers
+__ CalendarDatabase: _CalStoreSetSupportsPrivateEvents
+__ CalendarDatabase: _CalStoreSetSupportsPush
+__ CalendarDatabase: _CalStoreSetSupportsRecurrenceSplit
+__ CalendarDatabase: _CalStoreSetSupportsSharedCalendars
+__ CalendarDatabase: _CalStoreSetSupportsSubscriptionCalendars
+__ CalendarDatabase: _CalStoreSetSupportsSubscriptionMirroring
+__ CalendarDatabase: _CalStoreSetSupportsTravelTime
+__ CalendarDatabase: _CalStoreSetType
+__ CalendarDatabase: _CalStoreSetUUID
+__ CalendarDatabase: _CalStoreSetWasMigrated
+__ CalendarDatabase: _CalStoreShouldUseDeleteAndAddInsteadOfMoveBetweenCalendars
+__ CalendarDatabase: _CalStoreSupportsAlarmAcknowledgedDate
+__ CalendarDatabase: _CalStoreSupportsAttachments
+__ CalendarDatabase: _CalStoreSupportsAvailabilityRequests
+__ CalendarDatabase: _CalStoreSupportsDelegateEnumeration
+__ CalendarDatabase: _CalStoreSupportsDelegation
+__ CalendarDatabase: _CalStoreSupportsFloatingTimeZone
+__ CalendarDatabase: _CalStoreSupportsIgnoringEventsInAvailabilityRequests
+__ CalendarDatabase: _CalStoreSupportsInboxAvailability
+__ CalendarDatabase: _CalStoreSupportsInvitationModificationsWithoutNotification
+__ CalendarDatabase: _CalStoreSupportsLocationDirectorySearches
+__ CalendarDatabase: _CalStoreSupportsManagedSubscriptionCalendars
+__ CalendarDatabase: _CalStoreSupportsParticipantRoles
+__ CalendarDatabase: _CalStoreSupportsPrivateEvents
+__ CalendarDatabase: _CalStoreSupportsPush
+__ CalendarDatabase: _CalStoreSupportsRecurrenceSplit
+__ CalendarDatabase: _CalStoreSupportsSharedCalendars
+__ CalendarDatabase: _CalStoreSupportsSubscriptionCalendars
+__ CalendarDatabase: _CalStoreSupportsSubscriptionMirroring
+__ CalendarDatabase: _CalStoreSupportsTravelTime
+__ CalendarDatabase: _CalStoreSyncDefaultAlarms
+__ CalendarDatabase: _CalStoreWasMigrated
+__ CalendarDatabase: _EKSourceCachedExternalInfoHostKey
+__ CalendarDatabase: _EKSourceCachedExternalInfoOwnerAddressesKey
+__ CalendarDatabase: _EKSourceCachedExternalInfoPortKey
+__ CalendarDatabase: _EKSourceCachedExternalInfoPreferredOwnerAddressKey
+__ CalendarDatabase: _EKSourceCachedExternalInfoUseSSLKey
+__ CalendarDatabase: _ICSCalendarFromCalEntityRefs
+__ CalendarDatabase: _OBJC_CLASS_$_CDBiCalFixUps
+__ CalendarDatabase: _OBJC_CLASS_$_CalDAVNotificationHandler
+__ CalendarDatabase: _OBJC_CLASS_$_CaliTIPHandler
+__ CalendarDatabase: _OBJC_CLASS_$_CaliTIPMessage
+__ CalendarDatabase: __CalDatabaseUnlockRequested
+__ CalendarDatabase: _componentsWithPhantomMasterForICSCalendar
+__ CalendarDatabase: _kCalCalendarChangesChangeIDKey
+__ CalendarDatabase: _kCalCalendarChangesExternalIDKey
+__ CalendarDatabase: _kCalCalendarChangesFlagsKey
+__ CalendarDatabase: _kCalCalendarChangesIDKey
+__ CalendarDatabase: _kCalCalendarChangesOldFlagsKey
+__ CalendarDatabase: _kCalCalendarChangesTypeKey
+__ CalendarDatabase: _kCalCalendarDefaultOptions
+__ CalendarDatabase: _kCalCalendarDontImportIfLocalEventIsNewer
+__ CalendarDatabase: _kCalCalendarDontSearchForLocalMatch
+__ CalendarDatabase: _kCalCalendarItemChangesCalendarIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesChangeIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesExternalIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesOldCalendarIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesOldExternalIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesOwningEntityIDKey
+__ CalendarDatabase: _kCalCalendarItemChangesSignificantAttributeKey
+__ CalendarDatabase: _kCalCalendarItemChangesTypeKey
+__ CalendarDatabase: _kCalCalendarItemChangesUniqueIDKey
+__ CalendarDatabase: _kCalCalendarMergeFields
+__ CalendarDatabase: _kCalChangeAddition
+__ CalendarDatabase: _kCalChangeDeletion
+__ CalendarDatabase: _kCalChangeModification
+__ CalendarDatabase: _kCalImportEventIsPhantomMaster
+__ CalendarDatabase: _kCalNotificationChangesChangeIDKey
+__ CalendarDatabase: _kCalNotificationChangesIDKey
+__ CalendarDatabase: _kCalNotificationChangesTypeKey
+__ CalendarDatabase: _kCalShareeChangesAddressKey
+__ CalendarDatabase: _kCalShareeChangesChangeIDKey
+__ CalendarDatabase: _kCalShareeChangesIDKey
+__ CalendarDatabase: _kCalShareeChangesMuteNotificationKey
+__ CalendarDatabase: _kCalShareeChangesNameKey
+__ CalendarDatabase: _kCalShareeChangesTypeKey
+__ CalendarDatabase: _kEKCalendarItemErrorOptimisticallyClearForChangesToKeys
+__ CalendarDatabase: _kEKCalendarItemErrorPropertyNameAttachments
+__ CalendarFoundation: _CalAccountPropertyCalDAVUseKerberos
+__ CalendarFoundation: _CalCopyDefaultTimeZone
+__ CalendarFoundation: _CalIsReminderBridgeEnabled
+__ CalendarFoundation: _OBJC_CLASS_$_CalABCReporter
+__ CalendarFoundation: _OBJC_CLASS_$_CalContactsProvider
+__ CalendarFoundation: _kCalCalendarBundleIdentifier
+__ CalendarFoundation: _kCalDAVCalendarConstraints
+__ CalendarFoundation: _kCalDAVCalendarConstraintsNoComments
+__ CalendarFoundation: _kCalDAVCalendarConstraintsNoSchedule
+__ CalendarFoundation: _kCalDAVCalendarConstraintsNoScheduleNoComments
+__ CalendarFoundation: _kCalDAVMainPrincipalUID
+__ CalendarFoundation: _kCalDAVMobileAccountIsDelegate
+__ CalendarFoundation: _kCalDAVPrincipalsKey
+__ CalendarFoundation: _kCalDateInvalid
+__ CalendarFoundation: _kFutureLimitedCalDAVCalendarConstraints
+__ CalendarFoundation: _kFutureLimitedCalDAVCalendarConstraintsNoComments
+__ CalendarFoundation: _kFutureLimitedCalDAVCalendarConstraintsNoSchedule
+__ CalendarFoundation: _kFutureLimitedCalDAVCalendarConstraintsNoScheduleNoComments
+__ CalendarFoundation: _kMobileCalDAVAccountCalendarHomeURL
+__ CalendarFoundation: _kMobileCalDAVAccountDropBoxURL
+__ CalendarFoundation: _kMobileCalDAVAccountInboxCTag
+__ CalendarFoundation: _kMobileCalDAVAccountInboxURL
+__ CalendarFoundation: _kMobileCalDAVAccountNotificationCollectionCTag
+__ CalendarFoundation: _kMobileCalDAVAccountNotificationCollectionURL
+__ CalendarFoundation: _kMobileCalDAVAccountOutboxURL
+__ CalendarFoundation: _kMobileCalDAVCalendarHomePushKey
+__ CalendarFoundation: _kMobileCalDAVCanCreateCalendars
+__ CalendarFoundation: _kMobileCalDAVDefaultCalendarURL
+__ CalendarFoundation: _kMobileCalDAVFullName
+__ CalendarFoundation: _kMobileCalDAVIsDelegate
+__ CalendarFoundation: _kMobileCalDAVIsEnabled
+__ CalendarFoundation: _kMobileCalDAVIsExpandPropertyReportSupported
+__ CalendarFoundation: _kMobileCalDAVIsWritable
+__ CalendarFoundation: _kMobileCalDAVNotificationsURLString
+__ CalendarFoundation: _kMobileCalDAVPreferredCalendarUserAddresses
+__ CalendarFoundation: _kMobileCalDAVPreferredCalendarUserAddressesPerCalendar
+__ CalendarFoundation: _kMobileCalDAVPrincipalPath
+__ CalendarFoundation: _kMobileCalDAVPrincipalUID
+__ CalendarFoundation: _kMobileCalDAVPushTransports
+__ CalendarFoundation: _kMobileCalDAVQuotaFreeBytes
+__ CalendarFoundation: _kMobileCalDAVSupportedCalendarComponentSets
+__ CalendarFoundation: _kMobileCalDAVSupportsCalendarUserSearch
+__ CalendarFoundation: _kMobileCalDAVSupportsFreebusy
+__ CalendarFoundation: _kMobileCalDAVSupportsPush
+__ CalendarFoundation: _kMobileCalDAVSupportsSyncToken
+__ CalendarFoundation: _kSubCalFilterAttachmentsKey
+__ CalendarFoundation: _kSubCalFilterTasksKey
+__ CalendarFoundation: _kSubCalIsManagedByServerKey
+__ CalendarFoundation: _kSubCalRefreshIntervalKey
+__ CoreDAV: _CoreDAVErrorDomain
+__ CoreDAV: _CoreDAVHTTPHeader_ETag
+__ CoreDAV: _CoreDAVHTTPStatusErrorDomain
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVAction
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVCalendarServerEmailAddressSetItem
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVDiscoveryTaskGroup
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVItemParserMapping
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVItemWithHrefChildren
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVLeafItem
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVLogging
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVMoveTask
+__ CoreDAV: _OBJC_CLASS_$_CoreDAVPropFindTask
+__ CoreDAV: _cdXMLCalDAVURI
+__ CoreDAV: _cdXMLCalendarServerAPSBundleID
+__ CoreDAV: _cdXMLCalendarServerSubscriptionURL
+__ CoreDAV: _cdXMLDAVURI
+__ CoreDAV: _cdXMLGetETag
+__ CoreDAV: _cdXMLMMAPSEnv
+__ CoreDAV: _cdXMLMMeBulkCRUD
+__ CoreDAV: _cdXMLPrincipalURL
+__ CoreFoundation: _CFAbsoluteTimeGetCurrent
+__ CoreFoundation: _CFArrayAppendArray
+__ CoreFoundation: _CFArrayAppendValue
+__ CoreFoundation: _CFArrayCreateMutable
+__ CoreFoundation: _CFArrayGetCount
+__ CoreFoundation: _CFArrayGetValueAtIndex
+__ CoreFoundation: _CFAutorelease
+__ CoreFoundation: _CFDateCreate
+__ CoreFoundation: _CFDictionaryCreateMutable
+__ CoreFoundation: _CFDictionaryGetValue
+__ CoreFoundation: _CFGetTypeID
+__ CoreFoundation: _CFNullGetTypeID
+__ CoreFoundation: _CFRelease
+__ CoreFoundation: _CFRetain
+__ CoreFoundation: _CFRunLoopGetMain
+__ CoreFoundation: _CFRunLoopPerformBlock
+__ CoreFoundation: _CFRunLoopWakeUp
+__ CoreFoundation: _CFSetCreateMutable
+__ CoreFoundation: _CFStringGetLength
+__ CoreFoundation: _CFUUIDCreate
+__ CoreFoundation: _CFUUIDCreateString
+__ CoreFoundation: _NSGregorianCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSArray
+__ CoreFoundation: _OBJC_CLASS_$_NSCalendar
+__ CoreFoundation: _OBJC_CLASS_$_NSData
+__ CoreFoundation: _OBJC_CLASS_$_NSDate
+__ CoreFoundation: _OBJC_CLASS_$_NSDateComponents
+__ CoreFoundation: _OBJC_CLASS_$_NSDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableArray
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableDictionary
+__ CoreFoundation: _OBJC_CLASS_$_NSMutableSet
+__ CoreFoundation: _OBJC_CLASS_$_NSNull
+__ CoreFoundation: _OBJC_CLASS_$_NSSet
+__ CoreFoundation: _OBJC_CLASS_$_NSTimeZone
+__ CoreFoundation: _OBJC_CLASS_$_NSURL
+__ CoreFoundation: _OBJC_EHTYPE_$_NSException
+__ CoreFoundation: __CFCopyServerVersionDictionary
+__ CoreFoundation: __CFCopySystemVersionDictionary
+__ CoreFoundation: ___CFConstantStringClassReference
+__ CoreFoundation: ___NSDictionary0__struct
+__ CoreFoundation: __kCFSystemVersionProductVersionKey
+__ CoreFoundation: _kCFAllocatorDefault
+__ CoreFoundation: _kCFNull
+__ CoreFoundation: _kCFRunLoopDefaultMode
+__ CoreFoundation: _kCFTypeDictionaryKeyCallBacks
+__ CoreFoundation: _kCFTypeDictionaryValueCallBacks
+__ CoreFoundation: _kCFTypeSetCallBacks
+__ CoreServices: _UTTypeCopyPreferredTagWithClass
+__ CoreServices: _UTTypeCreatePreferredIdentifierForTag
+__ CoreServices: _kUTTagClassFilenameExtension
+__ CoreServices: _kUTTagClassMIMEType
+__ DACoreDAVGlue: _OBJC_CLASS_$_DACoreDAVLogger
+__ DACoreDAVGlue: _OBJC_CLASS_$_DACoreDAVTaskManager
+__ DACoreDAVGlue: _coreDAVValidationErrorFromRawError
+__ DataAccess: _DAStringFromCalEntityType
+__ DataAccess: _DAUserAgent
+__ DataAccess: _DAWeakLinkClass
+__ DataAccess: _OBJC_CLASS_$_DAAccount
+__ DataAccess: _OBJC_CLASS_$_DALocalDBHelper
+__ DataAccess: _OBJC_CLASS_$_DAPowerAssertionManager
+__ DataAccess: _OBJC_CLASS_$_DARunLoopRegistry
+__ DataAccess: _OBJC_CLASS_$_DAStoreSyncStatusUpdater
+__ DataAccess: _OBJC_CLASS_$_DATrafficLogger
+__ DataAccess: _OBJC_CLASS_$_DATransaction
+__ DataAccess: _OBJC_CLASS_$_DAiCalendarLogger
+__ DataAccess: _OBJC_IVAR_$_DAAccount._taskManager
+__ DataAccess: _OBJC_METACLASS_$_DAAccount
+__ DataAccess: _OBJC_METACLASS_$_DALocalDBHelper
+__ DataAccess: _dataaccess_get_global_queue
+__ DataAccess: _kDAPowerLogCalendarItemsDownloadedEventName
+__ DataAccess: _kDAPowerLogCalendarItemsUploadedEventName
+__ DataAccess: _kDAPowerLogContainerID
+__ DataAccess: _kDAPowerLogNumberOfItemsChanged
+__ DataAccess: _kDAPowerLogSyncAccountClass
+__ DataAccess: _kDAPowerLogSyncAccountID
+__ DataAccess: _kDAPowerLogSyncAccountName
+__ DataAccess: _sharedDAAccountStore
+__ DataAccessExpress: _DAErrorDomain
+__ DataAccessExpress: _DAGreenTeaLogger
+__ DataAccessExpress: _DALoggingwithCategory
+__ DataAccessExpress: _OBJC_CLASS_$_DABehaviorOptions
+__ DataAccessExpress: _OBJC_CLASS_$_DAContactSearchResultElement
+__ DataAccessExpress: _OBJC_CLASS_$_DAContactsSearchQuery
+__ DataAccessExpress: _OBJC_CLASS_$_DASharedAccountProperties
+__ DataAccessExpress: _OBJC_CLASS_$_DATrafficLogFilename
+__ DataAccessExpress: __CPLog_to_os_log_type
+__ Foundation: _NSLog
+__ Foundation: _NSRequestConcreteImplementation
+__ Foundation: _NSStringFromClass
+__ Foundation: _NSUnderlyingErrorKey
+__ Foundation: _OBJC_CLASS_$_NSAssertionHandler
+__ Foundation: _OBJC_CLASS_$_NSBundle
+__ Foundation: _OBJC_CLASS_$_NSConstantIntegerNumber
+__ Foundation: _OBJC_CLASS_$_NSError
+__ Foundation: _OBJC_CLASS_$_NSFileManager
+__ Foundation: _OBJC_CLASS_$_NSNotificationCenter
+__ Foundation: _OBJC_CLASS_$_NSNumber
+__ Foundation: _OBJC_CLASS_$_NSPredicate
+__ Foundation: _OBJC_CLASS_$_NSPropertyListSerialization
+__ Foundation: _OBJC_CLASS_$_NSString
+__ Foundation: _OBJC_CLASS_$_NSThread
+__ Foundation: _OBJC_CLASS_$_NSUUID
+__ PowerLog: _PLLogRegisteredEvent
+__ PowerLog: _PLShouldLogRegisteredEvent
+__ SoftLinking: __sl_dlopen
+__ iCalendar: _OBJC_CLASS_$_ICSAlarm
+__ iCalendar: _OBJC_CLASS_$_ICSComponent
+__ iCalendar: _OBJC_CLASS_$_ICSDate
+__ iCalendar: _OBJC_CLASS_$_ICSDateTimeUTCValue
+__ iCalendar: _OBJC_CLASS_$_ICSDocument
+__ iCalendar: _OBJC_CLASS_$_ICSDuration
+__ iCalendar: _OBJC_CLASS_$_ICSEvent
+__ iCalendar: _OBJC_CLASS_$_ICSTodo
+__ iCalendar: _OBJC_CLASS_$_ICSTrigger
+__ iCalendar: _kICSSTR_reltype_param
+__ libCTGreenTeaLogger.dylib: _getCTGreenTeaOsLogHandle
+__ libSystem.B.dylib: __Block_object_dispose
+__ libSystem.B.dylib: __NSConcreteGlobalBlock
+__ libSystem.B.dylib: __NSConcreteStackBlock
+__ libSystem.B.dylib: __Unwind_Resume
+__ libSystem.B.dylib: ___stack_chk_fail
+__ libSystem.B.dylib: ___stack_chk_guard
+__ libSystem.B.dylib: __os_log_impl
+__ libSystem.B.dylib: _dispatch_get_global_queue
+__ libSystem.B.dylib: _dispatch_group_create
+__ libSystem.B.dylib: _dispatch_group_enter
+__ libSystem.B.dylib: _dispatch_group_leave
+__ libSystem.B.dylib: _dispatch_group_notify
+__ libSystem.B.dylib: _dispatch_once
+__ libSystem.B.dylib: _free
+__ libSystem.B.dylib: _os_log_type_enabled
+__ libobjc.A.dylib: _OBJC_CLASS_$_NSObject
+__ libobjc.A.dylib: _OBJC_METACLASS_$_NSObject
+__ libobjc.A.dylib: ___objc_personality_v0
+__ libobjc.A.dylib: __objc_empty_cache
+__ libobjc.A.dylib: _objc_alloc
+__ libobjc.A.dylib: _objc_alloc_init
+__ libobjc.A.dylib: _objc_autorelease
+__ libobjc.A.dylib: _objc_autoreleasePoolPop
+__ libobjc.A.dylib: _objc_autoreleasePoolPush
+__ libobjc.A.dylib: _objc_autoreleaseReturnValue
+__ libobjc.A.dylib: _objc_begin_catch
+__ libobjc.A.dylib: _objc_claimAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_copyWeak
+__ libobjc.A.dylib: _objc_destroyWeak
+__ libobjc.A.dylib: _objc_end_catch
+__ libobjc.A.dylib: _objc_enumerationMutation
+__ libobjc.A.dylib: _objc_exception_rethrow
+__ libobjc.A.dylib: _objc_getClass
+__ libobjc.A.dylib: _objc_initWeak
+__ libobjc.A.dylib: _objc_loadWeakRetained
+__ libobjc.A.dylib: _objc_msgSend
+__ libobjc.A.dylib: _objc_msgSendSuper2
+__ libobjc.A.dylib: _objc_opt_class
+__ libobjc.A.dylib: _objc_opt_isKindOfClass
+__ libobjc.A.dylib: _objc_opt_new
+__ libobjc.A.dylib: _objc_opt_respondsToSelector
+__ libobjc.A.dylib: _objc_release
+__ libobjc.A.dylib: _objc_release_x1
+__ libobjc.A.dylib: _objc_release_x19
+__ libobjc.A.dylib: _objc_release_x20
+__ libobjc.A.dylib: _objc_release_x21
+__ libobjc.A.dylib: _objc_release_x22
+__ libobjc.A.dylib: _objc_release_x23
+__ libobjc.A.dylib: _objc_release_x24
+__ libobjc.A.dylib: _objc_release_x25
+__ libobjc.A.dylib: _objc_release_x26
+__ libobjc.A.dylib: _objc_release_x27
+__ libobjc.A.dylib: _objc_release_x28
+__ libobjc.A.dylib: _objc_release_x8
+__ libobjc.A.dylib: _objc_release_x9
+__ libobjc.A.dylib: _objc_retain
+__ libobjc.A.dylib: _objc_retainAutorelease
+__ libobjc.A.dylib: _objc_retainAutoreleaseReturnValue
+__ libobjc.A.dylib: _objc_retainAutoreleasedReturnValue
+__ libobjc.A.dylib: _objc_retainBlock
+__ libobjc.A.dylib: _objc_retain_x1
+__ libobjc.A.dylib: _objc_retain_x19
+__ libobjc.A.dylib: _objc_retain_x2
+__ libobjc.A.dylib: _objc_retain_x20
+__ libobjc.A.dylib: _objc_retain_x21
+__ libobjc.A.dylib: _objc_retain_x22
+__ libobjc.A.dylib: _objc_retain_x23
+__ libobjc.A.dylib: _objc_retain_x24
+__ libobjc.A.dylib: _objc_retain_x25
+__ libobjc.A.dylib: _objc_retain_x26
+__ libobjc.A.dylib: _objc_retain_x27
+__ libobjc.A.dylib: _objc_retain_x28
+__ libobjc.A.dylib: _objc_retain_x3
+__ libobjc.A.dylib: _objc_retain_x4
+__ libobjc.A.dylib: _objc_retain_x5
+__ libobjc.A.dylib: _objc_retain_x7
+__ libobjc.A.dylib: _objc_retain_x8
+__ libobjc.A.dylib: _objc_retain_x9
+__ libobjc.A.dylib: _objc_setProperty_nonatomic_copy
+__ libobjc.A.dylib: _objc_storeStrong
+__ libobjc.A.dylib: _objc_storeWeak
+__ libobjc.A.dylib: _objc_sync_enter
+__ libobjc.A.dylib: _objc_sync_exit
+__ libobjc.A.dylib: _objc_terminate
+__ libobjc.A.dylib: _objc_unsafeClaimAutoreleasedReturnValue
+MobileCalDAVAccount : DAAccount <CDBAccountInfo, DACalDAVAccount>
+ @property  CoreDAVDiscoveryTaskGroup *checkValidityTaskGroup
+ @property  MobileCalDAVAccountRefreshActor *actor
+ @property  BOOL isSpinning
+ @property  NSMutableSet *searchTaskSet
+ @property  DACoreDAVLogger *coreDAVLogger
+ @property  NSMutableDictionary *mPrincipals
+ @property  NSMutableDictionary *mItemIDsToMoveActions
+ @property  NSMutableSet *mMovedItemURLStrings
+ @property  NSMutableSet *mCalendars
+ @property  BOOL subscribedCalendarsChanged
+ @property  MobileCalDAVPrincipal<CalDAVPrincipal> *mainPrincipal
+ @property  NSDictionary *principals
+ @property  NSDictionary *delegateUserInfos
+ @property  DACoreDAVTaskManager *taskManager
+ @property  NSURL *collectionSetURL
+ @property  CalDAVPrincipalSearchPropertySet *searchPropertySet
+ @property  NSString *overriddenServer
+ @property  NSString *overriddenScheme
+ @property  int overriddenPort
+ @property  double refreshInterval
+ @property  BOOL pushDisabled
+ @property  BOOL isWritable
+ @property  BOOL wasMigrated
+ @property  BOOL needsAccountPropertyRefresh
+ @property  BOOL isRefreshing
+ @property  NSDictionary *itemIDsToMoveActions
+ @property  NSSet *movedItemURLStrings
+ @property  NSString *calendarHomeSyncToken
+ @property  CalDAVServerVersion *serverVersion
+ @property  int preferredEventDaysToSync
+ @property  int preferredToDoDaysToSync
+ @property  NSTimeZone *viewedTimeZone
+ @property  BOOL shouldFilterEventSyncTimeRange
+ @property  BOOL shouldFilterSyncTimeRangeForInbox
+ @property  BOOL shouldUseCalendarHomeSyncReport
+ @property  BOOL supportsReminders
+ @property  BOOL supportsEvents
+ @property  CalDAVRefreshContext *refreshContext
+ @property  NSURL *serverBaseURL
+ @property  NSArray *wellKnownPaths
+ @property  NSSet *calendars
+ @property  NSDictionary *subscribedCalendars
+ @property  NSArray *duplicateCalendars
+ @property  BOOL searchQueriesShouldCancel
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[MobileCalDAVAccount defaultAlarmOffsetFromICSString:]
+
+  // instance methods
+  -[MobileCalDAVAccount task:didFinishWithError:]
+  -[MobileCalDAVAccount accountDescription]
+  -[MobileCalDAVAccount isRefreshing]
+  -[MobileCalDAVAccount setAccountDescription:]
+  -[MobileCalDAVAccount logHandle]
+  -[MobileCalDAVAccount setRefreshInterval:]
+  -[MobileCalDAVAccount isWritable]
+  -[MobileCalDAVAccount setCalendarHomeSyncToken:]
+  -[MobileCalDAVAccount releasePowerAssertion]
+  -[MobileCalDAVAccount updateDelegates]
+  -[MobileCalDAVAccount dealloc]
+  -[MobileCalDAVAccount emailAddresses]
+  -[MobileCalDAVAccount refreshInterval]
+  -[MobileCalDAVAccount .cxx_destruct]
+  -[MobileCalDAVAccount host]
+  -[MobileCalDAVAccount username]
+  -[MobileCalDAVAccount taskManager]
+  -[MobileCalDAVAccount calendars]
+  -[MobileCalDAVAccount isSpinning]
+  -[MobileCalDAVAccount isEqualToAccount:]
+  -[MobileCalDAVAccount serverVersion]
+  -[MobileCalDAVAccount addressIsAccountOwner:]
+  -[MobileCalDAVAccount calendarHomeSyncToken]
+  -[MobileCalDAVAccount init]
+  -[MobileCalDAVAccount principalPath]
+  -[MobileCalDAVAccount setPrincipalPath:]
+  -[MobileCalDAVAccount preferredAddress]
+  -[MobileCalDAVAccount wasMigrated]
+  -[MobileCalDAVAccount setWasMigrated:]
+  -[MobileCalDAVAccount removeCalendar:]
+  -[MobileCalDAVAccount shouldUseCalendarHomeSyncReport]
+  -[MobileCalDAVAccount calendarsDataclassModified]
+  -[MobileCalDAVAccount initWithBackingAccountInfo:]
+  -[MobileCalDAVAccount ingestBackingAccountInfoProperties]
+  -[MobileCalDAVAccount upgradeAccount]
+  -[MobileCalDAVAccount spinnerIdentifiers]
+  -[MobileCalDAVAccount setPrincipalURL:]
+  -[MobileCalDAVAccount saveModifiedPropertiesOnBackingAccount]
+  -[MobileCalDAVAccount discoverInitialPropertiesWithConsumer:]
+  -[MobileCalDAVAccount onBehalfOfBundleIdentifier]
+  -[MobileCalDAVAccount accountHasSignificantPropertyChangesWithChangeInfo:]
+  -[MobileCalDAVAccount isCalDAVAccount]
+  -[MobileCalDAVAccount isDelegateAccount]
+  -[MobileCalDAVAccount addToCoreDAVLoggingDelegates]
+  -[MobileCalDAVAccount removeFromCoreDAVLoggingDelegates]
+  -[MobileCalDAVAccount localizedIdenticalAccountFailureMessage]
+  -[MobileCalDAVAccount localizedInvalidPasswordMessage]
+  -[MobileCalDAVAccount _reallyPerformSearchQuery:]
+  -[MobileCalDAVAccount _reallyCancelSearchQuery:]
+  -[MobileCalDAVAccount _reallyCancelAllSearchQueries]
+  -[MobileCalDAVAccount _reallySearchQueriesRunning]
+  -[MobileCalDAVAccount mainPrincipal]
+  -[MobileCalDAVAccount setMainPrincipal:]
+  -[MobileCalDAVAccount subscribedCalendars]
+  -[MobileCalDAVAccount setSubscribedCalendars:]
+  -[MobileCalDAVAccount preferredEventDaysToSync]
+  -[MobileCalDAVAccount preferredToDoDaysToSync]
+  -[MobileCalDAVAccount pushDisabled]
+  -[MobileCalDAVAccount setIsWritable:]
+  -[MobileCalDAVAccount serverBaseURL]
+  -[MobileCalDAVAccount retainPowerAssertion]
+  -[MobileCalDAVAccount coreDAVLogTransmittedDataPartial:]
+  -[MobileCalDAVAccount discoveryTask:gotAccountInfo:error:]
+  -[MobileCalDAVAccount coreDAVTransmittedDataFinished]
+  -[MobileCalDAVAccount shouldLogTransmittedData]
+  -[MobileCalDAVAccount noteHomeSetOnDifferentHost:]
+  -[MobileCalDAVAccount setSearchPropertySet:]
+  -[MobileCalDAVAccount setServerVersion:]
+  -[MobileCalDAVAccount setCollectionSetURL:]
+  -[MobileCalDAVAccount principals]
+  -[MobileCalDAVAccount movedItemURLStrings]
+  -[MobileCalDAVAccount itemIDsToMoveActions]
+  -[MobileCalDAVAccount _setParentAccount:]
+  -[MobileCalDAVAccount delegatePrincipalPath]
+  -[MobileCalDAVAccount setDelegatePrincipalPath:]
+  -[MobileCalDAVAccount useKerberos]
+  -[MobileCalDAVAccount setUseKerberos:]
+  -[MobileCalDAVAccount setOverriddenServer:]
+  -[MobileCalDAVAccount overriddenServer]
+  -[MobileCalDAVAccount setOverriddenPort:]
+  -[MobileCalDAVAccount overriddenPort]
+  -[MobileCalDAVAccount setOverriddenScheme:]
+  -[MobileCalDAVAccount overriddenScheme]
+  -[MobileCalDAVAccount collectionSetURL]
+  -[MobileCalDAVAccount addCalendar:]
+  -[MobileCalDAVAccount removeCalendarWithURL:]
+  -[MobileCalDAVAccount _foundDuplicateCalendar:ofCalendar:]
+  -[MobileCalDAVAccount _logDuplicateCalendarDetails:]
+  -[MobileCalDAVAccount _foundDuplicateCalendars:]
+  -[MobileCalDAVAccount duplicateCalendars]
+  -[MobileCalDAVAccount reloadCalendars]
+  -[MobileCalDAVAccount addPrincipal:]
+  -[MobileCalDAVAccount removePrincipal:]
+  -[MobileCalDAVAccount viewedTimeZone]
+  -[MobileCalDAVAccount shouldFilterEventSyncTimeRange]
+  -[MobileCalDAVAccount shouldFilterSyncTimeRangeForInbox]
+  -[MobileCalDAVAccount supportsReminders]
+  -[MobileCalDAVAccount supportsEvents]
+  -[MobileCalDAVAccount setPushDisabled:]
+  -[MobileCalDAVAccount _calendarConstraintsName]
+  -[MobileCalDAVAccount copyCalStore]
+  -[MobileCalDAVAccount _updateCalendarStoreProperties:]
+  -[MobileCalDAVAccount _updateCalendarStoreWithAlreadyOpenDBShouldCreate:syncingThisAccount:]
+  -[MobileCalDAVAccount _updateCalendarStore:]
+  -[MobileCalDAVAccount externalInfoDictionary]
+  -[MobileCalDAVAccount _setSpinning:]
+  -[MobileCalDAVAccount syncStarted]
+  -[MobileCalDAVAccount syncEndedWithError:]
+  -[MobileCalDAVAccount cancelRefreshWithCompletion:]
+  -[MobileCalDAVAccount _clearOrphanedCalendarItemChangesOfType:withContext:goodCalendarIds:]
+  -[MobileCalDAVAccount _clearOrphanedChangesWithChangesCall:entityType:withContext:]
+  -[MobileCalDAVAccount _clearOrphanedChangesWithContext:]
+  -[MobileCalDAVAccount _saveModifiedSubscribedCalendarsOnBackingAccount]
+  -[MobileCalDAVAccount _saveModifiedPrincipalsOnBackingAccount]
+  -[MobileCalDAVAccount refreshActor:didCompleteWithError:]
+  -[MobileCalDAVAccount _collectActionsFromMoveDictionary:forDataclass:outShouldSave:]
+  -[MobileCalDAVAccount _collectMoveActions]
+  -[MobileCalDAVAccount refreshWithContext:]
+  -[MobileCalDAVAccount childAccountWithIdentifier:]
+  -[MobileCalDAVAccount wellKnownPaths]
+  -[MobileCalDAVAccount httpPorts]
+  -[MobileCalDAVAccount httpsPorts]
+  -[MobileCalDAVAccount portListByInsertingUserEnteredPort:]
+  -[MobileCalDAVAccount retryDiscoveryTask:]
+  -[MobileCalDAVAccount performDiscoveryWithHostname:username:consumer:]
+  -[MobileCalDAVAccount _powerAssertionContext]
+  -[MobileCalDAVAccount _powerAssertionGroupIdentifier]
+  -[MobileCalDAVAccount dropPowerAssertions]
+  -[MobileCalDAVAccount reattainPowerAssertions]
+  -[MobileCalDAVAccount setIsDelegateAccount:]
+  -[MobileCalDAVAccount mPrincipals]
+  -[MobileCalDAVAccount setMPrincipals:]
+  -[MobileCalDAVAccount mItemIDsToMoveActions]
+  -[MobileCalDAVAccount setMItemIDsToMoveActions:]
+  -[MobileCalDAVAccount mMovedItemURLStrings]
+  -[MobileCalDAVAccount setMMovedItemURLStrings:]
+  -[MobileCalDAVAccount mCalendars]
+  -[MobileCalDAVAccount setMCalendars:]
+  -[MobileCalDAVAccount setPreferredEventDaysToSync:]
+  -[MobileCalDAVAccount setPreferredToDoDaysToSync:]
+  -[MobileCalDAVAccount delegateUserInfos]
+  -[MobileCalDAVAccount setDelegateUserInfos:]
+  -[MobileCalDAVAccount searchPropertySet]
+  -[MobileCalDAVAccount needsAccountPropertyRefresh]
+  -[MobileCalDAVAccount setNeedsAccountPropertyRefresh:]
+  -[MobileCalDAVAccount setIsRefreshing:]
+  -[MobileCalDAVAccount refreshContext]
+  -[MobileCalDAVAccount setRefreshContext:]
+  -[MobileCalDAVAccount searchQueriesShouldCancel]
+  -[MobileCalDAVAccount setSearchQueriesShouldCancel:]
+  -[MobileCalDAVAccount checkValidityTaskGroup]
+  -[MobileCalDAVAccount setCheckValidityTaskGroup:]
+  -[MobileCalDAVAccount actor]
+  -[MobileCalDAVAccount setActor:]
+  -[MobileCalDAVAccount setIsSpinning:]
+  -[MobileCalDAVAccount searchTaskSet]
+  -[MobileCalDAVAccount setSearchTaskSet:]
+  -[MobileCalDAVAccount coreDAVLogger]
+  -[MobileCalDAVAccount setCoreDAVLogger:]
+  -[MobileCalDAVAccount subscribedCalendarsChanged]
+  -[MobileCalDAVAccount setSubscribedCalendarsChanged:]
+
+
+MobileCalDAVPrincipal : NSObject <CoreDAVAccountInfoProvider, CoreDAVOAuthInfoProvider, CalDAVPrincipal>
+ @property  NSString *uid
+ @property  <CalDAVAccount> *account
+ @property  MobileCalDAVAccount *daAccount
+ @property  NSURL *preferredCalendarUserAddress
+ @property  NSString *preferredCalendarEmailAddress
+ @property  NSString *preferredCalendarPhoneNumber
+ @property  NSMutableSet *deletedCalendarURLs
+ @property  NSSet *addedCalendars
+ @property  NSSet *modifiedCalendars
+ @property  NSArray *calendarChangesToClear
+ @property  CalDAVRefreshContext *refreshContext
+ @property  NSURL *legacy_principalURL
+ @property  AKAppleIDSession *appleIDSession
+ @property  NSSet *preferredCalendarUserAddresses
+ @property  NSDictionary *calendarUserAddressesPerCalendar
+ @property  NSString *fullName
+ @property  NSURL *calendarHomeURL
+ @property  NSString *calendarHomeSyncToken
+ @property  NSDictionary *subCalPropertiesByURL
+ @property  NSString *principalPath
+ @property  NSURL *principalURL
+ @property  NSURL *defaultCalendarURL
+ @property  NSURL *notificationCollectionURL
+ @property  NSString *notificationCollectionCTag
+ @property  NSURL *inboxURL
+ @property  NSString *inboxCTag
+ @property  NSURL *outboxURL
+ @property  NSURL *dropBoxURL
+ @property  NSString *notificationURLString
+ @property  NSDictionary *pushTransports
+ @property  NSString *calendarHomePushKey
+ @property  NSNumber *quotaFreeBytes
+ @property  NSString *supportedCalendarComponentSets
+ @property  BOOL isDelegate
+ @property  BOOL isWritable
+ @property  BOOL isEnabled
+ @property  BOOL canCreateCalendars
+ @property  BOOL isManuallyConfigured
+ @property  BOOL isExpandPropertyReportSupported
+ @property  BOOL supportsCalendarUserSearch
+ @property  BOOL supportsFreebusy
+ @property  BOOL supportsSyncToken
+ @property  BOOL supportsExtendedCalendarQuery
+ @property  NSSet *calendars
+ @property  NSString *APSTopic
+ @property  NSURL *APSSubscriptionURL
+ @property  NSString *APSEnv
+ @property  BOOL supportsPush
+ @property  NSString *defaultTimedAlarms
+ @property  NSString *defaultAllDayAlarms
+ @property  BOOL shouldRefreshPrincipalSearchProperties
+ @property  BOOL shouldUpdatePushDelegate
+ @property  BOOL isDirty
+ @property  BOOL calendarsAreDirty
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  <CoreDAVTaskManager> *taskManager
+ @property  BOOL isMergeSync
+ @property  BOOL isEnabledForEvents
+ @property  BOOL isEnabledForTodos
+ @property  NSDateComponents *eventFilterStartDate
+ @property  NSDateComponents *eventFilterEndDate
+ @property  BOOL alarmsDirty
+ @property  BOOL needsDefaultTimedAlarmUpdate
+ @property  BOOL needsDefaultAllDayAlarmUpdate
+
+  // class methods
+  +[MobileCalDAVPrincipal compareAddressURL:localString:]
+  +[MobileCalDAVPrincipal alarmICSStringFromOffset:]
+
+  // instance methods
+  -[MobileCalDAVPrincipal principalURL]
+  -[MobileCalDAVPrincipal additionalHeaderValues]
+  -[MobileCalDAVPrincipal uid]
+  -[MobileCalDAVPrincipal isDirty]
+  -[MobileCalDAVPrincipal setUid:]
+  -[MobileCalDAVPrincipal account]
+  -[MobileCalDAVPrincipal accountID]
+  -[MobileCalDAVPrincipal setAccount:]
+  -[MobileCalDAVPrincipal scheme]
+  -[MobileCalDAVPrincipal setDefaultAllDayAlarms:]
+  -[MobileCalDAVPrincipal fullName]
+  -[MobileCalDAVPrincipal port]
+  -[MobileCalDAVPrincipal isWritable]
+  -[MobileCalDAVPrincipal isDelegate]
+  -[MobileCalDAVPrincipal setCalendarHomeSyncToken:]
+  -[MobileCalDAVPrincipal defaultAllDayAlarms]
+  -[MobileCalDAVPrincipal configuration]
+  -[MobileCalDAVPrincipal setFullName:]
+  -[MobileCalDAVPrincipal supportedCalendarComponentSets]
+  -[MobileCalDAVPrincipal supportsPush]
+  -[MobileCalDAVPrincipal user]
+  -[MobileCalDAVPrincipal .cxx_destruct]
+  -[MobileCalDAVPrincipal setDefaultTimedAlarms:]
+  -[MobileCalDAVPrincipal host]
+  -[MobileCalDAVPrincipal isExpandPropertyReportSupported]
+  -[MobileCalDAVPrincipal eventFilterStartDate]
+  -[MobileCalDAVPrincipal taskManager]
+  -[MobileCalDAVPrincipal calendars]
+  -[MobileCalDAVPrincipal clientToken]
+  -[MobileCalDAVPrincipal supportsExtendedCalendarQuery]
+  -[MobileCalDAVPrincipal eventFilterEndDate]
+  -[MobileCalDAVPrincipal outboxURL]
+  -[MobileCalDAVPrincipal setIsDirty:]
+  -[MobileCalDAVPrincipal defaultTimedAlarms]
+  -[MobileCalDAVPrincipal password]
+  -[MobileCalDAVPrincipal supportsCalendarUserSearch]
+  -[MobileCalDAVPrincipal setSupportsPush:]
+  -[MobileCalDAVPrincipal setPushTransports:]
+  -[MobileCalDAVPrincipal setSupportedCalendarComponentSets:]
+  -[MobileCalDAVPrincipal setIsEnabled:]
+  -[MobileCalDAVPrincipal calendarHomeSyncToken]
+  -[MobileCalDAVPrincipal pushTransports]
+  -[MobileCalDAVPrincipal appleIDSession]
+  -[MobileCalDAVPrincipal supportsFreebusy]
+  -[MobileCalDAVPrincipal userAgentHeader]
+  -[MobileCalDAVPrincipal init]
+  -[MobileCalDAVPrincipal isEnabled]
+  -[MobileCalDAVPrincipal inboxURL]
+  -[MobileCalDAVPrincipal principalPath]
+  -[MobileCalDAVPrincipal setPrincipalPath:]
+  -[MobileCalDAVPrincipal useSSL]
+  -[MobileCalDAVPrincipal isEnabledForEvents]
+  -[MobileCalDAVPrincipal oauth2Token]
+  -[MobileCalDAVPrincipal removeCalendar:]
+  -[MobileCalDAVPrincipal clientTokenRequestedByServer]
+  -[MobileCalDAVPrincipal setPrincipalURL:]
+  -[MobileCalDAVPrincipal serverRoot]
+  -[MobileCalDAVPrincipal serverComplianceClasses]
+  -[MobileCalDAVPrincipal handleCertificateError:]
+  -[MobileCalDAVPrincipal customConnectionProperties]
+  -[MobileCalDAVPrincipal oauthInfoProvider]
+  -[MobileCalDAVPrincipal identityPersist]
+  -[MobileCalDAVPrincipal shouldFailAllTasks]
+  -[MobileCalDAVPrincipal copyStorageSession]
+  -[MobileCalDAVPrincipal shouldUseOpportunisticSockets]
+  -[MobileCalDAVPrincipal handleTrustChallenge:completionHandler:]
+  -[MobileCalDAVPrincipal getAppleIDSession]
+  -[MobileCalDAVPrincipal webLoginRequestedAtURL:reasonString:inQueue:completionBlock:]
+  -[MobileCalDAVPrincipal noteSuccessfulRequestWithNumDownloadedElements:numUploadedElements:]
+  -[MobileCalDAVPrincipal noteFailedNetworkRequest]
+  -[MobileCalDAVPrincipal noteFailedProtocolRequest]
+  -[MobileCalDAVPrincipal noteTimeSpentInNetworking:]
+  -[MobileCalDAVPrincipal APSEnv]
+  -[MobileCalDAVPrincipal calendarHomeURL]
+  -[MobileCalDAVPrincipal setIsDelegate:]
+  -[MobileCalDAVPrincipal setIsWritable:]
+  -[MobileCalDAVPrincipal noteHomeSetOnDifferentHost:]
+  -[MobileCalDAVPrincipal shouldHandleHTTPCookiesForURL:]
+  -[MobileCalDAVPrincipal shouldSendClientInfoHeaderForURL:]
+  -[MobileCalDAVPrincipal promptUserForNewCoreDAVPasswordWithCompletionBlock:]
+  -[MobileCalDAVPrincipal shouldCompressRequests]
+  -[MobileCalDAVPrincipal oauthVariant]
+  -[MobileCalDAVPrincipal deletedCalendarURLs]
+  -[MobileCalDAVPrincipal modifiedCalendars]
+  -[MobileCalDAVPrincipal setNotificationCollectionURL:]
+  -[MobileCalDAVPrincipal setDefaultCalendarURL:]
+  -[MobileCalDAVPrincipal setSupportsCalendarUserSearch:]
+  -[MobileCalDAVPrincipal isMergeSync]
+  -[MobileCalDAVPrincipal setSupportsFreebusy:]
+  -[MobileCalDAVPrincipal setOutboxURL:]
+  -[MobileCalDAVPrincipal setDropBoxURL:]
+  -[MobileCalDAVPrincipal setIsExpandPropertyReportSupported:]
+  -[MobileCalDAVPrincipal setCalendarHomePushKey:]
+  -[MobileCalDAVPrincipal setCanCreateCalendars:]
+  -[MobileCalDAVPrincipal addedCalendars]
+  -[MobileCalDAVPrincipal calendarOfType:atURL:withOptions:]
+  -[MobileCalDAVPrincipal removecalendarWithURL:]
+  -[MobileCalDAVPrincipal isEnabledForTodos]
+  -[MobileCalDAVPrincipal setQuotaFreeBytes:]
+  -[MobileCalDAVPrincipal setInboxURL:]
+  -[MobileCalDAVPrincipal needsDefaultTimedAlarmUpdate]
+  -[MobileCalDAVPrincipal setNeedsDefaultTimedAlarmUpdate:]
+  -[MobileCalDAVPrincipal needsDefaultAllDayAlarmUpdate]
+  -[MobileCalDAVPrincipal setNeedsDefaultAllDayAlarmUpdate:]
+  -[MobileCalDAVPrincipal setCalendarHomeURL:]
+  -[MobileCalDAVPrincipal prepareCalendarsForSyncWithCompletionBlock:]
+  -[MobileCalDAVPrincipal preferredCalendarUserAddresses]
+  -[MobileCalDAVPrincipal setPreferredCalendarUserAddresses:]
+  -[MobileCalDAVPrincipal defaultEventCalendarTitle]
+  -[MobileCalDAVPrincipal defaultTodoCalendarTitle]
+  -[MobileCalDAVPrincipal refreshContext]
+  -[MobileCalDAVPrincipal setRefreshContext:]
+  -[MobileCalDAVPrincipal defaultCalendarURL]
+  -[MobileCalDAVPrincipal notificationCollectionURL]
+  -[MobileCalDAVPrincipal notificationCollectionCTag]
+  -[MobileCalDAVPrincipal setNotificationCollectionCTag:]
+  -[MobileCalDAVPrincipal inboxCTag]
+  -[MobileCalDAVPrincipal setInboxCTag:]
+  -[MobileCalDAVPrincipal dropBoxURL]
+  -[MobileCalDAVPrincipal notificationURLString]
+  -[MobileCalDAVPrincipal setNotificationURLString:]
+  -[MobileCalDAVPrincipal calendarHomePushKey]
+  -[MobileCalDAVPrincipal quotaFreeBytes]
+  -[MobileCalDAVPrincipal canCreateCalendars]
+  -[MobileCalDAVPrincipal alarmsDirty]
+  -[MobileCalDAVPrincipal setAlarmsDirty:]
+  -[MobileCalDAVPrincipal initWithConfiguration:principalUID:account:]
+  -[MobileCalDAVPrincipal daAccount]
+  -[MobileCalDAVPrincipal _userAddressSet:isEqualToSet:]
+  -[MobileCalDAVPrincipal calendarUserAddresses]
+  -[MobileCalDAVPrincipal subCalPropertiesByURL]
+  -[MobileCalDAVPrincipal _eventSyncEndDate]
+  -[MobileCalDAVPrincipal _startDateFromDaysToSync:]
+  -[MobileCalDAVPrincipal setSupportsSyncToken:]
+  -[MobileCalDAVPrincipal updatePropertiesFromCalStore:]
+  -[MobileCalDAVPrincipal updateAddedOrModifiedSubscribedCalendars:]
+  -[MobileCalDAVPrincipal clearCalendarChanges]
+  -[MobileCalDAVPrincipal calendarUserAddressesPerCalendar]
+  -[MobileCalDAVPrincipal preferredCalendarUserAddressesForCalendar:]
+  -[MobileCalDAVPrincipal removePreferredCalendarUserAddressesForCalendarWithIdentifier:]
+  -[MobileCalDAVPrincipal setPreferredCalendarUserAddresses:forCalendar:]
+  -[MobileCalDAVPrincipal setCalendarsAreDirty:]
+  -[MobileCalDAVPrincipal calendarsAreDirty]
+  -[MobileCalDAVPrincipal APSTopic]
+  -[MobileCalDAVPrincipal APSSubscriptionURL]
+  -[MobileCalDAVPrincipal preferredCalendarUserAddress]
+  -[MobileCalDAVPrincipal preferredCalendarEmailAddress]
+  -[MobileCalDAVPrincipal preferredCalendarPhoneNumber]
+  -[MobileCalDAVPrincipal hasCalendarUserAddress:]
+  -[MobileCalDAVPrincipal calendarUserAddressIsEquivalentToURL:]
+  -[MobileCalDAVPrincipal setDeletedCalendarURLs:]
+  -[MobileCalDAVPrincipal isManuallyConfigured]
+  -[MobileCalDAVPrincipal setIsManuallyConfigured:]
+  -[MobileCalDAVPrincipal supportsSyncToken]
+  -[MobileCalDAVPrincipal shouldRefreshPrincipalSearchProperties]
+  -[MobileCalDAVPrincipal setShouldRefreshPrincipalSearchProperties:]
+  -[MobileCalDAVPrincipal shouldUpdatePushDelegate]
+  -[MobileCalDAVPrincipal setShouldUpdatePushDelegate:]
+  -[MobileCalDAVPrincipal setPreferredCalendarUserAddress:]
+  -[MobileCalDAVPrincipal setPreferredCalendarEmailAddress:]
+  -[MobileCalDAVPrincipal setPreferredCalendarPhoneNumber:]
+  -[MobileCalDAVPrincipal setAddedCalendars:]
+  -[MobileCalDAVPrincipal setModifiedCalendars:]
+  -[MobileCalDAVPrincipal calendarChangesToClear]
+  -[MobileCalDAVPrincipal setCalendarChangesToClear:]
+  -[MobileCalDAVPrincipal legacy_principalURL]
+  -[MobileCalDAVPrincipal setLegacy_principalURL:]
+  -[MobileCalDAVPrincipal setAppleIDSession:]
+
+
+MobileCalUserAddress : NSObject
+ @property  NSURL *address
+ @property  MobileCalDAVAccount *account
+
+  // class methods
+  +[MobileCalUserAddress userAddress:forAccount:]
+  +[MobileCalUserAddress userAddressFromDictionaryRepresentation:forAccount:]
+
+  // instance methods
+  -[MobileCalUserAddress account]
+  -[MobileCalUserAddress setAccount:]
+  -[MobileCalUserAddress setAddress:]
+  -[MobileCalUserAddress .cxx_destruct]
+  -[MobileCalUserAddress address]
+  -[MobileCalUserAddress dictionaryRepresentation]
+  -[MobileCalUserAddress initWithAddress:account:]
+
+
+MobileCalDAVDeletedItemContext : NSObject
+ @property  NSNumber *rowid
+ @property  int entityType
+
+  // instance methods
+  -[MobileCalDAVDeletedItemContext .cxx_destruct]
+  -[MobileCalDAVDeletedItemContext entityType]
+  -[MobileCalDAVDeletedItemContext setEntityType:]
+  -[MobileCalDAVDeletedItemContext rowid]
+  -[MobileCalDAVDeletedItemContext setRowid:]
+
+
+MobileCalDAVCalendar : NSObject <CalDAVCalendar, CDBRecordIDMap>
+ @property  MobileCalDAVPrincipal *daPrincipal
+ @property  CalDiagCalendarCollectionSync *calendarCollectionSyncDiagnostics
+ @property  <CalDAVPrincipal> *principal
+ @property  ^v calCalendar
+ @property  NSString *calendarURLString
+ @property  NSMutableDictionary *deletedCalendarItems
+ @property  NSArray *syncActions
+ @property  NSArray *shareeActions
+ @property  NSArray *itemsToReportAsJunk
+ @property  NSArray *recurrenceSplitActions
+ @property  NSDictionary *hrefsToModDeleteActions
+ @property  NSDictionary *uuidsToAddActions
+ @property  NSMutableDictionary *uniqueIdentifierToRecordIDMap
+ @property  NSMutableDictionary *URLToRecordIDMap
+ @property  NSMutableDictionary *URLToEtagMap
+ @property  BOOL mustCalendarBeReadOnly
+ @property  BOOL shouldCalendarBeHidden
+ @property  NSString *guid
+ @property  NSURL *calendarURL
+ @property  NSString *title
+ @property  NSString *lastSyncTitle
+ @property  NSString *notes
+ @property  NSString *color
+ @property  NSString *symbolicColorName
+ @property  NSString *pushKey
+ @property  NSURL *owner
+ @property  NSString *ownerDisplayName
+ @property  NSString *ownerEmailAddress
+ @property  NSString *ownerPhoneNumber
+ @property  NSSet *preferredCalendarUserAddresses
+ @property  NSURL *publishURL
+ @property  NSURL *prePublishURL
+ @property  int order
+ @property  int sharingStatus
+ @property  NSSet *sharees
+ @property  BOOL isTaskContainer
+ @property  BOOL isEventContainer
+ @property  BOOL isSubscribed
+ @property  BOOL isManagedByServer
+ @property  BOOL isScheduleInbox
+ @property  BOOL isScheduleOutbox
+ @property  BOOL isNotification
+ @property  BOOL isEditable
+ @property  BOOL isRenameable
+ @property  BOOL isEnabled
+ @property  BOOL isAffectingAvailability
+ @property  BOOL canBePublished
+ @property  BOOL canBeShared
+ @property  BOOL isFamilyCalendar
+ @property  BOOL isMarkedUndeletable
+ @property  BOOL isMarkedImmutableSharees
+ @property  BOOL wasModifiedLocally
+ @property  long long maxAttendees
+ @property  NSString *ctag
+ @property  NSDictionary *bulkRequests
+ @property  NSString *syncToken
+ @property  BOOL needsResync
+ @property  BOOL didResync
+ @property  NSSet *allItemURLs
+ @property  BOOL isDirty
+ @property  NSString *displayColor
+ @property  BOOL isHidden
+ @property  NSString *accountID
+ @property  BOOL needsPublishUpdate
+ @property  unsigned long numDownloadedElements
+ @property  unsigned long numUploadedElements
+ @property  CalDAVDBChangeTrackingHelper *changeTracker
+ @property  NSArray *newlyAddedItems
+ @property  BOOL needsIsAffectingAvailabilityUpdate
+ @property  NSTimeZone *timeZone
+ @property  BOOL isPoll
+ @property  BOOL isPublished
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // class methods
+  +[MobileCalDAVCalendar calendarWithCalCalendar:principal:]
+  +[MobileCalDAVCalendar calURLToUIDCache]
+  +[MobileCalDAVCalendar cacheCalendarUID:forCalendarURLString:]
+  +[MobileCalDAVCalendar removeUIDCacheEntryForCalendarURLString:]
+  +[MobileCalDAVCalendar cachedCalendarUIDForURLString:]
+  +[MobileCalDAVCalendar clearCalendarUIDCache]
+  +[MobileCalDAVCalendar gatherCalendarChangesInPrincipal:calendars:adds:modifies:deletes:changeTracker:]
+  +[MobileCalDAVCalendar shouldSkipCalendar:withChangeType:]
+  +[MobileCalDAVCalendar shouldSkipAddedCalendar:]
+  +[MobileCalDAVCalendar shouldSkipModifiedCalendar:]
+  +[MobileCalDAVCalendar processAddedCalendar:]
+  +[MobileCalDAVCalendar processModifiedCalendar:oldFlags:newFlags:]
+  +[MobileCalDAVCalendar clearCalendarChanges:forPrincipal:changeTrackingClient:]
+
+  // instance methods
+  -[MobileCalDAVCalendar canBeShared]
+  -[MobileCalDAVCalendar pushKey]
+  -[MobileCalDAVCalendar owner]
+  -[MobileCalDAVCalendar setOwner:]
+  -[MobileCalDAVCalendar isDirty]
+  -[MobileCalDAVCalendar displayColor]
+  -[MobileCalDAVCalendar timeZone]
+  -[MobileCalDAVCalendar setLastSyncTitle:]
+  -[MobileCalDAVCalendar syncToken]
+  -[MobileCalDAVCalendar accountID]
+  -[MobileCalDAVCalendar isEditable]
+  -[MobileCalDAVCalendar principal]
+  -[MobileCalDAVCalendar setCtag:]
+  -[MobileCalDAVCalendar setSharees:]
+  -[MobileCalDAVCalendar setIsMarkedImmutableSharees:]
+  -[MobileCalDAVCalendar setTimeZone:]
+  -[MobileCalDAVCalendar symbolicColorName]
+  -[MobileCalDAVCalendar setNotes:]
+  -[MobileCalDAVCalendar setIsEditable:]
+  -[MobileCalDAVCalendar setPrincipal:]
+  -[MobileCalDAVCalendar setCanBeShared:]
+  -[MobileCalDAVCalendar setSyncToken:]
+  -[MobileCalDAVCalendar dealloc]
+  -[MobileCalDAVCalendar isNotification]
+  -[MobileCalDAVCalendar setOrder:]
+  -[MobileCalDAVCalendar .cxx_destruct]
+  -[MobileCalDAVCalendar isScheduleInbox]
+  -[MobileCalDAVCalendar notes]
+  -[MobileCalDAVCalendar setIsFamilyCalendar:]
+  -[MobileCalDAVCalendar order]
+  -[MobileCalDAVCalendar sharingStatus]
+  -[MobileCalDAVCalendar isMarkedUndeletable]
+  -[MobileCalDAVCalendar setIsMarkedUndeletable:]
+  -[MobileCalDAVCalendar title]
+  -[MobileCalDAVCalendar lastSyncTitle]
+  -[MobileCalDAVCalendar publishURL]
+  -[MobileCalDAVCalendar setIsDirty:]
+  -[MobileCalDAVCalendar ownerDisplayName]
+  -[MobileCalDAVCalendar setSharingStatus:]
+  -[MobileCalDAVCalendar isMarkedImmutableSharees]
+  -[MobileCalDAVCalendar color]
+  -[MobileCalDAVCalendar setPublishURL:]
+  -[MobileCalDAVCalendar sharees]
+  -[MobileCalDAVCalendar isHidden]
+  -[MobileCalDAVCalendar isFamilyCalendar]
+  -[MobileCalDAVCalendar setIsPublished:]
+  -[MobileCalDAVCalendar hasEvents]
+  -[MobileCalDAVCalendar prePublishURL]
+  -[MobileCalDAVCalendar isEventContainer]
+  -[MobileCalDAVCalendar maxAttendees]
+  -[MobileCalDAVCalendar canBePublished]
+  -[MobileCalDAVCalendar setColor:]
+  -[MobileCalDAVCalendar setMaxAttendees:]
+  -[MobileCalDAVCalendar setSymbolicColorName:]
+  -[MobileCalDAVCalendar setCanBePublished:]
+  -[MobileCalDAVCalendar isScheduleOutbox]
+  -[MobileCalDAVCalendar ctag]
+  -[MobileCalDAVCalendar setPushKey:]
+  -[MobileCalDAVCalendar setIsEnabled:]
+  -[MobileCalDAVCalendar setGuid:]
+  -[MobileCalDAVCalendar bulkRequests]
+  -[MobileCalDAVCalendar isPublished]
+  -[MobileCalDAVCalendar setBulkRequests:]
+  -[MobileCalDAVCalendar copyAllItems]
+  -[MobileCalDAVCalendar isTaskContainer]
+  -[MobileCalDAVCalendar isSubscribed]
+  -[MobileCalDAVCalendar setTitle:]
+  -[MobileCalDAVCalendar guid]
+  -[MobileCalDAVCalendar setPrePublishURL:]
+  -[MobileCalDAVCalendar isEnabled]
+  -[MobileCalDAVCalendar setOwnerDisplayName:]
+  -[MobileCalDAVCalendar setIsSubscribed:]
+  -[MobileCalDAVCalendar _preferredAddress]
+  -[MobileCalDAVCalendar isAffectingAvailability]
+  -[MobileCalDAVCalendar setIsAffectingAvailability:]
+  -[MobileCalDAVCalendar recordIDForUniqueIdentifier:]
+  -[MobileCalDAVCalendar recordIDForExternalIdentifier:]
+  -[MobileCalDAVCalendar setExternalIdentifier:forRecordID:]
+  -[MobileCalDAVCalendar setUniqueIdentifier:forRecordID:]
+  -[MobileCalDAVCalendar numDownloadedElements]
+  -[MobileCalDAVCalendar setNumDownloadedElements:]
+  -[MobileCalDAVCalendar uuidsToAddActions]
+  -[MobileCalDAVCalendar hrefsToModDeleteActions]
+  -[MobileCalDAVCalendar appSpecificCalendarItemClass]
+  -[MobileCalDAVCalendar recurrenceSplitActions]
+  -[MobileCalDAVCalendar recurrenceSplitAction:failedWithError:]
+  -[MobileCalDAVCalendar recurrenceSplitAction:completedWithUpdatedETag:updatedScheduleTag:createdURL:createdETag:createdScheduleTag:]
+  -[MobileCalDAVCalendar calendarURL]
+  -[MobileCalDAVCalendar setCalendarURL:]
+  -[MobileCalDAVCalendar etagsForItemURLs:]
+  -[MobileCalDAVCalendar setEtag:forItemAtURL:]
+  -[MobileCalDAVCalendar setScheduleTag:forItemAtURL:]
+  -[MobileCalDAVCalendar setURL:forResourceWithUUID:]
+  -[MobileCalDAVCalendar updateResourcesFromServer:]
+  -[MobileCalDAVCalendar deleteResourcesAtURLs:]
+  -[MobileCalDAVCalendar hasCalendarUserAddressEquivalentToURL:]
+  -[MobileCalDAVCalendar preferredCalendarUserAddresses]
+  -[MobileCalDAVCalendar setPreferredCalendarUserAddresses:]
+  -[MobileCalDAVCalendar setIsTaskContainer:]
+  -[MobileCalDAVCalendar setIsEventContainer:]
+  -[MobileCalDAVCalendar isManagedByServer]
+  -[MobileCalDAVCalendar setIsManagedByServer:]
+  -[MobileCalDAVCalendar setIsScheduleInbox:]
+  -[MobileCalDAVCalendar setIsScheduleOutbox:]
+  -[MobileCalDAVCalendar setIsNotification:]
+  -[MobileCalDAVCalendar isPoll]
+  -[MobileCalDAVCalendar setIsPoll:]
+  -[MobileCalDAVCalendar isRenameable]
+  -[MobileCalDAVCalendar setIsRenameable:]
+  -[MobileCalDAVCalendar wasModifiedLocally]
+  -[MobileCalDAVCalendar setWasModifiedLocally:]
+  -[MobileCalDAVCalendar needsResync]
+  -[MobileCalDAVCalendar setNeedsResync:]
+  -[MobileCalDAVCalendar needsPublishUpdate]
+  -[MobileCalDAVCalendar syncActions]
+  -[MobileCalDAVCalendar shareeActions]
+  -[MobileCalDAVCalendar itemsToReportAsJunk]
+  -[MobileCalDAVCalendar allItemURLs]
+  -[MobileCalDAVCalendar prepareMergeSyncActionsWithCompletionBlock:]
+  -[MobileCalDAVCalendar clearShareeActions]
+  -[MobileCalDAVCalendar syncDidFinishWithError:]
+  -[MobileCalDAVCalendar putAction:completedWithError:]
+  -[MobileCalDAVCalendar deleteAction:completedWithError:]
+  -[MobileCalDAVCalendar recurrenceSplitActionsCompletedWithError:]
+  -[MobileCalDAVCalendar needsIsAffectingAvailabilityUpdate]
+  -[MobileCalDAVCalendar changeTracker]
+  -[MobileCalDAVCalendar calendarUserAddresses]
+  -[MobileCalDAVCalendar _dropCalStoreContext]
+  -[MobileCalDAVCalendar initWithCalendarURL:calendar:principal:title:]
+  -[MobileCalDAVCalendar initWithCalendarURL:principal:title:]
+  -[MobileCalDAVCalendar initWithCalendarURL:principal:]
+  -[MobileCalDAVCalendar deleteCalendar]
+  -[MobileCalDAVCalendar daPrincipal]
+  -[MobileCalDAVCalendar _setSupportsEvents:supportsTodos:]
+  -[MobileCalDAVCalendar ownerEmailAddress]
+  -[MobileCalDAVCalendar ownerPhoneNumber]
+  -[MobileCalDAVCalendar _forceRefreshNextSync]
+  -[MobileCalDAVCalendar calendarCollectionSyncDiagnostics]
+  -[MobileCalDAVCalendar _copyCalItemWithUniqueIdentifier:inCalendar:orStore:]
+  -[MobileCalDAVCalendar _copyCalItemWithExternalID:]
+  -[MobileCalDAVCalendar removeInvitationsForItemWithUniqueIdentifier:]
+  -[MobileCalDAVCalendar correctLocationPredictionStateForRecurrenceSets:calDB:]
+  -[MobileCalDAVCalendar _isDeleted:]
+  -[MobileCalDAVCalendar _removeCalendarItemWithURL:]
+  -[MobileCalDAVCalendar newlyAddedItems]
+  -[MobileCalDAVCalendar setNewlyAddedItems:]
+  -[MobileCalDAVCalendar _updateCalendarInfo]
+  -[MobileCalDAVCalendar initCalCalendarWithTitle:]
+  -[MobileCalDAVCalendar calCalendar]
+  -[MobileCalDAVCalendar getCalCalendar]
+  -[MobileCalDAVCalendar _calExternalRep]
+  -[MobileCalDAVCalendar mustCalendarBeReadOnly]
+  -[MobileCalDAVCalendar shouldCalendarBeHidden]
+  -[MobileCalDAVCalendar _itemPropertyDictForItemAtIndex:withChangedIDs:withChangedRowids:withExternalIDs:uniqueIdentifiers:significantAttributeChanges:oldCalendarIDs:entityType:]
+  -[MobileCalDAVCalendar _addCalendarItemWithRowID:toArrayIfNeeded:withChangeRowid:changeType:]
+  -[MobileCalDAVCalendar _addAddedItemsOfType:toArray:]
+  -[MobileCalDAVCalendar copyAddedItems]
+  -[MobileCalDAVCalendar _gatherModifiedItemsFromCalChangesCall:forType:inArray:]
+  -[MobileCalDAVCalendar _gatherModifiedEventsInArray:]
+  -[MobileCalDAVCalendar _gatherModifiedTasksInArray:]
+  -[MobileCalDAVCalendar copyModifiedItems]
+  -[MobileCalDAVCalendar _addAddedRecurrenceSplitItemsToArray:]
+  -[MobileCalDAVCalendar copyRecurrenseSplitItems]
+  -[MobileCalDAVCalendar _gatherDeletedChanges:inDictionary:]
+  -[MobileCalDAVCalendar copyDeletedItems]
+  -[MobileCalDAVCalendar _copyDeletedEventActions]
+  -[MobileCalDAVCalendar clearEventChanges]
+  -[MobileCalDAVCalendar clearChangesForEntityType:]
+  -[MobileCalDAVCalendar addChangesToBeCleared:forEntityType:]
+  -[MobileCalDAVCalendar _clearChangesAtIndices:forType:]
+  -[MobileCalDAVCalendar _clearChangesFromItem:]
+  -[MobileCalDAVCalendar _clearChangesFromItem:shouldClearAttachmentChanges:]
+  -[MobileCalDAVCalendar _saveChangesAtIndices:forType:]
+  -[MobileCalDAVCalendar _saveChangesForItem:]
+  -[MobileCalDAVCalendar _isItemJunk:]
+  -[MobileCalDAVCalendar _resourceURLsForJunkItemsInModifiedItems:alreadySentItems:]
+  -[MobileCalDAVCalendar _recurrenceSplitActionsForItems:alreadySentItems:]
+  -[MobileCalDAVCalendar _createActionsForItems:withAction:alreadySentItems:createServerIDs:shouldSave:]
+  -[MobileCalDAVCalendar _shouldRecordError:]
+  -[MobileCalDAVCalendar _clearExistingHTTPErrorForCalItem:]
+  -[MobileCalDAVCalendar _recordError:forCalItem:]
+  -[MobileCalDAVCalendar hasCalendarErrorOfType:]
+  -[MobileCalDAVCalendar clearCalendarErrorOfType:]
+  -[MobileCalDAVCalendar recordCalendarError:ofType:]
+  -[MobileCalDAVCalendar _addShareeWithRowID:toDictionaryIfNeeded:]
+  -[MobileCalDAVCalendar _collectShareeActions]
+  -[MobileCalDAVCalendar prepareSyncActionsWithCompletionBlock:]
+  -[MobileCalDAVCalendar createSyncActions]
+  -[MobileCalDAVCalendar generateICSForActions]
+  -[MobileCalDAVCalendar recordDiagnosticsForAccountSync:]
+  -[MobileCalDAVCalendar flushCaches]
+  -[MobileCalDAVCalendar calendarURLString]
+  -[MobileCalDAVCalendar setCalendarURLString:]
+  -[MobileCalDAVCalendar didResync]
+  -[MobileCalDAVCalendar setDidResync:]
+  -[MobileCalDAVCalendar setNeedsPublishUpdate:]
+  -[MobileCalDAVCalendar numUploadedElements]
+  -[MobileCalDAVCalendar setNumUploadedElements:]
+  -[MobileCalDAVCalendar setChangeTracker:]
+  -[MobileCalDAVCalendar setNeedsIsAffectingAvailabilityUpdate:]
+  -[MobileCalDAVCalendar setCalendarCollectionSyncDiagnostics:]
+  -[MobileCalDAVCalendar deletedCalendarItems]
+  -[MobileCalDAVCalendar setDeletedCalendarItems:]
+  -[MobileCalDAVCalendar setSyncActions:]
+  -[MobileCalDAVCalendar setShareeActions:]
+  -[MobileCalDAVCalendar setItemsToReportAsJunk:]
+  -[MobileCalDAVCalendar setRecurrenceSplitActions:]
+  -[MobileCalDAVCalendar setHrefsToModDeleteActions:]
+  -[MobileCalDAVCalendar setUuidsToAddActions:]
+  -[MobileCalDAVCalendar uniqueIdentifierToRecordIDMap]
+  -[MobileCalDAVCalendar setUniqueIdentifierToRecordIDMap:]
+  -[MobileCalDAVCalendar URLToRecordIDMap]
+  -[MobileCalDAVCalendar setURLToRecordIDMap:]
+  -[MobileCalDAVCalendar URLToEtagMap]
+  -[MobileCalDAVCalendar setURLToEtagMap:]
+
+
+CalDAVDBHelper : DALocalDBHelper
+  // class methods
+  +[CalDAVDBHelper sharedInstance]
+
+
+CalDAVHTTPTrafficLog : NSObject
+ @property  DACoreDAVLogger *curLogger
+
+  // class methods
+  +[CalDAVHTTPTrafficLog instance]
+
+  // instance methods
+  -[CalDAVHTTPTrafficLog .cxx_destruct]
+  -[CalDAVHTTPTrafficLog enabled]
+  -[CalDAVHTTPTrafficLog init]
+  -[CalDAVHTTPTrafficLog logString:]
+  -[CalDAVHTTPTrafficLog logData:]
+  -[CalDAVHTTPTrafficLog finishSnippets]
+  -[CalDAVHTTPTrafficLog logStringWithFormat:]
+  -[CalDAVHTTPTrafficLog curLogger]
+  -[CalDAVHTTPTrafficLog setCurLogger:]
+
+
+MobileCalDAVAttachmentUploadInfo : NSObject
+ @property  NSURL *itemURL
+ @property  NSString *syncKey
+ @property  NSString *scheduleTag
+ @property  NSArray *calAttachmentsToUpload
+
+  // instance methods
+  -[MobileCalDAVAttachmentUploadInfo .cxx_destruct]
+  -[MobileCalDAVAttachmentUploadInfo itemURL]
+  -[MobileCalDAVAttachmentUploadInfo setItemURL:]
+  -[MobileCalDAVAttachmentUploadInfo syncKey]
+  -[MobileCalDAVAttachmentUploadInfo scheduleTag]
+  -[MobileCalDAVAttachmentUploadInfo setScheduleTag:]
+  -[MobileCalDAVAttachmentUploadInfo setSyncKey:]
+  -[MobileCalDAVAttachmentUploadInfo calAttachmentsToUpload]
+  -[MobileCalDAVAttachmentUploadInfo setCalAttachmentsToUpload:]
+
+
+MobileCalDAVAccountRefreshActor : NSObject <CalDAVAccountPropertyRefreshDelegate, CalDAVCalendarPropertyRefreshDelegate, CalDAVCalendarSyncDelegate, CalDAVAccountDelegatesRefreshDelegate>
+ @property  MobileCalDAVAccount *account
+ @property  CalDAVRefreshContext *context
+ @property  BOOL shouldCancel
+ @property  BOOL didFinish
+ @property  BOOL refreshing
+ @property  @? completionBlock
+ @property  NSMutableDictionary *pathsToCTags
+ @property  NSMutableDictionary *pathsToSyncTokens
+ @property  NSMutableArray *calendarsToRefresh
+ @property  BOOL refreshFoundUpdatedTaskContainer
+ @property  BOOL refreshFoundUpdatedSpecialCalendar
+ @property  BOOL refreshFoundDeletedContainerURL
+ @property  NSObject<OS_dispatch_group> *outstandingOperationGroup
+ @property  NSMutableSet *outstandingTaskGroups
+ @property  NSMutableSet *outstandingTasks
+ @property  int state
+ @property  NSString *calendarHomeSyncToken
+ @property  CalDiagAccountSync *accountSyncDiagnostics
+ @property  NSSet *eventUIDsWithAttachmentChanges
+ @property  BOOL needsRemindersSync
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[MobileCalDAVAccountRefreshActor refresh]
+  -[MobileCalDAVAccountRefreshActor account]
+  -[MobileCalDAVAccountRefreshActor setAccount:]
+  -[MobileCalDAVAccountRefreshActor setCompletionBlock:]
+  -[MobileCalDAVAccountRefreshActor teardown]
+  -[MobileCalDAVAccountRefreshActor setCalendarHomeSyncToken:]
+  -[MobileCalDAVAccountRefreshActor completionBlock]
+  -[MobileCalDAVAccountRefreshActor state]
+  -[MobileCalDAVAccountRefreshActor shouldCancel]
+  -[MobileCalDAVAccountRefreshActor dealloc]
+  -[MobileCalDAVAccountRefreshActor .cxx_destruct]
+  -[MobileCalDAVAccountRefreshActor setContext:]
+  -[MobileCalDAVAccountRefreshActor context]
+  -[MobileCalDAVAccountRefreshActor calendarHomeSyncToken]
+  -[MobileCalDAVAccountRefreshActor setState:]
+  -[MobileCalDAVAccountRefreshActor refreshing]
+  -[MobileCalDAVAccountRefreshActor setRefreshing:]
+  -[MobileCalDAVAccountRefreshActor didFinish]
+  -[MobileCalDAVAccountRefreshActor setDidFinish:]
+  -[MobileCalDAVAccountRefreshActor initWithAccount:context:]
+  -[MobileCalDAVAccountRefreshActor setShouldCancel:]
+  -[MobileCalDAVAccountRefreshActor cancelWithCompletion:]
+  -[MobileCalDAVAccountRefreshActor _powerLogInfoDictionary]
+  -[MobileCalDAVAccountRefreshActor outstandingTasks]
+  -[MobileCalDAVAccountRefreshActor calendarSyncForPrincipal:calendar:completedWithError:]
+  -[MobileCalDAVAccountRefreshActor propertyRefreshForPrincipal:completedWithError:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshForPrincipal:completedWithNewCTags:newSyncTokens:calendarHomeSyncToken:updatedCalendars:error:]
+  -[MobileCalDAVAccountRefreshActor outstandingTaskGroups]
+  -[MobileCalDAVAccountRefreshActor setOutstandingTaskGroups:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshWillSendCalendarDeletes:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshPropPatchFinishedWithError:forCalendar:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshShouldRetryMkCalendarForPrincipal:calendar:error:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshFoundUpdatedSpecialContainer:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshFoundUpdatedContainerWithIgnoredEntityType:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshWillRefreshCalendar:]
+  -[MobileCalDAVAccountRefreshActor calendarRefreshFoundDeletedContainerURL:]
+  -[MobileCalDAVAccountRefreshActor delegateRefreshForPrincipal:completedWithError:]
+  -[MobileCalDAVAccountRefreshActor _teardownAllOutstandingOperations]
+  -[MobileCalDAVAccountRefreshActor accountSyncDiagnostics]
+  -[MobileCalDAVAccountRefreshActor _refreshShouldContinue]
+  -[MobileCalDAVAccountRefreshActor _waitForStateTransition]
+  -[MobileCalDAVAccountRefreshActor _refreshAccountProperties]
+  -[MobileCalDAVAccountRefreshActor _refreshDelegateAccountProperties]
+  -[MobileCalDAVAccountRefreshActor _refreshCalendarProperties]
+  -[MobileCalDAVAccountRefreshActor _sendMoveTasks]
+  -[MobileCalDAVAccountRefreshActor _clearMoveChange:]
+  -[MobileCalDAVAccountRefreshActor _saveMoveChange:]
+  -[MobileCalDAVAccountRefreshActor _handleMoveTaskComplete:moveItem:]
+  -[MobileCalDAVAccountRefreshActor _propFindForNewEtagFollowingMoveOfItem:]
+  -[MobileCalDAVAccountRefreshActor _finishMoveForItemWithID:withEtag:scheduleTag:]
+  -[MobileCalDAVAccountRefreshActor _sendMoveForItem:]
+  -[MobileCalDAVAccountRefreshActor _continuePrincipalRefresh]
+  -[MobileCalDAVAccountRefreshActor _cleanUpDuplicateCalendars]
+  -[MobileCalDAVAccountRefreshActor _cleanUpDuplicateCalendar:ofCalendar:]
+  -[MobileCalDAVAccountRefreshActor _amendChangeRecordAndCleanUpAfterDeletedEventWithID:externalID:database:]
+  -[MobileCalDAVAccountRefreshActor _checkForNewOrMovedItemsDeletedSinceSyncStartedInCalendars:database:moves:]
+  -[MobileCalDAVAccountRefreshActor _refreshSpecialCalendars]
+  -[MobileCalDAVAccountRefreshActor _refreshRegularCalendars]
+  -[MobileCalDAVAccountRefreshActor _refreshedCtagForCalendar:]
+  -[MobileCalDAVAccountRefreshActor _refreshedSyncTokenForCalendar:]
+  -[MobileCalDAVAccountRefreshActor _syncCalendar:]
+  -[MobileCalDAVAccountRefreshActor _gatherAttachmentChanges]
+  -[MobileCalDAVAccountRefreshActor _uploadAttachments]
+  -[MobileCalDAVAccountRefreshActor _prepareAttachmentsForUpload]
+  -[MobileCalDAVAccountRefreshActor _uploadAttachments:]
+  -[MobileCalDAVAccountRefreshActor _uploadAttachments:forOwnerURL:syncKey:scheduleTag:]
+  -[MobileCalDAVAccountRefreshActor _handleAttachmentUploadsComplete:attachments:]
+  -[MobileCalDAVAccountRefreshActor _downloadAttachments]
+  -[MobileCalDAVAccountRefreshActor _beginAttachmentDownloads]
+  -[MobileCalDAVAccountRefreshActor _calendarCollectionsWereRefreshed]
+  -[MobileCalDAVAccountRefreshActor _cleanUpOrphanedPreferredUserAddressesPerCalendar]
+  -[MobileCalDAVAccountRefreshActor _guidsOfExistingCalendars]
+  -[MobileCalDAVAccountRefreshActor _sendResultToAccount]
+  -[MobileCalDAVAccountRefreshActor needsRemindersSync]
+  -[MobileCalDAVAccountRefreshActor pathsToCTags]
+  -[MobileCalDAVAccountRefreshActor setPathsToCTags:]
+  -[MobileCalDAVAccountRefreshActor pathsToSyncTokens]
+  -[MobileCalDAVAccountRefreshActor setPathsToSyncTokens:]
+  -[MobileCalDAVAccountRefreshActor calendarsToRefresh]
+  -[MobileCalDAVAccountRefreshActor setCalendarsToRefresh:]
+  -[MobileCalDAVAccountRefreshActor refreshFoundUpdatedTaskContainer]
+  -[MobileCalDAVAccountRefreshActor setRefreshFoundUpdatedTaskContainer:]
+  -[MobileCalDAVAccountRefreshActor refreshFoundUpdatedSpecialCalendar]
+  -[MobileCalDAVAccountRefreshActor setRefreshFoundUpdatedSpecialCalendar:]
+  -[MobileCalDAVAccountRefreshActor refreshFoundDeletedContainerURL]
+  -[MobileCalDAVAccountRefreshActor setRefreshFoundDeletedContainerURL:]
+  -[MobileCalDAVAccountRefreshActor outstandingOperationGroup]
+  -[MobileCalDAVAccountRefreshActor setOutstandingOperationGroup:]
+  -[MobileCalDAVAccountRefreshActor setOutstandingTasks:]
+  -[MobileCalDAVAccountRefreshActor setAccountSyncDiagnostics:]
+  -[MobileCalDAVAccountRefreshActor eventUIDsWithAttachmentChanges]
+  -[MobileCalDAVAccountRefreshActor setEventUIDsWithAttachmentChanges:]
+
+
+MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate : NSObject <DAEventsAttachmentDownloadConsumer>
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate .cxx_destruct]
+  -[MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate downloadFinishedError:]
+  -[MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate beginDownload]
+  -[MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate downloadProgressDownloadedByteCount:totalByteCount:]
+  -[MobileCalDAVAccountRefreshActorAttachmentDownloadDelegate initWithAttachmentUUID:]
+
+
+CalDAVRefreshContext : NSObject
+ @property  BOOL isForced
+ @property  BOOL wasUserRequested
+ @property  BOOL wasDueToPush
+ @property  BOOL isDisabledAccount
+ @property  BOOL isCalendarsOnly
+ @property  BOOL didDownloadEvents
+ @property  BOOL didSaveDatabase
+ @property  BOOL shouldSave
+ @property  BOOL shouldSaveAccounts
+ @property  BOOL calendarFailedToSync
+ @property  double startTime
+ @property  unsigned long numDownloadedElements
+ @property  unsigned long numUploadedElements
+ @property  BOOL shouldRetry
+ @property  int retryTime
+ @property  NSError *error
+ @property  unsigned long localItems
+ @property  CalDAVDBChangeTrackingHelper *changeTracker
+
+  // class methods
+  +[CalDAVRefreshContext defaultContext]
+
+  // instance methods
+  -[CalDAVRefreshContext startTime]
+  -[CalDAVRefreshContext error]
+  -[CalDAVRefreshContext setStartTime:]
+  -[CalDAVRefreshContext .cxx_destruct]
+  -[CalDAVRefreshContext setError:]
+  -[CalDAVRefreshContext shouldRetry]
+  -[CalDAVRefreshContext setShouldRetry:]
+  -[CalDAVRefreshContext isForced]
+  -[CalDAVRefreshContext shouldSave]
+  -[CalDAVRefreshContext setShouldSave:]
+  -[CalDAVRefreshContext numDownloadedElements]
+  -[CalDAVRefreshContext setNumDownloadedElements:]
+  -[CalDAVRefreshContext wasUserRequested]
+  -[CalDAVRefreshContext setWasUserRequested:]
+  -[CalDAVRefreshContext changeTracker]
+  -[CalDAVRefreshContext numUploadedElements]
+  -[CalDAVRefreshContext setNumUploadedElements:]
+  -[CalDAVRefreshContext setChangeTracker:]
+  -[CalDAVRefreshContext setIsForced:]
+  -[CalDAVRefreshContext wasDueToPush]
+  -[CalDAVRefreshContext setWasDueToPush:]
+  -[CalDAVRefreshContext isDisabledAccount]
+  -[CalDAVRefreshContext setIsDisabledAccount:]
+  -[CalDAVRefreshContext isCalendarsOnly]
+  -[CalDAVRefreshContext setIsCalendarsOnly:]
+  -[CalDAVRefreshContext didDownloadEvents]
+  -[CalDAVRefreshContext setDidDownloadEvents:]
+  -[CalDAVRefreshContext didSaveDatabase]
+  -[CalDAVRefreshContext setDidSaveDatabase:]
+  -[CalDAVRefreshContext shouldSaveAccounts]
+  -[CalDAVRefreshContext setShouldSaveAccounts:]
+  -[CalDAVRefreshContext calendarFailedToSync]
+  -[CalDAVRefreshContext setCalendarFailedToSync:]
+  -[CalDAVRefreshContext retryTime]
+  -[CalDAVRefreshContext setRetryTime:]
+  -[CalDAVRefreshContext localItems]
+  -[CalDAVRefreshContext setLocalItems:]
+
+
+CalDAVDBChangeTrackingHelper : NSObject
+  // instance methods
+  -[CalDAVDBChangeTrackingHelper dealloc]
+  -[CalDAVDBChangeTrackingHelper .cxx_destruct]
+  -[CalDAVDBChangeTrackingHelper saveChange:forEntityType:]
+  -[CalDAVDBChangeTrackingHelper clearUnconsumedAndUnsavedChanges]
+  -[CalDAVDBChangeTrackingHelper initWithDatabase:clientIdentifier:]
+
+
+DACalDAViCalItem : NSObject <ICSDocumentParseDelegate, CoreDAVLeafDataPayload, DADataElement, CalDAVCalendarItemProtocol>
+ @property  NSString *syncKey
+ @property  NSData *dataPayload
+ @property  ICSDocument *document
+ @property  BOOL statusChanged
+ @property  NSString *uniqueIdentifier
+ @property  NSString *filename
+ @property  NSString *accountID
+ @property  NSURL *serverID
+ @property  NSNumber *clientID
+ @property  ^v calItem
+ @property  NSString *scheduleTag
+ @property  CalDAVCalendarServerScheduleChangesItem *scheduleChanges
+ @property  CalDAVUpdateOwnerItem *createdBy
+ @property  CalDAVUpdateOwnerItem *updatedBy
+ @property  NSMutableDictionary *originatingChangeItems
+ @property  BOOL isMigrate
+ @property  BOOL invitationStatusCleared
+ @property  BOOL prohibitLocalCreationOfServerID
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+ @property  NSArray *childrenOrder
+ @property  NSURL *sourceURL
+ @property  NSURL *destinationURL
+
+  // class methods
+  +[DACalDAViCalItem _shouldApplyEvent:instanceWithStartDate:startRange:endRange:]
+  +[DACalDAViCalItem _checkOccurrencesForEvent:fromDate:toDate:]
+  +[DACalDAViCalItem _shouldApplyEventFromSyncReport:startDate:endDate:]
+
+  // instance methods
+  -[DACalDAViCalItem filename]
+  -[DACalDAViCalItem document]
+  -[DACalDAViCalItem setFilename:]
+  -[DACalDAViCalItem accountID]
+  -[DACalDAViCalItem setUniqueIdentifier:]
+  -[DACalDAViCalItem setCreatedBy:]
+  -[DACalDAViCalItem clientID]
+  -[DACalDAViCalItem setClientID:]
+  -[DACalDAViCalItem setAccountID:]
+  -[DACalDAViCalItem createdBy]
+  -[DACalDAViCalItem dealloc]
+  -[DACalDAViCalItem .cxx_destruct]
+  -[DACalDAViCalItem uniqueIdentifier]
+  -[DACalDAViCalItem setDocument:]
+  -[DACalDAViCalItem setDataPayload:]
+  -[DACalDAViCalItem serverID]
+  -[DACalDAViCalItem setServerID:]
+  -[DACalDAViCalItem statusChanged]
+  -[DACalDAViCalItem setStatusChanged:]
+  -[DACalDAViCalItem syncKey]
+  -[DACalDAViCalItem scheduleChanges]
+  -[DACalDAViCalItem setScheduleChanges:]
+  -[DACalDAViCalItem dataPayload]
+  -[DACalDAViCalItem documentParsedCalendar:]
+  -[DACalDAViCalItem initWithURL:eTag:dataPayload:inContainerWithURL:withAccountInfoProvider:]
+  -[DACalDAViCalItem scheduleTag]
+  -[DACalDAViCalItem setScheduleTag:]
+  -[DACalDAViCalItem updatedBy]
+  -[DACalDAViCalItem setUpdatedBy:]
+  -[DACalDAViCalItem setSyncKey:]
+  -[DACalDAViCalItem saveWithLocalObject:toContainer:shouldMergeProperties:outMergeDidChooseLocalProperties:account:]
+  -[DACalDAViCalItem setLocalItem:]
+  -[DACalDAViCalItem loadLocalItemWithAccount:]
+  -[DACalDAViCalItem saveServerIDToExistingItem]
+  -[DACalDAViCalItem deleteFromContainer:]
+  -[DACalDAViCalItem initWithCalRecord:inContainer:accountID:]
+  -[DACalDAViCalItem setOriginatingChangeItems:]
+  -[DACalDAViCalItem originatingChangeItems]
+  -[DACalDAViCalItem addChangeOfType:forChangeRowid:]
+  -[DACalDAViCalItem _setModificationInfoOnItem:]
+  -[DACalDAViCalItem _getDetachedEventUniqueIdentifiersForCalEvent:]
+  -[DACalDAViCalItem _removeCalEvent:fromUniqueIdentifiersSet:]
+  -[DACalDAViCalItem _removeDetachedEventsWithUniqueIdentifiers:fromEvent:withContainer:inMobileCalendar:]
+  -[DACalDAViCalItem _addOrModifyEvent:inICSCalendar:withContainer:shouldMergeProperties:outMergeDidChooseLocalProperties:inMobileCalendar:]
+  -[DACalDAViCalItem _addOrModifyTask:inICSCalendar:withContainer:shouldMergeProperties:outMergeDidChooseLocalProperties:inMobileCalendar:]
+  -[DACalDAViCalItem saveToContainer:shouldMergeProperties:outMergeDidChooseLocalProperties:account:mobileCalendar:outRecurrenceSets:]
+  -[DACalDAViCalItem recurrenceSetsForICSCalendar:]
+  -[DACalDAViCalItem _fixUpCalendarForServer:]
+  -[DACalDAViCalItem cacheDataPayload]
+  -[DACalDAViCalItem invitationStatusCleared]
+  -[DACalDAViCalItem localItem]
+  -[DACalDAViCalItem calItem]
+  -[DACalDAViCalItem isMigrate]
+  -[DACalDAViCalItem setIsMigrate:]
+  -[DACalDAViCalItem prohibitLocalCreationOfServerID]
+  -[DACalDAViCalItem setProhibitLocalCreationOfServerID:]
+
+
+MobileCalDAVInboxCalendar : MobileCalDAVCalendar
+ @property  CalDiagInboxCollectionSync *inboxCollectionSyncDiagnostics
+
+  // instance methods
+  -[MobileCalDAVInboxCalendar .cxx_destruct]
+  -[MobileCalDAVInboxCalendar isScheduleInbox]
+  -[MobileCalDAVInboxCalendar etagsForItemURLs:]
+  -[MobileCalDAVInboxCalendar updateResourcesFromServer:]
+  -[MobileCalDAVInboxCalendar deleteResourcesAtURLs:]
+  -[MobileCalDAVInboxCalendar allItemURLs]
+  -[MobileCalDAVInboxCalendar initWithCalendarURL:calendar:principal:title:]
+  -[MobileCalDAVInboxCalendar shouldCalendarBeHidden]
+  -[MobileCalDAVInboxCalendar recordDiagnosticsForAccountSync:]
+  -[MobileCalDAVInboxCalendar inboxCollectionSyncDiagnostics]
+  -[MobileCalDAVInboxCalendar _copyEventActionWithURL:forCalItemWithUniqueIdentifier:]
+  -[MobileCalDAVInboxCalendar setETag:forInvitationAtURL:uniqueIdentifier:]
+  -[MobileCalDAVInboxCalendar _removeInvitationWithURL:]
+  -[MobileCalDAVInboxCalendar setInboxCollectionSyncDiagnostics:]
+
+
+MobileCalDAVSubscribedCalendar : MobileCalDAVCalendar <CalDAVSubscribedCalendar>
+ @property  NSURL *subscriptionURL
+ @property  BOOL hasAlarmFilter
+ @property  BOOL hasAttachmentFilter
+ @property  BOOL hasTaskFilter
+ @property  double refreshInterval
+ @property  BOOL autoprovisioned
+ @property  NSString *locationCode
+ @property  NSString *languageCode
+ @property  <CalDAVPrincipal> *principal
+ @property  NSString *guid
+ @property  NSURL *calendarURL
+ @property  NSString *title
+ @property  NSString *notes
+ @property  NSString *color
+ @property  NSString *symbolicColorName
+ @property  NSString *pushKey
+ @property  NSURL *owner
+ @property  NSString *ownerDisplayName
+ @property  NSSet *preferredCalendarUserAddresses
+ @property  NSURL *publishURL
+ @property  NSURL *prePublishURL
+ @property  NSTimeZone *timeZone
+ @property  NSDictionary *bulkRequests
+ @property  int order
+ @property  int sharingStatus
+ @property  NSSet *sharees
+ @property  BOOL isTaskContainer
+ @property  BOOL isEventContainer
+ @property  BOOL isSubscribed
+ @property  BOOL isManagedByServer
+ @property  BOOL isScheduleInbox
+ @property  BOOL isScheduleOutbox
+ @property  BOOL isNotification
+ @property  BOOL isPoll
+ @property  BOOL isEditable
+ @property  BOOL isRenameable
+ @property  BOOL isEnabled
+ @property  BOOL isPublished
+ @property  BOOL isAffectingAvailability
+ @property  BOOL canBePublished
+ @property  BOOL canBeShared
+ @property  BOOL isFamilyCalendar
+ @property  BOOL isMarkedUndeletable
+ @property  BOOL isMarkedImmutableSharees
+ @property  BOOL wasModifiedLocally
+ @property  BOOL needsResync
+ @property  NSString *ctag
+ @property  NSString *syncToken
+ @property  BOOL needsPublishUpdate
+ @property  NSArray *syncActions
+ @property  NSArray *shareeActions
+ @property  NSArray *itemsToReportAsJunk
+ @property  NSDictionary *uuidsToAddActions
+ @property  NSDictionary *hrefsToModDeleteActions
+ @property  NSSet *allItemURLs
+ @property  NSArray *recurrenceSplitActions
+ @property  long long maxAttendees
+ @property  BOOL needsIsAffectingAvailabilityUpdate
+ @property  NSString *lastSyncTitle
+ @property  unsigned long hash
+ @property  Class superclass
+ @property  NSString *description
+ @property  NSString *debugDescription
+
+  // instance methods
+  -[MobileCalDAVSubscribedCalendar setRefreshInterval:]
+  -[MobileCalDAVSubscribedCalendar properties]
+  -[MobileCalDAVSubscribedCalendar refreshInterval]
+  -[MobileCalDAVSubscribedCalendar .cxx_destruct]
+  -[MobileCalDAVSubscribedCalendar isTaskContainer]
+  -[MobileCalDAVSubscribedCalendar setSubscriptionURL:]
+  -[MobileCalDAVSubscribedCalendar isSubscribed]
+  -[MobileCalDAVSubscribedCalendar subscriptionURL]
+  -[MobileCalDAVSubscribedCalendar setTitle:]
+  -[MobileCalDAVSubscribedCalendar setCalendarURL:]
+  -[MobileCalDAVSubscribedCalendar setIsTaskContainer:]
+  -[MobileCalDAVSubscribedCalendar isManagedByServer]
+  -[MobileCalDAVSubscribedCalendar setIsManagedByServer:]
+  -[MobileCalDAVSubscribedCalendar hasAlarmFilter]
+  -[MobileCalDAVSubscribedCalendar setHasAlarmFilter:]
+  -[MobileCalDAVSubscribedCalendar hasAttachmentFilter]
+  -[MobileCalDAVSubscribedCalendar setHasAttachmentFilter:]
+  -[MobileCalDAVSubscribedCalendar hasTaskFilter]
+  -[MobileCalDAVSubscribedCalendar setHasTaskFilter:]
+  -[MobileCalDAVSubscribedCalendar calendarURLString]
+  -[MobileCalDAVSubscribedCalendar initWithCalendarURL:calendar:properties:principal:]
+  -[MobileCalDAVSubscribedCalendar shouldCalendarBeReadOnly]
+  -[MobileCalDAVSubscribedCalendar updatePropertiesFromCalCalendar]
+
+
+CalDAVPrincipalResult : NSObject
+ @property  NSMutableArray *mCUAddresses
+ @property  NSMutableArray *mEmailAddresses
+ @property  NSString *firstName
+ @property  NSString *lastName
+ @property  NSString *displayName
+ @property  NSString *resultType
+ @property  NSString *principalPath
+ @property  NSString *emailAddress
+ @property  NSArray *emailAddresses
+ @property  NSArray *cuAddresses
+ @property  NSString *preferredCUAddress
+
+  // class methods
+  +[CalDAVPrincipalResult resultFromResponse:]
+
+  // instance methods
+  -[CalDAVPrincipalResult setFirstName:]
+  -[CalDAVPrincipalResult firstName]
+  -[CalDAVPrincipalResult setResultType:]
+  -[CalDAVPrincipalResult emailAddress]
+  -[CalDAVPrincipalResult lastName]
+  -[CalDAVPrincipalResult setEmailAddresses:]
+  -[CalDAVPrincipalResult emailAddresses]
+  -[CalDAVPrincipalResult .cxx_destruct]
+  -[CalDAVPrincipalResult initWithResponse:]
+  -[CalDAVPrincipalResult setDisplayName:]
+  -[CalDAVPrincipalResult resultType]
+  -[CalDAVPrincipalResult displayName]
+  -[CalDAVPrincipalResult setLastName:]
+  -[CalDAVPrincipalResult init]
+  -[CalDAVPrincipalResult principalPath]
+  -[CalDAVPrincipalResult setPrincipalPath:]
+  -[CalDAVPrincipalResult cuAddresses]
+  -[CalDAVPrincipalResult convertToDAContactSearchResultElement]
+  -[CalDAVPrincipalResult addCUAddress:]
+  -[CalDAVPrincipalResult addEmail:]
+  -[CalDAVPrincipalResult preferredCUAddress]
+  -[CalDAVPrincipalResult mCUAddresses]
+  -[CalDAVPrincipalResult setMCUAddresses:]
+  -[CalDAVPrincipalResult mEmailAddresses]
+  -[CalDAVPrincipalResult setMEmailAddresses:]
+
+
+CalDAVMove : NSObject
+ @property  int sourceCalendarID
+ @property  int itemID
+ @property  NSString *oldExternalID
+ @property  int changeID
+ @property  long long objectType
+ @property  NSString *uniqueIdentifier
+ @property  NSString *updatedExternalID
+
+  // instance methods
+  -[CalDAVMove setUniqueIdentifier:]
+  -[CalDAVMove setItemID:]
+  -[CalDAVMove objectType]
+  -[CalDAVMove .cxx_destruct]
+  -[CalDAVMove itemID]
+  -[CalDAVMove changeID]
+  -[CalDAVMove uniqueIdentifier]
+  -[CalDAVMove setObjectType:]
+  -[CalDAVMove setChangeID:]
+  -[CalDAVMove oldExternalID]
+  -[CalDAVMove initWithSourceCalendarID:itemID:oldExternalID:changeID:objectType:uniqueIdentifier:]
+  -[CalDAVMove sourceCalendarID]
+  -[CalDAVMove setSourceCalendarID:]
+  -[CalDAVMove setOldExternalID:]
+  -[CalDAVMove updatedExternalID]
+  -[CalDAVMove setUpdatedExternalID:]
+
+
+MobileCalDAVNotificationCalendar : MobileCalDAVCalendar
+ @property  CalDiagNotificationCollectionSync *notificationCollectionSyncDiagnostics
+
+  // instance methods
+  -[MobileCalDAVNotificationCalendar isNotification]
+  -[MobileCalDAVNotificationCalendar .cxx_destruct]
+  -[MobileCalDAVNotificationCalendar appSpecificCalendarItemClass]
+  -[MobileCalDAVNotificationCalendar etagsForItemURLs:]
+  -[MobileCalDAVNotificationCalendar setEtag:forItemAtURL:]
+  -[MobileCalDAVNotificationCalendar setScheduleTag:forItemAtURL:]
+  -[MobileCalDAVNotificationCalendar setURL:forResourceWithUUID:]
+  -[MobileCalDAVNotificationCalendar updateResourcesFromServer:]
+  -[MobileCalDAVNotificationCalendar allItemURLs]
+  -[MobileCalDAVNotificationCalendar prepareMergeSyncActionsWithCompletionBlock:]
+  -[MobileCalDAVNotificationCalendar initWithCalendarURL:calendar:principal:title:]
+  -[MobileCalDAVNotificationCalendar _removeCalendarItemWithURL:]
+  -[MobileCalDAVNotificationCalendar shouldCalendarBeHidden]
+  -[MobileCalDAVNotificationCalendar clearEventChanges]
+  -[MobileCalDAVNotificationCalendar prepareSyncActionsWithCompletionBlock:]
+  -[MobileCalDAVNotificationCalendar recordDiagnosticsForAccountSync:]
+  -[MobileCalDAVNotificationCalendar notificationCollectionSyncDiagnostics]
+  -[MobileCalDAVNotificationCalendar _copyNotificationWithUniqueIdentifier:inCalendar:orStore:]
+  -[MobileCalDAVNotificationCalendar _copyNotificationWithExternalID:]
+  -[MobileCalDAVNotificationCalendar setNotificationCollectionSyncDiagnostics:]
+
+
+CalDAVAccountDelegatesRefreshOperation : CalDAVOperation
+ @property  <CalDAVAccountDelegatesRefreshDelegate> *mdelegate
+
+  // instance methods
+  -[CalDAVAccountDelegatesRefreshOperation taskGroup:didFinishWithError:]
+  -[CalDAVAccountDelegatesRefreshOperation refreshDelegates]
+  -[CalDAVAccountDelegatesRefreshOperation mdelegate]
+  -[CalDAVAccountDelegatesRefreshOperation setMdelegate:]
+
+
+MobileCalDAVPollCalendar : MobileCalDAVCalendar
+  // instance methods
+  -[MobileCalDAVPollCalendar isPoll]
+  -[MobileCalDAVPollCalendar initWithCalendarURL:principal:title:]
+  -[MobileCalDAVPollCalendar shouldCalendarBeHidden]
+
+
+MobileCalDAVDelegateUserInfo : NSObject
+ @property  NSString *principalPath
+ @property  NSString *displayName
+ @property  NSString *uid
+ @property  BOOL allowWrite
+
+  // class methods
+  +[MobileCalDAVDelegateUserInfo infoFromCalDAVDetails:allowWrite:]
+
+  // instance methods
+  -[MobileCalDAVDelegateUserInfo uid]
+  -[MobileCalDAVDelegateUserInfo setUid:]
+  -[MobileCalDAVDelegateUserInfo .cxx_destruct]
+  -[MobileCalDAVDelegateUserInfo setDisplayName:]
+  -[MobileCalDAVDelegateUserInfo displayName]
+  -[MobileCalDAVDelegateUserInfo principalPath]
+  -[MobileCalDAVDelegateUserInfo setPrincipalPath:]
+  -[MobileCalDAVDelegateUserInfo initWithPrincipalPath:displayName:allowWrite:]
+  -[MobileCalDAVDelegateUserInfo allowWrite]
+  -[MobileCalDAVDelegateUserInfo setAllowWrite:]
+
+
+(CalNSStringEmailAddressAdditions)
+	// instance methods
+	-[(CalNSStringEmailAddressAdditions) hasMailto]
+	-[(CalNSStringEmailAddressAdditions) resemblesEmailAddress]
+	-[(CalNSStringEmailAddressAdditions) stringAddingMailto]
+	-[(CalNSStringEmailAddressAdditions) stringRemovingMailto]
+
+CalDAVCalendarServerUserItem(ShareeConversion)
+	// instance methods
+	-[CalDAVCalendarServerUserItem(ShareeConversion) initWithCalSharee:]
+	-[CalDAVCalendarServerUserItem(ShareeConversion) createCalShareeInDatabase:andCalendar:]
+	-[CalDAVCalendarServerUserItem(ShareeConversion) updateCalSharee:]
+
+01 00 0800 /System/Library/Frameworks/Accounts.framework/Accounts: ACAccount 
+01 00 0500 /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit: AKAppleIDSession 
+01 00 0900 /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase: CDBiCalFixUps 
+01 00 0a00 /System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation: CalABCReporter 
+01 00 0a00 /System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation: CalContactsProvider 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVAccountPropertyRefreshOperation 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVAddManagedAttachmentsTaskGroup 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVCalendarPropertyRefreshOperation 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVCalendarServerUserItem 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVCalendarSyncOperation 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVCalendarUserAddress 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVGetDelegatesTaskGroup 
+01 00 0900 /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase: CalDAVNotificationHandler 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVNotificationItemData 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVOperation 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVPrincipalPropertySearchTask 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVPrincipalSearchPropertySet 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVPrincipalSearchSupport 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVRecurrenceSplitAction 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVScheduleChangesProperty 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVServerVersion 
+01 00 1500 /System/Library/PrivateFrameworks/CalDAV.framework/CalDAV: CalDAVSupportedCalendarComponentSets 
+01 00 0900 /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase: CaliTIPHandler 
+01 00 0900 /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase: CaliTIPMessage 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVAction 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVCalendarServerEmailAddressSetItem 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVDiscoveryTaskGroup 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVItemParserMapping 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVItemWithHrefChildren 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVLeafItem 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVLogging 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVMoveTask 
+01 00 0b00 /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV: CoreDAVPropFindTask 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAAccount 
+01 00 1100 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DABehaviorOptions 
+01 00 1100 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DAContactSearchResultElement 
+01 00 1100 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DAContactsSearchQuery 
+01 00 0c00 /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue: DACoreDAVLogger 
+01 00 0c00 /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue: DACoreDAVTaskManager 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DALocalDBHelper 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAPowerAssertionManager 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DARunLoopRegistry 
+01 00 1100 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DASharedAccountProperties 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAStoreSyncStatusUpdater 
+01 00 1100 /System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress: DATrafficLogFilename 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DATrafficLogger 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DATransaction 
+01 00 0f00 /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess: DAiCalendarLogger 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSAlarm 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSComponent 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSDate 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSDateTimeUTCValue 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSDocument 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSDuration 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSEvent 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSTodo 
+01 00 1300 /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar: ICSTrigger 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSArray 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSAssertionHandler 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSBundle 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSCalendar 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSConstantIntegerNumber 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSData 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDate 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDateComponents 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSDictionary 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSError 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSFileManager 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableArray 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableDictionary 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSMutableSet 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNotificationCenter 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSNull 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSNumber 
+01 00 1600 /usr/lib/libobjc.A.dylib: NSObject 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPredicate 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSPropertyListSerialization 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSSet 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSString 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSThread 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSTimeZone 
+01 00 0e00 /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation: NSURL 
+01 00 1200 /System/Library/Frameworks/Foundation.framework/Foundation: NSUUID 
